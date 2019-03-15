@@ -2,7 +2,7 @@
 uid: web-forms/overview/older-versions-getting-started/index
 title: Предыдущие версии — начало работы веб-форм | Документация Майкрософт
 author: rick-anderson
-description: Документация по ASP.NET Web Forms 4 и более ранних версий.
+description: Руководство по ASP.NET Web Forms 4 и более ранних версий.
 ms.author: riande
 ms.date: 10/18/2014
 ms.assetid: e03585c2-80bf-4083-99ba-9fcbc883ccd8
@@ -11,7 +11,7 @@ msc.type: chapter
 ---
 <a name="older-versions---web-forms-getting-started"></a>Предыдущие версии — начало работы веб-форм
 ====================
-> Документация по ASP.NET Web Forms 4 и более ранних версий.
+> Руководство по ASP.NET Web Forms 4 и более ранних версий.
 
 
 - [ASP.NET 4. Tailspin Spyworks](tailspin-spyworks/index.md)
