@@ -8,12 +8,12 @@ ms.date: 10/17/2013
 ms.assetid: 08815768-2702-42ae-ae85-0a59934a11d1
 msc.legacyurl: /visual-studio/overview/2013/release-notes
 msc.type: authoredcontent
-ms.openlocfilehash: 43878bc101ef97e8bbb6c150f4125707da7660c9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: cd6197a9cbed822ba874a19823521a3711be9201
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027441"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422718"
 ---
 <a name="aspnet-and-web-tools-for-visual-studio-2013-release-notes"></a>Заметки о выпуске ASP.NET and Web Tools для Visual Studio 2013
 ====================
@@ -357,7 +357,7 @@ SignalR 2.0 с полностью встроены [OWIN (Open Web Interface for
 
 ### <a name="cross-domain-support"></a>Поддержка между доменами
 
-В SignalR 1.x, междоменные запросы были контролируются одного флага EnableCrossDomain. Этот флаг контролировать запросы JSONP и CORS. Для повышения гибкости, поддерживают все CORS был удален из серверного компонента SignalR (JavaScript lients по-прежнему использовать CORS обычно при его обнаружении, что он поддерживает браузер), а новый промежуточный слой OWIN стала доступной для поддержки следующих сценариев.
+В SignalR 1.x, междоменные запросы были контролируются одного флага EnableCrossDomain. Этот флаг контролировать запросы JSONP и CORS. Для повышения гибкости, поддерживают все CORS был удален из серверного компонента SignalR (JavaScript клиенты по-прежнему использовать CORS обычно при его обнаружении, что он поддерживает браузер), а новый промежуточный слой OWIN стала доступной для поддержки следующих сценариев.
 
 В SignalR 2.0, если JSONP требуется на клиентском компьютере (для поддержки запросов между доменами в старых браузерах), его необходимо явно включить, задав `EnableJSONP` на `HubConfiguration` объект `true`, как показано ниже. JSONP отключена по умолчанию, так как это менее безопасно, чем CORS.
 

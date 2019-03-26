@@ -8,12 +8,12 @@ ms.date: 03/06/2007
 ms.assetid: 528acc48-f20c-4b4e-aa16-4cc02f068ebb
 msc.legacyurl: /web-forms/overview/data-access/enhancing-the-gridview/inserting-a-new-record-from-the-gridview-s-footer-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 0c661190125e818d3abaf54f50a0067d0944a956
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6e56c46d1f2574b9f228190e0e0c8205240015ed
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059391"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423968"
 ---
 <a name="inserting-a-new-record-from-the-gridviews-footer-vb"></a>Вставка новой записи из нижнего колонтитула GridView (VB)
 ====================
@@ -207,7 +207,7 @@ ms.locfileid: "57059391"
 [!code-vb[Main](inserting-a-new-record-from-the-gridview-s-footer-vb/samples/sample6.vb)]
 
 > [!NOTE]
-> Может возникнуть вопрос, почему обработчик событий остановились проверка `Page.IsValid` свойство. В конце концов Если недопустимые данные в интерфейсе правки подавить реализованных t обратную передачу? Это предположение относится правильно, пока пользователь не отключил JavaScript или принимает меры для обхода логику проверки на стороне клиента. Иными словами один не следует полагаться исключительно на клиентской проверки; всегда следует выполнять проверку на стороне сервера на допустимость перед началом работы с данными.
+> Может возникнуть вопрос, почему обработчик событий остановились проверка `Page.IsValid` свойство. В конце концов не обратную передачу подавляться недопустимые данные, если в интерфейсе правки? Это предположение относится правильно, пока пользователь не отключил JavaScript или принимает меры для обхода логику проверки на стороне клиента. Иными словами один не следует полагаться исключительно на клиентской проверки; всегда следует выполнять проверку на стороне сервера на допустимость перед началом работы с данными.
 
 
 На этапе 1 мы создали `ProductsDataSource` ObjectDataSource таким образом, чтобы его `Insert()` относящимся `ProductsBLL` класс s `AddProduct` метод. Для вставки новой записи в `Products` таблицы, мы можете просто вызвать ObjectDataSource s `Insert()` метод:

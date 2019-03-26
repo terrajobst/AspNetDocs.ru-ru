@@ -8,18 +8,18 @@ ms.date: 07/16/2014
 ms.assetid: ecfd0eb4-c4ad-44e6-9db9-a2a66611ff6a
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/maintainable-azure-websites-managing-change-and-scale
 msc.type: authoredcontent
-ms.openlocfilehash: bc6de2f0c8b2cd958c198abb90fc4ad97613e973
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 315e89c81782edf0875c65afd27153102d733050
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054541"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424252"
 ---
 <a name="hands-on-lab-maintainable-azure-websites-managing-change-and-scale"></a>Практическое лабораторное занятие. Простые в обслуживании веб-сайты Azure: управление изменениями и масштабированием
 ====================
 по [Web Слышатся Team](https://twitter.com/webcamps)
 
-[Скачайте комплект учебных материалов по лагеря Web](http://aka.ms/webcamps-training-kit)
+[Скачайте комплект учебных материалов по лагеря Web](https://aka.ms/webcamps-training-kit)
 
 > Microsoft Azure позволяет легко создавать и развертывать веб-сайтов в рабочей среде. Но вы не закончили при динамической приложения, вы только начинаете работу! Нужно будет обработать изменение требования, обновления базы данных, масштабирования и многое другое. К счастью служба приложений Azure реализована в рамках, множество функций, которые помогут вам работать с ними бесперебойной работы.
 >
@@ -31,7 +31,7 @@ ms.locfileid: "57054541"
 >
 > В базах данных SQL важно поддерживать актуальность производительность базы данных при развертывании новых версий приложения. Выражаем благодарность **Entity Framework Code First Migrations**, разработку и развертывание модели данных был упрощен для обновления среды за несколько минут. Это Практическое занятие покажу различные темы, которые могут возникнуть при развертывании веб-приложения в рабочую среду в Microsoft Azure.
 >
-> Все примеры кода и фрагменты кода включены в Web лагеря комплект обучающих материалов, доступных в [ http://aka.ms/webcamps-training-kit ](http://aka.ms/webcamps-training-kit).
+> Все примеры кода и фрагменты кода включены в Web лагеря комплект обучающих материалов, доступных в [ https://aka.ms/webcamps-training-kit ](https://aka.ms/webcamps-training-kit).
 >
 > Более подробные сведения в этом разделе, см. в разделе [Создание реальных облачных приложений в Azure электронная книга](building-real-world-cloud-apps-with-windows-azure/introduction.md).
 
@@ -62,10 +62,10 @@ ms.locfileid: "57054541"
 - [Система управления версиями GIT](http://git-scm.com/download)
 - Подписка Microsoft Azure
 
-    - Зарегистрируйтесь в службе [бесплатной пробной версии](http://aka.ms/watk-freetrial)
-    - Если вы являетесь Visual Studio Professional, Test Professional, Premium или Ultimate с MSDN или MSDN Platforms, активировать ваши [преимущества для подписчиков MSDN](http://aka.ms/watk-msdn) сейчас, чтобы начать разработку и тестирование в Azure
-    - [BizSpark](http://aka.ms/watk-bizspark) элементы автоматически получать Azure преимущество при приобретении Visual Studio Ultimate с подписками MSDN
-    - Членами [Microsoft Partner Network](http://aka.ms/watk-mpn) программе Cloud Essentials получают ежемесячные кредиты Azure бесплатно
+    - Зарегистрируйтесь в службе [бесплатной пробной версии](https://aka.ms/watk-freetrial)
+    - Если вы являетесь Visual Studio Professional, Test Professional, Premium или Ultimate с MSDN или MSDN Platforms, активировать ваши [преимущества для подписчиков MSDN](https://aka.ms/watk-msdn) сейчас, чтобы начать разработку и тестирование в Azure
+    - [BizSpark](https://aka.ms/watk-bizspark) элементы автоматически получать Azure преимущество при приобретении Visual Studio Ultimate с подписками MSDN
+    - Членами [Microsoft Partner Network](https://aka.ms/watk-mpn) программе Cloud Essentials получают ежемесячные кредиты Azure бесплатно
 
 <a id="Setup"></a>
 ### <a name="setup"></a>Установка

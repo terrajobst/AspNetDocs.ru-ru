@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: 1bc333c5-f096-4ea7-b170-779accc21c1a
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/the-fix-it-sample-application
 msc.type: authoredcontent
-ms.openlocfilehash: de3c8ea29f2c271136f58d8165bb92f4ab28ce83
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a73fac6107be45455465b506a019bcc9a41b1deb
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034221"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425526"
 ---
 <a name="appendix-the-fix-it-sample-application-building-real-world-cloud-apps-with-azure"></a>Приложение. Исправление пример приложения (Создание реальных облачных приложений с помощью Azure)
 ====================
@@ -376,13 +376,13 @@ ASP.NET автоматически предотвращает множество
 
 Перед развертыванием облачной службы, необходимо обновить некоторые из файлов конфигурации.
 
-В MyFixIt.WorkerRoler\app.config в разделе `connectionStrings`, замените значение `appdb` строку подключения с фактической строкой подключения для базы данных SQL. Строку подключения можно получить на портале. На портале, щелкните **баз данных SQL** - **appdb** - **базы данных SQL представления строки подключения для ADO .net, ODBC, PHP и JDBC**. Скопируйте строку подключения ADO.NET и вставьте его в файл app.config. Замените «{вашей\_пароль\_здесь}» с пароль базы данных. (При условии, что использовать сценарии для развертывания приложения MVC, указанный пароль базы данных в `SqlDatabasePassword` скрипт параметр.)
+В MyFixIt.WorkerRole\app.config в разделе `connectionStrings`, замените значение `appdb` строку подключения с фактической строкой подключения для базы данных SQL. Строку подключения можно получить на портале. На портале, щелкните **баз данных SQL** - **appdb** - **базы данных SQL представления строки подключения для ADO .net, ODBC, PHP и JDBC**. Скопируйте строку подключения ADO.NET и вставьте его в файл app.config. Замените «{вашей\_пароль\_здесь}» с пароль базы данных. (При условии, что использовать сценарии для развертывания приложения MVC, указанный пароль базы данных в `SqlDatabasePassword` скрипт параметр.)
 
 Результат должен выглядеть следующим образом:
 
 [!code-xml[Main](the-fix-it-sample-application/samples/sample32.xml)]
 
-В этом же файле MyFixIt.WorkerRoler\app.config под `appSettings`, замените два значения заполнителей для учетной записи хранения Azure.
+В этом же файле MyFixIt.WorkerRole\app.config под `appSettings`, замените два значения заполнителей для учетной записи хранения Azure.
 
 [!code-xml[Main](the-fix-it-sample-application/samples/sample33.xml?highlight=2-3)]
 

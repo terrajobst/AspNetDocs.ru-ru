@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 6d40d276-1642-4a77-b6c9-02ac914f6805
 msc.legacyurl: /web-forms/overview/getting-started/hands-on-labs/whats-new-in-aspnet-and-web-development-in-visual-studio-2012
 msc.type: authoredcontent
-ms.openlocfilehash: 263a6e0aed51a681193333b53eff8f03847fc3aa
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6d5af6563bdf3872110497f4b142dd7353c8d64c
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57047581"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58426124"
 ---
 <a name="whats-new-in-aspnet-and-web-development-in-visual-studio-2012"></a>Новые возможности ASP.NET и веб-разработки в Visual Studio 2012
 ====================
@@ -737,7 +737,7 @@ Visual Studio теперь включает несколько фрагмент�
 1. Перейдите к [портала управления Windows Azure](https://manage.windowsazure.com/) и войдите с использованием учетных данных Майкрософт, связанную с вашей подпиской.
 
     > [!NOTE]
-    > С помощью Windows Azure можно бесплатное размещение 10 веб-сайтов ASP.NET и затем масштабировать по мере увеличения объема трафика. Вы можете зарегистрироваться [здесь](http://aka.ms/aspnet-hol-azure).
+    > С помощью Windows Azure можно бесплатное размещение 10 веб-сайтов ASP.NET и затем масштабировать по мере увеличения объема трафика. Вы можете зарегистрироваться [здесь](https://aka.ms/aspnet-hol-azure).
 
     ![Войдите на портал Windows Azure](whats-new-in-aspnet-and-web-development-in-visual-studio-2012/_static/image64.png "Войдите на портал Windows Azure")
 

@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: eaece9f5-f80c-428b-b771-5db66d275b7d
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/continuous-integration-and-continuous-delivery
 msc.type: authoredcontent
-ms.openlocfilehash: f701488025ec84a17651f9abff43f84531d35689
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b384fe08ebd6a106b9469debfb13014e87534b8f
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046941"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425929"
 ---
 <a name="continuous-integration-and-continuous-delivery-building-real-world-cloud-apps-with-azure"></a>Непрерывная интеграция и непрерывная поставка (Создание реальных облачных приложений в Azure)
 ====================
@@ -32,7 +32,7 @@ ms.locfileid: "57046941"
 
 Обычно мы рекомендуем выполнить непрерывная доставка в процесс разработки и промежуточных сред. Большинству групп, даже в корпорации Microsoft, требуют ручной процесс проверки и утверждения для развертывания в рабочей среде. Для рабочей среды развертывания, может потребоваться убедиться, что он происходит, когда это ключевые сотрудники группы разработки доступны для получения поддержки и в периоды низкой нагрузки. Но ничто не мешает вам полностью автоматизировать среды разработки и тестирования, чтобы разработчик может сделать всего лишь возврата изменений и среды настройки для приемочного тестирования.
 
-На следующей схеме из [Microsoft Patterns and Practices электронная книга о непрерывной доставке](http://aka.ms/ReleasePipeline) иллюстрирует типичный рабочий процесс. Щелкните изображение, чтобы увидеть это в полном размере в исходный контекст.
+На следующей схеме из [Microsoft Patterns and Practices электронная книга о непрерывной доставке](https://aka.ms/ReleasePipeline) иллюстрирует типичный рабочий процесс. Щелкните изображение, чтобы увидеть это в полном размере в исходный контекст.
 
 [![Рабочий процесс непрерывной поставки](continuous-integration-and-continuous-delivery/_static/image1.png)](https://msdn.microsoft.com/library/dn449955.aspx)
 
@@ -66,7 +66,7 @@ ms.locfileid: "57046941"
 
 Также ознакомьтесь со следующими ресурсами:
 
-- [Создание конвейера выпусков с Team Foundation Server 2012](http://aka.ms/ReleasePipeline). Электронная книга практические лабораторные работы и примеры кода, шаблоны и методики, Майкрософт предоставляет подробное введение в непрерывную поставку. Рассматривается использование Visual Studio Lab Management и управление выпусками Visual Studio.
+- [Создание конвейера выпусков с Team Foundation Server 2012](https://aka.ms/ReleasePipeline). Электронная книга практические лабораторные работы и примеры кода, шаблоны и методики, Майкрософт предоставляет подробное введение в непрерывную поставку. Рассматривается использование Visual Studio Lab Management и управление выпусками Visual Studio.
 - [Руководство и инструменты DevOps Rangers ALM](https://aka.ms/vsarsolutions/). ALM Rangers появился решение companion DevOps Workbench, а также практические рекомендации в сотрудничестве с шаблонами &amp; книгой практических *Создание конвейера выпусков с TFS 2012*, как это отличный способ начать изучения понятий DevOps &amp; Release Management для TFS 2012 и сразу приступить к работе. Руководство показано, как после создания и развертывания в нескольких средах.
 - [Testing for Continuous Delivery with Visual Studio 2012](https://msdn.microsoft.com/library/jj159345.aspx). Электронная книга Microsoft Patterns and Practices, объясняется, как интегрировать автоматическое тестирование с помощью непрерывной поставки.
 - [WindowsAzureDeploymentTracker](https://github.com/RyanTBerry/WindowsAzureDeploymentTracker). Исходный код для это средство, предназначенное для захвата сборки из Team Foundation Server (с учетом метку), выполнить его сборку, ее пакет, позволяет другим людям в роль DevOps, чтобы настроить определенные аспекты и передать их в Azure. Средство отслеживает процесс развертывания, чтобы позволить операциям «откат» ранее развернутой версии. Это средство не имеет внешних зависимостей и может работать автономный с помощью API TFS и пакета Azure SDK.

@@ -8,12 +8,12 @@ ms.date: 01/30/2013
 ms.assetid: 3bd94827-3c59-448f-abc3-36e6df4858db
 msc.legacyurl: /single-page-application/overview/templates/breezeknockout-template
 msc.type: authoredcontent
-ms.openlocfilehash: 006d360748674a645ceddb82017f68b0f80f041b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 478ee9f851a395c68701347c04534bfe72d94512
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025841"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424863"
 ---
 <a name="breezeknockout-template"></a>Шаблон Breeze/Knockout
 ====================
@@ -83,7 +83,7 @@ ms.locfileid: "57025841"
 
 Логика проверки реализуется выполнено стороне клиента с очень просто. Атрибуты проверки в классах модели сервера передаются клиенту и выполняется автоматически, прежде чем клиент связывается с сервером.
 
-Просмотрите сетевой трафик. Обратите внимание, что факт никакие вызовы на сервер при очень просто обнаружена ошибка. Каждое допустимое Изменение привело к запрос POST к «/ api/Todo/SaveChanges». Очень просто объединяет изменения и отправляет их друг с другом виде одного запроса контроллер Web API `SaveChanges` метод. Это отличается от шаблона KockoutJS SPA, что делает PUT, POST и DELETE запросов для каждого элемента по отдельности.
+Просмотрите сетевой трафик. Обратите внимание, что факт никакие вызовы на сервер при очень просто обнаружена ошибка. Каждое допустимое Изменение привело к запрос POST к «/ api/Todo/SaveChanges». Очень просто объединяет изменения и отправляет их друг с другом виде одного запроса контроллер Web API `SaveChanges` метод. Это отличается от шаблона KnockoutJS SPA, что делает PUT, POST и DELETE запросов для каждого элемента по отдельности.
 
 ## <a name="peek-inside"></a>Показать внутри
 
@@ -99,7 +99,7 @@ ms.locfileid: "57025841"
 
 ![](http://www.breezejs.com/sites/all/images/spa-template/ServerArchitecture.png)
 
-Базовая архитектура совпадает со значением шаблона KockoutJS SPA. Тем не менее реализация выглядит гораздо проще: DTO были удалены, и большая часть деталей Entity Framework делегированных Breeze.NET.
+Базовая архитектура является таким же, как шаблон KnockoutJS SPA. Тем не менее реализация выглядит гораздо проще: DTO были удалены, и большая часть деталей Entity Framework делегированных Breeze.NET.
 
 ## <a name="next-steps"></a>Следующие шаги
 

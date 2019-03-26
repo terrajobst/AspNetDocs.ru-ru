@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 87daa99f-3810-407e-b969-dd28a192959d
 msc.legacyurl: /web-api/overview/older-versions/build-restful-apis-with-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 00304f67138873318b63c5e2ad0cd69aa7449521
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f1f5ebbf5170f205be331b6402951fb429196046
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041671"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423719"
 ---
 <a name="build-restful-apis-with-aspnet-web-api"></a>Создание API-интерфейсов RESTful с помощью веб-API ASP.NET
 ====================
@@ -528,7 +528,7 @@ ms.locfileid: "57041671"
 1. Перейдите к [портала управления Azure](https://manage.windowsazure.com/) и войдите с использованием учетных данных Майкрософт, связанную с вашей подпиской.
 
     > [!NOTE]
-    > С помощью Azure можно бесплатное размещение 10 веб-сайтов ASP.NET и затем масштабировать по мере увеличения объема трафика. Вы можете зарегистрироваться [здесь](http://aka.ms/aspnet-hol-azure).
+    > С помощью Azure можно бесплатное размещение 10 веб-сайтов ASP.NET и затем масштабировать по мере увеличения объема трафика. Вы можете зарегистрироваться [здесь](https://aka.ms/aspnet-hol-azure).
 
     ![Войдите на портал Windows Azure](build-restful-apis-with-aspnet-web-api/_static/image39.png "Войдите на портал Windows Azure")
 

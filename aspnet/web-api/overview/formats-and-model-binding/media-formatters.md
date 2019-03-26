@@ -8,12 +8,12 @@ ms.date: 01/20/2014
 ms.assetid: 4c56f64a-086a-44ce-99c2-4c69604cd7fd
 msc.legacyurl: /web-api/overview/formats-and-model-binding/media-formatters
 msc.type: authoredcontent
-ms.openlocfilehash: 7b7ba2fb3f1bba0447e700c84a017266cba305e6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bd54a1d8ae3a2913c9d8a11c5b31ba1c829450d2
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045021"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425318"
 ---
 <a name="media-formatters-in-aspnet-web-api-2"></a>Модули форматирования мультимедиа в ASP.NET Web API 2
 ====================
@@ -46,7 +46,7 @@ ms.locfileid: "57045021"
 Чтобы создать модуль форматирования мультимедиа, являются производными от одного из этих классов:
 
 - [MediaTypeFormatter](https://msdn.microsoft.com/library/system.net.http.formatting.mediatypeformatter.aspx). Этот класс использует асинхронное чтение и запись методы.
-- [BufferedMediaTypeFormatter](https://msdn.microsoft.com/library/system.net.http.formatting.bufferedmediatypeformatter.aspx). Этот класс является производным от **MediaTypeFormatter** , но использует sychronous методы чтения и записи.
+- [BufferedMediaTypeFormatter](https://msdn.microsoft.com/library/system.net.http.formatting.bufferedmediatypeformatter.aspx). Этот класс является производным от **MediaTypeFormatter** , но использует методы синхронные чтения и записи.
 
 Наследование от **BufferedMediaTypeFormatter** проще использовать, так как нет асинхронного кода, но это также значит, можно блокировать вызывающий поток ввода-вывода.
 
@@ -56,7 +56,7 @@ ms.locfileid: "57045021"
 
 [!code-csharp[Main](media-formatters/samples/sample3.cs)]
 
-Чтобы реализовать модуль форматирования CSV, определите класс, который является производным от **BufferedMediaTypeFormater**:
+Чтобы реализовать модуль форматирования CSV, определите класс, который является производным от **BufferedMediaTypeFormatter**:
 
 [!code-csharp[Main](media-formatters/samples/sample4.cs)]
 

@@ -8,12 +8,12 @@ ms.date: 06/05/2013
 ms.assetid: 347210ba-c452-4feb-886f-b51d89f58971
 msc.legacyurl: /signalr/overview/older-versions/troubleshooting
 msc.type: authoredcontent
-ms.openlocfilehash: d485829fb60b32b063405f37ae9c6c278bf7255b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 798c41ee36372d12f03d07bbd7af3a26c161d33f
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063341"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423329"
 ---
 <a name="signalr-troubleshooting-signalr-1x"></a>Устранение неполадок SignalR (SignalR 1.x)
 ====================
@@ -69,7 +69,7 @@ SignalR использует две модели обмена данными: К
 
 [!code-csharp[Main](troubleshooting/samples/sample3.cs)]
 
-**Серверный код на C#, сопоставляет маршрут к концентратору или несколько концентраторов, при наличии нескольких приложений**
+**C#код сервера, которая сопоставляет маршрут к концентратору или для нескольких центров при наличии нескольких приложений**
 
 [!code-csharp[Main](troubleshooting/samples/sample4.cs)]
 

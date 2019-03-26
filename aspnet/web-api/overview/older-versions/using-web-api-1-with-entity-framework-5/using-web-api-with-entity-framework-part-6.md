@@ -8,12 +8,12 @@ ms.date: 07/04/2012
 ms.assetid: 91ee29ee-0689-40ee-914a-e7dd733b6622
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-6
 msc.type: authoredcontent
-ms.openlocfilehash: 642ff4554ed3664af0b5cc8e49d6b236c568131b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 21cfbd0bf691ea033e9a5a873ab49c83507750d5
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054441"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425968"
 ---
 <a name="part-6-creating-product-and-order-controllers"></a>Часть 6. Создание контроллеров продуктов и заказов
 ====================
@@ -96,7 +96,7 @@ HTTP-ответа будет содержать массив продуктов 
 
 [!code-json[Main](using-web-api-with-entity-framework-part-6/samples/sample10.json)]
 
-Это хорошо структурированный заказ, и платформа Entity Framework к счастью вставит его в базу данных. Но он содержит сущности Product, которая раньше не было. Клиент только что создали новый продукт в базе данных! Это будет предусмотрена отдел fullfilment заказов, при просмотре заказ koala медведей. Мораль, необходимо быть очень внимательным, о данных, которые вы принимаете в запросе POST или PUT.
+Это хорошо структурированный заказ, и платформа Entity Framework к счастью вставит его в базу данных. Но он содержит сущности Product, которая раньше не было. Клиент только что создали новый продукт в базе данных! Это будет предусмотрена отдел исполнения заказов, при просмотре заказ koala медведей. Мораль, необходимо быть очень внимательным, о данных, которые вы принимаете в запросе POST или PUT.
 
 Чтобы избежать этой проблемы, измените `PostOrder` метод, чтобы использовать `OrderDTO` экземпляра. Используйте `OrderDTO` для создания `Order`.
 

@@ -7,12 +7,12 @@ ms.author: riande
 ms.date: 10/29/2018
 ms.technology: aspnet
 msc.type: content
-ms.openlocfilehash: 4dcc62573fad13ec8b37b2c59e884eec7ca80b92
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5e2f3781623af5a32149e1db1c17b67ce43b7da0
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57030651"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423983"
 ---
 # <a name="configuration-builders-for-aspnet"></a>Построители конфигурации для ASP.NET
 
@@ -191,7 +191,7 @@ ms.locfileid: "57030651"
 
 Этот построитель конфигурации предоставляет аналогичную функцию [менеджера секретов ASP.NET Core](/aspnet/core/security/app-secrets).
 
-[UserSecretsConfigBuilder](https://www.nuget.org/packages/Microsoft.Configuration.ConfigurationBuilders.UserSecrets/) можно использовать в проектах .NET Framework, но должен быть указан файл секретов. Кроме того, можно определить `UserSecretsId` свойство в проекте файл и создает файл необработанных секретов в нужное место для чтения. Чтобы сохранить внешние зависимости из проекта, файл с секретом является формате XML. Форматирование XML-кода — это деталь реализации, а формат не следует полагаться на. Если вам нужно совместно использовать *secrets.json* файл с проектами .NET Core, рассмотрите возможность использования [SimpleJsonConfigBuilder](#simplejsonconfig). `SimpleJsonConfigBuilder` Форматирования для .NET Core следует также рассматривать деталь реализации может быть изменена.
+[UserSecretsConfigBuilder](https://www.nuget.org/packages/Microsoft.Configuration.ConfigurationBuilders.UserSecrets/) можно использовать в проектах .NET Framework, но должен быть указан файл секретов. Кроме того, можно определить `UserSecretsId` свойство в проекте файл и создает файл необработанных секретов в нужное место для чтения. Чтобы сохранить внешние зависимости из проекта, файл с секретом является формате XML. Форматирование XML-кода — это деталь реализации, а формат не следует полагаться на. Если вам нужно совместно использовать *secrets.json* файл с проектами .NET Core, рассмотрите возможность использования [SimpleJsonConfigBuilder](#simplejsonconfigbuilder). `SimpleJsonConfigBuilder` Форматирования для .NET Core следует также рассматривать деталь реализации может быть изменена.
 
 Атрибуты конфигурации для `UserSecretsConfigBuilder`:
 

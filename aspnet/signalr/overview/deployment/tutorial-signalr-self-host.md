@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: 400db427-27af-4f2f-abf0-5486d5e024b5
 msc.legacyurl: /signalr/overview/deployment/tutorial-signalr-self-host
 msc.type: authoredcontent
-ms.openlocfilehash: 6a6359d59a4b715e13fe2bbcef57da6d6d6294b5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 194f72ce40067e177a23b1eb70bd07ceb2225a04
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039031"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425565"
 ---
 <a name="tutorial-signalr-self-host"></a>Учебник. Резидентное размещение SignalR
 ====================
@@ -58,7 +58,7 @@ SignalR сервера обычно размещается в приложени
 
 - Средах, где IIS не доступны или желательно, например существующую ферму серверов без служб IIS.
 - Необходимо избежать потери производительности в IIS.
-- Функциональные возможности SignalR — добавить в существующий экземпляр приложения, которое выполняется в службе Windows, рабочей роли Azure или другой процесс.
+- Функциональные возможности SignalR — добавить в существующее приложение, в котором выполняется служба Windows, рабочей роли Azure или другой процесс.
 
 Если это решение разработано как резидентного размещения для повышения производительности, рекомендуется также тестового приложения, размещенного в службах IIS, для определения преимуществ.
 

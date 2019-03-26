@@ -8,23 +8,23 @@ ms.date: 02/20/2013
 ms.assetid: a3cef801-a54b-4ebd-93c3-55764e2e14b1
 msc.legacyurl: /visual-studio/overview/2012/windows-azure-authentication
 msc.type: authoredcontent
-ms.openlocfilehash: a45b0ad2b61c2b78f7f06e85fe5e92193d73041d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: cd3eed8c14103d29a66acd475fafe5ff3122a960
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57052711"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421587"
 ---
-<a name="windows-azure-authentication"></a>Проверка подлинности Microsoft Azure
-====================
+# <a name="windows-azure-authentication"></a>Проверка подлинности Microsoft Azure
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Microsoft ASP.NET средства для Windows Azure Active Directory вы можете легко включить проверку подлинности для веб-приложений, размещенных на [веб-сайтов Windows Azure](https://www.windowsazure.com/home/features/web-sites/). Проверка подлинности Windows Azure можно использовать для проверки подлинности пользователей Office 365 из вашей организации, корпоративных учетных записей, синхронизированные из локальной службы Active Directory или пользователей, созданных в своем домене Windows Azure Active Directory. Включение проверки подлинности Windows Azure настраивает приложение для проверки подлинности пользователей с помощью одного [Windows Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) клиента.
-> 
+>
 > Средство проверки подлинности ASP.NET Windows Azure не поддерживается для веб-ролей в облачной службе, но мы планируем сделать это в будущем выпуске. [Windows Identity Foundation](https://msdn.microsoft.com/library/hh291066(v=VS.110).aspx) (WIF) поддерживается в веб-ролях Windows Azure.
-> 
+>
 > Дополнительные сведения по настройке синхронизации между вашей локальной Active Directory и клиенте Windows Azure Active Directory см. [использование AD FS 2.0 для реализации и управления единым входом](https://technet.microsoft.com/library/jj205462.aspx).
-> 
+>
 > Windows Azure Active Directory в настоящее время доступна [бесплатная Предварительная версия службы](https://azure.microsoft.com/free/?WT.mc_id=A443DD604).
 
 
@@ -38,23 +38,23 @@ ms.locfileid: "57052711"
 
 Можно создать любое веб-приложение с помощью Visual Studio 2012, в этом руководстве используется шаблон интрасети ASP.NET MVC.
 
-1. Создайте новое приложение интрасети MVC 4 ASP.NET и примите значения по умолчанию. (Оно должно быть In **tra** net и не в **ажите** net проекта).  
+1. Создайте новое приложение интрасети MVC 4 ASP.NET и примите значения по умолчанию. (Оно должно быть In **tra** net и не в **ажите** net проекта).
      ![](windows-azure-authentication/_static/image1.png)
 
 ## <a name="enable-window-azure-authentication-when-you-are-a-global-administrator-of-the-tenet"></a>Включение проверки подлинности Azure окна (Если вы являетесь глобальным администратором принцип)
 
 Если у вас нет существующего клиента Windows Azure Active Directory (например, через существующую учетную запись Office 365) можно создать новый клиент, зарегистрировавшись для [новую учетную запись Windows Azure Active Directory](http://g.microsoftonline.com/0AX00en/5).
 
-1. В меню "проект" выберите **включить проверку подлинности Windows Azure**:  
-  
+1. В меню "проект" выберите **включить проверку подлинности Windows Azure**:
+
    ![](windows-azure-authentication/_static/image2.png)
 
 2. Введите имя домена для вашего клиента Windows Azure Active Directory (например, contoso.onmicrosoft.com) и нажмите кнопку **включить**:
 
 ![](windows-azure-authentication/_static/image3.png)
 
-3. В веб-проверка подлинности диалоговое окно входа с правами администратора для вашего клиента Windows Azure Active Directory:  
-  
+3. В веб-проверка подлинности диалоговое окно входа с правами администратора для вашего клиента Windows Azure Active Directory:
+
    ![](windows-azure-authentication/_static/image4.png)
 
 ![](windows-azure-authentication/_static/image5.png)
@@ -65,19 +65,19 @@ ms.locfileid: "57052711"
 
 ![](windows-azure-authentication/_static/image6.png)
 
-В диалоговом окне отобразится **домена**, **идентификатор субъекта приложения** и **URL-адрес ответа** , необходимые для подготовки приложения с Azure Active Directory Принцип. Необходимо предоставить эти сведения тому, кто имеет недостаточно привилегий для подготовки приложения. См. в разделе[как реализовать единый вход Windows Azure Active Directory - приложение ASP.NET с](https://github.com/Azure-Samples/active-directory-dotnet-webapp-openidconnect) Дополнительные сведения о том, как использовать командлет для создания субъекта-службы вручную.  
+В диалоговом окне отобразится **домена**, **идентификатор субъекта приложения** и **URL-адрес ответа** , необходимые для подготовки приложения с Azure Active Directory Принцип. Необходимо предоставить эти сведения тому, кто имеет недостаточно привилегий для подготовки приложения. См. в разделе[как реализовать единый вход Windows Azure Active Directory - приложение ASP.NET с](https://github.com/Azure-Samples/active-directory-dotnet-webapp-openidconnect) Дополнительные сведения о том, как использовать командлет для создания субъекта-службы вручную.
 После успешной подготовки приложения вы можете щелкнуть **постоянно обновлять web.config с помощью выбранных параметров**. Если вы хотите продолжить разработку приложения во время ожидания подготовки нежелательно, можно щелкнуть **близко к хранить параметры в файле проекта**. В следующий раз, вызвать включить проверку подлинности Windows Azure и снимите этот флажок, подготовки, вы увидите те же параметры, и можно щелкнуть **Продолжить**, затем нажмите кнопку, **применить эти параметры в файле web.config**.
 
 1. Подождите, пока приложение настраивается для проверки подлинности Windows Azure и подготовлены с помощью Windows Azure Active Directory.
-2. После включения проверки подлинности Windows Azure для вашего приложения, нажмите кнопку **закрыть:** 
+2. После включения проверки подлинности Windows Azure для вашего приложения, нажмите кнопку **закрыть:**
 
     ![](windows-azure-authentication/_static/image7.png)
-3. Нажмите клавишу F5 для запуска приложения. Вы автоматически получите перенаправлены на страницу входа. Использовать учетные данные пользователя принцип каталог для входа в приложение...  
+3. Нажмите клавишу F5 для запуска приложения. Вы автоматически получите перенаправлены на страницу входа. Использовать учетные данные пользователя принцип каталог для входа в приложение...
 
     ![](windows-azure-authentication/_static/image1.jpg)
 4. Так как используется самозаверяющий тестовый сертификат для вашего приложения вы получите предупреждение от браузера, сертификат не был выдан доверенным центром сертификации.
 
-    Это предупреждение можно спокойно проигнорировать во время локальной разработки, щелкнув **Продолжить открытие этого веб-сайта:** 
+    Это предупреждение можно спокойно проигнорировать во время локальной разработки, щелкнув **Продолжить открытие этого веб-сайта:**
 
     ![](windows-azure-authentication/_static/image8.png)
 5. Теперь успешного входа приложение с помощью Windows Azure!
@@ -88,8 +88,8 @@ ms.locfileid: "57052711"
 
 - Подделка защита Anti-CROSS-Site ([CSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF))) класса ( *приложения\_Start\AntiXsrfConfig.cs* ) добавляется в проект.
 - Пакеты NuGet `System.IdentityModel.Tokens.ValidatingIssuerNameRegistry` добавляется в проект.
-- Параметры Windows Identity Foundation в приложение будут настроены на прием токенов безопасности из клиента Windows Azure Active Directory. Щелкните ниже, чтобы увидеть изменения, внесенные в развернутое представление *Web.config* файл.  
-  
+- Параметры Windows Identity Foundation в приложение будут настроены на прием токенов безопасности из клиента Windows Azure Active Directory. Щелкните ниже, чтобы увидеть изменения, внесенные в развернутое представление *Web.config* файл.
+
      ![](windows-azure-authentication/_static/image9.png)
 - Подготавливается субъекта-службы для приложения в клиенте Windows Azure Active Directory.
 - Протокол HTTPS включен.
@@ -100,7 +100,7 @@ ms.locfileid: "57052711"
 
 Чтобы опубликовать приложение с помощью Windows Azure на веб-сайте Azure:
 
-1. Щелкнуть правой кнопкой мыши приложение и выберите **публикации:** 
+1. Щелкнуть правой кнопкой мыши приложение и выберите **публикации:**
 
     ![](windows-azure-authentication/_static/image3.jpg)
 2. В диалоговом окне публикации веб-сайта скачайте и импортируйте профиль публикации для веб-сайт Azure.
@@ -109,7 +109,7 @@ ms.locfileid: "57052711"
 3. **Подключения** вкладке показано **URL-адрес назначения** (общедоступный с выходом URL-адрес для вашего приложения). Нажмите кнопку **проверить подключение** Чтобы проверить подключение:
 
     ![](windows-azure-authentication/_static/image5.jpg)
-4. Если вы опубликовали этот веб-сайт Azure ранее рекомендуется проверить **удалять дополнительные файлы в месте назначения** параметр, чтобы обеспечить приложение публикует аккуратно. Обратите внимание, что **включить проверку подлинности Windows Azure** флажке slected.  
+4. Если вы опубликовали этот веб-сайт Azure ранее рекомендуется проверить **удалять дополнительные файлы в месте назначения** параметр, чтобы обеспечить приложение публикует аккуратно. Обратите внимание, что **включить проверку подлинности Windows Azure** установлен флажок.
 
     ![](windows-azure-authentication/_static/image10.png)
 5. Необязательные: На **предварительной версии** вкладке **начать просмотр** для просмотра развернутых файлов.
@@ -130,31 +130,31 @@ ms.locfileid: "57052711"
 9. При появлении запроса, войдите в качестве пользователя в каталоге:
 
     ![](windows-azure-authentication/_static/image8.jpg)
-10. Вы успешно теперь выполнили вход в Azure в которых размещено приложение, с помощью Windows Azure.  
-  
+10. Вы успешно теперь выполнили вход в Azure в которых размещено приложение, с помощью Windows Azure.
+
      ![](windows-azure-authentication/_static/image9.jpg)
 
 ## <a name="known-issues"></a>Известные проблемы
 
-#### <a name="role-based-authorization-fails-when-using-windows-azure-authenticationopop"></a>Ролевая Авторизация происходит сбой при проверке подлинности Windows Azure < o:p >< / o:p >
+#### <a name="role-based-authorization-fails-when-using-windows-azure-authentication"></a>При использовании проверки подлинности Windows Azure, происходит сбой авторизации на основе ролей
 
-Проверка подлинности Windows Azure не поддерживает в настоящее время утверждение необходимые роли таким образом, можно выполнять авторизацию на основе ролей. Роль пользователя, прошедшего проверку подлинности должна осуществляться вручную из Windows Azure Active Directory. < o:p >< / o:p >
+Проверка подлинности Windows Azure не поддерживает в настоящее время утверждение необходимые роли таким образом, можно выполнять авторизацию на основе ролей. Роль пользователя, прошедшего проверку подлинности должна осуществляться вручную из Windows Azure Active Directory.
 
-#### <a name="browsing-to-an-application-with-windows-azure-authentication-results-in-the-error-acs20016-the-domain-of-the-logged-in-user-livecom-does-not-match-any-allowed-domain-of-this-stsopop"></a>Просмотр приложению, с помощью проверки подлинности Windows Azure приводит к ошибке «ACS20016 домен вошедшего в систему пользователя (live.com) не совпадает ни разрешено домена этого STS» < o:p >< / o:p >
+#### <a name="browsing-to-an-application-with-windows-azure-authentication-results-in-the-error-acs20016-the-domain-of-the-logged-in-user-livecom-does-not-match-any-allowed-domain-of-this-sts"></a>Перейдя к приложения с Windows в ошибке «домен вошедшего в систему пользователя (live.com) не совпадает ни ACS20016 разрешено домена этого STS» результаты проверки подлинности Azure
 
-Если вы уже вошли с учетной записью Майкрософт (например, hotmail.com, live.com, outlook.com), и вы попытаетесь получить доступ к приложению, для которой проверка подлинности Windows Azure может получить ответ ошибке 400, так как домен учетной записи Майкрософт не является службой Windows Azure Active Directory. Чтобы войти в приложение, выйти из учетной записи Майкрософт сначала. < o:p >< / o:p >
+Если вы уже вошли с учетной записью Майкрософт (например, hotmail.com, live.com, outlook.com), и вы попытаетесь получить доступ к приложению, для которой проверка подлинности Windows Azure может получить ответ ошибке 400, так как домен учетной записи Майкрософт не является службой Windows Azure Active Directory. Чтобы войти в приложение, выйти из учетной записи Майкрософт сначала.
 
-#### <a name="logging-into-an-application-with-windows-azure-authentication-enabled-and-a-x509certificatevalidationmode-other-than-none-results-in-certificate-validation-errors-for-the-accountsaccesscontrolwindowsnet-certificateopop"></a>Вход в приложение с включенной проверкой подлинности Windows Azure и X509CertificateValidationMode, отличное от None приводит ошибки проверки сертификатов для сертификата accounts.accesscontrol.windows.net < o:p >< / o:p >
+#### <a name="logging-into-an-application-with-windows-azure-authentication-enabled-and-a-x509certificatevalidationmode-other-than-none-results-in-certificate-validation-errors-for-the-accountsaccesscontrolwindowsnet-certificate"></a>Вход в приложение с включить проверку подлинности Windows Azure и X509CertificateValidationMode, отличное от None в результате ошибки проверки сертификатов для сертификата accounts.accesscontrol.windows.net
 
-Проверка сертификата не является обязательным и следует отключить. Отпечаток издателя сертификата проверяется с WSFederationAuthenticationModule. < o:p >< / o:p >
+Проверка сертификата не является обязательным и следует отключить. Отпечаток издателя сертификата проверяется с WSFederationAuthenticationModule.
 
-#### <a name="when-attempting-to-enable-windows-azure-authentication-the-web-authentication-dialog-shows-the-error-acs20016-the-domain-of-the-logged-in-user-contosoonmicrosoftcom-does-not-match-any-allowed-domain-of-this-stsopop"></a>При попытке включить проверку подлинности Windows Azure в диалоговом окне веб-проверки подлинности отображаются ошибки «ACS20016: Домен пользователя, вошедшего в систему (contoso.onmicrosoft.com) не соответствует любой допустимому домену STS.» < o:p >< / o:p >
+#### <a name="when-attempting-to-enable-windows-azure-authentication-the-web-authentication-dialog-shows-the-error-acs20016-the-domain-of-the-logged-in-user-contosoonmicrosoftcom-does-not-match-any-allowed-domain-of-this-sts"></a>При попытке включить проверку подлинности Windows Azure в диалоговом окне веб-проверки подлинности отображаются ошибки «ACS20016: Домен пользователя, вошедшего в систему (contoso.onmicrosoft.com) не соответствует любой допустимому домену STS.»
 
-Эта ошибка наблюдается при был ранее успешно выполнен вход через Windows Azure Active Directory учетную запись из в одном процессе Visual Studio. Выйдите из указанной учетной записи или перезапустите Visual Studio. Если вы ранее вошел в систему и выбрали вариант «Оставаться в системе», то может потребоваться очистить файлы cookie браузер. < o:p >< / o:p >
+Эта ошибка наблюдается при был ранее успешно выполнен вход через Windows Azure Active Directory учетную запись из в одном процессе Visual Studio. Выйдите из указанной учетной записи или перезапустите Visual Studio. Если вы ранее вход и выбрали вариант «Оставаться в системе» может потребоваться очистить файлы cookie браузера.
 
-## <a name="acs20012-the-request-is-not-a-valid-ws-federation-protocol-message-opop"></a>ACS20012: Запрос не является допустимым сообщением протокола WS-Federation < o:p >< / o:p >
+## <a name="acs20012-the-request-is-not-a-valid-ws-federation-protocol-message"></a>ACS20012: Запрос не является допустимым сообщением протокола WS-Federation
 
-Это может произойти, если вы уже вошли в систему с помощью некоторых других идентификатора Майкрософт для одной из служб Azure. Окно браузера для частного использования, например InPrivate в Internet Explorer или режиме InPrivate в браузере Chrome или очистить все файлы cookie. < o:p >< / o:p >
+Это может произойти, если вы уже вошли в систему с помощью некоторых других идентификатора Майкрософт для одной из служб Azure. Окно браузера для частного использования, например InPrivate в Internet Explorer или режиме InPrivate в браузере Chrome или очистить все файлы cookie.
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 

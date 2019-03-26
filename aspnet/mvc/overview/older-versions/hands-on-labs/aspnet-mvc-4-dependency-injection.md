@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 84c7baca-1c54-4c44-8f52-4282122d6acb
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-dependency-injection
 msc.type: authoredcontent
-ms.openlocfilehash: 3f9222c7b485f552da91f4875c882db7e03cdd0a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 52aba3fa5948d32180fbf135444433771b17756d
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046751"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425652"
 ---
 # <a name="aspnet-mvc-4-dependency-injection"></a>Внедрение зависимостей в ASP.NET MVC 4
 
@@ -361,7 +361,7 @@ Music Store MVC, теперь предоставляются в решении b
     (Code Snippet - *ASP.NET зависимостей путем внедрения кода лаборатории - Ex02 - Register CustomViewPageActivator*)
 
     [!code-csharp[Main](aspnet-mvc-4-dependency-injection/samples/sample16.cs)]
-5. Замените экземпляр сопоставителя зависимостей по умолчанию ASP.NET MVC 4 **UnityDependencyResolver**. Чтобы сделать это, замените **Initialise** метод содержимого следующим кодом:
+5. Замените экземпляр сопоставителя зависимостей по умолчанию ASP.NET MVC 4 **UnityDependencyResolver**. Чтобы сделать это, замените **инициализировать** метод содержимого следующим кодом:
 
     (Code Snippet - *ASP.NET зависимостей путем внедрения кода лаборатории - Ex02 - обновления Сопоставитель зависимостей*)
 
@@ -508,7 +508,7 @@ Music Store MVC, теперь предоставляются в решении b
 
 Вы можете установить **Microsoft Visual Studio Express 2012 для Web** или другой &quot;Express&quot; версию с помощью **[Microsoft Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx)**. Приведенные ниже инструкции описывают действия, необходимые для установки *Visual studio Express 2012 для Web* с помощью *Microsoft Web Platform Installer*.
 
-1. Перейдите к [ [ https://go.microsoft.com/? linkid = 9810169](https://go.microsoft.com/?linkid=9810169)](https://go.microsoft.com/?linkid=9810169). Кроме того, если вы уже установили установщика веб-платформы, можно открыть его и выполните поиск продукта &quot; <em>Visual Studio Express 2012 для Web с пакетом Windows Azure SDK</em>&quot;.
+1. Перейдите по адресу [https://go.microsoft.com/?linkid=9810169](https://go.microsoft.com/?linkid=9810169). Кроме того, если вы уже установили установщика веб-платформы, можно открыть его и выполните поиск продукта &quot; <em>Visual Studio Express 2012 для Web с пакетом Windows Azure SDK</em>&quot;.
 2. Щелкните **установить сейчас**. Если у вас нет **установщика веб-платформы** вы будете перенаправлены к сначала загрузить и установить его.
 3. Один раз **установщика веб-платформы** открыт, нажмите кнопку **установить** для запуска программы установки.
 

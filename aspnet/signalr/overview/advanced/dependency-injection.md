@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: a14121ae-02cf-4024-8af0-9dd0dc810690
 msc.legacyurl: /signalr/overview/advanced/dependency-injection
 msc.type: authoredcontent
-ms.openlocfilehash: 54e263e277852d2d478ce5bccd4164254498831a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 957facaf2988fedb6615e95701af5155cbcb23d2
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024751"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423101"
 ---
 <a name="dependency-injection-in-signalr"></a>Внедрение зависимостей в SignalR
 ====================
@@ -59,7 +59,7 @@ ms.locfileid: "57024751"
 
 [!code-csharp[Main](dependency-injection/samples/sample3.cs)]
 
-Теперь объект не несет ответственности за выбора `ILogger` для использования. Вы можете swich `ILogger` реализации без изменения объекты, зависящие от нее.
+Теперь объект не несет ответственности за выбора `ILogger` для использования. Вы можете `ILogger` реализации без изменения объекты, зависящие от нее.
 
 [!code-csharp[Main](dependency-injection/samples/sample4.cs)]
 
@@ -179,7 +179,7 @@ Visual Studio создает новый интерфейс с именем `ISto
 
 [!code-csharp[Main](dependency-injection/samples/sample18.cs)]
 
-Этот код creatres анонимную функцию, которая возвращает **IHubConnection**. **WhenInjectedInto** метод указывает Ninject, чтобы использовать эту функцию только в том случае, при создании `IStockTicker` экземпляров. Причина в том, что создает SignalR **IHubConnectionContext** экземпляров на внутреннем уровне и мы не хотим переопределить как SignalR создает их. Эта функция применяется только к нашей `StockTicker` класса.
+Этот код создает анонимную функцию, которая возвращает **IHubConnection**. **WhenInjectedInto** метод указывает Ninject, чтобы использовать эту функцию только в том случае, при создании `IStockTicker` экземпляров. Причина в том, что создает SignalR **IHubConnectionContext** экземпляров на внутреннем уровне и мы не хотим переопределить как SignalR создает их. Эта функция применяется только к нашей `StockTicker` класса.
 
 Передайте в сопоставителе зависимостей в **MapSignalR** метод путем добавления конфигурации концентратора:
 

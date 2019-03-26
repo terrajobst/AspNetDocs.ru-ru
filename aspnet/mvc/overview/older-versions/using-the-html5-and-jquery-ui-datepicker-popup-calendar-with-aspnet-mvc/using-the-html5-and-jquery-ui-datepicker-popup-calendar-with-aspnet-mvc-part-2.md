@@ -8,12 +8,12 @@ ms.date: 08/29/2011
 ms.assetid: 21a178de-4c5a-4211-8a9c-74ec576c0f30
 msc.legacyurl: /mvc/overview/older-versions/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-2
 msc.type: authoredcontent
-ms.openlocfilehash: 9b27ccc6ce26e8266947c531d299ba69bbec4fde
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5eff66b701d775a553a51437e540619b4524a58f
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055831"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421561"
 ---
 <a name="using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc---part-2"></a>Использование HTML5 и элемент интерфейса всплывающего календаря jQuery в ASP.NET MVC. часть 2
 ====================
@@ -24,7 +24,7 @@ ms.locfileid: "57055831"
 
 ## <a name="adding-an-automatic-datetime-template"></a>Добавление шаблона автоматического даты и времени
 
-В первой части этого руководства вы увидели, как можно добавлять атрибуты в модель, чтобы явно задать формат, и как можно явно указать шаблон, который используется для отображения модели. Например [DisplayFormat](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.displayformatattribute.aspx) атрибут в следующем коде явным задает форматирование для `ReleaseDate` свойство.
+В первой части этого руководства вы увидели, как можно добавлять атрибуты в модель, чтобы явно задать формат, и как можно явно указать шаблон, который используется для отображения модели. Например [DisplayFormat](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.displayformatattribute.aspx) атрибут в приведенном ниже коде явным образом задает форматирование для `ReleaseDate` свойство.
 
 [!code-csharp[Main](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-2/samples/sample1.cs)]
 
@@ -104,7 +104,7 @@ ms.locfileid: "57055831"
 
 Это время `ReleaseDate` свойство отображает дату без времени и без полужирным красным шрифтом. Это показывает, что тип шаблона, который имеет имя данных (в данном случае `DateTime`) автоматически используется для отображения всех свойств модели этого типа. После того как вы переименован *DateTime.cshtml* файл *LoudDateTime.cshtml*, ASP.NET не удается найти шаблон в *Views\Movies\DisplayTemplates* папки, чтобы его использовать *DateTime.cshtml* шаблон из * Views\Movies\Shared\* папки.
 
-(Сопоставления шаблона без учета регистра, поэтому возможно, были созданы имя файла шаблона в любом регистре. Например *DATETIME.chstml, datetime.cshtml*, и *DaTeTiMe.cshtml* будет соответствовать всем `DateTime` тип.)
+(Сопоставления шаблона без учета регистра, поэтому возможно, были созданы имя файла шаблона в любом регистре. Например *DATETIME.cshtml, datetime.cshtml*, и *DaTeTiMe.cshtml* будет соответствовать всем `DateTime` тип.)
 
 Для просмотра: на этом этапе `ReleaseDate` поле отображается с помощью *Views\Movies\DisplayTemplates\DateTime.cshtml* шаблон, который отображает данные, в формате короткой даты, но в противном случае добавляет нет особого формата.
 

@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: b7dba543-73c3-4534-a9a0-ba70fa2c6a8a
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-fundamentals
 msc.type: authoredcontent
-ms.openlocfilehash: d8e837a5d56871d271590859c2e82336111cc87a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d3bc39a37cace003c3fda6691f0dd7f893128b07
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029411"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425253"
 ---
 # <a name="aspnet-mvc-4-fundamentals"></a>Основы ASP.NET MVC 4
 
@@ -389,7 +389,7 @@ ms.locfileid: "57029411"
    (C#)
 
     [!code-cshtml[Main](aspnet-mvc-4-fundamentals/samples/sample7.cshtml)]
-5. Включить div для его отображения текста каждой страницы. Замените  <strong>@RenderBody()</strong> higlighted следующим кодом: (C#)
+5. Включить div для его отображения текста каждой страницы. Замените  <strong>@RenderBody()</strong> на следующий выделенный код: (C#)
 
     [!code-cshtml[Main](aspnet-mvc-4-fundamentals/samples/sample8.cshtml)]
 
@@ -800,7 +800,7 @@ ms.locfileid: "57029411"
    > 
    > Несмотря на то, что этот подход работает, он зависит от строки жестко. При переименовании позже контроллера, необходимо вручную изменить эту инструкцию. Лучшим вариантом будет его использовать **вспомогательный метод HTML** метод. ASP.NET MVC включает в себя метод вспомогательный метод HTML, который доступен для выполнения таких задач. **Html.ActionLink()** вспомогательный метод позволяет легко создавать HTML **&lt;&gt;** ссылки, убедиться, пути URL-адресов осуществляется должным образом в кодировке URL-адрес.
    > 
-   > Htlm.ActionLink имеет несколько перегрузок. В этом упражнении вам понадобится использовать одно, которое принимает три параметра:
+   > Html.ActionLink имеет несколько перегрузок. В этом упражнении вам понадобится использовать одно, которое принимает три параметра:
    > 
    > 1. Текст ссылки, который будет отображаться название жанра
    > 2. Имя действия контроллера (**Обзор**)
@@ -1017,7 +1017,7 @@ ms.locfileid: "57029411"
 1. Перейдите к [портала управления Windows Azure](https://manage.windowsazure.com/) и войдите с использованием учетных данных Майкрософт, связанную с вашей подпиской.
 
     > [!NOTE]
-    > С помощью Windows Azure можно бесплатное размещение 10 веб-сайтов ASP.NET и затем масштабировать по мере увеличения объема трафика. Вы можете зарегистрироваться [здесь](http://aka.ms/aspnet-hol-azure).
+    > С помощью Windows Azure можно бесплатное размещение 10 веб-сайтов ASP.NET и затем масштабировать по мере увеличения объема трафика. Вы можете зарегистрироваться [здесь](https://aka.ms/aspnet-hol-azure).
 
     ![Войдите на портал Windows Azure](aspnet-mvc-4-fundamentals/_static/image48.png "Войдите на портал Windows Azure")
 

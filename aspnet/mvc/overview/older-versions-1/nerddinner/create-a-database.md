@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: 983f3ffa-08b8-4868-b8c9-aa34593fc683
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/create-a-database
 msc.type: authoredcontent
-ms.openlocfilehash: b6ab0740f251889f0fa0561809cac2bbe79bcb3a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 48ca2984ca8e4ec5b2bc49952a8718aa26138aea
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57064911"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423706"
 ---
 <a name="create-a-database"></a>Создание базы данных
 ====================
@@ -94,7 +94,7 @@ ms.locfileid: "57064911"
 
 Теперь у нас есть две таблицы в базе данных. Наши последний этап разработки схемы будет настроить отношение «один ко многим» между этими двумя таблицами — таким образом, чтобы мы можно связать каждую строку Dinner с ноль или более строк RSVP, применяемых к этому. Мы сделаем это путем настройки столбца таблицы RSVP «DinnerID» требуется отношение внешнего ключа в столбец «DinnerID» в таблице «Ужинов».
 
-Чтобы сделать это, мы откроем RSVP таблицу в конструкторе таблиц, дважды щелкнув его в обозревателе серверов. Затем мы выберем столбец «DinnerID», щелкните правой кнопкой мыши и выберите из контекстного меню команду «Relationshps...»:
+Чтобы сделать это, мы откроем RSVP таблицу в конструкторе таблиц, дважды щелкнув его в обозревателе серверов. Затем мы выберем столбец «DinnerID», щелкните правой кнопкой мыши и выберите «Связей...» Команда контекстного меню:
 
 ![](create-a-database/_static/image12.png)
 

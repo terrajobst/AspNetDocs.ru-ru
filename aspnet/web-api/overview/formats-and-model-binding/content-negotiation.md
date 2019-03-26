@@ -8,12 +8,12 @@ ms.date: 05/20/2012
 ms.assetid: 0dd51b30-bf5a-419f-a1b7-2817ccca3c7d
 msc.legacyurl: /web-api/overview/formats-and-model-binding/content-negotiation
 msc.type: authoredcontent
-ms.openlocfilehash: e936bdfa52f786ec86d3e84eac3cd644225b6f92
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9cfbed49c1022fbf26160e89aed3ab474f5e0fdc
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039251"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425695"
 ---
 <a name="content-negotiation-in-aspnet-web-api"></a>Согласование содержимого в веб-API ASP.NET
 ====================
@@ -48,7 +48,7 @@ ms.locfileid: "57039251"
 
 [!code-console[Main](content-negotiation/samples/sample3.cmd)]
 
-В этом примере клиент запросил JSON, Javascript или «все», что (\*/\*). Сервер отвечает с JSON-представление `Product` объекта. Обратите внимание, что имеет значение заголовка Content-Type в ответе &quot;application/json&quot;.
+В этом примере клиент запросил JSON, Javascript или «все», что (\*/\*). Сервер вернул JSON-представление `Product` объекта. Обратите внимание, что имеет значение заголовка Content-Type в ответе &quot;application/json&quot;.
 
 Контроллер также может возвращать **HttpResponseMessage** объекта. Чтобы указать объект среды CLR, текст ответа, вызовите **CreateResponse** метод расширения:
 
@@ -62,7 +62,7 @@ ms.locfileid: "57039251"
 
 Во-первых, конвейер получает **IContentNegotiator** службы из **HttpConfiguration** объекта. Он также возвращает список модулей форматирования мультимедиа из **HttpConfiguration.Formatters** коллекции.
 
-Затем конвейер вызывает **IContentNegotiatior.Negotiate**, передавая:
+Затем конвейер вызывает **IContentNegotiator.Negotiate**, передавая:
 
 - Тип объекта для сериализации
 - Коллекция модулей форматирования мультимедиа
@@ -73,7 +73,7 @@ ms.locfileid: "57039251"
 - Какой модуль форматирования
 - Тип носителя для ответа
 
-Если модуль форматирования не найден, **Negotiate** возвращает **null**и ошибка клиента получении HTTP 406 (неприемлемо).
+Если модуль форматирования не найден, **Negotiate** возвращает **null**, и клиент получает ошибки HTTP 406 (неприемлемо).
 
 В следующем коде показано, как контроллер может напрямую вызывать согласование содержимого:
 

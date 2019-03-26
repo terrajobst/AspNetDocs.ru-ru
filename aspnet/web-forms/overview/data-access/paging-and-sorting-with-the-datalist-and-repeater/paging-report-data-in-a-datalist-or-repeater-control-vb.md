@@ -8,12 +8,12 @@ ms.date: 11/13/2006
 ms.assetid: bbd6b7f7-b98a-48b4-93f3-341d6a4f53c0
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting-with-the-datalist-and-repeater/paging-report-data-in-a-datalist-or-repeater-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 64615f126f87cec7a96f86385ee7a717fdcdd103
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 2d867c7ae073fafe1e9674deb7c03bf1cfd24dd7
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57057671"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425838"
 ---
 <a name="paging-report-data-in-a-datalist-or-repeater-control-vb"></a>Разбиение по страницам данных отчета в элементе управления DataList или Repeater (VB)
 ====================
@@ -127,7 +127,7 @@ ms.locfileid: "57057671"
 
 Индекс страницы и значения размера страниц должны сохраняться во время обратной передачи. Они могут храниться в состоянии представления, сохраняются в строку запроса, хранящихся в переменных сеанса или сохраненных с помощью некоторые другие методики. В этом руководстве мы будем использовать строку запроса, который имеет преимущество, позволяя определенной страницы данных в закладки.
 
-В частности, используйте pageIndex поля строки запроса и pageSize для `pageIndex` и `pageSize` параметров, соответственно (см. рис. 7). Отвлекитесь и задать значения по умолчанию для этих параметров, как значения строки запроса, выиграл t присутствовать при первом посещении этой странице. Для `pageIndex`, значение по умолчанию равно 0 (откроется первая страница данных) и `pageSize` s значение по умолчанию для 4.
+В частности, используйте pageIndex поля строки запроса и pageSize для `pageIndex` и `pageSize` параметров, соответственно (см. рис. 7). Отвлекитесь и задать значения по умолчанию для этих параметров, как значения строки запроса не будет отображаться в том случае, когда пользователь сначала посещает эту страницу. Для `pageIndex`, значение по умолчанию равно 0 (откроется первая страница данных) и `pageSize` s значение по умолчанию для 4.
 
 
 [![Использовать строку запроса в качестве источника для параметров pageIndex и pageSize](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image14.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image13.png)

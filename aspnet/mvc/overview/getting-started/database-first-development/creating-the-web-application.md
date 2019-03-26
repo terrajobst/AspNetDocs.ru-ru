@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: bc8f2bd5-ff57-4dcd-8418-a5bd517d8953
 msc.legacyurl: /mvc/overview/getting-started/database-first-development/creating-the-web-application
 msc.type: authoredcontent
-ms.openlocfilehash: dced55386c3f810e406c5c2b3f0071b45e3b2dbd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 481a0ee9b19e5d35d736b2cc937a124900bce446
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041581"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58426137"
 ---
 # <a name="tutorial-create-the-the-web-application-and-data-models-for-ef-database-first-with-aspnet-mvc"></a>Учебник. Создание веб-приложения и моделей данных для EF Database First с ASP.NET MVC
 
@@ -64,7 +64,7 @@ ms.locfileid: "57041581"
 
 При наличии подключения базы данных, определенные в вашей среде разработки, может появиться одно из этих подключений предварительно выбраны. Тем не менее вы хотите создать новое подключение к базе данных, созданной в первой части этого руководства. Нажмите кнопку **новое подключение** кнопки.
 
-В окне «Свойства подключения» введите имя локального сервера, где она была создана (в данном случае **\Projects13 (localdb)**). После ввода имени сервера, выберите ContosoUniversityData из доступных баз данных.
+В окне «Свойства подключения» введите имя локального сервера, где она была создана (в данном случае **\ProjectsV13 (localdb)**). После ввода имени сервера, выберите ContosoUniversityData из доступных баз данных.
 
 ![Задание свойств соединения](creating-the-web-application/_static/image8.png)
 

@@ -8,12 +8,12 @@ ms.date: 07/04/2012
 ms.assetid: 6b9ae3c4-0274-4170-a1bb-9df9c546b2a9
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-3
 msc.type: authoredcontent
-ms.openlocfilehash: 7ad0ec27021514b447e569e479a9e9127e3f75fa
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0fc533fb3673639769ecdfa8b3d02ff40133cb27
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57037651"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421627"
 ---
 <a name="part-3-creating-an-admin-controller"></a>Часть 3. Создание контроллера администрирования
 ====================
@@ -65,7 +65,7 @@ ms.locfileid: "57037651"
 
 `AdminController` Класс определяет пять методов, которые реализуют основные функции CRUD. Каждый метод соответствует URI, который может вызвать клиент:
 
-| Метод контроллера | Описание: | URI | Метод HTTP |
+| Метод контроллера | Описание | URI | Метод HTTP |
 | --- | --- | --- | --- |
 | GetProducts | Получает все продукты. | API/products | GET |
 | GetProduct | Находит продукта по идентификатору. | API/products/*идентификатор* | GET |
@@ -95,7 +95,7 @@ ms.locfileid: "57037651"
 
 На этом этапе мы еще не написали код клиента, но вы можете вызвать web API с помощью веб-браузер или отладки HTTP, такие как средство [Fiddler](http://www.fiddler2.com/fiddler2/). В Visual Studio нажмите клавишу F5, чтобы начать отладку. Веб-браузере будет открыта `http://localhost:*portnum*/`, где *portnum* является некоторое число портов.
 
-Отправить запрос HTTP для "`http://localhost:*portnum*/api/admin`. Первый запрос может быть медленное, поскольку Entify Framework необходимо создать и заполнить базу данных. Ответ должен нечто похожее на следующее:
+Отправить запрос HTTP для "`http://localhost:*portnum*/api/admin`. Первый запрос может быть медленное, так как Entity Framework необходимо создать и заполнить базу данных. Ответ должен нечто похожее на следующее:
 
 [!code-console[Main](using-web-api-with-entity-framework-part-3/samples/sample6.cmd)]
 

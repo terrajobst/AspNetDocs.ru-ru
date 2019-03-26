@@ -8,12 +8,12 @@ ms.date: 08/29/2011
 ms.assetid: 57666c69-2b0f-423a-a61d-be49547fa585
 msc.legacyurl: /mvc/overview/older-versions/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-4
 msc.type: authoredcontent
-ms.openlocfilehash: 6768472b0c75757c9f368cfea58d5084c26719e1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e933ca0398d99a41089b4d1e18d21dd657db4b6b
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57065651"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423355"
 ---
 <a name="using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc---part-4"></a>Использование HTML5 и элемент интерфейса всплывающего календаря на jQuery в ASP.NET MVC. часть 4
 ====================
@@ -24,7 +24,7 @@ ms.locfileid: "57065651"
 
 ### <a name="adding-a-template-for-editing-dates"></a>Добавление шаблона для редактирования даты
 
-В этом разделе вы создадите шаблон для изменения дат, которые будут применяться, когда ASP.NET MVC отображает пользовательский Интерфейс для редактирования свойств модели, которые помечены атрибутом **даты** перечисление [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) атрибута. Шаблон будет отображаться только дата; время не отображается. В шаблоне используется [Datepicker пользовательского интерфейса jQuery](http://jqueryui.com/demos/datepicker/) всплывающего календаря выбора дат для предоставления способа для изменения дат.
+В этом разделе вы создадите шаблон для изменения дат, которые будут применяться, когда ASP.NET MVC отображает пользовательский Интерфейс для редактирования свойств модели, которые помечены атрибутом **даты** перечисление [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) атрибут. Шаблон будет отображаться только дата; время не отображается. В шаблоне используется [Datepicker пользовательского интерфейса jQuery](http://jqueryui.com/demos/datepicker/) всплывающего календаря выбора дат для предоставления способа для изменения дат.
 
 Для начала работы откройте *Movie.cs* файл и добавьте [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) атрибут с **даты** перечисления `ReleaseDate` свойства, как показано в следующем коде:
 

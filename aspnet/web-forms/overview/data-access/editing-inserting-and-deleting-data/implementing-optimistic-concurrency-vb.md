@@ -8,12 +8,12 @@ ms.date: 07/17/2006
 ms.assetid: 2646968c-2826-4418-b1d0-62610ed177e3
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/implementing-optimistic-concurrency-vb
 msc.type: authoredcontent
-ms.openlocfilehash: e33e4b401d957f4aa5560193dd8af0e53ca3b631
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 06ee6f8ea415ddde4e47acacaa74a29cbf9a0478
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032701"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425591"
 ---
 <a name="implementing-optimistic-concurrency-vb"></a>Реализация оптимистичного параллелизма (VB)
 ====================
@@ -60,7 +60,7 @@ ms.locfileid: "57032701"
 **Рис. 2**: Для обновления или удаления будет успешной, исходные значения должен быть равным текущие значения базы данных ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-vb/_static/image6.png))
 
 
-Существуют различные подходы к реализации оптимистичного параллелизма (см. в разделе [статье](http://peterbromberg.net/) [Optmistic параллелизма обновление логики](http://www.eggheadcafe.com/articles/20050719.asp) для кратко рассмотрим несколько вариантов). Типизированный набор DataSet ADO.NET предоставляет одну реализацию, которая может быть настроена с помощью простой установки флажка. Активизация оптимистичного параллелизма для TableAdapter в типизированном наборе DataSet дополняет `UPDATE` и `DELETE` инструкций сравнением всех исходных значений в `WHERE` предложение. Следующие `UPDATE` инструкция, к примеру, обновляет название и цену продукта, только в том случае, если текущие значения базы данных равны значениям, которые были изначально получены при обновлении записи GridView. `@ProductName` И `@UnitPrice` параметры содержат новые значения, введенные пользователем, в то время как `@original_ProductName` и `@original_UnitPrice` содержат значения, которые были изначально загружены в GridView, если была нажата кнопка редактирования:
+Существуют различные подходы к реализации оптимистичного параллелизма (см. в разделе [статье](http://peterbromberg.net/) [логика обновления оптимистичного параллелизма](http://www.eggheadcafe.com/articles/20050719.asp) для кратко рассмотрим несколько вариантов). Типизированный набор DataSet ADO.NET предоставляет одну реализацию, которая может быть настроена с помощью простой установки флажка. Активизация оптимистичного параллелизма для TableAdapter в типизированном наборе DataSet дополняет `UPDATE` и `DELETE` инструкций сравнением всех исходных значений в `WHERE` предложение. Следующие `UPDATE` инструкция, к примеру, обновляет название и цену продукта, только в том случае, если текущие значения базы данных равны значениям, которые были изначально получены при обновлении записи GridView. `@ProductName` И `@UnitPrice` параметры содержат новые значения, введенные пользователем, в то время как `@original_ProductName` и `@original_UnitPrice` содержат значения, которые были изначально загружены в GridView, если была нажата кнопка редактирования:
 
 
 [!code-sql[Main](implementing-optimistic-concurrency-vb/samples/sample1.sql)]

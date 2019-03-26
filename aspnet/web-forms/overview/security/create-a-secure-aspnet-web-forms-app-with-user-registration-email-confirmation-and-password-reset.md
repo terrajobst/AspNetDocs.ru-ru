@@ -8,12 +8,12 @@ ms.date: 10/02/2014
 ms.assetid: 0a8d6044-5fab-4213-82d6-5618d5601358
 msc.legacyurl: /web-forms/overview/security/create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset
 msc.type: authoredcontent
-ms.openlocfilehash: acc13776840408756901e20589b9efacc83ff2a9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1bd90f0ceddee7d9e18c1cac2fadfb2c84841f19
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053651"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424642"
 ---
 <a name="create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset-c"></a>Создание безопасного приложения веб-форм ASP.NET с регистрацией пользователей, подтверждением электронной почты и сбросом пароля (C#)
 ====================
@@ -152,7 +152,7 @@ SendGrid изменилось его API, так как этот учебник 
 <a id="rsend"></a>
 ## <a name="resend-email-confirmation-link"></a>Повторно отправить ссылку для подтверждения по электронной почте
 
-Когда пользователь создает новую учетную запись локального, по электронной почте ссылку для подтверждения, они необходимы для использования, прежде чем они могут войти на. Если пользователь случайно удалит сообщение подтверждения или сообщение никогда не будет доставлено, им потребуется повторная отправка ссылку для подтверждения. Следующие изменения кода показано, как для этого.
+Когда пользователь создает новую учетную запись локального, по электронной почте ссылку для подтверждения, они необходимы для использования, прежде чем они могут войти на. Если пользователь случайно удалил подтверждение по электронной почте или никогда не приходит сообщение электронной почты, им потребуется повторная отправка ссылку для подтверждения. Следующие изменения кода показано, как для этого.
 
 1. В Visual Studio откройте **Login.aspx.cs** кода программной части и добавьте следующий обработчик событий после `LogIn` обработчик событий:   
 

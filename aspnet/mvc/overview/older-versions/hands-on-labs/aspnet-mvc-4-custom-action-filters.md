@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 969ab824-1b98-4552-81fe-b60ef5fc6887
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-custom-action-filters
 msc.type: authoredcontent
-ms.openlocfilehash: 0170fda6849c1dfb53b44908ea55ba2cad0dd067
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 4c8628cc289610e287c0a3bc3c8a4c7a833c9fde
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036621"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423420"
 ---
 # <a name="aspnet-mvc-4-custom-action-filters"></a>Фильтры настраиваемых действий в ASP.NET MVC 4
 
@@ -261,7 +261,7 @@ ASP.NET MVC предоставляет фильтры действий для в
     [!code-csharp[Main](aspnet-mvc-4-custom-action-filters/samples/sample9.cs)]
 
     > [!NOTE]
-    > Этот настраиваемый фильтр действий практически не отличается от той, которую вы создали в предыдущем упражнении. Основное различие заключается в наличии *&quot;войти по&quot;* атрибута обновляется с именем этого нового класса, чтобы определить фильтр, который зарегистрирован в журнале.
+    > Этот настраиваемый фильтр действий практически не отличается от той, которую вы создали в предыдущем упражнении. Основное различие заключается в наличии *&quot;войти по&quot;* атрибута, обновляется с помощью этого нового класса имя для идентификации какой фильтр регистрации журнала.
 
 <a id="Ex2Task2"></a>
 
@@ -325,7 +325,7 @@ ASP.NET MVC предоставляет фильтры действий для в
 <a id="Task_4_Registering_Filters_Globally"></a>
 #### <a name="task-4-registering-filters-globally"></a>Задача 4. Регистрация фильтрует глобально
 
-В этой задаче вы обновите решение, чтобы зарегистрировать новый фильтр (**MyNewCustomActionFilter**) как глобальный фильтр. Таким образом, он будет запускаться все perfomed действия в приложении, а не только StoreController из них как в предыдущей задаче.
+В этой задаче вы обновите решение, чтобы зарегистрировать новый фильтр (**MyNewCustomActionFilter**) как глобальный фильтр. Таким образом, он будет запускаться все действия, выполняемые в приложении, а не только StoreController из них как в предыдущей задаче.
 
 1. В **StoreController** класса, удалите **[MyNewCustomActionFilter]** атрибутов и свойств заказа из **[CustomActionFilter]**. Он должен выглядеть следующим образом:
 
@@ -375,7 +375,7 @@ ASP.NET MVC предоставляет фильтры действий для в
 
 Вы можете установить **Microsoft Visual Studio Express 2012 для Web** или другой &quot;Express&quot; версию с помощью **[Microsoft Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx)**. Приведенные ниже инструкции описывают действия, необходимые для установки *Visual studio Express 2012 для Web* с помощью *Microsoft Web Platform Installer*.
 
-1. Перейдите к [ [ https://go.microsoft.com/? linkid = 9810169](https://go.microsoft.com/?linkid=9810169)](https://go.microsoft.com/?linkid=9810169). Кроме того, если вы уже установили установщика веб-платформы, можно открыть его и выполните поиск продукта &quot; <em>Visual Studio Express 2012 для Web с пакетом Windows Azure SDK</em>&quot;.
+1. Перейдите по адресу [https://go.microsoft.com/?linkid=9810169](https://go.microsoft.com/?linkid=9810169). Кроме того, если вы уже установили установщика веб-платформы, можно открыть его и выполните поиск продукта &quot; <em>Visual Studio Express 2012 для Web с пакетом Windows Azure SDK</em>&quot;.
 2. Щелкните **установить сейчас**. Если у вас нет **установщика веб-платформы** вы будете перенаправлены к сначала загрузить и установить его.
 3. Один раз **установщика веб-платформы** открыт, нажмите кнопку **установить** для запуска программы установки.
 
@@ -419,7 +419,7 @@ ASP.NET MVC предоставляет фильтры действий для в
 1. Перейдите к [портала управления Windows Azure](https://manage.windowsazure.com/) и войдите с использованием учетных данных Майкрософт, связанную с вашей подпиской.
 
     > [!NOTE]
-    > С помощью Windows Azure можно бесплатное размещение 10 веб-сайтов ASP.NET и затем масштабировать по мере увеличения объема трафика. Вы можете зарегистрироваться [здесь](http://aka.ms/aspnet-hol-azure).
+    > С помощью Windows Azure можно бесплатное размещение 10 веб-сайтов ASP.NET и затем масштабировать по мере увеличения объема трафика. Вы можете зарегистрироваться [здесь](https://aka.ms/aspnet-hol-azure).
 
     ![Войдите на портал Windows Azure](aspnet-mvc-4-custom-action-filters/_static/image17.png "Войдите на портал Windows Azure")
 

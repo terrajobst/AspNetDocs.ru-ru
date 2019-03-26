@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 634ea84b-f904-4afe-b71b-49cccef4d9cc
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-models-and-data-access
 msc.type: authoredcontent
-ms.openlocfilehash: 26896e6ee3c02e8f939296ecbfb8b7d500940765
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 10c2f6379f6d3139dd3bcf1027ff456e074298c3
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061031"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425097"
 ---
 # <a name="aspnet-mvc-4-models-and-data-access"></a>Модели и доступ к данным в ASP.NET MVC 4
 
@@ -148,7 +148,7 @@ ms.locfileid: "57061031"
     ![Добавление модели ADO.NET EDM StoreDB](aspnet-mvc-4-models-and-data-access/_static/image6.png "Добавление StoreDB модели EDM ADO.NET")
 
     *Добавление модели ADO.NET EDM StoreDB*
-2. **Мастер моделей EDM** будет отображаться. Этот мастер поможет выполнить создание слоя модели. Поскольку модели должен будет создан в зависимости от существующей recentyl базы данных, которые добавлены, выберите **создать из базы данных** и нажмите кнопку **Далее**.
+2. **Мастер моделей EDM** будет отображаться. Этот мастер поможет выполнить создание слоя модели. Поскольку модель должна быть создана на основе существующей базы данных, добавленные выберите **создать из базы данных** и нажмите кнопку **Далее**.
 
     ![Выбор содержимого модели](aspnet-mvc-4-models-and-data-access/_static/image7.png "Выбор содержимого модели")
 
@@ -280,7 +280,7 @@ ms.locfileid: "57061031"
 <a id="Task_1_-_Populating_Sample_Data"></a>
 #### <a name="task-1---populating-sample-data"></a>Задача 1 - заполнению примера данных
 
-В этой задаче вы заполните базу данных, с демонстрационными данными при начале создается с помощью Code First.
+В этой задаче вы заполните базу данных, с демонстрационными данными при его создании с помощью Code First.
 
 1. Откройте **начать** решений, расположенный **источника/Ex2-CreatingADatabaseCodeFirst/начало/** папки. В противном случае можно продолжить использование **окончания** решение получен путем выполнения предыдущего упражнения.
 
@@ -580,7 +580,7 @@ ms.locfileid: "57061031"
 1. Перейдите к [портала управления Windows Azure](https://manage.windowsazure.com/) и войдите с использованием учетных данных Майкрософт, связанную с вашей подпиской.
 
     > [!NOTE]
-    > С помощью Windows Azure можно бесплатное размещение 10 веб-сайтов ASP.NET и затем масштабировать по мере увеличения объема трафика. Вы можете зарегистрироваться [здесь](http://aka.ms/aspnet-hol-azure).
+    > С помощью Windows Azure можно бесплатное размещение 10 веб-сайтов ASP.NET и затем масштабировать по мере увеличения объема трафика. Вы можете зарегистрироваться [здесь](https://aka.ms/aspnet-hol-azure).
 
     ![Войдите на портал Windows Azure](aspnet-mvc-4-models-and-data-access/_static/image31.png "Войдите на портал Windows Azure")
 

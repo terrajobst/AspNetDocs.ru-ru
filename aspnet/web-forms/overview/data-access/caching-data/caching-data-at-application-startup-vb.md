@@ -8,12 +8,12 @@ ms.date: 05/30/2007
 ms.assetid: 84afe4ac-cc53-4f2e-a867-27eaf692c2df
 msc.legacyurl: /web-forms/overview/data-access/caching-data/caching-data-at-application-startup-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 9d997cb0af8487b2a9d849f24f3bff8df8611f6d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ef0a99a1601f40995c81a12f457303e040f57e29
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026651"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424616"
 ---
 <a name="caching-data-at-application-startup-vb"></a>Кэширование данных при запуске приложения (VB)
 ====================
@@ -103,7 +103,7 @@ ms.locfileid: "57026651"
 
 [!code-vb[Main](caching-data-at-application-startup-vb/samples/sample5.vb)]
 
-Чтобы добавить элемент в кэш данных и без срока действия по времени, используйте `System.Web.Caching.Cache.NoAbsoluteExpiration` и `System.Web.Caching.Cache.NoSlidingExpiration` значения как входные параметры. Данная конкретная перегрузка кэш данных s `Insert` был выбран метод, чтобы мы могли указать *приоритет* элемента кэша. Приоритет используется, чтобы определить, какие элементы нужно удалить из кэша, когда не хватает доступной памяти. Здесь мы используем приоритет `NotRemovable`, которое гарантирует, что этот элемент кэша выиграл t очистку.
+Чтобы добавить элемент в кэш данных и без срока действия по времени, используйте `System.Web.Caching.Cache.NoAbsoluteExpiration` и `System.Web.Caching.Cache.NoSlidingExpiration` значения как входные параметры. Данная конкретная перегрузка кэш данных s `Insert` был выбран метод, чтобы мы могли указать *приоритет* элемента кэша. Приоритет используется, чтобы определить, какие элементы нужно удалить из кэша, когда не хватает доступной памяти. Здесь мы используем приоритет `NotRemovable`, которое гарантирует, что не очистки для этого элемента кэша.
 
 > [!NOTE]
 > Реализует этот учебник s загружаемый `StaticCache` класса подходе переменной статического члена. Код для методов кэша состояния и данных приложения находится в комментарии в файле класса.

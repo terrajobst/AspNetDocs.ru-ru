@@ -8,12 +8,12 @@ ms.date: 08/15/2006
 ms.assetid: b895e37e-0e69-45cc-a7e4-17ddd2e1b38d
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/paging-and-sorting-report-data-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 2e1cc844122b0fdebbc0be09f88baa11a461ab8e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 23f14251c280e1da3a51612ed538ecbc0f5b8d54
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038621"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424356"
 ---
 <a name="paging-and-sorting-report-data-vb"></a>Разбиение по страницам и упорядочение данных отчета (VB)
 ====================
@@ -194,7 +194,7 @@ ms.locfileid: "57038621"
 
 [!code-vb[Main](paging-and-sorting-report-data-vb/samples/sample6.vb)]
 
-Этот код начинается с очистки элементов в `PageList` DropDownList. Это может показаться излишним, поскольку один t было ожидать, что число страниц, чтобы изменить, но другие пользователи могут параллельно использовать систему, добавление или удаление записей из `Products` таблицы. Такие вставки или удаления могут привести к изменению количества страниц данных.
+Этот код начинается с очистки элементов в `PageList` DropDownList. Это может показаться излишним, поскольку не ожидается число страниц, чтобы изменить, но другие пользователи могут параллельно использовать систему, добавление или удаление записей из `Products` таблицы. Такие вставки или удаления могут привести к изменению количества страниц данных.
 
 Далее, нам нужно снова создать номера страниц и один из них, который сопоставляется текущего GridView `PageIndex` выбран по умолчанию. Это осуществляется с помощью цикла от 0 до `PageCount - 1`, добавления нового `ListItem` в каждой итерации и установив его `Selected` свойство значение true, если индекс текущей итерации равно GridView s `PageIndex` свойство.
 
@@ -253,7 +253,7 @@ GridView все поля BoundField, CheckBoxField, TemplateField и т. д. у 
 
 [!code-aspx[Main](paging-and-sorting-report-data-vb/samples/sample9.aspx)]
 
-Поля можно настроить таким образом, чтобы его не поддерживает сортировку по очистке s его `SortExpression` (присвоение ему пустой строкой). Чтобы проиллюстрировать это, представим, что мы требуется разрешить клиентам упорядочения по цене. `UnitPrice` BoundField s `SortExpression` может быть удалено из декларативной разметке либо через поля-диалоговое окно (которое можно открыть, щелкнув ссылку Изменить столбцы в смарт-теге GridView s).
+Поля можно настроить таким образом, чтобы его не поддерживает сортировку по очистке s его `SortExpression` (присвоение ему пустой строкой). Чтобы проиллюстрировать это, представьте, что мы не требуется предоставлять возможность упорядочения по цене клиентов. `UnitPrice` BoundField s `SortExpression` может быть удалено из декларативной разметке либо через поля-диалоговое окно (которое можно открыть, щелкнув ссылку Изменить столбцы в смарт-теге GridView s).
 
 
 ![Результаты упорядочены по UnitPrice в возрастающем порядке](paging-and-sorting-report-data-vb/_static/image27.png)
