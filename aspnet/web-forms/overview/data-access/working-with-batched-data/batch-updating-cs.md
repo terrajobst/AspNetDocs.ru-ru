@@ -8,12 +8,12 @@ ms.date: 06/26/2007
 ms.assetid: 4e849bcc-c557-4bc3-937e-f7453ee87265
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/batch-updating-cs
 msc.type: authoredcontent
-ms.openlocfilehash: c878056273ea821e4dd4481fa1b6f7690f22b285
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 27c043ff64b80dfbe05795c20bb1e71723f93c75
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062481"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421574"
 ---
 <a name="batch-updating-c"></a>Пакетное обновление (C#)
 ====================
@@ -241,7 +241,7 @@ ms.locfileid: "57062481"
 
 Для каждой строки `ProductID` извлечен из `DataKeys` коллекции и соответствующий `ProductsRow` выбирается из `ProductsDataTable`. Программным способом указываются четыре TemplateField ввода элемента управления и их значения присвоены `ProductsRow` s свойств экземпляра. После каждого GridView значений строк используется для обновления `ProductsDataTable`, он передаваемых в BLL s `UpdateWithTransaction` метод, который, как мы видели в предыдущем учебном курсе просто вызывает DAL s `UpdateWithTransaction` метод.
 
-Алгоритм обновления пакетной службы, используемый в этом учебнике обновляет каждую строку в `ProductsDataTable` , соответствует строке в GridView, независимо от того, менялся ли сведения о продукте s. Хотя такие blind обновляет t упорядочивая обычно проблемы с производительностью, они может привести к излишним записей при изменении во время аудита в таблицу базы данных. Вернитесь в [выполнение пакетных обновлений](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-cs.md) учебнике мы изучили пакета обновление интерфейса с помощью элемента управления DataList и добавить код, который обновит только те записи, которые действительно были изменены пользователем. Вы можете использовать методы из [выполнение пакетных обновлений](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-cs.md) обновление кода в этом руководстве, при необходимости.
+Алгоритм обновления пакетной службы, используемый в этом учебнике обновляет каждую строку в `ProductsDataTable` , соответствует строке в GridView, независимо от того, менялся ли сведения о продукте s. Во время таких людей с нарушениями зрения обновлений обычно не проблемы с производительностью, они может привести к излишним записей, если изменяется во время аудита в таблицу базы данных. Вернитесь в [выполнение пакетных обновлений](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-cs.md) учебнике мы изучили пакета обновление интерфейса с помощью элемента управления DataList и добавить код, который обновит только те записи, которые действительно были изменены пользователем. Вы можете использовать методы из [выполнение пакетных обновлений](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-cs.md) обновление кода в этом руководстве, при необходимости.
 
 > [!NOTE]
 > При привязке источника данных к GridView через его смарт-тег, Visual Studio автоматически назначает данных источника s первичного ключа значения GridView s `DataKeyNames` свойство. Если не удалось привязать ObjectDataSource к GridView через смарт-тега GridView s, как описано на шаге 1, то необходимо вручную задать GridView s `DataKeyNames` значение ProductID, чтобы получить доступ к `ProductID` значение для каждой строки через `DataKeys` коллекции.
@@ -269,7 +269,7 @@ ms.locfileid: "57062481"
 
 `BatchMethodAlternate` начинается, создав новую пустую `ProductsDataTable` с именем `products`. Он, а затем шаги-GridView s `Rows` коллекции и для каждой строки получает сведения конкретного продукта, с помощью FTPS BLL `GetProductByProductID(productID)` метод. Полученный `ProductsRow` экземпляр имеет его свойства, обновленные в так же, как `BatchUpdate`, но после обновления строки, он импортируется в `products``ProductsDataTable` через DataTable s [ `ImportRow(DataRow)` метод](https://msdn.microsoft.com/library/system.data.datatable.importrow(VS.80).aspx).
 
-После `foreach` завершения цикла `products` содержит один `ProductsRow` экземпляра для каждой строки GridView. Поскольку каждое из `ProductsRow` были добавлены экземпляры `products` (а не обновление), если мы просто передать его в `UpdateWithTransaction` метод `ProductsTableAdatper` попытается вставить каждой записи в базе данных. Вместо этого нам нужно указать, что каждая из этих строк был изменен (не добавлен).
+После `foreach` завершения цикла `products` содержит один `ProductsRow` экземпляра для каждой строки GridView. Поскольку каждое из `ProductsRow` были добавлены экземпляры `products` (а не обновление), если мы просто передать его в `UpdateWithTransaction` метод `ProductsTableAdapter` попытается вставить каждой записи в базе данных. Вместо этого нам нужно указать, что каждая из этих строк был изменен (не добавлен).
 
 Это можно сделать, добавив новый метод BLL с именем `UpdateProductsWithTransaction`. `UpdateProductsWithTransaction`, показано ниже, наборы `RowState` каждого из `ProductsRow` экземпляров в `ProductsDataTable` для `Modified` , а затем передает `ProductsDataTable` в DAL s `UpdateWithTransaction` метод.
 

@@ -8,12 +8,12 @@ ms.date: 04/03/2015
 ms.assetid: 81ee500f-fc37-40d6-8722-f1b64720fbb6
 msc.legacyurl: /mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on
 msc.type: authoredcontent
-ms.openlocfilehash: 611a4b59b2ea2eee771f4060fb5d5af041b2ccc6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 132560c0280a2e4096ea4e9a715c32bc880a8b82
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061891"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421433"
 ---
 <a name="create-an-aspnet-mvc-5-app-with-facebook-twitter-linkedin-and-google-oauth2-sign-on-c"></a>Создание приложения ASP.NET MVC 5 с единым входом с помощью учетных данных Facebook, Twitter, LinkedIn и Google OAuth2 (C#)
 ====================
@@ -92,7 +92,7 @@ ms.locfileid: "57061891"
 6. Выберите **Web** вкладке, а затем вставьте URL-адрес SSL в **URL-адрес проекта** поле. Сохраните файл (Ctl + S). Вам потребуется этот URL-адрес для настройки проверки подлинности приложения Facebook и Google.  
   
     ![](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/_static/image10.png)
-7. Добавить [RequireHttps](https://msdn.microsoft.com/library/system.web.mvc.requirehttpsattribute.aspx) атрибут `Home` контроллера для всех запросов необходимо использовать протокол HTTPS. Более безопасный подход заключается в добавлении [RequireHttps](https://msdn.microsoft.com/library/system.web.mvc.requirehttpsattribute.aspx) фильтр к приложению. См. в разделе &quot;защиты приложения с помощью SSL и атрибута авторизации&quot; в моей tutoral [Создание приложения ASP.NET MVC с проверкой подлинности и база данных SQL и развертывание в службе приложений Azure](https://docs.microsoft.com/aspnet/core/security/authorization/secure-data). Ниже приведен фрагмент контроллера Home.
+7. Добавить [RequireHttps](https://msdn.microsoft.com/library/system.web.mvc.requirehttpsattribute.aspx) атрибут `Home` контроллера для всех запросов необходимо использовать протокол HTTPS. Более безопасный подход заключается в добавлении [RequireHttps](https://msdn.microsoft.com/library/system.web.mvc.requirehttpsattribute.aspx) фильтр к приложению. См. в разделе &quot;защиты приложения с помощью SSL и атрибута авторизации&quot; в моем руководстве [Создание приложения ASP.NET MVC с проверкой подлинности и база данных SQL и развертывание в службе приложений Azure](https://docs.microsoft.com/aspnet/core/security/authorization/secure-data). Ниже приведен фрагмент контроллера Home.
 
     [!code-csharp[Main](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/samples/sample1.cs?highlight=1)]
 8. Нажмите CTRL+F5, чтобы запустить приложение. Если вы установили сертификат в прошлом, вы можете пропустить оставшейся части этого раздела и перейти к [Создание приложения Google для oauth2 и подключение приложения к проекту](#goog), в противном случае следуйте инструкциям, чтобы доверия к самозаверяющему сертификат, созданный IIS Express.  

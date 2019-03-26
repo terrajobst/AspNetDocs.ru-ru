@@ -8,12 +8,12 @@ ms.date: 08/14/2010
 ms.assetid: 7ae696b9-348f-4993-8ebb-a838acbe0c28
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part8
 msc.type: authoredcontent
-ms.openlocfilehash: 22a6c4e5a07e81d5876cc442e68926094e3a243d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a014690078f113e5090f4867c2f384751f16b9f6
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033801"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425357"
 ---
 <a name="adding-a-column-to-the-model"></a>Добавление столбца в модель
 ====================
@@ -24,7 +24,7 @@ ms.locfileid: "57033801"
 
 В этом разделе мы собираемся разберем, как можно вносить изменения в схему нашей базы данных и обрабатывать изменения, в наше приложение.
 
-Добавим столбца, «Оценка» в таблице Movie. Вернитесь в интегрированную среду разработки и нажмите кнопку обозревателя базы данных. Таблица Movie щелкните правой кнопкой мыши и выберите Открыть определение таблицы.
+Давайте добавим столбец «Оценка» в таблице Movie. Вернитесь в интегрированную среду разработки и нажмите кнопку обозревателя базы данных. Таблица Movie щелкните правой кнопкой мыши и выберите Открыть определение таблицы.
 
 Добавьте столбец «Оценка», как показано ниже. Поскольку мы не имеем любые оценки, столбец можно разрешить значения NULL. Нажмите кнопку Сохранить.
 

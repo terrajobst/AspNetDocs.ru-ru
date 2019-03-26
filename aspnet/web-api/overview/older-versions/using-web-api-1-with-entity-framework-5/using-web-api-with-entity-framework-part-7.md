@@ -8,12 +8,12 @@ ms.date: 07/04/2012
 ms.assetid: eb32a17b-626c-4373-9a7d-3387992f3c04
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-7
 msc.type: authoredcontent
-ms.openlocfilehash: bb4704e7f4f13fab04acdbdd642174884517e18a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 91a6496e2640668c58ec0493d47d909e2de67367
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042411"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421354"
 ---
 <a name="part-7-creating-the-main-page"></a>Часть 7. Создание главной страницы
 ====================
@@ -61,7 +61,7 @@ ms.locfileid: "57042411"
 Затем добавьте эти функции для `AppViewModel`:
 
 - `resetCart` Удаляет все элементы из корзины.
-- `getDetails` Возвращает сведения для заказа (с pusing новый `OrderDetailsViewModel` на `details` списка).
+- `getDetails` Возвращает сведения для заказа (с помощью принудительной отправки нового `OrderDetailsViewModel` на `details` списка).
 - `createOrder` Создает новый порядок и очистке корзины для покупок.
 
 
@@ -105,7 +105,7 @@ ms.locfileid: "57042411"
 
 [!code-html[Main](using-web-api-with-entity-framework-part-7/samples/sample11.html)]
 
-Это выполняет итерацию по элементам в порядке и отображает продукта, цену и quanity. Окружающий div отображается только в том случае, если сведения о массив содержит один или несколько элементов.
+Это выполняет итерацию по элементам в порядке и отображает продукта, цену и количество. Окружающий div отображается только в том случае, если сведения о массив содержит один или несколько элементов.
 
 ## <a name="conclusion"></a>Заключение
 

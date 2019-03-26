@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: f97a1145-6470-4bca-8f15-ccfb25fb903c
 msc.legacyurl: /web-forms/overview/deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production
 msc.type: authoredcontent
-ms.openlocfilehash: 7cb9c949936c3af73d4c904d401c36d4d83f3e18
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 998191a21388d76fb18b59fca9bcea7a40507c86
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045691"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425578"
 ---
 <a name="application-lifecycle-management-from-development-to-production"></a>Управление жизненным циклом приложения: от разработки до рабочей среды
 ====================
@@ -26,7 +26,7 @@ ms.locfileid: "57045691"
 > В этой статье используется для предоставления общий обзор для [серии учебников](deploying-web-applications-in-enterprise-scenarios.md) на веб-развертывания на предприятии. Не беспокойтесь, если вы не знакомы с некоторыми описанные здесь принципы&#x2014;учебники, выполните предоставляют подробные сведения о всех этих задач и методы.
 > 
 > > [!NOTE]
-> > Forthe размещу простоты в этом разделе не рассматриваются обновление баз данных как часть процесса развертывания. Тем не менее вносить добавочные обновления функций баз данных является обязательным для различных сценариев развертывания enterprise, и вы найдете рекомендации о том, как это сделать далее в этой серии руководств. Дополнительные сведения см. в разделе [развертывание проектов баз данных](../web-deployment-in-the-enterprise/deploying-database-projects.md).
+> > Для простоты в этом разделе не рассматриваются обновление баз данных как часть процесса развертывания. Тем не менее вносить добавочные обновления функций баз данных является обязательным для различных сценариев развертывания enterprise, и вы найдете рекомендации о том, как это сделать далее в этой серии руководств. Дополнительные сведения см. в разделе [развертывание проектов баз данных](../web-deployment-in-the-enterprise/deploying-database-projects.md).
 
 
 ## <a name="overview"></a>Обзор

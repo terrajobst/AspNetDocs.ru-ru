@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: f35a9b0c-49ef-4cde-b06d-19d1543feb0b
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc/advanced-entity-framework-scenarios-for-an-mvc-web-application
 msc.type: authoredcontent
-ms.openlocfilehash: d0208c8890467ec6044d807aeee7c7ae02e18790
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d7cc83a5b78a60f575f5c3065079679189296a0c
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032521"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425279"
 ---
 # <a name="tutorial-learn-about-advanced-ef-scenarios-for-an-mvc-5-web-app"></a>Учебник. Дополнительные сведения о расширенных сценариях EF для приложения MVC 5 Web
 
@@ -85,7 +85,7 @@ Entity Framework API для Code First включает методы, котор
 
 Предположим, что администраторам университета Suppose необходимо иметь возможность выполнять массовые изменения в базе данных, например изменить число зачетных баллов для каждого курса. Поскольку в университете ведется множество курсов, будет неэффективно извлекать их в виде сущностей и изменять по отдельности. В этом разделе вы реализуете веб-страницы, которая позволяет пользователю указать коэффициент, используемый для изменить число зачетных баллов для каждого курса, и вам предстоит изменения, выполнив SQL `UPDATE` инструкции. 
 
-В *CourseContoller.cs*, добавьте `UpdateCourseCredits` методы для `HttpGet` и `HttpPost`:
+В *CourseController.cs*, добавьте `UpdateCourseCredits` методы для `HttpGet` и `HttpPost`:
 
 [!code-csharp[Main](advanced-entity-framework-scenarios-for-an-mvc-web-application/samples/sample4.cs)]
 

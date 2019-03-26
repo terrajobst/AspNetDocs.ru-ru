@@ -2,24 +2,24 @@
 uid: web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4
 title: Открытые типы в OData v4 с веб-API ASP.NET | Документация Майкрософт
 author: microsoft
-description: В OData v4 открытого типа является типом stuctured, который содержит динамические свойства, а также любые свойства, объявленные в определении типа. Открыть...
+description: В OData v4 открытый тип имеет структурный тип, который содержит динамические свойства, а также любые свойства, объявленные в определении типа. Открыть...
 ms.author: riande
 ms.date: 09/15/2014
 ms.assetid: f25f5ac5-4800-4950-abe5-c97750a27fc6
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4
 msc.type: authoredcontent
-ms.openlocfilehash: 77771d85532b8b622c2ad4ca219a38990e474c9c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f901e5efc38e5cda6eb606b6bc1ecfe7dea3599c
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042591"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423442"
 ---
 <a name="open-types-in-odata-v4-with-aspnet-web-api"></a>Открытые типы в OData v4 с веб-API ASP.NET
 ====================
 по [Microsoft](https://github.com/microsoft)
 
-> В OData v4 *открытый тип* является типом stuctured, который содержит динамические свойства, а также любые свойства, объявленные в определении типа. Открытые типы позволяют добавлять гибкость к моделям данных. Этом руководстве показано, как использовать открытые типы в OData веб-API ASP.NET.
+> В OData v4 *открытый тип* — структурированный тип, который содержит динамические свойства, а также любые свойства, объявленные в определении типа. Открытые типы позволяют добавлять гибкость к моделям данных. Этом руководстве показано, как использовать открытые типы в OData веб-API ASP.NET.
 > 
 > Предполагается, что вы уже знаете, как создать конечную точку OData в веб-API ASP.NET. Если это не так, обратитесь к статье [Создайте конечную точку OData v4](create-an-odata-v4-endpoint.md) первого.
 > 

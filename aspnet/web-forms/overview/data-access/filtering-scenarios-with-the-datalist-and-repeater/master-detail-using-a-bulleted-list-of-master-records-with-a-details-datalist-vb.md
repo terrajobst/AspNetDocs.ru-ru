@@ -8,12 +8,12 @@ ms.date: 10/17/2006
 ms.assetid: ee20742f-6fb7-49a0-a009-058fe363aacb
 msc.legacyurl: /web-forms/overview/data-access/filtering-scenarios-with-the-datalist-and-repeater/master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 3a10d6e5f60efad1f88c5acc8371a24dbf8d2cb7
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 73a93c93932a004e76cf4ef7be1b3308ef6b991f
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061811"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422900"
 ---
 <a name="masterdetail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb"></a>Отчет "Основной/подробности" с использованием маркированного списка основных записей с элементом управления DataList для подробных сведений (VB)
 ====================
@@ -100,7 +100,7 @@ ms.locfileid: "57061811"
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample4.aspx)]
 
 > [!NOTE]
-> В этом руководстве Repeater должен иметь состояние представления включено (Обратите внимание, из-за отсутствия `EnableViewState="False"` из декларативного синтаксиса элемента управления Repeater s). На шаге 3 мы создадим обработчик событий для элемента управления Repeater s `ItemCommand` событий, в котором мы будем обновлять DataList s ObjectDataSource s `SelectParameters` коллекции. Элемент управления Repeater s `ItemCommand`, но при этом выиграл t fire, если состояние представления отключено. См. в разделе [головоломка возникает вопрос ASP.NET](http://scottonwriting.net/sowblog/posts/1263.aspx) и [свое решение](http://scottonwriting.net/sowBlog/posts/1268.aspx) Дополнительные сведения о том, почему состояние представления должно быть включено для элемента управления Repeater s `ItemCommand` событие.
+> В этом руководстве Repeater должен иметь состояние представления включено (Обратите внимание, из-за отсутствия `EnableViewState="False"` из декларативного синтаксиса элемента управления Repeater s). На шаге 3 мы создадим обработчик событий для элемента управления Repeater s `ItemCommand` событий, в котором мы будем обновлять DataList s ObjectDataSource s `SelectParameters` коллекции. Элемент управления Repeater s `ItemCommand`, не будет запускаться, если состояние представления отключено. См. в разделе [головоломка возникает вопрос ASP.NET](http://scottonwriting.net/sowblog/posts/1263.aspx) и [свое решение](http://scottonwriting.net/sowBlog/posts/1268.aspx) Дополнительные сведения о том, почему состояние представления должно быть включено для элемента управления Repeater s `ItemCommand` событие.
 
 
 ImageButton с `ID` значение свойства `ViewCategory` не поддерживает его `Text` набор свойств. Если мы хотели только отображаемое имя категории, мы бы свойство Text декларативно, через синтаксис привязки данных, следующим образом:

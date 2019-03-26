@@ -8,12 +8,12 @@ ms.date: 01/12/2012
 ms.assetid: 8921d7f2-21f0-427a-8b27-2df7251174b0
 msc.legacyurl: /mvc/overview/older-versions/working-with-the-dropdownlist-box-and-jquery/examining-how-aspnet-mvc-scaffolds-the-dropdownlist-helper
 msc.type: authoredcontent
-ms.openlocfilehash: 542790b7f475cc641ed26ff3187c25c25118e0ed
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ef83ef22e17ab7bda035d0f11ab936fe56d58800
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57037831"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423030"
 ---
 <a name="examining--how--aspnet-mvc-scaffolds-the-dropdownlist-helper"></a>Общие сведения о формировании шаблона вспомогательного приложения DropDownList в ASP.NET MVC
 ====================
@@ -197,7 +197,7 @@ HTML-код `<select>` элемент (созданные HTML [DropDownList](ht
 
 ### <a name="which-approach-should-you-use"></a>Какой подход следует использовать?
 
-Все три подхода показано прерывая запись. Многие разработчики предпочитают explictily pass `SelectList` для `DropDownList` с помощью `ViewBag`. Такой подход имеет дополнительное преимущество дает гибкость использования более подходящего имени для коллекции. Единственным условием является нельзя присвоить имя `ViewBag SelectList` объекта совпадает с именем свойства модели.
+Все три подхода показано являются допустимыми. Многие разработчики предпочитают явным образом передать `SelectList` для `DropDownList` с помощью `ViewBag`. Такой подход имеет дополнительное преимущество дает гибкость использования более подходящего имени для коллекции. Единственным условием является нельзя присвоить имя `ViewBag SelectList` объекта совпадает с именем свойства модели.
 
 Некоторые разработчики предпочитают подхода ViewModel. Другие рассмотрим более подробный разметку и создания кода HTML подхода ViewModel недостаток.
 

@@ -8,12 +8,12 @@ ms.date: 02/20/2005
 ms.assetid: 92df4051-77c6-492c-bd34-23d24189cea4
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/profiles-themes-and-web-parts
 msc.type: authoredcontent
-ms.openlocfilehash: 98559c2a378c72bc5664faafe5436753050b574f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 010adaba61b15ca4421c2d3a4a7590becb53897b
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062771"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422857"
 ---
 <a name="profiles-themes-and-web-parts"></a>Профили, темы и веб-части
 ====================
@@ -222,7 +222,7 @@ ASP.NET 2.0 – это значительное улучшение в облас
 3. Выберите файл веб-конфигурации в списке файлов и щелкните "Добавить".
 4. Правой кнопкой мыши проект в обозревателе решений и выберите Add New Item.
 5. Выберите файл обложки и щелкните "Добавить".
-6. Нажмите "Да" при запросе, если вы хотели поместите файл внутри приложения\_папку тем.
+6. Нажмите "Да" при запросе, если вы хотите поместить файл внутри приложения\_папку тем.
 7. Правой кнопкой мыши папку SkinFile внутри приложения\_темы папку в обозревателе решений и выберите Add New Item.
 8. Выберите таблицу стилей в списке файлов и щелкните "Добавить". Теперь у вас есть все файлы, необходимые для реализации новой темы. Тем не менее Visual Studio с именем вашей папки темы SkinFile. Щелкните правой кнопкой мыши на эту папку и измените имя на CoolTheme.
 9. Откройте файл SkinFile.skin и добавьте следующий код в конец файла: 

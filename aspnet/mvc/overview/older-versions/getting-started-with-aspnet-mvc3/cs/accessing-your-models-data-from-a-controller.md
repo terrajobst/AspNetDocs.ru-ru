@@ -8,12 +8,12 @@ ms.date: 01/12/2011
 ms.assetid: 002ada5c-f114-47ab-a441-57dbdb728ea0
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/cs/accessing-your-models-data-from-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: 497718713bb87028dae7eef0c201f61519c3f4d9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 25a4f7bb8b6b47915861ea9b7c579c31aed4919b
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049411"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421509"
 ---
 <a name="accessing-your-models-data-from-a-controller-c"></a>Доступ к данным модели из контроллера (C#)
 ====================
@@ -103,7 +103,7 @@ ASP.NET MVC также предоставляет возможность пер�
 
 Так как `Model` строго типизированного объекта (как `IEnumerable<Movie>` объекта), каждая `item` объект в цикле типизируется как `Movie`. Помимо прочих преимуществ это означает, что получение проверки кода во время компиляции и полная поддержка IntelliSense в редакторе кода:
 
-[![ModelIntellisene](accessing-your-models-data-from-a-controller/_static/image10.png "ModelIntellisene")](accessing-your-models-data-from-a-controller/_static/image9.png)
+[![ModelIntelliSense](accessing-your-models-data-from-a-controller/_static/image10.png "ModelIntelliSense")](accessing-your-models-data-from-a-controller/_static/image9.png)
 
 ## <a name="working-with-sql-server-compact"></a>Работа с SQL Server Compact
 

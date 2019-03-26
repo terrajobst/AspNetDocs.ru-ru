@@ -8,21 +8,20 @@ ms.date: 04/09/2015
 ms.assetid: 0f78aec2-f509-46fa-b20f-d5208425d8ec
 msc.legacyurl: /identity/overview/getting-started/aspnet-identity-recommended-resources
 msc.type: authoredcontent
-ms.openlocfilehash: 1d5b44ccce423dda8ac77029e361a531b6c91b26
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 14a8ec16fe741d87a23bfa45046386a2c08d2f27
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056351"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424343"
 ---
-<a name="aspnet-identity-recommended-resources"></a>Рекомендуемые ресурсы по ASP.NET Identity
-====================
+# <a name="aspnet-identity-recommended-resources"></a>Рекомендуемые ресурсы по ASP.NET Identity
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Этот раздел содержит ссылки на документацию о том, как использовать ASP.NET Identity.
-> 
+>
 > Если известно, учета, замечательный блог [stackoverflow](http://stackoverflow.com) потока или любую ссылку, которая будет полезна, [отправьте нам сообщение электронной почты](mailto:aspnetue@microsoft.com?subject=Identity recommended resources) со ссылкой или просто оставить сообщение в нижней части этой страницы.
-
 
 - [Начало работы с ASP.NET Identity](#gettingstarted)
 - [Новые Рекомендуемые статьи необходимо чтения](#feat)
@@ -35,6 +34,7 @@ ms.locfileid: "57056351"
 - [Q &amp; (вопрос/ответ)](#qand)
 
 <a id="gettingstarted"></a>
+
 ## <a name="getting-started-with-aspnet-identity"></a>Начало работы с ASP.NET Identity
 
 - [Приложение MVC 5 с Facebook, Twitter, LinkedIn и Google OAuth2 Sign-on](../../../mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md) этом руководстве показано, как писать приложения ASP.NET MVC 5 с авторизацией на Facebook и Google OAuth 2. Также показано, как добавить дополнительные данные для базы данных удостоверений.
@@ -44,6 +44,7 @@ ms.locfileid: "57056351"
 - [Приложение ASP.NET MVC 5 с двухфакторной проверкой подлинности по SMS и электронной почте](../../../mvc/overview/security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication.md)
 
 <a id="feat"></a>
+
 ## <a name="new-featured-must-read-articles"></a>Новые Рекомендуемые статьи необходимо чтения
 
 - [Пошаговое руководство: Удостоверение ASP.NET MVC с проверкой подлинности учетной записи Майкрософт](http://www.benday.com/2014/02/25/walkthrough-asp-net-mvc-identity-with-microsoft-account-authentication/) по [Бенджамин дей](http://www.benday.com/about/)
@@ -53,6 +54,7 @@ ms.locfileid: "57056351"
 - [Удостоверение ASP.NET 2.0: Настройка пользователей и ролей](http://typecastexception.com/post/2014/06/22/ASPNET-Identity-20-Customizing-Users-and-Roles.aspx)
 
 <a id="adv"></a>
+
 ## <a name="intermediate-aspnet-identity"></a>Средний уровень ASP.NET Identity
 
 - [Подтверждение учетной записи и восстановление пароля в ASP.NET Identity](../features-api/account-confirmation-and-password-recovery-with-aspnet-identity.md)
@@ -64,6 +66,7 @@ ms.locfileid: "57056351"
 - [ASP.NET Identity — блокировки пользователя](http://tech.trailmax.info/2014/06/asp-net-identity-user-lockout/)
 
 <a id="samp"></a>
+
 ## <a name="where-to-ask-questions-request-features-report-a-bug-and-nightly-builds"></a>Где можно задавать вопросы, параметры запроса, сообщить об ошибке и ночных сборок
 
 - Для StackOverflow, использовать тег [aspnet-identity](http://stackoverflow.com/questions/tagged/asp.net-identity)
@@ -71,6 +74,7 @@ ms.locfileid: "57056351"
 - [ASP.NET Identity на сайте GitHub](https://github.com/aspnet/AspNetIdentity) Get ночных сборок, параметры запроса, открытые ошибки.
 
 <a id="blog"></a>
+
 ## <a name="blog-posts-on-identity"></a>Сообщения в блогах от удостоверения
 
 - [Что такое SecurityStamp в ASP.NET Identity](http://stackoverflow.com/questions/19487322/what-is-asp-net-identitys-iusersecuritystampstoretuser-interface/19505060#19505060)
@@ -120,6 +124,7 @@ ms.locfileid: "57056351"
 - [Переход к удостоверению ASP.NET от членства ASP.NET](http://webdojo.sharepoint.com/ajmatthews/_layouts/15/start.aspx#/Lists/Posts/Post.aspx?ID=2) по Matthews Алистер
 
 <a id="video"></a>
+
 ## <a name="videos"></a>Видеоролики
 
 - Channel 9 [защиты приложений ASP.NET и служб: Обновлению безопасности для современных приложений](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2014/DEV-B421#fbid=PhVT9E1WRtr?hashlink=fbid) по Ido Flatow
@@ -132,6 +137,7 @@ ms.locfileid: "57056351"
 - [Чешский ASP.NET Identity](https://www.youtube.com/watch?v=tVbZp5brcpY) в этом лекции мы покажем, как развернуть обычной проверки подлинности, как добавить поддержку для внешних поставщиков удостоверений, таких как Twitter или Facebook и использование одноразовых паролей (OTP). [ASP.NET Identity je nástupce членство в роли поставщика&#367; v ASP.NET, tedy knihovna pro zajišt&#283;ní autentizace uživatel&#367;. V této p&#345;ednášce si ukážeme, jak nasad]
 
 <a id="cust"></a>
+
 ## <a name="custom-storage-providers-for-aspnet-identity"></a>Пользовательские поставщики хранилищ для ASP.NET Identity
 
 Если вы хотите указать собственный поставщик, прочтите [Обзор из пользовательские поставщики хранилищ для ASP.NET Identity](../extensibility/overview-of-custom-storage-providers-for-aspnet-identity.md) и [реализация ASP.NET Identity](http://odetocode.com/blogs/scott/archive/2014/01/20/implementing-asp-net-identity.aspx) и проверьте источник одного из перечисленных проектов с открытым исходным кодом ниже.
@@ -144,7 +150,7 @@ ms.locfileid: "57056351"
 - [Хранилище таблиц Azure](https://www.nuget.org/packages/accidentalfish.aspnet.identity.azure/) , Джеймс Рэндалл.
 - Хранилище таблиц Azure: [AspNet.Identity.TableStorage](https://github.com/stuartleeks/leeksnet.AspNet.Identity.TableStorage) по [ @stuartleeks ](https://twitter.com/stuartleeks).
 - [CouchDB / Cloudant по Wertheim Дэниэл.](https://github.com/danielwertheim/mycouch.aspnet.identity)
-- Эластичный кать[h: Удостоверения, эластичный](https://github.com/bmbsqd/elastic-identity) по Bombsquad AB.
+- [Elastic Search: Удостоверения, эластичный](https://github.com/bmbsqd/elastic-identity) по Bombsquad AB.
 - [MongoDB](http://www.nuget.org/packages/MongoDB.AspNet.Identity/) , Джонатан Sheely Джонатан Sheely.
 - [NHibernate.AspNet.Identity](https://github.com/milesibastos/NHibernate.AspNet.Identity) по Antônio Milesi Bastos.
 - [RavenDB](http://www.nuget.org/packages/AspNet.Identity.RavenDB/1.0.0) по [ @tourismgeek ](https://twitter.com/tourismgeek).
@@ -153,11 +159,13 @@ ms.locfileid: "57056351"
 - Шаблоны T4, для которого создается код EF» базы данных «сначала пользовательского хранилища: [AspNet.Identity.EntityFramework](https://github.com/cbfrank/AspNet.Identity.EntityFramework)
 
 <a id="additional"></a>
+
 ## <a name="additional-aspnet-identity-resources"></a>ASP.NET Identity, дополнительные ресурсы
 
 - [Общие сведения о безопасности поставщиков Yahoo и LinkedIn OAuth для OWIN](http://blog.beabigrockstar.com/introducing-the-yahoo-linkedin-oauth-security-providers-for-owin/) по Pelser Джерри инструкции Yahoo и LinkedIn.
 
 <a id="qand"></a>
+
 ## <a name="qampa-questionanswer"></a>Q&amp;(вопрос/ответ)
 
 - Вопрос: Заблокированных пользователей, которые включили «Запомнить мои данные» (чтобы им не пришлось пройти 2FA на компьютере или браузера) не заблокирован. Почему и как исключить? Ответ [здесь](http://stackoverflow.com/questions/24312247/locked-out-users-can-login-if-they-have-auth-cookie).
@@ -177,6 +185,6 @@ ms.locfileid: "57056351"
 - Вопрос: Как сделать недействительным маркеров безопасности? Ответ [здесь](http://stackoverflow.com/questions/22755700/revoke-token-generated-by-usertokenprovider-in-asp-net-identity-2-0/22767286#22767286).
 - Вопрос: Как сделать поддерживает утверждения в маркере хранилища в по промежуточного слоя? Ответ [здесь](http://stackoverflow.com/questions/22320632/storing-retrieving-user-data-without-database-when-using-owin-cookie-authenticat/22541856#22541856).
 - Вопрос: Я бы хотел иметь ПИН-код или проверить для каждого метода действия в мое приложение MVC безопасности, но я бы хотел хранения успех пользователей, поэтому они не нужно вводить ПИН-код при каждом запросе к этому методу действия. Ответ [здесь](http://stackoverflow.com/questions/22479958/security-check-an-user-to-a-access-controller-action/22486075#22486075).
-- Вопрос: Необходимо, чтобы сохранить адрес возвращаемого сообщения электронной почты от поставщиков социальных сетей, к базе данных, как это сделать? Ответ [здесь](http://stackoverflow.com/questions/22888397/save-claims-to-db-on-login/22970969#22970969):
+- Вопрос: Необходимо, чтобы сохранить адрес электронной почты возвращенный от поставщиков социальных сетей на базу данных, как это сделать? Ответ [здесь](http://stackoverflow.com/questions/22888397/save-claims-to-db-on-login/22970969#22970969):
 - Вопрос: Как можно обнаружить при входе пользователя в обоих с/с исходящий файл cookie «Запомнить мои данные»? Ответ [здесь](http://stackoverflow.com/questions/22956486/how-can-i-detect-when-a-user-logs-in-with-microsoft-aspnet-identity/22970698#22970698).
 - Вопрос: Можно ли изменять утверждения в ASP.NET Identity с OWIN после вызова для входа? Ответ. Вызов SignIn именно это и что вы должны делать, если вы хотите изменить утверждения для пользователя. По сути то ClaimsIdentity должен быть сериализован в файл cookie, поэтому вы видите новых утверждений, которые отображаются при последующих запросах.

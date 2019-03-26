@@ -8,18 +8,18 @@ ms.date: 09/30/2015
 ms.assetid: 719727b7-bef3-45ad-bfe9-ba5bcdb2305f
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs
 msc.type: authoredcontent
-ms.openlocfilehash: 3c3557bb2be2807b11874937fcc629b5b773e463
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 03409e2fda831a07bbc5321ad842633b23ec25e5
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054571"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422419"
 ---
 <a name="hands-on-lab-build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs"></a>Практическое лабораторное занятие. Создание одностраничного приложения (SPA) с помощью веб-API ASP.NET и Angular.js
 ====================
 по [Web Слышатся Team](https://twitter.com/webcamps)
 
-[Скачайте комплект учебных материалов по лагеря Web](http://aka.ms/webcamps-training-kit)
+[Скачайте комплект учебных материалов по лагеря Web](https://aka.ms/webcamps-training-kit)
 
 > В традиционных веб-приложениях клиент (браузер) инициирует обмен данными с сервером путем запроса страницы. Затем сервер обрабатывает запрос и отправляет клиенту HTML-код страницы. В последующих взаимодействий со страницей — например пользователь переходит по ссылке или отправке формы с данными — новый запрос отправляется на сервер, и начнет работу потока: сервер обрабатывает запрос и возвращает новую страницу в браузер в ответ на запрос нового действия Эд клиентом.
 > 
@@ -29,7 +29,7 @@ ms.locfileid: "57054571"
 > 
 > В этой лаборатории в наличии будет воспользоваться преимуществами этих технологий для реализации Quiz компьютерщик, trivia веб-сайт, на концепции SPA. Сначала будет реализовать на уровне службы с веб-API ASP.NET, чтобы предоставить необходимые конечные точки, чтобы получить на вопросы викторины и сохранить ответы. Затем вы создадите пользовательский Интерфейс, широкие возможности и отвечает на запросы, с помощью AngularJS и CSS3 влияние преобразования.
 > 
-> Все примеры кода и фрагменты кода включены в Web лагеря комплект обучающих материалов, доступных в [ http://aka.ms/webcamps-training-kit ](http://aka.ms/webcamps-training-kit).
+> Все примеры кода и фрагменты кода включены в Web лагеря комплект обучающих материалов, доступных в [ https://aka.ms/webcamps-training-kit ](https://aka.ms/webcamps-training-kit).
 
 
 ## <a name="overview"></a>Обзор
@@ -98,7 +98,7 @@ ms.locfileid: "57054571"
 <a id="Ex1Task1"></a>
 #### <a name="task-1--creating-the-initial-project-for-geek-quiz"></a>Задача 1 – Создание начального проекта для Компьютерщик головоломки
 
-В этой задаче будет приступить к созданию нового проекта ASP.NET MVC с поддержкой веб-API ASP.NET на основе **One ASP.NET** тип, который поставляется с Visual Studio проекта. **One ASP.NET** объединяет все технологии ASP.NET и предоставляет вам возможность комбинировать и сопоставлять их при необходимости. Затем вы добавите классы модели Entity Framework и initializator базы данных для вставки вопросы теста.
+В этой задаче будет приступить к созданию нового проекта ASP.NET MVC с поддержкой веб-API ASP.NET на основе **One ASP.NET** тип, который поставляется с Visual Studio проекта. **One ASP.NET** объединяет все технологии ASP.NET и предоставляет вам возможность комбинировать и сопоставлять их при необходимости. Затем вы добавите классы модели Entity Framework и инициализации базы данных для вставки вопросы теста.
 
 1. Откройте **Visual Studio Express 2013 для Web** и выберите **файл | Создать проект...**  для запуска нового решения.
 

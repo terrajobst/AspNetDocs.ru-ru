@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: 75c8f58c6fece6b234a6cf5852d98e0ee583e614
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57797890"
----
 # <a name="contribute-to-the-aspnet-documentation"></a>Внесите свой вклад в документацию по ASP.NET
 
 В этом документе рассматривается процесс участия в написании статей и примеров кода, размещенных на [сайте документации по ASP.NET](https://docs.microsoft.com/aspnet/). Вы можете исправлять опечатки и размещать новые статьи.
@@ -18,28 +10,28 @@ ms.locfileid: "57797890"
 
 Требуется базовое представление о [Git и GitHub.com](https://guides.github.com/activities/hello-world/).
 
-* Откройте [проблему](https://github.com/aspnet/Docs/issues/new), описывающую, что нужно сделать, например изменить существующую статью или создать новую. Мы часто запрашиваем краткое содержание предлагаемой статьи. Дождитесь от нас одобрения, прежде чем тратить время.
-* Создайте вилку репозитория [aspnet/Docs](https://github.com/aspnet/Docs/) и создайте ветвь для изменений.
+* Откройте [проблему](https://github.com/aspnet/AspNetDocs/issues/new), описывающую, что нужно сделать, например изменить существующую статью или создать новую. Мы часто запрашиваем краткое содержание предлагаемой статьи. Дождитесь от нас одобрения, прежде чем тратить время.
+* Вилки [aspnet/AspNetDocs](https://github.com/aspnet/AspNetDocs/) репозитория и создать ветвь для изменений.
 * Отправьте запрос на вытягивание в главную ветвь с вашими изменениями.
 * Если запрос на вытягивание имеет метку "cla-required", [примите лицензионное соглашение с участником (CLA)](https://cla.dotnetfoundation.org/).
 * Ответьте на обратную связь по запросу на вытягивание.
 
 Пример публикации новой статьи в соответствии с этим процессом см. в [проблеме &num;67](https://github.com/dotnet/docs/issues/67) и [запросе на вытягивание &num;798](https://github.com/dotnet/docs/pull/798) в репозитории документов по .NET. Новая статья — [Документирование кода](https://docs.microsoft.com/dotnet/articles/csharp/codedoc).
 
-## <a name="docs-authoring-pack-extension-in-visual-studio-code"></a>Расширение "Пакет создания документов" в Visual Studio Code 
+## <a name="docs-authoring-pack-extension-in-visual-studio-code"></a>Расширение "Пакет создания документов" в Visual Studio Code
 
 Если вы используете Visual Studio Code для участия в разработке документации ASP.NET, вы можете повысить производительность, установив расширение [Пакет создания документов](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack). Данное расширение предоставляет широкий набор средств, упрощающий проверку формата Markdown, проверку орфографии кода и создание статей по шаблонам.
 
 ## <a name="markdown-syntax"></a>Синтаксис Markdown
 
-Статьи написаны в формате [DocFx-flavored Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html), который представляет собой расширенную версию [GitHub-flavored Markdown (GFM)](https://guides.github.com/features/mastering-markdown/). Примеры синтаксиса DFM для функций пользовательского интерфейса, обычно используемых в документации по ASP.NET, см. в разделе [Шаблон метаданных и Markdown](https://github.com/dotnet/docs/blob/master/styleguide/template.md) руководства по стилю репозитория документации по .NET. 
+Статьи написаны в формате [DocFx-flavored Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html), который представляет собой расширенную версию [GitHub-flavored Markdown (GFM)](https://guides.github.com/features/mastering-markdown/). Примеры синтаксиса DFM для функций пользовательского интерфейса, обычно используемых в документации по ASP.NET, см. в разделе [шаблон метаданных и разметки](https://github.com/dotnet/docs/blob/master/styleguide/template.md) в руководство по стилю репозиторий документации .NET.
 
 ## <a name="folder-structure-conventions"></a>Соглашения о структуре папок
 
-Для каждого файла Markdown могут существовать папка для изображений и папка для примера кода. Если это статья в виде файла [fundamentals/configuration/index.md](https://github.com/aspnet/Docs/blob/master/aspnetcore/fundamentals/configuration/index.md), изображения находятся в папке [fundamentals/configuration/index/\_static](https://github.com/aspnet/Docs/tree/master/aspnetcore/fundamentals/configuration/index/_static), а пример файлов проекта приложения — в папке [fundamentals/configuration/index/sample](https://github.com/aspnet/Docs/tree/master/aspnetcore/fundamentals/configuration/index/sample). Изображение в файле *fundamentals/configuration/index.md* обрабатывается по следующим правилам Markdown:
+Для каждого файла Markdown могут существовать папка для изображений и папка для примера кода. Если статья является [signalr/overview/advanced/dependency-injection.md](https://github.com/aspnet/AspNetDocs/blob/master/aspnet/signalr/overview/advanced/dependency-injection.md), образы находятся в [signalr/Обзор/advanced/внедрения зависимостей /\_статический](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/signalr/overview/advanced/dependency-injection/_static) и примера проекта приложения файлы находятся в [signalr/Обзор/advanced/зависимостей injection/samples](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/signalr/overview/advanced/dependency-injection/samples). Изображение в *signalr/overview/advanced/dependency-injection.md* файл обрабатывается следующий Markdown:
 
-```
-![description of image for alt attribute](configuration/index/_static/imagename.png)
+```md
+![description of image for alt attribute](dependency-injection/_static/image1.png)
 ```
 
 Все изображения должны иметь [замещающий текст](https://wikipedia.org/wiki/Alt_attribute). Советы о том, как задать замещающий текст, см. в сетевых ресурсах, например [WebAIM: замещающий текст](https://webaim.org/techniques/alttext/).
@@ -50,13 +42,13 @@ ms.locfileid: "57797890"
 
 Внутренние ссылки должны использовать `uid` целевой статьи со ссылкой xref (текст ссылки задается по заголовку связанного содержимого):
 
-```
+```md
 <xref:uid_of_the_topic>
 ```
 
 Если заголовок статьи не подходит для текста ссылки (например, слово или фраза в предложении является текстом ссылки), укажите ссылку xref и текст ссылки следующим образом:
 
-```
+```md
 [link text](xref:uid_of_the_topic)
 ```
 
@@ -71,38 +63,38 @@ ms.locfileid: "57797890"
 
 Эти ограничения позволяют уменьшить размер репозитория.
 
-В качестве дополнительного шага убедитесь, что все изображения и снимки экрана в документации сжаты, чтобы не увеличивать размер файла и время загрузки страницы. Среди популярных — средства TinyPNG ([веб-сайт TinyPNG](https://tinypng.com/) или [API TinyPNG](https://tinypng.com/developers)) или расширение Visual Studio [Image Optimizer](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ImageOptimizer). 
+В качестве дополнительного шага убедитесь, что все изображения и снимки экрана в документации сжаты, чтобы не увеличивать размер файла и время загрузки страницы. Среди популярных — средства TinyPNG ([веб-сайт TinyPNG](https://tinypng.com/) или [API TinyPNG](https://tinypng.com/developers)) или расширение Visual Studio [Image Optimizer](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ImageOptimizer).
 
 ## <a name="code-snippets"></a>Фрагменты кода
 
-Статьи часто содержат фрагменты кода для иллюстрации. DFM позволяет скопировать код в файле Markdown или ссылаться на отдельный файл кода. Рекомендуется использовать отдельные файлы кода, когда это возможно, чтобы свести к минимуму вероятность ошибок в коде. Файлы кода хранятся в репозитории в соответствии со структурой папок, описанной ранее для образцов проектов. 
+Статьи часто содержат фрагменты кода для иллюстрации. DFM позволяет скопировать код в файле Markdown или ссылаться на отдельный файл кода. Рекомендуется использовать отдельные файлы кода, когда это возможно, чтобы свести к минимуму вероятность ошибок в коде. Файлы кода хранятся в репозитории, с помощью структуры папок, описанной ранее для образцов проектов.
 
 В следующих примерах показан [синтаксис фрагмента кода DFM](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#code-snippet) для использования в файле *configuration/index.md*.
 
 Для отображения всего файла кода в виде фрагмента:
 
-```
+```md
 [!code-csharp[](configuration/index/sample/Program.cs)]
 ```
 
 Для подготовки к просмотру части файла как фрагмента с помощью номеров строк:
 
-```
+```md
 [!code-csharp[](configuration/index/sample/Program.cs?range=1-10,20,30,40-50]
 [!code-html[](configuration/index/sample/Views/Home/Index.cshtml?range=1-10,20,30,40-50]
 ```
 
-Для фрагментов C# сошлитесь на [область C#](https://docs.microsoft.com/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region). По возможности используйте области, а не номера строк, так как номера строк в файле кода, как правило, меняются и теряют синхронизацию с номерами строк в Markdown. Области C# могут быть вложенными. При ссылке на внешнюю область внутренние директивы `#region` и `#endregion` не отображаются во фрагменте кода. 
+Для фрагментов C# сошлитесь на [область C#](https://docs.microsoft.com/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region). По возможности используйте области, а не номера строк, так как номера строк в файле кода, как правило, меняются и теряют синхронизацию с номерами строк в Markdown. Области C# могут быть вложенными. При ссылке на внешнюю область внутренние директивы `#region` и `#endregion` не отображаются во фрагменте кода.
 
 Для подготовки области C# с именем "snippet_Example":
 
-```
+```md
 [!code-csharp[](configuration/index/sample/Program.cs?name=snippet_Example)]
 ```
 
 Чтобы выделить выбранные строки в готовом для просмотра фрагменте кода (обычно выделяются желтым цветом):
 
-```
+```md
 [!code-csharp[](configuration/index/sample/Program.cs?name=snippet_Example&highlight=1-3,10,20-25)]
 [!code-csharp[](configuration/index/sample/Program.cs?range=10-20&highlight=1-3]
 [!code-html[](configuration/index/sample/Views/Home/Index.cshtml?range=10-20&highlight=1-3]
@@ -116,13 +108,13 @@ ms.locfileid: "57797890"
 DocFX требует:
 
 * .NET Framework на Windows.
-* Mono для Linux или macOS. 
+* Mono для Linux или macOS.
 
 ### <a name="windows-instructions"></a>Инструкции для Windows
 
 * Скачайте и распакуйте *docfx.zip* из [выпусков DocFX](https://github.com/dotnet/docfx/releases).
 * Добавьте DocFX в PATH.
-* В командной оболочке перейдите в папку, содержащую файл *docfx.json* (*aspnet* для содержимого ASP.NET или *aspnetcore* для содержимого ASP.NET Core) и выполните следующую команду:
+* В командной строке, перейдите к *aspnet* папку, содержащую *docfx.json* файл и выполните следующую команду:
 
   ```console
   docfx --serve
@@ -144,7 +136,7 @@ DocFX требует:
   alias docfx='mono $HOME/bin/docfx/docfx.exe'
   alias docfx-serve='mono $HOME/bin/docfx/docfx.exe --serve'
   ```
-* В командной оболочке перейдите в папку, содержащую файл *docfx.json* (*aspnet* для содержимого ASP.NET или *aspnetcore* для содержимого ASP.NET Core) и выполните следующую команду, чтобы создавать и обслуживать документы с использованием их псевдонимов.
+* В командной строке, перейдите к *aspnet* папку, содержащую *docfx.json* файл и выполните следующую команду, чтобы создавать и обслуживать документы с помощью псевдонима:
 
   ```console
   docfx-serve
@@ -153,7 +145,7 @@ DocFX требует:
 
 ## <a name="voice-and-tone"></a>Стиль
 
-Наши документы должны быть понятными для самой широкой аудитории. С этой целью мы предлагаем рекомендации по стилю и просим наших авторов следовать им. Дополнительные сведения см. в разделе [Рекомендации по стилю](https://github.com/dotnet/docs/blob/master/styleguide/voice-tone.md) в репозитории .NET.
+Наши документы должны быть понятными для самой широкой аудитории. С этой целью мы предлагаем рекомендации по стилю и просим наших авторов следовать им. Дополнительные сведения см. в разделе [рекомендации по стилю](https://github.com/dotnet/docs/blob/master/styleguide/voice-tone.md) в репозитории .NET.
 
 ## <a name="microsoft-writing-style-guide"></a>Руководство по стилю Майкрософт
 
@@ -161,4 +153,4 @@ DocFX требует:
 
 ## <a name="redirects"></a>Перенаправление
 
-Если вы удаляете статью, измените ее имя файла или переместите ее в другую папку, создайте перенаправление, чтобы пользователи, добавившие статью в закладки, не получали ошибку *404 Не найдено*. Добавьте перенаправление [в главный файл перенаправления](https://github.com/aspnet/Docs/blob/master/.openpublishing.redirection.json).
+Если вы удаляете статью, измените ее имя файла или переместите ее в другую папку, создайте перенаправление, чтобы пользователи, добавившие статью в закладки, не получали ошибку *404 Не найдено*. Добавьте перенаправление [в главный файл перенаправления](https://github.com/aspnet/AspNetDocs/blob/master/.openpublishing.redirection.json).

@@ -8,12 +8,12 @@ ms.date: 06/06/2012
 ms.assetid: a56572ba-81c3-47af-826d-941e9c4775ec
 msc.legacyurl: /mvc/overview/performance/using-asynchronous-methods-in-aspnet-mvc-4
 msc.type: authoredcontent
-ms.openlocfilehash: 757b15c34f6fa0078d0bca0dfb38d553bb73809d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 20f8d6f459cefc6c1a2e7d5f64c6df4199f8ad24
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033271"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424473"
 ---
 <a name="using-asynchronous-methods-in-aspnet-mvc-4"></a>Использование асинхронных методов в ASP.NET MVC 4
 ====================
@@ -152,7 +152,7 @@ ASP.NET MVC 4 [Controller](https://msdn.microsoft.com/library/system.web.mvc.con
 
 [!code-csharp[Main](using-asynchronous-methods-in-aspnet-mvc-4/samples/sample10.cs)]
 
-В примере приложения, выбрав *Демонстрация токена отмены* связать вызовы `GizmosCancelAsync` метод и демонстрирует Отмена асинхронного вызова.
+В примере приложения, выбрав *Демонстрация токена отмены* связать вызовы `GizmosCancelAsync` метод и демонстрирует отмены асинхронного вызова.
 
 ## <a id="ServerConfig"></a>  Конфигурация сервера для вызовов веб-службы высокого уровня параллелизма и высокий уровень задержки
 

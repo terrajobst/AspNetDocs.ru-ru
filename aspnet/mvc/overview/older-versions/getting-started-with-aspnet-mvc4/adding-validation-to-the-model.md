@@ -8,12 +8,12 @@ ms.date: 08/28/2012
 ms.assetid: 5d9a2999-fcc4-4c45-a018-271fddf74a3b
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/adding-validation-to-the-model
 msc.type: authoredcontent
-ms.openlocfilehash: 5819d789f31b9452d40ae3aa7f821f101ae126ce
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c0cfd4f900c88f953cf7004a987bc267a1e1b4a2
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049481"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422037"
 ---
 <a name="adding-validation-to-the-model"></a>Добавление проверки в модель
 ====================
@@ -55,7 +55,7 @@ ms.locfileid: "57049481"
 
 [!code-console[Main](adding-validation-to-the-model/samples/sample3.cmd)]
 
-По завершении этой команды Visual Studio открывает файл класса, который определяет новый `DbMIgration` производный класс с указанным именем (*AddDataAnnotationsMig*) и в `Up` метода вы увидите код, который обновляется ограничения схемы. `Title` И `Genre` поля больше не допускают значение NULL (то есть необходимо ввести значение) и `Rating` поле имеет длину не более 5.
+По завершении этой команды Visual Studio открывает файл класса, который определяет новый `DbMigration` производный класс с указанным именем (*AddDataAnnotationsMig*) и в `Up` метода вы увидите код, который обновляется ограничения схемы. `Title` И `Genre` поля больше не допускают значение NULL (то есть необходимо ввести значение) и `Rating` поле имеет длину не более 5.
 
 Атрибуты проверки определяют поведение для свойств модели, к которым они применяются. `Required` Атрибут указывает, что свойство должно иметь значение; в этом образце фильм должен иметь значения для `Title`, `ReleaseDate`, `Genre`, и `Price` свойства, чтобы быть допустимыми. Атрибут `Range` ограничивает диапазон значений. Атрибут `StringLength` позволяет задать максимальную и при необходимости минимальную длину строкового свойства. Встроенные типы (такие как `decimal, int, float, DateTime`) требуются по умолчанию и нет необходимости `Required` атрибута.
 

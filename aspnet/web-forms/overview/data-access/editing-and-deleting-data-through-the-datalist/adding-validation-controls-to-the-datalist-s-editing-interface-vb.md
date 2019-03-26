@@ -8,12 +8,12 @@ ms.date: 10/30/2006
 ms.assetid: 6b073fc6-524d-453d-be7c-0c30986de391
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/adding-validation-controls-to-the-datalist-s-editing-interface-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 6fe5fcba322f3d3a37b862f0a85810d8b4dda5f4
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d4d7db91ebd495149bb322487b541e2965d4f5e5
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059341"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424681"
 ---
 <a name="adding-validation-controls-to-the-datalists-editing-interface-vb"></a>Добавление элементов управления проверки в интерфейс правки элемента управления DataList (VB)
 ====================
@@ -156,10 +156,10 @@ ms.locfileid: "57059341"
 
 [!code-vb[Main](adding-validation-controls-to-the-datalist-s-editing-interface-vb/samples/sample2.vb)]
 
-В результате этого добавления продукта будет пытаться обновить только в том случае, если переданные данные является допустимым. Большинство пользователей, выиграл t сможете обратной передачи недопустимых данных из-за клиентские скрипты элементов управления проверки, но пользователей, которых браузеры кое t поддержка JavaScript, или поддерживает JavaScript отключена, можно обойти проверки на стороне клиента и отправить недопустимые данные.
+В результате этого добавления продукта будет пытаться обновить только в том случае, если переданные данные является допустимым. Большинство пользователей не сможет обратной передачи недопустимых данных из-за клиентские скрипты элементов управления проверки, но пользователи, которых браузеры кое t поддерживает JavaScript или, имеют отключена поддержка JavaScript, можно обойти проверки на стороне клиента и отправить недопустимые данные.
 
 > [!NOTE]
-> Внимательный читатель будет помните, что при обновлении данных с помощью GridView, мы нужно явно проверять `Page.IsValid` свойства в классе фонового кода страницы s. Это обусловлено обращается к GridView `Page.IsValid` свойство для США и продолжить обновление, только в том случае, если он возвращает значение `True`.
+> Внимательный читатель, наверное, помните, при обновлении данных с помощью GridView, не нужно явно проверять `Page.IsValid` свойства в классе фонового кода страницы s. Это обусловлено обращается к GridView `Page.IsValid` свойство для США и продолжить обновление, только в том случае, если он возвращает значение `True`.
 
 
 ## <a name="step-3-summarizing-data-entry-problems"></a>Шаг 3. Обобщение проблем с вводом данных

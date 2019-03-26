@@ -15,7 +15,7 @@ msc.type: chapter
 
 [!INCLUDE [consider RP](../../../../includes/razor.md)]
 
-В этой следующей серии руководств рассматриваются ASP.NET MVC: Источник, расположенный на [GitHub](https://github.com/aspnet/Docs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie/MvcMovie)
+В этой следующей серии руководств рассматриваются ASP.NET MVC: Источник, расположенный на [GitHub](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie/MvcMovie)
 
 - [Начало работы](getting-started.md)
 - [Добавление контроллера](adding-a-controller.md)

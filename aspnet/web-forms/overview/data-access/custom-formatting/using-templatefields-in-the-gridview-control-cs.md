@@ -8,12 +8,12 @@ ms.date: 03/31/2010
 ms.assetid: 11de31e8-a78a-4f96-bd75-66e994175902
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting/using-templatefields-in-the-gridview-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 4d1cad54d07ba3756d653685b3e04cb66e5ca98b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 163b66323325f24430f8f5fda40aab5b9e8f3b85
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044211"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58426072"
 ---
 <a name="using-templatefields-in-the-gridview-control-c"></a>Использование TemplateField в элементе управления GridView (C#)
 ====================
@@ -148,9 +148,9 @@ GridView представляет собой набор полей, которы
 [!code-aspx[Main](using-templatefields-in-the-gridview-control-cs/samples/sample4.aspx)]
 
 
-[![Первый и фамилии каждого сотрудника отображаются в одного столбц](using-templatefields-in-the-gridview-control-cs/_static/image29.png)](using-templatefields-in-the-gridview-control-cs/_static/image28.png)
+[![Первый и фамилии каждого сотрудника отображаются в одном столбце](using-templatefields-in-the-gridview-control-cs/_static/image29.png)](using-templatefields-in-the-gridview-control-cs/_static/image28.png)
 
-**Рис. 10**: Первый и фамилии каждого сотрудника отображаются в одного столбц ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image30.png))
+**Рис. 10**: Первый и фамилии каждого сотрудника отображаются в одном столбце ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image30.png))
 
 
 ## <a name="step-3-using-the-calendar-control-to-display-thehireddatefield"></a>Шаг 3. С помощью элемента управления Calendar для отображения`HiredDate`поля

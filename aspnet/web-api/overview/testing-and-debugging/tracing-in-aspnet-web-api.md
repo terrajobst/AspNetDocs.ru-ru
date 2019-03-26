@@ -8,12 +8,12 @@ ms.date: 02/25/2014
 ms.assetid: 66a837e9-600b-4b72-97a9-19804231c64a
 msc.legacyurl: /web-api/overview/testing-and-debugging/tracing-in-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: e0d525e497cf41a79820417a9c832fa6b5cd7f8a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 59bce8c511167e8ba8a8db6f1842e352c90f3039
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031541"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424902"
 ---
 <a name="tracing-in-aspnet-web-api-2"></a>Трассировка в ASP.NET Web API 2
 ====================
@@ -89,7 +89,7 @@ ms.locfileid: "57031541"
 
 В этом разделе описывается, как написать средство записи отслеживания для веб-API.
 
-Пакет Microsoft.AspNet.WebApi.Tracing надстраивается над более общими инфраструктура трассировки в веб-API. Вместо использования Microsoft.AspNet.WebApi.Tracing, можно также подключить другой библиотеки трассировки/входа, такие как [NLog](http://nlog-project.org/) или [log4net](http://logging.apache.org/log4net/).
+Пакет Microsoft.AspNet.WebApi.Tracing надстраивается над более общими инфраструктура трассировки в веб-API. Вместо использования Microsoft.AspNet.WebApi.Tracing, можно также подключить другой библиотеки трассировки или ведения журналов, таких как [NLog](http://nlog-project.org/) или [log4net](http://logging.apache.org/log4net/).
 
 Для сбора данных трассировки, реализовать **ITraceWriter** интерфейс. Ниже приведен простой пример:
 
@@ -113,7 +113,7 @@ ms.locfileid: "57031541"
 
 Трассировка в веб-API использует *фасадной* шаблон: Если трассировка включена, веб-API является оболочкой для различных частей конвейера запросов с классами, которые выполняют вызовы трассировки.
 
-Например, при выборе контроллера, этот конвейер использует **IHttpControllerSelector** интерфейс. С включенной трассировкой, pipleline вставляет класс, реализующий **IHttpControllerSelector** , но вызовы через настоящей реализации:
+Например, при выборе контроллера, этот конвейер использует **IHttpControllerSelector** интерфейс. С включенной трассировкой, конвейер вставляет класс, реализующий **IHttpControllerSelector** , но вызовы через настоящей реализации:
 
 ![Трассировка веб-API использует шаблон фасадной.](tracing-in-aspnet-web-api/_static/image8.png)
 

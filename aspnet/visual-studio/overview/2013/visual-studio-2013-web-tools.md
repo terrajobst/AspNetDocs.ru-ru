@@ -8,18 +8,18 @@ ms.date: 07/16/2014
 ms.assetid: 09e82351-816b-402d-acd1-0f9ac6901d16
 msc.legacyurl: /visual-studio/overview/2013/visual-studio-2013-web-tools
 msc.type: authoredcontent
-ms.openlocfilehash: 82248efd767c1110b9a4067b7d0c0e2ecafcbef9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 54d86de49bf61305b17fc80964723c518abd467b
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049891"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423251"
 ---
 <a name="hands-on-lab-visual-studio-2013-web-tools"></a>Практическое лабораторное занятие. Веб-инструменты Visual Studio 2013
 ====================
 по [Web Слышатся Team](https://twitter.com/webcamps)
 
-[Скачайте комплект учебных материалов по лагеря Web](http://aka.ms/webcamps-training-kit)
+[Скачайте комплект учебных материалов по лагеря Web](https://aka.ms/webcamps-training-kit)
 
 > Visual Studio — это среда разработки отлично для. Windows на основе .NET и веб-проектов. Он включает мощный текстовый редактор, который можно легко использовать для изменения отдельных файлов без проекта.
 > 
@@ -27,7 +27,7 @@ ms.locfileid: "57049891"
 > 
 > Все эти возможности также доступна для расширений, упрощая для расширения редакторам с более новыми мощными функциями в соответствии с потребностями. Web Essentials является коллекцией (обычно) связанные с веб-расширений для Visual Studio. В нем много новые варианты завершения IntelliSense (особенно для CSS), новые возможности связи с браузером, автоматически файлы JSHint для JavaScript, появлению новых предупреждений для HTML, CSS и многие другие возможности, которые необходимы для разработки современных веб-приложений.
 > 
-> Все примеры кода и фрагменты кода включены в Web лагеря комплект обучающих материалов, доступных в [ http://aka.ms/webcamps-training-kit ](http://aka.ms/webcamps-training-kit).
+> Все примеры кода и фрагменты кода включены в Web лагеря комплект обучающих материалов, доступных в [ https://aka.ms/webcamps-training-kit ](https://aka.ms/webcamps-training-kit).
 
 
 <a id="Overview"></a>
@@ -224,7 +224,7 @@ ms.locfileid: "57049891"
     ![Открытие файла Site.css](visual-studio-2013-web-tools/_static/image16.png "при открытии файла Site.css")
 
     *При открытии файла Site.css*
-5. Нажмите клавишу **CTRL** + **F** и тип **.front .flip containter** найти селектора CSS.
+5. Нажмите клавишу **CTRL** + **F** и тип **.front .flip-container** найти селектора CSS.
 6. Щелкните светло синий квадрат в свойстве границы класса, чтобы открыть палитру цветов.
 
     ![Открытие палитры цветов](visual-studio-2013-web-tools/_static/image17.png "Открытие палитры цветов")

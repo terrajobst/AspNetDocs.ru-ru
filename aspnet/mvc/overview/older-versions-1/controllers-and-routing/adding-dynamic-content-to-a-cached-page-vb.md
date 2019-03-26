@@ -8,12 +8,12 @@ ms.date: 01/27/2009
 ms.assetid: 68acd884-fb57-4486-a1be-aaa93e380780
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/adding-dynamic-content-to-a-cached-page-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 121a3a35c8255f1423d7008930315f76bbb8e8f9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b361470c769b61a7b407797158eb695fe5084eda
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053101"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423498"
 ---
 <a name="adding-dynamic-content-to-a-cached-page-vb"></a>Добавление динамического содержимого на кэшированные страницы (VB)
 ====================
@@ -72,7 +72,7 @@ ms.locfileid: "57053101"
 
 Листинг 4 содержит модуль Visual Basic, предоставляет два метода: RenderBanner() и RenderBannerInternal(). Метод RenderBanner() представляет фактический вспомогательный метод. Этот метод расширяет стандартного класса ASP.NET MVC HtmlHelper, что Html.RenderBanner() можно вызвать в представлении так же, как и любой другой вспомогательный метод.
 
-Метод RenderBanner() вызывает метод HttpResponse.WriteSubstitution(), передавая ему RenderBannerInternal() WriteSubsitution() метода.
+Метод RenderBanner() вызывает метод HttpResponse.WriteSubstitution(), передавая ему RenderBannerInternal() WriteSubstitution() метода.
 
 Метод RenderBannerInternal() — закрытый метод. Этот метод не будет предоставляться как вспомогательный метод. Метод RenderBannerInternal() случайным образом возвращает одно изображение баннера объявления из списка три изображения баннера объявления.
 

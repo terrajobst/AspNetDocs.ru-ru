@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: f731990a-0a81-4d62-81df-87d676cdedd6
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/use-ajax-to-implement-mapping-scenarios
 msc.type: authoredcontent
-ms.openlocfilehash: f7de23ca46e6dc00fe8075e28068a8b3f95d02cd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9beddfcaf568bf374271fb9fcb3af3a38aff4b72
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053261"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424837"
 ---
 <a name="use-ajax-to-implement-mapping-scenarios"></a>Использование AJAX для реализации сценариев сопоставления
 ====================
@@ -150,7 +150,7 @@ ms.locfileid: "57053261"
 
 [!code-csharp[Main](use-ajax-to-implement-mapping-scenarios/samples/sample10.cs)]
 
-Метод действия SearchByLocation SearchController внутренне вызывает метод FindByLocation DinnerRespository, чтобы получить список близлежащих ужинов. Вместо того чтобы возвращать объекты Dinner непосредственно клиенту, однако вместо этого он возвращает JsonDinner объектов. Класс JsonDinner предоставляет подмножество свойств Dinner (например: оно не раскрывает имена людей, которые RSVP'd пообедать по причинам безопасности). Он также включает свойство RSVPCount, не существует на ужин — и динамически которого вычисляется путем подсчета количества RSVP объекты, связанные с определенной dinner.
+Метод действия SearchByLocation SearchController внутренне вызывает метод FindByLocation DinnerRepository, чтобы получить список близлежащих ужинов. Вместо того чтобы возвращать объекты Dinner непосредственно клиенту, однако вместо этого он возвращает JsonDinner объектов. Класс JsonDinner предоставляет подмножество свойств Dinner (например: оно не раскрывает имена людей, которые RSVP'd пообедать по причинам безопасности). Он также включает свойство RSVPCount, не существует на ужин — и динамически которого вычисляется путем подсчета количества RSVP объекты, связанные с определенной dinner.
 
 Затем используется вспомогательный метод на JSON в базовом классе контроллера будет возвращать последовательность ужинов, с помощью формата передачи на основе JSON. JSON — это стандартный текстовый формат для представления простых структур данных. Ниже приведен пример списка формате JSON для двух объектов JsonDinner просмотр после возвращения из наших метода действия.
 

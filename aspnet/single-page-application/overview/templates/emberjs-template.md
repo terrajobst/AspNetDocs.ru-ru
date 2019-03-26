@@ -8,12 +8,12 @@ ms.date: 01/30/2013
 ms.assetid: 04d5f142-5f62-494a-b5ea-4f3d068d34cb
 msc.legacyurl: /single-page-application/overview/templates/emberjs-template
 msc.type: authoredcontent
-ms.openlocfilehash: fbc3b1d299ace27d38d895e42b8e3bb3b51b36f8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 69331dc1cf2aacf306b55b49402f7df90f5e2c99
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027321"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421978"
 ---
 <a name="emberjs-template"></a>Шаблон EmberJS
 ====================
@@ -149,7 +149,7 @@ Ember использует соглашения об именовании в с�
 
 [!code-html[Main](emberjs-template/samples/sample12.html)]
 
-`HtmlHelperExtensions` Класс, определенный в Controllers/HtmlHelperExensions.cs, определяет вспомогательный объект функции кэширования и вставить шаблон файлов при **Отладка** присваивается **true** в файле Web.config. Эта функция вызывается из файла представления ASP.NET MVC, определенные в Views/Home/App.cshtml:
+`HtmlHelperExtensions` Класс, определенный в Controllers/HtmlHelperExtensions.cs, определяет вспомогательный объект функции кэширования и вставить шаблон файлов при **Отладка** присваивается **true** в файле Web.config. Эта функция вызывается из файла представления ASP.NET MVC, определенные в Views/Home/App.cshtml:
 
 [!code-cshtml[Main](emberjs-template/samples/sample13.cshtml)]
 

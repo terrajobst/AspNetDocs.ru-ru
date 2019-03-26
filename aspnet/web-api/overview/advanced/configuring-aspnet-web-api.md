@@ -8,12 +8,12 @@ ms.date: 03/31/2014
 ms.assetid: 9e10a700-8d91-4d2e-a31e-b8b569fe867c
 msc.legacyurl: /web-api/overview/advanced/configuring-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 57066b8ce3254caf59cf927d16d96f8bc22a8acd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 270268b77f398084169843e20b0a2bf9f1c2a011
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046481"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423161"
 ---
 <a name="configuring-aspnet-web-api-2"></a>Настройка веб-API 2 ASP.NET
 ====================
@@ -30,9 +30,9 @@ ms.locfileid: "57046481"
 <a id="settings"></a>
 ## <a name="configuration-settings"></a>Параметры конфигурации
 
-Принудительный конфигурации веб-API определяются в [HttpConfiguration](https://msdn.microsoft.com/library/system.web.http.httpconfiguration.aspx) класса.
+Определенные параметры конфигурации веб-API в [HttpConfiguration](https://msdn.microsoft.com/library/system.web.http.httpconfiguration.aspx) класса.
 
-| Член | Описание: |
+| Член | Описание |
 | --- | --- |
 | **DependencyResolver** | Включает возможность встраивания зависимостей для контроллеров. См. в разделе [с помощью сопоставителя зависимостей веб-API](dependency-injection.md). |
 | **Фильтры** | Фильтры действий. |
@@ -53,7 +53,7 @@ ms.locfileid: "57046481"
 <a id="webhost"></a>
 ## <a name="configuring-web-api-with-aspnet-hosting"></a>Настройка веб-API с размещением в ASP.NET
 
-В приложении ASP.NET настройки веб-API путем вызова [GlobalConfiguration.Configure](https://msdn.microsoft.com/library/system.web.http.globalconfiguration.configure.aspx) в **приложения\_запустить** метод. **Настройка** метод принимает делегат с одним параметром типа **HttpConfiguration**. Выполните все ваши настройки внутри делегата.
+В приложении ASP.NET настройки веб-API путем вызова [GlobalConfiguration.Configure](https://msdn.microsoft.com/library/system.web.http.globalconfiguration.configure.aspx) в **приложения\_запустить** метод. **Настройка** метод принимает делегат с одним параметром типа **HttpConfiguration**. Выполните все конфигурации внутри делегата.
 
 Ниже приведен пример использования анонимного делегата:
 
@@ -96,7 +96,7 @@ ms.locfileid: "57046481"
 Одного экземпляра службы
 
 
-| Служба | Описание: |
+| Служба | Описание |
 | --- | --- |
 | **IActionValueBinder** | Получает привязку для параметра. |
 | **IApiExplorer** | Получает описания интерфейсов API, предоставляемые приложением. См. в разделе [Создание страницы справки для веб-API](../getting-started-with-aspnet-web-api/creating-api-help-pages.md). |
@@ -117,7 +117,7 @@ ms.locfileid: "57046481"
 Несколько экземпляров служб
 
 
-|                 Служба                 |                                                                                                              Описание:                                                                                                               |
+|                 Служба                 |                                                                                                              Описание                                                                                                               |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    <strong>IFilterProvider</strong>     |                                                                                           Возвращает список фильтров для действия контроллера.                                                                                           |
 |  <strong>ModelBinderProvider</strong>   |                                                                                                Возвращает связыватель модели для данного типа.                                                                                                |

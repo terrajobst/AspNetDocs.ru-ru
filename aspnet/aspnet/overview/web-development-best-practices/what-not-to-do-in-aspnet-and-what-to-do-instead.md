@@ -8,12 +8,12 @@ ms.date: 01/28/2019
 ms.assetid: c39b9965-545c-4b04-8f55-21be7f28a9e5
 msc.legacyurl: /aspnet/overview/web-development-best-practices/what-not-to-do-in-aspnet-and-what-to-do-instead
 msc.type: authoredcontent
-ms.openlocfilehash: 512d2e2b39467635390fa175546f79d8c9f89f4a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a09169327d8eed45a83b232354af74a14aa89817
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038151"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425045"
 ---
 # <a name="what-not-to-do-in-aspnet-and-what-to-do-instead"></a>Запрещенные и разрешенные действия в ASP.NET
 
@@ -151,7 +151,7 @@ ms.locfileid: "57038151"
 
 Рекомендация: Никогда не задано значение false.
 
-По умолчанию имеет значение EnbableViewStateMac значение true. Даже если приложение не использует состояние просмотра, не устанавливайте свойство EnableViewStateMac значение false. Значение false делает приложение уязвимым для межузловых сценариев.
+По умолчанию, свойство EnableViewStateMac имеет значение в значение true. Даже если приложение не использует состояние просмотра, не устанавливайте свойство EnableViewStateMac значение false. Значение false делает приложение уязвимым для межузловых сценариев.
 
 Начиная с ASP.NET 4.5.2, среда выполнения обеспечивает **EnableViewStateMac = true**. Даже если ему присвоено значение false, среда выполнения игнорирует это значение и выполняет заданное значение в значение true. Дополнительные сведения см. в разделе [ASP.NET 4.5.2 и EnableViewStateMac](https://blogs.msdn.com/b/webdev/archive/2014/05/07/asp-net-4-5-2-and-enableviewstatemac.aspx).
 

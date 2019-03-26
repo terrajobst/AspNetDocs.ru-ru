@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: 8af630e0-fffa-4110-9eca-c96e201b2724
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/sorting-filtering-and-paging-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 8bea3d4bc19a5a47240abeb2cc015116814a8fdf
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: afd1551d72fa3a5b925d7499c86731db4b6f0b61
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043041"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422016"
 ---
 <a name="sorting-filtering-and-paging-with-the-entity-framework-in-an-aspnet-mvc-application-3-of-10"></a>Сортировка, фильтрация и разбиение по страницам с Entity Framework в приложении ASP.NET MVC (3 из 10)
 ====================
@@ -89,7 +89,7 @@ ms.locfileid: "57043041"
 
 [!code-csharp[Main](sorting-filtering-and-paging-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample4.cs?highlight=1,7-11)]
 
-Мы добавили в метод `Index` параметр `searchString`. Мы также добавили в оператор LINQ `where` clausethat отбирает только студентов, чье имя или Фамилия содержат строку поиска. Значение строки поиска получается из текстового поля, который вам предстоит добавить в представление Index. Оператор, который добавляет [где](https://msdn.microsoft.com/library/bb535040.aspx) предложение выполняется только в том случае, если отсутствует значение для поиска.
+Мы добавили в метод `Index` параметр `searchString`. Мы также добавили в оператор LINQ `where` предложение, которое отбирает только студентов, чье имя или Фамилия содержат строку поиска. Значение строки поиска получается из текстового поля, который вам предстоит добавить в представление Index. Оператор, который добавляет [где](https://msdn.microsoft.com/library/bb535040.aspx) предложение выполняется только в том случае, если отсутствует значение для поиска.
 
 > [!NOTE]
 > Во многих случаях можно вызвать тот же метод, либо на набор сущностей Entity Framework, либо как метода расширения для коллекции в памяти. Обычно такие же результаты, но в некоторых случаях может отличаться. Например, реализация .NET Framework `Contains` метод возвращает все строки, передать пустую строку, когда поставщик Entity Framework для SQL Server Compact 4.0 не возвращает строки, наличие пустых строк. Поэтому код в примере (размещение `Where` инструкции внутри `if` инструкции) гарантирует, что вы получите те же результаты для всех версий SQL Server. Кроме того, реализация .NET Framework `Contains` метод по умолчанию выполняет сравнение с учетом регистра, но поставщики Entity Framework SQL Server по умолчанию выполняют сравнения без учета регистра. Таким образом, вызов `ToUpper` метод производится проверка явно регистронезависимым гарантирует, что результаты не изменяются при изменении коду позднее использовать хранилище, которое будет возвращать `IEnumerable` , а не `IQueryable` объекта. (При вызове метода `Contains` коллекции `IEnumerable` выполняется реализация .NET Framework; при вызове этого же метода у объекта `IQueryable` выполняется реализация поставщика базы данных.)

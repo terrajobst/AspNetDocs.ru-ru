@@ -8,19 +8,19 @@ ms.date: 04/10/2014
 ms.assetid: 7958d725-e958-4566-a85b-535eeb985f94
 msc.legacyurl: /mvc/overview/getting-started/recommended-resources-for-mvc
 msc.type: authoredcontent
-ms.openlocfilehash: cbd72233fb5688c27d3675e2621eab58a64db80c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f57ce4236abe71de3f6f60cb2d7930f7ae9a8d7a
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57047091"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423914"
 ---
-<a name="mvc-recommended-resources"></a>Рекомендуемые ресурсы по MVC
-====================
+# <a name="mvc-recommended-resources"></a>Рекомендуемые ресурсы по MVC
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > В этом разделе содержит ссылки на документацию о ASP.NET MVC 5. Если известно, учета, замечательный блог [stackoverflow](http://stackoverflow.com/) поток или другая ссылка, может оказаться полезным, отправить [мне](mailto:aspnetue@microsoft.com?subject=Great ASP.NET MVC link) электронное сообщение со ссылкой. Периодически обновляются ссылки, представленные в данном разделе. Можно найти более старых (но во многих случаях — по-прежнему действующий) ASP.NET MVC ссылок на [Карта содержимого MSDN](https://msdn.microsoft.com/library/gg416514(v=vs.108).aspx).
-> 
+>
 > Лучше всего получить ответы на свои вопросы или найти способы решения проблем — в [форум по ASP.NET MVC](https://forums.asp.net/1146.aspx/1?MVC) или на [stackoverflow](http://stackoverflow.com/questions/tagged/mvc+asp.net-mvc).
 > <a id="gettingstarted"></a>
 
@@ -63,8 +63,8 @@ ms.locfileid: "57047091"
     - [Советы и рекомендации в Visual Studio 2013](https://channel9.msdn.com/Events/Build/2014/2-582) с Кэти Салливан
     - [Автоматизация везде с помощью новых пакетов SDK, средств и служб в Azure](https://channel9.msdn.com/Events/Build/2014/3-621) по Brady Gaster, Джо Леви
     - [Новые возможности веб-сайты Azure Крис Compy, Нир Машковски](https://channel9.msdn.com/Events/Build/2014/3-625)
-    - [Создание больших: Уроки из клиентов Azure](https://channel9.msdn.com/Events/Build/2014/3-633) , Крис Клейтон, (Mark simms)   
-        [Создание приложения на одной странице с помощью ASP.NET и AngularJS](https://channel9.msdn.com/Events/Build/2014/3-644) , Дэвид Catuhe, Джон Гэллоуэй
+    - [Создание больших: Уроки из клиентов Azure](https://channel9.msdn.com/Events/Build/2014/3-633) , Крис Клейтон, (Mark simms)
+    - [Создание приложения на одной странице с помощью ASP.NET и AngularJS](https://channel9.msdn.com/Events/Build/2014/3-644) , Дэвид Catuhe, Джон Гэллоуэй
     - [Проектирование и реализация гибридные облачные решения для архитекторов](https://channel9.msdn.com/Events/Build/2014/3-632)
     - [Модель группы ресурсов Azure: Современные принципы управления для современных облачных](https://channel9.msdn.com/Events/Build/2014/2-607) по Thapar Гаутама, Натана Тоттена
     - [Создание веб-API для мобильных приложений с помощью ASP.NET Web API 2.1](https://channel9.msdn.com/Events/Build/2014/3-603) по Дэниэл рот
@@ -168,8 +168,7 @@ ms.locfileid: "57047091"
 - [Кольцевая диаграмма кэширования и дырки от бублика кэширование с помощью Asp.Net MVC 4](http://www.dotnet-tricks.com/Tutorial/mvc/ODJa210113-Donut-Caching-and-Donut-Hole-Caching-with-Asp.Net-MVC-4.html)
 - [Основные сведения о кэширование в Asp.Net MVC с примером](http://www.dotnet-tricks.com/Tutorial/mvc/4R5c050113-Understanding-Caching-in-Asp.Net-MVC-with-example.html)
 - [http://webdevchecklist.com/asp.net/performance/](http://webdevchecklist.com/asp.net/performance/)
-- [Модель представления ASP.NET MVC: Платформа Entity Framework &amp; сериализация JSON](http://www.dotnetexpertguide.com/2013/06/aspnet-mvc-view-model-entity-framework-json-serialization.html)  
- Нандип Маквана показан хороший совет для повышения производительности (и снизить загрузку ЦП), исключая ненужные сериализацию дочерних сущностей
+- [Модель представления ASP.NET MVC: Платформа Entity Framework &amp; сериализации JSON](http://www.dotnetexpertguide.com/2013/06/aspnet-mvc-view-model-entity-framework-json-serialization.html) Нандип Маквана показан хороший совет для повышения производительности (и снизить загрузку ЦП), исключая ненужные сериализацию дочерних сущностей
 - [Async и Await](http://blog.stephencleary.com/2012/02/async-and-await.html) в ASP.NET, автор Стивен Клиэри
 - [Отладка и производительности с помощью Glimpse](http://www.hanselman.com/blog/NuGetPackageOfTheWeek5DebuggingASPNETMVCApplicationsWithGlimpse.aspx)
 - [Улучшения производительности веб-сайтов ASP.NET MVC с помощью асинхронных частичных представлений](http://blog.michaelckennedy.net/2012/11/13/improve-perceived-performance-of-asp-net-mvc-websites-with-async-partialviews/)
@@ -365,7 +364,7 @@ ms.locfileid: "57047091"
 - [Постановление изображения WebP ASP.NET MVC](http://friism.com/serving-webp-images-with-asp-net-mvc)
 - [Конвейер подробные ASP.NET MVC](http://www.dotnet-tricks.com/Tutorial/mvc/LYHK270114-Detailed-ASP.NET-MVC-Pipeline.html)
 - [Вложенность макетов в MVC](http://astutelogic.com/nesting-layouts-in-mvc/) по Уэйт Рассел
-- Я[mplementing RichTextEditor или WYSIWYG (TinyMCE) в ASP.NET MVC](http://www.dotnetfunda.com/articles/show/2657/implementing-richtexteditor-or-wysiwyg-tinymce-in-aspnet-mvc) по Нараян Sheo
+- [Реализация RichTextEditor или WYSIWYG (TinyMCE) в ASP.NET MVC](http://www.dotnetfunda.com/articles/show/2657/implementing-richtexteditor-or-wysiwyg-tinymce-in-aspnet-mvc) по Нараян Sheo
 - [Привязка представления с помощью коллекции анонимного типа в ASP.NET MVC](http://www.dotnetfunda.com/articles/show/2655/binding-views-with-anonymous-type-collection-in-aspnet-mvc) по Нараян Sheo
 - [Сохранение холст HTML 5 в виде изображения в ASP.NET MVC](http://www.dotnetfunda.com/articles/show/2665/saving-html-5-canvas-as-image-in-aspnet-mvc) по Нараян Sheo
 - [Обслуживание образа размер и положение на странице базы данных с использованием ASP.NET MVC](http://www.dotnetfunda.com/articles/show/2783/maintaining-image-size-and-position-on-the-page-in-database-using-aspn) по Нараян Sheo

@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: 7e97cfc3-d830-4002-8ff7-5790d1ff49e6
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/more-patterns-and-guidance
 msc.type: authoredcontent
-ms.openlocfilehash: 3de929ff7253928f2f9cd9b033ef6c643744e91c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 87dbbc0b598a6592b511383a5487a04b302b0994
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050801"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425669"
 ---
 <a name="more-patterns-and-guidance-building-real-world-cloud-apps-with-azure"></a>Дополнительные шаблоны и рекомендации (Создание реальных облачных приложений в Azure)
 ====================
@@ -61,7 +61,7 @@ ms.locfileid: "57050801"
 Пример кода
 
 - [Fix It приложения, сопровождающий эту электронную книгу](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4?cdn_id=2013-12-03-002).
-- [Основы облачных служб в Azure на языке C# для Visual Studio 2012](http://aka.ms/csf). Загружаемый проект на сайте коллекции кода Microsoft включает в себя код и документацию, разработанных с Microsoft Customer Advisory Team (CAT). Демонстрирует многие из рекомендаций, рассматриваемый в безопасном и создание больших видео из цикла и в техническом документе Безаварийность. Страницы коллекции кода также содержит ссылки на подробную документацию авторов проекта — см. в статье особое внимание следует уделить [Основы облачных служб вики-сайте коллекции](https://social.technet.microsoft.com/wiki/contents/articles/17987.cloud-service-fundamentals.aspx) ссылки в поле "blue" в верхней части Описание проекта. Этот проект и документацию для него по-прежнему активно разрабатываются, чтобы лучше узнать о многих статей похожие, но старые технические документы.
+- [Основы облачных служб в Azure на языке C# для Visual Studio 2012](https://aka.ms/csf). Загружаемый проект на сайте коллекции кода Microsoft включает в себя код и документацию, разработанных с Microsoft Customer Advisory Team (CAT). Демонстрирует многие из рекомендаций, рассматриваемый в безопасном и создание больших видео из цикла и в техническом документе Безаварийность. Страницы коллекции кода также содержит ссылки на подробную документацию авторов проекта — см. в статье особое внимание следует уделить [Основы облачных служб вики-сайте коллекции](https://social.technet.microsoft.com/wiki/contents/articles/17987.cloud-service-fundamentals.aspx) ссылки в поле "blue" в верхней части Описание проекта. Этот проект и документацию для него по-прежнему активно разрабатываются, чтобы лучше узнать о многих статей похожие, но старые технические документы.
 
 Бумажная копия электронной документации по
 
@@ -101,7 +101,7 @@ ms.locfileid: "57050801"
 - Эдвард центра обновления Windows - предоставленный пример кода для единого входа главы.
 - Guang Yang - написал автоматизации сценариев PowerShell.
 
-Членами [консультативного совета разработчиков Microsoft рекомендации](http://aka.ms/DGAC) (DGAC) также просмотра и сообщено о черновики:
+Членами [консультативного совета разработчиков Microsoft рекомендации](https://aka.ms/DGAC) (DGAC) также просмотра и сообщено о черновики:
 
 - Жан Люка Boucho
 - Catalin Gheorghiu

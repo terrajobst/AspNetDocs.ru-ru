@@ -8,12 +8,12 @@ ms.date: 09/13/2006
 ms.assetid: cf5acaf5-d4f6-4957-badc-b89956b285f3
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/showing-multiple-records-per-row-with-the-datalist-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: f79c446a0c9407309ab65cd993df544e883afb22
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8dd23b960df6511f65882820cb26d4af4ccf5c58
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038431"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58421535"
 ---
 <a name="showing-multiple-records-per-row-with-the-datalist-control-c"></a>Отображение нескольких записей в одной строке с помощью элемента управления DataList (C#)
 ====================
@@ -66,7 +66,7 @@ ms.locfileid: "57038431"
 
 Во время поведение по умолчанию для элемента управления DataList для выведения его элементов по вертикали в таблице с одним столбцом и нескольких строк, это поведение можно легко изменить с помощью элементов управления DataList s [ `RepeatDirection` свойство](https://msdn.microsoft.com/system.web.ui.webcontrols.datalist.repeatdirection.aspx). `RepeatDirection` Свойство может принимать одно из двух возможных значений: `Horizontal` или `Vertical` (по умолчанию).
 
-Изменив `RepeatDirection` свойства из `Vertical` для `Horizontal`, DataList визуализирует свои записи в одну строку, создавая один столбец на элемент источника данных. Чтобы проиллюстрировать этот эффект, щелкните в конструкторе элемента управления DataList и затем из окна свойств измените `RepeatDirection` свойства из `Vertical` для `Horiztonal`. Сразу же после этого конструктор скорректирует компоновку макета DataList s, создание интерфейса с одной строкой и несколькими столбцами (см. рис. 3).
+Изменив `RepeatDirection` свойства из `Vertical` для `Horizontal`, DataList визуализирует свои записи в одну строку, создавая один столбец на элемент источника данных. Чтобы проиллюстрировать этот эффект, щелкните в конструкторе элемента управления DataList и затем из окна свойств измените `RepeatDirection` свойства из `Vertical` для `Horizontal`. Сразу же после этого конструктор скорректирует компоновку макета DataList s, создание интерфейса с одной строкой и несколькими столбцами (см. рис. 3).
 
 
 [![RepeatDirection диктует как направление передачи Свойства DataList s их расположения Out](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image8.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image7.png)

@@ -8,12 +8,12 @@ ms.date: 01/28/2012
 ms.assetid: c125ca47-606a-4d6f-a1fc-1fc62928af93
 msc.legacyurl: /web-api/overview/older-versions/creating-a-web-api-that-supports-crud-operations
 msc.type: authoredcontent
-ms.openlocfilehash: ba061b26b8527e447f25f6046057542a54f989a8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f3cb0004075ef7687ca1096bd407c342b4d0b7be
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57052921"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423759"
 ---
 <a name="enabling-crud-operations-in-aspnet-web-api-1"></a>Включение операций CRUD в ASP.NET веб-API 1
 ====================
@@ -109,7 +109,7 @@ ms.locfileid: "57052921"
 
 [!code-csharp[Main](creating-a-web-api-that-supports-crud-operations/samples/sample2.cs)]
 
-Теперь добавьте еще один класс в папке «модели», с именем &quot;ProductRepository.&quot; Этот класс реализует интерфейс `IProductRespository`. Добавьте следующую реализацию:
+Теперь добавьте еще один класс в папке «модели», с именем &quot;ProductRepository.&quot; Этот класс реализует интерфейс `IProductRepository`. Добавьте следующую реализацию:
 
 [!code-csharp[Main](creating-a-web-api-that-supports-crud-operations/samples/sample3.cs)]
 
@@ -133,7 +133,7 @@ ms.locfileid: "57052921"
 ![](creating-a-web-api-that-supports-crud-operations/_static/image7.png)
 
 > [!NOTE]
-> Не бывает необходимо поместить в папку с именем контроллеры вашего контроллера. Имя папки не имеет значения; Это просто удобный способ организации исходные файлы.
+> Не бывает необходимо поместить в папку с именем контроллеры контроллеров. Имя папки не имеет значения; Это просто удобный способ организации исходные файлы.
 
 
 **Добавление контроллера** мастер создаст файл с именем ProductsController.cs в папку "контроллеры". Если этот файл еще не открыт, дважды щелкните файл, чтобы открыть его. Добавьте следующий **с помощью** инструкции:
@@ -216,7 +216,7 @@ ms.locfileid: "57052921"
 
 ## <a name="deleting-a-resource"></a>Удаление ресурса
 
-Для удаления ресурса, определите метод «Удалить...».
+Чтобы удалить ресурс, определите «удалить...» метод.
 
 [!code-csharp[Main](creating-a-web-api-that-supports-crud-operations/samples/sample12.cs)]
 

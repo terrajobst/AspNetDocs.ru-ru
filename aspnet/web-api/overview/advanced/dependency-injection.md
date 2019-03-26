@@ -8,12 +8,12 @@ ms.date: 01/20/2014
 ms.assetid: e3d3e7ba-87f0-4032-bdd3-31f3c1aa9d9c
 msc.legacyurl: /web-api/overview/advanced/dependency-injection
 msc.type: authoredcontent
-ms.openlocfilehash: 318a2f1c587feb360212a390bb5de7bdc127513d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d5011d42d0c2200bc782ab548f6bfa0d952f6e72
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043871"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58420924"
 ---
 <a name="dependency-injection-in-aspnet-web-api-2"></a>Внедрение зависимостей в ASP.NET Web API 2
 ====================
@@ -49,7 +49,7 @@ ms.locfileid: "57043871"
 
 - Если вы хотите заменить `ProductRepository` другой реализацией, необходимо также изменить класс контроллера.
 - Если `ProductRepository` имеет зависимости, их необходимо настроить в контроллере. Для большого проекта с несколькими контроллерами код конфигурации становится разбиты на проект.
-- Трудно модульного теста, так как контроллер, жестко заданные для запроса базы данных. Для модульного теста следует использовать репозитории макет или заглушки, что невозможно при помощи конструктора currect.
+- Трудно модульного теста, так как контроллер, жестко заданные для запроса базы данных. Для модульного теста следует использовать репозитории макет или заглушки, что не поддерживается в текущей архитектуре.
 
 Можно устранить эти проблемы путем *внедрение* репозитория в контроллер. Во-первых, рефакторинг `ProductRepository` класс в интерфейсе:
 

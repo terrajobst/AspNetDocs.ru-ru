@@ -8,12 +8,12 @@ ms.date: 08/15/2012
 ms.assetid: c7e4e1ab-4932-4614-9f53-aaf7c706d498
 msc.legacyurl: /mvc/overview/views/using-page-inspector-in-aspnet-mvc
 msc.type: authoredcontent
-ms.openlocfilehash: 0dea8b077878139a3f513cb51447b86a93fe55b8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: abb1ef355bd7614daaab8c205d9d53065856cd23
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57057711"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424369"
 ---
 <a name="using-page-inspector-in-aspnet-mvc"></a>Использование инспектора страниц в ASP.NET MVC
 ====================
@@ -139,7 +139,7 @@ ms.locfileid: "57057711"
 
 Нажмите кнопку **инспектировать** чтобы перевести инспектор страниц в режиме инспектирования.
 
-Щелкните в верхней части страницы «Вашей logohere». Изучении конкретный элемент более подробно, поэтому отображение в окне браузера больше не изменяется при перемещении указателя мыши.
+Щелкните в верхней части страницы «Ваша эмблема здесь». Изучении конкретный элемент более подробно, поэтому отображение в окне браузера больше не изменяется при перемещении указателя мыши.
 
 Теперь наведите указатель мыши на **HTML** окна. При перемещении указателя мыши, инспектор страниц описаны сервисном **HTML** окне и выделяет соответствующий элемент в окне браузера.
 

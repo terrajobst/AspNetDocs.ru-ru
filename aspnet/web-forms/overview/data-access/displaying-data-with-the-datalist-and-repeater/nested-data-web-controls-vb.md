@@ -8,12 +8,12 @@ ms.date: 09/13/2006
 ms.assetid: 8b7fcf7b-722b-498d-a4e4-7c93701e0c95
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/nested-data-web-controls-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 297d76da5bf049ec68a351562f96f3587b059b55
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5e0807f6db3ad4ef9377843d60824e6cd43dd245
+ms.sourcegitcommit: 62db31596a7da029263cf06335aff12236fb3186
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061871"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58440382"
 ---
 <a name="nested-data-web-controls-vb"></a>Вложенные веб-элементы управления данными (VB)
 ====================
@@ -140,7 +140,7 @@ ms.locfileid: "57061871"
 После внесения этих изменений для использования новой методики, Отвлекитесь и просмотрите страницу через обозреватель. Выходные данные должны быть идентичны выходные данные, при использовании элемента управления ObjectDataSource и `ItemDataBound` подход обработчика событий (см. рис. 5 см. снимок экрана).
 
 > [!NOTE]
-> Создание метода может показаться `GetProductsInCategory(categoryID)` метод в класс фонового кода страницы s ASP.NET. В конце концов, этот метод просто создает экземпляр `ProductsBLL` класса и возвращает результаты его `GetProductsByCategoryID(categoryID)` метод. Почему просто не вызвать этот метод напрямую из синтаксиса привязки данных во внутреннем Repeater, например: `DataSource='<%# ProductsBLL.GetProductsByCategoryID(CType(Eval("CategoryID"), Integer)) %>'`? Несмотря на то, что этот синтаксис выиграл не работают с текущей реализацией класса `ProductsBLL` класса (так как `GetProductsByCategoryID(categoryID)` метод является методом экземпляра), можно изменить `ProductsBLL` чтобы он включал статический `GetProductsByCategoryID(categoryID)` метод или чтобы класс включал статический метод `Instance()` метод, чтобы вернуть новый экземпляр `ProductsBLL` класса.
+> Создание метода может показаться `GetProductsInCategory(categoryID)` метод в класс фонового кода страницы s ASP.NET. В конце концов, этот метод просто создает экземпляр `ProductsBLL` класса и возвращает результаты его `GetProductsByCategoryID(categoryID)` метод. Почему просто не вызвать этот метод напрямую из синтаксиса привязки данных во внутреннем Repeater, например: `DataSource='<%# ProductsBLL.GetProductsByCategoryID(CType(Eval("CategoryID"), Integer)) %>'`? Несмотря на то, что этот синтаксис не будет работать с текущей реализацией класса `ProductsBLL` класса (так как `GetProductsByCategoryID(categoryID)` метод является методом экземпляра), можно изменить `ProductsBLL` чтобы он включал статический `GetProductsByCategoryID(categoryID)` метод или чтобы класс включал статический метод `Instance()` метод, чтобы вернуть новый экземпляр `ProductsBLL` класса.
 
 
 Хотя такие изменения устранят нужду для `GetProductsInCategory(categoryID)` метод в класс фонового кода страницы s ASP.NET, метод класса фонового кода дает нам большую гибкость в работе с полученными данными, как скоро можно будет увидеть.
@@ -151,7 +151,7 @@ ms.locfileid: "57061871"
 
 Учитывая *N* категорий в системе, этот подход дает *N* + 1 вызов к одной базе данных запроса к базе данных для получения всех категорий и затем *N* вызовы для получения продуктов относящихся к каждой категории. Тем не менее, мы можно получить все необходимые данные в одном вызове вызовы только две базы данных для получения всех категорий, и второй для получения всех продуктов. После получения всех продуктов, эти продукты можно отфильтровать таким образом, что только продукты, совпадающие с текущим `CategoryID` привязаны к этой категории s внутреннему элементу управления Repeater.
 
-Для обеспечения данной функциональности, нам нужно только внести небольшое изменение в `GetProductsInCategory(categoryID)` метод в класс фонового кода страницы s наших ASP.NET. Вместо того, чтобы вслепую возвращать результаты `ProductsBLL` класс s `GetProductsByCategoryID(categoryID)` , можно вместо этого сначала обратиться к *все* продуктов (если они не удалось t был доступ к уже) и затем вернуть только отфильтрованное представление продукты, зависимости от переданного `CategoryID`.
+Для обеспечения данной функциональности, нам нужно только внести небольшое изменение в `GetProductsInCategory(categoryID)` метод в класс фонового кода страницы s наших ASP.NET. Вместо того, чтобы вслепую возвращать результаты `ProductsBLL` класс s `GetProductsByCategoryID(categoryID)` , можно вместо этого сначала обратиться к *все* продуктов (если они еще не получен) и затем вернуть только отфильтрованное представление продукты, зависимости от переданного `CategoryID`.
 
 
 [!code-vb[Main](nested-data-web-controls-vb/samples/sample8.vb)]

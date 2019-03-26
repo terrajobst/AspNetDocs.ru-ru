@@ -8,12 +8,12 @@ ms.date: 07/17/2006
 ms.assetid: 49d8a66c-3ea8-4087-839f-179d1d94512a
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 0d4fa3e3e7bbe335af31423ec4fdd60e9791c2b0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: dea7b1e8cd5be795acd27868066384fe52b065f7
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043311"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58422198"
 ---
 <a name="handling-bll--and-dal-level-exceptions-in-an-aspnet-page-c"></a>Обработка исключений уровней BLL и DAL на странице ASP.NET(C#)
 ====================
@@ -98,7 +98,7 @@ ms.locfileid: "57043311"
 
 ## <a name="step-2-gracefully-handling-dal-level-exceptions"></a>Шаг 2. Аккуратная обработка исключений уровня DAL
 
-Хотя наши изменяемого элемента управления GridView прекрасно работает, когда пользователи вводят допустимые значения для имени измененного продукта, цену и единиц на складе, ввод недопустимых значений приводит к исключению. Например, пропуск `ProductName` приводит к выдаче исключения [NoNullAllowedException](https://msdn.microsoft.com/library/default.asp?url=/library/cpref/html/frlrfsystemdatanonullallowedexceptionclasstopic.asp) поскольку у `ProductName` свойство в `ProdcutsRow` класс имеет его `AllowDBNull` свойству присвоено `false`; Если База данных будет недоступна, `SqlException` будет генерироваться TableAdapter при попытке подключения к базе данных. Без какого-либо действия, эти исключения поднимаются с уровня доступа к данным уровня бизнес-логики, а затем на странице ASP.NET и наконец в среду выполнения ASP.NET.
+Хотя наши изменяемого элемента управления GridView прекрасно работает, когда пользователи вводят допустимые значения для имени измененного продукта, цену и единиц на складе, ввод недопустимых значений приводит к исключению. Например, пропуск `ProductName` приводит к выдаче исключения [NoNullAllowedException](https://msdn.microsoft.com/library/default.asp?url=/library/cpref/html/frlrfsystemdatanonullallowedexceptionclasstopic.asp) поскольку у `ProductName` свойство в `ProductsRow` класс имеет его `AllowDBNull` свойству присвоено `false`; Если База данных будет недоступна, `SqlException` будет генерироваться TableAdapter при попытке подключения к базе данных. Без какого-либо действия, эти исключения поднимаются с уровня доступа к данным уровня бизнес-логики, а затем на странице ASP.NET и наконец в среду выполнения ASP.NET.
 
 В зависимости от настроек веб-приложение и посещается ли оно с `localhost`, необработанное исключение может привести к странице универсального ошибки сервера, подробного отчета об ошибке или удобной веб-страницы. См. в разделе [обработка ошибок веб-приложения в ASP.NET](http://www.15seconds.com/issue/030102.htm) и [элемент customErrors](https://msdn.microsoft.com/library/h0hfz6fc(VS.80).aspx) Дополнительные сведения о том, как среда выполнения ASP.NET отвечает на неперехваченное исключение.
 

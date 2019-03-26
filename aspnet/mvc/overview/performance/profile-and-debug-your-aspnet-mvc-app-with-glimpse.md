@@ -8,12 +8,12 @@ ms.date: 03/26/2015
 ms.assetid: c205805f-efdd-4fa7-9616-f26eab180611
 msc.legacyurl: /mvc/overview/performance/profile-and-debug-your-aspnet-mvc-app-with-glimpse
 msc.type: authoredcontent
-ms.openlocfilehash: 94a72f22cbcd7fa84528dde502cceaa1e26dcaa1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ea149b6450cf02c993c7690752a05396802336be
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049231"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58425058"
 ---
 <a name="profile-and-debug-your-aspnet-mvc-app-with-glimpse"></a>Профилирование и отладка приложения ASP.NET MVC с помощью Glimpse
 ====================
@@ -58,7 +58,7 @@ ms.locfileid: "57049231"
 
 При наличии отображается панель избранного, можно перетащить и drop краткого описания кнопок и добавлять их в виде bookmarklets:
 
-![IE с помощью Glimpse boookmarklets](profile-and-debug-your-aspnet-mvc-app-with-glimpse/_static/image5.png)
+![IE с помощью Glimpse bookmarklets](profile-and-debug-your-aspnet-mvc-app-with-glimpse/_static/image5.png)
 
 Приложения, теперь можно перейти и **головок до отображения** (HUD) отображается в нижней части страницы.
 
@@ -104,11 +104,11 @@ ms.locfileid: "57049231"
 <a id="da"></a>
 ## <a name="using-glimpse-on-azure"></a>С помощью Glimpse в Azure
 
-Политика безопасности по умолчанию представление позволяет только представление данных для отображения из локального узла. Можно изменить эту политику безопасности, чтобы можно было просматривать эти данные на удаленном сервере (например, веб-приложения в Azure). Для сред тестирования в Azure, добавьте знак выделенный до нижней части *web.confg* файл, чтобы включить представление:
+Политика безопасности по умолчанию представление позволяет только представление данных для отображения из локального узла. Можно изменить эту политику безопасности, чтобы можно было просматривать эти данные на удаленном сервере (например, веб-приложения в Azure). Для сред тестирования в Azure, добавьте знак выделенный до нижней части *web.config* файл, чтобы включить представление:
 
 [!code-xml[Main](profile-and-debug-your-aspnet-mvc-app-with-glimpse/samples/sample3.xml?highlight=2-6)]
 
-Только после этого изменения любой пользователь может видеть представление данных на удаленном узле. Рассмотрите возможность добавления разметки выше профиль публикации, поэтому только развертывания примененного, при использовании этого профиля публикации (например, ваш тестирования Azure proifle.) Для ограничения доступа к данным краткого описания, мы добавим `canViewGlimpseData` роли и только пользователи с этой ролью, чтобы просмотреть представление данных.
+Только после этого изменения любой пользователь может видеть представление данных на удаленном узле. Рассмотрите возможность добавления разметки выше профиль публикации, поэтому только развертывания примененного, при использовании этого профиля публикации (например, профиль тестирования Azure.) Для ограничения доступа к данным краткого описания, мы добавим `canViewGlimpseData` роли и только пользователи с этой ролью, чтобы просмотреть представление данных.
 
 Удалить комментарии из *GlimpseSecurityPolicy.cs* файлов и изменить [IsInRole](https://msdn.microsoft.com/library/system.security.principal.iprincipal.isinrole(v=vs.110).aspx) вызов из `Administrator` для `canViewGlimpseData` роли:
 

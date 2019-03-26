@@ -7,18 +7,18 @@ ms.author: riande
 ms.date: 11/24/2017
 msc.legacyurl: /web-api/overview/advanced/calling-a-web-api-from-a-net-client
 msc.type: authoredcontent
-ms.openlocfilehash: be237bee43bc5e32939cb0b3e0948fd8b35bd1eb
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0c360f580285967c8fab8d33ccbb9557a7316ee1
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058991"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423147"
 ---
 <a name="call-a-web-api-from-a-net-client-c"></a>Вызов веб-API из клиента .NET (C#)
 ====================
 по [Майк Уоссон](https://github.com/MikeWasson) и [Рик Андерсон](https://twitter.com/RickAndMSFT)
 
-[Скачать завершенный проект](https://github.com/aspnet/Docs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample). [Указания по скачиванию](/aspnet/core/tutorials/#how-to-download-a-sample). 
+[Скачать завершенный проект](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample). [Указания по скачиванию](/aspnet/core/tutorials/#how-to-download-a-sample). 
 
 Этом руководстве показано, как вызывать веб-API из приложения .NET с помощью [System.Net.Http.HttpClient.](https://msdn.microsoft.com/library/system.net.http.httpclient(v=vs.110).aspx)
 
@@ -164,7 +164,7 @@ resp.Content.ReadAsAsync<IEnumerable<Product>>(formatters);
 
 Чтобы проверить его:
 
-1. [Скачайте](https://github.com/aspnet/Docs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample/server) и запуск приложения сервера. [Указания по скачиванию](/aspnet/core/tutorials/#how-to-download-a-sample). Убедитесь, что работает серверное приложение. Для exaxmple `http://localhost:64195/api/products` должен возвращать список продуктов.
+1. [Скачайте](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample/server) и запуск приложения сервера. [Указания по скачиванию](/aspnet/core/tutorials/#how-to-download-a-sample). Убедитесь, что работает серверное приложение. Например `http://localhost:64195/api/products` должен возвращать список продуктов.
 2. Задайте базовый URI для HTTP-запросов. Измените номер порта к порту, используемому в серверное приложение.
     [!code-csharp[Main](calling-a-web-api-from-a-net-client/sample/client/Program.cs?name=snippet5&highlight=2)]
 

@@ -8,12 +8,12 @@ ms.date: 07/17/2006
 ms.assetid: f6e2a12a-2b5e-48fd-8db3-1e94a500c19a
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/adding-client-side-confirmation-when-deleting-cs
 msc.type: authoredcontent
-ms.openlocfilehash: b8cca6ece2eb008170192dc1774a6f88c1b37a21
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a3e35e7b27d646569692a2eb715dcf40b7967473
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034831"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58423199"
 ---
 <a name="adding-client-side-confirmation-when-deleting-c"></a>Добавление клиентского подтверждения при удалении (C#)
 ====================
@@ -38,7 +38,7 @@ JavaScript `confirm(string)` функция отображает свой стр
 **Рис. 1**: JavaScript `confirm(string)` метод отображает модальное, клиентские Messagebox
 
 
-При отправке формы, если значение `false` возвращается из обработчика событий на стороне клиента, а затем Отправка формы отменяется. Используя эту возможность, мы сможем удалить кнопку s клиентская `onclick` возвращать значение вызова `confirm("Are you sure you want to delete this product?")`. Если пользователь нажимает кнопку "Отмена", `confirm(string)` вернет false, тем самым вызывая к отмене отправки формы. При отсутствии обратной передачи удалить продукт, кнопки "Удалить" была нажата выиграл t. Если, тем не менее, пользователь нажимает кнопку ОК в диалоговом окне подтверждения, обратный вызов продолжится в полной мере, и продукт будет удален. Обратитесь к [s с помощью JavaScript `confirm()` метод для отправки формы элемент управления](http://www.webreference.com/programming/javascript/confirm/) Дополнительные сведения об этом приеме.
+При отправке формы, если значение `false` возвращается из обработчика событий на стороне клиента, а затем Отправка формы отменяется. Используя эту возможность, мы сможем удалить кнопку s клиентская `onclick` возвращать значение вызова `confirm("Are you sure you want to delete this product?")`. Если пользователь нажимает кнопку "Отмена", `confirm(string)` вернет false, тем самым вызывая к отмене отправки формы. При отсутствии обратной передачи продукта, для которого кнопки "Удалить" была нажата не будет удален. Если, тем не менее, пользователь нажимает кнопку ОК в диалоговом окне подтверждения, обратный вызов продолжится в полной мере, и продукт будет удален. Обратитесь к [s с помощью JavaScript `confirm()` метод для отправки формы элемент управления](http://www.webreference.com/programming/javascript/confirm/) Дополнительные сведения об этом приеме.
 
 Добавление необходимых клиентский сценарий немного всего отличается в том случае, если с помощью шаблонов, чем при использовании CommandField. Таким образом в этом руководстве мы рассмотрим пример GridView и FormView.
 

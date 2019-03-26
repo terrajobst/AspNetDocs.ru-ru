@@ -8,12 +8,12 @@ ms.date: 05/29/2009
 ms.assetid: 0d23ff2b-f2ec-434a-be3b-1180beeccba3
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/validation-with-the-data-annotation-validators-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 8159693adced7f102f6fe1457d7b103f8596d231
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6bfe11a40bbdf0cd9dfe4d81d9c7436a5adb9491
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025551"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58420690"
 ---
 <a name="validation-with-the-data-annotation-validators-vb"></a>Проверка с помощью проверяющих элементов управления заметок к данным (VB)
 ====================
@@ -55,7 +55,7 @@ ms.locfileid: "57025551"
 При использовании связывателя модели данных заметок, используются атрибуты проверяющий элемент управления для выполнения проверки. Пространство имен System.ComponentModel.DataAnnotations включает следующие атрибуты проверяющий элемент управления:
 
 - Диапазон — позволяет проверить, является ли значение свойства выходит из указанного диапазона значений.
-- ReqularExpression — позволяет проверить, соответствует ли значение свойства заданного шаблона регулярного выражения.
+- Регулярное выражение – позволяет проверить, соответствует ли значение свойства заданного шаблона регулярного выражения.
 - Требуется – позволяет помечать свойство как обязательное.
 - StringLength — позволяет указать максимальную длину для строкового свойства.
 - Проверки — базовый класс для всех атрибутов проверяющего элемента управления.
