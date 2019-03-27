@@ -8,12 +8,12 @@ ms.date: 08/03/2007
 ms.assetid: 8be9a51b-ea6b-46c7-bfa2-476d9b14c24c
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/creating-stored-procedures-and-user-defined-functions-with-managed-code-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 438ebfa474ab510d90738c4a3ee40e172d838dcb
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1596e1c8c1b96fd41c842169b95914c7b02cf196
+ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57030331"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58424629"
 ---
 <a name="creating-stored-procedures-and-user-defined-functions-with-managed-code-vb"></a>Создание хранимых процедур и определяемых пользователем функций с помощью управляемого кода (VB)
 ====================
@@ -303,7 +303,7 @@ ms.locfileid: "57030331"
 
 [!code-vb[Main](creating-stored-procedures-and-user-defined-functions-with-managed-code-vb/samples/sample7.vb)]
 
-Оба метода, просто вызовите соответствующий метод DAL и возвращается `ProductsDataTable` экземпляра. `DataObjectMethodAttribute` Разметки над каждым методом вызывает эти методы, которые будут включены в раскрывающемся списке на вкладке "ВЫБЕРИТЕ" мастер ObjectDataSource s настроить источник данных.
+Оба метода, просто вызовите соответствующий метод DAL и возвращается `ProductsDataTable` экземпляра. `DataObjectMethodAttribute` Разметки над каждым методом вызывает эти методы, которые будут включены в раскрывающемся списке на вкладке "ВЫБЕРИТЕ" мастер настройки источников данных s ObjectDataSource.
 
 ## <a name="step-8-invoking-the-managed-stored-procedures-from-the-presentation-layer"></a>Шаг 8. Вызов управляемых хранимых процедур из уровня представления данных
 
