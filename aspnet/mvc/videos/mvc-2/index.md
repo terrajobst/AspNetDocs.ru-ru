@@ -2,12 +2,18 @@
 uid: mvc/videos/mvc-2/index
 title: ASP.NET MVC 2 | Документация Майкрософт
 author: rick-anderson
-description: "ASP.NET MVC\_2"
+description: ASP.NET MVC 2
 ms.author: riande
 ms.date: 11/14/2011
 ms.assetid: 68968b8a-4f60-449e-8639-978fc40aed70
 msc.legacyurl: /mvc/videos/mvc-2
 msc.type: chapter
+ms.openlocfilehash: 438b87c3ebcd53e460741a53e00e6d227237fb58
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57023581"
 ---
 <a name="aspnet-mvc-2"></a><span data-ttu-id="3f262-103">ASP.NET MVC 2</span><span class="sxs-lookup"><span data-stu-id="3f262-103">ASP.NET MVC 2</span></span>
 ====================

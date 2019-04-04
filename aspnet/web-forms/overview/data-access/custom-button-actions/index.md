@@ -2,12 +2,18 @@
 uid: web-forms/overview/data-access/custom-button-actions/index
 title: Действия настраиваемых кнопок | Документация Майкрософт
 author: rick-anderson
-description: 'Этот короткий серии руководств показано, как добавление кнопок в элемент управления GridView и DetailsView, который может выполнять любые действия, которые нужны приложению.'
+description: Этот короткий серии руководств показано, как добавление кнопок в элемент управления GridView и DetailsView, который может выполнять любые действия, которые нужны приложению.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: d062986e-9d2e-4de4-94e8-ea83ec76fef2
 msc.legacyurl: /web-forms/overview/data-access/custom-button-actions
 msc.type: chapter
+ms.openlocfilehash: 716d67945340554f867e5c5319aecbf3967c75f6
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57024161"
 ---
 <a name="custom-button-actions"></a><span data-ttu-id="ae560-103">Действия настраиваемых кнопок</span><span class="sxs-lookup"><span data-stu-id="ae560-103">Custom Button Actions</span></span>
 ====================

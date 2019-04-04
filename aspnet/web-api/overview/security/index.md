@@ -1,6 +1,6 @@
 ---
 uid: web-api/overview/security/index
-title: 'Безопасность, проверка подлинности и авторизация в веб-API ASP.NET | Документация Майкрософт'
+title: Безопасность, проверка подлинности и авторизация в веб-API ASP.NET | Документация Майкрософт
 author: rick-anderson
 description: Вопросы безопасности для веб-API.
 ms.author: riande
@@ -8,6 +8,12 @@ ms.date: 12/11/2012
 ms.assetid: bb38add0-5223-4b04-9b12-245911af865a
 msc.legacyurl: /web-api/overview/security
 msc.type: chapter
+ms.openlocfilehash: 3f1adfdecd4a2031af0f71f15351088627169773
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57024111"
 ---
 <a name="security-authentication-and-authorization-in-aspnet-web-api"></a><span data-ttu-id="8a3f4-103">Безопасность, проверка подлинности и авторизация в веб-API ASP.NET</span><span class="sxs-lookup"><span data-stu-id="8a3f4-103">Security, Authentication, and Authorization in ASP.NET Web API</span></span>
 ====================

@@ -2,12 +2,18 @@
 uid: web-pages/videos/introduction/index
 title: Введение в веб-страниц видео | Документация Майкрософт
 author: rick-anderson
-description: 'Какие видео, вы можете просмотреть дополнительные основные сведения о Web Pages и WebMatrix.'
+description: Какие видео, вы можете просмотреть дополнительные основные сведения о Web Pages и WebMatrix.
 ms.author: riande
 ms.date: 05/18/2012
 ms.assetid: b8a43660-177f-4a00-bb51-be887364c607
 msc.legacyurl: /web-pages/videos/introduction
 msc.type: chapter
+ms.openlocfilehash: f645e05deb334346ed7199b804387a29e9538165
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57020351"
 ---
 <a name="introduction-to-web-pages-videos"></a><span data-ttu-id="eb6b2-103">Введение в веб-страниц видео</span><span class="sxs-lookup"><span data-stu-id="eb6b2-103">Introduction to Web Pages Videos</span></span>
 ====================

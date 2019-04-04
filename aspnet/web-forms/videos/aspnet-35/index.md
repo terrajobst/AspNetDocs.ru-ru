@@ -2,12 +2,18 @@
 uid: web-forms/videos/aspnet-35/index
 title: ASP.NET 3.5. | Документация Майкрософт
 author: rick-anderson
-description: 'Способы создания приложений ASP.NET 3.5, с упором на новые функции.'
+description: Способы создания приложений ASP.NET 3.5, с упором на новые функции.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 2e6e9c24-bb97-446a-b05e-1bd88824d352
 msc.legacyurl: /web-forms/videos/aspnet-35
 msc.type: chapter
+ms.openlocfilehash: 331298981c89e83e7ef9ac260c4da6e38acb97ab
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57021901"
 ---
 <a name="aspnet-35"></a><span data-ttu-id="686d8-103">ASP.NET 3.5</span><span class="sxs-lookup"><span data-stu-id="686d8-103">ASP.NET 3.5</span></span>
 ====================

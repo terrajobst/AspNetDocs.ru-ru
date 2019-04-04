@@ -2,12 +2,18 @@
 uid: web-pages/videos/aspnet-razor-pages/index
 title: Страницы ASP.NET Razor | Документация Майкрософт
 author: rick-anderson
-description: 'Какие видео, вы можете просмотреть для детализации углублением Web Pages и WebMatrix.'
+description: Какие видео, вы можете просмотреть для детализации углублением Web Pages и WebMatrix.
 ms.author: riande
 ms.date: 05/18/2012
 ms.assetid: ffad842d-548c-40c6-84c5-10858133e972
 msc.legacyurl: /web-pages/videos/aspnet-razor-pages
 msc.type: chapter
+ms.openlocfilehash: e0c0c719ef628a4e5050e908d45421d5bfd6d983
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57023031"
 ---
 <a name="aspnet-web-pages"></a><span data-ttu-id="38b56-103">Веб-страницы ASP.NET</span><span class="sxs-lookup"><span data-stu-id="38b56-103">ASP.NET Web Pages</span></span>
 =================

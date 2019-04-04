@@ -2,12 +2,18 @@
 uid: web-api/overview/odata-support-in-aspnet-web-api/odata-v3/index
 title: Поддержка OData v3 в веб-API ASP.NET | Документация Майкрософт
 author: rick-anderson
-description: 'Используйте ASP.NET Web API для создания конечных точек, которые поддерживают OData версии 3.'
+description: Используйте ASP.NET Web API для создания конечных точек, которые поддерживают OData версии 3.
 ms.author: riande
 ms.date: 06/26/2014
 ms.assetid: 26d43c14-98d8-46fe-ab2e-b7c5998d073d
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v3
 msc.type: chapter
+ms.openlocfilehash: 7ced1a569681bd5fab6dbc17e4dcdc4023f98440
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57020871"
 ---
 <a name="supporting-odata-v3-in-aspnet-web-api"></a><span data-ttu-id="a3afa-103">Поддержка OData v3 в веб-API ASP.NET</span><span class="sxs-lookup"><span data-stu-id="a3afa-103">Supporting OData v3 in ASP.NET Web API</span></span>
 ====================

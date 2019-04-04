@@ -2,12 +2,18 @@
 uid: web-forms/overview/older-versions-security/introduction/index
 title: ASP.NET 3.5. Общие сведения о безопасности | Документация Майкрософт
 author: rick-anderson
-description: 'Этой серии учебников описываются методы, для проверки подлинности пользователей, используя форму входа (проверка подлинности форм) и авторизации доступа к к отдельным страницам в...'
+description: Этой серии учебников описываются методы, для проверки подлинности пользователей, используя форму входа (проверка подлинности форм) и авторизации доступа к к отдельным страницам в...
 ms.author: riande
 ms.date: 11/04/2011
 ms.assetid: ac5fcd71-317a-41ba-91ac-95121fc68126
 msc.legacyurl: /web-forms/overview/older-versions-security/introduction
 msc.type: chapter
+ms.openlocfilehash: 9c75c62ab5276a193bf0c9d998ce3b877f9c06ff
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57022771"
 ---
 <a name="aspnet-35---introduction-to-security"></a><span data-ttu-id="b3f75-103">ASP.NET 3.5. Общие сведения о безопасности</span><span class="sxs-lookup"><span data-stu-id="b3f75-103">ASP.NET 3.5 - Introduction to Security</span></span>
 ====================
