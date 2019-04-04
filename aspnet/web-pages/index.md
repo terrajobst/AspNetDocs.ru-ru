@@ -2,12 +2,18 @@
 uid: web-pages/index
 title: Веб-страницы ASP.NET | Документация Майкрософт
 author: rick-anderson
-description: 'Скачайте WebMatrix и узнайте, как быстро создавать веб-страниц в простой способ объединения серверного кода с HTML.'
+description: Скачайте WebMatrix и узнайте, как быстро создавать веб-страниц в простой способ объединения серверного кода с HTML.
 ms.author: riande
 ms.date: 05/18/2012
 ms.assetid: 5418ba96-ff49-4a43-9cbb-09dea4949d23
 msc.legacyurl: /web-pages
 msc.type: categoryindex
+ms.openlocfilehash: 967c5687013cac75b5ec8dd665269026bd46601c
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57023371"
 ---
 <a name="aspnet-web-pages"></a>Веб-страницы ASP.NET
 ====================

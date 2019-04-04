@@ -2,12 +2,18 @@
 uid: web-api/overview/data/index
 title: Работа с данными в веб-API ASP.NET | Документация Майкрософт
 author: rick-anderson
-description: 'Как программировать CRUD (Создание, чтение, обновление и удаление) операций в веб-API.'
+description: Как программировать CRUD (Создание, чтение, обновление и удаление) операций в веб-API.
 ms.author: riande
 ms.date: 10/23/2014
 ms.assetid: 995cbe38-7dbd-4c36-a5d0-a761944c7636
 msc.legacyurl: /web-api/overview/data
 msc.type: chapter
+ms.openlocfilehash: e926c82e84b7cac2ba69a8baa62d2719647523d2
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57020431"
 ---
 <a name="working-with-data-in-aspnet-web-api"></a>Работа с данными в веб-API ASP.NET
 ====================

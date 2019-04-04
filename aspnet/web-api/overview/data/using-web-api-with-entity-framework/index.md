@@ -2,12 +2,18 @@
 uid: web-api/overview/data/using-web-api-with-entity-framework/index
 title: Использование веб-API 2 с Entity Framework 6 | Документация Майкрософт
 author: rick-anderson
-description: 'Как создать приложение веб-API, которое использует Entity Framework для базы данных сохраняемости.'
+description: Как создать приложение веб-API, которое использует Entity Framework для базы данных сохраняемости.
 ms.author: riande
 ms.date: 07/03/2012
 ms.assetid: 6c3c4f27-2fa3-49dc-bcaf-1ee3ef620f8e
 msc.legacyurl: /web-api/overview/data/using-web-api-with-entity-framework
 msc.type: chapter
+ms.openlocfilehash: 89d129616130df1508f559a2abbb975a13fdc601
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57019431"
 ---
 <a name="using-web-api-2-with-entity-framework-6"></a>Использование веб-API 2 с Entity Framework 6
 ====================

@@ -2,12 +2,18 @@
 uid: mvc/overview/getting-started/index
 title: Приступая к работе ASP.NET MVC | Документация Майкрософт
 author: rick-anderson
-description: 'Дополнительные сведения о ASP.NET MVC ASP.NET MVC предоставляет эффективный, основанный на шаблонах способ создания динамических веб-сайтов с четким разделением проблем и что g...'
+description: Дополнительные сведения о ASP.NET MVC ASP.NET MVC предоставляет эффективный, основанный на шаблонах способ создания динамических веб-сайтов с четким разделением проблем и что g...
 ms.author: riande
 ms.date: 08/31/2011
 ms.assetid: d916dbe0-1895-491b-8bb6-93f4594ce757
 msc.legacyurl: /mvc/overview/getting-started
 msc.type: chapter
+ms.openlocfilehash: a2b96388cb7408d3c5fa548d0f43cfb2287661bf
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57021761"
 ---
 <a name="aspnet-mvc-getting-started"></a>Приступая к работе ASP.NET MVC
 ====================

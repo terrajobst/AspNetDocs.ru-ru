@@ -2,12 +2,18 @@
 uid: web-api/overview/odata-support-in-aspnet-web-api/odata-v4/index
 title: Поддержка OData v4 в веб-API ASP.NET | Документация Майкрософт
 author: rick-anderson
-description: 'Используйте ASP.NET Web API для создания конечных точек, которые поддерживают OData версии 4.'
+description: Используйте ASP.NET Web API для создания конечных точек, которые поддерживают OData версии 4.
 ms.author: riande
 ms.date: 06/26/2014
 ms.assetid: bb807fdd-0bd8-43d0-b068-e88de7e5fd87
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4
 msc.type: chapter
+ms.openlocfilehash: ea6bb911ccda4f78192463c3029d073ed64b4568
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57021491"
 ---
 <a name="supporting-odata-v4-in-aspnet-web-api"></a>Поддержка OData v4 в веб-API ASP.NET
 ====================

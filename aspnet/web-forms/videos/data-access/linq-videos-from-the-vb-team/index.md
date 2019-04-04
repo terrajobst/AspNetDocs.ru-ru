@@ -2,12 +2,18 @@
 uid: web-forms/videos/data-access/linq-videos-from-the-vb-team/index
 title: Видеоролики по LINQ от команды VB | Документация Майкрософт
 author: rick-anderson
-description: 'Эти видео содержат через один час, а другая половина — посвящен новые функции языка LINQ Visual Basic 9.0, включенные в Visual Studio 2008.'
+description: Эти видео содержат через один час, а другая половина — посвящен новые функции языка LINQ Visual Basic 9.0, включенные в Visual Studio 2008.
 ms.author: riande
 ms.date: 02/24/2012
 ms.assetid: 257373bb-eab0-47bc-b5a2-37a9e91666d6
 msc.legacyurl: /web-forms/videos/data-access/linq-videos-from-the-vb-team
 msc.type: chapter
+ms.openlocfilehash: 67c6aaf358d4c7c2764493e8c17e1d5245096014
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57022811"
 ---
 <a name="linq-videos-from-the-vb-team"></a>Видеоролики по LINQ от команды VB
 ====================

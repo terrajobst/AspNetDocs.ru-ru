@@ -2,12 +2,18 @@
 uid: web-forms/overview/data-access/index
 title: Предыдущие версии — доступ к данным | Документация Майкрософт
 author: rick-anderson
-description: 'Сведения о выполнении различных задач, связанных с данными с помощью элементов управления данных веб-форм ASP.NET.'
+description: Сведения о выполнении различных задач, связанных с данными с помощью элементов управления данных веб-форм ASP.NET.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: cf54a6fb-a362-4481-b967-c158b98092f7
 msc.legacyurl: /web-forms/overview/data-access
 msc.type: chapter
+ms.openlocfilehash: 0060650de35a8693a9c1432876df1d4902bb1ade
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57023081"
 ---
 <a name="older-versions---data-access"></a>Предыдущие версии. Доступ к данным
 ====================

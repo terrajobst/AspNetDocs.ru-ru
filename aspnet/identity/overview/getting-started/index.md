@@ -2,12 +2,18 @@
 uid: identity/overview/getting-started/index
 title: Приступая к работе с ASP.NET Identity | Документация Майкрософт
 author: rick-anderson
-description: 'Системы удостоверений ASP.NET предназначен для замены предыдущих систем членства ASP.NET и простого членства. Она включает поддержку профиля, интеграция OAuth...'
+description: Системы удостоверений ASP.NET предназначен для замены предыдущих систем членства ASP.NET и простого членства. Она включает поддержку профиля, интеграция OAuth...
 ms.author: riande
 ms.date: 10/02/2013
 ms.assetid: 72bb0051-a696-437e-a4e6-ca1225a6e271
 msc.legacyurl: /identity/overview/getting-started
 msc.type: chapter
+ms.openlocfilehash: 5e124c3ae59cabcdb90872bbf5470964aed148c8
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57022521"
 ---
 <a name="getting-started-with-aspnet-identity"></a>Начало работы с ASP.NET Identity
 ====================

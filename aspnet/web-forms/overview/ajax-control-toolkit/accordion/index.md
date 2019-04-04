@@ -2,12 +2,18 @@
 uid: web-forms/overview/ajax-control-toolkit/accordion/index
 title: Гармошка | Документация Майкрософт
 author: rick-anderson
-description: 'Этом руководстве показано, как использовать элемент управления Accordion, который содержит несколько областей и позволяет пользователям отображать один из них одновременно.'
+description: Этом руководстве показано, как использовать элемент управления Accordion, который содержит несколько областей и позволяет пользователям отображать один из них одновременно.
 ms.author: riande
 ms.date: 11/11/2011
 ms.assetid: afd41278-b4c5-43ee-9845-2b665932dcff
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/accordion
 msc.type: chapter
+ms.openlocfilehash: 86e1e368165d40b8d0fc1e2c24dde862c1691822
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57020551"
 ---
 <a name="accordion"></a>Accordion
 ====================

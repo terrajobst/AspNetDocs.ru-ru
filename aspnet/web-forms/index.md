@@ -2,12 +2,18 @@
 uid: web-forms/index
 title: Веб-форм ASP.NET | Документация Майкрософт
 author: rick-anderson
-description: 'Скачивание Visual Web Developer Express и узнайте, как быстро создавать веб-приложений с помощью простой для понимания элементов управления на веб-форм ASP.NET в визуальном представлении Environ...'
+description: Скачивание Visual Web Developer Express и узнайте, как быстро создавать веб-приложений с помощью простой для понимания элементов управления на веб-форм ASP.NET в визуальном представлении Environ...
 ms.author: riande
 ms.date: 08/08/2011
 ms.assetid: 7e4ce5d2-ab22-44f0-9825-c12eed7b8fcb
 msc.legacyurl: /web-forms
 msc.type: categoryindex
+ms.openlocfilehash: 88c12f74c3fa086a90b9999d6a4887be106c1e98
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57022911"
 ---
 <a name="aspnet-web-forms"></a>Веб-формы ASP.NET
 ====================

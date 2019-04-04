@@ -2,12 +2,18 @@
 uid: web-forms/videos/aspnet-35/how-do-i/index
 title: Практические советы | Документация Майкрософт
 author: rick-anderson
-description: 'Эта серия руководств видео показано, как воспользоваться преимуществами новых функций в ASP.NET 3.5 и Visual Studio 2008.'
+description: Эта серия руководств видео показано, как воспользоваться преимуществами новых функций в ASP.NET 3.5 и Visual Studio 2008.
 ms.author: riande
 ms.date: 11/14/2011
 ms.assetid: 6a25069b-c80f-45f3-a901-4548442c37b6
 msc.legacyurl: /web-forms/videos/aspnet-35/how-do-i
 msc.type: chapter
+ms.openlocfilehash: 45026082904fb8c740f34e1e9ae31153c1e551a5
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57019851"
 ---
 <a name="how-do-i"></a>Инструкции
 ====================

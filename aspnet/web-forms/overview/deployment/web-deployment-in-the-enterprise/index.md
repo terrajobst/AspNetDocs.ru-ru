@@ -1,13 +1,19 @@
 ---
 uid: web-forms/overview/deployment/web-deployment-in-the-enterprise/index
-title: 'ASP.NET 4 - Корпоративное развертывание, часть 1 | Документация Майкрософт'
+title: ASP.NET 4 - Корпоративное развертывание, часть 1 | Документация Майкрософт
 author: rick-anderson
-description: 'Это руководство содержит инструкции для удовлетворения множество задач, с которыми придется столкнуться при управлении развертыванием веб-приложений корпоративного уровня для developmen...'
+description: Это руководство содержит инструкции для удовлетворения множество задач, с которыми придется столкнуться при управлении развертыванием веб-приложений корпоративного уровня для developmen...
 ms.author: riande
 ms.date: 05/16/2012
 ms.assetid: 83e0a572-428f-4bea-9638-1a031c6901c0
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise
 msc.type: chapter
+ms.openlocfilehash: 92bc3d18c417e73e198d0f7663489fd931bf75b5
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57020611"
 ---
 <a name="aspnet-4---enterprise-deployment-series-1"></a>ASP.NET 4. Введение в корпоративное развертывание, часть 1
 ====================
