@@ -2,12 +2,18 @@
 uid: web-forms/overview/ajax-control-toolkit/animation/index
 title: Анимация | Документация Майкрософт
 author: rick-anderson
-description: 'Этом руководстве показано, как создание анимации с помощью элемента управления анимации и платформой анимации.'
+description: Этом руководстве показано, как создание анимации с помощью элемента управления анимации и платформой анимации.
 ms.author: riande
 ms.date: 11/11/2011
 ms.assetid: 90b3a37e-2694-41c4-8b10-d6893b53a9d4
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation
 msc.type: chapter
+ms.openlocfilehash: b835d4e24b938a8ed192f21709cbde771af9c896
+ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57023391"
 ---
 <a name="animation"></a><span data-ttu-id="1c7e4-103">Анимация</span><span class="sxs-lookup"><span data-stu-id="1c7e4-103">Animation</span></span>
 ====================
