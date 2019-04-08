@@ -38,7 +38,7 @@ ms.locfileid: "57055861"
 
 Если вы используете Visual Studio 2010 вместо Visual Web Developer 2010, установите необходимые компоненты, щелкнув следующую ссылку: [Необходимые компоненты для Visual Studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
 
-Проект Visual Web Developer с VB исходный код доступен на следующей странице в этом разделе. [Скачивание версии VB здесь](https://code.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=aspnetmvcsamples&amp;DownloadId=14824). Если вы предпочитаете c#, переключитесь в [версии c#](../cs/intro-to-aspnet-mvc-3.md) работы с этим руководством.
+Проект Visual Web Developer с VB исходный код доступен на следующей странице в этом разделе. [Скачивание версии VB здесь](https://code.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=aspnetmvcsamples&amp;DownloadId=14824). Если вы предпочитаете C#, переключитесь в [версии C#](../cs/intro-to-aspnet-mvc-3.md) работы с этим руководством.
 
 ## <a name="what-youll-build"></a>Что вы создадите
 

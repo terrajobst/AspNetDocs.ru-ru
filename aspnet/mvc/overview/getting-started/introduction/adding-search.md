@@ -54,7 +54,7 @@ ms.locfileid: "57029701"
 Приведенный выше код `s => s.Title` представляет собой [лямбда-выражение](https://msdn.microsoft.com/library/bb397687.aspx). Лямбда-выражения используются в основе метод [LINQ](https://msdn.microsoft.com/library/bb397926.aspx) запрашивает в качестве аргументов стандартных методов операторов запроса, такие как [где](https://msdn.microsoft.com/library/system.linq.enumerable.where.aspx) метод, используемый в приведенном выше коде. Запросы LINQ не выполняются, когда они определяются или изменяются путем вызова метода, таких как `Where` или `OrderBy`. Вместо этого выполнение запроса откладывается, это означает, что вычисление выражения откладывается, пока его реализованного значения будет выполнена итерация или [ `ToList` ](https://msdn.microsoft.com/library/bb342261.aspx) вызывается метод. В `Search` примере запрос выполняется в *Index.cshtml* представления. Дополнительные сведения об отложенном и немедленном выполнении запросов см. в разделе [Выполнение запроса](https://msdn.microsoft.com/library/bb738633.aspx).
 
 > [!NOTE]
-> [Contains](https://msdn.microsoft.com/library/bb155125.aspx) метод выполняется на базе данных, а не код c# выше. В базе данных [Contains](https://msdn.microsoft.com/library/bb155125.aspx) сопоставляется [SQL LIKE](https://msdn.microsoft.com/library/ms179859.aspx), который не учитывает регистр.
+> [Contains](https://msdn.microsoft.com/library/bb155125.aspx) метод выполняется на базе данных, а не код C# выше. В базе данных [Contains](https://msdn.microsoft.com/library/bb155125.aspx) сопоставляется [SQL LIKE](https://msdn.microsoft.com/library/ms179859.aspx), который не учитывает регистр.
 
 Теперь вы можете обновить `Index` представление, которое будет отображать форму для пользователя.
 
