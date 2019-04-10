@@ -8,24 +8,24 @@ ms.date: 10/05/2011
 ms.assetid: 98c78dad-22bf-45cd-807e-c2f3f59011b9
 msc.legacyurl: /web-forms/videos/aspnet-web-forms-vnext
 msc.type: chapter
-ms.openlocfilehash: acf0e31e487733a99b1c7b02a1a773c61ffc12b9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3b3efb3d5356d6009b86b93405de2cd8d8cddd43
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024071"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59404238"
 ---
-<a name="aspnet-45"></a><span data-ttu-id="0cb2f-103">ASP.NET 4.5</span><span class="sxs-lookup"><span data-stu-id="0cb2f-103">ASP.NET 4.5</span></span>
-====================
-> <span data-ttu-id="0cb2f-104">Новые возможности веб-форм в ASP.NET 4.5.</span><span class="sxs-lookup"><span data-stu-id="0cb2f-104">About new Web Forms features introduced in ASP.NET 4.5.</span></span>
+# <a name="aspnet-45"></a><span data-ttu-id="9f5c3-103">ASP.NET 4.5</span><span class="sxs-lookup"><span data-stu-id="9f5c3-103">ASP.NET 4.5</span></span>
+
+> <span data-ttu-id="9f5c3-104">Новые возможности веб-форм в ASP.NET 4.5.</span><span class="sxs-lookup"><span data-stu-id="9f5c3-104">About new Web Forms features introduced in ASP.NET 4.5.</span></span>
 
 
-- [<span data-ttu-id="0cb2f-105">Строго типизированные элементы управления данными</span><span class="sxs-lookup"><span data-stu-id="0cb2f-105">Strongly Typed Data Controls</span></span>](aspnet-vnext-videos-strongly-typed-data-controls.md)
-- [<span data-ttu-id="0cb2f-106">Привязка моделей, часть 1. Выборка данных</span><span class="sxs-lookup"><span data-stu-id="0cb2f-106">Model Binding Part 1 - Selecting Data</span></span>](aspnet-vnext-videos-model-binding-part-1-selecting-data.md)
-- [<span data-ttu-id="0cb2f-107">Привязка моделей, часть 2. Фильтрация</span><span class="sxs-lookup"><span data-stu-id="0cb2f-107">Model Binding Part 2 - Filtering</span></span>](aspnet-vnext-videos-model-binding-part-2-filtering.md)
-- [<span data-ttu-id="0cb2f-108">Привязка моделей, часть 3. Обновление</span><span class="sxs-lookup"><span data-stu-id="0cb2f-108">Model Binding Part 3 - Updating</span></span>](aspnet-vnext-videos-model-binding-part-3-updating.md)
-- [<span data-ttu-id="0cb2f-109">Привязка модели веб-форм ASP.NET 4.5</span><span class="sxs-lookup"><span data-stu-id="0cb2f-109">ASP.NET 4.5 Web Forms Model Binding</span></span>](aspnet-45-web-forms-model-binding.md)
-- [<span data-ttu-id="0cb2f-110">Строго типизированные элементы управления данными для веб-форм ASP.NET 4.5</span><span class="sxs-lookup"><span data-stu-id="0cb2f-110">ASP.NET 4.5 Web Forms Strong Typed Data Controls</span></span>](aspnet-45-web-forms-strong-typed-data-controls.md)
-- [<span data-ttu-id="0cb2f-111">Объединение и минификация</span><span class="sxs-lookup"><span data-stu-id="0cb2f-111">Bundling and Minification</span></span>](aspnet-vnext-videos-bundling-and-minification.md)
-- [<span data-ttu-id="0cb2f-112">Начало работы со следующей версией ASP.NET</span><span class="sxs-lookup"><span data-stu-id="0cb2f-112">Getting Started with the Next Version of ASP.NET</span></span>](getting-started-with-the-next-version-of-aspnet.md)
-- [<span data-ttu-id="0cb2f-113">ASP.NET and Web Tools 2012.2</span><span class="sxs-lookup"><span data-stu-id="0cb2f-113">ASP.NET and Web Tools 2012.2</span></span>](aspnet-and-web-tools-20122.md)
+- [<span data-ttu-id="9f5c3-105">Строго типизированные элементы управления данными</span><span class="sxs-lookup"><span data-stu-id="9f5c3-105">Strongly Typed Data Controls</span></span>](aspnet-vnext-videos-strongly-typed-data-controls.md)
+- [<span data-ttu-id="9f5c3-106">Привязка моделей, часть 1. Выборка данных</span><span class="sxs-lookup"><span data-stu-id="9f5c3-106">Model Binding Part 1 - Selecting Data</span></span>](aspnet-vnext-videos-model-binding-part-1-selecting-data.md)
+- [<span data-ttu-id="9f5c3-107">Привязка моделей, часть 2. Фильтрация</span><span class="sxs-lookup"><span data-stu-id="9f5c3-107">Model Binding Part 2 - Filtering</span></span>](aspnet-vnext-videos-model-binding-part-2-filtering.md)
+- [<span data-ttu-id="9f5c3-108">Привязка моделей, часть 3. Обновление</span><span class="sxs-lookup"><span data-stu-id="9f5c3-108">Model Binding Part 3 - Updating</span></span>](aspnet-vnext-videos-model-binding-part-3-updating.md)
+- [<span data-ttu-id="9f5c3-109">Привязка модели веб-форм ASP.NET 4.5</span><span class="sxs-lookup"><span data-stu-id="9f5c3-109">ASP.NET 4.5 Web Forms Model Binding</span></span>](aspnet-45-web-forms-model-binding.md)
+- [<span data-ttu-id="9f5c3-110">Строго типизированные элементы управления данными для веб-форм ASP.NET 4.5</span><span class="sxs-lookup"><span data-stu-id="9f5c3-110">ASP.NET 4.5 Web Forms Strong Typed Data Controls</span></span>](aspnet-45-web-forms-strong-typed-data-controls.md)
+- [<span data-ttu-id="9f5c3-111">Объединение и минификация</span><span class="sxs-lookup"><span data-stu-id="9f5c3-111">Bundling and Minification</span></span>](aspnet-vnext-videos-bundling-and-minification.md)
+- [<span data-ttu-id="9f5c3-112">Начало работы со следующей версией ASP.NET</span><span class="sxs-lookup"><span data-stu-id="9f5c3-112">Getting Started with the Next Version of ASP.NET</span></span>](getting-started-with-the-next-version-of-aspnet.md)
+- [<span data-ttu-id="9f5c3-113">ASP.NET and Web Tools 2012.2</span><span class="sxs-lookup"><span data-stu-id="9f5c3-113">ASP.NET and Web Tools 2012.2</span></span>](aspnet-and-web-tools-20122.md)

@@ -8,22 +8,22 @@ ms.date: 11/11/2009
 ms.assetid: b70a252d-fc5c-4711-b7d0-cd3228e21e12
 msc.legacyurl: /web-forms/videos/visual-studio-2010/visual-studio-2010-quick-hit-intellisense-smart-lists
 msc.type: video
-ms.openlocfilehash: 07fc37ea919dde61e9fa8e69f7cc3483340cf1aa
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 089716762848f3cd71a2cbf83eba349bb3e7b28b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57040301"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59410179"
 ---
-<a name="visual-studio-2010-quick-hit---intellisense-smart-lists"></a><span data-ttu-id="b99c3-103">Visual Studio 2010 «Быстрый Hit» - IntelliSense Smart перечисляет</span><span class="sxs-lookup"><span data-stu-id="b99c3-103">Visual Studio 2010 "Quick Hit" - IntelliSense Smart Lists</span></span>
-====================
-<span data-ttu-id="b99c3-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="b99c3-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+# <a name="visual-studio-2010-quick-hit---intellisense-smart-lists"></a><span data-ttu-id="8e9b6-103">Visual Studio 2010 «Быстрый Hit» - IntelliSense Smart перечисляет</span><span class="sxs-lookup"><span data-stu-id="8e9b6-103">Visual Studio 2010 "Quick Hit" - IntelliSense Smart Lists</span></span>
 
-<span data-ttu-id="b99c3-105">В этом видео вы узнаете о списке фильтрации в IntelliSense в Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="b99c3-105">In this video you will learn about list filtering in Visual Studio's IntelliSense.</span></span>
+<span data-ttu-id="8e9b6-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="8e9b6-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-[<span data-ttu-id="b99c3-106">&#9654;Просмотрите видео (3 мин.)</span><span class="sxs-lookup"><span data-stu-id="b99c3-106">&#9654; Watch video (3 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/visual-studio-2010-quick-hit-intellisense-smart-lists)
+<span data-ttu-id="8e9b6-105">В этом видео вы узнаете о списке фильтрации в IntelliSense в Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="8e9b6-105">In this video you will learn about list filtering in Visual Studio's IntelliSense.</span></span>
+
+[<span data-ttu-id="8e9b6-106">&#9654;Просмотрите видео (3 мин.)</span><span class="sxs-lookup"><span data-stu-id="8e9b6-106">&#9654; Watch video (3 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/visual-studio-2010-quick-hit-intellisense-smart-lists)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="b99c3-107">[Назад](visual-studio-2010-quick-hit-code-search-view-hierarchy.md)
-> [Вперед](visual-studio-2010-quick-hit-multi-monitor-support.md)</span><span class="sxs-lookup"><span data-stu-id="b99c3-107">[Previous](visual-studio-2010-quick-hit-code-search-view-hierarchy.md)
+> <span data-ttu-id="8e9b6-107">[Назад](visual-studio-2010-quick-hit-code-search-view-hierarchy.md)
+> [Вперед](visual-studio-2010-quick-hit-multi-monitor-support.md)</span><span class="sxs-lookup"><span data-stu-id="8e9b6-107">[Previous](visual-studio-2010-quick-hit-code-search-view-hierarchy.md)
 [Next](visual-studio-2010-quick-hit-multi-monitor-support.md)</span></span>
