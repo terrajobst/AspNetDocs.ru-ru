@@ -8,54 +8,54 @@ ms.date: 01/27/2011
 ms.assetid: 0cbd88da-0da6-4605-b222-2835c6478304
 msc.legacyurl: /mvc/overview/views/dynamic-v-strongly-typed-views
 msc.type: authoredcontent
-ms.openlocfilehash: bde40f609db25f590108bfc2396071c0033a1326
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 3235fc58fbf93cb87946f8ebd4a478eff7ce80e3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423342"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386142"
 ---
-<a name="dynamic-v-strongly-typed-views"></a><span data-ttu-id="6d8d8-103">Динамические и</span><span class="sxs-lookup"><span data-stu-id="6d8d8-103">Dynamic v.</span></span> <span data-ttu-id="6d8d8-104">строго типизированные представления</span><span class="sxs-lookup"><span data-stu-id="6d8d8-104">Strongly Typed Views</span></span>
-====================
-<span data-ttu-id="6d8d8-105">по [Рик Андерсон]((https://twitter.com/RickAndMSFT))</span><span class="sxs-lookup"><span data-stu-id="6d8d8-105">by [Rick Anderson]((https://twitter.com/RickAndMSFT))</span></span>
+# <a name="dynamic-v-strongly-typed-views"></a><span data-ttu-id="fd28d-103">Динамические и</span><span class="sxs-lookup"><span data-stu-id="fd28d-103">Dynamic v.</span></span> <span data-ttu-id="fd28d-104">строго типизированные представления</span><span class="sxs-lookup"><span data-stu-id="fd28d-104">Strongly Typed Views</span></span>
 
-<span data-ttu-id="6d8d8-106">Существует три способа для передачи данных из контроллера в представление в ASP.NET MVC 3:</span><span class="sxs-lookup"><span data-stu-id="6d8d8-106">There are three ways to pass information from a controller to a view in ASP.NET MVC 3:</span></span>
+<span data-ttu-id="fd28d-105">по [Рик Андерсон]((https://twitter.com/RickAndMSFT))</span><span class="sxs-lookup"><span data-stu-id="fd28d-105">by [Rick Anderson]((https://twitter.com/RickAndMSFT))</span></span>
 
-1. <span data-ttu-id="6d8d8-107">В виде строго типизированной модели объекта.</span><span class="sxs-lookup"><span data-stu-id="6d8d8-107">As a strongly typed model object.</span></span>
-2. <span data-ttu-id="6d8d8-108">Как динамический тип (с помощью @model динамические)</span><span class="sxs-lookup"><span data-stu-id="6d8d8-108">As a dynamic type (using @model dynamic)</span></span>
-3. <span data-ttu-id="6d8d8-109">Использование ViewBag</span><span class="sxs-lookup"><span data-stu-id="6d8d8-109">Using the ViewBag</span></span>
+<span data-ttu-id="fd28d-106">Существует три способа для передачи данных из контроллера в представление в ASP.NET MVC 3:</span><span class="sxs-lookup"><span data-stu-id="fd28d-106">There are three ways to pass information from a controller to a view in ASP.NET MVC 3:</span></span>
 
-<span data-ttu-id="6d8d8-110">Я написал простое приложение MVC 3 верхней блога для сравнения и сравните динамические и строго типизированные представления.</span><span class="sxs-lookup"><span data-stu-id="6d8d8-110">I've written a simple MVC 3 Top Blog application to compare and contrast dynamic and strongly typed views.</span></span> <span data-ttu-id="6d8d8-111">Контроллер начинается с простой список блогов:</span><span class="sxs-lookup"><span data-stu-id="6d8d8-111">The controller starts out with a simple list of blogs:</span></span>
+1. <span data-ttu-id="fd28d-107">В виде строго типизированной модели объекта.</span><span class="sxs-lookup"><span data-stu-id="fd28d-107">As a strongly typed model object.</span></span>
+2. <span data-ttu-id="fd28d-108">Как динамический тип (с помощью @model динамические)</span><span class="sxs-lookup"><span data-stu-id="fd28d-108">As a dynamic type (using @model dynamic)</span></span>
+3. <span data-ttu-id="fd28d-109">Использование ViewBag</span><span class="sxs-lookup"><span data-stu-id="fd28d-109">Using the ViewBag</span></span>
+
+<span data-ttu-id="fd28d-110">Я написал простое приложение MVC 3 верхней блога для сравнения и сравните динамические и строго типизированные представления.</span><span class="sxs-lookup"><span data-stu-id="fd28d-110">I've written a simple MVC 3 Top Blog application to compare and contrast dynamic and strongly typed views.</span></span> <span data-ttu-id="fd28d-111">Контроллер начинается с простой список блогов:</span><span class="sxs-lookup"><span data-stu-id="fd28d-111">The controller starts out with a simple list of blogs:</span></span>
 
 [!code-csharp[Main](dynamic-v-strongly-typed-views/samples/sample1.cs)]
 
-<span data-ttu-id="6d8d8-112">Щелкните правой кнопкой мыши в методе IndexNotStonglyTyped() и добавить представление Razor.</span><span class="sxs-lookup"><span data-stu-id="6d8d8-112">Right click in the IndexNotStonglyTyped() method and add a Razor view.</span></span>
+<span data-ttu-id="fd28d-112">Щелкните правой кнопкой мыши в методе IndexNotStonglyTyped() и добавить представление Razor.</span><span class="sxs-lookup"><span data-stu-id="fd28d-112">Right click in the IndexNotStonglyTyped() method and add a Razor view.</span></span>
 
-<span data-ttu-id="6d8d8-113">[![8475.NotStronglyTypedView[1]](dynamic-v-strongly-typed-views/_static/image2.png)](dynamic-v-strongly-typed-views/_static/image1.png)</span><span class="sxs-lookup"><span data-stu-id="6d8d8-113">[![8475.NotStronglyTypedView[1]](dynamic-v-strongly-typed-views/_static/image2.png)](dynamic-v-strongly-typed-views/_static/image1.png)</span></span>
+[![8<span data-ttu-id="fd28d-113">475.NotStronglyTypedView[1]]</span><span class="sxs-lookup"><span data-stu-id="fd28d-113">475.NotStronglyTypedView[1]]</span></span>(dynamic-v-strongly-typed-views/_static/image2.png)](dynamic-v-strongly-typed-views/_static/image1.png)
 
-<span data-ttu-id="6d8d8-114">Убедитесь, что **создать строго типизированное представление** флажок не установлен.</span><span class="sxs-lookup"><span data-stu-id="6d8d8-114">Make sure the **Create a strongly-typed view** box is not checked.</span></span> <span data-ttu-id="6d8d8-115">Результирующее представление не содержат множество:</span><span class="sxs-lookup"><span data-stu-id="6d8d8-115">The resulting view doesn't contain much:</span></span>
+<span data-ttu-id="fd28d-114">Убедитесь, что **создать строго типизированное представление** флажок не установлен.</span><span class="sxs-lookup"><span data-stu-id="fd28d-114">Make sure the **Create a strongly-typed view** box is not checked.</span></span> <span data-ttu-id="fd28d-115">Результирующее представление не содержат множество:</span><span class="sxs-lookup"><span data-stu-id="fd28d-115">The resulting view doesn't contain much:</span></span>
 
 [!code-cshtml[Main](dynamic-v-strongly-typed-views/samples/sample2.cshtml)]
 
 [!code-cshtml[Main](dynamic-v-strongly-typed-views/samples/sample3.cshtml)]
 
-<span data-ttu-id="6d8d8-116">Поскольку мы используем динамический и не строго типизированного представления, intellisense не помогают.</span><span class="sxs-lookup"><span data-stu-id="6d8d8-116">Because we're using a dynamic and not a strongly typed view, intellisense doesn't help us.</span></span> <span data-ttu-id="6d8d8-117">Ниже приведен полный код:</span><span class="sxs-lookup"><span data-stu-id="6d8d8-117">The completed code is shown below:</span></span>
+<span data-ttu-id="fd28d-116">Поскольку мы используем динамический и не строго типизированного представления, intellisense не помогают.</span><span class="sxs-lookup"><span data-stu-id="fd28d-116">Because we're using a dynamic and not a strongly typed view, intellisense doesn't help us.</span></span> <span data-ttu-id="fd28d-117">Ниже приведен полный код:</span><span class="sxs-lookup"><span data-stu-id="fd28d-117">The completed code is shown below:</span></span>
 
 [!code-cshtml[Main](dynamic-v-strongly-typed-views/samples/sample4.cshtml)]
 
-<span data-ttu-id="6d8d8-118">[![6646.NotStronglyTypedView_5F00_IE[1]](dynamic-v-strongly-typed-views/_static/image4.png)](dynamic-v-strongly-typed-views/_static/image3.png)</span><span class="sxs-lookup"><span data-stu-id="6d8d8-118">[![6646.NotStronglyTypedView_5F00_IE[1]](dynamic-v-strongly-typed-views/_static/image4.png)](dynamic-v-strongly-typed-views/_static/image3.png)</span></span>
+[![6<span data-ttu-id="fd28d-118">646.NotStronglyTypedView_5F00_IE[1]]</span><span class="sxs-lookup"><span data-stu-id="fd28d-118">646.NotStronglyTypedView_5F00_IE[1]]</span></span>(dynamic-v-strongly-typed-views/_static/image4.png)](dynamic-v-strongly-typed-views/_static/image3.png)
 
-<span data-ttu-id="6d8d8-119">Теперь мы добавим строго типизированного представления.</span><span class="sxs-lookup"><span data-stu-id="6d8d8-119">Now we'll add a strongly typed view.</span></span> <span data-ttu-id="6d8d8-120">Добавьте следующий код в контроллер:</span><span class="sxs-lookup"><span data-stu-id="6d8d8-120">Add the following code to the controller:</span></span>
+<span data-ttu-id="fd28d-119">Теперь мы добавим строго типизированного представления.</span><span class="sxs-lookup"><span data-stu-id="fd28d-119">Now we'll add a strongly typed view.</span></span> <span data-ttu-id="fd28d-120">Добавьте следующий код в контроллер:</span><span class="sxs-lookup"><span data-stu-id="fd28d-120">Add the following code to the controller:</span></span>
 
 [!code-csharp[Main](dynamic-v-strongly-typed-views/samples/sample5.cs)]
 
 
-<span data-ttu-id="6d8d8-121">Обратите внимание, что это точно тем же возвращаемое View(topBlogs); вызывать как не строго типизированного представления.</span><span class="sxs-lookup"><span data-stu-id="6d8d8-121">Notice it's exactly the same return View(topBlogs); call as the non-strongly typed view.</span></span> <span data-ttu-id="6d8d8-122">Щелкните правой кнопкой мыши внутри элемента *StonglyTypedIndex()* и выберите **Добавление представления**.</span><span class="sxs-lookup"><span data-stu-id="6d8d8-122">Right click inside of *StonglyTypedIndex()* and select **Add View**.</span></span> <span data-ttu-id="6d8d8-123">На этот раз выберите **блог** класс модели и выберите **списка** как шаблон каркаса.</span><span class="sxs-lookup"><span data-stu-id="6d8d8-123">This time select the **Blog** Model class and select **List** as the Scaffold template.</span></span>
+<span data-ttu-id="fd28d-121">Обратите внимание, что это точно тем же возвращаемое View(topBlogs); вызывать как не строго типизированного представления.</span><span class="sxs-lookup"><span data-stu-id="fd28d-121">Notice it's exactly the same return View(topBlogs); call as the non-strongly typed view.</span></span> <span data-ttu-id="fd28d-122">Щелкните правой кнопкой мыши внутри элемента *StonglyTypedIndex()* и выберите **Добавление представления**.</span><span class="sxs-lookup"><span data-stu-id="fd28d-122">Right click inside of *StonglyTypedIndex()* and select **Add View**.</span></span> <span data-ttu-id="fd28d-123">На этот раз выберите **блог** класс модели и выберите **списка** как шаблон каркаса.</span><span class="sxs-lookup"><span data-stu-id="fd28d-123">This time select the **Blog** Model class and select **List** as the Scaffold template.</span></span>
 
-<span data-ttu-id="6d8d8-124">[![5658.StrongView [1]](dynamic-v-strongly-typed-views/_static/image6.png)](dynamic-v-strongly-typed-views/_static/image5.png)</span><span class="sxs-lookup"><span data-stu-id="6d8d8-124">[![5658.StrongView[1]](dynamic-v-strongly-typed-views/_static/image6.png)](dynamic-v-strongly-typed-views/_static/image5.png)</span></span>
+[![5<span data-ttu-id="fd28d-124">658.StrongView[1]]</span><span class="sxs-lookup"><span data-stu-id="fd28d-124">658.StrongView[1]]</span></span>(dynamic-v-strongly-typed-views/_static/image6.png)](dynamic-v-strongly-typed-views/_static/image5.png)
 
-<span data-ttu-id="6d8d8-125">В новый шаблон представления мы обеспечить поддержку intellisense.</span><span class="sxs-lookup"><span data-stu-id="6d8d8-125">Inside the new view template we get intellisense support.</span></span>
+<span data-ttu-id="fd28d-125">В новый шаблон представления мы обеспечить поддержку intellisense.</span><span class="sxs-lookup"><span data-stu-id="fd28d-125">Inside the new view template we get intellisense support.</span></span>
 
-<span data-ttu-id="6d8d8-126">[![7002.IntelliSense[1]](dynamic-v-strongly-typed-views/_static/image8.png)](dynamic-v-strongly-typed-views/_static/image7.png)</span><span class="sxs-lookup"><span data-stu-id="6d8d8-126">[![7002.IntelliSense[1]](dynamic-v-strongly-typed-views/_static/image8.png)](dynamic-v-strongly-typed-views/_static/image7.png)</span></span>
+[![7<span data-ttu-id="fd28d-126">002.IntelliSense[1]]</span><span class="sxs-lookup"><span data-stu-id="fd28d-126">002.IntelliSense[1]]</span></span>(dynamic-v-strongly-typed-views/_static/image8.png)](dynamic-v-strongly-typed-views/_static/image7.png)
 
-<span data-ttu-id="6d8d8-127">Можно загрузить проект C# [здесь](https://blogs.msdn.com/cfs-file.ashx/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-11-73-SSMS/1817.Mvc3ViewDemo.zip).</span><span class="sxs-lookup"><span data-stu-id="6d8d8-127">The c# project can be downloaded [here](https://blogs.msdn.com/cfs-file.ashx/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-11-73-SSMS/1817.Mvc3ViewDemo.zip).</span></span>
+<span data-ttu-id="fd28d-127">Можно загрузить проект c# [здесь](https://blogs.msdn.com/cfs-file.ashx/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-11-73-SSMS/1817.Mvc3ViewDemo.zip).</span><span class="sxs-lookup"><span data-stu-id="fd28d-127">The c# project can be downloaded [here](https://blogs.msdn.com/cfs-file.ashx/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-11-73-SSMS/1817.Mvc3ViewDemo.zip).</span></span>

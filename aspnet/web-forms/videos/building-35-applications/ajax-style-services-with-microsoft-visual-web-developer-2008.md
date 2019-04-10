@@ -8,17 +8,17 @@ ms.date: 05/08/2009
 ms.assetid: b257d1f2-58f2-49ab-a800-b99a79a212f5
 msc.legacyurl: /web-forms/videos/building-35-applications/ajax-style-services-with-microsoft-visual-web-developer-2008
 msc.type: video
-ms.openlocfilehash: fa75fb1ab17742455b1d06dfb74f868ff0ceb49f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f79cde60c4015c1d38b58cb41de9a1ae7696a4f9
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046301"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384816"
 ---
-<a name="ajax-style-services-with-microsoft-visual-web-developer-2008"></a><span data-ttu-id="e2952-104">Службы в стиле AJAX в Microsoft Visual Web Developer 2008</span><span class="sxs-lookup"><span data-stu-id="e2952-104">AJAX Style Services with Microsoft Visual Web Developer 2008</span></span>
-====================
-<span data-ttu-id="e2952-105">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="e2952-105">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+# <a name="ajax-style-services-with-microsoft-visual-web-developer-2008"></a><span data-ttu-id="5f29e-104">Службы в стиле AJAX в Microsoft Visual Web Developer 2008</span><span class="sxs-lookup"><span data-stu-id="5f29e-104">AJAX Style Services with Microsoft Visual Web Developer 2008</span></span>
 
-<span data-ttu-id="e2952-106">AJAX означает разные вещи для разных людей.</span><span class="sxs-lookup"><span data-stu-id="e2952-106">AJAX means different things to different people.</span></span> <span data-ttu-id="e2952-107">В этом видео показаны основы создания службы в стиле AJAX (и потребители на стороне клиента), в Visual Web Developer 2008.</span><span class="sxs-lookup"><span data-stu-id="e2952-107">This video shows you the basics of writing AJAX style services (and client side consumers) in Visual Web Developer 2008.</span></span>
+<span data-ttu-id="5f29e-105">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="5f29e-105">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-[<span data-ttu-id="e2952-108">&#9654;Просмотрите видео (16 минут)</span><span class="sxs-lookup"><span data-stu-id="e2952-108">&#9654; Watch video (16 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/ajax-style-services-with-microsoft-visual-web-developer-2008)
+<span data-ttu-id="5f29e-106">AJAX означает разные вещи для разных людей.</span><span class="sxs-lookup"><span data-stu-id="5f29e-106">AJAX means different things to different people.</span></span> <span data-ttu-id="5f29e-107">В этом видео показаны основы создания службы в стиле AJAX (и потребители на стороне клиента), в Visual Web Developer 2008.</span><span class="sxs-lookup"><span data-stu-id="5f29e-107">This video shows you the basics of writing AJAX style services (and client side consumers) in Visual Web Developer 2008.</span></span>
+
+[<span data-ttu-id="5f29e-108">&#9654;Просмотрите видео (16 минут)</span><span class="sxs-lookup"><span data-stu-id="5f29e-108">&#9654; Watch video (16 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/ajax-style-services-with-microsoft-visual-web-developer-2008)
