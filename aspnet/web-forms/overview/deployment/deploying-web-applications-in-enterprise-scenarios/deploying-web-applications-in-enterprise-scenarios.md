@@ -8,18 +8,18 @@ ms.date: 05/03/2012
 ms.assetid: 48cfe378-d62a-48c6-a4db-6be3cead6898
 msc.legacyurl: /web-forms/overview/deployment/deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios
 msc.type: authoredcontent
-ms.openlocfilehash: fa06538dcd9e087df52a76588e084a527867bf84
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f8d55cb98e6943ef2a7c7eb05f7f771b5f5e63ef
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062731"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59420410"
 ---
-<a name="deploying-web-applications-in-enterprise-scenarios-using-visual-studio-2010"></a>Сценарии корпоративных развертываний веб-приложений с помощью Visual Studio 2010
-====================
+# <a name="deploying-web-applications-in-enterprise-scenarios-using-visual-studio-2010"></a>Сценарии корпоративных развертываний веб-приложений с помощью Visual Studio 2010
+
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Этот набор учебников описывает средства и методы, которые можно использовать для развертывания веб-приложений в различных сценариях enterprise. Здесь объясняется, как наилучшим образом использовать технологии, такие как Visual Studio 2010, Microsoft Build Engine (MSBuild), Internet Information Services (IIS) 7.5, средство веб-развертывания IIS (веб-развертывания), веб-фермы (WFF) и служебные программы, такие как VSDBCMD.exe для Упростите и управления процессом развертывания. Содержит общие сведения и рекомендации, ориентированные на задачи, которые помогут вам:
 > 
@@ -78,4 +78,4 @@ ms.locfileid: "57062731"
 Этой серии руководств использует примера решения с реалистичные уровень сложности, вместе с вымышленной корпоративный сценарий развертывания, чтобы предоставить справочную реализацию и дать задач и пошаговых руководствах общий контекст. Следующий раздел, [корпоративное веб-развертывание: Обзор сценария](enterprise-web-deployment-scenario-overview.md), представлены в сценарии и в примере решения. Оттуда вы сможете выполнять руководства и разделы, наиболее точно отвечают вашим потребностям.
 
 > [!div class="step-by-step"]
-> [Вперед](enterprise-web-deployment-scenario-overview.md)
+> [Далее](enterprise-web-deployment-scenario-overview.md)

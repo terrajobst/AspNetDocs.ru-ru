@@ -8,15 +8,15 @@ ms.date: 07/17/2006
 ms.assetid: f6e2a12a-2b5e-48fd-8db3-1e94a500c19a
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/adding-client-side-confirmation-when-deleting-cs
 msc.type: authoredcontent
-ms.openlocfilehash: a3e35e7b27d646569692a2eb715dcf40b7967473
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: d7a6f29dc660cff2bfa9db8f9790d73e51a2cc1c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423199"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59420137"
 ---
-<a name="adding-client-side-confirmation-when-deleting-c"></a>Добавление клиентского подтверждения при удалении (C#)
-====================
+# <a name="adding-client-side-confirmation-when-deleting-c"></a>Добавление клиентского подтверждения при удалении (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_22_CS.exe) или [скачать PDF](adding-client-side-confirmation-when-deleting-cs/_static/datatutorial22cs1.pdf)
@@ -65,7 +65,7 @@ JavaScript `confirm(string)` функция отображает свой стр
 Благодаря этим изменениям у нас есть полнофункциональный веб-страницы, позволяющий пользователю переключаться с одного продукта за раз, с возможностью удалить продукт, просто нажав кнопку «Удалить». Рис. 2 показан снимок экрана ход работы до сих при просмотре через браузер.
 
 
-[![FormView отображает информацию об одном продукте](adding-client-side-confirmation-when-deleting-cs/_static/image3.png)](adding-client-side-confirmation-when-deleting-cs/_static/image2.png)
+[![Tон FormView показывает сведения об одном продукте](adding-client-side-confirmation-when-deleting-cs/_static/image3.png)](adding-client-side-confirmation-when-deleting-cs/_static/image2.png)
 
 **Рис. 2**: FormView показывает сведения об одном продукте ([Просмотр полноразмерного изображения](adding-client-side-confirmation-when-deleting-cs/_static/image4.png))
 
@@ -85,7 +85,7 @@ JavaScript `confirm(string)` функция отображает свой стр
 > Строка, переданная `confirm(string)` функцию JavaScript разделенное апострофами (вместо знаков кавычек). В JavaScript строки можно выделять, используя любой из этих знаков. Мы используем здесь апострофы, чтобы выделители строки передаваемого `confirm(string)` не создавали путаницы с выделителями, используемыми для `OnClientClick` значение свойства.
 
 
-[![Подтверждение — теперь отображается при нажатии кнопки Delete](adding-client-side-confirmation-when-deleting-cs/_static/image6.png)](adding-client-side-confirmation-when-deleting-cs/_static/image5.png)
+[![A Подтверждение — теперь отображается при нажатии кнопки Delete](adding-client-side-confirmation-when-deleting-cs/_static/image6.png)](adding-client-side-confirmation-when-deleting-cs/_static/image5.png)
 
 **Рис. 3**: Подтверждение — теперь отображается при нажатии кнопки Delete ([Просмотр полноразмерного изображения](adding-client-side-confirmation-when-deleting-cs/_static/image7.png))
 
@@ -127,7 +127,7 @@ CommandField содержит единственный экземпляр уда
 > Этот метод также может использоваться для программного доступа к «удалить» CommandField в элементе управления DetailsView. Для элемента DetailsView, однако d создать обработчик событий для `DataBound` событий, так как нет DetailsView `RowDataBound` событий.
 
 
-[![Нажав кнопку Delete s GridView отображает настроенное диалоговое окно подтверждения](adding-client-side-confirmation-when-deleting-cs/_static/image9.png)](adding-client-side-confirmation-when-deleting-cs/_static/image8.png)
+[![Cщелкнув s GridView удаление кнопки отображает диалоговое окно подтверждения настройки](adding-client-side-confirmation-when-deleting-cs/_static/image9.png)](adding-client-side-confirmation-when-deleting-cs/_static/image8.png)
 
 **Рис. 4**: Щелкнув s GridView кнопки Delete отображается диалоговое окно подтверждения настроить ([Просмотр полноразмерного изображения](adding-client-side-confirmation-when-deleting-cs/_static/image10.png))
 

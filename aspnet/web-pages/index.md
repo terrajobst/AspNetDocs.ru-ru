@@ -8,15 +8,15 @@ ms.date: 05/18/2012
 ms.assetid: 5418ba96-ff49-4a43-9cbb-09dea4949d23
 msc.legacyurl: /web-pages
 msc.type: categoryindex
-ms.openlocfilehash: 967c5687013cac75b5ec8dd665269026bd46601c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 832f89dfdecb71f2664431a4880978f7355246f4
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023371"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59420228"
 ---
-<a name="aspnet-web-pages"></a>Веб-страницы ASP.NET
-====================
+# <a name="aspnet-web-pages"></a>Веб-страницы ASP.NET
+
 
 > [!NOTE] 
 > WebMatrix не рекомендуется использовать как интегрированную среду разработки для веб-страниц ASP.NET. Используйте [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) или [Visual Studio Code](https://code.visualstudio.com/).
@@ -42,7 +42,7 @@ ms.locfileid: "57023371"
             - [Удаление данных базы данных](overview/getting-started/introducing-aspnet-web-pages-2/deleting-data.md)
             - [Создание согласованного макета](overview/getting-started/introducing-aspnet-web-pages-2/layouts.md)
             - [Публикация сайта с помощью WebMatrix](overview/getting-started/introducing-aspnet-web-pages-2/publishing.md)
-    - [Routing](overview/routing/index.md)
+    - [Маршрутизация](overview/routing/index.md)
 
         - [Создание доступных для чтения URL-адресов на сайтах веб-страниц ASP.NET](overview/routing/creating-readable-urls-in-aspnet-web-pages-sites.md)
     - [Пользовательский интерфейс, макеты и темы](overview/ui-layouts-and-themes/index.md)
@@ -53,17 +53,17 @@ ms.locfileid: "57023371"
         - [Настройка поведения в масштабах сайта](overview/ui-layouts-and-themes/18-customizing-site-wide-behavior.md)
         - [Работа с образами](overview/ui-layouts-and-themes/9-working-with-images.md)
         - [Работа с видео](overview/ui-layouts-and-themes/10-working-with-video.md)
-        - [Создание и использование вспомогательного метода на сайте веб-страниц ASP.NET](overview/ui-layouts-and-themes/creating-and-using-a-helper-in-an-aspnet-web-pages-site.md)
-        - [Установка вспомогательного метода](overview/ui-layouts-and-themes/installing-helpers.md)
+        - [Создание и использование вспомогательного приложения на сайте веб-страниц ASP.NET](overview/ui-layouts-and-themes/creating-and-using-a-helper-in-an-aspnet-web-pages-site.md)
+        - [Установка вспомогательного приложения](overview/ui-layouts-and-themes/installing-helpers.md)
         - [Добавление вспомогательного приложения Twitter с помощью веб-страниц ASP.NET](overview/ui-layouts-and-themes/twitter-helper.md)
         - [Отображение карт на сайте веб-страниц ASP.NET](overview/ui-layouts-and-themes/displaying-maps-in-an-aspnet-web-pages-site.md)
-    - [Мобильные приложения](overview/mobile/index.md)
+    - [Мобильный](overview/mobile/index.md)
 
         - [Отрисовка сайтов веб-страниц ASP.NET для мобильных устройств](overview/mobile/rendering-aspnet-web-pages-sites-for-mobile-devices.md)
     - [Работа с данными](overview/data/index.md)
 
         - [Работа с данными](overview/data/5-working-with-data.md)
-        - [Отображение данных в диаграмме](overview/data/7-displaying-data-in-a-chart.md)
+        - [Отображение данных на диаграмме](overview/data/7-displaying-data-in-a-chart.md)
         - [Работа с файлами](overview/data/working-with-files.md)
     - [Тестирование и отладка](overview/testing-and-debugging/index.md)
 
@@ -86,12 +86,12 @@ ms.locfileid: "57023371"
 
         - [Новые возможности веб-страниц ASP.NET 3.2](overview/releases/whats-new-in-aspnet-web-pages-32.md)
         - [Новые возможности веб-страниц ASP.NET 3.1](overview/releases/whats-new-aspnet-web-pages-31.md)
-        - [Лучшие функции веб-страниц ASP.NET 2](overview/releases/top-features-in-web-pages-2.md)
-        - [Файл сведений для версии Developer Preview веб-страниц ASP.NET 2](overview/releases/aspnet-web-pages-2-developer-preview-readme.md)
+        - [Лучшие функции веб-страниц ASP.NET 2](overview/releases/top-features-in-web-pages-2.md)
+        - [Файл сведений для версии Developer Preview веб-страниц ASP.NET 2](overview/releases/aspnet-web-pages-2-developer-preview-readme.md)
         - [Параллельное выполнение разных версий веб-страниц ASP.NET](overview/releases/running-v1-and-v2-sites-side-by-side.md)
 - [Видеоролики](videos/index.md)
 
-    - [Введение](videos/introduction/index.md)
+    - [Вступление](videos/introduction/index.md)
 
         - [Краткое введение в веб-страницы ASP.NET](videos/introduction/5-minute-introduction-to-aspnet-web-pages.md)
         - [Установка и использование средства Microsoft WebMatrix](videos/introduction/install-and-use-the-microsoft-webmatrix-tool.md)
@@ -107,15 +107,15 @@ ms.locfileid: "57023371"
 
         - [Начало работы с WebMatrix и веб-страницами ASP.NET](videos/aspnet-razor-pages/getting-started-with-webmatrix-and-aspnet-web-pages.md)
         - [Введение в веб-программирование на ASP.NET с синтаксисом Razor](videos/aspnet-razor-pages/introduction-to-aspnet-web-programming-using-the-razor-syntax.md)
-        - [Создание согласованного вида (часть 1)](videos/aspnet-razor-pages/creating-a-consistent-look-part-1.md)
-        - [Создание согласованного вида (часть 2)](videos/aspnet-razor-pages/creating-a-consistent-look-part-2.md)
-        - [Работа с формами (часть 1)](videos/aspnet-razor-pages/working-with-forms-part-1.md)
-        - [Работа с формами (часть 2)](videos/aspnet-razor-pages/working-with-forms-part-2.md)
-        - [Работа с данными (часть 1)](videos/aspnet-razor-pages/working-with-data-part-1.md)
-        - [Работа с данными (часть 2)](videos/aspnet-razor-pages/working-with-data-part-2.md)
+        - [Создание согласованного вида (часть 1)](videos/aspnet-razor-pages/creating-a-consistent-look-part-1.md)
+        - [Создание согласованного вида (часть 2)](videos/aspnet-razor-pages/creating-a-consistent-look-part-2.md)
+        - [Работа с формами (часть 1)](videos/aspnet-razor-pages/working-with-forms-part-1.md)
+        - [Работа с формами (часть 2)](videos/aspnet-razor-pages/working-with-forms-part-2.md)
+        - [Работа с данными (часть 1)](videos/aspnet-razor-pages/working-with-data-part-1.md)
+        - [Работа с данными (часть 2)](videos/aspnet-razor-pages/working-with-data-part-2.md)
         - [Отображение данных в сетке](videos/aspnet-razor-pages/displaying-data-in-a-grid.md)
-        - [Отображение данных в диаграмме (часть 1)](videos/aspnet-razor-pages/displaying-data-in-a-chart-part-1.md)
-        - [Отображение данных в диаграмме (часть 2)](videos/aspnet-razor-pages/displaying-data-in-a-chart-part-2.md)
+        - [Отображение данных на диаграмме (часть 1)](videos/aspnet-razor-pages/displaying-data-in-a-chart-part-1.md)
+        - [Отображение данных на диаграмме (часть 2)](videos/aspnet-razor-pages/displaying-data-in-a-chart-part-2.md)
         - [Работа с файлами](videos/aspnet-razor-pages/working-with-files.md)
         - [Работа с образами](videos/aspnet-razor-pages/working-with-images.md)
         - [Работа с видео](videos/aspnet-razor-pages/working-with-video.md)
@@ -126,5 +126,5 @@ ms.locfileid: "57023371"
 - [Файл сведений для WebMatrix](readme/index.md)
 
     - [Файл сведений для WebMatrix](readme/overview.md)
-    - [Файл сведений для Web Matrix и выпуска бета-версии 3 веб-страниц ASP.NET (Razor)](readme/beta3.md)
+    - [Файл сведений для Web Matrix и выпуска бета-версии 3 веб-страниц ASP.NET (Razor)](readme/beta3.md)
 - [Руководство по содержимому WebMatrix](content-guide.md)

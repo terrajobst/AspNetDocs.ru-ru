@@ -8,15 +8,15 @@ ms.date: 03/26/2015
 ms.assetid: c205805f-efdd-4fa7-9616-f26eab180611
 msc.legacyurl: /mvc/overview/performance/profile-and-debug-your-aspnet-mvc-app-with-glimpse
 msc.type: authoredcontent
-ms.openlocfilehash: ea149b6450cf02c993c7690752a05396802336be
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 078382191595d1f65b5ebe9d0de8d41cd70e376d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425058"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419890"
 ---
-<a name="profile-and-debug-your-aspnet-mvc-app-with-glimpse"></a>Профилирование и отладка приложения ASP.NET MVC с помощью Glimpse
-====================
+# <a name="profile-and-debug-your-aspnet-mvc-app-with-glimpse"></a>Профилирование и отладка приложения ASP.NET MVC с помощью Glimpse
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Glimpse — бурно и семейству пакетов NuGet с открытым кодом, предоставляющий подробные сведения о производительности, отладку и диагностические сведения для приложений ASP.NET. Он просто установить, простой и сверхбыстрой и отображает ключевые показатели производительности в нижней части каждой страницы. Он дает возможность углубиться в приложении, если вам нужно узнать, что происходит на сервере. Glimpse предоставляет намного ценную информацию, мы рекомендуем использовать его на протяжении всего цикла разработки, включая Azure тестовой среды. Хотя [Fiddler](http://www.telerik.com/fiddler) и [средства разработки F-12](https://msdn.microsoft.com/library/ie/gg589512(v=vs.85).aspx) предоставляют на стороне клиента представления, представление предоставляет подробную информацию с сервера. Этот учебник посвящен с помощью Glimpse ASP.NET MVC и EF пакеты, но доступны многие другие пакеты. По возможности я будет связан соответствующий [Окиньте документация](http://getglimpse.com/Docs/) которого я целях. Представление — это проект с открытым исходным кодом, слишком у вас есть доступ к исходному коду и документы.

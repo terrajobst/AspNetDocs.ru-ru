@@ -8,15 +8,15 @@ ms.date: 01/16/2019
 ms.assetid: 8bf2c4fb-4ee5-4841-bfc2-03462c1f7a7a
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis
 msc.type: authoredcontent
-ms.openlocfilehash: d49dfad368ca4b81bb865103a99ec223a1cc66df
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 39502e03196d2ba51e826d248ff0ff1e84258131
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059581"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59420202"
 ---
-<a name="aspnet-web-deployment-using-visual-studio-deploying-to-test"></a>Веб-развертывание ASP.NET с помощью Visual Studio. Развертывание в тестовой среде
-====================
+# <a name="aspnet-web-deployment-using-visual-studio-deploying-to-test"></a>Веб-развертывание ASP.NET с помощью Visual Studio. Развертывание в тестовой среде
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 > В этой серии руководств показано, как развернуть ASP.NET (публикации) веб-приложения, веб-приложениях службы приложений Azure или стороннего поставщика услуг размещения с помощью Visual Studio 2017. Сведения об этой серии см. в разделе [в первом учебнике серии](introduction.md).
