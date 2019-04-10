@@ -8,15 +8,15 @@ ms.date: 02/16/2008
 ms.assetid: 152ab1e5-aec2-4ea7-b8cc-27a24dd9acb8
 msc.legacyurl: /mvc/overview/older-versions-1/views/asp-net-mvc-views-overview-cs
 msc.type: authoredcontent
-ms.openlocfilehash: a8e64a99549584f150d64d909ac97210257b1147
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b4c35761f9cd44c866242cfe6f4f2d924e81d754
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042971"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421333"
 ---
-<a name="aspnet-mvc-views-overview-c"></a>Общие сведения о представлениях ASP.NET MVC (C#)
-====================
+# <a name="aspnet-mvc-views-overview-c"></a>Общие сведения о представлениях ASP.NET MVC (C#)
+
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > Что такое представлении MVC ASP.NET, и чем она отличается от HTML-страницы? В этом руководстве Стивен Вальтер знакомит вас с представлениями и показано, как можно воспользоваться преимуществами Просмотр данных и вспомогательных методов HTML в представлении.
@@ -87,7 +87,7 @@ View();
 
 Так как вы вызываете Response.Write() столь часто, корпорация Майкрософт предоставляет вам ярлык для вызова метода Response.Write(). Представление в листинге 3 использует разделители &lt;% = и %&gt; для быстрого вызова Response.Write().
 
-**Листинг 3 - Views\Home\Index2.aspx**
+**Listing 3 - Views\Home\Index2.aspx**
 
 [!code-aspx[Main](asp-net-mvc-views-overview-cs/samples/sample3.aspx)]
 
@@ -99,12 +99,12 @@ View();
 
 Например, в представлении в листинге 4 пользуется три вспомогательных методов HTML--BeginForm(), TextBox() и Password() помощников--для создания имени входа форме (см. рис. 1).
 
-**Листинг 4--\Views\Home\Login.aspx**
+**Listing 4 -- \Views\Home\Login.aspx**
 
 [!code-aspx[Main](asp-net-mvc-views-overview-cs/samples/sample4.aspx)]
 
 
-[![В диалоговом окне нового проекта](asp-net-mvc-views-overview-cs/_static/image1.jpg)](asp-net-mvc-views-overview-cs/_static/image1.png)
+[![Tдиалоговое окно нового проекта он](asp-net-mvc-views-overview-cs/_static/image1.jpg)](asp-net-mvc-views-overview-cs/_static/image1.png)
 
 **Рис 01**: Стандартная форма входа в систему ([Просмотр полноразмерного изображения](asp-net-mvc-views-overview-cs/_static/image2.png))
 
@@ -115,7 +115,7 @@ View();
 
 Использование методов вспомогательный метод HTML не является обязательным. Они упрощают жизнь за счет сокращения HTML и сценарий, который необходимо написать. Представление в листинге 5 представляет точное же форму, что в представлении в листинге 4 без использования вспомогательных методов HTML.
 
-**В листинге 5--\Views\Home\Login.aspx**
+**Listing 5 -- \Views\Home\Login.aspx**
 
 [!code-aspx[Main](asp-net-mvc-views-overview-cs/samples/sample5.aspx)]
 
@@ -150,4 +150,4 @@ View();
 Этот учебник предоставляется краткое введение в представления ASP.NET MVC, просмотр данных и вспомогательных методов HTML. В первом разделе вы узнали, как добавить новые представления в проект. Вы узнали, что необходимо добавить представление папку для его вызова из конкретного контроллера. Далее мы рассмотрели тема вспомогательных методов HTML. Вы узнали, как вспомогательных методов HTML, которые позволяют легко создать стандартный HTML-содержимое. Наконец вы узнали, как пользоваться преимуществами представление данных для передачи данных из контроллера в представление.
 
 > [!div class="step-by-step"]
-> [Вперед](creating-custom-html-helpers-cs.md)
+> [Далее](creating-custom-html-helpers-cs.md)

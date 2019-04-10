@@ -8,15 +8,15 @@ ms.date: 05/12/2009
 ms.assetid: f47e6224-c2e5-4472-b069-b6c7b6115200
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/htmleditor/how-do-i-use-the-html-editor-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 7bd7c5a604c897ac6dce92123e9e7ae4157d3e0e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8027a77ab3504848a28ce9bdc7779092b28759ce
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57037501"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421164"
 ---
-<a name="how-do-i-use-the-html-editor-control-c"></a>Как использовать элемент управления редактора HTML? (C#)
-====================
+# <a name="how-do-i-use-the-html-editor-control-c"></a>Как использовать элемент управления редактора HTML? (C#)
+
 по [Microsoft](https://github.com/microsoft)
 
 > HTMLEditor является элементом управления AJAX ASP.NET, который позволяет легко создавать и изменять содержимое HTML с помощью кнопок в панели инструментов.
@@ -25,7 +25,7 @@ ms.locfileid: "57037501"
 Этот учебник призван предоставить вам Обзор элемента управления редактора HTML, включенные в AJAX Control Toolkit. Редактор HTML включает параметры для изменения размера шрифта, выбрав шрифт, изменение цвета фона, изменив цвет переднего плана, добавление ссылок, добавление изображения, изменив выравнивание текста и выполнять операции вырезания, копирования и вставки операций (см. рис. 1).
 
 
-[![Редактор HTML](how-do-i-use-the-html-editor-control-cs/_static/image1.jpg)](how-do-i-use-the-html-editor-control-cs/_static/image1.png)
+[![Tон редактор HTML](how-do-i-use-the-html-editor-control-cs/_static/image1.jpg)](how-do-i-use-the-html-editor-control-cs/_static/image1.png)
 
 **Рис 01**: Редактор HTML ([Просмотр полноразмерного изображения](how-do-i-use-the-html-editor-control-cs/_static/image2.png))
 
@@ -33,7 +33,7 @@ ms.locfileid: "57037501"
 Редактор HTML позволяет ввести содержимое, используя режим конструктора или HTML можно ввести напрямую. Вам также будет предоставлен параметр, чтобы просмотреть содержимое HTML (см. рис. 2).
 
 
-[![Проектирование, HTML и предварительной версии кнопок](how-do-i-use-the-html-editor-control-cs/_static/image2.jpg)](how-do-i-use-the-html-editor-control-cs/_static/image3.png)
+[![Dоект, HTML и кнопки предварительного просмотра](how-do-i-use-the-html-editor-control-cs/_static/image2.jpg)](how-do-i-use-the-html-editor-control-cs/_static/image3.png)
 
 **Рис. 02**: Проектирование, HTML и предварительной версии кнопок ([Просмотр полноразмерного изображения](how-do-i-use-the-html-editor-control-cs/_static/image4.png))
 
@@ -49,7 +49,7 @@ ms.locfileid: "57037501"
 В области элементов с остальной частью элементов управления AJAX Control Toolkit расположен элемент управления редактора HTML. Он называется редактирующего элемента управления (см. рис. 3).
 
 
-[![Элемент управления редактора HTML](how-do-i-use-the-html-editor-control-cs/_static/image3.jpg)](how-do-i-use-the-html-editor-control-cs/_static/image5.png)
+[![Tон элемент управления редактора HTML](how-do-i-use-the-html-editor-control-cs/_static/image3.jpg)](how-do-i-use-the-html-editor-control-cs/_static/image5.png)
 
 **Рис 03**: Элемент управления редактора HTML ([Просмотр полноразмерного изображения](how-do-i-use-the-html-editor-control-cs/_static/image6.png))
 
@@ -63,7 +63,7 @@ ms.locfileid: "57037501"
 На странице в листинге 1 содержит элемент управления редактора HTML, элемент управления Button и текстовым элементом управления. После нажатия кнопки, содержимое редактора HTML отображается в управлении литералов (см. рис. 4).
 
 
-[![Отправка формы с помощью HTML-редактора](how-do-i-use-the-html-editor-control-cs/_static/image4.jpg)](how-do-i-use-the-html-editor-control-cs/_static/image7.png)
+[![Submitting формы с редактором HTML](how-do-i-use-the-html-editor-control-cs/_static/image4.jpg)](how-do-i-use-the-html-editor-control-cs/_static/image7.png)
 
 **Рис. 04**: Отправка формы с редактором HTML ([Просмотр полноразмерного изображения](how-do-i-use-the-html-editor-control-cs/_static/image8.png))
 
@@ -75,7 +75,7 @@ ms.locfileid: "57037501"
 Вы можете настроить точно кнопки, которые отображаются в редакторе. Например может потребоваться удалить вкладку HTML, чтобы запретить пользователям переходить в режим HTML в редакторе HTML. Или, может потребоваться удалить раскрывающийся список размер шрифта, чтобы запретить пользователям создавать чрезмерно большим текст на форуме сообщение post (см. рис. 5).
 
 
-[![Специализированного редактора HTML](how-do-i-use-the-html-editor-control-cs/_static/image5.jpg)](how-do-i-use-the-html-editor-control-cs/_static/image9.png)
+[![A настраиваемый редактор HTML](how-do-i-use-the-html-editor-control-cs/_static/image5.jpg)](how-do-i-use-the-html-editor-control-cs/_static/image9.png)
 
 **05 рис**: Объект настройки редактора HTML ([Просмотр полноразмерного изображения](how-do-i-use-the-html-editor-control-cs/_static/image10.png))
 
@@ -109,4 +109,4 @@ ms.locfileid: "57037501"
 В этом руководстве были предоставлены с кратким обзором элемент управления редактора HTML, включенных в AJAX Control Toolkit. Вы узнали, как использовать редактор HTML для принятия форматированное содержимое от пользователя и отправить содержимое на сервер. Мы также рассмотрели, как можно настроить кнопки панели инструментов, которые отображаются в редакторе HTML. Наконец вы узнали, как во избежание атаки межузловых сценариев, при использовании редактора HTML на потенциально вредоносный ввод.
 
 > [!div class="step-by-step"]
-> [Вперед](how-do-i-use-the-html-editor-control-vb.md)
+> [Далее](how-do-i-use-the-html-editor-control-vb.md)

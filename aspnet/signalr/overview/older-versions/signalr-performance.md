@@ -8,15 +8,15 @@ ms.date: 07/03/2013
 ms.assetid: 9594d644-66b6-4223-acdd-23e29a6e4c46
 msc.legacyurl: /signalr/overview/older-versions/signalr-performance
 msc.type: authoredcontent
-ms.openlocfilehash: 55e38762dbc7caf31989d65ebf70516a458cfb00
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 5f7415d0a4275a3864dc9eefb9588f17698147cd
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425539"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412701"
 ---
-<a name="signalr-performance-signalr-1x"></a>Производительность SignalR (SignalR 1.x)
-====================
+# <a name="signalr-performance-signalr-1x"></a>Производительность SignalR (SignalR 1.x)
+
 по [Патрик Флетчера](https://github.com/pfletcher)
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58425539"
 - [Устранение неполадок производительности](#troubleshooting)
 - [Использование счетчиков производительности SignalR](#perfcounters)
 - [Использование других счетчиков производительности](#othercounters)
-- [Другие ресурсы](#otherresources)
+- [Другие источники](#otherresources)
 
 <a id="design"></a>
 
@@ -227,12 +227,12 @@ ms.locfileid: "58425539"
 - TCPv6/подключений
 - TCPv4/подключений
 
-**Веб-службы**
+**Веб-служба**
 
 - Веб-служба\текущих подключений
 - Веб-Service\Maximum подключений
 
-**Работа с потоками**
+**Потоки**
 
 - .NET CLR LocksAndThreads\# текущих логических потоков
 - Потоки LocksAnd .NET CLR\# текущих физических потоков

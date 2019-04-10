@@ -8,15 +8,15 @@ ms.date: 05/28/2015
 ms.assetid: b3a006a0-3ea2-4d45-b833-e20e3a3c0a1a
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data
 msc.type: authoredcontent
-ms.openlocfilehash: 9158a1f53268daec6e6fbdf003dd73e1d62cc667
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5415913626eb063a4cb1013ba03857c130487f42
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031251"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412181"
 ---
-<a name="introducing-aspnet-web-pages---displaying-data"></a>Знакомство с веб-страниц ASP.NET — отображение данных
-====================
+# <a name="introducing-aspnet-web-pages---displaying-data"></a>Знакомство с веб-страниц ASP.NET — отображение данных
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > Этом руководстве показано, как создать базу данных в WebMatrix и способ отображения данных базы данных на странице, при использовании веб-страниц ASP.NET (Razor). Предполагается, вы выполнили рядов через [введение в программирование веб-страниц ASP.NET](../introducing-razor-syntax-c.md).
@@ -214,7 +214,7 @@ WebMatrix создает базу данных SQL Server CE ( *.sdf* файл),
 
 > [!TIP] 
 > 
-> **Язык структурированных запросов (SQL)**
+> **Язык SQL (Structured Query Language)**
 > 
 > SQL — это язык, который используется в большинство реляционных баз данных для управления данными в базе данных. Она включает команды, которые позволяют получать данные и обновить его, и, которые позволяют создавать, изменять и управлять данными в таблицах базы данных. SQL отличается от языка программирования, (например C#). С помощью SQL указать базу данных, то, что нужно, и это задание базы данных, чтобы выяснить, как получить данные или выполнять задачи. Ниже приведены примеры некоторых команд SQL и что они делают.
 > 
@@ -333,7 +333,7 @@ WebMatrix создает базу данных SQL Server CE ( *.sdf* файл),
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-- [Введение в программирование веб-ASP.NET, с помощью синтаксиса Razor](https://go.microsoft.com/fwlink/?LinkID=202890)
+- [Введение в веб-программирование для ASP.NET с использованием синтаксиса Razor](https://go.microsoft.com/fwlink/?LinkID=202890)
 
 > [!div class="step-by-step"]
 > [Назад](intro-to-web-pages-programming.md)

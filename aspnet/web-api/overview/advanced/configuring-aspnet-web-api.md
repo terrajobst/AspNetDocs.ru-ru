@@ -1,22 +1,23 @@
 ---
 uid: web-api/overview/advanced/configuring-aspnet-web-api
-title: Настройка веб-API 2 ASP.NET | Документация Майкрософт
+title: Настройка ASP.NET Web API 2 — ASP.NET 4.x
 author: MikeWasson
-description: ''
+description: 'Настройка веб-API 2 ASP.NET для ASP.NET 4.x: Настройте параметры, размещения в ASP.NET 4.x, OWIN резидентного размещения, глобальные службы и конфигурации предварительного контроллера.'
 ms.author: riande
 ms.date: 03/31/2014
+ms.custom: seoapril2019
 ms.assetid: 9e10a700-8d91-4d2e-a31e-b8b569fe867c
 msc.legacyurl: /web-api/overview/advanced/configuring-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 270268b77f398084169843e20b0a2bf9f1c2a011
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 39629ba404e536b29318db00bce8c4443a782497
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423161"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411947"
 ---
-<a name="configuring-aspnet-web-api-2"></a>Настройка веб-API 2 ASP.NET
-====================
+# <a name="configuring-aspnet-web-api-2"></a>Настройка веб-API 2 ASP.NET
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 В этом разделе описываются способы настройки веб-API ASP.NET.

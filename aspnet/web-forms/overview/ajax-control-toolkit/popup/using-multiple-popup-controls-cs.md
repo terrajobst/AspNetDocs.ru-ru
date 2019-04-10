@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 91511b0b-311d-481f-9e7c-73f07b813b79
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/popup/using-multiple-popup-controls-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 8cf7f929b696240e6805a74fb576ad56738491fa
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 2d13fbfdb8d2fe66c5ff036060b9289017f79d14
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035421"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421541"
 ---
-<a name="using-multiple-popup-controls-c"></a>Использование нескольких элементов управления Popup (C#)
-====================
+# <a name="using-multiple-popup-controls-c"></a>Использование нескольких элементов управления Popup (C#)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/PopupControl1.cs.zip) или [скачать PDF](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/popupcontrol1CS.pdf)
@@ -49,9 +49,9 @@ ms.locfileid: "57035421"
 Теперь при каждом нажатии в текстовом поле появляется календарь под полем, где можно выбрать дату. (Получение выбранную дату в текстовые поля будут освещены в другого учебника.)
 
 
-[![Календарь появляется, когда пользователь нажимает кнопку в текстовое поле](using-multiple-popup-controls-cs/_static/image2.png)](using-multiple-popup-controls-cs/_static/image1.png)
+[![Tон Календарь появляется, когда пользователь нажимает в текстовое поле](using-multiple-popup-controls-cs/_static/image2.png)](using-multiple-popup-controls-cs/_static/image1.png)
 
 Календарь появляется, когда пользователь нажимает кнопку в текстовое поле ([Просмотр полноразмерного изображения](using-multiple-popup-controls-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
-> [Вперед](handling-postbacks-from-a-popup-control-with-an-updatepanel-cs.md)
+> [Далее](handling-postbacks-from-a-popup-control-with-an-updatepanel-cs.md)

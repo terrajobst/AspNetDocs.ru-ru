@@ -8,15 +8,15 @@ ms.date: 05/08/2008
 ms.assetid: f2b20119-abf4-4e78-9c47-adf563ad174c
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data/how-do-i-make-custom-pages
 msc.type: video
-ms.openlocfilehash: 233efe11a592a72d20fe637948612ee29d62c0da
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5214a748633bb3a5e7e38bcaed6015a607b8d63b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054851"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59414105"
 ---
-<a name="how-do-i-make-custom-pages"></a>Как сделать пользовательские страницы?
-====================
+# <a name="how-do-i-make-custom-pages"></a>Как сделать пользовательские страницы?
+
 по [(Scott hanselman)](https://github.com/shanselman)
 
 В этом видео вы узнаете, как осуществлять пользовательской страницы для некоторых таблиц, а другие страницы в стандартных функциональных возможностей.

@@ -8,15 +8,15 @@ ms.date: 02/21/2014
 ms.assetid: 03c342f9-b35c-4d7c-b9ed-cd9aaaffedb6
 msc.legacyurl: /web-pages/overview/getting-started/13-adding-social-networking-to-your-web-site
 msc.type: authoredcontent
-ms.openlocfilehash: d2b970e7b80e4129d0a912f648f9c4a54df531b2
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 19ef447659f2edb75089f39888a6e98c801eb430
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041851"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59415756"
 ---
-<a name="adding-social-networking-to-aspnet-web-pages-razor-sites"></a>Добавление социальных сетей веб-страницы ASP.NET (Razor) узлов
-====================
+# <a name="adding-social-networking-to-aspnet-web-pages-razor-sites"></a>Добавление социальных сетей веб-страницы ASP.NET (Razor) узлов
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > В этой статье объясняется, как добавить социальной сети ссылки для Facebook, Twitter, Reddit и Digg на страницы на веб-сайте ASP.NET Web Pages (Razor) и как включать веб-каналов Twitter, игровой карты Xbox и изображения Граватаров.

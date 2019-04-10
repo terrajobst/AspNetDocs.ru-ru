@@ -8,15 +8,15 @@ ms.date: 02/14/2014
 ms.assetid: 961e525b-7700-469e-8a68-d7010b6fb68c
 msc.legacyurl: /web-pages/overview/performance-and-traffic/15-caching-to-improve-the-performance-of-your-website
 msc.type: authoredcontent
-ms.openlocfilehash: ede341e02869a9c81cbe2fa7ef97345dc87519a1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 10b853966ba80b673e1a6786987893f919369e7a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032691"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412909"
 ---
-<a name="caching-data-in-an-aspnet-web-pages-razor-site-for-better-performance"></a>Кэширование данных на сайте ASP.NET Web Pages (Razor) для повышения производительности
-====================
+# <a name="caching-data-in-an-aspnet-web-pages-razor-site-for-better-performance"></a>Кэширование данных на сайте ASP.NET Web Pages (Razor) для повышения производительности
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > В этой статье описываются способы использования вспомогательным приложением для кэширования данных для повышения производительности в на веб-сайте ASP.NET Web Pages (Razor). Веб-сайта можно ускорить, унаследовав его хранения &#8212; т.е кэшировать &#8212; результатов данных, обычно будет занимать много времени, получения и обработки и часто не меняется.
@@ -79,5 +79,5 @@ ASP.NET включает в себя `WebCache` помощник, который
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
 
-- [Отображение данных в диаграмме](https://go.microsoft.com/fwlink/?LinkId=202895)
+- [Отображение данных на диаграмме](https://go.microsoft.com/fwlink/?LinkId=202895)
 - [Справочник по WebCache API](https://msdn.microsoft.com/library/system.web.helpers.webcache(v=vs.99).aspx) (MSDN)

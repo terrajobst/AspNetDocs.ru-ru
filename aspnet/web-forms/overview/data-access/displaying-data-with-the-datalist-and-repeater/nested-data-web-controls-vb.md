@@ -8,15 +8,15 @@ ms.date: 09/13/2006
 ms.assetid: 8b7fcf7b-722b-498d-a4e4-7c93701e0c95
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/nested-data-web-controls-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 5e0807f6db3ad4ef9377843d60824e6cd43dd245
-ms.sourcegitcommit: 62db31596a7da029263cf06335aff12236fb3186
+ms.openlocfilehash: 0d0aa2c52df284bae48907d0c0c1e5d4587c1b9e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58440382"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421424"
 ---
-<a name="nested-data-web-controls-vb"></a>Вложенные веб-элементы управления данными (VB)
-====================
+# <a name="nested-data-web-controls-vb"></a>Вложенные веб-элементы управления данными (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_32_VB.exe) или [скачать PDF](nested-data-web-controls-vb/_static/datatutorial32vb1.pdf)
@@ -35,7 +35,7 @@ ms.locfileid: "58440382"
 В этом учебном курсе мы изучим способ использования элемента управления Repeater вложенным в другой элемент управления Repeater. Внешний элемент управления Repeater будет содержать элемент для каждой категории в базе данных, отображая категории s имя и описание. Каждого элемента категории s внутреннему элементу управления Repeater будет отображать информацию о каждом продукте, принадлежащем к этой категории (см. рис. 1) в виде маркированного списка. Наши примеры иллюстрируют заполнять внутренний Repeater декларативно и программно.
 
 
-[![Перечислены каждой категории вместе с ее продуктами](nested-data-web-controls-vb/_static/image2.png)](nested-data-web-controls-vb/_static/image1.png)
+[![EПеречислены ACH категории вместе с ее продуктами](nested-data-web-controls-vb/_static/image2.png)](nested-data-web-controls-vb/_static/image1.png)
 
 **Рис. 1**: Каждая категория вместе с ее продуктами перечислены ([Просмотр полноразмерного изображения](nested-data-web-controls-vb/_static/image3.png))
 
@@ -47,7 +47,7 @@ ms.locfileid: "58440382"
 Сначала откройте `NestedControls.aspx` странице в `DataListRepeaterBasics` папку и добавьте элемент управления Repeater к странице, устанавливая его `ID` свойства `CategoryList`. В смарт-теге элемента управления Repeater s, решили создать новый ObjectDataSource, именуемый `CategoriesDataSource`.
 
 
-[![Назовите новый элемент управления ObjectDataSource CategoriesDataSource](nested-data-web-controls-vb/_static/image5.png)](nested-data-web-controls-vb/_static/image4.png)
+[![Nимя нового ObjectDataSource CategoriesDataSource](nested-data-web-controls-vb/_static/image5.png)](nested-data-web-controls-vb/_static/image4.png)
 
 **Рис. 2**: Новый ObjectDataSource следует назвать `CategoriesDataSource` ([Просмотр полноразмерного изображения](nested-data-web-controls-vb/_static/image6.png))
 
@@ -55,7 +55,7 @@ ms.locfileid: "58440382"
 Настройте элемент управления ObjectDataSource, таким образом, чтобы он извлекает данные из `CategoriesBLL` класс s `GetCategories` метод.
 
 
-[![Настройте элемент ObjectDataSource для использования метода GetCategories класса CategoriesBLL s](nested-data-web-controls-vb/_static/image8.png)](nested-data-web-controls-vb/_static/image7.png)
+[![CНастройка ObjectDataSource на использование s метода GetCategories класса CategoriesBLL](nested-data-web-controls-vb/_static/image8.png)](nested-data-web-controls-vb/_static/image7.png)
 
 **Рис. 3**: Настройка ObjectDataSource для использования `CategoriesBLL` класс s `GetCategories` метод ([Просмотр полноразмерного изображения](nested-data-web-controls-vb/_static/image9.png))
 
@@ -68,7 +68,7 @@ ms.locfileid: "58440382"
 Рис. 4 показаны результаты выполненной работы в браузере.
 
 
-[![Каждой категории — имя и описание присутствует в списке, разделенных горизонтальная линия](nested-data-web-controls-vb/_static/image11.png)](nested-data-web-controls-vb/_static/image10.png)
+[![EACH категории — имя и описание присутствует в списке, разделены горизонтальной чертой](nested-data-web-controls-vb/_static/image11.png)](nested-data-web-controls-vb/_static/image10.png)
 
 **Рис. 4**: Каждой категории — имя и описание присутствует в списке, разделены горизонтальной чертой ([Просмотр полноразмерного изображения](nested-data-web-controls-vb/_static/image12.png))
 
@@ -116,7 +116,7 @@ ms.locfileid: "58440382"
 С помощью этого обработчика событий `ProductsByCategoryList` в каждом объекте `RepeaterItem` привязан к продуктам в `RepeaterItem` категории. Рис. 5 показан снимок экрана результирующие выходные данные.
 
 
-[![Внешний элемент управления Repeater перечисляет каждую категорию; Один внутренний перечислены продукты для этой категории](nested-data-web-controls-vb/_static/image14.png)](nested-data-web-controls-vb/_static/image13.png)
+[![Tон внешний элемент управления Repeater перечисляет каждую категорию; Один внутренний перечислены продукты для этой категории](nested-data-web-controls-vb/_static/image14.png)](nested-data-web-controls-vb/_static/image13.png)
 
 **Рис. 5**: Внешний элемент управления Repeater перечисляет каждую категорию; в списках один внутренний продукты для этой категории ([Просмотр полноразмерного изображения](nested-data-web-controls-vb/_static/image15.png))
 

@@ -8,18 +8,18 @@ ms.date: 05/04/2012
 ms.assetid: 656dd06d-806c-467c-863d-9fc45e5ba3ab
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/creating-a-server-farm-with-the-web-farm-framework
 msc.type: authoredcontent
-ms.openlocfilehash: b650a05a22f18ffdcc114a9a64054dd0a34bc041
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 19c061e83257e118aee74c9373a627b8c56defe3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57052241"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421242"
 ---
-<a name="creating-a-server-farm-with-the-web-farm-framework"></a>Создание фермы серверов с помощью Web Farm Framework
-====================
+# <a name="creating-a-server-farm-with-the-web-farm-framework"></a>Создание фермы серверов с помощью Web Farm Framework
+
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается использование веб-фермы (WFF) 2.0 для создания и настройки фермы веб-серверов из коллекции серверов.
 

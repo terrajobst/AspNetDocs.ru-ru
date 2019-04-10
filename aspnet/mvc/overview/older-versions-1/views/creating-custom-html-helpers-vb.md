@@ -8,18 +8,18 @@ ms.date: 10/07/2008
 ms.assetid: f96f4800-19ef-44c0-b457-55e777eb5de8
 msc.legacyurl: /mvc/overview/older-versions-1/views/creating-custom-html-helpers-vb
 msc.type: authoredcontent
-ms.openlocfilehash: e62e47bceddc516af7aa18fc66ed4ca4d704d277
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1f36bffeda49c1777e964dc5330cbb473b01c1a9
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034951"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421567"
 ---
-<a name="creating-custom-html-helpers-vb"></a>Создание настраиваемых вспомогательных методов HTML (VB)
-====================
+# <a name="creating-custom-html-helpers-vb"></a>Создание настраиваемых вспомогательных методов HTML (VB)
+
 по [Microsoft](https://github.com/microsoft)
 
-[Загрузить PDF-файл](http://download.microsoft.com/download/1/1/f/11f721aa-d749-4ed7-bb89-a681b68894e6/ASPNET_MVC_Tutorial_9_VB.pdf)
+[Скачать PDF](http://download.microsoft.com/download/1/1/f/11f721aa-d749-4ed7-bb89-a681b68894e6/ASPNET_MVC_Tutorial_9_VB.pdf)
 
 > Целью данного учебника — продемонстрировать, как можно создать пользовательские вспомогательных методов HTML, который можно использовать внутри представлений MVC. Используя преимущества вспомогательных методов HTML, можно уменьшить объем длительного ввода HTML-тегов, что необходимо выполнить, чтобы создать стандартную страницу HTML.
 
@@ -49,7 +49,7 @@ ms.locfileid: "57034951"
 Например рассмотрим формы в листинге 1. Эта форма подготавливается к просмотру с помощью двух стандартных вспомогательных методов HTML (см. рис. 1). Используемый этой формой `Html.BeginForm()` и `Html.TextBox()` вспомогательные методы.
 
 
-[![Страница отображается с помощью вспомогательных методов HTML](creating-custom-html-helpers-vb/_static/image2.png)](creating-custom-html-helpers-vb/_static/image1.png)
+[![PВозраст при подготовке к просмотру с помощью вспомогательных методов HTML](creating-custom-html-helpers-vb/_static/image2.png)](creating-custom-html-helpers-vb/_static/image1.png)
 
 **Рис 01**: Страница отображается с помощью вспомогательных методов HTML ([Просмотр полноразмерного изображения](creating-custom-html-helpers-vb/_static/image3.png))
 
@@ -104,7 +104,7 @@ ms.locfileid: "57034951"
 После создания метода расширения и успешной сборки приложения, метод расширения отображается в Intellisense в Visual Studio как и все другие методы класса (см. рис. 2). Единственная разница в расширения методы отображаются с символом "специальный" рядом с ними (значок стрелки вниз).
 
 
-[![С помощью метода расширения Html.Label()](creating-custom-html-helpers-vb/_static/image5.png)](creating-custom-html-helpers-vb/_static/image4.png)
+[![Uна основании, используя метод расширения Html.Label()](creating-custom-html-helpers-vb/_static/image5.png)](creating-custom-html-helpers-vb/_static/image4.png)
 
 **Рис. 02**: С помощью метода расширения Html.Label() ([Просмотр полноразмерного изображения](creating-custom-html-helpers-vb/_static/image6.png))
 

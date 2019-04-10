@@ -8,15 +8,15 @@ ms.date: 09/08/2014
 ms.assetid: 732a2316-e49f-4f72-becd-0cd72f14457e
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/membership-and-administration
 msc.type: authoredcontent
-ms.openlocfilehash: 23d08d5a05a8321fbc794e2c9b54cc39c9b5baf6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7263a7d7ee791be8a1369934aac4d091736a658b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031061"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417485"
 ---
-<a name="membership-and-administration"></a>Членство и администрирование
-====================
+# <a name="membership-and-administration"></a>Членство и администрирование
+
 по [Erik Reitan](https://github.com/Erikre)
 
 [Скачайте пример проекта Wingtip Toys (C#)](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) или [скачайте электронную книгу (PDF)](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
@@ -66,12 +66,12 @@ ms.locfileid: "57031061"
    Буквы «A» в начале выделенный метод будет подчеркиваться.
 7. Наведите указатель мыши буквы «A» и щелкните пользовательский Интерфейс, который позволяет создать заглушку метода для `AddUserAndRole` метод. 
 
-    ![Членство и Advministration - Создание заглушки метода](membership-and-administration/_static/image1.png)
+    ![Членство и администрирование - Создание заглушки метода](membership-and-administration/_static/image1.png)
 8. Щелкните параметр:  
     `Generate method stub for "AddUserAndRole" in "WingtipToys.Logic.RoleActions"`
 9. Откройте *RoleActions.cs* файла из *логики* папки.  
    `AddUserAndRole` Был добавлен метод в файл класса.
-10. Изменить *RoleActions.cs* файла путем удаления `NotImplementedeException` и добавления кода, выделенное желтым цветом, таким образом, чтобы он выглядит следующим образом:  
+10. Изменить *RoleActions.cs* файла путем удаления `NotImplementedException` и добавления кода, выделенное желтым цветом, таким образом, чтобы он выглядит следующим образом:  
 
     [!code-csharp[Main](membership-and-administration/samples/sample3.cs?highlight=5-7,15-51)]
 

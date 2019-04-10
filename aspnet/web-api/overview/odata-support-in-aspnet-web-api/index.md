@@ -1,23 +1,24 @@
 ---
 uid: web-api/overview/odata-support-in-aspnet-web-api/index
-title: OData в веб-API ASP.NET | Документация Майкрософт
+title: OData в ASP.NET Web API - ASP.NET 4.x
 author: rick-anderson
-description: Как создать конечные точки OData в веб-API. OData — это протокол доступа к данным веб-приложений. Он предоставляет универсальный способ для запросов и управления наборами данных. Веб-API s...
+description: Создание конечных точек OData в веб-API ASP.NET для ASP.NET 4.x
 ms.author: riande
 ms.date: 08/17/2012
+ms.custom: seoapril2019
 ms.assetid: 9151c605-e911-4f24-95b5-ca310b105abf
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api
 msc.type: chapter
-ms.openlocfilehash: 9b805bb1ed9d7b5dea53a2aaccbf471829145920
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 08870e703c88afccd57232cc259e928a08e7a7a6
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57020391"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417888"
 ---
-<a name="odata-in-aspnet-web-api"></a>OData в веб-API ASP.NET
-====================
-> Как создать конечные точки OData в веб-API. OData — это протокол доступа к данным веб-приложений. Он предоставляет универсальный способ для запросов и управления наборами данных. Веб-API поддерживает версии 3 и 4 версия протокола OData.
+# <a name="odata-in-aspnet-web-api"></a>OData в веб-API ASP.NET
+
+> Создание конечных точек OData в веб-API ASP.NET для ASP.NET 4.x. OData — это протокол доступа к данным веб-приложений. Он предоставляет универсальный способ для запросов и управления наборами данных. Веб-API поддерживает версии 3 и 4 версия протокола OData.
 
 
 - [OData v4](odata-v4/index.md)
@@ -34,9 +35,9 @@ ms.locfileid: "57020391"
 
     - [Создание конечной точки OData v3](odata-v3/creating-an-odata-endpoint.md)
     - [Поддержка отношений сущностей в OData v3](odata-v3/working-with-entity-relations.md)
-    - [Действия OData в веб-API 2](odata-v3/odata-actions.md)
+    - [Действия OData в веб-API 2](odata-v3/odata-actions.md)
     - [Вызов службы OData из клиента .NET (C#)](odata-v3/calling-an-odata-service-from-a-net-client.md)
-- [Поддержка параметров запроса OData в веб-API 2](supporting-odata-query-options.md)
-- [Использование $select, $expand, и $value в OData веб-API 2](using-select-expand-and-value.md)
-- [Соглашения о маршрутизации в OData веб-API 2](odata-routing-conventions.md)
-- [Рекомендации по безопасности для OData веб-API 2](odata-security-guidance.md)
+- [Поддержка параметров запроса OData в веб-API 2](supporting-odata-query-options.md)
+- [Использование $select, $expand и $value в OData веб-API 2](using-select-expand-and-value.md)
+- [Соглашения о маршрутизации в OData веб-API 2](odata-routing-conventions.md)
+- [Рекомендации по безопасности для OData веб-API 2](odata-security-guidance.md)

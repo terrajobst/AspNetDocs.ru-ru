@@ -8,15 +8,15 @@ ms.date: 08/29/2011
 ms.assetid: 57666c69-2b0f-423a-a61d-be49547fa585
 msc.legacyurl: /mvc/overview/older-versions/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-4
 msc.type: authoredcontent
-ms.openlocfilehash: e933ca0398d99a41089b4d1e18d21dd657db4b6b
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 0f6d58b8bf72c6b9d6909a8a05efe4f61ebd551a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423355"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59416744"
 ---
-<a name="using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc---part-4"></a>Использование HTML5 и элемент интерфейса всплывающего календаря на jQuery в ASP.NET MVC. часть 4
-====================
+# <a name="using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc---part-4"></a>Использование HTML5 и элемент интерфейса всплывающего календаря на jQuery в ASP.NET MVC. часть 4
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Этом учебнике описываются основы работы с помощью редактора шаблонов, шаблоны отображения и jQuery элемент интерфейса всплывающего календаря в приложении ASP.NET MVC.
@@ -94,10 +94,10 @@ ms.locfileid: "58423355"
 
 NuGet добавляет эти отладочные версии и минифицированные версии jQuery Core пользовательского интерфейса и средством выбора дат jQuery в проект:
 
-- *jquery.ui.core.js*
-- *jquery.ui.core.min.js*
+- *jQuery.UI.Core.js*
+- *jQuery.UI.Core.min.js*
 - *jquery.ui.datepicker.js*
-- *jQuery.UI.DatePicker.min.js*
+- *jquery.ui.datepicker.min.js*
 
 Примечание. Отладочные версии (файлы без *. min.js* расширение) полезны для отладки, но на рабочем узле, следует включить только минифицированные версии.
 
@@ -113,9 +113,9 @@ NuGet добавляет эти отладочные версии и миниф�
 
 - *Content/themes/base/jquery.ui.core.css*
 - *Content/themes/base/jquery.ui.datepicker.css*
-- *Content/Themes/Base/jQuery.UI.Theme.CSS*
-- *jquery.ui.core.min.js*
-- *jQuery.UI.DatePicker.min.js*
+- *Content/themes/base/jquery.ui.theme.css*
+- *jQuery.UI.Core.min.js*
+- *jquery.ui.datepicker.min.js*
 - *DatePickerReady.js*
 
 В следующем примере показано фактический код, что следует добавить в нижней части `head` элемент в *Views\Shared\\_Layout.cshtml* файла.

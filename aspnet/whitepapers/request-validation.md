@@ -8,15 +8,15 @@ ms.date: 02/10/2010
 ms.assetid: fa429113-5f8f-4ef4-97c5-5c04900a19fa
 msc.legacyurl: /whitepapers/request-validation
 msc.type: content
-ms.openlocfilehash: 087f30428602137e01f574825f3ebcd4db9285ff
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d721bb14b9907ae594d1d5207b6f802e84326c9c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063941"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59414729"
 ---
-<a name="request-validation---preventing-script-attacks"></a>Проверка запроса. Предотвращение атак на основе сценариев
-====================
+# <a name="request-validation---preventing-script-attacks"></a>Проверка запроса. Предотвращение атак на основе сценариев
+
 > В этом документе описывается функция проверки запросов ASP.NET, где, по умолчанию приложение запрещено обработки без кодировки HTML-содержимое, отправки на сервер. Эту функцию проверки запроса можно отключить, когда приложение разработано для безопасно обрабатывать данные HTML.
 > 
 > Применяется к ASP.NET 1.1 и ASP.NET 2.0.

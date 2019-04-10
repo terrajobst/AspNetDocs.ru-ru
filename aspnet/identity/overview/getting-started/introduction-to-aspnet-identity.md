@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/getting-started/introduction-to-aspnet-identity
-title: Введение в ASP.NET Identity | Документация Майкрософт
+title: Введение в ASP.NET Identity - ASP.NET 4.x
 author: jongalloway
 description: Система членства ASP.NET впервые появилась в ASP.NET 2.0 обратно в 2005 г., а поскольку затем произошло много изменений в инициированная приложений web способов...
 ms.author: riande
 ms.date: 01/22/2019
 ms.assetid: 38717fc1-5989-43cf-952d-4007cc1dd923
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/introduction-to-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 4a545e52d2d9ea04a10c37c116fd326c60de9f8f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 34a0d62d7afcaffa8fbac0bc774d9266efb6b165
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061381"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59413052"
 ---
-<a name="introduction-to-aspnet-identity"></a>Введение в ASP.NET Identity
-====================
+# <a name="introduction-to-aspnet-identity"></a>Введение в ASP.NET Identity
+
 
 > Система членства ASP.NET впервые появилась в ASP.NET 2.0 обратно в 2005 г., а поскольку затем произошло много изменений одним из способов проверки подлинности и авторизации веб-приложения обычно обрабатывают. ASP.NET Identity — это Свежий взгляд на то, что система членства должно быть при создании современных приложений для Интернета, телефона или планшета.
 

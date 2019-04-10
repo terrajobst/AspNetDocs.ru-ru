@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 6d0d70f4-725e-4258-8ae8-24a6ba1ddbf7
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/rating/creating-a-rating-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: b229d0155fbab0437c644b41424164e4c655f5e5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 91523180501f1d1eb67586bf97649ad6226ec565
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049951"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59413234"
 ---
-<a name="creating-a-rating-control-vb"></a>Создание элемента управления Rating (VB)
-====================
+# <a name="creating-a-rating-control-vb"></a>Создание элемента управления Rating (VB)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/rating0.vb.zip) или [скачать PDF](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/rating0VB.pdf)
@@ -66,7 +66,7 @@ ms.locfileid: "57049951"
 Сохраните страницу и загрузить его в адресную строку браузера. При наведении указателя мыши на элементы (изначально пуста) рейтинг происходит эффекта JavaScript: Оценка изменений. При щелчке набор звезд, сохраняется текущая оценка. Наконец при отправке формы, серверный код выводит выбранные оценка.
 
 
-[![Создание оценки системы с минимальным использованием кода](creating-a-rating-control-vb/_static/image2.png)](creating-a-rating-control-vb/_static/image1.png)
+[![Cается систему оценок с минимальным использованием кода](creating-a-rating-control-vb/_static/image2.png)](creating-a-rating-control-vb/_static/image1.png)
 
 Создание оценки системы с минимальным использованием кода ([Просмотр полноразмерного изображения](creating-a-rating-control-vb/_static/image3.png))
 

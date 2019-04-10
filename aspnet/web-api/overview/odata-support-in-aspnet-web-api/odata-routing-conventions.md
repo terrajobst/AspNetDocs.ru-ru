@@ -1,25 +1,26 @@
 ---
 uid: web-api/overview/odata-support-in-aspnet-web-api/odata-routing-conventions
-title: Соглашение о маршрутизации в ASP.NET Web API 2 Odata | Документация Майкрософт
+title: Соглашение о маршрутизации в ASP.NET Web API 2 Odata - ASP.NET 4.x
 author: MikeWasson
-description: В этой статье описывается соглашений о маршрутизации, используемых веб-API для конечных точек OData.
+description: Описание соглашений о маршрутизации, веб-API 2 в ASP.NET 4.x использует конечные точки OData.
 ms.author: riande
 ms.date: 07/31/2013
+ms.custom: seoapril2019
 ms.assetid: adbc175a-14eb-4ab2-a441-d056ffa8266f
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-routing-conventions
 msc.type: authoredcontent
-ms.openlocfilehash: 0199ccde100c8c3ab70db912b8ab984e0617f9dd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8916f8b7a024636be1be055457081487f46a7936
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027121"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421632"
 ---
-<a name="routing-conventions-in-aspnet-web-api-2-odata"></a>Соглашение о маршрутизации в ASP.NET Web API 2 Odata
-====================
+# <a name="routing-conventions-in-aspnet-web-api-2-odata"></a>Соглашение о маршрутизации в ASP.NET Web API 2 Odata
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
-> В этой статье описывается соглашений о маршрутизации, используемых веб-API для конечных точек OData.
+> В этой статье описывается соглашений о маршрутизации, веб-API 2 в ASP.NET 4.x использует конечные точки OData.
 
 
 Когда веб-API получает запрос OData, он сопоставляет запрос имени контроллера и действия. Сопоставление основано на методе HTTP и URI. Например `GET /odata/Products(1)` сопоставляется `ProductsController.GetProduct`.

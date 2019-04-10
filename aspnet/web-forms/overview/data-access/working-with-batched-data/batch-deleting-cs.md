@@ -8,15 +8,15 @@ ms.date: 06/26/2007
 ms.assetid: ac6916d0-a5ab-4218-9760-7ba9e72d258c
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/batch-deleting-cs
 msc.type: authoredcontent
-ms.openlocfilehash: c5b4d3c21fad9000ae50ecb35a5d94d176a135ee
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: da913e08cd007a89b659f87ef30ea15160692c09
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036501"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59416952"
 ---
-<a name="batch-deleting-c"></a>Пакетное удаление (C#)
-====================
+# <a name="batch-deleting-c"></a>Пакетное удаление (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_65_CS.zip) или [скачать PDF](batch-deleting-cs/_static/datatutorial65cs1.pdf)
@@ -31,7 +31,7 @@ ms.locfileid: "57036501"
 Всем, кто использовал online почтовый клиент уже знакомы с одной из наиболее распространенных пакетной службы, удаление интерфейсов: кнопку флажок в каждой строке в сетке с соответствующей удалить все флажки (см. рис. 1). Это руководство представляет собой довольно короткий так как мы сделали это все часть тяжелой работы в предыдущих учебных курсах, при создании веб-интерфейса и метод, чтобы удалить ряд записей в рамках одной атомарной операции продуктом. В [Добавление столбца GridView флажков](../enhancing-the-gridview/adding-a-gridview-column-of-checkboxes-cs.md) руководстве мы создали GridView с помощью столбца флажков, так и в [перенос изменений базы данных в транзакции](wrapping-database-modifications-within-a-transaction-cs.md) руководстве мы создали метод в BLL, который будет использовать транзакцию, чтобы удалить `List<T>` из `ProductID` значения. В этом руководстве мы созданы на основе и слияния наш предыдущий опыт для создания раздела рабочий пример удаления.
 
 
-[![Каждая строка включает флажок](batch-deleting-cs/_static/image1.gif)](batch-deleting-cs/_static/image1.png)
+[![EACH строки включает флажок](batch-deleting-cs/_static/image1.gif)](batch-deleting-cs/_static/image1.png)
 
 **Рис. 1**: Каждая строка включает флажок ([Просмотр полноразмерного изображения](batch-deleting-cs/_static/image2.png))
 
@@ -41,7 +41,7 @@ ms.locfileid: "57036501"
 Так как мы уже создали удаление интерфейса в пакете [Добавление столбца GridView флажков](../enhancing-the-gridview/adding-a-gridview-column-of-checkboxes-cs.md) руководстве мы просто скопировать его, чтобы `BatchDelete.aspx` вместо его создания с нуля. Сначала откройте `BatchDelete.aspx` странице в `BatchData` папки и `CheckBoxField.aspx` странице в `EnhancedGridView` папку. Из `CheckBoxField.aspx` страницы, перейдите в представление источника и скопировать разметку между `<asp:Content>` тегов, как показано на рис. 2.
 
 
-[![Скопируйте декларативную разметку CheckBoxField.aspx в буфер обмена](batch-deleting-cs/_static/image2.gif)](batch-deleting-cs/_static/image3.png)
+[![Cопировать декларативной разметки из CheckBoxField.aspx в буфер обмена](batch-deleting-cs/_static/image2.gif)](batch-deleting-cs/_static/image3.png)
 
 **Рис. 2**: Скопируйте декларативную разметку `CheckBoxField.aspx` в буфер обмена ([Просмотр полноразмерного изображения](batch-deleting-cs/_static/image4.png))
 
@@ -54,7 +54,7 @@ ms.locfileid: "57036501"
 После копирования декларативную разметку и исходный код, Отвлекитесь и протестировать `BatchDelete.aspx` , просмотрев его через браузер. Вы должны увидеть список первых десяти продуктов в элементе управления GridView, где каждая строка содержит название продукта s, категория и цена, а также флажок элемента управления GridView. Должно быть три кнопки: Отметьте все, снимите все флажки и удаления выбранных продуктов. Кнопки проверьте все выбирает все флажки, хотя снять все очищает все флажки. Нажав кнопку удаления выбранных продуктов отображает сообщение со списком `ProductID` значения выбранных продуктов, но фактически не удаляются продукты.
 
 
-[![Интерфейс из CheckBoxField.aspx был перемещен в BatchDeleting.aspx](batch-deleting-cs/_static/image3.gif)](batch-deleting-cs/_static/image5.png)
+[![TИнтерфейс из CheckBoxField.aspx он был перемещен в BatchDeleting.aspx](batch-deleting-cs/_static/image3.gif)](batch-deleting-cs/_static/image5.png)
 
 **Рис. 3**: Интерфейс из `CheckBoxField.aspx` был перемещен в `BatchDeleting.aspx` ([Просмотр полноразмерного изображения](batch-deleting-cs/_static/image6.png))
 
@@ -82,12 +82,12 @@ ms.locfileid: "57036501"
 Рис. 4 показан элемент управления GridView после несколько строк были выбраны для удаления. Рис. 5 показан экран, сразу после нажатия кнопки удаления выбранных продуктов. Обратите внимание, что на рис. 5 `ProductID` в надписи под GridView отображаются значения удаленные записи, и эти строки больше не будут в GridView.
 
 
-[![Будут удалены выбранные продукты](batch-deleting-cs/_static/image4.gif)](batch-deleting-cs/_static/image7.png)
+[![Tон выбранные продукты будут удалены](batch-deleting-cs/_static/image4.gif)](batch-deleting-cs/_static/image7.png)
 
 **Рис. 4**: Выбранные продукты будут удалены ([Просмотр полноразмерного изображения](batch-deleting-cs/_static/image8.png))
 
 
-[![Удалить продукты ProductID значения в списке под GridView](batch-deleting-cs/_static/image5.gif)](batch-deleting-cs/_static/image9.png)
+[![Tон удален продуктов ProductID значения: в списке под GridView](batch-deleting-cs/_static/image5.gif)](batch-deleting-cs/_static/image9.png)
 
 **Рис. 5**: Продукты удалены `ProductID` значения: в списке под GridView ([Просмотр полноразмерного изображения](batch-deleting-cs/_static/image10.png))
 

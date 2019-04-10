@@ -8,15 +8,15 @@ ms.date: 05/16/2012
 ms.assetid: 83e0a572-428f-4bea-9638-1a031c6901c0
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise
 msc.type: chapter
-ms.openlocfilehash: 92bc3d18c417e73e198d0f7663489fd931bf75b5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 109a0dc1e1ebe0b644e9414561c798a7bb3d0531
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57020611"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59414833"
 ---
-<a name="aspnet-4---enterprise-deployment-series-1"></a>ASP.NET 4. Введение в корпоративное развертывание, часть 1
-====================
+# <a name="aspnet-4---enterprise-deployment-series-1"></a>ASP.NET 4. Введение в корпоративное развертывание, часть 1
+
 > Это руководство содержит инструкции для удовлетворения множество задач, с которыми придется столкнуться при управлении развертыванием веб-приложений корпоративного уровня для разработки, тестирования, промежуточной и рабочей средах. Учебник включает эталонного решения, а также сочетание концептуальные и ориентированные на задачи содержимого, которые описывают различные стандартные задачи и процедуры.
 
 

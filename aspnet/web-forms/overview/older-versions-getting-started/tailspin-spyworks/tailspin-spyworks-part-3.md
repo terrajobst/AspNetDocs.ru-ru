@@ -8,15 +8,15 @@ ms.date: 07/21/2010
 ms.assetid: 94ea1a70-a9bc-4241-8f36-08366d64bab9
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-3
 msc.type: authoredcontent
-ms.openlocfilehash: f55b29a271dbdb72d3e2249ed74517b77d78cf5e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: badae58d5b43fb2674f4918f54f999ff48d0b5b0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034851"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418018"
 ---
-<a name="part-3-layout-and-category-menu"></a>Часть 3. Макет и меню категории
-====================
+# <a name="part-3-layout-and-category-menu"></a>Часть 3. Макет и меню категории
+
 по [(Joe Stagner)](https://github.com/JoeStagner)
 
 > Tailspin Spyworks демонстрирует, как чрезвычайно прост процесс создания мощных и масштабируемых приложений для платформы .NET. Он демонстрирует способы использования новые возможности в ASP.NET 4 для создание Интернет-магазина, включая покупок, извлечения и администрирования.
@@ -66,7 +66,7 @@ ms.locfileid: "57034851"
 
 Синтаксис ASP.NET &lt;% # %&gt; является сокращением условным обозначением, указывает среде выполнения все, что содержится в и выводить результаты «в строке».
 
-Эта инструкция Eval("CategoryName") указывает, для текущей записи в коллекции связанных элементов данных, извлечения значения из имен элементов сущности модели «CatagoryName». Это сокращенный синтаксис для это очень мощная функция.
+Эта инструкция Eval("CategoryName") указывает, для текущей записи в коллекции связанных элементов данных, извлечения значения из имен элементов сущности модели «CategoryName». Это сокращенный синтаксис для это очень мощная функция.
 
 Можно запустить приложение сейчас.
 

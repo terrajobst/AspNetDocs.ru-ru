@@ -8,15 +8,15 @@ ms.date: 02/27/2014
 ms.assetid: 3cbab37b-fb0f-4751-9ec4-74e068c3f380
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/integrating-jquery-ui
 msc.type: authoredcontent
-ms.openlocfilehash: ff1b17295c58d40d55bdcd4346b83121b579bb4c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5e9cbb4ca4c45fabfa53f9e3d2537250f1231ba0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57030961"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421970"
 ---
-<a name="integrating-jquery-ui-datepicker-with-model-binding-and-web-forms"></a>Интеграция Datepicker пользовательского интерфейса JQuery с помощью привязки модели и веб-форм
-====================
+# <a name="integrating-jquery-ui-datepicker-with-model-binding-and-web-forms"></a>Интеграция Datepicker пользовательского интерфейса JQuery с помощью привязки модели и веб-форм
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > В этой серии руководств показано основными аспектами с помощью привязки модели с проектом веб-форм ASP.NET. Привязка модели упрощает взаимодействие с данными более эффективную чем работа с данными объектов источника (например, элемент управления ObjectDataSource и SqlDataSource). Эта серия начинается с вводный материал и перемещает до более продвинутых в последующих руководствах.

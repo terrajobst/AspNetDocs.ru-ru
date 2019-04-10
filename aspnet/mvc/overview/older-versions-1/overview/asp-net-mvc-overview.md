@@ -8,15 +8,15 @@ ms.date: 01/27/2009
 ms.assetid: 2dcb44a4-5cbf-4d62-b363-718104082d86
 msc.legacyurl: /mvc/overview/older-versions-1/overview/asp-net-mvc-overview
 msc.type: authoredcontent
-ms.openlocfilehash: 61a7841ee238ec365b7d1909221bbe3d834faf84
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 149312e2ddf0a5023a4a12f5b05852f7da6b18f8
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025541"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418174"
 ---
-<a name="aspnet-mvc-overview"></a>Общие сведения об ASP.NET MVC
-====================
+# <a name="aspnet-mvc-overview"></a>Общие сведения об ASP.NET MVC
+
 по [Microsoft](https://github.com/microsoft)
 
 > Дополнительные сведения о различиях между приложения ASP.NET MVC и приложений, веб-форм ASP.NET. Узнайте, как решить, когда для создания приложения ASP.NET MVC.
@@ -29,7 +29,7 @@ MVC — это стандартный шаблон, который многие 
 В состав платформы MVC входят следующие компоненты:
 
 
-[![Вызов действия контроллера, который ожидает, что значение параметра](asp-net-mvc-overview/_static/image1.jpg)](asp-net-mvc-overview/_static/image1.png)
+[![Invoking действия контроллера, который ожидает, что значение параметра](asp-net-mvc-overview/_static/image1.jpg)](asp-net-mvc-overview/_static/image1.png)
 
 **Рис 01**: Вызов действия контроллера, который ожидает, что значение параметра ([Просмотр полноразмерного изображения](asp-net-mvc-overview/_static/image2.png))
 

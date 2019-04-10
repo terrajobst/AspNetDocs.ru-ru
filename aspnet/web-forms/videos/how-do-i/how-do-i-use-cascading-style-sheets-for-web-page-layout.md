@@ -8,15 +8,15 @@ ms.date: 10/05/2007
 ms.assetid: c812231d-e811-4048-9922-b34df1d0f300
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-use-cascading-style-sheets-for-web-page-layout
 msc.type: video
-ms.openlocfilehash: 4ec1f66065d27fcf1b10ffca0b3c899a417ecc53
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8ac51219a3734d3d2c8657bcfac159e28faa7d7c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041991"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417290"
 ---
-<a name="how-do-i-use-cascading-style-sheets-for-web-page-layout"></a>[Инструкции] Использование каскадных таблиц стилей для макета веб-страницы?
-====================
+# <a name="how-do-i-use-cascading-style-sheets-for-web-page-layout"></a>[Инструкции] Использование каскадных таблиц стилей для макета веб-страницы?
+
 по [Крис Пелз](https://twitter.com/chrispels)
 
 В этом видео мы узнаем, как использовать `<div>` элементы в сочетании с помощью каскадных таблиц стилей (CSS) для создания надежной и более поздних версий производительности веб-страниц. `<div>`Будут сравниваться подхода `<table>` основе подход макет, используемый большинство веб-сайтов, за последние годы. Затем несколько подходов на основе CSS отображается, и принимает значения от абсолютное позиционирование с плавающей запятой элементов. Мы также узнайте о преимуществах отделение структуры HTML от разработки с помощью CSS.

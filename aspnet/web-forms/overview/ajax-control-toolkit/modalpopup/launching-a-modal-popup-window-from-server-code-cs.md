@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 2f67d8ef-73ca-447d-a0cc-6e3168431e6a
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/modalpopup/launching-a-modal-popup-window-from-server-code-cs
 msc.type: authoredcontent
-ms.openlocfilehash: b59997d5c3e841d36d475431b02d3df2d1a4b666
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1fd12181e26012c59bde3e6fe153c196d8bf0d31
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57040731"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59413195"
 ---
-<a name="launching-a-modal-popup-window-from-server-code-c"></a>Запуск модального всплывающего окна из серверного кода (C#)
-====================
+# <a name="launching-a-modal-popup-window-from-server-code-c"></a>Запуск модального всплывающего окна из серверного кода (C#)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup1.cs.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup1CS.pdf)
@@ -65,9 +65,9 @@ ms.locfileid: "57040731"
 `$find()` Функция ищет именованный элемент на странице и ожидает, что в качестве параметра идентификатор на стороне сервера. Таким образом `$find("mpe")` возвращает представление клиентского элемента управления ModalPopup; его `show()` метод позволяет отображается всплывающее окно.
 
 
-[![Модальное всплывающее окно появляется при нажатии одной из кнопок](launching-a-modal-popup-window-from-server-code-cs/_static/image2.png)](launching-a-modal-popup-window-from-server-code-cs/_static/image1.png)
+[![Tон модальное всплывающее окно появляется при нажатии одной из кнопок](launching-a-modal-popup-window-from-server-code-cs/_static/image2.png)](launching-a-modal-popup-window-from-server-code-cs/_static/image1.png)
 
 Модальное всплывающее окно появляется при нажатии одной из кнопок ([Просмотр полноразмерного изображения](launching-a-modal-popup-window-from-server-code-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
-> [Вперед](using-modalpopup-with-a-repeater-control-cs.md)
+> [Далее](using-modalpopup-with-a-repeater-control-cs.md)

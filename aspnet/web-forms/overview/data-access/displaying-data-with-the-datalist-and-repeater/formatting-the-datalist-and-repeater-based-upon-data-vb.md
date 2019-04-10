@@ -8,15 +8,15 @@ ms.date: 09/13/2006
 ms.assetid: e2f401ae-37bb-4b19-aa97-d6b385d40f88
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/formatting-the-datalist-and-repeater-based-upon-data-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 8d16f808101475b66b347e0e464800f247b3a611
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8955e37aa084f339665bbd4dc0475f7be74f3b26
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029071"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421606"
 ---
-<a name="formatting-the-datalist-and-repeater-based-upon-data-vb"></a>Форматирование элементов управления DataList и Repeater в зависимости от данных (VB)
-====================
+# <a name="formatting-the-datalist-and-repeater-based-upon-data-vb"></a>Форматирование элементов управления DataList и Repeater в зависимости от данных (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_30_VB.exe) или [скачать PDF](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/datatutorial30vb1.pdf)
@@ -74,7 +74,7 @@ ms.locfileid: "57029071"
 Как только вы реплицировали функции элементов управления DataList и ObjectDataSource `Basics.aspx` в `Formatting.aspx`, Отвлекитесь и измените элемент управления DataList s `ID` свойства из `DataList1` на более описательное `ItemDataBoundFormattingExample`. Затем можно просмотрите DataList в браузере. Как показано на рис. 1, единственная разница в форматировании между продуктами является, что чередование цвета фона.
 
 
-[![Продукты, перечисленные в элементе управления DataList](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image2.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image1.png)
+[![Tон продукты, перечисленные в элементе управления DataList](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image2.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image1.png)
 
 **Рис. 1**: Продукты, перечисленные в элементе управления DataList ([Просмотр полноразмерного изображения](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image3.png))
 
@@ -117,7 +117,7 @@ ms.locfileid: "57029071"
 С помощью `ItemDataBound` завершения обработчика событий, вернемся к `Formatting.aspx` страницу в браузере. Как показано на рис. 2, эти продукты с ценой ниже 20,00 долларов США имеют название и цена выделены.
 
 
-[![Эти продукты меньше, чем 20,00 долларов США выделены](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image5.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image4.png)
+[![TЭти продукты менее чем 20,00 долларов США выделены](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image5.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image4.png)
 
 **Рис. 2**: Эти продукты меньше, чем 20,00 долларов США выделены ([Просмотр полноразмерного изображения](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image6.png))
 
@@ -129,7 +129,7 @@ ms.locfileid: "57029071"
 `RepeaterItem` , Составляющие элемента управления Repeater, тем не менее, Дон t предлагают таких свойств уровня стиля. Таким образом применение специального форматирования к элементу управления Repeater требует применения свойств стиля для веб-элементов управления внутри шаблонов элемента управления Repeater s, как мы это делали на рис. 2.
 
 
-[![Весь элемент продукта выделяется, продукты 20,00 долларов США](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image8.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image7.png)
+[![Tон весь элемент продукта выделяется, продукты 20,00 долларов США](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image8.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image7.png)
 
 **Рис. 3**: Весь элемент продукта выделяется, продукты 20,00 долларов США ([Просмотр полноразмерного изображения](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image9.png))
 
@@ -141,7 +141,7 @@ ms.locfileid: "57029071"
 Для демонстрации функций форматирования позволяют s иметь сведения о продукте входил текст [снят с продажи] рядом с именем продукта s если его s более не поддерживается. Кроме того, позволяют s имеют выделенный желтым if цена его s меньше, чем 20,00 долларов США (как это было сделано `ItemDataBound` пример обработчика событий); Если цена составляет 20,00 долларов США или более поздней версии, позволяют s Отображает фактическая цена, но вместо этого текст, повторите вызов расценками. Рис. 4 показан снимок экрана со эти правила форматирования применяется списком продуктов.
 
 
-[![Для дорогих продуктов цена заменяется текстом, вызовите цены](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image11.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image10.png)
+[![Fили дорогих продуктов цена заменяется текстом, вызовите расценками](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image11.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image10.png)
 
 **Рис. 4**: Для дорогих продуктов цена заменяется текстом, вызовите расценками ([Просмотр полноразмерного изображения](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image12.png))
 
@@ -182,7 +182,7 @@ ms.locfileid: "57029071"
 Вызовы функций форматирования на месте Отвлекитесь и просмотрите ход работы в браузере. Экран должен выглядеть аналогично рис. 5 с производства продукты, включая текст [снят с продажи] и продукты стоимостью более чем 20,00 долларов США с их цена заменяется на повторите вызов расценками.
 
 
-[![Для дорогих продуктов цена заменяется текстом, вызовите цены](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image14.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image13.png)
+[![Fили дорогих продуктов цена заменяется текстом, вызовите расценками](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image14.png)](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image13.png)
 
 **Рис. 5**: Для дорогих продуктов цена заменяется текстом, вызовите расценками ([Просмотр полноразмерного изображения](formatting-the-datalist-and-repeater-based-upon-data-vb/_static/image15.png))
 

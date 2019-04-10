@@ -8,22 +8,22 @@ ms.date: 06/11/2014
 ms.assetid: 43a6cce7-a3ef-42aa-ad06-90d36d49f098
 msc.legacyurl: /web-api/overview/testing-and-debugging/unit-testing-controllers-in-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: e1bb1aa120ced95db7674eae1831f2a2c7356fc0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9fa71bec14a2ba4d14f01661ad2bf41975f4f55e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061921"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59413806"
 ---
-<a name="unit-testing-controllers-in-aspnet-web-api-2"></a>Контроллеры модульного тестирования в ASP.NET веб-API 2
-====================
+# <a name="unit-testing-controllers-in-aspnet-web-api-2"></a>Контроллеры модульного тестирования в ASP.NET веб-API 2
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 > В этом разделе описывается определенных приемов контроллеры модульного тестирования в веб-API 2. Перед прочтением этого раздела, ознакомьтесь с руководством может потребоваться [модульного тестирования ASP.NET Web API 2](unit-testing-with-aspnet-web-api.md), который показывает, как добавить в решение проект модульного теста.
 >
 > ## <a name="software-versions-used-in-the-tutorial"></a>Версии программного обеспечения, используемые в этом руководстве
 >
-> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 > - Веб-API 2
 > - [MOQ](https://github.com/Moq) 4.5.30
 

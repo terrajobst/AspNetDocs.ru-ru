@@ -8,15 +8,15 @@ ms.date: 07/30/2013
 ms.assetid: 0d6fb83b-71f7-425d-8dec-981197d7ec42
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 4767b015db0bad09942802827ce54162687fcabc
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f86212c1cb559c164342997fb0e4208339b5e3cc
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033791"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59421125"
 ---
-<a name="reading-related-data-with-the-entity-framework-in-an-aspnet-mvc-application-5-of-10"></a>Чтение связанных данных с Entity Framework в приложении ASP.NET MVC (5 из 10)
-====================
+# <a name="reading-related-data-with-the-entity-framework-in-an-aspnet-mvc-application-5-of-10"></a>Чтение связанных данных с Entity Framework в приложении ASP.NET MVC (5 из 10)
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 [Скачать завершенный проект](http://code.msdn.microsoft.com/Getting-Started-with-dd0e2ed8)
@@ -152,11 +152,13 @@ ms.locfileid: "57033791"
 > 
 > Данные маршрута — это данные, которые обнаруживаются связывателем модели в сегмент URL-адреса, указанные в таблице маршрутизации. Например, задает маршрут по умолчанию `controller`, `action`, и `id` сегментов:
 > 
+> ```csharp
 > routes.MapRoute(  
->  Имя: «Default»,  
->  URL-адрес: «{controller} / {action} / {id}»,  
+>  name: "Default",  
+>  url: "{controller}/{action}/{id}",  
 >  defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }  
 > );
+> ```
 > 
 > В следующий URL-адрес соответствует маршрут по умолчанию `Instructor` как `controller`, `Index` как `action` и 1 в качестве `id`; это значения данных маршрута.
 > 

@@ -8,15 +8,15 @@ ms.date: 01/27/2009
 ms.assetid: 2ddd4407-d143-4a94-877c-21771bfb97a6
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/adding-dynamic-content-to-a-cached-page-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 26e40ff9659a4b8552b2a087c7c948c9f1f1554c
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: c126270304178d178f4b8f9739fa5c51e5dd0551
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424174"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59415366"
 ---
-<a name="adding-dynamic-content-to-a-cached-page-c"></a>Добавление динамического содержимого на кэшированные страницы (C#)
-====================
+# <a name="adding-dynamic-content-to-a-cached-page-c"></a>Добавление динамического содержимого на кэшированные страницы (C#)
+
 по [Microsoft](https://github.com/microsoft)
 
 > Узнайте, как сочетать динамическое и кэшированное содержимое, на этой же странице. Подстановка пост-кэша предоставляет возможность отображения динамического содержимого, например рекламных объявлений или новости, страницы, которая были выведены кэшируются.
@@ -93,10 +93,6 @@ ms.locfileid: "58424174"
 Этом руководстве описано, как можно динамически обновлять содержимое в кэшированные страницы. Вы узнали, как использовать метод HttpResponse.WriteSubstitution() для включения динамического содержимого, которые следует вставить в кэшированные страницы. Вы также узнали, как инкапсулировать вызов метода WriteSubstitution() вспомогательный метод HTML.
 
 Преимущества кэширования по возможности — он может иметь значительное влияние на производительность веб-приложений. Как описано в этом руководстве, можно воспользоваться преимуществами кэширования даже в том случае, когда требуется для отображения динамического содержимого на страницы.
-
-## 
-
-## 
 
 > [!div class="step-by-step"]
 > [Назад](improving-performance-with-output-caching-cs.md)

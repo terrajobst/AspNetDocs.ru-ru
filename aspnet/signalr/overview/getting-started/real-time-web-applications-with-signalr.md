@@ -8,21 +8,21 @@ ms.date: 07/16/2014
 ms.assetid: ba07958c-42e1-4da0-81db-ba6925ed6db0
 msc.legacyurl: /signalr/overview/getting-started/real-time-web-applications-with-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: 3db54a134e8f842cab1d3471c69f5a8e2039d83d
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 9904582450d4386ef8b8656078f6d40dbd1e10be
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423615"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412012"
 ---
-<a name="hands-on-lab-real-time-web-applications-with-signalr"></a>Практическое лабораторное занятие. Веб-приложения в режиме реального времени с SignalR
-====================
+# <a name="hands-on-lab-real-time-web-applications-with-signalr"></a>Практическое лабораторное занятие. Веб-приложения в режиме реального времени с SignalR
+
 
 по [Web Слышатся Team](https://twitter.com/webcamps)
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
-[Скачайте комплект учебных материалов по лагеря Web](https://aka.ms/webcamps-training-kit)
+[Скачайте лагеря Web Тренировочный набор, выпуск октября 2015 г.](https://github.com/Microsoft-Web/WebCampTrainingKit/releases/tag/v2015.10.13b)
 
 > В режиме реального времени веб-приложений имеют возможность отправлять содержимое подключенным клиентам оказывается, в режиме реального времени на стороне сервера. Для разработчиков ASP.NET **ASP.NET SignalR** — это библиотека, чтобы добавить функциональность в режиме реального времени веб-приложений. Он использует преимущества нескольких транспортов, автоматического выбора клиента и сервера лучше всего транспортировки лучше всего доступных транспорта. Он использует преимущества **WebSocket**, интерфейс API HTML5, двустороннего обмена данными между браузером и сервером.
 > 
@@ -34,8 +34,7 @@ ms.locfileid: "58423615"
 > 
 > ![Архитектура SignalR](real-time-web-applications-with-signalr/_static/image1.png)
 > 
-> Все примеры кода и фрагменты кода включены в Web лагеря комплект обучающих материалов, доступных в [ https://aka.ms/webcamps-training-kit ](https://aka.ms/webcamps-training-kit).
-
+> Все примеры кода и фрагменты кода включены учебного набора лагеря Web, октябрь 2015 г. выпуска, найти по адресу [ https://github.com/Microsoft-Web/WebCampTrainingKit/releases/tag/v2015.10.13b ](https://github.com/Microsoft-Web/WebCampTrainingKit/releases/tag/v2015.10.13b).  Обратите внимание, что установщик на этой странице больше не работает; Используйте одну из ссылок в разделе "ресурсы".
 
 <a id="Overview"></a>
 ## <a name="overview"></a>Обзор
@@ -77,7 +76,7 @@ ms.locfileid: "58423615"
 > Каждого упражнения сопровождается начальный решения, расположенный в **начать** папку упражнения, чему вы сможете каждого упражнения, независимо от других. Имейте в виду, что фрагменты кода, которые добавляются во время атаки, отсутствуют эти стартовые решения и могут не работать, пока не будут выполнены упражнения. В исходном коде для упражнения, вы также найдете **окончания** папку, содержащую решение Visual Studio с кодом, полученный в результате выполнения действий, описанных в соответствующий упражнении. Эти решения можно использовать в качестве руководства, если вам нужна дополнительная помощь, отвечая на это Практическое занятие.
 
 
-* * *
+---
 
 <a id="Exercises"></a>
 ## <a name="exercises"></a>Упражнения
@@ -394,7 +393,7 @@ SignalR поддерживает **отправки данных с сервер
 
     *Таблица объединительной платы сообщений*
 
-* * *
+---
 
 <a id="Summary"></a>
 ## <a name="summary"></a>Сводка

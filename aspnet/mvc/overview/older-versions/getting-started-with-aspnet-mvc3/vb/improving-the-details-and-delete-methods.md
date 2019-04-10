@@ -8,15 +8,15 @@ ms.date: 01/12/2011
 ms.assetid: c5c14ef0-c128-4dc1-8c01-7f0fdb09e411
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/improving-the-details-and-delete-methods
 msc.type: authoredcontent
-ms.openlocfilehash: edc2d5e9a6ef5785dacb839a375dfcc660dd3dc9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 63930ebe35e4c37e0cc7c0882582c48348cf201a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046631"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417667"
 ---
-<a name="improving-the-details-and-delete-methods-vb"></a>Изучение методов Details и Delete (VB)
-====================
+# <a name="improving-the-details-and-delete-methods-vb"></a>Изучение методов Details и Delete (VB)
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Этом учебнике описываются основы создания MVC веб-приложения ASP.NET с помощью Microsoft Visual Web Developer 2010 Express пакетом обновления 1, которой является бесплатной версии Microsoft Visual Studio. Перед началом работы убедитесь, что вы установили необходимые компоненты, перечисленные ниже. Все из них можно установить, щелкнув следующую ссылку: [Установщик веб-платформы](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack). Кроме того можно установить по отдельности необходимых компонентов, с помощью следующих ссылок:

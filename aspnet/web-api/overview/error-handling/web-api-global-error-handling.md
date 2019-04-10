@@ -1,25 +1,26 @@
 ---
 uid: web-api/overview/error-handling/web-api-global-error-handling
-title: Глобальная обработка ошибок в ASP.NET Web API 2 | Документация Майкрософт
+title: Глобальная обработка ошибок в ASP.NET Web API 2 — ASP.NET 4.x
 author: davidmatson
-description: ''
+description: Общие сведения о глобальной обработки ошибок в ASP.NET Web API 2 для ASP.NET 4.x.
 ms.author: riande
 ms.date: 02/03/2014
+ms.custom: seoapril2019
 ms.assetid: bffd7863-f63b-4b23-a13c-372b5492e9fb
 msc.legacyurl: /web-api/overview/error-handling/web-api-global-error-handling
 msc.type: authoredcontent
-ms.openlocfilehash: 3e371760d2b34eb2be492e6ebbb33a5f9f7eff10
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7d9f4fb9909671d7c4c8ee2aa9285b0186c4b125
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058981"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59414378"
 ---
-<a name="global-error-handling-in-aspnet-web-api-2"></a>Глобальная обработка ошибок в ASP.NET Web API 2
-====================
+# <a name="global-error-handling-in-aspnet-web-api-2"></a>Глобальная обработка ошибок в ASP.NET Web API 2
+
 по [Matson Дэвид](https://github.com/davidmatson), [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
-Сегодняшний день не существует простого способа в веб-API, чтобы вести журнал или глобально обработки ошибок. Некоторые необработанные исключения, которые можно обрабатывать с помощью [фильтры исключений](exception-handling.md), но существует несколько вариантов, обработка фильтров исключений невозможна. Пример:
+В этом разделе представлен обзор глобальной обработки ошибок в ASP.NET Web API 2 для ASP.NET 4.x. Сегодняшний день не существует простого способа в веб-API, чтобы вести журнал или глобально обработки ошибок. Некоторые необработанные исключения, которые можно обрабатывать с помощью [фильтры исключений](exception-handling.md), но существует несколько вариантов, обработка фильтров исключений невозможна. Пример:
 
 1. Исключения выброшены из конструкторов контроллеров.
 2. Исключения выброшены из обработчиков сообщений.

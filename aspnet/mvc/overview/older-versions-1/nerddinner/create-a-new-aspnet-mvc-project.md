@@ -8,18 +8,18 @@ ms.date: 07/27/2010
 ms.assetid: 7e0e9928-8fdc-4b74-9882-55fac0976628
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/create-a-new-aspnet-mvc-project
 msc.type: authoredcontent
-ms.openlocfilehash: 3f34f17aa35dbfed2d52daf615c8dc81be6e7847
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c85db4289698988ead44afd452da17054bab9f07
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57065811"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59417212"
 ---
-<a name="create-a-new-aspnet-mvc-project"></a>Создание проекта ASP.NET MVC
-====================
+# <a name="create-a-new-aspnet-mvc-project"></a>Создание проекта ASP.NET MVC
+
 по [Microsoft](https://github.com/microsoft)
 
-[Загрузить PDF-файл](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
+[Скачать PDF](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
 
 > Это этап 1 из бесплатной [руководство по использованию приложения «NerdDinner»](introducing-the-nerddinner-tutorial.md) , пошаговое рассмотрение как создать небольшой, но завершить, веб-приложения с помощью ASP.NET MVC 1.
 > 
@@ -60,7 +60,7 @@ ms.locfileid: "57065811"
 
 Проекты ASP.NET MVC по умолчанию иметь шесть каталоги верхнего уровня:
 
-| **Каталог** | **Назначение** |
+| **Каталог** | **Цель** |
 | --- | --- |
 | **/ Контроллеров** | Место расположения классы контроллеров, которые обрабатывают запросы на URL-адрес |
 | **/ Моделей** | Место расположения классы, представляющие и манипулировать данными |

@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/migrations/migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity
-title: Перенос данных универсального поставщика членства и профилей пользователей в ASP.NET Identity (C#) | Документация Майкрософт
+title: Перенос данных универсального поставщика членства и профилей пользователей в ASP.NET Identity (C#)-ASP.NET 4.x
 author: rustd
 description: Этот учебник описывает шаги, необходимые для миграции пользователей и роли данных и данные профиля пользователя, созданных с помощью универсальные поставщики существующего приложения...
 ms.author: riande
 ms.date: 12/13/2013
+ms.custom: seoapril2019
 ms.assetid: 2e260430-d13c-4658-bd05-e256fc0d63b8
 msc.legacyurl: /identity/overview/migrations/migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: a91bb6ac51819d7dbb8eb3c63bd36a9d830eecce
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1043dce4cdd62f94ae9d2344a9301c1b03426f3d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058461"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422269"
 ---
-<a name="migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity-c"></a>Перенос данных универсального поставщика членства и профилей пользователей в ASP.NET Identity (C#)
-====================
+# <a name="migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity-c"></a>Перенос данных универсального поставщика членства и профилей пользователей в ASP.NET Identity (C#)
+
 по [Пранавом Растоги](https://github.com/rustd), [Рик Андерсон]((https://twitter.com/RickAndMSFT)), [(Robert McMurray)](https://github.com/rmcmurray), [Suhas Joshi](https://github.com/suhasj)
 
 > Этом руководстве описаны шаги, необходимые для переноса пользователей и роли данных и данные профиля пользователя, созданных с помощью универсальные поставщики существующего приложения модель удостоверений ASP.NET. Этот подход упомянутые здесь, можно использовать для переноса данных профиля пользователя в приложение с помощью членства SQL также.

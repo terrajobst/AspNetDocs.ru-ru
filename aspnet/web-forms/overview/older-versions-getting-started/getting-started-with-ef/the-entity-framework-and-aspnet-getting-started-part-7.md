@@ -8,15 +8,15 @@ ms.date: 12/03/2010
 ms.assetid: f8afb245-b705-419c-8790-0b295e90d5e2
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-7
 msc.type: authoredcontent
-ms.openlocfilehash: 48092838ac0b00137ae0a4e37391c31883afcd09
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b976e8d611596f2cb58661a2e91b7a640ac04b9f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027921"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59416081"
 ---
-<a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-7"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms - часть 7
-====================
+# <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-7"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms - часть 7
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 > Пример веб-приложение университета Contoso демонстрирует создание приложения веб-форм ASP.NET, используя Entity Framework 4.0 и Visual Studio 2010. Сведения об этой серии руководств см. в разделе [в первом учебнике серии](the-entity-framework-and-aspnet-getting-started-part-1.md)
@@ -40,13 +40,13 @@ ms.locfileid: "57027921"
 
 В **обозревателя серверов**, разверните *файл School.mdf*, щелкните правой кнопкой мыши **хранимые процедуры**и выберите **добавить новую хранимую процедуру**.
 
-[![Image15](the-entity-framework-and-aspnet-getting-started-part-7/_static/image2.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image1.png)
+[![image15](the-entity-framework-and-aspnet-getting-started-part-7/_static/image2.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image1.png)
 
 Скопируйте следующие инструкции SQL и вставьте их в окно хранимой процедуры, заменив скелет хранимой процедуры.
 
 [!code-sql[Main](the-entity-framework-and-aspnet-getting-started-part-7/samples/sample1.sql)]
 
-[![Image14](the-entity-framework-and-aspnet-getting-started-part-7/_static/image4.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image3.png)
+[![image14](the-entity-framework-and-aspnet-getting-started-part-7/_static/image4.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image3.png)
 
 `Student` сущности имеют четыре свойства: `PersonID`, `LastName`, `FirstName`, и `EnrollmentDate`. База данных автоматически создает значение идентификатора, а хранимая процедура принимает параметры для других трех. Хранимая процедура возвращает значение ключа записи новой строки, чтобы платформа Entity Framework можно отслеживать, что в версии сущности, которую он сохраняет в памяти.
 
@@ -72,13 +72,13 @@ ms.locfileid: "57027921"
 
 Теперь определенные хранимые процедуры в базе данных, но они должны быть добавлены в модель данных, чтобы сделать их доступными на платформу Entity Framework. Откройте *SchoolModel.edmx*, щелкните правой кнопкой мыши область конструктора и выберите **обновить модель из базы данных**. В **добавить** вкладке **Выбор объектов базы данных** диалогового окна разверните узел **хранимые процедуры**, выберите только что созданный хранимые процедуры и `DeletePerson` Хранимая процедура, а затем нажмите кнопку **Готово**.
 
-[![Image20](the-entity-framework-and-aspnet-getting-started-part-7/_static/image6.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image5.png)
+[![image20](the-entity-framework-and-aspnet-getting-started-part-7/_static/image6.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image5.png)
 
 ## <a name="mapping-the-stored-procedures"></a>Сопоставление хранимых процедур
 
 В конструкторе моделей, щелкните правой кнопкой мыши `Student` сущности и выберите **сопоставление хранимых процедур**.
 
-[![Image21](the-entity-framework-and-aspnet-getting-started-part-7/_static/image8.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image7.png)
+[![image21](the-entity-framework-and-aspnet-getting-started-part-7/_static/image8.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image7.png)
 
 **Сведения о сопоставлении** появится окно, в котором можно указать хранимые процедуры, которые Entity Framework следует использовать для вставки, обновления и удаления сущностей этого типа.
 
@@ -90,11 +90,11 @@ ms.locfileid: "57027921"
 
 В том же **сведения о сопоставлении** окна, карты `Update` функцию `UpdateStudent` хранимой процедуры (Убедитесь, что указано `FirstMidName` как значение параметра для `FirstName`, как это было сделано для `Insert` Хранимая процедура) и `Delete` функцию `DeletePerson` хранимой процедуры.
 
-[!["Image01"](the-entity-framework-and-aspnet-getting-started-part-7/_static/image14.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image13.png)
+[![image01](the-entity-framework-and-aspnet-getting-started-part-7/_static/image14.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image13.png)
 
 Выполните ту же процедуру, чтобы сопоставить insert, update и delete хранимых процедур для инструкции выделялись на `Instructor` сущности.
 
-[![Image02](the-entity-framework-and-aspnet-getting-started-part-7/_static/image16.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image15.png)
+[![image02](the-entity-framework-and-aspnet-getting-started-part-7/_static/image16.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image15.png)
 
 Для хранимых процедур, которые считывают вместо того, чтобы обновить данные, использовать **браузер моделей** окно, чтобы сопоставить хранимую процедуру с сущностью вводить его возвращает. В конструкторе моделей, щелкните правой кнопкой мыши область конструктора и выберите **браузер моделей**. Откройте **SchoolModel.Store** узел и откройте **хранимые процедуры** узла. Щелкните правой кнопкой мыши `GetCourses` хранимой процедуры и выберите **добавить импорт функции**.
 
@@ -102,21 +102,21 @@ ms.locfileid: "57027921"
 
 В **добавить импорт функции** диалогового **возвращает коллекцию** выберите **сущностей**, а затем выберите `Course` как тип сущности возвращаются. Когда все будет готово, нажмите кнопку **ОК**. Сохраните и закройте *.edmx* файл.
 
-[![Image25](the-entity-framework-and-aspnet-getting-started-part-7/_static/image20.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image19.png)
+[![image25](the-entity-framework-and-aspnet-getting-started-part-7/_static/image20.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image19.png)
 
 ## <a name="using-insert-update-and-delete-stored-procedures"></a>С помощью вставки, обновления и удаления хранимых процедур
 
 Хранимые процедуры для вставки, обновления и удаления данных используются платформой Entity Framework автоматически после их добавления в модель данных и сопоставить их в соответствующие сущности. Теперь вы можете запустить *StudentsAdd.aspx* страницы, и каждый раз при создании нового учащегося, Entity Framework будет использовать `InsertStudent` хранимую процедуру для добавления новой строки к `Student` таблицы.
 
-[![Image03](the-entity-framework-and-aspnet-getting-started-part-7/_static/image22.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image21.png)
+[![image03](the-entity-framework-and-aspnet-getting-started-part-7/_static/image22.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image21.png)
 
 Запустите *Students.aspx* страницы и нового учащегося появится в списке.
 
-[![Image04](the-entity-framework-and-aspnet-getting-started-part-7/_static/image24.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image23.png)
+[![image04](the-entity-framework-and-aspnet-getting-started-part-7/_static/image24.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image23.png)
 
 Изменить имя, чтобы убедиться, что функция обновления работает и удалите учащегося, чтобы убедиться, что функция удаления работает.
 
-[![Image05](the-entity-framework-and-aspnet-getting-started-part-7/_static/image26.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image25.png)
+[![image05](the-entity-framework-and-aspnet-getting-started-part-7/_static/image26.png)](the-entity-framework-and-aspnet-getting-started-part-7/_static/image25.png)
 
 ## <a name="using-select-stored-procedures"></a>Использование Select хранимых процедур
 

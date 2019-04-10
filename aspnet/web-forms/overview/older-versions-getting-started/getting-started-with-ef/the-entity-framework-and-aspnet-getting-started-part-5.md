@@ -8,15 +8,15 @@ ms.date: 12/03/2010
 ms.assetid: 24ad4379-3fb2-44dc-ba59-85fe0ffcb2ae
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-5
 msc.type: authoredcontent
-ms.openlocfilehash: 3209ab3bca58e0dde90cf279732d177418b034e4
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: af0c67532a5398628e7ab518c825360bfbd5a70a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036051"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59414703"
 ---
-<a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-5"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms — часть 5
-====================
+# <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-5"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms — часть 5
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 > Пример веб-приложение университета Contoso демонстрирует создание приложения веб-форм ASP.NET, используя Entity Framework 4.0 и Visual Studio 2010. Сведения об этой серии руководств см. в разделе [в первом учебнике серии](the-entity-framework-and-aspnet-getting-started-part-1.md)
@@ -32,7 +32,7 @@ ms.locfileid: "57036051"
 
 Вы также создадите страницы, которая работает с отношением «многие ко многим», назначив преподавателя для курса (Добавление отношения между двумя сущностями, выбранными) или удаление преподавателя из курса (удаление связи между двумя сущностями, которые Выберите). В базе данных, Добавление отношения между преподавателя и курса результатов в новой строке, добавляемый `CourseInstructor` таблицу ассоциации; удаление связи включает в себя удаление строки из `CourseInstructor` таблицу ассоциации. Тем не менее, это делается в Entity Framework, установив свойства навигации, не обращаясь к `CourseInstructor` таблицы явным образом.
 
-[!["Image01"](the-entity-framework-and-aspnet-getting-started-part-5/_static/image4.png)](the-entity-framework-and-aspnet-getting-started-part-5/_static/image3.png)
+[![Image01](the-entity-framework-and-aspnet-getting-started-part-5/_static/image4.png)](the-entity-framework-and-aspnet-getting-started-part-5/_static/image3.png)
 
 ## <a name="adding-an-entity-with-a-relationship-to-an-existing-entity"></a>Добавление сущности со связью с существующей сущностью
 
@@ -118,7 +118,7 @@ ms.locfileid: "57036051"
 
 Откройте страницу.
 
-[!["Image01"](the-entity-framework-and-aspnet-getting-started-part-5/_static/image10.png)](the-entity-framework-and-aspnet-getting-started-part-5/_static/image9.png)
+[![Image01](the-entity-framework-and-aspnet-getting-started-part-5/_static/image10.png)](the-entity-framework-and-aspnet-getting-started-part-5/_static/image9.png)
 
 Выберите преподавателя. <strong>Назначить курс</strong> раскрывающемся списке отображаются курсы, лектор не преподавать, и <strong>удалите курс</strong> раскрывающемся списке отображаются курсы, которые уже назначен преподаватель. В <strong>назначить курс</strong> раздела, выберите курс и выберите команду <strong>назначить</strong>. Перемещает курса <strong>удалите курс</strong> стрелку раскрывающегося списка. Выберите курс, в <strong>удалите курс</strong> раздела и нажмите кнопку <strong>удалить</strong><em>.</em> Перемещает курса <strong>назначить курс</strong> стрелку раскрывающегося списка.
 

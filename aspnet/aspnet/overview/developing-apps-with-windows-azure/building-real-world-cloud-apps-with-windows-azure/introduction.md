@@ -8,15 +8,15 @@ ms.date: 06/12/2014
 ms.assetid: accfa16a-ab15-4c26-9ad4-babdc2a77d2e
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/introduction
 msc.type: authoredcontent
-ms.openlocfilehash: c496e93d7517bc187514d5fa2dfa90d29c5f47f9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bf9cf1f5be22a5b97ec964277c11ae21066676f0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033121"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412415"
 ---
-<a name="building-real-world-cloud-apps-with-azure"></a>Создание реальных облачных приложений в Azure
-====================
+# <a name="building-real-world-cloud-apps-with-azure"></a>Создание реальных облачных приложений в Azure
+
 по [Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон]((https://twitter.com/RickAndMSFT)), [том Дайкстра](https://github.com/tdykstra)
 
 [Загрузить решение проект](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [скачайте электронную книгу](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
@@ -100,7 +100,7 @@ ms.locfileid: "57033121"
     - Включить высокую доступность и повышает масштабируемость за счет слабо взаимозависимость уровней Интернета и работника.
     - Демонстрация: Очереди хранилища Azure в приложении Fix It.
 - [Другие облачные приложения шаблоны и рекомендации](more-patterns-and-guidance.md).
-- [Приложение. Исправление пример приложения](the-fix-it-sample-application.md)
+- [Приложение. Пример приложения для устранения проблем](the-fix-it-sample-application.md)
 
     - Известные проблемы
     - Рекомендации
@@ -175,4 +175,4 @@ ms.locfileid: "57033121"
 - [Внутренние компоненты веб-сайты Azure с помощью Нир Машковски](https://channel9.msdn.com/Shows/Web+Camps+TV/Windows-Azure-Web-Sites-Internals-with-Nir-Mashkowski).
 
 > [!div class="step-by-step"]
-> [Вперед](automate-everything.md)
+> [Далее](automate-everything.md)
