@@ -8,15 +8,15 @@ ms.date: 01/26/2011
 ms.assetid: a5aa22a6-fb7f-4f41-9c7f-addda151940b
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/continuing-with-ef/handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application
 msc.type: authoredcontent
-ms.openlocfilehash: 6b10aca944a322cae252666218aee4d5a2d6ed35
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: fc9ce539005bce1790c726dfb859305f4ff78a6b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025211"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422568"
 ---
-<a name="handling-concurrency-with-the-entity-framework-40-in-an-aspnet-4-web-application"></a>Обработка параллелизма с помощью Entity Framework 4.0 в 4 веб-приложения ASP.NET
-====================
+# <a name="handling-concurrency-with-the-entity-framework-40-in-an-aspnet-4-web-application"></a>Обработка параллелизма с помощью Entity Framework 4.0 в 4 веб-приложения ASP.NET
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 > В этой серии руководств основан на веб-приложение университета Contoso, которая создается с [Приступая к работе с Entity Framework 4.0](https://asp.net/entity-framework/tutorials#Getting%20Started) серии руководств. Если вы не прошли предыдущих учебных курсах, в качестве отправной точки для этого учебника вы можете [загрузить приложение](https://code.msdn.microsoft.com/ASPNET-Web-Forms-97f8ee9a) , он был создан. Вы также можете [загрузить приложение](https://code.msdn.microsoft.com/ASPNET-Web-Forms-6c7197aa) , созданный путем завершения серии руководств. Если у вас есть вопросы о учебники, их можно разместить [форум ASP.NET Entity Framework](https://forums.asp.net/1227.aspx).
@@ -26,7 +26,7 @@ ms.locfileid: "57025211"
 
 [![Image06](handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application/_static/image2.png)](handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application/_static/image1.png)
 
-[!["Image01"](handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application/_static/image4.png)](handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application/_static/image3.png)
+[![Image01](handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application/_static/image4.png)](handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application/_static/image3.png)
 
 ## <a name="concurrency-conflicts"></a>Конфликты параллелизма
 

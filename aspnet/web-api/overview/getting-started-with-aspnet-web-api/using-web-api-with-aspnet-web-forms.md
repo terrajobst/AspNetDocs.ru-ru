@@ -1,27 +1,30 @@
 ---
 uid: web-api/overview/getting-started-with-aspnet-web-api/using-web-api-with-aspnet-web-forms
-title: Использование веб-API с помощью веб-форм ASP.NET | Документация Майкрософт
+title: Использование веб-API с помощью веб-форм ASP.NET — ASP.NET 4.x
 author: MikeWasson
-description: ''
+description: Руководства с кодом шаг за шагом, чтобы добавить веб-API в приложение форм ASP.NET для ASP.NET 4.x
 ms.author: riande
 ms.date: 04/03/2012
+ms.custom: seoapril2019
 ms.assetid: 25da8c3f-4e90-4946-9765-4f160985e1e4
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/using-web-api-with-aspnet-web-forms
 msc.type: authoredcontent
-ms.openlocfilehash: a14bf0abd8c5d603cf3859891f855415cf3df9f3
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ae553b62998fefd128e12711cbde958ea42d8c63
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055691"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422581"
 ---
-<a name="using-web-api-with-aspnet-web-forms"></a>Использование веб-API с помощью веб-форм ASP.NET
-====================
+# <a name="using-web-api-with-aspnet-web-forms"></a>Использование веб-API с помощью веб-форм ASP.NET
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
-Несмотря на то, что веб-API ASP.NET поставляется в комплекте с ASP.NET MVC, это легко реализовать веб-API, на традиционное приложение веб-форм ASP.NET. Этот учебник поможет выполнить действия.
+Этот учебник поможет выполнить шаги, чтобы добавить веб-API, на традиционное приложение веб-форм ASP.NET в ASP.NET 4.x. 
 
 ## <a name="overview"></a>Обзор
+
+Несмотря на то, что веб-API ASP.NET поставляется в комплекте с ASP.NET MVC, это легко реализовать веб-API, на традиционное приложение веб-форм ASP.NET.
 
 Чтобы использовать веб-API в приложении Web Forms, существует два основных этапа:
 

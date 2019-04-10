@@ -8,15 +8,15 @@ ms.date: 03/06/2014
 ms.assetid: 7ef5f73c-ca60-43c1-bdb2-702800347e7e
 msc.legacyurl: /visual-studio/overview/2013/aspnet-and-web-tools-20132-preview-for-visual-studio-2013-release-notes
 msc.type: authoredcontent
-ms.openlocfilehash: bbb38ddde49cdeea4255e0e05bd559ddd9e5f692
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 22d4d4afd6963f23d6cfef1745a859c20b69d599
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425994"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422997"
 ---
-<a name="aspnet-and-web-tools-20132--for-visual-studio-2013-release-notes"></a>Заметки о выпуске ASP.NET and Web Tools 2013.2 для Visual Studio 2013
-====================
+# <a name="aspnet-and-web-tools-20132--for-visual-studio-2013-release-notes"></a>Заметки о выпуске ASP.NET and Web Tools 2013.2 для Visual Studio 2013
+
 по [Microsoft](https://github.com/microsoft)
 
 ## <a name="installation-notes"></a>Замечания по установке
@@ -44,7 +44,7 @@ ASP.NET and Web Tools для Visual Studio 2013.2 требуется Visual Stud
 - [Веб-публикация усовершенствования](#webpublish)
 - [Формирование шаблонов ASP.NET](#scaffolding)
 - [NuGet 2.8.1](#nuget)
-- [Веб-форм ASP.NET](#webforms)
+- [Веб-формы ASP.NET](#webforms)
 - [ASP.NET MVC 5.1.2](#mvc)
 - [Веб-API 2.1.2 ASP.NET](#webapi)
 - [ASP.NET Web Pages 3.1.2](#webpages)
@@ -172,7 +172,7 @@ Firefox использует собственное хранилище серт�
     ![Поле со списком, позволяя пустая строка](aspnet-and-web-tools-20132-preview-for-visual-studio-2013-release-notes/_static/image26.png)
 
 <a id="nuget"></a>
-### <a name="nuget-281"></a>NuGet 2.8.1
+### <a name="nuget-281"></a>NuGet 2.8.1
 
 NuGet 2.8.1, RTM будет выпущена в апреле 2014 г. Ниже приведены ключевые моменты в заметках о выпуске, но проверьте [заметки о полном выпуске](http://docs.nuget.org/docs/release-notes/nuget-2.8) Дополнительные сведения об этих изменениях.
 

@@ -8,15 +8,15 @@ ms.date: 05/22/2012
 ms.assetid: f889fd46-4dac-4ecb-83d8-60e64c22036e
 msc.legacyurl: /web-pages/overview/data/7-displaying-data-in-a-chart
 msc.type: authoredcontent
-ms.openlocfilehash: 00529355476e88c47ab790121ae77202aa5e7b76
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f97f214abeaeb88634dd10aaebacc0d58e91ab84
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061101"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422464"
 ---
-<a name="displaying-data-in-a-chart-with-aspnet-web-pages-razor"></a>Отображение данных на диаграмме с веб-страниц ASP.NET (Razor)
-====================
+# <a name="displaying-data-in-a-chart-with-aspnet-web-pages-razor"></a>Отображение данных на диаграмме с веб-страниц ASP.NET (Razor)
+
 по [Microsoft](https://github.com/microsoft)
 
 > В этой статье объясняется, как использовать диаграмму для отображения данных в на веб-сайте ASP.NET Web Pages (Razor) с помощью `Chart` вспомогательный.
@@ -42,8 +42,8 @@ ms.locfileid: "57061101"
 
 | **Диаграмма с областями** ![Описание: Рисунок для типа диаграммы с областями](7-displaying-data-in-a-chart/_static/image1.jpg) | **Линейчатая диаграмма** ![Описание: Рисунок для типа линейчатой диаграммы](7-displaying-data-in-a-chart/_static/image2.jpg) |
 | --- | --- |
-| **Гистограмма** ![Описание: Рисунок для типа диаграммы столбца](7-displaying-data-in-a-chart/_static/image3.jpg) | **График** ![Описание: Рисунок для типа диаграммы «график»](7-displaying-data-in-a-chart/_static/image4.jpg) |
-| **Круговая диаграмма** ![Описание: Рисунок для типа круговой диаграммы](7-displaying-data-in-a-chart/_static/image5.jpg) | **Биржевая диаграмма** ![Описание: Рисунок для типа биржевая диаграмма](7-displaying-data-in-a-chart/_static/image6.jpg) |
+| **Гистограмма** ![Описание: Рисунок для диаграммы типа гистограммы](7-displaying-data-in-a-chart/_static/image3.jpg) | **График** ![Описание: Рисунок для типа диаграммы «график»](7-displaying-data-in-a-chart/_static/image4.jpg) |
+| **Круговая диаграмма** ![Описание: Рисунок для кругового типа диаграммы](7-displaying-data-in-a-chart/_static/image5.jpg) | **Биржевая диаграмма** ![Описание: Рисунок для типа биржевой диаграммы](7-displaying-data-in-a-chart/_static/image6.jpg) |
 
 ### <a name="chart-elements"></a>Элементы диаграммы
 

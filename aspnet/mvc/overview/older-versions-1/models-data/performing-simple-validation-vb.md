@@ -8,15 +8,15 @@ ms.date: 03/02/2009
 ms.assetid: df6cf4b7-0bb3-4c4e-b17a-bd78a759a6bc
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/performing-simple-validation-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 31faf2e89e6acb25854455902c1a6fdffebd293c
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: c7a1b9e82defaae71f0a911e5e4321f6e15ad8bf
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423186"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422620"
 ---
-<a name="performing-simple-validation-vb"></a>Выполнение простой проверки (VB)
-====================
+# <a name="performing-simple-validation-vb"></a>Выполнение простой проверки (VB)
+
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > Узнайте, как для выполнения проверки в приложении ASP.NET MVC. В этом руководстве Стивен Вальтер вводит для состояния модели и вспомогательные функции проверки HTML.
@@ -32,7 +32,7 @@ ms.locfileid: "58423186"
 Я не рекомендую что нужно добавить логику проверки или базы данных, к контроллеру. Контроллер должен содержать только логику, относящуюся к управляют потоком данных приложения. Мы говорим об ярлык для простоты.
 
 
-**В листинге 1 - Controllers\ProductController.vb**
+**Listing 1 - Controllers\ProductController.vb**
 
 [!code-vb[Main](performing-simple-validation-vb/samples/sample1.vb)]
 
@@ -56,19 +56,19 @@ ms.locfileid: "58423186"
 Убедитесь, что сборка приложения осуществляется перед добавлением представления. В противном случае список классов не будет отображаться на **просмотреть класс данных** раскрывающегося списка.
 
 
-[![В диалоговом окне нового проекта](performing-simple-validation-vb/_static/image1.jpg)](performing-simple-validation-vb/_static/image1.png)
+[![Tдиалоговое окно нового проекта он](performing-simple-validation-vb/_static/image1.jpg)](performing-simple-validation-vb/_static/image1.png)
 
 **Рис 01**: Добавление представления ([Просмотр полноразмерного изображения](performing-simple-validation-vb/_static/image2.png))
 
 
-[![В диалоговом окне нового проекта](performing-simple-validation-vb/_static/image2.jpg)](performing-simple-validation-vb/_static/image3.png)
+[![Tдиалоговое окно нового проекта он](performing-simple-validation-vb/_static/image2.jpg)](performing-simple-validation-vb/_static/image3.png)
 
 **Рис. 02**: Создание представления со строгой типизацией ([Просмотр полноразмерного изображения](performing-simple-validation-vb/_static/image4.png))
 
 
 После выполнения этих действий вы получаете представления создания в листинге 2.
 
-**В листинге 2 - Views\Product\Create.aspx**
+**Listing 2 - Views\Product\Create.aspx**
 
 [!code-aspx[Main](performing-simple-validation-vb/samples/sample2.aspx)]
 
@@ -79,7 +79,7 @@ ms.locfileid: "58423186"
 Страница, на рис. 3 показано сообщения об ошибках, преобразовываемый вспомогательные функции проверки при отправке формы с отсутствующих полей и недопустимые значения.
 
 
-[![В диалоговом окне нового проекта](performing-simple-validation-vb/_static/image3.jpg)](performing-simple-validation-vb/_static/image5.png)
+[![Tдиалоговое окно нового проекта он](performing-simple-validation-vb/_static/image3.jpg)](performing-simple-validation-vb/_static/image5.png)
 
 **Рис 03**: Создать представление, отправленных с проблемами ([Просмотр полноразмерного изображения](performing-simple-validation-vb/_static/image6.png))
 
@@ -104,7 +104,7 @@ ms.locfileid: "58423186"
 Если введено недопустимое значение для поля Цена и нет значения для поля UnitsInStock отправки формы HTML для создания продукта, вы получите сообщения проверки, отображаемый на рис. 4. Откуда берутся эти сообщения об ошибках проверки?
 
 
-[![В диалоговом окне нового проекта](performing-simple-validation-vb/_static/image4.jpg)](performing-simple-validation-vb/_static/image7.png)
+[![Tдиалоговое окно нового проекта он](performing-simple-validation-vb/_static/image4.jpg)](performing-simple-validation-vb/_static/image7.png)
 
 **Рис. 04**: Prebinding ошибки проверки ([Просмотр полноразмерного изображения](performing-simple-validation-vb/_static/image8.png))
 

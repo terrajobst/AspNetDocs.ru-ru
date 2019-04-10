@@ -8,15 +8,15 @@ ms.date: 01/12/2011
 ms.assetid: b3aa7720-5c78-4ca2-baef-9a52234fb7ce
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/adding-a-model
 msc.type: authoredcontent
-ms.openlocfilehash: b1370148018faa8c6c884251bfa86761f45d7e49
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 568617ee138e1c810498990db0e38ecc7a1177b7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058051"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422425"
 ---
-<a name="adding-a-model-vb"></a>Добавление модели (VB)
-====================
+# <a name="adding-a-model-vb"></a>Добавление модели (VB)
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Этом учебнике описываются основы создания MVC веб-приложения ASP.NET с помощью Microsoft Visual Web Developer 2010 Express пакетом обновления 1, которой является бесплатной версии Microsoft Visual Studio. Перед началом работы убедитесь, что вы установили необходимые компоненты, перечисленные ниже. Все из них можно установить, щелкнув следующую ссылку: [Установщик веб-платформы](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack). Кроме того можно установить по отдельности необходимых компонентов, с помощью следующих ссылок:
@@ -71,8 +71,6 @@ ms.locfileid: "57058051"
 Откройте корневой каталог приложения *Web.config* файл. (Не *Web.config* файл *представления* папки.) На следующем рисунке показано, как *Web.config* файлы; открыть *Web.config* файл помеченные красными кружками.
 
 ![](adding-a-model/_static/image2.png)
-
-## 
 
 Добавьте следующую строку подключения для `<connectionStrings>` элемент в *Web.config* файл.
 

@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: cc4c2def-e88c-4456-ae8b-a6ae0ff8cc2d
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dynamicpopulate/dynamically-populating-a-control-using-javascript-code-cs
 msc.type: authoredcontent
-ms.openlocfilehash: e8b49f41f132cc31ca458ce0af3b74dbb54f225e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a6b433f187495b8dcd874bcab8ddc607e6de61c9
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026571"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59422529"
 ---
-<a name="dynamically-populating-a-control-using-javascript-code-c"></a>Динамическое заполнение элемента управления с помощью кода JavaScript (C#)
-====================
+# <a name="dynamically-populating-a-control-using-javascript-code-c"></a>Динамическое заполнение элемента управления с помощью кода JavaScript (C#)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/d/8/f/d8f2f6f9-1b7c-46ad-9252-e1fc81bdea3e/dynamicpopulate1.cs.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/dynamicpopulate1CS.pdf)
@@ -55,7 +55,7 @@ ms.locfileid: "57026571"
 Обратите внимание, что в контексте типа "переключатель", выражение JavaScript `this.value` ссылается на значение «текущий», которая может быть точно те же данные `getDate()` метод может работать с.
 
 
-[![Нажмите кнопку извлекает дату с сервера, в указанном формате](dynamically-populating-a-control-using-javascript-code-cs/_static/image2.png)](dynamically-populating-a-control-using-javascript-code-cs/_static/image1.png)
+[![A Нажмите кнопку извлекает дату с сервера, в формате, заданном](dynamically-populating-a-control-using-javascript-code-cs/_static/image2.png)](dynamically-populating-a-control-using-javascript-code-cs/_static/image1.png)
 
 Нажмите кнопку извлекает дату с сервера, в формате, заданном ([Просмотр полноразмерного изображения](dynamically-populating-a-control-using-javascript-code-cs/_static/image3.png))
 
