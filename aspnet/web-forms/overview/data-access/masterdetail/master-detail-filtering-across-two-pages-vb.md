@@ -8,15 +8,15 @@ ms.date: 03/31/2010
 ms.assetid: 361d6a44-3f1f-4daf-85df-d4c2b8bf065d
 msc.legacyurl: /web-forms/overview/data-access/masterdetail/master-detail-filtering-across-two-pages-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 290c4eba6f77a6006d424c3f05b77c1c128026b3
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6903c8c0649f9e4d56962bd36e03448852cfb81a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027981"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395359"
 ---
-<a name="masterdetail-filtering-across-two-pages-vb"></a>Фильтрация "Основной/подробности" на двух страницах (VB)
-====================
+# <a name="masterdetail-filtering-across-two-pages-vb"></a>Фильтрация "Основной/подробности" на двух страницах (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/5/d/7/5d7571fc-d0b7-4798-ad4a-c976c02363ce/ASPNET_Data_Tutorial_9_VB.exe) или [скачать PDF](master-detail-filtering-across-two-pages-vb/_static/datatutorial09vb1.pdf)
@@ -56,12 +56,12 @@ ms.locfileid: "57027981"
 С помощью `SupplierListMaster.aspx` и `ProductsForSupplierDetails.aspx` страницы, созданные, следующим этапом является создание элемента управления GridView для поставщиков в `SupplierListMaster.aspx`. Добавьте на страницу GridView и привяжите его к элементу управления ObjectDataSource. Следует использовать данный элемент управления ObjectDataSource `SuppliersBLL` класса `GetSuppliers()` метод для возврата всех поставщиков.
 
 
-[![Выбор метода Getsuppliers() класса](master-detail-filtering-across-two-pages-vb/_static/image3.png)](master-detail-filtering-across-two-pages-vb/_static/image2.png)
+[![Sвыбрать метода Getsuppliers() класса](master-detail-filtering-across-two-pages-vb/_static/image3.png)](master-detail-filtering-across-two-pages-vb/_static/image2.png)
 
 **Рис. 2**: Выберите `SuppliersBLL` класс ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image4.png))
 
 
-[![Настройка ObjectDataSource на использование метода GetSuppliers()](master-detail-filtering-across-two-pages-vb/_static/image6.png)](master-detail-filtering-across-two-pages-vb/_static/image5.png)
+[![CНастройка ObjectDataSource на использование метода GetSuppliers()](master-detail-filtering-across-two-pages-vb/_static/image6.png)](master-detail-filtering-across-two-pages-vb/_static/image5.png)
 
 **Рис. 3**: Настройка ObjectDataSource для использования `GetSuppliers()` метод ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image7.png))
 
@@ -71,7 +71,7 @@ ms.locfileid: "57027981"
 Для этого добавьте [HyperLinkField](https://msdn.microsoft.com/library/system.web.ui.webcontrols.hyperlinkfield.aspx) к GridView, что добавляет гиперссылку для каждой строки GridView. Запустить, щелкнув ссылку Правка столбцов смарт-теге элемента GridView. Затем выберите поле HyperLinkField в списке в левом верхнем углу и щелкните "Добавить", чтобы включить поле HyperLinkField в списке полей GridView.
 
 
-[![Добавление поля HyperLinkField к элементу GridView](master-detail-filtering-across-two-pages-vb/_static/image9.png)](master-detail-filtering-across-two-pages-vb/_static/image8.png)
+[![Aдд поля HyperLinkField к элементу GridView](master-detail-filtering-across-two-pages-vb/_static/image9.png)](master-detail-filtering-across-two-pages-vb/_static/image8.png)
 
 **Рис. 4**: Добавление поля HyperLinkField к GridView ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image10.png))
 
@@ -79,7 +79,7 @@ ms.locfileid: "57027981"
 Поле HyperLinkField можно настроить таким образом, чтобы использовать тот же текст или URL-адрес значения по ссылке в каждой строке GridView, или эти значения могут основываться на значениях данных, привязанных ко всем строкам. Для указания статического значения для всех строк используйте свойство `Text` или `NavigateUrl` свойства. Поскольку мы хотим текст ссылки должен быть одинаковым для всех строк, установка для свойства `Text` свойства для просмотра продуктов.
 
 
-[![Значение свойства Text HyperLinkField Просмотр продуктов](master-detail-filtering-across-two-pages-vb/_static/image12.png)](master-detail-filtering-across-two-pages-vb/_static/image11.png)
+[![Sи свойство Text HyperLinkField Просмотр продуктов](master-detail-filtering-across-two-pages-vb/_static/image12.png)](master-detail-filtering-across-two-pages-vb/_static/image11.png)
 
 **Рис. 5**: Установка для свойства `Text` свойства для просмотра продуктов ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image13.png))
 
@@ -91,7 +91,7 @@ ms.locfileid: "57027981"
 Применяется в этом руководстве, нам нужно установить `DataNavigateUrlFields` свойства `SupplierID`, так как это поле данных, значение которого необходимо настроить на основе строки, и `DataNavigateUrlFormatString` свойства `ProductsForSupplierDetails.aspx?SupplierID={0}`.
 
 
-[![Настройка HyperLinkField на включение URL-адрес соответствующие ссылки, в зависимости от SupplierID](master-detail-filtering-across-two-pages-vb/_static/image15.png)](master-detail-filtering-across-two-pages-vb/_static/image14.png)
+[![CНастройка HyperLinkField на включение правильной ссылки URL-адрес на основе после SupplierID](master-detail-filtering-across-two-pages-vb/_static/image15.png)](master-detail-filtering-across-two-pages-vb/_static/image14.png)
 
 **Рис. 6**: Настройка HyperLinkField на включение правильной ссылки URL-адрес на основе при `SupplierID` ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image16.png))
 
@@ -104,7 +104,7 @@ ms.locfileid: "57027981"
 Отвлекитесь и просмотрите `SupplierListMaster.aspx` страницы в обозревателе. Как показано на рис. 7, страницы в настоящее время список всех поставщиков, включая ссылку Просмотр продуктов. Щелкнув Просмотр продуктов ссылке вы перейдете на `ProductsForSupplierDetails.aspx`, передав вдоль поставщика `SupplierID` в строке запроса.
 
 
-[![Каждая строка поставщика содержит ссылку Просмотр продуктов](master-detail-filtering-across-two-pages-vb/_static/image18.png)](master-detail-filtering-across-two-pages-vb/_static/image17.png)
+[![EACH строка поставщика содержит ссылку Просмотр продуктов](master-detail-filtering-across-two-pages-vb/_static/image18.png)](master-detail-filtering-across-two-pages-vb/_static/image17.png)
 
 **Рис. 7**: Каждая строка поставщика содержит ссылку Просмотр продуктов ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image19.png))
 
@@ -114,17 +114,17 @@ ms.locfileid: "57027981"
 На этом этапе `SupplierListMaster.aspx` отправляет пользователей на странице `ProductsForSupplierDetails.aspx`, передав выбранного поставщика `SupplierID` в строке запроса. Последним шагом данного учебного курса является отображение продуктов в элементе управления GridView на `ProductsForSupplierDetails.aspx` которого `SupplierID` равно `SupplierID` переданного через строку запроса. Для этого необходимо добавить GridView к `ProductsForSupplierDetails.aspx` страницы, используя новый элемент управления ObjectDataSource с именем `ProductsBySupplierDataSource` , вызывающий `GetProductsBySupplierID(supplierID)` метода из `ProductsBLL` класса.
 
 
-[![Добавьте новый ObjectDataSource, именуемый ProductsBySupplierDataSource](master-detail-filtering-across-two-pages-vb/_static/image21.png)](master-detail-filtering-across-two-pages-vb/_static/image20.png)
+[![Aдд новый ObjectDataSource с именем ProductsBySupplierDataSource](master-detail-filtering-across-two-pages-vb/_static/image21.png)](master-detail-filtering-across-two-pages-vb/_static/image20.png)
 
 **Рис. 8**: Добавить новый элемент управления ObjectDataSource с именем `ProductsBySupplierDataSource` ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image22.png))
 
 
-[![Выбор класса](master-detail-filtering-across-two-pages-vb/_static/image24.png)](master-detail-filtering-across-two-pages-vb/_static/image23.png)
+[![Sвыбрать класса ProductsBLL](master-detail-filtering-across-two-pages-vb/_static/image24.png)](master-detail-filtering-across-two-pages-vb/_static/image23.png)
 
 **Рис. 9**: Выберите `ProductsBLL` класс ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image25.png))
 
 
-[![У элемента управления ObjectDataSource вызвать метод GetProductsBySupplierID(supplierID)](master-detail-filtering-across-two-pages-vb/_static/image27.png)](master-detail-filtering-across-two-pages-vb/_static/image26.png)
+[![HAve Invoke ObjectDataSource метод GetProductsBySupplierID(supplierID)](master-detail-filtering-across-two-pages-vb/_static/image27.png)](master-detail-filtering-across-two-pages-vb/_static/image26.png)
 
 **Рис. 10**: Иметь элемент управления ObjectDataSource вызывает `GetProductsBySupplierID(supplierID)` метод ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image28.png))
 
@@ -132,7 +132,7 @@ ms.locfileid: "57027981"
 Последний шаг в мастере настройки источника данных запрос на указание источника `GetProductsBySupplierID(supplierID)` метода *`supplierID`* параметра. Чтобы использовать значения строки запроса, в качестве источника параметра строки запроса и введите имя значения строки запроса для использования в текстовом поле QueryStringField (`SupplierID`).
 
 
-[![Заполнение supplierID значение параметра из значения строки запроса SupplierID](master-detail-filtering-across-two-pages-vb/_static/image30.png)](master-detail-filtering-across-two-pages-vb/_static/image29.png)
+[![PПовторить заполнение supplierID значение параметра из значения строки запроса SupplierID](master-detail-filtering-across-two-pages-vb/_static/image30.png)](master-detail-filtering-across-two-pages-vb/_static/image29.png)
 
 **Рис. 11**: Заполнение *`supplierID`* значение параметра из `SupplierID` значение строки запроса ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image31.png))
 
@@ -140,7 +140,7 @@ ms.locfileid: "57027981"
 Вот и все! Рис. 12 показан `ProductsForSupplierDetails.aspx` странице открываемая при щелчке ссылки Tokyo Traders из `SupplierListMaster.aspx`.
 
 
-[![Отображаются продукты поставляемые Tokyo Traders](master-detail-filtering-across-two-pages-vb/_static/image33.png)](master-detail-filtering-across-two-pages-vb/_static/image32.png)
+[![Tон продукты, поставляемые Tokyo Traders показаны](master-detail-filtering-across-two-pages-vb/_static/image33.png)](master-detail-filtering-across-two-pages-vb/_static/image32.png)
 
 **Рис. 12**: Отображаются продукты поставляемые Tokyo Traders ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image34.png))
 
@@ -152,12 +152,12 @@ ms.locfileid: "57027981"
 Начните с добавления элемент управления FormView над элементом GridView продуктов. Создать новый элемент управления ObjectDataSource с именем `SuppliersDataSource` , вызывающий `SuppliersBLL` класса `GetSupplierBySupplierID(supplierID)` метод.
 
 
-[![Выбор метода Getsuppliers() класса](master-detail-filtering-across-two-pages-vb/_static/image36.png)](master-detail-filtering-across-two-pages-vb/_static/image35.png)
+[![Sвыбрать метода Getsuppliers() класса](master-detail-filtering-across-two-pages-vb/_static/image36.png)](master-detail-filtering-across-two-pages-vb/_static/image35.png)
 
 **Рис. 13**: Выберите `SuppliersBLL` класс ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image37.png))
 
 
-[![У элемента управления ObjectDataSource вызова метода GetSupplierBySupplierID(supplierID)](master-detail-filtering-across-two-pages-vb/_static/image39.png)](master-detail-filtering-across-two-pages-vb/_static/image38.png)
+[![HAve Invoke ObjectDataSource метода GetSupplierBySupplierID(supplierID)](master-detail-filtering-across-two-pages-vb/_static/image39.png)](master-detail-filtering-across-two-pages-vb/_static/image38.png)
 
 **Рис. 14**: Иметь элемент управления ObjectDataSource вызывает `GetSupplierBySupplierID(supplierID)` метод ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image40.png))
 
@@ -165,7 +165,7 @@ ms.locfileid: "57027981"
 Как и в `ProductsBySupplierDataSource`, имеют *`supplierID`* параметру присвоено значение `SupplierID` значение строки запроса.
 
 
-[![Заполнение supplierID значение параметра из значения строки запроса SupplierID](master-detail-filtering-across-two-pages-vb/_static/image42.png)](master-detail-filtering-across-two-pages-vb/_static/image41.png)
+[![PПовторить заполнение supplierID значение параметра из значения строки запроса SupplierID](master-detail-filtering-across-two-pages-vb/_static/image42.png)](master-detail-filtering-across-two-pages-vb/_static/image41.png)
 
 **Рис. 15**: Заполнение *`supplierID`* значение параметра из `SupplierID` значение строки запроса ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image43.png))
 
@@ -180,7 +180,7 @@ ms.locfileid: "57027981"
 Рис. 16 показана снимок экрана `ProductsForSupplierDetails.aspx` странице после информации о поставщике, описанные выше был включен.
 
 
-[![Список продуктов включает сводку о поставщике](master-detail-filtering-across-two-pages-vb/_static/image45.png)](master-detail-filtering-across-two-pages-vb/_static/image44.png)
+[![Tон список продуктов включает сводку о Supplier](master-detail-filtering-across-two-pages-vb/_static/image45.png)](master-detail-filtering-across-two-pages-vb/_static/image44.png)
 
 **Рис. 16**: Список продуктов включает сводку о Supplier ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image46.png))
 
@@ -190,7 +190,7 @@ ms.locfileid: "57027981"
 Для улучшения пользователь интерфейс для этого отчета существует ряд дополнений, мы работаем для внесения `ProductsForSupplierDetails.aspx` страницы. В настоящее время единственным способом, пользователь может перейти от `ProductsForSupplierDetails.aspx` страницы обратно к списку поставщиков является нажмите кнопку "Назад" браузера. Давайте добавим элемент управления HyperLink для `ProductsForSupplierDetails.aspx` страницы, которая ссылается на `SupplierListMaster.aspx`, предоставляя другим способом для пользователя, чтобы вернуться к основному списку.
 
 
-[![Добавление элемента управления HyperLink для возврата пользователя страниц SupplierListMaster.aspx](master-detail-filtering-across-two-pages-vb/_static/image48.png)](master-detail-filtering-across-two-pages-vb/_static/image47.png)
+[![Aдд элемента управления HyperLink для возврата пользователя страниц SupplierListMaster.aspx](master-detail-filtering-across-two-pages-vb/_static/image48.png)](master-detail-filtering-across-two-pages-vb/_static/image47.png)
 
 **Рис. 17**: Добавление элемента управления HyperLink для возврата пользователя к `SupplierListMaster.aspx` ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image49.png))
 
@@ -200,7 +200,7 @@ ms.locfileid: "57027981"
 По умолчанию все поставщики в базе данных northwinds поставляют предоставляют хотя бы один продукт. Тем не менее, в этом руководстве я изменил `Products` таблицы, чтобы поставщик Escargots Nouveaux больше не связан с продуктами. Рис. 18 показана страница подробностей для Escargots Nouveaux после внесения этого изменения.
 
 
-[![Пользователи получат сообщение о том, что у поставщика отсутствуют продукты](master-detail-filtering-across-two-pages-vb/_static/image51.png)](master-detail-filtering-across-two-pages-vb/_static/image50.png)
+[![Users информируются, что у поставщика отсутствуют продукты](master-detail-filtering-across-two-pages-vb/_static/image51.png)](master-detail-filtering-across-two-pages-vb/_static/image50.png)
 
 **Рис. 18**: Пользователи получат сообщение о том, что у поставщика отсутствуют продукты ([Просмотр полноразмерного изображения](master-detail-filtering-across-two-pages-vb/_static/image52.png))
 

@@ -8,15 +8,15 @@ ms.date: 05/28/2015
 ms.assetid: c85ec591-f8d7-4882-b763-de6ab9f3df7a
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/layouts
 msc.type: authoredcontent
-ms.openlocfilehash: a6a007678d58547e9987ebda46bd08ae8aea66f7
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 58f3ec28914a604aa911cc3cb73733f0d58fd49f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046181"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59390420"
 ---
-<a name="introducing-aspnet-web-pages---creating-a-consistent-layout"></a>Знакомство с веб-страниц ASP.NET — Создание согласованного макета
-====================
+# <a name="introducing-aspnet-web-pages---creating-a-consistent-layout"></a>Знакомство с веб-страниц ASP.NET — Создание согласованного макета
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > Этом руководстве показано, как использовать *макеты* для создания согласованного вида для страниц на сайте, который использует веб-страниц ASP.NET. Предполагается, вы выполнили рядов через [удаление базы данных в ASP.NET Web Pages](https://go.microsoft.com/fwlink/?LinkId=251584).
@@ -146,7 +146,7 @@ ASP.NET объединен содержимое страницы Movies.cshtml �
 
 `Page` Объект будет доступен на всех *.cshtml* страницы, а также предназначен для этой цели, а именно: для совместного использования информации между страницей и его макет.
 
-Откройте<em>\_Layout.cshtml</em> страницы. Изменение `<title>` элемент, чтобы он выглядел Эта разметка:
+Откройте  *\_Layout.cshtml* страницы. Изменение `<title>` элемент, чтобы он выглядел Эта разметка:
 
 [!code-html[Main](layouts/samples/sample9.html)]
 

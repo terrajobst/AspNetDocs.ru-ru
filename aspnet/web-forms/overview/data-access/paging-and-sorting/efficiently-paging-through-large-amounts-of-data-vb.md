@@ -8,15 +8,15 @@ ms.date: 08/15/2006
 ms.assetid: 3e20e64a-8808-4b49-88d6-014e2629d56f
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/efficiently-paging-through-large-amounts-of-data-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 5870b9ac2af7d9df927edd8230334dee4885c6a1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 20ea33efbd1db657a03b20a665a041ecf3a6d248
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056761"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59399558"
 ---
-<a name="efficiently-paging-through-large-amounts-of-data-vb"></a>Эффективное разбиение на страницы больших объемов данных (VB)
-====================
+# <a name="efficiently-paging-through-large-amounts-of-data-vb"></a>Эффективное разбиение на страницы больших объемов данных (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_25_VB.exe) или [скачать PDF](efficiently-paging-through-large-amounts-of-data-vb/_static/datatutorial25vb1.pdf)
@@ -191,7 +191,7 @@ DAL следующей задачей является создание мето
 После выбора этих входных значений параметров, результаты появятся в окне вывода. Рис. 8 показаны результаты, если для обоих `@startRowIndex` и `@maximumRows` параметров.
 
 
-[![Записи, будет отображаться в второй страницы данных возвращаются](efficiently-paging-through-large-amounts-of-data-vb/_static/image9.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image8.png)
+[![Tон записей, отобразятся в второй страницы данных возвращаются](efficiently-paging-through-large-amounts-of-data-vb/_static/image9.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image8.png)
 
 **Рис. 8**: Возвращаются записи, будет отображаться в данные из второй страницы ([Просмотр полноразмерного изображения](efficiently-paging-through-large-amounts-of-data-vb/_static/image10.png))
 
@@ -293,7 +293,7 @@ GridView отсутствует, так как элемент управлени
 После внесения этих изменений, посетите эту страницу через обозреватель. Вы должны увидеть 10 продуктов в списке, представлены в алфавитном порядке. Отвлекитесь и пошаговое выполнение на одной странице данных за раз. Пока нет никакой разницы с точки зрения конечного пользователя s между стандартным и пользовательское разбиение по страницам, пользовательское разбиение гораздо более эффективно по страницам больших объемов данных, так как он получает только те записи, которые должны отображаться для данной страницы.
 
 
-[![К данным, упорядоченный по продукту — имя, является, разбитых на страницы с помощью пользовательского разбиения по страницам](efficiently-paging-through-large-amounts-of-data-vb/_static/image20.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image19.png)
+[![Tу него данные, упорядоченные по s имя продукта, является, разбитых на страницы с помощью пользовательского разбиения по страницам](efficiently-paging-through-large-amounts-of-data-vb/_static/image20.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image19.png)
 
 **Рис. 17**: К данным, упорядоченный по продукту — имя, является, разбитых на страницы с помощью пользовательского разбиения по страницам ([Просмотр полноразмерного изображения](efficiently-paging-through-large-amounts-of-data-vb/_static/image21.png))
 
@@ -309,7 +309,7 @@ GridView отсутствует, так как элемент управлени
 Текущей реализацией пользовательского разбиения по страницам требует, что заказ, по которому страницам данных определяется статически при создании `GetProductsPaged` хранимой процедуры. Тем не менее вы записали, смарт-тега GridView s содержит флажок Включить сортировку, помимо возможности включить разбиение по страницам. К сожалению Если включить поддержку сортировки к GridView с текущей реализацией пользовательского разбиения по страницам будут отсортированы только записи на текущей просматриваемой странице данных. Например при настройке GridView для разбиения по страницам, а затем, при просмотре первой страницы данных, отсортировать по названию продукта в убывающем порядке, в его обратный порядок продуктов на странице 1. Как показано на рис. 18, продукт Carnarvon Tigers стал первым продуктом при сортировке в обратном алфавитном порядке, который пропускает 71 другие продукты, полученные после Carnarvon Tigers, в алфавитном порядке; в сортировке, считаются только те записи, на первой странице.
 
 
-[![Сортируются только данные отображаются на текущей странице](efficiently-paging-through-large-amounts-of-data-vb/_static/image23.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image22.png)
+[![Oчтение данных, показанный на текущей странице сортируется](efficiently-paging-through-large-amounts-of-data-vb/_static/image23.png)](efficiently-paging-through-large-amounts-of-data-vb/_static/image22.png)
 
 **Рис. 18**: Сортируются только данные отображаются на текущей странице ([Просмотр полноразмерного изображения](efficiently-paging-through-large-amounts-of-data-vb/_static/image24.png))
 
@@ -352,7 +352,7 @@ GridView отсутствует, так как элемент управлени
 Статьи, [пользовательского разбиения по страницам в ASP.NET 2.0 с SQL Server 2005](http://aspnet.4guysfromrolla.com/articles/031506-1.aspx), несколько тестов, я сравнил различия в производительности между этих двух способов разбиения по страницам таблицы базы данных с помощью 50 000 записей. В этих тестах я сравнил время выполнения запроса на уровне SQL Server (с помощью [SQL Profiler](https://msdn.microsoft.com/library/ms173757.aspx)) и на странице ASP.NET с помощью [возможности трассировки ASP.NET s](https://msdn.microsoft.com/library/y13fw6we.aspx). Имейте в виду, что эти тесты выполнялись на моем рабочем компьютере с одним активным пользователем и таким образом нельзя назвать научными и они не демонстрируют шаблонов нагрузки типичный веб-сайт. Тем не менее, они позволяют показать относительную разницу между временем выполнения для по умолчанию и пользовательское разбиение по страницам при работе с достаточно большими объемами данных.
 
 
-|  | **Средняя Длительность (в секундах)** | **Число считываний** |
+|  | **Средняя Длительность (в секундах)** | **Число чтений** |
 | --- | --- | --- |
 | **По умолчанию разбиение на страницы SQL Profiler** | 1.411 | 383 |
 | **Пользовательского разбиения по страницам SQL Profiler** | 0.002 | 29 |

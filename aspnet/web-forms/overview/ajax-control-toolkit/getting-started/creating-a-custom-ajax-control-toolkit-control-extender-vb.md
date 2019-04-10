@@ -8,15 +8,15 @@ ms.date: 05/12/2009
 ms.assetid: 18b29834-c991-4e0c-b533-44d358fbfc9c
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/getting-started/creating-a-custom-ajax-control-toolkit-control-extender-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 7f0cbee47b541e31f3e9f01e42afeabcd7b9769f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8336fecf60296c44ebcf6cbd6010f9d5daed2923
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033391"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59415964"
 ---
-<a name="creating-a-custom-ajax-control-toolkit-control-extender-vb"></a>Создание пользовательского управляющего элемента-расширителя для набора элементов управления AJAX (VB)
-====================
+# <a name="creating-a-custom-ajax-control-toolkit-control-extender-vb"></a>Создание пользовательского управляющего элемента-расширителя для набора элементов управления AJAX (VB)
+
 по [Microsoft](https://github.com/microsoft)
 
 > Пользовательские расширения позволяют настроить и расширить возможности элементов управления ASP.NET без создания новых классов.
@@ -79,7 +79,7 @@ ms.locfileid: "57033391"
 После выполнения этих действий в окне обозревателя решений должен выглядеть как на рис. 1.
 
 
-[![Решение с проектом библиотеки веб-сайт и класса](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image8.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image7.png)
+[![Sрешение с проектом библиотеки веб-сайт и класс](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image8.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image7.png)
 
 **Рис 01**: Решение с проектом библиотеки веб-сайт и класс ([Просмотр полноразмерного изображения](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image9.png))
 
@@ -100,7 +100,7 @@ ms.locfileid: "57033391"
 Можно проверить, были добавлены все ссылки справа, щелкнув правой кнопкой мыши проект, выбрав свойства и щелкнув вкладку ссылки (см. рис. 2).
 
 
-[![Папка ссылок с необходимые ссылки](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image11.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image10.png)
+[![RСписок диапазонов папка с необходимые ссылки](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image11.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image10.png)
 
 **Рис. 02**: Папка ссылок с необходимые ссылки ([Просмотр полноразмерного изображения](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image12.png))
 
@@ -155,7 +155,7 @@ ms.locfileid: "57033391"
 Помните, что необходимо скомпилировать файл JavaScript в листинге 3 как внедренный ресурс. В окне обозревателя решений выберите файл, откройте окно свойств и назначьте *внедренный ресурс* для **действие при построении** свойство (см. рис. 3). Этот параметр доступен в Visual Studio и Visual Web Developer.
 
 
-[![Добавление файла JavaScript в качестве внедренного ресурса](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image14.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image13.png)
+[![Adding файл JavaScript в качестве внедренного ресурса](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image14.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image13.png)
 
 **Рис 03**: Добавление файла JavaScript как внедренный ресурс ([Просмотр полноразмерного изображения](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image15.png))
 
@@ -184,7 +184,7 @@ ms.locfileid: "57033391"
 После выполнения этих действий DisabledButton управляющего элемента-расширителя появляется в области элементов (см. рис. 4).
 
 
-[![DisabledButton на панели элементов](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image17.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image16.png)
+[![DisabledButton в области элементов](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image17.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image16.png)
 
 **Рис. 04**: DisabledButton в области элементов ([Просмотр полноразмерного изображения](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image18.png))
 
@@ -206,7 +206,7 @@ ms.locfileid: "57033391"
 2. Выберите расширитель DisabledButton и нажмите кнопку **ОК** кнопки.
 
 
-[![Диалоговое окно мастера расширителя](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image20.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image19.png)
+[![Tдиалоговое окно мастера расширитель HE](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image20.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image19.png)
 
 **05 рис**: Диалоговое окно мастера расширитель ([Просмотр полноразмерного изображения](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image21.png))
 
@@ -218,7 +218,7 @@ ms.locfileid: "57033391"
 3. Назначьте *Сохранить* DisabledText свойство и значение *btnSave* TargetButtonID свойству.
 
 
-[![Задание свойств расширителя](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image23.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image22.png)
+[![Sсвойства расширителя выполнение](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image23.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image22.png)
 
 **Рис 06**: Задание свойств расширителя ([Просмотр полноразмерного изображения](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image24.png))
 
@@ -226,7 +226,7 @@ ms.locfileid: "57033391"
 При запуске страницы (, нажав клавишу F5), изначально отключен элемент управления Button. Сразу же начать ввод текста в текстовое поле, кнопку, элемент управления включен (см. рис. 7).
 
 
-[![Расширитель DisabledButton в действии](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image26.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image25.png)
+[![Tрасширитель DisabledButton HE в действии](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image26.png)](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image25.png)
 
 **07 рис**: Расширитель DisabledButton в действии ([Просмотр полноразмерного изображения](creating-a-custom-ajax-control-toolkit-control-extender-vb/_static/image27.png))
 

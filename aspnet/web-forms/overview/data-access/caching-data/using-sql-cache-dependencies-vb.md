@@ -8,15 +8,15 @@ ms.date: 05/30/2007
 ms.assetid: bd347d93-4251-4532-801c-a36f2dfa7f96
 msc.legacyurl: /web-forms/overview/data-access/caching-data/using-sql-cache-dependencies-vb
 msc.type: authoredcontent
-ms.openlocfilehash: f47cc7c1fd4fd0d1e41bef31a2e68dd34393d52e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b1660c0d20b76d97ee00acf1080c3eca1f596be2
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032611"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59412675"
 ---
-<a name="using-sql-cache-dependencies-vb"></a>Использование зависимостей кэша SQL (VB)
-====================
+# <a name="using-sql-cache-dependencies-vb"></a>Использование зависимостей кэша SQL (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_61_VB.zip) или [скачать PDF](using-sql-cache-dependencies-vb/_static/datatutorial61vb1.pdf)
@@ -87,7 +87,7 @@ ASP.NET 2.0 предоставляет [ `SqlCacheDependency` класс](https:
 После подключения к серверу Management Studio Показать сервера и иметь вложенные папки для баз данных, безопасности и т. д. Щелкните правой кнопкой мыши на папку базы данных и выберите параметр присоединения. Это приведет к появлению диалогового окна присоединение баз данных (см. рис. 2). Нажмите кнопку "Добавить" и выберите `NORTHWND.MDF` папки базы данных в вашей s приложения web `App_Data` папки.
 
 
-[![Подключите NORTHWND. MDF-ФАЙЛОМ базы данных из папки App_Data](using-sql-cache-dependencies-vb/_static/image2.gif)](using-sql-cache-dependencies-vb/_static/image1.png)
+[![Aединить NORTHWND. База данных MDF-ФАЙЛОМ из папки App_Data](using-sql-cache-dependencies-vb/_static/image2.gif)](using-sql-cache-dependencies-vb/_static/image1.png)
 
 **Рис. 2**: Присоединение `NORTHWND.MDF` из базы данных `App_Data` папку ([Просмотр полноразмерного изображения](using-sql-cache-dependencies-vb/_static/image2.png))
 
@@ -143,7 +143,7 @@ ASP.NET 2.0 предоставляет [ `SqlCacheDependency` класс](https:
 Чтобы продемонстрировать использование зависимостей кэша SQL декларативно, откройте `SqlCacheDependencies.aspx` странице в `Caching` папки и перетащите элемент управления GridView с панели инструментов в конструктор. Набор GridView s `ID` для `ProductsDeclarative` и в его смарт-тега выберите, чтобы привязать его к элементу управления ObjectDataSource с именем `ProductsDataSourceDeclarative`.
 
 
-[![Создайте новый ObjectDataSource, именуемый ProductsDataSourceDeclarative](using-sql-cache-dependencies-vb/_static/image5.gif)](using-sql-cache-dependencies-vb/_static/image3.png)
+[![Cсоздать новый элемент управления ObjectDataSource с именем ProductsDataSourceDeclarative](using-sql-cache-dependencies-vb/_static/image5.gif)](using-sql-cache-dependencies-vb/_static/image3.png)
 
 **Рис. 5**: Создайте новый ObjectDataSource с именем `ProductsDataSourceDeclarative` ([Просмотр полноразмерного изображения](using-sql-cache-dependencies-vb/_static/image4.png))
 
@@ -151,12 +151,12 @@ ASP.NET 2.0 предоставляет [ `SqlCacheDependency` класс](https:
 Настройка ObjectDataSource на использование `ProductsBLL` и присвоить стрелку раскрывающегося списка на вкладке ВЫБЕРИТЕ `GetProducts()`. На вкладке "обновления" выберите `UpdateProduct` перегрузка с три входных параметра - `productName`, `unitPrice`, и `productID`. Задайте раскрывающихся списков (нет) на вкладках INSERT и DELETE.
 
 
-[![Используйте перегрузки UpdateProduct с тремя входными параметрами](using-sql-cache-dependencies-vb/_static/image6.gif)](using-sql-cache-dependencies-vb/_static/image5.png)
+[![USE перегрузки UpdateProduct с тремя параметрами для входных данных](using-sql-cache-dependencies-vb/_static/image6.gif)](using-sql-cache-dependencies-vb/_static/image5.png)
 
 **Рис. 6**: Используйте перегрузки UpdateProduct с тремя параметрами для входных данных ([Просмотр полноразмерного изображения](using-sql-cache-dependencies-vb/_static/image6.png))
 
 
-[![Задайте стрелку раскрывающегося списка (нет) для вставки и удаления вкладок](using-sql-cache-dependencies-vb/_static/image7.gif)](using-sql-cache-dependencies-vb/_static/image7.png)
+[![SET стрелку раскрывающегося списка (нет) для вставки и удаления вкладки](using-sql-cache-dependencies-vb/_static/image7.gif)](using-sql-cache-dependencies-vb/_static/image7.png)
 
 **Рис. 7**: Задайте стрелку раскрывающегося списка (нет) для вставки и удаления вкладок ([Просмотр полноразмерного изображения](using-sql-cache-dependencies-vb/_static/image8.png))
 
@@ -178,7 +178,7 @@ ASP.NET 2.0 предоставляет [ `SqlCacheDependency` класс](https:
 Теперь посетите эту страницу через обозреватель. Так как мы ve еще выполнить кэширование, каждый раз, страницы, сортировку или отредактировать сетку страницы должен отображаться текст, выбрав вариант событие, запускаемое, как показано на рис. 8.
 
 
-[![ObjectDataSource s события Selecting срабатывает каждый GridView разбивается на страницы, изменять, времени или Sorted](using-sql-cache-dependencies-vb/_static/image8.gif)](using-sql-cache-dependencies-vb/_static/image9.png)
+[![Tон ObjectDataSource s события Selecting срабатывает, каждый GridView разбивается на страницы, изменять, времени или Sorted](using-sql-cache-dependencies-vb/_static/image8.gif)](using-sql-cache-dependencies-vb/_static/image9.png)
 
 **Рис. 8**: Элемент управления ObjectDataSource s `Selecting` Each время события активируется разбивается на страницы GridView, измененный или Sorted ([Просмотр полноразмерного изображения](using-sql-cache-dependencies-vb/_static/image10.png))
 
@@ -197,7 +197,7 @@ ASP.NET 2.0 предоставляет [ `SqlCacheDependency` класс](https:
 GridView в `SqlCacheDependencies.aspx` отображает данные из двух таблиц - `Products` и `Categories` (продукт s `CategoryName` поля извлекается с помощью метода `JOIN` на `Categories`). Таким образом нам нужно указать две зависимости кэша SQL: NorthwindDB:Products; NorthwindDB:Categories.
 
 
-[![Настройте элемент ObjectDataSource для поддержки кэширования использование зависимостей кэша SQL на продукты и категории](using-sql-cache-dependencies-vb/_static/image9.gif)](using-sql-cache-dependencies-vb/_static/image11.png)
+[![CНастройка ObjectDataSource для поддержки кэширования с помощью зависимостей кэша SQL на продукты и категории](using-sql-cache-dependencies-vb/_static/image9.gif)](using-sql-cache-dependencies-vb/_static/image11.png)
 
 **Рис. 9**: Настройка ObjectDataSource для поддержки кэширования с помощью зависимостей кэша SQL на `Products` и `Categories` ([Просмотр полноразмерного изображения](using-sql-cache-dependencies-vb/_static/image12.png))
 
@@ -207,7 +207,7 @@ GridView в `SqlCacheDependencies.aspx` отображает данные из �
 AFTER, срабатывающим разбиение по страницам сетки и отметив отсутствие события Selecting текст, откройте новое окно браузера и перейдите к руководству основы в редактирование, вставка и удаление раздела (`~/EditInsertDelete/Basics.aspx`). Обновление имени и цену продукта. Затем из в первой окно браузера, просмотрите на другую страницу данных, сортировки сетки или нажмите кнопку редактирования строк. В данном случае событие Selecting должно появиться снова, как в основной базе данных, данные были изменены (см. рис. 10). Если текст не отображается, подождите немного и повторите попытку. Помните, что служба опроса проверяет, чтобы изменения вступили в `Products` таблицы каждый `pollTime` миллисекунд, поэтому возникает задержка между при обновлении базовых данных и когда удаляется кэшированных данных.
 
 
-[![Изменение таблицы Products исключает кэшированные данные](using-sql-cache-dependencies-vb/_static/image10.gif)](using-sql-cache-dependencies-vb/_static/image13.png)
+[![Modifying таблицу продуктов, исключает данные кэшируются продуктов](using-sql-cache-dependencies-vb/_static/image10.gif)](using-sql-cache-dependencies-vb/_static/image13.png)
 
 **Рис. 10**: Изменение таблицы Products исключает кэшированных данных продукта ([Просмотр полноразмерного изображения](using-sql-cache-dependencies-vb/_static/image14.png))
 
@@ -241,17 +241,17 @@ AFTER, срабатывающим разбиение по страницам с�
 Чтобы протестировать эту функцию, добавьте элемент управления GridView странице под списком существующий `ProductsDeclarative` GridView. Задайте этот новый s GridView `ID` для `ProductsProgrammatic` и через его смарт-тег, привязать его к элементу управления ObjectDataSource с именем `ProductsDataSourceProgrammatic`. Настройка ObjectDataSource на использование `ProductsCL` классе и задайте раскрывающиеся списки в SELECT и UPDATE вкладок, чтобы `GetProducts` и `UpdateProduct`, соответственно.
 
 
-[![Настройка ObjectDataSource на использование класса ProductsCL](using-sql-cache-dependencies-vb/_static/image11.gif)](using-sql-cache-dependencies-vb/_static/image15.png)
+[![CНастройка ObjectDataSource на использование класса ProductsCL](using-sql-cache-dependencies-vb/_static/image11.gif)](using-sql-cache-dependencies-vb/_static/image15.png)
 
 **Рис. 11**: Настройка ObjectDataSource для использования `ProductsCL` класс ([Просмотр полноразмерного изображения](using-sql-cache-dependencies-vb/_static/image16.png))
 
 
-[![Выберите метод GetProducts из раскрывающегося списка ВЫБЕРИТЕ вкладку s](using-sql-cache-dependencies-vb/_static/image12.gif)](using-sql-cache-dependencies-vb/_static/image17.png)
+[![Sвыберете метод GetProducts из раскрывающегося списка ВЫБЕРИТЕ вкладку s](using-sql-cache-dependencies-vb/_static/image12.gif)](using-sql-cache-dependencies-vb/_static/image17.png)
 
 **Рис. 12**: Выберите `GetProducts` метод из раскрывающегося списка ВЫБЕРИТЕ вкладку s ([Просмотр полноразмерного изображения](using-sql-cache-dependencies-vb/_static/image18.png))
 
 
-[![Выберите метод UpdateProduct в списке обновления s вкладка раскрывающегося списка](using-sql-cache-dependencies-vb/_static/image13.gif)](using-sql-cache-dependencies-vb/_static/image19.png)
+[![CВыберите метод UpdateProduct из раскрывающегося списка s вкладку обновление](using-sql-cache-dependencies-vb/_static/image13.gif)](using-sql-cache-dependencies-vb/_static/image19.png)
 
 **Рис. 13**: Выберите из раскрывающегося списка s вкладку обновление методу UpdateProduct ([Просмотр полноразмерного изображения](using-sql-cache-dependencies-vb/_static/image20.png))
 
@@ -306,7 +306,7 @@ AFTER, срабатывающим разбиение по страницам с�
 - [Создание уведомления о запросе](https://msdn.microsoft.com/library/ms188669.aspx)
 - [Кэширование в ASP.NET с помощью `SqlCacheDependency` класса](https://msdn.microsoft.com/library/ms178604(VS.80).aspx)
 - [Средство регистрации ASP.NET SQL Server (`aspnet_regsql.exe`)](https://msdn.microsoft.com/library/ms229862(vs.80).aspx)
-- [Общие сведения о `SqlCacheDependency`](http://www.aspnetresources.com/blog/sql_cache_depedency_overview.aspx)
+- [Общие сведения о файле `SqlCacheDependency`](http://www.aspnetresources.com/blog/sql_cache_depedency_overview.aspx)
 
 ## <a name="about-the-author"></a>Об авторе
 

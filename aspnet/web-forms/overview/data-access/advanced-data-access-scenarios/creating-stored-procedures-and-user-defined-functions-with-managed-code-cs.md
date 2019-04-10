@@ -8,15 +8,15 @@ ms.date: 08/03/2007
 ms.assetid: 213eea41-1ab4-4371-8b24-1a1a66c515de
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/creating-stored-procedures-and-user-defined-functions-with-managed-code-cs
 msc.type: authoredcontent
-ms.openlocfilehash: fb4a867d5868e8000fcd10130401a9e169b6f49f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a6d6dc7b45d2891d3124794bf7b10f3a7d065130
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57057901"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59392447"
 ---
-<a name="creating-stored-procedures-and-user-defined-functions-with-managed-code-c"></a>Создание хранимых процедур и определяемых пользователем функций с помощью управляемого кода (C#)
-====================
+# <a name="creating-stored-procedures-and-user-defined-functions-with-managed-code-c"></a>Создание хранимых процедур и определяемых пользователем функций с помощью управляемого кода (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_75_CS.zip) или [скачать PDF](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/datatutorial75cs1.pdf)
@@ -59,7 +59,7 @@ ms.locfileid: "57057901"
 Нам нужно присоединить базу данных "Борей" в `DataFiles` папке (или везде, где вы можете ее перенесли) к экземпляру базы данных SQL Server 2005 Express Edition. Щелкните правой кнопкой мыши на папку базы данных и выберите в контекстном меню параметр присоединения. Откроется диалоговое окно Присоединение баз данных. Нажмите кнопку "Добавить", детализировать углублением соответствующий `NORTHWND.MDF` файла и нажмите кнопку ОК. На этом этапе экран должен выглядеть как показано на рис. 2.
 
 
-[![Соединиться с экземпляром соответствующей базе данных](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image3.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image2.png)
+[![Cподключиться к соответствующему экземпляру базы данных](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image3.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image2.png)
 
 **Рис. 2**: Подключитесь к соответствующему экземпляру базы данных ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image4.png))
 
@@ -87,7 +87,7 @@ ms.locfileid: "57057901"
 Сначала откройте Visual Studio. В меню «Файл» выберите новый проект, чтобы открыть диалоговое окно Новый проект (см. рис. 4). Детализировать углублением тип проекта базы данных, а затем на основе шаблонов, перечисленных в правой части, выберите Создание нового проекта SQL Server. Я решил этого проекта имя `ManagedDatabaseConstructs` и поместить его в решение с именем `Tutorial75`.
 
 
-[![Создайте новый проект SQL Server](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image7.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image6.png)
+[![CСоздание нового проекта SQL Server](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image7.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image6.png)
 
 **Рис. 4**: Создайте новый проект SQL Server ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image8.png))
 
@@ -136,7 +136,7 @@ ms.locfileid: "57057901"
 Позвольте s начните с добавления хранимую процедуру, которая просто возвращает все продукты, которые больше не поддерживаются. Назовите новый файл хранимой процедуры `GetDiscontinuedProducts.cs`.
 
 
-[![Добавить новую хранимую процедуру с именем GetDiscontinuedProducts.cs](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image13.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image12.png)
+[![Aдд новые хранимые процедуры с именем GetDiscontinuedProducts.cs](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image13.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image12.png)
 
 **Рис. 8**: Добавьте новые хранимые процедуры с именем `GetDiscontinuedProducts.cs` ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image14.png))
 
@@ -173,7 +173,7 @@ ms.locfileid: "57057901"
 Щелкните значок "Execute" на панели инструментов для запуска приведенного выше запроса.
 
 
-[![Измените уровень совместимости базы данных "Борей" s](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image16.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image15.png)
+[![Uбновить s уровень совместимости базы данных "Борей"](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image16.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image15.png)
 
 **Рис. 9**: Обновить базу данных "Борей" s уровень совместимости ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image17.png))
 
@@ -201,7 +201,7 @@ ms.locfileid: "57057901"
 Чтобы проверить сведения о конфигурации s базы данных "Борей", введите и выполните команду `exec sp_configure` в окне запроса. Это показывает, что среда clr включена задание в настоящее время имеет значение 0.
 
 
-[![Включена среда clr параметр установлен в настоящее время для 0](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image21.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image20.png)
+[![Tвключена среда clr HE параметр установлен в настоящее время 0](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image21.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image20.png)
 
 **Рис. 12**: Включена среда clr установлено в настоящее время значение 0 ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image22.png))
 
@@ -216,7 +216,7 @@ ms.locfileid: "57057901"
 После завершения настройки включена среда clr, мы готовы к выполнению управляемого `GetDiscontinuedProducts` хранимой процедуры. В окне запроса введите и выполните команду `exec` `GetDiscontinuedProducts`. Вызов хранимой процедуры вызывает соответствующий управляемый код в `GetDiscontinuedProducts` для выполнения метода. Этот код выдает `SELECT` запрос, чтобы возвратить все продукты, которые не поддерживаются и возвращает данные вызывающему приложению, которая находится на этот экземпляр SQL Server Management Studio. Management Studio получает эти результаты и отображает их в окне результатов.
 
 
-[![GetDiscontinuedProducts, хранимая процедура возвращает все снятых с производства продуктов](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image24.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image23.png)
+[![Tон GetDiscontinuedProducts хранимой процедуры возвращает все неподдерживаемые продукты](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image24.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image23.png)
 
 **Рис. 13**: `GetDiscontinuedProducts` Хранимой процедуры возвращает все неподдерживаемые продукты ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image25.png))
 
@@ -239,7 +239,7 @@ ms.locfileid: "57057901"
 После добавления этого кода, повторное развертывание проекта SQL Server. Затем вернитесь в SQL Server Management Studio и обновите папку хранимые процедуры. Вы увидите новую запись, `GetProductsWithPriceLessThan`. В окне запросов введите и выполните команду `exec GetProductsWithPriceLessThan 25`, который будет список всех продуктов меньше 25 долл. США, как показано на рис. 14.
 
 
-[![Отображаются продукты в 25 долл. США](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image27.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image26.png)
+[![PОтображаются интересные продукты в 25 долл. США](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image27.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image26.png)
 
 **Рис. 14**: Отображаются продукты в 25 долл. США ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image28.png))
 
@@ -257,7 +257,7 @@ ms.locfileid: "57057901"
 Добавление нового метода запускает мастер настройки запроса TableAdapter, который мы использовали много раз в предыдущих учебных курсах. Первым шагом является запрос для указания способа TableAdapter должен доступа к базе данных: через специальный оператор SQL или с помощью новой или существующей хранимой процедуры. Так как мы уже создан и зарегистрирован `GetDiscontinuedProducts` управляемой хранимой процедуры с базой данных, выберите использовать существующие хранимые процедуры параметр и нажмите "Далее".
 
 
-[![Выберите использование существующей хранимой процедуры, параметр](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image30.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image29.png)
+[![CВыберите использовать существующую хранимую процедуру параметр](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image30.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image29.png)
 
 **Рис. 15**: Выберите, использовать существующую хранимую процедуру параметр ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image31.png))
 
@@ -265,7 +265,7 @@ ms.locfileid: "57057901"
 Появится запрос на указание для хранимой процедуры, который будет вызывать метод. Выберите `GetDiscontinuedProducts` управляемая хранимая процедура в раскрывающемся списке и нажмите "Далее".
 
 
-[![Выберите GetDiscontinuedProducts управляемой хранимой процедуры](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image33.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image32.png)
+[![Sвыбрать GetDiscontinuedProducts управляемых хранимая процедура](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image33.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image32.png)
 
 **Рис. 16**: Выберите `GetDiscontinuedProducts` управляемых хранимых процедур ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image34.png))
 
@@ -273,7 +273,7 @@ ms.locfileid: "57057901"
 Мы затем следует указать, является ли хранимая процедура возвращает строк, одно значение либо значение nothing. Так как `GetDiscontinuedProducts` возвращает набор строк снятый с производства продукт, выберите первый вариант (табличных данных) и нажмите кнопку Далее.
 
 
-[![Выберите параметр табличных данных](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image36.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image35.png)
+[![Sвыбрать параметр табличных данных](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image36.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image35.png)
 
 **Рис. 17**: Выберите параметр табличных данных ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image37.png))
 
@@ -281,7 +281,7 @@ ms.locfileid: "57057901"
 Окончательный экран можно указать шаблоны доступа к данным, который используется и имена итоговый методов. Оставьте как флажков, так и имя методы `FillByDiscontinued` и `GetDiscontinuedProducts`. Нажмите кнопку Готово, чтобы завершить работу мастера.
 
 
-[![Имя FillByDiscontinued методы и GetDiscontinuedProducts](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image39.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image38.png)
+[![NИмя FillByDiscontinued методы и GetDiscontinuedProducts](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image39.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image38.png)
 
 **Рис. 18**: Назовите методы `FillByDiscontinued` и `GetDiscontinuedProducts` ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image40.png))
 
@@ -291,7 +291,7 @@ ms.locfileid: "57057901"
 Рис. 19 показана копия экрана конструктора наборов данных после добавления методы, которые `ProductsTableAdapter` для `GetDiscontinuedProducts` и `GetProductsWithPriceLessThan` управляемых хранимых процедур.
 
 
-[![ProductsTableAdapter включает новые методы, добавленные на этом шаге](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image42.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image41.png)
+[![Tна этом шаге он ProductsTableAdapter включает добавлены новые методы](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image42.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image41.png)
 
 **Рис. 19**: `ProductsTableAdapter` Включает новый добавлены методы на этом шаге ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image43.png))
 
@@ -312,12 +312,12 @@ ms.locfileid: "57057901"
 Откройте `ManagedFunctionsAndSprocs.aspx` странице в `AdvancedDAL` папке и из панели элементов перетащите элемент управления GridView в конструктор. Набор GridView s `ID` свойства `DiscontinuedProducts` и его смарт-теге, привязать его к элементу управления ObjectDataSource с именем `DiscontinuedProductsDataSource`. Настройте элемент ObjectDataSource для извлечения данных из `ProductsBLLWithSprocs` класс s `GetDiscontinuedProducts` метод.
 
 
-[![Настройка ObjectDataSource на использование класса ProductsBLLWithSprocs](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image45.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image44.png)
+[![CНастройка ObjectDataSource на использование класса ProductsBLLWithSprocs](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image45.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image44.png)
 
 **Рис. 20**: Настройка ObjectDataSource для использования `ProductsBLLWithSprocs` класс ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image46.png))
 
 
-[![Выберите метод GetDiscontinuedProducts из раскрывающегося списка на вкладке "ВЫБЕРИТЕ"](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image48.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image47.png)
+[![CВыберите метод GetDiscontinuedProducts из раскрывающегося списка на вкладке "ВЫБЕРИТЕ"](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image48.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image47.png)
 
 **Рис. 21**: Выберите `GetDiscontinuedProducts` метода из раскрывающегося списка на вкладке "ВЫБЕРИТЕ" ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image49.png))
 
@@ -334,7 +334,7 @@ ms.locfileid: "57057901"
 Результаты, возвращенные управляемой хранимой процедуры упаковываются в `ProductsDataTable` с DAL и затем вернулось к BLL, который затем возвращает их на уровень презентации, где они привязываются к GridView и отображаются. Как и ожидалось, в сетке приведен список продуктов, которых больше не поддерживаются.
 
 
-[![Неподдерживаемые продукты, перечисленные](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image51.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image50.png)
+[![Tон более не поддерживается продукты перечислены](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image51.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image50.png)
 
 **Рис. 22**: Неподдерживаемые продукты отображаются ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image52.png))
 
@@ -358,7 +358,7 @@ ms.locfileid: "57057901"
 Я добавил `udf_ComputeInventoryValue` определяемой пользователем функции в базе данных "Борей"; Рис. 23 показан результат выполнения указанных выше `SELECT` запроса при просмотре через Management Studio. Обратите внимание на то, что определяемая пользователем Функция содержится в списке папку скалярные функции в обозревателе объектов.
 
 
-[![Каждый продукт s инвентаризации значения указан в списке](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image54.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image53.png)
+[![EУказана ACH s значений запасов продукта](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image54.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image53.png)
 
 **Рис. 23**: Каждый продукт s инвентаризации значения указан в списке ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image55.png))
 
@@ -376,7 +376,7 @@ ms.locfileid: "57057901"
 Я добавил `udf_GetProductsByCategoryID` определяемой пользователем функции в базе данных "Борей"; Рис. 24 показан результат выполнения указанных выше `SELECT` запроса при просмотре через Management Studio. Определяемые пользователем функции, возвращающие табличные данные можно найти в папке возвращающие табличное значение функции s обозревателя объектов.
 
 
-[![ProductID, ProductName и CategoryID указаны для каждого напитков](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image57.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image56.png)
+[![Tон ProductID, ProductName и CategoryID указаны для каждого Напитки](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image57.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image56.png)
 
 **Рис. 24**: `ProductID`, `ProductName`, И `CategoryID` перечисленные для каждого напитки ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image58.png))
 
@@ -392,7 +392,7 @@ ms.locfileid: "57057901"
 Чтобы добавить управляемой функции UDF для `ManagedDatabaseConstructs` проекта, щелкните правой кнопкой мыши имя проекта в обозревателе решений и выберите Добавление нового элемента. Выберите шаблон, определяемые пользователем в диалоговом окне Add New Item и назовите новый файл определяемой пользователем функции `udf_ComputeInventoryValue_Managed.cs`.
 
 
-[![Добавьте в проект ManagedDatabaseConstructs управляемой функции UDF](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image60.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image59.png)
+[![Aдд новые управляемые определяемой пользователем функции в проект ManagedDatabaseConstructs](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image60.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image59.png)
 
 **Рис. 25**: Добавление новых управляемых определяемой пользователем функции для `ManagedDatabaseConstructs` проекта ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image61.png))
 
@@ -444,7 +444,7 @@ ms.locfileid: "57057901"
 Представьте, что мы хотели бы Отладка `GetProductsWithPriceLessThan` управляемая хранимая процедура. Начнем, установив точку останова в коде `GetProductsWithPriceLessThan` метод.
 
 
-[![Установите точку останова в методе GetProductsWithPriceLessThan](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image64.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image63.png)
+[![Sзадать точку останова в методе GetProductsWithPriceLessThan](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image64.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image63.png)
 
 **Рис. 27**: Установите точку останова в `GetProductsWithPriceLessThan` метод ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image65.png))
 
@@ -459,7 +459,7 @@ ms.locfileid: "57057901"
 Когда вы ve ввести приведенный выше сценарий в `Test.sql`, начать отладку, перейдя в меню "Отладка" и выбрав команду Начать отладку, или, нажав клавишу F5 или зеленый значок воспроизведения на панели инструментов. Это будет создавать проекты в решении, развертывание управляемых объектов базы данных в базе данных "Борей" и затем выполните `Test.sql` скрипта. На этом этапе будет достигнута точка останова, и мы можете шаг за шагом `GetProductsWithPriceLessThan` метода анализа значений входных параметров и т. д.
 
 
-[![В методе GetProductsWithPriceLessThan точки останова](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image67.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image66.png)
+[![Tточка останова в методе GetProductsWithPriceLessThan он был нажат](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image67.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image66.png)
 
 **Рис. 28**: Точки останова в `GetProductsWithPriceLessThan` метод был нажат ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image68.png))
 
@@ -495,7 +495,7 @@ ms.locfileid: "57057901"
 [!code-console[Main](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/samples/sample19.cmd)]
 
 
-[![Скомпилируйте GetProductsWithPriceGreaterThan.cs в сборку](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image70.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image69.png)
+[![Compile GetProductsWithPriceGreaterThan.cs в для сборки](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image70.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image69.png)
 
 **Рис. 29**: Скомпилируйте `GetProductsWithPriceGreaterThan.cs` в для сборки ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image71.png))
 
@@ -511,7 +511,7 @@ ms.locfileid: "57057901"
 В среде Management Studio разверните папку программирования в базе данных "Борей". Одна из ее подпапке — сборок. Чтобы вручную добавить новую сборку в базу данных, щелкните правой кнопкой мыши в папке «сборки» и выберите новую сборку в контекстном меню. В этом отображаются новые сборки диалоговое окно (см. рис. 30). Нажмите кнопку обзора, выберите `ManuallyCreatedDBObjects.dll` сборки, мы только что скомпилированные и нажмите кнопку ОК, чтобы добавить сборку в базу данных. Вы не увидите `ManuallyCreatedDBObjects.dll` в обозревателе объектов.
 
 
-[![Добавить сборку ManuallyCreatedDBObjects.dll базы данных](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image73.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image72.png)
+[![Aдд ManuallyCreatedDBObjects.dll сборки в базу данных](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image73.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image72.png)
 
 **Рис. 30**: Добавить `ManuallyCreatedDBObjects.dll` сборки в базу данных ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image74.png))
 
@@ -536,7 +536,7 @@ ms.locfileid: "57057901"
 Как показано на рис. 32, приведенная выше команда отображает сведения по этим продуктам с `UnitPrice` больше, чем 24,95 долларов США.
 
 
-[![ManuallyCreatedDBObjects.dll отображается в обозревателе объектов](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image77.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image76.png)
+[![Tон ManuallyCreatedDBObjects.dll отображается в обозревателе объектов](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image77.png)](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image76.png)
 
 **Рис. 32**: `ManuallyCreatedDBObjects.dll` Отображается в обозревателе объектов ([Просмотр полноразмерного изображения](creating-stored-procedures-and-user-defined-functions-with-managed-code-cs/_static/image78.png))
 
@@ -556,13 +556,13 @@ Visual Studio s тип проекта SQL Server упрощает создани
 - [Преимущества и недостатки использования определяемых пользователем функций](http://www.samspublishing.com/articles/article.asp?p=31724&amp;rl=1)
 - [Создание объектов SQL Server 2005 в управляемом коде](https://channel9.msdn.com/Showpost.aspx?postid=142413)
 - [Создание триггеров, с помощью управляемого кода в SQL Server 2005](http://www.15seconds.com/issue/041006.htm)
-- [Практическое руководство. Создание и запуск CLR SQL Server хранимой процедуры](https://msdn.microsoft.com/library/5czye81z(VS.80).aspx)
-- [Практическое руководство. Создавать и запускать определяемые пользователем функции CLR SQL Server](https://msdn.microsoft.com/library/w2kae45k(VS.80).aspx)
-- [Практическое руководство. Изменить `Test.sql` сценария, выполняемого объекты SQL](https://msdn.microsoft.com/library/ms233682(VS.80).aspx)
+- [Как выполнить: Создание и запуск CLR SQL Server хранимой процедуры](https://msdn.microsoft.com/library/5czye81z(VS.80).aspx)
+- [Как выполнить: Создавать и запускать определяемые пользователем функции CLR SQL Server](https://msdn.microsoft.com/library/w2kae45k(VS.80).aspx)
+- [Как выполнить: Изменить `Test.sql` сценария, выполняемого объекты SQL](https://msdn.microsoft.com/library/ms233682(VS.80).aspx)
 - [Введение в работу пользователя определенных функций](http://www.sqlteam.com/item.asp?ItemID=1955)
 - [Управляемый код и SQL Server 2005 (видео)](https://channel9.msdn.com/Showpost.aspx?postid=142413)
 - [Справочник по Transact-SQL](https://msdn.microsoft.com/library/aa299742(SQL.80).aspx)
-- [Пошаговое руководство: Создание хранимой процедуры в управляемом коде](https://msdn.microsoft.com/library/zxsa8hkf(VS.80).aspx)
+- [Пошаговое руководство. Создание хранимой процедуры в управляемом коде](https://msdn.microsoft.com/library/zxsa8hkf(VS.80).aspx)
 
 ## <a name="about-the-author"></a>Об авторе
 

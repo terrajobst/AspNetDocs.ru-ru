@@ -8,15 +8,15 @@ ms.date: 02/16/2008
 ms.assetid: c28ba88d-3a93-47f5-a306-049bd766714d
 msc.legacyurl: /mvc/overview/older-versions-1/views/asp-net-mvc-views-overview-vb
 msc.type: authoredcontent
-ms.openlocfilehash: a7f4afd70a17281123a7448a00896c186b9a00f8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 84af745d338e38ece438fa58d51d0929c7b92967
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57030371"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59408463"
 ---
-<a name="aspnet-mvc-views-overview-vb"></a>Общие сведения о представлениях ASP.NET MVC (VB)
-====================
+# <a name="aspnet-mvc-views-overview-vb"></a>Общие сведения о представлениях ASP.NET MVC (VB)
+
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > Что такое представлении MVC ASP.NET, и чем она отличается от HTML-страницы? В этом руководстве Стивен Вальтер знакомит вас с представлениями и показано, как можно воспользоваться преимуществами Просмотр данных и вспомогательных методов HTML в представлении.
@@ -83,11 +83,11 @@ View()
 
 &lt;% Response.Write(DateTime.Now)%&gt;
 
-Используйте разделители скрипт &lt;% и %&gt; чтобы пометить начало и конец сценария. Этот сценарий создается на языке Visual Basic. Отображает текущую дату и время, вызвав метод Response.Write() для отображения содержимого в браузер. Разделители скрипт &lt;% и %&gt; может использоваться для выполнения одной или нескольких инструкций.
+Используйте разделители скрипт &lt;% и %&gt; чтобы пометить начало и конец сценария. Этот сценарий создается на языке Visual basic. Отображает текущую дату и время, вызвав метод Response.Write() для отображения содержимого в браузер. Разделители скрипт &lt;% и %&gt; может использоваться для выполнения одной или нескольких инструкций.
 
 Так как вы вызываете Response.Write() столь часто, корпорация Майкрософт предоставляет вам ярлык для вызова метода Response.Write(). Представление в листинге 3 использует разделители &lt;% = и %&gt; для быстрого вызова Response.Write().
 
-**Листинг 3 - Views\Home\Index2.aspx**
+**Listing 3 - Views\Home\Index2.aspx**
 
 [!code-aspx[Main](asp-net-mvc-views-overview-vb/samples/sample3.aspx)]
 
@@ -99,12 +99,12 @@ View()
 
 Например, в представлении в листинге 4 пользуется три вспомогательных методов HTML--BeginForm(), TextBox() и Password() помощников--для создания имени входа форме (см. рис. 1).
 
-**Листинг 4--\Views\Home\Login.aspx**
+**Listing 4 -- \Views\Home\Login.aspx**
 
 [!code-aspx[Main](asp-net-mvc-views-overview-vb/samples/sample4.aspx)]
 
 
-[![В диалоговом окне нового проекта](asp-net-mvc-views-overview-vb/_static/image1.jpg)](asp-net-mvc-views-overview-vb/_static/image1.png)
+[![Tдиалоговое окно нового проекта он](asp-net-mvc-views-overview-vb/_static/image1.jpg)](asp-net-mvc-views-overview-vb/_static/image1.png)
 
 **Рис 01**: Стандартная форма входа в систему ([Просмотр полноразмерного изображения](asp-net-mvc-views-overview-vb/_static/image2.png))
 
@@ -115,7 +115,7 @@ View()
 
 Использование методов вспомогательный метод HTML не является обязательным. Они упрощают жизнь за счет сокращения HTML и сценарий, который необходимо написать. Представление в листинге 5 представляет точное же форму, что в представлении в листинге 4 без использования вспомогательных методов HTML.
 
-**В листинге 5--\Views\Home\Login.aspx**
+**Listing 5 -- \Views\Home\Login.aspx**
 
 [!code-aspx[Main](asp-net-mvc-views-overview-vb/samples/sample5.aspx)]
 

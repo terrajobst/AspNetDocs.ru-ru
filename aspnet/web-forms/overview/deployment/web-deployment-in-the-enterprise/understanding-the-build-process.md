@@ -8,18 +8,18 @@ ms.date: 05/04/2012
 ms.assetid: 5b982451-547b-4a2f-a5dc-79bc64d84d40
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-build-process
 msc.type: authoredcontent
-ms.openlocfilehash: 9df145b281b086f546c55d0b26a8b0e44e896bb0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6f526b9842e02031b54b0a7519486ef8aa69021b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57040851"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59397400"
 ---
-<a name="understanding-the-build-process"></a>Общие сведения о процессе сборки
-====================
+# <a name="understanding-the-build-process"></a>Общие сведения о процессе сборки
+
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Этот раздел содержит пошаговое руководство процесса построения и развертывания корпоративного уровня. Подход, описанный в этом разделе использует пользовательские файлы проекта Microsoft Build Engine (MSBuild) для обеспечения точного управления каждый аспект процесса. В файлах проекта пользовательских целевых объектов MSBuild используются для запуска программы развертывания, как средство веб-развертывания Internet Information Services (IIS) (MSDeploy.exe) и VSDBCMD.exe программы развертывания базы данных.
 > 
