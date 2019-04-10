@@ -8,24 +8,24 @@ ms.date: 08/15/2012
 ms.assetid: 2ece0bf4-aae5-4ff4-8f62-28e0819d4f86
 msc.legacyurl: /web-forms/overview/getting-started/using-page-inspector-in-a-visual-studio-11-beta-web-forms-project
 msc.type: authoredcontent
-ms.openlocfilehash: d2c377f8466f8f324b75ce60860aa00c11bc0ffe
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c39e1cf42fde382a9e74d7f865f0dac1aa62ddc8
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058481"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384244"
 ---
-<a name="using-page-inspector-for-visual-studio-2012-in-aspnet-web-forms"></a>Использование инспектора страниц для Visual Studio 2012 в веб-формах ASP.NET
-====================
+# <a name="using-page-inspector-for-visual-studio-2012-in-aspnet-web-forms"></a>Использование инспектора страниц для Visual Studio 2012 в веб-формах ASP.NET
+
 Тим Ammann
 
 > Инспектор страниц для Visual Studio 2012 — это средство веб-разработки с интегрированным браузером. Выберите любой элемент в встроенного браузера и инспектор страниц мгновенно выделения источника этого элемента и CSS. Можно просмотреть любой страницы в приложении, быстро находить источники визуализированной разметке и использовать средства браузера непосредственно в среде Visual Studio.
 > 
-> Этот учебник shwos как включить режим инспектирования и быстро найти и отредактировать правила CSS и текста в веб-проект. В этом руководстве используется проект веб-форм приложения, но можно также использовать инспектор страниц для проектов веб-сайтов и [MVC](https://go.microsoft.com/?linkid=9802002) приложений.
+> Этом руководстве показано, как включить режим инспектирования и быстро найти и отредактировать правила CSS и текста в веб-проект. В этом руководстве используется проект веб-форм приложения, но можно также использовать инспектор страниц для проектов веб-сайтов и [MVC](https://go.microsoft.com/?linkid=9802002) приложений.
 > 
 > Учебник содержит следующие подразделы:
 > 
-> [Необходимые компоненты](#_1_prerequisites)
+> [Предварительные требования](#_1_prerequisites)
 > 
 > [Создание веб-приложения](#_2_creating_a)
 > 

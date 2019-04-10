@@ -8,15 +8,15 @@ ms.date: 11/05/2007
 ms.assetid: b3abbbef-ddac-4c8e-a068-5bab31db5931
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-implement-tracing-in-an-aspnet-web-site
 msc.type: video
-ms.openlocfilehash: 1e6b1fb1a258e325ace3f29a20684018ff862842
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b3c38ef329f4b6b2afe5ba0cbb13b615b1580590
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035691"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59397595"
 ---
-<a name="how-do-i--implement-tracing-in-an-aspnet-web-site"></a>[Инструкции]  Реализовать трассировку в на веб-сайте ASP.NET?
-====================
+# <a name="how-do-i--implement-tracing-in-an-aspnet-web-site"></a>[Инструкции]  Реализовать трассировку в на веб-сайте ASP.NET?
+
 по [Крис Пелз](https://twitter.com/chrispels)
 
 В этом видео Крис Пелз будет покажем, как реализовать трассировку в на веб-сайте ASP.NET для мониторинга и измерения производительности и диагностики ошибок. Узнайте, как добавить трассировку для всего веб-сайта, а также отдельные страницы. См. в статье как добавить пользовательские сообщения трассировки в страницах и бизнес-объектов, помогающих в оценке производительности сайта и в диагностике ошибки. Ознакомьтесь с различиями трассировки на странице ASP.NET и с помощью System.Diagnostics.Trace сведений о трассировке в бизнес-объектов. Также обсуждаются записи информацию трассировки в файлах журнала и просмотра сведений трассировки в средстве просмотра трассировки.

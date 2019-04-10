@@ -1,27 +1,28 @@
 ---
 uid: web-api/overview/older-versions/creating-a-web-api-that-supports-crud-operations
-title: Включение операций CRUD в ASP.NET веб-API 1 | Документация Майкрософт
+title: Включение операций CRUD в ASP.NET веб-API 1 - ASP.NET 4.x
 author: MikeWasson
-description: Этом руководстве показано, как для поддержки операций CRUD в HTTP-службу с помощью веб-API ASP.NET. Версии программного обеспечения, используемые в учебника по Visual Studio 2012 Web AP...
+description: Руководстве показано, как для поддержки операций CRUD в HTTP-службу с помощью веб-API ASP.NET для ASP.NET 4.x.
 ms.author: riande
 ms.date: 01/28/2012
+ms.custom: seoapril2019
 ms.assetid: c125ca47-606a-4d6f-a1fc-1fc62928af93
 msc.legacyurl: /web-api/overview/older-versions/creating-a-web-api-that-supports-crud-operations
 msc.type: authoredcontent
-ms.openlocfilehash: f3cb0004075ef7687ca1096bd407c342b4d0b7be
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 855c3fa35d82173c87d13adb51e10fd13698ade5
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423759"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381358"
 ---
-<a name="enabling-crud-operations-in-aspnet-web-api-1"></a>Включение операций CRUD в ASP.NET веб-API 1
-====================
+# <a name="enabling-crud-operations-in-aspnet-web-api-1"></a>Включение операций CRUD в ASP.NET веб-API 1
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 [Скачать завершенный проект](http://code.msdn.microsoft.com/ASP-NET-Web-API-Tutorial-c4761894)
 
-> Этом руководстве показано, как для поддержки операций CRUD в HTTP-службу с помощью веб-API ASP.NET.
+> Этом руководстве показано, как для поддержки операций CRUD в HTTP-службу с помощью веб-API ASP.NET для ASP.NET 4.x.
 > 
 > ## <a name="software-versions-used-in-the-tutorial"></a>Версии программного обеспечения, используемые в этом руководстве
 > 
@@ -85,7 +86,7 @@ ms.locfileid: "58423759"
 
 Для ProductStore API, наших данных состоит из продуктов, поэтому мы создадим новый класс с именем `Product`.
 
-Если обозреватель решений не отображается, нажмите кнопку **представление** меню и выберите **обозревателе решений**. В обозревателе решений щелкните правой кнопкой мыши **моделей** папки. Постановка контекста, выберите **добавить**, а затем выберите **класс**. Назовите класс &quot;продукта&quot;.
+Если обозреватель решений не отображается, нажмите кнопку **представление** меню и выберите **обозревателе решений**. В обозревателе решений щелкните правой кнопкой мыши **моделей** папки. В контекстном меню выберите **добавить**, а затем выберите **класс**. Назовите класс &quot;продукта&quot;.
 
 ![](creating-a-web-api-that-supports-crud-operations/_static/image3.png)
 

@@ -1,19 +1,20 @@
 ---
 uid: identity/overview/getting-started/adding-aspnet-identity-to-an-empty-or-existing-web-forms-project
-title: Добавление ASP.NET Identity к пустой или существующий веб-проект форм | Документация Майкрософт
+title: Добавление ASP.NET Identity к пустой или существующий веб-форм проект — ASP.NET 4.x
 author: raquelsa
-description: Этом руководстве показано, как добавление ASP.NET Identity (новая система членства для ASP.NET) в приложение ASP.NET. При создании нового веб-форм или MVC...
+description: Этом руководстве показано, как добавление ASP.NET Identity (система членства для ASP.NET) в приложение ASP.NET. При создании нового веб-форм или MVC...
 ms.author: riande
 ms.date: 01/22/2019
 ms.assetid: 1cbc0ed2-5bd6-4b62-8d34-4c193dcd8b25
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/adding-aspnet-identity-to-an-empty-or-existing-web-forms-project
 msc.type: authoredcontent
-ms.openlocfilehash: cd28cc68db96b52eb205b8764aa2af014ffad9c3
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8f66cdb46e4cd02509092ea3bdcb7af9c292eb8f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038281"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59394319"
 ---
 # <a name="adding-aspnet-identity-to-an-empty-or-existing-web-forms-project"></a>Добавление ASP.NET Identity в пустой или существующий проект веб-форм
 
@@ -145,7 +146,7 @@ ms.locfileid: "57038281"
     > [!NOTE] 
     > 
     > - `Page_Load` Теперь проверяет состояние текущего пользователя и выполняет действия на основе его `Context.User.Identity.IsAuthenticated` состояния.
-    >     **Отображение вход от имени пользователя** : Инфраструктуру идентификации Microsoft ASP.NET перечислил методы расширения в [System.Security.Principal.IIdentity](https://msdn.microsoft.com/library/system.security.principal.iidentity.aspx) , позволит вам получить `UserName` и `UserId` для вошедшего в систему пользователя. Эти методы расширения определяются в `Microsoft.AspNet.Identity.Core` сборки. Эти методы расширения являются заменой [HttpContext.User.Identity.Name](https://msdn.microsoft.com/library/system.web.httpcontext.user.aspx) .
+    >   **Отображение вход от имени пользователя** : Инфраструктуру идентификации Microsoft ASP.NET перечислил методы расширения в [System.Security.Principal.IIdentity](https://msdn.microsoft.com/library/system.security.principal.iidentity.aspx) , позволит вам получить `UserName` и `UserId` для вошедшего в систему пользователя. Эти методы расширения определяются в `Microsoft.AspNet.Identity.Core` сборки. Эти методы расширения являются заменой [HttpContext.User.Identity.Name](https://msdn.microsoft.com/library/system.web.httpcontext.user.aspx) .
     > - Метод входа: `This` метод заменяет предыдущий `CreateUser_Click` метод в этом примере и теперь выполняет вход пользователь после успешного создания пользователя.   
     >   Платформа Microsoft OWIN перечислил методы расширения в `System.Web.HttpContext` , позволит вам получить ссылку на `IOwinContext`. Эти методы расширения определяются в `Microsoft.Owin.Host.SystemWeb` сборки. `OwinContext` Предоставляет `IAuthenticationManager` свойство, которое представляет функциональные возможности по промежуточного слоя проверки подлинности, доступные в текущем запросе. Пользователь может войти с помощью `AuthenticationManager` из OWIN и вызвав `SignIn` и передавая `ClaimsIdentity` как показано выше. Поскольку ASP.NET Identity и OWIN файл Cookie проверки подлинности на основе утверждений система, платформа требует приложение, чтобы создать `ClaimsIdentity` для пользователя. `ClaimsIdentity` Со сведениями о все утверждения для пользователя, например пользователь принадлежит к роли. На этом этапе, этот код будет вход пользователя и создать файл cookie также можно также добавить дополнительные утверждения для пользователя. Этот вызов является аналогом [FormAuthentication.SetAuthCookie](https://msdn.microsoft.com/library/system.web.security.formsauthentication.setauthcookie.aspx) используемые [FormsAuthentication](https://msdn.microsoft.com/library/system.web.security.formsauthenticationmodule.aspx) модуля.
     > - `SignOut` метод: Получает ссылку на `AuthenticationManager` из OWIN и вызывает `SignOut`. Это аналогично [FormsAuthentication.SignOut](https://msdn.microsoft.com/library/system.web.security.formsauthentication.signout.aspx) метод, используемый [FormsAuthentication](https://msdn.microsoft.com/library/system.web.security.formsauthenticationmodule.aspx) модуля.

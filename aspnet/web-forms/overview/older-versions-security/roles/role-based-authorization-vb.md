@@ -8,15 +8,15 @@ ms.date: 03/24/2008
 ms.assetid: 83b4f5a4-4f5a-4380-ba33-f0b5c5ac6a75
 msc.legacyurl: /web-forms/overview/older-versions-security/roles/role-based-authorization-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 593eddfafae7c864a705ce65e6bbb59c9b41ea14
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 05b014538891e6c058c4d4bd4125de434f59d9fe
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57051211"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389691"
 ---
-<a name="role-based-authorization-vb"></a>Авторизация на основе ролей (VB)
-====================
+# <a name="role-based-authorization-vb"></a>Авторизация на основе ролей (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/VB.11.zip) или [скачать PDF](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/aspnet_tutorial11_RoleAuth_vb.pdf)
@@ -47,7 +47,7 @@ ms.locfileid: "57051211"
 Если анонимный пользователь посещает сайт, ни `FormsAuthenticationModule` ни `RoleManagerModule` создается объект-участник.
 
 
-[![События конвейера ASP.NET для прошедшего проверку подлинности пользователя при использовании проверки подлинности форм и платформой ролей](role-based-authorization-vb/_static/image2.png)](role-based-authorization-vb/_static/image1.png)
+[![Tон событий конвейера ASP.NET для проверки подлинности пользователя при использование проверки подлинности форм и ролей Framework](role-based-authorization-vb/_static/image2.png)](role-based-authorization-vb/_static/image1.png)
 
 **Рис. 1**: События конвейера ASP.NET для проверки подлинности пользователя при использование проверки подлинности форм и ролей Framework ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image3.png))
 
@@ -59,7 +59,7 @@ ms.locfileid: "57051211"
 Если framework роли настроен для кэширования ролей пользователя в файле cookie, `RoleManagerModule` создает куки-файл во время конвейер ASP.NET [ `EndRequest` событий](https://msdn.microsoft.com/library/system.web.httpapplication.endrequest.aspx). Этот файл cookie используется в последующих запросах в `PostAuthenticateRequest`, когда это `RolePrincipal` создается объект. Если файл cookie является допустимым и не истек, данные в файле cookie анализируются и используются для заполнения ролей пользователя, предотвращая `RolePrincipal` от необходимости вызвать `Roles` класса для определения ролей пользователя. Рис. 2 показан этот рабочий процесс.
 
 
-[![Сведения о роли пользователя могут храниться в файле Cookie для повышения производительности](role-based-authorization-vb/_static/image5.png)](role-based-authorization-vb/_static/image4.png)
+[![Tсведения о роли пользователя он может храниться в файле Cookie для повышения производительности](role-based-authorization-vb/_static/image5.png)](role-based-authorization-vb/_static/image4.png)
 
 **Рис. 2**: Пользователя роли сведения могут храниться в файле Cookie для повышения производительности ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image6.png))
 
@@ -70,7 +70,7 @@ ms.locfileid: "57051211"
 > Параметры конфигурации, перечисленных в таблице 1 укажите свойства итоговый кэша cookie ролей. Дополнительные сведения в файлы cookie, как они работают и их различных свойств [учебнике файлы cookie](http://www.quirksmode.org/js/cookies.html).
 
 
-| <strong>Property</strong> |                                                                                                                                                                                                                                                                                                                                                         <strong>Описание</strong>                                                                                                                                                                                                                                                                                                                                                          |
+| <strong>Свойство</strong> |                                                                                                                                                                                                                                                                                                                                                         <strong>Описание</strong>                                                                                                                                                                                                                                                                                                                                                          |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   `cacheRolesInCookie`    |                                                                                                                                                                                                                                                                                                                              Логическое значение, указывающее, используется ли кэширование файлов cookie. По умолчанию — `false`.                                                                                                                                                                                                                                                                                                                              |
 |       `cookieName`        |                                                                                                                                                                                                                                                                                                                                     Имя файла кэша cookie ролей. Значение по умолчанию — «. ASPXROLES».                                                                                                                                                                                                                                                                                                                                     |
@@ -115,7 +115,7 @@ ms.locfileid: "57051211"
 Чтобы выполнить это, начнем с добавления `Web.config` файл `Roles` папки.
 
 
-[![Добавьте файл Web.config в каталог роли](role-based-authorization-vb/_static/image8.png)](role-based-authorization-vb/_static/image7.png)
+[![Aдд файл Web.config в каталог роли](role-based-authorization-vb/_static/image8.png)](role-based-authorization-vb/_static/image7.png)
 
 **Рис. 3**: Добавить `Web.config` файл `Roles` каталога ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image9.png))
 
@@ -129,7 +129,7 @@ ms.locfileid: "57051211"
 После сохранения изменений в `Web.config`, войдите в систему как пользователь, который не находится в роли "Администраторы" и попробуйте войти на защищенных страницах на. `UrlAuthorizationModule` Обнаруживает, что у вас нет разрешения, чтобы перейти на запрошенный ресурс; следовательно, `FormsAuthenticationModule` вы будете перенаправлены на страницу входа. На страницу входа затем вы перейдете в `UnauthorizedAccess.aspx` страницы (см. рис. 4). Это окончательный перенаправление со страницы входа для `UnauthorizedAccess.aspx` возникает из-за кода, мы добавили на страницу входа в шаге 2 <a id="_msoanchor_7"> </a> [ *авторизации на основе пользователя* ](../membership/user-based-authorization-vb.md) руководства. В частности, перенаправляет на страницу входа каждому прошедшему проверку пользователю для `UnauthorizedAccess.aspx` Если строка запроса содержит `ReturnUrl` параметра, как этот параметр указывает, что пользователь попасть на страницу входа после попытка просмотреть страницу, он не был право просмотра.
 
 
-[![Только пользователи, в роли "Администраторы" могут просматривать защищенные страницы](role-based-authorization-vb/_static/image11.png)](role-based-authorization-vb/_static/image10.png)
+[![Oчтение пользователей в роли "Администраторы" можно просмотреть на защищенных страницах](role-based-authorization-vb/_static/image11.png)](role-based-authorization-vb/_static/image10.png)
 
 **Рис. 4**: Только пользователи в роли "Администраторы" могут просматривать защищенные страницы ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image12.png))
 
@@ -137,7 +137,7 @@ ms.locfileid: "57051211"
 Выйдите из системы и войдите в систему как пользователь, который находится в роли "Администраторы". Теперь вы должны иметь возможность просматривать три защищенные страницы.
 
 
-[![Посетите Tito UsersAndRoles.aspx страницы так как он находится в роли "Администраторы"](role-based-authorization-vb/_static/image14.png)](role-based-authorization-vb/_static/image13.png)
+[![TМожно посетить Климов UsersAndRoles.aspx страницы так как он находится в роли "Администраторы"](role-based-authorization-vb/_static/image14.png)](role-based-authorization-vb/_static/image13.png)
 
 **Рис. 5**: Посетите Tito `UsersAndRoles.aspx` страницы так как он находится в роли "Администраторы" ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image15.png))
 
@@ -167,7 +167,7 @@ ms.locfileid: "57051211"
 Задать `HeaderText` свойства двух полей TemplateField для «Email» и «Комментарий».
 
 
-[![Поля GridView можно настроить с помощью поля-диалоговое окно](role-based-authorization-vb/_static/image17.png)](role-based-authorization-vb/_static/image16.png)
+[![THE GridView поля могут быть настроены через поля-диалоговое окно](role-based-authorization-vb/_static/image17.png)](role-based-authorization-vb/_static/image16.png)
 
 **Рис. 6**: GridView поля могут быть настроены через поля-диалоговое окно ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image18.png))
 
@@ -193,7 +193,7 @@ ms.locfileid: "57051211"
 Этот код в месте посетите страницу через обозреватель. Как показано на рис. 7, вы должны увидеть GridView, вывод сведений о каждой учетной записи пользователя в системе.
 
 
-[![UserGrid GridView выводит сведения о каждом пользователе в системе](role-based-authorization-vb/_static/image20.png)](role-based-authorization-vb/_static/image19.png)
+[![Tон UserGrid GridView Перечисляет сведения о каждый пользователь в системе](role-based-authorization-vb/_static/image20.png)](role-based-authorization-vb/_static/image19.png)
 
 **Рис. 7**: `UserGrid` GridView Перечисляет сведения о каждый пользователь в системе ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image21.png))
 
@@ -239,7 +239,7 @@ ms.locfileid: "57051211"
 Чтобы управлять групп ролей, щелкните ссылку «Изменить группы ролей» смарт-теге элемента управления на отображение редактора коллекций группы ролей. Добавьте две новые группы ролей. Значение первой группы ролей `Roles` свойство «Администраторы», а для «Руководители» второй.
 
 
-[![Управление шаблонами конкретных ролей LoginView через редактор коллекции группы ролей](role-based-authorization-vb/_static/image23.png)](role-based-authorization-vb/_static/image22.png)
+[![MУправление LoginView зависящие от роли шаблонов через группы ролей редактор коллекции](role-based-authorization-vb/_static/image23.png)](role-based-authorization-vb/_static/image22.png)
 
 **Рис. 8**: Управление LoginView конкретной роли шаблонов через группы ролей редактор коллекции ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image24.png))
 
@@ -255,12 +255,12 @@ ms.locfileid: "57051211"
 Затем войдите как пользователь, являющийся членом роли руководителями. Это время, вы должны увидеть руководителями конкретных ролей сообщения (см. рис. 9). И при входе в качестве пользователя в роль, вы должны увидеть конкретных ролей администраторов сообщения (см. рис. 10) администраторов.
 
 
-[![Брюс отображается сообщение руководителями конкретных ролей](role-based-authorization-vb/_static/image26.png)](role-based-authorization-vb/_static/image25.png)
+[![Bruce отображается сообщение конкретных ролей руководителями](role-based-authorization-vb/_static/image26.png)](role-based-authorization-vb/_static/image25.png)
 
 **Рис. 9**: Брюс отображается сообщение конкретных ролей руководители ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image27.png))
 
 
-[![Tito отображается сообщение конкретных ролей администраторов](role-based-authorization-vb/_static/image29.png)](role-based-authorization-vb/_static/image28.png)
+[![TКлимов отображается сообщение конкретных ролей администраторов](role-based-authorization-vb/_static/image29.png)](role-based-authorization-vb/_static/image28.png)
 
 **Рис. 10**: Tito отображается сообщение конкретных ролей администраторов ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image30.png))
 
@@ -270,7 +270,7 @@ ms.locfileid: "57051211"
 Рис. 11 показан рабочий процесс, используемый элементом управления LoginView, чтобы определить, какой шаблон для подготовки к просмотру. Обратите внимание, что если имеется более одной группы ролей, LoginView шаблон визуализирует *первый* группы ролей, который соответствует. Другими словами Если мы помещен руководителями группу ролей в качестве первой группы ролей и администраторов как второй, затем при Tito посещения страницы он бы увидеть руководителями.
 
 
-[![Элемент управления LoginView рабочего процесса для определения, какой шаблон визуализации](role-based-authorization-vb/_static/image32.png)](role-based-authorization-vb/_static/image31.png)
+[![Tэлемент управления LoginView HE рабочего процесса для определения что шаблона для отрисовки](role-based-authorization-vb/_static/image32.png)](role-based-authorization-vb/_static/image31.png)
 
 **Рис. 11**: Элемент управления LoginView рабочего процесса для определения что шаблона для отрисовки ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image33.png))
 
@@ -282,7 +282,7 @@ ms.locfileid: "57051211"
 Самый простой способ создавать программную ссылку на элементы управления в поле CommandField — преобразуйте его в шаблон. Для этого щелкните ссылку «Изменить столбцы» смарт-теге элемента GridView, выберите из списка текущего поля CommandField и щелкните ссылку «Преобразуйте это поле в TemplateField». Это превращает CommandField в поле TemplateField с `ItemTemplate` и `EditItemTemplate`. `ItemTemplate` Содержит изменение и удаление элементов управления LinkButton при `EditItemTemplate` содержит обновление и Отмена элементов управления LinkButton.
 
 
-[![Преобразовать CommandField в поле TemplateField](role-based-authorization-vb/_static/image35.png)](role-based-authorization-vb/_static/image34.png)
+[![Cпреобразовать CommandField в TemplateField](role-based-authorization-vb/_static/image35.png)](role-based-authorization-vb/_static/image34.png)
 
 **Рис. 12**: Преобразовать CommandField в TemplateField ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image36.png))
 
@@ -313,7 +313,7 @@ ms.locfileid: "57051211"
 > Можно скрыть CommandField полностью при отличном от администратора и без прав администратора посещении страницы. Оставить этот в качестве упражнения для чтения.
 
 
-[![Изменить и удалить кнопки скрыты Non-руководителями и пользователи без прав администратора](role-based-authorization-vb/_static/image38.png)](role-based-authorization-vb/_static/image37.png)
+[![Tон редактирование и удаление кнопки скрыты Non-руководителями и пользователи без прав администратора](role-based-authorization-vb/_static/image38.png)](role-based-authorization-vb/_static/image37.png)
 
 **Рис. 13**: Изменить и удалить кнопки скрыты Non-руководителями и пользователи без прав администратора ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image39.png))
 
@@ -321,7 +321,7 @@ ms.locfileid: "57051211"
 При посещении пользователем, к которому принадлежит к роли руководители (но не к роли "Администраторы"), он видит только "Изменить".
 
 
-[![Несмотря на то доступен для руководителей кнопку Изменить, удалить кнопка скрыта](role-based-authorization-vb/_static/image41.png)](role-based-authorization-vb/_static/image40.png)
+[![Wбудут проверены кнопку Изменить доступно для руководителей, скрыт кнопки Delete](role-based-authorization-vb/_static/image41.png)](role-based-authorization-vb/_static/image40.png)
 
 **Рис. 14**: Несмотря на то доступен для руководителей кнопку Изменить, удалить кнопка скрыта ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image42.png))
 
@@ -329,7 +329,7 @@ ms.locfileid: "57051211"
 И если посещает администратора, у нее есть доступ к кнопки изменения и удаления.
 
 
-[![Изменить и удалить кнопок, доступных только для администраторов](role-based-authorization-vb/_static/image44.png)](role-based-authorization-vb/_static/image43.png)
+[![Tон изменение и удаление кнопки будут доступны только для администраторов](role-based-authorization-vb/_static/image44.png)](role-based-authorization-vb/_static/image43.png)
 
 **Рис. 15**: Изменить и удалить кнопок, доступных только для администраторов ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image45.png))
 
@@ -356,7 +356,7 @@ ms.locfileid: "57051211"
 Если каким-то образом без прав администратора пытается выполнить `RowDeleting` обработчик событий или если не контролер или без прав администратора пытается выполнить `RowUpdating` обработчик событий, которые будут вызывать среду выполнения .NET `SecurityException`.
 
 
-[![Если контекст безопасности не авторизован для выполнения метода, то выдается SecurityException](role-based-authorization-vb/_static/image47.png)](role-based-authorization-vb/_static/image46.png)
+[![IЕсли нужное контекст безопасности не авторизован для выполнения метода, то выдается SecurityException](role-based-authorization-vb/_static/image47.png)](role-based-authorization-vb/_static/image46.png)
 
 **Рис. 16**: Если контекст безопасности не авторизован для выполнения метода, `SecurityException` возникает исключение ([Просмотр полноразмерного изображения](role-based-authorization-vb/_static/image48.png))
 

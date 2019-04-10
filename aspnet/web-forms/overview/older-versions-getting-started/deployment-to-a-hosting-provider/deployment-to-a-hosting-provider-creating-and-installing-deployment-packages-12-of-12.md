@@ -8,15 +8,15 @@ ms.date: 11/17/2011
 ms.assetid: 3fc23eed-921d-4d46-a610-a2d156e4bd03
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-creating-and-installing-deployment-packages-12-of-12
 msc.type: authoredcontent
-ms.openlocfilehash: 2923501289f31243a7341848ed3f7c2142c98e75
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7e3c8b2adbe8d5248bed7299fb5e784a753f3851
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041971"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382171"
 ---
-<a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-troubleshooting-12-of-12"></a>Развертывание веб-приложения ASP.NET с SQL Server Compact с помощью Visual Studio или Visual Web Developer: Устранение неполадок (12, 12)
-====================
+# <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-troubleshooting-12-of-12"></a>Развертывание веб-приложения ASP.NET с SQL Server Compact с помощью Visual Studio или Visual Web Developer: Устранение неполадок (12, 12)
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 [Загрузите начальный проект](http://code.msdn.microsoft.com/Deploying-an-ASPNET-Web-4e31366b)
@@ -113,7 +113,7 @@ ASP.NET 4 не установлена в IIS. Если сервер, котор�
 
 ### <a name="possible-cause-and-solution"></a>Возможные причины и решения
 
-Откройте *Web.config* файла в развернутого сайта и проверьте, начинаются ли значения строки подключения с `$(ReplacableToken_`, как показано в следующем примере:
+Откройте *Web.config* файла в развернутого сайта и проверьте, начинаются ли значения строки подключения с `$(ReplaceableToken_`, как показано в следующем примере:
 
 [!code-xml[Main](deployment-to-a-hosting-provider-creating-and-installing-deployment-packages-12-of-12/samples/sample9.xml)]
 

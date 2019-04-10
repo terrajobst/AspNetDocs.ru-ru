@@ -8,15 +8,15 @@ ms.date: 12/03/2010
 ms.assetid: ceb9e60f-957c-4d25-9331-cc527de96a33
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-4
 msc.type: authoredcontent
-ms.openlocfilehash: f4a8e7f1cafd169f392485ff4ecb260073209210
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 94318068e0fb550f5c6a4250e369000a23507a91
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050031"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59394358"
 ---
-<a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-4"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms — часть 4
-====================
+# <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-4"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms — часть 4
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 > Пример веб-приложение университета Contoso демонстрирует создание приложения веб-форм ASP.NET, используя Entity Framework 4.0 и Visual Studio 2010. Сведения об этой серии руководств см. в разделе [в первом учебнике серии](the-entity-framework-and-aspnet-getting-started-part-1.md)
@@ -30,7 +30,7 @@ ms.locfileid: "57050031"
 
 Подробные данные в разметке или в коде можно связать основных данных. В этой части руководства вы используете оба метода.
 
-[!["Image01"](the-entity-framework-and-aspnet-getting-started-part-4/_static/image2.png)](the-entity-framework-and-aspnet-getting-started-part-4/_static/image1.png)
+[![Image01](the-entity-framework-and-aspnet-getting-started-part-4/_static/image2.png)](the-entity-framework-and-aspnet-getting-started-part-4/_static/image1.png)
 
 ## <a name="displaying-and-updating-related-entities-in-a-gridview-control"></a>Отображение и обновление связанных сущностей в элементе управления GridView
 

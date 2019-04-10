@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: b0abec39-a1c9-422d-ba9a-ef16f6185af8
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/modifying-animations-from-the-server-side-cs
 msc.type: authoredcontent
-ms.openlocfilehash: ac2c2b1e9cfceba7f818f3f2dcbd719e94bea83e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 2d4c786ca10e77353ac8b4746138cb1e314585ae
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041431"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383789"
 ---
-<a name="modifying-animations-from-the-server-side-c"></a>Изменение анимации со стороны сервера (C#)
-====================
+# <a name="modifying-animations-from-the-server-side-c"></a>Изменение анимации со стороны сервера (C#)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation9.cs.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation9CS.pdf)
@@ -55,7 +55,7 @@ ms.locfileid: "57041431"
 [!code-html[Main](modifying-animations-from-the-server-side-cs/samples/sample6.html)]
 
 
-[![Анимация создается с использованием серверного C# и Visual Basic кода](modifying-animations-from-the-server-side-cs/_static/image2.png)](modifying-animations-from-the-server-side-cs/_static/image1.png)
+[![Tанимации, он создается на стороне сервера C#кода и Visual Basic](modifying-animations-from-the-server-side-cs/_static/image2.png)](modifying-animations-from-the-server-side-cs/_static/image1.png)
 
 Анимация создается с использованием серверного C# и Visual Basic кода ([Просмотр полноразмерного изображения](modifying-animations-from-the-server-side-cs/_static/image3.png))
 

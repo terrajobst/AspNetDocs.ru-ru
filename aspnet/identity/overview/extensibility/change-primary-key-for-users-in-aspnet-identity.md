@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/extensibility/change-primary-key-for-users-in-aspnet-identity
-title: Изменение первичного ключа для пользователей в ASP.NET Identity | Документация Майкрософт
+title: Изменение первичного ключа для пользователей в ASP.NET Identity - ASP.NET 4.x
 author: Rick-Anderson
 description: В Visual Studio 2013 веб-приложения по умолчанию использует строковое значение для ключа для учетных записей пользователей. ASP.NET Identity позволяет изменить тип...
 ms.author: riande
 ms.date: 09/30/2014
 ms.assetid: 44925849-5762-4504-a8cd-8f0cd06f6dc3
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/extensibility/change-primary-key-for-users-in-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: d2856ce1ca61a29e091bfbd16647b673e6fc659b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 212b07494381d13f6ded96a41b846dcdf7e8ff16
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033811"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59393747"
 ---
-<a name="change-primary-key-for-users-in-aspnet-identity"></a>Изменение первичного ключа для пользователей в ASP.NET Identity
-====================
+# <a name="change-primary-key-for-users-in-aspnet-identity"></a>Изменение первичного ключа для пользователей в ASP.NET Identity
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > В Visual Studio 2013 веб-приложения по умолчанию использует строковое значение для ключа для учетных записей пользователей. ASP.NET Identity позволяет изменить тип ключа в соответствии с требованиями данных. Например можно изменить тип ключа из строки в целое число.
@@ -43,7 +44,7 @@ ms.locfileid: "57033811"
 - [Для веб-форм с обновлением 2 измените учетную запись страницы для передачи типа ключа](#webformsupdate2)
 - [Для веб-форм с обновлением 3 измените учетную запись страницы для передачи типа ключа](#webformsupdate3)
 - [Запуск приложения](#run)
-- [Другие ресурсы](#other)
+- [Другие источники](#other)
 
 <a id="userclass"></a>
 ## <a name="change-the-type-of-the-key-in-the-identity-user-class"></a>Измените тип ключа в класс пользовательского удостоверения

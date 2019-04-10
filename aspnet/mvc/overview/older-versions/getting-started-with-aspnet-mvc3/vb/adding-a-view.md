@@ -8,15 +8,15 @@ ms.date: 01/12/2011
 ms.assetid: d3633f64-5d3c-45c9-ae4b-cb1563e3739f
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/adding-a-view
 msc.type: authoredcontent
-ms.openlocfilehash: 0d6311cac4fe01b2e21b300ff3841b3f2ca6fcf5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: eebf36af01b27f2931fa8720b399b85edfd8c2a0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048161"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59390965"
 ---
-<a name="adding-a-view-vb"></a>Добавление представления (VB)
-====================
+# <a name="adding-a-view-vb"></a>Добавление представления (VB)
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Этом учебнике описываются основы создания MVC веб-приложения ASP.NET с помощью Microsoft Visual Web Developer 2010 Express пакетом обновления 1, которой является бесплатной версии Microsoft Visual Studio. Перед началом работы убедитесь, что вы установили необходимые компоненты, перечисленные ниже. Все из них можно установить, щелкнув следующую ссылку: [Установщик веб-платформы](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack). Кроме того можно установить по отдельности необходимых компонентов, с помощью следующих ссылок:
@@ -42,7 +42,7 @@ ms.locfileid: "57048161"
 
 **Добавление представления** откроется диалоговое окно. Оставьте значения по умолчанию и нажмите кнопку **добавить** кнопки.
 
-[![3addView](adding-a-view/_static/image4.png "3addView")](adding-a-view/_static/image3.png)
+[![3Добавить представление](adding-a-view/_static/image4.png "3addView")](adding-a-view/_static/image3.png)
 
 *MvcMovie\Views\HelloWorld* папки и *MvcMovie\Views\HelloWorld\Index.vbhtml* создаются файл. Вы можете увидеть их в **обозревателе решений**:
 

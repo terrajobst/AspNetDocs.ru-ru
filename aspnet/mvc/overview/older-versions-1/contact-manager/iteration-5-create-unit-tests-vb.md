@@ -8,15 +8,15 @@ ms.date: 02/20/2009
 ms.assetid: c6e5c036-2265-4fa7-a9eb-47f197bdc262
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-5-create-unit-tests-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 8b34a9f7690777cfcc79d87a5e19586646d5b0d9
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 476e5529e4fd53c6166c53766409268939a83c72
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425708"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380669"
 ---
-<a name="iteration-5--create-unit-tests-vb"></a>Итерация #5 – Создание модульных тестов (Visual Basic)
-====================
+# <a name="iteration-5--create-unit-tests-vb"></a>Итерация #5 – Создание модульных тестов (Visual Basic)
+
 по [Microsoft](https://github.com/microsoft)
 
 [Скачать код](iteration-5-create-unit-tests-vb/_static/contactmanager_5_vb1.zip)
@@ -116,12 +116,12 @@ Visual Studio включает платформу макетирование о�
 4. Добавьте ссылку на сборку Moq к тестовому проекту, выбрав параметр меню **проект, добавить ссылку на** открыть **добавить ссылку** диалоговое окно. На вкладке обзора перейдите к папке, куда было распаковано Moq и выберите сборку Moq.dll. Нажмите кнопку **ОК** кнопку (см. рис. 2).
 
 
-[![Разблокировка Moq](iteration-5-create-unit-tests-vb/_static/image1.jpg)](iteration-5-create-unit-tests-vb/_static/image1.png)
+[![Unblocking Moq](iteration-5-create-unit-tests-vb/_static/image1.jpg)](iteration-5-create-unit-tests-vb/_static/image1.png)
 
 **Рис 01**: Разблокировка Moq ([Просмотр полноразмерного изображения](iteration-5-create-unit-tests-vb/_static/image2.png))
 
 
-[![Ссылки после добавления Moq](iteration-5-create-unit-tests-vb/_static/image2.jpg)](iteration-5-create-unit-tests-vb/_static/image3.png)
+[![RСписок диапазонов после добавления Moq](iteration-5-create-unit-tests-vb/_static/image2.jpg)](iteration-5-create-unit-tests-vb/_static/image3.png)
 
 **Рис. 02**: Ссылки после добавления Moq ([Просмотр полноразмерного изображения](iteration-5-create-unit-tests-vb/_static/image4.png))
 
@@ -184,7 +184,7 @@ Visual Studio включает платформу макетирование о�
 Можно выполнять модульные тесты в листинге 1, выбрав параметр меню **теста выполните все тесты в решении (CTRL + R, A)**. Результаты тестов отображаются в окне результатов теста (см. рис. 4).
 
 
-[![Результаты теста](iteration-5-create-unit-tests-vb/_static/image4.jpg)](iteration-5-create-unit-tests-vb/_static/image7.png)
+[![TРезультаты EST](iteration-5-create-unit-tests-vb/_static/image4.jpg)](iteration-5-create-unit-tests-vb/_static/image7.png)
 
 **Рис. 04**: Результаты теста ([Просмотр полноразмерного изображения](iteration-5-create-unit-tests-vb/_static/image8.png))
 
@@ -223,7 +223,7 @@ Return View()
 При отсутствии явной при возврате представления ViewResult.ViewName свойство возвращает пустую строку.
 
 
-**В листинге 2 - Controllers\ContactControllerTest.vb**
+**Listing 2 - Controllers\ContactControllerTest.vb**
 
 [!code-vb[Main](iteration-5-create-unit-tests-vb/samples/sample6.vb)]
 

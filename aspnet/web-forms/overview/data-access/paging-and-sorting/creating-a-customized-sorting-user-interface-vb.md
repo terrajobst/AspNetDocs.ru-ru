@@ -8,15 +8,15 @@ ms.date: 08/15/2006
 ms.assetid: f3897a74-cc6a-4032-8f68-465f155e296a
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/creating-a-customized-sorting-user-interface-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 63e31d719991dddec2168524187c304256d1b4e0
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 571e34a8c87bf54b8dd71c912f16ebcdab3c87a7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58426111"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383451"
 ---
-<a name="creating-a-customized-sorting-user-interface-vb"></a>Создание интерфейса настраиваемого упорядочения (VB)
-====================
+# <a name="creating-a-customized-sorting-user-interface-vb"></a>Создание интерфейса настраиваемого упорядочения (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_27_VB.exe) или [скачать PDF](creating-a-customized-sorting-user-interface-vb/_static/datatutorial27vb1.pdf)
@@ -31,7 +31,7 @@ ms.locfileid: "58426111"
 Для выделения границ между группами, многие веб-сайтов использовать пользовательский интерфейс, который служит разделителем между группами. Разделители, подобным показанным на рис. 1 позволяет пользователю быстро найти нужную группу и определить его границы, а также выяснить, какие группы вообще входят в данных.
 
 
-[![Каждой группы категорий имеет четко определены](creating-a-customized-sorting-user-interface-vb/_static/image2.png)](creating-a-customized-sorting-user-interface-vb/_static/image1.png)
+[![EACH группы категорий имеет четко определены](creating-a-customized-sorting-user-interface-vb/_static/image2.png)](creating-a-customized-sorting-user-interface-vb/_static/image1.png)
 
 **Рис. 1**: Каждой группы категорий имеет четко определены ([Просмотр полноразмерного изображения](creating-a-customized-sorting-user-interface-vb/_static/image3.png))
 
@@ -50,7 +50,7 @@ ms.locfileid: "58426111"
 Отвлекитесь и просмотрите полученный промежуточный результат в браузере. Рис. 2 показан сортируемый GridView при отсортированы по категории в алфавитном порядке.
 
 
-[![S поддерживает сортировку GridView отсортированы по категории](creating-a-customized-sorting-user-interface-vb/_static/image5.png)](creating-a-customized-sorting-user-interface-vb/_static/image4.png)
+[![Tон поддерживает сортировку GridView s данных упорядочен по категориям](creating-a-customized-sorting-user-interface-vb/_static/image5.png)](creating-a-customized-sorting-user-interface-vb/_static/image4.png)
 
 **Рис. 2**: S поддерживает сортировку GridView, данные упорядочиваются по категориям ([Просмотр полноразмерного изображения](creating-a-customized-sorting-user-interface-vb/_static/image6.png))
 
@@ -100,7 +100,7 @@ ms.locfileid: "58426111"
 Чтобы добавить разделяющие строки между всеми группами сортировки, мы может напрямую манипулировать этой иерархии элементов управления после его создания. Мы может быть уверены в том, что иерархии элементов управления GridView s был создан в последний раз, когда страница отображается. Таким образом, переопределить метод `Page` класс s `Render` метода, после чего иерархии конечный элемент управления GridView s обновляется для включения ней необходимые разделяющие строки. Этот процесс показан на рис. 4.
 
 
-[![Второй подход предполагает изменение иерархии элементов управления GridView s](creating-a-customized-sorting-user-interface-vb/_static/image9.png)](creating-a-customized-sorting-user-interface-vb/_static/image8.png)
+[![AВторой способ заключается в n манипулирует иерархию элементов управления GridView s](creating-a-customized-sorting-user-interface-vb/_static/image9.png)](creating-a-customized-sorting-user-interface-vb/_static/image8.png)
 
 **Рис. 4**: Второй подход предполагает изменение иерархии элемента GridView s ([Просмотр полноразмерного изображения](creating-a-customized-sorting-user-interface-vb/_static/image10.png))
 
@@ -156,12 +156,12 @@ ms.locfileid: "58426111"
 С помощью кодовой страницы, интерфейс сортировки добавляет заголовки групп при сортировке по любой BoundField (см. рис. 5 показан снимок экрана при сортировке по поставщикам). Тем не менее при сортировке по полям других типов (например, CheckBoxField или TemplateField), заголовки групп брать будет неоткуда (см. рис. 6) являются.
 
 
-[![Интерфейс сортировки включает заголовки сортировки групп при сортировке по полю BoundFields](creating-a-customized-sorting-user-interface-vb/_static/image12.png)](creating-a-customized-sorting-user-interface-vb/_static/image11.png)
+[![Tон сортировка интерфейс включает заголовки групп при сортировке по полю BoundFields](creating-a-customized-sorting-user-interface-vb/_static/image12.png)](creating-a-customized-sorting-user-interface-vb/_static/image11.png)
 
 **Рис. 5**: Сортировка интерфейс включает сортировки группы заголовки при сортировке по полю BoundFields ([Просмотр полноразмерного изображения](creating-a-customized-sorting-user-interface-vb/_static/image13.png))
 
 
-[![Отсутствует при сортировке по полю CheckBoxField заголовки групп не отображаются](creating-a-customized-sorting-user-interface-vb/_static/image15.png)](creating-a-customized-sorting-user-interface-vb/_static/image14.png)
+[![TЗаголовки групп HE, отсутствует при сортировке по полю CheckBoxField](creating-a-customized-sorting-user-interface-vb/_static/image15.png)](creating-a-customized-sorting-user-interface-vb/_static/image14.png)
 
 **Рис. 6**: Отсутствует при сортировке по полю CheckBoxField заголовки групп не отображаются ([Просмотр полноразмерного изображения](creating-a-customized-sorting-user-interface-vb/_static/image16.png))
 
@@ -178,7 +178,7 @@ ms.locfileid: "58426111"
 Выше код, заголовки групп, включая теперь при сортировке по CheckBoxField более не поддерживается (см. рис. 7).
 
 
-[![Теперь есть при сортировке по полю CheckBoxField заголовки групп не отображаются](creating-a-customized-sorting-user-interface-vb/_static/image18.png)](creating-a-customized-sorting-user-interface-vb/_static/image17.png)
+[![TЗаголовки групп HE, теперь есть при сортировке по полю CheckBoxField](creating-a-customized-sorting-user-interface-vb/_static/image18.png)](creating-a-customized-sorting-user-interface-vb/_static/image17.png)
 
 **Рис. 7**: Теперь есть при сортировке по полю CheckBoxField заголовки групп не отображаются ([Просмотр полноразмерного изображения](creating-a-customized-sorting-user-interface-vb/_static/image19.png))
 

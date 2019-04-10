@@ -1,22 +1,23 @@
 ---
 uid: web-api/overview/advanced/http-message-handlers
-title: Обработчики сообщений HTTP в веб-API ASP.NET | Документация Майкрософт
+title: Обработчики сообщений HTTP в ASP.NET Web API — ASP.NET 4.x
 author: MikeWasson
-description: ''
+description: Обзор обработчиков сообщений HTTP в ASP.NET Web API для ASP.NET 4.x
 ms.author: riande
 ms.date: 02/13/2012
+ms.custom: seoapril2019
 ms.assetid: 9002018b-3aa3-4358-bb1c-fbb5bc751d01
 msc.legacyurl: /web-api/overview/advanced/http-message-handlers
 msc.type: authoredcontent
-ms.openlocfilehash: 0b0d7b4c543dc4e597c6c472083898f3a8095a83
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 308d2e3dd21917e7656f7ffe889dc965d9275d74
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043211"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59392110"
 ---
-<a name="http-message-handlers-in-aspnet-web-api"></a>Обработчики сообщений HTTP в веб-API ASP.NET
-====================
+# <a name="http-message-handlers-in-aspnet-web-api"></a>Обработчики сообщений HTTP в веб-API ASP.NET
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 Объект *обработчик сообщений* — это класс, который получает HTTP-запрос и возвращает ответ HTTP. Обработчики сообщений являются производными от абстрактного **HttpMessageHandler** класса.

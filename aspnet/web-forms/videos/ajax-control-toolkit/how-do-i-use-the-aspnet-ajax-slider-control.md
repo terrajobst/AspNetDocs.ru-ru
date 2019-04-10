@@ -8,15 +8,15 @@ ms.date: 03/13/2007
 ms.assetid: 958e1bc8-65a8-4fe0-ad2d-f98691d5fdf1
 msc.legacyurl: /web-forms/videos/ajax-control-toolkit/how-do-i-use-the-aspnet-ajax-slider-control
 msc.type: video
-ms.openlocfilehash: 61ad0c6991348e1ca76ab74a32066fcec8c93ca6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 62534e580aa7d5e383b8e86d2b904544356b0739
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058431"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384998"
 ---
-<a name="how-do-i-use-the-aspnet-ajax-slider-control"></a>[Инструкции] Используйте элемент управления "ползунок" ASP.NET AJAX?
-====================
+# <a name="how-do-i-use-the-aspnet-ajax-slider-control"></a>[Инструкции] Используйте элемент управления "ползунок" ASP.NET AJAX?
+
 по [(Joe Stagner)](https://github.com/JoeStagner)
 
 Элемент управления "ползунок", из ASP.NET AJAX Control Toolkit предоставляет простой и элегантный способ пользователю выбрать числовое значение. В этом видео показано, как добавить элемент управления "ползунок" на веб-страницу и настройка его ориентацию, диапазон значений и размер увеличивается.

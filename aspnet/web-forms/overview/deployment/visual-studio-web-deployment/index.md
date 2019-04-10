@@ -8,19 +8,19 @@ ms.date: 02/15/2013
 ms.assetid: e733027a-525f-47ae-b1c0-2e5ecf6677aa
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment
 msc.type: chapter
-ms.openlocfilehash: a91de204f821cd8301485330518170e458f5da4d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3d8a6a102788cb6b5612e9bc537e1c13e7798c54
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024251"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59378940"
 ---
-<a name="aspnet-web-deployment-using-visual-studio"></a>Веб-развертывание ASP.NET с помощью Visual Studio
-====================
+# <a name="aspnet-web-deployment-using-visual-studio"></a>Веб-развертывание ASP.NET с помощью Visual Studio
+
 > В этой серии руководств показано, как сделать веб-приложения ASP.NET, использующего SQL Server (не SQL Server Compact) доступен через Интернет, развернув ее на веб-сайта Windows Azure или стороннего поставщика услуг размещения. Требуется Visual Studio 2012 и ASP.NET и веб-инструменты 2012.2 обновления или Visual Studio 2010. Сведения, относящиеся к SQL Server Compact, см. в разделе [веб-развертывание ASP.NET с SQL Server Compact с помощью Visual Studio](../../older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-introduction-1-of-12.md).
 
 
-- [Введение](introduction.md)
+- [Вступление](introduction.md)
 - [Подготовка к развертыванию базы данных](preparing-databases.md)
 - [Преобразования файла Web.config](web-config-transformations.md)
 - [Свойства проекта](project-properties.md)

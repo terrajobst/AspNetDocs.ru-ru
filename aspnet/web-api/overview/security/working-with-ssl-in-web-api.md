@@ -8,15 +8,15 @@ ms.date: 02/22/2019
 ms.assetid: 97f6164f-59cf-45c0-b820-e4aa29b45396
 msc.legacyurl: /web-api/overview/security/working-with-ssl-in-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 69c0d217f605096d968435c062ee9931f8dff75f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 31589b3713b1f1a9b98d12906bfef81f8bf5e3f9
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048801"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386161"
 ---
-<a name="working-with-ssl-in-web-api"></a>Работа с SSL в веб-API
-====================
+# <a name="working-with-ssl-in-web-api"></a>Работа с SSL в веб-API
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 Несколько общих схем проверки подлинности не являются безопасными через простой HTTP. В частности Обычная проверка подлинности и проверки подлинности форм отправляют незашифрованные учетные данные. Для обеспечения безопасности, эти схемы проверки подлинности *необходимо* использование протокола SSL. Кроме того можно использовать SSL-сертификатов клиента для проверки подлинности клиентов.

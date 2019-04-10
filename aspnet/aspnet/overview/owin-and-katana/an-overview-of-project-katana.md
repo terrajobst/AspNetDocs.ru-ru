@@ -8,15 +8,15 @@ ms.date: 08/30/2013
 ms.assetid: 0ee21741-c1bf-4025-a9b0-24580cae24bc
 msc.legacyurl: /aspnet/overview/owin-and-katana/an-overview-of-project-katana
 msc.type: authoredcontent
-ms.openlocfilehash: 52007eba109de28c6d178505b82b1d5ff2883b47
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 72f70faa151007558ecbb270143ecd5b37c2134d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57040741"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59392577"
 ---
-<a name="an-overview-of-project-katana"></a>Обзор проекта Katana
-====================
+# <a name="an-overview-of-project-katana"></a>Обзор проекта Katana
+
 по [Говард Дайеркинг](https://github.com/howarddierking)
 
 > Платформа ASP.NET используется уже более десяти лет, и включения платформы разработки бесчисленное множество веб-сайтов и служб. Как развились стратегии разработки веб-приложений, платформа была развивающихся шаг с помощью технологии, такие как ASP.NET MVC и веб-API ASP.NET. При разработке веб-приложений принимает его Далее целый эволюционный этап в мире облачных вычислений, проект [Katana](https://channel9.msdn.com/Shows/Web+Camps+TV/The-Katana-Project-OWIN-for-ASPNET) предоставляет базовый набор компонентов для приложений ASP.NET, что позволяет им быть гибкий и переносимый упрощенный и обеспечить более высокую производительность – другими словами, проектов [Katana](https://channel9.msdn.com/Shows/Web+Camps+TV/The-Katana-Project-OWIN-for-ASPNET) cloud оптимизирует приложений ASP.NET.

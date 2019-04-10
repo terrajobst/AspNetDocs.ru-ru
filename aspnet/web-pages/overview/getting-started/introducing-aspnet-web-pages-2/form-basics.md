@@ -8,15 +8,15 @@ ms.date: 05/28/2015
 ms.assetid: 81ed82bf-b940-44f1-b94a-555d0cb7cc98
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/form-basics
 msc.type: authoredcontent
-ms.openlocfilehash: 28385ac2244ab0bfb38ee5fcbc64e6e11804612b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f88f7a31551abda029bee0ec16aa35ce2ef5d2f0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57028221"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59385960"
 ---
-<a name="introducing-aspnet-web-pages---html-form-basics"></a>Знакомство с веб-страниц ASP.NET — основы форм HTML
-====================
+# <a name="introducing-aspnet-web-pages---html-form-basics"></a>Знакомство с веб-страниц ASP.NET — основы форм HTML
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > Мы продемонстрируем основы как создать форму ввода и как обрабатывать ввод пользователя, при использовании веб-страниц ASP.NET (Razor). И теперь, когда у вас есть базы данных, вы используете свои навыки формы пользователям найти определенные фильмов в базе данных. Предполагается, вы выполнили рядов через [введение для отображения данных с помощью ASP.NET Web Pages](/aspnet/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data).
@@ -356,7 +356,7 @@ ms.locfileid: "57028221"
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-- [Введение в программирование веб-ASP.NET, с помощью синтаксиса Razor](https://go.microsoft.com/fwlink/?LinkID=202890)
+- [Введение в веб-программирование для ASP.NET с использованием синтаксиса Razor](https://go.microsoft.com/fwlink/?LinkID=202890)
 - [Предложение WHERE SQL](http://www.w3schools.com/sql/sql_where.asp) на сайте W3Schools
 - [Определения методов](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) статьи на сайте W3C
 

@@ -8,15 +8,15 @@ ms.date: 05/28/2015
 ms.assetid: d37c93fc-25fd-4e94-8671-0d437beef206
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/entering-data
 msc.type: authoredcontent
-ms.openlocfilehash: e40d2962ccac56eaaf4812819aa42168e69295bc
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d76f607f1d5e779d43ee15d8f2d697e7b0f147ae
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029801"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380123"
 ---
-<a name="introducing-aspnet-web-pages---entering-database-data-by-using-forms"></a>Знакомство с веб-страниц ASP.NET — ввод данных базы данных с помощью форм
-====================
+# <a name="introducing-aspnet-web-pages---entering-database-data-by-using-forms"></a>Знакомство с веб-страниц ASP.NET — ввод данных базы данных с помощью форм
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > Этом руководстве показано, как создать форму ввода, а затем введите данные, которые вы получаете из формы в таблицу базы данных при использовании веб-страниц ASP.NET (Razor). Предполагается, вы выполнили рядов через [основы из HTML-формы ASP.NET Web Pages](https://go.microsoft.com/fwlink/?LinkId=251581).
@@ -253,7 +253,7 @@ ms.locfileid: "57029801"
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-- [Введение в программирование веб-ASP.NET, с помощью синтаксиса Razor](https://go.microsoft.com/fwlink/?LinkID=202890)
+- [Введение в веб-программирование для ASP.NET с использованием синтаксиса Razor](https://go.microsoft.com/fwlink/?LinkID=202890)
 - [SQL в инструкции INSERT](http://www.w3schools.com/sql/sql_insert.asp) на сайте W3Schools
 - [Проверка вводимых пользователем данных в ASP.NET Web Pages сайты](https://go.microsoft.com/fwlink/?LinkId=253002). Дополнительные сведения о работе с `Validation` вспомогательный.
 

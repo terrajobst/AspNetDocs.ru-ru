@@ -8,15 +8,15 @@ ms.date: 02/10/2014
 ms.assetid: 2a2c1833-0bfe-4e2e-9cc0-341b52c7b121
 msc.legacyurl: /web-pages/overview/testing-and-debugging/aspnet-web-pages-razor-troubleshooting-guide
 msc.type: authoredcontent
-ms.openlocfilehash: ec8cdda5c5b298736a650f82cd6b52d73b6dfe3d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: adbaa5cbda4a60a8b222ba49bb148b28b2e214cc
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061301"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389210"
 ---
-<a name="aspnet-web-pages-razor-troubleshooting-guide"></a>Руководство по устранению неполадок веб-страниц ASP.NET (Razor)
-====================
+# <a name="aspnet-web-pages-razor-troubleshooting-guide"></a>Руководство по устранению неполадок веб-страниц ASP.NET (Razor)
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > В этой статье описываются проблемы, вы можете столкнуться при работе с веб-страниц ASP.NET (Razor) и некоторые предлагаемые решения.
@@ -136,12 +136,12 @@ ms.locfileid: "57061301"
 
 - *Сбой при отправке почты.*
 
-    - или -
+    -или-
 
     *Попытка подключения не удалось, так как подключенная сторона не ответила правильно после определенного периода времени, или установленное соединение, так как подключенный узел не отвечает*
 
     Эта ошибка обычно означает, что приложение не удалось подключиться к SMTP-сервера. Проверьте имя сервера и номер порта.
-- <em>Почтовый ящик недоступен. Получен ответ сервера: 5.1.0 &lt; someuser@invaliddomain &gt; отправителя отклонен: недопустимый отправитель домена</em>
+- *Почтовый ящик недоступен. Получен ответ сервера: 5.1.0 &lt; someuser@invaliddomain &gt; отправителя отклонен: недопустимый отправитель домена*
 
     Это сообщение может указывать, что `From` адрес указано неправильно или отсутствует.
 - *Указанная строка не в форму, необходимую для адреса электронной почты.*

@@ -8,15 +8,15 @@ ms.date: 06/26/2013
 ms.assetid: 23fc77da-2725-4434-99a0-ff872d96336b
 msc.legacyurl: /web-api/overview/web-api-routing-and-actions/create-a-rest-api-with-attribute-routing
 msc.type: authoredcontent
-ms.openlocfilehash: 18a44c280e6df1603837938d24d7d639d8c87cc2
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a58daa96410de734619bf65f84346137c7d3cf44
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055181"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59393305"
 ---
-<a name="create-a-rest-api-with-attribute-routing-in-aspnet-web-api-2"></a>Создание REST API с помощью маршрутизации атрибутов в ASP.NET Web API 2
-====================
+# <a name="create-a-rest-api-with-attribute-routing-in-aspnet-web-api-2"></a>Создание REST API с помощью маршрутизации атрибутов в ASP.NET Web API 2
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 Веб-API 2 поддерживает новый тип маршрутизации, вызывается *маршрутизации с помощью атрибутов*. Общие сведения о маршрутизации с помощью атрибутов, см. в разделе [маршрутизации с помощью атрибутов в веб-API 2](attribute-routing-in-web-api-2.md). В этом руководстве используется маршрутизация с помощью атрибутов для создания API REST для коллекции книг. API-Интерфейс поддерживает следующие действия:
@@ -39,7 +39,7 @@ ms.locfileid: "57055181"
 - Жанра
 - Дата публикации
 - Цена
-- Описание:
+- Описание
 - AuthorID (внешний ключ к таблице Authors)
 
 Большинство запросов тем не менее, API вернет подмножество этих данных ("Заголовок", "Автор" и "genre"). Чтобы получить полную запись клиента запросы `/api/books/{id}/details`.

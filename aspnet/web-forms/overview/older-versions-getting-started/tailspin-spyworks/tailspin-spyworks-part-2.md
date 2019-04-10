@@ -8,15 +8,15 @@ ms.date: 07/21/2010
 ms.assetid: 5a9d5429-d70b-411c-8474-f42cf7ef8a2b
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-2
 msc.type: authoredcontent
-ms.openlocfilehash: 5b5ae08b157054bf0f3231782127ee3110f36d00
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3fbc6fe4d94534a038a81532b3cd8ca30ddf9b11
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058101"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59378395"
 ---
-<a name="part-2-data-access-layer"></a>Часть 2. Уровень доступа к данным
-====================
+# <a name="part-2-data-access-layer"></a>Часть 2. Уровень доступа к данным
+
 по [(Joe Stagner)](https://github.com/JoeStagner)
 
 > Tailspin Spyworks демонстрирует, как чрезвычайно прост процесс создания мощных и масштабируемых приложений для платформы .NET. Он демонстрирует способы использования новые возможности в ASP.NET 4 для создание Интернет-магазина, включая покупок, извлечения и администрирования.

@@ -8,15 +8,15 @@ ms.date: 03/02/2009
 ms.assetid: c8d93e11-ef78-4a30-afbc-f30419000a60
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/creating-an-action-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 070dd4c9d68327eec52fe385000b9ca3907eaa9f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5f8eeeaa9bd77c0259f680198e57ade8d49cd06b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57051941"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382625"
 ---
-<a name="creating-an-action-vb"></a>Создание действия (VB)
-====================
+# <a name="creating-an-action-vb"></a>Создание действия (VB)
+
 по [Microsoft](https://github.com/microsoft)
 
 > Узнайте, как добавить новое действие контроллера ASP.NET MVC. Дополнительные сведения о требованиях для метода для действия.
@@ -28,7 +28,7 @@ ms.locfileid: "57051941"
 
 Добавьте новое действие к контроллеру, добавив новый метод к контроллеру. Например контроллер в листинге 1 содержит действия с именем Index() и действие с именем SayHello(). Оба метода доступны как действия.
 
-**В листинге 1 - Controllers\HomeController.vb**
+**Listing 1 - Controllers\HomeController.vb**
 
 [!code-vb[Main](creating-an-action-vb/samples/sample1.vb)]
 
@@ -57,7 +57,7 @@ ms.locfileid: "57051941"
 При попытке вызвать действие контроллера CompanySecrets(), введя в адресной строке браузера /Work/CompanySecrets затем вы получите сообщение об ошибке на рис. 1.
 
 
-[![Вызов метода NonAction](creating-an-action-vb/_static/image1.jpg)](creating-an-action-vb/_static/image1.png)
+[![Invoking метод NonAction](creating-an-action-vb/_static/image1.jpg)](creating-an-action-vb/_static/image1.png)
 
 **Рис 01**: Вызов метода NonAction ([Просмотр полноразмерного изображения](creating-an-action-vb/_static/image2.png))
 

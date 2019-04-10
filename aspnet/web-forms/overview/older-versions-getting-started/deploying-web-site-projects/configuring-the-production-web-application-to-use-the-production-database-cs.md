@@ -8,15 +8,15 @@ ms.date: 04/23/2009
 ms.assetid: 0177dabd-d888-449f-91b2-24190cf5e842
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/configuring-the-production-web-application-to-use-the-production-database-cs
 msc.type: authoredcontent
-ms.openlocfilehash: e2560ae7a845c27f7fa5f420eaf1d89618397c60
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: fa05645db9d43a836cc75b399153dd2e2c288f7c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056741"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59388771"
 ---
-<a name="configuring-the-production-web-application-to-use-the-production-database-c"></a>Настройка рабочего веб-приложения для использования рабочей базы данных (C#)
-====================
+# <a name="configuring-the-production-web-application-to-use-the-production-database-c"></a>Настройка рабочего веб-приложения для использования рабочей базы данных (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/E/6/F/E6FE3A1F-EE3A-4119-989A-33D1A9F6F6DD/ASPNET_Hosting_Tutorial_08_CS.zip) или [скачать PDF](http://download.microsoft.com/download/C/3/9/C391A649-B357-4A7B-BAA4-48C96871FEA6/aspnet_tutorial08_DBConfig_cs.pdf)
@@ -53,7 +53,7 @@ ms.locfileid: "57056741"
 Откройте Visual Studio и перейдите в окно обозревателя сервера (в Visual Web Developer, это окно называется обозреватель баз данных). Щелкните правой кнопкой мыши на параметр подключения к данным и выберите параметр Добавить подключение в контекстном меню. Откроется мастер, показанный на рис. 1. Выберите необходимый источник данных и нажмите кнопку Продолжить.
 
 
-[![Выберите Добавить новую базу данных в проводник по серверам](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image2.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image1.jpg) 
+[![CВыберите, чтобы добавить новую базу данных в проводник по серверам](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image2.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image1.jpg) 
 
 **Рис. 1**: Выберите Добавить новую базу данных в проводник по серверам ([Просмотр полноразмерного изображения](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image3.jpg))
 
@@ -61,7 +61,7 @@ ms.locfileid: "57056741"
 Затем укажите различных базы данных сведения о подключении (см. рис. 2). Если вы зарегистрировались с помощью веб-хостинга компанию, они должны предоставлять сведения о том, как подключиться к базе данных — имя сервера базы данных, имя базы данных, имя пользователя и пароль, используемый для соединения с базой данных и т. д. После ввода этой информации нажмите кнопку ОК для завершения работы мастера и добавления базы данных в проводник по серверам.
 
 
-[![Укажите подключение к базе данных](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image5.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image4.jpg) 
+[![SУкажите подключение к базе данных](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image5.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image4.jpg) 
 
 **Рис. 2**: Укажите подключение к базе данных ([Просмотр полноразмерного изображения](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image6.jpg))
 
@@ -91,7 +91,7 @@ ms.locfileid: "57056741"
 После развертывания сайта в рабочей среде, посетите на рабочем сайте через браузер. Следует см. в разделе и наслаждайтесь подобное удобство работы как при локальном запуске приложения, управляемые данными. Само собой при посещении веб-сайта в рабочей среде сайт основан на рабочий сервер базы данных, тогда как посетить веб-сайт в среде разработки используется база данных в разработке. Рис. 3 показан *обучение самостоятельно ASP.NET 3.5 за 24 часа* просмотрите страницу с веб-сайта в рабочей среде (Обратите внимание, URL-адрес в адресной строке браузера s).
 
 
-[![Управляемые данными приложения — теперь доступны в рабочей среде!](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image8.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image7.jpg) 
+[![Tон управляемые данными приложения является теперь доступны в рабочей среде!](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image8.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image7.jpg) 
 
 **Рис. 3**: Управляемые данными приложения — теперь доступны в рабочей среде! ([Просмотр полноразмерного изображения](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image9.jpg))
 

@@ -8,15 +8,15 @@ ms.date: 12/03/2010
 ms.assetid: aaadd9bb-5508-448c-ad57-5497dff90e13
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-8
 msc.type: authoredcontent
-ms.openlocfilehash: 249677c9e0eca248710bf730e57a7aeca5a9b5ce
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0fd943eba4c6d80bba5ca6c4d69cbd3a8927513d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027911"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59391517"
 ---
-<a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-8"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms - часть 8
-====================
+# <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-8"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms - часть 8
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 > Пример веб-приложение университета Contoso демонстрирует создание приложения веб-форм ASP.NET, используя Entity Framework 4.0 и Visual Studio 2010. Сведения об этой серии руководств см. в разделе [в первом учебнике серии](the-entity-framework-and-aspnet-getting-started-part-1.md)
@@ -32,7 +32,7 @@ ms.locfileid: "57027911"
 
 Чтобы увидеть, как это работает, изменим элементов управления, использовать для отображения и изменения полей в существующем *Students.aspx* страницы и вы добавите форматирование и проверка метаданных поля имя и дата `Student` типа сущности.
 
-[!["Image01"](the-entity-framework-and-aspnet-getting-started-part-8/_static/image2.png)](the-entity-framework-and-aspnet-getting-started-part-8/_static/image1.png)
+[![Image01](the-entity-framework-and-aspnet-getting-started-part-8/_static/image2.png)](the-entity-framework-and-aspnet-getting-started-part-8/_static/image1.png)
 
 ## <a name="using-dynamicfield-and-dynamiccontrol-controls"></a>С помощью DynamicField и элементы управления DynamicControl
 
@@ -120,7 +120,7 @@ ms.locfileid: "57027911"
 
 Это заключительный шаг этой серии руководств по началу работы с Entity Framework. Дополнительные ресурсы, которые помогут вам понять, как использовать Entity Framework, следует выполнить [в первом учебнике этой серии руководств Далее Entity Framework](../continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md) или посетите следующие сайты:
 
-- [Платформа Entity Framework часто задаваемые вопросы](http://www.ef-faq.org/introduction.html)
+- [Часто задаваемые вопросы о платформе Entity Framework](http://www.ef-faq.org/introduction.html)
 - [Блог группы разработчиков Entity Framework](https://blogs.msdn.com/b/adonet/)
 - [Entity Framework в библиотеке MSDN](https://msdn.microsoft.com/library/bb399572.aspx)
 - [Entity Framework в центре данных для разработчиков MSDN](https://msdn.microsoft.com/data/ef.aspx)

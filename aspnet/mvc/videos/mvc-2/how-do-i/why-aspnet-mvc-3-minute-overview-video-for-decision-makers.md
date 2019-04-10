@@ -8,15 +8,15 @@ ms.date: 08/21/2009
 ms.assetid: 5b3fb86a-3245-41a3-bd1a-bde92e37b18d
 msc.legacyurl: /mvc/videos/mvc-2/how-do-i/why-aspnet-mvc-3-minute-overview-video-for-decision-makers
 msc.type: video
-ms.openlocfilehash: 446ae7f1bcbe6c5ee369df59ee14b688ab5d89aa
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 158a49553490e9faf01264b7934e48a8edece2c4
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036481"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382125"
 ---
-<a name="why-aspnet-mvc-3-minute-overview-video-for-decision-makers"></a>Почему ASP.NET MVC? 3 минутное видео для руководителей
-====================
+# <a name="why-aspnet-mvc-3-minute-overview-video-for-decision-makers"></a>Почему ASP.NET MVC? 3 минутное видео для руководителей
+
 по [Роб Conery](https://github.com/robconery)
 
 Общий обзор ASP.NET MVC для ответственных за принятие решений, которые хотят узнать больше о преимуществах ASP.NET MVC.

@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: ec9db57c-9f68-402a-bf4c-0d63d5f6908e
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/popup/handling-postbacks-from-a-popup-control-with-an-updatepanel-vb
 msc.type: authoredcontent
-ms.openlocfilehash: e2b4c7c7920cc67daa3c234d397cbf8c7f00bd37
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3c4b58e864ca99aa30444fbb3244bfa4ffb4c336
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026241"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379044"
 ---
-<a name="handling-postbacks-from-a-popup-control-with-an-updatepanel-vb"></a>Обработка операций обратной передачи из элемента управления Popup с помощью элемента управления UpdatePanel (VB)
-====================
+# <a name="handling-postbacks-from-a-popup-control-with-an-updatepanel-vb"></a>Обработка операций обратной передачи из элемента управления Popup с помощью элемента управления UpdatePanel (VB)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/PopupControl2.vb.zip) или [скачать PDF](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/popupcontrol2VB.pdf)
@@ -49,12 +49,12 @@ ms.locfileid: "57026241"
 Теперь всякий раз при нажатии на дату, отображается выбранную дату в соответствующем текстовом поле, создание элемента выбора даты, в настоящее время находятся на многих веб-сайтах.
 
 
-[![Календарь появляется, когда пользователь нажимает кнопку в текстовое поле](handling-postbacks-from-a-popup-control-with-an-updatepanel-vb/_static/image2.png)](handling-postbacks-from-a-popup-control-with-an-updatepanel-vb/_static/image1.png)
+[![Tон Календарь появляется, когда пользователь нажимает в текстовое поле](handling-postbacks-from-a-popup-control-with-an-updatepanel-vb/_static/image2.png)](handling-postbacks-from-a-popup-control-with-an-updatepanel-vb/_static/image1.png)
 
 Календарь появляется, когда пользователь нажимает кнопку в текстовое поле ([Просмотр полноразмерного изображения](handling-postbacks-from-a-popup-control-with-an-updatepanel-vb/_static/image3.png))
 
 
-[![Щелкните дату помещает его в текстовое поле](handling-postbacks-from-a-popup-control-with-an-updatepanel-vb/_static/image5.png)](handling-postbacks-from-a-popup-control-with-an-updatepanel-vb/_static/image4.png)
+[![Cщелкнув на дату помещает его в текстовое поле](handling-postbacks-from-a-popup-control-with-an-updatepanel-vb/_static/image5.png)](handling-postbacks-from-a-popup-control-with-an-updatepanel-vb/_static/image4.png)
 
 Щелкните дату помещает его в текстовое поле ([Просмотр полноразмерного изображения](handling-postbacks-from-a-popup-control-with-an-updatepanel-vb/_static/image6.png))
 

@@ -8,15 +8,15 @@ ms.date: 02/20/2014
 ms.assetid: 4eb060cc-cf14-41ae-bab1-14a2c15332d0
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites
 msc.type: authoredcontent
-ms.openlocfilehash: 8f049adce33e452896b5e2a444635ff30d18e480
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: fd3ba36891aa66f78c28c538a4d3ba0da6736765
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026051"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59392993"
 ---
-<a name="validating-user-input-in-aspnet-web-pages-razor-sites"></a>Проверка пользовательского ввода на сайтах ASP.NET Web Pages (Razor)
-====================
+# <a name="validating-user-input-in-aspnet-web-pages-razor-sites"></a>Проверка пользовательского ввода на сайтах ASP.NET Web Pages (Razor)
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > В этой статье рассматриваются способы проверки информации, полученной от пользователей &mdash; то есть, убедитесь, что пользователи вводят допустимые сведения в формате HTML forms на сайте веб-страниц ASP.NET (Razor).

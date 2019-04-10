@@ -8,15 +8,15 @@ ms.date: 07/18/2007
 ms.assetid: a5a4a9ba-d18d-489a-a6b0-a3c26d6b0274
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb
 msc.type: authoredcontent
-ms.openlocfilehash: bc640564cfb67f0c1512bc7f4fae9ea7e6bc981f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1d8387f782ace50f16d44ba8df4df8014d563674
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059821"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396464"
 ---
-<a name="creating-new-stored-procedures-for-the-typed-datasets-tableadapters-vb"></a>Создание хранимых процедур для адаптеров таблиц TableAdapter типизированного DataSet (VB)
-====================
+# <a name="creating-new-stored-procedures-for-the-typed-datasets-tableadapters-vb"></a>Создание хранимых процедур для адаптеров таблиц TableAdapter типизированного DataSet (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_67_VB.zip) или [скачать PDF](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/datatutorial67vb1.pdf)
@@ -28,7 +28,7 @@ ms.locfileid: "57059821"
 
 Уровень доступа к данным (DAL) для этих учебников использующего типизированные наборы DataSet. Как уже говорилось в [создание уровня доступа к данным](../introduction/creating-a-data-access-layer-vb.md) руководстве типизированные наборы данных состоят из строго типизированных таблиц DataTable и адаптеров таблиц. DataTables представляют логические сущности в системе, а интерфейс адаптеров таблиц TableAdapter с основной базы данных для выполнения работы доступа данных. Сюда входят заполнение DataTables с данными, выполнении запросов, возвращающих скалярные данные, и вставка, обновление и удаление записей из базы данных.
 
-Команды SQL, выполняемая адаптеры таблиц может быть либо специализированные инструкции SQL, например `SELECT columnList FROM TableName`, или хранимых процедур. TableAdapters в архитектуре с помощью инструкций SQL ad-hoc. Многие разработчики и Администраторы баз данных, тем не менее, предпочтение отдается хранимых процедур специализированные инструкции SQL для повышения безопасности, удобства поддержки и обновления. Другие ardently предпочитают специализированные инструкции SQL для гибкости. На своем опыте я предпочитать хранимых процедур и нерегламентированных инструкций SQL, но решили использовать специализированные инструкции SQL для упрощения предыдущих учебных курсах.
+Команды SQL, выполняемая адаптеры таблиц может быть либо специализированные инструкции SQL, например `SELECT columnList FROM TableName`, или хранимых процедур. TableAdapters в архитектуре с помощью инструкций SQL ad-hoc. Многие разработчики и Администраторы баз данных, тем не менее, предпочтение отдается хранимые процедуры инструкций SQL ad-hoc по соображениям безопасности, удобство поддержки, а также возможность обновления. Другие ardently предпочитают специализированные инструкции SQL для гибкости. На своем опыте я предпочитать хранимых процедур и нерегламентированных инструкций SQL, но решили использовать специализированные инструкции SQL для упрощения предыдущих учебных курсах.
 
 При определении TableAdapter или добавления новых методов, мастер TableAdapter s позволяет так же, как легко создать новые хранимые процедуры или использовать существующие хранимые процедуры, как в случае использования инструкций SQL ad-hoc. В этом руководстве мы рассмотрим, как автоматическое создание хранимых процедур мастер s адаптера таблицы. В следующем учебном курсе мы рассмотрим способы настройки s методов класса TableAdapter для использования существующего или созданного вручную хранимых процедур.
 
@@ -86,7 +86,7 @@ ms.locfileid: "57059821"
 Как и в других папках, `Default.aspx` в `AdvancedDAL` папку перечислит учебные курсы в своем разделе. Помните, что `SectionLevelTutorialListing.ascx` пользовательский элемент управления предоставляет следующие функциональные возможности. Поэтому добавьте данный пользовательский элемент управления для `Default.aspx` , перетащив его из обозревателя решений на странице s режиме конструктора.
 
 
-[![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image3.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image2.png)
+[![Aдд пользовательского элемента управления SectionLevelTutorialListing.ascx к странице Default.aspx](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image3.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image2.png)
 
 **Рис. 2**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image4.png))
 
@@ -111,7 +111,7 @@ ms.locfileid: "57059821"
 Добавить новый набор данных в проект, щелкнув правой кнопкой мыши `DAL` папки, выбрав Add New Item и выбрав шаблон набора данных, как показано на рис. 4.
 
 
-[![Добавить новый типизированный набор данных в проект с именем NorthwindWithSprocs.xsd](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image7.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image6.png)
+[![Aдд новый типизированный набор DataSet для NorthwindWithSprocs.xsd с именем проекта](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image7.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image6.png)
 
 **Рис. 4**: Добавить новый типизированный набор DataSet проекта с именем `NorthwindWithSprocs.xsd` ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image8.png))
 
@@ -121,9 +121,9 @@ ms.locfileid: "57059821"
 На этом экране Далее мы можем выбрать, каким образом TableAdapter должен обращаться к базе данных. В предыдущих учебных курсах мы выбрали первый вариант, использовать инструкции SQL. Для этого руководства выберите второй вариант, создать новые хранимые процедуры и нажмите кнопку Далее.
 
 
-[![Указать TableAdpater, чтобы создать новые хранимые процедуры](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image10.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image9.png)
+[![INstruct адаптер TableAdapter будет создать новые хранимые процедуры](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image10.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image9.png)
 
-**Рис. 5**: Указать TableAdpater, чтобы создать новые хранимые процедуры ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image11.png))
+**Рис. 5**: Настроить адаптер TableAdapter будет создать новые хранимые процедуры ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image11.png))
 
 
 Так же, как с помощью нерегламентированных инструкций SQL, на следующем шаге мы запрашиваются `SELECT` инструкции для основного запроса адаптера таблицы s. Но вместо использования `SELECT` инструкция ввести, чтобы выполнить запрос ad-hoc напрямую, мастер TableAdapter s создает хранимую процедуру, которая содержит это `SELECT` запроса.
@@ -134,7 +134,7 @@ ms.locfileid: "57059821"
 [!code-sql[Main](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/samples/sample4.sql)]
 
 
-[![Введите запрос SELECT](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image13.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image12.png)
+[![EВведите запрос SELECT](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image13.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image12.png)
 
 **Рис. 6**: Введите `SELECT` запроса ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image14.png))
 
@@ -160,7 +160,7 @@ ms.locfileid: "57059821"
 После ввода `SELECT` запроса и подтверждения, что установлен инструкций создать Insert, Update и Delete, нажмите кнопку Далее. Этот следующем экране, показанном на рис. 8 предлагает ввести имена хранимых процедур, которые мастер создаст для выбора, вставки, обновления и удаления данных. Эти хранимые процедуры имена для изменения `Products_Select`, `Products_Insert`, `Products_Update`, и `Products_Delete`.
 
 
-[![Переименование хранимых процедур](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image17.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image16.png)
+[![ReName хранимые процедуры](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image17.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image16.png)
 
 **Рис. 8**: Переименование хранимых процедур ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image18.png))
 
@@ -176,7 +176,7 @@ ms.locfileid: "57059821"
 После именования хранимые процедуры, нажмите кнопку рядом с именем TableAdapter s соответствующие методы. Так же, как при помощи инструкций SQL, ad-hoc мы можем создавать методы, которые заполнить объект DataTable существующие или вернуть его. Также можно указать, следует ли включать TableAdapter непосредственного шаблона DB для вставки, обновления и удаления записей. Оставьте все три флажков, но переименовать метод DataTable для возврата `GetProducts` (как показано на рис. 10).
 
 
-[![Назовите методы Fill и GetProducts](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image21.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image20.png)
+[![Nимя, методы Fill и GetProducts](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image21.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image20.png)
 
 **Рис. 10**: Назовите методы `Fill` и `GetProducts` ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image22.png))
 
@@ -184,7 +184,7 @@ ms.locfileid: "57059821"
 Нажмите кнопку Далее, чтобы просмотреть сводку действий, которые выполнит мастер. Следуйте указаниям мастера, нажав кнопку "Готово". По завершении работы мастера вы вернетесь к s набора данных конструктор, который должен включать `ProductsDataTable`.
 
 
-[![Конструктор наборов данных s показывает вновь добавленный ProductsDataTable](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image24.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image23.png)
+[![Tон s набора данных конструктор показывает только что добавлен ProductsDataTable](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image24.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image23.png)
 
 **Рис. 11**: S набора данных конструктор показывает новые добавленные `ProductsDataTable` ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image25.png))
 
@@ -206,7 +206,7 @@ ms.locfileid: "57059821"
 Чтобы просмотреть или изменить хранимую процедуру, дважды щелкните его имя в обозревателе серверов или, или, щелкните правой кнопкой мыши на хранимую процедуру и выберите Open. Рис. 13 показан `Products_Delete` хранимой процедуры, в том случае, когда открывается.
 
 
-[![Хранимые процедуры можно открыть и изменить из среды Visual Studio](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image28.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image27.png)
+[![SСр процедуры могут быть открыты и изменены из в Visual Studio](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image28.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image27.png)
 
 **Рис. 13**: Хранимые процедуры могут быть открыты и изменены из в Visual Studio ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image29.png))
 
@@ -250,7 +250,7 @@ ms.locfileid: "57059821"
 Кроме того можно обновить параметры, используемые для всех методов, щелкнув в конструкторе и выбрав Настройка. Откроется мастер настройки адаптера таблицы, список хранимые процедуры, используемые для выбора, вставка, обновление и удаление, а также параметры хранимых процедур вы должны получить. Если щелкнуть стрелку раскрывающегося списка обновления можно увидеть `Products_Update` хранимых процедур ожидается входных параметров, который теперь больше не включает в себя `@Original_ProductID` (см. рис. 15). Просто нажмите кнопку "Готово", чтобы автоматически обновить коллекцию параметров, используемого TableAdapter ".
 
 
-[![Также можно использовать мастер настройки TableAdapter s для обновления коллекции параметров его методов](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image32.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image31.png)
+[![Yподразделения можно использовать s адаптера таблицы мастер настройки, чтобы обновить коллекцию параметров его методов](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image32.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image31.png)
 
 **Рис. 15**: Также можно нажать s адаптера таблицы мастер настройки, чтобы обновить коллекцию параметров его методов ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image33.png))
 
@@ -270,7 +270,7 @@ ms.locfileid: "57059821"
 Будет запущен мастер настройки запроса TableAdapter, который сначала запросит как TableAdapter должен обращаться к базе данных. Чтобы создать новую хранимую процедуру, вариант создания новой хранимой процедуры и нажмите кнопку Далее.
 
 
-[![Выберите создать новую хранимую процедуру параметр](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image36.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image35.png)
+[![Cвыберите создать новую хранимую процедуру параметр](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image36.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image35.png)
 
 **Рис. 17**: Выберите создать новую хранимую процедуру параметр ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image37.png))
 
@@ -278,7 +278,7 @@ ms.locfileid: "57059821"
 Далее запрашивает идентифицировать тип запроса для выполнения, будет возвращать набор строк или скалярное значение, или выполните `UPDATE`, `INSERT`, или `DELETE` инструкции. Так как `GetProductByProductID(productID)` метод будет возвращать строку, оставьте SELECT, возвращающий строки выбран и нажмите "Далее".
 
 
-[![Выберите SELECT, возвращающая строки параметр](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image39.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image38.png)
+[![CВыберите SELECT, возвращающая строки параметр](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image39.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image38.png)
 
 **Рис. 18**: Выберите SELECT, возвращающая строки параметра ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image40.png))
 
@@ -289,7 +289,7 @@ ms.locfileid: "57059821"
 [!code-sql[Main](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/samples/sample9.sql)]
 
 
-[![Замените имя хранимой процедуры с помощью запроса SELECT](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image42.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image41.png)
+[![Rзаменить имя хранимой процедуры с помощью запроса ВЫБЕРИТЕ](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image42.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image41.png)
 
 **Рис. 19**: Замените имя хранимой процедуры с `SELECT` запроса ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image43.png))
 
@@ -297,7 +297,7 @@ ms.locfileid: "57059821"
 Последующие экрана запросит имя хранимой процедуры, которая будет создана. Введите имя `Products_SelectByProductID` и нажмите кнопку Далее.
 
 
-[![Имя новой хранимой процедуры Products_SelectByProductID](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image45.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image44.png)
+[![Nимя новой хранимой процедуры Products_SelectByProductID](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image45.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image44.png)
 
 **Рис. 20**: Назовите новую хранимую процедуру `Products_SelectByProductID` ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image46.png))
 
@@ -305,7 +305,7 @@ ms.locfileid: "57059821"
 Последний шаг мастера позволяет изменить метод имена создан, а также указать, следует ли использовать заливку шаблон DataTable, возврата шаблон DataTable или оба. Этот метод, оставьте оба варианта флажок установлен, но переименовать методы, которые `FillByProductID` и `GetProductByProductID`. Нажмите кнопку Далее Сводная информация о том, мастер выполнит и нажмите кнопку Готово, чтобы завершить работу мастера.
 
 
-[![Переименуйте s методов класса TableAdapter в на FillByProductID и GetProductByProductID](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image48.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image47.png)
+[![ReName методы TableAdapter s на FillByProductID и GetProductByProductID](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image48.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image47.png)
 
 **Рис. 21**: Переименовать s методов класса TableAdapter для `FillByProductID` и `GetProductByProductID` ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image49.png))
 
@@ -335,7 +335,7 @@ ms.locfileid: "57059821"
 Откройте `NewSprocs.aspx` странице в `AdvancedDAL` папки и перетащите элемент управления GridView с панели инструментов в конструктор, назовите его `Products`. В GridView выберите s смарт-тег, чтобы привязать его к элементу управления ObjectDataSource с именем `ProductsDataSource`. Настройка ObjectDataSource на использование `ProductsBLLWithSprocs` класса, как показано на рис. 22.
 
 
-[![Настройка ObjectDataSource на использование класса ProductsBLLWithSprocs](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image51.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image50.png)
+[![CНастройка ObjectDataSource на использование класса ProductsBLLWithSprocs](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image51.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image50.png)
 
 **Рис. 22**: Настройка ObjectDataSource для использования `ProductsBLLWithSprocs` класс ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image52.png))
 
@@ -345,7 +345,7 @@ ms.locfileid: "57059821"
 После завершения мастера ObjectDataSource, Visual Studio добавит поля BoundFields и по полю CheckBoxField GridView для полей данных продукта. Включите встроенные редактирования GridView s и удаление компонентов разрешить редактирование и разрешить удаление параметры смарт-тега.
 
 
-[![Страница содержит элемент управления GridView, редактирования и удаления включена поддержка](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image54.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image53.png)
+[![Tон страница содержит элемент управления GridView с редактирование и удаление включена поддержка](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image54.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image53.png)
 
 **Рис. 23**: Страница содержит элемент управления GridView с редактирование и удаление включена поддержка ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image55.png))
 
@@ -362,7 +362,7 @@ ms.locfileid: "57059821"
 Независимо от того, ли улучшить GridView, или нет проверьте страницу s основные функции в браузере. Как показано на рис. 24, на странице перечислены продукты, в элементе управления GridView, предоставляющий построчные редактирования и удаления возможности.
 
 
-[![Продукты можно просмотреть, изменить и удалить из GridView](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image57.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image56.png)
+[![Tон продукты могут быть Viewed, редактирования и удален из GridView](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image57.png)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image56.png)
 
 **Рис. 24**: Можно просматривать продукты, редактирования и удален из GridView ([Просмотр полноразмерного изображения](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image58.png))
 

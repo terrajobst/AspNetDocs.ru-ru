@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: e9dd1d5a-a1db-4114-981d-6a91acb1d709
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/mutuallyexclusivecheckbox/creating-mutually-exclusive-checkboxes-vb
 msc.type: authoredcontent
-ms.openlocfilehash: fd338b622779b64dd59f9cf6f3e2365ef5cb3ffb
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 45ea3c3dbcf7816f67081a61230c4b055a90fcf5
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045491"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59393630"
 ---
-<a name="creating-mutually-exclusive-checkboxes-vb"></a>Создание взаимоисключающих флажков (VB)
-====================
+# <a name="creating-mutually-exclusive-checkboxes-vb"></a>Создание взаимоисключающих флажков (VB)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/MutuallyExclusiveCheckBox0.vb.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/mutuallyexclusivecheckbox0VB.pdf)
@@ -47,7 +47,7 @@ ASP.NET AJAX Control Toolkit содержит расширения MutuallyExclu
 Сохранить и запустить эту страницу: Можно проверить и снимите оба флажка, но никогда не установлены оба флажка нельзя.
 
 
-[![Одновременно можно проверить только один флажок](creating-mutually-exclusive-checkboxes-vb/_static/image2.png)](creating-mutually-exclusive-checkboxes-vb/_static/image1.png)
+[![Oчтение одной можно установить флажок одновременно](creating-mutually-exclusive-checkboxes-vb/_static/image2.png)](creating-mutually-exclusive-checkboxes-vb/_static/image1.png)
 
 Одновременно можно проверить только один флажок ([Просмотр полноразмерного изображения](creating-mutually-exclusive-checkboxes-vb/_static/image3.png))
 

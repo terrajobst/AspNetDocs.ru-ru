@@ -8,18 +8,18 @@ ms.date: 10/16/2008
 ms.assetid: 37a1ebae-8773-408f-8645-d21da7ff9ae1
 msc.legacyurl: /mvc/overview/older-versions-1/views/passing-data-to-view-master-pages-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 9b840e0a5cc325a043ae88c10f52cca418589119
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7de5a1545ee59e671058f09789ce69d5062d3655
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055801"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380981"
 ---
-<a name="passing-data-to-view-master-pages-vb"></a>Передача данных на эталонные страницы представлений (VB)
-====================
+# <a name="passing-data-to-view-master-pages-vb"></a>Передача данных на эталонные страницы представлений (VB)
+
 по [Microsoft](https://github.com/microsoft)
 
-[Загрузить PDF-файл](http://download.microsoft.com/download/e/f/3/ef3f2ff6-7424-48f7-bdaa-180ef64c3490/ASPNET_MVC_Tutorial_13_VB.pdf)
+[Скачать PDF](http://download.microsoft.com/download/e/f/3/ef3f2ff6-7424-48f7-bdaa-180ef64c3490/ASPNET_MVC_Tutorial_13_VB.pdf)
 
 > Этот учебник призван объяснить, как можно передать данные от контроллера к главной странице представления. Мы рассмотрим две стратегии передачи данных для главной страницы представления. Во-первых мы рассмотрим простое решение, полученный в приложении, которое трудно обслуживать. Далее мы рассмотрим более удачное решение, требует немного больше начальной работы, но приводит к гораздо более простым в обслуживании приложения.
 
@@ -33,7 +33,7 @@ ms.locfileid: "57055801"
 Предположим, что вы создаете приложения базы данных movie и будет отображаться список категорий фильма на каждой странице в приложении (см. рис. 1). Кроме того, представьте себе, что список категорий movie хранится в таблице базы данных. В этом случае смысл для извлечения категорий из базы данных и визуализации списка категорий фильма главной страницы представления.
 
 
-[![Отображение категорий фильма на главной странице представления](passing-data-to-view-master-pages-vb/_static/image2.png)](passing-data-to-view-master-pages-vb/_static/image1.png)
+[![Dкатегории isplaying фильма на главной странице представление](passing-data-to-view-master-pages-vb/_static/image2.png)](passing-data-to-view-master-pages-vb/_static/image1.png)
 
 **Рис 01**: Отображение категорий фильма на главной странице представления ([Просмотр полноразмерного изображения](passing-data-to-view-master-pages-vb/_static/image3.png))
 
@@ -59,7 +59,7 @@ ms.locfileid: "57055801"
 `Details()` Действие также добавляет два ключа с именем категории и фильмов. Ключ категории, опять же, представляет список категорий фильма, отображаемого элементом главной страницы представления. Ключ фильмы представляет список фильмов в определенной категории, отображаемых на странице представления сведений (см. рис. 2).
 
 
-[![В представлении сведений](passing-data-to-view-master-pages-vb/_static/image5.png)](passing-data-to-view-master-pages-vb/_static/image4.png)
+[![TПросмотр подробностей HE](passing-data-to-view-master-pages-vb/_static/image5.png)](passing-data-to-view-master-pages-vb/_static/image4.png)
 
 **Рис. 02**: В представлении сведений ([Просмотр полноразмерного изображения](passing-data-to-view-master-pages-vb/_static/image6.png))
 

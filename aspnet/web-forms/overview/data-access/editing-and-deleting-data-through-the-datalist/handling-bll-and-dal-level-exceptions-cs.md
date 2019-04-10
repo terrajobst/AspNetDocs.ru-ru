@@ -8,15 +8,15 @@ ms.date: 10/30/2006
 ms.assetid: f8fd58e2-f932-4f08-ab3d-fbf8ff3295d2
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/handling-bll-and-dal-level-exceptions-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 43a43c95e049acab734fa7d9fdcf2b96f12e78d9
-ms.sourcegitcommit: 62db31596a7da029263cf06335aff12236fb3186
+ms.openlocfilehash: 5714b118a5894731820d8e9775c8f5c8a375856c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58440278"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59390133"
 ---
-<a name="handling-bll--and-dal-level-exceptions-c"></a>Обработка исключений уровней BLL и DAL (C#)
-====================
+# <a name="handling-bll--and-dal-level-exceptions-c"></a>Обработка исключений уровней BLL и DAL (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_38_CS.exe) или [скачать PDF](handling-bll-and-dal-level-exceptions-cs/_static/datatutorial38cs1.pdf)
@@ -41,7 +41,7 @@ ms.locfileid: "58440278"
 Прежде чем думать об обработке исключений, происходящих во время обновления рабочего процесса, позвольте s сначала создать редактируемый элемент управления DataList. Откройте `ErrorHandling.aspx` странице в `EditDeleteDataList` добавьте элемент управления DataList в конструктор, набор папок, его `ID` свойства `Products`, и добавьте новый ObjectDataSource, именуемый `ProductsDataSource`. Настройка ObjectDataSource на использование `ProductsBLL` класс s `GetProducts()` записывает метод выбора; задать раскрывающиеся списки в инструкции INSERT, UPDATE и удаление вкладок (нет).
 
 
-[![Возвращает сведения о продукте, с помощью метода GetProducts()](handling-bll-and-dal-level-exceptions-cs/_static/image2.png)](handling-bll-and-dal-level-exceptions-cs/_static/image1.png)
+[![Rь сведения о продукте, с помощью метода GetProducts()](handling-bll-and-dal-level-exceptions-cs/_static/image2.png)](handling-bll-and-dal-level-exceptions-cs/_static/image1.png)
 
 **Рис. 1**: Возвращает сведения о продукте с помощью `GetProducts()` метод ([Просмотр полноразмерного изображения](handling-bll-and-dal-level-exceptions-cs/_static/image3.png))
 
@@ -60,7 +60,7 @@ ms.locfileid: "58440278"
 Отвлекитесь и просмотрите ход работы в обозревателе (см. рис. 2).
 
 
-[![Кнопка «Изменить» включает в себя каждого продукта](handling-bll-and-dal-level-exceptions-cs/_static/image5.png)](handling-bll-and-dal-level-exceptions-cs/_static/image4.png)
+[![EACH продукта содержит кнопку "Изменить".](handling-bll-and-dal-level-exceptions-cs/_static/image5.png)](handling-bll-and-dal-level-exceptions-cs/_static/image4.png)
 
 **Рис. 2**: Каждый продукт включает кнопка Изменить ([Просмотр полноразмерного изображения](handling-bll-and-dal-level-exceptions-cs/_static/image6.png))
 
@@ -115,12 +115,12 @@ ms.locfileid: "58440278"
 С помощью `Try ... Catch` блока в месте, пользователям предоставляется более подробное сообщение об ошибке, как рис. 4 и 5 show. Обратите внимание, что при возникновении исключения DataList остается в режиме редактирования. Это обусловлено тем, как только произойдет исключение, поток управления немедленно перенаправлены в `Catch` блока, минуя код, который возвращает состояние до редактирования элемента управления DataList.
 
 
-[![Сообщение об ошибке отображается в том случае, когда пользователь опускает необходимые поля](handling-bll-and-dal-level-exceptions-cs/_static/image9.png)](handling-bll-and-dal-level-exceptions-cs/_static/image8.png)
+[![An сообщение об ошибке отображается в том случае, когда пользователь опускает необходимые поля](handling-bll-and-dal-level-exceptions-cs/_static/image9.png)](handling-bll-and-dal-level-exceptions-cs/_static/image8.png)
 
 **Рис. 4**: Сообщение об ошибке отображается в том случае, когда пользователь опускает необходимые поля ([Просмотр полноразмерного изображения](handling-bll-and-dal-level-exceptions-cs/_static/image10.png))
 
 
-[![Сообщение об ошибке — отображаются при вводе отрицательное цены](handling-bll-and-dal-level-exceptions-cs/_static/image12.png)](handling-bll-and-dal-level-exceptions-cs/_static/image11.png)
+[![An сообщение об ошибке — это отображается при вводе отрицательное цена](handling-bll-and-dal-level-exceptions-cs/_static/image12.png)](handling-bll-and-dal-level-exceptions-cs/_static/image11.png)
 
 **Рис. 5**: Сообщение об ошибке — отображаются при вводе отрицательное цены ([Просмотр полноразмерного изображения](handling-bll-and-dal-level-exceptions-cs/_static/image13.png))
 

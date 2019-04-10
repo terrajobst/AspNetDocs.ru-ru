@@ -8,15 +8,15 @@ ms.date: 03/03/2014
 ms.assetid: 5344b74e-b888-479a-92bc-601a33bd61a2
 msc.legacyurl: /web-forms/overview/getting-started/code-editing-in-web-forms-pages
 msc.type: authoredcontent
-ms.openlocfilehash: 670f81ca1ef9923575cb2fee1747f06f426963d8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 328dc6fb61ac562131b11b36b40f574ca5a53866
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029711"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59397374"
 ---
-<a name="code-editing-aspnet-web-forms-in-visual-studio-2013"></a>Редактирование кода в веб-формах ASP.NET в Visual Studio 2013
-====================
+# <a name="code-editing-aspnet-web-forms-in-visual-studio-2013"></a>Редактирование кода в веб-формах ASP.NET в Visual Studio 2013
+
 по [Erik Reitan](https://github.com/Erikre)
 
 На многих страницах веб-форма ASP.NET вы напишете код на Visual Basic, C# или другом языке. Редактор кода в Visual Studio может помочь быстро написать код и избежать ошибок. Кроме того редактор предоставляет способ для создания повторно используемого кода с целью сокращения объема работы, которые необходимо выполнить.
@@ -59,7 +59,7 @@ ms.locfileid: "57029711"
 3. Выберите **шаблоны**  - &gt; **Visual C#**  - &gt; **Web** группы шаблонов в левой части.
 4. Выберите **веб-приложение ASP.NET** шаблона в центральном столбце.
 5. Присвойте проекту имя ***BasicWebApp*** и нажмите кнопку **ОК** кнопки.   
-![Диалоговое окно "новый проект"](code-editing-in-web-forms-pages/_static/image2.png)
+![Диалоговое окно “Новый проект”](code-editing-in-web-forms-pages/_static/image2.png)
 6. Затем выберите **веб-форм** шаблона и нажмите кнопку **ОК** кнопку, чтобы создать проект.  
 ![Диалоговое окно "новый проект ASP.NET"](code-editing-in-web-forms-pages/_static/image3.png)  
 
@@ -77,7 +77,7 @@ ms.locfileid: "57029711"
 1. В **обозревателе решений**, щелкните правой кнопкой мыши имя веб-приложения (в этом руководстве, имя приложения — **BasicWebSite**), а затем нажмите кнопку **добавить**  - &gt; **Новый элемент**.   
 Откроется диалоговое окно **Добавление нового элемента**.
 2. Выберите **Visual C#**  - &gt; **Web** группы шаблонов в левой части. Выберите **веб-формы** из середины списка и назовите его *FirstWebPage.aspx*.   
-    ![Добавить новый элемент-диалоговое окно](code-editing-in-web-forms-pages/_static/image4.png)
+    ![Диалоговое окно ''Добавление нового элемента''](code-editing-in-web-forms-pages/_static/image4.png)
 3. Нажмите кнопку **добавить** добавить страницу веб-формы в проект.  
  Visual Studio создаст новую страницу и открывает его.
 4. Затем установите эта новая страница в качестве стартовой страницы по умолчанию. В **обозревателе решений**, щелкните правой кнопкой мыши новую страницу с именем *FirstWebPage.aspx* и выберите **задать в качестве начальной страницы**. При запуске этого приложения, чтобы проверить ход работы, автоматически появится эта новая страница в браузере.

@@ -8,15 +8,15 @@ ms.date: 05/28/2015
 ms.assetid: 7e85c70e-1a88-4408-8b3d-29611c7713ed
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/publishing
 msc.type: authoredcontent
-ms.openlocfilehash: bd6611a03ee4940f5d4176ce23464f313b9ec884
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ece436d44908497d6cf10017ba1ee285bfb4a5b2
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029761"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382109"
 ---
-<a name="introducing-aspnet-web-pages---publishing-a-site-by-using-webmatrix"></a>Знакомство с веб-страниц ASP.NET — публикация сайта с помощью WebMatrix
-====================
+# <a name="introducing-aspnet-web-pages---publishing-a-site-by-using-webmatrix"></a>Знакомство с веб-страниц ASP.NET — публикация сайта с помощью WebMatrix
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > Это руководство представляет собой заключительной учебного набора, которые представлены веб-страниц ASP.NET и Microsoft WebMatrix. Он описывает, как для публикации своего сайта к Интернету, чтобы другие пользователи могли работать с ним. Предполагается, вы выполнили рядов через [Создание согласованного поиска для сайтов веб-страниц ASP.NET](https://go.microsoft.com/fwlink/?LinkId=251585).

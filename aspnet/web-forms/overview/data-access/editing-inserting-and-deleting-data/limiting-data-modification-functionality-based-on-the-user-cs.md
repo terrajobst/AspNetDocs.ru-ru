@@ -8,15 +8,15 @@ ms.date: 07/17/2006
 ms.assetid: 2b251c82-77cf-4e36-baa9-b648eddaa394
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/limiting-data-modification-functionality-based-on-the-user-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 8f54f8ef593363f9428b663051cc71b8ef4a2e67
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 786d7923d745bfb26ce0759bbe60bc472a63ea5c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032531"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59390432"
 ---
-<a name="limiting-data-modification-functionality-based-on-the-user-c"></a>Ограничение функций изменения данных в зависимости от пользователя (C#)
-====================
+# <a name="limiting-data-modification-functionality-based-on-the-user-c"></a>Ограничение функций изменения данных в зависимости от пользователя (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_23_CS.exe) или [скачать PDF](limiting-data-modification-functionality-based-on-the-user-cs/_static/datatutorial23cs1.pdf)
@@ -31,12 +31,12 @@ ms.locfileid: "57032531"
 В этом руководстве мы рассмотрим, как динамически корректировать возможности модификации данных, в зависимости от посетителя. В частности мы создадим страницу, отображающую сведения suppliers в редактируемой DetailsView и GridView, которая перечисляет продукты, предоставляемые поставщиком. Если посещающий страницу пользователь из нашей компании, они могут: все данные, поставщик s; изменять их адреса; и изменять информацию для любой продукт, предоставляемый данным поставщиком. Если, однако пользователь из конкретной компании, они могут только просматривать и изменять свои собственные сведения об адресах и можно изменить только продукты, которые не были помечены как снятые с продажи.
 
 
-[![Пользователь из нашей компании может изменить любые сведения о поставщике s](limiting-data-modification-functionality-based-on-the-user-cs/_static/image2.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image1.png)
+[![A Пользователь из нашей компании можно изменять любые сведения о поставщике s](limiting-data-modification-functionality-based-on-the-user-cs/_static/image2.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image1.png)
 
 **Рис. 1**: Пользователь из s наш компании можно редактировать любой поставщик сведения ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image3.png))
 
 
-[![Пользователь с определенным поставщиком могут только просматривать и изменить свои сведения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image5.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image4.png)
+[![A Пользователь с определенным поставщиком могут только просматривать и изменить свои сведения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image5.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image4.png)
 
 **Рис. 2**: Пользователь из конкретного поставщика можно только на просмотр и изменение информации о ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image6.png))
 
@@ -56,7 +56,7 @@ ms.locfileid: "57032531"
 Нашим первым этапом в этом руководстве, то для создания этого элемента управления DropDownList и заполняет ее поставщиков в системе. Откройте `UserLevelAccess.aspx` странице в `EditInsertDelete` папки, добавление элемента управления DropDownList, `ID` свойству `Suppliers`и привязать к элементу управления ObjectDataSource с именем этого элемента управления DropDownList `AllSuppliersDataSource`.
 
 
-[![Создайте новый ObjectDataSource, именуемый AllSuppliersDataSource](limiting-data-modification-functionality-based-on-the-user-cs/_static/image8.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image7.png)
+[![Cсоздать новый элемент управления ObjectDataSource с именем AllSuppliersDataSource](limiting-data-modification-functionality-based-on-the-user-cs/_static/image8.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image7.png)
 
 **Рис. 3**: Создайте новый ObjectDataSource с именем `AllSuppliersDataSource` ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image9.png))
 
@@ -66,7 +66,7 @@ ms.locfileid: "57032531"
 После завершения работы мастера ObjectDataSource, следуйте инструкциям по настройке `Suppliers` DropDownList таким образом, чтобы он показывал `CompanyName` и использовал поле данных `SupplierID` поля данных в качестве значения для каждого `ListItem`.
 
 
-[![Настройте список DropDownList Suppliers использовать поля CompanyName и SupplierID данных](limiting-data-modification-functionality-based-on-the-user-cs/_static/image11.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image10.png)
+[![Cнастроить список Suppliers DropDownList для использования поля CompanyName и SupplierID данных](limiting-data-modification-functionality-based-on-the-user-cs/_static/image11.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image10.png)
 
 **Рис. 4**: Настройка `Suppliers` DropDownList для использования `CompanyName` и `SupplierID` полей данных ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image12.png))
 
@@ -85,7 +85,7 @@ ms.locfileid: "57032531"
 Рис. 5 показан снимок экрана для работы, при просмотре через браузер.
 
 
-[![Список DropDownList Suppliers содержит показа всех ListItem, а также для каждого поставщика](limiting-data-modification-functionality-based-on-the-user-cs/_static/image14.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image13.png)
+[![Tон список DropDownList Suppliers содержит Показать все ListItem, а также один для каждого поставщика](limiting-data-modification-functionality-based-on-the-user-cs/_static/image14.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image13.png)
 
 **Рис. 5**: `Suppliers` DropDownList содержит Показать все `ListItem`, а также один для каждого поставщика ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image15.png))
 
@@ -112,7 +112,7 @@ ms.locfileid: "57032531"
 На этом этапе DetailsView можно просматривать постранично и информации об адресе выбранного поставщика s могут обновляться, вне зависимости от выбора, сделанного в `Suppliers` DropDownList (см. рис. 6).
 
 
-[![Все поставщики сведения можно просмотреть и обновить его адрес](limiting-data-modification-functionality-based-on-the-user-cs/_static/image17.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image16.png)
+[![Aштат Нью-Йорк поставщики сведения можно просмотреть и обновить его адрес](limiting-data-modification-functionality-based-on-the-user-cs/_static/image17.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image16.png)
 
 **Рис. 6**: Все поставщики сведения можно просмотреть и обновить свой адрес ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image18.png))
 
@@ -124,7 +124,7 @@ ms.locfileid: "57032531"
 Добавить новый элемент управления ObjectDataSource на страницу, назовите его `SingleSupplierDataSource`. Из его смарт-теге щелкните ссылку Настройка источника данных, который будет использовать `SuppliersBLL` класс s `GetSupplierBySupplierID(supplierID)` метод. Как и в `AllSuppliersDataSource` ObjectDataSource, имеют `SingleSupplierDataSource` ObjectDataSource s `Update()` сопоставить с относящимся к `SuppliersBLL` класс s `UpdateSupplierAddress` метод.
 
 
-[![Настройте элемент SingleSupplierDataSource ObjectDataSource на использование метода GetSupplierBySupplierID(supplierID)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image20.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image19.png)
+[![Cнастроить элемент SingleSupplierDataSource ObjectDataSource на использование метода GetSupplierBySupplierID(supplierID)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image20.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image19.png)
 
 **Рис. 7**: Настройка `SingleSupplierDataSource` ObjectDataSource для использования `GetSupplierBySupplierID(supplierID)` метод ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image21.png))
 
@@ -132,7 +132,7 @@ ms.locfileid: "57032531"
 Далее мы повторно запрос на указание источника параметра для `GetSupplierBySupplierID(supplierID)` метод s `supplierID` входного параметра. Поскольку мы хотим Показать сведения о поставщике, выбранном в элементе управления DropDownList, используйте `Suppliers` DropDownList s `SelectedValue` свойство как источник параметра.
 
 
-[![Используйте список Suppliers DropDownList как источник параметра supplierID](limiting-data-modification-functionality-based-on-the-user-cs/_static/image23.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image22.png)
+[![USE Suppliers DropDownList как источник параметра supplierID](limiting-data-modification-functionality-based-on-the-user-cs/_static/image23.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image22.png)
 
 **Рис. 8**: Используйте `Suppliers` DropDownList как `supplierID` источник параметра ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image24.png))
 
@@ -147,12 +147,12 @@ ms.locfileid: "57032531"
 С этого обработчика событий в месте элементе управления DetailsView теперь Показывать выбранного поставщика, если был выбран параметр «Show/Edit ALL Suppliers», в этом случае всех поставщиков можно просмотреть через интерфейс разбиения по страницам. Рис. 9 показана страница с параметром «Show/Edit ALL Suppliers» выбран; Обратите внимание, что присутствует интерфейс разбиения по страницам, позволяя пользователю посетить и обновить любого поставщика. Рис. 10 показана страница с где выбран поставщик Ma. Только сведения о Ma где s — возможности просмотра и правки в этом случае.
 
 
-[![Всю информацию поставщиков могут просматривать и редактировать](limiting-data-modification-functionality-based-on-the-user-cs/_static/image26.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image25.png)
+[![AМожно просматривать и редактировать все поставщики данных](limiting-data-modification-functionality-based-on-the-user-cs/_static/image26.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image25.png)
 
 **Рис. 9**: Все поставщики можно просмотреть данные и редактирования ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image27.png))
 
 
-[![Можно просматривать и редактировать только сведения о выбранном поставщике s](limiting-data-modification-functionality-based-on-the-user-cs/_static/image29.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image28.png)
+[![Oчтение s выбранного поставщика сведения могут быть Viewed и измененный](limiting-data-modification-functionality-based-on-the-user-cs/_static/image29.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image28.png)
 
 **Рис. 10**: Только для выбранного поставщика s сведения могут быть Viewed и редактирования ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image30.png))
 
@@ -171,7 +171,7 @@ ms.locfileid: "57032531"
 Перегрузка, мы будет готов для добавления элемента управления GridView и его связанный элемент управления ObjectDataSource. Добавление нового элемента управления GridView на страницу, задайте его `ID` свойства `ProductsBySupplier`и настройте его для использования нового источника ObjectDataSource с именем `ProductsBySupplierDataSource`. Поскольку мы хотим этот GridView отображены продукты поставщиков, используйте `ProductsBLL` класс s `GetProductsBySupplierID(supplierID)` метод. Также сопоставить `Update()` метода к новому `UpdateProduct` мы только что созданной перегрузки.
 
 
-[![Настройка ObjectDataSource на использование только что созданной перегрузки UpdateProduct](limiting-data-modification-functionality-based-on-the-user-cs/_static/image32.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image31.png)
+[![CНастройка ObjectDataSource на использование UpdateProduct перегрузки только что создали](limiting-data-modification-functionality-based-on-the-user-cs/_static/image32.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image31.png)
 
 **Рис. 11**: Настройка ObjectDataSource для использования `UpdateProduct` перегрузки только что создали ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image33.png))
 
@@ -179,7 +179,7 @@ ms.locfileid: "57032531"
 Мы повторно запрос на Выбор источника параметра для `GetProductsBySupplierID(supplierID)` метод s `supplierID` входного параметра. Поскольку мы хотим Показать продукты поставщика, выбранного в DetailsView, используйте `SuppliersDetails` управления DetailsView s `SelectedValue` свойство как источник параметра.
 
 
-[![Используйте свойство SelectedValue s элемента управления suppliersdetails типа DetailsView как источник параметра](limiting-data-modification-functionality-based-on-the-user-cs/_static/image35.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image34.png)
+[![USE s элемента управления suppliersdetails типа DetailsView свойство SelectedValue как источник параметра](limiting-data-modification-functionality-based-on-the-user-cs/_static/image35.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image34.png)
 
 **Рис. 12**: Используйте `SuppliersDetails` DetailsView s `SelectedValue` свойство как источник параметра ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image36.png))
 
@@ -194,7 +194,7 @@ ms.locfileid: "57032531"
 По завершении этих настроек нашей странице теперь перечислены продукты, предоставляемые поставщиком, выбранным в GridView (см. рис. 13). В настоящее время *любой* можно обновить имя продукта s или количество в единицах измерения. Тем не менее нам нужно обновить логику страницы, чтобы закрыть для снятых с производства продуктов для пользователей, связанных с определенным поставщиком. Это будет рассмотрено этот окончательный элемент на шаге 5.
 
 
-[![Отображаются продукты, предоставляемые поставщиком выбранные](limiting-data-modification-functionality-based-on-the-user-cs/_static/image38.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image37.png)
+[![Tон продукты, предоставляемые поставщиком выбранного отображаются](limiting-data-modification-functionality-based-on-the-user-cs/_static/image38.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image37.png)
 
 **Рис. 13**: Отображаются продукты, предоставляемые поставщиком выбран ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image39.png))
 
@@ -217,12 +217,12 @@ ms.locfileid: "57032531"
 С этим событием обработчика, при посещении данной страницы пользователя от определенного поставщика, снятые с производства продукты недоступны для редактирования, как "Изменить" скрывается для этих продуктов. Например Chef Anton s Gumbo Mix является снятый с производства продукт New Orleans Cajun Delights поставщика. При посещении страницы этого конкретного поставщика кнопка, кнопка Edit для этого продукта скрыта (см. рис. 14). Тем не менее при посещении, с использованием «Show/Edit ALL Suppliers», "Изменить" — доступна (см. рис. 15).
 
 
-[![Для пользователей конкретного поставщика кнопка изменить для Chef Anton s Gumbo Mix скрыта](limiting-data-modification-functionality-based-on-the-user-cs/_static/image41.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image40.png)
+[![Fили пользователей для конкретного поставщика кнопка Edit для Chef Anton s Gumbo Mix скрыта](limiting-data-modification-functionality-based-on-the-user-cs/_static/image41.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image40.png)
 
 **Рис. 14**: Для пользователей конкретного поставщика кнопка изменить для Chef Anton s Gumbo Mix скрыта ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image42.png))
 
 
-[![Для всех пользователей поставщики Show/Edit отображается кнопка редактирования для Chef Anton s Gumbo Mix](limiting-data-modification-functionality-based-on-the-user-cs/_static/image44.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image43.png)
+[![Fили все поставщики пользователи Show/Edit, кнопку "Изменить" для Chef Anton s Gumbo Mix отображается](limiting-data-modification-functionality-based-on-the-user-cs/_static/image44.png)](limiting-data-modification-functionality-based-on-the-user-cs/_static/image43.png)
 
 **Рис. 15**: Для всех пользователей поставщики Show/Edit, отображается кнопка редактирования для Chef Anton s Gumbo Mix ([Просмотр полноразмерного изображения](limiting-data-modification-functionality-based-on-the-user-cs/_static/image45.png))
 

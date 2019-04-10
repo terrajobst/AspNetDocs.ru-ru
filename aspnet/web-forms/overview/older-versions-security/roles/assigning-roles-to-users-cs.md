@@ -8,15 +8,15 @@ ms.date: 03/24/2008
 ms.assetid: d522639a-5aca-421e-9a76-d73f95607f57
 msc.legacyurl: /web-forms/overview/older-versions-security/roles/assigning-roles-to-users-cs
 msc.type: authoredcontent
-ms.openlocfilehash: ada08e48da2f7b1513e1347e18fb7944c66d5a75
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 93a0af00d9e32e044f408a1ca8a2cea73e906d66
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061131"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380292"
 ---
-<a name="assigning-roles-to-users-c"></a>Назначение ролей пользователям (C#)
-====================
+# <a name="assigning-roles-to-users-c"></a>Назначение ролей пользователям (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/CS.10.zip) или [скачать PDF](http://download.microsoft.com/download/6/0/3/6032582f-360d-4739-b935-38721fdb86ea/aspnet_tutorial10_AssigningRoles_cs.pdf)
@@ -57,7 +57,7 @@ ms.locfileid: "57061131"
 Это определение CSS указывает, что в браузере открывается с помощью большой красный шрифт метки. Рис. 1 показан этот эффект в конструкторе Visual Studio.
 
 
-[![Свойство метки CssClass приводит к большой красный шрифт](assigning-roles-to-users-cs/_static/image2.png)](assigning-roles-to-users-cs/_static/image1.png)
+[![TМетка HE CssClass свойство приводит к большой красный шрифта](assigning-roles-to-users-cs/_static/image2.png)](assigning-roles-to-users-cs/_static/image1.png)
 
 **Рис. 1**: Метки `CssClass` свойства приводят крупный шрифт Red ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image3.png))
 
@@ -93,7 +93,7 @@ ms.locfileid: "57061131"
 Этот код в месте Отвлекитесь и посетите страницу через браузер; экран должен выглядеть как показано на рис. 2. Учетные записи пользователей будут заполнены все в раскрывающемся списке и нижнего уровня, каждая роль отображается как флажок. Так как мы задали `AutoPostBack` свойства элемента управления DropDownList и флажки значение True, Изменение выбранного пользователя или устанавливая или снимая роли вызывает обратную передачу. Никакие действия не выполняются, тем не менее, поскольку у нас есть еще писать код для обработки этих действий. Это будет рассмотрено этих задач в следующих двух разделах.
 
 
-[![На странице отображается пользователей и ролей](assigning-roles-to-users-cs/_static/image5.png)](assigning-roles-to-users-cs/_static/image4.png)
+[![Tон страница отображает пользователей и роли](assigning-roles-to-users-cs/_static/image5.png)](assigning-roles-to-users-cs/_static/image4.png)
 
 **Рис. 2**: На странице отображаются пользователи и роли ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image6.png))
 
@@ -135,7 +135,7 @@ ms.locfileid: "57061131"
 Отвлекитесь и проверьте страницу в обозревателе. Выберите пользователя Tito, а затем добавьте Tito ролям администраторами и руководителями.
 
 
-[![Был добавлен Tito администраторами и руководителями ролей](assigning-roles-to-users-cs/_static/image8.png)](assigning-roles-to-users-cs/_static/image7.png)
+[![TКлимов был добавлен для администраторов и руководителями роли](assigning-roles-to-users-cs/_static/image8.png)](assigning-roles-to-users-cs/_static/image7.png)
 
 **Рис. 3**: Был добавлен Tito администраторами и руководителями роли ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image9.png))
 
@@ -143,7 +143,7 @@ ms.locfileid: "57061131"
 Затем выберите пользователя Брюс из раскрывающегося списка. Обратная передача и элементу управления Repeater флажки обновляются с помощью команды `CheckRolesForSelectedUser`. Поскольку Брюс принадлежит каких-либо ролей, флажки сняты. Затем добавьте Брюс руководителями роли.
 
 
-[![Брюс была добавлена к роли руководителями](assigning-roles-to-users-cs/_static/image11.png)](assigning-roles-to-users-cs/_static/image10.png)
+[![Bruce была добавлена к роли руководителями](assigning-roles-to-users-cs/_static/image11.png)](assigning-roles-to-users-cs/_static/image10.png)
 
 **Рис. 4**: Брюс была добавлена к роли руководители ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image12.png))
 
@@ -167,7 +167,7 @@ ms.locfileid: "57061131"
 Две последние строки в `BindRolesToList` метод были добавлены в набор ролей, чтобы привязать `RoleList` элемента управления DropDownList. Рис. 5 показан готовый результат при просмотре через обозреватель — стрелку раскрывающегося списка, заполненный системные роли.
 
 
-[![Роли отображаются в раскрывающемся списке RoleList](assigning-roles-to-users-cs/_static/image14.png)](assigning-roles-to-users-cs/_static/image13.png)
+[![Tон роли выводятся в RoleList DropDownList](assigning-roles-to-users-cs/_static/image14.png)](assigning-roles-to-users-cs/_static/image13.png)
 
 **Рис. 5**: Роли отображаются в `RoleList` DropDownList ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image15.png))
 
@@ -187,7 +187,7 @@ ms.locfileid: "57061131"
 Этот код в месте `RolesUserList` GridView следует отобразить этих пользователей, которые принадлежат выбранной роли. Как показано на рис. 6, руководителями роль состоит из двух элементов: Брюс и Tito.
 
 
-[![GridView перечисляет тех пользователей, которые принадлежат выбранной роли](assigning-roles-to-users-cs/_static/image17.png)](assigning-roles-to-users-cs/_static/image16.png)
+[![Tв GridView перечислены тех пользователей, которые принадлежат выбранной роли](assigning-roles-to-users-cs/_static/image17.png)](assigning-roles-to-users-cs/_static/image16.png)
 
 **Рис. 6**: GridView перечислены те пользователи, принадлежат к роли выбран ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image18.png))
 
@@ -199,7 +199,7 @@ ms.locfileid: "57061131"
 Начните с добавления поля кнопки Delete к GridView. Сделать это поле отображаются в виде наиболее архивированного слева и измените его `DeleteText` значение «Удалить» из «Delete» (по умолчанию).
 
 
-[![Добавить](assigning-roles-to-users-cs/_static/image20.png)](assigning-roles-to-users-cs/_static/image19.png)
+[![Aдд](assigning-roles-to-users-cs/_static/image20.png)](assigning-roles-to-users-cs/_static/image19.png)
 
 **Рис. 7**: Добавьте к элементу GridView кнопка «Удалить» ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image21.png))
 
@@ -217,7 +217,7 @@ ms.locfileid: "57061131"
 Рис. 8 показана страница после удаления пользователя Tito в группе руководителей.
 
 
-[![Увы Tito больше не начальнику](assigning-roles-to-users-cs/_static/image23.png)](assigning-roles-to-users-cs/_static/image22.png)
+[![AЛас Tito больше не является руководителем](assigning-roles-to-users-cs/_static/image23.png)](assigning-roles-to-users-cs/_static/image22.png)
 
 **Рис. 8**: Увы, Tito больше не начальнику ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image24.png))
 
@@ -245,7 +245,7 @@ ms.locfileid: "57061131"
 Посетите страницу в обозревателе и выберите роль руководителями из `RoleList` DropDownList. Попробуйте ввести неправильное имя пользователя — вы должны увидеть сообщение о том, что пользователь не существует в системе.
 
 
-[![Невозможно добавить несуществующий пользователь к роли](assigning-roles-to-users-cs/_static/image26.png)](assigning-roles-to-users-cs/_static/image25.png)
+[![Yподразделение невозможно добавить несуществующий пользователя к роли](assigning-roles-to-users-cs/_static/image26.png)](assigning-roles-to-users-cs/_static/image25.png)
 
 **Рис. 9**: Невозможно добавить пользователя несуществующий роли ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image27.png))
 
@@ -253,7 +253,7 @@ ms.locfileid: "57061131"
 Теперь попробуйте добавить допустимого пользователя. Теперь добавим повторно Tito руководителями роли.
 
 
-[![Tito еще раз является руководителем!](assigning-roles-to-users-cs/_static/image29.png)](assigning-roles-to-users-cs/_static/image28.png)
+[![TКлимов работает еще раз начальнику!](assigning-roles-to-users-cs/_static/image29.png)](assigning-roles-to-users-cs/_static/image28.png)
 
 **Рис. 10**: Tito еще раз является руководителем!  ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image30.png))
 
@@ -290,7 +290,7 @@ ms.locfileid: "57061131"
 Затем выберите «Добавить или удалить `WizardSteps`...» смарт-теге CreateUserWizard и добавьте новый `WizardStep`, устанавливая его `ID` для `SpecifyRolesStep`. Переместить `SpecifyRolesStep WizardStep` таким образом, речь идет после шага «Входа для создания новой учетной записи», но до шага «Complete». Задайте `WizardStep` `Title` свойства «Укажите роли», его `StepType` свойства `Step`и его `AllowReturn` значение False.
 
 
-[![Добавить](assigning-roles-to-users-cs/_static/image32.png)](assigning-roles-to-users-cs/_static/image31.png)
+[![Aдд](assigning-roles-to-users-cs/_static/image32.png)](assigning-roles-to-users-cs/_static/image31.png)
 
 **Рис. 11**: Добавьте «Укажите роли» `WizardStep` для CreateUserWizard ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image33.png))
 
@@ -318,7 +318,7 @@ ms.locfileid: "57061131"
 Посетите эту страницу через обозреватель. Первым шагом в CreateUserWizard — это стандартный шаг «Входа для создания новой учетной записи», который запрашивает имя пользователя нового пользователя, пароль, электронной почты и другую ключевую информацию. Введите сведения, чтобы создать нового пользователя с именем Ванда.
 
 
-[![Создайте нового пользователя с именем Ванда](assigning-roles-to-users-cs/_static/image35.png)](assigning-roles-to-users-cs/_static/image34.png)
+[![Cсоздать нового пользователя с именем Ванда](assigning-roles-to-users-cs/_static/image35.png)](assigning-roles-to-users-cs/_static/image34.png)
 
 **Рис. 12**: Создание нового пользователя с именем Ванда ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image36.png))
 
@@ -326,7 +326,7 @@ ms.locfileid: "57061131"
 Нажмите кнопку «Create User». CreateUserWizard внутренне вызывает `Membership.CreateUser` метод, создание новой учетной записи пользователя, а затем переходит к следующему шагу, «укажите роли.» Ниже перечислены системные роли. Установите флажок "руководители" и нажмите кнопку Далее.
 
 
-[![Сделать членом роли руководителями Ванда](assigning-roles-to-users-cs/_static/image38.png)](assigning-roles-to-users-cs/_static/image37.png)
+[![Mсоздать Ванда является членом роли руководителями](assigning-roles-to-users-cs/_static/image38.png)](assigning-roles-to-users-cs/_static/image37.png)
 
 **Рис. 13**: Сделать членом роли руководителями Ванда ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image39.png))
 
@@ -334,7 +334,7 @@ ms.locfileid: "57061131"
 Нажав кнопку Далее вызывает обратную передачу и обновления `ActiveStep` шаг «Завершить». В `ActiveStepChanged` обработчик событий, недавно созданные учетной записи назначена роль руководителями. Чтобы проверить это, нужно вернуть `UsersAndRoles.aspx` и укажите руководителями из `RoleList` DropDownList. Как показано на рис. 14, Супервизоров теперь состоят из трех пользователей: Брюс Tito и Ванда.
 
 
-[![Брюс Tito и Ванда являются все руководители](assigning-roles-to-users-cs/_static/image41.png)](assigning-roles-to-users-cs/_static/image40.png)
+[![Bruce, Tito и Ванда являются все руководители](assigning-roles-to-users-cs/_static/image41.png)](assigning-roles-to-users-cs/_static/image40.png)
 
 **Рис. 14**: Брюс Tito и Ванда являются все руководители ([Просмотр полноразмерного изображения](assigning-roles-to-users-cs/_static/image42.png))
 

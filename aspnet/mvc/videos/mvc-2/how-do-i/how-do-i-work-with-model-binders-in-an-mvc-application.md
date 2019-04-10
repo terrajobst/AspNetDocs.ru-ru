@@ -8,15 +8,15 @@ ms.date: 12/30/2009
 ms.assetid: 55c2fa76-d5b9-43e7-921e-51a9b57dba30
 msc.legacyurl: /mvc/videos/mvc-2/how-do-i/how-do-i-work-with-model-binders-in-an-mvc-application
 msc.type: video
-ms.openlocfilehash: 889506be05c617d64a7e1f7b9b70a7a1ed52ae0a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c81057a065e00834928eebe4bd129f3a4a8581f6
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053551"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379018"
 ---
-<a name="how-do-i-work-with-model-binders-in-an-mvc-application"></a>Инструкции: Для работы с связывателей модели в MVC-приложениях?
-====================
+# <a name="how-do-i-work-with-model-binders-in-an-mvc-application"></a>Инструкции: Для работы с связывателей модели в MVC-приложениях?
+
 по [Крис Пелз](https://twitter.com/chrispels)
 
 В этом видео Крис Пелз показывает, как использовать связыватели моделей для привязки данных формы к сложных бизнес-объектам в модели в MVC-приложениях. Во-первых приложение MVC создается вместе с простой моделью для класс Customer, а также контроллер и представление для редактирования данных клиента. Затем привязку автоматического модели MVC демонстрируется классу "customer". Далее атрибут привязки обсуждается и демонстрируется, как механизм для контроля параметров процесс привязки позволяет включать и исключать определенные свойства сложного объекта. Наконец рассматривается использование префиксов пространств имен для сегментации данных формы на странице.

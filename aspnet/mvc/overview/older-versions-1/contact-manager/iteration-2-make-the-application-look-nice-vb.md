@@ -8,15 +8,15 @@ ms.date: 02/20/2009
 ms.assetid: f65cb436-e493-46fd-9608-384b27385aa1
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-2-make-the-application-look-nice-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 9cda4153c4e4883586a83ac7f89b2f369f8157e5
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 21f7974fe066543d6db1d17d462398a998d0171e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422271"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382581"
 ---
-<a name="iteration-2--make-the-application-look-nice-vb"></a>Итерация #2 — Создание вида неплохо (VB) приложения
-====================
+# <a name="iteration-2--make-the-application-look-nice-vb"></a>Итерация #2 — Создание вида неплохо (VB) приложения
+
 по [Microsoft](https://github.com/microsoft)
 
 [Скачать код](iteration-2-make-the-application-look-nice-vb/_static/contactmanager_2_vb1.zip)
@@ -50,7 +50,7 @@ ms.locfileid: "58422271"
 Цель этой итерации — улучшить внешний вид приложения диспетчера контактов. В настоящее время Contact Manager использует по умолчанию ASP.NET MVC представления главной страницы и таблицы каскадных стилей (см. рис. 1). Эти Дон t выглядеть неправильный, но нигде t want Contact Manager для поиска так же, как каждый другой ASP.NET MVC веб-сайт. Я хочу заменить эти файлы пользовательских файлов.
 
 
-[![В диалоговом окне нового проекта](iteration-2-make-the-application-look-nice-vb/_static/image1.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image1.png)
+[![Tдиалоговое окно нового проекта он](iteration-2-make-the-application-look-nice-vb/_static/image1.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image1.png)
 
 **Рис 01**: По умолчанию внешний вид приложения ASP.NET MVC ([Просмотр полноразмерного изображения](iteration-2-make-the-application-look-nice-vb/_static/image2.png))
 
@@ -68,7 +68,7 @@ ms.locfileid: "58422271"
 ASP.NET MVC макетов размещает коллекцию схем бесплатный веб-сайт, которые были созданы специально для использования в проекте ASP.NET MVC. Макеты, передаются по членами сообщества. Посетителям коллекции смогут проголосовать за свои избранные модели (см. рис. 2).
 
 
-[![В диалоговом окне нового проекта](iteration-2-make-the-application-look-nice-vb/_static/image2.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image3.png)
+[![Tдиалоговое окно нового проекта он](iteration-2-make-the-application-look-nice-vb/_static/image2.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image3.png)
 
 **Рис. 02**: ASP.NET MVC макетов ([Просмотр полноразмерного изображения](iteration-2-make-the-application-look-nice-vb/_static/image4.png))
 
@@ -83,17 +83,17 @@ ASP.NET MVC макетов размещает коллекцию схем бес
 6. Выберите пункт меню в Visual Studio **Правка, найти и заменить, Быстрая замена** и замените *[MyProjectName]* с *ContactManager* (см. рис. 5).
 
 
-[![В диалоговом окне нового проекта](iteration-2-make-the-application-look-nice-vb/_static/image3.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image5.png)
+[![Tдиалоговое окно нового проекта он](iteration-2-make-the-application-look-nice-vb/_static/image3.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image5.png)
 
 **Рис 03**: Разблокировка файла загруженных из Интернета ([Просмотр полноразмерного изображения](iteration-2-make-the-application-look-nice-vb/_static/image6.png))
 
 
-[![В диалоговом окне нового проекта](iteration-2-make-the-application-look-nice-vb/_static/image4.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image7.png)
+[![Tдиалоговое окно нового проекта он](iteration-2-make-the-application-look-nice-vb/_static/image4.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image7.png)
 
 **Рис. 04**: Перезапись файлов в обозревателе решений ([Просмотр полноразмерного изображения](iteration-2-make-the-application-look-nice-vb/_static/image8.png))
 
 
-[![В диалоговом окне нового проекта](iteration-2-make-the-application-look-nice-vb/_static/image5.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image9.png)
+[![Tдиалоговое окно нового проекта он](iteration-2-make-the-application-look-nice-vb/_static/image5.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image9.png)
 
 **05 рис**: Заменив ContactManager [имя_проекта] ([Просмотр полноразмерного изображения](iteration-2-make-the-application-look-nice-vb/_static/image10.png))
 
@@ -101,7 +101,7 @@ ASP.NET MVC макетов размещает коллекцию схем бес
 После выполнения этих действий веб-приложение будет использовать новый дизайн. Страница, на рис. 6 показан внешний вид приложения диспетчера контактов и дизайна октября.
 
 
-[![В диалоговом окне нового проекта](iteration-2-make-the-application-look-nice-vb/_static/image6.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image11.png)
+[![Tдиалоговое окно нового проекта он](iteration-2-make-the-application-look-nice-vb/_static/image6.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image11.png)
 
 **Рис 06**: ContactManager с шаблоном октября ([Просмотр полноразмерного изображения](iteration-2-make-the-application-look-nice-vb/_static/image12.png))
 
@@ -115,7 +115,7 @@ ASP.NET MVC макетов имеет хорошего выбора разных
 Я ZIP-архив копии диспетчера контактов из итерации 1 и отправляемые компании по проектированию проекта. Они не было Visual Studio (корпорации на них!), но которая не является проблемой. Они смогут бесплатно скачайте Microsoft Visual Web Developer из [ https://www.asp.net ](https://www.asp.net) веб-сайта и откройте приложение диспетчера контактов в Visual Web Developer. За несколько дней они вернуло разработки на рис. 7.
 
 
-[![В диалоговом окне нового проекта](iteration-2-make-the-application-look-nice-vb/_static/image7.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image13.png)
+[![Tдиалоговое окно нового проекта он](iteration-2-make-the-application-look-nice-vb/_static/image7.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image13.png)
 
 **07 рис**: Проект ASP.NET MVC Contact Manager ([Просмотр полноразмерного изображения](iteration-2-make-the-application-look-nice-vb/_static/image14.png))
 
@@ -139,14 +139,14 @@ ASP.NET MVC макетов имеет хорошего выбора разных
 Кроме того, обратите внимание, что новый формат содержит выбранном и невыбранном вкладки. Например, на рис. 8 **создать новый контакт** выбрана вкладка и **контактов** не выбрана вкладка.
 
 
-[![В диалоговом окне нового проекта](iteration-2-make-the-application-look-nice-vb/_static/image8.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image15.png)
+[![Tдиалоговое окно нового проекта он](iteration-2-make-the-application-look-nice-vb/_static/image8.jpg)](iteration-2-make-the-application-look-nice-vb/_static/image15.png)
 
 **Рис 08**: Выбранной или невыбранной вкладок ([Просмотр полноразмерного изображения](iteration-2-make-the-application-look-nice-vb/_static/image16.png))
 
 
 Для поддержки визуализации выбранном и невыбранном вкладки, я создал пользовательский вспомогательный метод HTML, с именем MenuItemHelper. Этот вспомогательный метод отображает либо &lt;li&gt; тега или &lt;класс li = «selected»&gt; тега в зависимости от ли текущий контроллер и действие соответствует имени контроллера и действия, передаваемые вспомогательное приложение. Код для MenuItemHelper содержится в листинге 1.
 
-**В листинге 1 — Helpers\MenuItemHelper.vb**
+**Listing 1 – Helpers\MenuItemHelper.vb**
 
 [!code-vb[Main](iteration-2-make-the-application-look-nice-vb/samples/sample3.vb)]
 

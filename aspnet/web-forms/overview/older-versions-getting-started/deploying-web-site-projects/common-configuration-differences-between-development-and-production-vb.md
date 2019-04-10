@@ -8,18 +8,18 @@ ms.date: 04/01/2009
 ms.assetid: 548e75f6-4d6c-4cb4-8da8-417915eb8393
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/common-configuration-differences-between-development-and-production-vb
 msc.type: authoredcontent
-ms.openlocfilehash: ec1d575fac4527db8f5bcab5f0d84e1f17eac46b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 48af71fc5ff4dad3371687726660a5d914236df5
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048781"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379382"
 ---
-<a name="common-configuration-differences-between-development-and-production-vb"></a>Распространенные различия в конфигурации между средами разработки и производства (VB)
-====================
+# <a name="common-configuration-differences-between-development-and-production-vb"></a>Распространенные различия в конфигурации между средами разработки и производства (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Загрузить PDF-файл](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial05_ConfigDifferences_vb.pdf)
+[Скачать PDF](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial05_ConfigDifferences_vb.pdf)
 
 > В предыдущих учебных курсах мы развернули наш веб-сайт, скопировав все необходимые файлы из среды разработки в рабочую среду. Тем не менее это не часто бывает различия конфигурации между средами, которые требуется открытое, у вас есть уникальный файл Web.config для каждой среды. Этом руководстве рассматриваются различия в стандартной конфигурации и рассматривает стратегии обеспечения сведения о конфигурации отдельных.
 

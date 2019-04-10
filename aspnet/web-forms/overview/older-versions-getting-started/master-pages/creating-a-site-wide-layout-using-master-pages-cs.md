@@ -8,15 +8,15 @@ ms.date: 05/21/2008
 ms.assetid: 78f8d194-03b9-44a5-8255-90e7cd1c2ee1
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/creating-a-site-wide-layout-using-master-pages-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 3bdb533c1cb724d57152e676a75af8067a6828d8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 866aea01488cee26a7419fe12b7ffa7a0655e9ce
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57040331"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59385050"
 ---
-<a name="creating-a-site-wide-layout-using-master-pages-c"></a>Создание макета сайта с помощью эталонных страниц (C#)
-====================
+# <a name="creating-a-site-wide-layout-using-master-pages-c"></a>Создание макета сайта с помощью эталонных страниц (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/e/e/f/eef369f5-743a-4a52-908f-b6532c4ce0a4/ASPNET_MasterPages_Tutorial_01_CS.zip) или [скачать PDF](http://download.microsoft.com/download/8/f/6/8f6349e4-6554-405a-bcd7-9b094ba5089a/ASPNET_MasterPages_Tutorial_01_CS.pdf)
@@ -29,7 +29,7 @@ ms.locfileid: "57040331"
 Одним из атрибутов хорошо спроектированный веб-сайта является согласованный сайта макет страницы. Возьмем для примера на веб-сайте www.asp.net. Во время написания этой статьи каждая страница имеет то же содержимое, в верхней и нижней части страницы. Как показано на рис. 1, самой верхней части каждой страницы отображается серую линию со списком сообщества Майкрософт. Под то есть логотипа веб-узла, список языков, в которых была переведена сайта и в основных разделах: Домашняя, приступить к работе, Дополнительные сведения, загрузки и т. д. Аналогично нижней части страницы включает в себя сведения о рекламе на www.asp.net заявление об авторских правах и ссылку на заявление о конфиденциальности.
 
 
-[![На веб-сайте www.asp.net использует согласованного внешнего вида и поведения на всех страницах](creating-a-site-wide-layout-using-master-pages-cs/_static/image2.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image1.png)
+[![THE www.asp.net веб-сайт использует согласованную выглядят и чувствовать на всех страницах](creating-a-site-wide-layout-using-master-pages-cs/_static/image2.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image1.png)
 
 <strong>Рис 01</strong>: Www.asp.net веб-сайт использует согласованную выглядят и чувствовать через все страницы ([Просмотр полноразмерного изображения](creating-a-site-wide-layout-using-master-pages-cs/_static/image3.png))
 
@@ -76,7 +76,7 @@ ms.locfileid: "57040331"
 После определения главной страницы его можно привязать к новых страниц ASP.NET через такта флажок. Эти страницы ASP.NET - страницы содержимого с именем - включают элемент управления содержимым для каждого из элементов управления ContentPlaceHolder на главной странице. При посещении страницы содержимого через браузер модуль ASP.NET создает иерархию элементов управления на главной странице и внедряет иерархии элементов управления страницы содержимого в соответствующих местах. Эта иерархия объединенный элемент управления отрисовывается и результирующий HTML возвращается обозревателю конечного пользователя. Следовательно страницы содержимого выдает общие разметки, определенные в его главной страницы за пределами элементов управления ContentPlaceHolder и разметку страницы, определенные в свои собственные элементы управления содержимым. Этот принцип показан на рис. 3.
 
 
-[![Разметка страницы запрошенный является включенные в главной страницы](creating-a-site-wide-layout-using-master-pages-cs/_static/image6.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image5.png)
+[![Tв главной страницы является совмещенного HE запрошенный разметку страницы](creating-a-site-wide-layout-using-master-pages-cs/_static/image6.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image5.png)
 
 **Рис 03**: Разметка страницы запрошенный является включенные в главной страницы ([Просмотр полноразмерного изображения](creating-a-site-wide-layout-using-master-pages-cs/_static/image7.png))
 
@@ -95,7 +95,7 @@ ms.locfileid: "57040331"
 > Visual Studio поддерживает два режима управления проектом. Проекты веб-сайтов и проектов веб-приложений. Проектов веб-сайтов не хватает файл проекта, тогда как Web Application Projects имитируют архитектура проекта в Visual Studio .NET 2002/2003 — они включают файл проекта и компиляции исходного кода проекта в единую сборку, которая помещается в `/bin` папка. Проекты Visual Studio 2005 изначально только поддерживаемые веб-узла, несмотря на то что [модели проекта веб-приложения](https://msdn.microsoft.com/library/aa730880(vs.80).aspx) был снова с пакетом обновления 1; Visual Studio 2008 включает в себя оба проекта модели. Visual Web Developer 2005 и 2008 выпусков, однако поддерживают только проектов веб-сайтов. Я использую модели проекта веб-сайта для приводить свои примеры в этой серии руководств. Если вы используете отличных от Express edition и хотите использовать модели проекта веб-приложения, вместо этого, вы можете сделать это, но имейте в виду, что могут существовать некоторые несоответствия между отображаемые на экране и шаги, которые необходимо предпринять и снимки экрана и инструкций в этих учебниках NS.
 
 
-[![Создать новый файл на основе системы веб-сайт](creating-a-site-wide-layout-using-master-pages-cs/_static/image9.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image8.png)
+[![CСоздание веб-сайта New File System-Based](creating-a-site-wide-layout-using-master-pages-cs/_static/image9.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image8.png)
 
 **Рис. 04**: Создание веб-сайта New File System-Based ([Просмотр полноразмерного изображения](creating-a-site-wide-layout-using-master-pages-cs/_static/image10.png))
 
@@ -103,7 +103,7 @@ ms.locfileid: "57040331"
 Затем добавьте главную страницу на сайт в корневом каталоге, щелкнув правой кнопкой мыши имя проекта и Добавление нового элемента и выбрав шаблон главной страницы. Обратите внимание на то, что главные страницы заканчиваться расширением `.master`. Имя этой новой главной страницы `Site.master` и щелкните "Добавить".
 
 
-[![Добавить эталонную страницу с именем Site.master на веб-сайт](creating-a-site-wide-layout-using-master-pages-cs/_static/image12.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image11.png)
+[![Aдд Master страницы с именем Site.master на веб-сайт](creating-a-site-wide-layout-using-master-pages-cs/_static/image12.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image11.png)
 
 **05 рис**: Добавление именованных Master страницы `Site.master` на веб-сайт ([Просмотр полноразмерного изображения](creating-a-site-wide-layout-using-master-pages-cs/_static/image13.png))
 
@@ -132,7 +132,7 @@ ms.locfileid: "57040331"
 Расширим `Site.master`элемента по умолчанию декларативная разметка для создания макета сайта, где совместно используют все страницы: распространенные заголовок; в левом столбце навигации, новостей и другое содержимое всего веб-узла; и нижний колонтитул, отображающий значок «На основе по Microsoft ASP.NET». Рис. 6 показан готовый результат главной страницы, если один из его страниц просматривается через браузер. Красный кружке области на рис. 6 относится к просматриваемую страницу (`Default.aspx`); это содержимое является определены в главной страницы и поэтому согласованность на всех страницах содержимого.
 
 
-[![Главная страница определяет разметку для верхней, левой и нижней частей](creating-a-site-wide-layout-using-master-pages-cs/_static/image15.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image14.png)
+[![Tон главной страницы определяет разметку для верхней, левой и нижней частей](creating-a-site-wide-layout-using-master-pages-cs/_static/image15.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image14.png)
 
 **Рис 06**: Определяет страницу Master разметка для верхней, левой и нижней частей ([Просмотр полноразмерного изображения](creating-a-site-wide-layout-using-master-pages-cs/_static/image16.png))
 
@@ -173,12 +173,12 @@ ms.locfileid: "57040331"
 > Если вы создали веб-сайта ASP.NET с помощью модели проекта веб-приложения, вместо модели проекта веб-сайта не появится флажок «Выбрать главную страницу» в диалоговом окне Добавить новый элемент, показанный на рис. 7. Для создания содержимого страницы при модели с помощью проекта веб-приложения, вам необходимо выбрать шаблон содержимого веб-формы вместо шаблона веб-форму. После выбора шаблона веб-содержимого формы и нажмите кнопку Добавить, же Выбор главной страницы будет отображаться диалоговое окно, показанное на рис. 8.
 
 
-[![Добавьте новую страницу содержимого](creating-a-site-wide-layout-using-master-pages-cs/_static/image18.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image17.png)
+[![Aдд новую страницу содержимого](creating-a-site-wide-layout-using-master-pages-cs/_static/image18.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image17.png)
 
 **07 рис**: Добавьте новую страницу содержимого ([Просмотр полноразмерного изображения](creating-a-site-wide-layout-using-master-pages-cs/_static/image19.png))
 
 
-[![Выберите Site.master главной страницы](creating-a-site-wide-layout-using-master-pages-cs/_static/image21.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image20.png)
+[![Sвыбрать страницу Site.master Master](creating-a-site-wide-layout-using-master-pages-cs/_static/image21.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image20.png)
 
 **Рис 08**: Выберите `Site.master` главной страницы ([Просмотр полноразмерного изображения](creating-a-site-wide-layout-using-master-pages-cs/_static/image22.png))
 
@@ -198,7 +198,7 @@ ms.locfileid: "57040331"
 Где глянца главные страницы через ранее использовавшимися шаблона сайта — с их помощью во время разработки. Рис. 9 показана `About.aspx` страницы содержимого, выполненной в режиме конструктора Visual Web Developer. Обратите внимание, что пока отображается содержимое главной страницы, она недоступна и не может быть изменен. Элементы управления содержимым, соответствующих элементов управления ContentPlaceHolder на главной странице редактируются, однако. И так же, как с других страниц ASP.NET, можно создать интерфейс страницы содержимого, добавив веб-элементов управления через представления источника или конструктора.
 
 
-[![Режим конструктора страницы содержимого отображает содержимое отдельных страниц и главной страницы](creating-a-site-wide-layout-using-master-pages-cs/_static/image24.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image23.png)
+[![THE страницы содержимого конструктора представления отображает как особые для страницы и содержимое страницы Master](creating-a-site-wide-layout-using-master-pages-cs/_static/image24.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image23.png)
 
 **Рис 09**: Страницы содержимого конструктора представления отображает как особые для страницы и содержимое страницы Master ([Просмотр полноразмерного изображения](creating-a-site-wide-layout-using-master-pages-cs/_static/image25.png))
 
@@ -208,7 +208,7 @@ ms.locfileid: "57040331"
 Отвлекитесь и создать часть содержимого для `About.aspx` страницы. Как показано на рис. 10, введенный с заголовком «О автор» и несколько абзацев текста, но вы можете также добавить веб-элемент управления. После создания этот интерфейс, посетите `About.aspx` страницы в обозревателе.
 
 
-[![На странице About.aspx через браузер](creating-a-site-wide-layout-using-master-pages-cs/_static/image27.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image26.png)
+[![Visit About.aspx страницу через обозреватель](creating-a-site-wide-layout-using-master-pages-cs/_static/image27.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image26.png)
 
 **Рис. 10**: Посетите `About.aspx` страницу через обозреватель ([Просмотр полноразмерного изображения](creating-a-site-wide-layout-using-master-pages-cs/_static/image28.png))
 
@@ -248,7 +248,7 @@ ms.locfileid: "57040331"
 Приведенный выше код задает метку `Text` свойства текущей даты и времени в формате день недели, название месяца и день из двух цифр (см. рис. 11). Благодаря этому изменению вернемся к одной из страниц содержимого. Как показано на рис. 11, полученная в итоге разметка немедленно обновляется для включения изменений на главную страницу.
 
 
-[![Изменения на главную страницу будут отражены при просмотре страницы содержимого](creating-a-site-wide-layout-using-master-pages-cs/_static/image30.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image29.png)
+[![TИзменения HE главной страницы будут отражены при просмотре страницы содержимого](creating-a-site-wide-layout-using-master-pages-cs/_static/image30.png)](creating-a-site-wide-layout-using-master-pages-cs/_static/image29.png)
 
 **Рис. 11**: Изменения на главную страницу будут отражены при просмотре страницы содержимого ([Просмотр полноразмерного изображения](creating-a-site-wide-layout-using-master-pages-cs/_static/image31.png))
 
@@ -285,4 +285,4 @@ ms.locfileid: "57040331"
 Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [ mitchell@4GuysFromRolla.com ](mailto:mitchell@4GuysFromRolla.com).
 
 > [!div class="step-by-step"]
-> [Вперед](multiple-contentplaceholders-and-default-content-cs.md)
+> [Далее](multiple-contentplaceholders-and-default-content-cs.md)

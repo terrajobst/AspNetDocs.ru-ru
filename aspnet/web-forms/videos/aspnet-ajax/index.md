@@ -8,15 +8,15 @@ ms.date: 10/05/2011
 ms.assetid: 754b8c66-cefc-42d6-9f02-685efabdfcc6
 msc.legacyurl: /web-forms/videos/aspnet-ajax
 msc.type: chapter
-ms.openlocfilehash: c8084dedc89bc2fcab6bee03b1a65911d42435b3
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5fc85b5ac4771d6784e9afa41e09d74474a605ba
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57021221"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381306"
 ---
-<a name="aspnet-ajax"></a>ASP.NET AJAX
-====================
+# <a name="aspnet-ajax"></a>ASP.NET AJAX
+
 > Способы работы с ASP.NET AJAX для создания быстродействующих страниц, даже если вы не эксперт в JavaScript.
 
 
@@ -40,7 +40,7 @@ ms.locfileid: "57021221"
 - [Выбор метода для обновлений страниц AJAX](how-do-i-choose-between-methods-of-ajax-page-updates.md)
 - [Использование других библиотек пользовательского интерфейса JavaScript в ASP.NET AJAX](how-do-i-use-other-javascript-user-interface-libraries-with-aspnet-ajax.md)
 - [Использование служб профилей ASP.NET AJAX](how-do-i-use-the-aspnet-ajax-profile-services.md)
-- [Отладка приложений ASP.NET AJAX с помощью Visual Studio 2005](how-do-i-debug-aspnet-ajax-applications-using-visual-studio-2005.md)
+- [Отладка приложений ASP.NET AJAX с помощью Visual Studio 2005](how-do-i-debug-aspnet-ajax-applications-using-visual-studio-2005.md)
 - [Создание пользовательского серверного элемента управления ASP.NET AJAX](how-do-i-build-a-custom-aspnet-ajax-server-control.md)
 - [Использование JavaScript для обновления элемента управления UpdatePanel ASP.NET AJAX](how-do-i-use-javascript-to-refresh-an-aspnet-ajax-updatepanel.md)
 - [Определение выполнения асинхронной обратной передачи](how-do-i-determine-whether-an-asynchronous-postback-has-occurred.md)
@@ -59,7 +59,7 @@ ms.locfileid: "57021221"
 - [Обычная проверка подлинности ASP.NET в приложении с поддержкой AJAX](basic-aspnet-authentication-in-an-ajax-enabled-application.md)
 - [Динамическое изменение CSS с помощью элемента управления UpdatePanel ASP.NET AJAX](how-to-dynamically-change-css-using-the-aspnet-ajax-updatepanel.md)
 - [Динамическое добавление элементов управления на веб-страницу](how-to-dynamically-add-controls-to-a-web-page.md)
-- [Настройка среды разработки для ASP.NET 3.5](set-up-your-development-environment-for-aspnet-35.md)
-- [Настройка среды разработки для ASP.NET 2.0](set-up-your-development-environment-for-aspnet-20.md)
+- [Настройка среды разработки для ASP.NET 3.5](set-up-your-development-environment-for-aspnet-35.md)
+- [Настройка среды разработки для ASP.NET 2.0](set-up-your-development-environment-for-aspnet-20.md)
 - [Настройка обработки ошибок для UpdatePanel ASP.NET AJAX](how-do-i-customize-error-handling-for-the-aspnet-ajax-updatepanel.md)
 - [Использование клиентских шаблонов ASP.NET AJAX](how-do-i-use-aspnet-ajax-client-templates.md)

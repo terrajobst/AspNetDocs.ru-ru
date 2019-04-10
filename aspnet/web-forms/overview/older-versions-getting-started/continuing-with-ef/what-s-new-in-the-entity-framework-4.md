@@ -8,15 +8,15 @@ ms.date: 01/26/2011
 ms.assetid: 393df4a8-b1db-44c4-9db7-2b533ca887d0
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/continuing-with-ef/what-s-new-in-the-entity-framework-4
 msc.type: authoredcontent
-ms.openlocfilehash: 402e7ace1abad899d32ed179d6b68de4e5a129f5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0bc24a59e09728a5ecb6e18378c4cde0c8e046f2
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045721"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387455"
 ---
-<a name="whats-new-in-the-entity-framework-40"></a>Новые возможности .NET Framework 4.0
-====================
+# <a name="whats-new-in-the-entity-framework-40"></a>Новые возможности .NET Framework 4.0
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 > В этой серии руководств основан на веб-приложение университета Contoso, которая создается с [Приступая к работе с платформой Entity Framework](../getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md) серии руководств. Если вы не прошли предыдущих учебных курсах, в качестве отправной точки для этого учебника вы можете [загрузить приложение](https://code.msdn.microsoft.com/ASPNET-Web-Forms-97f8ee9a) , он был создан. Вы также можете [загрузить приложение](https://code.msdn.microsoft.com/ASPNET-Web-Forms-6c7197aa) , созданный путем завершения серии руководств. Если у вас есть вопросы о учебники, их можно разместить [форум ASP.NET Entity Framework](https://forums.asp.net/1227.aspx).
@@ -37,7 +37,7 @@ ms.locfileid: "57045721"
 
 Версия 3.5 платформы Entity Framework включает свойства навигации, но оно не включило свойства внешнего ключа в модели данных. Например `CourseID` и `StudentID` столбцы `StudentGrade` таблицы будет пропущено `StudentGrade` сущности.
 
-[!["Image01"](what-s-new-in-the-entity-framework-4/_static/image2.png)](what-s-new-in-the-entity-framework-4/_static/image1.png)
+[![Image01](what-s-new-in-the-entity-framework-4/_static/image2.png)](what-s-new-in-the-entity-framework-4/_static/image1.png)
 
 Причина этого подхода: что, строго говоря, внешние ключи являются физической реализации и не входящие в концептуальной моделью данных. Однако на практике часто бывает проще работать с сущностями в коде, когда у вас есть прямой доступ к ним.
 
@@ -135,7 +135,7 @@ ms.locfileid: "57045721"
 
 [![Image14](what-s-new-in-the-entity-framework-4/_static/image26.png)](what-s-new-in-the-entity-framework-4/_static/image25.png)
 
-В **свойства соединения** диалоговое окно, выберите локальный экземпляр SQL Server Express и базе данных имя `AlumniAsssociation`.
+В **свойства соединения** диалоговое окно, выберите локальный экземпляр SQL Server Express и базе данных имя `AlumniAssociation`.
 
 [![Image15](what-s-new-in-the-entity-framework-4/_static/image28.png)](what-s-new-in-the-entity-framework-4/_static/image27.png)
 

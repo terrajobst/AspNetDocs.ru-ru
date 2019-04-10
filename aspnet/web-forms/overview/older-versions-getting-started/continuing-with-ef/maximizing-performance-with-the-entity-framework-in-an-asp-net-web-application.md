@@ -8,15 +8,15 @@ ms.date: 01/26/2011
 ms.assetid: 4e43455e-dfa1-42db-83cb-c987703f04b5
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/continuing-with-ef/maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application
 msc.type: authoredcontent
-ms.openlocfilehash: 7d7c66289f09179a98e09532172477d5b06c70bd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 116c557ad0d6c158f983da75668e634c9eb9747c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063901"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379596"
 ---
-<a name="maximizing-performance-with-the-entity-framework-40-in-an-aspnet-4-web-application"></a>Повышение производительности с помощью Entity Framework 4.0 в 4 веб-приложения ASP.NET
-====================
+# <a name="maximizing-performance-with-the-entity-framework-40-in-an-aspnet-4-web-application"></a>Повышение производительности с помощью Entity Framework 4.0 в 4 веб-приложения ASP.NET
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 > В этой серии руководств основан на веб-приложение университета Contoso, которая создается с [Приступая к работе с Entity Framework 4.0](https://asp.net/entity-framework/tutorials#Getting%20Started) серии руководств. Если вы не прошли предыдущих учебных курсах, в качестве отправной точки для этого учебника вы можете [загрузить приложение](https://code.msdn.microsoft.com/ASPNET-Web-Forms-97f8ee9a) , он был создан. Вы также можете [загрузить приложение](https://code.msdn.microsoft.com/ASPNET-Web-Forms-6c7197aa) , созданный путем завершения серии руководств. Если у вас есть вопросы о учебники, их можно разместить [форум ASP.NET Entity Framework](https://forums.asp.net/1227.aspx).
@@ -242,7 +242,7 @@ ms.locfileid: "57063901"
 
 Visual Studio создает файл кода, создающий представления, которая называется *SchoolModel.Views.cs* на основе шаблона. (Вы могли заметить, что создается файл кода, даже в том случае, прежде чем выбрать **пользовательское средство**, как только вы сохраните файл шаблона.)
 
-[!["Image01"](maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application/_static/image28.png)](maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application/_static/image27.png)
+[![Image01](maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application/_static/image28.png)](maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application/_static/image27.png)
 
 Теперь можно запустить приложение и убедиться, что оно работает, как и раньше.
 

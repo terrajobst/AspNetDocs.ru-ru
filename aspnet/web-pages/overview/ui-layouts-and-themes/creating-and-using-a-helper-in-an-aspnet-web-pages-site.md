@@ -8,15 +8,15 @@ ms.date: 02/17/2014
 ms.assetid: 46bff772-01e0-40f0-9ae6-9e18c5442ee6
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/creating-and-using-a-helper-in-an-aspnet-web-pages-site
 msc.type: authoredcontent
-ms.openlocfilehash: 3b54ba8a35a354eb0562a47866cd8b5dcb66bc86
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 28cb3af081f68c20dd9cd9e0b2578f5656d2d652
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039801"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389444"
 ---
-<a name="creating-and-using-a-helper-in-an-aspnet-web-pages-razor-site"></a>Создание и использование вспомогательного метода на сайте ASP.NET Web Pages (Razor)
-====================
+# <a name="creating-and-using-a-helper-in-an-aspnet-web-pages-razor-site"></a>Создание и использование вспомогательного метода на сайте ASP.NET Web Pages (Razor)
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > В этой статье описывается создание вспомогательного метода в на веб-сайте ASP.NET Web Pages (Razor). Объект *вспомогательный* является многоразовым компонентом, который включает код и разметку, чтобы выполнить задачу, которая может быть утомительным или сложной.

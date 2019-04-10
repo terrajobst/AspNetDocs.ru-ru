@@ -8,15 +8,15 @@ ms.date: 08/14/2010
 ms.assetid: aa7b3e8e-e23d-49f1-b160-f99a7f2982bd
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part7
 msc.type: authoredcontent
-ms.openlocfilehash: 4c7867587ba0610f0f1c23d9a0b9fbdc4040de7c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3db6947f36eb51b41d929f8c7d8835a95db8ea75
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027631"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59392356"
 ---
-<a name="adding-validation-to-the-model"></a>Добавление проверки в модель
-====================
+# <a name="adding-validation-to-the-model"></a>Добавление проверки в модель
+
 по [(Scott hanselman)](https://github.com/shanselman)
 
 > Это руководство для начинающих, в котором представлены основные сведения по ASP.NET MVC. Вы создадите простое веб-приложение, которое считывает и записывает в базу данных. Посетите [центр обучения ASP.NET MVC](../../../index.md) для поиска других ASP.NET MVC, учебники и примеры.
@@ -61,11 +61,11 @@ ms.locfileid: "57027631"
 
 Ниже приведен код, показанный в интегрированной среде разработки.
 
-[![Фильмы - Microsoft Visual Web Developer 2010 Express (10)](getting-started-with-mvc-part7/_static/image4.png)](getting-started-with-mvc-part7/_static/image3.png)
+[![Movies - Microsoft Visual Web Developer 2010 Express (10)](getting-started-with-mvc-part7/_static/image4.png)](getting-started-with-mvc-part7/_static/image3.png)
 
 Запустите приложение и снова посетите /Movies/Create и нажмите кнопку Создать, не вводя никаких данных. Сообщения об ошибках отображаются сразу же без странице флэш-памяти, что мы связываем с отправкой данных выполнения всего пути к серверу. Это так, как ASP.NET MVC теперь проверяет входные данные на обоих клиента (с использованием JavaScript) и на сервере.
 
-[![Создание — Windows Internet Explorer](getting-started-with-mvc-part7/_static/image6.png)](getting-started-with-mvc-part7/_static/image5.png)
+[![Cю - Windows Internet Explorer](getting-started-with-mvc-part7/_static/image6.png)](getting-started-with-mvc-part7/_static/image5.png)
 
 Это выглядит хорошо! Теперь добавим один дополнительный столбец в базу данных.
 

@@ -8,15 +8,15 @@ ms.date: 07/11/2008
 ms.assetid: 32d54638-71b2-491d-81f4-f7417a13a62f
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/interacting-with-the-master-page-from-the-content-page-cs
 msc.type: authoredcontent
-ms.openlocfilehash: afcec6cb7a6763d068301c7afdd28ff560a3065b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 986c4b109fc0e809867853da728bcd12654a80ec
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027391"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59394683"
 ---
-<a name="interacting-with-the-master-page-from-the-content-page-c"></a>Взаимодействие с эталонной страницей на странице содержимого (C#)
-====================
+# <a name="interacting-with-the-master-page-from-the-content-page-c"></a>Взаимодействие с эталонной страницей на странице содержимого (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/1/8/4/184e24fa-fcc8-47fa-ac99-4b6a52d41e97/ASPNET_MasterPages_Tutorial_06_CS.zip) или [скачать PDF](http://download.microsoft.com/download/e/b/4/eb4abb10-c416-4ba4-9899-32577715b1bd/ASPNET_MasterPages_Tutorial_06_CS.pdf)
@@ -61,7 +61,7 @@ ms.locfileid: "57027391"
 Откройте `Site.master` главную страницу и добавьте метку и элемент управления GridView для `leftContent` `<div>`. Очистите метки `Text` задайте его `EnableViewState` свойство имеет значение false и его `ID` свойства `GridMessage`; присвоить свойству `ID` свойства `RecentProducts`. Затем из конструктора, разверните смарт-теге элемента GridView и выберите привязать его к новому источнику данных. Запустится мастер настройки источника данных. Так как база данных "Борей" в `App_Data` папки — это база данных Microsoft SQL Server, выберите для создания элемента управления SqlDataSource путем выбора (см. рис. 1); имя элемента управления SqlDataSource `RecentProductsDataSource`.
 
 
-[![Привязки GridView к элементу управления SqlDataSource, с именем RecentProductsDataSource](interacting-with-the-master-page-from-the-content-page-cs/_static/image2.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image1.png)
+[![BIND GridView к элементу управления SqlDataSource с именем RecentProductsDataSource](interacting-with-the-master-page-from-the-content-page-cs/_static/image2.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image1.png)
 
 **Рис 01**: Привязки GridView к элементу управления SqlDataSource присваивается имя `RecentProductsDataSource` ([Просмотр полноразмерного изображения](interacting-with-the-master-page-from-the-content-page-cs/_static/image3.png))
 
@@ -69,7 +69,7 @@ ms.locfileid: "57027391"
 Следующим шагом является запрос для указания, что базы данных для подключения к. Выберите `NORTHWIND.MDF` файла из раскрывающегося списка базы данных и нажмите кнопку Далее. Так как это первый раз, мы использовали эту базу данных, мастер предложит сохранить строку подключения в `Web.config`. Его сохранение строки подключения, используя имя `NorthwindConnectionString`.
 
 
-[![Подключение к базе данных "Борей"](interacting-with-the-master-page-from-the-content-page-cs/_static/image5.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image4.png)
+[![Cподключиться к базе данных "Борей"](interacting-with-the-master-page-from-the-content-page-cs/_static/image5.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image4.png)
 
 **Рис. 02**: Подключение к базе данных "Борей" ([Просмотр полноразмерного изображения](interacting-with-the-master-page-from-the-content-page-cs/_static/image6.png))
 
@@ -87,7 +87,7 @@ ms.locfileid: "57027391"
 `TOP 5` Ключевое слово возвращает только первые пять записей из запроса. `Products` Первичного ключа таблицы `ProductID`, является `IDENTITY` столбец, который гарантирует, что каждого нового продукта, добавляемого в таблицу будет больше предыдущей записи. Таким образом, сортировка результатов по `ProductID` в порядке убывания возвращает продукты, начиная с наиболее недавно созданный из них.
 
 
-[![Возвращает последний добавленный пяти продуктов](interacting-with-the-master-page-from-the-content-page-cs/_static/image8.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image7.png)
+[![Rь пяти наиболее недавно добавлена продуктов](interacting-with-the-master-page-from-the-content-page-cs/_static/image8.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image7.png)
 
 **Рис 03**: Возвращать пяти наиболее недавно добавлена продуктов ([Просмотр полноразмерного изображения](interacting-with-the-master-page-from-the-content-page-cs/_static/image9.png))
 
@@ -102,7 +102,7 @@ ms.locfileid: "57027391"
 С этим GridView создан и его элемента управления SqlDataSource настроен, посетите веб-сайта через браузер. Как показано на рис. 4, вы увидите, что в сетке в левом нижнем углу, перечислены пять наиболее недавно добавлена продуктов.
 
 
-[![Элемент GridView отображает по пяти недавно добавленных продуктов](interacting-with-the-master-page-from-the-content-page-cs/_static/image11.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image10.png)
+[![Tон GridView отображает пять наиболее недавно добавлена продуктов](interacting-with-the-master-page-from-the-content-page-cs/_static/image11.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image10.png)
 
 **Рис. 04**: Элемент GridView отображает по пяти наиболее недавно добавлена продуктов ([Просмотр полноразмерного изображения](interacting-with-the-master-page-from-the-content-page-cs/_static/image12.png))
 
@@ -116,7 +116,7 @@ ms.locfileid: "57027391"
 DAL следующей задачей является создание страницы содержимого, из которого пользователь может добавить нового продукта для `Products` таблицы. Добавьте новую страницу содержимого для `Admin` папку с именем `AddProduct.aspx`, не забыв привяжите его к `Site.master` главной страницы. Рис. 5 показан обозреватель решений после добавления этой страницы на веб-сайт.
 
 
-[![Добавьте новую страницу ASP.NET в папку администрирования](interacting-with-the-master-page-from-the-content-page-cs/_static/image14.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image13.png)
+[![Aдд новую страницу ASP.NET в папку Admin](interacting-with-the-master-page-from-the-content-page-cs/_static/image14.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image13.png)
 
 **05 рис**: Добавьте новую страницу ASP.NET к `Admin` папку ([Просмотр полноразмерного изображения](interacting-with-the-master-page-from-the-content-page-cs/_static/image15.png))
 
@@ -145,7 +145,7 @@ DAL следующей задачей является создание стра
 Вот и все! Давайте протестируем эту страницу. Посетите `AddProduct.aspx` через браузер, введите имя и цена (см. рис. 6).
 
 
-[![Добавить новый продукт в базу данных](interacting-with-the-master-page-from-the-content-page-cs/_static/image17.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image16.png)
+[![Aдд новый продукт в базу данных](interacting-with-the-master-page-from-the-content-page-cs/_static/image17.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image16.png)
 
 **Рис 06**: Добавить новый продукт в базу данных ([Просмотр полноразмерного изображения](interacting-with-the-master-page-from-the-content-page-cs/_static/image18.png))
 
@@ -199,7 +199,7 @@ DAL следующей задачей является создание стра
 Теперь у нас приведено слабо типизированной `Page.Master` свойства `Site` типа, мы можем ссылаться на свойства и методы, определенные для сайта. Как показано на рис. 7, открытое свойство `GridMessageText` отображается в раскрывающемся списке IntelliSense.
 
 
-[![IntelliSense отображает открытые свойства и методы нашей главной страницы](interacting-with-the-master-page-from-the-content-page-cs/_static/image20.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image19.png)
+[![Iфункци показаны открытые свойства и методы нашей главной страницы](interacting-with-the-master-page-from-the-content-page-cs/_static/image20.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image19.png)
 
 **07 рис**: IntelliSense отображает открытые свойства и методы нашей главной страницы ([Просмотр полноразмерного изображения](interacting-with-the-master-page-from-the-content-page-cs/_static/image21.png))
 
@@ -237,7 +237,7 @@ DAL следующей задачей является создание стра
 На рисунке 8 показана `AddProduct.aspx` страницу сразу же после - Скотта Soda - новый продукт был добавлен в базу данных. Обратите внимание, что имя только что добавленные продукта указан в главной страницы метки и что GridView был обновлен для включения и его цену продукта.
 
 
-[![Метки и GridView на главной странице отображаются только что добавленные продукты](interacting-with-the-master-page-from-the-content-page-cs/_static/image23.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image22.png)
+[![TМетка и GridView HE главной страницы отображаются продукты Just-Added](interacting-with-the-master-page-from-the-content-page-cs/_static/image23.png)](interacting-with-the-master-page-from-the-content-page-cs/_static/image22.png)
 
 **Рис 08**: Метка и GridView на главной странице отображаются продукты Just-Added ([Просмотр полноразмерного изображения](interacting-with-the-master-page-from-the-content-page-cs/_static/image24.png))
 

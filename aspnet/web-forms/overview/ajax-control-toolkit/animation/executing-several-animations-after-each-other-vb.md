@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 21ece509-79cc-4d9d-892d-7b6e9c4d3502
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/executing-several-animations-after-each-other-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 89412c078bbe40f06d31327d0a17bf3ea8bc8314
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 53984f03cf01caab859f44fdc018b1598ed62def
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57052581"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383048"
 ---
-<a name="executing-several-animations-after-each-other-vb"></a>Выполнение нескольких анимаций друг за другом (VB)
-====================
+# <a name="executing-several-animations-after-each-other-vb"></a>Выполнение нескольких анимаций друг за другом (VB)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation3.vb.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation3VB.pdf)
@@ -53,12 +53,12 @@ ms.locfileid: "57052581"
 При выполнении этого сценария, панели первой получает шире и затем меньшего размера.
 
 
-[![Сначала увеличивается ширина](executing-several-animations-after-each-other-vb/_static/image2.png)](executing-several-animations-after-each-other-vb/_static/image1.png)
+[![Fервый ширина будет увеличена](executing-several-animations-after-each-other-vb/_static/image2.png)](executing-several-animations-after-each-other-vb/_static/image1.png)
 
 Сначала ширина увеличивается ([Просмотр полноразмерного изображения](executing-several-animations-after-each-other-vb/_static/image3.png))
 
 
-[![Затем уменьшается на высоту](executing-several-animations-after-each-other-vb/_static/image5.png)](executing-several-animations-after-each-other-vb/_static/image4.png)
+[![Tри высота уменьшается](executing-several-animations-after-each-other-vb/_static/image5.png)](executing-several-animations-after-each-other-vb/_static/image4.png)
 
 Затем уменьшается на высоту ([Просмотр полноразмерного изображения](executing-several-animations-after-each-other-vb/_static/image6.png))
 

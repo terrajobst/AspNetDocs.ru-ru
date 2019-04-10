@@ -8,15 +8,15 @@ ms.date: 07/30/2013
 ms.assetid: f81f3d80-3674-4d8e-a9b1-87feed1a93c9
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/creating-a-more-complex-data-model-for-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: cfb01742c3921c24c71fd3fa4a14a9f71fac1ac1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 15bdaa588792c3cf4a8e6eee651e0675f959f942
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063681"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382242"
 ---
-<a name="creating-a-more-complex-data-model-for-an-aspnet-mvc-application-4-of-10"></a>Создание более сложной модели данных для приложения ASP.NET MVC (4 из 10)
-====================
+# <a name="creating-a-more-complex-data-model-for-an-aspnet-mvc-application-4-of-10"></a>Создание более сложной модели данных для приложения ASP.NET MVC (4 из 10)
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 [Скачать завершенный проект](http://code.msdn.microsoft.com/Getting-Started-with-dd0e2ed8)
@@ -48,7 +48,7 @@ ms.locfileid: "57063681"
 
 [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) атрибут используется для указания типа данных, с более точным определением относительно встроенного типа базы данных. В этом случае требуется отслеживать только дату, а не дату и время. [Перечисление DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) представлено множество типов данных, таких как *даты, времени, PhoneNumber, Currency, EmailAddress* и многое другое. Атрибут `DataType` также обеспечивает автоматическое предоставление функций для определенных типов в приложении. Например `mailto:` связи могут создаваться для [DataType.EmailAddress](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx), и можно предоставить селектор даты [DataType.Date](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) в браузерах, поддерживающих [HTML5](http://html5.org/). [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) создает атрибуты HTML 5 [данных —](http://ejohn.org/blog/html-5-data-attributes/) (произносится *dash данных*) атрибуты, которые HTML 5. [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) атрибуты не предназначены для проверки.
 
-`DataType.Date` не задает формат отображаемой даты. По умолчанию поле данных отображается в соответствии с использованием на сервере форматов [CultureInfo](https://msdn.microsoft.com/library/vstudio/system.globalization.cultureinfo(v=vs.110).aspx).
+`DataType.Date` не указывайте формат отображаемой даты. По умолчанию поле данных отображается в соответствии с использованием на сервере форматов [CultureInfo](https://msdn.microsoft.com/library/vstudio/system.globalization.cultureinfo(v=vs.110).aspx).
 
 С помощью атрибута `DisplayFormat` можно явно указать формат даты:
 
@@ -152,7 +152,7 @@ ms.locfileid: "57063681"
 
 ### <a name="the-fullname-calculated-property"></a>Полное имя вычисляемого свойства
 
-`FullName` — это вычисляемое свойство, которое возвращает значение, созданное путем объединения двух других свойств. Поэтому он имеет только `get` метод доступа и нет `FullName` столбец создается в базе данных.
+`FullName` — это вычисляемое свойство, которое возвращает значение, которое создается путем объединения двух других свойств. Поэтому он имеет только `get` метод доступа и нет `FullName` столбец создается в базе данных.
 
 [!code-csharp[Main](creating-a-more-complex-data-model-for-an-asp-net-mvc-application/samples/sample11.cs)]
 
@@ -358,7 +358,7 @@ ms.locfileid: "57063681"
 
 Если вы попытаетесь обновить базу данных на этом этапе, появится следующая ошибка:
 
-*Конфликт инструкции ALTER TABLE с ограничением FOREIGN KEY «FK\_dbo. Курс\_dbo. Отдел\_DepartmentID». Конфликт произошел в базе данных «ContosoUniversity», таблица «dbo. Отдел», столбце «DepartmentID».*
+*Конфликт инструкции ALTER TABLE с ограничением FOREIGN KEY «FK\_dbo. Курс\_dbo. Отдел\_DepartmentID». The conflict occurred in database "ContosoUniversity", table "dbo.Department", column 'DepartmentID'. (Оператор ALTER TABLE конфликтовал с ограничением FOREIGN KEY "FK_dbo.Course_dbo.Department_DepartmentID". Конфликт возник в столбце "DepartmentID" таблицы "dbo.Department" базы данных "ContosoUniversity".)*
 
 Изменить &lt; *timestamp&gt;\_Chap4.cs* файла и внесите следующие изменения в код (вы добавите инструкцию SQL и изменить `AddColumn` инструкции):
 
@@ -377,7 +377,7 @@ ms.locfileid: "57063681"
 > 
 > [!code-xml[Main](creating-a-more-complex-data-model-for-an-asp-net-mvc-application/samples/sample35.xml?highlight=1-2)]
 > 
->  В новой базе данных нет данных для переноса и `update-database` команда является гораздо большей долей вероятности завершится без ошибок. Инструкции о том, как удалить базу данных, см. в разделе [как удалить базу данных из Visual Studio 2012](http://romiller.com/2013/05/17/how-to-drop-a-database-from-visual-studio-2012/).
+> В новой базе данных нет данных для переноса и `update-database` команда является гораздо большей долей вероятности завершится без ошибок. Инструкции о том, как удалить базу данных, см. в разделе [как удалить базу данных из Visual Studio 2012](http://romiller.com/2013/05/17/how-to-drop-a-database-from-visual-studio-2012/).
 
 
 Открыть базу данных в **обозревателя серверов** как вы делали это раньше и разверните **таблиц** узел, чтобы увидеть, что все таблицы были созданы. (Если у вас есть **обозревателя серверов** откройте из более ранних времени, щелкните **обновить** кнопки.)

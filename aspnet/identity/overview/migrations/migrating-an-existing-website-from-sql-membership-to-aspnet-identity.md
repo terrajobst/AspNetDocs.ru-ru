@@ -1,19 +1,20 @@
 ---
 uid: identity/overview/migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity
-title: Миграция существующего веб-сайта из членства SQL в ASP.NET Identity | Документация Майкрософт
+title: Миграция существующего веб-сайта из членства SQL в ASP.NET Identity - ASP.NET 4.x
 author: Rick-Anderson
 description: В этом учебнике демонстрируются действия, чтобы перенести веб-приложение с именем пользователя и роли данных, созданных с помощью членства SQL для нового удостоверения ASP.NET s...
 ms.author: riande
 ms.date: 12/19/2014
+ms.custom: seoapril2019
 ms.assetid: 220d3d75-16b2-4240-beae-a5b534f06419
 msc.legacyurl: /identity/overview/migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: b80f2f5cc4702c3e406d8989905c56508711e788
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: f205dfd8692bc946ca2124655bf8bcefbdbd1779
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58426085"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59394537"
 ---
 # <a name="migrating-an-existing-website-from-sql-membership-to-aspnet-identity"></a>Миграция существующего веб-сайта из членства SQL в ASP.NET Identity
 
@@ -82,7 +83,7 @@ ms.locfileid: "58426085"
 
 Для классов ASP.NET Identity для работы за пределами поля с данными из существующих пользователей нам нужно перенести схему базы данных в один, необходимые для ASP.NET Identity. Мы это можно сделать путем добавления новых таблиц и копирование сведения о существующем к этим таблицам. По умолчанию ASP.NET Identity использует EntityFramework для сопоставления классов модели удостоверения в базе данных для хранения или извлечения информации. Эти классы модели реализации базовых интерфейсов удостоверений, определение и объектов роли пользователя. Таблицы и столбцы в базе данных основаны на эти классы модели. Классы модели EntityFramework v2.1.0 удостоверений и их свойства, как определено ниже
 
-| **IdentityUser** | **Type** | **IdentityRole** | **IdentityUserRole** | **IdentityUserLogin** | **IdentityUserClaim** |
+| **IdentityUser** | **Тип** | **IdentityRole** | **IdentityUserRole** | **IdentityUserLogin** | **IdentityUserClaim** |
 | --- | --- | --- | --- | --- | --- |
 | Идентификатор | string | Идентификатор | RoleId | ProviderKey | Идентификатор |
 | Имя пользователя | string | name | Идентификатор пользователя | Идентификатор пользователя | ClaimType |

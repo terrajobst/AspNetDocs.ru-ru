@@ -8,15 +8,15 @@ ms.date: 09/08/2014
 ms.assetid: 2ce36f78-8ecb-4ab1-b748-6d0ab633ea3f
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create-the-project
 msc.type: authoredcontent
-ms.openlocfilehash: 754f085e3e43f7efa155f410d02a0d29d3349612
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9e2cd1beca03b81140b9d58c5e43dbf7c6b8808b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055981"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59393058"
 ---
-<a name="create-the-project"></a>Создание проекта
-====================
+# <a name="create-the-project"></a>Создание проекта
+
 по [Erik Reitan](https://github.com/Erikre)
 
 [Скачайте пример проекта Wingtip Toys (C#)](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) или [скачайте электронную книгу (PDF)](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
@@ -70,7 +70,7 @@ ms.locfileid: "57055981"
 > 
 > ASP.NET предоставляет четыре основной разработки платформы:
 > 
-> - [Веб-форм ASP.NET](../../../index.md)  
+> - [Веб-формы ASP.NET](../../../index.md)  
 >  Платформа веб-форм предназначена для разработчиков, которые предпочитают декларативные и основанные на элементах управления программирования, такие как Microsoft Windows Forms (WinForms) и WPF/XAML/Silverlight. Он предлагает модель WYSIWYG разработки на основе конструктора, так что это популярность у разработчиков, стремящихся для среды разработки (RAD) эффективное создание приложений для веб-разработки. Если вы не знакомы с веб-программирования и не знакомы с традиционными инструментами разработки RAD Майкрософт клиент (например, Visual Basic и Visual C#), можно быстро создать веб-приложения без необходимости в HTML и JavaScript.
 > - [ASP.NET MVC](../../../../mvc/index.md)  
 >  ASP.NET MVC предназначен для разработчиков, заинтересованных в шаблоны и принципы разработки, управляемой тестами, разделение областей ответственности, инверсии управления (IoC) и внедрение зависимостей (DI). Эта платформа стимулирует разделение уровня бизнес-логики, веб-приложения из его уровень представления данных.
@@ -93,12 +93,12 @@ ms.locfileid: "57055981"
 
 Visual Studio создает некоторые начальной папки и файлы для вашего проекта. Ниже перечислены первый файлы, которые вы будете работать с далее в этом руководстве.
 
-| **Файл** | **Назначение** |
+| **Файл** | **Цель** |
 | --- | --- |
 | *Default.aspx* | Обычно первая страница отображается при запуске приложения в браузере. |
 | *Site.Master* | Страница, которая позволяет создать согласованный макет и используйте стандартное поведение для страниц в приложении. |
 | *Global.asax* | Необязательный файл, который содержит код для отклика на события уровня приложения и уровня сеанса, создаваемые ASP.NET или модули HTTP. |
-| *Web.config* | Данные конфигурации для приложения. |
+| *Файл Web.config* | Данные конфигурации для приложения. |
 
 ### <a name="running-the-default-web-application"></a>Веб-приложения по умолчанию
 
@@ -138,7 +138,7 @@ Visual Studio создает некоторые начальной папки и
 > 
 > [SQL Server Express LocalDB](https://technet.microsoft.com/library/hh510202.aspx) — это облегченная версия SQL Server, имеет множество функций программирования базы данных SQL Server. SQL Server Express LocalDB запускается в пользовательском режиме и имеет быстрый, настройки установки, с краткого списка необходимых условиях для установки. В Microsoft SQL Server, все базы данных или код Transact-SQL могут быть перемещены из SQL Server Express LocalDB для SQL Server и SQL Azure без никаких действий по обновлению. Таким образом SQL Server Express LocalDB можно использовать как среду разработки для приложений, предназначенных для всех выпусков SQL Server. SQL Server Express LocalDB включает функции, такие как хранимые процедуры, определяемые пользователем функции и статистические выражения, интеграции .NET Framework, Пространственные типы и другие, которые не доступны в SQL Server Compact.
 > 
-> **Главные страницы**
+> **Эталонные страницы**
 > 
 > [Главной страницы ASP.NET](https://msdn.microsoft.com/library/wtxbf3hh.aspx) определяет единообразия внешнего вида и поведения для всех страниц в приложении. Выполняет слияние макет главной страницы с содержимым из отдельных страниц содержимого для создания на последней странице, показываемое пользователю. В приложении Wingtip Toys, изменить *Site.master* главную страницу, таким образом, все страницы в веб-узел Wingtip Toys же различение логотип и навигации панели.
 > 
@@ -191,7 +191,7 @@ Visual Studio создает некоторые начальной папки и
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
 [Выбор правильной модели программирования](../../../videos/how-do-i/choosing-the-right-programming-model.md)   
-[Проекты веб-приложений, веб-сайтов](https://msdn.microsoft.com/library/dd547590.aspx)   
+[Сравнение проектов веб-приложений с проектами веб-сайтов](https://msdn.microsoft.com/library/dd547590.aspx)   
 [Веб-форм ASP.NET обзор страниц](https://msdn.microsoft.com/library/428509ah.aspx)
 
 > [!div class="step-by-step"]

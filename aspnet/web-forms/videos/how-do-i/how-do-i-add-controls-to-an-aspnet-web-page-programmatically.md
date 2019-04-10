@@ -8,15 +8,15 @@ ms.date: 07/24/2008
 ms.assetid: 1576e0a4-73ca-4816-bc09-20ae393a66f9
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-add-controls-to-an-aspnet-web-page-programmatically
 msc.type: video
-ms.openlocfilehash: eb31a6d24d18b3bbd354a9f377bbad82d7024b00
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 44c4659a9e4de81943d1804421942b2d00a94654
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059671"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395528"
 ---
-<a name="how-do-i-add-controls-to-an-aspnet-web-page-programmatically"></a>[Инструкции] Добавление элементов управления веб-страницу ASP.NET программными средствами
-====================
+# <a name="how-do-i-add-controls-to-an-aspnet-web-page-programmatically"></a>[Инструкции] Добавление элементов управления веб-страницу ASP.NET программными средствами
+
 по [Крис Пелз](https://twitter.com/chrispels)
 
 В этом видео Крис Пелз будет показано, как программным способом создать серверный элемент управления ASP.NET во время выполнения и добавить его на страницу. Во-первых Узнайте базовое понятие, добавление элемента управления на страницу программным образом. Затем проверяется концепцию элемента управления «container», необходимые для добавления нового элемента управления программными средствами во время выполнения. Узнайте, рекомендации по вложенности программного добавления элементов управления, и как отдельные методы создания можно предприятиям процесс, чтобы сделать его более удобным. Кроме того Узнайте рекомендации для управления состояние представления, когда динамическое добавление элементов управления.

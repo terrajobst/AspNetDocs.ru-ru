@@ -8,15 +8,15 @@ ms.date: 02/20/2009
 ms.assetid: 92c70297-4430-4e4e-919a-9c2333a8d09a
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-4-make-the-application-loosely-coupled-vb
 msc.type: authoredcontent
-ms.openlocfilehash: a319e2eb71da1bf693b1bd14ae368c844e7daeb1
-ms.sourcegitcommit: 62db31596a7da029263cf06335aff12236fb3186
+ms.openlocfilehash: 256536150a585a4bb0304f23c3524b18d0f552f0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58440265"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59392382"
 ---
-<a name="iteration-4--make-the-application-loosely-coupled-vb"></a>Итерация #4 – Создание слабых связей в приложении (VB)
-====================
+# <a name="iteration-4--make-the-application-loosely-coupled-vb"></a>Итерация #4 – Создание слабых связей в приложении (VB)
+
 по [Microsoft](https://github.com/microsoft)
 
 [Скачать код](iteration-4-make-the-application-loosely-coupled-vb/_static/contactmanager_4_vb1.zip)
@@ -112,7 +112,7 @@ ms.locfileid: "58440265"
 
 В листинге 3 содержится измененный контроллера контактов.
 
-**Листинг 3 - Controllers\ContactController.vb**
+**Listing 3 - Controllers\ContactController.vb**
 
 [!code-vb[Main](iteration-4-make-the-application-loosely-coupled-vb/samples/sample3.vb)]
 
@@ -137,7 +137,7 @@ ms.locfileid: "58440265"
 
 ContactManagerService содержится в листинге 4. Он содержит логику проверки из класса контроллера, обратитесь в службу.
 
-**Листинг 4 - Models\ContactManagerService.vb**
+**Listing 4 - Models\ContactManagerService.vb**
 
 [!code-vb[Main](iteration-4-make-the-application-loosely-coupled-vb/samples/sample4.vb)]
 
@@ -153,7 +153,7 @@ ContactManagerService содержится в листинге 4. Он соде�
 
 В листинге 6 содержится измененный класс контроллера контактов. Обратите внимание на то, что контроллеру контакт больше не взаимодействует с репозитория ContactManager. Вместо этого обратитесь в службу контроллера взаимодействует со службой ContactManager. Каждый слой изолированное максимально из других слоев.
 
-**В листинге 6 - Controllers\ContactController.vb**
+**Listing 6 - Controllers\ContactController.vb**
 
 [!code-vb[Main](iteration-4-make-the-application-loosely-coupled-vb/samples/sample6.vb)]
 

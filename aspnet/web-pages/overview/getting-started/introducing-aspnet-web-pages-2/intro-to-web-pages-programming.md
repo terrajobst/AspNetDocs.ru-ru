@@ -8,15 +8,15 @@ ms.date: 06/17/2015
 ms.assetid: 7526ed45-a97d-4e8a-8301-01324ef0eff9
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/intro-to-web-pages-programming
 msc.type: authoredcontent
-ms.openlocfilehash: ec1c055d1b3f6ca5c6374a18840c2595bb368e0e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 81c2c6f0070a409c289128ccf5d39f9fff788b48
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034561"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387351"
 ---
-<a name="introducing-aspnet-web-pages---programming-basics"></a>Знакомство с веб-страниц ASP.NET — основы программирования
-====================
+# <a name="introducing-aspnet-web-pages---programming-basics"></a>Знакомство с веб-страниц ASP.NET — основы программирования
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > Этот учебник дает Общие сведения о программе в ASP.NET Web Pages с синтаксисом Razor.
@@ -162,7 +162,7 @@ ms.locfileid: "57034561"
 
 [!code-csharp[Main](intro-to-web-pages-programming/samples/sample7.cs)]
 
-Можно проверить переменные для значений или выражений с помощью <em>логический оператор</em> или <em>оператор сравнения</em>: равенства (==), больше (&gt;), меньше (&lt;), больше или равно (&gt;=) и меньше или равно (&lt;=). ! = Не равно означает оператор — например, если (! = 0) означает <em>Если</em> <em>a</em><em>не равно 0</em>.
+Можно проверить переменные для значений или выражений с помощью *логический оператор* или *оператор сравнения*: равенства (==), больше (&gt;), меньше (&lt;), больше или равно (&gt;=) и меньше или равно (&lt;=). ! = Не равно означает, что оператор — например, если (! = 0) означает, что *Если не равен 0*.
 
 > [!NOTE]
 > Убедитесь, что вы Обратите внимание, что оператор сравнения для равенства (==) не так же, как =. = Оператор используется только для присвоения значений (var = 2). Если вы перепутать эти операторы, либо вы получите ошибку, или вы получите непредвиденных результатов.
@@ -354,7 +354,7 @@ ms.locfileid: "57034561"
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-- [Введение в программирование веб-ASP.NET, с помощью синтаксиса Razor](https://go.microsoft.com/fwlink/?LinkID=202890)
+- [Введение в веб-программирование для ASP.NET с использованием синтаксиса Razor](https://go.microsoft.com/fwlink/?LinkID=202890)
 - [Вспомогательный модуль Twitter](../../ui-layouts-and-themes/twitter-helper.md)
 
 > [!div class="step-by-step"]

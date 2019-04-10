@@ -8,15 +8,15 @@ ms.date: 07/28/2008
 ms.assetid: 0edcd653-f24a-41aa-aef4-75f868fe5ac2
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/specifying-the-master-page-programmatically-vb
 msc.type: authoredcontent
-ms.openlocfilehash: a89964749ce8e127207ada6944a3d2ba513d3547
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 96f6ebb47af38c77cba11a92c883700730324226
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036311"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389236"
 ---
-<a name="specifying-the-master-page-programmatically-vb"></a>Программное указание эталонной страницы (VB)
-====================
+# <a name="specifying-the-master-page-programmatically-vb"></a>Программное указание эталонной страницы (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/d/6/6/d66ad554-afdd-409e-a5c3-201b774fbb31/ASPNET_MasterPages_Tutorial_09_VB.zip) или [скачать PDF](http://download.microsoft.com/download/d/6/6/d66ad554-afdd-409e-a5c3-201b774fbb31/ASPNET_MasterPages_Tutorial_09_VB.pdf)
@@ -42,7 +42,7 @@ ms.locfileid: "57036311"
 Рис. 1 иллюстрирует этот fusion. Шаг 1 на рис. 1 показаны исходное содержимое и иерархий управления главной страницы. Элементы управления страницы добавляются в конец этапа PreInit содержимое соответствующих элементов управления ContentPlaceHolder на главной странице (шаг 2). После этого fusion главной страницы служит в качестве корневого элемента иерархии склеенную элемента управления. Это совмещенного управления иерархии затем добавляется на страницу для создания иерархии завершенных элементов управления (шаг 3). Конечным результатом является, включающее иерархии склеенную элементов управления в иерархии элементов управления страницы.
 
 
-[![Главной страницы и страницы содержимого элемента управления иерархии являются совмещенного друг с другом на этапе PreInit](specifying-the-master-page-programmatically-vb/_static/image2.png)](specifying-the-master-page-programmatically-vb/_static/image1.png)
+[![Tон главной страницы и страницы содержимого элемента управления иерархии являются совмещенного друг с другом на этапе PreInit](specifying-the-master-page-programmatically-vb/_static/image2.png)](specifying-the-master-page-programmatically-vb/_static/image1.png)
 
 **Рис 01**: Главной страницы и страницы содержимого элемента управления иерархии являются совмещенного друг с другом на этапе PreInit ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image3.png))
 
@@ -83,7 +83,7 @@ Partakes главную страницу в этом fusion зависит от 
 Иными словами, необходимо оставить `MasterPageFile` атрибут в `@Page` директива слушать получить обширные возможности разработки в Visual Studio.
 
 
-[![Visual Studio использует @Page атрибут MasterPageFile директивы для подготовки к просмотру в режим конструктора](specifying-the-master-page-programmatically-vb/_static/image5.png)](specifying-the-master-page-programmatically-vb/_static/image4.png)
+[![Visual Studio использует @Page атрибут MasterPageFile директивы для подготовки к просмотру в конструкторе](specifying-the-master-page-programmatically-vb/_static/image5.png)](specifying-the-master-page-programmatically-vb/_static/image4.png)
 
 **Рис. 02**: Visual Studio использует `@Page` директивы `MasterPageFile` атрибута для визуализации в режим конструктора ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image6.png))
 
@@ -97,7 +97,7 @@ Partakes главную страницу в этом fusion зависит от 
 Создание новой главной страницы в корневой папке с именем `Alternate.master`. Также добавить новую таблицу стилей на веб-сайт с именем `AlternateStyles.css`.
 
 
-[![Добавьте еще один главную страницу и CSS, файл на веб-сайт](specifying-the-master-page-programmatically-vb/_static/image8.png)](specifying-the-master-page-programmatically-vb/_static/image7.png)
+[![Add другой главной страницы и CSS-файл на веб-сайт](specifying-the-master-page-programmatically-vb/_static/image8.png)](specifying-the-master-page-programmatically-vb/_static/image7.png)
 
 **Рис 03**: Добавить другой главной страницы и CSS-файл на веб-сайт ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image9.png))
 
@@ -108,7 +108,7 @@ Partakes главную страницу в этом fusion зависит от 
 > ASP.NET включает в себя возможность определить *темы*. Тема — коллекция изображений, CSS-файлов, относящихся к стилю параметры и веб-элемента управления свойства, которые могут применяться к странице во время выполнения. Темы — способ перейти, если веб сайта макеты отличаются только в изображений, отображаемых и их правила CSS. Если макеты отличаются более значительно, например с помощью различных веб-элементов управления или необходимости радикально другой макет, затем необходимо будет использовать отдельный главные страницы. Обратитесь к дополнительными материалами в конце этого руководства, Дополнительные сведения о темах.
 
 
-[![Страниц содержимого теперь можно использовать новый интерфейс](specifying-the-master-page-programmatically-vb/_static/image11.png)](specifying-the-master-page-programmatically-vb/_static/image10.png)
+[![OСтраниц содержимого, теперь можно использовать благодаря новому интерфейсу](specifying-the-master-page-programmatically-vb/_static/image11.png)](specifying-the-master-page-programmatically-vb/_static/image10.png)
 
 **Рис. 04**: Страниц содержимого теперь можно использовать новый интерфейс ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image12.png))
 
@@ -206,7 +206,7 @@ Partakes главную страницу в этом fusion зависит от 
 > Так как `Site.master` и `Alternate.master` же задали элементов управления ContentPlaceHolder неважно, какие главной страницы, выбирается при создании новой страницы содержимого. Для обеспечения согласованности, я бы предложил с помощью `Site.master`.
 
 
-[![Добавьте новую страницу содержимого на веб-сайт](specifying-the-master-page-programmatically-vb/_static/image14.png)](specifying-the-master-page-programmatically-vb/_static/image13.png)
+[![Aдд новую страницу содержимого на веб-сайт](specifying-the-master-page-programmatically-vb/_static/image14.png)](specifying-the-master-page-programmatically-vb/_static/image13.png)
 
 **05 рис**: Добавьте новую страницу содержимого на веб-сайт ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image15.png))
 
@@ -251,12 +251,12 @@ Partakes главную страницу в этом fusion зависит от 
 Этот код в месте, посетите `ChooseMasterPage.aspx` страницы. Изначально `Site.master` Главная страница является выбранный (см. рис. 6), но пользователь может выбрать другой главной страницы из раскрывающегося списка.
 
 
-[![Страницы содержимого, отображаются с помощью Site.master главной страницы](specifying-the-master-page-programmatically-vb/_static/image17.png)](specifying-the-master-page-programmatically-vb/_static/image16.png)
+[![Cсодержимого страницы отображаются с помощью Site.master главной страницы](specifying-the-master-page-programmatically-vb/_static/image17.png)](specifying-the-master-page-programmatically-vb/_static/image16.png)
 
 **Рис 06**: Содержимое страницы, отображаемых с помощью `Site.master` главной страницы ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image18.png))
 
 
-[![Страницы содержимого теперь отображаются с помощью Alternate.master главной страницы](specifying-the-master-page-programmatically-vb/_static/image20.png)](specifying-the-master-page-programmatically-vb/_static/image19.png)
+[![CСтраницы содержимого теперь отображаются с помощью Alternate.master главной страницы](specifying-the-master-page-programmatically-vb/_static/image20.png)](specifying-the-master-page-programmatically-vb/_static/image19.png)
 
 **07 рис**: Содержимое страницы, теперь отображаются с помощью `Alternate.master` главной страницы ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image21.png))
 

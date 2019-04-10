@@ -8,18 +8,18 @@ ms.date: 07/27/2010
 ms.assetid: 18700815-8e6c-4489-91af-7ea9dab6529e
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/use-ajax-to-deliver-dynamic-updates
 msc.type: authoredcontent
-ms.openlocfilehash: 71e566523d658eb8198453f354a12e63a4c38495
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 56ebc40aa500b62811bac0a5041fa9aa4f91f4ae
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58421042"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59391056"
 ---
-<a name="use-ajax-to-deliver-dynamic-updates"></a>Использование AJAX для доставки динамических обновлений
-====================
+# <a name="use-ajax-to-deliver-dynamic-updates"></a>Использование AJAX для доставки динамических обновлений
+
 по [Microsoft](https://github.com/microsoft)
 
-[Загрузить PDF-файл](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
+[Скачать PDF](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
 
 > Это шаг 10 процедуры бесплатной [руководство по использованию приложения «NerdDinner»](introducing-the-nerddinner-tutorial.md) , пошаговое рассмотрение как создать небольшой, но завершить, веб-приложения с помощью ASP.NET MVC 1.
 > 
@@ -114,7 +114,7 @@ Details(), метод действия реализуется следующим
 
 *Совет: Убедитесь, что вы установили исправление JavaScript intellisense для VS 2008 SP1, позволяющий более обширная поддержка intellisense файлы JavaScript (включая jQuery). Его можно загрузить из: http://tinyurl.com/vs2008javascripthotfix*
 
-Код, написанный с помощью JQuery, часто использует глобальный «$ ()» метод JavaScript, который получает один или несколько элементов HTML, с помощью селектора CSS. Например <em>$("#rsvpmsg")</em> выбирает любой HTML-элемент с идентификатором rsvpmsg, хотя <em>$(".something")</em> следует выбрать все элементы с «что-то» CSS имя класса. Можно также написать более сложные запросы, как «return все кнопки установлен переключатель» с помощью селектора запроса как: <em>$("входные данные [@type= radio] [@checked]")</em>.
+Код, написанный с помощью JQuery, часто использует глобальный «$ ()» метод JavaScript, который получает один или несколько элементов HTML, с помощью селектора CSS. Например *$("#rsvpmsg")* выбирает любой HTML-элемент с идентификатором rsvpmsg, хотя *$(".something")* следует выбрать все элементы с «что-то» CSS имя класса. Можно также написать более сложные запросы, как «return все кнопки установлен переключатель» с помощью селектора запроса как: *$("входные данные [@type= radio] [@checked]")*.
 
 После выбора элементов, можно вызывать методы на возможность выполнения действий, таких как скрытие их: *$("#rsvpmsg").hide();*
 

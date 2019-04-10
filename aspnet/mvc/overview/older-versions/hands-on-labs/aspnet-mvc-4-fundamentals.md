@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: b7dba543-73c3-4534-a9a0-ba70fa2c6a8a
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-fundamentals
 msc.type: authoredcontent
-ms.openlocfilehash: d3bc39a37cace003c3fda6691f0dd7f893128b07
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 38aea3b3480dde6ec6182a45c4f61f44eea8e05e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425253"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380227"
 ---
 # <a name="aspnet-mvc-4-fundamentals"></a>Основы ASP.NET MVC 4
 
@@ -869,7 +869,7 @@ ms.locfileid: "58425253"
 <a id="Ex7Task1"></a>
 
 <a id="Task_1_Exploring_the_ASPNET_MVC_4_Internet_Application_Template"></a>
-#### <a name="task-1-exploring-the-aspnet-mvc-4-internet-application-template"></a>Упражнение 1. Изучение данный шаблон приложения ASP.NET MVC 4 Internet
+#### <a name="task-1-exploring-the-aspnet-mvc-4-internet-application-template"></a>Задача 1. Изучение данный шаблон приложения ASP.NET MVC 4 Internet
 
 1. Если это еще не открыто, запустите **VS Express для Web**
 2. Выберите **файл | Новые | Проект** команды меню. В **новый проект** диалоговом окне выберите **Visual C# | Web** шаблона на левой панели дерева, а затем выберите **веб-приложение ASP.NET MVC 4**. **Имя** проекта *MusicStore* и обновить **имя решения** для *начать*, затем выберите расположение (или оставьте значение по умолчанию) и нажмите кнопку **ОК** .
@@ -947,7 +947,7 @@ ms.locfileid: "58425253"
 > Кроме того, можно развернуть это приложение на веб-сайтов Windows Azure ниже [приложении б: Публикация приложения ASP.NET MVC 4 с помощью веб-развертывания](#AppendixB).
 
 
-* * *
+---
 
 <a id="Summary"></a>
 
@@ -989,7 +989,7 @@ ms.locfileid: "58425253"
 
     ![Ход установки](aspnet-mvc-4-fundamentals/_static/image45.png)
 
-    *Ход выполнения установки*
+    *Ход установки*
 6. После завершения установки нажмите кнопку **Готово**.
 
     ![Установка завершена](aspnet-mvc-4-fundamentals/_static/image46.png)

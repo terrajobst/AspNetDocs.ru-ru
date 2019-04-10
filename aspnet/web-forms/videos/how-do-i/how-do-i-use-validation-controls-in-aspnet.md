@@ -8,15 +8,15 @@ ms.date: 10/26/2007
 ms.assetid: 1f2e5f5b-8be1-4acc-ae36-a2e0d140251a
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-use-validation-controls-in-aspnet
 msc.type: video
-ms.openlocfilehash: da8831e179360dda870d6ee3d667118094983894
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 17204583d986f7938c38dc373cb296df01f16424
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57047821"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386857"
 ---
-<a name="how-do-i--use-validation-controls-in-aspnet"></a>[Инструкции]  Использование элементов управления проверки в ASP.NET?
-====================
+# <a name="how-do-i--use-validation-controls-in-aspnet"></a>[Инструкции]  Использование элементов управления проверки в ASP.NET?
+
 по [Крис Пелз](https://twitter.com/chrispels)
 
 В этом видеоролике сведения об использовании элементов управления проверки, доступным в ASP.NET для реализации проверки на веб-страниц. Все основные проверочные элементы, такие как RequiredFieldValidator и RegularExpressionValidator обсуждаются. Кроме того вы научитесь использовать CustomValidator, если один из стандартных проверяющие элементы управления не соответствует требованиям. Отображаются параметры проверки на стороне клиента и сервера. Ознакомьтесь с единый проверки на элемент управления пользовательского интерфейса, а также нескольких проверок.

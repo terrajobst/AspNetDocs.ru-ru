@@ -8,15 +8,15 @@ ms.date: 02/10/2010
 ms.assetid: bdea2003-e964-4db5-9092-d56cc7560616
 msc.legacyurl: /whitepapers/side-by-side-with-10
 msc.type: content
-ms.openlocfilehash: b5457a62e127ba555674fbe3b9f75552cad041c7
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c4a371958d8de72628c037b3568551aaa91e0153
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026741"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380708"
 ---
-<a name="aspnet-side-by-side-execution-of-net-framework-10-and-11"></a>Параллельное выполнение нескольких версий .NET Framework 1.0 и 1.1 в ASP.NET
-====================
+# <a name="aspnet-side-by-side-execution-of-net-framework-10-and-11"></a>Параллельное выполнение нескольких версий .NET Framework 1.0 и 1.1 в ASP.NET
+
 > Этот технический документ описывает установку на компьютере, позволяя веб-приложение ASP.NET под управлением любой версии платформы .NET 1.0 и .NET 1.1.
 > 
 > Применяется к ASP.NET 1.0 и ASP.NET 1.1.

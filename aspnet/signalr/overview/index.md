@@ -8,29 +8,29 @@ ms.date: 10/24/2012
 ms.assetid: e57da75a-1d98-4e3c-8787-f1d7e1eb2d86
 msc.legacyurl: /signalr/overview
 msc.type: book
-ms.openlocfilehash: 2ab5094e863c5762c0c4c70a15f4da1088bc52e7
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8bef8a53f6d47a9274a984e0650125fb538c23f0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57022671"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380071"
 ---
-<a name="signalr-guidance"></a>Руководство по SignalR
-====================
+# <a name="signalr-guidance"></a>Руководство по SignalR
+
 - [Начало работы](getting-started/index.md)
 
     - [Введение в SignalR](getting-started/introduction-to-signalr.md)
     - [Поддерживаемые платформы](getting-started/supported-platforms.md)
-    - [Учебник. Начало работы с SignalR 2](getting-started/tutorial-getting-started-with-signalr.md)
+    - [Учебник. Начало работы с SignalR 2](getting-started/tutorial-getting-started-with-signalr.md)
     - [Учебник. Начало работы с SignalR 2 и MVC 5](getting-started/tutorial-getting-started-with-signalr-and-mvc.md)
     - [Учебник. Высокочастотный в реальном времени с SignalR 2](getting-started/tutorial-high-frequency-realtime-with-signalr.md)
-    - [Учебник. Передача сообщений с сервера с помощью SignalR 2](getting-started/tutorial-server-broadcast-with-signalr.md)
-    - [Практическое лабораторное занятие. В режиме реального времени веб-приложений с помощью SignalR](getting-started/real-time-web-applications-with-signalr.md)
+    - [Учебник. Передача сообщений с сервера с помощью SignalR 2](getting-started/tutorial-server-broadcast-with-signalr.md)
+    - [Практическое лабораторное занятие. Веб-приложения в режиме реального времени с SignalR](getting-started/real-time-web-applications-with-signalr.md)
 - [Руководство по API](guide-to-the-api/index.md)
 
-    - [Руководство по API концентраторов — сервер (C#)](guide-to-the-api/hubs-api-guide-server.md)
-    - [Руководство по API концентраторов — клиент JavaScript](guide-to-the-api/hubs-api-guide-javascript-client.md)
-    - [Руководство по API концентраторов — клиент .NET (C#)](guide-to-the-api/hubs-api-guide-net-client.md)
+    - [Руководство по API концентраторов — сервер (C#)](guide-to-the-api/hubs-api-guide-server.md)
+    - [Руководство по API концентраторов — клиент JavaScript](guide-to-the-api/hubs-api-guide-javascript-client.md)
+    - [Руководство по API концентраторов — клиент .NET (C#)](guide-to-the-api/hubs-api-guide-net-client.md)
     - [Общие сведения и обработка событий времени существования подключений в SignalR](guide-to-the-api/handling-connection-lifetime-events.md)
     - [Работа с группами в SignalR](guide-to-the-api/working-with-groups.md)
     - [Сопоставление пользователей SignalR с подключениями](guide-to-the-api/mapping-users-to-connections.md)
@@ -62,26 +62,26 @@ ms.locfileid: "57022671"
     - [Внедрение зависимостей в SignalR](advanced/dependency-injection.md)
 - [Выпуски](releases/index.md)
 
-    - [Обновление проектов SignalR 1.x до версии 2](releases/upgrading-signalr-1x-projects-to-20.md)
+    - [Обновление проектов SignalR 1.x до версии 2](releases/upgrading-signalr-1x-projects-to-20.md)
 - [Предыдущие версии](older-versions/index.md)
 
-    - [Учебник. Начало работы с SignalR 1.x](older-versions/tutorial-getting-started-with-signalr.md)
-    - [Учебник. Начало работы с SignalR 1.x и MVC 4](older-versions/tutorial-getting-started-with-signalr-and-mvc-4.md)
-    - [Обмен сообщениями с высоким уровнем периодичности в режиме реального времени с помощью SignalR 1.x](older-versions/tutorial-high-frequency-realtime-with-signalr.md)
-    - [Учебник. Передача сообщений с сервера с помощью SignalR 1.x](older-versions/tutorial-server-broadcast-with-aspnet-signalr.md)
-    - [Руководство по API концентраторов — сервер](older-versions/signalr-1x-hubs-api-guide-server.md)
-    - [Руководство по API концентраторов SignalR 1.x — клиент JavaScript](older-versions/signalr-1x-hubs-api-guide-javascript-client.md)
-    - [Руководство по API концентраторов — клиент .NET](older-versions/signalr-1x-hubs-api-guide-net-client.md)
+    - [Учебник. Начало работы с SignalR 1.x](older-versions/tutorial-getting-started-with-signalr.md)
+    - [Учебник. Начало работы с SignalR 1.x и MVC 4](older-versions/tutorial-getting-started-with-signalr-and-mvc-4.md)
+    - [Обмен сообщениями с высоким уровнем периодичности в режиме реального времени с помощью SignalR 1.x](older-versions/tutorial-high-frequency-realtime-with-signalr.md)
+    - [Учебник. Передача сообщений с сервера с помощью ASP.NET SignalR 1.x](older-versions/tutorial-server-broadcast-with-aspnet-signalr.md)
+    - [Руководство по API концентраторов — сервер](older-versions/signalr-1x-hubs-api-guide-server.md)
+    - [Руководство по API концентраторов SignalR 1.x — клиент JavaScript](older-versions/signalr-1x-hubs-api-guide-javascript-client.md)
+    - [Руководство по API концентраторов — клиент .NET](older-versions/signalr-1x-hubs-api-guide-net-client.md)
     - [Общие сведения и обработка событий времени существования подключений в SignalR](older-versions/handling-connection-lifetime-events.md)
-    - [Работа с группами в SignalR 1.x](older-versions/working-with-groups.md)
-    - [Сопоставление пользователей SignalR с подключениями в SignalR 1.x](older-versions/mapping-users-to-connections.md)
-    - [Общие сведения о безопасности SignalR (SignalR 1.x)](older-versions/introduction-to-security.md)
-    - [Проверка подлинности и авторизация для концентраторов SignalR (SignalR 1.x)](older-versions/hub-authorization.md)
-    - [Проверка подлинности и авторизация для постоянных подключений SignalR (SignalR 1.x)](older-versions/persistent-connection-authorization.md)
-    - [Производительность SignalR (SignalR 1.x)](older-versions/signalr-performance.md)
-    - [Общие сведения о масштабировании в SignalR 1.x](older-versions/scaleout-in-signalr.md)
-    - [Масштабирование SignalR с помощью служебной шины Azure (SignalR 1.x)](older-versions/scaleout-with-windows-azure-service-bus.md)
-    - [Масштабирование SignalR с помощью Redis (SignalR 1.x)](older-versions/scaleout-with-redis.md)
-    - [Масштабирование SignalR с помощью SQL Server (SignalR 1.x)](older-versions/scaleout-with-sql-server.md)
-    - [Устранение неполадок SignalR (SignalR 1.x)](older-versions/troubleshooting.md)
-    - [Внедрение зависимостей в SignalR 1.x](older-versions/dependency-injection.md)
+    - [Работа с группами в SignalR 1.x](older-versions/working-with-groups.md)
+    - [Сопоставление пользователей SignalR с подключениями в SignalR 1.x](older-versions/mapping-users-to-connections.md)
+    - [Общие сведения о безопасности SignalR (SignalR 1.x)](older-versions/introduction-to-security.md)
+    - [Проверка подлинности и авторизация для концентраторов SignalR (SignalR 1.x)](older-versions/hub-authorization.md)
+    - [Проверка подлинности и авторизация для постоянных подключений SignalR (SignalR 1.x)](older-versions/persistent-connection-authorization.md)
+    - [Производительность SignalR (SignalR 1.x)](older-versions/signalr-performance.md)
+    - [Общие сведения о масштабировании в SignalR 1.x](older-versions/scaleout-in-signalr.md)
+    - [Масштабирование SignalR с помощью служебной шины Azure (SignalR 1.x)](older-versions/scaleout-with-windows-azure-service-bus.md)
+    - [Масштабирование SignalR с помощью Redis (SignalR 1.x)](older-versions/scaleout-with-redis.md)
+    - [Масштабирование SignalR с помощью SQL Server (SignalR 1.x)](older-versions/scaleout-with-sql-server.md)
+    - [Устранение неполадок SignalR (SignalR 1.x)](older-versions/troubleshooting.md)
+    - [Внедрение зависимостей в SignalR 1.x](older-versions/dependency-injection.md)

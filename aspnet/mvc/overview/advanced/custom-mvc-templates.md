@@ -8,15 +8,15 @@ ms.date: 12/10/2012
 ms.assetid: b0a214c7-2f38-4dbc-b47f-bd7bd9df97bd
 msc.legacyurl: /mvc/overview/advanced/custom-mvc-templates
 msc.type: authoredcontent
-ms.openlocfilehash: 3c14bc6feb144a52773bf7bd4c23df24966a9ebb
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0603bc24e070e223551813f66a75889a2e46fd35
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033871"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379551"
 ---
-<a name="custom-mvc-template"></a>Пользовательский шаблон MVC
-====================
+# <a name="custom-mvc-template"></a>Пользовательский шаблон MVC
+
 по [Жак Элоф](https://github.com/joeloff)
 
 В выпуске обновления средств MVC 3 для Visual Studio 2010 появился в мастере отдельных проектов для проектов MVC. Изменение было продиктовано два фактора. Во-первых введение новых шаблонов в MVC 3 и поддержку обработчиков дополнительное представление, таких как Razor привести к overcrowding диалогового окна нового проекта в Visual Studio. Во-вторых клиенты задавали для точек расширения, и мастер создания проекта MVC бы позволить нам возможность ответить на эти запросы.

@@ -8,15 +8,15 @@ ms.date: 01/27/2009
 ms.assetid: 521c9117-81cd-4d8d-9d96-0256dc7bf50f
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/improving-performance-with-output-caching-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 516c370941b8f7e5f3528953491057973679586d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5dd5b96d0365c55cbbfa2dfe0856beda41f915e1
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049351"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384770"
 ---
-<a name="improving-performance-with-output-caching-c"></a>Повышение производительности благодаря кэшированию вывода (C#)
-====================
+# <a name="improving-performance-with-output-caching-c"></a>Повышение производительности благодаря кэшированию вывода (C#)
+
 по [Microsoft](https://github.com/microsoft)
 
 > В этом руководстве вы узнаете, как можно значительно повысить производительность веб-приложений ASP.NET MVC, используя преимущества кэширования выходных данных. Вы узнаете, как кэшировать результат, возвращенный из действия контроллера, таким образом, чтобы то же содержимое не должны создаваться каждый раз, новый пользователь вызывает действие.
@@ -109,7 +109,7 @@ ms.locfileid: "57049351"
 
 Например контроллер в листинге 5 предоставляет два действия, с именем Master() и Details(). Это действие Master() возвращает список названий фильмов и Details() действие возвращает подробные сведения о выбранный фильм.
 
-**В листинге 5 – Controllers\MoviesController.cs**
+**Listing 5 – Controllers\MoviesController.cs**
 
 [!code-csharp[Main](improving-performance-with-output-caching-cs/samples/sample5.cs)]
 

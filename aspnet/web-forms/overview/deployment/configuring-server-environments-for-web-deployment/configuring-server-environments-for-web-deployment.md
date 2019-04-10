@@ -8,18 +8,18 @@ ms.date: 05/04/2012
 ms.assetid: 0bf0959b-4ca8-45de-bd13-b15347543b5a
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/configuring-server-environments-for-web-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 4f6433f0b8a9ad3b3634c9bcd8d95015eebaa865
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 86ea4a2e17ec44a3716e1570e51a224144f1369c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043531"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386974"
 ---
-<a name="configuring-server-environments-for-web-deployment"></a>Настройка серверных сред для веб-развертывания
-====================
+# <a name="configuring-server-environments-for-web-deployment"></a>Настройка серверных сред для веб-развертывания
+
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Этом учебнике показано, как настроить серверных сред с одним щелчком или автоматического развертывания веб-сайта и публикации в различных сценариях различных. Учебник включает разделы пошагового выполнения различных задач, например, Настройка веб-сервера для поддержки конкретных подходов к развертыванию и настройке фермы серверов веб-фермы (WFF), а также обзоры на основе сценариев, которые предоставляют руководство более высокого уровня end-to-end.
 > 
@@ -31,9 +31,9 @@ ms.locfileid: "57043531"
 Этот учебник содержит следующие разделы:
 
 - [Выбор правильного подхода для веб-развертывания](choosing-the-right-approach-to-web-deployment.md)
-- [Сценарий. Настройка среды тестирования для веб-развертывания](scenario-configuring-a-test-environment-for-web-deployment.md)
-- [Сценарий. Настройка промежуточной среды для веб-развертывания](scenario-configuring-a-staging-environment-for-web-deployment.md)
-- [Сценарий. Настройке рабочей среды для веб-развертывания](scenario-configuring-a-production-environment-for-web-deployment.md)
+- [Сценарий: настройка среды тестирования для веб-развертывания](scenario-configuring-a-test-environment-for-web-deployment.md)
+- [Сценарий: настройка промежуточной среды для веб-развертывания](scenario-configuring-a-staging-environment-for-web-deployment.md)
+- [Сценарий: настройка рабочей среды для веб-развертывания](scenario-configuring-a-production-environment-for-web-deployment.md)
 - [Настройка веб-сервера для публикации веб-развертывания (удаленный агент)](configuring-a-web-server-for-web-deploy-publishing-remote-agent.md)
 - [Настройка веб-сервера для публикации веб-развертывания (обработчик веб-развертывания)](configuring-a-web-server-for-web-deploy-publishing-web-deploy-handler.md)
 - [Настройка веб-сервера для публикации веб-развертывания (автономное развертывание)](configuring-a-web-server-for-web-deploy-publishing-offline-deployment.md)
@@ -66,4 +66,4 @@ ms.locfileid: "57043531"
 - [Advanced корпоративное веб-развертывание](../advanced-enterprise-web-deployment/advanced-enterprise-web-deployment.md). Это руководство содержит инструкции по выполнению различных задач более сложные развертывания, такие как настройка развертываний баз данных для нескольких сред, исключение файлов и папок из развертывания и получение веб-приложений в автономный режим во время развертывания .
 
 > [!div class="step-by-step"]
-> [Вперед](choosing-the-right-approach-to-web-deployment.md)
+> [Далее](choosing-the-right-approach-to-web-deployment.md)

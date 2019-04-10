@@ -8,18 +8,18 @@ ms.date: 07/27/2010
 ms.assetid: 9e4d5cac-b071-440c-b044-20b6d0c964fb
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/secure-applications-using-authentication-and-authorization
 msc.type: authoredcontent
-ms.openlocfilehash: d5f1b26312f11fd6d4ab500c7f24a4d89d428e38
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 102e4c2f1fe122669021a159b60f0943fe92fbf2
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056341"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396451"
 ---
-<a name="secure-applications-using-authentication-and-authorization"></a>Защита приложений с помощью проверки подлинности и авторизации
-====================
+# <a name="secure-applications-using-authentication-and-authorization"></a>Защита приложений с помощью проверки подлинности и авторизации
+
 по [Microsoft](https://github.com/microsoft)
 
-[Загрузить PDF-файл](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
+[Скачать PDF](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
 
 > Это 9 из бесплатной [руководство по использованию приложения «NerdDinner»](introducing-the-nerddinner-tutorial.md) , пошаговое рассмотрение как создать небольшой, но завершить, веб-приложения с помощью ASP.NET MVC 1.
 > 

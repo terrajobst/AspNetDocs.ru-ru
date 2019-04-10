@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity
-title: Двухфакторная проверка подлинности с помощью SMS и электронной почты с ASP.NET Identity | Документация Майкрософт
+title: Двухфакторная проверка подлинности с помощью SMS и электронной почты с удостоверением ASP.NET — ASP.NET 4.x
 author: HaoK
 description: Этом учебнике показано, как настроить двухфакторную проверку подлинности (2FA) с помощью SMS и электронной почты. Эта статья написана с Рик Андерсон ( @RickAndMSFT ), счетам...
 ms.author: riande
 ms.date: 09/15/2015
 ms.assetid: 053e23c4-13c9-40fa-87cb-3e9b0823b31e
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 4b253923696e35e59c196578a232f53c11671d16
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c41fc06ad98665f7d48efde030c1341b06e49dd0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57043171"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395295"
 ---
-<a name="two-factorauthentication-using-sms-and-email-with-aspnet-identity"></a>Двухфакторная проверка подлинности с помощью SMS и электронной почты с ASP.NET Identity
-====================
+# <a name="two-factorauthentication-using-sms-and-email-with-aspnet-identity"></a>Двухфакторная проверка подлинности с помощью SMS и электронной почты с ASP.NET Identity
+
 по [поздравить Хао](https://github.com/HaoK), [Пранавом Растоги](https://github.com/rustd), [Рик Андерсон]((https://twitter.com/RickAndMSFT)), [Suhas Joshi](https://github.com/suhasj)
 
 > Этом учебнике показано, как настроить двухфакторную проверку подлинности (2FA) с помощью SMS и электронной почты.
@@ -52,8 +53,8 @@ ms.locfileid: "57043171"
    В этом руководстве мы будем использовать [SendGrid](http://sendgrid.com/) для отправки электронной почты и [Twilio](https://www.twilio.com/) или [ASPSMS](https://www.aspsms.com/asp.net/identity/testcredits/) для sms-сообщения. `Identity.Samples` Пакет устанавливает код, мы будем работать с.
 3. Задайте [проект для использования SSL](../../../mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md).
 4. *Необязательно:* Следуйте инструкциям в моей [руководства по электронной почте подтверждение](account-confirmation-and-password-recovery-with-aspnet-identity.md) для подключения SendGrid, а затем запустите приложение и зарегистрировать учетную запись электронной почты.
-5. * Необязательно: * удалите демонстрации по электронной почте ссылку подтверждения код из примера ( `ViewBag.Link` кода в контроллере account. См. в разделе `DisplayEmail` и `ForgotPasswordConfirmation` методов и представлений razor действия).
-6. <em>Необязательно: * удалите `ViewBag.Status` код из контроллеров учетной записи и управление ими, а также из *Views\Account\VerifyCode.cshtml</em> и <em>Views\Manage\VerifyPhoneNumber.cshtml</em> представлений razor. Кроме того, вы можете сохранить `ViewBag.Status` отображение, чтобы проверить, как работает это приложение локально без необходимости подключения и отправки электронной почты и SMS-сообщения.
+5. *Необязательно:* Удалите демонстрации по электронной почте ссылку подтверждения код из примера ( `ViewBag.Link` кода в контроллере account. См. в разделе `DisplayEmail` и `ForgotPasswordConfirmation` методов и представлений razor действия).
+6. *Необязательно:* Удалить `ViewBag.Status` код из контроллеров учетной записи и управление ими, а также из *Views\Account\VerifyCode.cshtml* и *Views\Manage\VerifyPhoneNumber.cshtml* представлений razor. Кроме того, вы можете сохранить `ViewBag.Status` отображение, чтобы проверить, как работает это приложение локально без необходимости подключения и отправки электронной почты и SMS-сообщения.
 
 > [!NOTE]
 > Предупреждение: Если изменить какие-либо параметры безопасности в этом образце, производства приложений потребуется пройти проверку подлинности, аудита безопасности, явным образом вызывает изменения, внесенные.

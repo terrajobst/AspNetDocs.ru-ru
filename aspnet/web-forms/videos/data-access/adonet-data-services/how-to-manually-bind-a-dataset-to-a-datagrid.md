@@ -8,15 +8,15 @@ ms.date: 08/07/2008
 ms.assetid: 1e339f8a-72ea-463a-b186-c09dd7b12993
 msc.legacyurl: /web-forms/videos/data-access/adonet-data-services/how-to-manually-bind-a-dataset-to-a-datagrid
 msc.type: video
-ms.openlocfilehash: 36ca3880a95ebe9dd4823891a2ce1de1ef62a871
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5ce22e24160269c225d8497f31b64809ede93c71
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035711"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389301"
 ---
-<a name="how-to-manually-bind-a-dataset-to-a-datagrid"></a>Как привязка Dataset вручную к Datagrid
-====================
+# <a name="how-to-manually-bind-a-dataset-to-a-datagrid"></a>Как привязка Dataset вручную к Datagrid
+
 по [(Joe Stagner)](https://github.com/JoeStagner)
 
 В этом видео, часть 2 из 3, (Joe Stagner) используется пример приложения ASP, созданный в части 1, для демонстрации привязка dataset вручную к datagrid. Дополнительные сведения об этом видео см. в статье [создание уровня доступа к данным](../../../overview/data-access/introduction/creating-a-data-access-layer-vb.md) учебнике доступа данных.

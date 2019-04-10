@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: e5d99c2b-d8ee-413c-80d5-c120cffb0a4c
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/triggering-an-animation-in-another-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 6216f24e497936245280f337477b287ff2afb080
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: ca383b7a82b754c7556dcea3bcdb8e28e5c7a45d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58421392"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384855"
 ---
-<a name="triggering-an-animation-in-another-control-c"></a>Запуск анимации в другом элементе управления (C#)
-====================
+# <a name="triggering-an-animation-in-another-control-c"></a>Запуск анимации в другом элементе управления (C#)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation8.cs.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation8CS.pdf)
@@ -57,7 +57,7 @@ ms.locfileid: "58421392"
 Обратите внимание, специальный заказ, в котором отображаются отдельные анимации. Во-первых кнопки получает отключена после выполнения анимации. Так как она не `AnimationTarget` атрибут в `<EnableAction>` элемент, эта анимация применяется к исходного управления: кнопки. Следующие две анимации действия должны выполняться в параллельном режиме (`<Parallel>` элемент). Оба имеют свои `AnimationTarget` атрибуты значения `"Panel1"`, таким образом анимации на панели, а не кнопки.
 
 
-[![Нажмите кнопку мыши запускает анимацию панели](triggering-an-animation-in-another-control-cs/_static/image2.png)](triggering-an-animation-in-another-control-cs/_static/image1.png)
+[![A Нажмите кнопку мыши запускает анимацию панели](triggering-an-animation-in-another-control-cs/_static/image2.png)](triggering-an-animation-in-another-control-cs/_static/image1.png)
 
 Нажмите кнопку мыши запускает анимацию панели ([Просмотр полноразмерного изображения](triggering-an-animation-in-another-control-cs/_static/image3.png))
 

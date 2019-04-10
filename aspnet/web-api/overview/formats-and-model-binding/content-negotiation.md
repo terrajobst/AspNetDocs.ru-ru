@@ -1,25 +1,26 @@
 ---
 uid: web-api/overview/formats-and-model-binding/content-negotiation
-title: Согласование веб-API ASP.NET содержимого | Документация Майкрософт
+title: Содержимое согласование в ASP.NET Web API — ASP.NET 4.x
 author: MikeWasson
-description: Описывает, как веб-API ASP.NET реализует согласования содержимого HTTP.
+description: Описывает, как веб-API ASP.NET реализует согласования содержимого HTTP для ASP.NET 4.x.
 ms.author: riande
 ms.date: 05/20/2012
+ms.custom: seoapril2019
 ms.assetid: 0dd51b30-bf5a-419f-a1b7-2817ccca3c7d
 msc.legacyurl: /web-api/overview/formats-and-model-binding/content-negotiation
 msc.type: authoredcontent
-ms.openlocfilehash: 9cfbed49c1022fbf26160e89aed3ab474f5e0fdc
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: cb6668ff6de276d3778ce11f27ce597d8bf1f9c7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425695"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380165"
 ---
-<a name="content-negotiation-in-aspnet-web-api"></a>Согласование содержимого в веб-API ASP.NET
-====================
+# <a name="content-negotiation-in-aspnet-web-api"></a>Согласование содержимого в веб-API ASP.NET
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
-В этой статье описывается, как веб-API ASP.NET реализует согласования содержимого.
+В этой статье описывается, как веб-API ASP.NET реализует согласование содержимого для ASP.NET 4.x.
 
 Спецификация HTTP (RFC 2616) определяет согласование содержимого, как «процесс выбора наиболее представлением ответ на запрос, когда доступны несколько представлений». Основной механизм согласования содержимого по протоколу HTTP, эти заголовки запроса:
 

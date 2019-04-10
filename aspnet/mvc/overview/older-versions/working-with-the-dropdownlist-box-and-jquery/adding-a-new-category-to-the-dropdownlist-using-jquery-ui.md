@@ -8,15 +8,15 @@ ms.date: 01/12/2012
 ms.assetid: 44aa1ac4-6ea2-48a2-972d-52710c48eae5
 msc.legacyurl: /mvc/overview/older-versions/working-with-the-dropdownlist-box-and-jquery/adding-a-new-category-to-the-dropdownlist-using-jquery-ui
 msc.type: authoredcontent
-ms.openlocfilehash: 9fb95d22be473a4318520a391fa424106246a054
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 99bb37f95ddbad775c9c50ff5faf985b631473d0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062191"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386753"
 ---
-<a name="adding-a-new-category-to-the-dropdownlist-using-jquery-ui"></a>Добавление новой категории в DropDownList с помощью пользовательского интерфейса jQuery
-====================
+# <a name="adding-a-new-category-to-the-dropdownlist-using-jquery-ui"></a>Добавление новой категории в DropDownList с помощью пользовательского интерфейса jQuery
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 HTML-код `Select` тег идеально подходит для представления основных категории данных, но зачастую необходимо добавить новую категорию. Предположим, что мы хотим добавить жанр «Opera» в категории в нашей базе данных? В этом разделе мы будем использовать пользовательский Интерфейс jQuery, чтобы добавить диалоговое окно, можно использовать для добавления новой категории. На следующем рисунке показано, как пользовательский Интерфейс будет представлять в браузере.

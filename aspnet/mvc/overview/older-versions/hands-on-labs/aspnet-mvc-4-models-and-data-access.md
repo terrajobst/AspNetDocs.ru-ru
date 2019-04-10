@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 634ea84b-f904-4afe-b71b-49cccef4d9cc
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-models-and-data-access
 msc.type: authoredcontent
-ms.openlocfilehash: 10c2f6379f6d3139dd3bcf1027ff456e074298c3
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 53ca3bc4e550f488f3ae4c41f02a636e747107cb
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425097"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384894"
 ---
 # <a name="aspnet-mvc-4-models-and-data-access"></a>Модели и доступ к данным в ASP.NET MVC 4
 
@@ -74,7 +74,7 @@ ms.locfileid: "58425097"
 
 Если вы не знакомы с фрагменты кода Visual Studio и хотите научиться использовать их, можно ссылаться в приложение из этого документа &quot; [приложение в: Фрагменты кода](#AppendixC)&quot;.
 
-* * *
+---
 
 <a id="Exercises"></a>
 
@@ -181,7 +181,7 @@ ms.locfileid: "58425097"
 
     ![Схема сущности](aspnet-mvc-4-models-and-data-access/_static/image12.png "схема сущности")
 
-    *Схема сущности*
+    *Схема сущностей*
 
     > [!NOTE]
     > Шаблоны T4 (.tt) запустите код для создания классов сущностей и перезапишет существующие классы с тем же именем. В этом примере классы &quot;альбома&quot;, &quot;жанр&quot; и &quot;исполнителя&quot; были перезаписаны с помощью созданного кода.
@@ -514,7 +514,7 @@ ms.locfileid: "58425097"
 > [!NOTE]
 > Кроме того, можно развернуть это приложение на веб-сайтов Windows Azure ниже [приложении б: Публикация приложения ASP.NET MVC 4 с помощью веб-развертывания](#AppendixB).
 
-* * *
+---
 
 <a id="Summary"></a>
 
@@ -552,7 +552,7 @@ ms.locfileid: "58425097"
 
     ![Ход установки](aspnet-mvc-4-models-and-data-access/_static/image28.png)
 
-    *Ход выполнения установки*
+    *Ход установки*
 6. После завершения установки нажмите кнопку **Готово**.
 
     ![Установка завершена](aspnet-mvc-4-models-and-data-access/_static/image29.png)

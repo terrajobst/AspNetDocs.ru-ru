@@ -8,15 +8,15 @@ ms.date: 03/14/2013
 ms.assetid: aadc5fa4-8215-4fc7-afd5-bcd2ef879728
 msc.legacyurl: /mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages
 msc.type: authoredcontent
-ms.openlocfilehash: 5db661cccc58d1101f95091b069ab5cbfe78a378
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: de0e9cc168b9f18fd2bd83329106df45d7551b1a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063951"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386564"
 ---
-<a name="xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages"></a>Предотвращение атак XSRF и CSRF в ASP.NET MVC и на веб-страницах
-====================
+# <a name="xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages"></a>Предотвращение атак XSRF и CSRF в ASP.NET MVC и на веб-страницах
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Межсайтовые запросы, что подделки (также известные как XSRF или CSRF) — это атака, размещенных на веб сервере приложений, при котором злонамеренный веб-узел может влиять на взаимодействие между клиентским браузером и веб-сайта доверяет браузер. Эти атаки становятся возможными, потому что веб-браузеры отправляют маркеры аутентификации автоматически при каждом запросе к веб-сайта. Типичный пример — создает файл cookie проверки подлинности, например ASP. Билет проверки подлинности форм NET. Тем не менее веб-сайты, использующие любой надежный способ проверки подлинности (например, проверка подлинности Windows, Basic и т. д.) может быть целью таких атак.
@@ -160,7 +160,7 @@ ms.locfileid: "57063951"
 
 Разработчик может настроить систему защиты от XSRF из приложения\_запуска. Конфигурация — программный. Свойства статического *AntiForgeryConfig* тип описаны ниже. Большинству пользователей, с помощью утверждений потребуется установить свойство UniqueClaimTypeIdentifier.
 
-| **Property** | **Описание** |
+| **Свойство** | **Описание** |
 | --- | --- |
 | **AdditionalDataProvider** | [IAntiForgeryAdditionalDataProvider](https://msdn.microsoft.com/library/system.web.helpers.iantiforgeryadditionaldataprovider(v=vs.111).aspx) , предоставляющий дополнительные данные во время создания токенов и использует дополнительные данные во время проверки маркера. Значение по умолчанию — *null*. Дополнительные сведения см. в разделе [IAntiForgeryAdditionalDataProvider](https://msdn.microsoft.com/library/system.web.helpers.iantiforgeryadditionaldataprovider(v=vs.111).aspx) раздел. |
 | **CookieName** | Строка, которая предоставляет имя файла cookie HTTP, который используется для хранения маркера anti-XSRF сеанса. Если это значение не задано, имя создается автоматически на основе приложения развернутого виртуального пути. Значение по умолчанию — *null*. |

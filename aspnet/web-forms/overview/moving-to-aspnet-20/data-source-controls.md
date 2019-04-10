@@ -8,15 +8,15 @@ ms.date: 02/20/2005
 ms.assetid: 78fd0e92-f9c6-4e96-a5e9-0375b307a828
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/data-source-controls
 msc.type: authoredcontent
-ms.openlocfilehash: ba00024e93beba6eab226dd0d381d8734061e095
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3ba9fdaaf655f6510d3ebf6ce0930fbf4000add3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038881"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59388872"
 ---
-<a name="data-source-controls"></a>Элементы управления источником данных
-====================
+# <a name="data-source-controls"></a>Элементы управления источником данных
+
 по [Microsoft](https://github.com/microsoft)
 
 > Элемент управления DataGrid в ASP.NET 1.x, помеченные значительным улучшением в доступ к данным в веб-приложений. Тем не менее он не был же прост, как могло бы быть. Он по-прежнему требуется значительный объем кода можно получить много полезных функций из него. Это модель в все попытки доступа к данных в версии 1.x.

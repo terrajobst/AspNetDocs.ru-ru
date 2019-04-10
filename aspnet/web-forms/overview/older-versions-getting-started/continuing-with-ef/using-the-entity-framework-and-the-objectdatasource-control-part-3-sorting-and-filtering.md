@@ -8,15 +8,15 @@ ms.date: 01/26/2011
 ms.assetid: 2990bd10-590d-43d5-9529-6b503ce5455d
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering
 msc.type: authoredcontent
-ms.openlocfilehash: 71e26dc9a63131842daf4aa1549d761690b723ea
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 19726a728fc6d94552c315b38315a29c269d97db
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57047241"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380422"
 ---
-<a name="using-the-entity-framework-40-and-the-objectdatasource-control-part-3-sorting-and-filtering"></a>С помощью Entity Framework 4.0 и элемент управления ObjectDataSource, часть 3: Сортировка и фильтрация
-====================
+# <a name="using-the-entity-framework-40-and-the-objectdatasource-control-part-3-sorting-and-filtering"></a>С помощью Entity Framework 4.0 и элемент управления ObjectDataSource, часть 3: Сортировка и фильтрация
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 > В этой серии руководств основан на веб-приложение университета Contoso, которая создается с [Приступая к работе с Entity Framework 4.0](https://asp.net/entity-framework/tutorials#Getting%20Started) серии руководств. Если вы не прошли предыдущих учебных курсах, в качестве отправной точки для этого учебника вы можете [загрузить приложение](https://code.msdn.microsoft.com/ASPNET-Web-Forms-97f8ee9a) , он был создан. Вы также можете [загрузить приложение](https://code.msdn.microsoft.com/ASPNET-Web-Forms-6c7197aa) , созданный путем завершения серии руководств. Если у вас есть вопросы о учебники, их можно разместить [форум ASP.NET Entity Framework](https://forums.asp.net/1227.aspx).
@@ -28,7 +28,7 @@ ms.locfileid: "57047241"
 - Список курсов для каждого отдела, который отображается в сетке.
 - Возможность сортировать, щелкая заголовки столбцов.
 
-[!["Image01"](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image2.png)](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image1.png)
+[![Image01](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image2.png)](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image1.png)
 
 ## <a name="adding-the-ability-to-sort-gridview-columns"></a>Добавление возможности для Сортировка столбцов GridView
 
@@ -147,7 +147,7 @@ ms.locfileid: "57047241"
 
 Откройте страницу. В дополнение к фильтрации и сортировки возможность, добавленный ранее элемент управления GridView теперь отображаются сведения о вложенных курс для каждого отдела.
 
-[!["Image01"](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image8.png)](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image7.png)
+[![Image01](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image8.png)](using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering/_static/image7.png)
 
 На этом завершается введение в сценарии сортировки, фильтрации и «основной-подробности». В следующем руководстве вы увидите, как обеспечивать параллелизм.
 

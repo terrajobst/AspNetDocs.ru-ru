@@ -8,15 +8,15 @@ ms.date: 09/13/2006
 ms.assetid: f555c531-bf33-4699-9987-42dbfef23c1f
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/showing-multiple-records-per-row-with-the-datalist-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: e8b5493694b24e4187ecb69ca8d2eff6a8507985
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 632db5152c84eb463ddc7bd5f5734a9fb3ae135c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58421223"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382988"
 ---
-<a name="showing-multiple-records-per-row-with-the-datalist-control-vb"></a>Отображение нескольких записей в одной строке с помощью элемента управления DataList (VB)
-====================
+# <a name="showing-multiple-records-per-row-with-the-datalist-control-vb"></a>Отображение нескольких записей в одной строке с помощью элемента управления DataList (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_31_VB.exe) или [скачать PDF](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/datatutorial31vb1.pdf)
@@ -31,7 +31,7 @@ ms.locfileid: "58421223"
 Мы можете настроить макет элементов управления DataList s через его `RepeatColumns` и `RepeatDirection` , обозначающие, соответственно, сколько столбцов визуализируется и расположены ли эти элементы располагаются горизонтально или вертикально. Рис. 1, например, показывает элемент управления DataList, отображающий сведения о продукте в таблице с тремя столбцами.
 
 
-[![Элемент управления DataList отображается по три продукта на строку](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image2.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image1.png)
+[![Tон DataList показывает три продукта на строку](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image2.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image1.png)
 
 **Рис. 1**: Элемент управления DataList показывает три продукта на строку ([Просмотр полноразмерного изображения](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image3.png))
 
@@ -57,7 +57,7 @@ ms.locfileid: "58421223"
 Отвлекитесь и страницу в браузере. Как показано на рис. 2, элемент управления DataList визуализируется как таблица продуктов одним столбцом и несколькими строками.
 
 
-[![По умолчанию, отображаемое DataList как таблица с одним столбцом и несколькими строками](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image5.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image4.png)
+[![Bпо умолчанию y, элемент управления DataList визуализируется как таблица с одним столбцом и несколькими строками](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image5.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image4.png)
 
 **Рис. 2**: По умолчанию элемент управления DataList визуализируется как одного столбца, таблицы с несколькими строками ([Просмотр полноразмерного изображения](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image6.png))
 
@@ -69,7 +69,7 @@ ms.locfileid: "58421223"
 Изменив `RepeatDirection` свойства из `Vertical` для `Horizontal`, DataList визуализирует свои записи в одну строку, создавая один столбец на элемент источника данных. Чтобы проиллюстрировать этот эффект, щелкните в конструкторе элемента управления DataList и затем из окна свойств измените `RepeatDirection` свойства из `Vertical` для `Horizontal`. Сразу же после этого конструктор скорректирует компоновку макета DataList s, создание интерфейса с одной строкой и несколькими столбцами (см. рис. 3).
 
 
-[![RepeatDirection диктует как направление передачи Свойства DataList s их расположения Out](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image8.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image7.png)
+[![Tон RepeatDirection диктует как направление передачи Свойства DataList s элементы являются Laid Out](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image8.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image7.png)
 
 **Рис. 3**: `RepeatDirection` Свойство определяет, как элементы направление DataList s, Laid Out ([Просмотр полноразмерного изображения](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image9.png))
 
@@ -77,7 +77,7 @@ ms.locfileid: "58421223"
 При отображении небольших объемов данных, в одну строку, таблица с несколькими столбцами может быть идеальным способом максимально использовать экран. Для более крупных объемов данных тем не менее одной строки потребуется большое количество столбцов, которые отправляют элементы, удается умещается на экране справа. Figure 4 shows the products when rendered in a single-row DataList. Так как многие продукты (более чем 80), пользователю придется прокручивать экран далеко вправо, чтобы просмотреть сведения о каждом из продуктов.
 
 
-[![Для достаточно больших источников данных элемент управления DataList с одним столбцом будет требовать горизонтальной прокрутки](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image11.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image10.png)
+[![Fили достаточно больших источников данных, элемент управления DataList с одним столбцом будет требовать горизонтальной прокрутки](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image11.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image10.png)
 
 **Рис. 4**: Для достаточно больших источников данных, один столбец DataList будет требовать горизонтальной прокрутки ([Просмотр полноразмерного изображения](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image12.png))
 
@@ -89,7 +89,7 @@ ms.locfileid: "58421223"
 В нашем примере позволяют s отобразим три продукта на строку таблицы. Таким образом, задать `RepeatColumns` значение 3. После внесения этого изменения, Отвлекитесь и просмотрите результаты в браузере. Как показано на рис. 5, продукты теперь перечислены в таблице с тремя столбцами и нескольких строк.
 
 
-[![Отображается три продукта на строку](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image14.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image13.png)
+[![TВозможны три продукты отображаются в строке](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image14.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image13.png)
 
 **Рис. 5**: Отображается три продукта на строку ([Просмотр полноразмерного изображения](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image15.png))
 
@@ -97,7 +97,7 @@ ms.locfileid: "58421223"
 `RepeatDirection` Свойство влияет на расположение элементов в элементе управления DataList. Рис. 5 показаны результаты с `RepeatDirection` свойство значение `Horizontal`. Обратите внимание на то, что три первых продукта Chai, Chang и Aniseed Syrup располагаются слева направо, сверху вниз. Следующие три продукта (начиная с Chef Anton s Cajun Seasoning) отображаются в строке под первыми тремя. Изменение `RepeatDirection` обратно на `Vertical`, тем не менее, располагает Бокс этих продуктов, сверху вниз, слева направо, как показано на рис. 6.
 
 
-[![Здесь они Laid Out по вертикали](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image17.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image16.png)
+[![Here они Laid Out по вертикали](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image17.png)](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image16.png)
 
 **Рис. 6**: Здесь они Laid Out по вертикали ([Просмотр полноразмерного изображения](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image18.png))
 

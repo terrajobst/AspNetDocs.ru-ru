@@ -8,15 +8,15 @@ ms.date: 07/01/2015
 ms.assetid: 2a7517a0-b88c-4162-ade3-9bf6ca7062fd
 msc.legacyurl: /signalr/overview/deployment/using-signalr-with-azure-web-sites
 msc.type: authoredcontent
-ms.openlocfilehash: 13eb5d29a2c40f52aed4b569ec8695f014a05f03
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 531aba3753bf97b8bf1763a22615fb811b375286
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036521"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379148"
 ---
-<a name="using-signalr-with-web-apps-in-azure-app-service"></a>Использование SignalR с веб-приложениями в службе приложений Azure
-====================
+# <a name="using-signalr-with-web-apps-in-azure-app-service"></a>Использование SignalR с веб-приложениями в службе приложений Azure
+
 по [Патрик Флетчера](https://github.com/pfletcher)
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "57036521"
 
 ## <a name="table-of-contents"></a>Содержание
 
-- [Введение](#introduction)
+- [Вступление](#introduction)
 - [Развертывание SignalR веб-приложения в службе приложений Azure](#deploying)
 - [Включение WebSockets в службе приложений Azure](#websocket)
 - [Использование объединительной платы кэша redis для Azure](#backplane)
@@ -56,7 +56,7 @@ ASP.NET SignalR можно использовать для переноса на
 
 SignalR не добавляет всяких осложнений, определенного с развертыванием приложения в Azure и развертывание на локальном сервере. Приложения, использующего SignalR может размещаться в Azure без изменений в конфигурации и других параметров (хотя поддержка WebSockets, см. в разделе [Включение WebSockets в службе приложений Azure](#websocket) ниже.) В этом руководстве вы развернете приложение, созданное в [Приступая к работе](../getting-started/tutorial-getting-started-with-signalr.md) в Azure.
 
-**Необходимые компоненты**
+**Предварительные требования**
 
 - Visual Studio 2013. Если у вас нет Visual Studio, Visual Studio 2013 Express для Web входит в состав установки пакета Azure SDK.
 - [Пакет Azure SDK 2.3 для Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=324322&clcid=0x409) или [2.3 пакета Azure SDK для Visual Studio 2012](https://go.microsoft.com/fwlink/p/?linkid=323511).

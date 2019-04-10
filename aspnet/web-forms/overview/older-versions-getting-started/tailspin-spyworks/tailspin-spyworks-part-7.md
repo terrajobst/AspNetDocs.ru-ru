@@ -8,15 +8,15 @@ ms.date: 07/21/2010
 ms.assetid: 50223ee9-11b9-4cf3-bca2-e2f10bf471f3
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-7
 msc.type: authoredcontent
-ms.openlocfilehash: cada8d9aee649e4f2a5afc1ca2b46863ea458207
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 646aeb4ad99ba9b0ee114c6be4aa528e62ef4775
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056521"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389951"
 ---
-<a name="part-7-adding-features"></a>Часть 7. Добавление возможностей
-====================
+# <a name="part-7-adding-features"></a>Часть 7. Добавление возможностей
+
 по [(Joe Stagner)](https://github.com/JoeStagner)
 
 > Tailspin Spyworks демонстрирует, как чрезвычайно прост процесс создания мощных и масштабируемых приложений для платформы .NET. Он демонстрирует способы использования новые возможности в ASP.NET 4 для создание Интернет-магазина, включая покупок, извлечения и администрирования.
@@ -41,11 +41,11 @@ ms.locfileid: "57056521"
 
 В папке «Учетная запись» создайте две страницы ASPX, один именованный OrderList.aspx и другие именованные OrderDetails.aspx
 
-OrderList.aspx будет использовать элементы управления GridView и EntityDataSoure так же, как у нас есть ранее.
+OrderList.aspx будет использовать элементы управления GridView и EntityDataSource, так же, как у нас есть ранее.
 
 [!code-aspx[Main](tailspin-spyworks-part-7/samples/sample1.aspx)]
 
-EntityDataSoure Выбор записей из таблицы Orders, отфильтрованные по имени пользователя (см. в разделе WhereParameter) которого задается в переменной сеанса при журнале пользователя.
+Управления EntityDataSource Выбор записей из таблицы Orders, отфильтрованные по имени пользователя (см. в разделе WhereParameter) которого задается в переменной сеанса при журнале пользователя.
 
 Обратите внимание, эти параметры в поле HyperlinkField элемента управления GridView:
 
@@ -143,7 +143,7 @@ EntityDataSoure Выбор записей из таблицы Orders, отфил
 
 Так как не будет изменять самыми популярными материалами по принципу минуты мы можем добавить директиву болью для повышения производительности приложения. Эта директива вызовет код элементов управления для должны выполняться по истечении срока действия кэшированных выходных данных элемента управления. В противном случае будет использоваться кэшированная версия выходные данные элемента управления.
 
-Теперь нам нужно всего лишь включить наш новый элемент управления в страницу Default.aspc.
+Теперь нам нужно всего лишь включить наш новый элемент управления в страницу Default.aspx.
 
 Используйте перетаскивание для размещения экземпляра элемента управления в столбце откройте нашу форму по умолчанию.
 

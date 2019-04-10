@@ -8,15 +8,15 @@ ms.date: 02/20/2009
 ms.assetid: 829f589f-e201-4f6e-9ae6-08ae84322065
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-4-make-the-application-loosely-coupled-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 389627e610eebcdabee9b4db524e5915186db099
-ms.sourcegitcommit: 62db31596a7da029263cf06335aff12236fb3186
+ms.openlocfilehash: 8caa88d928517e1c71210cbe55e3961d4baf461a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58440356"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381280"
 ---
-<a name="iteration-4--make-the-application-loosely-coupled-c"></a>Итерация #4 – Создание слабых связей в приложении (C#)
-====================
+# <a name="iteration-4--make-the-application-loosely-coupled-c"></a>Итерация #4 – Создание слабых связей в приложении (C#)
+
 по [Microsoft](https://github.com/microsoft)
 
 [Скачать код](iteration-4-make-the-application-loosely-coupled-cs/_static/contactmanager_4_cs1.zip)
@@ -85,7 +85,7 @@ ms.locfileid: "58440356"
 
 Далее нам нужно создать конкретный класс, реализующий интерфейс IContactManagerRepository. Так как мы используем Microsoft Entity Framework для доступа к базе данных, мы создадим новый класс с именем EntityContactManagerRepository. Этот класс содержится в листинге 2.
 
-**В листинге 2 - Models\EntityContactManagerRepository.cs**
+**Listing 2 - Models\EntityContactManagerRepository.cs**
 
 [!code-csharp[Main](iteration-4-make-the-application-loosely-coupled-cs/samples/sample2.cs)]
 
@@ -169,11 +169,11 @@ ContactManagerService содержится в листинге 4. Он соде�
 
 Шаблон декоратора позволяет переносить существующий класс в новый класс для реализации интерфейса. Наш проект Contact Manager включает в себя ModelStateWrapper класса, содержащегося в листинге 7. Класс ModelStateWrapper реализует интерфейс в листинг 8.
 
-**Листинг 7 - Models\Validation\ModelStateWrapper.cs**
+**Listing 7 - Models\Validation\ModelStateWrapper.cs**
 
 [!code-csharp[Main](iteration-4-make-the-application-loosely-coupled-cs/samples/sample7.cs)]
 
-**Листинг 8 - Models\Validation\IValidationDictionary.cs**
+**Listing 8 - Models\Validation\IValidationDictionary.cs**
 
 [!code-csharp[Main](iteration-4-make-the-application-loosely-coupled-cs/samples/sample8.cs)]
 

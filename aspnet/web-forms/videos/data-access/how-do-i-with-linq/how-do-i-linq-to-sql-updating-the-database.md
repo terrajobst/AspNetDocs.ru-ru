@@ -8,15 +8,15 @@ ms.date: 11/15/2007
 ms.assetid: d37b9859-1fc1-4669-89ea-b16f3c349d82
 msc.legacyurl: /web-forms/videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-updating-the-database
 msc.type: video
-ms.openlocfilehash: e50420921bc3e88c51f86ad0ea5aade99fee552a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0ce5a0c74f81e23601d9b5fe3ec82b591c867158
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026761"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59392811"
 ---
-<a name="how-do-i-linq-to-sql-updating-the-database"></a>[Инструкции] LINQ to SQL: Обновление базы данных
-====================
+# <a name="how-do-i-linq-to-sql-updating-the-database"></a>[Инструкции] LINQ to SQL: Обновление базы данных
+
 по [Скотт Stanfield](https://github.com/scottstanfield)
 
 В этом видео я продемонстрировал, как для создания, изменения и удалять записи с помощью LINQ, простой транзакции обновления через связи и проведение пользовательской проверки столбцов и строк.

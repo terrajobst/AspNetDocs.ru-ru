@@ -8,15 +8,15 @@ ms.date: 02/20/2005
 ms.assetid: 72d90cd0-b3d9-454c-b2eb-ed0d9812f32c
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/improvements-in-visual-studio-2005
 msc.type: authoredcontent
-ms.openlocfilehash: 60259ceb99de536410aa5f53db64fb2dca68bf66
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a580b678a943695969b7f3acd2f7a033bd0b6ee3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57037361"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379773"
 ---
-<a name="improvements-in-visual-studio-2005"></a>Усовершенствования в Visual Studio 2005
-====================
+# <a name="improvements-in-visual-studio-2005"></a>Усовершенствования в Visual Studio 2005
+
 по [Microsoft](https://github.com/microsoft)
 
 > Visual Studio 2005 обеспечивает разработчиков веб-приложений с помощью длинный список улучшений и усовершенствований для веб-проектов.
@@ -438,7 +438,7 @@ Visual Studio 2005 устраняет зависимость от mdm.exe и vs7
 
 ## <a name="aspnet-development-server"></a>Сервер ASP.NET Development Server
 
-Как уже описано weve Visual Studio 2005 поставляется с веб-сервере ASP.NET Development Server. (ASP.NET Development Server иногда называется Cassini.) Этот веб-сервер — это удобный способ для просмотра и отладки приложений, работающих в файловой системе.
+Как мы уже выяснили, Visual Studio 2005 поставляется с веб-сервере ASP.NET Development Server. (ASP.NET Development Server иногда называется Cassini.) Этот веб-сервер — это удобный способ для просмотра и отладки приложений, работающих в файловой системе.
 
 Сервер разработки ASP.NET является ограниченным доступом веб-сервера. Не поддерживает удаленные соединения, не поддерживает все запросы из любого пользователя, отличного от пользователя, запустившего веб-сервера. Он также имеет возможность обслуживания страниц ASP. Обслуживаются только ресурсы по ASP.NET и HTML ресурсов (включая изображения, файлы CSS и др.).
 

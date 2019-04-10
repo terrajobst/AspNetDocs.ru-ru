@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 33af23f1-4016-4740-8fb2-37d1773452cd
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/filteredtextbox/allowing-only-certain-characters-in-a-text-box-vb
 msc.type: authoredcontent
-ms.openlocfilehash: aec5a3af98cf40e460f4164fb8950e8029002937
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 455d62d97808862f70692c46ae223f47270266f9
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57028551"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387624"
 ---
-<a name="allowing-only-certain-characters-in-a-text-box-vb"></a>Разрешение только некоторых символов в текстовом поле (VB)
-====================
+# <a name="allowing-only-certain-characters-in-a-text-box-vb"></a>Разрешение только некоторых символов в текстовом поле (VB)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/4/c/2/4c2def7a-0d23-4055-91f9-1f18504167d7/FilteredTextBox0.vb.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/filteredtextbox0VB.pdf)
@@ -56,7 +56,7 @@ ASP.NET AJAX Control Toolkit содержит `FilteredTextBox` элемента
 Запустите страницу и попробуйте ввести буквы в том случае, если включить JavaScript, он не будет работать; Тем не менее, на странице отображаются цифры. Тем не менее Обратите внимание, что защита `FilteredTextBox` предоставляет не пуленепробиваема: Если включен JavaScript, любые данные можно вводить в текстовом поле, поэтому необходимо использовать средства дополнительной проверки, т. е. ASP. NET-элементов управления проверки.
 
 
-[![Можно вводить только цифры](allowing-only-certain-characters-in-a-text-box-vb/_static/image2.png)](allowing-only-certain-characters-in-a-text-box-vb/_static/image1.png)
+[![Oможно вводить цифры чтение](allowing-only-certain-characters-in-a-text-box-vb/_static/image2.png)](allowing-only-certain-characters-in-a-text-box-vb/_static/image1.png)
 
 Можно вводить только цифры ([Просмотр полноразмерного изображения](allowing-only-certain-characters-in-a-text-box-vb/_static/image3.png))
 

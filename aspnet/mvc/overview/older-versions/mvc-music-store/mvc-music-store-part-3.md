@@ -8,15 +8,15 @@ ms.date: 04/21/2011
 ms.assetid: 94297aa0-1f2d-4d72-bbcb-63f64653e0c0
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-3
 msc.type: authoredcontent
-ms.openlocfilehash: 828ff18abcc5932f82be71a45ebde589eeb051fa
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ce866a169e69c0d85fe18ddeccf271f1f235d440
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049281"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381124"
 ---
-<a name="part-3-views-and-viewmodels"></a>Часть 3. Представления и классы ViewModel
-====================
+# <a name="part-3-views-and-viewmodels"></a>Часть 3. Представления и классы ViewModel
+
 по [Джон Гэллоуэй](https://github.com/jongalloway)
 
 > Store музыки MVC является учебного приложения, которое вводятся и описываются пошаговые использование ASP.NET MVC и Visual Studio для разработки веб-приложений.  

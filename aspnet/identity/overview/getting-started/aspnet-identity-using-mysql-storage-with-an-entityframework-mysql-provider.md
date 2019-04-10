@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/getting-started/aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider
-title: ASP.NET Identity. Использование хранилища MySQL с помощью поставщика EntityFramework MySQL (C#) | Документация Майкрософт
+title: ASP.NET Identity. Использование хранилища MySQL с помощью поставщика EntityFramework MySQL (C#)-ASP.NET 4.x
 author: maumar
 description: Этом руководстве показано, как замените механизм хранения данных по умолчанию для ASP.NET Identity EntityFramework (поставщик клиента SQL) — обеспечить MySQL...
 ms.author: riande
 ms.date: 12/10/2013
 ms.assetid: 15253312-a92c-43ba-908e-b5dacd3d08b8
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider
 msc.type: authoredcontent
-ms.openlocfilehash: f510c9bcaf83c6a68e835a7d82555653459df856
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6a73efb7d577cc70ca5ebaa69e8fdd03f3735ae4
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041801"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379668"
 ---
-<a name="aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider-c"></a>ASP.NET Identity. Использование хранилища MySQL с помощью поставщика EntityFramework MySQL (C#)
-====================
+# <a name="aspnet-identity-using-mysql-storage-with-an-entityframework-mysql-provider-c"></a>ASP.NET Identity. Использование хранилища MySQL с помощью поставщика EntityFramework MySQL (C#)
+
 по [Maurycy Markowski](https://github.com/maumar), [Raquel Soares De Almeida](https://github.com/raquelsa), [(Robert McMurray)](https://github.com/rmcmurray)
 
 > Этом руководстве показано, как заменить механизм хранения данных по умолчанию для [ **ASP.NET Identity** ](introduction-to-aspnet-identity.md) с EntityFramework (поставщик клиента SQL) с поставщиком MySQL.

@@ -8,19 +8,19 @@ ms.date: 10/18/2014
 ms.assetid: 2f952638-6b1f-48b6-b019-1c5d1e9ab746
 msc.legacyurl: /web-forms/overview/older-versions-security
 msc.type: chapter
-ms.openlocfilehash: 5a2eeef18163d0d408e4aba33bad7464ebf600a8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: afd786a25c8dc23eba1bbf6ed3f6512c64f2e72d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023511"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59378579"
 ---
-<a name="older-versions---security"></a>Предыдущие версии. Безопасность
-====================
+# <a name="older-versions---security"></a>Предыдущие версии. Безопасность
+
 > Разделы по безопасности, аутентификации и авторизации для ASP.NET 4 и более ранних приложений веб-форм.
 
 
-- [ASP.NET 3.5. Общие сведения о безопасности](introduction/index.md)
+- [ASP.NET 3.5. Общие сведения о безопасности](introduction/index.md)
 
     - [Общие сведения о безопасности и поддержка ASP.NET (C#)](introduction/security-basics-and-asp-net-support-cs.md)
     - [Общие сведения о проверке подлинности на основе форм (C#)](introduction/an-overview-of-forms-authentication-cs.md)
@@ -28,7 +28,7 @@ ms.locfileid: "57023511"
     - [Общие сведения о безопасности и поддержка ASP.NET (VB)](introduction/security-basics-and-asp-net-support-vb.md)
     - [Общие сведения о проверке подлинности на основе форм (VB)](introduction/an-overview-of-forms-authentication-vb.md)
     - [Настройка проверки подлинности на основе форм и дополнительные разделы (VB)](introduction/forms-authentication-configuration-and-advanced-topics-vb.md)
-- [ASP.NET 3.5. Членство](membership/index.md)
+- [ASP.NET 3.5. Членство](membership/index.md)
 
     - [Создание схемы членства в SQL Server (C#)](membership/creating-the-membership-schema-in-sql-server-cs.md)
     - [Создание учетных записей пользователей (C#)](membership/creating-user-accounts-cs.md)
@@ -40,7 +40,7 @@ ms.locfileid: "57023511"
     - [Проверка учетных данных пользователей в хранилище авторизованных пользователей (VB)](membership/validating-user-credentials-against-the-membership-user-store-vb.md)
     - [Авторизация на основе пользователей (VB)](membership/user-based-authorization-vb.md)
     - [Сохранение дополнительных сведений о пользователе (VB)](membership/storing-additional-user-information-vb.md)
-- [ASP.NET 3.5. Роли](roles/index.md)
+- [ASP.NET 3.5. Роли](roles/index.md)
 
     - [Создание ролей и управление ими (C#)](roles/creating-and-managing-roles-cs.md)
     - [Назначение ролей пользователям (C#)](roles/assigning-roles-to-users-cs.md)
@@ -48,7 +48,7 @@ ms.locfileid: "57023511"
     - [Создание ролей и управление ими (VB)](roles/creating-and-managing-roles-vb.md)
     - [Назначение ролей пользователям (VB)](roles/assigning-roles-to-users-vb.md)
     - [Авторизация на основе ролей (VB)](roles/role-based-authorization-vb.md)
-- [ASP.NET 3.5. Управление безопасностью](admin/index.md)
+- [ASP.NET 3.5. Управление безопасностью](admin/index.md)
 
     - [Создание интерфейса для выбора одной учетной записи пользователя из многих (C#)](admin/building-an-interface-to-select-one-user-account-from-many-cs.md)
     - [Восстановление и смена паролей (C#)](admin/recovering-and-changing-passwords-cs.md)

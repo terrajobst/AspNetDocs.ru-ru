@@ -8,20 +8,20 @@ ms.date: 06/06/2012
 ms.assetid: a56572ba-81c3-47af-826d-941e9c4775ec
 msc.legacyurl: /mvc/overview/performance/using-asynchronous-methods-in-aspnet-mvc-4
 msc.type: authoredcontent
-ms.openlocfilehash: 20f8d6f459cefc6c1a2e7d5f64c6df4199f8ad24
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 8292fd43ffa2bc66b4daa8f0fc09569226d90bff
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424473"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379564"
 ---
-<a name="using-asynchronous-methods-in-aspnet-mvc-4"></a>Использование асинхронных методов в ASP.NET MVC 4
-====================
+# <a name="using-asynchronous-methods-in-aspnet-mvc-4"></a>Использование асинхронных методов в ASP.NET MVC 4
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Этот учебник поможет основы создания асинхронных приложений веб-ASP.NET MVC с использованием [Visual Studio Express 2012 для Web](https://www.microsoft.com/visualstudio/11), который является бесплатной версии Microsoft Visual Studio. Можно также использовать [Visual Studio 2012](https://www.microsoft.com/visualstudio/11).
 > 
-> Полный пример приведен в этом руководстве на сайте github  [https://github.com/RickAndMSFT/Async-ASP.NET/](https://github.com/RickAndMSFT/Async-ASP.NET/)
+> Полный пример приведен в этом руководстве на сайте github [https://github.com/RickAndMSFT/Async-ASP.NET/](https://github.com/RickAndMSFT/Async-ASP.NET/)
 
 
 ASP.NET MVC 4 [Controller](https://msdn.microsoft.com/library/system.web.mvc.controller(VS.108).aspx) класс в сочетании [.NET 4.5](https://msdn.microsoft.com/library/w0x726c2(VS.110).aspx) позволяет написать асинхронные методы действия, которые возвращают объект типа [задачи&lt;ActionResult&gt; ](https://msdn.microsoft.com/library/dd321424(VS.110).aspx). .NET Framework 4 появилась асинхронного программирования концепция, называемая [задачи](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx) и ASP.NET MVC 4 поддерживает [задачи](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx). Задачи представляются **задачи** типа и связанных типов в [System.Threading.Tasks](https://msdn.microsoft.com/library/system.threading.tasks.aspx) пространства имен. .NET Framework 4.5 основан на этой асинхронной поддержки за счет [await](https://msdn.microsoft.com/library/hh156528(VS.110).aspx) и [async](https://msdn.microsoft.com/library/hh156513(VS.110).aspx) ключевые слова, которые делают работу с [задачи](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx) гораздо проще, чем предыдущие объектов асинхронные подходы. [Await](https://msdn.microsoft.com/library/hh156528(VS.110).aspx) ключевое слово является синтаксическое сокращение, которое указывает, которого фрагмент кода асинхронно ожидает на другие части кода. [Async](https://msdn.microsoft.com/library/hh156513(VS.110).aspx) ключевое слово представляет подсказку, которая позволяет пометить методы как асинхронные методы на основе задач. Сочетание **await**, **async**и **задачи** объекта значительно упрощает написание асинхронного кода в .NET 4.5. Новая модель для асинхронных методов называется *асинхронную модель на основе задач* (**КОСНИТЕСЬ**). Предполагается, что у вас есть некоторый опыт работы с асинхронного программирования при помощи [await](https://msdn.microsoft.com/library/hh156528(VS.110).aspx) и [async](https://msdn.microsoft.com/library/hh156513(VS.110).aspx) ключевые слова и [задачи](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx) пространства имен.
@@ -166,7 +166,7 @@ ASP.NET MVC 4 [Controller](https://msdn.microsoft.com/library/system.web.mvc.con
 
     - Откройте диспетчер IIS и перейдите в область пулов приложений.
     - Щелкните правой кнопкой целевой пул приложений и выберите **Дополнительные параметры**.  
-        ![Дополнительно](using-asynchronous-methods-in-aspnet-mvc-4/_static/image4.png)
+        ![дополнительно](using-asynchronous-methods-in-aspnet-mvc-4/_static/image4.png)
     - В **Дополнительные параметры** » диалогового окна «Изменение *длина очереди* от 1000 до 5 000.  
         ![Длина очереди](using-asynchronous-methods-in-aspnet-mvc-4/_static/image5.png)  
   

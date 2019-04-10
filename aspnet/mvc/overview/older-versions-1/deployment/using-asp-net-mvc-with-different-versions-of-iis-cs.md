@@ -8,15 +8,15 @@ ms.date: 08/19/2008
 ms.assetid: b0cf4a34-2c1d-4717-bb54-ff029e722990
 msc.legacyurl: /mvc/overview/older-versions-1/deployment/using-asp-net-mvc-with-different-versions-of-iis-cs
 msc.type: authoredcontent
-ms.openlocfilehash: aa7d00c0f54212d495f48929ed2a453942a1ed7d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0ca34f670202a35c627a514d3394fa430f5d8f26
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039671"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396347"
 ---
-<a name="using-aspnet-mvc-with-different-versions-of-iis-c"></a>Использование ASP.NET MVC с разными версиями служб IIS (C#)
-====================
+# <a name="using-aspnet-mvc-with-different-versions-of-iis-c"></a>Использование ASP.NET MVC с разными версиями служб IIS (C#)
+
 по [Microsoft](https://github.com/microsoft)
 
 > В этом руководстве вы узнаете, как использовать ASP.NET MVC и маршрутизация URL-адресов, с разными версиями служб IIS. Вы узнаете, различные стратегии по использованию ASP.NET MVC с IIS 7.0 (классический режим), IIS 6.0 и более ранних версий IIS.
@@ -53,7 +53,7 @@ IIS 7.0, может обрабатывать запросы с помощью д
 
 По умолчанию службы IIS настроены для поддержки два пула приложений: **DefaultAppPool** и **классический пул приложений .NET**. Если выбран DefaultAppPool, приложение работает в режиме. Если выбран Classic .NET AppPool, приложение запущено в режиме классического запрос обработки.
 
-[![В диалоговом окне нового проекта](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image1.jpg)](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image1.png)
+[![Tдиалоговое окно нового проекта он](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image1.jpg)](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image1.png)
 
 **Рис. 1**: Обнаружение режима обработки запроса ([Просмотр полноразмерного изображения](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image2.png))
 
@@ -92,7 +92,7 @@ IIS 7.0, может обрабатывать запросы с помощью д
 
 К сожалению более старых версиях IIS не будет передавать эти запросы к платформе ASP.NET. Таким образом эти запросы не будут направляться к контроллеру. Например если запрос браузера для URL-адрес/Home/Index затем вы получите страницы ошибки на рис. 2.
 
-[![В диалоговом окне нового проекта](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image2.jpg)](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image3.png)
+[![Tдиалоговое окно нового проекта он](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image2.jpg)](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image3.png)
 
 **Рис. 2**: Сообщение об ошибке 404 не найдено ([Просмотр полноразмерного изображения](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image4.png))
 
@@ -162,7 +162,7 @@ IIS 7.0, может обрабатывать запросы с помощью д
 6. Введите имя MVC
 7. Нажмите кнопку **ОК** кнопки
 
-[![В диалоговом окне нового проекта](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image3.jpg)](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image5.png)
+[![Tдиалоговое окно нового проекта он](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image3.jpg)](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image5.png)
 
 **Рис. 3**: Создание сопоставления с помощью IIS 7.0 ([Просмотр полноразмерного изображения](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image6.png))
 
@@ -177,13 +177,13 @@ IIS 7.0, может обрабатывать запросы с помощью д
 7. Снимите флажок **убедитесь, что файл существует**
 8. Нажмите кнопку **ОК** кнопки
 
-[![В диалоговом окне нового проекта](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image4.jpg)](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image7.png)
+[![Tдиалоговое окно нового проекта он](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image4.jpg)](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image7.png)
 
 **Рис. 4**: Создание сопоставления с IIS 6.0 ([Просмотр полноразмерного изображения](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image8.png))
 
 После включения универсальных сопоставлений, необходимо внести изменения в таблице маршрутов в файле Global.asax, таким образом, чтобы он включал корневого маршрута. В противном случае вы получите страницы ошибки на рис. 5 при создании запроса для корневой страницы приложения. Можно использовать измененный файл Global.asax в листинге 4.
 
-[![В диалоговом окне нового проекта](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image5.jpg)](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image9.png)
+[![Tдиалоговое окно нового проекта он](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image5.jpg)](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image9.png)
 
 **Рис. 5**: Отсутствует корневая ошибка маршрута ([Просмотр полноразмерного изображения](using-asp-net-mvc-with-different-versions-of-iis-cs/_static/image10.png))
 
@@ -210,4 +210,4 @@ IIS 7.0, может обрабатывать запросы с помощью д
 Второй вариант — создать сопоставления. Из второй вариант удобен тем, что не нужно изменять URL-адреса. Недостатком второго варианта является то, что может повлиять на производительность приложения ASP.NET MVC.
 
 > [!div class="step-by-step"]
-> [Вперед](using-asp-net-mvc-with-different-versions-of-iis-vb.md)
+> [Далее](using-asp-net-mvc-with-different-versions-of-iis-vb.md)

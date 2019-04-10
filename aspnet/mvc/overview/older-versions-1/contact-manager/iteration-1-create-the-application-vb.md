@@ -8,15 +8,15 @@ ms.date: 02/20/2009
 ms.assetid: 5b033582-1646-42c2-b20d-7edc8814e970
 msc.legacyurl: /mvc/overview/older-versions-1/contact-manager/iteration-1-create-the-application-vb
 msc.type: authoredcontent
-ms.openlocfilehash: f1909279f36c0bd3bfb22fe7a892ef8cfad3052f
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 9228fd7bb1a816dc1e7e068c47ee603b91c6c218
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422874"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389782"
 ---
-<a name="iteration-1--create-the-application-vb"></a>Итерация #1 – Создание приложения (Visual Basic)
-====================
+# <a name="iteration-1--create-the-application-vb"></a>Итерация #1 – Создание приложения (Visual Basic)
+
 по [Microsoft](https://github.com/microsoft)
 
 [Скачать код](iteration-1-create-the-application-vb/_static/contactmanager_1_vb1.zip)
@@ -91,7 +91,7 @@ ms.locfileid: "58422874"
 Убедитесь, что у вас есть .NET Framework 3.5, выбранные из раскрывающегося списка в верхней правой части **новый проект** диалоговое окно. В противном случае шаблон веб-приложение ASP.NET MVC не будет отображаться.
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image1.jpg)](iteration-1-create-the-application-vb/_static/image1.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image1.jpg)](iteration-1-create-the-application-vb/_static/image1.png)
 
 **Рис 01**: Диалоговое окно Новый проект ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image2.png))
 
@@ -103,7 +103,7 @@ ms.locfileid: "58422874"
 > Поскольку Visual Web Developer не поддерживает тестовых проектов, вы не получите диалоговое окно создания проекта модульного теста при использовании Visual Web Developer.
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image2.jpg)](iteration-1-create-the-application-vb/_static/image3.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image2.jpg)](iteration-1-create-the-application-vb/_static/image3.png)
 
 **Рис. 02**: Диалоговое окно создания проекта модульного теста ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image4.png))
 
@@ -111,7 +111,7 @@ ms.locfileid: "58422874"
 ASP.NET MVC приложение появится в окне обозревателя решений Visual Studio (см. рис. 3). Если Дон t отображается окно обозревателя решений, то это окно можно открыть, выбрав пункт меню **вид, обозреватель решений**. Обратите внимание на то, что решение содержит два проекта: проект ASP.NET MVC и тестовый проект. Проект ASP.NET MVC имеет имя ContactManager и тестовый проект называется ContactManager.Tests.
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image3.jpg)](iteration-1-create-the-application-vb/_static/image5.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image3.jpg)](iteration-1-create-the-application-vb/_static/image5.png)
 
 **Рис 03**: Окно обозревателя решений ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image6.png))
 
@@ -141,7 +141,7 @@ ASP.NET MVC приложение появится в окне обозреват
 Создать новую базу данных, щелкните правой кнопкой мыши приложение\_папка данных в окне обозревателя решений и выбрав пункт меню **добавить, новый элемент**. В **Добавление нового элемента** диалоговом окне выберите **данных** категории и **базы данных SQL Server** шаблона (см. рис. 4). Имя новой базы данных ContactManagerDB.mdf и нажмите кнопку "ОК".
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image4.jpg)](iteration-1-create-the-application-vb/_static/image7.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image4.jpg)](iteration-1-create-the-application-vb/_static/image7.png)
 
 **Рис. 04**: Создание новой базы данных Microsoft SQL Server Express ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image8.png))
 
@@ -156,7 +156,7 @@ ASP.NET MVC приложение появится в окне обозреват
 Окно обозревателя сервера можно использовать для создания новых объектов базы данных, таких как таблицы базы данных, представления, триггеры и хранимые процедуры. Щелкните правой кнопкой мыши папку «таблицы» и выберите пункт меню **добавить новую таблицу**. Конструктор таблиц базы данных отображается (см. рис. 5).
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image5.jpg)](iteration-1-create-the-application-vb/_static/image9.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image5.jpg)](iteration-1-create-the-application-vb/_static/image9.png)
 
 **05 рис**: Конструктор таблиц базы данных ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image10.png))
 
@@ -166,7 +166,7 @@ ASP.NET MVC приложение появится в окне обозреват
 <a id="0.2_table01"></a>
 
 
-| **Имя столбца** | **Тип данных** | **Разрешить значения NULL** |
+| **Имя столбца** | **Тип данных** | **Разрешить значения null** |
 | --- | --- | --- |
 | Идентификатор | int | False |
 | FirstName | nvarchar(50) | False |
@@ -203,22 +203,22 @@ ASP.NET MVC приложение появится в окне обозреват
 5. В **Choose Your Database Objects** шаг, установите флажок таблиц (см. рис. 9). Модель данных будет включать всех таблиц, содержащихся в базе данных (он только один, таблицу контактов). Введите пространство имен *моделей*. Нажмите кнопку "Готово", чтобы завершить работу мастера.
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image6.jpg)](iteration-1-create-the-application-vb/_static/image11.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image6.jpg)](iteration-1-create-the-application-vb/_static/image11.png)
 
 **Рис 06**: Диалоговое окно Add New Item ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image12.png))
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image7.jpg)](iteration-1-create-the-application-vb/_static/image13.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image7.jpg)](iteration-1-create-the-application-vb/_static/image13.png)
 
 **07 рис**: Выбор содержимого модели ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image14.png))
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image8.jpg)](iteration-1-create-the-application-vb/_static/image15.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image8.jpg)](iteration-1-create-the-application-vb/_static/image15.png)
 
 **Рис 08**: Выбор подключения к базе данных ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image16.png))
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image9.jpg)](iteration-1-create-the-application-vb/_static/image17.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image9.jpg)](iteration-1-create-the-application-vb/_static/image17.png)
 
 **Рис 09**: Выбор объектов базы данных ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image18.png))
 
@@ -228,7 +228,7 @@ ASP.NET MVC приложение появится в окне обозреват
 Мастер модели EDM создает имена классов на основе имен таблиц базы данных. Почти всегда необходимо изменить имя класса, созданного с помощью мастера. Щелкните правой кнопкой мыши класс контакты в конструкторе и выберите пункт меню **Переименовать**. Измените имя класса из контактов (во множественном числе) для контакта (единственное). После изменения имени класса, класс должен выглядеть следующим образом рис. 10.
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image10.jpg)](iteration-1-create-the-application-vb/_static/image19.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image10.jpg)](iteration-1-create-the-application-vb/_static/image19.png)
 
 **Рис. 10**: Класс Contact ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image20.png))
 
@@ -242,14 +242,14 @@ ASP.NET MVC приложение появится в окне обозреват
 Создать класс контроллера Home, щелкнув правой кнопкой мыши папку Controllers в окне обозревателя решений и выбрав пункт меню **Add, контроллера** (см. рис. 11). Обратите внимание, что флажок **добавить методы действий для сценариев создания, обновления и сведения о**. Убедитесь, что этот флажок установлен, прежде чем нажимать кнопку **добавить** кнопки.
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image11.jpg)](iteration-1-create-the-application-vb/_static/image21.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image11.jpg)](iteration-1-create-the-application-vb/_static/image21.png)
 
 **Рис. 11**: Добавление контроллера Home ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image22.png))
 
 
 При создании контроллера Home, вы получите класс в листинге 1.
 
-**В листинге 1 - Controllers\HomeController.vb**
+**Listing 1 - Controllers\HomeController.vb**
 
 [!code-vb[Main](iteration-1-create-the-application-vb/samples/sample1.vb)]
 
@@ -259,7 +259,7 @@ ASP.NET MVC приложение появится в окне обозреват
 
 Контроллер Home уже содержит действие Index(). Нам нужно изменить этот метод, чтобы он выглядел листинг 2.
 
-**В листинге 2 - Controllers\HomeController.vb**
+**Listing 2 - Controllers\HomeController.vb**
 
 [!code-vb[Main](iteration-1-create-the-application-vb/samples/sample2.vb)]
 
@@ -272,7 +272,7 @@ ASP.NET MVC приложение появится в окне обозреват
 Создание индекса представления, щелкнув правой кнопкой мыши метод Index() и выбрав пункт меню **Добавление представления** (см. рис. 12). Если выбрать этот пункт меню открывает **Добавление представления** диалоговое окно (см. рис. 13).
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image12.jpg)](iteration-1-create-the-application-vb/_static/image23.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image12.jpg)](iteration-1-create-the-application-vb/_static/image23.png)
 
 **Рис. 12**: Добавление представления индекса ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image24.png))
 
@@ -280,7 +280,7 @@ ASP.NET MVC приложение появится в окне обозреват
 В **Добавление представления** диалоговом окне установите флажок "с меткой" **создать строго типизированное представление**. Выберите класс представления данных ContactManager.Contact и Просмотр списка содержимого. Выбор этих параметров создает представление, отображающее список записей контактов.
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image13.jpg)](iteration-1-create-the-application-vb/_static/image25.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image13.jpg)](iteration-1-create-the-application-vb/_static/image25.png)
 
 **Рис. 13**: Диалоговое окно Add View ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image26.png))
 
@@ -300,7 +300,7 @@ ASP.NET MVC приложение появится в окне обозреват
 После внесения изменений в представлении индекса, можно запустить приложение диспетчера контактов. Выберите пункт меню Отладка, начать отладку, или просто нажмите клавишу F5. Первый раз, при запуске приложения, появится диалоговое окно на рис. 14. Выберите параметр **изменить файл Web.config для включения отладки** и нажмите кнопку "ОК".
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image14.jpg)](iteration-1-create-the-application-vb/_static/image27.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image14.jpg)](iteration-1-create-the-application-vb/_static/image27.png)
 
 **Рис. 14**: Включение отладки ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image28.png))
 
@@ -308,7 +308,7 @@ ASP.NET MVC приложение появится в окне обозреват
 По умолчанию возвращается в представление Index. В этом представлении перечислены все данные из таблицы базы данных контактов (см. рис. 15).
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image15.jpg)](iteration-1-create-the-application-vb/_static/image29.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image15.jpg)](iteration-1-create-the-application-vb/_static/image29.png)
 
 **Рис. 15**: Представление Index ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image30.png))
 
@@ -336,7 +336,7 @@ ASP.NET MVC приложение появится в окне обозреват
 Вы можете создать HTML-формы для создания новых контактов, щелкните правой кнопкой мыши один из двух методов Create() и выбрав пункт меню **Добавление представления** (см. рис. 16).
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image16.jpg)](iteration-1-create-the-application-vb/_static/image31.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image16.jpg)](iteration-1-create-the-application-vb/_static/image31.png)
 
 **Рис. 16**: Добавление представления создания ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image32.png))
 
@@ -344,7 +344,7 @@ ASP.NET MVC приложение появится в окне обозреват
 В **Добавление представления** диалоговом окне выберите **ContactManager.Contact** класс и **создать** параметр для представления содержимого (см. рис. 17). При нажатии кнопки **добавить** кнопку Create view, создается автоматически.
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image17.jpg)](iteration-1-create-the-application-vb/_static/image33.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image17.jpg)](iteration-1-create-the-application-vb/_static/image33.png)
 
 **Рис. 17**: Просмотр страницы развернуть ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image34.png))
 
@@ -358,7 +358,7 @@ ASP.NET MVC приложение появится в окне обозреват
 После изменения методов Create() и Добавление представления создания, можно запустить приложение диспетчера контактов и создания новых контактов. Нажмите кнопку **Create New** ссылку, которая появляется в представлении индекса, чтобы перейти в представление Create. Вы должны увидеть представление на рис. 18.
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image18.jpg)](iteration-1-create-the-application-vb/_static/image35.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image18.jpg)](iteration-1-create-the-application-vb/_static/image35.png)
 
 **Рис. 18**: Create View ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image36.png))
 
@@ -380,14 +380,14 @@ ASP.NET MVC приложение появится в окне обозреват
 Вы можете создать представление, содержащее форму редактирования, щелкните правой кнопкой мыши метод Edit() и выбрав пункт меню Вид Add. В диалоговом окне «Добавление представления» выберите **ContactManager.Models.Contact** класс и **изменить** Просмотр содержимого (см. рис. 19).
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image19.jpg)](iteration-1-create-the-application-vb/_static/image37.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image19.jpg)](iteration-1-create-the-application-vb/_static/image37.png)
 
 **Рис. 19**: Добавление представления редактирования ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image38.png))
 
 
 При нажатии кнопки «Добавить», автоматически создается новое представление редактирования. HTML-формы, который создается содержит поля, которые соответствуют каждому из свойств на класс Contact (см. Листинг 7).
 
-**Листинг 7 - Views\Home\Edit.aspx**
+**Listing 7 - Views\Home\Edit.aspx**
 
 [!code-aspx[Main](iteration-1-create-the-application-vb/samples/sample7.aspx)]
 
@@ -409,7 +409,7 @@ ASP.NET MVC приложение появится в окне обозреват
 Первый метод Delete() возвращает форму подтверждения удаления запись контакта из базы данных (см. в разделе Figure20). Второй метод Delete() выполняется фактическая операция удаления в базе данных. После получения исходного контакта из базы данных, эти методы DeleteObject () для Entity Framework и SaveChanges() вызываются выполнение удаления базы данных.
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image20.jpg)](iteration-1-create-the-application-vb/_static/image39.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image20.jpg)](iteration-1-create-the-application-vb/_static/image39.png)
 
 **Рис. 20**: В представление подтверждения удаления ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image40.png))
 
@@ -419,7 +419,7 @@ ASP.NET MVC приложение появится в окне обозреват
 {.id = элемент. % Идентификатор})&gt;
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image21.jpg)](iteration-1-create-the-application-vb/_static/image41.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image21.jpg)](iteration-1-create-the-application-vb/_static/image41.png)
 
 **Рис. 21**: Индексировать представление с ссылку "Изменить" ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image42.png))
 
@@ -429,7 +429,7 @@ ASP.NET MVC приложение появится в окне обозреват
 В отличие от в случае представления списка, Create и Edit, диалоговое окно Добавить представление не содержит параметр для создания представления удаления. Вместо этого выберите **ContactManager.Models.Contact** класс данных и **пустой** просматривать содержимое. Выбор пустое представление, что параметр содержимого потребуется нам для создания представления, сами.
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image22.jpg)](iteration-1-create-the-application-vb/_static/image43.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image22.jpg)](iteration-1-create-the-application-vb/_static/image43.png)
 
 **Рис. 22**: Добавление в представление подтверждения удаления ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image44.png))
 
@@ -447,12 +447,12 @@ ASP.NET MVC приложение появится в окне обозреват
 Эта проблема не будет довольно легко исправить. Во-первых нам нужно выполнить рефакторинг имени контроллера Home. Откройте класс HomeController в редакторе кода Visual Studio, щелкните правой кнопкой мыши имя класса и выберите пункт меню **Переименовать**. Если выбрать этот пункт меню открывается диалоговое окно переименования.
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image23.jpg)](iteration-1-create-the-application-vb/_static/image45.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image23.jpg)](iteration-1-create-the-application-vb/_static/image45.png)
 
 **Рис. 23**: Рефакторинг имени контроллера ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image46.png))
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image24.jpg)](iteration-1-create-the-application-vb/_static/image47.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image24.jpg)](iteration-1-create-the-application-vb/_static/image47.png)
 
 **Рис. 24**: С помощью диалогового окна Rename ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image48.png))
 
@@ -462,7 +462,7 @@ ASP.NET MVC приложение появится в окне обозреват
 После внесения этого изменения приложение больше не будет иметь контроллера Home. Когда вы запустите приложение, вы получите страницы ошибки на рис. 25.
 
 
-[![В диалоговом окне нового проекта](iteration-1-create-the-application-vb/_static/image25.jpg)](iteration-1-create-the-application-vb/_static/image49.png)
+[![Tдиалоговое окно нового проекта он](iteration-1-create-the-application-vb/_static/image25.jpg)](iteration-1-create-the-application-vb/_static/image49.png)
 
 **Рис. 25**: Без контроллера по умолчанию ([Просмотр полноразмерного изображения](iteration-1-create-the-application-vb/_static/image50.png))
 

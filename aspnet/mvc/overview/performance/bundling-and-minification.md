@@ -8,15 +8,15 @@ ms.date: 08/23/2012
 ms.assetid: 5894dc13-5d45-4dad-8096-136499120f1d
 msc.legacyurl: /mvc/overview/performance/bundling-and-minification
 msc.type: authoredcontent
-ms.openlocfilehash: 9b627a66007aec09a404147698e2bef06c7e7794
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9e4a2a9fc56393ac816f25a1039b233aa8961608
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053191"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383841"
 ---
-<a name="bundling-and-minification"></a>Объединение и минификация
-====================
+# <a name="bundling-and-minification"></a>Объединение и минификация
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Объединение и Минификация существуют два следующих способа можно использовать в ASP.NET 4.5 для улучшения времени загрузки запроса. Объединение и Минификация повышает время загрузки, уменьшая количество запросов к серверу и уменьшения размера запрошенных ресурсов (например, CSS и JavaScript.)
@@ -52,7 +52,7 @@ ms.locfileid: "57053191"
 
 Помимо удаления комментариев и ненужные пробелы, следующие параметры и имена переменных были переименованы (сокращено) следующим образом:
 
-| **Исходный текст** | **Переименован** |
+| **До преобразования** | **Переименовано** |
 | --- | --- |
 | imageTagAndImageID | n |
 | imageContext | t |
@@ -165,7 +165,7 @@ ms.locfileid: "57053191"
 
 В следующей таблице показаны файлы, добавленные в пакет, используя подстановочный знак, как показано:
 
-| **Call** | **Файлы, добавленные или исключение, вызываемое** |
+| **Вызов** | **Файлы, добавленные или исключение, вызываемое** |
 | --- | --- |
 | Включить («~/Scripts/Common/\*.js ") | *AddAltToImg.js*, *ToggleDiv.js*, *ToggleImg.js* |
 | Включить («~/Scripts/Common/T\*.js ") | Недопустимый шаблон исключение. Подстановочный знак можно использовать только в префиксе или суффиксе. |

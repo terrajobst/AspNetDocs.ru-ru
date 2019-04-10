@@ -8,15 +8,15 @@ ms.date: 04/01/2008
 ms.assetid: 041854a5-ea8c-4de0-82f1-121ba6cb2893
 msc.legacyurl: /web-forms/overview/older-versions-security/admin/unlocking-and-approving-user-accounts-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 87f27dc1cc7271ddee8785c12d48913e3c9f2c98
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1f6ade517bda60ac0f44811853ee9b9d06070091
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044501"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384179"
 ---
-<a name="unlocking-and-approving-user-accounts-vb"></a>Снятие блокировки и утверждение учетных записей пользователей (VB)
-====================
+# <a name="unlocking-and-approving-user-accounts-vb"></a>Снятие блокировки и утверждение учетных записей пользователей (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/VB.14.zip) или [скачать PDF](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/aspnet_tutorial14_UnlockAndApprove_vb.pdf)
@@ -49,7 +49,7 @@ ms.locfileid: "57044501"
 После добавления HyperLinkField к элементу GridView, Отвлекитесь и просмотрите `ManageUsers.aspx` страницы в обозревателе. Как показано на рис. 1, каждая строка GridView теперь включает ссылку «Управление». Указывает ссылку «Управление» для Брюс `UserInformation.aspx?user=Bruce`, тогда как ссылка «Управление» для Дейв указывает `UserInformation.aspx?user=Dave`.
 
 
-[![Добавляет поле HyperLinkField](unlocking-and-approving-user-accounts-vb/_static/image2.png)](unlocking-and-approving-user-accounts-vb/_static/image1.png)
+[![Tон добавляет HyperLinkField](unlocking-and-approving-user-accounts-vb/_static/image2.png)](unlocking-and-approving-user-accounts-vb/_static/image1.png)
 
 **Рис. 1**: Поле HyperLinkField добавляет ссылку «Управление» для каждой учетной записи пользователя ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image3.png))
 
@@ -72,7 +72,7 @@ ms.locfileid: "57044501"
 После добавления этих элементов управления, режиме конструктора в Visual Studio должен выглядеть на рисунке, на рис. 2.
 
 
-[![Создание пользовательского интерфейса для UserInformation.aspx](unlocking-and-approving-user-accounts-vb/_static/image5.png)](unlocking-and-approving-user-accounts-vb/_static/image4.png)
+[![CСоздание пользовательского интерфейса для UserInformation.aspx](unlocking-and-approving-user-accounts-vb/_static/image5.png)](unlocking-and-approving-user-accounts-vb/_static/image4.png)
 
 **Рис. 2**: Создание пользовательского интерфейса для `UserInformation.aspx` ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image6.png))
 
@@ -98,7 +98,7 @@ ms.locfileid: "57044501"
 В этих обработчиках событий в месте, вернемся к странице и «не утверждено» пользователя. Как показано на рис. 3, вы должны увидеть краткое сообщение на странице, означает, что пользователя `IsApproved` свойство изменена успешно.
 
 
-[![Крис был не утверждено](unlocking-and-approving-user-accounts-vb/_static/image8.png)](unlocking-and-approving-user-accounts-vb/_static/image7.png)
+[![Cинформационной системы персонала был не утверждено](unlocking-and-approving-user-accounts-vb/_static/image8.png)](unlocking-and-approving-user-accounts-vb/_static/image7.png)
 
 **Рис. 3**: Крис был не утверждено ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image9.png))
 
@@ -106,7 +106,7 @@ ms.locfileid: "57044501"
 Далее выхода из системы и попробуйте войти в систему как пользователь, учетная запись которого было просто «не утверждено». Так как пользователь не утвержден, они не может выполнить вход. По умолчанию элемент управления Login отображает то же сообщение, если пользователь не может выполнить вход, независимо от причины. Однако в <a id="Tutorial6"> </a> [ *проверка пользователя учетные данные от членства пользователя Store* ](../membership/validating-user-credentials-against-the-membership-user-store-vb.md) учебном курсе было рассмаотрено улучшения элемента управления Login для отображения более подходящим сообщения. Как показано на рис. 4, Крис отображается сообщение о том, что он не может выполнить вход, так как его учетная запись еще не утверждено.
 
 
-[![Крис невозможно из-за His является учетная запись входа не утверждено](unlocking-and-approving-user-accounts-vb/_static/image11.png)](unlocking-and-approving-user-accounts-vb/_static/image10.png)
+[![CНевозможно выполнить вход информационной системы персонала, поскольку его учетная запись не утверждено](unlocking-and-approving-user-accounts-vb/_static/image11.png)](unlocking-and-approving-user-accounts-vb/_static/image10.png)
 
 **Рис. 4**: Крис невозможно из-за His является учетная запись входа не утверждено ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image12.png))
 
@@ -116,7 +116,7 @@ ms.locfileid: "57044501"
 Вернитесь к `ManageUsers.aspx` странице и щелкните ссылку "Управление" для заблокированной пользователя. Как показано на рис. 5, вы должны увидеть значение в `LastLockedOutDateLabel` кнопки разблокировать пользователя должен быть включен. Нажмите кнопку Разблокировать пользователя, чтобы разблокировать учетную запись пользователя. После разблокирования пользователя, они смогут войти в систему.
 
 
-[![Дейв блокирована система](unlocking-and-approving-user-accounts-vb/_static/image14.png)](unlocking-and-approving-user-accounts-vb/_static/image13.png)
+[![DAve блокирована система](unlocking-and-approving-user-accounts-vb/_static/image14.png)](unlocking-and-approving-user-accounts-vb/_static/image13.png)
 
 **Рис. 5**: Дейв имеет были заблокированы из системы ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image15.png))
 
@@ -166,7 +166,7 @@ ms.locfileid: "57044501"
 В итоге получается, что новые пользователи не одобрены, это означает, что они не могут войти на сайт. Кроме того, они автоматически отправляются сообщения электронной почты со ссылкой на URL-адрес проверки (см. рис. 6).
 
 
-[![Новый пользователь получает сообщение электронной почты со ссылкой на URL-адрес проверки](unlocking-and-approving-user-accounts-vb/_static/image17.png)](unlocking-and-approving-user-accounts-vb/_static/image16.png)
+[![Tон новый пользователь получает сообщение электронной почты со ссылкой на URL-адрес проверки](unlocking-and-approving-user-accounts-vb/_static/image17.png)](unlocking-and-approving-user-accounts-vb/_static/image16.png)
 
 **Рис. 6**: Новый пользователь получает сообщение электронной почты со ссылкой на URL-адрес проверки ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image18.png))
 
@@ -188,7 +188,7 @@ ms.locfileid: "57044501"
 Рис. 7 показан `Verification.aspx` странице при посещении через браузер.
 
 
-[![Учетная запись нового пользователя — теперь утверждено](unlocking-and-approving-user-accounts-vb/_static/image20.png)](unlocking-and-approving-user-accounts-vb/_static/image19.png)
+[![TУчетная запись нового пользователя он является теперь утверждения](unlocking-and-approving-user-accounts-vb/_static/image20.png)](unlocking-and-approving-user-accounts-vb/_static/image19.png)
 
 **Рис. 7**: Учетная запись нового пользователя — теперь утверждения ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image21.png))
 

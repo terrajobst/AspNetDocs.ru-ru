@@ -8,15 +8,15 @@ ms.date: 05/12/2009
 ms.assetid: 577ae07b-a872-4818-a804-bca489b40ad0
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/colorpicker/using-the-colorpicker-control-extender-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 2fa3804411cb553de242a503f57e247efc990156
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 311cd61ae971dd6b902411eca87f75f87f5868ae
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053691"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384063"
 ---
-<a name="using-the-colorpicker-control-extender-vb"></a>С помощью расширитель элемента управления ColorPicker (VB)
-====================
+# <a name="using-the-colorpicker-control-extender-vb"></a>С помощью расширитель элемента управления ColorPicker (VB)
+
 по [Microsoft](https://github.com/microsoft)
 
 > ColorPicker является расширитель ASP.NET AJAX, который предоставляет функции выбора цвета на стороне клиента с помощью пользовательского интерфейса в элементе управления всплывающего окна. Его можно подключить к любому элементу управления ASP.NET TextBox. Его.
@@ -29,7 +29,7 @@ ms.locfileid: "57053691"
 Представьте, например, что вы хотите создать веб-сайт, позволяющий посетителям Создание настроенного визитные карточки. Посетители могут введите текст для бизнес-Карточка и выбрать цвет. Страницы ASP.NET в листинге 1 содержит два элемента управления TextBox с именем txtCardText и txtCardColor. При отправке формы отображаются выбранные значения (см. рис. 1).
 
 
-[![Простая форма для создания бизнес-карточка](using-the-colorpicker-control-extender-vb/_static/image1.jpg)](using-the-colorpicker-control-extender-vb/_static/image1.png)
+[![Sпростые формы для создания бизнес-карточка](using-the-colorpicker-control-extender-vb/_static/image1.jpg)](using-the-colorpicker-control-extender-vb/_static/image1.png)
 
 **Рис 01**: Простая форма для создания бизнес-карточка ([Просмотр полноразмерного изображения](using-the-colorpicker-control-extender-vb/_static/image2.png))
 
@@ -43,7 +43,7 @@ ms.locfileid: "57053691"
 Расширитель элемента управления ColorPicker можно использовать для создания удобства работы пользователя. ColorPicker отображает диалоговое окно цвет при перемещении фокуса в элементе управления TextBox (см. рис. 2).
 
 
-[![Расширитель элемента управления ColorPicker](using-the-colorpicker-control-extender-vb/_static/image2.jpg)](using-the-colorpicker-control-extender-vb/_static/image3.png)
+[![Tон расширитель элемента управления ColorPicker](using-the-colorpicker-control-extender-vb/_static/image2.jpg)](using-the-colorpicker-control-extender-vb/_static/image3.png)
 
 **Рис. 02**: Расширитель элемента управления ColorPicker ([Просмотр полноразмерного изображения](using-the-colorpicker-control-extender-vb/_static/image4.png))
 
@@ -60,12 +60,12 @@ ms.locfileid: "57053691"
 Самый простой способ добавить расширитель элемента управления ColorPicker страницы находится в режиме конструктора. Если навести указатель мыши txtCardColor TextBox одноименное появилась позволяет добавить расширитель (см. рис. 3). Если вы выберете этот параметр, откроется мастер расширения (см. рис. 4).
 
 
-[![Добавление расширителя](using-the-colorpicker-control-extender-vb/_static/image3.jpg)](using-the-colorpicker-control-extender-vb/_static/image5.png)
+[![Adding расширитель](using-the-colorpicker-control-extender-vb/_static/image3.jpg)](using-the-colorpicker-control-extender-vb/_static/image5.png)
 
 **Рис 03**: Добавление расширитель ([Просмотр полноразмерного изображения](using-the-colorpicker-control-extender-vb/_static/image6.png))
 
 
-[![Выбрав расширитель элемента управления с помощью мастера расширений](using-the-colorpicker-control-extender-vb/_static/image4.jpg)](using-the-colorpicker-control-extender-vb/_static/image7.png)
+[![SОтказ от расширитель элемента управления с помощью мастера расширитель](using-the-colorpicker-control-extender-vb/_static/image4.jpg)](using-the-colorpicker-control-extender-vb/_static/image7.png)
 
 **Рис. 04**: Выбрав расширитель элемента управления с помощью мастера расширений ([Просмотр полноразмерного изображения](using-the-colorpicker-control-extender-vb/_static/image8.png))
 
@@ -102,7 +102,7 @@ ms.locfileid: "57053691"
 Свойство SampleControlID позволяет связать элемент управления, который отображает выбранный цвет с ColorPicker. Цвет фона этого элемента управления ColorPicker примет выбранный цвет.
 
 
-[![Отображение диалоговое окно выбора цвета с кнопкой](using-the-colorpicker-control-extender-vb/_static/image5.jpg)](using-the-colorpicker-control-extender-vb/_static/image9.png)
+[![Displaying диалоговое окно выбора цвета с кнопкой](using-the-colorpicker-control-extender-vb/_static/image5.jpg)](using-the-colorpicker-control-extender-vb/_static/image9.png)
 
 **05 рис**: Отображение диалоговое окно выбора цвета с кнопкой ([Просмотр полноразмерного изображения](using-the-colorpicker-control-extender-vb/_static/image10.png))
 

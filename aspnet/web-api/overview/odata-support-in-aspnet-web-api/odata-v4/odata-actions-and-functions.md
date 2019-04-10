@@ -8,15 +8,15 @@ ms.date: 06/27/2014
 ms.assetid: 0e6fb03c-b16d-4bb0-ab0b-552bd2b6ece1
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4/odata-actions-and-functions
 msc.type: authoredcontent
-ms.openlocfilehash: 45b84ec4ee76e83ece99bf6841c28e13c3ab7728
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6b0388c0e60f4a81ddb52a13fe2d05c2c7d27313
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063231"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380864"
 ---
-<a name="actions-and-functions-in-odata-v4-using-aspnet-web-api-22"></a>Действия и функции в OData v4, с помощью ASP.NET Web API 2.2
-====================
+# <a name="actions-and-functions-in-odata-v4-using-aspnet-web-api-22"></a>Действия и функции в OData v4, с помощью ASP.NET Web API 2.2
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 > В OData действия и функции — это способ для добавления поведений на стороне сервера, которые легко не определены как операций CRUD в объектах. Этом руководстве показано, как добавить действия и функции для конечной точки OData v4, с помощью веб-API 2.2. Учебном курсе руководство [создания OData v4 конечной точки с помощью ASP.NET Web API 2](create-an-odata-v4-endpoint.md)

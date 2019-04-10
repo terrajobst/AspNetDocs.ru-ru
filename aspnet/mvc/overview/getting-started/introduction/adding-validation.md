@@ -8,15 +8,15 @@ ms.date: 01/06/2019
 ms.assetid: 9f35ca15-e216-4db6-9ebf-24380b0f31b4
 msc.legacyurl: /mvc/overview/getting-started/introduction/adding-validation
 msc.type: authoredcontent
-ms.openlocfilehash: f127f6a7d8a1f949432cc8f6f784dd7ee85ec207
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 2b5d2a355a27bfe9a3aa8b2fa4a2de79c7f74314
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423004"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387130"
 ---
-<a name="adding-validation"></a>Добавление проверки
-====================
+# <a name="adding-validation"></a>Добавление проверки
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 [!INCLUDE [Tutorial Note](sample/code-location.md)]
@@ -131,7 +131,7 @@ ms.locfileid: "58423004"
 
 [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) атрибуты предоставляют только рекомендации обработчик представлений для форматирования данных (а также другие атрибуты, такие как `<a>` для URL-адреса и `<a href="mailto:EmailAddress.com">` для электронной почты. Можно использовать [RegularExpression](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx) атрибута для проверки формата данных. [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) атрибут используется для указания типа данных, с более точным определением относительно встроенного типа базы данных, они являются ***не*** атрибутов проверки. В этом случае требуется отслеживать только дату, а не дату и время. [Перечисление DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) представлено множество типов данных, таких как *даты, времени, PhoneNumber, Currency, EmailAddress* и многое другое. Атрибут `DataType` также обеспечивает автоматическое предоставление функций для определенных типов в приложении. Например `mailto:` связи могут создаваться для [DataType.EmailAddress](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx), и можно предоставить селектор даты [DataType.Date](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) в браузерах, поддерживающих [HTML5](http://html5.org/). [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) создает атрибуты HTML 5 [данных —](http://ejohn.org/blog/html-5-data-attributes/) (произносится *dash данных*) атрибуты, которые HTML 5. [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatypeattribute.aspx) атрибуты не предназначены для проверки.
 
-`DataType.Date` не задает формат отображаемой даты. По умолчанию поле данных отображается в соответствии с использованием на сервере форматов [CultureInfo](https://msdn.microsoft.com/library/vstudio/system.globalization.cultureinfo(v=vs.110).aspx).
+`DataType.Date` не указывайте формат отображаемой даты. По умолчанию поле данных отображается в соответствии с использованием на сервере форматов [CultureInfo](https://msdn.microsoft.com/library/vstudio/system.globalization.cultureinfo(v=vs.110).aspx).
 
 С помощью атрибута `DisplayFormat` можно явно указать формат даты:
 

@@ -8,15 +8,15 @@ ms.date: 03/27/2007
 ms.assetid: 3a052ced-9cf5-47b8-a400-934f0b687c26
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/updating-and-deleting-existing-binary-data-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 9a0f9e5ebb8bc8227e869f2af085394262a31663
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b12af635c7913d4ca343d3e0e6af9f43aef493e9
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57037421"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59391563"
 ---
-<a name="updating-and-deleting-existing-binary-data-vb"></a>Обновление и удаление существующих двоичных данных (VB)
-====================
+# <a name="updating-and-deleting-existing-binary-data-vb"></a>Обновление и удаление существующих двоичных данных (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_57_VB.exe) или [скачать PDF](updating-and-deleting-existing-binary-data-vb/_static/datatutorial57vb1.pdf)
@@ -34,10 +34,10 @@ ms.locfileid: "57037421"
 
 DAL создан `Insert`, `Update`, и `Delete` методы, но эти методы были созданы на основе `CategoriesTableAdapter` s основного запроса, который не содержит `Picture` столбца. Таким образом `Insert` и `Update` методы не используйте параметры для указания двоичные данные изображения категории s. Как это делалось [предыдущем учебном курсе](including-a-file-upload-option-when-adding-a-new-record-vb.md), нам необходимо создать новый метод TableAdapter для обновления `Categories` таблице при указании двоичных данных.
 
-Откройте типизированный набор DataSet и в режиме конструктора щелкните правой кнопкой мыши `CategoriesTableAdapter` s заголовка и решили добавить запрос в контекстном меню launche мастер настройки запроса адаптера таблицы. Этот мастер начинается с вопросом, как запроса адаптера таблицы должен получить доступ к базе данных. Выберите использовать инструкции SQL и нажмите кнопку Далее. Следующий шаг загрузчика для типа запроса. Так как мы повторно создав запрос, чтобы добавить новую запись для `Categories` таблицы, выберите обновление и нажмите кнопку Далее.
+Откройте типизированный набор DataSet и в режиме конструктора щелкните правой кнопкой мыши `CategoriesTableAdapter` s заголовка и выберите Добавить запрос в контекстном меню, чтобы запустить мастер настройки запроса адаптера таблицы. Этот мастер начинается с вопросом, как запроса адаптера таблицы должен получить доступ к базе данных. Выберите использовать инструкции SQL и нажмите кнопку Далее. Следующий шаг загрузчика для типа запроса. Так как мы повторно создав запрос, чтобы добавить новую запись для `Categories` таблицы, выберите обновление и нажмите кнопку Далее.
 
 
-[![Выберите параметр обновления](updating-and-deleting-existing-binary-data-vb/_static/image2.png)](updating-and-deleting-existing-binary-data-vb/_static/image1.png)
+[![SВыберите параметр обновления](updating-and-deleting-existing-binary-data-vb/_static/image2.png)](updating-and-deleting-existing-binary-data-vb/_static/image1.png)
 
 **Рис. 1**: Выберите параметр обновления ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image3.png))
 
@@ -50,7 +50,7 @@ DAL создан `Insert`, `Update`, и `Delete` методы, но эти ме�
 На последнем экране мастера появляется запрос на имя нового метода адаптера таблицы. Введите `UpdateWithPicture` и нажмите кнопку Готово.
 
 
-[![Имя нового UpdateWithPicture метод адаптера таблицы](updating-and-deleting-existing-binary-data-vb/_static/image5.png)](updating-and-deleting-existing-binary-data-vb/_static/image4.png)
+[![Nимя нового UpdateWithPicture метод адаптера таблицы](updating-and-deleting-existing-binary-data-vb/_static/image5.png)](updating-and-deleting-existing-binary-data-vb/_static/image4.png)
 
 **Рис. 2**: Назовите новый метод TableAdapter `UpdateWithPicture` ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image6.png))
 
@@ -78,7 +78,7 @@ DAL создан `Insert`, `Update`, и `Delete` методы, но эти ме�
 Сначала откройте `UploadInDetailsView.aspx` страницы. Скопируйте все декларативный синтаксис внутри `<asp:Content>` элемента, как показано на рис. 3. Затем откройте `UpdatingAndDeleting.aspx` и вставьте эту разметку в его `<asp:Content>` элемент. Аналогичным образом, скопируйте код из `UploadInDetailsView.aspx` странице s вспомогательного класса для `UpdatingAndDeleting.aspx`.
 
 
-[![Копирование из UploadInDetailsView.aspx декларативная разметка](updating-and-deleting-existing-binary-data-vb/_static/image8.png)](updating-and-deleting-existing-binary-data-vb/_static/image7.png)
+[![Cопировать декларативная разметка из UploadInDetailsView.aspx](updating-and-deleting-existing-binary-data-vb/_static/image8.png)](updating-and-deleting-existing-binary-data-vb/_static/image7.png)
 
 **Рис. 3**: Скопируйте декларативную разметку из `UploadInDetailsView.aspx` ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image9.png))
 
@@ -94,7 +94,7 @@ DAL создан `Insert`, `Update`, и `Delete` методы, но эти ме�
 Пока задать раскрывающемся списке вкладки s обновления (нет), но оставьте раскрывающемся списке вкладки s DELETE, равным `DeleteCategory`. Мы вернемся к этот мастер на шаге 6, чтобы добавить поддержку обновления.
 
 
-[![Настройка ObjectDataSource на использование метода DeleteCategory](updating-and-deleting-existing-binary-data-vb/_static/image11.png)](updating-and-deleting-existing-binary-data-vb/_static/image10.png)
+[![CНастройка ObjectDataSource на использование метода DeleteCategory](updating-and-deleting-existing-binary-data-vb/_static/image11.png)](updating-and-deleting-existing-binary-data-vb/_static/image10.png)
 
 **Рис. 4**: Настройка ObjectDataSource для использования `DeleteCategory` метод ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image12.png))
 
@@ -113,7 +113,7 @@ DAL создан `Insert`, `Update`, и `Delete` методы, но эти ме�
 После настройки ObjectDataSource, добавьте Удаление возможностей удаления к элементу GridView, установив флажок Разрешить удаление в смарт-теге GridView s. Это добавит поле CommandField к GridView, `ShowDeleteButton` свойству `True`.
 
 
-[![Включить поддержку удаления в GridView](updating-and-deleting-existing-binary-data-vb/_static/image14.png)](updating-and-deleting-existing-binary-data-vb/_static/image13.png)
+[![Eвключить поддержку удаления в GridView](updating-and-deleting-existing-binary-data-vb/_static/image14.png)](updating-and-deleting-existing-binary-data-vb/_static/image13.png)
 
 **Рис. 5**: Включите поддержку удаления в GridView ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image15.png))
 
@@ -121,12 +121,12 @@ DAL создан `Insert`, `Update`, и `Delete` методы, но эти ме�
 Отвлекитесь и проверьте его функции удаления. Нет внешнего ключа между `Products` таблицы s `CategoryID` и `Categories` таблицы s `CategoryID`, поэтому вы получите исключение нарушения ограничения внешнего ключа, если вы попытаетесь удалить любую из первых восьми категорий. Чтобы протестировать эту функцию, out, добавьте новую категорию, предоставляя брошюры и изображение. Моя Категория теста показано на рис. 6 включает в себя буклет тестовый файл с именем `Test.pdf` и пробного рисунка. Рис. 7 показан элемент управления GridView после добавления категории теста.
 
 
-[![Добавить категорию с брошюры и изображением](updating-and-deleting-existing-binary-data-vb/_static/image17.png)](updating-and-deleting-existing-binary-data-vb/_static/image16.png)
+[![Aдд категория тестов с брошюры и изображением](updating-and-deleting-existing-binary-data-vb/_static/image17.png)](updating-and-deleting-existing-binary-data-vb/_static/image16.png)
 
 **Рис. 6**: Добавить категорию с брошюры и изображением ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image18.png))
 
 
-[![После вставки категорию теста, она появится в GridView](updating-and-deleting-existing-binary-data-vb/_static/image20.png)](updating-and-deleting-existing-binary-data-vb/_static/image19.png)
+[![Aразрыв, вставка категорию теста, она появится в GridView](updating-and-deleting-existing-binary-data-vb/_static/image20.png)](updating-and-deleting-existing-binary-data-vb/_static/image19.png)
 
 **Рис. 7**: После вставки категорию теста, она появится в GridView ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image21.png))
 
@@ -171,7 +171,7 @@ GridView s [ `RowDeleting` событий](https://msdn.microsoft.com/library/sy
 Щелкните ссылку Настройка источника данных с помощью мастера ObjectDataSource s и перейдите ко второму шагу. Из-за `DataObjectMethodAttribute` используется в `CategoriesBLL`, стрелку раскрывающегося списка обновления должны автоматически заполняться `UpdateCategory` перегрузку, которая принимает четыре входных параметра (для всех столбцов, но `Picture`). Это измените, чтобы он использовал перегрузки с пятью параметрами.
 
 
-[![Настройка ObjectDataSource на использование UpdateCategory метод, который включает параметр для рисунка](updating-and-deleting-existing-binary-data-vb/_static/image23.png)](updating-and-deleting-existing-binary-data-vb/_static/image22.png)
+[![CНастройка ObjectDataSource на использование UpdateCategory метод, который включает параметр для рисунка](updating-and-deleting-existing-binary-data-vb/_static/image23.png)](updating-and-deleting-existing-binary-data-vb/_static/image22.png)
 
 **Рис. 9**: Настройка ObjectDataSource для использования `UpdateCategory` метод, который включает параметр для `Picture` ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image24.png))
 
@@ -186,7 +186,7 @@ GridView s [ `RowDeleting` событий](https://msdn.microsoft.com/library/sy
 Чтобы включить GridView s встроенные возможности редактирования, установите флажок Enable Editing в смарт-теге GridView s. Это задаст CommandField s `ShowEditButton` свойства `True`, что может привести Добавление кнопки "Изменить" (и обновления "и" Отмена кнопки для редактируемой строки).
 
 
-[![Настройка GridView для поддерживающих правку](updating-and-deleting-existing-binary-data-vb/_static/image26.png)](updating-and-deleting-existing-binary-data-vb/_static/image25.png)
+[![Cастройка GridView для поддерживающих правку](updating-and-deleting-existing-binary-data-vb/_static/image26.png)](updating-and-deleting-existing-binary-data-vb/_static/image25.png)
 
 **Рис. 10**: Настройка GridView для поддерживающих правку ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image27.png))
 
@@ -194,7 +194,7 @@ GridView s [ `RowDeleting` событий](https://msdn.microsoft.com/library/sy
 Посетите страницу через обозреватель и щелкните одну из строк s кнопки изменения. `CategoryName` И `Description` поля BoundField, кроме подготавливаются к просмотру как текстовые поля. `BrochurePath` Не хватает TemplateField `EditItemTemplate`, поэтому он продолжает показывать его `ItemTemplate` ссылку брошюры. `Picture` ImageField готовится к просмотру как элемент TextBox, `Text` присваивается значение ImageField s `DataImageUrlField` значение, в данном случае `CategoryID`.
 
 
-[![GridView отсутствуют интерфейс редактирования для BrochurePath](updating-and-deleting-existing-binary-data-vb/_static/image29.png)](updating-and-deleting-existing-binary-data-vb/_static/image28.png)
+[![Tон GridView отсутствуют интерфейс редактирования для BrochurePath](updating-and-deleting-existing-binary-data-vb/_static/image29.png)](updating-and-deleting-existing-binary-data-vb/_static/image28.png)
 
 **Рис. 11**: GridView не имеет интерфейс редактирования для `BrochurePath` ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image30.png))
 
@@ -226,7 +226,7 @@ GridView s [ `RowDeleting` событий](https://msdn.microsoft.com/library/sy
 Под RadioButtonList, добавьте элемент управления FileUpload `BrochureUpload`. Задайте его `Visible` свойства `False`.
 
 
-[![Добавление EditItemTemplate RadioButtonList и элемента управления FileUpload](updating-and-deleting-existing-binary-data-vb/_static/image32.png)](updating-and-deleting-existing-binary-data-vb/_static/image31.png)
+[![Add RadioButtonList и элемента управления FileUpload к EditItemTemplate](updating-and-deleting-existing-binary-data-vb/_static/image32.png)](updating-and-deleting-existing-binary-data-vb/_static/image31.png)
 
 **Рис. 13**: Добавление RadioButtonList и элемента управления FileUpload для `EditItemTemplate` ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image33.png))
 
@@ -241,12 +241,12 @@ GridView s [ `RowDeleting` событий](https://msdn.microsoft.com/library/sy
 Этот код в месте Отвлекитесь и проверьте его интерфейс редактирования. Нажмите кнопку "Изменить" для строки. Изначально используйте текущий параметр буклет должен быть выбран. Изменение выбранного индекса вызывает обратную передачу. Если третий параметр выбран, элемент FileUpload отображается; в противном случае он скрыт. Рис. 14 показана интерфейс правки, при первом нажатии "Изменить"; Рис. 15 показывает интерфейс, после выбора буклет параметр новой передачи.
 
 
-[![Изначально текущего использования брошюры выбран параметр](updating-and-deleting-existing-binary-data-vb/_static/image35.png)](updating-and-deleting-existing-binary-data-vb/_static/image34.png)
+[![Initially используйте текущий брошюры выбран параметр](updating-and-deleting-existing-binary-data-vb/_static/image35.png)](updating-and-deleting-existing-binary-data-vb/_static/image34.png)
 
 **Рис. 14**: Изначально, используйте текущий брошюры параметр выбран ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image36.png))
 
 
-[![Выбор нового брошюры передачи отображает параметр элемента управления FileUpload](updating-and-deleting-existing-binary-data-vb/_static/image38.png)](updating-and-deleting-existing-binary-data-vb/_static/image37.png)
+[![Choosing брошюры передачи новый параметр отображает элемент управления FileUpload](updating-and-deleting-existing-binary-data-vb/_static/image38.png)](updating-and-deleting-existing-binary-data-vb/_static/image37.png)
 
 **Рис. 15**: Выбор элемента управления FileUpload брошюры передачи новый параметр ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image39.png))
 
@@ -302,7 +302,7 @@ GridView s `RowUpdating` и `RowUpdated` обработчики событий �
 Необходимо обновить `EditItemTemplate` использование элемента управления FileUpload. От s смарт-тегов щелкните Изменить шаблоны элемента GridView ссылку, а затем выберите `Picture` TemplateField s `EditItemTemplate` из раскрывающегося списка. В шаблоне вы увидите, удалите это текстовое поле. Затем перетащите элемент управления FileUpload из области элементов в шаблон, установка его `ID` для `PictureUpload`. Добавьте текст, чтобы изменить изображение категории s, укажите новый рисунок. Чтобы сохранит свою рисунка категории s, оставьте поле пустым в шаблон.
 
 
-[![Добавление элемента управления FileUpload EditItemTemplate](updating-and-deleting-existing-binary-data-vb/_static/image41.png)](updating-and-deleting-existing-binary-data-vb/_static/image40.png)
+[![Aдд элемента управления FileUpload EditItemTemplate](updating-and-deleting-existing-binary-data-vb/_static/image41.png)](updating-and-deleting-existing-binary-data-vb/_static/image40.png)
 
 **Рис. 17**: Добавление элемента управления FileUpload для `EditItemTemplate` ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image42.png))
 
@@ -310,7 +310,7 @@ GridView s `RowUpdating` и `RowUpdated` обработчики событий �
 После настройки интерфейса правки, просмотрите продвижении в браузере. При просмотре строки в режиме только для чтения, изображение категории s будет показано, как до, но, нажав кнопку "Изменить" отображает изображение столбца как текст с помощью элемента управления FileUpload.
 
 
-[![Включает в себя интерфейс правки элемента управления FileUpload](updating-and-deleting-existing-binary-data-vb/_static/image44.png)](updating-and-deleting-existing-binary-data-vb/_static/image43.png)
+[![Tон интерфейс редактирования включает элемента управления FileUpload](updating-and-deleting-existing-binary-data-vb/_static/image44.png)](updating-and-deleting-existing-binary-data-vb/_static/image43.png)
 
 **Рис. 18**: Включает в себя интерфейс редактирования элемента управления FileUpload ([Просмотр полноразмерного изображения](updating-and-deleting-existing-binary-data-vb/_static/image45.png))
 

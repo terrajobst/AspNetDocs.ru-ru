@@ -8,15 +8,15 @@ ms.date: 02/17/2014
 ms.assetid: f15ab392-c05e-4269-83bf-7c6d2b8c8ec8
 msc.legacyurl: /web-pages/overview/mobile/rendering-aspnet-web-pages-sites-for-mobile-devices
 msc.type: authoredcontent
-ms.openlocfilehash: dd06a54d396bd85eeef7c004ee115828d541a2c1
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: dbcd25331387f8606343e551302bc3ed1f9b2c25
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031111"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379512"
 ---
-<a name="rendering-aspnet-web-pages-razor-sites-for-mobile-devices"></a>Подготовка к просмотру ASP.NET Web Pages (Razor) сайтов для мобильных устройств
-====================
+# <a name="rendering-aspnet-web-pages-razor-sites-for-mobile-devices"></a>Подготовка к просмотру ASP.NET Web Pages (Razor) сайтов для мобильных устройств
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > В этой статье описывается создание страниц на сайте веб-страниц ASP.NET (Razor), будут отображаться правильно на мобильных устройствах.
@@ -37,7 +37,7 @@ ms.locfileid: "57031111"
 
 Веб-страницы ASP.NET позволяет создавать пользовательские отображение для отображения содержимого на мобильный или других устройств.
 
-Самый простой способ создать страницу конкретного устройства, на сайте веб-страниц ASP.NET — с помощью шаблона именования файлов следующим образом: <em>Имя файла.</em>  <em>Mobile</em><em>.cshtml</em>. Можно создать две версии страницы (например, один с именем <em>MyFile.cshtml</em> и один с именем <em>MyFile.Mobile.cshtml</em>). Во время выполнения, когда мобильное устройство запрашивает <em>MyFile.cshtml</em>, ASP.NET отображает содержимое из <em>MyFile.Mobile.cshtml</em>. В противном случае <em>MyFile.cshtml</em> визуализации.
+Самый простой способ создать страницу конкретного устройства, на сайте веб-страниц ASP.NET — с помощью шаблона именования файлов следующим образом: *FileName.Mobile.cshtml*. Можно создать две версии страницы (например, один с именем *MyFile.cshtml* и один с именем *MyFile.Mobile.cshtml*). Во время выполнения, когда мобильное устройство запрашивает *MyFile.cshtml*, ASP.NET отображает содержимое из *MyFile.Mobile.cshtml*. В противном случае *MyFile.cshtml* визуализации.
 
 Приведенный ниже показано, как включить отрисовку мобильных устройств, добавив страницу содержимого для мобильных устройств. *Page1.cshtml* содержит содержимое, а также боковая панель навигации. *Page1.Mobile.cshtml* с тем же содержимым, но пропускает боковой панели.
 

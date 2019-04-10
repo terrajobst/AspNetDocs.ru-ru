@@ -8,15 +8,15 @@ ms.date: 01/10/2008
 ms.assetid: 228b575b-8bf9-4c1a-b8e9-1a878861a6b3
 msc.legacyurl: /web-forms/videos/how-do-i/read-write-and-delete-cookies-in-aspnet
 msc.type: video
-ms.openlocfilehash: 092d8fbc8452d4501ede22c4805edc884fceae27
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 94fe435acbf1d51db0e65e63d012aa2afac7c6b1
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062931"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59393760"
 ---
-<a name="read-write-and-delete-cookies-in-aspnet"></a>Чтение, запись и удаление файлов cookie в ASP.NET
-====================
+# <a name="read-write-and-delete-cookies-in-aspnet"></a>Чтение, запись и удаление файлов cookie в ASP.NET
+
 по [Крис Пелз](https://twitter.com/chrispels)
 
 В этом видео Крис Пелз будет показано, как чтение, запись и удаление файлов cookie в приложении ASP.NET. Во-первых Узнайте базовые операции для управления файлы cookie. Затем узнайте способы сохранение нескольких значений в одном файле cookie, с помощью пары имя значение, вызывается подразделов. Узнайте, как ограничить область файлов cookie для определенного домена приложения или папки. См. в разделе, как изменить значения и даты окончания срока действия в существующие файлы cookie и как удалить существующий файл cookie. Кроме того также рассматриваются общие вопросы использования файлов cookie.

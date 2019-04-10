@@ -8,15 +8,15 @@ ms.date: 03/31/2010
 ms.assetid: 0b91d5f8-127d-4f6a-b204-f2e2b35ef703
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting/using-templatefields-in-the-detailsview-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 1c18e8be25369d6e7d1703e71b80e75adb9f15fa
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9a2f500206bbdc09d8007e10c0c7464f1ba384a3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57037861"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395073"
 ---
-<a name="using-templatefields-in-the-detailsview-control-vb"></a>Использование TemplateField в элементе управления DetailsView (VB)
-====================
+# <a name="using-templatefields-in-the-detailsview-control-vb"></a>Использование TemplateField в элементе управления DetailsView (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/5/7/0/57084608-dfb3-4781-991c-407d086e2adc/ASPNET_Data_Tutorial_13_VB.exe) или [скачать PDF](using-templatefields-in-the-detailsview-control-vb/_static/datatutorial13vb1.pdf)
@@ -35,7 +35,7 @@ TemplateField предлагает большую степень гибкост�
 Те же поля TemplateField возможности, доступные с помощью GridView, также доступны с помощью элемента управления DetailsView. В этом руководстве мы будем отображать продукты одновременно в элементе управления DetailsView, содержащий два поля TemplateField. Первый TemplateField объединит `UnitPrice`, `UnitsInStock`, и `UnitsOnOrder` полей данных в одну строку DetailsView. Второй TemplateField будет отображаться значение `Discontinued` , но будет использовать метод форматирования для отображения «Да», если `Discontinued` является `True`и в противном случае — значение «Нет».
 
 
-[![Два TemplateField, используемые для настройки отображения](using-templatefields-in-the-detailsview-control-vb/_static/image2.png)](using-templatefields-in-the-detailsview-control-vb/_static/image1.png)
+[![TWO TemplateField, используемые для настройки отображения](using-templatefields-in-the-detailsview-control-vb/_static/image2.png)](using-templatefields-in-the-detailsview-control-vb/_static/image1.png)
 
 **Рис. 1**: Два TemplateField, используемые для настройки отображения ([Просмотр полноразмерного изображения](using-templatefields-in-the-detailsview-control-vb/_static/image3.png))
 
@@ -49,7 +49,7 @@ TemplateField предлагает большую степень гибкост�
 Откройте `DetailsViewTemplateField.aspx` страницы и перетащите DetailsView из области элементов в конструктор. Смарт-теге DetailsView выберите Добавление нового элемента управления ObjectDataSource, который вызывает `ProductsBLL` класса `GetProducts()` метод.
 
 
-[![Добавить новый элемент управления ObjectDataSource, вызывающего метод GetProducts()](using-templatefields-in-the-detailsview-control-vb/_static/image5.png)](using-templatefields-in-the-detailsview-control-vb/_static/image4.png)
+[![Aдд новый элемент управления ObjectDataSource, вызывающего метод GetProducts()](using-templatefields-in-the-detailsview-control-vb/_static/image5.png)](using-templatefields-in-the-detailsview-control-vb/_static/image4.png)
 
 **Рис. 2**: Добавить новый элемент управления ObjectDataSource, Invokes `GetProducts()` метод ([Просмотр полноразмерного изображения](using-templatefields-in-the-detailsview-control-vb/_static/image6.png))
 
@@ -64,7 +64,7 @@ TemplateField предлагает большую степень гибкост�
 Отвлекитесь и просмотрите страницу через обозреватель. На этом этапе вы увидите один продукт (Chai) со строками, показывающими, название продукта, категории, поставщика, цены, единиц на складе, заказанных единиц и его состояние больше не поддерживаются.
 
 
-[![Сведения о продукте отображаются с помощью серии полей BoundField](using-templatefields-in-the-detailsview-control-vb/_static/image8.png)](using-templatefields-in-the-detailsview-control-vb/_static/image7.png)
+[![Tсведения о продукте HE выделяются с помощью серии полей BoundField](using-templatefields-in-the-detailsview-control-vb/_static/image8.png)](using-templatefields-in-the-detailsview-control-vb/_static/image7.png)
 
 **Рис. 3**: Сведения о продукте отображаются с помощью серии полей BoundField ([Просмотр полноразмерного изображения](using-templatefields-in-the-detailsview-control-vb/_static/image9.png))
 
@@ -76,7 +76,7 @@ DetailsView имеет одну строку для `UnitPrice`, `UnitsInStock`,
 Запустить, щелкнув ссылку Изменить поля в смарт-теге DetailsView, чтобы открыть диалоговое окно "поля". Затем добавьте нового поля TemplateField и задать его `HeaderText` свойство «Цены и инвентаризация» и перемещения нового поля TemplateField, что он находится выше `UnitPrice` BoundField.
 
 
-[![Добавление нового поля TemplateField в элементе управления DetailsView](using-templatefields-in-the-detailsview-control-vb/_static/image11.png)](using-templatefields-in-the-detailsview-control-vb/_static/image10.png)
+[![Aдд нового поля TemplateField в элементе управления DetailsView](using-templatefields-in-the-detailsview-control-vb/_static/image11.png)](using-templatefields-in-the-detailsview-control-vb/_static/image10.png)
 
 **Рис. 4**: Добавление нового поля TemplateField в элементе управления DetailsView ([Просмотр полноразмерного изображения](using-templatefields-in-the-detailsview-control-vb/_static/image12.png))
 
@@ -88,7 +88,7 @@ DetailsView имеет одну строку для `UnitPrice`, `UnitsInStock`,
 В этом учебнике, начните с добавления элемента управления Label цену и инвентаризации TemplateField `ItemTemplate`. Затем щелкните ссылку Edit DataBindings в смарт-теге элемента управления Label Web и привязать `Text` свойства `UnitPrice` поля.
 
 
-[![Привязка свойства Label Text к полю данных UnitPrice](using-templatefields-in-the-detailsview-control-vb/_static/image14.png)](using-templatefields-in-the-detailsview-control-vb/_static/image13.png)
+[![BПоле для свойства Label Text к данным UnitPrice IND](using-templatefields-in-the-detailsview-control-vb/_static/image14.png)](using-templatefields-in-the-detailsview-control-vb/_static/image13.png)
 
 **Рис. 5**: Привязка метки `Text` свойства `UnitPrice` поля данных ([Просмотр полноразмерного изображения](using-templatefields-in-the-detailsview-control-vb/_static/image15.png))
 
@@ -98,7 +98,7 @@ DetailsView имеет одну строку для `UnitPrice`, `UnitsInStock`,
 В результате этого добавления элемента управления Label Web цены и инвентаризации TemplateField теперь будет отображать только цену для выбранного продукта. Рис. 6 показан снимок экрана ход работы до сих при просмотре через браузер.
 
 
-[![Цена и инвентаризации TemplateField показана цена](using-templatefields-in-the-detailsview-control-vb/_static/image17.png)](using-templatefields-in-the-detailsview-control-vb/_static/image16.png)
+[![Tон цены и инвентаризации TemplateField показана цена](using-templatefields-in-the-detailsview-control-vb/_static/image17.png)](using-templatefields-in-the-detailsview-control-vb/_static/image16.png)
 
 **Рис. 6**: Цена и инвентаризации TemplateField показана цена ([Просмотр полноразмерного изображения](using-templatefields-in-the-detailsview-control-vb/_static/image18.png))
 
@@ -110,7 +110,7 @@ DetailsView имеет одну строку для `UnitPrice`, `UnitsInStock`,
 Для `UnitPrice` используйте форматирование денежной единицы, указано, выбрав значение соответствующего раскрывающегося списка или введя в поле `{0:C}` вручную.
 
 
-[![Форматирование цены как денежной единицы](using-templatefields-in-the-detailsview-control-vb/_static/image20.png)](using-templatefields-in-the-detailsview-control-vb/_static/image19.png)
+[![FФормат цены как денежной единицы](using-templatefields-in-the-detailsview-control-vb/_static/image20.png)](using-templatefields-in-the-detailsview-control-vb/_static/image19.png)
 
 **Рис. 7**: Форматирование цены как денежной единицы ([Просмотр полноразмерного изображения](using-templatefields-in-the-detailsview-control-vb/_static/image21.png))
 
@@ -137,7 +137,7 @@ DetailsView имеет одну строку для `UnitPrice`, `UnitsInStock`,
 С этими изменениями мы объединили информация о цене и инвентаризации в одну строку DetailsView.
 
 
-[![Цена и данные инвентаризации отображается на одной строки](using-templatefields-in-the-detailsview-control-vb/_static/image23.png)](using-templatefields-in-the-detailsview-control-vb/_static/image22.png)
+[![Tон цены и данные инвентаризации отображается на одной строки](using-templatefields-in-the-detailsview-control-vb/_static/image23.png)](using-templatefields-in-the-detailsview-control-vb/_static/image22.png)
 
 **Рис. 8**: Цена и данные инвентаризации отображается на одной строки ([Просмотр полноразмерного изображения](using-templatefields-in-the-detailsview-control-vb/_static/image24.png))
 
@@ -149,7 +149,7 @@ DetailsView имеет одну строку для `UnitPrice`, `UnitsInStock`,
 Вместо отображения CheckBoxField, нужно вместо отображения текста, указывающее, является ли продукт снят с производства. Для выполнения этой задачи мы могли бы удалить CheckBoxField из элемента управления DetailsView и затем добавьте поле BoundField которого `DataField` было установлено на `Discontinued`. Отвлекитесь и это сделать. После этого изменения DetailsView отображается текст «True» для снятых с производства продуктов и «False» для продуктов, которые по-прежнему активны.
 
 
-[![Эти строки True и False используются для отображения состояния снятия с производства](using-templatefields-in-the-detailsview-control-vb/_static/image26.png)](using-templatefields-in-the-detailsview-control-vb/_static/image25.png)
+[![Tон строки True и False используются для отображения состояния снят с продажи](using-templatefields-in-the-detailsview-control-vb/_static/image26.png)](using-templatefields-in-the-detailsview-control-vb/_static/image25.png)
 
 **Рис. 9**: Строки True и False используются для отображения состояния Discontinued ([Просмотр полноразмерного изображения](using-templatefields-in-the-detailsview-control-vb/_static/image27.png))
 
@@ -175,7 +175,7 @@ DetailsView имеет одну строку для `UnitPrice`, `UnitsInStock`,
 Это приведет к `DisplayDiscontinuedAsYESorNO` метод, вызываемый при отрисовке элемента управления DetailsView, передавая `ProductRow` экземпляра `Discontinued` значение. Так как `Eval` метод возвращает значение типа `Object`, но `DisplayDiscontinuedAsYESorNO` метод ожидает входной параметр типа `Boolean`, мы приводим `Eval` методы возвращают значение `Boolean`. `DisplayDiscontinuedAsYESorNO` Метод вернет «YES» или «NO» в зависимости от значения при получении. Возвращаемое значение равно, что должно отображаться в этом DetailsView строк (см. рис. 10).
 
 
-[![Да или нет значения: теперь отображаются в строке Discontinued](using-templatefields-in-the-detailsview-control-vb/_static/image29.png)](using-templatefields-in-the-detailsview-control-vb/_static/image28.png)
+[![YES или нет значения, теперь отображаются в строке снят с продажи](using-templatefields-in-the-detailsview-control-vb/_static/image29.png)](using-templatefields-in-the-detailsview-control-vb/_static/image28.png)
 
 **Рис. 10**: Да или нет значения: теперь отображаются в строке Discontinued ([Просмотр полноразмерного изображения](using-templatefields-in-the-detailsview-control-vb/_static/image30.png))
 

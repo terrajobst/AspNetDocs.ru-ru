@@ -9,16 +9,13 @@ ms.date: 01/15/2019
 ms.assetid: be0c098a-1fb2-457e-b815-ddca601afc65
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc/handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: b513d7d86d382068bc1a8f1bcc61289ee946d38b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 11b1bc316f730e31b4a01924765db3c982783652
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57064531"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383022"
 ---
-<a name="handling-concurrency-with-the-entity-framework-6-in-an-aspnet-mvc-5-application-10-of-12"></a>Обработка параллелизма с помощью Entity Framework 6 в приложении ASP.NET MVC 5 (10 из 12)
-====================
-
 # <a name="tutorial-handle-concurrency-with-ef-in-an-aspnet-mvc-5-app"></a>Учебник. Маркер параллелизма в EF в приложении ASP.NET MVC 5
 
 В предыдущих учебниках вы узнали, как обновлять данные. Этом руководстве показано, как использовать оптимистичный параллелизм для обработки конфликтов, когда несколько пользователей изменяют одну сущность, в то же время. Изменить веб-страниц, которые работают с `Department` сущности, чтобы они обрабатывают ошибки параллелизма. На следующих рисунках показаны страницы "Edit" (Редактирование) и "Delete" (Удаление), включая некоторые сообщения, которые отображаются при возникновении конфликта параллелизма.

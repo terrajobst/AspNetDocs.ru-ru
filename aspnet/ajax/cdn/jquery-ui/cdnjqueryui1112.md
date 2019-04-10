@@ -8,15 +8,15 @@ ms.date: 11/11/2014
 ms.assetid: b458470f-ed44-4c2d-9c81-f1976daf7fad
 msc.legacyurl: /ajax/cdn/jquery-ui/cdnjqueryui1112
 msc.type: content
-ms.openlocfilehash: 1e8fb0ca8833193590efaa2019ead748d2486a1c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8c6f59f1d0a5b8ede3b4949afe500637f9684211
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57057401"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396295"
 ---
-<a name="jquery-ui-1112-on-the-microsoft-ajax-cdn"></a>Пользовательский интерфейс jQuery 1.11.2 в сети доставки содержимого Microsoft Ajax
-====================
+# <a name="jquery-ui-1112-on-the-microsoft-ajax-cdn"></a>Пользовательский интерфейс jQuery 1.11.2 в сети доставки содержимого Microsoft Ajax
+
 Пользовательский Интерфейс jQuery 1.11.2 Библиотека включает следующие файлы:
 
 - https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/jquery-ui.js
@@ -43,14 +43,14 @@ ms.locfileid: "57057401"
 - https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/themes/cupertino/jquery-ui.css
   
 
-* * *
+---
 
 
-**Dark-Hive**  
+**Темно Hive**  
 [![Изображение](cdnjqueryui1112/_static/image4.png)](http://jqueryui.com/themeroller/#ffDefault=Verdana%2C+Arial%2C+sans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=6px&bgColorHeader=444444&bgTextureHeader=03_highlight_soft.png&bgImgOpacityHeader=44&borderColorHeader=333333&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=000000&bgTextureContent=14_loop.png&bgImgOpacityContent=25&borderColorContent=555555&fcContent=ffffff&iconColorContent=cccccc&bgColorDefault=222222&bgTextureDefault=03_highlight_soft.png&bgImgOpacityDefault=35&borderColorDefault=444444&fcDefault=eeeeee&iconColorDefault=cccccc&bgColorHover=003147&bgTextureHover=03_highlight_soft.png&bgImgOpacityHover=33&borderColorHover=0b93d5&fcHover=ffffff&iconColorHover=ffffff&bgColorActive=0972a5&bgTextureActive=04_highlight_hard.png&bgImgOpacityActive=20&borderColorActive=26b3f7&fcActive=ffffff&iconColorActive=222222&bgColorHighlight=eeeeee&bgTextureHighlight=03_highlight_soft.png&bgImgOpacityHighlight=80&borderColorHighlight=cccccc&fcHighlight=2e7db2&iconColorHighlight=4b8e0b&bgColorError=ffc73d&bgTextureError=02_glass.png&bgImgOpacityError=40&borderColorError=ffb73d&fcError=111111&iconColorError=a83300&bgColorOverlay=5c5c5c&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=50&opacityOverlay=80&bgColorShadow=cccccc&bgTextureShadow=01_flat.png&bgImgOpacityShadow=30&opacityShadow=60&thicknessShadow=7px&offsetTopShadow=-7px&offsetLeftShadow=-7px&cornerRadiusShadow=8px)  
 - https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/themes/dark-hive/jquery-ui.css
 
-**Dot-Luv**  
+**Точка нравятся**  
 [![Изображение](cdnjqueryui1112/_static/image5.png)](http://jqueryui.com/themeroller/#ffDefault=Arial,+sans-serif&fwDefault=bold&fsDefault=1.3em&cornerRadius=4px&bgColorHeader=0b3e6f&bgTextureHeader=08_diagonals_thick.png&bgImgOpacityHeader=15&borderColorHeader=0b3e6f&fcHeader=f6f6f6&iconColorHeader=98d2fb&bgColorContent=111111&bgTextureContent=12_gloss_wave.png&bgImgOpacityContent=20&borderColorContent=000000&fcContent=d9d9d9&iconColorContent=9ccdfc&bgColorDefault=333333&bgTextureDefault=09_dots_small.png&bgImgOpacityDefault=20&borderColorDefault=333333&fcDefault=ffffff&iconColorDefault=9ccdfc&bgColorHover=00498f&bgTextureHover=09_dots_small.png&bgImgOpacityHover=40&borderColorHover=222222&fcHover=ffffff&iconColorHover=ffffff&bgColorActive=292929&bgTextureActive=01_flat.png&bgImgOpacityActive=40&borderColorActive=096ac8&fcActive=75abff&iconColorActive=00498f&bgColorHighlight=0b58a2&bgTextureHighlight=10_dots_medium.png&bgImgOpacityHighlight=30&borderColorHighlight=052f57&fcHighlight=ffffff&iconColorHighlight=ffffff&bgColorError=a32d00&bgTextureError=09_dots_small.png&bgImgOpacityError=30&borderColorError=cd0a0a&fcError=ffffff&iconColorError=ffffff&bgColorOverlay=aaaaaa&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=01_flat.png&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px)  
 - https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/themes/dot-luv/jquery-ui.css
 
@@ -59,10 +59,10 @@ ms.locfileid: "57057401"
 - https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/themes/eggplant/jquery-ui.css
   
 
-* * *
+---
 
 
-**Excite-Bike**  
+**Стимулируйте обучение велосипеда**  
 [![Изображение](cdnjqueryui1112/_static/image7.png)](http://jqueryui.com/themeroller/#ffDefault=segoe+ui,+Arial,+sans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=3px&bgColorHeader=f9f9f9&bgTextureHeader=03_highlight_soft.png&bgImgOpacityHeader=100&borderColorHeader=cccccc&fcHeader=e69700&iconColorHeader=5fa5e3&bgColorContent=eeeeee&bgTextureContent=06_inset_hard.png&bgImgOpacityContent=100&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=0a82eb&bgColorDefault=1484e6&bgTextureDefault=08_diagonals_thick.png&bgImgOpacityDefault=22&borderColorDefault=ffffff&fcDefault=ffffff&iconColorDefault=fcdd4a&bgColorHover=2293f7&bgTextureHover=08_diagonals_thick.png&bgImgOpacityHover=26&borderColorHover=2293f7&fcHover=ffffff&iconColorHover=ffffff&bgColorActive=e69700&bgTextureActive=08_diagonals_thick.png&bgImgOpacityActive=20&borderColorActive=e69700&fcActive=ffffff&iconColorActive=ffffff&bgColorHighlight=c5ddfc&bgTextureHighlight=07_diagonals_small.png&bgImgOpacityHighlight=25&borderColorHighlight=ffffff&fcHighlight=333333&iconColorHighlight=0b54d5&bgColorError=e69700&bgTextureError=08_diagonals_thick.png&bgImgOpacityError=20&borderColorError=e69700&fcError=ffffff&iconColorError=ffffff&bgColorOverlay=e6b900&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=e69700&bgTextureShadow=01_flat.png&bgImgOpacityShadow=0&opacityShadow=20&thicknessShadow=0px&offsetTopShadow=6px&offsetLeftShadow=6px&cornerRadiusShadow=3px)  
 - https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/themes/excite-bike/jquery-ui.css
 
@@ -75,14 +75,14 @@ ms.locfileid: "57057401"
 - https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/themes/hot-sneaks/jquery-ui.css
   
 
-* * *
+---
 
 
 **Humanity**  
 [![Изображение](cdnjqueryui1112/_static/image10.png)](http://jqueryui.com/themeroller/#tr=ffDefault=Helvetica,Arial,sans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=6px&bgColorHeader=cb842e&bgTextureHeader=02_glass.png&bgImgOpacityHeader=25&borderColorHeader=d49768&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=f4f0ec&bgTextureContent=05_inset_soft.png&bgImgOpacityContent=100&borderColorContent=e0cfc2&fcContent=1e1b1d&iconColorContent=c47a23&bgColorDefault=ede4d4&bgTextureDefault=02_glass.png&bgImgOpacityDefault=70&borderColorDefault=cdc3b7&fcDefault=3f3731&iconColorDefault=f08000&bgColorHover=f5f0e5&bgTextureHover=02_glass.png&bgImgOpacityHover=100&borderColorHover=f5ad66&fcHover=a46313&iconColorHover=f08000&bgColorActive=f4f0ec&bgTextureActive=04_highlight_hard.png&bgImgOpacityActive=100&borderColorActive=e0cfc2&fcActive=b85700&iconColorActive=f35f07&bgColorHighlight=f5f5b5&bgTextureHighlight=04_highlight_hard.png&bgImgOpacityHighlight=75&borderColorHighlight=d9bb73&fcHighlight=060200&iconColorHighlight=cb672b&bgColorError=fee4bd&bgTextureError=04_highlight_hard.png&bgImgOpacityError=65&borderColorError=f8893f&fcError=592003&iconColorError=ff7519&bgColorOverlay=aaaaaa&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=75&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=01_flat.png&bgImgOpacityShadow=75&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px)  
 - https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/themes/humanity/jquery-ui.css
 
-**Le-Frog**  
+**LE-проектов компании Frog**  
 [![Изображение](cdnjqueryui1112/_static/image11.png)](http://jqueryui.com/themeroller/#ffDefault=Lucida+Grande%2C+Lucida+Sans%2C+Arial%2C+sans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=10px&bgColorHeader=3a8104&bgTextureHeader=03_highlight_soft.png&bgImgOpacityHeader=33&borderColorHeader=3f7506&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=285c00&bgTextureContent=05_inset_soft.png&bgImgOpacityContent=10&borderColorContent=72b42d&fcContent=ffffff&iconColorContent=72b42d&bgColorDefault=4ca20b&bgTextureDefault=03_highlight_soft.png&bgImgOpacityDefault=60&borderColorDefault=45930b&fcDefault=ffffff&iconColorDefault=ffffff&bgColorHover=4eb305&bgTextureHover=03_highlight_soft.png&bgImgOpacityHover=50&borderColorHover=8bd83b&fcHover=ffffff&iconColorHover=ffffff&bgColorActive=285c00&bgTextureActive=04_highlight_hard.png&bgImgOpacityActive=30&borderColorActive=72b42d&fcActive=ffffff&iconColorActive=ffffff&bgColorHighlight=fbf5d0&bgTextureHighlight=02_glass.png&bgImgOpacityHighlight=55&borderColorHighlight=f9dd34&fcHighlight=363636&iconColorHighlight=4eb305&bgColorError=ffdc2e&bgTextureError=08_diagonals_thick.png&bgImgOpacityError=95&borderColorError=fad000&fcError=2b2b2b&iconColorError=cd0a0a&bgColorOverlay=444444&bgTextureOverlay=08_diagonals_thick.png&bgImgOpacityOverlay=15&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=07_diagonals_small.png&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=0px&offsetTopShadow=4px&offsetLeftShadow=4px&cornerRadiusShadow=4px)  
 - https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/themes/le-frog/jquery-ui.css
 
@@ -91,7 +91,7 @@ ms.locfileid: "57057401"
 - https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/themes/mint-choc/jquery-ui.css
   
 
-* * *
+---
 
 
 **Overcast**  
@@ -107,7 +107,7 @@ ms.locfileid: "57057401"
 - https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/themes/redmond/jquery-ui.css
   
 
-* * *
+---
 
 
 **Плавный переход**  
@@ -123,7 +123,7 @@ ms.locfileid: "57057401"
 - https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/themes/start/jquery-ui.css
   
 
-* * *
+---
 
 
 **Солнечный**  
@@ -139,7 +139,7 @@ ms.locfileid: "57057401"
 - https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/themes/trontastic/jquery-ui.css
   
 
-* * *
+---
 
 
 **Интенсивность пользовательского интерфейса**  

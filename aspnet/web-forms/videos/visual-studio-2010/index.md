@@ -8,15 +8,15 @@ ms.date: 10/05/2011
 ms.assetid: a1e1014d-085c-4e5a-8522-068387b6415d
 msc.legacyurl: /web-forms/videos/visual-studio-2010
 msc.type: chapter
-ms.openlocfilehash: 64e773bacea3792a74199ddb3961cf4f877d11d9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8325662a34a8ca7c520cf65b50bbe928ce6b4b45
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023751"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381046"
 ---
-<a name="general-vs-2010-tips"></a>Общие советы по VS 2010
-====================
+# <a name="general-vs-2010-tips"></a>Общие советы по VS 2010
+
 > Возможности Visual Studio 2010, включая те, предназначенные специально для работы с ASP.NET.
 
 
@@ -25,6 +25,6 @@ ms.locfileid: "57023751"
 - [Интеллектуальные списки IntelliSense](visual-studio-2010-quick-hit-intellisense-smart-lists.md)
 - [Поддержка конфигураций с несколькими мониторами](visual-studio-2010-quick-hit-multi-monitor-support.md)
 - [Новый шаблон веб-проекта](visual-studio-2010-quick-hit-new-web-project-template.md)
-- [Новое нацеливание на несколько версий](visual-studio-2010-quick-hit-new-multi-targeting.md)
+- [Новая настройка для нескольких версий](visual-studio-2010-quick-hit-new-multi-targeting.md)
 - [Веб-сайты вместо веб-проектов](visual-studio-2010-quick-hit-websites-instead-of-web-projects.md)
 - [Фрагменты кода IntelliSense](visual-studio-2010-quick-hit-snippets-intellisense.md)

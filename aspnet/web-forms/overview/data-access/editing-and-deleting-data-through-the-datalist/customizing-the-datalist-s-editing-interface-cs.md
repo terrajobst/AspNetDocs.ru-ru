@@ -8,15 +8,15 @@ ms.date: 10/30/2006
 ms.assetid: a5d13067-ddfb-4c36-8209-0f69fd40e45c
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/customizing-the-datalist-s-editing-interface-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 7f7723895dd50b1923de49ca4a3a7055bbad5fe4
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0bbb6dd95196e46b00c35b269eacfc1b53e75c86
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57078554"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379655"
 ---
-<a name="customizing-the-datalists-editing-interface-c"></a>Настройка интерфейса правки элемента управления DataList (C#)
-====================
+# <a name="customizing-the-datalists-editing-interface-c"></a>Настройка интерфейса правки элемента управления DataList (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_40_CS.exe) или [скачать PDF](customizing-the-datalist-s-editing-interface-cs/_static/datatutorial40cs1.pdf)
@@ -37,7 +37,7 @@ ms.locfileid: "57078554"
 В этом руководстве мы создадим более богатый интерфейс редактирования элемента управления DataList, содержащий элементов управления DropDownList и флажок. В частности, мы создадим элемент управления DataList, перечисляются сведения о продукте и разрешает имя продукта s, поставщика, категорию и снят с производства обновления (см. рис. 1).
 
 
-[![Интерфейс редактирования содержит текстовое поле, двух элементов управления DropDownList и флажка](customizing-the-datalist-s-editing-interface-cs/_static/image2.png)](customizing-the-datalist-s-editing-interface-cs/_static/image1.png)
+[![Tон интерфейс редактирования включает текстовое поле, двух элементов управления DropDownList и флажок](customizing-the-datalist-s-editing-interface-cs/_static/image2.png)](customizing-the-datalist-s-editing-interface-cs/_static/image1.png)
 
 **Рис. 1**: Интерфейс редактирования включает текстовое поле, двух элементов управления DropDownList и флажок ([Просмотр полноразмерного изображения](customizing-the-datalist-s-editing-interface-cs/_static/image3.png))
 
@@ -47,7 +47,7 @@ ms.locfileid: "57078554"
 Прежде чем создавать интерфейс редактирования s DataList, необходимо сначала создать интерфейс только для чтения. Сначала откройте `CustomizedUI.aspx` странице из `EditDeleteDataList` папку и, в режиме конструктора добавьте на страницу элемент управления DataList его `ID` свойства `Products`. S смарт-теге элемента управления DataList создайте новый ObjectDataSource. Назовите этот новый элемент управления ObjectDataSource `ProductsDataSource` и настройте его для получения данных из `ProductsBLL` класс s `GetProducts` метод. Как с предыдущих редактируемых элементов управления DataList руководствах мы обновим сведения s продукта непосредственно на уровне бизнес-логики. Соответственно установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет).
 
 
-[![Задайте раскрывающиеся списки UPDATE, INSERT и DELETE вкладок (нет)](customizing-the-datalist-s-editing-interface-cs/_static/image5.png)](customizing-the-datalist-s-editing-interface-cs/_static/image4.png)
+[![Sи UPDATE, INSERT и DELETE вкладки раскрывающихся списков (нет)](customizing-the-datalist-s-editing-interface-cs/_static/image5.png)](customizing-the-datalist-s-editing-interface-cs/_static/image4.png)
 
 **Рис. 2**: Установить обновления, вставки и удаления вкладки раскрывающиеся списки (нет) ([Просмотр полноразмерного изображения](customizing-the-datalist-s-editing-interface-cs/_static/image6.png))
 
@@ -60,7 +60,7 @@ ms.locfileid: "57078554"
 Приведенная выше разметка размещает сведения о продукте с помощью &lt;h4&gt; заголовок для имени продукта s и четырех столбцов `<table>` в остальных полях. `ProductPropertyLabel` И `ProductPropertyValue` классы CSS, определенные в `Styles.css`, подробно обсуждаются в предыдущих учебных курсах. Рис. 3 показаны результаты выполненной работы в браузере.
 
 
-[![Отображается имя, поставщика, категорию, более не поддерживается состояние и цену каждого продукта](customizing-the-datalist-s-editing-interface-cs/_static/image8.png)](customizing-the-datalist-s-editing-interface-cs/_static/image7.png)
+[![Tон имя поставщика, категории, более не поддерживается состояние и цену каждого продукта отображается](customizing-the-datalist-s-editing-interface-cs/_static/image8.png)](customizing-the-datalist-s-editing-interface-cs/_static/image7.png)
 
 **Рис. 3**: Отображается имя, поставщика, категорию, более не поддерживается состояние и цену каждого продукта ([Просмотр полноразмерного изображения](customizing-the-datalist-s-editing-interface-cs/_static/image9.png))
 
@@ -72,7 +72,7 @@ ms.locfileid: "57078554"
 Чтобы настроить интерфейс редактирования, щелкните ссылку Изменить шаблоны в смарт-теге элемента управления DataList s и выберите `EditItemTemplate` параметр из раскрывающегося списка. Добавление элемента управления DropDownList для `EditItemTemplate` и задайте его `ID` для `Categories`.
 
 
-[![Добавление элемента управления DropDownList для категорий](customizing-the-datalist-s-editing-interface-cs/_static/image11.png)](customizing-the-datalist-s-editing-interface-cs/_static/image10.png)
+[![Aдд DropDownList для категорий](customizing-the-datalist-s-editing-interface-cs/_static/image11.png)](customizing-the-datalist-s-editing-interface-cs/_static/image10.png)
 
 **Рис. 4**: Добавление элемента управления DropDownList для категорий ([Просмотр полноразмерного изображения](customizing-the-datalist-s-editing-interface-cs/_static/image12.png))
 
@@ -80,12 +80,12 @@ ms.locfileid: "57078554"
 Затем из смарт-тега DropDownList s, выберите параметр Выбор источника данных и создать новый ObjectDataSource, именуемый `CategoriesDataSource`. Настроить данный элемент управления ObjectDataSource для использования `CategoriesBLL` класс s `GetCategories()` метод (см. рис. 5). Затем DropDownList s мастер настройки источника данных предлагает для полей данных для каждого `ListItem` s `Text` и `Value` свойства. Иметь элемент управления DropDownList отображает `CategoryName` поля данных и использование `CategoryID` как значение, как показано на рис. 6.
 
 
-[![Создайте новый ObjectDataSource, именуемый CategoriesDataSource](customizing-the-datalist-s-editing-interface-cs/_static/image14.png)](customizing-the-datalist-s-editing-interface-cs/_static/image13.png)
+[![Cсоздать новый элемент управления ObjectDataSource с именем CategoriesDataSource](customizing-the-datalist-s-editing-interface-cs/_static/image14.png)](customizing-the-datalist-s-editing-interface-cs/_static/image13.png)
 
 **Рис. 5**: Создайте новый ObjectDataSource с именем `CategoriesDataSource` ([Просмотр полноразмерного изображения](customizing-the-datalist-s-editing-interface-cs/_static/image15.png))
 
 
-[![Настройка отображения s DropDownList и значение поля](customizing-the-datalist-s-editing-interface-cs/_static/image17.png)](customizing-the-datalist-s-editing-interface-cs/_static/image16.png)
+[![Cастройка s DropDownList отображения и значение поля](customizing-the-datalist-s-editing-interface-cs/_static/image17.png)](customizing-the-datalist-s-editing-interface-cs/_static/image16.png)
 
 **Рис. 6**: Настройка DropDownList s отображения и значение поля ([Просмотр полноразмерного изображения](customizing-the-datalist-s-editing-interface-cs/_static/image18.png))
 
@@ -102,7 +102,7 @@ ms.locfileid: "57078554"
 [!code-aspx[Main](customizing-the-datalist-s-editing-interface-cs/samples/sample2.aspx)]
 
 
-[![Интерфейс правки вышел Laid как интерфейс только для чтения](customizing-the-datalist-s-editing-interface-cs/_static/image20.png)](customizing-the-datalist-s-editing-interface-cs/_static/image19.png)
+[![Tон интерфейс редактирования является Laid Out, таких как интерфейс только для чтения](customizing-the-datalist-s-editing-interface-cs/_static/image20.png)](customizing-the-datalist-s-editing-interface-cs/_static/image19.png)
 
 **Рис. 7**: Интерфейс правки вышел Laid как интерфейс только для чтения ([Просмотр полноразмерного изображения](customizing-the-datalist-s-editing-interface-cs/_static/image21.png))
 
@@ -119,7 +119,7 @@ ms.locfileid: "57078554"
 С помощью этих двух обработчиков событий в месте, нажав кнопку "Изменить" отображает интерфейс редактирования и нажимая кнопку отмены возвращает элемент в режим только для чтения. Рис. 8 показан элемент управления DataList, после нажатия кнопки Edit для Chef Anton s Gumbo Mix. Так как мы ve еще, чтобы добавить любой синтаксис привязки данных к интерфейсу редактирования, `ProductName` текстовое поле пусто, `Discontinued` устанавливайте флажок, а первые элементы выбраны из `Categories` и `Suppliers` элементов управления DropDownList.
 
 
-[![Щелкнув отображает кнопку редактирования интерфейса редактирования](customizing-the-datalist-s-editing-interface-cs/_static/image23.png)](customizing-the-datalist-s-editing-interface-cs/_static/image22.png)
+[![Cщелкнув отображает кнопку изменить интерфейс правки](customizing-the-datalist-s-editing-interface-cs/_static/image23.png)](customizing-the-datalist-s-editing-interface-cs/_static/image22.png)
 
 **Рис. 8**: Нажав кнопку "Изменить" отображает интерфейс редактирования ([Просмотр полноразмерного изображения](customizing-the-datalist-s-editing-interface-cs/_static/image24.png))
 
@@ -131,7 +131,7 @@ ms.locfileid: "57078554"
 Назначить `ProductName` значение поля данных `ProductName` TextBox s `Text` свойство, `CategoryID` и `SupplierID` значений для полей данных `Categories` и `Suppliers` элементов управления DropDownList `SelectedValue` свойства и `Discontinued` значение поля данных `Discontinued` флажок s `Checked` свойство. После внесения этих изменений, либо через конструктор, либо напрямую через декларативную разметку, вернемся к странице через браузер и нажмите кнопку кнопка Edit для Chef Anton s Gumbo Mix. Как показано на рис. 9, синтаксис привязки данных добавил текущие значения в текстовое поле, элементов управления DropDownList и флажок.
 
 
-[![Щелкнув отображает кнопку редактирования интерфейса редактирования](customizing-the-datalist-s-editing-interface-cs/_static/image26.png)](customizing-the-datalist-s-editing-interface-cs/_static/image25.png)
+[![Cщелкнув отображает кнопку изменить интерфейс правки](customizing-the-datalist-s-editing-interface-cs/_static/image26.png)](customizing-the-datalist-s-editing-interface-cs/_static/image25.png)
 
 **Рис. 9**: Нажав кнопку "Изменить" отображает интерфейс редактирования ([Просмотр полноразмерного изображения](customizing-the-datalist-s-editing-interface-cs/_static/image27.png))
 
@@ -167,7 +167,7 @@ ms.locfileid: "57078554"
 Отвлекитесь и просмотрите ход работы через браузер. При правке продукта, обратите внимание, что `Categories` и `Suppliers` у обоих элементов управления DropDownList (нет) параметр в начале элемента управления DropDownList.
 
 
-[![Категории и элементов управления DropDownList Suppliers включают (None) параметр](customizing-the-datalist-s-editing-interface-cs/_static/image29.png)](customizing-the-datalist-s-editing-interface-cs/_static/image28.png)
+[![TКатегории HE и элементов управления DropDownList Suppliers включать (нет) параметр](customizing-the-datalist-s-editing-interface-cs/_static/image29.png)](customizing-the-datalist-s-editing-interface-cs/_static/image28.png)
 
 **Рис. 10**: `Categories` И `Suppliers` элементов управления DropDownList включают (None) параметра ([Просмотр полноразмерного изображения](customizing-the-datalist-s-editing-interface-cs/_static/image30.png))
 

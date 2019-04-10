@@ -8,15 +8,15 @@ ms.date: 11/13/2006
 ms.assetid: f52c302a-1b7c-46fe-8a13-8412c95cbf6d
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting-with-the-datalist-and-repeater/sorting-data-in-a-datalist-or-repeater-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: ec5124cb0b449db703988bdadbaa244ff72cf363
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: d45e5cb1efd5f67acc94f4118d96c62ea08dc617
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425604"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387156"
 ---
-<a name="sorting-data-in-a-datalist-or-repeater-control-c"></a>Сортировка данных в элементе управления DataList или Repeater (C#)
-====================
+# <a name="sorting-data-in-a-datalist-or-repeater-control-c"></a>Сортировка данных в элементе управления DataList или Repeater (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_45_CS.exe) или [скачать PDF](sorting-data-in-a-datalist-or-repeater-control-cs/_static/datatutorial45cs1.pdf)
@@ -51,12 +51,12 @@ ms.locfileid: "58425604"
 Прежде чем думать о реализации любого из функции, связанные с сортировки позволяют s начнем с получения списка продуктов в элементе управления Repeater. Сначала откройте `Sorting.aspx` странице в `PagingSortingDataListRepeater` папку. Добавление элемента управления Repeater на веб-страницу, установка его `ID` свойства `SortableProducts`. В смарт-теге элемента управления Repeater s, создайте новый ObjectDataSource, именуемый `ProductsDataSource` и настройте его для получения данных из `ProductsBLL` класс s `GetProducts()` метод. Выберите параметр из раскрывающегося списка на вкладках INSERT, UPDATE и DELETE (нет).
 
 
-[![Создание нового ObjectDataSource и настроить его для использования метода GetProductsAsPagedDataSource()](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image2.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image1.png)
+[![CСоздание нового ObjectDataSource и настроить его для использования метода GetProductsAsPagedDataSource()](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image2.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image1.png)
 
 **Рис. 1**: Создание нового ObjectDataSource и настройте его для использования `GetProductsAsPagedDataSource()` метод ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image3.png))
 
 
-[![Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image5.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image4.png)
+[![SET раскрывающихся списках на вкладках UPDATE, INSERT и DELETE (нет)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image5.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image4.png)
 
 **Рис. 2**: Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image6.png))
 
@@ -71,7 +71,7 @@ ms.locfileid: "58425604"
 Рис. 3 показан эту страницу при просмотре через браузер.
 
 
-[![Отображается каждый продукт s имя поставщика и категории](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image8.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image7.png)
+[![EОтображается ACH s имя поставщика и категории продукта](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image8.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image7.png)
 
 **Рис. 3**: Отображается каждый s имя продукта, поставщика и категории ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image9.png))
 
@@ -90,7 +90,7 @@ ms.locfileid: "58425604"
 Попробуйте другие значения жестко для *sortExpression* и проверить результаты в браузере. Как показано на рис. 4, при использовании DESC ProductName как *sortExpression*, продукты сортируются по их имени в обратном алфавитном порядке.
 
 
-[![Продукты сортируются по имени в обратном алфавитном порядке](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image11.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image10.png)
+[![Tон продукты сортируются по имени в обратном алфавитном порядке](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image11.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image10.png)
 
 **Рис. 4**: Продукты сортируются по имени в обратном алфавитном порядке ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image12.png))
 
@@ -124,12 +124,12 @@ ms.locfileid: "58425604"
 На этом этапе при первом просмотре странице продукты будут сначала упорядочены по `ProductName` поля данных, так как он s `SortBy` `ListItem` выбран по умолчанию (см. рис. 6). Выбрать другой параметр, например категория сортировки, а также команда Обновить вызывает обратную передачу и повторно отсортировать данные по имени категории, как показано на рис. 7.
 
 
-[![Они отсортированы сначала по имени](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image15.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image14.png)
+[![Tон продуктов, которые изначально сортируются по имени](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image15.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image14.png)
 
 **Рис. 6**: Они отсортированы сначала по имени ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image16.png))
 
 
-[![Они теперь отсортированы по категории](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image18.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image17.png)
+[![Tон продуктов, которые теперь отсортированы по категории](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image18.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image17.png)
 
 **Рис. 7**: Они теперь отсортированы по категориям ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image19.png))
 
@@ -151,7 +151,7 @@ ms.locfileid: "58425604"
 В [предыдущем учебном курсе](paging-report-data-in-a-datalist-or-repeater-control-cs.md) мы увидели, как можно реализовать разбиение по страницам по умолчанию с элементом управления DataList. Позвольте s расширить этот предыдущего примера, включив возможность сортировать разбитых на страницы данных. Сначала откройте `SortingWithDefaultPaging.aspx` и `Paging.aspx` страниц в `PagingSortingDataListRepeater` папку. Из `Paging.aspx` нажмите кнопку "источник", чтобы просмотреть декларативная разметка страницы s. Копировать выделенный текст (см. рис. 8) и вставьте его в декларативной разметке `SortingWithDefaultPaging.aspx` между `<asp:Content>` теги.
 
 
-[![Репликация в декларативной разметке &lt;asp: Content&gt; теги из Paging.aspx SortingWithDefaultPaging.aspx](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image21.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image20.png)
+[![RДекларативная разметка лицировать в &lt;asp: Content&gt; теги из Paging.aspx SortingWithDefaultPaging.aspx](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image21.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image20.png)
 
 **Рис. 8**: Репликация в декларативной разметке `<asp:Content>` тегов `Paging.aspx` для `SortingWithDefaultPaging.aspx` ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image22.png))
 
@@ -185,7 +185,7 @@ ms.locfileid: "58425604"
 На этом этапе `SortingWithDefaultPaging.aspx` страницы будут отсортированы результаты в алфавитном порядке по названию продукта (см. рис. 9). Это обусловлено тем, по умолчанию значение ProductName, передается в качестве `GetProductsSortedAsPagedDataSource` метод s *sortExpression* параметра.
 
 
-[![По умолчанию результаты сортируются по ProductName](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image24.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image23.png)
+[![Bпо умолчанию y, результаты сортируются по ProductName](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image24.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image23.png)
 
 **Рис. 9**: По умолчанию результаты сортируются по `ProductName` ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image25.png))
 
@@ -214,12 +214,12 @@ ms.locfileid: "58425604"
 При первом просмотре страницы, данные отсортированы по названию продукта в алфавитном порядке (см. рис. 9). Нажмите кнопку "Далее" для перехода на второй странице данных и нажмите кнопку сортировки, кнопка категории. Это возвращает нас к первой странице данных, отсортированных по имени категории (см. рис. 10). Аналогичным образом щелкнув кнопку поставщика сортировки сортирует данные поставщиком, начиная с первой страницы данных. Выбор сортировки запоминается как страницам данные. Рис. 11 показана страница после сортировки по категориям и затем перейти на тринадцатого страницу данных.
 
 
-[![Продукты упорядочены по категории](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image27.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image26.png)
+[![Tон продукты упорядочены по категории](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image27.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image26.png)
 
 **Рис. 10**: Продукты сортируются по категориям ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image28.png))
 
 
-[![Выражение сортировки данные запоминаются при разбиения на страницы через](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image30.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image29.png)
+[![Tон выражение сортировки является запоминаются при разбиения на страницы через Data](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image30.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image29.png)
 
 **Рис. 11**: Выражение сортировки — запоминаются при разбиения на страницы через Data ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image31.png))
 
@@ -237,7 +237,7 @@ ms.locfileid: "58425604"
 Откройте `SortingWithCustomPaging.aspx` странице в `PagingSortingDataListRepeater` папку и добавьте элемент управления Repeater к странице, установив его `ID` свойства `Products`. В смарт-теге элемента управления Repeater s, создайте новый ObjectDataSource, именуемый `ProductsDataSource`. Настройте его для выбора данных из `ProductsBLL` класс s `GetProductsPaged` метод.
 
 
-[![Настройте элемент ObjectDataSource для использования метода GetProductsPaged класса ProductsBLL s](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image33.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image32.png)
+[![CНастройка ObjectDataSource на использование класса ProductsBLL метода GetProductsPaged s](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image33.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image32.png)
 
 **Рис. 12**: Настройка ObjectDataSource для использования `ProductsBLL` класс s `GetProductsPaged` метод ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image34.png))
 
@@ -245,7 +245,7 @@ ms.locfileid: "58425604"
 Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) и нажмите кнопку "Далее". Мастер настройки источника данных, а теперь запрашивает источники `GetProductsPaged` метод s *startRowIndex* и *maximumRows* входных параметров. На самом деле эти параметры игнорируются. Вместо этого *startRowIndex* и *maximumRows* значения будут передаваться в `Arguments` свойства в элемент управления ObjectDataSource s `Selecting` обработчик событий, как и как мы указали *sortExpression* в этой демонстрации первый учебник s. Таким образом оставьте источника параметра раскрывающиеся списки в мастере, установленному None.
 
 
-[![Оставьте набор источников параметра None](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image36.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image35.png)
+[![Lоставить параметр источников значение None](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image36.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image35.png)
 
 **Рис. 13**: Оставьте параметр источников, задайте значение None ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image37.png))
 
@@ -267,7 +267,7 @@ ms.locfileid: "58425604"
 После этого изменения на странице при просмотре в обозревателе отображаются первые пять продуктов.
 
 
-[![Отображаются первые пять записи](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image39.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image38.png)
+[![TОтображаются первые пять записи HE](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image39.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image38.png)
 
 **Рис. 14**: Отображаются первые пять записи ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image40.png))
 
@@ -313,17 +313,17 @@ ms.locfileid: "58425604"
 После добавления этих `Click` обработчики событий и код, чтобы включить или отключить элементы интерфейса разбиения по страницам, на основании текущий индекс начальной строки, проверка страницы в браузере. Как показано на рис. 15, при первом просмотре странице первого и кнопок будут отключены. Щелкните Далее, чтобы отобразить на второй странице данных, при щелчке последнего отображается последняя страница (см. рис. 16 и 17). При просмотре на последней странице данных кнопки "Далее" и "Дата последнего будут отключены.
 
 
-[![Назад и последней кнопки будут отключены при просмотре первой страницы продуктов](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image42.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image41.png)
+[![Tон назад и последней кнопки будут отключены при просмотре первой страницы продуктов](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image42.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image41.png)
 
 **Рис. 15**: Назад и последней кнопки будут отключены при просмотре первой страницы продукты ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image43.png))
 
 
-[![Вторая страница продуктов, которые вывод](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image45.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image44.png)
+[![Tон второй странице продукты отображаются](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image45.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image44.png)
 
-**Рис. 16**: Вторая страница продуктов, которые вывод ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image46.png))
+**Рис. 16**: Вторая страница продукты отображаются ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image46.png))
 
 
-[![Щелкнув последний отображает последней странице данных](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image48.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image47.png)
+[![Cщелкнув отображает последние данные из окончательного страницы](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image48.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image47.png)
 
 **Рис. 17**: Щелкнув последнего отображает данные из окончательного страницы ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image49.png))
 
@@ -366,7 +366,7 @@ ms.locfileid: "58425604"
 Все, что s — его! Хотя существуют несколько этапов, чтобы получить пользовательское разбиение по страницам и сортировка реализована, действия были очень похоже на те, которые необходимы для разбиения на страницы по умолчанию. Рис. 18 показаны продукты, при просмотре на последней странице данных при сортировке по категориям.
 
 
-[![Отображаются последние данные страницы, отсортировано по категориям,](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image51.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image50.png)
+[![Tон отображается последней странице данных, отсортировано по категориям,](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image51.png)](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image50.png)
 
 **Рис. 18**: Последняя страница данных, отсортировано по категориям, отображается ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-cs/_static/image52.png))
 

@@ -8,15 +8,15 @@ ms.date: 02/14/2008
 ms.assetid: 6a7e8bea-2a0d-4011-ad71-3f3b5f152fe4
 msc.legacyurl: /web-forms/videos/aspnet-35/how-do-i/how-do-i-advance-cascading-style-sheet-features-and-management
 msc.type: video
-ms.openlocfilehash: b670ed68bf75d52df9696288e628d6ae07eedb3e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 67b2b6da28b474835020031f957da058eedca7a7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024921"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59397413"
 ---
-<a name="how-do-i-advance-cascading-style-sheet-features-and-management"></a>[Инструкции] Переместить каскадных атрибуты стиля таблицы стилей и управление
-====================
+# <a name="how-do-i-advance-cascading-style-sheet-features-and-management"></a>[Инструкции] Переместить каскадных атрибуты стиля таблицы стилей и управление
+
 по Asli Bilgin
 
 В этом видео будут созданы основные таблицы каскадных стилей из предыдущих видео. Мы перейдет некоторые особенности, где мы только что создали элементов, и теперь мы создадим пользовательские классы. Затем мы узнаете, как управлять классы с Построить стиль таблицы стилей мастера из Visual Studio 2008.

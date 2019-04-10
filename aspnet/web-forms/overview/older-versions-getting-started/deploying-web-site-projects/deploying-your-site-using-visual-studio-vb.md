@@ -8,15 +8,15 @@ ms.date: 04/01/2009
 ms.assetid: 977105f3-7987-4e50-8be7-afb53b4ca28a
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/deploying-your-site-using-visual-studio-vb
 msc.type: authoredcontent
-ms.openlocfilehash: b93931f032ad4cccb6ed33959860ad5b3037ed84
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 23861c4ae9af7d410411b582a8245b178f791c83
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044541"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389678"
 ---
-<a name="deploying-your-site-using-visual-studio-vb"></a>Развертывание сайта с помощью Visual Studio (VB)
-====================
+# <a name="deploying-your-site-using-visual-studio-vb"></a>Развертывание сайта с помощью Visual Studio (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/4/5/F/45F815EC-8B0E-46D3-9FB8-2DC015CCA306/ASPNET_Hosting_Tutorial_04_VB.zip) или [скачать PDF](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial04_DeployingViaVS_vb.pdf)
@@ -46,7 +46,7 @@ ms.locfileid: "57044541"
 Запустите проект средства копирования веб-сайта, щелкнув значок копирования веб-сайта в обозревателе решений (этот значок выделен на рис. 1); Кроме того можно выбрать параметр копирования веб-сайта в меню веб-сайта. Любой из этих подходов запускает пользовательский интерфейс копирования веб-сайта, показанный на рис. 1; только левой области на рис. 1 заполняется, так как у нас есть еще для подключения к удаленному серверу.
 
 
-[![Средство копирования веб-узла пользовательского интерфейса — разделить на две панели](deploying-your-site-using-visual-studio-vb/_static/image2.png)](deploying-your-site-using-visual-studio-vb/_static/image1.png)
+[![TПользовательский интерфейс средства для HE копирования веб-сайта — разделить на две панели](deploying-your-site-using-visual-studio-vb/_static/image2.png)](deploying-your-site-using-visual-studio-vb/_static/image1.png)
 
 **Рис. 1**: Средство копирования веб-узла пользовательского интерфейса — разделить на две панели ([Просмотр полноразмерного изображения](deploying-your-site-using-visual-studio-vb/_static/image3.png))
 
@@ -63,7 +63,7 @@ ms.locfileid: "57044541"
 Большинство поставщиков веб-узла поддерживает FTP, но меньше предлагают поддержку в серверных расширений FrontPage. По этой причине вы выбрали вариант FTP-сайта и затем вводить сведения о подключении, как показано на рис. 2.
 
 
-[![Укажите целевой веб-сайт](deploying-your-site-using-visual-studio-vb/_static/image5.png)](deploying-your-site-using-visual-studio-vb/_static/image4.png)
+[![SУкажите целевой веб-сайт](deploying-your-site-using-visual-studio-vb/_static/image5.png)](deploying-your-site-using-visual-studio-vb/_static/image4.png)
 
 **Рис. 2**: Укажите целевой веб-сайт ([Просмотр полноразмерного изображения](deploying-your-site-using-visual-studio-vb/_static/image6.png))
 
@@ -73,7 +73,7 @@ ms.locfileid: "57044541"
 Давайте добавим новый странице BookReviewsWSP проект и затем развернуть его, чтобы мы могли видеть средство копирования веб-узла в действии. Создать новую страницу ASP.NET в Visual Studio в корневом каталоге с именем `Privacy.aspx`. На странице испольузющими эту главную станицу `Site.master` и добавьте политику конфиденциальности веб сайта на эту страницу. Рис. 3 показана система Visual Studio после создания этой странице.
 
 
-[![Добавление новой страницы с именем &lt;кода&gt;Privacy.aspx&lt;/code&gt; корневую папку веб сайта](deploying-your-site-using-visual-studio-vb/_static/image8.png)](deploying-your-site-using-visual-studio-vb/_static/image7.png)
+[![Aдд новой страницы с именем &lt;кода&gt;Privacy.aspx&lt;/code&gt; корневую папку веб-узла](deploying-your-site-using-visual-studio-vb/_static/image8.png)](deploying-your-site-using-visual-studio-vb/_static/image7.png)
 
 **Рис. 3**: Добавление новой страницы с именем `Privacy.aspx` корневую папку веб сайта ([Просмотр полноразмерного изображения](deploying-your-site-using-visual-studio-vb/_static/image9.png))
 
@@ -81,7 +81,7 @@ ms.locfileid: "57044541"
 Далее возвращается к пользовательскому интерфейсу копирования веб-сайта. Как показано на рис. 4, в левой области теперь включает новые файлы - `Policy.aspx` и `Policy.aspx.vb`. Более того эти файлы будут отмечены значком стрелки и состояние из новый, указывающее, что они существуют на локальном сайте, но не на удаленном сайте.
 
 
-[![Средство копирования веб-узла включает в себя New &lt;кода&gt;Privacy.aspx&lt;/code&gt; страницы в ее левой области](deploying-your-site-using-visual-studio-vb/_static/image11.png)](deploying-your-site-using-visual-studio-vb/_static/image10.png)
+[![TСредство копирования веб-сайта он включает в себя New &lt;кода&gt;Privacy.aspx&lt;/code&gt; страницы в ее левой области](deploying-your-site-using-visual-studio-vb/_static/image11.png)](deploying-your-site-using-visual-studio-vb/_static/image10.png)
 
 **Рис. 4**: Средство копирования веб-узла включает в себя New `Privacy.aspx` страницы в ее левой области ([Просмотр полноразмерного изображения](deploying-your-site-using-visual-studio-vb/_static/image12.png))
 
@@ -91,7 +91,7 @@ ms.locfileid: "57044541"
 А также список новых файлов, средство копирования веб-узла выделяет все файлы, которые отличаются от локальных и удаленных узлах. Чтобы увидеть это в действии, вернитесь к `Privacy.aspx` странице и добавить несколько слов в политику конфиденциальности. Сохраните страницу и затем вернуться в средство копирования веб-сайта. Как показано на рис. 5, `Privacy.aspx` страницы в области слева находится в состоянии Changed, указывающее, что он синхронизирован с удаленного узла.
 
 
-[![Средство копирования веб-узла означает, что &lt;кода&gt;Privacy.aspx&lt;/code&gt; страницы был изменен](deploying-your-site-using-visual-studio-vb/_static/image14.png)](deploying-your-site-using-visual-studio-vb/_static/image13.png)
+[![TСредство копирования веб-сайта он указывает на то, что &lt;кода&gt;Privacy.aspx&lt;/code&gt; страницы был изменен.](deploying-your-site-using-visual-studio-vb/_static/image14.png)](deploying-your-site-using-visual-studio-vb/_static/image13.png)
 
 **Рис. 5**: Средство копирования веб-узла означает, что `Privacy.aspx` страницы был изменен ([Просмотр полноразмерного изображения](deploying-your-site-using-visual-studio-vb/_static/image15.png))
 
@@ -118,7 +118,7 @@ ms.locfileid: "57044541"
 Имеется также возможность отправки содержимого `App_Data` папки.
 
 
-[![Укажите целевой веб-сайт](deploying-your-site-using-visual-studio-vb/_static/image17.png)](deploying-your-site-using-visual-studio-vb/_static/image16.png)
+[![SУкажите целевой веб-сайт](deploying-your-site-using-visual-studio-vb/_static/image17.png)](deploying-your-site-using-visual-studio-vb/_static/image16.png)
 
 **Рис. 6**: Укажите целевой веб-сайт ([Просмотр полноразмерного изображения](deploying-your-site-using-visual-studio-vb/_static/image18.png))
 
@@ -128,7 +128,7 @@ ms.locfileid: "57044541"
 Рис. 7 показаны файлы на FTP-сайта, после завершения операции публикации. Обратите внимание на то, что только разметку страницы и файлы поддержки необходимые sever и стороне клиента были переданы.
 
 
-[![Только необходимые файлы были опубликованы в рабочей среде](deploying-your-site-using-visual-studio-vb/_static/image20.png)](deploying-your-site-using-visual-studio-vb/_static/image19.png)
+[![Oчтение, которые были опубликованы необходимые файлы в рабочую среду](deploying-your-site-using-visual-studio-vb/_static/image20.png)](deploying-your-site-using-visual-studio-vb/_static/image19.png)
 
 **Рис. 7**: Только необходимые файлы были опубликованы в рабочей среде ([Просмотр полноразмерного изображения](deploying-your-site-using-visual-studio-vb/_static/image21.png))
 
@@ -149,8 +149,8 @@ ms.locfileid: "57044541"
 
 - [Копирование веб-сайта с помощью средства копирования веб-сайта](https://msdn.microsoft.com/library/1cc82atw.aspx)
 - [Инструкции: Развертывание веб-сайта, с помощью средства копирования веб-сайт](../../../videos/how-do-i/how-do-i-deploy-a-web-site-using-the-copy-web-site-tool.md) (видео)
-- [Практическое руководство. Публикация проектов веб-приложений](https://msdn.microsoft.com/library/aa983453.aspx)
-- [Практическое руководство. Публикация веб-сайтов](https://msdn.microsoft.com/library/20yh9f1b.aspx)
+- [Как выполнить: Публикация проектов веб-приложений](https://msdn.microsoft.com/library/aa983453.aspx)
+- [Как выполнить: Публикация веб-сайтов](https://msdn.microsoft.com/library/20yh9f1b.aspx)
 - [Проекты установки и развертывания в Visual Studio](https://msdn.microsoft.com/library/wx3b589t.aspx)
 
 > [!div class="step-by-step"]

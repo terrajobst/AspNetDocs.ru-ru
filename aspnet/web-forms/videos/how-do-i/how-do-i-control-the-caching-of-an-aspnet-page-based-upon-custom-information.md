@@ -8,15 +8,15 @@ ms.date: 02/19/2009
 ms.assetid: f230c316-1313-4b8f-967c-62f9684fe378
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-control-the-caching-of-an-aspnet-page-based-upon-custom-information
 msc.type: video
-ms.openlocfilehash: a9ed2baad3460441bc57d97bf74f6de5977db0c9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 676bc8f234a6e517104d07fd58a0ff14aec73e69
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032231"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381410"
 ---
-<a name="how-do-i-control-the-caching-of-an-aspnet-page-based-upon-custom-information"></a>[Инструкции] Элемент управления, кэширование страницы ASP.NET на основе пользовательских сведений
-====================
+# <a name="how-do-i-control-the-caching-of-an-aspnet-page-based-upon-custom-information"></a>[Инструкции] Элемент управления, кэширование страницы ASP.NET на основе пользовательских сведений
+
 по [Крис Пелз](https://twitter.com/chrispels)
 
 В этом видео Крис Пелз показывает способ управления критерии для кэширования страницы ASP.NET на основе пользовательских сведений. Пример страницы создается и используется директива OutputCache VaryByCustom атрибут, который содержит пользовательское значение. Затем метод GetVaryCustomByString() переопределяется в модуль global.asax, который обеспечивает обработку настраиваемого атрибута. В этом методе возвращается строка, однозначно идентифицирующий кэшированная версия страницы. Наконец здесь ведется дискуссия о том, как кэширования с помощью пользовательского значения можно использовать несколькими способами для веб-сайта.

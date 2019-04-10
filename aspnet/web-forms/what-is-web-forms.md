@@ -8,15 +8,15 @@ ms.date: 02/21/2014
 ms.assetid: 5fa1daf9-1161-4cfa-bd4c-658f48b2c229
 msc.legacyurl: /web-forms/what-is-web-forms
 msc.type: content
-ms.openlocfilehash: e135cfa2945b9e7e5269eb436ff0c1dff20aacdf
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: cb7a4ff9dbf746c0729129445042e53e506df5d2
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57039071"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59385739"
 ---
-<a name="what-is-web-forms"></a>Что такое веб-форм
-====================
+# <a name="what-is-web-forms"></a>Что такое веб-форм
+
 Веб-форм ASP.NET является частью платформа веб-приложений ASP.NET и входит в состав [Visual Studio](https://www.asp.net/downloads). Он является одним из четырех моделей программирования, которые можно использовать для создания веб-приложений ASP.NET, другие — ASP.NET MVC, веб-страниц ASP.NET и приложений ASP.NET.
 
 Веб-формы, страницы, которые пользователям запрашивать с помощью обозревателя. Эти страницы могут быть написаны с использованием сочетания HTML, клиентских сценариев серверными элементами управления и серверного кода. При запросе пользователем страницы, он компилируется и выполняется на сервере платформой, и платформа создает HTML-разметка, которая может отобразить браузер. На странице веб-форм ASP.NET представлены сведения для пользователей в любой браузер или клиентское устройство.

@@ -8,15 +8,15 @@ ms.date: 03/31/2014
 ms.assetid: 6d497001-fa80-4765-b4cc-181fe90b894e
 msc.legacyurl: /web-forms/overview/advanced/aspnet-web-forms-connection-resiliency-and-command-interception
 msc.type: authoredcontent
-ms.openlocfilehash: 067542e8b8aa9909bbb2147f8e11e34604986d87
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 2b8cae61347f00712aba18fe6a2e91bc207cb9f3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424031"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380045"
 ---
-<a name="aspnet-web-forms-connection-resiliency-and-command-interception"></a>Устойчивость подключений и перехват команд в веб-формах ASP.NET
-====================
+# <a name="aspnet-web-forms-connection-resiliency-and-command-interception"></a>Устойчивость подключений и перехват команд в веб-формах ASP.NET
+
 по [Erik Reitan](https://github.com/Erikre)
 
 В этом руководстве вы измените пример приложения Wingtip Toys для поддержки устойчивость подключений и перехват команд. Включив устойчивость подключений, пример приложения Wingtip Toys автоматически повторит вызовов данных, при возникновении временных ошибок, характерным для облачной среды. Кроме того, реализовав перехват команд, пример приложения Wingtip Toys, он перехватывает все SQL-запросы, отправляемые в базу данных для входа или их изменения.

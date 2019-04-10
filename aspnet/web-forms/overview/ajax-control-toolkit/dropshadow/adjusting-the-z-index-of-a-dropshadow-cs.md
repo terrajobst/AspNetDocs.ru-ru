@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: 14133833-e518-4347-87b9-6b6f71f14a77
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dropshadow/adjusting-the-z-index-of-a-dropshadow-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 5cee2acfac74c0790a7ad82bbfb503a8a16f6b47
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: cc9407ba15474f58437817c9536d6040e0ea2e84
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024611"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381456"
 ---
-<a name="adjusting-the-z-index-of-a-dropshadow-c"></a>Настройка Z-индекса DropShadow (C#)
-====================
+# <a name="adjusting-the-z-index-of-a-dropshadow-c"></a>Настройка Z-индекса DropShadow (C#)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/5/1/6/51652a81-500b-4f6b-88d3-617103e7941e/DropShadow1.cs.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/dropshadow1CS.pdf)
@@ -56,14 +56,14 @@ ms.locfileid: "57024611"
 Затем `DropShadowExtender` управления больше не конфликтуют с меню элемента управления.
 
 
-[![Ранее: Элемент меню не отображается](adjusting-the-z-index-of-a-dropshadow-cs/_static/image2.png)](adjusting-the-z-index-of-a-dropshadow-cs/_static/image1.png)
+[![BПеред: Элемент меню не отображается](adjusting-the-z-index-of-a-dropshadow-cs/_static/image2.png)](adjusting-the-z-index-of-a-dropshadow-cs/_static/image1.png)
 
 До: Элемент меню не отображается ([Просмотр полноразмерного изображения](adjusting-the-z-index-of-a-dropshadow-cs/_static/image3.png))
 
 
-[![После: Запись меню](adjusting-the-z-index-of-a-dropshadow-cs/_static/image5.png)](adjusting-the-z-index-of-a-dropshadow-cs/_static/image4.png)
+[![AРазрыв: Запись меню появится](adjusting-the-z-index-of-a-dropshadow-cs/_static/image5.png)](adjusting-the-z-index-of-a-dropshadow-cs/_static/image4.png)
 
 После: Запись меню ([Просмотр полноразмерного изображения](adjusting-the-z-index-of-a-dropshadow-cs/_static/image6.png))
 
 > [!div class="step-by-step"]
-> [Вперед](manipulating-dropshadow-properties-from-client-code-cs.md)
+> [Далее](manipulating-dropshadow-properties-from-client-code-cs.md)

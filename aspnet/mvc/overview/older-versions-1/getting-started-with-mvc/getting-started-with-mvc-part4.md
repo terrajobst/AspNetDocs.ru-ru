@@ -8,15 +8,15 @@ ms.date: 08/14/2010
 ms.assetid: 742df67f-484d-4ef3-af6b-8c791e556b43
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part4
 msc.type: authoredcontent
-ms.openlocfilehash: 596a491b4152da341a7779236dab17967a6de670
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b75057f3128662a9bbdd641dc0a7c1ba09fbbe87
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044221"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59388196"
 ---
-<a name="creating-a-database"></a>Создание базы данных
-====================
+# <a name="creating-a-database"></a>Создание базы данных
+
 по [(Scott hanselman)](https://github.com/shanselman)
 
 > Это руководство для начинающих, в котором представлены основные сведения по ASP.NET MVC. Вы создадите простое веб-приложение, которое считывает и записывает в базу данных. Посетите [центр обучения ASP.NET MVC](../../../index.md) для поиска других ASP.NET MVC, учебники и примеры.
@@ -32,11 +32,11 @@ ms.locfileid: "57044221"
 
 В диалоговом окне "Добавить подключение", введите «. \SQLEXPRESS» для имени сервера и введите «Movies» в качестве имени новой базы данных.
 
-[![Добавить диалоговое окно подключения](getting-started-with-mvc-part4/_static/image4.png)](getting-started-with-mvc-part4/_static/image3.png)
+[![Aдиалоговое окно подключения дд](getting-started-with-mvc-part4/_static/image4.png)](getting-started-with-mvc-part4/_static/image3.png)
 
 Нажмите «ОК», и появляется если вы хотите создать эту базу данных. Выберите "Да".
 
-[![Создание фильмов?](getting-started-with-mvc-part4/_static/image6.png)](getting-started-with-mvc-part4/_static/image5.png)
+[![CСоздание фильмов?](getting-started-with-mvc-part4/_static/image6.png)](getting-started-with-mvc-part4/_static/image5.png)
 
 Теперь у вас есть пустой базы данных в обозревателе серверов.
 
@@ -44,7 +44,7 @@ ms.locfileid: "57044221"
 
 Щелкните правой кнопкой мыши в таблицах и нажмите кнопку Добавить таблицу. Будет отображаться в конструкторе таблиц. Добавьте столбцы для Id, Title, ReleaseDate, Жанр и цена. Щелкните правой кнопкой столбец идентификатора, и нажмите кнопку Задать первичный ключ. Вот какие моей области конструктора, как выглядит.
 
-[![Редактор таблицы базы данных](getting-started-with-mvc-part4/_static/image9.png)](getting-started-with-mvc-part4/_static/image8.png)
+[![DРедактор таблиц азы данных](getting-started-with-mvc-part4/_static/image9.png)](getting-started-with-mvc-part4/_static/image8.png)
 
 Кроме того выберите столбец, идентификатор и в группе свойств столбца ниже изменить «Спецификация идентификатора» значение «Да».
 
@@ -52,11 +52,11 @@ ms.locfileid: "57044221"
 
 Если у вас есть задачи, щелкните значок "Сохранить" на панели инструментов или выберите файл | Сохраните в меню и назовите таблицу "**фильма**" (в единственном числе). У нас есть базы данных и таблицу!
 
-[![Выберите имя](getting-started-with-mvc-part4/_static/image13.png)](getting-started-with-mvc-part4/_static/image12.png)
+[![CВыберите имя](getting-started-with-mvc-part4/_static/image13.png)](getting-started-with-mvc-part4/_static/image12.png)
 
 Вернитесь в обозреватель сервера и щелкните правой кнопкой мыши в таблице Movie, а затем выберите «Показать таблицу данных». Введите несколько фильмов, поэтому нашей базе данных имеет некоторые данные.
 
-[![Редактирование таблиц базы данных](getting-started-with-mvc-part4/_static/image15.png)](getting-started-with-mvc-part4/_static/image14.png)
+[![DРедактирование таблиц азы данных](getting-started-with-mvc-part4/_static/image15.png)](getting-started-with-mvc-part4/_static/image14.png)
 
 ## <a name="creating-a-model"></a>Создание модели
 
@@ -72,11 +72,11 @@ ms.locfileid: "57044221"
 
 В новое диалоговое окно, которое появляется выберите пункт Создать из базы данных. Так как мы только что внесли базу данных, необходимо только сообщить о новой базе данных и соответствующей таблицей Entity Framework. Нажмите кнопку рядом с полем, сохранить наши подключения к базе данных в конфигурации нашего веб-приложения. Теперь проверьте таблицы и фильмов флажок и нажмите кнопку Готово.
 
-[![Мастер моделей EDM](getting-started-with-mvc-part4/_static/image21.png)](getting-started-with-mvc-part4/_static/image20.png)
+[![Eрасходуемых мастер моделей EDM](getting-started-with-mvc-part4/_static/image21.png)](getting-started-with-mvc-part4/_static/image20.png)
 
 Теперь мы см. в разделе нашей новой таблицы Movie в конструкторе Entity Framework и доступ к нему из кода.
 
-[![Фильмы - Microsoft Visual Web Developer 2010 Express](getting-started-with-mvc-part4/_static/image23.png)](getting-started-with-mvc-part4/_static/image22.png)
+[![Movies - Microsoft Visual Web Developer 2010 Express](getting-started-with-mvc-part4/_static/image23.png)](getting-started-with-mvc-part4/_static/image22.png)
 
 В области конструктора отобразится класс «Фильма». Этот класс сопоставляется с таблицей «Фильма» в нашей базе данных, а каждое свойство в ней сопоставляет со столбцом с таблицей. Каждый экземпляр класса «Фильма» будет соответствовать строки в таблице «Фильма».
 

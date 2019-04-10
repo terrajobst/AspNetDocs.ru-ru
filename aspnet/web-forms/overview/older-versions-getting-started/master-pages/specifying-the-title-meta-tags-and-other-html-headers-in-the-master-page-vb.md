@@ -8,15 +8,15 @@ ms.date: 05/21/2008
 ms.assetid: ea8196f5-039d-43ec-8447-8997ad4d3900
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 1b28e6df0e0ab25e8292b6523c9ad7482301a511
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6e86626c2949543c0a36a210d52ee8297156a017
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57047261"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59382177"
 ---
-<a name="specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb"></a>Указание названия, метатегов и других заголовков HTML на эталонной странице (VB)
-====================
+# <a name="specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb"></a>Указание названия, метатегов и других заголовков HTML на эталонной странице (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/e/e/f/eef369f5-743a-4a52-908f-b6532c4ce0a4/ASPNET_MasterPages_Tutorial_03_VB.zip) или [скачать PDF](http://download.microsoft.com/download/8/f/6/8f6349e4-6554-405a-bcd7-9b094ba5089a/ASPNET_MasterPages_Tutorial_03_VB.pdf)
@@ -169,7 +169,7 @@ HTML-код `<head>` элемент используется в качестве
 Рис. 5 показан `MultipleContentPlaceHolders.aspx` страницы при просмотре в обозревателе. Обратите внимание, что заголовок точное имя файла страницы (менее расширение), «MultipleContentPlaceHolders».
 
 
-[![Если заголовок не указан явно, имя файла страницы является автоматически используется](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image6.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image5.png)
+[![If заголовок не указан явно, имя файла страницы: автоматически используется](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image6.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image5.png)
 
 **05 рис**: Если заголовок не указан явно, имя файла страницы является автоматически используется ([Просмотр полноразмерного изображения](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image7.png))
 
@@ -191,7 +191,7 @@ ASP.NET предоставляет инфраструктуру карты по�
 Начните с создания файла карты узла в корневой папке веб сайта, с именем `Web.sitemap`. Для этого правой кнопкой мыши имя веб-сайта в обозревателе решений и выберите Add New Item выберите шаблон карты сайта. Убедитесь, что этот файл имеет имя `Web.sitemap` и щелкните "Добавить".
 
 
-[![Добавьте в файл с именем Web.sitemap корневую папку веб сайта](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image9.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image8.png)
+[![Aдд файл с именем Web.sitemap корневую папку веб-узла](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image9.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image8.png)
 
 **Рис 06**: Добавьте файл с именем `Web.sitemap` корневую папку веб сайта ([Просмотр полноразмерного изображения](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image10.png))
 
@@ -224,7 +224,7 @@ ASP.NET предоставляет инфраструктуру карты по�
 В мастере настройки источника данных, выберите для доступа к ListView новый элемент управления SiteMapDataSource с именем `LessonsDataSource`. Элемент управления SiteMapDataSource возвращает иерархическую структуру из системы карты сайта.
 
 
-[![Привязать элемент управления SiteMapDataSource к элементу управления ListView LessonsList](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image13.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image12.png)
+[![BIND элемент управления SiteMapDataSource к элементу управления ListView LessonsList](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image13.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image12.png)
 
 **Рис 08**: Привязать элемент управления SiteMapDataSource к элементу управления ListView LessonsList ([Просмотр полноразмерного изображения](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image14.png))
 
@@ -239,7 +239,7 @@ ASP.NET предоставляет инфраструктуру карты по�
 После настройки шаблонов ListView, посетите веб-сайта. Как показано на рис. 9, разделе занятий, содержит один элемент маркированного, Home. Где находятся о программе и с помощью элементов управления ContentPlaceHolder несколько занятий? SiteMapDataSource он предназначен для возврата иерархический набор данных, но элемент управления ListView может отображаться только один уровень иерархии. Следовательно отображается только первый уровень узлов карты узла, возвращаемые источником данных SiteMapDataSource.
 
 
-[![В разделе занятий содержит единственный элемент списка](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image16.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image15.png)
+[![Tон занятий раздел содержит один элемент списка](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image16.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image15.png)
 
 **Рис 09**: В разделе занятий, содержит один элемент списка ([Просмотр полноразмерного изображения](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image17.png))
 
@@ -254,7 +254,7 @@ ASP.NET предоставляет инфраструктуру карты по�
 Настроив SiteMapDataSource для пропуска начальный узел и явным образом Добавление домашней маркера элемента в разделе занятия теперь отображается желаемые выходные данные.
 
 
-[![В разделе занятий содержит элемент маркера для дома и каждого дочернего узла](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image19.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image18.png)
+[![Tон содержит раздел занятий маркера элемента для дома и каждый дочерний узел](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image19.png)](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image18.png)
 
 **Рис. 10**: В разделе занятий содержит элемент маркера для дома и каждый дочерний узел ([Просмотр полноразмерного изображения](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb/_static/image20.png))
 

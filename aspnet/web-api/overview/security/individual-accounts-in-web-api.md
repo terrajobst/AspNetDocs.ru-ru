@@ -8,15 +8,15 @@ ms.date: 10/15/2014
 ms.assetid: 92c84846-f0ea-4b5e-94b6-5004874eb060
 msc.legacyurl: /web-api/overview/security/individual-accounts-in-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 01d117260ef458453bee79285a37a8977221998c
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 29c3670ad7ab93acb0be878e5bd961d0ea446eee
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024331"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396236"
 ---
-<a name="secure-a-web-api-with-individual-accounts-and-local-login-in-aspnet-web-api-22"></a>Защита веб-API с помощью отдельных учетных записей и локального имени входа в ASP.NET Web API 2.2
-====================
+# <a name="secure-a-web-api-with-individual-accounts-and-local-login-in-aspnet-web-api-22"></a>Защита веб-API с помощью отдельных учетных записей и локального имени входа в ASP.NET Web API 2.2
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 [Скачайте пример приложения](https://github.com/MikeWasson/LocalAccountsApp)
@@ -26,7 +26,7 @@ ms.locfileid: "57024331"
 > ## <a name="software-versions-used-in-the-tutorial"></a>Версии программного обеспечения, используемые в этом руководстве
 > 
 > 
-> - [Visual Studio 2013 с обновлением 3](https://www.microsoft.com/visualstudio/eng/2013-downloads)
+> - [Visual Studio 2013 с обновлением 3](https://www.microsoft.com/visualstudio/eng/2013-downloads)
 > - [Веб-API 2.2](../releases/whats-new-in-aspnet-web-api-22.md)
 > - [ASP.NET Identity 2.1](../../../identity/index.md)
 

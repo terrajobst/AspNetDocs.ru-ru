@@ -8,15 +8,15 @@ ms.date: 12/13/2013
 ms.assetid: cd844025-ccad-41ce-8694-595f1022a49f
 msc.legacyurl: /web-api/overview/testing-and-debugging/mocking-entity-framework-when-unit-testing-aspnet-web-api-2
 msc.type: authoredcontent
-ms.openlocfilehash: 7ed2d543ca019e926a87e6897aa0d8a0784f4796
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 3dddc1fd38a5384e40f9fa109da9d8c1424ef01a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422627"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387260"
 ---
-<a name="mocking-entity-framework-when-unit-testing-aspnet-web-api-2"></a>Макетирование Entity Framework при модульном тестировании ASP.NET Web API 2
-====================
+# <a name="mocking-entity-framework-when-unit-testing-aspnet-web-api-2"></a>Макетирование Entity Framework при модульном тестировании ASP.NET Web API 2
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 [Скачать завершенный проект](https://code.msdn.microsoft.com/Unit-Testing-with-ASPNET-1374bc11)
@@ -29,14 +29,14 @@ ms.locfileid: "58422627"
 >
 > ## <a name="software-versions-used-in-the-tutorial"></a>Версии программного обеспечения, используемые в этом руководстве
 >
-> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 > - Веб-API 2
 
 ## <a name="in-this-topic"></a>Содержание раздела
 
 В этом разделе содержатся следующие подразделы.
 
-- [Необходимые компоненты](#prereqs)
+- [Предварительные требования](#prereqs)
 - [Скачать код](#download)
 - [Создание приложения с помощью проекта модульного теста](#appwithunittest)
 - [Создание класса модели](#modelclass)
@@ -45,7 +45,7 @@ ms.locfileid: "58422627"
 - [Установите пакеты NuGet в проекте теста](#testpackages)
 - [Создание контекста теста](#testcontext)
 - [Создание тестов](#tests)
-- [Выполнение тестов](#runtests)
+- [Выполнить тесты](#runtests)
 
 Если вы уже выполнили действия, описанные в [модульное тестирование с помощью ASP.NET Web API 2](unit-testing-with-aspnet-web-api.md), можно перейти к разделу [добавить контроллер](#controller).
 

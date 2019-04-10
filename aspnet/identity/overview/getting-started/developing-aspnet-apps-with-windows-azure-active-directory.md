@@ -1,22 +1,23 @@
 ---
 uid: identity/overview/getting-started/developing-aspnet-apps-with-windows-azure-active-directory
-title: Разработка приложений ASP.NET с Azure Active Directory | Документация Майкрософт
+title: Разработка приложений ASP.NET с Azure Active Directory — ASP.NET 4.x
 author: Rick-Anderson
 description: Средства Microsoft ASP.NET для Azure Active Directory упрощает для включения проверки подлинности для веб-приложений, размещенных в Azure. Можно использовать Azure проверка...
 ms.author: riande
 ms.date: 08/14/2014
 ms.assetid: 457d7eaf-ee76-4ceb-9082-c7c1721435ad
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/developing-aspnet-apps-with-windows-azure-active-directory
 msc.type: authoredcontent
-ms.openlocfilehash: 7f0e569458c9a294cc281b86e731c2fda48768be
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6f8b926c78097b68e6a159f2fdd30e7b8a6477a0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027851"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395177"
 ---
-<a name="developing-aspnet-apps-with-azure-active-directory"></a>Разработка приложений ASP.NET с Azure Active Directory
-====================
+# <a name="developing-aspnet-apps-with-azure-active-directory"></a>Разработка приложений ASP.NET с Azure Active Directory
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 Средства Microsoft ASP.NET для Azure Active Directory упрощает Включение проверки подлинности для веб-приложений, размещенных на [Azure](https://www.windowsazure.com/home/features/web-sites/). Проверка подлинности Azure можно использовать для проверки подлинности пользователей Office 365 из вашей организации, корпоративных учетных записей, синхронизированные из локальной службы Active Directory или пользователей, созданных в личном домене Azure Active Directory. Включение проверки подлинности Windows Azure настраивает приложение для проверки подлинности пользователей с помощью одного [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) клиента.
@@ -141,7 +142,7 @@ Rick Rainey является отличным руководству, чтобы
 
 ## <a name="more-information"></a>Дополнительные сведения
 
-- [Deep Dive: Use source control with Python projects (Подробный обзор. Azure веб-сайтов и аутентификации в организации с помощью Azure AD](http://rickrainey.com/2014/08/19/deep-dive-azure-websites-and-organizational-authentication-using-azure-ad/)
+- [Подробный обзор: Azure веб-сайтов и аутентификации в организации с помощью Azure AD](http://rickrainey.com/2014/08/19/deep-dive-azure-websites-and-organizational-authentication-using-azure-ad/)
 - [Общие сведения об API Graph Azure AD](https://msdn.microsoft.com/library/azure/hh974476.aspx)
 - [Сценарии проверки подлинности в Azure AD](https://msdn.microsoft.com/library/azure/dn499820.aspx)
 - [Примеры кода Azure AD на GitHub](https://github.com/AzureADSamples)

@@ -8,15 +8,15 @@ ms.date: 08/14/2010
 ms.assetid: a3a90963-0286-4fa0-9b3d-c230cc18b0a3
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part6
 msc.type: authoredcontent
-ms.openlocfilehash: 546c3e0a24ecd0d916c79e9ad12f62b926c760c5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f648e0cb53dd410105adc22401f19a5a15f9e8c1
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045191"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380812"
 ---
-<a name="adding-a-create-method-and-create-view"></a>Добавление метода Create и представления Create
-====================
+# <a name="adding-a-create-method-and-create-view"></a>Добавление метода Create и представления Create
+
 по [(Scott hanselman)](https://github.com/shanselman)
 
 > Это руководство для начинающих, в котором представлены основные сведения по ASP.NET MVC. Вы создадите простое веб-приложение, которое считывает и записывает в базу данных. Посетите [центр обучения ASP.NET MVC](../../../index.md) для поиска других ASP.NET MVC, учебники и примеры.
@@ -38,7 +38,7 @@ ms.locfileid: "57045191"
 
 Мы выберем, мы затем передать этот шаблон «Фильм» как класс представления данных и указать, что нам нужно сформировать «шаблон» шаблон «Создать».
 
-[![Добавление представления](getting-started-with-mvc-part6/_static/image2.png)](getting-started-with-mvc-part6/_static/image1.png)
+[![Aдд представление](getting-started-with-mvc-part6/_static/image2.png)](getting-started-with-mvc-part6/_static/image1.png)
 
 После нажатия кнопки «Добавить», \Movies\Create.aspx шаблона представления создается автоматически. Так как мы выбрали «Создать» в раскрывающемся списке «Просмотр содержимого», диалоговое окно Добавление представления автоматически «скаффолдинга» содержимое по умолчанию для нас. Формирование шаблонов создана HTML &lt;формы&gt;место для ошибки проверки сообщений для перехода и с момента формирования шаблонов знает о фильмах, он создан метки и поля для каждого свойства класса.
 
@@ -48,7 +48,7 @@ ms.locfileid: "57045191"
 
 Давайте теперь создайте новый фильм и добавить его к базе данных. Мы этого можно запустить приложение еще раз и посетите «/ Movies» связать URL-адрес и нажмите кнопку «Создать», чтобы добавить новый фильм.
 
-[![Создание — Windows Internet Explorer](getting-started-with-mvc-part6/_static/image4.png)](getting-started-with-mvc-part6/_static/image3.png)
+[![Cю - Windows Internet Explorer](getting-started-with-mvc-part6/_static/image4.png)](getting-started-with-mvc-part6/_static/image3.png)
 
 При нажатии кнопки «Создать» будет рассказываться обратно (через HTTP POST) данные в этой форме методу /Movies/Create, который мы только что создали. Так же, как при система автоматически заняло параметр «; numtimes =» и «name» из URL-адрес и сопоставить их с параметрами метода ранее система автоматически получить дополнительные поля формы POST и сопоставить их с объектом. В этом случае значения из полей в HTML, таких как «ReleaseDate» и «Title» будет автоматически помещен в правильные свойства нового экземпляра фильма.
 
@@ -58,7 +58,7 @@ ms.locfileid: "57045191"
 
 Этот объект фильма затем передается [HttpPost] версия наш метод действия Create, и мы хранится в базе данных и затем перенаправляется пользователь обратно в методе действия Index() — сохраненный результат появится в списке фильмов:
 
-[![Список фильмов - Windows Internet Explorer](getting-started-with-mvc-part6/_static/image6.png)](getting-started-with-mvc-part6/_static/image5.png)
+[![Mильм список — Windows Internet Explorer](getting-started-with-mvc-part6/_static/image6.png)](getting-started-with-mvc-part6/_static/image5.png)
 
 Мы не проверки, если наши фильмы указаны правильно, хотя и базы данных не позволяет нам сохранять фильмы с без заголовка. Было бы неплохо, если мы может уведомить пользователя, что перед базы данных была обнаружена ошибка. Выполним это Далее, добавив поддержку проверки к нашему приложению.
 

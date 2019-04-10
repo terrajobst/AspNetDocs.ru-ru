@@ -1,19 +1,20 @@
 ---
 uid: identity/overview/getting-started/aspnet-identity-recommended-resources
-title: Рекомендуемые ресурсы по ASP.NET Identity | Документация Майкрософт
+title: ASP.NET Identity рекомендуемые ресурсы - ASP.NET 4.x
 author: Rick-Anderson
 description: Этот раздел содержит ссылки на документацию о том, как использовать ASP.NET Identity. Если вы знаете, в блоге, обсуждений stackoverflow или любые другие Лин...
 ms.author: riande
 ms.date: 04/09/2015
 ms.assetid: 0f78aec2-f509-46fa-b20f-d5208425d8ec
+ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/aspnet-identity-recommended-resources
 msc.type: authoredcontent
-ms.openlocfilehash: 14a8ec16fe741d87a23bfa45046386a2c08d2f27
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 8e476f8a4172ebbe55819cda1ceb5458426243bd
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424343"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381904"
 ---
 # <a name="aspnet-identity-recommended-resources"></a>Рекомендуемые ресурсы по ASP.NET Identity
 
@@ -41,7 +42,7 @@ ms.locfileid: "58424343"
 - [Развертывание безопасного приложения ASP.NET MVC с членством, OAuth и базой данных SQL в Azure](https://docs.microsoft.com/aspnet/core/security/authorization/secure-data). В этом руководстве добавляется развертывания Azure, как защитить приложения с помощью ролей, как использовать API членства для добавления пользователей и ролей и дополнительные функции безопасности.
 - [Введение в ASP.NET Identity](introduction-to-aspnet-identity.md)
 - [Создание безопасного веб-приложения ASP.NET MVC 5 со входом, по электронной почте подтверждение и сброс пароля](../../../mvc/overview/security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md)
-- [Приложение ASP.NET MVC 5 с двухфакторной проверкой подлинности по SMS и электронной почте](../../../mvc/overview/security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication.md)
+- [Приложение ASP.NET MVC 5 с двухфакторной проверкой подлинности по SMS и электронной почте](../../../mvc/overview/security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication.md)
 
 <a id="feat"></a>
 

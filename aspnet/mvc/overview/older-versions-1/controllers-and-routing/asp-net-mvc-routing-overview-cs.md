@@ -8,15 +8,15 @@ ms.date: 08/19/2008
 ms.assetid: 5b39d2d5-4bf9-4d04-94c7-81b84dfeeb31
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/asp-net-mvc-routing-overview-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 188490c5ca075710dcbdcd1c325808f7c1d383bc
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e2f2246e2126bd6e648f861bcb296fab62a748bb
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050981"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380110"
 ---
-<a name="aspnet-mvc-routing-overview-c"></a>Общие сведения о маршрутизации в ASP.NET MVC (C#)
-====================
+# <a name="aspnet-mvc-routing-overview-c"></a>Общие сведения о маршрутизации в ASP.NET MVC (C#)
+
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > В этом руководстве Стивен Вальтер показано, как платформа ASP.NET MVC сопоставляет запросы браузера к действиям контроллера.
@@ -95,7 +95,7 @@ URL-адрес/Home также соответствует Index() метод в 
 [!code-csharp[Main](asp-net-mvc-routing-overview-cs/samples/sample5.cs)]
 
 
-[![Вызов действия контроллера, который ожидает, что значение параметра](asp-net-mvc-routing-overview-cs/_static/image1.jpg)](asp-net-mvc-routing-overview-cs/_static/image1.png)
+[![Invoking действия контроллера, который ожидает, что значение параметра](asp-net-mvc-routing-overview-cs/_static/image1.jpg)](asp-net-mvc-routing-overview-cs/_static/image1.png)
 
 **Рис 01**: Вызов действия контроллера, который ожидает, что значение параметра ([Просмотр полноразмерного изображения](asp-net-mvc-routing-overview-cs/_static/image2.png))
 
@@ -107,4 +107,4 @@ URL-адрес/Home также соответствует Index() метод в 
 Целью данного учебника мы хотели предоставить Краткое введение в маршрутизации ASP.NET. Мы рассмотрели таблицы маршрутизации по умолчанию, которую можно получить с помощью нового приложения ASP.NET MVC. Вы узнали, как маршрут по умолчанию сопоставляет URL-адреса к действиям контроллера.
 
 > [!div class="step-by-step"]
-> [Вперед](understanding-action-filters-cs.md)
+> [Далее](understanding-action-filters-cs.md)

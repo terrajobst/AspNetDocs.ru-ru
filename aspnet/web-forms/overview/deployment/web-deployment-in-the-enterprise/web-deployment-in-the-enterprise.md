@@ -8,18 +8,18 @@ ms.date: 05/04/2012
 ms.assetid: b8283698-7b82-42a8-8d83-3aeb18ca7fcc
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/web-deployment-in-the-enterprise
 msc.type: authoredcontent
-ms.openlocfilehash: 735cc5ac37e369e6149c526174c3f74a08db9758
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1f2dc0fea9eeca64b9389881470353c5cca473e0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026161"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396321"
 ---
-<a name="web-deployment-in-the-enterprise"></a>Корпоративное веб-развертывание
-====================
+# <a name="web-deployment-in-the-enterprise"></a>Корпоративное веб-развертывание
+
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Это руководство содержит инструкции для удовлетворения множество задач, с которыми придется столкнуться при управлении развертыванием веб-приложений корпоративного уровня для разработки, тестирования, промежуточной и рабочей средах. Учебник включает эталонного решения, а также сочетание концептуальные и ориентированные на задачи содержимого, которые описывают различные стандартные задачи и процедуры.
 > 
@@ -102,4 +102,4 @@ ms.locfileid: "57026161"
 - [Advanced корпоративное веб-развертывание](../advanced-enterprise-web-deployment/advanced-enterprise-web-deployment.md). Это руководство содержит инструкции по выполнению различных задач более сложные развертывания, такие как настройка развертываний баз данных для нескольких сред, исключение файлов и папок из развертывания и получение веб-приложений в автономный режим во время развертывания .
 
 > [!div class="step-by-step"]
-> [Вперед](the-contact-manager-solution.md)
+> [Далее](the-contact-manager-solution.md)

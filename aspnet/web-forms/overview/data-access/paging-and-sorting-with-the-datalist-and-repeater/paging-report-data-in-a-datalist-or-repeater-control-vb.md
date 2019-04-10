@@ -8,15 +8,15 @@ ms.date: 11/13/2006
 ms.assetid: bbd6b7f7-b98a-48b4-93f3-341d6a4f53c0
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting-with-the-datalist-and-repeater/paging-report-data-in-a-datalist-or-repeater-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 2d867c7ae073fafe1e9674deb7c03bf1cfd24dd7
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 69a6843783dad3d8fcd8a5b93c9d8a31f9bb8ec0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425838"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383243"
 ---
-<a name="paging-report-data-in-a-datalist-or-repeater-control-vb"></a>Разбиение по страницам данных отчета в элементе управления DataList или Repeater (VB)
-====================
+# <a name="paging-report-data-in-a-datalist-or-repeater-control-vb"></a>Разбиение по страницам данных отчета в элементе управления DataList или Repeater (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_44_VB.exe) или [скачать PDF](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/datatutorial44vb1.pdf)
@@ -53,7 +53,7 @@ ms.locfileid: "58425838"
 Затем откройте `Default.aspx` страницы и перетащите `SectionLevelTutorialListing.ascx` пользовательского элемента управления с `UserControls` папку в область конструктора. Данный пользовательский элемент управления, созданный в учебном курсе [главные страницы и структуру переходов узла](../introduction/master-pages-and-site-navigation-vb.md) , просматривает карту узла и отображает руководства, имеющиеся в данном разделе, в виде маркированного списка.
 
 
-[![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image3.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image2.png)
+[![Aдд пользовательского элемента управления SectionLevelTutorialListing.ascx к странице Default.aspx](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image3.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image2.png)
 
 **Рис. 2**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image4.png))
 
@@ -110,7 +110,7 @@ ms.locfileid: "58425838"
 С помощью `GetProductsAsPagedDataSource` метода, добавленного к `ProductsBLL` класса, теперь можно создать элемент управления DataList или Repeater, обеспечивающая разбиение по страницам по умолчанию. Сначала откройте `Paging.aspx` странице в `PagingSortingDataListRepeater` папки и перетащите элемент управления DataList из инструментария в конструктор, установив DataList s `ID` свойства `ProductsDefaultPaging`. В смарт-теге элемента управления DataList s, создайте новый ObjectDataSource, именуемый `ProductsDefaultPagingDataSource` и настройте его таким образом, чтобы он извлекает данные с помощью `GetProductsAsPagedDataSource` метод.
 
 
-[![Создание нового ObjectDataSource и настроить его для использования () GetProductsAsPagedDataSource метод](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image8.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image7.png)
+[![CСоздание нового ObjectDataSource и настроить его для использования () GetProductsAsPagedDataSource метод](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image8.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image7.png)
 
 **Рис. 5**: Создание нового ObjectDataSource и настройте его для использования `GetProductsAsPagedDataSource` `()` метод ([Просмотр полноразмерного изображения](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image9.png))
 
@@ -118,7 +118,7 @@ ms.locfileid: "58425838"
 Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет).
 
 
-[![Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image11.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image10.png)
+[![SET раскрывающихся списках на вкладках UPDATE, INSERT и DELETE (нет)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image11.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image10.png)
 
 **Рис. 6**: Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) ([Просмотр полноразмерного изображения](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image12.png))
 
@@ -130,7 +130,7 @@ ms.locfileid: "58425838"
 В частности, используйте pageIndex поля строки запроса и pageSize для `pageIndex` и `pageSize` параметров, соответственно (см. рис. 7). Отвлекитесь и задать значения по умолчанию для этих параметров, как значения строки запроса не будет отображаться в том случае, когда пользователь сначала посещает эту страницу. Для `pageIndex`, значение по умолчанию равно 0 (откроется первая страница данных) и `pageSize` s значение по умолчанию для 4.
 
 
-[![Использовать строку запроса в качестве источника для параметров pageIndex и pageSize](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image14.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image13.png)
+[![USE QueryString как источник для параметров pageIndex и pageSize](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image14.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image13.png)
 
 **Рис. 7**: Использовать строку запроса в качестве источника для `pageIndex` и `pageSize` параметров ([Просмотр полноразмерного изображения](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image15.png))
 
@@ -149,7 +149,7 @@ ms.locfileid: "58425838"
 При первоначальном просмотре страницы через браузер, ни `pageIndex` , ни `pageSize` предоставляются параметры строки запроса. Таким образом используются значения по умолчанию 0 и 4. Как показано на рис. 8, в результате элемент управления DataList, отображаются первые четыре продукты.
 
 
-[![Перечислены четыре первых продуктов](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image17.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image16.png)
+[![TПеречислены HE первых четырех продуктов](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image17.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image16.png)
 
 **Рис. 8**: Перечислены четыре первых продуктов ([Просмотр полноразмерного изображения](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image18.png))
 
@@ -157,7 +157,7 @@ ms.locfileid: "58425838"
 Без интерфейс разбиения по страницам, там s в настоящее время не просто означает, что пользователь может перейти на вторую страницу данных. Мы создадим интерфейс разбиения по страницам на шаге 4. Сейчас, разбиение на страницы только можно, задав критерии разбиения на страницы в строке запроса. Например, чтобы просмотреть на второй странице, измените URL-адрес в адресной строке браузера s из `Paging.aspx` для `Paging.aspx?pageIndex=2` и нажмите клавишу ВВОД. В результате второй странице отображения данных (см. рис. 9).
 
 
-[![Откроется вторая страница данных](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image20.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image19.png)
+[![Tон вторая страница данных отображается](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image20.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image19.png)
 
 **Рис. 9**: Откроется вторая страница данных ([Просмотр полноразмерного изображения](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image21.png))
 
@@ -238,12 +238,12 @@ Let s выполните интерфейс разбиения по страни
 Рис. 10 показана `Paging.aspx` при первом посещении. Так как строку запроса пуст, DataList по умолчанию отображается первые четыре продуктов; Первый» и «назад кнопок будут отключены. Нажав кнопку Далее отображаются следующие четыре записи (см. рис. 11); Теперь доступны кнопки первый и назад.
 
 
-[![Отображается первая страница данных](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image23.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image22.png)
+[![Tон первая страница данных отображается](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image23.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image22.png)
 
 **Рис. 10**: Отображается первая страница данных ([Просмотр полноразмерного изображения](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image24.png))
 
 
-[![Откроется вторая страница данных](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image26.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image25.png)
+[![Tон вторая страница данных отображается](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image26.png)](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image25.png)
 
 **Рис. 11**: Откроется вторая страница данных ([Просмотр полноразмерного изображения](paging-report-data-in-a-datalist-or-repeater-control-vb/_static/image27.png))
 

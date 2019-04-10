@@ -8,21 +8,21 @@ ms.date: 04/20/2010
 ms.assetid: 69a8d6f8-4b10-4602-8822-2d6c05fc432b
 msc.legacyurl: /whitepapers/what-is-new-in-aspnet-mvc
 msc.type: content
-ms.openlocfilehash: 82a3fd4fe74202ed9a23298390322458cfc029f8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7f846e807309f3123db52b3053b9aa8d6aca81e6
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57031001"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59394839"
 ---
-<a name="whats-new-in-aspnet-mvc-2"></a>Новые возможности ASP.NET MVC 2
-====================
+# <a name="whats-new-in-aspnet-mvc-2"></a>Новые возможности ASP.NET MVC 2
+
 > В этом документе описываются новые функции и усовершенствования, появившиеся в ASP.NET MVC 2. В этом документе также доступна для [загрузки](https://download.microsoft.com/download/F/1/6/F16F9AF9-8EF4-4845-BC97-639791D5699C/WhatIsNewInMVC_2.pdf)
 
 
-[Общие сведения о](#_TOC1)   
+[Вступление](#_TOC1)   
 [Обновление проекта ASP.NET MVC 1.0 до ASP.NET MVC 2](#_TOC2)   
-[Новые возможности](#_TOC3)   
+[Новые функции](#_TOC3)   
 [Шаблонизированные вспомогательные объекты](#_TOC3_1)   
 [Области](#_TOC3_2)   
 [Поддержка асинхронных контроллеров](#_TOC3_3)   
@@ -39,7 +39,7 @@ ms.locfileid: "57031001"
 [Html.ValidationSummary вспомогательный метод может отображать ошибки уровня модели](#_TOC3_14)   
 [Шаблоны T4 в Visual Studio создать код, который относится только к системам в целевой версии платформы .NET Framework](#_TOC3_15)[усовершенствований API](#_TOC4)  
 [Критические изменения](#_TOC5)  
-[Заявление об отказе](#_TOC6)  
+[Отказ от ответственности](#_TOC6)  
 
 ## <a id="_TOC1"></a>  Общие сведения о
 

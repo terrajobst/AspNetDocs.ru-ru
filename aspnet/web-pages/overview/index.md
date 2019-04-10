@@ -8,15 +8,15 @@ ms.date: 05/18/2012
 ms.assetid: 1a2ed0e8-63da-4110-9896-e2731d86f7c4
 msc.legacyurl: /web-pages/overview
 msc.type: book
-ms.openlocfilehash: f95d998b838e262dd1843c882dae466a88c23ad5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b4c9e9eb85f6ba9a1e2b2d0a1bbaf027ee25bc0d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023991"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381852"
 ---
-<a name="web-pages-guidance"></a>Руководство по веб-страниц
-====================
+# <a name="web-pages-guidance"></a>Руководство по веб-страниц
+
 - [Начало работы](getting-started/index.md)
 
     - [Программирование веб-страниц ASP.NET в Visual Studio](getting-started/program-asp-net-web-pages-in-visual-studio.md)
@@ -36,7 +36,7 @@ ms.locfileid: "57023991"
         - [Удаление данных базы данных](getting-started/introducing-aspnet-web-pages-2/deleting-data.md)
         - [Создание согласованного макета](getting-started/introducing-aspnet-web-pages-2/layouts.md)
         - [Публикация сайта с помощью WebMatrix](getting-started/introducing-aspnet-web-pages-2/publishing.md)
-- [Routing](routing/index.md)
+- [Маршрутизация](routing/index.md)
 
     - [Создание доступных для чтения URL-адресов на сайтах веб-страниц ASP.NET](routing/creating-readable-urls-in-aspnet-web-pages-sites.md)
 - [Пользовательский интерфейс, макеты и темы](ui-layouts-and-themes/index.md)
@@ -47,17 +47,17 @@ ms.locfileid: "57023991"
     - [Настройка поведения в масштабах сайта](ui-layouts-and-themes/18-customizing-site-wide-behavior.md)
     - [Работа с образами](ui-layouts-and-themes/9-working-with-images.md)
     - [Работа с видео](ui-layouts-and-themes/10-working-with-video.md)
-    - [Создание и использование вспомогательного метода на сайте веб-страниц ASP.NET](ui-layouts-and-themes/creating-and-using-a-helper-in-an-aspnet-web-pages-site.md)
-    - [Установка вспомогательного метода](ui-layouts-and-themes/installing-helpers.md)
+    - [Создание и использование вспомогательного приложения на сайте веб-страниц ASP.NET](ui-layouts-and-themes/creating-and-using-a-helper-in-an-aspnet-web-pages-site.md)
+    - [Установка вспомогательного приложения](ui-layouts-and-themes/installing-helpers.md)
     - [Добавление вспомогательного приложения Twitter с помощью веб-страниц ASP.NET](ui-layouts-and-themes/twitter-helper.md)
     - [Отображение карт на сайте веб-страниц ASP.NET](ui-layouts-and-themes/displaying-maps-in-an-aspnet-web-pages-site.md)
-- [Мобильные приложения](mobile/index.md)
+- [Мобильный](mobile/index.md)
 
     - [Отрисовка сайтов веб-страниц ASP.NET для мобильных устройств](mobile/rendering-aspnet-web-pages-sites-for-mobile-devices.md)
 - [Работа с данными](data/index.md)
 
     - [Работа с данными](data/5-working-with-data.md)
-    - [Отображение данных в диаграмме](data/7-displaying-data-in-a-chart.md)
+    - [Отображение данных на диаграмме](data/7-displaying-data-in-a-chart.md)
     - [Работа с файлами](data/working-with-files.md)
 - [Тестирование и отладка](testing-and-debugging/index.md)
 
@@ -80,6 +80,6 @@ ms.locfileid: "57023991"
 
     - [Новые возможности веб-страниц ASP.NET 3.2](releases/whats-new-in-aspnet-web-pages-32.md)
     - [Новые возможности веб-страниц ASP.NET 3.1](releases/whats-new-aspnet-web-pages-31.md)
-    - [Лучшие функции веб-страниц ASP.NET 2](releases/top-features-in-web-pages-2.md)
-    - [Файл сведений для версии Developer Preview веб-страниц ASP.NET 2](releases/aspnet-web-pages-2-developer-preview-readme.md)
+    - [Лучшие функции веб-страниц ASP.NET 2](releases/top-features-in-web-pages-2.md)
+    - [Файл сведений для версии Developer Preview веб-страниц ASP.NET 2](releases/aspnet-web-pages-2-developer-preview-readme.md)
     - [Параллельное выполнение разных версий веб-страниц ASP.NET](releases/running-v1-and-v2-sites-side-by-side.md)

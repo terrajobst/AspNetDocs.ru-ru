@@ -8,15 +8,15 @@ ms.date: 10/22/2009
 ms.assetid: 7ed06ca2-fab6-41a3-a1cc-a3ccebb639f6
 msc.legacyurl: /mvc/videos/mvc-2/how-do-i/how-do-i-return-json-formatted-data-for-an-ajax-call-in-an-aspnet-mvc-web-application
 msc.type: video
-ms.openlocfilehash: 86070a8027ad736aa46086a2871e69f1c87f6e54
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e14f0a247b86bb15a6ac304e9675ef5c7da8fd63
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063331"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59393449"
 ---
-<a name="how-do-i-return-json-formatted-data-for-an-ajax-call-in-an-aspnet-mvc-web-application"></a>Инструкции: Данные в формате JSON возвращаемого значения для вызова AJAX в веб-приложении ASP.NET MVC?
-====================
+# <a name="how-do-i-return-json-formatted-data-for-an-ajax-call-in-an-aspnet-mvc-web-application"></a>Инструкции: Данные в формате JSON возвращаемого значения для вызова AJAX в веб-приложении ASP.NET MVC?
+
 по [Крис Пелз](https://twitter.com/chrispels)
 
 В этом видео Крис Пелз показано, как использовать классы JsonResult и Json для возврата экземпляров классов в виде JSON форматированных данных. Во-первых создается веб-приложение MVC образец и контроллера и связанного представления добавляются сведения клиента. Затем класс простого клиента создается как часть модели данных. Функция GetCustomer() затем добавляется к контроллеру клиента для получения данных для одного клиента в формате JSON. Наконец сценарий будет добавлен в представление клиента, который использует jQuery для выполнения вызова AJAX к GetCustomer() для получения данных клиента в формате JSON

@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: e6ee90bf-32a5-4987-a384-15cc7dd30c8a
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/textboxwatermark/using-textboxwatermark-in-a-formview-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 272befe4182a459c0e1f3b6668d252d9ba4715d0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 10c877e072d5caf23e78f49ebc71387fde20393d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038321"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59393617"
 ---
-<a name="using-textboxwatermark-in-a-formview-c"></a>Использование элемента управления TextBoxWatermark в элементе управления FormView (C#)
-====================
+# <a name="using-textboxwatermark-in-a-formview-c"></a>Использование элемента управления TextBoxWatermark в элементе управления FormView (C#)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/TextBoxWatermark1.cs.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/textboxwatermark1CS.pdf)
@@ -49,9 +49,9 @@ ms.locfileid: "57038321"
 Теперь когда пользователь изменяет в режим вставки из `FormView` управления текстового поля для нового поставщика автоматически заполняемом выражаем благодарность `TextBoxWatermarkExtender` элемента управления. Щелкните внутри текстового поля позволяет ввода текста наполнения исчезают.
 
 
-[![Водяной знак в поле поступает из расширения](using-textboxwatermark-in-a-formview-cs/_static/image2.png)](using-textboxwatermark-in-a-formview-cs/_static/image1.png)
+[![Tон водяного знака в поле поступает из расширителя](using-textboxwatermark-in-a-formview-cs/_static/image2.png)](using-textboxwatermark-in-a-formview-cs/_static/image1.png)
 
 Водяной знак в поле поступает из расширения ([Просмотр полноразмерного изображения](using-textboxwatermark-in-a-formview-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
-> [Вперед](using-textboxwatermark-with-validation-controls-cs.md)
+> [Далее](using-textboxwatermark-with-validation-controls-cs.md)

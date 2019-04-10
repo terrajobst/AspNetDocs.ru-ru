@@ -8,15 +8,15 @@ ms.date: 09/09/2011
 ms.assetid: 666407bb-81de-4319-89ba-0302c382a208
 msc.legacyurl: /whitepapers/mvc4-beta-release-notes
 msc.type: content
-ms.openlocfilehash: f1d949ec716ea8cb677c54fe5b07431161c58fbc
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b7722d5c282f07b35dd18d08911fa562dae6afc2
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57065111"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59387936"
 ---
-<a name="aspnet-mvc-4"></a>ASP.NET MVC 4
-====================
+# <a name="aspnet-mvc-4"></a>ASP.NET MVC 4
+
 > В этом документе описывается в выпуске бета-версии ASP.NET MVC 4 для Visual Studio 2010.
 > 
 > > [!NOTE]
@@ -300,7 +300,7 @@ jQuery Mobile — это библиотека открытым исходным 
 - **Запуск проекта веб-API по умолчанию показывает инструкции, неправильно направлять пользователя для добавления маршрутов с помощью метода RegisterApis, который не существует.** Маршруты должны быть добавлены в методе RegisterRoutes, с помощью таблицы маршрутов ASP.NET.
 - **Установка бета-версия ASP.NET MVC 4 прерывает приложения ASP.NET MVC 3 RTM.** Приложения ASP.NET MVC 3, которые были созданы с RTM выпуска (не с выпуском обновления средств ASP.NET MVC 3) следующие изменения для работы требуется side-by-side, с помощью бета-версии ASP.NET MVC 4. Построение проекта без сохранения результатов обновления в ошибки компиляции. 
 
-    **Обязательные обновления**
+    **Необходимые обновления**
 
   1. В корневом файле Web.config, добавьте новый *&lt;appSettings&gt;* запись с ключом *webPages:Version* и значение *1.0.0.0*.
 

@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: f949aafa-fe57-43b0-b722-f0dd33a900be
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/cascadingdropdown/filling-a-list-using-cascadingdropdown-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 15368ea543702eeda1b6a63f53acdc6c336b49e7
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: a9a3bf12b721c8f5eec21f3090142e40e74b0b9c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58420794"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59395651"
 ---
-<a name="filling-a-list-using-cascadingdropdown-c"></a>Заполнение списка с помощью CascadingDropDown (C#)
-====================
+# <a name="filling-a-list-using-cascadingdropdown-c"></a>Заполнение списка с помощью CascadingDropDown (C#)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/9/0/7/907760b1-2c60-4f81-aeb6-ca416a573b0d/cascadingdropdown0.cs.zip) или [скачать PDF](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/cascadingdropdown0CS.pdf)
@@ -61,9 +61,9 @@ ms.locfileid: "58420794"
 Загрузку страницы в браузере будет активировать списка, чтобы заполнить трех поставщиков.
 
 
-[![Список заполняется автоматически](filling-a-list-using-cascadingdropdown-cs/_static/image2.png)](filling-a-list-using-cascadingdropdown-cs/_static/image1.png)
+[![TСписок он заполняется автоматически](filling-a-list-using-cascadingdropdown-cs/_static/image2.png)](filling-a-list-using-cascadingdropdown-cs/_static/image1.png)
 
 Список заполняется автоматически ([Просмотр полноразмерного изображения](filling-a-list-using-cascadingdropdown-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
-> [Вперед](using-cascadingdropdown-with-a-database-cs.md)
+> [Далее](using-cascadingdropdown-with-a-database-cs.md)

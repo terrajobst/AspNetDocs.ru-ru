@@ -8,15 +8,15 @@ ms.date: 08/15/2012
 ms.assetid: ed66530a-04d5-49eb-b76a-85be1f57c437
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/intro-to-aspnet-mvc-4
 msc.type: authoredcontent
-ms.openlocfilehash: ea3d1517192ded0e5372c49897bb1fec33324b6f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: ecc0733c2850bc157c7ee5b251787152393481fc
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57046781"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59385258"
 ---
-<a name="intro-to-aspnet-mvc-4"></a>Введение в ASP.NET MVC 4
-====================
+# <a name="intro-to-aspnet-mvc-4"></a>Введение в ASP.NET MVC 4
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Обновленную версию, если это руководство доступно [здесь](../../getting-started/introduction/getting-started.md) с помощью [Visual Studio 2013](https://my.visualstudio.com/Downloads?q=visual%20studio%202013). Новое учебное использует ASP.NET MVC 5, который содержит множество улучшений на этом руководстве.
@@ -86,4 +86,4 @@ F5 приводит к Visual Studio для запуска IIS Express и вып
 Готовые этот шаблон по умолчанию позволяет дома, контактов и о страницы. Он также обеспечивает поддержку для регистрации и входа в, а также ссылки для Facebook и Twitter. Следующий шаг — изменить работу этого приложения и немного поговорим об ASP.NET MVC. Закройте обозреватель и изменим код.
 
 > [!div class="step-by-step"]
-> [Вперед](adding-a-controller.md)
+> [Далее](adding-a-controller.md)

@@ -8,15 +8,15 @@ ms.date: 12/17/2007
 ms.assetid: 5fa365a1-d709-40e2-b7bf-489ff687f2ce
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-implement-a-custom-health-monitoring-event
 msc.type: video
-ms.openlocfilehash: d3d5955cbb432390c48b7174c3cb35e6c282bf79
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 48e0449d09ff0dfee4820820fefc89113ff98e84
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57065041"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59383100"
 ---
-<a name="how-do-i-implement-a-custom-health-monitoring-event"></a>[Инструкции] Реализация пользовательского события мониторинга состояния
-====================
+# <a name="how-do-i-implement-a-custom-health-monitoring-event"></a>[Инструкции] Реализация пользовательского события мониторинга состояния
+
 по [Крис Пелз](https://twitter.com/chrispels)
 
 В этом видео Крис Пелз будет показано, как создавать пользовательские события, который расширяет возможности стандартных работоспособности, наблюдение за событиями в ASP.NET мониторинга состояния. Пользовательский предоставляет дополнительные сведения и форматирует их для мониторинга поставщика событий работоспособности. Затем пользовательский HTTP-модуль создается для вызова пользовательского события мониторинга явно, так как платформа .NET Framework событие создается только для стандартных событий мониторинга работоспособности состояния. Кроме того пользовательские работоспособности мониторинга события явным образом в странице программной части для ASPX-странице.

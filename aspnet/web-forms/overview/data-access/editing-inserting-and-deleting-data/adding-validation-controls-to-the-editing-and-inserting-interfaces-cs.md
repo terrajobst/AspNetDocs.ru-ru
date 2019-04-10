@@ -8,15 +8,15 @@ ms.date: 07/17/2006
 ms.assetid: 2086cb1a-ab78-49ae-9c0b-03891c69776a
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/adding-validation-controls-to-the-editing-and-inserting-interfaces-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 4990ce2c15465873ef08aeb697780d98a186b3c6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 157a71c7b8a7b5e8e34c08957d0520dfb8da8db9
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026541"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59391264"
 ---
-<a name="adding-validation-controls-to-the-editing-and-inserting-interfaces-c"></a>Добавление элементов управления проверки в интерфейсы правки и вставки (C#)
-====================
+# <a name="adding-validation-controls-to-the-editing-and-inserting-interfaces-c"></a>Добавление элементов управления проверки в интерфейсы правки и вставки (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_19_CS.exe) или [скачать PDF](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/datatutorial19cs1.pdf)
@@ -39,7 +39,7 @@ ms.locfileid: "57026541"
 В [Проверка события, связанные с вставки, обновления и удаления](examining-the-events-associated-with-inserting-updating-and-deleting-cs.md) руководстве мы создали страницу, перечислявшую названия и цены продуктов в изменяемого элемента управления GridView. Кроме того, страницы включены в элементе управления DetailsView, `DefaultMode` было установлено на `Insert`, тем самым всегда подготовки к просмотру в режиме вставки. В этот DetailsView, пользователь может введите название и цену для нового продукта, щелкните Insert и его добавления в систему (см. рис. 1).
 
 
-[![Предыдущий пример позволял пользователям добавлять новые продукты и изменение существующих запросов.](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image2.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image1.png)
+[![Tон предыдущий пример позволяет пользователям добавлять новые продукты и изменять существующие](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image2.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image1.png)
 
 **Рис. 1**: Предыдущий пример позволяет пользователям добавлять новые продукты и изменить существующие ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image3.png))
 
@@ -57,7 +57,7 @@ ms.locfileid: "57026541"
 3. Скопируйте текст внутри `<asp:Content>` и `</asp:Content>` (строки с 3 по 44), как показано на рис. 2.
 
 
-[![Скопируйте текст внутри &lt;asp: Content&gt; элемента управления](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image5.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image4.png)
+[![Cопировать текст внутри &lt;asp: Content&gt; управления](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image5.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image4.png)
 
 **Рис. 2**: Скопируйте текст внутри `<asp:Content>` управления ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image6.png))
 
@@ -75,7 +75,7 @@ ms.locfileid: "57026541"
 Добавление элементов управления проверки к интерфейсам правки и вставки, используемые элементами управления DetailsView и GridView полей BoundFields должны быть преобразованы в поля TemplateField. Для этого щелкните ссылки Правка столбцов и изменить поля в GridView и DetailsView смарт-тегов, соответственно. Выберите каждое из полей BoundFields и щелкните ссылку «Преобразуйте это поле в TemplateField».
 
 
-[![Преобразования каждого из полей BoundField DetailsView и GridView в поля TemplateField](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image8.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image7.png)
+[![Cпреобразовать каждый из DetailsView и GridView полей BoundField в поля TemplateField](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image8.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image7.png)
 
 **Рис. 3**: Преобразования каждого элемента DetailsView и GridView полей BoundField в поля TemplateField ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image9.png))
 
@@ -117,7 +117,7 @@ ms.locfileid: "57026541"
 Начнем с добавления необходимых элементов управления проверки к `EditItemTemplate` s в поля TemplateField GridView. Для этого щелкните ссылку Изменить шаблоны смарт-теге элемента GridView для вызова интерфейса изменения шаблонов. На этой странице можно выбрать шаблон для правки из раскрывающегося списка. Поскольку нам требуется дополнить интерфейс правки, нам нужно добавить элементы управления проверки к `ProductName` и `UnitPrice`в `EditItemTemplate` s.
 
 
-[![Нам нужно расширить ProductName и UnitPrice к шаблонам EditItemTemplate](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image11.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image10.png)
+[![We необходимость в расширении ProductName и UnitPrice к шаблонам EditItemTemplate](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image11.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image10.png)
 
 **Рис. 4**: Нам нужно расширить `ProductName` и `UnitPrice` `EditItemTemplate` s ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image12.png))
 
@@ -125,7 +125,7 @@ ms.locfileid: "57026541"
 В `ProductName` `EditItemTemplate`, добавьте RequiredFieldValidator, перетащив его с панели инструментов в интерфейс редактирования шаблона, поместив после текстового поля.
 
 
-[![Добавьте RequiredFieldValidator к ProductName EditItemTemplate](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image14.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image13.png)
+[![Aдд RequiredFieldValidator к ProductName EditItemTemplate](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image14.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image13.png)
 
 **Рис. 5**: Добавьте RequiredFieldValidator к `ProductName` `EditItemTemplate` ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image15.png))
 
@@ -133,7 +133,7 @@ ms.locfileid: "57026541"
 Все элементы управления проверки работают, проверяя ввод одного веб-ASP.NET элемента управления. Таким образом, нам нужно указать, что RequiredFieldValidator, мы только что добавили следует проверить в текстовое поле в `EditItemTemplate`; это достигается путем установки свойства элемента управления проверки [свойство ControlToValidate](https://msdn.microsoft.com/library/system.web.ui.webcontrols.basevalidator.controltovalidate(VS.80).aspx) для `ID` соответствующего веб-элемента управления. Текстовое поле в данный момент имеет довольно неопределенный `ID` из `TextBox1`, но давайте изменим его на что-нибудь более подходящее. Щелкните текстовое поле в шаблоне и затем из окна свойств измените `ID` из `TextBox1` для `EditProductName`.
 
 
-[![Изменить идентификатор текстового поля, на EditProductName](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image17.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image16.png)
+[![Cизменить текстовое поле идентификатор, на EditProductName](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image17.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image16.png)
 
 **Рис. 6**: Измените текстовое поле `ID` для `EditProductName` ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image18.png))
 
@@ -143,7 +143,7 @@ ms.locfileid: "57026541"
 После установки этих трех свойств RequiredFieldValidator, экран должен выглядеть примерно как на рис.
 
 
-[![Задайте RequiredFieldValidator – ControlToValidate, ErrorMessage и свойства текста](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image20.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image19.png)
+[![SET RequiredFieldValidator – ControlToValidate, ErrorMessage и свойства текста](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image20.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image19.png)
 
 **Рис. 7**: Задайте RequiredFieldValidator `ControlToValidate`, `ErrorMessage`, и `Text` свойства ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image21.png))
 
@@ -162,7 +162,7 @@ ms.locfileid: "57026541"
 > Помните, что в *события, связанные с вставки, обновления и удаления* руководстве, мы устанавливаем BoundField `DataFormatString` свойства `{0:c}` Чтобы отформатировать его как денежная единица. Кроме того, мы устанавливаем `ApplyFormatInEditMode` присваивается значение true, приводит к GridView интерфейсам редактирования и вставки для форматирования `UnitPrice` как денежная единица. При преобразовании типа BoundField в поле TemplateField, Visual Studio отметила эти параметры и текстового поля в формате `Text` как денежную единицу, используя синтаксис привязки данных `<%# Bind("UnitPrice", "{0:c}") %>`.
 
 
-[![Звездочка рядом с текстовые поля, содержащими Недопустимый ввод](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image23.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image22.png)
+[![An звездочка рядом с текстовых полей с недопустимые входные данные](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image23.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image22.png)
 
 **Рис. 8**: Звездочка появляется "Далее" для текстовых полей с недопустимые входные данные ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image24.png))
 
@@ -176,12 +176,12 @@ ms.locfileid: "57026541"
 Мы выберем параметр #1 для этого упражнения. В настоящее время `UnitPrice` форматируется как денежная единица из-за выражение привязки данных для текстового поля в `EditItemTemplate`: `<%# Bind("UnitPrice", "{0:c}") %>`. Измените оператор привязки на `Bind("UnitPrice", "{0:n2}")`, который форматирует результат как число с двумя цифрами точности. Это можно сделать напрямую через декларативный синтаксис или щелкнув ссылку Edit DataBindings из `EditUnitPrice` соответствующее текстовое поле в `UnitPrice` TemplateField `EditItemTemplate` (см. рис. 9 и 10).
 
 
-[![Щелкните ссылку Edit DataBindings текстового поля](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image26.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image25.png)
+[![Cелкните на ссылки Edit DataBindings текстового поля](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image26.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image25.png)
 
 **Рис. 9**: Щелкните ссылку Edit DataBindings текстового поля ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image27.png))
 
 
-[![Указание указателя формата в операторе Bind](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image29.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image28.png)
+[![Sзадать описатель формата в инструкции привязки](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image29.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image28.png)
 
 **Рис. 10**: Указание указателя формата в `Bind` инструкции ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image30.png))
 
@@ -199,7 +199,7 @@ ms.locfileid: "57026541"
 Для этого перетащите элемент управления ValidationSummary из области элементов в конструктор. Расположение проверяющий элемент управления не имеет значения, так как мы собираемся настроить его на отображение сводки только в качестве messagebox. После добавления элемента управления, задайте его [свойство ShowSummary](https://msdn.microsoft.com/library/system.web.ui.webcontrols.validationsummary.showsummary(VS.80).aspx) для `false` и его [свойство ShowMessageBox](https://msdn.microsoft.com/library/system.web.ui.webcontrols.validationsummary.showmessagebox(VS.80).aspx) для `true`. В результате этого добавления в messagebox клиентские приведены все ошибки проверки.
 
 
-[![Проверка ошибки выдаются сводкой в Messagebox стороне клиента](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image32.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image31.png)
+[![Tон проверки ошибки выдаются сводкой в Messagebox клиентские](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image32.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image31.png)
 
 **Рис. 11**: Проверка ошибки выдаются сводкой в Messagebox клиентские ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image33.png))
 
@@ -215,7 +215,7 @@ ms.locfileid: "57026541"
 После добавления этих элементов управления проверки, новый продукт не добавлены в систему, если его имя не указано или если цена является отрицательным числом или находится в недопустимом формате.
 
 
-[![Логика проверки добавлена к интерфейсу вставки DetailsView](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image35.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image34.png)
+[![Validation, логика была добавлена к интерфейсу вставки DetailsView](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image35.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image34.png)
 
 **Рис. 12**: Логика проверки добавлена к интерфейсу вставки DetailsView ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image36.png))
 
@@ -225,7 +225,7 @@ ms.locfileid: "57026541"
 Наша страница состоит из двух логически неравных наборов элементов управления проверки: те, которые соответствуют GridView редактирования интерфейса и соответствующих DetailsView интерфейсу правки. По умолчанию при обратной передаче *все* проверяются элементы управления проверки на странице. Тем не менее при редактировании записи мы не хотим интерфейсу вставки DetailsView проверяющие элементы управления для проверки. Рис. 13 иллюстрируют текущую дилемму, когда пользователь изменяет продукт, вводя вполне допустимые значения, щелкнув обновления вызывает ошибку проверки, поскольку значения название и цену в интерфейсе правки пусты.
 
 
-[![Обновление продукта вызывает элементов управления проверки интерфейса вставки для активации](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image38.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image37.png)
+[![Uобновления продукта вызывает элементов управления проверки интерфейса вставки Fire](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image38.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image37.png)
 
 **Рис. 13**: Обновление продукта вызывает элементов управления проверки интерфейса вставки для активации ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image39.png))
 
@@ -235,7 +235,7 @@ ms.locfileid: "57026541"
 В дополнение к проверке элементы управления, кнопки и связанных с кнопкой в ASP.NET 2.0 также включать `ValidationGroup` свойство. Проверки группы проверки проверяются на верность только при вызове обратной передачи с помощью кнопки, который имеет то же `ValidationGroup` значение свойства. Например, в порядке для кнопки "Вставить" в элементе DetailsView для активации `InsertValidationControls` группы проверки, нам нужно установить поля CommandField и `ValidationGroup` свойства `InsertValidationControls` (см. рис. 14). Кроме того, задать GridView поля CommandField и `ValidationGroup` свойства `EditValidationControls`.
 
 
-[![Присваивает DetailsView свойству поля CommandField и ValidationGroup на InsertValidationControls](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image41.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image40.png)
+[![SET DetailsView свойство поля CommandField и ValidationGroup на InsertValidationControls](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image41.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image40.png)
 
 **Рис. 14**: Задайте DetailsView поля CommandField и `ValidationGroup` свойства `InsertValidationControls` ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs/_static/image42.png))
 

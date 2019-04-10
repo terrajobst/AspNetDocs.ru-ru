@@ -8,15 +8,15 @@ ms.date: 11/15/2007
 ms.assetid: 24282199-9edf-4211-ac6e-f05df68cccbe
 msc.legacyurl: /web-forms/videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-data-model
 msc.type: video
-ms.openlocfilehash: 4b3a0c5f4b3fdd3d6d7ba89e7216f190cc1a2d49
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 9053b5d006a703c9e10ede3a768adf1d90aab185
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57051621"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59386116"
 ---
-<a name="how-do-i-linq-to-sql-data-model"></a>[Инструкции] LINQ to SQL: Модель данных
-====================
+# <a name="how-do-i-linq-to-sql-data-model"></a>[Инструкции] LINQ to SQL: Модель данных
+
 по [Скотт Stanfield](https://github.com/scottstanfield)
 
 LINQ to SQL использует модель объектно реляционного набора классов, которые сопоставляются с таблицами в базе данных. Visual Studio 2008 включает в себя visual область конструктора ORM, которая сопоставляет эти таблицы в код.

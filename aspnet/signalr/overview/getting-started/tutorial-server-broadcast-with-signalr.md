@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: 1568247f-60b5-4eca-96e0-e661fbb2b273
 msc.legacyurl: /signalr/overview/getting-started/tutorial-server-broadcast-with-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: a243c78c7d552f1c82a88c6083871fcd16538618
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: aa8c0be6e4a758da34fc6eed902e31049d0a9a9c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57065761"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379733"
 ---
 # <a name="tutorial-server-broadcast-with-signalr-2"></a>Учебник. Передача сообщений с помощью SignalR 2 сервера
 
@@ -43,7 +43,7 @@ ms.locfileid: "57065761"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
- * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) с **ASP.NET и веб-разработка** рабочей нагрузки.
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) с **ASP.NET и веб-разработка** рабочей нагрузки.
 
 ## <a name="create-the-project"></a>Создание проекта
 
@@ -75,7 +75,7 @@ ms.locfileid: "57065761"
 
 ### <a name="create-the-stocktickerhub-and-stockticker-classes"></a>Создание классов StockTickerHub и StockTicker
 
-Вы используете API концентратора SignalR для обработки взаимодействия клиентом и сервером. Объект `StockTickerHub` класс, производный от `SignalRHub` класс, обрабатывающий получение подключений и вызовы методов из клиентов. Также необходимо поддерживать биржевых данных и запустите `Timer` объекта. `Timer` Объект периодически будет активировать обновление цены, независимо от клиентских подключений. Эти функции нельзя поместить в `Hub` класса, так как концентраторы являются временными. Приложение создает `Hub` экземпляр класса для каждой задачи на концентраторе, такие как подключения и вызовы от клиента к серверу. Поэтому механизм, который отслеживает биржевых данных, затем обновляет цены и передает изменения цены должен выполняться в отдельном классе. Этот класс будет назван `StockTicker`.
+Вы используете API концентратора SignalR для обработки взаимодействия клиентом и сервером. Объект `StockTickerHub` класс, производный от SignalR `Hub` класс, обрабатывающий получение подключений и вызовы методов из клиентов. Также необходимо поддерживать биржевых данных и запустите `Timer` объекта. `Timer` Объект периодически будет активировать обновление цены, независимо от клиентских подключений. Эти функции нельзя поместить в `Hub` класса, так как концентраторы являются временными. Приложение создает `Hub` экземпляр класса для каждой задачи на концентраторе, такие как подключения и вызовы от клиента к серверу. Поэтому механизм, который отслеживает биржевых данных, затем обновляет цены и передает изменения цены должен выполняться в отдельном классе. Этот класс будет назван `StockTicker`.
 
 ![Широковещательная рассылка из StockTicker](tutorial-server-broadcast-with-signalr/_static/image3.png)
 

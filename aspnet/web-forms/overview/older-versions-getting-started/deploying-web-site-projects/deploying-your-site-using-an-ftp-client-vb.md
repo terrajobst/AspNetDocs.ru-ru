@@ -8,15 +8,15 @@ ms.date: 04/01/2009
 ms.assetid: 09279194-bcf9-4b59-a09d-c68e5926a758
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/deploying-your-site-using-an-ftp-client-vb
 msc.type: authoredcontent
-ms.openlocfilehash: ea6d2deaaad1112f4a5ce4e4ea5534c6eab35a8d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 70640ac12b52d50c92d1d7f65c1116b2ec36d883
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058661"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59381774"
 ---
-<a name="deploying-your-site-using-an-ftp-client-vb"></a>Развертывание сайта с помощью FTP-клиента (VB)
-====================
+# <a name="deploying-your-site-using-an-ftp-client-vb"></a>Развертывание сайта с помощью FTP-клиента (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/4/5/F/45F815EC-8B0E-46D3-9FB8-2DC015CCA306/ASPNET_Hosting_Tutorial_03_VB.zip) или [скачать PDF](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial03_DeployingViaFTP_vb.pdf)
@@ -69,7 +69,7 @@ ms.locfileid: "57058661"
 > Нет никакого вреда от необходимости файлы исходного кода на рабочем сервере, так как они учитываются. По умолчанию ASP.NET запрещает HTTP-запросы для файлов исходного кода, таким образом, даже если файлы исходного кода присутствуют на рабочем сервере они недоступны для посетителей веб-сайта. (То есть, в том случае, если пользователь пытается посетить `http://www.yoursite.com/Default.aspx.vb` они получат страницу ошибки, которая объясняет, что эти типы файлов — `.vb` файлы — запрещены.)
 
 
-[![Используйте FTP-клиента, чтобы скопировать необходимые файлы с настольного компьютера на веб-сервер на поставщике веб-размещения.](deploying-your-site-using-an-ftp-client-vb/_static/image2.png)](deploying-your-site-using-an-ftp-client-vb/_static/image1.png)
+[![USE FTP-клиент для копирования необходимых файлов из рабочего стола на веб-сервер на поставщике веб-размещения.](deploying-your-site-using-an-ftp-client-vb/_static/image2.png)](deploying-your-site-using-an-ftp-client-vb/_static/image1.png)
 
 **Рис. 1**: Использовать FTP-клиента, чтобы скопировать необходимые файлы из рабочего стола на веб-сервер на поставщике веб-размещения ([Просмотр полноразмерного изображения](deploying-your-site-using-an-ftp-client-vb/_static/image3.png))
 
@@ -82,7 +82,7 @@ ms.locfileid: "57058661"
 > Если отобразится сообщение об ошибке при просмотре приложения Отвлекитесь и убедитесь, что вы развернули правильного набора файлов. Затем проверьте сообщение об ошибке, см. в разделе, если оно показывает все сразу же увидеть проблемы. После этого можно включать службу технической поддержки компании веб узла или отправьте свой вопрос на соответствующий форум по адресу [форумы ASP.NET](https://forums.asp.net/).
 
 
-[![Узел проверки книги теперь доступен всем с подключением к Интернету.](deploying-your-site-using-an-ftp-client-vb/_static/image5.png)](deploying-your-site-using-an-ftp-client-vb/_static/image4.png)
+[![Tон книги проверки сайта является теперь доступны любому пользователю с подключением к Интернету.](deploying-your-site-using-an-ftp-client-vb/_static/image5.png)](deploying-your-site-using-an-ftp-client-vb/_static/image4.png)
 
 **Рис. 2**: Узел проверки книги теперь доступен всем с подключением к Интернету ([Просмотр полноразмерного изображения](deploying-your-site-using-an-ftp-client-vb/_static/image6.png))
 
@@ -124,7 +124,7 @@ ms.locfileid: "57058661"
 Рис. 3 показано FileZilla, скопировав необходимые файлы. Как вы видите, ASP.NET файлов исходного кода, такие как `About.aspx.vb`, присутствуют на локальном компьютере (среда разработки) и поставщике веб-размещения (рабочей среде), так как файлы кода должны быть развернуты при использовании автоматического компиляция.
 
 
-[![Использовать FTP-клиента, чтобы скопировать необходимые файлы с настольного компьютера на веб-сервер на поставщике веб-размещения](deploying-your-site-using-an-ftp-client-vb/_static/image8.png)](deploying-your-site-using-an-ftp-client-vb/_static/image7.png)
+[![USE FTP-клиент для копирования необходимых файлов из рабочего стола на веб-сервер на поставщике веб-размещения](deploying-your-site-using-an-ftp-client-vb/_static/image8.png)](deploying-your-site-using-an-ftp-client-vb/_static/image7.png)
 
 **Рис. 3**: Использовать FTP-клиента, чтобы скопировать необходимые файлы из рабочего стола на веб-сервер на поставщике веб-размещения ([Просмотр полноразмерного изображения](deploying-your-site-using-an-ftp-client-vb/_static/image9.png))
 

@@ -8,15 +8,15 @@ ms.date: 03/31/2010
 ms.assetid: 142e5181-29ce-4bb9-907b-2a0becf7928b
 msc.legacyurl: /web-forms/overview/data-access/introduction/creating-a-business-logic-layer-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 345f4981ebdd5384068bd42bce0581f94866ad1d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 63efa46410e821947c6b0ee4ecd0c790fbf793e3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57024351"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59380097"
 ---
-<a name="creating-a-business-logic-layer-vb"></a>Создание уровня бизнес-логики (VB)
-====================
+# <a name="creating-a-business-logic-layer-vb"></a>Создание уровня бизнес-логики (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/5/d/7/5d7571fc-d0b7-4798-ad4a-c976c02363ce/ASPNET_Data_Tutorial_2_VB.exe) или [скачать PDF](creating-a-business-logic-layer-vb/_static/datatutorial02vb1.pdf)
@@ -129,7 +129,7 @@ ProductsBLL.vb
 Классы BLL может осуществляться с помощью элемента управления ObjectDataSource также декларативно (что может типизированный набор DataSet). Здесь мы рассмотрим ObjectDataSource более подробно в следующих руководствах.
 
 
-[![Список продуктов, отображаемый в GridView](creating-a-business-logic-layer-vb/_static/image4.png)](creating-a-business-logic-layer-vb/_static/image3.png)
+[![Tон список продуктов отображается в элементе управления GridView](creating-a-business-logic-layer-vb/_static/image4.png)](creating-a-business-logic-layer-vb/_static/image3.png)
 
 **Рис. 3**: Список продуктов, отображаемый в элементе управления GridView ([Просмотр полноразмерного изображения](creating-a-business-logic-layer-vb/_static/image5.png))
 
@@ -148,7 +148,7 @@ ProductsBLL.vb
 Помимо обязательного выполнения этих правил в базе данных они должны также обязательно выполняться на уровне объекта DataSet. На самом деле длина поля и является ли значение обязательного уже определены для каждого объекта DataTable набора DataColumns объекта. Чтобы просмотреть существующие проверки уровня полей автоматически, перейдите в конструктор DataSet, выберите поле из одного из DataTable, а затем выберите окно "Свойства". Как показано на рис. 4, `QuantityPerUnit` DataColumn в `ProductsDataTable` имеет максимальную длину 20 символов и допускает `NULL` значения. Если для свойства `ProductsDataRow` `QuantityPerUnit` строковое значение длиннее 20 символов `ArgumentException` будет создано.
 
 
-[![DataColumn обеспечивает базовую проверку на уровне полей](creating-a-business-logic-layer-vb/_static/image7.png)](creating-a-business-logic-layer-vb/_static/image6.png)
+[![Tон DataColumn обеспечивает базовую на уровне полей проверку](creating-a-business-logic-layer-vb/_static/image7.png)](creating-a-business-logic-layer-vb/_static/image6.png)
 
 **Рис. 4**: DataColumn обеспечивает базовую на уровне полей проверку ([Просмотр полноразмерного изображения](creating-a-business-logic-layer-vb/_static/image8.png))
 
@@ -156,7 +156,7 @@ ProductsBLL.vb
 К сожалению, мы не может указать проверяются границы, например `UnitPrice` значение должно быть больше или равно нулю, в окне «Свойства». Для обеспечения этого типа проверки на уровне полей необходимо создать обработчик событий для объекта DataTable [ColumnChanging](https://msdn.microsoft.com/library/system.data.datatable.columnchanging%28VS.80%29.aspx) событий. Как упоминалось в [предыдущем учебном курсе](creating-a-data-access-layer-vb.md), объекты DataSet, DataTables и DataRow, создаваемые типизированный набор DataSet можно расширить посредством использования частичных классов. С помощью этой методики, мы можем создать `ColumnChanging` обработчик событий для `ProductsDataTable` класса. Начните с создания класса в `App_Code` папку с именем `ProductsDataTable.ColumnChanging.vb`.
 
 
-[![Добавьте новый класс в папку App_Code](creating-a-business-logic-layer-vb/_static/image10.png)](creating-a-business-logic-layer-vb/_static/image9.png)
+[![Aдд новый класс в папку App_Code](creating-a-business-logic-layer-vb/_static/image10.png)](creating-a-business-logic-layer-vb/_static/image9.png)
 
 **Рис. 5**: Добавьте новый класс к `App_Code` папку ([Просмотр полноразмерного изображения](creating-a-business-logic-layer-vb/_static/image11.png))
 

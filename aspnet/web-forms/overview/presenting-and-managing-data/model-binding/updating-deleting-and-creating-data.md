@@ -8,15 +8,15 @@ ms.date: 02/27/2014
 ms.assetid: 602baa94-5a4f-46eb-a717-7a9e539c1db4
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/updating-deleting-and-creating-data
 msc.type: authoredcontent
-ms.openlocfilehash: 127543b0696b01f136b340d07f6f806b6a6fb1eb
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0ac1982a9476ea324f2faea0bf06f9406f9af1cf
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056531"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59389327"
 ---
-<a name="updating-deleting-and-creating-data-with-model-binding-and-web-forms"></a>Обновление, удаление и создание данных с помощью привязки модели и веб-форм
-====================
+# <a name="updating-deleting-and-creating-data-with-model-binding-and-web-forms"></a>Обновление, удаление и создание данных с помощью привязки модели и веб-форм
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > В этой серии руководств показано основными аспектами с помощью привязки модели с проектом веб-форм ASP.NET. Привязка модели упрощает взаимодействие с данными более эффективную чем работа с данными объектов источника (например, элемент управления ObjectDataSource и SqlDataSource). Эта серия начинается с вводный материал и перемещает до более продвинутых в последующих руководствах.

@@ -8,15 +8,15 @@ ms.date: 01/17/2019
 ms.assetid: df001954-18bf-4550-b03d-43911a0ea186
 msc.legacyurl: /mvc/overview/getting-started/introduction/adding-search
 msc.type: authoredcontent
-ms.openlocfilehash: ada125c917656f3a83524ff39e53b4cfc041a497
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7b49c1e6425080693229c6c132df3879504c835c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029701"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59379538"
 ---
-<a name="search"></a>Поиск
-====================
+# <a name="search"></a>Поиск
+
 
 [!INCLUDE [Tutorial Note](sample/code-location.md)]
 
@@ -54,7 +54,7 @@ ms.locfileid: "57029701"
 Приведенный выше код `s => s.Title` представляет собой [лямбда-выражение](https://msdn.microsoft.com/library/bb397687.aspx). Лямбда-выражения используются в основе метод [LINQ](https://msdn.microsoft.com/library/bb397926.aspx) запрашивает в качестве аргументов стандартных методов операторов запроса, такие как [где](https://msdn.microsoft.com/library/system.linq.enumerable.where.aspx) метод, используемый в приведенном выше коде. Запросы LINQ не выполняются, когда они определяются или изменяются путем вызова метода, таких как `Where` или `OrderBy`. Вместо этого выполнение запроса откладывается, это означает, что вычисление выражения откладывается, пока его реализованного значения будет выполнена итерация или [ `ToList` ](https://msdn.microsoft.com/library/bb342261.aspx) вызывается метод. В `Search` примере запрос выполняется в *Index.cshtml* представления. Дополнительные сведения об отложенном и немедленном выполнении запросов см. в разделе [Выполнение запроса](https://msdn.microsoft.com/library/bb738633.aspx).
 
 > [!NOTE]
-> [Contains](https://msdn.microsoft.com/library/bb155125.aspx) метод выполняется на базе данных, а не код C# выше. В базе данных [Contains](https://msdn.microsoft.com/library/bb155125.aspx) сопоставляется [SQL LIKE](https://msdn.microsoft.com/library/ms179859.aspx), который не учитывает регистр.
+> [Contains](https://msdn.microsoft.com/library/bb155125.aspx) метод выполняется на базе данных, а не код c# выше. В базе данных [Contains](https://msdn.microsoft.com/library/bb155125.aspx) сопоставляется [SQL LIKE](https://msdn.microsoft.com/library/ms179859.aspx), который не учитывает регистр.
 
 Теперь вы можете обновить `Index` представление, которое будет отображать форму для пользователя.
 
