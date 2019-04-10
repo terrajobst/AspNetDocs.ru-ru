@@ -8,15 +8,15 @@ ms.date: 02/07/2014
 ms.assetid: aa67d304-583b-4bf8-a231-195656cfb587
 msc.legacyurl: /web-pages/overview/getting-started/introducing-razor-syntax-c
 msc.type: authoredcontent
-ms.openlocfilehash: b5eb98dfdf3fc013920f45080d4a20e1fa507725
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8237dc6b925ccefc5b411aebc8e7c399dcdc6746
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57032671"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59407358"
 ---
-<a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-c"></a>Введение в программирование веб-ASP.NET с использованием синтаксиса Razor (C#)
-====================
+# <a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-c"></a>Введение в программирование веб-ASP.NET с использованием синтаксиса Razor (C#)
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > В этой статье дает Общие сведения о программировании с помощью веб-страниц ASP.NET с использованием синтаксиса Razor. ASP.NET — технология Майкрософт для выполнения динамических веб-страниц на веб-серверах. Этой статьи, рассматриваются с использованием языка программирования C#.
@@ -117,7 +117,7 @@ ms.locfileid: "57032671"
 > Обратите внимание, что `@` символ используется для пометки буквальные строковые литералы в C# и для пометки кода на страницах ASP.NET.
 
 
-### <a name="6-code-is-case-sensitive"></a>6.  Код чувствительно к регистру
+### <a name="6-code-is-case-sensitive"></a>6. Код чувствительно к регистру
 
 В C#, ключевые слова (такие как `var`, `true`, и `if`) и в именах переменных учитывается регистр. Следующие строки кода создают две различные переменные `lastName` и `LastName.`
 
@@ -351,7 +351,9 @@ Razor имеет ограничения на вложенные блоки C#. �
     <strong>Пример</strong>
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsInt(), IsInt()`
@@ -363,7 +365,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample28.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsBool(), IsBool()`
@@ -375,7 +379,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample29.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsFloat(), IsFloat()`
@@ -387,7 +393,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample30.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsDecimal(), IsDecimal()`
@@ -399,7 +407,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample31.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsDateTime(), IsDateTime()`
@@ -411,7 +421,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample32.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `ToString()`
@@ -431,7 +443,7 @@ Razor имеет ограничения на вложенные блоки C#. �
 
 :::row:::
     :::column:::
-    <strong>Operator</strong>
+    <strong>Оператор</strong>
     :::column-end:::
     :::column:::
     <strong>Описание</strong>
@@ -440,7 +452,9 @@ Razor имеет ограничения на вложенные блоки C#. �
     <strong>Примеры</strong>
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `+` `-` `*` `/`
@@ -452,7 +466,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-css[Main](introducing-razor-syntax-c/samples/sample34.css)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `=`
@@ -464,7 +480,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample35.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `==`
@@ -476,7 +494,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample36.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `!=`
@@ -488,7 +508,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample37.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `< > <= >=`
@@ -500,7 +522,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample38.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `+`
@@ -512,7 +536,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample39.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `+=` `-=`
@@ -524,7 +550,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample40.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `.`
@@ -536,7 +564,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample41.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `()`
@@ -548,7 +578,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-javascript[Main](introducing-razor-syntax-c/samples/sample42.js)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `[]`
@@ -560,7 +592,9 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample43.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `!`
@@ -572,10 +606,12 @@ Razor имеет ограничения на вложенные блоки C#. �
         [!code-csharp[Main](introducing-razor-syntax-c/samples/sample44.cs)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
-        `&&` <code>&#124;&#124;</code>
+        `&&` `||`
     :::column-end:::
     :::column:::
     Логическое и и или, которые используются для связывания условий.
@@ -603,7 +639,7 @@ Razor имеет ограничения на вложенные блоки C#. �
 | Полный URL-адрес | `http://mycompanyserver/humanresources/CompanyPolicy.htm` |
 | --- | --- |
 | Имя сервера | *mycompanyserver* |
-| Виртуальный путь | */humanresources/CompanyPolicy.htm* |
+| Виртуальный путь | */HumanResources/CompanyPolicy.htm* |
 | Физический путь | *C:\mywebsites\humanresources\CompanyPolicy.htm* |
 
 Виртуальный корневой каталог — /, так же, как корень диска c диск — \. (Виртуальная папка пути всегда использовать символы косой черты). Виртуальный путь к папке не нужно иметь то же имя как физический каталог; Это может быть псевдонимом. (На рабочих серверах, виртуальный путь редко соответствует как полный физический путь.)
@@ -816,4 +852,4 @@ Razor имеет ограничения на вложенные блоки C#. �
 
 [ASP.NET](https://msdn.microsoft.com/library/ee532866.aspx)
 
-[Язык C#](https://msdn.microsoft.com/library/kx37x362.aspx)
+[C# - язык](https://msdn.microsoft.com/library/kx37x362.aspx)

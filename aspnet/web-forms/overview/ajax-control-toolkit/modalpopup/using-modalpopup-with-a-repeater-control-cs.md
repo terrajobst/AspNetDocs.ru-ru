@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: d686d84a-1c58-492e-8a77-3eb5a0cfe918
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/modalpopup/using-modalpopup-with-a-repeater-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: c2ffa22fb8d9d985d99d9f8d2298d317e6caf469
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 91758b7c329b78bcb3a3ab301650d6da6164d1a3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058281"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411193"
 ---
-<a name="using-modalpopup-with-a-repeater-control-c"></a>Использование ModalPopup с элементом управления Repeater (C#)
-====================
+# <a name="using-modalpopup-with-a-repeater-control-c"></a>Использование ModalPopup с элементом управления Repeater (C#)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup2.cs.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup2CS.pdf)
@@ -49,7 +49,7 @@ ms.locfileid: "57058281"
 Затем с рядом с ним кнопка, инициирующая модальное всплывающее окно отображается каждый элемент в источнике данных.
 
 
-[![Модального всплывающего окна можно активировать для каждой записи источника данных](using-modalpopup-with-a-repeater-control-cs/_static/image2.png)](using-modalpopup-with-a-repeater-control-cs/_static/image1.png)
+[![Tон модального всплывающего окна можно активировать для каждой записи источника данных](using-modalpopup-with-a-repeater-control-cs/_static/image2.png)](using-modalpopup-with-a-repeater-control-cs/_static/image1.png)
 
 Модального всплывающего окна можно активировать для каждой записи источника данных ([Просмотр полноразмерного изображения](using-modalpopup-with-a-repeater-control-cs/_static/image3.png))
 

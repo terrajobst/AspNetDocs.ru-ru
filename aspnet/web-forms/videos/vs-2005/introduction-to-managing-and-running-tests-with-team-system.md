@@ -8,15 +8,15 @@ ms.date: 02/09/2007
 ms.assetid: e262ca69-55e5-4ec2-b278-78ee129b4649
 msc.legacyurl: /web-forms/videos/vs-2005/introduction-to-managing-and-running-tests-with-team-system
 msc.type: video
-ms.openlocfilehash: 1b9ea5277253395ba16b3a4480b61fb522327d75
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: da305fcb2c47279df200d3b1229df927aceec764
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048941"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401937"
 ---
-<a name="introduction-to-managing-and-running-tests-with-team-system"></a>Введение в управление и выполнение тестов с помощью Team System
-====================
+# <a name="introduction-to-managing-and-running-tests-with-team-system"></a>Введение в управление и выполнение тестов с помощью Team System
+
 по Эрика ли
 
 В этом видео мы видим, как вы можете управлять всеми или различных тестовых случаев, используя возможности тестирования управления Visual Studio Team System. Также вы узнаете, как запустить и настроить тесты.

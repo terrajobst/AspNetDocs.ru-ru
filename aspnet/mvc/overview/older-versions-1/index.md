@@ -8,15 +8,15 @@ ms.date: 10/10/2014
 ms.assetid: 1506f70f-6919-45bd-8c75-a17aff77510c
 msc.legacyurl: /mvc/overview/older-versions-1
 msc.type: chapter
-ms.openlocfilehash: 8f06d9d08c381e8c6d704149b29d46196baceae9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5827542a951a4b65d1c9b02b0ad15ed988bf1456
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57021171"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59399636"
 ---
-<a name="older-versions---mvc-1-and-2"></a>Предыдущие версии — MVC 1 и 2
-====================
+# <a name="older-versions---mvc-1-and-2"></a>Предыдущие версии — MVC 1 и 2
+
 > Ресурсы для обучения программированию MVC 1 и 2.
 
 
@@ -57,13 +57,13 @@ ms.locfileid: "57021171"
     - [Общие сведения о представлениях ASP.NET MVC (C#)](views/asp-net-mvc-views-overview-cs.md)
     - [Создание настраиваемых вспомогательных методов HTML (C#)](views/creating-custom-html-helpers-cs.md)
     - [Класс TagBuilder для создания вспомогательных методов HTML (C#)](views/using-the-tagbuilder-class-to-build-html-helpers-cs.md)
-    - [Создание макетов страниц с главными страницами представлений (C#)](views/creating-page-layouts-with-view-master-pages-cs.md)
-    - [Передача данных на главные страницы представлений (C#)](views/passing-data-to-view-master-pages-cs.md)
+    - [Создание макетов страниц с эталонными страницами представлений (C#)](views/creating-page-layouts-with-view-master-pages-cs.md)
+    - [Передача данных на эталонные страницы представлений (C#)](views/passing-data-to-view-master-pages-cs.md)
     - [Общие сведения о представлениях ASP.NET MVC (VB)](views/asp-net-mvc-views-overview-vb.md)
     - [Создание настраиваемых вспомогательных методов HTML (VB)](views/creating-custom-html-helpers-vb.md)
     - [Класс TagBuilder для создания вспомогательных методов HTML (VB)](views/using-the-tagbuilder-class-to-build-html-helpers-vb.md)
-    - [Создание макетов страниц с главными страницами представлений (VB)](views/creating-page-layouts-with-view-master-pages-vb.md)
-    - [Передача данных на главные страницы представлений (VB)](views/passing-data-to-view-master-pages-vb.md)
+    - [Создание макетов страниц с эталонными страницами представлений (VB)](views/creating-page-layouts-with-view-master-pages-vb.md)
+    - [Передача данных на эталонные страницы представлений (VB)](views/passing-data-to-view-master-pages-vb.md)
 - [Контроллеры и маршрутизация](controllers-and-routing/index.md)
 
     - [Общие сведения о маршрутизации в ASP.NET MVC (C#)](controllers-and-routing/asp-net-mvc-routing-overview-cs.md)
@@ -104,20 +104,20 @@ ms.locfileid: "57021171"
     - [Создание модульных тестов для приложений ASP.NET MVC (VB)](unit-testing/creating-unit-tests-for-asp-net-mvc-applications-vb.md)
 - [Диспетчер контактов](contact-manager/index.md)
 
-    - [Итерация 1. Создание приложения (C#)](contact-manager/iteration-1-create-the-application-cs.md)
-    - [Итерация 2. Улучшение внешнего вида приложения (C#)](contact-manager/iteration-2-make-the-application-look-nice-cs.md)
-    - [Итерация 3. Добавление проверки форм (C#)](contact-manager/iteration-3-add-form-validation-cs.md)
-    - [Итерация 4. Создание слабых связей в приложении (C#)](contact-manager/iteration-4-make-the-application-loosely-coupled-cs.md)
-    - [Итерация 5. Создание модульных тестов (C#)](contact-manager/iteration-5-create-unit-tests-cs.md)
-    - [Итерация 6. Использование разработки, управляемой тестами (C#)](contact-manager/iteration-6-use-test-driven-development-cs.md)
-    - [Итерация 7. Добавление функций Ajax (C#)](contact-manager/iteration-7-add-ajax-functionality-cs.md)
-    - [Итерация 1. Создание приложения (VB)](contact-manager/iteration-1-create-the-application-vb.md)
-    - [Итерация 2. Улучшение внешнего вида приложения (VB)](contact-manager/iteration-2-make-the-application-look-nice-vb.md)
-    - [Итерация 3. Добавление проверки форм (VB)](contact-manager/iteration-3-add-form-validation-vb.md)
-    - [Итерация 4. Создание слабых связей в приложении (VB)](contact-manager/iteration-4-make-the-application-loosely-coupled-vb.md)
-    - [Итерация 5. Создание модульных тестов (VB)](contact-manager/iteration-5-create-unit-tests-vb.md)
-    - [Итерация 6. Использование разработки, управляемой тестами (VB)](contact-manager/iteration-6-use-test-driven-development-vb.md)
-    - [Итерация 7. Добавление функций Ajax (VB)](contact-manager/iteration-7-add-ajax-functionality-vb.md)
+    - [Итерация #1 – Создание приложения (C#)](contact-manager/iteration-1-create-the-application-cs.md)
+    - [Итерация #2 — Создание приложения поиска неплохо (C#)](contact-manager/iteration-2-make-the-application-look-nice-cs.md)
+    - [Итерации #3 – Добавление проверки форм (C#)](contact-manager/iteration-3-add-form-validation-cs.md)
+    - [Итерация #4 – Создание слабых связей в приложении (C#)](contact-manager/iteration-4-make-the-application-loosely-coupled-cs.md)
+    - [Итерация #5 – Создание модульных тестов (C#)](contact-manager/iteration-5-create-unit-tests-cs.md)
+    - [Итерация #6 – использование разработки, управляемой тестами (C#)](contact-manager/iteration-6-use-test-driven-development-cs.md)
+    - [Итерации #7 – Добавление функций Ajax (C#)](contact-manager/iteration-7-add-ajax-functionality-cs.md)
+    - [Итерация #1 – Создание приложения (Visual Basic)](contact-manager/iteration-1-create-the-application-vb.md)
+    - [Итерация #2 — Создание вида неплохо (VB) приложения](contact-manager/iteration-2-make-the-application-look-nice-vb.md)
+    - [Итерации #3 – Добавление проверки форм (VB)](contact-manager/iteration-3-add-form-validation-vb.md)
+    - [Итерация #4 – Создание слабых связей в приложении (VB)](contact-manager/iteration-4-make-the-application-loosely-coupled-vb.md)
+    - [Итерация #5 – Создание модульных тестов (Visual Basic)](contact-manager/iteration-5-create-unit-tests-vb.md)
+    - [Итерация #6 – использование разработки, управляемой тестами (VB)](contact-manager/iteration-6-use-test-driven-development-vb.md)
+    - [Итерации #7 – Добавление функций Ajax (VB)](contact-manager/iteration-7-add-ajax-functionality-vb.md)
 - [NerdDinner](nerddinner/index.md)
 
     - [Общие сведения об учебнике по NerdDinner](nerddinner/introducing-the-nerddinner-tutorial.md)
@@ -127,7 +127,7 @@ ms.locfileid: "57021171"
     - [Использование контроллеров и представлений для реализации пользовательского интерфейса списка и сведений](nerddinner/use-controllers-and-views-to-implement-a-listingdetails-ui.md)
     - [Обеспечение поддержки операций CRUD (создание, чтение, обновление и удаление) для записей форм данных](nerddinner/provide-crud-create-read-update-delete-data-form-entry-support.md)
     - [Использование ViewData и реализация классов ViewModel](nerddinner/use-viewdata-and-implement-viewmodel-classes.md)
-    - [Многократное использование пользовательского интерфейса с помощью главных страниц и частичных представлений](nerddinner/re-use-ui-using-master-pages-and-partials.md)
+    - [Многократное использование пользовательского интерфейса с помощью эталонных страниц и частичных представлений](nerddinner/re-use-ui-using-master-pages-and-partials.md)
     - [Реализация эффективного разбиения данных по страницам](nerddinner/implement-efficient-data-paging.md)
     - [Защита приложений с помощью проверки подлинности и авторизации](nerddinner/secure-applications-using-authentication-and-authorization.md)
     - [Использование AJAX для доставки динамических обновлений](nerddinner/use-ajax-to-deliver-dynamic-updates.md)
@@ -136,5 +136,5 @@ ms.locfileid: "57021171"
     - [Заключительная часть учебника по NerdDinner](nerddinner/nerddinner-wrap-up.md)
 - [База данных Movie](movie-database/index.md)
 
-    - [Создание приложения для базы данных Movie за 15 минут с помощью ASP.NET MVC (C#)](movie-database/create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs.md)
-    - [Создание приложения базы данных Movie за 15 минут с помощью ASP.NET MVC (VB)](movie-database/create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb.md)
+    - [Создание приложения для базы данных Movie за 15 минут с помощью ASP.NET MVC (C#)](movie-database/create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs.md)
+    - [Создание приложения базы данных Movie за 15 минут с помощью ASP.NET MVC (VB)](movie-database/create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb.md)

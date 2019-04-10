@@ -8,15 +8,15 @@ ms.date: 03/02/2009
 ms.assetid: 344bb38e-4965-4c47-bda1-f6d29ae5b83a
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/validating-with-a-service-layer-vb
 msc.type: authoredcontent
-ms.openlocfilehash: ecce8e4f0a901ce8c185d2b085f4d706bd57fa1f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: fc819494ef58824d485144396e3a995d906c8b42
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029141"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398713"
 ---
-<a name="validating-with-a-service-layer-vb"></a>Проверка с помощью уровня службы (VB)
-====================
+# <a name="validating-with-a-service-layer-vb"></a>Проверка с помощью уровня службы (VB)
+
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > Узнайте, как переместить логику проверки из действий контроллера и поместить в отдельный слой. В этом руководстве Стивен Вальтер объясняется, как можно поддерживать резкие Разделение областей ответственности, изолируя уровень службы из вашего уровня контроллера.
@@ -54,7 +54,7 @@ ms.locfileid: "57029141"
 
 Контроллер продукта была обновлена в листинге 4, чтобы использовать уровень служб вместо уровня репозитория. На уровне контроллер взаимодействует с уровня службы. Слой служб взаимодействует с уровня репозитория. Каждый слой имеет отдельный ответственности.
 
-**Листинг 4 - Controllers\ProductController.vb**
+**Listing 4 - Controllers\ProductController.vb**
 
 [!code-vb[Main](validating-with-a-service-layer-vb/samples/sample4.vb)]
 

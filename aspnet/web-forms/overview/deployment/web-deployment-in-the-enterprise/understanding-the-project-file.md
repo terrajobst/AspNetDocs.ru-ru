@@ -8,18 +8,18 @@ ms.date: 05/04/2012
 ms.assetid: 07978d9d-341c-4524-bcba-62976f390f77
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file
 msc.type: authoredcontent
-ms.openlocfilehash: 114dd21002ef41627f3a101c0197a85fd5208887
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d774a8e13e108d1be4c39e1e909d3d9683968a0d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57053971"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59404927"
 ---
-<a name="understanding-the-project-file"></a>Общие сведения о файле проекта
-====================
+# <a name="understanding-the-project-file"></a>Общие сведения о файле проекта
+
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Файлы проекта Microsoft Build Engine (MSBuild) лежат в основе процесса построения и развертывания. Этот раздел начинается с концептуальный обзор MSBuild и файл проекта. Он описывает ключевые компоненты, которые вы будете сталкиваться при работе с файлами проекта, и они работают, минуя пример того, как можно использовать файлы проекта для развертывания приложений в реальных условиях.
 > 
@@ -90,7 +90,7 @@ ms.locfileid: "57053971"
 [!code-xml[Main](understanding-the-project-file/samples/sample2.xml)]
 
 
-Чтобы получить значение свойства, используйте формат <strong>$(</strong><em>PropertyName</em><strong>)</strong><em>.</em> Например, чтобы получить значение <strong>ServerName</strong> свойство, введите:
+Чтобы получить значение свойства, используйте формат **$(***PropertyName***) ***.* Например, чтобы получить значение **ServerName** свойство, введите:
 
 
 [!code-powershell[Main](understanding-the-project-file/samples/sample3.ps1)]
@@ -192,8 +192,8 @@ ms.locfileid: "57053971"
 
 Вообще говоря при создании полезных задач и целевых объектов, необходимо ссылаться на свойства и элементы, которые вы определили в другом месте в файле проекта:
 
-- Чтобы использовать значение свойства, введите <strong>$(</strong><em>PropertyName</em><strong>)</strong>, где <em>PropertyName</em> имя <strong>свойство</strong> элемента или имя параметра.
-- Чтобы использовать элемент, введите <strong>@(</strong><em>ItemName</em><strong>)</strong>, где <em>ItemName</em> имя <strong>элемента</strong> элемент.
+- Чтобы использовать значение свойства, введите **$(***PropertyName***)**, где *PropertyName* имя **свойство** элемента или имя параметр.
+- Чтобы использовать элемент, введите **@(***ItemName***)**, где *ItemName* имя **элемента** элемент.
 
 > [!NOTE]
 > Помните, что при создании нескольких элементов с одинаковым именем, вы создаете список. Напротив, при создании нескольких свойств с одинаковым именем, последнее значение свойства, указываемые перезапишет любые предыдущие свойства с тем же именем&#x2014;свойство может содержать только одно значение.

@@ -8,15 +8,15 @@ ms.date: 10/21/2006
 ms.assetid: f348a388-d3a2-4ea8-baf0-be2e6ef8efe1
 msc.legacyurl: /web-forms/videos/sql-2005/getting-started-with-reporting-services
 msc.type: video
-ms.openlocfilehash: 95018211c77e69b1842b05718885f284756b0513
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 10fcdb1a2eb4ae88c9a480787612ed7a9500d73d
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050291"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409984"
 ---
-<a name="getting-started-with-reporting-services"></a>Начало работы со службами Reporting Services
-====================
+# <a name="getting-started-with-reporting-services"></a>Начало работы со службами Reporting Services
+
 по [Microsoft](https://github.com/microsoft)
 
 SQL Server Reporting Services можно разрабатывать и развертывать красиво отформатированный и интерактивные отчеты репрезентативных данных. Подходит для печати или online распространения, эти отчеты и он позволит вам получить профессиональные результаты очень быстро. В этом видео демонстрируется настройка служб Reporting Services и Business Intelligence Development Studio для создания отчетов с помощью мастеров и конструкторов и развернуть их на сервере отчетов.

@@ -8,15 +8,15 @@ ms.date: 03/02/2009
 ms.assetid: 3975a52f-bd15-4edd-8f3d-1df93672515b
 msc.legacyurl: /mvc/overview/older-versions-1/views/using-the-tagbuilder-class-to-build-html-helpers-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 9759ea9b05ba5eba268901d3d2d1a15b2afe6202
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 3227560c1d0c48f7738e26c87a0dbb140c410eee
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055931"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59410101"
 ---
-<a name="using-the-tagbuilder-class-to-build-html-helpers-c"></a>Используя класс TagBuilder для создания вспомогательных методов HTML (C#)
-====================
+# <a name="using-the-tagbuilder-class-to-build-html-helpers-c"></a>Используя класс TagBuilder для создания вспомогательных методов HTML (C#)
+
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > Стивен Вальтер представлены полезные служебный класс в платформе ASP.NET MVC с именем класс TagBuilder. Класс TagBuilder для простого создания HTML-теги.
@@ -65,7 +65,7 @@ ms.locfileid: "57055931"
 [!code-aspx[Main](using-the-tagbuilder-class-to-build-html-helpers-cs/samples/sample2.aspx)]
 
 
-[![В диалоговом окне нового проекта](using-the-tagbuilder-class-to-build-html-helpers-cs/_static/image1.jpg)](using-the-tagbuilder-class-to-build-html-helpers-cs/_static/image1.png)
+[![Tдиалоговое окно нового проекта он](using-the-tagbuilder-class-to-build-html-helpers-cs/_static/image1.jpg)](using-the-tagbuilder-class-to-build-html-helpers-cs/_static/image1.png)
 
 **Рис 01**: Использование вспомогательного метода образа ([Просмотр полноразмерного изображения](using-the-tagbuilder-class-to-build-html-helpers-cs/_static/image2.png))
 

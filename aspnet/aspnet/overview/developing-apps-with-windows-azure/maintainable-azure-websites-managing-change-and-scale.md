@@ -8,15 +8,15 @@ ms.date: 07/16/2014
 ms.assetid: ecfd0eb4-c4ad-44e6-9db9-a2a66611ff6a
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/maintainable-azure-websites-managing-change-and-scale
 msc.type: authoredcontent
-ms.openlocfilehash: 315e89c81782edf0875c65afd27153102d733050
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: ec0058472f8bc1d8d58e7c78deeb8b6097532510
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424252"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409737"
 ---
-<a name="hands-on-lab-maintainable-azure-websites-managing-change-and-scale"></a>Практическое лабораторное занятие. Простые в обслуживании веб-сайты Azure: управление изменениями и масштабированием
-====================
+# <a name="hands-on-lab-maintainable-azure-websites-managing-change-and-scale"></a>Практическое лабораторное занятие. Простые в обслуживании веб-сайты Azure: управление изменениями и масштабированием
+
 по [Web Слышатся Team](https://twitter.com/webcamps)
 
 [Скачайте комплект учебных материалов по лагеря Web](https://aka.ms/webcamps-training-kit)
@@ -89,7 +89,7 @@ ms.locfileid: "58424252"
 > Каждого упражнения сопровождается начальный решения, расположенный в **начать** папку упражнения, чему вы сможете каждого упражнения, независимо от других. Имейте в виду, что фрагменты кода, которые добавляются во время атаки, отсутствуют эти стартовые решения и могут не работать, пока не будут выполнены упражнения. В исходном коде для упражнения, вы также найдете **окончания** папку, содержащую решение Visual Studio с кодом, полученный в результате выполнения действий, описанных в соответствующий упражнении. Эти решения можно использовать в качестве руководства, если вам нужна дополнительная помощь, отвечая на это Практическое занятие.
 
 
-* * *
+---
 
 <a id="Exercises"></a>
 ## <a name="exercises"></a>Упражнения
@@ -131,7 +131,7 @@ ms.locfileid: "58424252"
 
     ![Включение Migrations](maintainable-azure-websites-managing-change-and-scale/_static/image1.png "включение миграции")
 
-    *Включение миграции*
+    *Включение миграций*
 
     > [!NOTE]
     > Эта команда добавляет **миграций** папке Quiz Компьютерщик проект, который содержит файл с именем **Configuration.cs**. **Конфигурации** класс позволяет настраивать поведение миграций для контекста.
@@ -909,7 +909,7 @@ ms.locfileid: "58424252"
     > - Уменьшить максимальное и минимальное значения **целевой ЦП** диапазон в конфигурации автоматического масштабирования для веб-приложения
     > - Запуск нагрузочного теста в облаке с **планов тестирования Azure**. Дополнительные сведения [здесь](/azure/devops/test/load-test/index?view=vsts)
 
-* * *
+---
 
 <a id="Summary"></a>
 ## <a name="summary"></a>Сводка

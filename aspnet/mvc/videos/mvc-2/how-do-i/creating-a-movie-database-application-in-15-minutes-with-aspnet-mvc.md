@@ -8,15 +8,15 @@ ms.date: 03/17/2009
 ms.assetid: c742a7c2-11ed-4f39-b658-960676494db9
 msc.legacyurl: /mvc/videos/mvc-2/how-do-i/creating-a-movie-database-application-in-15-minutes-with-aspnet-mvc
 msc.type: video
-ms.openlocfilehash: 082ac4dd51d6d919baf75f5fe316db86f5dfd189
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 49458c6d498b492b138247cb9257cd934e472ba6
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055811"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59399545"
 ---
-<a name="creating-a-movie-database-application-in-15-minutes-with-aspnet-mvc"></a>Создание приложения базы данных Movie за 15 минут с помощью ASP.NET MVC
-====================
+# <a name="creating-a-movie-database-application-in-15-minutes-with-aspnet-mvc"></a>Создание приложения базы данных Movie за 15 минут с помощью ASP.NET MVC
+
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 Стивен Вальтер сборок всего приложения ASP.NET MVC от начала до конца. Данное видео является отличным введением для тех, кто не знаком с ASP.NET MVC Framework и хотят получить представление о процессе создания приложения ASP.NET MVC.

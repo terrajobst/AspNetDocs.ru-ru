@@ -8,15 +8,15 @@ ms.date: 02/15/2013
 ms.assetid: 416438a1-3b2f-4d27-bf53-6b76223c33bf
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-production
 msc.type: authoredcontent
-ms.openlocfilehash: f71d8311cbb1131d9c30c0bd9071a1c6c90f9976
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 19cda45ce1b425462ec491bcc86b7a0b76dec162
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045851"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409802"
 ---
-<a name="aspnet-web-deployment-using-visual-studio-deploying-to-production"></a>Веб-развертывание ASP.NET с помощью Visual Studio. Развертывание в рабочей среде
-====================
+# <a name="aspnet-web-deployment-using-visual-studio-deploying-to-production"></a>Веб-развертывание ASP.NET с помощью Visual Studio. Развертывание в рабочей среде
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 [Загрузите начальный проект](http://go.microsoft.com/fwlink/p/?LinkId=282627)
@@ -276,7 +276,7 @@ ms.locfileid: "57045851"
 
     ![Просмотр файлов, которые будут публиковаться в рабочей среде](deploying-to-production/_static/image14.png)
 
-    Просмотрите список файлов, которые будут скопированы. Как мы видим, все *.cs* файлов, включая *. aspx.cs*, *. aspx.designer.cs*, *Master.cs*, и  *Master.Designer.cs* файлы пропускаются. Весь этот код был скомпилирован в *ContosoUniversity.dll* и *ContosUniversity.pdb* файлы, которые вы найдете в *bin* папки. Так как только *.dll* необходим для выполнения приложения и указанный ранее должны развертываться только файлы, необходимые для запуска приложения, то никакие *.cs* файлы были скопированы в место назначения Среда. *Obj* папки и *ContosoUniversity.csproj* и *. csproj.user* файлы пропускаются по той же причине.
+    Просмотрите список файлов, которые будут скопированы. Как мы видим, все *.cs* файлов, включая *. aspx.cs*, *. aspx.designer.cs*, *Master.cs*, и  *Master.Designer.cs* файлы пропускаются. Весь этот код был скомпилирован в *ContosoUniversity.dll* и *ContosoUniversity.pdb* файлы, которые вы найдете в *bin* папки. Так как только *.dll* необходим для выполнения приложения и указанный ранее должны развертываться только файлы, необходимые для запуска приложения, то никакие *.cs* файлы были скопированы в место назначения Среда. *Obj* папки и *ContosoUniversity.csproj* и *. csproj.user* файлы пропускаются по той же причине.
 
     Нажмите кнопку **публикации** для развертывания в рабочей среде.
 2. Тестирование в рабочей среде, выполнив ту же процедуру, которая использовалась для промежуточного хранения.

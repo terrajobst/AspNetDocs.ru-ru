@@ -8,15 +8,15 @@ ms.date: 12/20/2007
 ms.assetid: fd3db529-601a-4a6e-b91a-d9cbe1ff7bd4
 msc.legacyurl: /web-forms/videos/aspnet-35/aspnet-ajax/introduction-to-aspnet-ajax-history
 msc.type: video
-ms.openlocfilehash: f3248d21223eacfede0ffe54e5fea5fdff073af4
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 25e3d707d31d238d8a237d9bfefcfea5ea736c44
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57042241"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59410569"
 ---
-<a name="introduction-to-aspnet-ajax-history"></a>Введение в ASP.NET AJAX
-====================
+# <a name="introduction-to-aspnet-ajax-history"></a>Введение в ASP.NET AJAX
+
 по [Бертран ле Руа](https://github.com/bleroy)
 
 Узнайте, как предварительная версия расширений ASP.NET позволяет контролировать Ajax "Назад" браузера. **Расширения AJAX ASP.NET доступны в [Просмотр расширений ASP.NET 3.5](https://www.asp.net/downloads/35-sp1#find) (декабрь 2007 г.).**

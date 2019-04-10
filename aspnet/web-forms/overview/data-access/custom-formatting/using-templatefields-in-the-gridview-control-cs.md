@@ -8,15 +8,15 @@ ms.date: 03/31/2010
 ms.assetid: 11de31e8-a78a-4f96-bd75-66e994175902
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting/using-templatefields-in-the-gridview-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 163b66323325f24430f8f5fda40aab5b9e8f3b85
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 2e74327b6bcc84df1f341523c305dae9e5205dfd
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58426072"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59408749"
 ---
-<a name="using-templatefields-in-the-gridview-control-c"></a>Использование TemplateField в элементе управления GridView (C#)
-====================
+# <a name="using-templatefields-in-the-gridview-control-c"></a>Использование TemplateField в элементе управления GridView (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/6/9/969e5c94-dfb6-4e47-9570-d6d9e704c3c1/ASPNET_Data_Tutorial_12_CS.exe) или [скачать PDF](using-templatefields-in-the-gridview-control-cs/_static/datatutorial12cs1.pdf)
@@ -37,7 +37,7 @@ GridView представляет собой набор полей, которы
 В этом руководстве мы будем использовать поля TemplateField для оформления списка сотрудников. В частности, мы составим список всех сотрудников, но отобразит его имя и фамилию в один столбец, дате найма в элемента управления календарем, а также состояние столбца, который указывает, сколько дней они был принят на работу компании.
 
 
-[![Три поля TemplateField используются для настройки отображения](using-templatefields-in-the-gridview-control-cs/_static/image2.png)](using-templatefields-in-the-gridview-control-cs/_static/image1.png)
+[![TВозможны три поля TemplateField, используемые для настройки отображения](using-templatefields-in-the-gridview-control-cs/_static/image2.png)](using-templatefields-in-the-gridview-control-cs/_static/image1.png)
 
 **Рис. 1**: Три поля TemplateField используются для настройки отображения ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image3.png))
 
@@ -49,7 +49,7 @@ GridView представляет собой набор полей, которы
 Откройте `GridViewTemplateField.aspx` странице и перетащите элемент управления GridView с панели инструментов в конструктор. Смарт-теге элемента GridView выберите Добавление нового элемента управления ObjectDataSource, который вызывает `EmployeesBLL` класса `GetEmployees()` метод.
 
 
-[![Добавить новый элемент управления ObjectDataSource, вызывающего метод GetEmployees()](using-templatefields-in-the-gridview-control-cs/_static/image5.png)](using-templatefields-in-the-gridview-control-cs/_static/image4.png)
+[![Aдд новый элемент управления ObjectDataSource, вызывающего метод GetEmployees()](using-templatefields-in-the-gridview-control-cs/_static/image5.png)](using-templatefields-in-the-gridview-control-cs/_static/image4.png)
 
 **Рис. 2**: Добавить новый элемент управления ObjectDataSource, Invokes `GetEmployees()` метод ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image6.png))
 
@@ -67,7 +67,7 @@ GridView представляет собой набор полей, которы
 Отвлекитесь и просмотрите ход работы в браузере. На этом этапе вы должны увидеть таблицу, содержащую запись для каждого сотрудника и четыре столбца: один для сотрудника Фамилия, один для их имя, один для названий и один к дате найма.
 
 
-[![LastName, FirstName, Title и HireDate поля отображаются для каждого сотрудника](using-templatefields-in-the-gridview-control-cs/_static/image8.png)](using-templatefields-in-the-gridview-control-cs/_static/image7.png)
+[![Tон LastName, FirstName, Title и HireDate поля отображаются для каждого сотрудника](using-templatefields-in-the-gridview-control-cs/_static/image8.png)](using-templatefields-in-the-gridview-control-cs/_static/image7.png)
 
 **Рис. 3**: `LastName`, `FirstName`, `Title`, И `HireDate` отображаются поля для каждого сотрудника ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image9.png))
 
@@ -81,7 +81,7 @@ GridView представляет собой набор полей, которы
 Чтобы преобразовать существующий BoundField в поле TemplateField, щелкните ссылку Изменить столбцы смарт-теге элемента GridView, открывая диалоговое окно "поля". Выберите поле типа BoundField предназначенным для преобразования в списке в левом нижнем углу и затем щелкните ссылку «Convert это поле в TemplateField» в правом нижнем углу.
 
 
-[![Преобразование поля BoundField в поле TemplateField в диалоговом окне поля](using-templatefields-in-the-gridview-control-cs/_static/image11.png)](using-templatefields-in-the-gridview-control-cs/_static/image10.png)
+[![Cпреобразовать BoundField в поле TemplateField в диалоговом окне поля](using-templatefields-in-the-gridview-control-cs/_static/image11.png)](using-templatefields-in-the-gridview-control-cs/_static/image10.png)
 
 **Рис. 4**: Преобразование типа BoundField в поле TemplateField в диалоговом окне поля ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image12.png))
 
@@ -101,7 +101,7 @@ GridView представляет собой набор полей, которы
 Чтобы добавить его в конструкторе, щелкните ссылку Изменить шаблоны смарт-теге элемента GridView. Отображает интерфейс редактирования шаблона элемента GridView. В этом смарт-теге этого интерфейса является список шаблонов в GridView. Поскольку у нас имеется только один TemplateField на этом этапе, только шаблоны, использованные в раскрывающемся списке представлены эти шаблоны `FirstName` TemplateField вместе с `EmptyDataTemplate` и `PagerTemplate`. `EmptyDataTemplate` Шаблон, если указано, используется для отображения выходных данных элемента GridView в том случае, если данные, привязанные к элементу GridView; нет результатов `PagerTemplate`, если он указан, используется для отображения интерфейса разбиения на страницы для элемента управления GridView, который поддерживает разбиение по страницам.
 
 
-[![В конструкторе можно изменить шаблоны элемента GridView](using-templatefields-in-the-gridview-control-cs/_static/image14.png)](using-templatefields-in-the-gridview-control-cs/_static/image13.png)
+[![THE GridView шаблоны можно быть редактировать через конструктор](using-templatefields-in-the-gridview-control-cs/_static/image14.png)](using-templatefields-in-the-gridview-control-cs/_static/image13.png)
 
 **Рис. 5**: GridView шаблоны можно быть редактировать через конструктор ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image15.png))
 
@@ -109,7 +109,7 @@ GridView представляет собой набор полей, которы
 Чтобы отобразить также `LastName` в `FirstName` TemplateField перетащите элемент управления Label из области элементов в `FirstName` TemplateField `ItemTemplate` в GridView изменения шаблонов интерфейса.
 
 
-[![Добавить веб-элемент управления Label ItemTemplate FirstName TemplateField](using-templatefields-in-the-gridview-control-cs/_static/image17.png)](using-templatefields-in-the-gridview-control-cs/_static/image16.png)
+[![Aдд веб-элемент управления Label к ItemTemplate FirstName TemplateField](using-templatefields-in-the-gridview-control-cs/_static/image17.png)](using-templatefields-in-the-gridview-control-cs/_static/image16.png)
 
 **Рис. 6**: Добавить веб-элемент управления Label к `FirstName` TemplateField ItemTemplate ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image18.png))
 
@@ -117,7 +117,7 @@ GridView представляет собой набор полей, которы
 На этом этапе содержит элемент управления Label Web, добавленный TemplateField его `Text` , имеющим значение «Label». Нам нужно изменить таким образом, чтобы это свойство привязано к значению `LastName` поле данных. Для выполнения этого щелкнуть смарт-тега элемента управления Label и выберите пункт Edit DataBindings.
 
 
-[![Выберите параметр "Изменить" Привязка данных из смарт-тега метки](using-templatefields-in-the-gridview-control-cs/_static/image20.png)](using-templatefields-in-the-gridview-control-cs/_static/image19.png)
+[![CВыберите параметр DataBindings изменить метки смарт-теге](using-templatefields-in-the-gridview-control-cs/_static/image20.png)](using-templatefields-in-the-gridview-control-cs/_static/image19.png)
 
 **Рис. 7**: Выберите Редактирование привязок данных с смарт-тега метки ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image21.png))
 
@@ -125,7 +125,7 @@ GridView представляет собой набор полей, которы
 Откроется диалоговое окно Привязка данных. Отсюда можно выбрать свойство участвовать в привязку данных из списка слева и выберите поле для привязки данных в раскрывающемся списке справа. Выберите `Text` в левом и `LastName` справа и нажмите кнопку ОК.
 
 
-[![Привязки свойства Text к полю данных LastName](using-templatefields-in-the-gridview-control-cs/_static/image23.png)](using-templatefields-in-the-gridview-control-cs/_static/image22.png)
+[![BIND свойства Text к полю данных LastName](using-templatefields-in-the-gridview-control-cs/_static/image23.png)](using-templatefields-in-the-gridview-control-cs/_static/image22.png)
 
 **Рис. 8**: Привязать `Text` свойства `LastName` поля данных ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image24.png))
 
@@ -137,7 +137,7 @@ GridView представляет собой набор полей, которы
 Отвлекитесь и просмотреть эту страницу через обозреватель. Как вы видите, GridView по-прежнему имеет четыре столбца; Тем не менее `FirstName` теперь стоят *оба* `FirstName` и `LastName` значений полей данных.
 
 
-[![FirstName и LastName значения отображаются в одном столбце](using-templatefields-in-the-gridview-control-cs/_static/image26.png)](using-templatefields-in-the-gridview-control-cs/_static/image25.png)
+[![BДру FirstName и LastName значения отображаются в виде одного столбца](using-templatefields-in-the-gridview-control-cs/_static/image26.png)](using-templatefields-in-the-gridview-control-cs/_static/image25.png)
 
 **Рис. 9**: Как `FirstName` и `LastName` значения отображаются в одном столбце ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image27.png))
 
@@ -148,7 +148,7 @@ GridView представляет собой набор полей, которы
 [!code-aspx[Main](using-templatefields-in-the-gridview-control-cs/samples/sample4.aspx)]
 
 
-[![Первый и фамилии каждого сотрудника отображаются в одном столбце](using-templatefields-in-the-gridview-control-cs/_static/image29.png)](using-templatefields-in-the-gridview-control-cs/_static/image28.png)
+[![EПервый и фамилии сотрудника ACH отображаются в одном столбце](using-templatefields-in-the-gridview-control-cs/_static/image29.png)](using-templatefields-in-the-gridview-control-cs/_static/image28.png)
 
 **Рис. 10**: Первый и фамилии каждого сотрудника отображаются в одном столбце ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image30.png))
 
@@ -160,7 +160,7 @@ GridView представляет собой набор полей, которы
 Для этого сначала преобразуйте `HiredDate` BoundField в поле TemplateField. Просто перейдите к смарт-теге элемента GridView и щелкните ссылку Изменить столбцы, открывая диалоговое окно "поля". Выберите `HiredDate` BoundField и нажмите кнопку «Преобразовать это поле в TemplateField.»
 
 
-[![Преобразовать HiredDate BoundField в поле TemplateField](using-templatefields-in-the-gridview-control-cs/_static/image32.png)](using-templatefields-in-the-gridview-control-cs/_static/image31.png)
+[![Cпреобразовать HiredDate BoundField в TemplateField](using-templatefields-in-the-gridview-control-cs/_static/image32.png)](using-templatefields-in-the-gridview-control-cs/_static/image31.png)
 
 **Рис. 11**: Преобразовать `HiredDate` BoundField в поля TemplateField ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image33.png))
 
@@ -170,7 +170,7 @@ GridView представляет собой набор полей, которы
 Чтобы заменить текст элемента управления календарем, измените шаблон путем удаления метки и добавления элемента управления календаря. В конструкторе щелкните Изменить шаблоны смарт-теге элемента GridView и выберите `HireDate` TemplateField `ItemTemplate` из раскрывающегося списка. Затем удалите элемент управления Label и перетащите элемент управления календаря с панели инструментов в интерфейс редактирования шаблона.
 
 
-[![Добавьте элемент управления "Календарь" для HireDate TemplateField ItemTemplate](using-templatefields-in-the-gridview-control-cs/_static/image35.png)](using-templatefields-in-the-gridview-control-cs/_static/image34.png)
+[![Aдд элемент управления "Календарь" для ItemTemplate поля HireDate TemplateField](using-templatefields-in-the-gridview-control-cs/_static/image35.png)](using-templatefields-in-the-gridview-control-cs/_static/image34.png)
 
 **Рис. 12**: Добавьте элемент управления "Календарь" для `HireDate` TemplateField `ItemTemplate` ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image36.png))
 
@@ -180,7 +180,7 @@ GridView представляет собой набор полей, которы
 В смарт-тега элемента управления Calendar выберите пункт Edit DataBindings. Затем привяжите `SelectedDate` и `VisibleDate` свойства `HiredDate` поля данных.
 
 
-[![Привязка свойства SelectedDate и VisibleDate к полю данных HiredDate](using-templatefields-in-the-gridview-control-cs/_static/image38.png)](using-templatefields-in-the-gridview-control-cs/_static/image37.png)
+[![BIND SelectedDate и VisibleDate свойства к полю данных HiredDate](using-templatefields-in-the-gridview-control-cs/_static/image38.png)](using-templatefields-in-the-gridview-control-cs/_static/image37.png)
 
 **Рис. 13**: Привязать `SelectedDate` и `VisibleDate` свойства `HiredDate` поля данных ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image39.png))
 
@@ -192,7 +192,7 @@ GridView представляет собой набор полей, которы
 При просмотре страницы в браузере, в календаре теперь Показывать дату приема сотрудника и выбирает этой определенной даты.
 
 
-[![HiredDate сотрудника отображается в элементе управления Calendar](using-templatefields-in-the-gridview-control-cs/_static/image41.png)](using-templatefields-in-the-gridview-control-cs/_static/image40.png)
+[![THiredDate HE сотрудника отображается в элементе управления Calendar](using-templatefields-in-the-gridview-control-cs/_static/image41.png)](using-templatefields-in-the-gridview-control-cs/_static/image40.png)
 
 **Рис. 14**: Сотрудника `HiredDate` отображается в элементе управления Calendar ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image42.png))
 
@@ -226,7 +226,7 @@ GridView представляет собой набор полей, которы
 Чтобы использовать этот метод необходимо вызвать из TemplateField в GridView, используя синтаксис привязки данных. Начните с добавления нового поля TemplateField к GridView, щелкнув ссылку Изменить столбцы в смарт-теге элемента GridView и Добавление нового поля TemplateField.
 
 
-[![Добавление нового поля TemplateField GridView](using-templatefields-in-the-gridview-control-cs/_static/image44.png)](using-templatefields-in-the-gridview-control-cs/_static/image43.png)
+[![Aдд нового поля TemplateField к GridView](using-templatefields-in-the-gridview-control-cs/_static/image44.png)](using-templatefields-in-the-gridview-control-cs/_static/image43.png)
 
 **Рис. 15**: Добавление нового поля TemplateField к GridView ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image45.png))
 
@@ -252,7 +252,7 @@ GridView представляет собой набор полей, которы
 Рис. 16 показаны результаты всей работы, выполненной работы в браузере.
 
 
-[![Отображается число дней, сотрудник провел на работе](using-templatefields-in-the-gridview-control-cs/_static/image47.png)](using-templatefields-in-the-gridview-control-cs/_static/image46.png)
+[![TЧисло дней сотрудник провел на работе он отображается](using-templatefields-in-the-gridview-control-cs/_static/image47.png)](using-templatefields-in-the-gridview-control-cs/_static/image46.png)
 
 **Рис. 16**: Число дней, сотрудник провел на работе отображается ([Просмотр полноразмерного изображения](using-templatefields-in-the-gridview-control-cs/_static/image48.png))
 

@@ -8,18 +8,18 @@ ms.date: 08/08/2011
 ms.assetid: b3fb4480-0f41-495b-add6-163ca92dc8a3
 msc.legacyurl: /web-forms/overview
 msc.type: book
-ms.openlocfilehash: 0c29a844bd227a79e6df5231e0903129e306742e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 4b38d6b54f53508f7b568207fe7f1a624a7af5f3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023671"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402275"
 ---
-<a name="aspnet-web-forms-guidance"></a>Веб-форм ASP.NET рекомендации
-====================
+# <a name="aspnet-web-forms-guidance"></a>Веб-форм ASP.NET рекомендации
+
 - [Начало работы](getting-started/index.md)
 
-    - [Начало работы с веб-формами ASP.NET 4.5 и Visual Studio 2013](getting-started/getting-started-with-aspnet-45-web-forms/index.md)
+    - [Начало работы с веб-формами ASP.NET 4.5 и Visual Studio 2013](getting-started/getting-started-with-aspnet-45-web-forms/index.md)
 
         - [Начало работы с веб-формами и Visual Studio](getting-started/getting-started-with-aspnet-45-web-forms/introduction-and-overview.md)
         - [Создание проекта](getting-started/getting-started-with-aspnet-45-web-forms/create-the-project.md)
@@ -31,22 +31,22 @@ ms.locfileid: "57023671"
         - [Членство и администрирование](getting-started/getting-started-with-aspnet-45-web-forms/membership-and-administration.md)
         - [Маршрутизация URL-адресов](getting-started/getting-started-with-aspnet-45-web-forms/url-routing.md)
         - [Обработка ошибок ASP.NET](getting-started/getting-started-with-aspnet-45-web-forms/aspnet-error-handling.md)
-    - [Создание простой страницы веб-форм в Visual Studio 2013](getting-started/creating-a-basic-web-forms-page.md)
-    - [Редактирование кода в веб-формах ASP.NET в Visual Studio 2013](getting-started/code-editing-in-web-forms-pages.md)
-    - [Использование инспектора страниц для Visual Studio 2012 в веб-формах ASP.NET](getting-started/using-page-inspector-in-a-visual-studio-11-beta-web-forms-project.md)
-    - [Практические занятия по Visual Studio 2012](getting-started/hands-on-labs/index.md)
+    - [Создание простой страницы веб-форм в Visual Studio 2013](getting-started/creating-a-basic-web-forms-page.md)
+    - [Редактирование кода в веб-формах ASP.NET в Visual Studio 2013](getting-started/code-editing-in-web-forms-pages.md)
+    - [Использование инспектора страниц для Visual Studio 2012 в веб-формах ASP.NET](getting-started/using-page-inspector-in-a-visual-studio-11-beta-web-forms-project.md)
+    - [Практические занятия по Visual Studio 2012](getting-started/hands-on-labs/index.md)
 
-        - [Новые возможности ASP.NET и веб-разработки в Visual Studio 2012](getting-started/hands-on-labs/whats-new-in-aspnet-and-web-development-in-visual-studio-2012.md)
-        - [Новые возможности веб-форм в ASP.NET 4.5](getting-started/hands-on-labs/whats-new-in-web-forms-in-aspnet-45.md)
-        - [Использование инспектора страниц в Visual Studio 2012](getting-started/hands-on-labs/using-page-inspector-in-visual-studio-2012.md)
+        - [Новые возможности ASP.NET и веб-разработки в Visual Studio 2012](getting-started/hands-on-labs/whats-new-in-aspnet-and-web-development-in-visual-studio-2012.md)
+        - [Новые возможности веб-форм в ASP.NET 4.5](getting-started/hands-on-labs/whats-new-in-web-forms-in-aspnet-45.md)
+        - [Использование инспектора страниц в Visual Studio 2012](getting-started/hands-on-labs/using-page-inspector-in-visual-studio-2012.md)
 - [Работа с данными](presenting-and-managing-data/index.md)
 
-    - [Привязка моделей и веб-форм в Visual Studio 2013](presenting-and-managing-data/model-binding/index.md)
+    - [Привязка моделей и веб-формы в Visual Studio 2013](presenting-and-managing-data/model-binding/index.md)
 
         - [Извлечение и отображение данных](presenting-and-managing-data/model-binding/retrieving-data.md)
         - [Обновление, удаление и создание данных](presenting-and-managing-data/model-binding/updating-deleting-and-creating-data.md)
         - [Сортировка, разбиение по страницам и фильтрация данных](presenting-and-managing-data/model-binding/sorting-paging-and-filtering-data.md)
-        - [Интеграция пользовательского интерфейса JQuery для выбора дат](presenting-and-managing-data/model-binding/integrating-jquery-ui.md)
+        - [Интеграция средства для выбора дат в пользовательском интерфейсе JQuery](presenting-and-managing-data/model-binding/integrating-jquery-ui.md)
         - [Использование строковых значений запросов для фильтрации данных](presenting-and-managing-data/model-binding/using-query-string-values-to-retrieve-data.md)
         - [Добавление уровня бизнес-логики](presenting-and-managing-data/model-binding/adding-business-logic-layer.md)
 - [Безопасность, проверка подлинности и авторизация](security/index.md)
@@ -55,12 +55,12 @@ ms.locfileid: "57023671"
     - [Создание приложения веб-форм ASP.NET с двухфакторной проверкой подлинности по SMS (C#)](security/create-an-aspnet-web-forms-app-with-sms-two-factor-authentication.md)
 - [Производительность](performance-and-caching/index.md)
 
-    - [Использование асинхронных методов в ASP.NET 4.5](performance-and-caching/using-asynchronous-methods-in-aspnet-45.md)
+    - [Использование асинхронных методов в ASP.NET 4.5](performance-and-caching/using-asynchronous-methods-in-aspnet-45.md)
 - [Развертывание](deployment/index.md)
 
     - [Веб-развертывание ASP.NET с помощью Visual Studio](deployment/visual-studio-web-deployment/index.md)
 
-        - [Введение](deployment/visual-studio-web-deployment/introduction.md)
+        - [Вступление](deployment/visual-studio-web-deployment/introduction.md)
         - [Подготовка к развертыванию базы данных](deployment/visual-studio-web-deployment/preparing-databases.md)
         - [Преобразования файла Web.config](deployment/visual-studio-web-deployment/web-config-transformations.md)
         - [Свойства проекта](deployment/visual-studio-web-deployment/project-properties.md)
@@ -72,12 +72,12 @@ ms.locfileid: "57023671"
         - [Развертывание командной строки](deployment/visual-studio-web-deployment/command-line-deployment.md)
         - [Развертывание дополнительных файлов](deployment/visual-studio-web-deployment/deploying-extra-files.md)
         - [Устранение неполадок](deployment/visual-studio-web-deployment/troubleshooting.md)
-    - [ASP.NET 4. Введение в корпоративное развертывание](deployment/deploying-web-applications-in-enterprise-scenarios/index.md)
+    - [ASP.NET 4. Введение в корпоративное развертывание](deployment/deploying-web-applications-in-enterprise-scenarios/index.md)
 
-        - [Сценарии корпоративных развертываний веб-приложений с помощью Visual Studio 2010](deployment/deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md)
-        - [Корпоративное веб-развертывание: Обзор сценария](deployment/deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
-        - [Управление жизненным циклом приложения: От разработки к производству](deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
-    - [ASP.NET 4. Введение в корпоративное развертывание, часть 1](deployment/web-deployment-in-the-enterprise/index.md)
+        - [Сценарии корпоративных развертываний веб-приложений с помощью Visual Studio 2010](deployment/deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md)
+        - [Корпоративное веб-развертывание. Общие сведения о сценарии](deployment/deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
+        - [Управление жизненным циклом приложения: от разработки до рабочей среды](deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
+    - [ASP.NET 4. Введение в корпоративное развертывание, часть 1](deployment/web-deployment-in-the-enterprise/index.md)
 
         - [Корпоративное веб-развертывание](deployment/web-deployment-in-the-enterprise/web-deployment-in-the-enterprise.md)
         - [Решение диспетчера контактов](deployment/web-deployment-in-the-enterprise/the-contact-manager-solution.md)
@@ -90,20 +90,20 @@ ms.locfileid: "57023671"
         - [Развертывание проектов баз данных](deployment/web-deployment-in-the-enterprise/deploying-database-projects.md)
         - [Создание и запуск командного файла развертывания](deployment/web-deployment-in-the-enterprise/creating-and-running-a-deployment-command-file.md)
         - [Установка веб-пакетов вручную](deployment/web-deployment-in-the-enterprise/manually-installing-web-packages.md)
-    - [ASP.NET 4. Корпоративное развертывание, часть 2. Настройка серверов](deployment/configuring-server-environments-for-web-deployment/index.md)
+    - [ASP.NET 4. Корпоративное развертывание, часть 2. Настройка серверов](deployment/configuring-server-environments-for-web-deployment/index.md)
 
         - [Настройка серверных сред для веб-развертывания](deployment/configuring-server-environments-for-web-deployment/configuring-server-environments-for-web-deployment.md)
         - [Выбор правильного подхода для веб-развертывания](deployment/configuring-server-environments-for-web-deployment/choosing-the-right-approach-to-web-deployment.md)
-        - [Сценарий. Настройка среды тестирования для веб-развертывания](deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-test-environment-for-web-deployment.md)
-        - [Сценарий. Настройка промежуточной среды для веб-развертывания](deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-staging-environment-for-web-deployment.md)
-        - [Сценарий. Настройке рабочей среды для веб-развертывания](deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment.md)
+        - [Сценарий: настройка среды тестирования для веб-развертывания](deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-test-environment-for-web-deployment.md)
+        - [Сценарий: настройка промежуточной среды для веб-развертывания](deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-staging-environment-for-web-deployment.md)
+        - [Сценарий: настройка рабочей среды для веб-развертывания](deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment.md)
         - [Настройка веб-сервера для публикации веб-развертывания (удаленный агент)](deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-remote-agent.md)
         - [Настройка веб-сервера для публикации веб-развертывания (обработчик веб-развертывания)](deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-web-deploy-handler.md)
         - [Настройка веб-сервера для публикации веб-развертывания (автономное развертывание)](deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-offline-deployment.md)
         - [Настройка сервера базы данных для публикации веб-развертывания](deployment/configuring-server-environments-for-web-deployment/configuring-a-database-server-for-web-deploy-publishing.md)
         - [Создание фермы серверов с помощью Web Farm Framework](deployment/configuring-server-environments-for-web-deployment/creating-a-server-farm-with-the-web-farm-framework.md)
         - [Настройка свойств развертывания для целевой среды](deployment/configuring-server-environments-for-web-deployment/configuring-deployment-properties-for-a-target-environment.md)
-    - [ASP.NET 4. Корпоративное развертывание, часть 3. Настройка TFS](deployment/configuring-team-foundation-server-for-web-deployment/index.md)
+    - [ASP.NET 4. Корпоративное развертывание, часть 3. Настройка TFS](deployment/configuring-team-foundation-server-for-web-deployment/index.md)
 
         - [Настройка Team Foundation Server для веб-развертывания](deployment/configuring-team-foundation-server-for-web-deployment/configuring-team-foundation-server-for-web-deployment.md)
         - [Создание командного проекта в Team Foundation Server](deployment/configuring-team-foundation-server-for-web-deployment/creating-a-team-project-in-tfs.md)
@@ -112,7 +112,7 @@ ms.locfileid: "57023671"
         - [Создание определения сборки, поддерживающего развертывание](deployment/configuring-team-foundation-server-for-web-deployment/creating-a-build-definition-that-supports-deployment.md)
         - [Развертывание конкретной сборки](deployment/configuring-team-foundation-server-for-web-deployment/deploying-a-specific-build.md)
         - [Настройка разрешений для развертывания командной сборки](deployment/configuring-team-foundation-server-for-web-deployment/configuring-permissions-for-team-build-deployment.md)
-    - [ASP.NET 4. Корпоративное развертывание, часть 4. Дополнительные разделы](deployment/advanced-enterprise-web-deployment/index.md)
+    - [ASP.NET 4. Корпоративное развертывание, часть 4. Дополнительные разделы](deployment/advanced-enterprise-web-deployment/index.md)
 
         - [Расширенное корпоративное веб-развертывание](deployment/advanced-enterprise-web-deployment/advanced-enterprise-web-deployment.md)
         - [Выполнение имитации развертывания](deployment/advanced-enterprise-web-deployment/performing-a-what-if-deployment.md)
@@ -126,37 +126,37 @@ ms.locfileid: "57023671"
 - [Дополнительно](advanced/index.md)
 
     - [Устойчивость подключений и перехват команд в веб-формах ASP.NET](advanced/aspnet-web-forms-connection-resiliency-and-command-interception.md)
-- [Прежние версии — начало работы](older-versions-getting-started/index.md)
+- [Прежние версии — начало работы](older-versions-getting-started/index.md)
 
-    - [ASP.NET 4. Tailspin Spyworks](older-versions-getting-started/tailspin-spyworks/index.md)
+    - [ASP.NET 4. Tailspin Spyworks](older-versions-getting-started/tailspin-spyworks/index.md)
 
-        - [Часть 1. Файл -> Создать проект](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-1.md)
+        - [Часть 1. "Файл -> Создать проект"](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-1.md)
         - [Часть 2. Уровень доступа к данным](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-2.md)
-        - [Часть 3. Макет и меню категории](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-3.md)
-        - [Часть 4. Список продуктов](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-4.md)
-        - [Часть 5. Бизнес-логики](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-5.md)
-        - [Часть 6. Членства ASP.NET](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-6.md)
-        - [Часть 7. Добавление функций](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-7.md)
-        - [Часть 8. Последние страницы, обработка исключений и заключение](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-8.md)
-    - [ASP.NET 4. Начало работы с Entity Framework 4 и веб-формами](older-versions-getting-started/getting-started-with-ef/index.md)
+        - [Часть 3. Макет и меню категории](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-3.md)
+        - [Часть 4. Публикация продуктов](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-4.md)
+        - [Часть 5. Бизнес-логика](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-5.md)
+        - [Часть 6. Членство в ASP.NET](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-6.md)
+        - [Часть 7. Добавление возможностей](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-7.md)
+        - [Часть 8. Последние страницы, обработка исключений и заключение](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-8.md)
+    - [ASP.NET 4. Начало работы с Entity Framework 4 и веб-формами](older-versions-getting-started/getting-started-with-ef/index.md)
 
-        - [Начало работы с Entity Framework 4.0 Database First](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md)
-        - [Начало работы с Entity Framework 4.0 Database First. Часть 2](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-2.md)
-        - [Начало работы с Entity Framework 4.0 Database First. Часть 3](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-3.md)
-        - [Начало работы с Entity Framework 4.0 Database First. Часть 4](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-4.md)
-        - [Начало работы с Entity Framework 4.0 Database First. Часть 5](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-5.md)
-        - [Начало работы с Entity Framework 4.0 Database First. Часть 6](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-6.md)
-        - [Начало работы с Entity Framework 4.0 Database First. Часть 7](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-7.md)
-        - [Начало работы с Entity Framework 4.0 Database First. Часть 8](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-8.md)
-    - [ASP.NET 4. Продолжение работы с Entity Framework 4 и веб-формами](older-versions-getting-started/continuing-with-ef/index.md)
+        - [Начало работы с Entity Framework 4.0 Database First](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md)
+        - [Начало работы с Entity Framework 4.0 Database First. Часть 2](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-2.md)
+        - [Начало работы с Entity Framework 4.0 Database First. Часть 3](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-3.md)
+        - [Начало работы с Entity Framework 4.0 Database First. Часть 4](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-4.md)
+        - [Начало работы с Entity Framework 4.0 Database First. Часть 5](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-5.md)
+        - [Начало работы с Entity Framework 4.0 Database First. Часть 6](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-6.md)
+        - [Начало работы с Entity Framework 4.0 Database First. Часть 7](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-7.md)
+        - [Начало работы с Entity Framework 4.0 Database First. Часть 8](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-8.md)
+    - [ASP.NET 4. Продолжение работы с Entity Framework 4 и веб-формами](older-versions-getting-started/continuing-with-ef/index.md)
 
-        - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 1: Приступая к работе](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
-        - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 2: Добавление уровня бизнес-логики и модульных тестов](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
-        - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 3: Сортировка и фильтрация](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
-        - [Обработка параллелизма с помощью Entity Framework 4.0 в ASP.NET 4](older-versions-getting-started/continuing-with-ef/handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application.md)
-        - [Повышение производительности с помощью Entity Framework 4.0 в ASP.NET 4](older-versions-getting-started/continuing-with-ef/maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application.md)
+        - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 1. Начало работы](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
+        - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 2. Добавление уровня бизнес-логики и модульных тестов](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
+        - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 3. Сортировка и фильтрация](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
+        - [Обработка параллелизма с помощью Entity Framework 4.0 в ASP.NET 4](older-versions-getting-started/continuing-with-ef/handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application.md)
+        - [Повышение производительности с помощью Entity Framework 4.0 в ASP.NET 4](older-versions-getting-started/continuing-with-ef/maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application.md)
         - [Новые возможности .NET Framework 4.0](older-versions-getting-started/continuing-with-ef/what-s-new-in-the-entity-framework-4.md)
-    - [ASP.NET 4. Веб-развертывание в Visual Studio с помощью SQL Server Compact](older-versions-getting-started/deployment-to-a-hosting-provider/index.md)
+    - [ASP.NET 4. Веб-развертывание в Visual Studio с помощью SQL Server Compact](older-versions-getting-started/deployment-to-a-hosting-provider/index.md)
 
         - [Веб-развертывание в Visual Studio с помощью SQL Server Compact. Введение](older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-introduction-1-of-12.md)
         - [Веб-развертывание в Visual Studio с помощью SQL Server Compact. Развертывание баз данных SQL Server Compact](older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12.md)
@@ -170,7 +170,7 @@ ms.locfileid: "57023671"
         - [Веб-развертывание в Visual Studio с помощью SQL Server Compact. Переход на SQL Server](older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-migrating-to-sql-server-10-of-12.md)
         - [Веб-развертывание в Visual Studio с помощью SQL Server Compact. Развертывание обновления базы данных SQL Server](older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-a-sql-server-database-update-11-of-12.md)
         - [Веб-развертывание в Visual Studio с помощью SQL Server Compact. Устранение неполадок](older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-creating-and-installing-deployment-packages-12-of-12.md)
-    - [ASP.NET 3.5. AJAX](older-versions-getting-started/aspnet-ajax/index.md)
+    - [ASP.NET 3.5. AJAX](older-versions-getting-started/aspnet-ajax/index.md)
 
         - [Общие сведения о частичных обновлениях страниц с помощью ASP.NET AJAX](older-versions-getting-started/aspnet-ajax/understanding-partial-page-updates-with-asp-net-ajax.md)
         - [Общие сведения о триггерах UpdatePanel ASP.NET AJAX](older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-updatepanel-triggers.md)
@@ -178,29 +178,29 @@ ms.locfileid: "57023671"
         - [Общие сведения о локализации ASP.NET AJAX](older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-localization.md)
         - [Общие сведения о веб-службах ASP.NET AJAX](older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-web-services.md)
         - [Общие сведения о возможностях отладки ASP.NET AJAX](older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-debugging-capabilities.md)
-    - [ASP.NET 3.5. Главные страницы веб-форм](older-versions-getting-started/master-pages/index.md)
+    - [ASP.NET 3.5. Эталонные страницы веб-форм](older-versions-getting-started/master-pages/index.md)
 
-        - [Создание макета сайта с помощью главных страниц (C#)](older-versions-getting-started/master-pages/creating-a-site-wide-layout-using-master-pages-cs.md)
+        - [Создание макета сайта с помощью эталонных страниц (C#)](older-versions-getting-started/master-pages/creating-a-site-wide-layout-using-master-pages-cs.md)
         - [Несколько элементов управления ContentPlaceHolder и содержимое по умолчанию (C#)](older-versions-getting-started/master-pages/multiple-contentplaceholders-and-default-content-cs.md)
-        - [Указание названия, метатегов и других заголовков HTML на главной странице (C#)](older-versions-getting-started/master-pages/specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-cs.md)
-        - [URL-адреса на главных страницах (C#)](older-versions-getting-started/master-pages/urls-in-master-pages-cs.md)
+        - [Указание названия, метатегов и других заголовков HTML на эталонной странице (C#)](older-versions-getting-started/master-pages/specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-cs.md)
+        - [URL-адреса на эталонных страницах (C#)](older-versions-getting-started/master-pages/urls-in-master-pages-cs.md)
         - [Именование идентификатора элемента управления на страницах содержимого (C#)](older-versions-getting-started/master-pages/control-id-naming-in-content-pages-cs.md)
-        - [Взаимодействие с главной страницей на странице содержимого (C#)](older-versions-getting-started/master-pages/interacting-with-the-master-page-from-the-content-page-cs.md)
-        - [Взаимодействие со страницей содержимого на главной странице (C#)](older-versions-getting-started/master-pages/interacting-with-the-content-page-from-the-master-page-cs.md)
-        - [Главные страницы и ASP.NET AJAX (C#)](older-versions-getting-started/master-pages/master-pages-and-asp-net-ajax-cs.md)
-        - [Программное указание главной страницы (C#)](older-versions-getting-started/master-pages/specifying-the-master-page-programmatically-cs.md)
-        - [Вложенные главные страницы (C#)](older-versions-getting-started/master-pages/nested-master-pages-cs.md)
-        - [Создание макета сайта с помощью главных страниц (VB)](older-versions-getting-started/master-pages/creating-a-site-wide-layout-using-master-pages-vb.md)
+        - [Взаимодействие с эталонной страницей на странице содержимого (C#)](older-versions-getting-started/master-pages/interacting-with-the-master-page-from-the-content-page-cs.md)
+        - [Взаимодействие со страницей содержимого на эталонной странице (C#)](older-versions-getting-started/master-pages/interacting-with-the-content-page-from-the-master-page-cs.md)
+        - [Эталонные страницы и ASP.NET AJAX (C#)](older-versions-getting-started/master-pages/master-pages-and-asp-net-ajax-cs.md)
+        - [Программное указание эталонной страницы (C#)](older-versions-getting-started/master-pages/specifying-the-master-page-programmatically-cs.md)
+        - [Вложенные эталонные страницы (C#)](older-versions-getting-started/master-pages/nested-master-pages-cs.md)
+        - [Создание макета сайта с помощью эталонных страниц (VB)](older-versions-getting-started/master-pages/creating-a-site-wide-layout-using-master-pages-vb.md)
         - [Несколько элементов управления ContentPlaceHolder и содержимое по умолчанию (VB)](older-versions-getting-started/master-pages/multiple-contentplaceholders-and-default-content-vb.md)
-        - [Указание названия, метатегов и других заголовков HTML на главной странице (VB)](older-versions-getting-started/master-pages/specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb.md)
-        - [URL-адреса на главных страницах (VB)](older-versions-getting-started/master-pages/urls-in-master-pages-vb.md)
+        - [Указание названия, метатегов и других заголовков HTML на эталонной странице (VB)](older-versions-getting-started/master-pages/specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb.md)
+        - [URL-адреса на эталонных страницах (VB)](older-versions-getting-started/master-pages/urls-in-master-pages-vb.md)
         - [Именование идентификатора элемента управления на страницах содержимого (VB)](older-versions-getting-started/master-pages/control-id-naming-in-content-pages-vb.md)
-        - [Взаимодействие с главной страницей на странице содержимого (VB)](older-versions-getting-started/master-pages/interacting-with-the-master-page-from-the-content-page-vb.md)
-        - [Взаимодействие со страницей содержимого на главной странице (VB)](older-versions-getting-started/master-pages/interacting-with-the-content-page-from-the-master-page-vb.md)
-        - [Главные страницы и ASP.NET AJAX (VB)](older-versions-getting-started/master-pages/master-pages-and-asp-net-ajax-vb.md)
-        - [Программное указание главной страницы (VB)](older-versions-getting-started/master-pages/specifying-the-master-page-programmatically-vb.md)
-        - [Вложенные главные страницы (VB)](older-versions-getting-started/master-pages/nested-master-pages-vb.md)
-    - [Развертывание проектов веб-сайтов в Visual Studio 2008 и более ранних версиях](older-versions-getting-started/deploying-web-site-projects/index.md)
+        - [Взаимодействие с эталонной страницей на странице содержимого (VB)](older-versions-getting-started/master-pages/interacting-with-the-master-page-from-the-content-page-vb.md)
+        - [Взаимодействие со страницей содержимого на эталонной странице (VB)](older-versions-getting-started/master-pages/interacting-with-the-content-page-from-the-master-page-vb.md)
+        - [Эталонные страницы и ASP.NET AJAX (VB)](older-versions-getting-started/master-pages/master-pages-and-asp-net-ajax-vb.md)
+        - [Программное указание эталонной страницы (VB)](older-versions-getting-started/master-pages/specifying-the-master-page-programmatically-vb.md)
+        - [Вложенные эталонные страницы (VB)](older-versions-getting-started/master-pages/nested-master-pages-vb.md)
+    - [Развертывание проектов веб-сайтов в Visual Studio 2008 и более ранних версиях](older-versions-getting-started/deploying-web-site-projects/index.md)
 
         - [Варианты размещения в ASP.NET (C#)](older-versions-getting-started/deploying-web-site-projects/asp-net-hosting-options-cs.md)
         - [Определение подлежащих развертыванию файлов (C#)](older-versions-getting-started/deploying-web-site-projects/determining-what-files-need-to-be-deployed-cs.md)
@@ -283,11 +283,11 @@ ms.locfileid: "57023671"
         - [Заполнение списка с помощью CascadingDropDown (C#)](ajax-control-toolkit/cascadingdropdown/filling-a-list-using-cascadingdropdown-cs.md)
         - [Использование CascadingDropDown с базой данных (C#)](ajax-control-toolkit/cascadingdropdown/using-cascadingdropdown-with-a-database-cs.md)
         - [Предустановка записей списка с помощью CascadingDropDown (C#)](ajax-control-toolkit/cascadingdropdown/presetting-list-entries-with-cascadingdropdown-cs.md)
-        - [Использование автоматической обратной передачи с помощью с CascadingDropDown (C#)](ajax-control-toolkit/cascadingdropdown/using-auto-postback-with-cascadingdropdown-cs.md)
+        - [Использование автоматической обратной передачи с помощью CascadingDropDown (C#)](ajax-control-toolkit/cascadingdropdown/using-auto-postback-with-cascadingdropdown-cs.md)
         - [Заполнение списка с помощью CascadingDropDown (VB)](ajax-control-toolkit/cascadingdropdown/filling-a-list-using-cascadingdropdown-vb.md)
         - [Использование CascadingDropDown с базой данных (VB)](ajax-control-toolkit/cascadingdropdown/using-cascadingdropdown-with-a-database-vb.md)
         - [Предустановка записей списка с помощью CascadingDropDown (VB)](ajax-control-toolkit/cascadingdropdown/presetting-list-entries-with-cascadingdropdown-vb.md)
-        - [Использование автоматической обратной передачи с помощью с CascadingDropDown (VB)](ajax-control-toolkit/cascadingdropdown/using-auto-postback-with-cascadingdropdown-vb.md)
+        - [Использование автоматической обратной передачи с помощью CascadingDropDown (VB)](ajax-control-toolkit/cascadingdropdown/using-auto-postback-with-cascadingdropdown-vb.md)
     - [CollapsiblePanel](ajax-control-toolkit/collapsiblepanel/index.md)
 
         - [Свертывание и развертывание панели из кода JavaScript (C#)](ajax-control-toolkit/collapsiblepanel/collapsing-and-expanding-a-panel-from-javascript-cs.md)
@@ -346,8 +346,8 @@ ms.locfileid: "57023671"
         - [Создание взаимоисключающих флажков (VB)](ajax-control-toolkit/mutuallyexclusivecheckbox/creating-mutually-exclusive-checkboxes-vb.md)
     - [NoBot](ajax-control-toolkit/nobot/index.md)
 
-        - [Борьба с программами-роботами (C#)](ajax-control-toolkit/nobot/fighting-bots-cs.md)
-        - [Борьба с программами-роботами (VB)](ajax-control-toolkit/nobot/fighting-bots-vb.md)
+        - [Борьба с ботами (C#)](ajax-control-toolkit/nobot/fighting-bots-cs.md)
+        - [Борьба с ботами (VB)](ajax-control-toolkit/nobot/fighting-bots-vb.md)
     - [NumericUpDown](ajax-control-toolkit/numericupdown/index.md)
 
         - [Создание числового поля со стрелками "вверх/вниз" с помощью серверной веб-службы (C#)](ajax-control-toolkit/numericupdown/creating-a-numeric-up-down-control-with-a-web-service-backend-cs.md)
@@ -364,7 +364,7 @@ ms.locfileid: "57023671"
         - [Использование нескольких элементов управления Popup (VB)](ajax-control-toolkit/popup/using-multiple-popup-controls-vb.md)
         - [Обработка операций обратной передачи из элемента управления Popup с помощью элемента управления UpdatePanel (VB)](ajax-control-toolkit/popup/handling-postbacks-from-a-popup-control-with-an-updatepanel-vb.md)
         - [Обработка операций обратной передачи из элемента управления Popup без использования элемента управления UpdatePanel (VB)](ajax-control-toolkit/popup/handling-postbacks-from-a-popup-control-without-an-updatepanel-vb.md)
-    - [Rating](ajax-control-toolkit/rating/index.md)
+    - [Рейтинг](ajax-control-toolkit/rating/index.md)
 
         - [Создание элемента управления Rating (C#)](ajax-control-toolkit/rating/creating-a-rating-control-cs.md)
         - [Создание элемента управления Rating (VB)](ajax-control-toolkit/rating/creating-a-rating-control-vb.md)
@@ -388,14 +388,14 @@ ms.locfileid: "57023671"
         - [Использование элемента управления TextBoxWatermark с проверяющими элементами управления (VB)](ajax-control-toolkit/textboxwatermark/using-textboxwatermark-with-validation-controls-vb.md)
 - [Предыдущие версии. Доступ к данным](data-access/index.md)
 
-    - [Введение](data-access/introduction/index.md)
+    - [Вступление](data-access/introduction/index.md)
 
         - [Создание уровня доступа к данным (C#)](data-access/introduction/creating-a-data-access-layer-cs.md)
         - [Создание уровня бизнес-логики (C#)](data-access/introduction/creating-a-business-logic-layer-cs.md)
-        - [Главные страницы и структура навигации веб-сайта (C#)](data-access/introduction/master-pages-and-site-navigation-cs.md)
+        - [Эталонные страницы и структура навигации веб-сайта (C#)](data-access/introduction/master-pages-and-site-navigation-cs.md)
         - [Создание уровня доступа к данным (VB)](data-access/introduction/creating-a-data-access-layer-vb.md)
         - [Создание уровня бизнес-логики (VB)](data-access/introduction/creating-a-business-logic-layer-vb.md)
-        - [Главные страницы и структура навигации веб-сайта (VB)](data-access/introduction/master-pages-and-site-navigation-vb.md)
+        - [Эталонные страницы и структура навигации веб-сайта (VB)](data-access/introduction/master-pages-and-site-navigation-vb.md)
     - [Базовые отчеты](data-access/basic-reporting/index.md)
 
         - [Отображение данных с помощью элемента управления ObjectDataSource (C#)](data-access/basic-reporting/displaying-data-with-the-objectdatasource-cs.md)
@@ -572,7 +572,7 @@ ms.locfileid: "57023671"
         - [Создание хранимых процедур и определяемых пользователем функций с помощью управляемого кода (VB)](data-access/advanced-data-access-scenarios/creating-stored-procedures-and-user-defined-functions-with-managed-code-vb.md)
 - [Предыдущие версии. Безопасность](older-versions-security/index.md)
 
-    - [ASP.NET 3.5. Общие сведения о безопасности](older-versions-security/introduction/index.md)
+    - [ASP.NET 3.5. Общие сведения о безопасности](older-versions-security/introduction/index.md)
 
         - [Общие сведения о безопасности и поддержка ASP.NET (C#)](older-versions-security/introduction/security-basics-and-asp-net-support-cs.md)
         - [Общие сведения о проверке подлинности на основе форм (C#)](older-versions-security/introduction/an-overview-of-forms-authentication-cs.md)
@@ -580,7 +580,7 @@ ms.locfileid: "57023671"
         - [Общие сведения о безопасности и поддержка ASP.NET (VB)](older-versions-security/introduction/security-basics-and-asp-net-support-vb.md)
         - [Общие сведения о проверке подлинности на основе форм (VB)](older-versions-security/introduction/an-overview-of-forms-authentication-vb.md)
         - [Настройка проверки подлинности на основе форм и дополнительные разделы (VB)](older-versions-security/introduction/forms-authentication-configuration-and-advanced-topics-vb.md)
-    - [ASP.NET 3.5. Членство](older-versions-security/membership/index.md)
+    - [ASP.NET 3.5. Членство](older-versions-security/membership/index.md)
 
         - [Создание схемы членства в SQL Server (C#)](older-versions-security/membership/creating-the-membership-schema-in-sql-server-cs.md)
         - [Создание учетных записей пользователей (C#)](older-versions-security/membership/creating-user-accounts-cs.md)
@@ -592,7 +592,7 @@ ms.locfileid: "57023671"
         - [Проверка учетных данных пользователей в хранилище авторизованных пользователей (VB)](older-versions-security/membership/validating-user-credentials-against-the-membership-user-store-vb.md)
         - [Авторизация на основе пользователей (VB)](older-versions-security/membership/user-based-authorization-vb.md)
         - [Сохранение дополнительных сведений о пользователе (VB)](older-versions-security/membership/storing-additional-user-information-vb.md)
-    - [ASP.NET 3.5. Роли](older-versions-security/roles/index.md)
+    - [ASP.NET 3.5. Роли](older-versions-security/roles/index.md)
 
         - [Создание ролей и управление ими (C#)](older-versions-security/roles/creating-and-managing-roles-cs.md)
         - [Назначение ролей пользователям (C#)](older-versions-security/roles/assigning-roles-to-users-cs.md)
@@ -600,7 +600,7 @@ ms.locfileid: "57023671"
         - [Создание ролей и управление ими (VB)](older-versions-security/roles/creating-and-managing-roles-vb.md)
         - [Назначение ролей пользователям (VB)](older-versions-security/roles/assigning-roles-to-users-vb.md)
         - [Авторизация на основе ролей (VB)](older-versions-security/roles/role-based-authorization-vb.md)
-    - [ASP.NET 3.5. Управление безопасностью](older-versions-security/admin/index.md)
+    - [ASP.NET 3.5. Управление безопасностью](older-versions-security/admin/index.md)
 
         - [Создание интерфейса для выбора одной учетной записи пользователя из многих (C#)](older-versions-security/admin/building-an-interface-to-select-one-user-account-from-many-cs.md)
         - [Восстановление и смена паролей (C#)](older-versions-security/admin/recovering-and-changing-passwords-cs.md)
@@ -608,13 +608,13 @@ ms.locfileid: "57023671"
         - [Создание интерфейса для выбора одной учетной записи пользователя из многих (VB)](older-versions-security/admin/building-an-interface-to-select-one-user-account-from-many-vb.md)
         - [Восстановление и смена паролей (VB)](older-versions-security/admin/recovering-and-changing-passwords-vb.md)
         - [Снятие блокировки и утверждение учетных записей пользователей (VB)](older-versions-security/admin/unlocking-and-approving-user-accounts-vb.md)
-- [Предыдущие версии — ASP.NET 2.0](moving-to-aspnet-20/index.md)
+- [Предыдущие версии — ASP.NET 2.0](moving-to-aspnet-20/index.md)
 
-    - [ Усовершенствования в Visual Studio 2005](moving-to-aspnet-20/improvements-in-visual-studio-2005.md)
-    - [Страничная модель ASP.NET 2.0](moving-to-aspnet-20/the-asp-net-2-0-page-model.md)
+    - [Усовершенствования в Visual Studio 2005](moving-to-aspnet-20/improvements-in-visual-studio-2005.md)
+    - [Страничная модель ASP.NET 2.0](moving-to-aspnet-20/the-asp-net-2-0-page-model.md)
     - [Серверные элементы управления](moving-to-aspnet-20/server-controls.md)
-    - [Главные страницы](moving-to-aspnet-20/master-pages.md)
-    - [Элементы управления источником данных ](moving-to-aspnet-20/data-source-controls.md)
+    - [Эталонные страницы](moving-to-aspnet-20/master-pages.md)
+    - [Элементы управления источником данных](moving-to-aspnet-20/data-source-controls.md)
     - [Элементы управления привязкой к данным](moving-to-aspnet-20/data-bound-controls.md)
     - [Кэширование](moving-to-aspnet-20/caching.md)
     - [Членство](moving-to-aspnet-20/membership.md)

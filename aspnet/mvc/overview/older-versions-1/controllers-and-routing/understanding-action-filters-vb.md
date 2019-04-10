@@ -8,18 +8,18 @@ ms.date: 10/16/2008
 ms.assetid: e83812f2-c53e-4a43-a7c1-d64c59ecf694
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/understanding-action-filters-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 0116306afdf21cb24a374013bb54ada54e5699ea
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bbedc11b9b1225b1047350c1c84a116ecef0c380
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036301"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59407410"
 ---
-<a name="understanding-action-filters-vb"></a>Общие сведения о фильтрах действий (VB)
-====================
+# <a name="understanding-action-filters-vb"></a>Общие сведения о фильтрах действий (VB)
+
 по [Microsoft](https://github.com/microsoft)
 
-[Загрузить PDF-файл](http://download.microsoft.com/download/e/f/3/ef3f2ff6-7424-48f7-bdaa-180ef64c3490/ASPNET_MVC_Tutorial_14_VB.pdf)
+[Скачать PDF](http://download.microsoft.com/download/e/f/3/ef3f2ff6-7424-48f7-bdaa-180ef64c3490/ASPNET_MVC_Tutorial_14_VB.pdf)
 
 > Цель данного руководства — объяснить фильтров действий. Фильтр операции — атрибут, который можно применить к действию контроллера--или всего контроллера--, изменяет способ, в котором выполняется действие.
 
@@ -49,7 +49,7 @@ ms.locfileid: "57036301"
 При многократном запуске `Index()` действие, введя URL-адрес/Data/индекса в адресную строку браузера и обновление кнопку несколько раз, вы увидите то же время на 10 секунд. Выходные данные `Index()` действие кэшируется на 10 секунд (см. рис. 1).
 
 
-[![Время кэширования](understanding-action-filters-vb/_static/image2.png)](understanding-action-filters-vb/_static/image1.png)
+[![Cпострадавший time](understanding-action-filters-vb/_static/image2.png)](understanding-action-filters-vb/_static/image1.png)
 
 **Рис 01**: Время ([Просмотр полноразмерного изображения](understanding-action-filters-vb/_static/image3.png))
 
@@ -107,7 +107,7 @@ ms.locfileid: "57036301"
 В листинге 2 `OnActionExecuting()`, `OnActionExecuted()`, `OnResultExecuting()`, и `OnResultExecuted()` вызывать все методы `Log()` метод. Имя метода и текущих данных маршрута передается `Log()` метод. `Log()` Метод записывает сообщение в окне вывода Visual Studio (см. рис. 2).
 
 
-[![Запись в окно вывода Visual Studio](understanding-action-filters-vb/_static/image5.png)](understanding-action-filters-vb/_static/image4.png)
+[![Writing в окне вывода Visual Studio](understanding-action-filters-vb/_static/image5.png)](understanding-action-filters-vb/_static/image4.png)
 
 **Рис. 02**: Запись в окно вывода Visual Studio ([Просмотр полноразмерного изображения](understanding-action-filters-vb/_static/image6.png))
 

@@ -8,15 +8,15 @@ ms.date: 06/05/2014
 ms.assetid: bf20f78d-ff91-48be-abd1-88e23dcc70ba
 msc.legacyurl: /web-api/overview/testing-and-debugging/unit-testing-with-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 915610e6646ebe86dd8f16f290ecabd36bf7f48d
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f2d60b977475e048a3a74aabff4adc768ee22baf
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57044411"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402652"
 ---
-<a name="unit-testing-aspnet-web-api-2"></a>Модульное тестирование ASP.NET Web API 2
-====================
+# <a name="unit-testing-aspnet-web-api-2"></a>Модульное тестирование ASP.NET Web API 2
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 [Скачать завершенный проект](https://code.msdn.microsoft.com/Unit-Testing-with-ASPNET-1374bc11)
@@ -29,14 +29,14 @@ ms.locfileid: "57044411"
 >
 > ## <a name="software-versions-used-in-the-tutorial"></a>Версии программного обеспечения, используемые в этом руководстве
 >
-> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 > - Веб-API 2
 
 ## <a name="in-this-topic"></a>Содержание раздела
 
 В этом разделе содержатся следующие подразделы.
 
-- [Необходимые компоненты](#prereqs)
+- [Предварительные требования](#prereqs)
 - [Скачать код](#download)
 - [Создание приложения с помощью проекта модульного теста](#appwithunittest)
     - [Добавьте проект модульного теста, при создании приложения](#whencreate)
@@ -44,7 +44,7 @@ ms.locfileid: "57044411"
 - [Настройка приложения веб-API 2](#setupproject)
 - [Установите пакеты NuGet в проекте теста](#testpackages)
 - [Создание тестов](#tests)
-- [Выполнение тестов](#runtests)
+- [Выполнить тесты](#runtests)
 
 <a id="prereqs"></a>
 ## <a name="prerequisites"></a>Предварительные требования

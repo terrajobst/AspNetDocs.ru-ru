@@ -8,15 +8,15 @@ ms.date: 01/29/2019
 ms.assetid: 9b265a5a-6a70-4a82-adce-2d7c56ae8bdd
 msc.legacyurl: /web-api/overview/security/enabling-cross-origin-requests-in-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: c9d3e4b05103d270ad95908177bb2981338a4ae1
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 9d3016d98fa6c3a55359c6dab0737407b29925f1
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425292"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403835"
 ---
-<a name="enable-cross-origin-requests-in-aspnet-web-api-2"></a>Включение запросов о происхождении в ASP.NET Web API 2
-====================
+# <a name="enable-cross-origin-requests-in-aspnet-web-api-2"></a>Включение запросов о происхождении в ASP.NET Web API 2
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 > Безопасность обозревателя запрещает отправку запросов AJAX в другой домен веб-страницы. Это ограничение называется *политика одного источника*и предотвращает чтение конфиденциальных данных с другого сайта вредоносный сайт. Тем не менее иногда вам может потребоваться разрешить другие сайты вызова веб-API.

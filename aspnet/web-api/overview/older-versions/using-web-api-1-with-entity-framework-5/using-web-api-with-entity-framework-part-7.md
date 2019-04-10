@@ -8,15 +8,15 @@ ms.date: 07/04/2012
 ms.assetid: eb32a17b-626c-4373-9a7d-3387992f3c04
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-7
 msc.type: authoredcontent
-ms.openlocfilehash: 91a6496e2640668c58ec0493d47d909e2de67367
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 028631f8855e4d94bebb0e965de75c4025e22859
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58421354"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409269"
 ---
-<a name="part-7-creating-the-main-page"></a>Часть 7. Создание главной страницы
-====================
+# <a name="part-7-creating-the-main-page"></a>Часть 7. Создание главной страницы
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 [Скачать завершенный проект](http://code.msdn.microsoft.com/ASP-NET-Web-API-with-afa30545)
@@ -91,7 +91,7 @@ ms.locfileid: "58421354"
 
 Это используется для итерации по массиву корзины для покупок и отображает имя, цену и количество. Обратите внимание на то, что ссылку «Удалить» и кнопка «Создание заказа» привязаны к функции модели представления.
 
-**Заказы**
+**Orders**
 
 Ниже приведены привязки для списка заказов.
 

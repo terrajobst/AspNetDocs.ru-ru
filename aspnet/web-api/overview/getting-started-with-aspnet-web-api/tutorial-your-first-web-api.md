@@ -1,32 +1,35 @@
 ---
 uid: web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
-title: Начало работы с ASP.NET Web API 2 (C#)
+title: Начало работы с веб-API 2 ASP.NET (C#)-ASP.NET 4.x
 author: MikeWasson
-description: HTTP не только для предоставления веб-страниц. Это также мощную платформу для создания API, которые предоставляют службы и данные. Протокол HTTP является простая и гибкая и ubiq...
+description: Учебник с кодом. Используйте ASP.NET Web API для создания веб-API, который возвращает список продуктов.
 ms.author: riande
 ms.date: 11/28/2017
+ms.custom: seoapril2019
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 7bec95af4532535f0d620bfe6862958907466874
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5e3c049ba4349301c3c2d173d4311b3d0883bf68
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57060191"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401755"
 ---
-<a name="get-started-with-aspnet-web-api-2-c"></a>Начало работы с ASP.NET Web API 2 (C#)
-====================
+# <a name="get-started-with-aspnet-web-api-2-c"></a>Начало работы с ASP.NET Web API 2 (C#)
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 [Скачать завершенный проект](https://code.msdn.microsoft.com/Sample-code-of-Getting-c56ccb28)
 
+В этом руководстве используется веб-API ASP.NET для создания веб-API, который возвращает список продуктов.
+
 HTTP не только для предоставления веб-страниц. Протокол HTTP также является мощной платформой для создания API, которые предоставляют службы и данные. HTTP — простую, гибкую и повсеместно. Практически любой платформе, можно представить себе имеет библиотеки HTTP, поэтому службы HTTP могут стать идеальным широкого круга клиентов, включая браузеры мобильных устройств и Классические приложения.
 
-Веб-API ASP.NET — это платформа для создания веб-API-интерфейсы на основе .NET Framework. В этом руководстве используется веб-API ASP.NET для создания веб-API, который возвращает список продуктов.
+Веб-API ASP.NET — это платформа для создания веб-API-интерфейсы на основе .NET Framework. 
 
 ## <a name="software-versions-used-in-the-tutorial"></a>Версии программного обеспечения, используемые в этом руководстве
 
-- [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 - Веб-API 2
 
 См. в разделе [Создание веб-API с помощью ASP.NET Core и Visual Studio для Windows](https://docs.microsoft.com/aspnet/core/tutorials/first-web-api) для более новой версии этого руководства.

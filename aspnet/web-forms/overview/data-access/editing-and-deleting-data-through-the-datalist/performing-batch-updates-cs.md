@@ -8,15 +8,15 @@ ms.date: 10/30/2006
 ms.assetid: 57743ca7-5695-4e07-aed1-44b297f245a9
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/performing-batch-updates-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 2de7cdbfc37140a4b60c3123524974c4f0ffa42f
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 388637d67594d6431a134673cf85b3b18098136e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425877"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402756"
 ---
-<a name="performing-batch-updates-c"></a>Выполнение пакетных обновлений (C#)
-====================
+# <a name="performing-batch-updates-c"></a>Выполнение пакетных обновлений (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_37_CS.exe) или [скачать PDF](performing-batch-updates-cs/_static/datatutorial37cs1.pdf)
@@ -29,7 +29,7 @@ ms.locfileid: "58425877"
 В [предыдущем учебном курсе](an-overview-of-editing-and-deleting-data-in-the-datalist-cs.md) мы рассмотрели способы создания уровня элемента DataList. Таким как стандартный изменяемого элемента управления GridView, каждый элемент в элементе управления DataList включены изменения кнопка, при щелчке, сделает изменяемый элемент. Хотя это уровень элемента редактирования подходит для данных, которая обновляется только время от времени, определенных сценариев вариантов использования требуется пользователю изменять большое количество записей. Если пользователь должен изменить десятки записи и принудительно щелкните "Изменить", внесите свои изменения и нажмите кнопку обновления для каждого из них, щелкнув сумма может помешать ее производительность. В таких ситуациях, лучшим вариантом является предоставление полностью изменяемых пользователем элементов управления DataList, которой *все* элементы находятся в режиме правки, а также значения которого можно изменить, щелкнув кнопка "Обновить все" на странице (см. рис. 1).
 
 
-[![Можно изменить каждый элемент полностью редактирования элемента управления DataList](performing-batch-updates-cs/_static/image2.png)](performing-batch-updates-cs/_static/image1.png)
+[![Eможно изменить ACH элемент полностью редактирования элемента управления DataList](performing-batch-updates-cs/_static/image2.png)](performing-batch-updates-cs/_static/image1.png)
 
 **Рис. 1**: Можно изменить каждый элемент полностью редактирования элемента управления DataList ([Просмотр полноразмерного изображения](performing-batch-updates-cs/_static/image3.png))
 
@@ -50,7 +50,7 @@ ms.locfileid: "58425877"
 Сначала откройте `BatchUpdate.aspx` странице, добавьте элемент управления DataList и задайте его `ID` свойства `Suppliers`. В смарт-теге элемента управления DataList s, необязательно, чтобы добавить новый элемент управления ObjectDataSource с именем `SuppliersDataSource`.
 
 
-[![Создайте новый ObjectDataSource, именуемого SuppliersDataSource](performing-batch-updates-cs/_static/image5.png)](performing-batch-updates-cs/_static/image4.png)
+[![Cсоздать новый элемент управления ObjectDataSource с именем SuppliersDataSource](performing-batch-updates-cs/_static/image5.png)](performing-batch-updates-cs/_static/image4.png)
 
 **Рис. 2**: Создайте новый ObjectDataSource с именем `SuppliersDataSource` ([Просмотр полноразмерного изображения](performing-batch-updates-cs/_static/image6.png))
 
@@ -58,12 +58,12 @@ ms.locfileid: "58425877"
 Настройте элемент ObjectDataSource для извлечения данных с помощью `SuppliersBLL` класс s `GetSuppliers()` метод (см. рис. 3). Как и в предыдущем учебном курсе, а не обновление сведений о поставщике через элемент управления ObjectDataSource, мы будем работать непосредственно с уровня бизнес-логики. Таким образом, задать стрелку раскрывающегося списка (нет) на вкладке "обновления" (см. рис. 4).
 
 
-[![Получение сведений о поставщике, с помощью метода GetSuppliers()](performing-batch-updates-cs/_static/image8.png)](performing-batch-updates-cs/_static/image7.png)
+[![Rзагружать сведения о поставщиках, с помощью метода GetSuppliers()](performing-batch-updates-cs/_static/image8.png)](performing-batch-updates-cs/_static/image7.png)
 
 **Рис. 3**: Получить сведения с помощью поставщика `GetSuppliers()` метод ([Просмотр полноразмерного изображения](performing-batch-updates-cs/_static/image9.png))
 
 
-[![Задайте стрелку раскрывающегося списка (нет) на вкладке "обновления"](performing-batch-updates-cs/_static/image11.png)](performing-batch-updates-cs/_static/image10.png)
+[![SET стрелку раскрывающегося списка (нет) на вкладке "обновления"](performing-batch-updates-cs/_static/image11.png)](performing-batch-updates-cs/_static/image10.png)
 
 **Рис. 4**: Задайте стрелку раскрывающегося списка (нет) на вкладке "обновления" ([Просмотр полноразмерного изображения](performing-batch-updates-cs/_static/image12.png))
 
@@ -87,7 +87,7 @@ ms.locfileid: "58425877"
 После внесения этих изменений, посетите эту страницу через обозреватель. Как показано на рис. 5, каждый элемент управления DataList отображает имя поставщика в виде текста и использует текстовые поля для отображения адреса, города и страны.
 
 
-[![Каждый поставщик в DataList является редактируемое](performing-batch-updates-cs/_static/image14.png)](performing-batch-updates-cs/_static/image13.png)
+[![EACH поставщика в элементе управления DataList-Editable](performing-batch-updates-cs/_static/image14.png)](performing-batch-updates-cs/_static/image13.png)
 
 **Рис. 5**: Каждый поставщик в DataList является редактируемое ([Просмотр полноразмерного изображения](performing-batch-updates-cs/_static/image15.png))
 
@@ -104,7 +104,7 @@ ms.locfileid: "58425877"
 Рис. 6 показана страница, после добавления обновить все кнопки.
 
 
-[![Две кнопки все обновления были добавлены на страницу](performing-batch-updates-cs/_static/image17.png)](performing-batch-updates-cs/_static/image16.png)
+[![TВсе кнопки WO обновления были добавлены на страницу](performing-batch-updates-cs/_static/image17.png)](performing-batch-updates-cs/_static/image16.png)
 
 **Рис. 6**: Две кнопки все обновления были добавлены на страницу ([Просмотр полноразмерного изображения](performing-batch-updates-cs/_static/image18.png))
 

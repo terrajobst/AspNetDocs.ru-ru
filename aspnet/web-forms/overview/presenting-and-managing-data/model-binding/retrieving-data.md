@@ -8,26 +8,26 @@ ms.date: 02/27/2014
 ms.assetid: 9f24fb82-c7ac-48da-b8e2-51b3da17e365
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/retrieving-data
 msc.type: authoredcontent
-ms.openlocfilehash: c53c27f4852eab9813bd917315111e7cd3b04953
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 29baaf2917e47ac46a78a252721be725b4e9b58f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57056601"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398479"
 ---
-<a name="retrieving-and-displaying-data-with-model-binding-and-web-forms"></a>Извлечение и отображение данных с помощью привязки модели и веб-форм
-====================
+# <a name="retrieving-and-displaying-data-with-model-binding-and-web-forms"></a>Извлечение и отображение данных с помощью привязки модели и веб-форм
+
 
 > В этой серии руководств показано основными аспектами с помощью привязки модели с проектом веб-форм ASP.NET. Привязка модели упрощает взаимодействие с данными более эффективную чем работа с данными объектов источника (например, элемент управления ObjectDataSource и SqlDataSource). Эта серия начинается с вводный материал и перемещает до более продвинутых в последующих руководствах.
 > 
->  Шаблон привязки модели работает с любой технологии доступа к данным. В этом руководстве используется платформа Entity Framework, но можно использовать технологии доступа к данным, который наиболее вам знакомы. Из элемента управления с привязкой к данным сервера, например в элементе управления GridView, ListView, DetailsView и FormView укажите имена методов для выбора, обновления, удаления и создания данных. В этом руководстве вы укажете значение для SelectMethod. 
+> Шаблон привязки модели работает с любой технологии доступа к данным. В этом руководстве используется платформа Entity Framework, но можно использовать технологии доступа к данным, который наиболее вам знакомы. Из элемента управления с привязкой к данным сервера, например в элементе управления GridView, ListView, DetailsView и FormView укажите имена методов для выбора, обновления, удаления и создания данных. В этом руководстве вы укажете значение для SelectMethod. 
 > 
 > В этом методе обеспечивают логику для получения данных. В следующем учебном курсе UpdateMethod и InsertMethod и DeleteMethod установит значения.
 >
 > Вы можете [загрузить](https://go.microsoft.com/fwlink/?LinkId=286116) весь проект в C# или Visual Basic. Загружаемый код работает с Visual Studio 2012 и более поздних версий. Он использует шаблон Visual Studio 2012, который немного отличается от шаблона Visual Studio 2017, в этом учебнике.
 > 
 > В этом руководстве вы запустите приложение в Visual Studio. Можно также развернуть приложение поставщика услуг размещения и сделать его доступным через Интернет. Корпорация Майкрософт предлагает бесплатные услуг хостинга до 10 веб-сайтов в  
->  [бесплатную пробную учетную запись Azure](https://azure.microsoft.com/free/?WT.mc_id=A443DD604). Сведения о развертывании веб-проекта Visual Studio веб-приложениях службы приложений Azure, см. в разделе [веб-развертывание ASP.NET с помощью Visual Studio](../../deployment/visual-studio-web-deployment/introduction.md) рядов. Этот учебник также показано, как использовать Entity Framework Code First Migrations для развертывания базы данных SQL Server в базу данных SQL Azure.
+> [бесплатную пробную учетную запись Azure](https://azure.microsoft.com/free/?WT.mc_id=A443DD604). Сведения о развертывании веб-проекта Visual Studio веб-приложениях службы приложений Azure, см. в разделе [веб-развертывание ASP.NET с помощью Visual Studio](../../deployment/visual-studio-web-deployment/introduction.md) рядов. Этот учебник также показано, как использовать Entity Framework Code First Migrations для развертывания базы данных SQL Server в базу данных SQL Azure.
 > 
 > ## <a name="software-versions-used-in-the-tutorial"></a>Версии программного обеспечения, используемые в этом руководстве
 > 
@@ -217,4 +217,4 @@ Visual Studio не только создает метод в коде прогр
 В следующем [руководстве](updating-deleting-and-creating-data.md) в этой серии, если включить обновление, удаление и создание данных.
 
 > [!div class="step-by-step"]
-> [Вперед](updating-deleting-and-creating-data.md)
+> [Далее](updating-deleting-and-creating-data.md)

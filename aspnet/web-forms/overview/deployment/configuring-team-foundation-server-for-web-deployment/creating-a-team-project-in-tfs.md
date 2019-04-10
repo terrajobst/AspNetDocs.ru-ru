@@ -8,18 +8,18 @@ ms.date: 05/04/2012
 ms.assetid: b28d3e2d-0bb4-4e29-a780-af810b964722
 msc.legacyurl: /web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/creating-a-team-project-in-tfs
 msc.type: authoredcontent
-ms.openlocfilehash: 9218a22ff221dc7067662c58ccd3e758fca493b7
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1e727e8124e1f045f8ef25ab7a3d4efbafd4290a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062521"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411219"
 ---
-<a name="creating-a-team-project-in-tfs"></a>Создание командного проекта в Team Foundation Server
-====================
+# <a name="creating-a-team-project-in-tfs"></a>Создание командного проекта в Team Foundation Server
+
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается создание нового командного проекта в Team Foundation Server (TFS) 2010.
 
@@ -106,7 +106,8 @@ ms.locfileid: "57062521"
 
    > [!NOTE]
    > Может появиться <strong>HTTP 404 не найдено</strong> ошибка из-за ошибки кодирования double HTTP. В этом случае замените URL-адрес с этим:   
-   > `[site_collection_URL]/_layouts/permsetup.aspx` Например:  
+   > `[site_collection_URL]/_layouts/permsetup.aspx`
+   > Пример:  
    > `http://tfs/sites/Fabrikam%20Web%20Projects/_layouts/permsetup.aspx` 
 8. На **настроить группы для этого сайта** странице, пользователь, который будет создавать командные проекты, чтобы добавить **владельцев** группу и нажмите **ОК**.
 

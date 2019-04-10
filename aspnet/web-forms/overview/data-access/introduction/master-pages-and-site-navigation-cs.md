@@ -8,15 +8,15 @@ ms.date: 03/31/2010
 ms.assetid: 5aee8202-a4e3-4aa9-8a95-cd5d156cea4c
 msc.legacyurl: /web-forms/overview/data-access/introduction/master-pages-and-site-navigation-cs
 msc.type: authoredcontent
-ms.openlocfilehash: d9ae2fb5a79817053a260e7d0f85992a011f471b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 2001378588db72103292be963af6c26277147c44
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57038591"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409646"
 ---
-<a name="master-pages-and-site-navigation-c"></a>Эталонные страницы и структура навигации веб-сайта (C#)
-====================
+# <a name="master-pages-and-site-navigation-c"></a>Эталонные страницы и структура навигации веб-сайта (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/4/6/3/463cf87c-4724-4cbc-b7b5-3f866f43ba50/ASPNET_Data_Tutorial_3_CS.exe) или [скачать PDF](master-pages-and-site-navigation-cs/_static/datatutorial03cs1.pdf)
@@ -33,7 +33,7 @@ ms.locfileid: "57038591"
 Для иллюстрации этих основных понятий и сделать наш учебный веб-узел более удобным, давайте на этом уроке, определения макета страницы для всего, карту узла и добавления пользовательского интерфейса навигации. В конце этого руководства мы у нас будет великолепные веб-сайт для создания части учебника веб-страниц.
 
 
-[![В результате этого учебника](master-pages-and-site-navigation-cs/_static/image2.png)](master-pages-and-site-navigation-cs/_static/image1.png)
+[![Tон конечный результат этот учебник](master-pages-and-site-navigation-cs/_static/image2.png)](master-pages-and-site-navigation-cs/_static/image1.png)
 
 **Рис. 1**: Конечный результат из этого руководства ([Просмотр полноразмерного изображения](master-pages-and-site-navigation-cs/_static/image3.png))
 
@@ -51,7 +51,7 @@ ms.locfileid: "57038591"
 Чтобы создать главную страницу, щелкните правой кнопкой мыши имя проекта в обозревателе решений и выберите Add New Item. Затем выберите тип главной страницы в списке шаблонов и назовите его `Site.master`.
 
 
-[![Добавление новой главной страницы на веб-сайт](master-pages-and-site-navigation-cs/_static/image6.png)](master-pages-and-site-navigation-cs/_static/image5.png)
+[![Aдд Создание главной страницы на веб-сайт](master-pages-and-site-navigation-cs/_static/image6.png)](master-pages-and-site-navigation-cs/_static/image5.png)
 
 **Рис. 3**: Добавление новой главной страницы на веб-сайт ([Просмотр полноразмерного изображения](master-pages-and-site-navigation-cs/_static/image7.png))
 
@@ -68,7 +68,7 @@ Site.master
 С помощью введете указанную выше разметку переключение в режим конструктора показан макет главной страницы. Любая страница ASP.NET, использующая эту главную страницу будет иметь этот единообразного расположения, с возможностью указать разметку для `MainContent` регион.
 
 
-[![Главной страницы, при просмотре в режиме конструктора](master-pages-and-site-navigation-cs/_static/image9.png)](master-pages-and-site-navigation-cs/_static/image8.png)
+[![Tон главной страницы, при просмотре через конструктор](master-pages-and-site-navigation-cs/_static/image9.png)](master-pages-and-site-navigation-cs/_static/image8.png)
 
 **Рис. 4**: Главной страницы, при просмотре через конструктор ([Просмотр полноразмерного изображения](master-pages-and-site-navigation-cs/_static/image10.png))
 
@@ -78,7 +78,7 @@ Site.master
 С главную страницу мы готовы к созданию страниц ASP.NET, веб-сайта. Начнем с добавления `Default.aspx`, домашняя страница наш веб-сайт. Щелкните правой кнопкой мыши имя проекта в обозревателе решений и выберите Add New Item. Выберите вариант веб-формы, в списке шаблон и имя файла `Default.aspx`. Кроме того установите флажок «Выбрать главную страницу».
 
 
-[![Добавление новой веб-формы, проверка выбрать главную страницу флажок](master-pages-and-site-navigation-cs/_static/image12.png)](master-pages-and-site-navigation-cs/_static/image11.png)
+[![Aдд новой веб-формы, проверка выбрать главную страницу флажок](master-pages-and-site-navigation-cs/_static/image12.png)](master-pages-and-site-navigation-cs/_static/image11.png)
 
 **Рис. 5**: Добавление новой веб-формы, проверка выбрать главную страницу флажок ([Просмотр полноразмерного изображения](master-pages-and-site-navigation-cs/_static/image13.png))
 
@@ -86,7 +86,7 @@ Site.master
 После нажатия кнопки "ОК", вам будет предложено выбрать главную страницу для создаваемой страницы ASP.NET следует использовать. Хотя в проекте может быть несколько главных страниц, у нас есть только один.
 
 
-[![Выбор главной страницы для страницы ASP.NET](master-pages-and-site-navigation-cs/_static/image15.png)](master-pages-and-site-navigation-cs/_static/image14.png)
+[![CВыберите на главной странице такое использование ASP.NET следует страница](master-pages-and-site-navigation-cs/_static/image15.png)](master-pages-and-site-navigation-cs/_static/image14.png)
 
 **Рис. 6**: Выбор главной страницы для этого использования следует страницы ASP.NET ([Просмотр полноразмерного изображения](master-pages-and-site-navigation-cs/_static/image16.png))
 
@@ -110,7 +110,7 @@ Default.aspx
 Переключение в режим конструктора, то увидите, как созданная страница будет выглядеть в браузере. Обратите внимание, что в конструкторе просмотра страницы ASP.NET, что только изменяемые области редактируются стоящая вне элемента ContentPlaceHolder разметки, определенные на главной странице неактивна.
 
 
-[![Изменяемые и неизменяемые области показан режим конструктора для страницы ASP.NET](master-pages-and-site-navigation-cs/_static/image18.png)](master-pages-and-site-navigation-cs/_static/image17.png)
+[![Tон конструктор для ASP.NET страницы показано, как редактируемое и Non-Editable областей](master-pages-and-site-navigation-cs/_static/image18.png)](master-pages-and-site-navigation-cs/_static/image17.png)
 
 **Рис. 7**: Режим конструктора для ASP.NET страницы показано, как редактируемое и Non-Editable регионов ([Просмотр полноразмерного изображения](master-pages-and-site-navigation-cs/_static/image19.png))
 
@@ -142,7 +142,7 @@ Default.aspx
 Для этого руководства, тем не менее, мы будем использовать поставщик карты узла по умолчанию, который поставляется с ASP.NET 2.0. Чтобы создать карту узла, просто щелкните правой кнопкой мыши имя проекта в обозревателе решений, выберите Add New Item и выберите «карта узла». Оставьте имя по `Web.sitemap` и нажмите кнопку "Добавить".
 
 
-[![Добавление карты узла в проект](master-pages-and-site-navigation-cs/_static/image22.png)](master-pages-and-site-navigation-cs/_static/image21.png)
+[![Aдд карты узла в проект](master-pages-and-site-navigation-cs/_static/image22.png)](master-pages-and-site-navigation-cs/_static/image21.png)
 
 **Рис. 9**: Добавление карты узла в проект ([Просмотр полноразмерного изображения](master-pages-and-site-navigation-cs/_static/image23.png))
 
@@ -159,7 +159,7 @@ Web.sitemap
 Карта узла определяет структуру переходов веб сайта, — это иерархия, который описывает различные разделы веб-узла. Каждый `<siteMapNode>` элемент `Web.sitemap` соответствует некоторому разделу структуры переходов веб-узла.
 
 
-[![Карта узла — иерархическая структура переходов](master-pages-and-site-navigation-cs/_static/image25.png)](master-pages-and-site-navigation-cs/_static/image24.png)
+[![Tон карты узла представляет иерархическая структура переходов](master-pages-and-site-navigation-cs/_static/image25.png)](master-pages-and-site-navigation-cs/_static/image24.png)
 
 **Рис. 10**: Карта узла — иерархическая структура переходов ([Просмотр полноразмерного изображения](master-pages-and-site-navigation-cs/_static/image26.png))
 
@@ -252,7 +252,7 @@ ASP.NET предоставляет структуре карты узла чер
 Давайте отобразим неупорядоченный список с помощью элемента управления Repeater еще раз, но на этот раз мы будем отображать заголовок и описание руководства. Так как разметка и код для выполнения этого будет необходимо будет повторить для каждого `Default.aspx` страницы, мы может инкапсулировать эту логику пользовательского интерфейса в [пользовательский элемент управления](https://msdn.microsoft.com/library/y6wb1a0e.aspx). Создание папки в веб-узле `UserControls` и добавьте в новый элемент типа веб-элемента управления пользователя с именем `SectionLevelTutorialListing.ascx`и добавьте следующую разметку:
 
 
-[![Добавить новый пользовательский элемент управления Web папки UserControls](master-pages-and-site-navigation-cs/_static/image30.png)](master-pages-and-site-navigation-cs/_static/image29.png)
+[![Aдд новый пользовательский элемент управления Web для папки UserControls](master-pages-and-site-navigation-cs/_static/image30.png)](master-pages-and-site-navigation-cs/_static/image29.png)
 
 **Рис. 13**: Добавить нового пользователя веб-элемента управления к `UserControls` папку ([Просмотр полноразмерного изображения](master-pages-and-site-navigation-cs/_static/image31.png))
 
@@ -272,12 +272,12 @@ SectionLevelTutorialListing.ascx.cs
 После создания этого элемента управления Repeater, откройте `Default.aspx` страниц в каждой папке, перейдите в режим конструктора и просто перетащите пользовательский элемент управления из обозревателя решений в область конструктора место список руководств.
 
 
-[![Пользовательский элемент управления был добавлен к странице Default.aspx](master-pages-and-site-navigation-cs/_static/image33.png)](master-pages-and-site-navigation-cs/_static/image32.png)
+[![TПользовательский элемент управления имеет были добавлены к странице Default.aspx](master-pages-and-site-navigation-cs/_static/image33.png)](master-pages-and-site-navigation-cs/_static/image32.png)
 
 **Рис. 14**: Пользовательский элемент управления был добавлен `Default.aspx` ([Просмотр полноразмерного изображения](master-pages-and-site-navigation-cs/_static/image34.png))
 
 
-[![Перечислены базовые учебники по службам Reporting](master-pages-and-site-navigation-cs/_static/image36.png)](master-pages-and-site-navigation-cs/_static/image35.png)
+[![Tон руководст по созданию основных перечислены](master-pages-and-site-navigation-cs/_static/image36.png)](master-pages-and-site-navigation-cs/_static/image35.png)
 
 **Рис. 15**: Перечислены базовые учебники по службам Reporting ([Просмотр полноразмерного изображения](master-pages-and-site-navigation-cs/_static/image37.png))
 

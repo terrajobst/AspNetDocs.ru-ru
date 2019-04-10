@@ -1,25 +1,26 @@
 ---
 uid: web-api/overview/odata-support-in-aspnet-web-api/using-select-expand-and-value
-title: Использование $select, $expand и $value в ASP.NET Web API 2 OData | Документация Майкрософт
+title: Использование $select, $expand и $value в ASP.NET Web API 2 OData - ASP.NET 4.x
 author: MikeWasson
-description: ''
+description: Общие сведения и примеры кода для $развернуть, $select, и параметры $value в OData веб-API 2 ASP.NET 4.x.
 ms.author: riande
 ms.date: 10/11/2013
+ms.custom: seoapril2019
 ms.assetid: 43279a80-a96c-4564-b6ea-ad992a2d6828
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/using-select-expand-and-value
 msc.type: authoredcontent
-ms.openlocfilehash: d198ecf40155cba36204bc0810f4735aae6b100b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 8b5d3e87c679a31f1908aa648219ae5c6b701a1f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033931"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59400702"
 ---
-<a name="using-select-expand-and-value-in-aspnet-web-api-2-odata"></a>Использование $select, $expand и $value в ASP.NET Web API 2 OData
-====================
+# <a name="using-select-expand-and-value-in-aspnet-web-api-2-odata"></a>Использование $select, $expand и $value в ASP.NET Web API 2 OData
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
-Веб-API 2 добавлена поддержка $expand, $select и $value в OData. Эти параметры позволяют клиенту управлять представление, которое возвращается с сервера.
+Общие сведения и примеры кода для $развернуть, $select, и параметры $value в OData веб-API 2 ASP.NET 4.x. Эти параметры позволяют клиенту управлять представление, которое возвращается с сервера.
 
 - **$expand** вызывает связанные сущности быть указаны в ответе.
 - **$select** выбирает подмножество свойств для включения в ответ.

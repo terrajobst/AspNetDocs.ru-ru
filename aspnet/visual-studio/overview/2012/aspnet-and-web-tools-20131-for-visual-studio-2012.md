@@ -8,15 +8,15 @@ ms.date: 11/13/2013
 ms.assetid: ca26e5bb-630e-41d2-8512-2a9386c431cb
 msc.legacyurl: /visual-studio/overview/2012/aspnet-and-web-tools-20131-for-visual-studio-2012
 msc.type: authoredcontent
-ms.openlocfilehash: 008891b72e1fb72458aee00bbf83839d0fbed263
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 17315dbbbdc08412e4e928256783c221a8a2cb20
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423550"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59406812"
 ---
-<a name="release-notes-for-aspnet-and-web-tools-20131-for-visual-studio-2012"></a>Заметки о выпуске ASP.NET and Web Tools 2013.1 для Visual Studio 2012
-====================
+# <a name="release-notes-for-aspnet-and-web-tools-20131-for-visual-studio-2012"></a>Заметки о выпуске ASP.NET and Web Tools 2013.1 для Visual Studio 2012
+
 по [Microsoft](https://github.com/microsoft)
 
 > В этом документе описывается версия ASP.NET и Web Tools 2013.1 для Visual Studio 2012.
@@ -34,10 +34,10 @@ ms.locfileid: "58423550"
         - [Шаблон ASP.NET MVC 5](#mvc5template)
         - [Шаблон веб-API 2 ASP.NET](#apitemplate)
         - [Шаблоны элементов](#itemtemplate)
-    - [Entity Framework 6](#ef6)
+    - [Entity Framework 6](#ef6)
     - [Формирование шаблонов ASP.NET](#scaffold)
     - [Редактор Razor](#razor)
-    - [NuGet 2.7](#nuget)
+    - [NuGet 2.7](#nuget)
 - Известные проблемы и критические изменения
 
     - [Формирование шаблонов ASP.NET](#issuescaffolding)

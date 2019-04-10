@@ -8,19 +8,19 @@ ms.date: 08/31/2011
 ms.assetid: d916dbe0-1895-491b-8bb6-93f4594ce757
 msc.legacyurl: /mvc/overview/getting-started
 msc.type: chapter
-ms.openlocfilehash: a2b96388cb7408d3c5fa548d0f43cfb2287661bf
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f588af70f3928285274ef6bf14f58697190943ff
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57021761"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405824"
 ---
-<a name="aspnet-mvc-getting-started"></a>Приступая к работе ASP.NET MVC
-====================
+# <a name="aspnet-mvc-getting-started"></a>Приступая к работе ASP.NET MVC
+
 > Следующее руководство объясняет, ASP.NET MVC и отображает как приступить к работе.
 
 
-- [Приступая к работе с ASP.NET MVC 5](introduction/index.md)
+- [Начало работы с ASP.NET MVC 5](introduction/index.md)
 
     - [Начало работы](introduction/getting-started.md)
     - [Добавление контроллера](introduction/adding-a-controller.md)
@@ -33,7 +33,7 @@ ms.locfileid: "57021761"
     - [Добавление нового поля](introduction/adding-a-new-field.md)
     - [Добавление проверки](introduction/adding-validation.md)
     - [Изучение методов Details и Delete](introduction/examining-the-details-and-delete-methods.md)
-- [Начало работы с EF 6 с помощью MVC 5](getting-started-with-ef-using-mvc/index.md)
+- [Начало работы с EF 6 с помощью MVC 5](getting-started-with-ef-using-mvc/index.md)
 
     - [Создание модели данных Entity Framework](getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md)
     - [Реализация базовой функциональности CRUD](getting-started-with-ef-using-mvc/implementing-basic-crud-functionality-with-the-entity-framework-in-asp-net-mvc-application.md)
@@ -49,12 +49,12 @@ ms.locfileid: "57021761"
     - [Дополнительные сценарии платформы Entity Framework](getting-started-with-ef-using-mvc/advanced-entity-framework-scenarios-for-an-mvc-web-application.md)
 - [EF Database First с ASP.NET MVC](database-first-development/index.md)
 
-    - [Начало работы с Entity Framework 6 Database First с помощью MVC 5](database-first-development/setting-up-database.md)
+    - [Начало работы с Entity Framework 6 Database First с помощью MVC 5](database-first-development/setting-up-database.md)
     - [Создание веб-приложения и модели данных](database-first-development/creating-the-web-application.md)
     - [Создание представлений](database-first-development/generating-views.md)
     - [Изменение базы данных](database-first-development/changing-the-database.md)
     - [Настройка представления](database-first-development/customizing-a-view.md)
     - [Улучшение проверки данных](database-first-development/enhancing-data-validation.md)
-- [Жизненный цикл приложения ASP.NET MVC 5](lifecycle-of-an-aspnet-mvc-5-application.md)
+- [Жизненный цикл приложения ASP.NET MVC 5](lifecycle-of-an-aspnet-mvc-5-application.md)
 - [Рекомендуемые ресурсы по MVC](recommended-resources-for-mvc.md)
 - [Рекомендуемые учебники и статьи по MVC](mvc-learning-sequence.md)

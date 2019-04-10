@@ -8,15 +8,15 @@ ms.date: 07/24/2008
 ms.assetid: e332a1e0-226d-40ad-be99-96f13ecaec24
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-use-the-fixednames-option-with-the-compiler-utility-for-maximum-flexibility
 msc.type: video
-ms.openlocfilehash: 07fa077f75034e5bb52e85e202b26b32e3822b77
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 1b58f217716ecbc037aae736fd323bb7da8afbdd
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055441"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398154"
 ---
-<a name="how-do-i-use-the-fixednames-option-with-the-compiler-utility-for-maximum-flexibility"></a>[Инструкции] Использование параметра Fixednames со служебной программой компилятора для обеспечения максимальной гибкости
-====================
+# <a name="how-do-i-use-the-fixednames-option-with-the-compiler-utility-for-maximum-flexibility"></a>[Инструкции] Использование параметра Fixednames со служебной программой компилятора для обеспечения максимальной гибкости
+
 по [Крис Пелз](https://twitter.com/chrispels)
 
 В этом видео Крис Пелз демонстрируется использование параметра fixednames с aspnet\_имена compiler.exe служебная программа для создания согласованного файла в выходных данных компиляции. Во-первых, см. в разделе способ компиляции вывод aspnet\_compiler.exe программа создает выходные файлы для веб-сайта ASP.NET, которые представляют различные компоненты, включая страницы, темы и папки на сайте. См. в разделе, как именуются компоненты и их содержимого по отношению к исходной веб-сайта. Затем см. в разделе Практическое использование параметра fixednames для стандартизации имен выходных файлов, в зависимости от исходных файлов, от которых они основаны. Узнайте, о рекомендации по использованию каждого из параметров компиляции, при развертывании обновлений для скомпилированного веб-узла, уделяя основное внимание какие компоненты, скорее всего обновить.

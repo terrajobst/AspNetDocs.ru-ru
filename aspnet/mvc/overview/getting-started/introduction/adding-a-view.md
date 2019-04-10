@@ -5,15 +5,15 @@ description: Добавление представления в приложен
 ms.author: riande
 ms.date: 01/23/2019
 uid: mvc/overview/getting-started/introduction/adding-a-view
-ms.openlocfilehash: afa7584529566ebe82a0eb3849de89bd0df064bd
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 42469611f94b374d6692a1c2017aced77a0a414c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57051011"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403861"
 ---
-<a name="adding-a-view"></a>Добавление представления
-====================
+# <a name="adding-a-view"></a>Добавление представления
+
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 [!INCLUDE [Tutorial Note](sample/code-location.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "57051011"
 
 ![_LayoutCshtml](adding-a-view/_static/image7.png)
 
-Шаблоны макета позволяют задать макет контейнера HTML для узла в одном месте, а затем применять их на разных страницах сайта. Найдите строку `@RenderBody()`. `RenderBody` — это заполнитель, в котором отображаются все создаваемые страницы для определенных представлений, &quot;упакованные&quot; на странице макета. Например, если вы выберите **о** ссылку, *Views\Home\About.cshtml* представление отображается внутри `RenderBody` метод.
+Шаблоны макета позволяют задать макет контейнера HTML для узла в одном месте, а затем применять их на разных страницах сайта. Найдите строку `@RenderBody()`. `RenderBody` заполнитель, где вы страницы для всех определенных представлений создать показ, &quot;оболочку&quot; на странице макета. Например, если вы выберите **о** ссылку, *Views\Home\About.cshtml* представление отображается внутри `RenderBody` метод.
 
 Измените содержимое элемента title. Изменение [ActionLink](https://msdn.microsoft.com/library/dd504972(v=vs.108).aspx) в шаблоне макета с &quot;имя_приложения&quot; для &quot;MVC Movie&quot; и контроллер с `Home` для `Movies`. Ниже приведен полный макет файла:
 

@@ -8,15 +8,15 @@ ms.date: 09/27/2013
 ms.assetid: 6dae249f-5ac6-4f6e-bc49-13bcd5a54a70
 msc.legacyurl: /aspnet/overview/owin-and-katana/getting-started-with-owin-and-katana
 msc.type: authoredcontent
-ms.openlocfilehash: 9920861da0e67d9304a944cacfb8ff8685267cd6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5b5ecfcc7561e3e7bc13e1c8819a548e73ae1ab3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57052011"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59408099"
 ---
-<a name="getting-started-with-owin-and-katana"></a>Начало работы с OWIN и Katana
-====================
+# <a name="getting-started-with-owin-and-katana"></a>Начало работы с OWIN и Katana
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 [Откройте веб-интерфейс для .NET (OWIN)](http://owin.org/) абстракцию между веб-серверов .NET и веб-приложений. Отделив веб-сервера из приложения, OWIN упрощает создание по промежуточного слоя для разработки веб-приложений .NET. Кроме того, OWIN упрощает порт веб-приложений на другие узлы&#8212;к примеру, Резидентное размещение в службе Windows или другой процесс.

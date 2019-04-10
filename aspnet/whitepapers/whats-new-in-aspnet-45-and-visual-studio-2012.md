@@ -8,15 +8,15 @@ ms.date: 02/29/2012
 ms.assetid: ba1fabb4-31a3-4ebf-8327-41a6bbba6eaf
 msc.legacyurl: /whitepapers/whats-new-in-aspnet-45-and-visual-studio-2012
 msc.type: content
-ms.openlocfilehash: 6bbfb4aa7f29e4c189da4dfdca6f2113c7550b68
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 5f50721b6f263b9cb025f5fa57c923dadeddcd28
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57045051"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59410595"
 ---
-<a name="whats-new-in-aspnet-45-and-visual-studio-2012"></a>Новые возможности ASP.NET 4.5 и Visual Studio 2012
-====================
+# <a name="whats-new-in-aspnet-45-and-visual-studio-2012"></a>Новые возможности ASP.NET 4.5 и Visual Studio 2012
+
 > В этом документе описываются новые функции и усовершенствования, появившиеся в ASP.NET 4.5. Здесь также описываются усовершенствования, внесенные для веб-разработки в Visual Studio 2012. В этом документе была опубликована в 29 февраля 2012 г.
 
 
@@ -42,7 +42,7 @@ ms.locfileid: "57045051"
         - [С помощью JIT-компиляция многоядерными процессорами для ускорения запуска](#_Toc_perf_4)
         - [Помощник по настройке сбора мусора для оптимизации для памяти](#_Toc_perf_5)
         - [Предварительная выборка для веб-приложений](#_Toc_perf_6)
-- [Веб-форм ASP.NET](#_Toc318097385)
+- [Веб-формы ASP.NET](#_Toc318097385)
 
     - [Строго типизированные элементы управления данными](#_Toc318097386)
     - [Привязка модели](#_Toc318097387)
@@ -54,7 +54,7 @@ ms.locfileid: "57045051"
     - [Малозаметная проверка](#_Toc318097392)
     - [Обновления HTML5](#_Toc318097393)
 - [ASP.NET MVC 4](#_Toc318097394)
-- [ASP.NET Web Pages 2](#_Toc318097395)
+- [Веб-страницы ASP.NET 2](#_Toc318097395)
 - [Visual Studio 2012 Release Candidate](#_Toc318097396)
 
     - [Проект, общего для Visual Studio 2010 и Visual Studio 2012 Release Candidate (совместимость проектов)](#project-compatibility)
@@ -71,16 +71,16 @@ ms.locfileid: "57045051"
         - [Создание обработчика событий](#_Toc318097404)
         - [Автоматический отступ](#_Toc318097405)
         - [Уточнение завершение операторов](#_Toc318097406)
-    - [Редактор JavaScript](#_Toc318097407)
+    - [редактор JavaScript](#_Toc318097407)
 
-        - [Структурирование кода](#_Toc318097408)
+        - [Структура кода](#_Toc318097408)
         - [Парные фигурные скобки](#_Toc318097409)
         - [Перейти к определению](#_Toc318097410)
         - [Поддержка ECMAScript5](#_Toc318097411)
         - [DOM IntelliSense](#_Toc318097412)
         - [Сигнатура перегрузки VSDOC](#_Toc318097413)
         - [Неявные ссылки](#_Toc318097414)
-    - [Редактор CSS](#_Toc318097415)
+    - [редактор CSS](#_Toc318097415)
 
         - [Уточнение завершение операторов](#_Toc318097416)
         - [Иерархические отступы.](#_Toc318097417)
@@ -96,7 +96,7 @@ ms.locfileid: "57045051"
         - [Профили публикации](#_Toc318097426)
         - [ASP.NET предварительной компиляции и слияния](#_Toc318097427)
 - [IIS Express](#_Toc318097428)
-- [Заявление об отказе](#_Toc318097429)
+- [Отказ от ответственности](#_Toc318097429)
 
 <a id="_Toc318097372"></a>
 ## <a name="aspnet-core-runtime-and-framework"></a>Среда выполнения ASP.NET Core и платформы

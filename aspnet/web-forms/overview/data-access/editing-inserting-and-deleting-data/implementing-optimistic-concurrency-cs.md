@@ -8,15 +8,15 @@ ms.date: 07/17/2006
 ms.assetid: 56e15b33-93b8-43ad-8e19-44c6647ea05c
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/implementing-optimistic-concurrency-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 08a9e1db4f8c34b438d45c0fb74d852bbd249615
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 2fb954cca01b2201f574a86233af5aa6731568b0
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422783"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401222"
 ---
-<a name="implementing-optimistic-concurrency-c"></a>Реализация оптимистичного параллелизма (C#)
-====================
+# <a name="implementing-optimistic-concurrency-c"></a>Реализация оптимистичного параллелизма (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_21_CS.exe) или [скачать PDF](implementing-optimistic-concurrency-cs/_static/datatutorial21cs1.pdf)
@@ -31,7 +31,7 @@ ms.locfileid: "58422783"
 Например представьте, что два пользователя, Цзисунь и Сэм, одновременно открыли страницу приложения, позволяющего посетителям обновлять и удалять продукты с помощью элемента управления GridView. И нажмите кнопку Изменить в GridView примерно то же время. Цзисунь изменяет название продукта на «Чай Chai» и нажимает кнопку кнопкой "Обновить". Конечным результатом является `UPDATE` инструкцию, которая отправляется в базу данных, которая задает *все* из обновляемые поля продукта (хотя Цзисунь изменил только одно поле `ProductName`). На данный момент база данных содержит значения «Чай Chai» категории «Напитки», поставщик Exotic Liquids и так далее для данного конкретного продукта. Тем не менее GridView на экране Сэма по-прежнему отображается название продукта в редактируемой строке GridView как «Chai». Несколько секунд после фиксации изменений Цзисунь Сэм обновляет категорию на «Специи» и нажимает кнопку обновления. В результате `UPDATE` инструкции, отправляемые в базу данных, которая устанавливает название продукта «Chai» `CategoryID` соответствующий идентификатор категории «Напитки» и т. д. Цзисунь изменения названия продукта были перезаписаны. Рис. 1 изображена эта последовательность событий.
 
 
-[![При одновременном обновлении записи существует вероятность s s один пользователь изменяет перезаписать другие устройства](implementing-optimistic-concurrency-cs/_static/image2.png)](implementing-optimistic-concurrency-cs/_static/image1.png)
+[![Wри двух пользователей одновременно обновления существует запись s потенциал для одного пользователя s примет перезаписать другие s](implementing-optimistic-concurrency-cs/_static/image2.png)](implementing-optimistic-concurrency-cs/_static/image1.png)
 
 **Рис. 1**: При одновременном обновлении записи существует s потенциал s одного пользователя изменениями перезаписать другие устройства ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image3.png))
 
@@ -55,7 +55,7 @@ ms.locfileid: "58422783"
 Управление оптимистичным параллелизмом осуществляется путем обеспечения, что запись обновляемой или удаляемой имеет те же значения, как при запуске процесса обновления или удаления. Например при нажатии кнопки "Изменить" в изменяемого элемента управления GridView, записи чтение из базы данных и отображения значений в текстовые поля и другие веб-элементов управления. Эти исходные значения сохраняются элементом GridView. Позже когда пользователь делает ее изменения и щелкает кнопкой "Обновить", исходные и новые значения отправляются уровня бизнес-логики, а затем вниз до уровня доступа к данным. Уровень доступа к данным необходимо выполнить инструкцию SQL, которая будет только обновить запись, если исходные значения, которые пользователь начал редактирование совпадают со значениями по-прежнему в базе данных. Рис. 2 изображена эта последовательность событий.
 
 
-[![Для обновления или удаления, для успешного выполнения исходные значения должен быть равным текущие значения базы данных](implementing-optimistic-concurrency-cs/_static/image5.png)](implementing-optimistic-concurrency-cs/_static/image4.png)
+[![Fили Update или Delete для успешного выполнения, исходные значения должен быть равным текущие значения базы данных](implementing-optimistic-concurrency-cs/_static/image5.png)](implementing-optimistic-concurrency-cs/_static/image4.png)
 
 **Рис. 2**: Для обновления или удаления будет успешной, исходные значения должен быть равным текущие значения базы данных ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image6.png))
 
@@ -78,7 +78,7 @@ ms.locfileid: "58422783"
 Чтобы создать новый типизированный набор DataSet, щелкните правой кнопкой мыши `DAL` папку внутри `App_Code` папку и добавьте новый набор данных с именем `NorthwindOptimisticConcurrency`. Как мы видели в первом руководстве, это приводит к добавлению нового TableAdapter к типизированному DataSet, автоматический запуск мастера настройки TableAdapter. На первом экране мы вам будет предложено указать базу данных, подключиться - подключиться к одной базе данных "Борей" с помощью `NORTHWNDConnectionString` Azure с помощью `Web.config`.
 
 
-[![Подключиться к одной и той же базе данных "Борей"](implementing-optimistic-concurrency-cs/_static/image8.png)](implementing-optimistic-concurrency-cs/_static/image7.png)
+[![Cподключиться к одной и той же базе данных "Борей"](implementing-optimistic-concurrency-cs/_static/image8.png)](implementing-optimistic-concurrency-cs/_static/image7.png)
 
 **Рис. 3**: Подключиться к одной и той же базе данных "Борей" ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image9.png))
 
@@ -86,7 +86,7 @@ ms.locfileid: "58422783"
 Далее необходимо указать способ запроса данных: через специальный оператор SQL, новую хранимую процедуру или существующую хранимую процедуру. Так как мы использовали ad-hoc-запросов SQL в исходном DAL, используйте этот параметр, здесь также.
 
 
-[![Укажите данные, получаемые с помощью инструкции SQL Ad-Hoc](implementing-optimistic-concurrency-cs/_static/image11.png)](implementing-optimistic-concurrency-cs/_static/image10.png)
+[![SУкажите данные для извлечения с помощью инструкции SQL Ad-Hoc](implementing-optimistic-concurrency-cs/_static/image11.png)](implementing-optimistic-concurrency-cs/_static/image10.png)
 
 **Рис. 4**: Укажите данные для извлечения с помощью инструкции SQL Ad-Hoc ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image12.png))
 
@@ -97,7 +97,7 @@ ms.locfileid: "58422783"
 [!code-sql[Main](implementing-optimistic-concurrency-cs/samples/sample2.sql)]
 
 
-[![Использовать один и тот же запрос SQL из Products TableAdapter в исходном DAL](implementing-optimistic-concurrency-cs/_static/image14.png)](implementing-optimistic-concurrency-cs/_static/image13.png)
+[![USE SQL-запроса из TableAdapter Products в исходном DAL](implementing-optimistic-concurrency-cs/_static/image14.png)](implementing-optimistic-concurrency-cs/_static/image13.png)
 
 **Рис. 5**: Использовать один и тот же запрос SQL из `Products` TableAdapter в исходном DAL ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image15.png))
 
@@ -105,7 +105,7 @@ ms.locfileid: "58422783"
 Прежде чем перейти к следующему экрану, нажмите кнопку Дополнительно. Чтобы этот адаптер таблицы используют управление оптимистичным параллелизмом, просто установите флажок «Использовать оптимистичный параллелизм».
 
 
-[![Включить управление оптимистичным параллелизмом, проверка &quot;использовать оптимистичный параллелизм&quot; флажок](implementing-optimistic-concurrency-cs/_static/image17.png)](implementing-optimistic-concurrency-cs/_static/image16.png)
+[![Eвключить управление оптимистичным параллелизмом, проверка &quot;использовать оптимистичный параллелизм&quot; флажок](implementing-optimistic-concurrency-cs/_static/image17.png)](implementing-optimistic-concurrency-cs/_static/image16.png)
 
 **Рис. 6**: Включить управление оптимистичным параллелизмом, установив флажок «Использовать оптимистичный параллелизм» ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image18.png))
 
@@ -113,7 +113,7 @@ ms.locfileid: "58422783"
 Наконец необходимо укажите что TableAdapter должен использовать шаблоны доступа к данным, которые Заполнение DataTable и вернуть таблицу данных; также указывать, что должна быть создана непосредственные методы DB. Измените имя метода для возврата шаблон DataTable из GetData на GetProducts, использовавшимся соглашения об именовании, которые были использованы в исходном DAL.
 
 
-[![TableAdapter использует все шаблоны доступа к данным](implementing-optimistic-concurrency-cs/_static/image20.png)](implementing-optimistic-concurrency-cs/_static/image19.png)
+[![HAve TableAdapter использовать все шаблоны доступа к данным](implementing-optimistic-concurrency-cs/_static/image20.png)](implementing-optimistic-concurrency-cs/_static/image19.png)
 
 **Рис. 7**: У адаптера таблицы используют все шаблоны доступа к данным ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image21.png))
 
@@ -121,7 +121,7 @@ ms.locfileid: "58422783"
 По завершении работы мастера конструктор DataSet будет включать, строго типизированный `Products` DataTable и TableAdapter. Отвлекитесь и измените имя DataTable из `Products` для `ProductsOptimisticConcurrency`, что можно сделать, щелкнув правой кнопкой мыши в строке заголовка объекта DataTable и выбрав переименование в контекстном меню.
 
 
-[![К типизированному DataSet добавлены DataTable и TableAdapter](implementing-optimistic-concurrency-cs/_static/image23.png)](implementing-optimistic-concurrency-cs/_static/image22.png)
+[![A Были добавлены DataTable и TableAdapter к типизированному набору данных](implementing-optimistic-concurrency-cs/_static/image23.png)](implementing-optimistic-concurrency-cs/_static/image22.png)
 
 **Рис. 8**: DataTable и TableAdapter были добавлены к типизированному DataSet ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image24.png))
 
@@ -143,7 +143,7 @@ ms.locfileid: "58422783"
 Для этого щелкните правой кнопкой мыши в строке заголовка TableAdapter (область непосредственно над `Fill` и `GetProducts` имена методов) и выберите Добавить запрос в контекстном меню. Запустится мастер настройки запроса адаптера таблицы. Как с начальной конфигурацией для нашего адаптера TableAdapter, необязательно для создания `GetProductByProductID(productID)` метода, использующего специальный оператор SQL (см. рис. 4). Так как `GetProductByProductID(productID)` метод возвращает сведения об определенном продукте, указать, что этот запрос является `SELECT` тип, который возвращает строки запроса.
 
 
-[![Пометка типа запроса как &quot;SELECT, возвращающая строки&quot;](implementing-optimistic-concurrency-cs/_static/image26.png)](implementing-optimistic-concurrency-cs/_static/image25.png)
+[![MВведите запрос в качестве Ark &quot;SELECT, возвращающая строки&quot;](implementing-optimistic-concurrency-cs/_static/image26.png)](implementing-optimistic-concurrency-cs/_static/image25.png)
 
 **Рис. 9**: Пометка типа запроса как «`SELECT` , возвращающая строки» ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image27.png))
 
@@ -151,7 +151,7 @@ ms.locfileid: "58422783"
 На следующем экране мы предложено ввести SQL-запрос для использования с предварительно загруженным запрос по умолчанию адаптера таблицы. Дополните существующий запрос для включения в предложении `WHERE ProductID = @ProductID`, как показано на рис. 10.
 
 
-[![Добавить предложение, предварительно загружен запрос для возврата определенной записи продукта](implementing-optimistic-concurrency-cs/_static/image29.png)](implementing-optimistic-concurrency-cs/_static/image28.png)
+[![Aдд предложение WHERE для запроса Pre-Loaded для возврата определенной записи продукта](implementing-optimistic-concurrency-cs/_static/image29.png)](implementing-optimistic-concurrency-cs/_static/image28.png)
 
 **Рис. 10**: Добавить `WHERE` предложение в Pre-Loaded запрос для возврата определенной записи продукта ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image30.png))
 
@@ -159,7 +159,7 @@ ms.locfileid: "58422783"
 Наконец, измените имена созданных методов на `FillByProductID` и `GetProductByProductID`.
 
 
-[![Переименование методов на FillByProductID и GetProductByProductID](implementing-optimistic-concurrency-cs/_static/image32.png)](implementing-optimistic-concurrency-cs/_static/image31.png)
+[![ReName методов на FillByProductID и GetProductByProductID](implementing-optimistic-concurrency-cs/_static/image32.png)](implementing-optimistic-concurrency-cs/_static/image31.png)
 
 **Рис. 11**: Переименуйте методы, которые `FillByProductID` и `GetProductByProductID` ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image33.png))
 
@@ -232,7 +232,7 @@ ms.locfileid: "58422783"
 Сначала откройте `OptimisticConcurrency.aspx` странице в `EditInsertDelete` папки и добавления элемента управления GridView в конструктор, установив его `ID` свойства `ProductsGrid`. Смарт-теге элемента GridView, необязательно, чтобы создать новый ObjectDataSource, именуемый `ProductsOptimisticConcurrencyDataSource`. Поскольку мы хотим данный элемент управления ObjectDataSource для использования DAL с поддержкой оптимистичного параллелизма, настройте его для использования `ProductsOptimisticConcurrencyBLL` объекта.
 
 
-[![Рядом с ObjectDataSource объект ProductsOptimisticConcurrencyBLL](implementing-optimistic-concurrency-cs/_static/image36.png)](implementing-optimistic-concurrency-cs/_static/image35.png)
+[![HAve использование ObjectDataSource объект ProductsOptimisticConcurrencyBLL](implementing-optimistic-concurrency-cs/_static/image36.png)](implementing-optimistic-concurrency-cs/_static/image35.png)
 
 **Рис. 13**: Для использования ObjectDataSource `ProductsOptimisticConcurrencyBLL` объекта ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image37.png))
 
@@ -294,7 +294,7 @@ ms.locfileid: "58422783"
 Чтобы увидеть, почему это важно, Отвлекитесь и посетите нашу страницу в браузере. Как и ожидалось, GridView перечисляет каждый продукт с помощью кнопки Edit и Delete в самом левом столбце.
 
 
-[![Продукты, перечисленные в элементе управления GridView](implementing-optimistic-concurrency-cs/_static/image39.png)](implementing-optimistic-concurrency-cs/_static/image38.png)
+[![Tон продукты, перечисленные в элементе управления GridView](implementing-optimistic-concurrency-cs/_static/image39.png)](implementing-optimistic-concurrency-cs/_static/image38.png)
 
 **Рис. 14**: Продукты, перечисленные в элементе управления GridView ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image40.png))
 
@@ -302,7 +302,7 @@ ms.locfileid: "58422783"
 Если нажать кнопку «Удалить», для какой-либо продукт `FormatException` возникает исключение.
 
 
-[![Попытка удаления результатов продуктов в FormatException](implementing-optimistic-concurrency-cs/_static/image42.png)](implementing-optimistic-concurrency-cs/_static/image41.png)
+[![Attempting для удаления любой результатов продуктов в FormatException](implementing-optimistic-concurrency-cs/_static/image42.png)](implementing-optimistic-concurrency-cs/_static/image41.png)
 
 **Рис. 15**: Попытка удалить любой продукт приводит `FormatException` ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image43.png))
 
@@ -323,7 +323,7 @@ ms.locfileid: "58422783"
 После решения этой проблемы, попробуйте повторно нажмите кнопку удаления любого продукта. Это время, вы получите `InvalidOperationException` при попытке вызова МЕТОДА ObjectDataSource `UpdateProduct` метод.
 
 
-[![ObjectDataSource не может найти метод с входные параметры, он хочет отправить](implementing-optimistic-concurrency-cs/_static/image45.png)](implementing-optimistic-concurrency-cs/_static/image44.png)
+[![Tон ObjectDataSource не может найти метод с входные параметры, он хочет отправить](implementing-optimistic-concurrency-cs/_static/image45.png)](implementing-optimistic-concurrency-cs/_static/image44.png)
 
 **Рис. 16**: ObjectDataSource не может найти метод с входные параметры, он хочет отправить ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image46.png))
 
@@ -342,7 +342,7 @@ ms.locfileid: "58422783"
 В другом экземпляре обозревателя имя продукта текстовое поле по-прежнему отображается «Chai». В этом втором окне обозревателя, обновите `UnitPrice` для `25.00`. Без поддержки оптимистичного параллелизма обновления во втором экземпляре обозревателя изменится имя продукта обратно на «Chai», тем самым переписывая изменения, выполненные в первом экземпляре обозревателя. С помощью оптимистичного параллелизма, тем не менее, щелчок кнопкой "Обновить" на втором экземпляре обозревателя приводит [DBConcurrencyException](https://msdn.microsoft.com/library/system.data.dbconcurrencyexception.aspx).
 
 
-[![При обнаружении одновременного нарушения возникает исключение DBConcurrencyException](implementing-optimistic-concurrency-cs/_static/image48.png)](implementing-optimistic-concurrency-cs/_static/image47.png)
+[![Wри, обнаружении одновременного нарушения DBConcurrencyException возникает исключение](implementing-optimistic-concurrency-cs/_static/image48.png)](implementing-optimistic-concurrency-cs/_static/image47.png)
 
 **Рис. 17**: При обнаружении одновременного нарушения, `DBConcurrencyException` возникает исключение ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image49.png))
 
@@ -369,7 +369,7 @@ ms.locfileid: "58422783"
 После добавления этих меток, конструктор в Visual Studio должна быть аналогична рис. 18.
 
 
-[![Были добавлены два элемента управления Label к странице](implementing-optimistic-concurrency-cs/_static/image51.png)](implementing-optimistic-concurrency-cs/_static/image50.png)
+[![Tэлементы управления Label WO были добавлены на страницу](implementing-optimistic-concurrency-cs/_static/image51.png)](implementing-optimistic-concurrency-cs/_static/image50.png)
 
 **Рис. 18**: Две метки элементов управления были добавлены на страницу ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image52.png))
 
@@ -388,7 +388,7 @@ ms.locfileid: "58422783"
 В возникновении исключения из `DBConcurrencyException` исключения, этот обработчик событий отображает `UpdateConflictMessage` метки элемента управления и указывает, что исключение было обработано. Этот код в месте, при возникновении одновременного нарушения при обновлении записи пользователя изменения будут потеряны, поскольку они переписывают выполненные изменения другого пользователя в то же время. В частности GridView возвращается в состояние до редактирования и связанных с текущей базой данных. Это обновит строке GridView изменения другого пользователя, которые ранее не были видны. Кроме того `UpdateConflictMessage` элемент управления Label будет объяснить пользователю что произошло. На рис. 19 подробно описана эта последовательность событий.
 
 
-[![Пользователь s обновления теряются в условиях возникновения одновременного нарушения](implementing-optimistic-concurrency-cs/_static/image54.png)](implementing-optimistic-concurrency-cs/_static/image53.png)
+[![A В условиях возникновения одновременного нарушения, теряются пользователя s обновления](implementing-optimistic-concurrency-cs/_static/image54.png)](implementing-optimistic-concurrency-cs/_static/image53.png)
 
 **Рис. 19**: Пользователь s обновления теряются в условиях возникновения одновременного нарушения ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image55.png))
 
@@ -409,7 +409,7 @@ ms.locfileid: "58422783"
 При возникновении одновременного нарушения запрос пользователя на удаление отменяется. Обновляется GridView, в том, что изменения, внесенные в течение этой записи между моментом, когда пользователь загрузки страницы и когда он нажимает кнопку Delete. Когда процесс нарушения, `DeleteConflictMessage` метке, объяснением произошедшего (см. рис. 20).
 
 
-[![Пользователь s удаление отменен в следствие одновременного нарушения](implementing-optimistic-concurrency-cs/_static/image57.png)](implementing-optimistic-concurrency-cs/_static/image56.png)
+[![A Пользователь s удаление отменен в следствие одновременного нарушения](implementing-optimistic-concurrency-cs/_static/image57.png)](implementing-optimistic-concurrency-cs/_static/image56.png)
 
 **Рис. 20**: Пользователь s удаление отменен в следствие одновременного нарушения ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-cs/_static/image58.png))
 

@@ -8,15 +8,15 @@ ms.date: 05/28/2015
 ms.assetid: a36d3bdf-ef1b-47a4-b932-3a0cf4cad716
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/getting-started
 msc.type: authoredcontent
-ms.openlocfilehash: 79f76410e091b137e2792127b0a42524270761e8
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 796e0c5e605d1103a4b9937b4e698c5c9412c013
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062621"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402301"
 ---
-<a name="getting-started"></a>Начало работы
-====================
+# <a name="getting-started"></a>Начало работы
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 [!INCLUDE[](~/includes/rp.md)]
@@ -289,4 +289,4 @@ WebMatrix запускает встроенный веб-сервер (IIS Expre
 [Создание веб-сайта ASP.NET с нуля](https://www.microsoft.com/web/post/create-an-aspnet-website-from-scratch). Это учебник, в частности, речь идет об использовании WebMatrix (не веб-страниц ASP.NET). Он переходит в немного более подробно о некоторых дополнительных функциях WebMatrix, не рассматриваются в рамках этого учебного курса.
 
 > [!div class="step-by-step"]
-> [Вперед](intro-to-web-pages-programming.md)
+> [Далее](intro-to-web-pages-programming.md)

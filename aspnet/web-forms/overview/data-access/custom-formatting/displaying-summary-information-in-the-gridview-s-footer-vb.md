@@ -8,15 +8,15 @@ ms.date: 03/31/2010
 ms.assetid: 41c818b7-603a-402b-8847-890a63547b6f
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting/displaying-summary-information-in-the-gridview-s-footer-vb
 msc.type: authoredcontent
-ms.openlocfilehash: dfb78ee1e5da2774254cbe685b8dfd3dc7d46af9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 69548e637a35c4fd5d0f3356e279f1f0370fad39
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062451"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409451"
 ---
-<a name="displaying-summary-information-in-the-gridviews-footer-vb"></a>Отображение сводной информации в нижнем колонтитуле элемента управления GridView (VB)
-====================
+# <a name="displaying-summary-information-in-the-gridviews-footer-vb"></a>Отображение сводной информации в нижнем колонтитуле элемента управления GridView (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/5/7/0/57084608-dfb3-4781-991c-407d086e2adc/ASPNET_Data_Tutorial_15_VB.exe) или [скачать PDF](displaying-summary-information-in-the-gridview-s-footer-vb/_static/datatutorial15vb1.pdf)
@@ -37,7 +37,7 @@ ms.locfileid: "57062451"
 В этом руководстве будет показано, как преодолеть эти трудности. В частности мы создадим страницу со списком категорий в раскрывающемся списке с продуктами выбранной категории, отображаемый в GridView. GridView будет включать строку нижнего колонтитула, отображает среднюю цену и общее количество единиц на складе, а также на порядок продуктов в этой категории.
 
 
-[![Сводная информация отображается в строке нижнего колонтитула GridView](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image2.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image1.png)
+[![Sсводку сведений отображается в строке нижнего колонтитула GridView](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image2.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image1.png)
 
 **Рис. 1**: Сводная информация отображается в строке нижнего колонтитула GridView ([Просмотр полноразмерного изображения](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image3.png))
 
@@ -51,12 +51,12 @@ ms.locfileid: "57062451"
 Сначала откройте `SummaryDataInFooter.aspx` странице в `CustomFormatting` папку. Добавьте элемент управления DropDownList и задайте его `ID` для `Categories`. Затем щелкните ссылку выберите источник данных смарт-теге DropDownList и необязательно, чтобы добавить новый ObjectDataSource, именуемый `CategoriesDataSource` , вызывающий `CategoriesBLL` класса `GetCategories()` метод.
 
 
-[![Добавьте новый ObjectDataSource, именуемый CategoriesDataSource](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image5.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image4.png)
+[![Aдд новый ObjectDataSource с именем CategoriesDataSource](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image5.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image4.png)
 
 **Рис. 2**: Добавить новый элемент управления ObjectDataSource с именем `CategoriesDataSource` ([Просмотр полноразмерного изображения](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image6.png))
 
 
-[![У элемента управления ObjectDataSource вызова метода GetCategories() класса categoriesbll](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image8.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image7.png)
+[![Hэлемент управления ObjectDataSource Ave вызова метода GetCategories() класса categoriesbll](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image8.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image7.png)
 
 **Рис. 3**: Иметь элемент управления ObjectDataSource вызывает `CategoriesBLL` класса `GetCategories()` метод ([Просмотр полноразмерного изображения](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image9.png))
 
@@ -64,7 +64,7 @@ ms.locfileid: "57062451"
 После настройки ObjectDataSource, этот мастер возвращает нам конфигурации источника данных элемента управления DropDownList, мастер, из которого необходимо указать значение поля данных должны отображаться и какой из них должен соответствовать значению DropDownList `ListItem` s. У `CategoryName` поле, отображаемое и использование `CategoryID` как значение.
 
 
-[![Используйте поля CategoryID и CategoryName текста и значения для элементов ListItem, соответственно](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image11.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image10.png)
+[![USE CategoryName и CategoryID поля как текст, а значение для элементов ListItem, соответственно](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image11.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image10.png)
 
 **Рис. 4**: Используйте `CategoryName` и `CategoryID` полей `Text` и `Value` для `ListItem` s, соответственно ([Просмотр полноразмерного изображения](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image12.png))
 
@@ -72,7 +72,7 @@ ms.locfileid: "57062451"
 На этом этапе у нас есть элемента управления DropDownList (`Categories`), содержащая список категорий в системе. Теперь нам нужно добавить элемент GridView со списком продуктов, принадлежащих выбранной категории. Сначала, однако Отвлекитесь и установите флажок Включить AutoPostBack в смарт-тега DropDownList. Как уже говорилось в *"основной/подробности" Фильтрация с помощью элемента управления DropDownList* учебника, задав DropDownList `AutoPostBack` свойства `True` страницы будут передаваться обратно при каждом изменении значения элемента управления DropDownList. Это приведет к GridView к обновлению, с этими продуктами для новой выбранной категории. Если `AutoPostBack` свойству `False` (по умолчанию), изменение категории не вызывает обратную передачу и таким образом, не обновляются продукты.
 
 
-[![Установите флажок Enable AutoPostBack в смарт-тега DropDownList](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image14.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image13.png)
+[![CПроверка флажок Включить AutoPostBack в смарт-теге DropDownList](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image14.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image13.png)
 
 **Рис. 5**: Установите флажок "Включить" AutoPostBack в смарт-теге DropDownList ([Просмотр полноразмерного изображения](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image15.png))
 
@@ -80,7 +80,7 @@ ms.locfileid: "57062451"
 Добавление элемента управления GridView на страницу для отображения продуктов для выбранной категории. Значение элемента GridView `ID` для `ProductsInCategory` и привязать его к элементу управления ObjectDataSource с именем `ProductsInCategoryDataSource`.
 
 
-[![Добавьте новый ObjectDataSource, именуемый ProductsInCategoryDataSource](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image17.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image16.png)
+[![Aдд новый ObjectDataSource с именем ProductsInCategoryDataSource](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image17.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image16.png)
 
 **Рис. 6**: Добавить новый элемент управления ObjectDataSource с именем `ProductsInCategoryDataSource` ([Просмотр полноразмерного изображения](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image18.png))
 
@@ -88,7 +88,7 @@ ms.locfileid: "57062451"
 Настройте элемент управления ObjectDataSource, таким образом, чтобы он вызывает `ProductsBLL` класса `GetProductsByCategoryID(categoryID)` метод.
 
 
-[![У элемента управления ObjectDataSource вызвать метод GetProductsByCategoryID(categoryID)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image20.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image19.png)
+[![HAve Invoke ObjectDataSource метод GetProductsByCategoryID(categoryID)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image20.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image19.png)
 
 **Рис. 7**: Иметь элемент управления ObjectDataSource вызывает `GetProductsByCategoryID(categoryID)` метод ([Просмотр полноразмерного изображения](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image21.png))
 
@@ -96,7 +96,7 @@ ms.locfileid: "57062451"
 Так как `GetProductsByCategoryID(categoryID)` метод принимает входной параметр, на последнем шаге мастера можно указать источник значения параметра. Для отображения этих продуктов выбранной категории, имеют параметр, извлеченных из `Categories` DropDownList.
 
 
-[![Получение categoryID значение параметра из выбранной категории DropDownList](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image23.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image22.png)
+[![GET categoryID значение параметра из выбранной категории DropDownList](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image23.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image22.png)
 
 **Рис. 8**: Получить *`categoryID`* значение параметра из выбранной категории DropDownList ([Просмотр полноразмерного изображения](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image24.png))
 
@@ -109,7 +109,7 @@ ms.locfileid: "57062451"
 На этом этапе у нас есть полнофункционального отчета «основной/подробности» в которой отображается имя, цена за единицу, единиц на складе и единицы измерения для этих продуктов, принадлежащих выбранной категории.
 
 
-[![Получение categoryID значение параметра из выбранной категории DropDownList](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image26.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image25.png)
+[![GET categoryID значение параметра из выбранной категории DropDownList](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image26.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image25.png)
 
 **Рис. 9**: Получить *`categoryID`* значение параметра из выбранной категории DropDownList ([Просмотр полноразмерного изображения](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image27.png))
 
@@ -119,7 +119,7 @@ ms.locfileid: "57062451"
 Элемент управления GridView может отображать строки нижнего колонтитула и заголовка. Эти строки отображаются в зависимости от значения `ShowHeader` и `ShowFooter` свойства, соответственно, с помощью `ShowHeader` по умолчанию принимается `True` и `ShowFooter` для `False`. Чтобы включить нижний колонтитул в GridView, просто установите для его `ShowFooter` свойства `True`.
 
 
-[![Свойства элемента GridView ShowFooter задано значение True](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image29.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image28.png)
+[![SET GridView ShowFooter присваивается значение True](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image29.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image28.png)
 
 **Рис. 10**: Значение элемента GridView `ShowFooter` свойства `True` ([Просмотр полноразмерного изображения](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image30.png))
 
@@ -127,7 +127,7 @@ ms.locfileid: "57062451"
 Строки нижнего колонтитула содержит ячейку для каждого из полей, определенных в GridView; Тем не менее эти ячейки являются пустыми по умолчанию. Отвлекитесь и просмотрите ход работы в браузере. С помощью `ShowFooter` свойство `True`, GridView включает пустая строка.
 
 
-[![GridView теперь включает в себя строку нижнего колонтитула](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image32.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image31.png)
+[![TТеперь он GridView включает строку нижнего колонтитула](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image32.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image31.png)
 
 **Рис. 11**: GridView теперь включает строку нижнего колонтитула ([Просмотр полноразмерного изображения](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image33.png))
 
@@ -149,7 +149,7 @@ ms.locfileid: "57062451"
 Как на снимке экрана ниже показано, это изменение делает нижний колонтитул выделяться сильнее.
 
 
-[![Строки нижнего колонтитула GridView теперь имеет красно-фонового цвета](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image35.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image34.png)
+[![TСтроки нижнего колонтитула HE GridView теперь имеет красно-цвет фона](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image35.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image34.png)
 
 **Рис. 12**: Строки нижнего колонтитула GridView теперь имеет красно-цвет фона ([Просмотр полноразмерного изображения](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image36.png))
 
@@ -203,7 +203,7 @@ ms.locfileid: "57062451"
 Рис. 13 показан отчет, после добавления этого кода. Обратите внимание как `ToString("c")` среднюю цену сводные сведения о форматироваться как денежная единица.
 
 
-[![Строки нижнего колонтитула GridView теперь имеет красно-фонового цвета](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image38.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image37.png)
+[![TСтроки нижнего колонтитула HE GridView теперь имеет красно-цвет фона](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image38.png)](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image37.png)
 
 **Рис. 13**: Строки нижнего колонтитула GridView теперь имеет красно-цвет фона ([Просмотр полноразмерного изображения](displaying-summary-information-in-the-gridview-s-footer-vb/_static/image39.png))
 

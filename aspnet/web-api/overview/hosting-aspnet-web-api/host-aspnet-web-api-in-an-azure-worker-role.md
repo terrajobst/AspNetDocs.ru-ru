@@ -1,22 +1,23 @@
 ---
 uid: web-api/overview/hosting-aspnet-web-api/host-aspnet-web-api-in-an-azure-worker-role
-title: Размещение ASP.NET Web API 2 в рабочей роли Azure | Документация Майкрософт
+title: Размещение ASP.NET Web API 2 в рабочей роли Azure - ASP.NET 4.x
 author: MikeWasson
-description: Этом руководстве показано, как разместить веб-API ASP.NET в рабочей роли Azure, с помощью OWIN для резидентного размещения платформа веб-API. Откройте веб-интерфейс для .NET (OWIN) de...
+description: Учебник. Размещение веб-API ASP.NET в рабочей роли Azure, с помощью OWIN для резидентного размещения платформа веб-API.
 ms.author: riande
 ms.date: 04/02/2014
+ms.custom: seoapril2019
 ms.assetid: 6980ee2e-d6b0-4a08-8fb6-ab96362dd0e3
 msc.legacyurl: /web-api/overview/hosting-aspnet-web-api/host-aspnet-web-api-in-an-azure-worker-role
 msc.type: authoredcontent
-ms.openlocfilehash: 40cb1a4514beaf81e7ed75bbd3e478f2ba146fe5
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bfb23aafb814010e8651965dad91ca20a37fd786
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57063921"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59404628"
 ---
-<a name="host-aspnet-web-api-2-in-an-azure-worker-role"></a>Размещение ASP.NET Web API 2 в рабочей роли Azure
-====================
+# <a name="host-aspnet-web-api-2-in-an-azure-worker-role"></a>Размещение ASP.NET Web API 2 в рабочей роли Azure
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 > Этом руководстве показано, как разместить веб-API ASP.NET в рабочей роли Azure, с помощью OWIN для резидентного размещения платформа веб-API.

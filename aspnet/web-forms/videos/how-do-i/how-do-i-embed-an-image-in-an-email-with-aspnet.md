@@ -8,15 +8,15 @@ ms.date: 11/06/2008
 ms.assetid: 424788ac-0a43-4063-99e7-db5aa4c66a9d
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-embed-an-image-in-an-email-with-aspnet
 msc.type: video
-ms.openlocfilehash: d046c988c060580b856fb65c90521c3a2815e760
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: fce565c7746acaa10ef1cf68e3ed98e052cca43e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57059691"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59407280"
 ---
-<a name="how-do-i-embed-an-image-in-an-email-with-aspnet"></a>[Инструкции] Внедрение изображения в сообщение электронной почты с помощью ASP.NET
-====================
+# <a name="how-do-i-embed-an-image-in-an-email-with-aspnet"></a>[Инструкции] Внедрение изображения в сообщение электронной почты с помощью ASP.NET
+
 по [Крис Пелз](https://twitter.com/chrispels)
 
 Крис Пелз показано, как внедрить изображение в сообщение электронной почты с помощью ASP.NET. Он создает веб-форму (с полями для, из тему и текст), для создания текста и HTML версиях сообщение электронной почты использует класса AlternateView, изображение хранится в экземпляре класса LinkedResource, он внедряется в HTML AlternateView. Затем он добавляет в объект MailMessage обе версии и дважды, отправляет сообщение электронной почты, сначала с HTML-получения возможностей, а затем как доступное только для текста. В Outlook отображается как сообщения электронной почты. HTML-версия показывает внедренные изображения. Текстовая версия — нет.

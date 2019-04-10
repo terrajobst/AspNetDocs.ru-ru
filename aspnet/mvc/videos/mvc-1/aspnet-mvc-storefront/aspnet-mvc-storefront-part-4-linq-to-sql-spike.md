@@ -8,15 +8,15 @@ ms.date: 05/27/2008
 ms.assetid: 990262a5-4c06-472a-8083-ed11e14f1e5a
 msc.legacyurl: /mvc/videos/mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-4-linq-to-sql-spike
 msc.type: video
-ms.openlocfilehash: b48d16532daacab3db8e398d911c28390eefff23
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 937451d8cfa5bb96ca6abebf440af86c2c2746ab
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57060541"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411466"
 ---
-<a name="aspnet-mvc-storefront-part-4-linq-to-sql-spike"></a>Интернет-магазин на ASP.NET MVC, часть 4. Скачок LINQ to SQL
-====================
+# <a name="aspnet-mvc-storefront-part-4-linq-to-sql-spike"></a>Интернет-магазин на ASP.NET MVC, часть 4. Скачок LINQ to SQL
+
 по [Роб Conery](https://github.com/robconery)
 
 Роб создает пик «» - функций для тестирования мысли или вдохновение — чтобы убедиться в том, что Linq To Sql будет работать для моей шаблон доступа к данным.

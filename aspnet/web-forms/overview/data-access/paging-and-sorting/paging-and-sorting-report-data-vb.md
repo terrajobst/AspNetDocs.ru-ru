@@ -8,15 +8,15 @@ ms.date: 08/15/2006
 ms.assetid: b895e37e-0e69-45cc-a7e4-17ddd2e1b38d
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/paging-and-sorting-report-data-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 23f14251c280e1da3a51612ed538ecbc0f5b8d54
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 5f2cd9c752968f11efe74cce1c620d0b7cf6a467
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424356"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59408593"
 ---
-<a name="paging-and-sorting-report-data-vb"></a>Разбиение по страницам и упорядочение данных отчета (VB)
-====================
+# <a name="paging-and-sorting-report-data-vb"></a>Разбиение по страницам и упорядочение данных отчета (VB)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_24_VB.exe) или [скачать PDF](paging-and-sorting-report-data-vb/_static/datatutorial24vb1.pdf)
@@ -67,7 +67,7 @@ ms.locfileid: "58424356"
 
 ## <a name="step-2-displaying-product-information-in-a-gridview"></a>Шаг 2. Отображение информации о продукте в элементе управления GridView
 
-Мы фактически реализации возможностей упорядочения и разбиения по страницам, позвольте s сначала создать стандартный не srotable, элемент управления GridView со списком информации о продукте. Это задача мы хранить много раз выполняли данной серии учебных курсов таким образом, эти действия должны быть знакомы. Сначала откройте `SimplePagingSorting.aspx` страницы и перетащите элемент управления GridView с панели элементов в конструктор, установив его `ID` свойства `Products`. Создайте новый ObjectDataSource, который использует класса ProductsBLL s `GetProducts()` для возврата всей информации о продукте.
+Мы фактически реализации возможностей упорядочения и разбиения по страницам, позвольте s сначала создать стандартный не допускающего, невыгружаемой элемента GridView, сведения о продукте. Это задача мы хранить много раз выполняли данной серии учебных курсов таким образом, эти действия должны быть знакомы. Сначала откройте `SimplePagingSorting.aspx` страницы и перетащите элемент управления GridView с панели элементов в конструктор, установив его `ID` свойства `Products`. Создайте новый ObjectDataSource, который использует класса ProductsBLL s `GetProducts()` для возврата всей информации о продукте.
 
 
 ![Получение информации обо всех продуктах с помощью метода GetProducts()](paging-and-sorting-report-data-vb/_static/image4.png)
@@ -91,7 +91,7 @@ ms.locfileid: "58424356"
 Рис. 6 показаны до сих при просмотре через браузер. Обратите внимание, что страница со списком продуктов в одном экране с отображением каждого s название продукта, категории, поставщика, цены и более не поддерживается состояние.
 
 
-[![Каждым из продуктов, перечислены](paging-and-sorting-report-data-vb/_static/image7.png)](paging-and-sorting-report-data-vb/_static/image6.png)
+[![EПеречислены ACH продуктов](paging-and-sorting-report-data-vb/_static/image7.png)](paging-and-sorting-report-data-vb/_static/image6.png)
 
 **Рис. 6**: Каждым из продуктов, перечислены ([Просмотр полноразмерного изображения](paging-and-sorting-report-data-vb/_static/image8.png))
 
@@ -101,7 +101,7 @@ ms.locfileid: "58424356"
 Листинг *все* продуктов на одном экране может привести к информационной перегрузке пользователей, изучающих данные. Чтобы сделать результаты более управляемыми, мы можно разбить данные на страницы меньшего размера данных и разрешить пользователям перемещаться по одной странице данных за раз. Для выполнения этого просто установите флажок Enable Paging в смарт-теге GridView s (этот параметр задает GridView s [ `AllowPaging` свойство](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.allowpaging.aspx) для `true`).
 
 
-[![Установите флажок Включить разбиение на страницы для добавления поддержки разбиения по страницам](paging-and-sorting-report-data-vb/_static/image10.png)](paging-and-sorting-report-data-vb/_static/image9.png)
+[![CПроверка включить разбиение по страницам флажок, чтобы добавить поддержку разбиения по страницам](paging-and-sorting-report-data-vb/_static/image10.png)](paging-and-sorting-report-data-vb/_static/image9.png)
 
 **Рис. 7**: Установите флажок "Включить разбиение по страницам" для добавления поддержки разбиения по страницам ([Просмотр полноразмерного изображения](paging-and-sorting-report-data-vb/_static/image11.png))
 
@@ -137,7 +137,7 @@ ms.locfileid: "58424356"
 Рис. 8 показана открытая в браузере после проверки флажок Enable Paging s GridView веб-страницы и `PagerStyle` и `PagerSettings` конфигурации были внесены через `GridView.skin` файл. Обратите внимание только десяти записей отображаются, а интерфейс разбиения по страницам указывает, что просматривается первая страница данных.
 
 
-[![С поддержкой разбиения по страницам отображаются только подмножество записей за раз](paging-and-sorting-report-data-vb/_static/image13.png)](paging-and-sorting-report-data-vb/_static/image12.png)
+[![Wi-ой, разбиение по страницам включено, только подмножество записей отображаются одновременно](paging-and-sorting-report-data-vb/_static/image13.png)](paging-and-sorting-report-data-vb/_static/image12.png)
 
 **Рис. 8**: С поддержкой разбиения по страницам, отображаются только подмножество записей за раз ([Просмотр полноразмерного изображения](paging-and-sorting-report-data-vb/_static/image14.png))
 
@@ -145,7 +145,7 @@ ms.locfileid: "58424356"
 Когда пользователь щелкает один из номеров страниц в интерфейсе разбиения по страницам, обратная передача и страница повторно загружается показывает, что запрошенный страницы s записей. Рис. 9 показаны результаты после перехода к последней странице данных. Обратите внимание на то, что последняя страница имеет только одну запись; Это обусловлено существует 81 в целом, приводит к 8 страниц по 10 записей и одна страница с записью одиночному.
 
 
-[![Щелкнув номер страницы вызывает обратную передачу и показано соответствующее подмножество записей](paging-and-sorting-report-data-vb/_static/image16.png)](paging-and-sorting-report-data-vb/_static/image15.png)
+[![Cщелкнув номера страницы вызывает обратную передачу и показаны соответствующие записи из подмножества](paging-and-sorting-report-data-vb/_static/image16.png)](paging-and-sorting-report-data-vb/_static/image15.png)
 
 **Рис. 9**: Щелкнув номер страницы вызывает обратную передачу и показаны соответствующие записи из подмножества ([Просмотр полноразмерного изображения](paging-and-sorting-report-data-vb/_static/image17.png))
 
@@ -182,7 +182,7 @@ ms.locfileid: "58424356"
 В результате этого добавления пользователя отображается сообщение о том, какие просматриваемой страницы и сколько всего страниц данных существует.
 
 
-[![Отображаются номер текущей страницы и общее число страниц](paging-and-sorting-report-data-vb/_static/image19.png)](paging-and-sorting-report-data-vb/_static/image18.png)
+[![Tон номер текущей страницы и общее число страниц отображаются](paging-and-sorting-report-data-vb/_static/image19.png)](paging-and-sorting-report-data-vb/_static/image18.png)
 
 **Рис. 10**: Отображаются номер текущей страницы и общее число страниц ([Просмотр полноразмерного изображения](paging-and-sorting-report-data-vb/_static/image20.png))
 
@@ -206,7 +206,7 @@ ms.locfileid: "58424356"
 Как показано на рис. 11, просто изменив GridView s `PageIndex` свойство вызывает запись данных привязывается к GridView. В GridView s `DataBound` обработчик событий, соответствующих DropDownList `ListItem` выбран.
 
 
-[![Он автоматически откроется шестой странице при выборе элемент страницы 6 стрелку раскрывающегося списка](paging-and-sorting-report-data-vb/_static/image22.png)](paging-and-sorting-report-data-vb/_static/image21.png)
+[![Tон пользователя является, автоматически откроется шестой странице при выборе элемент страницы 6 стрелку раскрывающегося списка](paging-and-sorting-report-data-vb/_static/image22.png)](paging-and-sorting-report-data-vb/_static/image21.png)
 
 **Рис. 11**: Он автоматически откроется шестой странице при выборе элемент страницы 6 стрелку раскрывающегося списка ([Просмотр полноразмерного изображения](paging-and-sorting-report-data-vb/_static/image23.png))
 
@@ -231,7 +231,7 @@ ms.locfileid: "58424356"
 После этого добавления к CSS при посещении страницы через обозреватель экран должен выглядеть как на рис. 12. В частности на рис. 12 показаны результаты после нажатия ссылку заголовка s цены.
 
 
-[![Результаты упорядочены по UnitPrice в возрастающем порядке](paging-and-sorting-report-data-vb/_static/image25.png)](paging-and-sorting-report-data-vb/_static/image24.png)
+[![Tон результаты упорядочены по UnitPrice в возрастающем порядке](paging-and-sorting-report-data-vb/_static/image25.png)](paging-and-sorting-report-data-vb/_static/image24.png)
 
 **Рис. 12**: Результаты упорядочены по UnitPrice в возрастающем порядке ([Просмотр полноразмерного изображения](paging-and-sorting-report-data-vb/_static/image26.png))
 
@@ -264,7 +264,7 @@ GridView все поля BoundField, CheckBoxField, TemplateField и т. д. у 
 Один раз `SortExpression` свойство было снято для `UnitPrice` BoundField, заголовок отображается как текст, а не как ссылки, таким образом запрещая пользователям выполнять упорядочение данных по цене.
 
 
-[![При удалении свойства SortExpression приводит к, пользователи больше не возможности упорядочения продуктов по цене](paging-and-sorting-report-data-vb/_static/image29.png)](paging-and-sorting-report-data-vb/_static/image28.png)
+[![BУдаление свойства SortExpression приводит к, пользователи могут больше не y упорядочения продуктов по цене](paging-and-sorting-report-data-vb/_static/image29.png)](paging-and-sorting-report-data-vb/_static/image28.png)
 
 **Рис. 14**: При удалении свойства SortExpression приводит к, пользователи могут больше не сортировать продукты, цена ([Просмотр полноразмерного изображения](paging-and-sorting-report-data-vb/_static/image30.png))
 
@@ -283,7 +283,7 @@ GridView все поля BoundField, CheckBoxField, TemplateField и т. д. у 
 После нажатия этой кнопки пользователь возвращается к первой странице с продуктами, упорядоченными по цене начиная с самой высокой (см рис. 15).
 
 
-[![Нажатии кнопки выполняется упорядочение продуктов начиная с самых дорогих с самой](paging-and-sorting-report-data-vb/_static/image32.png)](paging-and-sorting-report-data-vb/_static/image31.png)
+[![Cщелкнув кнопку заказы продукты из самых дорогих с самой](paging-and-sorting-report-data-vb/_static/image32.png)](paging-and-sorting-report-data-vb/_static/image31.png)
 
 **Рис. 15**: Нажатии кнопки выполняется упорядочение продуктов из самых дорогих с самой ([Просмотр полноразмерного изображения](paging-and-sorting-report-data-vb/_static/image33.png))
 

@@ -8,15 +8,15 @@ ms.date: 08/22/2007
 ms.assetid: e90defdb-b6b1-4f38-8f6a-7adccbb426ef
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control
 msc.type: video
-ms.openlocfilehash: 21dedc5a8d934e9284cf13b2075dbff637a130de
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d8b74b0fb2061477c1d2ff66e394d0bb1e22baf3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035241"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402054"
 ---
-<a name="how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control"></a>[Инструкции] Запуск обновления UpdatePanel из элемента управления DropDownList?
-====================
+# <a name="how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control"></a>[Инструкции] Запуск обновления UpdatePanel из элемента управления DropDownList?
+
 по [(Joe Stagner)](https://github.com/JoeStagner)
 
 В большинстве наших видео на ASP.NET AJAX UpdatePanel мы использовали элемент управления Button заставить UpdatePanel обновить его содержимое. Еще мы можем использовать событий, создаваемых с любой другой элемент управления сервера ASP.NET. В этом видео использует событие SelectedIndexChanged элемента управления DropDownList в качестве триггера для обновления элемента управления UpdatePanel. Мы также видим, как мы может динамически изменить классом таблицы стилей, связанных с элементами управления, содержащегося в элементе управления UpdatePanel.

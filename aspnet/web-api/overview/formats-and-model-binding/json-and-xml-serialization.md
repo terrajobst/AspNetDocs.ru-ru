@@ -1,22 +1,23 @@
 ---
 uid: web-api/overview/formats-and-model-binding/json-and-xml-serialization
-title: Сериализация JSON и XML в веб-API ASP.NET | Документация Майкрософт
+title: Сериализация JSON и XML в ASP.NET Web API - ASP.NET 4.x
 author: MikeWasson
-description: ''
+description: Описывает модули форматирования JSON и XML в ASP.NET Web API для ASP.NET 4.x.
 ms.author: riande
 ms.date: 05/30/2012
+ms.custom: seoapril2019
 ms.assetid: 1cd7525d-de5e-4ab6-94f0-51480d3255d1
 msc.legacyurl: /web-api/overview/formats-and-model-binding/json-and-xml-serialization
 msc.type: authoredcontent
-ms.openlocfilehash: 47967e6e1dd0e84b6059c07d7544c0e755fdf510
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a9e7ed63a55c146976e0221214e722f3a2292fee
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57028931"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59408281"
 ---
-<a name="json-and-xml-serialization-in-aspnet-web-api"></a>Сериализация JSON и XML в веб-API ASP.NET
-====================
+# <a name="json-and-xml-serialization-in-aspnet-web-api"></a>Сериализация JSON и XML в веб-API ASP.NET
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 В этой статье описывается модули форматирования JSON и XML в ASP.NET Web API.
@@ -34,14 +35,14 @@ ms.locfileid: "57028931"
 
     - [Свойства только для чтения](#json_readonly)
     - [Даты](#json_dates)
-    - [Отступов](#json_indenting)
+    - [Отступы](#json_indenting)
     - [Смешанный регистр знаков](#json_camelcasing)
     - [Анонимные и слабо типизированных объектов](#json_anon)
 - [Модуль форматирования типа мультимедиа XML](#xml_media_type_formatter)
 
     - [Свойства только для чтения](#xml_readonly)
     - [Даты](#xml_dates)
-    - [Отступов](#xml_indenting)
+    - [Отступы](#xml_indenting)
     - [Сериализаторы XML для типа параметра](#xml_pertype)
 - [Модуль форматирования XML или JSON](#removing_the_json_or_xml_formatter)
 - [Обработка циклические ссылки объекта](#handling_circular_object_references)

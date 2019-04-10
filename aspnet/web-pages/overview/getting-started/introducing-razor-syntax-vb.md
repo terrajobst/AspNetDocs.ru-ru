@@ -8,15 +8,15 @@ ms.date: 02/07/2014
 ms.assetid: 5da59646-e973-41cd-88a9-c6b2c0594027
 msc.legacyurl: /web-pages/overview/getting-started/introducing-razor-syntax-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 17a3a4925766b74446955a8e3a6fddbf9d29a721
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e6b63afb9492e810e19999c7c7ffe074ad510bda
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061911"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59406773"
 ---
-<a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-visual-basic"></a>Введение в программирование веб-ASP.NET с использованием синтаксиса Razor (Visual Basic)
-====================
+# <a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-visual-basic"></a>Введение в программирование веб-ASP.NET с использованием синтаксиса Razor (Visual Basic)
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > В этой статье дает Общие сведения о программировании с помощью веб-страниц ASP.NET с использованием синтаксиса Razor и Visual Basic. ASP.NET — технология Майкрософт для выполнения динамических веб-страниц на веб-серверах.
@@ -108,7 +108,7 @@ ms.locfileid: "57061911"
 
 ![Razor Img4](introducing-razor-syntax-vb/_static/image4.jpg)
 
-### <a name="6-visual-basic-code-is-not-case-sensitive"></a>6.  Код Visual Basic регистр не учитывается
+### <a name="6-visual-basic-code-is-not-case-sensitive"></a>6. Код Visual Basic регистр не учитывается
 
 Язык Visual Basic не чувствителен к регистру. Программирование ключевые слова (такие как `Dim`, `If`, и `True`) и имена переменных (как `myString`, или `subTotal`) могут быть записаны в любом случае.
 
@@ -284,7 +284,9 @@ ms.locfileid: "57061911"
         <strong>Example</strong>
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsInt(), IsInt()`
@@ -296,7 +298,9 @@ ms.locfileid: "57061911"
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample23.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsBool(), IsBool()`
@@ -308,7 +312,9 @@ ms.locfileid: "57061911"
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample24.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsFloat(), IsFloat()`
@@ -320,7 +326,9 @@ ms.locfileid: "57061911"
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample25.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsDecimal(), IsDecimal()`
@@ -332,7 +340,9 @@ ms.locfileid: "57061911"
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample26.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AsDateTime(), IsDateTime()`
@@ -344,7 +354,9 @@ ms.locfileid: "57061911"
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample27.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `ToString()`
@@ -374,7 +386,9 @@ ms.locfileid: "57061911"
         <strong>Examples</strong>
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `+ - * /`
@@ -386,7 +400,9 @@ ms.locfileid: "57061911"
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample29.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `=`
@@ -398,7 +414,9 @@ ms.locfileid: "57061911"
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample30.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `<>`
@@ -410,7 +428,9 @@ ms.locfileid: "57061911"
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample31.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `< > <= >=`
@@ -422,7 +442,9 @@ ms.locfileid: "57061911"
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample32.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `&`
@@ -434,7 +456,9 @@ ms.locfileid: "57061911"
         [!code-vbhtml[Main](introducing-razor-syntax-vb/samples/sample33.vbhtml)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `+= -=`
@@ -446,7 +470,9 @@ ms.locfileid: "57061911"
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample34.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `.`
@@ -458,7 +484,9 @@ ms.locfileid: "57061911"
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample35.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `()`
@@ -470,7 +498,9 @@ ms.locfileid: "57061911"
         [!code-vbhtml[Main](introducing-razor-syntax-vb/samples/sample36.vbhtml)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `Not`
@@ -482,7 +512,9 @@ ms.locfileid: "57061911"
         [!code-vb[Main](introducing-razor-syntax-vb/samples/sample37.vb)]
     :::column-end:::
 :::row-end:::
-* * *
+
+---
+
 :::row:::
     :::column:::
         `AndAlso OrElse`
@@ -512,7 +544,7 @@ ms.locfileid: "57061911"
 | Полный URL-адрес | `http://mycompanyserver/humanresources/CompanyPolicy.htm` |
 | --- | --- |
 | Имя сервера | *mycompanyserver* |
-| Виртуальный путь | */humanresources/CompanyPolicy.htm* |
+| Виртуальный путь | */HumanResources/CompanyPolicy.htm* |
 | Физический путь | *C:\mywebsites\humanresources\CompanyPolicy.htm* |
 
 Виртуальный корневой каталог — /, так же, как корень диска c диск — \. (Виртуальная папка пути всегда использовать символы косой черты). Виртуальный путь к папке не нужно иметь то же имя как физический каталог; Это может быть псевдонимом. (На рабочих серверах, виртуальный путь редко соответствует как полный физический путь.)

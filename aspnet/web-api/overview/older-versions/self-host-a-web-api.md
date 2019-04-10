@@ -1,25 +1,26 @@
 ---
 uid: web-api/overview/older-versions/self-host-a-web-api
-title: Резидентного размещения ASP.NET веб-API 1 (C#) | Документация Майкрософт
+title: Резидентного размещения веб-API 1 ASP.NET (C#)-ASP.NET 4.x
 author: MikeWasson
-description: Веб-API ASP.NET не требуются службы IIS. Вы можете самостоятельно размещать веб-API в свои собственные хост-процессе. Этот учебник показывает, как для размещения веб-API внутри консоли рабоче...
+description: Руководстве с кодом показано, как разместить веб-API внутри консольного приложения.
 ms.author: riande
 ms.date: 01/26/2012
+ms.custom: seoapril2019
 ms.assetid: be5ab1e2-4140-4275-ac59-ca82a1bac0c1
 msc.legacyurl: /web-api/overview/older-versions/self-host-a-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 63d192a6fa2aafef3770d5b0b97ec32e001b69db
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7c73bf4734f8ed8a1bf93595c0847f611ad9cc15
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57040761"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409607"
 ---
-<a name="self-host-aspnet-web-api-1-c"></a>Резидентного размещения ASP.NET веб-API 1 (C#)
-====================
+# <a name="self-host-aspnet-web-api-1-c"></a>Резидентного размещения ASP.NET веб-API 1 (C#)
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
-> Веб-API ASP.NET не требуются службы IIS. Вы можете самостоятельно размещать веб-API в свои собственные хост-процессе. Этом руководстве показано, как разместить веб-API внутри консольного приложения.
+> Этом руководстве показано, как разместить веб-API внутри консольного приложения. Веб-API ASP.NET не требуются службы IIS. Вы можете самостоятельно размещать веб-API в свои собственные хост-процессе. 
 > 
 > **Новые приложения должны использовать OWIN для резидентного размещения веб-API.** См. в разделе [использовать OWIN для резидентного размещения веб-API 2 ASP.NET](../hosting-aspnet-web-api/use-owin-to-self-host-web-api.md).
 > 

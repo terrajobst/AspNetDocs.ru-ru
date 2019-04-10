@@ -8,15 +8,15 @@ ms.date: 03/31/2010
 ms.assetid: 871a4574-f89c-4214-b786-79253ed3653b
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting/custom-formatting-based-upon-data-cs
 msc.type: authoredcontent
-ms.openlocfilehash: ee9cdf19769ea63388fd9dd18a82bb2b4dcdef87
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: bd5433b724dcafe8e816254523cb4b38c3be1104
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57027351"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403172"
 ---
-<a name="custom-formatting-based-upon-data-c"></a>Пользовательское форматирование на основе данных (C#)
-====================
+# <a name="custom-formatting-based-upon-data-c"></a>Пользовательское форматирование на основе данных (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/6/9/969e5c94-dfb6-4e47-9570-d6d9e704c3c1/ASPNET_Data_Tutorial_11_CS.exe) или [скачать PDF](custom-formatting-based-upon-data-cs/_static/datatutorial11cs1.pdf)
@@ -49,7 +49,7 @@ ms.locfileid: "57027351"
 Когда элемент управления ObjectDataSource привязан к элементу DetailsView, Отвлекитесь и списка полей. Мы решили удалить `ProductID`, `SupplierID`, `CategoryID`, `UnitsInStock`, `UnitsOnOrder`, `ReorderLevel`, и `Discontinued` поля BoundField, кроме переформатированы оставшихся полей BoundFields и переименован. Переформатировали `Width` и `Height` параметры. Так как элемент DetailsView отображает только одну запись, необходимо включить разбиение по страницам позволит пользователю просматривать все продукты. Сделать это, установив флажок Enable Paging в смарт-теге DetailsView.
 
 
-[![Установите флажок Включить разбиение по страницам в смарт-теге DetailsView](custom-formatting-based-upon-data-cs/_static/image2.png)](custom-formatting-based-upon-data-cs/_static/image1.png)
+[![CПроверка включения флажок Paging в смарт-теге DetailsView](custom-formatting-based-upon-data-cs/_static/image2.png)](custom-formatting-based-upon-data-cs/_static/image1.png)
 
 **Рис. 1**: Установите флажок "Включить" Paging в смарт-теге DetailsView ([Просмотр полноразмерного изображения](custom-formatting-based-upon-data-cs/_static/image3.png))
 
@@ -62,7 +62,7 @@ ms.locfileid: "57027351"
 Отвлекитесь и проверьте страницу в браузере.
 
 
-[![Элемент управления DetailsView отображает одного продукта за раз](custom-formatting-based-upon-data-cs/_static/image5.png)](custom-formatting-based-upon-data-cs/_static/image4.png)
+[![Tон DetailsView отображает один продукт для управления одновременно](custom-formatting-based-upon-data-cs/_static/image5.png)](custom-formatting-based-upon-data-cs/_static/image4.png)
 
 **Рис. 2**: DetailsView элемент управления отображает одного продукта за раз ([Просмотр полноразмерного изображения](custom-formatting-based-upon-data-cs/_static/image6.png))
 
@@ -120,12 +120,12 @@ ms.locfileid: "57027351"
 При просмотре Chai, который стоит меньше, чем 75.00 долларов, цена отображается обычным шрифтом (см. рис. 4). Тем не менее, при просмотре Mishi Kobe Niku, который имеет цену 97.00 долларов, цена отображается шрифтом полужирный, курсив (см. рис. 5).
 
 
-[![Цены меньше $75.00 отображаются шрифтом норм.](custom-formatting-based-upon-data-cs/_static/image9.png)](custom-formatting-based-upon-data-cs/_static/image8.png)
+[![PМенее $75.00 отображаются шрифтом обычный ы](custom-formatting-based-upon-data-cs/_static/image9.png)](custom-formatting-based-upon-data-cs/_static/image8.png)
 
 **Рис. 4**: Цены меньше $75.00 отображаются шрифтом обычный ([Просмотр полноразмерного изображения](custom-formatting-based-upon-data-cs/_static/image10.png))
 
 
-[![Цена дорогих продуктов отображаются полужирным, курсивом шрифта](custom-formatting-based-upon-data-cs/_static/image12.png)](custom-formatting-based-upon-data-cs/_static/image11.png)
+[![Eв полужирный, курсив шрифта отображаются цены продуктов xpensive](custom-formatting-based-upon-data-cs/_static/image12.png)](custom-formatting-based-upon-data-cs/_static/image11.png)
 
 **Рис. 5**: Цена дорогих продуктов отображаются полужирным, курсивом шрифта ([Просмотр полноразмерного изображения](custom-formatting-based-upon-data-cs/_static/image13.png))
 
@@ -192,12 +192,12 @@ FormView не содержит все поля BoundField, кроме и поэ�
 Рис. 7 показан FormView при отображении продукта, `UnitsInStock` значение больше 10, а его значение меньше 10 продукта на рис. 8.
 
 
-[![Для продуктов с достаточно больших единиц на складе настраиваемое форматирование не применяется](custom-formatting-based-upon-data-cs/_static/image16.png)](custom-formatting-based-upon-data-cs/_static/image15.png)
+[![Fили продукты с достаточно больших единиц на складе, настраиваемое форматирование не применяется](custom-formatting-based-upon-data-cs/_static/image16.png)](custom-formatting-based-upon-data-cs/_static/image15.png)
 
 **Рис. 7**: Для продуктов с достаточно больших единиц на складе, настраиваемое форматирование не применяется ([Просмотр полноразмерного изображения](custom-formatting-based-upon-data-cs/_static/image17.png))
 
 
-[![Единиц на складе номер отображается красным цветом для тех продуктов с значения 10 или меньше](custom-formatting-based-upon-data-cs/_static/image19.png)](custom-formatting-based-upon-data-cs/_static/image18.png)
+[![Tон единиц на складе номер отображается красным цветом те продукты с значения 10 или меньше](custom-formatting-based-upon-data-cs/_static/image19.png)](custom-formatting-based-upon-data-cs/_static/image18.png)
 
 **Рис. 8**: Единиц на складе номер отображается красным цветом для тех продуктов с значения 10 или меньше ([Просмотр полноразмерного изображения](custom-formatting-based-upon-data-cs/_static/image20.png))
 
@@ -243,7 +243,7 @@ FormView не содержит все поля BoundField, кроме и поэ�
 Рис. 9 показаны результаты для этой точки, при просмотре через браузер.
 
 
-[![GridView перечисляет имя, категорию и цену продукта](custom-formatting-based-upon-data-cs/_static/image22.png)](custom-formatting-based-upon-data-cs/_static/image21.png)
+[![Tв GridView перечислены, имя, категорию и цену для каждого продукта](custom-formatting-based-upon-data-cs/_static/image22.png)](custom-formatting-based-upon-data-cs/_static/image21.png)
 
 **Рис. 9**: GridView перечисляет имя, категорию и цену для каждого продукта ([Просмотр полноразмерного изображения](custom-formatting-based-upon-data-cs/_static/image23.png))
 
@@ -299,7 +299,7 @@ FormView не содержит все поля BoundField, кроме и поэ�
 [!code-csharp[Main](custom-formatting-based-upon-data-cs/samples/sample18.cs)]
 
 
-[![Наиболее доступной продуктов, которые выделены желтым](custom-formatting-based-upon-data-cs/_static/image26.png)](custom-formatting-based-upon-data-cs/_static/image25.png)
+[![Tон наиболее доступной продуктов, которые выделены желтым](custom-formatting-based-upon-data-cs/_static/image26.png)](custom-formatting-based-upon-data-cs/_static/image25.png)
 
 **Рис. 11**: Наиболее доступной продуктов, которые выделены желтым ([Просмотр полноразмерного изображения](custom-formatting-based-upon-data-cs/_static/image27.png))
 
@@ -323,4 +323,4 @@ FormView не содержит все поля BoundField, кроме и поэ�
 В этой серии руководств пособий рецензировалась многими компетентными редакторами. E.R. стали Лиз Шалок в этом руководстве Gilmore, Dennis Patterson и (Dan Jagers). Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
-> [Вперед](using-templatefields-in-the-gridview-control-cs.md)
+> [Далее](using-templatefields-in-the-gridview-control-cs.md)

@@ -8,15 +8,15 @@ ms.date: 02/18/2013
 ms.assetid: 0a1f88bd-97da-4ed1-86f1-605199dc75a4
 msc.legacyurl: /web-forms/overview/getting-started/hands-on-labs/whats-new-in-web-forms-in-aspnet-45
 msc.type: authoredcontent
-ms.openlocfilehash: 78cb6dec71e6b4974fdea4f205d1a36ebdfc3104
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 52f6ec17fb21019e93ebf2795e95d5b27e4edbe6
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424448"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59401748"
 ---
-<a name="whats-new-in-web-forms-in-aspnet-45"></a>Новые возможности веб-форм в ASP.NET 4.5
-====================
+# <a name="whats-new-in-web-forms-in-aspnet-45"></a>Новые возможности веб-форм в ASP.NET 4.5
+
 по [Web Слышатся Team](https://twitter.com/webcamps)
 
 > Новая версия веб-форм ASP.NET представляет ряд улучшений, ориентированы на улучшение взаимодействия с пользователем при работе с данными.
@@ -396,11 +396,11 @@ ms.locfileid: "58424448"
     [!code-csharp[Main](whats-new-in-web-forms-in-aspnet-45/samples/sample23.cs)]
 
     > [!NOTE]
-    > .NET framework 4.5 расширила существующей заметки коллекции данных. Ниже перечислены некоторые заметки данных, можно использовать: [CreditCard], [Phone], [EmailAddress], [диапазон], [сравнить], [Url], [FileExtensions], [Required], [Key], [RegularExpression].
+    > .NET framework 4.5 расширила существующей заметки коллекции данных. Ниже перечислены некоторые заметки данных, можно использовать: [CreditCard], [Phone], [EmailAddress], [диапазон], [сравнить], [Url], [FileExtensions], [Required], [ключ], [RegularExpression].
     > 
     > Вот несколько примеров использования.
     > 
-    > [Key]: Specifies that an attribute is the unique identifier
+    > [Ключ]: Specifies that an attribute is the unique identifier
     > 
     > [Range(0.4, 0.5, ErrorMessage=&quot;{Write an error message}&quot;]: Double range
     > 
@@ -612,7 +612,7 @@ ms.locfileid: "58424448"
 > Кроме того, можно развернуть это приложение для Azure следующих [приложении б: Публикация приложения ASP.NET MVC 4 с помощью веб-развертывания](#AppendixB).
 
 
-* * *
+---
 
 <a id="Summary"></a>
 ## <a name="summary"></a>Сводка
@@ -650,7 +650,7 @@ ms.locfileid: "58424448"
 
     ![Ход установки](whats-new-in-web-forms-in-aspnet-45/_static/image27.png)
 
-    *Ход выполнения установки*
+    *Ход установки*
 6. После завершения установки нажмите кнопку **Готово**.
 
     ![Установка завершена](whats-new-in-web-forms-in-aspnet-45/_static/image28.png)

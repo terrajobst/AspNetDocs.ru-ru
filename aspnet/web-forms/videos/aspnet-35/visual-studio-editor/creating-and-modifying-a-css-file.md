@@ -8,15 +8,15 @@ ms.date: 11/15/2007
 ms.assetid: e7c3b221-87ce-444e-9106-bb0609665009
 msc.legacyurl: /web-forms/videos/aspnet-35/visual-studio-editor/creating-and-modifying-a-css-file
 msc.type: video
-ms.openlocfilehash: 7ad9a7418a3f191bf83f8b640ccf2ce612cbee0f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 050c328a9a73226124f7545d804fe9729aab4176
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57060021"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398414"
 ---
-<a name="creating-and-modifying-a-css-file"></a>Создание и изменение CSS-файла
-====================
+# <a name="creating-and-modifying-a-css-file"></a>Создание и изменение CSS-файла
+
 по [Тодд Миранда](https://github.com/tmiranda)
 
 В этом видео представлены возможности каскадных таблиц стилей (CSS) стиля Visual Studio 2008. Возможности Visual Studio 2008 CSS упрощают создание стилей и стили через интерфейс свойство стиля. При этом удаляются разработчика от необходимости иметь дело со сведениями о реализации CSS.

@@ -8,15 +8,15 @@ ms.date: 12/01/2014
 ms.assetid: 61941e64-0c0d-4996-9270-cb8ccfd0cabc
 msc.legacyurl: /visual-studio/overview/2013/creating-web-projects-in-visual-studio
 msc.type: authoredcontent
-ms.openlocfilehash: 3d96d796d22c3511fedc45c024274300143b119b
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a62c821159cd097507019d5efb29e01958ec9fba
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57034781"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398108"
 ---
-<a name="creating-aspnet-web-projects-in-visual-studio-2013"></a>Создание веб-проектов ASP.NET в Visual Studio 2013
-====================
+# <a name="creating-aspnet-web-projects-in-visual-studio-2013"></a>Создание веб-проектов ASP.NET в Visual Studio 2013
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 > В этом разделе описываются параметры для создания веб-проектов ASP.NET в Visual Studio 2013 с обновлением 3
@@ -81,7 +81,7 @@ Visual Studio включает в себя функции, которые упр
 - Создание и управление веб-приложения или виртуальные машины, сделать приложения доступными через Интернет.
 - Просмотр журналов, созданных приложением, выполняемым в облаке.
 - В режиме отладки удаленного выполнения во время выполнения приложения в облаке.
-- Viiew и управление другими службами Azure, таких как базы данных SQL.
+- Просмотр и управление другими службами Azure, таких как базы данных SQL.
 
 Вы можете [создать учетную запись Azure](https://www.windowsazure.com/pricing/free-trial/) , включает в себя основные службы, такие как веб-приложений бесплатно, и если вы являетесь подписчиком MSDN вы можете [активировать преимущества](https://azure.microsoft.com/pricing/member-offers/visual-studio-subscriptions/) , предоставляющих ежемесячные кредиты денежную оплату Microsoft Azure Дополнительные службы. 
 

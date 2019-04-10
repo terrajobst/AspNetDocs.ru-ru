@@ -8,15 +8,15 @@ ms.date: 01/26/2011
 ms.assetid: 244278c1-fec8-4255-8a8a-13bde491c4f5
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started
 msc.type: authoredcontent
-ms.openlocfilehash: 5eaeaa0aa474e1aed86954e6c10dd1703b938944
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c0f11019c7410b756d592066a7fe33b3e26fd383
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57065411"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59407202"
 ---
-<a name="using-the-entity-framework-40-and-the-objectdatasource-control-part-1-getting-started"></a>С помощью Entity Framework 4.0 и элемент управления ObjectDataSource, часть 1: Начало работы
-====================
+# <a name="using-the-entity-framework-40-and-the-objectdatasource-control-part-1-getting-started"></a>С помощью Entity Framework 4.0 и элемент управления ObjectDataSource, часть 1: Начало работы
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 > В этой серии руководств основан на веб-приложение университета Contoso, которая создается с [Приступая к работе с Entity Framework 4.0](../getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md) серии руководств. Если вы не прошли предыдущих учебных курсах, в качестве отправной точки для этого учебника вы можете [загрузить приложение](https://code.msdn.microsoft.com/ASPNET-Web-Forms-97f8ee9a) , он был создан. Вы также можете [загрузить приложение](https://code.msdn.microsoft.com/ASPNET-Web-Forms-6c7197aa) , созданный путем завершения серии руководств.
@@ -69,7 +69,7 @@ ms.locfileid: "57065411"
 
 Pages, созданные в этом руководстве работает со `Departments` набор сущностей модели данных, созданный в [серии руководств, Приступая к работе](../getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md).
 
-[!["Image01"](using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started/_static/image4.png)](using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started/_static/image3.png)
+[![Image01](using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started/_static/image4.png)](using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started/_static/image3.png)
 
 [![Image02](using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started/_static/image6.png)](using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started/_static/image5.png)
 
@@ -189,7 +189,7 @@ Pages, созданные в этом руководстве работает с
 
 Запустите *Departments.aspx* страницы.
 
-[!["Image01"](using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started/_static/image26.png)](using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started/_static/image25.png)
+[![Image01](using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started/_static/image26.png)](using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started/_static/image25.png)
 
 Обратите внимание, что, несмотря на то, что вы не указали строку формата в *Departments.aspx* разметки страницы для **бюджета** или **Дата начала** столбцы, по умолчанию, валюты и даты применения форматирования к ним по `DynamicField` элементы управления, с помощью метаданных, которое вы использовали в *Department.cs* файла.
 
@@ -322,4 +322,4 @@ Pages, созданные в этом руководстве работает с
 На этом завершается введение в использование `ObjectDataSource` управления для основных CRUD (Создание, чтение, обновление и удаление) операций с помощью Entity Framework. Вы создали простой n уровневого приложения, но по-прежнему тесно связана бизнес-логики на уровень доступа к данным, что осложняет автоматическое тестирование модулей. В следующем учебном курсе будет показано, как реализовать шаблон repository, чтобы упростить модульное тестирование.
 
 > [!div class="step-by-step"]
-> [Вперед](using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
+> [Далее](using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)

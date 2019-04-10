@@ -1,25 +1,26 @@
 ---
 uid: web-api/overview/formats-and-model-binding/model-validation-in-aspnet-web-api
-title: Проверка модели в веб-API ASP.NET | Документация Майкрософт
+title: Проверка модели в ASP.NET Web API — ASP.NET 4.x
 author: MikeWasson
-description: ''
+description: Общие сведения о проверке модели в ASP.NET Web API для ASP.NET 4.x.
 ms.author: riande
 ms.date: 07/20/2012
+ms.custom: seoapril2019
 ms.assetid: 7d061207-22b8-4883-bafa-e89b1e7749ca
 msc.legacyurl: /web-api/overview/formats-and-model-binding/model-validation-in-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 611a6466e160387592df678b3b8556625ff8e234
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d4e792f8cc2f79c2ab82c5a74fd50f49475fac4f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033411"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59404576"
 ---
-<a name="model-validation-in-aspnet-web-api"></a>Проверка модели в веб-API ASP.NET
-====================
+# <a name="model-validation-in-aspnet-web-api"></a>Проверка модели в веб-API ASP.NET
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
-Когда клиент отправляет данные в веб-API, часто требуется проверять данные перед обработкой. В этой статье показано, как для создания заметок к моделям, использование заметок для проверки данных и обработки ошибок проверки в веб-API.
+В этой статье показано, как для создания заметок к моделям, использование заметок для проверки данных и обработки ошибок проверки в веб-API. Когда клиент отправляет данные в веб-API, часто требуется проверять данные перед обработкой. 
 
 ## <a name="data-annotations"></a>Заметки к данным
 

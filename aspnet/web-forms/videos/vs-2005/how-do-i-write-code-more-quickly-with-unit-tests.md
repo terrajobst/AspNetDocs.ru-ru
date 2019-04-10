@@ -8,15 +8,15 @@ ms.date: 06/21/2007
 ms.assetid: 4618499e-1925-414e-a432-16952bb967f4
 msc.legacyurl: /web-forms/videos/vs-2005/how-do-i-write-code-more-quickly-with-unit-tests
 msc.type: video
-ms.openlocfilehash: d0950ec711e85435c5a25028e357d9519817f7b9
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: f92fa38a42fe73d22085e5a88b66ea6df0d68191
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57062951"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403770"
 ---
-<a name="how-do-i-write-code-more-quickly-with-unit-tests"></a>[Инструкции] Написать код быстрее с помощью модульных тестов?
-====================
+# <a name="how-do-i-write-code-more-quickly-with-unit-tests"></a>[Инструкции] Написать код быстрее с помощью модульных тестов?
+
 по [Криса Менегэй](https://twitter.com/CMenegay)
 
 В этом видео мы Узнайте, как модульное тестирование позволяет повысить производительность, упрощая процесс отладки. Мы видим, как Visual Studio Team System можно создать модульный тест для автоматизации выполнения кода, отлаживаемого в, что экономит время, затрачиваемое на запуск веб-приложения и выполнять никаких действий, необходимо вручную выполнить тот же код. Модульное тестирование образом быстрее писать более надежный код.

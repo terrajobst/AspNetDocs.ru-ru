@@ -1,22 +1,23 @@
 ---
 uid: web-api/overview/getting-started-with-aspnet-web-api/action-results
-title: Действие приводит к веб-API 2 | Документация Майкрософт
+title: Действие приводит к веб-API 2 — ASP.NET 4.x
 author: MikeWasson
-description: ''
+description: Описывает преобразование возвращаемое значение из действия контроллера в ответное сообщение HTTP в ASP.NET веб-API ASP.NET 4.x.
 ms.author: riande
 ms.date: 02/03/2014
+ms.custom: seoapril2019
 ms.assetid: 2fc4797c-38ef-4cc7-926c-ca431c4739e8
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/action-results
 msc.type: authoredcontent
-ms.openlocfilehash: c255cebfd6b0c632c000d24288a4dd4cf73c8a1c
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 87f71938a5c5f38d3a456ba9339540f67e236e1a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422042"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59400897"
 ---
-<a name="action-results-in-web-api-2"></a>Результаты действий в веб-API 2
-====================
+# <a name="action-results-in-web-api-2"></a>Результаты действий в веб-API 2
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 Здесь описывается, как веб-API ASP.NET преобразует возвращаемое значение из действия контроллера в ответное сообщение HTTP.

@@ -1,23 +1,26 @@
 ---
 uid: web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options
-title: Поддержка параметров запроса OData в веб-API 2 ASP.NET | Документация Майкрософт
+title: Поддержка параметров запроса OData в ASP.NET Web API 2 — ASP.NET 4.x
 author: MikeWasson
-description: ''
+description: Обзор с примерами кода показаны поддержки параметров запроса OData в веб-API ASP.NET 2 для ASP.NET 4.x.
 ms.author: riande
 ms.date: 02/04/2013
+ms.custom: seoapril2019
 ms.assetid: 50e6e62b-e72e-4a29-8293-4b67377bd21f
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options
 msc.type: authoredcontent
-ms.openlocfilehash: 8745183125c9dd1dcc7cb0e146367a893bdb0170
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 428e4942e42436585049c1e84cd7b07a4a79c0d1
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57050881"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411570"
 ---
-<a name="supporting-odata-query-options-in-aspnet-web-api-2"></a>Поддержка параметров запроса OData в веб-API 2 ASP.NET
-====================
+# <a name="supporting-odata-query-options-in-aspnet-web-api-2"></a>Поддержка параметров запроса OData в веб-API 2 ASP.NET
+
 по [Майк Уоссон](https://github.com/MikeWasson)
+
+В этом обзоре с примерами кода демонстрируется поддержки параметров запроса OData в веб-API ASP.NET 2 для ASP.NET 4.x. 
 
 OData определяет параметры, которые можно использовать для изменения запроса OData. Клиент отправляет эти параметры в строке запроса URI запроса. Например чтобы отсортировать результаты, клиент использует параметр $orderby:
 
@@ -39,7 +42,7 @@ OData определяет параметры, которые можно исп�
 
 Веб-API поддерживает следующие параметры запроса OData:
 
-| Параметр | Описание: |
+| Параметр | Описание |
 | --- | --- |
 | $expand | При развертывании встроенного связанных сущностей. |
 | $filter | Фильтрует результаты, на основе логического условия. |

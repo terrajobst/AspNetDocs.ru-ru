@@ -8,15 +8,15 @@ ms.date: 09/13/2006
 ms.assetid: 128fdb5f-4c5e-42b5-b485-f3aee90a8e38
 msc.legacyurl: /web-forms/overview/data-access/custom-button-actions/adding-and-responding-to-buttons-to-a-gridview-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 3a081b1633e7762560aea68500f5bd614e4fb5a6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a8cc1d98c0574145b0b74b64d53772bd50517067
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035881"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59404199"
 ---
-<a name="adding-and-responding-to-buttons-to-a-gridview-c"></a>Добавление кнопок и ответов на них к GridView (C#)
-====================
+# <a name="adding-and-responding-to-buttons-to-a-gridview-c"></a>Добавление кнопок и ответов на них к GridView (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_28_CS.exe) или [скачать PDF](adding-and-responding-to-buttons-to-a-gridview-cs/_static/datatutorial28cs1.pdf)
@@ -31,7 +31,7 @@ ms.locfileid: "57035881"
 Кроме того на изменение и удаление кнопки, GridView, DetailsView и FormView элементы управления могут также содержать кнопок, элементов управления LinkButton или ImageButtons, при нажатии выполняют определенную настраиваемую логику на стороне сервера. В этом руководстве мы рассмотрим добавление новых кнопок к шаблону и полям элемента управления GridView или DetailsView. В частности мы создадим интерфейс, имеющий FormView, который позволяет пользователю просматривать поставщиков. Для определенного поставщика FormView показывают сведения о поставщике, а также кнопку веб-элемент управления, при нажатии пометит все связанные с ним продукты как снятые с продажи. Кроме того, элемент управления GridView перечисляются продукты, предоставляемые выбранным поставщиком, где каждая строка, содержащая увеличить цену и скидки цена кнопки, если выбран этот вариант, повысить или снизить продукта `UnitPrice` на 10% (см. рис. 1).
 
 
-[![FormView и GridView содержат кнопки, выполняющие настраиваемые действия](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image2.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image1.png)
+[![BДру FormView и GridView содержат кнопки, выполнить пользовательские действия](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image2.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image1.png)
 
 **Рис. 1**: FormView и GridView содержат кнопки, выполнить пользовательские действия ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image3.png))
 
@@ -52,7 +52,7 @@ ms.locfileid: "57035881"
 Как и в других папках, `Default.aspx` в `CustomButtons` папку перечислит учебные курсы в своем разделе. Помните, что `SectionLevelTutorialListing.ascx` пользовательский элемент управления предоставляет следующие функциональные возможности. Поэтому добавьте данный пользовательский элемент управления для `Default.aspx` , перетащив его из обозревателя решений в режиме конструктора.
 
 
-[![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image6.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image5.png)
+[![Aдд пользовательского элемента управления SectionLevelTutorialListing.ascx к странице Default.aspx](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image6.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image5.png)
 
 **Рис. 3**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image7.png))
 
@@ -76,7 +76,7 @@ ms.locfileid: "57035881"
 Сначала откройте `CustomButtons.aspx` странице в `CustomButtons` папку. Добавление элемента FormView на страницу, перетащив его с панели инструментов в конструктор и задайте его `ID` свойства `Suppliers`. Из смарт-тега FormView, необязательно, чтобы создать новый ObjectDataSource, именуемый `SuppliersDataSource`.
 
 
-[![Создайте новый ObjectDataSource, именуемого SuppliersDataSource](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image10.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image9.png)
+[![Cсоздать новый элемент управления ObjectDataSource с именем SuppliersDataSource](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image10.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image9.png)
 
 **Рис. 5**: Создайте новый ObjectDataSource с именем `SuppliersDataSource` ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image11.png))
 
@@ -84,7 +84,7 @@ ms.locfileid: "57035881"
 Настроить этот новый элемент управления ObjectDataSource, таким образом, чтобы он запрашивал относящийся к `SuppliersBLL` класса `GetSuppliers()` метод (см. рис. 6). Так как этот FormView не предоставляет интерфейс для обновления сведений о поставщике, выберите что параметр (None) из раскрывающегося списка на вкладке "обновления".
 
 
-[![Настройка источника данных для использования метода Getsuppliers() класса s метода GetSuppliers()](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image13.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image12.png)
+[![Cнастроить источник данных для использования метода Getsuppliers() класса метода GetSuppliers() s](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image13.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image12.png)
 
 **Рис. 6**: Настройка источника данных для использования `SuppliersBLL` класса `GetSuppliers()` метод ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image14.png))
 
@@ -96,7 +96,7 @@ ms.locfileid: "57035881"
 Рис. 7 показана страница CustomButtons.aspx, просматриваемая в обозревателе.
 
 
-[![FormView отображает поля CompanyName и Phone от выбранного поставщика](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image16.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image15.png)
+[![Tон FormView указаны CompanyName и поля Phone в настоящее время выбран поставщик](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image16.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image15.png)
 
 **Рис. 7**: FormView отображает `CompanyName` и `Phone` поля из в настоящее время выбран поставщик ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image17.png))
 
@@ -106,7 +106,7 @@ ms.locfileid: "57035881"
 Перед добавлением «снять с продажи все продукты» к шаблону FormView, давайте сперва добавим элемент управления GridView под элемента FormView, перечисляющего продукты, предоставляемые выбранным поставщиком. Чтобы выполнить это, добавить GridView к странице, задайте его `ID` свойства `SuppliersProducts`, и добавьте новый ObjectDataSource, именуемый `SuppliersProductsDataSource`.
 
 
-[![Создайте новый ObjectDataSource, именуемый SuppliersProductsDataSource](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image19.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image18.png)
+[![Cсоздать новый элемент управления ObjectDataSource с именем SuppliersProductsDataSource](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image19.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image18.png)
 
 **Рис. 8**: Создайте новый ObjectDataSource с именем `SuppliersProductsDataSource` ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image20.png))
 
@@ -114,7 +114,7 @@ ms.locfileid: "57035881"
 Настроить данный элемент управления ObjectDataSource для использования класса ProductsBLL `GetProductsBySupplierID(supplierID)` метод (см. рис. 9). При этом GridView позволит корректировать цену продукта, он не будет использовать встроенные возможности правки или удаления из GridView. Таким образом можно задать стрелку раскрывающегося списка (нет) для элемента управления ObjectDataSource, UPDATE, INSERT и удаление вкладок.
 
 
-[![Настройка источника данных для использования класса ProductsBLL s GetProductsBySupplierID(supplierID)-метод](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image22.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image21.png)
+[![Cнастроить источник данных для использования класса ProductsBLL метода GetProductsBySupplierID(supplierID) s](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image22.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image21.png)
 
 **Рис. 9**: Настройка источника данных для использования `ProductsBLL` класса `GetProductsBySupplierID(supplierID)` метод ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image23.png))
 
@@ -122,7 +122,7 @@ ms.locfileid: "57035881"
 Так как `GetProductsBySupplierID(supplierID)` метод принимает входной параметр, мастер ObjectDataSource запрашивает для источника значение этого параметра. Для передачи в `SupplierID` из FormView, необходимо установить параметр исходного стрелку раскрывающегося списка элемента управления и выберите в раскрывающемся списке ControlID, чтобы `Suppliers` (идентификатор FormView, созданного на шаге 2).
 
 
-[![Указывает, что столбец supplierID должен исходить от элемента управления Suppliers FormView](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image25.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image24.png)
+[![Indicate, supplierID параметра должна быть взята из элемента управления Suppliers FormView](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image25.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image24.png)
 
 **Рис. 10**: Указывает, что *`supplierID`* должен исходить от `Suppliers` управления FormView ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image26.png))
 
@@ -134,7 +134,7 @@ ms.locfileid: "57035881"
 На этом этапе наш учебный курс отображает отчет основной/подробности, позволяя пользователю выбрать поставщика из FormView наверху и просмотреть продукты, предоставляемые поставщиком, через GridView в нижней. Рис. 11 показан снимок экрана этой страницы при выборе поставщика Tokyo Traders из FormView.
 
 
-[![Продукты выбранного поставщика, отображаются в GridView](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image28.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image27.png)
+[![Tон s выбранного поставщика, которые в GridView отображены продукты](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image28.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image27.png)
 
 **Рис. 11**: В GridView отображены продукты выбранного поставщика ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image29.png))
 
@@ -146,7 +146,7 @@ ms.locfileid: "57035881"
 Как было показано в предыдущих учебных курсах, мы используем подход снизу вверх, начиная с создания метода DAL, затем метода BLL и наконец реализуя функции страницы ASP.NET. Откройте `Northwind.xsd` типизированного набора DataSet в `App_Code/DAL` папку и добавьте новый метод в `ProductsTableAdapter` (щелкните правой кнопкой мыши `ProductsTableAdapter` и выберите Добавить запрос). Это приведет к появлению мастер настройки запроса TableAdapter, который проведет пользователя через процесс добавления нового метода. Для начала, указывающее, что наш метод DAL будет использовать специальный оператор SQL.
 
 
-[![Создание метода DAL, с помощью инструкции SQL Ad-Hoc](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image31.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image30.png)
+[![CСоздание метода DAL с использованием инструкции SQL Ad-Hoc](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image31.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image30.png)
 
 **Рис. 12**: Создание метода DAL с использованием инструкции SQL Ad-Hoc ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image32.png))
 
@@ -154,7 +154,7 @@ ms.locfileid: "57035881"
 После этого мастер предложит тип создаваемого запроса. Так как `DiscontinueAllProductsForSupplier(supplierID)` будет необходимо обновить метод `Products` таблице базы данных, задание `Discontinued` на 1 для всех продуктов с определенным идентификатором *`supplierID`*, нам нужно создать запрос, обновляющий данные.
 
 
-[![Выберите тип запроса UPDATE](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image34.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image33.png)
+[![CВыберите тип запроса UPDATE](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image34.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image33.png)
 
 **Рис. 13**: Выберите тип запроса UPDATE ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image35.png))
 
@@ -166,7 +166,7 @@ ms.locfileid: "57035881"
 После ввода этого запроса, а затем кнопку Далее, на последнем экране запросит имя нового метода, воспользуйтесь `DiscontinueAllProductsForSupplier`. Следуйте указаниям мастера, нажав кнопку "Готово". При возвращении в конструктор DataSet, вы должны увидеть новый метод в `ProductsTableAdapter` с именем `DiscontinueAllProductsForSupplier(@SupplierID)`.
 
 
-[![Имя нового метода DAL DiscontinueAllProductsForSupplier](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image37.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image36.png)
+[![Nимя нового DiscontinueAllProductsForSupplier метод DAL](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image37.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image36.png)
 
 **Рис. 14**: Назовите новый метод DAL `DiscontinueAllProductsForSupplier` ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image38.png))
 
@@ -186,7 +186,7 @@ ms.locfileid: "57035881"
 С помощью `DiscontinueAllProductsForSupplier(supplierID)` в BLL и DAL доделан, Заключительным этапом добавления возможности снять с продажи все продукты для выбранного поставщика является добавление кнопки веб-элемент управления FormView `ItemTemplate`. Давайте добавим кнопку под телефонным номером поставщика с текстом кнопки, снять с продажи все продукты и `ID` значение свойства `DiscontinueAllProductsForSupplier`. Это кнопка веб-элемента управления в конструкторе можно добавить, щелкнув ссылку Изменить шаблоны в смарт-тега FormView (см. рис. 15), или напрямую через декларативный синтаксис.
 
 
-[![Добавление снять с продажи все продукты кнопку веб-элемента управления FormView s ItemTemplate](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image40.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image39.png)
+[![Aдд a снять с продажи все продукты кнопку веб-элемента управления FormView s ItemTemplate](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image40.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image39.png)
 
 **Рис. 15**: Добавить снять с продажи все продукты кнопку веб-элемент управления FormView `ItemTemplate` ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image41.png))
 
@@ -222,7 +222,7 @@ ms.locfileid: "57035881"
 При отключении состояния представления элемента GridView GridView лежащему в базовом хранилище данных при каждой обратной передаче, а следовательно, будет немедленно обновлен для отражения, что эти два продукта производства (см. рис. 17). Если, однако вы не отключили состояние представления в GridView, необходимо будет вручную повторную привязку данных к GridView после внесения этого изменения. Чтобы выполнить это, просто отправьте вызов в GridView `DataBind()` сразу же после вызова `DiscontinueAllProductsForSupplier(supplierID)` метод.
 
 
-[![После нажатия кнопки «снять с продажи все продукты», поставщик s они обновлены соответствующим образом](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image46.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image45.png)
+[![AРазрыв кнопки снять с продажи все продукты, продукты поставщика s будут обновлены соответствующим образом](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image46.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image45.png)
 
 **Рис. 17**: После нажатия кнопки «снять с продажи все продукты», продукты поставщика будут обновлены соответствующим образом ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image47.png))
 
@@ -276,12 +276,12 @@ ButtonField автоматически передает в *rowIndex* строк
 Рис. 20 показана страница при просмотре продуктов, предоставляемых Grandma Kelly's Homestead. Рис. 21 показаны результаты после цена + 10% был выполнен щелчок кнопкой дважды, чтобы распределить Boysenberry сути и кнопки цена -10% один раз для Northwoods Cranberry Sauce.
 
 
-[![GridView включает цена + 10% и цена -10% кнопки](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image51.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image50.png)
+[![Tон включает в себя GridView, цена + 10% и % кнопки цена -10](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image51.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image50.png)
 
 **Рис. 20**: Цена включает в себя GridView + 10% и цена -10% кнопки ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image52.png))
 
 
-[![Цены для продукта, первый и третий были обновлены с помощью цена + 10% и цена -10% кнопки](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image54.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image53.png)
+[![Tон цен для первого и третьего продукта были обновлены с помощью цена + 10% и % кнопки цена -10](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image54.png)](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image53.png)
 
 **Рис. 21**: Цены на первый и третий продукта были обновлены с помощью цена + 10% и цена -10% кнопки ([Просмотр полноразмерного изображения](adding-and-responding-to-buttons-to-a-gridview-cs/_static/image55.png))
 
@@ -304,4 +304,4 @@ GridView, DetailsView и FormView могут входить кнопки кно�
 [Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP.NET и основатель веб- [4GuysFromRolla.com](http://www.4guysfromrolla.com), работает с веб-технологиями Microsoft с 1998 года. Скотт — независимый консультант, преподаватель и автор. Его последняя книга — [ *Sams Teach ASP.NET 2.0 in 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Ним можно связаться по адресу [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти в [ http://ScottOnWriting.NET ](http://ScottOnWriting.NET).
 
 > [!div class="step-by-step"]
-> [Вперед](adding-and-responding-to-buttons-to-a-gridview-vb.md)
+> [Далее](adding-and-responding-to-buttons-to-a-gridview-vb.md)

@@ -8,15 +8,15 @@ ms.date: 07/30/2013
 ms.assetid: 82324ef0-3b75-4f63-a217-76ef4036ec93
 msc.legacyurl: /aspnet/overview/owin-and-katana/enabling-windows-authentication-in-katana
 msc.type: authoredcontent
-ms.openlocfilehash: 8afa2c9dfbe03a9874513f7d083adf7608f4218f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6d90538ace07402b655b8cd1d9c6e4d5c6dff424
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57041111"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411206"
 ---
-<a name="enabling-windows-authentication-in-katana"></a>Включение проверки подлинности Windows в Katana
-====================
+# <a name="enabling-windows-authentication-in-katana"></a>Включение проверки подлинности Windows в Katana
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 > В этой статье показано, как включить проверку подлинности Windows в Katana. Он охватывает два сценария. С помощью служб IIS для размещения Katana и с помощью HttpListener для резидентного размещения Katana в пользовательском процессе. Благодаря Barry Dorrans, Дэвид Matson и Крис Росс за рецензирование этой статьи.
@@ -24,7 +24,7 @@ ms.locfileid: "57041111"
 
 Katana — это реализованный корпорацией Майкрософт [OWIN](http://owin.org/), Open Web Interface для .NET. Дополнительные общие сведения о OWIN и Katana [здесь](an-overview-of-project-katana.md). Архитектура OWIN имеет несколько уровней:
 
-- Узел: Управляет процессом, в котором выполняется в конвейер OWIN.
+- Организатор: Управляет процессом, в котором выполняется в конвейер OWIN.
 - Сервер: Открывает к сетевому сокету и прослушивает запросы.
 - По промежуточного слоя: Обрабатывает HTTP-запроса и ответа.
 

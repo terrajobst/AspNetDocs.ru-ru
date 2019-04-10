@@ -8,15 +8,15 @@ ms.date: 01/27/2009
 ms.assetid: 0e7b4d85-2c46-4eaf-b6a8-6cd566a67334
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/improving-performance-with-output-caching-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 9402d7e053ef11eeefa92d112b05ec255d5ec6f7
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0f824bd5e080d42a9df3525ca47b87bcef407f7a
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033671"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405629"
 ---
-<a name="improving-performance-with-output-caching-vb"></a>Повышение производительности благодаря кэшированию вывода (VB)
-====================
+# <a name="improving-performance-with-output-caching-vb"></a>Повышение производительности благодаря кэшированию вывода (VB)
+
 по [Microsoft](https://github.com/microsoft)
 
 > В этом руководстве вы узнаете, как можно значительно повысить производительность веб-приложений ASP.NET MVC, используя преимущества кэширования выходных данных. Вы узнаете, как кэшировать результат, возвращенный из действия контроллера, таким образом, чтобы то же содержимое не должны создаваться каждый раз, новый пользователь вызывает действие.
@@ -85,7 +85,7 @@ ms.locfileid: "57033671"
 
 Например контроллер в листинге 3 предоставляет действие с именем GetName(), который возвращает имя текущего пользователя. Джек входит на веб-сайт и вызывает действие GetName() действие возвращается строка «Hi Jack». Если, как следствие, Jill входит на веб-сайт и вызывает действие GetName() затем она также будет строка «Hi Jack». Строка кэшируется на веб-сервере для всех пользователей, после Джек изначально вызывает действие контроллера.
 
-**Listing 3 – Controllers\BadUserController.vb**
+**Листинг 3 – Controllers\BadUserController.vb**
 
 [!code-vb[Main](improving-performance-with-output-caching-vb/samples/sample3.vb)]
 

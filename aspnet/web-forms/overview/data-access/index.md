@@ -8,26 +8,26 @@ ms.date: 10/05/2011
 ms.assetid: cf54a6fb-a362-4481-b967-c158b98092f7
 msc.legacyurl: /web-forms/overview/data-access
 msc.type: chapter
-ms.openlocfilehash: 0060650de35a8693a9c1432876df1d4902bb1ade
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d2f9d48618a102df7ea24a6d2a80b5c3026c7752
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023081"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405408"
 ---
-<a name="older-versions---data-access"></a>Предыдущие версии. Доступ к данным
-====================
+# <a name="older-versions---data-access"></a>Предыдущие версии. Доступ к данным
+
 > Сведения о выполнении различных задач, связанных с данными с помощью элементов управления данных веб-форм ASP.NET.
 
 
-- [Введение](introduction/index.md)
+- [Вступление](introduction/index.md)
 
     - [Создание уровня доступа к данным (C#)](introduction/creating-a-data-access-layer-cs.md)
     - [Создание уровня бизнес-логики (C#)](introduction/creating-a-business-logic-layer-cs.md)
-    - [Главные страницы и структура навигации веб-сайта (C#)](introduction/master-pages-and-site-navigation-cs.md)
+    - [Эталонные страницы и структура навигации веб-сайта (C#)](introduction/master-pages-and-site-navigation-cs.md)
     - [Создание уровня доступа к данным (VB)](introduction/creating-a-data-access-layer-vb.md)
     - [Создание уровня бизнес-логики (VB)](introduction/creating-a-business-logic-layer-vb.md)
-    - [Главные страницы и структура навигации веб-сайта (VB)](introduction/master-pages-and-site-navigation-vb.md)
+    - [Эталонные страницы и структура навигации веб-сайта (VB)](introduction/master-pages-and-site-navigation-vb.md)
 - [Базовые отчеты](basic-reporting/index.md)
 
     - [Отображение данных с помощью элемента управления ObjectDataSource (C#)](basic-reporting/displaying-data-with-the-objectdatasource-cs.md)

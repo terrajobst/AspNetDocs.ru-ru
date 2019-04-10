@@ -8,15 +8,15 @@ ms.date: 06/02/2008
 ms.assetid: e9803150-452d-4521-97e3-d75d5599383c
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/nobot/fighting-bots-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 8b2a2d2d72bfcf3ce8b3b345fda0bad5a37818ee
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 6baf5447d31d00b89cb7ddf526553456fecbbf6e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57026471"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409477"
 ---
-<a name="fighting-bots-vb"></a>Борьба с ботами (VB)
-====================
+# <a name="fighting-bots-vb"></a>Борьба с ботами (VB)
+
 по [Кристиан Wenz](https://github.com/wenz)
 
 [Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/NoBot0.vb.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/nobot0VB.pdf)
@@ -65,7 +65,7 @@ ms.locfileid: "57026471"
 При выполнении этого скрипта и деактивировать JavaScript или отправить форму в течение первых двух секунд или отправить форму семь раз в течение 30 секунд, вы получите сообщение об ошибке. Тем не менее этот элемент управления использовать осмотрительно, поскольку только около 90-95% пользователи активировали JavaScript, таким образом 5 – 10% пользователей не удастся `NoBot`элемента теста.
 
 
-[![Это сообщение об ошибке может быть вызвано программы-робота](fighting-bots-vb/_static/image2.png)](fighting-bots-vb/_static/image1.png)
+[![Tего сообщение об ошибке может быть вызвано программы-робота](fighting-bots-vb/_static/image2.png)](fighting-bots-vb/_static/image1.png)
 
 Это сообщение об ошибке может быть вызвано программы-робота ([Просмотр полноразмерного изображения](fighting-bots-vb/_static/image3.png))
 

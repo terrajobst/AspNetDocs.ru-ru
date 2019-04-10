@@ -8,15 +8,15 @@ ms.date: 03/02/2009
 ms.assetid: 719d50d4-2305-454c-98b4-bae64937c48f
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/creating-a-controller-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 6fe880775a5d477aefcf0fe6cedb3e719760ed90
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c92d7cdeb7b2d31d5eca810628e9f563840f7494
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036491"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59400618"
 ---
-<a name="creating-a-controller-c"></a>Создание контроллера (C#)
-====================
+# <a name="creating-a-controller-c"></a>Создание контроллера (C#)
+
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > В этом руководстве Стивен Вальтер демонстрирует, как можно добавить контроллер в приложении ASP.NET MVC.
@@ -29,12 +29,12 @@ ms.locfileid: "57036491"
 Самый простой способ создать новый контроллер — щелкните правой кнопкой мыши папку Controllers в окне обозревателя решений Visual Studio и выберите **Add, контроллера** пункт меню (см. рис. 1). Если выбрать этот пункт меню открывает **Добавление контроллера** диалоговое окно (см. рис. 2).
 
 
-[![В диалоговом окне нового проекта](creating-a-controller-cs/_static/image1.jpg)](creating-a-controller-cs/_static/image1.png)
+[![Tдиалоговое окно нового проекта он](creating-a-controller-cs/_static/image1.jpg)](creating-a-controller-cs/_static/image1.png)
 
 **Рис 01**: Добавление нового контроллера ([Просмотр полноразмерного изображения](creating-a-controller-cs/_static/image2.png))
 
 
-[![В диалоговом окне нового проекта](creating-a-controller-cs/_static/image2.jpg)](creating-a-controller-cs/_static/image3.png)
+[![Tдиалоговое окно нового проекта он](creating-a-controller-cs/_static/image2.jpg)](creating-a-controller-cs/_static/image3.png)
 
 **Рис. 02**: Диалоговое окно добавления контроллера ([Просмотр полноразмерного изображения](creating-a-controller-cs/_static/image4.png))
 
@@ -56,7 +56,7 @@ ms.locfileid: "57036491"
 При создании контроллера, у вас есть возможность создать методы действий создания, обновления и сведения автоматически (см. рис. 3). Если выбран этот параметр, создается класс контроллера в листинге 2.
 
 
-[![Автоматическое создание методов действий](creating-a-controller-cs/_static/image3.jpg)](creating-a-controller-cs/_static/image5.png)
+[![Cметоды действий ается автоматически](creating-a-controller-cs/_static/image3.jpg)](creating-a-controller-cs/_static/image5.png)
 
 **Рис 03**: Автоматическое создание методов действий ([Просмотр полноразмерного изображения](creating-a-controller-cs/_static/image6.png))
 
@@ -76,7 +76,7 @@ ms.locfileid: "57036491"
 3. Измените полученный файл, класс наследуется от базового класса System.Web.Mvc.Controller класса (см. Листинг 3).
 
 
-[![Создание нового класса](creating-a-controller-cs/_static/image4.jpg)](creating-a-controller-cs/_static/image7.png)
+[![Cается новый класс](creating-a-controller-cs/_static/image4.jpg)](creating-a-controller-cs/_static/image7.png)
 
 **Рис. 04**: Создание нового класса ([Просмотр полноразмерного изображения](creating-a-controller-cs/_static/image8.png))
 

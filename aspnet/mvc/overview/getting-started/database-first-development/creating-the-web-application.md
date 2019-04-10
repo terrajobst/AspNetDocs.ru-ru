@@ -1,6 +1,6 @@
 ---
 uid: mvc/overview/getting-started/database-first-development/creating-the-web-application
-title: Учебник. Создание веб-приложения и моделей данных для EF Database First с ASP.NET MVC
+title: Учебник. Создание веб-приложения и модели данных для EF Database First с ASP.NET MVC
 description: Это руководство посвящено созданию веб-приложения и создание моделей данных, основанных на таблицах базы данных.
 author: Rick-Anderson
 ms.author: riande
@@ -9,14 +9,14 @@ ms.topic: tutorial
 ms.assetid: bc8f2bd5-ff57-4dcd-8418-a5bd517d8953
 msc.legacyurl: /mvc/overview/getting-started/database-first-development/creating-the-web-application
 msc.type: authoredcontent
-ms.openlocfilehash: 481a0ee9b19e5d35d736b2cc937a124900bce446
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 30fd42be5677df6fa6ee0630914098c30d21385b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58426137"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59404524"
 ---
-# <a name="tutorial-create-the-the-web-application-and-data-models-for-ef-database-first-with-aspnet-mvc"></a>Учебник. Создание веб-приложения и моделей данных для EF Database First с ASP.NET MVC
+# <a name="tutorial-create-the-web-application-and-data-models-for-ef-database-first-with-aspnet-mvc"></a>Учебник. Создание веб-приложения и модели данных для EF Database First с ASP.NET MVC
 
  С помощью MVC, Entity Framework и формирование шаблонов ASP.NET, можно создать веб-приложение, которое предоставляет интерфейс для существующей базы данных. В этой серии руководств показано, как автоматически создавать код, позволяющий пользователям для отображения, изменения и создавать и удалять данные, находящиеся в таблице базы данных. Созданный код соответствует столбцам в таблице базы данных.
 
@@ -104,4 +104,4 @@ ms.locfileid: "58426137"
 
 Перейдите к следующему руководству, чтобы научиться создавать создания кода, на основе моделей данных.
 > [!div class="nextstepaction"]
-> [Создание представлений](generating-views.md)
+> [Создание представлений...](generating-views.md)

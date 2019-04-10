@@ -8,18 +8,18 @@ ms.date: 08/19/2008
 ms.assetid: 9274a72e-34dd-4dae-8452-ed733ae71377
 msc.legacyurl: /mvc/overview/older-versions-1/security/preventing-javascript-injection-attacks-vb
 msc.type: authoredcontent
-ms.openlocfilehash: c46b6e1ca13228feb764d9c660ad578576956970
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: d988b2ed6b7d1760557cbfbb543afa85b320c984
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036331"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402444"
 ---
-<a name="preventing-javascript-injection-attacks-vb"></a>Предотвращение атак, осуществляемых путем внедрения кода JavaScript (VB)
-====================
+# <a name="preventing-javascript-injection-attacks-vb"></a>Предотвращение атак, осуществляемых путем внедрения кода JavaScript (VB)
+
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
-[Загрузить PDF-файл](http://download.microsoft.com/download/8/4/8/84843d8d-1575-426c-bcb5-9d0c42e51416/ASPNET_MVC_Tutorial_06_VB.pdf)
+[Скачать PDF](http://download.microsoft.com/download/8/4/8/84843d8d-1575-426c-bcb5-9d0c42e51416/ASPNET_MVC_Tutorial_06_VB.pdf)
 
 > Предотвратить атаки путем внедрения кода JavaScript и Cross-Site Scripting атаки для вас. В этом руководстве Стивен Вальтер объясняется, как можно легко обойти эти типы атак с HTML-кодирование содержимого.
 
@@ -33,7 +33,7 @@ ms.locfileid: "57036331"
 Представьте, что вы создали веб-сайт клиентов обратной связи (см. рис. 1). Клиенты могут посетить веб-сайт и введите отзыв на обсуждают опыт использования ваших продуктов. Когда клиент отправляет свои отзывы, отзывы и предложения отобразится на странице обратной связи.
 
 
-[![Веб-сайт отзывов клиентов](preventing-javascript-injection-attacks-vb/_static/image2.png)](preventing-javascript-injection-attacks-vb/_static/image1.png)
+[![Cклиент веб-сайт обратной связи](preventing-javascript-injection-attacks-vb/_static/image2.png)](preventing-javascript-injection-attacks-vb/_static/image1.png)
 
 **Рис 01**: Веб-сайт отзывов клиентов ([Просмотр полноразмерного изображения](preventing-javascript-injection-attacks-vb/_static/image3.png))
 
@@ -65,7 +65,7 @@ ms.locfileid: "57036331"
 Этот текст представляет сценарий JavaScript, который выводит окно предупреждающего сообщения. Когда кто-то отправляет этот сценарий в отзыв форме сообщения <em>Boo!</em> будет отображаться всякий раз, когда любой пользователь посещает веб-сайт отзывов клиентов в будущем (см. рис. 2).
 
 
-[![Путем внедрения кода JavaScript](preventing-javascript-injection-attacks-vb/_static/image5.png)](preventing-javascript-injection-attacks-vb/_static/image4.png)
+[![JavaScript путем внедрения кода](preventing-javascript-injection-attacks-vb/_static/image5.png)](preventing-javascript-injection-attacks-vb/_static/image4.png)
 
 **Рис. 02**: Путем внедрения кода JavaScript ([Просмотр полноразмерного изображения](preventing-javascript-injection-attacks-vb/_static/image6.png))
 
@@ -93,7 +93,7 @@ ms.locfileid: "57036331"
 Что означает для HTML-кодирования строки? Когда вы HTML кодирования строки, опасные символы, такие как `<` и `>` заменяются ссылки на сущности HTML, такие как `&lt;` и `&gt;`. Поэтому если строка `<script>alert("Boo!")</script>` HTML-код в кодировке, они преобразуются в нумерованные `&lt;script&gt;alert(&quot;Boo!&quot;)&lt;/script&gt;`. Закодированной строки больше не выполняется как сценарий JavaScript при интерпретации браузером. Вместо этого вы получите безвредным страницы на рис. 3.
 
 
-[![Атака нарушается, JavaScript](preventing-javascript-injection-attacks-vb/_static/image8.png)](preventing-javascript-injection-attacks-vb/_static/image7.png)
+[![Defeated атаки JavaScript](preventing-javascript-injection-attacks-vb/_static/image8.png)](preventing-javascript-injection-attacks-vb/_static/image7.png)
 
 **Рис 03**: Изменило атаки JavaScript ([Просмотр полноразмерного изображения](preventing-javascript-injection-attacks-vb/_static/image9.png))
 

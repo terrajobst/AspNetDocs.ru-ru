@@ -8,15 +8,15 @@ ms.date: 07/30/2013
 ms.assetid: 44761193-04ba-4990-9f90-145d3c10a716
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 20f82744582faddaffdc5b4785bf208ecf0955a7
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 71ff3c269c5d1ed43a67d19442eda8e9d4728295
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058501"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59405707"
 ---
-<a name="implementing-the-repository-and-unit-of-work-patterns-in-an-aspnet-mvc-application-9-of-10"></a>Реализация репозитория и шаблонов Unit of Work в приложении ASP.NET MVC (9 из 10)
-====================
+# <a name="implementing-the-repository-and-unit-of-work-patterns-in-an-aspnet-mvc-application-9-of-10"></a>Реализация репозитория и шаблонов Unit of Work в приложении ASP.NET MVC (9 из 10)
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 [Скачать завершенный проект](http://code.msdn.microsoft.com/Getting-Started-with-dd0e2ed8)
@@ -123,7 +123,7 @@ ms.locfileid: "57058501"
 
 > [!TIP]
 > 
-> **IQueryable vs. Интерфейс IEnumerable**
+> **IQueryable vs. IEnumerable**
 > 
 > После реализации хранилище как показано ниже, даже если введено в **поиска** поле запросов, отправленных на SQL Server возвращает все строки учащегося, так как в нем не указаны условия поиска:
 > 

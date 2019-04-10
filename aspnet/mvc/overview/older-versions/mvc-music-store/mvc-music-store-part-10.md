@@ -8,15 +8,15 @@ ms.date: 04/21/2011
 ms.assetid: 0c6e4c2f-fcdb-4978-9656-1990c6f15727
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-10
 msc.type: authoredcontent
-ms.openlocfilehash: f32509701dd112053aa4f31d6552601f961c7413
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 48404f449ce2641bdff55b9ad75aa5eec1aee46b
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049441"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59403302"
 ---
-<a name="part-10-final-updates-to-navigation-and-site-design-conclusion"></a>Часть 10. Окончательные обновления структуры навигации и проекта сайта, заключение
-====================
+# <a name="part-10-final-updates-to-navigation-and-site-design-conclusion"></a>Часть 10. Окончательные обновления структуры навигации и проекта сайта, заключение
+
 по [Джон Гэллоуэй](https://github.com/jongalloway)
 
 > Store музыки MVC является учебного приложения, которое вводятся и описываются пошаговые использование ASP.NET MVC и Visual Studio для разработки веб-приложений.  

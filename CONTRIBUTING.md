@@ -119,6 +119,7 @@ DocFX требует:
   ```console
   docfx --serve
   ```
+
 * В браузере перейдите на адрес `http://localhost:8080/group1-dest/`.
 
 ### <a name="mono-instructions"></a>Инструкции для Mono
@@ -128,6 +129,7 @@ DocFX требует:
   ```console
   brew install mono
   ```
+
 * Загрузите [последнюю версию DocFX](https://github.com/dotnet/docfx/releases).
 * Извлеките архив *$HOME/bin/docfx*.
 * Создайте пару псевдонимов для **docfx** в оболочке bash. Первый псевдоним используется для создания документации. Второй псевдоним используется для создания и обслуживания документации.
@@ -136,11 +138,13 @@ DocFX требует:
   alias docfx='mono $HOME/bin/docfx/docfx.exe'
   alias docfx-serve='mono $HOME/bin/docfx/docfx.exe --serve'
   ```
+
 * В командной строке, перейдите к *aspnet* папку, содержащую *docfx.json* файл и выполните следующую команду, чтобы создавать и обслуживать документы с помощью псевдонима:
 
   ```console
   docfx-serve
   ```
+
 * В браузере перейдите на адрес `http://localhost:8080/group1-dest/`.
 
 ## <a name="voice-and-tone"></a>Стиль

@@ -8,15 +8,15 @@ ms.date: 08/15/2006
 ms.assetid: 778baa4e-4af8-4665-947e-7a01d1a4dff2
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting/sorting-custom-paged-data-cs
 msc.type: authoredcontent
-ms.openlocfilehash: ebc6be8c41251190a0124fe5f3d2c154f1ad4450
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: a65fe60dc44eb40591733ba9371e409f690fea52
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425656"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59409243"
 ---
-<a name="sorting-custom-paged-data-c"></a>Упорядочение нестандартно разбитых по страницам данных (C#)
-====================
+# <a name="sorting-custom-paged-data-c"></a>Упорядочение нестандартно разбитых по страницам данных (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_26_CS.exe) или [скачать PDF](sorting-custom-paged-data-cs/_static/datatutorial26cs1.pdf)
@@ -71,7 +71,7 @@ ms.locfileid: "58425656"
 **Рис. 1**: Попробуйте вводить различные значения для хранимой процедуры s трех входных параметров
 
 
-[![Хранимая процедура s результаты отображаются в окне вывода](sorting-custom-paged-data-cs/_static/image3.png)](sorting-custom-paged-data-cs/_static/image2.png)
+[![TХранимая процедура s HE результаты отображаются в окне вывода](sorting-custom-paged-data-cs/_static/image3.png)](sorting-custom-paged-data-cs/_static/image2.png)
 
 **Рис. 2**: Хранимая процедура s результаты отображаются в окне вывода ([Просмотр полноразмерного изображения](sorting-custom-paged-data-cs/_static/image4.png))
 
@@ -145,7 +145,7 @@ ms.locfileid: "58425656"
 Рис. 7 показана первая страница результатов при сортировке по `UnitPrice` в порядке возрастания.
 
 
-[![Результаты сортируются по UnitPrice](sorting-custom-paged-data-cs/_static/image10.png)](sorting-custom-paged-data-cs/_static/image9.png)
+[![Tу него результаты сортируются по UnitPrice](sorting-custom-paged-data-cs/_static/image10.png)](sorting-custom-paged-data-cs/_static/image9.png)
 
 **Рис. 7**: Результаты сортируются по UnitPrice ([Просмотр полноразмерного изображения](sorting-custom-paged-data-cs/_static/image11.png))
 
@@ -166,7 +166,7 @@ ms.locfileid: "58425656"
 **Рис. 9**: Измените SortExpression s SupplierName BoundField CompanyName
 
 
-[![Теперь результаты можно сортировать по поставщикам](sorting-custom-paged-data-cs/_static/image15.png)](sorting-custom-paged-data-cs/_static/image14.png)
+[![Tон теперь результаты можно упорядочить по поставщику](sorting-custom-paged-data-cs/_static/image15.png)](sorting-custom-paged-data-cs/_static/image14.png)
 
 **Рис. 10**: Результаты теперь могут быть отсортированы по поставщикам ([Просмотр полноразмерного изображения](sorting-custom-paged-data-cs/_static/image16.png))
 

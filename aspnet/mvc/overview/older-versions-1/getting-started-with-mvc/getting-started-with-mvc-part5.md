@@ -8,15 +8,15 @@ ms.date: 08/14/2010
 ms.assetid: 004703cd-e0e9-4ba7-9974-1b0475c71222
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part5
 msc.type: authoredcontent
-ms.openlocfilehash: 76dc324134dc93c9552741fea9f1136abdc9184a
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e0b540c030bf600def9b9efad4c73f055a343851
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57036661"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402834"
 ---
-<a name="accessing-your-models-data-from-a-controller"></a>Доступ к данным модели из контроллера
-====================
+# <a name="accessing-your-models-data-from-a-controller"></a>Доступ к данным модели из контроллера
+
 по [(Scott hanselman)](https://github.com/shanselman)
 
 > Это руководство для начинающих, в котором представлены основные сведения по ASP.NET MVC. Вы создадите простое веб-приложение, которое считывает и записывает в базу данных. Посетите [центр обучения ASP.NET MVC](../../../index.md) для поиска других ASP.NET MVC, учебники и примеры.
@@ -26,7 +26,7 @@ ms.locfileid: "57036661"
 
 Щелкните правой кнопкой папку Controllers и сделать новый MoviesController.
 
-[![Добавление контроллера](getting-started-with-mvc-part5/_static/image2.png)](getting-started-with-mvc-part5/_static/image1.png)
+[![Aдд контроллер](getting-started-with-mvc-part5/_static/image2.png)](getting-started-with-mvc-part5/_static/image1.png)
 
 Это создаст новый файл «MoviesController.cs» под наших \Controllers папку в наш проект. Давайте обновим шаблонов для MovieController для извлечения из базы данных вновь заполненный список фильмов.
 
@@ -42,11 +42,11 @@ ms.locfileid: "57036661"
 
 Щелкните "Добавить", и система автоматически создаст код для представления для нас, отображает наш список фильмов. Это хорошая возможность изменить &lt;h2&gt; заголовок примерно в «Мои Movie List», как это делалось ранее с помощью представления Hello World.
 
-[![Фильмы - Microsoft Visual Web Developer 2010 Express](getting-started-with-mvc-part5/_static/image5.png)](getting-started-with-mvc-part5/_static/image4.png)
+[![Movies - Microsoft Visual Web Developer 2010 Express](getting-started-with-mvc-part5/_static/image5.png)](getting-started-with-mvc-part5/_static/image4.png)
 
 Запустите приложение и посетите /Movies в адресной строке. Теперь мы извлечение данных из базы данных, с помощью простого запроса внутри контроллера и возвращаются данные для представления, который знает о фильмах. Представление затем вращается через список фильмов и создает таблицу данных для нас.
 
-[![Список фильмов - Windows Internet Explorer](getting-started-with-mvc-part5/_static/image7.png)](getting-started-with-mvc-part5/_static/image6.png)
+[![Mильм список — Windows Internet Explorer](getting-started-with-mvc-part5/_static/image7.png)](getting-started-with-mvc-part5/_static/image6.png)
 
 Мы не реализация функциональных возможностей редактирования "," Сведения "и" Delete с помощью этого приложения - поэтому нам не нужен ссылки по умолчанию, который каркаса шаблон создан для нас. Откройте файл /Movies/Index.aspx и удалить их.
 
@@ -56,7 +56,7 @@ ms.locfileid: "57036661"
 
 Идет создание ссылки, которые нам не требуется, поэтому мы удалим их в этом примере. Мы будем сообщать наши Создание новой связи, так как именно Далее! Вот, как выглядит наше приложение с выбранным столбцом удалены.
 
-[![Список фильмов - Windows Internet Explorer](getting-started-with-mvc-part5/_static/image9.png)](getting-started-with-mvc-part5/_static/image8.png)
+[![Mильм список — Windows Internet Explorer](getting-started-with-mvc-part5/_static/image9.png)](getting-started-with-mvc-part5/_static/image8.png)
 
 Теперь у нас есть простой список наших данных фильмов. Тем не менее если мы щелкните ссылку «Создать», мы получаем сообщение об ошибке, так как он не подключен! Давайте реализовать метод действия Create что позволяет пользователю для ввода новых фильмов в нашей базе данных.
 

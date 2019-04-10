@@ -8,15 +8,15 @@ ms.date: 07/17/2006
 ms.assetid: b651dc58-93c7-4f83-a74e-3b99f6d60848
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 6c8a07d7b0819df4deb566644fe36bc504d2a2ca
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 61b3d54b73e33040baf93a8b7705dfb231835b40
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58424577"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59410452"
 ---
-<a name="an-overview-of-inserting-updating-and-deleting-data-c"></a>Обзор вставки, обновления и удаления данных (C#)
-====================
+# <a name="an-overview-of-inserting-updating-and-deleting-data-c"></a>Обзор вставки, обновления и удаления данных (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_16_CS.exe) или [скачать PDF](an-overview-of-inserting-updating-and-deleting-data-cs/_static/datatutorial16cs1.pdf)
@@ -33,7 +33,7 @@ ms.locfileid: "58424577"
 В дополнение к его `Select()` метод, элемент управления ObjectDataSource также имеет `Insert()`, `Update()`, и `Delete()` методы. Как и `Select()` метод, эти три метода могут быть сопоставлены методам базового объекта. Во время настройки для вставки, обновления или удаления данных элементы управления GridView, DetailsView и FormView предоставляют пользовательский интерфейс для изменения базовых данных. Этот пользовательский интерфейс вызывает `Insert()`, `Update()`, и `Delete()` методов ObjectDataSource, которые затем вызвать базового объекта, связанного с методов (см. рис. 1).
 
 
-[![Insert(), Update() и Delete() методов ObjectDataSource служат в качестве прокси в BLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image2.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image1.png)
+[![THE ObjectDataSource Insert(), Update() и Delete() методы служат в качестве учетной записи-посредника в BLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image2.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image1.png)
 
 **Рис. 1**: ObjectDataSource `Insert()`, `Update()`, и `Delete()` методы служат в качестве учетной записи-посредника в BLL ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image3.png))
 
@@ -63,7 +63,7 @@ ms.locfileid: "58424577"
 Как и в других папках, `Default.aspx` в `EditInsertDelete` папку перечислит учебные курсы в своем разделе. Помните, что `SectionLevelTutorialListing.ascx` пользовательский элемент управления предоставляет следующие функциональные возможности. Поэтому добавьте данный пользовательский элемент управления для `Default.aspx` , перетащив его из обозревателя решений в режиме конструктора.
 
 
-[![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image6.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image5.png)
+[![Aдд пользовательского элемента управления SectionLevelTutorialListing.ascx к странице Default.aspx](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image6.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image5.png)
 
 **Рис. 3**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image7.png))
 
@@ -88,7 +88,7 @@ ms.locfileid: "58424577"
 Откройте `Basics.aspx` странице, перетащите элемент управления ObjectDataSource из панели элементов в конструктор и щелкните ссылку Настройка источника данных из его смарт-тега. Так как `ProductsBLL` — это единственный класс BLL, предоставляющий редактирования, вставки и удаления методов, настройте элемент ObjectDataSource для использования этого класса.
 
 
-[![Настройка ObjectDataSource на использование класса ProductsBLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image10.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image9.png)
+[![CНастройка ObjectDataSource на использование класса ProductsBLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image10.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image9.png)
 
 **Рис. 5**: Настройка ObjectDataSource для использования `ProductsBLL` класс ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image11.png))
 
@@ -96,7 +96,7 @@ ms.locfileid: "58424577"
 На следующем экране можно указать методы класса `ProductsBLL` класса сопоставляются с ObjectDataSource `Select()`, `Insert()`, `Update()`, и `Delete()` , выбрав соответствующую вкладку и выбрать метод стрелку раскрывающегося списка. Рис. 6, которая должна быть знакома к этому моменту, сопоставляет ObjectDataSource `Select()` метод `ProductsBLL` класса `GetProducts()` метод. `Insert()`, `Update()`, И `Delete()` методы можно настроить, выбрав соответствующую вкладку в списке в верхней.
 
 
-[![Иметь элемент управления ObjectDataSource возвращает все продукты](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image13.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image12.png)
+[![Hэлемент управления ObjectDataSource возвращает все продукты Ave](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image13.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image12.png)
 
 **Рис. 6**: Иметь элемент управления ObjectDataSource возвращает все продукты ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image14.png))
 
@@ -104,22 +104,22 @@ ms.locfileid: "58424577"
 Рис. 7, 8 и 9 Показать ObjectDataSource UPDATE, INSERT и DELETE вкладки. Настройте эти вкладки, чтобы `Insert()`, `Update()`, и `Delete()` методы вызывают `ProductsBLL` класса `UpdateProduct`, `AddProduct`, и `DeleteProduct` методы, соответственно.
 
 
-[![Сопоставление метода Update() элемента управления ObjectDataSource методу UpdateProduct класса ProductBLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image16.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image15.png)
+[![MAP метод Update() класса ObjectDataSource методу UpdateProduct класса ProductBLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image16.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image15.png)
 
 **Рис. 7**: Сопоставить ObjectDataSource `Update()` метод `ProductBLL` класса `UpdateProduct` метод ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image17.png))
 
 
-[![Сопоставление метода Insert() ObjectDataSource методу AddProduct класс ProductBLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image19.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image18.png)
+[![MAP методу ObjectDataSource методу AddProduct класса ProductBLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image19.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image18.png)
 
 **Рис. 8**: Сопоставить ObjectDataSource `Insert()` метод `ProductBLL` добавить класса `Product` метод ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image20.png))
 
 
-[![Сопоставление метода Delete() ObjectDataSource методу DeleteProduct класса ProductBLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image22.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image21.png)
+[![MAP метод Delete() ObjectDataSource методу DeleteProduct класса ProductBLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image22.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image21.png)
 
 **Рис. 9**: Сопоставить ObjectDataSource `Delete()` метод `ProductBLL` класса `DeleteProduct` метод ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image23.png))
 
 
-Вы могли заметить, что раскрывающихся списках на вкладках UPDATE, INSERT и DELETE эти методы уже выбран. Это обусловлено использованием из `DataObjectMethodAttribute` , установлен для методов класса `ProducstBLL`. Например методу DeleteProduct имеет следующую сигнатуру:
+Вы могли заметить, что раскрывающихся списках на вкладках UPDATE, INSERT и DELETE эти методы уже выбран. Это обусловлено использованием из `DataObjectMethodAttribute` , установлен для методов класса `ProductsBLL`. Например методу DeleteProduct имеет следующую сигнатуру:
 
 
 [!code-csharp[Main](an-overview-of-inserting-updating-and-deleting-data-cs/samples/sample2.cs)]
@@ -202,7 +202,7 @@ CommandField содержит ряд `ShowXButton` свойств, которы�
 На этом этапе Верите или нет, мы закончили Добавление поддержки удаления к элементу GridView! Как показано на рис. 11, при просмотре страницы через обозреватель столбец кнопок «Delete» присутствует.
 
 
-[![CommandField добавляет столбец кнопок «Delete»](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image26.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image25.png)
+[![Tон CommandField добавляет столбец из удаление кнопки](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image26.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image25.png)
 
 **Рис. 11**: CommandField добавляет столбец из удаление кнопки ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image27.png))
 
@@ -216,7 +216,7 @@ CommandField содержит ряд `ShowXButton` свойств, которы�
 Если при попытке удаления продукта, возникнет исключение с сообщением, аналогичную "*ObjectDataSource 'ObjectDataSource1' не удалось найти неуниверсальный метод 'DeleteProduct' с параметрами: productID, исходное\_ ProductID*,» скорее всего вы забыли удалить `OldValuesParameterFormatString` свойства из элемента управления ObjectDataSource. С помощью `OldValuesParameterFormatString` свойство задано, ObjectDataSource пытается передать входные параметры `productID` и `original_ProductID` входные параметры `DeleteProduct` метод. `DeleteProduct`, однако принимает только один входной параметр, поэтому исключение. Удаление `OldValuesParameterFormatString` свойство (или присвойте ей значение `{0}`) указывает, что элемент управления ObjectDataSource пытается передать исходный входной параметр.
 
 
-[![Убедитесь, что свойство OldValuesParameterFormatString был очищен](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image29.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image28.png)
+[![Ensure, что свойство OldValuesParameterFormatString был очищен Out](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image29.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image28.png)
 
 **Рис. 12**: Убедитесь, что `OldValuesParameterFormatString` свойство имеет был очищен Out ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image30.png))
 
@@ -224,7 +224,7 @@ CommandField содержит ряд `ShowXButton` свойств, которы�
 Даже если удалить `OldValuesParameterFormatString` свойство, вы по-прежнему будет вызвано исключение при попытке удаления продукта с сообщением: "*Конфликт инструкции DELETE с ограничением ССЫЛКУ" FK\_порядок\_сведения\_закупочного*.» Базы данных Northwind содержит ограничение внешнего ключа между `Order Details` и `Products` таблицы, это означает, что продукт нельзя удалить из системы, если один или несколько записей о нем в `Order Details` таблицы. Поскольку все продукты в базе данных Northwind имеют хотя бы одну запись `Order Details`, перед удалением любых продуктов, необходимо удалить записи сведений о связанных заказах продуктов.
 
 
-[![Ограничение внешнего ключа препятствует удалению продуктов](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image32.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image31.png)
+[![A Ограничение внешнего ключа препятствует удалению продуктов](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image32.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image31.png)
 
 **Рис. 13**: Ограничение внешнего ключа запрещает удаление продуктов ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image33.png))
 
@@ -238,7 +238,7 @@ CommandField содержит ряд `ShowXButton` свойств, которы�
 Просто удалим все записи из `Order Details` Чтобы обойти ограничение внешнего ключа. Перейдите в проводник по серверам в Visual Studio, щелкните правой кнопкой мыши `NORTHWND.MDF` узел и выберите новый запрос. Затем в окне запроса выполните следующую инструкцию SQL: `DELETE FROM [Order Details]`
 
 
-[![Удалите все записи из таблицы Order сведения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image35.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image34.png)
+[![Dудалить все записи из таблицы Order сведения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image35.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image34.png)
 
 **Рис. 14**: Удалить все записи из `Order Details` таблицы ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image36.png))
 
@@ -283,7 +283,7 @@ CommandField содержит ряд `ShowXButton` свойств, которы�
 Это все, что требуется для добавления элементарного редактирования. Как показано на рисунке 16, интерфейс редактирования довольно каждого типа BoundField которого `ReadOnly` свойству `false` (по умолчанию) подготавливается к просмотру как элемент TextBox. Сюда входят такие поля, как `CategoryID` и `SupplierID`, которые являются ключевыми для других таблиц.
 
 
-[![Нажав кнопку "Изменить" s Chai отображается строка в режиме редактирования](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image39.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image38.png)
+[![Cщелкнув строку в режиме правки отображает кнопку Изменить продукт Chai s](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image39.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image38.png)
 
 **Рис. 16**: Щелкнув Chai s кнопка "Изменить" отображает строку в режиме правки ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image40.png))
 
@@ -317,7 +317,7 @@ CommandField содержит ряд `ShowXButton` свойств, которы�
 Обратите внимание на то, что для элемента DetailsView CommandField отображается в конце коллекции столбцов по умолчанию. Поскольку DetailsView поля отображаются как строки, CommandField отображается как строка с инструкцией Insert, изменять и удалять кнопки в нижней части элемента управления DetailsView.
 
 
-[![Настройка элемента управления DetailsView для поддержки редактирования, вставки и удаления](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image43.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image42.png)
+[![CНастройка элемента управления DetailsView для поддержки редактирования, вставки и удаления](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image43.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image42.png)
 
 **Рис. 18**: Настройка элемента управления DetailsView для поддержки редактирования, вставки и удаления ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image44.png))
 
@@ -329,7 +329,7 @@ CommandField содержит ряд `ShowXButton` свойств, которы�
 При привязке источника данных в элементе управления DetailsView через смарт-тег, Visual Studio задает `InsertVisible` свойства `false` только для полей автоприращения. Поля, доступные только для чтения, таких как `CategoryName` и `SupplierName`, будет отображаться в пользовательском интерфейсе «режиме вставки», если только их `InsertVisible` явно задано значение `false`. Отвлекитесь и задавать эти два поля `InsertVisible` свойства `false`, либо через декларативный синтаксис DetailsView или изменить поля ссылку в смарт-тег. Рис. 19 показана установка `InsertVisible` свойства `false` по ссылке на изменить поля.
 
 
-[![Поставщики Northwind теперь поставляют Продукт Acme Tea](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image46.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image45.png)
+[![Northwind теперь предлагает Acme чай](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image46.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image45.png)
 
 **Рис. 19**: Northwind Traders теперь предлагает Acme Tea ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image47.png))
 
@@ -337,7 +337,7 @@ CommandField содержит ряд `ShowXButton` свойств, которы�
 После задания `InsertVisible` свойства, представление `Basics.aspx` в браузере и нажмите кнопку "Создать". Рис. 20 показан элемент DetailsView, при добавлении нового напитка, Acme Tea, чтобы Линейка наших продуктов.
 
 
-[![Поставщики Northwind теперь поставляют Продукт Acme Tea](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image49.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image48.png)
+[![Northwind теперь предлагает Acme чай](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image49.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image48.png)
 
 **Рис. 20**: Northwind Traders теперь предлагает Acme Tea ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image50.png))
 
@@ -345,7 +345,7 @@ CommandField содержит ряд `ShowXButton` свойств, которы�
 После ввода сведений о продукте Acme Tea и нажатия кнопки "Вставить", обратная передача и добавляется новая запись `Products` таблицы базы данных. Так как этот DetailsView перечисляет продукты в порядке, с которой они существуют в таблице базы данных, мы должны перейти к последней странице продукта для просмотра нового продукта.
 
 
-[![Подробные сведения о продукте Acme Tea](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image52.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image51.png)
+[![DПодробности о продукте Acme Tea](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image52.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image51.png)
 
 **Рис. 21**: Подробные сведения о продукте Acme Tea ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image53.png))
 
@@ -372,7 +372,7 @@ FormView предлагает встроенную поддержку для р�
 Рис. 22 показан FormView `ItemTemplate` при просмотре через браузер. Все поля продуктов отображается с кнопками New, Edit и Delete в нижней.
 
 
-[![ItemTemplate по умолчанию FormView указаны все поля продуктов вместе с New, изменять и удалять кнопки](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image55.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image54.png)
+[![Tон по умолчанию ItemTemplate FormView указаны все поля продуктов вместе с New, Edit и кнопки удаления](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image55.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image54.png)
 
 **Рис. 22**: По умолчанию FormView `ItemTemplate` перечислены Each продукта поля вместе с New, Edit и удалять кнопки ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image56.png))
 
@@ -396,7 +396,7 @@ FormView предлагает встроенную поддержку для р�
 Рис. 23 показан элемент FormView в обозревателе после нажатия "Изменить" для продукта Chai. Обратите внимание, что `SupplierName` и `CategoryName` поля, показанные на `ItemTemplate` , больше нет, так как мы только что были удалены из `EditItemTemplate`. При нажатии кнопки обновления FormView последовательно выполняет все же последовательность действий, как элементы управления GridView и DetailsView.
 
 
-[![По умолчанию в шаблоне EditItemTemplate все редактируемые поля продуктов как TextBox и CheckBox](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image58.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image57.png)
+[![Bпо умолчанию y EditItemTemplate показывает все редактируемые поля продуктов как TextBox и CheckBox](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image58.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image57.png)
 
 **Рис. 23**: По умолчанию `EditItemTemplate` показывает Each редактируемой продукта поле как TextBox и CheckBox ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image59.png))
 
@@ -413,12 +413,12 @@ FormView предлагает встроенную поддержку для р�
 Рис. 24 показан элемент FormView в браузере, при добавлении нового продукта, Acme Coffee. Обратите внимание, что `SupplierName` и `CategoryName` поля, показанные на `ItemTemplate` , больше нет, так как мы только что были удалены. При нажатии кнопки "Вставить" выручка FormView ту же последовательность шагов в элементе управления DetailsView, добавив новую запись для `Products` таблицы. Рис. 25 показаны сведения о продукте Acme Coffee в FormView, после его вставки.
 
 
-[![Шаблон InsertItemTemplate определяет интерфейс вставки FormView](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image61.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image60.png)
+[![Tон InsertItemTemplate определяет интерфейс вставки FormView](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image61.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image60.png)
 
 **Рис. 24**: `InsertItemTemplate` Определяет интерфейс вставки FormView ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image62.png))
 
 
-[![Подробные сведения о новом продукте, Acme Coffee, отображаются в элеменет FormView](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image64.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image63.png)
+[![Tон подробные сведения о новом продукте, Acme Coffee, отображаются в элеменет FormView](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image64.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image63.png)
 
 **Рис. 25**: Подробные сведения о новом продукте, Acme Coffee, отображаются в элеменет FormView ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image65.png))
 
@@ -440,4 +440,4 @@ FormView предлагает встроенную поддержку для р�
 [Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP.NET и основатель веб- [4GuysFromRolla.com](http://www.4guysfromrolla.com), работает с веб-технологиями Microsoft с 1998 года. Скотт — независимый консультант, преподаватель и автор. Его последняя книга — [ *Sams Teach ASP.NET 2.0 in 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Ним можно связаться по адресу [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти в [ http://ScottOnWriting.NET ](http://ScottOnWriting.NET).
 
 > [!div class="step-by-step"]
-> [Вперед](examining-the-events-associated-with-inserting-updating-and-deleting-cs.md)
+> [Далее](examining-the-events-associated-with-inserting-updating-and-deleting-cs.md)

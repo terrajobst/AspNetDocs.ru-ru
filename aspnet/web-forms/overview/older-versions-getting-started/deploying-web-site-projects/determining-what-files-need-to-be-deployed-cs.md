@@ -8,15 +8,15 @@ ms.date: 04/01/2009
 ms.assetid: f8d78a88-cc91-40d8-bce3-3d7954f6033b
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/determining-what-files-need-to-be-deployed-cs
 msc.type: authoredcontent
-ms.openlocfilehash: ad759cefc372f6276ce1b16beea7282d9685ef82
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c17e3afaf4406489a14d0537a33fef384d6c5a19
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57029921"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59408970"
 ---
-<a name="determining-what-files-need-to-be-deployed-c"></a>Определение подлежащих развертыванию файлов (C#)
-====================
+# <a name="determining-what-files-need-to-be-deployed-c"></a>Определение подлежащих развертыванию файлов (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/4/5/F/45F815EC-8B0E-46D3-9FB8-2DC015CCA306/ASPNET_Hosting_Tutorial_02_CS.zip) или [скачать PDF](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial02_FilesToDeploy_cs.pdf)
@@ -34,7 +34,7 @@ ms.locfileid: "57029921"
 
 Веб-страниц ASP.NET можно разделить декларативной разметки и исходного кода. Включает в себя часть декларативная разметка HTML, веб-элементы управления и синтаксис привязки данных; часть кода содержит обработчики событий, записанных в коде Visual Basic или C#. Части разметки и кода обычно разделяются на различные файлы: `WebPage.aspx` содержит декларативную разметку при `WebPage.aspx.cs` содержит код.
 
-Рассмотрим страницу ASP.NET с именем Clock.aspx, содержащий элемент управления Label, свойство которого текст имеет значение текущей датой и временем, при загрузке страницы. Часть декларативная разметка (в `Clock.aspx`) будет содержать разметку для элемента управления Label Web -`<asp:Label runat="server" id="TimeLabel" />` — при ту часть кода (в `Clock.aspx.cs`) будет иметь `Page_Load` обработчика событий следующим кодом:
+Рассмотрим страницу ASP.NET с именем Clock.aspx, содержащий элемент управления Label, свойство которого текст имеет значение текущей датой и временем, при загрузке страницы. Часть декларативная разметка (в `Clock.aspx`) будет содержать разметку для элемента управления Label Web -`<asp:Label runat="server" id="TimeLabel" />` — при ту часть кода (в `Clock.aspx.cs`) будет иметь `Page_Load` обработчик событий следующим кодом:
 
 [!code-csharp[Main](determining-what-files-need-to-be-deployed-cs/samples/sample1.cs)]
 
@@ -93,7 +93,7 @@ Microsoft восстановлен модели проекта веб-прило
 Рис. 1 показан снимок экрана рецензий веб-сайта, при просмотре через браузер. Здесь вы увидите страницу ~ /`Tech/TYASP35.aspx`, который просматривает книги *обучение самостоятельно ASP.NET 3.5 за 24 часа*. Навигации, которая охватывает верхней части страницы и в меню в левом столбце основаны на структуре карты узла, определенный в `Web.sitemap`. Изображение в правом верхнем углу является одним из обложки, образы находятся в `Images` папку. Внешний вид веб-узла определяются вместе с отдельно от файлов CSS в папке Styles пока всеобъемлющая макета страницы определен на главной странице правила стилей каскадных `Site.master`.
 
 
-[![Книга рассматривает веб-сайт предлагает проверки на ассортимент заголовков](determining-what-files-need-to-be-deployed-cs/_static/image2.png)](determining-what-files-need-to-be-deployed-cs/_static/image1.png)
+[![Tон просматривает книги веб-сайт предлагает проверки на разнообразных заголовки](determining-what-files-need-to-be-deployed-cs/_static/image2.png)](determining-what-files-need-to-be-deployed-cs/_static/image1.png)
 
 **Рис. 1.** Книга рассматривает веб-сайт предлагает проверки на ассортимент заголовков ([Просмотр полноразмерного изображения](determining-what-files-need-to-be-deployed-cs/_static/image3.png))
 
@@ -116,7 +116,7 @@ Microsoft восстановлен модели проекта веб-прило
 Рис. 2 показаны файлы, составляющие проекта книги проверки веб-приложения.
 
 
-[![В обозревателе решений перечислены файлы, которые составляют проект веб-приложения](determining-what-files-need-to-be-deployed-cs/_static/image5.png)](determining-what-files-need-to-be-deployed-cs/_static/image4.png)
+[![Tв обозревателе решений перечислены файлы, которые составляют проект веб-приложения](determining-what-files-need-to-be-deployed-cs/_static/image5.png)](determining-what-files-need-to-be-deployed-cs/_static/image4.png)
 
 **Рис. 2**: В обозревателе решений перечислены файлы, которые составляют проект веб-приложения
 
@@ -143,7 +143,7 @@ Microsoft восстановлен модели проекта веб-прило
 Рис. 3 показаны файлы, составляющие проекта веб-сайта проверки книги.
 
 
- [![В обозревателе решений перечислены файлы, которые составляют проект веб-сайта](determining-what-files-need-to-be-deployed-cs/_static/image7.png)](determining-what-files-need-to-be-deployed-cs/_static/image6.png) 
+ [![Tв обозревателе решений перечислены файлы, которые составляют проект веб-узла](determining-what-files-need-to-be-deployed-cs/_static/image7.png)](determining-what-files-need-to-be-deployed-cs/_static/image6.png) 
 
 **Рис. 3**: В обозревателе решений перечислены файлы, которые составляют проект веб-сайта
 
@@ -180,7 +180,7 @@ Microsoft восстановлен модели проекта веб-прило
 - [Совместное использование кода на нескольких страницах](https://quickstarts.asp.net/QuickStartv20/aspnet/doc/pages/code.aspx)
 - [С помощью пользовательский базовый класс для классов фонового кода страницы ASP.NET](http://aspnet.4guysfromrolla.com/articles/041305-1.aspx)
 - [Система проектов Visual Studio 2005 веб-сайта: Что это такое и зачем мы сделали его?](https://weblogs.asp.net/scottgu/archive/2005/08/21/423201.aspx)
-- [Пошаговое руководство: Преобразование проекта веб-сайта в проект веб-приложения в Visual Studio](https://msdn.microsoft.com/library/aa983476.aspx)
+- [Пошаговое руководство. Преобразование проекта веб-сайта в проект веб-приложения в Visual Studio](https://msdn.microsoft.com/library/aa983476.aspx)
 
 > [!div class="step-by-step"]
 > [Назад](asp-net-hosting-options-cs.md)

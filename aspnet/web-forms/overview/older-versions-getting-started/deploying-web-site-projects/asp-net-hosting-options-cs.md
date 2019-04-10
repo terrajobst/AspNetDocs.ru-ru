@@ -8,18 +8,18 @@ ms.date: 04/01/2009
 ms.assetid: 89a1d2bc-fdfd-4c5c-a3b0-49a08baaf63a
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/asp-net-hosting-options-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 3adad579c5893fb4f40e7043b9ece78740080f65
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 90285eac8e45d542c4ccca3e3db00493546aac57
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57061391"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398453"
 ---
-<a name="aspnet-hosting-options-c"></a>Варианты размещения в ASP.NET (C#)
-====================
+# <a name="aspnet-hosting-options-c"></a>Варианты размещения в ASP.NET (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Загрузить PDF-файл](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial01_Basics_cs.pdf)
+[Скачать PDF](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial01_Basics_cs.pdf)
 
 > Веб-приложений ASP.NET обычно являются предназначены, создания и тестирования в локальной среде разработки и нужно будет развернуть в рабочей среде, когда все будет готово к выпуску. Этом руководстве представлен общий обзор процесса развертывания и служит в качестве введения в этой серии руководств.
 
@@ -93,4 +93,4 @@ ms.locfileid: "57061391"
 В этой серии руководств пособий рецензировалась многими компетентными редакторами. Основной рецензент этого учебного был Мерфи Терезой. Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [ mitchell@4GuysFromRolla.com ](mailto:mitchell@4GuysFromRolla.com).
 
 > [!div class="step-by-step"]
-> [Вперед](determining-what-files-need-to-be-deployed-cs.md)
+> [Далее](determining-what-files-need-to-be-deployed-cs.md)

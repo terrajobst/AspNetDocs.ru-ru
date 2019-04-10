@@ -8,15 +8,15 @@ ms.date: 12/03/2010
 ms.assetid: 5cb00916-8f46-491f-be25-4739a615d619
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1
 msc.type: authoredcontent
-ms.openlocfilehash: f9f100ccaf5e9cfdaf0633f9bfebbad273212a0e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 51e3010f6e01434c495201af4af3bbdcde993da7
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054241"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59398440"
 ---
-<a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms
-====================
+# <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms
+
 по [том Дайкстра](https://github.com/tdykstra)
 
 > Пример веб-приложение университета Contoso демонстрирует создание приложения веб-форм ASP.NET, используя Entity Framework 4.0 и Visual Studio 2010. Пример приложения веб-сайт вымышленного университета Contoso. На нем предусмотрены различные функции, в том числе прием учащихся, создание курсов и назначение преподавателей.
@@ -65,7 +65,7 @@ ms.locfileid: "57054241"
 
 Чтобы начать работу с учебником, откройте Visual Studio и создайте новый проект веб-приложения ASP.NET с помощью **веб-приложение ASP.NET** шаблона:
 
-[!["Image01"](the-entity-framework-and-aspnet-getting-started-part-1/_static/image12.png)](the-entity-framework-and-aspnet-getting-started-part-1/_static/image11.png)
+[![Image01](the-entity-framework-and-aspnet-getting-started-part-1/_static/image12.png)](the-entity-framework-and-aspnet-getting-started-part-1/_static/image11.png)
 
 Этот шаблон создает проект веб-приложения, который уже включает таблицу стилей и главные страницы:
 
@@ -212,4 +212,4 @@ ms.locfileid: "57054241"
 Теперь вы создали веб-сайт, базу данных и модель данных. В следующем пошаговом руководстве вы начнете работу с данными, с помощью модели данных и ASP.NET `EntityDataSource` элемента управления.
 
 > [!div class="step-by-step"]
-> [Вперед](the-entity-framework-and-aspnet-getting-started-part-2.md)
+> [Далее](the-entity-framework-and-aspnet-getting-started-part-2.md)

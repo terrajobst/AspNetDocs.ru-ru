@@ -8,15 +8,15 @@ ms.date: 03/02/2009
 ms.assetid: 3a8a9d9f-82dd-4959-b7c6-960e9ce95df1
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/validating-with-the-idataerrorinfo-interface-vb
 msc.type: authoredcontent
-ms.openlocfilehash: e9b989d0110c3947583fd70bd38b29dcb2bb5c31
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c64e1ea1562c3a0cfe4fb33f1c3033bb9c31bd2c
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57033701"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59402743"
 ---
-<a name="validating-with-the-idataerrorinfo-interface-vb"></a>Проверка с помощью интерфейса IDataErrorInfo (VB)
-====================
+# <a name="validating-with-the-idataerrorinfo-interface-vb"></a>Проверка с помощью интерфейса IDataErrorInfo (VB)
+
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > Стивен Вальтер показано, как для отображения пользовательской проверки ошибок путем реализации интерфейса IDataErrorInfo в классе модели.
@@ -31,7 +31,7 @@ ms.locfileid: "57033701"
 <a id="0.6_table01"></a>
 
 
-| **Имя столбца** | **Тип данных** | **Разрешить значения NULL** |
+| **Имя столбца** | **Тип данных** | **Разрешить значения null** |
 | --- | --- | --- |
 | Идентификатор | Int | False |
 | Заголовок | Nvarchar(100) | False |
@@ -42,7 +42,7 @@ ms.locfileid: "57033701"
 В данном случае я использую Microsoft Entity Framework для создания Мои классы модели базы данных. Класс Movie, созданным Entity Framework отображается на рис. 1.
 
 
-[![Сущность фильма](validating-with-the-idataerrorinfo-interface-vb/_static/image1.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image1.png)
+[![Tон сущности фильма](validating-with-the-idataerrorinfo-interface-vb/_static/image1.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image1.png)
 
 **Рис 01**: Объект фильма ([Просмотр полноразмерного изображения](validating-with-the-idataerrorinfo-interface-vb/_static/image2.png))
 
@@ -56,7 +56,7 @@ ms.locfileid: "57033701"
 
 Мы используем контроллера Home список фильмов и создание новых фильмов. В листинге 1 содержится код для этого класса.
 
-**В листинге 1 - Controllers\HomeController.vb**
+**Listing 1 - Controllers\HomeController.vb**
 
 [!code-vb[Main](validating-with-the-idataerrorinfo-interface-vb/samples/sample1.vb)]
 
@@ -73,7 +73,7 @@ ms.locfileid: "57033701"
 Класс Movie создается платформой Entity Framework. Вы увидите код для класса фильма, если развернуть файл MoviesDBModel.edmx в окне обозревателя решений и откройте файл MoviesDBModel.Designer.vb в редакторе кода (см. рис. 2).
 
 
-[![Код для сущности фильма](validating-with-the-idataerrorinfo-interface-vb/_static/image2.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image3.png)
+[![Tкод для сущности фильма](validating-with-the-idataerrorinfo-interface-vb/_static/image2.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image3.png)
 
 **Рис. 02**: Код для сущности фильма ([Просмотр полноразмерного изображения](validating-with-the-idataerrorinfo-interface-vb/_static/image4.png))
 
@@ -147,7 +147,7 @@ DefaultModelBinder также проверяет свойство IDataErrorInfo
 Не нужно каким-либо образом использовать измененный класс Movie контроллер Home. Страницы, отображаемой на рис. 3 показано, что произойдет, если значение не указано для заголовка или Директор полей формы.
 
 
-[![Автоматическое создание методов действий](validating-with-the-idataerrorinfo-interface-vb/_static/image3.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image5.png)
+[![Cметоды действий ается автоматически](validating-with-the-idataerrorinfo-interface-vb/_static/image3.jpg)](validating-with-the-idataerrorinfo-interface-vb/_static/image5.png)
 
 **Рис 03**: Форма с отсутствующими значениями ([Просмотр полноразмерного изображения](validating-with-the-idataerrorinfo-interface-vb/_static/image6.png))
 

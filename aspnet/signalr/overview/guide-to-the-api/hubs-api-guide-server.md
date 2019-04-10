@@ -8,15 +8,15 @@ ms.date: 06/10/2014
 ms.assetid: b19913e5-cd8a-4e4b-a872-5ac7a858a934
 msc.legacyurl: /signalr/overview/guide-to-the-api/hubs-api-guide-server
 msc.type: authoredcontent
-ms.openlocfilehash: a28663c8d5c679f85e863e7d0b4523a6f4dd4a1f
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: adfd540562ec54938860740ab280c770e24f492e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035211"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59411414"
 ---
-<a name="aspnet-signalr-hubs-api-guide---server-c"></a>Руководство по API концентраторов ASP.NET SignalR - Server (C#)
-====================
+# <a name="aspnet-signalr-hubs-api-guide---server-c"></a>Руководство по API концентраторов ASP.NET SignalR - Server (C#)
+
 по [Флетчера Патрик](https://github.com/pfletcher), [том Дайкстра](https://github.com/tdykstra)
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "57035211"
 
     - [Время жизни объекта концентратора](#transience)
     - [Венгерской имена центров в клиентах JavaScript](#hubnames)
-    - [Multiple Hubs](#multiplehubs)
+    - [Несколько концентраторов](#multiplehubs)
     - [Концентраторы со строгой типизацией](#stronglytypedhubs)
 - [Как определить методы в классе концентратора, который клиенты могут вызывать](#hubmethods)
 
@@ -104,7 +104,7 @@ ms.locfileid: "57035211"
 
 [!code-csharp[Main](hubs-api-guide-server/samples/sample1.cs)]
 
-Функциональные возможности SignalR при добавлении в приложение ASP.NET MVC, убедитесь, что раньше, чем другие маршруты добавляется маршрут SignalR. Дополнительные сведения см. в статье [Руководство. Начало работы с SignalR 2 и MVC 5](../getting-started/tutorial-getting-started-with-signalr-and-mvc.md).
+Функциональные возможности SignalR при добавлении в приложение ASP.NET MVC, убедитесь, что раньше, чем другие маршруты добавляется маршрут SignalR. Дополнительные сведения см. в статье [Руководство Начало работы с SignalR 2 и MVC 5](../getting-started/tutorial-getting-started-with-signalr-and-mvc.md).
 
 <a id="signalrurl"></a>
 
@@ -270,7 +270,7 @@ ms.locfileid: "57035211"
 
 [!code-csharp[Main](hubs-api-guide-server/samples/sample19.cs)]
 
-**Асинхронный**
+**Асинхронное взаимодействие**
 
 [!code-csharp[Main](hubs-api-guide-server/samples/sample20.cs?highlight=1,7-8)]
 
