@@ -7,13 +7,14 @@ ms.author: riande
 title: Документация по ASP.NET
 ms.date: 08/24/2018
 description: Сведения о разработке ASP.NET и веб-приложениях ASP.NET. Вы можете получить документацию, примеры кода, учебники и многое другое.
-ms.openlocfilehash: d46c4b3f39a540244905be3e6cb9a48373613190
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: c907f2ba66ba6ff197ced0c67243a963ffab17e3
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423755"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59384725"
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <h1>Документация по ASP.NET</h1>
@@ -433,13 +434,13 @@ ms.locfileid: "58423755"
                             </li>
                             <li class="fullSpan">
                                 <div class="container footer">
-                                    <p><a href="https://github.com/aspnet/Docs/blob/master/CONTRIBUTING.md">Участие в разработке документов и примеров ASP.NET</a></p>
+                                    <p><a href="https://github.com/aspnet/Docs/blob/master/CONTRIBUTING.md">Участие в разработке документации и примеров ASP.NET</a></p>
                                 </div>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#aspnet_framework">Платформы</a>
+                        <a href="#aspnet_framework">Инфраструктуры</a>
                         <ul id="aspnet_framework" class="cardsC">
                             <li>
                                 <div class="container intro">
@@ -562,7 +563,7 @@ ms.locfileid: "58423755"
                             </li>
                             <li class="fullSpan">
                                 <div class="container footer">
-                                    <p><a href="https://github.com/aspnet/Docs/blob/master/CONTRIBUTING.md">Участие в разработке документов и примеров ASP.NET</a></p>
+                                    <p><a href="https://github.com/aspnet/Docs/blob/master/CONTRIBUTING.md">Участие в разработке документации и примеров ASP.NET</a></p>
                                 </div>
                             </li>
                         </ul>
@@ -695,7 +696,7 @@ ms.locfileid: "58423755"
                             </li>
                             <li class="fullSpan">
                                 <div class="container footer">
-                                    <p><a href="https://github.com/aspnet/Docs/blob/master/CONTRIBUTING.md">Участие в разработке документов и примеров ASP.NET</a></p>
+                                    <p><a href="https://github.com/aspnet/Docs/blob/master/CONTRIBUTING.md">Участие в разработке документации и примеров ASP.NET</a></p>
                                 </div>
                             </li>
                         </ul>
