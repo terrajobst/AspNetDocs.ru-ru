@@ -1,22 +1,23 @@
 ---
 uid: web-api/overview/advanced/sending-html-form-data-part-1
-title: 'Отправка данных формы HTML в веб-API ASP.NET: Данные формы urlencoded | Документация Майкрософт'
+title: 'Отправка данных формы HTML в веб-API ASP.NET: Данные формы urlencoded — ASP.NET 4.x'
 author: MikeWasson
-description: ''
+description: В этой статье показано, как для отправки данных формы urlencoded контроллер Web API с помощью ASP.NET 4.x
 ms.author: riande
 ms.date: 06/15/2012
+ms.custom: seoapril2019
 ms.assetid: 585351c4-809a-4bf5-bcbe-35d624f565fe
 msc.legacyurl: /web-api/overview/advanced/sending-html-form-data-part-1
 msc.type: authoredcontent
-ms.openlocfilehash: 2d01212cc408f8bb66fa3103464c9a1f7a1e21c6
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: fb0309af11910125943737ebb721b356b7bd08bc
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57049361"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418304"
 ---
-<a name="sending-html-form-data-in-aspnet-web-api-form-urlencoded-data"></a>Отправка данных формы HTML в веб-API ASP.NET: Данные формы в URL-кодировке
-====================
+# <a name="sending-html-form-data-in-aspnet-web-api-form-urlencoded-data"></a>Отправка данных формы HTML в веб-API ASP.NET: Данные формы в URL-кодировке
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 ## <a name="part-1-form-urlencoded-data"></a>Часть 1. Данные формы в URL-кодировке
@@ -41,7 +42,7 @@ ms.locfileid: "57049361"
 
 Метод по умолчанию — GET. Если форма использует GET, формы, в которой данные кодируются в виде строки запроса URI. Если в форме используется POST, данные формы помещается в тексте запроса. Для отправки данных **enctype** атрибут задает формат текста запроса:
 
-| Enctype | Описание: |
+| Enctype | Описание |
 | --- | --- |
 | application/x-www-form-urlencoded | Данные формы кодируются как пары имя/значение, аналогичную строку запроса URI. Это формат по умолчанию для POST. |
 | данные multipart/формы | Данные формы кодируются как составное сообщение MIME. Этот формат следует используйте, если при передаче файла на сервер. |

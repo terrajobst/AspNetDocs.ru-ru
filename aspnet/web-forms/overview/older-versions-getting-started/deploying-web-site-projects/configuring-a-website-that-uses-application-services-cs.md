@@ -8,15 +8,15 @@ ms.date: 04/23/2009
 ms.assetid: 1e33d1c6-3f9f-4c26-81e2-2a8f8907bb05
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/configuring-a-website-that-uses-application-services-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 2cfe18b99af7b04d18a52e64b77e1b9a6b204f75
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: fe6097c32e4584fd4c577fb8d2afee9b3483c22f
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58423446"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418421"
 ---
-<a name="configuring-a-website-that-uses-application-services-c"></a>Настройка веб-сайта, использующего службы приложений (C#)
-====================
+# <a name="configuring-a-website-that-uses-application-services-c"></a>Настройка веб-сайта, использующего службы приложений (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачать код](http://download.microsoft.com/download/E/6/F/E6FE3A1F-EE3A-4119-989A-33D1A9F6F6DD/ASPNET_Hosting_Tutorial_09_CS.zip) или [скачать PDF](http://download.microsoft.com/download/C/3/9/C391A649-B357-4A7B-BAA4-48C96871FEA6/aspnet_tutorial09_AppServicesConfig_cs.pdf)
@@ -106,7 +106,7 @@ ASP.NET позволяет легко предоставить или запре
 Инструмент запустится, отображая экрана-заставки, объясняя, его назначение. Нажмите кнопку Далее, чтобы перейти на экран «Выберите вариант установки», как показано на рис. 1. Здесь можно добавить объекты базы данных служб приложения, или удалите их из базы данных. Поскольку нам нужно добавить эти объекты в производственной базе данных, выберите параметр «Настройка SQL Server для служб приложений» и нажмите кнопку Далее.
 
 
-[![Чтобы настроить SQL Server для служб приложений](configuring-a-website-that-uses-application-services-cs/_static/image2.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image1.jpg)
+[![CВыберите, чтобы настроить SQL Server для служб приложений](configuring-a-website-that-uses-application-services-cs/_static/image2.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image1.jpg)
 
 **Рис. 1**: Выберите для настройки SQL Server для служб приложений ([Просмотр полноразмерного изображения](configuring-a-website-that-uses-application-services-cs/_static/image3.jpg))
 
@@ -117,7 +117,7 @@ ASP.NET позволяет легко предоставить или запре
 > После ввода вашего сервера базы данных и учетных данных может возникнуть ошибка при развертывании базы данных стрелку раскрывающегося списка. `aspnet_regsql.exe` Инструмент запросов `sysdatabases` системная таблица для получения списка баз данных на сервере, но некоторые веб-размещения компаний заблокировать их серверов баз данных, чтобы эта информация не является общедоступным. Если вы получаете эту ошибку можно ввести имя базы данных непосредственно в раскрывающемся списке.
 
 
-[![Укажите средство с сведения о подключении к базе данных s](configuring-a-website-that-uses-application-services-cs/_static/image5.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image4.jpg)
+[![Sподающая s средства с вашей базы данных сведений о соединении](configuring-a-website-that-uses-application-services-cs/_static/image5.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image4.jpg)
 
 **Рис. 2**: Укажите s средства с вашей базы данных сведений о соединении ([Просмотр полноразмерного изображения](configuring-a-website-that-uses-application-services-cs/_static/image6.jpg))
 
@@ -125,7 +125,7 @@ ASP.NET позволяет легко предоставить или запре
 Последующие экрана перечислены действия, которые должны выполняться, а именно, что объекты базы данных служб приложения будут добавляться в указанной базе данных. Нажмите кнопку рядом с завершения этого действия. Через несколько секунд появится окончательный экран, отметить, что были добавлены объекты базы данных (см. рис. 3).
 
 
-[![Успех! Объекты базы данных служб приложения были добавлены в производственной базе данных](configuring-a-website-that-uses-application-services-cs/_static/image8.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image7.jpg)
+[![Success! Объекты базы данных служб приложения были добавлены в производственной базе данных](configuring-a-website-that-uses-application-services-cs/_static/image8.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image7.jpg)
 
 **Рис. 3**: Готово! Приложения служб базы данных объекты были добавлены в производственной базе данных ([Просмотр полноразмерного изображения](configuring-a-website-that-uses-application-services-cs/_static/image9.jpg))
 
@@ -133,7 +133,7 @@ ASP.NET позволяет легко предоставить или запре
 Чтобы убедиться, что объекты базы данных служб приложения были успешно добавлены в производственной базе данных, откройте SQL Server Management Studio и подключитесь к рабочей базе данных. Как показано на рис. 4, теперь вы увидите таблицы базы данных служб приложения в базе данных, `aspnet_Applications`, `aspnet_Membership`, `aspnet_Users`, и т. д.
 
 
-[![Убедитесь, что объекты базы данных были добавлены в производственной базе данных](configuring-a-website-that-uses-application-services-cs/_static/image11.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image10.jpg)
+[![CПодтверждение, что объекты базы данных были добавлены в производственной базе данных](configuring-a-website-that-uses-application-services-cs/_static/image11.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image10.jpg)
 
 **Рис. 4**: Убедитесь, что объекты базы данных были добавлены в производственной базе данных ([Просмотр полноразмерного изображения](configuring-a-website-that-uses-application-services-cs/_static/image12.jpg))
 
@@ -172,7 +172,7 @@ ASP.NET позволяет легко предоставить или запре
 > Для Дополнительные сведения об использовании членства и ролей API-интерфейсы, а также связанные с входом ASP.NET веб-элементов управления, не забудьте прочитать Мой [ *учебники по безопасности веб-сайт*](../../older-versions-security/introduction/security-basics-and-asp-net-support-cs.md). Сведения о настройке элемента управления CreateUserWizard см. в статье [ *Создание учетных записей пользователей* ](../../older-versions-security/membership/creating-user-accounts-cs.md) и [ *хранения Дополнительные сведения о пользователе* ](../../older-versions-security/membership/storing-additional-user-information-cs.md) руководств или извлечение [ *Питерсон Erich* ](http://www.erichpeterson.com/) статье s [ *Настройка элементов управления CreateUserWizard* ](http://aspnet.4guysfromrolla.com/articles/070506-1.aspx).
 
 
-[![Администраторы могут создавать новые учетные записи пользователей](configuring-a-website-that-uses-application-services-cs/_static/image14.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image13.jpg)
+[![Aадминистраторам может создать новые учетные записи пользователей](configuring-a-website-that-uses-application-services-cs/_static/image14.jpg)](configuring-a-website-that-uses-application-services-cs/_static/image13.jpg)
 
 **Рис. 5**: Администраторы могут создать новые учетные записи пользователей ([Просмотр полноразмерного изображения](configuring-a-website-that-uses-application-services-cs/_static/image15.jpg))
 

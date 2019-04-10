@@ -8,15 +8,15 @@ ms.date: 05/12/2009
 ms.assetid: 9f8fa166-49a2-402c-b236-20caef0c658f
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/getting-started/get-started-with-the-ajax-control-toolkit-vb
 msc.type: authoredcontent
-ms.openlocfilehash: bbf90d65a0be0eeb4150609aca9cf192f516abf3
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 0b00fd5dc12c21183ef61d7ebb23211a1aa4719e
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57035431"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418967"
 ---
-<a name="get-started-with-the-ajax-control-toolkit-vb"></a>Начало работы с набором элементов управления AJAX (VB)
-====================
+# <a name="get-started-with-the-ajax-control-toolkit-vb"></a>Начало работы с набором элементов управления AJAX (VB)
+
 по [Microsoft](https://github.com/microsoft)
 
 > Узнайте все что нужно знать, чтобы приступить к работе с AJAX Control Toolkit.
@@ -29,7 +29,7 @@ AJAX Control Toolkit содержит более 30 бесплатные эле�
 [AJAX Control Toolkit](http://devexpress.com/act) — это проект с открытым исходным кодом, разработанная компанией членами сообщества ASP.NET и группа разработчиков ASP.NET.
 
 
-[![Загрузка AJAX Control Toolkit](get-started-with-the-ajax-control-toolkit-vb/_static/image1.jpg)](get-started-with-the-ajax-control-toolkit-vb/_static/image1.png)
+[![Downloading AJAX Control Toolkit](get-started-with-the-ajax-control-toolkit-vb/_static/image1.jpg)](get-started-with-the-ajax-control-toolkit-vb/_static/image1.png)
 
 **Рис 01**: Загрузка AJAX Control Toolkit ([Просмотр полноразмерного изображения](get-started-with-the-ajax-control-toolkit-vb/_static/image2.png))
 
@@ -37,7 +37,7 @@ AJAX Control Toolkit содержит более 30 бесплатные эле�
 После загрузки файла, необходимо разблокировать файл. Щелкните правой кнопкой мыши файл, выберите свойства и нажмите кнопку **Unblock** кнопку (см. рис. 2).
 
 
-[![Разблокировка файла ZIP-набор средств управления AJAX](get-started-with-the-ajax-control-toolkit-vb/_static/image2.jpg)](get-started-with-the-ajax-control-toolkit-vb/_static/image3.png)
+[![Unblocking набор средств управления AJAX ZIP-файл](get-started-with-the-ajax-control-toolkit-vb/_static/image2.jpg)](get-started-with-the-ajax-control-toolkit-vb/_static/image3.png)
 
 **Рис. 02**: Разблокировка файла ZIP-набор средств управления AJAX ([Просмотр полноразмерного изображения](get-started-with-the-ajax-control-toolkit-vb/_static/image4.png))
 
@@ -61,7 +61,7 @@ AJAX Control Toolkit содержит более 30 бесплатные эле�
 3. Введите новую вкладку, называемую AJAX Control Toolkit.
 
 
-[![Добавить новую вкладку](get-started-with-the-ajax-control-toolkit-vb/_static/image4.jpg)](get-started-with-the-ajax-control-toolkit-vb/_static/image7.png)
+[![Adding новую вкладку](get-started-with-the-ajax-control-toolkit-vb/_static/image4.jpg)](get-started-with-the-ajax-control-toolkit-vb/_static/image7.png)
 
 **Рис. 04**: Добавить новую вкладку ([Просмотр полноразмерного изображения](get-started-with-the-ajax-control-toolkit-vb/_static/image8.png))
 
@@ -72,7 +72,7 @@ AJAX Control Toolkit содержит более 30 бесплатные эле�
 - Перейдите в расположение, где вы распаковали AJAX Control Toolkit и выберите сборку файл AjaxControlToolkit.dll.
 
 
-[![Выберите элементы для добавления на панель элементов](get-started-with-the-ajax-control-toolkit-vb/_static/image5.jpg)](get-started-with-the-ajax-control-toolkit-vb/_static/image9.png)
+[![CВыберите элементы для добавления на панель элементов](get-started-with-the-ajax-control-toolkit-vb/_static/image5.jpg)](get-started-with-the-ajax-control-toolkit-vb/_static/image9.png)
 
 **05 рис**: Выберите элементы для добавления на панель инструментов ([Просмотр полноразмерного изображения](get-started-with-the-ajax-control-toolkit-vb/_static/image10.png))
 

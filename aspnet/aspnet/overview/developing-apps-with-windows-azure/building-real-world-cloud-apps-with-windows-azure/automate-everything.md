@@ -8,15 +8,15 @@ ms.date: 06/12/2014
 ms.assetid: ba6e6baa-9b9f-471f-b39d-b007a3addadc
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/automate-everything
 msc.type: authoredcontent
-ms.openlocfilehash: 18e988279b56e479b0bb27de2f01ab22a2e70301
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: d27c8c1910a79cea8ccdf4231d3bc2b80a20dc68
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422614"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418369"
 ---
-<a name="automate-everything-building-real-world-cloud-apps-with-azure"></a>Полная автоматизация (Создание реальных облачных приложений с помощью Azure)
-====================
+# <a name="automate-everything-building-real-world-cloud-apps-with-azure"></a>Полная автоматизация (Создание реальных облачных приложений с помощью Azure)
+
 по [Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон]((https://twitter.com/RickAndMSFT)), [том Дайкстра](https://github.com/tdykstra)
 
 [Загрузить решение проект](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [скачайте электронную книгу](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
@@ -125,7 +125,7 @@ ms.locfileid: "58422614"
 
 ### <a name="create-the-storage-account"></a>Создание учетной записи хранения
 
-Затем основной скрипт запускает <em>New AzureStorage.ps1</em> скрипт, указав "<em>&lt;websitename&gt;</em>хранилища» для имени учетной записи хранения, и те же данные центра расположении, что веб-приложения.
+Затем основной скрипт запускает *New AzureStorage.ps1* скрипт, указав "*&lt;websitename&gt;* хранилища» для имени учетной записи хранения, и те же данные центра расположении, что веб-приложения.
 
 [!code-powershell[Main](automate-everything/samples/sample4.ps1?highlight=3)]
 

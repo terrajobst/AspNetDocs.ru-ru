@@ -8,15 +8,15 @@ ms.date: 01/27/2009
 ms.assetid: 239fd3ca-5630-4b8d-bc4b-2f906b1d3504
 msc.legacyurl: /mvc/overview/older-versions-1/security/authenticating-users-with-forms-authentication-cs
 msc.type: authoredcontent
-ms.openlocfilehash: d69ae977b3e6a323d1dff1443f09ac40e8f9a449
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: b52abab12503918603419c9ccfabefcffdfd7e06
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57054801"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418278"
 ---
-<a name="authenticating-users-with-forms-authentication-c"></a>Проверка подлинности пользователей с помощью проверки подлинности на основе форм (C#)
-====================
+# <a name="authenticating-users-with-forms-authentication-c"></a>Проверка подлинности пользователей с помощью проверки подлинности на основе форм (C#)
+
 по [Microsoft](https://github.com/microsoft)
 
 > Узнайте, как использовать атрибут [Authorize] чтобы защитить паролем определенной страницы в приложении MVC. Вы узнаете, как использовать средство администрирования веб-сайт для создания и управления пользователями и ролями. Вы также узнаете, как настроить, где хранится информация о учетную запись и роль пользователя.
@@ -150,4 +150,4 @@ aspnet\_regsql
 В этом руководстве вы узнали, как использовать проверку подлинности форм, при создании приложения ASP.NET MVC. Во-первых вы узнали, как для создания новых пользователей и ролей, используя средство администрирования веб-сайта. Далее вы узнали, как использовать атрибут [Authorize], чтобы запретить неавторизованным пользователям из вызова действий контроллера. Наконец вы узнали, как настроить приложение MVC для хранения пользователя и сведения о роли в рабочей базе данных.
 
 > [!div class="step-by-step"]
-> [Вперед](authenticating-users-with-windows-authentication-cs.md)
+> [Далее](authenticating-users-with-windows-authentication-cs.md)

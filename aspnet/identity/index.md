@@ -8,15 +8,15 @@ ms.date: 10/02/2013
 ms.assetid: 0c2df5d4-c2dd-486d-b0ed-fe831c6b596c
 msc.legacyurl: /identity
 msc.type: categoryindex
-ms.openlocfilehash: b81e92ff1675b7810f9b2ca8b038a99fb84b1f5e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 48e75d6a2a151befe7ea796b149d2d030712d799
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57019191"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59418356"
 ---
-<a name="aspnet-identity"></a>ASP.NET Identity
-====================
+# <a name="aspnet-identity"></a>ASP.NET Identity
+
 - [Обзор](overview/index.md)
 
     - [Начало работы с ASP.NET Identity](overview/getting-started/index.md)

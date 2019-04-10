@@ -8,15 +8,15 @@ ms.date: 05/30/2007
 ms.assetid: d29a7c41-0628-4a23-9dfc-bfea9c6c1054
 msc.legacyurl: /web-forms/overview/data-access/caching-data/caching-data-in-the-architecture-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 3971140aa7a6c829287e74df804694c19e34adcf
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 7637e23678af80ae037292fd3f89ef74167c8242
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57028051"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419253"
 ---
-<a name="caching-data-in-the-architecture-c"></a>Кэширование данных в архитектуре (C#)
-====================
+# <a name="caching-data-in-the-architecture-c"></a>Кэширование данных в архитектуре (C#)
+
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
 [Скачайте пример приложения](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_59_CS.exe) или [скачать PDF](caching-data-in-the-architecture-cs/_static/datatutorial59cs1.pdf)
@@ -159,7 +159,7 @@ ms.locfileid: "57028051"
 Кэширование слоя s классы и методы можно использовать для работы с данными с использованием методик, мы ve проверяется в данных учебных курсах. Для иллюстрации работы с кэшированными данными, сохранить изменения в `ProductsCL` класса, а затем откройте `FromTheArchitecture.aspx` странице в `Caching` папку и добавьте элемент управления GridView. Смарт-теге GridView s создайте новый ObjectDataSource. На первом шаге мастера s вы должны увидеть `ProductsCL` классов как один из вариантов в раскрывающемся списке.
 
 
-[![Класс ProductsCL включен в раскрывающемся списке объекта бизнеса](caching-data-in-the-architecture-cs/_static/image5.png)](caching-data-in-the-architecture-cs/_static/image4.png)
+[![Tон ProductsCL класс включается в раскрывающемся списке объекта бизнеса](caching-data-in-the-architecture-cs/_static/image5.png)](caching-data-in-the-architecture-cs/_static/image4.png)
 
 **Рис. 4**: `ProductsCL` Класс включен в раскрывающемся списке объекта бизнеса ([Просмотр полноразмерного изображения](caching-data-in-the-architecture-cs/_static/image6.png))
 
@@ -167,7 +167,7 @@ ms.locfileid: "57028051"
 После выбора `ProductsCL`, нажмите кнопку Далее. Стрелку раскрывающегося списка на вкладке "ВЫБЕРИТЕ" имеет два элемента - `GetProducts()` и `GetProductsByCategoryID(categoryID)` и вкладку обновление имеет единственный аргумент `UpdateProduct` перегрузки. Выберите `GetProducts()` метод на вкладке SELECT и `UpdateProducts` метод на вкладке обновления и нажмите кнопку Готово.
 
 
-[![Методы класса ProductsCL s, перечислены в раскрывающемся списке указаны](caching-data-in-the-architecture-cs/_static/image8.png)](caching-data-in-the-architecture-cs/_static/image7.png)
+[![Tон, в раскрывающемся списке указаны перечислены методы класса ProductsCL s](caching-data-in-the-architecture-cs/_static/image8.png)](caching-data-in-the-architecture-cs/_static/image7.png)
 
 **Рис. 5**: `ProductsCL` Методы класса s, перечислены в раскрывающемся списке указаны ([Просмотр полноразмерного изображения](caching-data-in-the-architecture-cs/_static/image9.png))
 

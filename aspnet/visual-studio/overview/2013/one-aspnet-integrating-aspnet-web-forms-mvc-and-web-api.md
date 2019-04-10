@@ -8,15 +8,15 @@ ms.date: 07/16/2014
 ms.assetid: 4fe2558d-67cc-4d12-a5c1-6fb9f6f16137
 msc.legacyurl: /visual-studio/overview/2013/one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 85e4369ee458043eec59fb27e317d18466f61f32
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 1023d9bef311e58fb5fb0bb24cde80e8320e6bac
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58422536"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419058"
 ---
-<a name="hands-on-lab-one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api"></a>Практическое лабораторное занятие. One ASP.NET: интеграция веб-форм ASP.NET, MVC и веб-API
-====================
+# <a name="hands-on-lab-one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api"></a>Практическое лабораторное занятие. One ASP.NET: интеграция веб-форм ASP.NET, MVC и веб-API
+
 по [Web Слышатся Team](https://twitter.com/webcamps)
 
 [Скачайте комплект учебных материалов по лагеря Web](https://aka.ms/webcamps-training-kit)
@@ -48,7 +48,7 @@ ms.locfileid: "58422536"
 Для завершения этой практической работу требуется следующее:
 
 - [Visual Studio Express 2013 для Web](https://www.microsoft.com/visualstudio/) или более поздней версии
-- [Visual Studio 2013 с обновлением 1](https://go.microsoft.com/fwlink/?LinkId=301714)
+- [Visual Studio 2013 с обновлением 1](https://go.microsoft.com/fwlink/?LinkId=301714)
 
 <a id="Setup"></a>
 ### <a name="setup"></a>Установка
@@ -72,7 +72,7 @@ ms.locfileid: "58422536"
 > Каждого упражнения сопровождается начальный решения, расположенный в **начать** папку упражнения, чему вы сможете каждого упражнения, независимо от других. Имейте в виду, что фрагменты кода, которые добавляются во время атаки, отсутствуют эти стартовые решения и могут не работать, пока не будут выполнены упражнения. В исходном коде для упражнения, вы также найдете **окончания** папку, содержащую решение Visual Studio с кодом, полученный в результате выполнения действий, описанных в соответствующий упражнении. Эти решения можно использовать в качестве руководства, если вам нужна дополнительная помощь, отвечая на это Практическое занятие.
 
 
-* * *
+---
 
 <a id="Exercises"></a>
 ## <a name="exercises"></a>Упражнения
@@ -390,7 +390,7 @@ Entity Framework Code First рабочий процесс моделирован
 
     ![Вкладка "сборка"](one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api/_static/image32.png "Создание раздела")
 
-    *Вкладка "сборка"*
+    *Вкладка Построение*
 5. В разделе **вывода**выберите **XML-файл документации**. В поле ввода введите **приложения\_Data/XmlDocument.xml**.
 
     ![Выходные данные раздела на вкладке "Построение"](one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api/_static/image33.png "вывода раздела на вкладке \"Построение\"")
@@ -427,7 +427,7 @@ Entity Framework Code First рабочий процесс моделирован
 
     *Подробные сведения страницы*
 
-* * *
+---
 
 <a id="Summary"></a>
 ## <a name="summary"></a>Сводка

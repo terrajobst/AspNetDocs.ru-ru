@@ -8,15 +8,15 @@ ms.date: 04/11/2014
 ms.assetid: 07aa855a-92ee-4d43-ba66-5bfd7de20ee6
 msc.legacyurl: /aspnet/overview/owin-and-katana/host-owin-in-an-azure-worker-role
 msc.type: authoredcontent
-ms.openlocfilehash: dbf0964695dd2592d063b05c0778923edffe8e2e
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 129b6a8f411d482de75e7e5edc5cc919b4d2de52
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57058041"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59419526"
 ---
-<a name="host-owin-in-an-azure-worker-role"></a>Размещение OWIN в рабочей роли Azure
-====================
+# <a name="host-owin-in-an-azure-worker-role"></a>Размещение OWIN в рабочей роли Azure
+
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 > Этом руководстве показано, как для саморазмещения OWIN в рабочей роли Microsoft Azure.
@@ -116,7 +116,7 @@ ms.locfileid: "57058041"
 
 [![](host-owin-in-an-azure-worker-role/_static/image10.png)](host-owin-in-an-azure-worker-role/_static/image9.png)
 
-Найти IP-адрес в группе развертывания служб, развертывания [id], сведения о службе. Откройте веб-браузер и перейдите на http://<em>адрес</em>, где <em>адрес</em> IP-адрес, назначенный с помощью эмулятора вычислений; например, `http://127.0.0.1:80`. Вы должны увидеть страницу приветствия OWIN:
+Найти IP-адрес в группе развертывания служб, развертывания [id], сведения о службе. Откройте веб-браузер и перейдите к http:\/\/*адрес*, где *адрес* IP-адрес, назначенный с помощью эмулятора вычислений; например, `http://127.0.0.1:80`. Вы должны увидеть страницу приветствия OWIN:
 
 ![](host-owin-in-an-azure-worker-role/_static/image11.png)
 
