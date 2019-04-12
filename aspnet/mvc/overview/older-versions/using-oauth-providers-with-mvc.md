@@ -8,15 +8,15 @@ ms.date: 06/19/2013
 ms.assetid: 7a87f16f-0e19-4f15-a88a-094ae866c4a2
 msc.legacyurl: /mvc/overview/older-versions/using-oauth-providers-with-mvc
 msc.type: authoredcontent
-ms.openlocfilehash: d0203b62c911056fc56ed103c1c42f67816cbbf0
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: c2fe74c3d7b1aa0d230f1893f6ba7dcaa7a88419
+ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57065731"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59396987"
 ---
-<a name="using-oauth-providers-with-mvc-4"></a>Использование поставщиков OAuth с MVC 4
-====================
+# <a name="using-oauth-providers-with-mvc-4"></a>Использование поставщиков OAuth с MVC 4
+
 по [Tom FitzMacken](https://github.com/tfitzmac)
 
 > Этом руководстве показано, как создавать веб-приложение ASP.NET MVC 4, позволяет пользователям войти по учетным данных из внешнего поставщика, например Facebook, Twitter, Microsoft или Google и затем интегрировать некоторые функциональные возможности через эти поставщики в вашей веб-приложение. Для простоты это руководство посвящено работе с учетными данными от Facebook.
@@ -83,7 +83,7 @@ ms.locfileid: "57065731"
 - [Майкрософт](http://manage.dev.live.com/)
 - [Twitter](https://dev.twitter.com/)
 
-Если регистрация веб-узла с помощью Facebook, вы можете предоставить &quot;localhost&quot; для домена сайта и `&quot; http://localhost/&quot;` для URL-адреса, как показано на рисунке ниже. С помощью localhost работает с большинством поставщиков, но в настоящее время не работает с поставщиком Microsoft. Для поставщика Microsoft необходимо включить веб-сайт, допустимый URL-адрес.
+Если регистрация веб-узла с помощью Facebook, вы можете предоставить &quot;localhost&quot; для домена сайта и `&quot;http://localhost/&quot;` для URL-адреса, как показано на рисунке ниже. С помощью localhost работает с большинством поставщиков, но в настоящее время не работает с поставщиком Microsoft. Для поставщика Microsoft необходимо включить веб-сайт, допустимый URL-адрес.
 
 ![Зарегистрируйте сайт](using-oauth-providers-with-mvc/_static/image4.png)
 
