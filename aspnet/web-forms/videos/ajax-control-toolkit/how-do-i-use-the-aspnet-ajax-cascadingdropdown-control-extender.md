@@ -12,18 +12,18 @@ ms.openlocfilehash: 50168b33019e32d42a14ad04c800e163513ec6ae
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59399883"
 ---
-# <a name="how-do-i-use-the-aspnet-ajax-cascadingdropdown-control-extender"></a><span data-ttu-id="c3d4a-104">[Инструкции] Использовать ASP.NET AJAX CascadingDropDown Control Extender?</span><span class="sxs-lookup"><span data-stu-id="c3d4a-104">[How Do I:] Use the ASP.NET AJAX CascadingDropDown Control Extender?</span></span>
+# <a name="how-do-i-use-the-aspnet-ajax-cascadingdropdown-control-extender"></a><span data-ttu-id="dc0ef-104">[Инструкции] Использовать ASP.NET AJAX CascadingDropDown Control Extender?</span><span class="sxs-lookup"><span data-stu-id="dc0ef-104">[How Do I:] Use the ASP.NET AJAX CascadingDropDown Control Extender?</span></span>
 
-<span data-ttu-id="c3d4a-105">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="c3d4a-105">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="dc0ef-105">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="dc0ef-105">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="c3d4a-106">В этом видеоролике показано как ASP. NET standard DropDownList может стать с поддержкой AJAX с помощью расширитель элемента управления CascadingDropDown из ASP.NET AJAX Control Toolkit.</span><span class="sxs-lookup"><span data-stu-id="c3d4a-106">This video demonstrates how ASP.NET's standard DropDownList can become AJAX-enabled using the CascadingDropDown control extender from the ASP.NET AJAX Control Toolkit.</span></span> <span data-ttu-id="c3d4a-107">Вы также увидите, насколько это просто для веб-формы нарисовать его данные веб-службе XML.</span><span class="sxs-lookup"><span data-stu-id="c3d4a-107">You will also see how easy it is for a web form to draw its data from an XML Web Service.</span></span>
+<span data-ttu-id="dc0ef-106">В этом видеоролике показано как ASP. NET standard DropDownList может стать с поддержкой AJAX с помощью расширитель элемента управления CascadingDropDown из ASP.NET AJAX Control Toolkit.</span><span class="sxs-lookup"><span data-stu-id="dc0ef-106">This video demonstrates how ASP.NET's standard DropDownList can become AJAX-enabled using the CascadingDropDown control extender from the ASP.NET AJAX Control Toolkit.</span></span> <span data-ttu-id="dc0ef-107">Вы также увидите, насколько это просто для веб-формы нарисовать его данные веб-службе XML.</span><span class="sxs-lookup"><span data-stu-id="dc0ef-107">You will also see how easy it is for a web form to draw its data from an XML Web Service.</span></span>
 
-[<span data-ttu-id="c3d4a-108">&#9654;Просмотрите видео (27 минут)</span><span class="sxs-lookup"><span data-stu-id="c3d4a-108">&#9654; Watch video (27 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-cascadingdropdown-control-extender)
+[<span data-ttu-id="dc0ef-108">&#9654;Просмотрите видео (27 минут)</span><span class="sxs-lookup"><span data-stu-id="dc0ef-108">&#9654; Watch video (27 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-cascadingdropdown-control-extender)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="c3d4a-109">[Назад](how-do-i-get-started-with-the-aspnet-ajax-control-toolkit.md)
-> [Вперед](how-do-i-use-the-aspnet-ajax-textboxwatermark-control-extender.md)</span><span class="sxs-lookup"><span data-stu-id="c3d4a-109">[Previous](how-do-i-get-started-with-the-aspnet-ajax-control-toolkit.md)
+> <span data-ttu-id="dc0ef-109">[Назад](how-do-i-get-started-with-the-aspnet-ajax-control-toolkit.md)
+> [Вперед](how-do-i-use-the-aspnet-ajax-textboxwatermark-control-extender.md)</span><span class="sxs-lookup"><span data-stu-id="dc0ef-109">[Previous](how-do-i-get-started-with-the-aspnet-ajax-control-toolkit.md)
 [Next](how-do-i-use-the-aspnet-ajax-textboxwatermark-control-extender.md)</span></span>

@@ -12,13 +12,13 @@ ms.openlocfilehash: 81a708b5badecbb5bd134078d079a0fe3a63bb5f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380682"
 ---
-# <a name="introduction-to-aspnet-single-page-application"></a><span data-ttu-id="c990a-103">Введение в ASP.NET приложения</span><span class="sxs-lookup"><span data-stu-id="c990a-103">Introduction to ASP.NET Single Page Application</span></span>
+# <a name="introduction-to-aspnet-single-page-application"></a><span data-ttu-id="4b4cf-103">Введение в ASP.NET приложения</span><span class="sxs-lookup"><span data-stu-id="4b4cf-103">Introduction to ASP.NET Single Page Application</span></span>
 
-> <span data-ttu-id="c990a-104">Содержимое для использования нового шаблона одностраничного приложения и Knockoutjs.</span><span class="sxs-lookup"><span data-stu-id="c990a-104">Content for using the new SPA template and Knockoutjs.</span></span>
+> <span data-ttu-id="4b4cf-104">Содержимое для использования нового шаблона одностраничного приложения и Knockoutjs.</span><span class="sxs-lookup"><span data-stu-id="4b4cf-104">Content for using the new SPA template and Knockoutjs.</span></span>
 
 
-- [<span data-ttu-id="c990a-105">Одностраничное приложение. Шаблон KnockoutJS</span><span class="sxs-lookup"><span data-stu-id="c990a-105">Single Page Application: KnockoutJS template</span></span>](knockoutjs-template.md)
-- [<span data-ttu-id="c990a-106">Библиотеки, доступные наряду с Knockout</span><span class="sxs-lookup"><span data-stu-id="c990a-106">Know a library other than Knockout?</span></span>](other-libraries.md)
+- [<span data-ttu-id="4b4cf-105">Одностраничное приложение: Шаблон KnockoutJS</span><span class="sxs-lookup"><span data-stu-id="4b4cf-105">Single Page Application: KnockoutJS template</span></span>](knockoutjs-template.md)
+- [<span data-ttu-id="4b4cf-106">Библиотеки, доступные наряду с Knockout</span><span class="sxs-lookup"><span data-stu-id="4b4cf-106">Know a library other than Knockout?</span></span>](other-libraries.md)

@@ -12,17 +12,17 @@ ms.openlocfilehash: b991227a452bf07505207a7d8d079210488c407f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59407852"
 ---
-# <a name="aspnet-35---ajax"></a><span data-ttu-id="e55ba-103">ASP.NET 3.5. AJAX</span><span class="sxs-lookup"><span data-stu-id="e55ba-103">ASP.NET 3.5 - AJAX</span></span>
+# <a name="aspnet-35---ajax"></a><span data-ttu-id="998f2-103">ASP.NET 3.5. AJAX</span><span class="sxs-lookup"><span data-stu-id="998f2-103">ASP.NET 3.5 - AJAX</span></span>
 
-> <span data-ttu-id="e55ba-104">Сведения о библиотеке AJAX для ASP.NET, включая элементы UpdatePanel и частичного обновления страниц, проверки подлинности, локализации и отладки.</span><span class="sxs-lookup"><span data-stu-id="e55ba-104">About the ASP.NET AJAX library, including UpdatePanels and partial page updates, authentication, localization, and debugging.</span></span>
+> <span data-ttu-id="998f2-104">Сведения о библиотеке AJAX для ASP.NET, включая элементы UpdatePanel и частичного обновления страниц, проверки подлинности, локализации и отладки.</span><span class="sxs-lookup"><span data-stu-id="998f2-104">About the ASP.NET AJAX library, including UpdatePanels and partial page updates, authentication, localization, and debugging.</span></span>
 
 
-- [<span data-ttu-id="e55ba-105">Общие сведения о частичных обновлениях страниц с помощью ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="e55ba-105">Understanding Partial Page Updates with ASP.NET AJAX</span></span>](understanding-partial-page-updates-with-asp-net-ajax.md)
-- [<span data-ttu-id="e55ba-106">Общие сведения о триггерах UpdatePanel ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="e55ba-106">Understanding ASP.NET AJAX UpdatePanel Triggers</span></span>](understanding-asp-net-ajax-updatepanel-triggers.md)
-- [<span data-ttu-id="e55ba-107">Общие сведения о службах проверки подлинности и приложений профилей ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="e55ba-107">Understanding ASP.NET AJAX Authentication and Profile Application Services</span></span>](understanding-asp-net-ajax-authentication-and-profile-application-services.md)
-- [<span data-ttu-id="e55ba-108">Общие сведения о локализации ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="e55ba-108">Understanding ASP.NET AJAX Localization</span></span>](understanding-asp-net-ajax-localization.md)
-- [<span data-ttu-id="e55ba-109">Общие сведения о веб-службах ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="e55ba-109">Understanding ASP.NET AJAX Web Services</span></span>](understanding-asp-net-ajax-web-services.md)
-- [<span data-ttu-id="e55ba-110">Общие сведения о возможностях отладки ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="e55ba-110">Understanding ASP.NET AJAX Debugging Capabilities</span></span>](understanding-asp-net-ajax-debugging-capabilities.md)
+- [<span data-ttu-id="998f2-105">Общие сведения о частичных обновлениях страниц с помощью ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="998f2-105">Understanding Partial Page Updates with ASP.NET AJAX</span></span>](understanding-partial-page-updates-with-asp-net-ajax.md)
+- [<span data-ttu-id="998f2-106">Общие сведения о триггерах UpdatePanel ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="998f2-106">Understanding ASP.NET AJAX UpdatePanel Triggers</span></span>](understanding-asp-net-ajax-updatepanel-triggers.md)
+- [<span data-ttu-id="998f2-107">Общие сведения о службах проверки подлинности и приложений профилей ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="998f2-107">Understanding ASP.NET AJAX Authentication and Profile Application Services</span></span>](understanding-asp-net-ajax-authentication-and-profile-application-services.md)
+- [<span data-ttu-id="998f2-108">Общие сведения о локализации ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="998f2-108">Understanding ASP.NET AJAX Localization</span></span>](understanding-asp-net-ajax-localization.md)
+- [<span data-ttu-id="998f2-109">Общие сведения о веб-службах ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="998f2-109">Understanding ASP.NET AJAX Web Services</span></span>](understanding-asp-net-ajax-web-services.md)
+- [<span data-ttu-id="998f2-110">Общие сведения о возможностях отладки ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="998f2-110">Understanding ASP.NET AJAX Debugging Capabilities</span></span>](understanding-asp-net-ajax-debugging-capabilities.md)

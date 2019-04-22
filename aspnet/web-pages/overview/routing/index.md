@@ -12,12 +12,12 @@ ms.openlocfilehash: 27d195b13fa7a215859d3782f78e51e29a73a7ee
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386285"
 ---
-# <a name="routing"></a><span data-ttu-id="f0768-103">Маршрутизация</span><span class="sxs-lookup"><span data-stu-id="f0768-103">Routing</span></span>
+# <a name="routing"></a><span data-ttu-id="a5b13-103">Маршрутизация</span><span class="sxs-lookup"><span data-stu-id="a5b13-103">Routing</span></span>
 
-> <span data-ttu-id="f0768-104">Как настроить URL-адресов, используемых приложением веб-страниц.</span><span class="sxs-lookup"><span data-stu-id="f0768-104">How to customize the URLs used by a Web Pages application.</span></span>
+> <span data-ttu-id="a5b13-104">Как настроить URL-адресов, используемых приложением веб-страниц.</span><span class="sxs-lookup"><span data-stu-id="a5b13-104">How to customize the URLs used by a Web Pages application.</span></span>
 
 
-- [<span data-ttu-id="f0768-105">Создание доступных для чтения URL-адресов на сайтах веб-страниц ASP.NET</span><span class="sxs-lookup"><span data-stu-id="f0768-105">Creating Readable URLs in ASP.NET Web Pages Sites</span></span>](creating-readable-urls-in-aspnet-web-pages-sites.md)
+- [<span data-ttu-id="a5b13-105">Создание доступных для чтения URL-адресов на сайтах веб-страниц ASP.NET</span><span class="sxs-lookup"><span data-stu-id="a5b13-105">Creating Readable URLs in ASP.NET Web Pages Sites</span></span>](creating-readable-urls-in-aspnet-web-pages-sites.md)

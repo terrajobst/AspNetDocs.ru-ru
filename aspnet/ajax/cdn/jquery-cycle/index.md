@@ -12,11 +12,11 @@ ms.openlocfilehash: 7453ae35a3229f8fa4fbc7fc7de36d7d270a45bb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408567"
 ---
-# <a name="jquery-cycle"></a><span data-ttu-id="614ea-102">Подключаемый модуль jQuery Cycle</span><span class="sxs-lookup"><span data-stu-id="614ea-102">jQuery Cycle</span></span>
+# <a name="jquery-cycle"></a><span data-ttu-id="1ef06-102">Подключаемый модуль jQuery Cycle</span><span class="sxs-lookup"><span data-stu-id="1ef06-102">jQuery Cycle</span></span>
 
-- [<span data-ttu-id="614ea-103">jQuery Cycle 2.99</span><span class="sxs-lookup"><span data-stu-id="614ea-103">jQuery Cycle 2.99</span></span>](cdnjquerycycle299.md)
-- [<span data-ttu-id="614ea-104">jQuery Cycle 2.94</span><span class="sxs-lookup"><span data-stu-id="614ea-104">jQuery Cycle 2.94</span></span>](cdnjquerycycle294.md)
-- [<span data-ttu-id="614ea-105">jQuery Cycle 2.88</span><span class="sxs-lookup"><span data-stu-id="614ea-105">jQuery Cycle 2.88</span></span>](cdnjquerycycle288.md)
+- [<span data-ttu-id="1ef06-103">jQuery Cycle 2.99</span><span class="sxs-lookup"><span data-stu-id="1ef06-103">jQuery Cycle 2.99</span></span>](cdnjquerycycle299.md)
+- [<span data-ttu-id="1ef06-104">jQuery Cycle 2.94</span><span class="sxs-lookup"><span data-stu-id="1ef06-104">jQuery Cycle 2.94</span></span>](cdnjquerycycle294.md)
+- [<span data-ttu-id="1ef06-105">jQuery Cycle 2.88</span><span class="sxs-lookup"><span data-stu-id="1ef06-105">jQuery Cycle 2.88</span></span>](cdnjquerycycle288.md)

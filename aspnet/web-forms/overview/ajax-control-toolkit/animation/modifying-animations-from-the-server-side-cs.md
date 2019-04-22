@@ -12,54 +12,54 @@ ms.openlocfilehash: 2d4c786ca10e77353ac8b4746138cb1e314585ae
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383789"
 ---
-# <a name="modifying-animations-from-the-server-side-c"></a><span data-ttu-id="dc725-104">Изменение анимации со стороны сервера (C#)</span><span class="sxs-lookup"><span data-stu-id="dc725-104">Modifying Animations From The Server Side (C#)</span></span>
+# <a name="modifying-animations-from-the-server-side-c"></a><span data-ttu-id="15e36-104">Изменение анимации со стороны сервера (C#)</span><span class="sxs-lookup"><span data-stu-id="15e36-104">Modifying Animations From The Server Side (C#)</span></span>
 
-<span data-ttu-id="dc725-105">по [Кристиан Wenz](https://github.com/wenz)</span><span class="sxs-lookup"><span data-stu-id="dc725-105">by [Christian Wenz](https://github.com/wenz)</span></span>
+<span data-ttu-id="15e36-105">по [Кристиан Wenz](https://github.com/wenz)</span><span class="sxs-lookup"><span data-stu-id="15e36-105">by [Christian Wenz](https://github.com/wenz)</span></span>
 
-<span data-ttu-id="dc725-106">[Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation9.cs.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation9CS.pdf)</span><span class="sxs-lookup"><span data-stu-id="dc725-106">[Download Code](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation9.cs.zip) or [Download PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation9CS.pdf)</span></span>
+<span data-ttu-id="15e36-106">[Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation9.cs.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation9CS.pdf)</span><span class="sxs-lookup"><span data-stu-id="15e36-106">[Download Code](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation9.cs.zip) or [Download PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation9CS.pdf)</span></span>
 
-> <span data-ttu-id="dc725-107">Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления.</span><span class="sxs-lookup"><span data-stu-id="dc725-107">The Animation control in the ASP.NET AJAX Control Toolkit is not just a control but a whole framework to add animations to a control.</span></span> <span data-ttu-id="dc725-108">Также может измениться анимации на стороне сервера</span><span class="sxs-lookup"><span data-stu-id="dc725-108">The animations may also be changed on the server-side</span></span>
+> <span data-ttu-id="15e36-107">Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления.</span><span class="sxs-lookup"><span data-stu-id="15e36-107">The Animation control in the ASP.NET AJAX Control Toolkit is not just a control but a whole framework to add animations to a control.</span></span> <span data-ttu-id="15e36-108">Также может измениться анимации на стороне сервера</span><span class="sxs-lookup"><span data-stu-id="15e36-108">The animations may also be changed on the server-side</span></span>
 
 
-## <a name="overview"></a><span data-ttu-id="dc725-109">Обзор</span><span class="sxs-lookup"><span data-stu-id="dc725-109">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="15e36-109">Обзор</span><span class="sxs-lookup"><span data-stu-id="15e36-109">Overview</span></span>
 
-<span data-ttu-id="dc725-110">Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления.</span><span class="sxs-lookup"><span data-stu-id="dc725-110">The Animation control in the ASP.NET AJAX Control Toolkit is not just a control but a whole framework to add animations to a control.</span></span> <span data-ttu-id="dc725-111">Также может измениться анимации на стороне сервера</span><span class="sxs-lookup"><span data-stu-id="dc725-111">The animations may also be changed on the server-side</span></span>
+<span data-ttu-id="15e36-110">Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления.</span><span class="sxs-lookup"><span data-stu-id="15e36-110">The Animation control in the ASP.NET AJAX Control Toolkit is not just a control but a whole framework to add animations to a control.</span></span> <span data-ttu-id="15e36-111">Также может измениться анимации на стороне сервера</span><span class="sxs-lookup"><span data-stu-id="15e36-111">The animations may also be changed on the server-side</span></span>
 
-## <a name="steps"></a><span data-ttu-id="dc725-112">Шаги</span><span class="sxs-lookup"><span data-stu-id="dc725-112">Steps</span></span>
+## <a name="steps"></a><span data-ttu-id="15e36-112">Шаги</span><span class="sxs-lookup"><span data-stu-id="15e36-112">Steps</span></span>
 
-<span data-ttu-id="dc725-113">Во-первых, включите `ScriptManager` страницы; затем ASP.NET AJAX library загружена, что позволяет использовать набор средств управления:</span><span class="sxs-lookup"><span data-stu-id="dc725-113">First of all, include the `ScriptManager` in the page; then, the ASP.NET AJAX library is loaded, making it possible to use the Control Toolkit:</span></span>
+<span data-ttu-id="15e36-113">Во-первых, включите `ScriptManager` страницы; затем ASP.NET AJAX library загружена, что позволяет использовать набор средств управления:</span><span class="sxs-lookup"><span data-stu-id="15e36-113">First of all, include the `ScriptManager` in the page; then, the ASP.NET AJAX library is loaded, making it possible to use the Control Toolkit:</span></span>
 
 [!code-aspx[Main](modifying-animations-from-the-server-side-cs/samples/sample1.aspx)]
 
-<span data-ttu-id="dc725-114">Анимация будет применяться к панели текста, который выглядит следующим образом:</span><span class="sxs-lookup"><span data-stu-id="dc725-114">The animation will be applied to a panel of text which looks like this:</span></span>
+<span data-ttu-id="15e36-114">Анимация будет применяться к панели текста, который выглядит следующим образом:</span><span class="sxs-lookup"><span data-stu-id="15e36-114">The animation will be applied to a panel of text which looks like this:</span></span>
 
 [!code-aspx[Main](modifying-animations-from-the-server-side-cs/samples/sample2.aspx)]
 
-<span data-ttu-id="dc725-115">В связанный класс CSS для панели определить цвет фона, удобная и также установить фиксированную ширину для панели:</span><span class="sxs-lookup"><span data-stu-id="dc725-115">In the associated CSS class for the panel, define a nice background color and also set a fixed width for the panel:</span></span>
+<span data-ttu-id="15e36-115">В связанный класс CSS для панели определить цвет фона, удобная и также установить фиксированную ширину для панели:</span><span class="sxs-lookup"><span data-stu-id="15e36-115">In the associated CSS class for the panel, define a nice background color and also set a fixed width for the panel:</span></span>
 
 [!code-css[Main](modifying-animations-from-the-server-side-cs/samples/sample3.css)]
 
-<span data-ttu-id="dc725-116">Остальная часть кода выполняется на стороне сервера и не использует разметки; Вместо этого он использует код для создания `AnimationExtender` управления:</span><span class="sxs-lookup"><span data-stu-id="dc725-116">The rest of the code runs on the server-side and does not use markup; instead, it uses code to create the `AnimationExtender` control:</span></span>
+<span data-ttu-id="15e36-116">Остальная часть кода выполняется на стороне сервера и не использует разметки; Вместо этого он использует код для создания `AnimationExtender` управления:</span><span class="sxs-lookup"><span data-stu-id="15e36-116">The rest of the code runs on the server-side and does not use markup; instead, it uses code to create the `AnimationExtender` control:</span></span>
 
 [!code-aspx[Main](modifying-animations-from-the-server-side-cs/samples/sample4.aspx)]
 
-<span data-ttu-id="dc725-117">Тем не менее набор элементов управления в настоящее время не предоставляет доступ к API для создания отдельных анимаций.</span><span class="sxs-lookup"><span data-stu-id="dc725-117">However, the Control Toolkit currently does not provide an API access to create the individual animations.</span></span> <span data-ttu-id="dc725-118">Тем не менее можно задать `AnimationExtender`свойство Animations в строку содержащего XML-разметку, при назначении анимации декларативно.</span><span class="sxs-lookup"><span data-stu-id="dc725-118">It is however possible to set the `AnimationExtender`'s Animations property to a string containing the XML markup used when assigning the animations declaratively.</span></span> <span data-ttu-id="dc725-119">Чтобы создать XML, который не может содержать `<Animations>` элемент, можно использовать XML платформы .NET Framework поддерживает или, как в следующем коде, просто укажите строку:</span><span class="sxs-lookup"><span data-stu-id="dc725-119">In order to create the XML which must not contain the `<Animations>` element you could use the .NET Framework's XML support or, as in the following code, just provide the string:</span></span>
+<span data-ttu-id="15e36-117">Тем не менее набор элементов управления в настоящее время не предоставляет доступ к API для создания отдельных анимаций.</span><span class="sxs-lookup"><span data-stu-id="15e36-117">However, the Control Toolkit currently does not provide an API access to create the individual animations.</span></span> <span data-ttu-id="15e36-118">Тем не менее можно задать `AnimationExtender`свойство Animations в строку содержащего XML-разметку, при назначении анимации декларативно.</span><span class="sxs-lookup"><span data-stu-id="15e36-118">It is however possible to set the `AnimationExtender`'s Animations property to a string containing the XML markup used when assigning the animations declaratively.</span></span> <span data-ttu-id="15e36-119">Чтобы создать XML, который не может содержать `<Animations>` элемент, можно использовать XML платформы .NET Framework поддерживает или, как в следующем коде, просто укажите строку:</span><span class="sxs-lookup"><span data-stu-id="15e36-119">In order to create the XML which must not contain the `<Animations>` element you could use the .NET Framework's XML support or, as in the following code, just provide the string:</span></span>
 
 [!code-css[Main](modifying-animations-from-the-server-side-cs/samples/sample5.css)]
 
-<span data-ttu-id="dc725-120">Наконец, добавьте `AnimationExtender` управления в текущую страницу в `<form runat="server">` элемент, убедившись, что анимация включена и выполняется:</span><span class="sxs-lookup"><span data-stu-id="dc725-120">Finally, add the `AnimationExtender` control to the current page, within the `<form runat="server">` element, making sure that the animation is included and runs:</span></span>
+<span data-ttu-id="15e36-120">Наконец, добавьте `AnimationExtender` управления в текущую страницу в `<form runat="server">` элемент, убедившись, что анимация включена и выполняется:</span><span class="sxs-lookup"><span data-stu-id="15e36-120">Finally, add the `AnimationExtender` control to the current page, within the `<form runat="server">` element, making sure that the animation is included and runs:</span></span>
 
 [!code-html[Main](modifying-animations-from-the-server-side-cs/samples/sample6.html)]
 
 
-[![T<span data-ttu-id="dc725-121">анимации, он создается на стороне сервера C#кода и Visual Basic]</span><span class="sxs-lookup"><span data-stu-id="dc725-121">he animation is created using server-side C#/VB code]</span></span>(modifying-animations-from-the-server-side-cs/_static/image2.png)](modifying-animations-from-the-server-side-cs/_static/image1.png)
+<span data-ttu-id="15e36-121">[![Анимация создается с использованием серверного C# и Visual Basic кода](modifying-animations-from-the-server-side-cs/_static/image2.png)](modifying-animations-from-the-server-side-cs/_static/image1.png)</span><span class="sxs-lookup"><span data-stu-id="15e36-121">[![The animation is created using server-side C#/VB code](modifying-animations-from-the-server-side-cs/_static/image2.png)](modifying-animations-from-the-server-side-cs/_static/image1.png)</span></span>
 
-<span data-ttu-id="dc725-122">Анимация создается с использованием серверного C# и Visual Basic кода ([Просмотр полноразмерного изображения](modifying-animations-from-the-server-side-cs/_static/image3.png))</span><span class="sxs-lookup"><span data-stu-id="dc725-122">The animation is created using server-side C#/VB code ([Click to view full-size image](modifying-animations-from-the-server-side-cs/_static/image3.png))</span></span>
+<span data-ttu-id="15e36-122">Анимация создается с использованием серверного C# и Visual Basic кода ([Просмотр полноразмерного изображения](modifying-animations-from-the-server-side-cs/_static/image3.png))</span><span class="sxs-lookup"><span data-stu-id="15e36-122">The animation is created using server-side C#/VB code ([Click to view full-size image](modifying-animations-from-the-server-side-cs/_static/image3.png))</span></span>
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="dc725-123">[Назад](triggering-an-animation-in-another-control-cs.md)
-> [Вперед](executing-animations-using-client-side-code-cs.md)</span><span class="sxs-lookup"><span data-stu-id="dc725-123">[Previous](triggering-an-animation-in-another-control-cs.md)
+> <span data-ttu-id="15e36-123">[Назад](triggering-an-animation-in-another-control-cs.md)
+> [Вперед](executing-animations-using-client-side-code-cs.md)</span><span class="sxs-lookup"><span data-stu-id="15e36-123">[Previous](triggering-an-animation-in-another-control-cs.md)
 [Next](executing-animations-using-client-side-code-cs.md)</span></span>
