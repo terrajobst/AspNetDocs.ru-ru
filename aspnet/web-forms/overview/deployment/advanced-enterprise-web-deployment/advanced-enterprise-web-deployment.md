@@ -12,14 +12,14 @@ ms.openlocfilehash: 2f27e9436f246e3da2fbb129bbcd2d80e39b5f28
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59385323"
 ---
 # <a name="advanced-enterprise-web-deployment"></a>Расширенное корпоративное веб-развертывание
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Этом учебнике показано, как выполнять различные задачи, которые являются обязательными или желательно во многих корпоративных сценариев развертывания.
 > 
@@ -67,4 +67,4 @@ ms.locfileid: "59385323"
 - [Настройка Team Foundation Server для развертывания веб-](../configuring-team-foundation-server-for-web-deployment/configuring-team-foundation-server-for-web-deployment.md). Это руководство содержит инструкции для настройки TFS для поддержки различных сценариев развертывания, включая автоматическое развертывание в рамках процесса непрерывной Интеграции и запущено развертывание определенных сборок вручную.
 
 > [!div class="step-by-step"]
-> [Далее](performing-a-what-if-deployment.md)
+> [Вперед](performing-a-what-if-deployment.md)

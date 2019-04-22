@@ -12,7 +12,7 @@ ms.openlocfilehash: 943b8a67e77e4ed449e0b2c887b3cae7cc10f305
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383438"
 ---
 # <a name="updating-the-tableadapter-to-use-joins-vb"></a>Обновление адаптера таблицы TableAdapter для использования JOIN (VB)
@@ -64,7 +64,7 @@ ms.locfileid: "59383438"
 [!code-sql[Main](updating-the-tableadapter-to-use-joins-vb/samples/sample3.sql)]
 
 
-[![EЦентральный основной запрос, содержащий соединяет](updating-the-tableadapter-to-use-joins-vb/_static/image2.png)](updating-the-tableadapter-to-use-joins-vb/_static/image1.png)
+[![Введите основной запрос, который содержит соединения](updating-the-tableadapter-to-use-joins-vb/_static/image2.png)](updating-the-tableadapter-to-use-joins-vb/_static/image1.png)
 
 **Рис. 1**: Введите запрос Main, который содержит `JOIN` s ([Просмотр полноразмерного изображения](updating-the-tableadapter-to-use-joins-vb/_static/image3.png))
 
@@ -88,7 +88,7 @@ ms.locfileid: "59383438"
 Хотя объект DataTable есть соответствующие столбцы, TableAdapter отсутствуют значения для его `InsertCommand`, `UpdateCommand`, и `DeleteCommand` свойства. Чтобы проверить это, щелкните TableAdapter в конструкторе и перейдите в окно свойств. Там вы увидите, что `InsertCommand`, `UpdateCommand`, и `DeleteCommand` задано значение (None).
 
 
-[![Tон InsertCommand UpdateCommand и DeleteCommand свойства задаются (нет)](updating-the-tableadapter-to-use-joins-vb/_static/image7.png)](updating-the-tableadapter-to-use-joins-vb/_static/image6.png)
+[![InsertCommand, UpdateCommand и DeleteCommand свойства задаются (нет)](updating-the-tableadapter-to-use-joins-vb/_static/image7.png)](updating-the-tableadapter-to-use-joins-vb/_static/image6.png)
 
 **Рис. 4**: `InsertCommand`, `UpdateCommand`, И `DeleteCommand` свойств (нет) ([Просмотр полноразмерного изображения](updating-the-tableadapter-to-use-joins-vb/_static/image8.png))
 
@@ -108,7 +108,7 @@ ms.locfileid: "59383438"
 Сначала откройте `NorthwindWithSprocs` набора данных в `~/App_Code/DAL` папку. Щелкните правой кнопкой мыши в конструкторе и выберите Добавить параметр в контекстном меню выбрать пункт меню адаптера таблицы. Это приведет к запуску мастера настройки адаптера таблицы. Как показано на рис. 5, имеют мастер создал новые хранимые процедуры и нажмите кнопку Далее. О создании новых хранимых процедур с помощью мастера TableAdapter s, обратитесь к [создание новых хранимых процедур для адаптеров таблиц TableAdapter типизированного набора DataSet s](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb.md) руководства.
 
 
-[![Sвыберете новые хранимые процедуры создать параметр](updating-the-tableadapter-to-use-joins-vb/_static/image10.png)](updating-the-tableadapter-to-use-joins-vb/_static/image9.png)
+[![Выберите создать новые хранимые процедуры параметр](updating-the-tableadapter-to-use-joins-vb/_static/image10.png)](updating-the-tableadapter-to-use-joins-vb/_static/image9.png)
 
 **Рис. 5**: Укажите, создать новые хранимые процедуры параметр ([Просмотр полноразмерного изображения](updating-the-tableadapter-to-use-joins-vb/_static/image11.png))
 
@@ -123,7 +123,7 @@ ms.locfileid: "59383438"
 Следующий шаг позволит нам имя процедуры, которые хранятся адаптера таблицы. Используйте имена `Employees_Select`, `Employees_Insert`, `Employees_Update`, и `Employees_Delete`, как показано на рис. 6.
 
 
-[![NХранимые процедуры имя TableAdapter s](updating-the-tableadapter-to-use-joins-vb/_static/image13.png)](updating-the-tableadapter-to-use-joins-vb/_static/image12.png)
+[![Имя процедуры, которые хранятся адаптера таблицы](updating-the-tableadapter-to-use-joins-vb/_static/image13.png)](updating-the-tableadapter-to-use-joins-vb/_static/image12.png)
 
 **Рис. 6**: Имя TableAdapter s хранимые процедуры ([Просмотр полноразмерного изображения](updating-the-tableadapter-to-use-joins-vb/_static/image14.png))
 
@@ -131,7 +131,7 @@ ms.locfileid: "59383438"
 Последним шагом запрашивает имя s методы адаптера таблицы. Используйте `Fill` и `GetEmployees` как имена методов. Также не забудьте оставить флажок создавать методы для отправки обновлений непосредственно в базу данных (GenerateDBDirectMethods) флажок установленным.
 
 
-[![Nимя TableAdapter s, методы заполнения и GetEmployees](updating-the-tableadapter-to-use-joins-vb/_static/image16.png)](updating-the-tableadapter-to-use-joins-vb/_static/image15.png)
+[![Имя свойства Fill методы TableAdapter s и GetEmployees](updating-the-tableadapter-to-use-joins-vb/_static/image16.png)](updating-the-tableadapter-to-use-joins-vb/_static/image15.png)
 
 **Рис. 7**: Имя TableAdapter s методы `Fill` и `GetEmployees` ([Просмотр полноразмерного изображения](updating-the-tableadapter-to-use-joins-vb/_static/image17.png))
 
@@ -139,7 +139,7 @@ ms.locfileid: "59383438"
 После завершения работы мастера, Отвлекитесь и проверьте хранимые процедуры в базе данных. Вы увидите четыре новых: `Employees_Select`, `Employees_Insert`, `Employees_Update`, и `Employees_Delete`. Затем проверьте `EmployeesDataTable` и `EmployeesTableAdapter` только что создали. Объект DataTable содержит столбец для каждого поля, возвращенной основным запросом. Щелкните TableAdapter и перейдите в окно свойств. Там вы увидите, что `InsertCommand`, `UpdateCommand`, и `DeleteCommand` свойства настроены правильно для вызова соответствующих хранимых процедур.
 
 
-[![Tон включает в себя вставить TableAdapter, обновление и удаление возможности](updating-the-tableadapter-to-use-joins-vb/_static/image19.png)](updating-the-tableadapter-to-use-joins-vb/_static/image18.png)
+[![TableAdapter включает вставки, обновления и удаления возможности](updating-the-tableadapter-to-use-joins-vb/_static/image19.png)](updating-the-tableadapter-to-use-joins-vb/_static/image18.png)
 
 **Рис. 8**: TableAdapter включает Insert, Update и удалить возможности ([Просмотр полноразмерного изображения](updating-the-tableadapter-to-use-joins-vb/_static/image20.png))
 
@@ -156,7 +156,7 @@ Start, перейдя в проводник по серверам, углубл�
 После обновления `SELECT` инструкции, сохранить эти изменения, перейдите в меню "файл" и выберите Save `Employees_Select`. В качестве альтернативы можно щелкните значок "Сохранить" на панели инструментов или нажмите сочетание клавиш Ctrl + S. После сохранения изменений, щелкните правой кнопкой мыши `Employees_Select` хранимой процедуры в обозревателе серверов и выберите команду выполнить. Это выполните хранимую процедуру и показать его результаты в окне вывода (см. рис. 9).
 
 
-[![Tв окне вывода отображаются результаты процедуры хранятся HE](updating-the-tableadapter-to-use-joins-vb/_static/image22.png)](updating-the-tableadapter-to-use-joins-vb/_static/image21.png)
+[![Результаты хранимой процедуры отображаются в окне вывода](updating-the-tableadapter-to-use-joins-vb/_static/image22.png)](updating-the-tableadapter-to-use-joins-vb/_static/image21.png)
 
 **Рис. 9**: Результаты хранимой процедуры отображаются в окне вывода ([Просмотр полноразмерного изображения](updating-the-tableadapter-to-use-joins-vb/_static/image23.png))
 
@@ -173,7 +173,7 @@ Start, перейдя в проводник по серверам, углубл�
 Запустите, щелкнув правой кнопкой мыши `EmployeesTableAdapter` и выбрав пункт "Настройка" в контекстном меню. Откроется мастер настройки адаптера таблицы, который перечисляет хранимые процедуры, используемые для выбора, вставки, обновления и удаления, а также их возвращаемые значения и параметры (если таковые имеются). Рис. 10 показан этот мастер. Здесь можно увидеть, что `Employees_Select` хранимая процедура возвращает теперь `ManagerFirstName` и `ManagerLastName` поля.
 
 
-[![Tон мастер показывает список столбцов обновлены для хранимой процедуры Employees_Select](updating-the-tableadapter-to-use-joins-vb/_static/image25.png)](updating-the-tableadapter-to-use-joins-vb/_static/image24.png)
+[![В мастере показан список обновленных столбцов для Employees_Select хранимой процедуры](updating-the-tableadapter-to-use-joins-vb/_static/image25.png)](updating-the-tableadapter-to-use-joins-vb/_static/image24.png)
 
 **Рис. 10**: В мастере отображается список столбцов обновлены для `Employees_Select` хранимой процедуры ([Просмотр полноразмерного изображения](updating-the-tableadapter-to-use-joins-vb/_static/image26.png))
 
@@ -181,7 +181,7 @@ Start, перейдя в проводник по серверам, углубл�
 Следуйте указаниям мастера, нажмите кнопку Finish. При возвращении в конструктор DataSet, `EmployeesDataTable` включает два дополнительных столбца: `ManagerFirstName` и `ManagerLastName`.
 
 
-[![Tон EmployeesDataTable содержит два новых столбца](updating-the-tableadapter-to-use-joins-vb/_static/image28.png)](updating-the-tableadapter-to-use-joins-vb/_static/image27.png)
+[![EmployeesDataTable содержит два новых столбца](updating-the-tableadapter-to-use-joins-vb/_static/image28.png)](updating-the-tableadapter-to-use-joins-vb/_static/image27.png)
 
 **Рис. 11**: `EmployeesDataTable` Содержит два новых столбца ([Просмотр полноразмерного изображения](updating-the-tableadapter-to-use-joins-vb/_static/image29.png))
 
@@ -204,12 +204,12 @@ Start, перейдя в проводник по серверам, углубл�
 Настройка ObjectDataSource на использование `EmployeesBLLWithSprocs` класса и из вкладки SELECT и DELETE, убедитесь, что `GetEmployees` и `DeleteEmployee` методы выбираются из раскрывающихся списков. Нажмите кнопку Готово, чтобы завершить настройку s ObjectDataSource.
 
 
-[![CНастройка ObjectDataSource на использование класса EmployeesBLLWithSprocs](updating-the-tableadapter-to-use-joins-vb/_static/image31.png)](updating-the-tableadapter-to-use-joins-vb/_static/image30.png)
+[![Настройка ObjectDataSource на использование класса EmployeesBLLWithSprocs](updating-the-tableadapter-to-use-joins-vb/_static/image31.png)](updating-the-tableadapter-to-use-joins-vb/_static/image30.png)
 
 **Рис. 12**: Настройка ObjectDataSource для использования `EmployeesBLLWithSprocs` класс ([Просмотр полноразмерного изображения](updating-the-tableadapter-to-use-joins-vb/_static/image32.png))
 
 
-[![Hэлемент управления ObjectDataSource Ave использовать GetEmployees и методы DeleteEmployee](updating-the-tableadapter-to-use-joins-vb/_static/image34.png)](updating-the-tableadapter-to-use-joins-vb/_static/image33.png)
+[![У использование ObjectDataSource GetEmployees и методы DeleteEmployee](updating-the-tableadapter-to-use-joins-vb/_static/image34.png)](updating-the-tableadapter-to-use-joins-vb/_static/image33.png)
 
 **Рис. 13**: Для использования ObjectDataSource `GetEmployees` и `DeleteEmployee` методы ([Просмотр полноразмерного изображения](updating-the-tableadapter-to-use-joins-vb/_static/image35.png))
 
@@ -224,7 +224,7 @@ Visual Studio добавит поле BoundField GridView для каждого 
 Протестировать страницу, посетив его через браузер. Как показано на рис. 14, будут отображаться на странице каждого сотрудника и его s имя диспетчера (если они есть).
 
 
-[![Tон СОЕДИНЕНИЯ в хранимой процедуре Employees_Select Возвращает диспетчер s имя](updating-the-tableadapter-to-use-joins-vb/_static/image37.png)](updating-the-tableadapter-to-use-joins-vb/_static/image36.png)
+[![СОЕДИНЕНИЕ в Employees_Select хранимая процедура возвращает имя диспетчера s](updating-the-tableadapter-to-use-joins-vb/_static/image37.png)](updating-the-tableadapter-to-use-joins-vb/_static/image36.png)
 
 **Рис. 14**: `JOIN` В `Employees_Select` хранимая процедура возвращает диспетчер s имя ([Просмотр полноразмерного изображения](updating-the-tableadapter-to-use-joins-vb/_static/image38.png))
 
@@ -232,7 +232,7 @@ Visual Studio добавит поле BoundField GridView для каждого 
 При нажатии кнопки Delete запускается удаление рабочего процесса, который завершающийся выполнения `Employees_Delete` хранимой процедуры. Тем не менее попытка `DELETE` инструкции в хранимой процедуре завершается неудачно из-за нарушения ограничения внешнего ключа (см. рис. 15). В частности, каждый сотрудник имеет одну или несколько записей `Orders` таблицы, вызывая delete переход на другой.
 
 
-[![Deleting сотрудника с соответствующими результатами заказов в нарушение ограничения Foreign Key](updating-the-tableadapter-to-use-joins-vb/_static/image40.png)](updating-the-tableadapter-to-use-joins-vb/_static/image39.png)
+[![Удаление сотрудника с соответствующими результатами заказов в нарушение ограничения внешнего ключа](updating-the-tableadapter-to-use-joins-vb/_static/image40.png)](updating-the-tableadapter-to-use-joins-vb/_static/image39.png)
 
 **Рис. 15**: Удаление сотрудника с соответствующими результатами заказов в нарушение ограничения внешнего ключа ([Просмотр полноразмерного изображения](updating-the-tableadapter-to-use-joins-vb/_static/image41.png))
 

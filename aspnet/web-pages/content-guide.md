@@ -12,7 +12,7 @@ ms.openlocfilehash: 5e410ac0c6d3430c00e171775d842ee30eeab021
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383176"
 ---
 # <a name="webmatrix-content-guide"></a>Руководство по содержимому WebMatrix
@@ -23,7 +23,7 @@ ms.locfileid: "59383176"
 
 WebMatrix — это набор средств, который предоставляет простой способ создания веб-сайтов для Microsoft Windows. Он включает в себя IIS Express (веб-сервера разработки), ASP.NET (веб-программирования framework) и SQL Server Compact (встроенную базу данных). Краткий обзор WebMatrix, см. в разделе [Обзор WebMatrix](https://www.microsoft.com/web/webmatrix/). См. в статье лучшие компоненты WebMatrix [функции WebMatrix](https://www.microsoft.com/web/webmatrix/features/).
 
-| **Сценарий** | **Content** |
+| **Сценарий** | **Содержимое** |
 | --- | --- |
 | Начало работы с WebMatrix | [Введение в WebMatrix](https://mediadl.microsoft.com/mediadl/www/s/silverlight/video/web/webmatrix/intro.mp4) (видео) [начало работы с WebMatrix и ASP.NET Web Pages](https://go.microsoft.com/fwlink/?LinkId=202889) [с самого начала](https://mediadl.microsoft.com/mediadl/www/s/silverlight/video/web/webmatrix/walkthrough1b.mp4) (видео) сведения об использовании ASP.NET Razor кода для написания настраиваемого веб-сайта. [Вашего первого веб-сайта с помощью WebMatrix](https://go.microsoft.com/fwlink/?LinkId=208553) [начинаются с веб-приложений](https://mediadl.microsoft.com/mediadl/www/s/silverlight/video/web/webmatrix/walkthrough2b.mp4) (видео) используйте бесплатное приложение открытым исходным кодом для создания собственного сайта. |
 | Установка компонентов (включая WebMatrix) | [С помощью установщика платформы Microsoft Web](https://www.iis.net/learn/install/web-platform-installer/using-the-microsoft-web-platform-installer) [веб-Пошаговое руководство установщика платформы](https://www.iis.net/learn/install/web-platform-installer/web-platform-installer-20-walkthrough) [веб-ресурсы установщика платформы](https://www.iis.net/learn/install/web-platform-installer/web-platform-installer-resources) |
@@ -50,7 +50,7 @@ WebMatrix — это набор средств, который предоста�
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-**Чтение**
+**Read**
 
 - [Microsoft Web лагеря training kit для WebMatrix](http://trainingkit.webcamps.ms/WebMatrix.htm)
 - [Отправка ошибки или предложения](https://go.microsoft.com/fwlink/?LinkId=195940)
@@ -68,7 +68,7 @@ WebMatrix — это набор средств, который предоста�
 - [Начните с веб-приложений](https://mediadl.microsoft.com/mediadl/www/s/silverlight/video/web/webmatrix/walkthrough2b.mp4)
 - [Небольшой, но полный пакет](https://mediadl.microsoft.com/mediadl/www/s/silverlight/video/web/webmatrix/webx-compact.mp4)
 - [Растет вместе с вами](https://mediadl.microsoft.com/mediadl/www/s/silverlight/video/web/webmatrix/webx-extend.mp4)
-- [Открытый исходный код](https://mediadl.microsoft.com/mediadl/www/s/silverlight/video/web/webmatrix/webx-webapps-b.mp4)
+- [Открытым исходным кодом](https://mediadl.microsoft.com/mediadl/www/s/silverlight/video/web/webmatrix/webx-webapps-b.mp4)
 - [База данных стала проще](https://mediadl.microsoft.com/mediadl/www/s/silverlight/video/web/webmatrix/webx-databases.mp4)
 - [Интерфейс элегантным, простой интерфейс](https://mediadl.microsoft.com/mediadl/www/s/silverlight/video/web/webmatrix/webx-ux.mp4)
 - [Простой код](https://mediadl.microsoft.com/mediadl/www/s/silverlight/video/web/webmatrix/webx-aspnetpages.mp4)

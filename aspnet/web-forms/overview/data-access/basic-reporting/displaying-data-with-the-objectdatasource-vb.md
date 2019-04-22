@@ -12,7 +12,7 @@ ms.openlocfilehash: 9817a7b2fcb3cd5b4f8524d182baeaaf33c39fda
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383399"
 ---
 # <a name="displaying-data-with-the-objectdatasource-vb"></a>Отображение данных с помощью элемента управления ObjectDataSource (VB)
@@ -39,7 +39,7 @@ ASP.NET 2.0 есть пять встроенных источников данн
 Элемент управления ObjectDataSource выступает в качестве прокси-сервер для работы с некоторыми объектами. Чтобы настроить элемент управления ObjectDataSource мы укажите это базовый объект и его методы сопоставлении ObjectDataSource `Select`, `Insert`, `Update`, и `Delete` методы. После того как был указан этот базовый объект и его методы сопоставляются с ObjectDataSource, можно будет привязать ObjectDataSource к данных веб-элемента управления. ASP.NET имеется немало веб-элемент управления GridView, DetailsView, RadioButtonList и DropDownList, включая, помимо прочих. Во время жизненного цикла страницы, данные веб-элемент управления может потребоваться доступ к данным он привязан, которой он предстоит выполнить путем вызова метода `Select` метода; Если данные веб-элемент управления поддерживает вставку, обновление или удаление, может вызывать его ObjectDataSource `Insert`, `Update`, или `Delete` методы. Эти вызовы перенаправялет к методам соответствующего базового объекта ObjectDataSource как показано на следующей схеме.
 
 
-[![Tон ObjectDataSource выступает в качестве прокси-сервера](displaying-data-with-the-objectdatasource-vb/_static/image3.png)](displaying-data-with-the-objectdatasource-vb/_static/image2.png)
+[![Элемент управления ObjectDataSource выступает в качестве прокси-сервера](displaying-data-with-the-objectdatasource-vb/_static/image3.png)](displaying-data-with-the-objectdatasource-vb/_static/image2.png)
 
 **Рис. 2**: Элемент управления ObjectDataSource выступает в качестве учетной записи-посредника ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image4.png))
 
@@ -57,7 +57,7 @@ ASP.NET 2.0 есть пять встроенных источников данн
 Чтобы указать базового объекта ObjectDataSource и сопоставлении методы этого объекта ObjectDataSource, щелкните ссылку Настройка источника данных смарт-теге ObjectDataSource.
 
 
-[![Cелкните настроить связь с источником данных в смарт-теге](displaying-data-with-the-objectdatasource-vb/_static/image6.png)](displaying-data-with-the-objectdatasource-vb/_static/image5.png)
+[![Нажмите кнопку ссылка Configure Data Source в смарт-теге](displaying-data-with-the-objectdatasource-vb/_static/image6.png)](displaying-data-with-the-objectdatasource-vb/_static/image5.png)
 
 **Рис. 3**: Нажмите кнопку настроить связь с источником данных в смарт-теге ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image7.png))
 
@@ -67,7 +67,7 @@ ASP.NET 2.0 есть пять встроенных источников данн
 В этом первом экране выберите `ProductsBLL` класса из раскрывающегося списка и нажмите кнопку Далее.
 
 
-[![SУкажите объект для использования с элементом управления ObjectDataSource](displaying-data-with-the-objectdatasource-vb/_static/image9.png)](displaying-data-with-the-objectdatasource-vb/_static/image8.png)
+[![Укажите объект для использования с элементом управления ObjectDataSource](displaying-data-with-the-objectdatasource-vb/_static/image9.png)](displaying-data-with-the-objectdatasource-vb/_static/image8.png)
 
 **Рис. 4**: Укажите объект для использования с элементом управления ObjectDataSource ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image10.png))
 
@@ -75,7 +75,7 @@ ASP.NET 2.0 есть пять встроенных источников данн
 На следующем экране мастер предложит указать элемент управления ObjectDataSource должен вызывать метод. В раскрывающемся списке перечислены методы, возвращающие данные в объект выбран на предыдущем экране. Здесь мы видим, `GetProductByProductID`, `GetProducts`, `GetProductsByCategoryID`, и `GetProductsBySupplierID`. Выберите `GetProducts` метод в раскрывающемся списке и нажмите кнопку Готово (Если вы добавили `DataObjectMethodAttribute` для `ProductBLL`в методы, как показано в предыдущем учебном курсе, этот параметр будет выбран по умолчанию).
 
 
-[![CВыберите метод для возвращения данных на вкладке "ВЫБЕРИТЕ"](displaying-data-with-the-objectdatasource-vb/_static/image12.png)](displaying-data-with-the-objectdatasource-vb/_static/image11.png)
+[![Выберите метод для возврата данных на вкладке SELECT](displaying-data-with-the-objectdatasource-vb/_static/image12.png)](displaying-data-with-the-objectdatasource-vb/_static/image11.png)
 
 **Рис. 5**: Выберите метод для возвращения данных на вкладке "ВЫБЕРИТЕ" ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image13.png))
 
@@ -98,7 +98,7 @@ ASP.NET 2.0 есть пять встроенных источников данн
 Добавление элемента управления GridView с панели инструментов для `SimpleDisplay.aspx`в область конструктора. Смарт-теге элемента GridView выберите элемент управления ObjectDataSource, который мы добавили на шаге 1. Автоматически будет создано поле BoundField в GridView для каждого свойства, возвращаемые данные из элемента управления ObjectDataSource `Select` метод (а именно, свойства, определенные в объекте Products DataTable).
 
 
-[![A GridView добавлен на страницу и привязан к элементу ObjectDataSource](displaying-data-with-the-objectdatasource-vb/_static/image15.png)](displaying-data-with-the-objectdatasource-vb/_static/image14.png)
+[![Элемент GridView добавлен на страницу и привязан к элементу ObjectDataSource](displaying-data-with-the-objectdatasource-vb/_static/image15.png)](displaying-data-with-the-objectdatasource-vb/_static/image14.png)
 
 **Рис. 6**: GridView добавлен на страницу и привязки к элементу ObjectDataSource ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image16.png))
 
@@ -106,7 +106,7 @@ ASP.NET 2.0 есть пять встроенных источников данн
 Затем можно настроить, изменить порядок или удалять поля BoundFields элемента GridView, выбрав пункт Правка столбцов в смарт-теге.
 
 
-[![MУправление GridView поля BoundFields через столбцы диалоговое окно Изменение](displaying-data-with-the-objectdatasource-vb/_static/image18.png)](displaying-data-with-the-objectdatasource-vb/_static/image17.png)
+[![Управление BoundFields элемента GridView в диалоговом окне редактирования столбцов](displaying-data-with-the-objectdatasource-vb/_static/image18.png)](displaying-data-with-the-objectdatasource-vb/_static/image17.png)
 
 **Рис. 7**: Диалоговое окно управления GridView поля BoundField, кроме через изменение столбцов ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image19.png))
 
@@ -117,7 +117,7 @@ ASP.NET 2.0 есть пять встроенных источников данн
 [!code-aspx[Main](displaying-data-with-the-objectdatasource-vb/samples/sample2.aspx)]
 
 
-[![TНастроенные поля BoundFields элемента GridView HE](displaying-data-with-the-objectdatasource-vb/_static/image21.png)](displaying-data-with-the-objectdatasource-vb/_static/image20.png)
+[![Настроенные поля BoundFields элемента GridView](displaying-data-with-the-objectdatasource-vb/_static/image21.png)](displaying-data-with-the-objectdatasource-vb/_static/image20.png)
 
 **Рис. 8**: GridView настроенные поля BoundFields ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image22.png))
 
@@ -133,7 +133,7 @@ ASP.NET 2.0 есть пять встроенных источников данн
 Начните с добавления нового файла обложки в проект с именем `GridView.skin` , щелкнув имя проекта в обозревателе решений и выбрав Add New Item.
 
 
-[![Aдд GridView.skin с именем файла обложки](displaying-data-with-the-objectdatasource-vb/_static/image24.png)](displaying-data-with-the-objectdatasource-vb/_static/image23.png)
+[![Добавление файла обложки GridView.skin](displaying-data-with-the-objectdatasource-vb/_static/image24.png)](displaying-data-with-the-objectdatasource-vb/_static/image23.png)
 
 **Рис. 9**: Добавьте файл обложки, имя `GridView.skin` ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image25.png))
 
@@ -141,7 +141,7 @@ ASP.NET 2.0 есть пять встроенных источников данн
 Файлы обложки нужно добавить в тему, которая хранится в `App_Themes` папку. Так как мы еще нет такую папку, Visual Studio любезно предложит ее создать нас при добавлении первого файла обложки. Нажмите "Да", чтобы создать `App_Theme` папку и сохранить новый `GridView.skin` файл существует.
 
 
-[![LET Visual Studio создать папку App_Theme](displaying-data-with-the-objectdatasource-vb/_static/image27.png)](displaying-data-with-the-objectdatasource-vb/_static/image26.png)
+[![Visual Studio создаст папку App_Theme](displaying-data-with-the-objectdatasource-vb/_static/image27.png)](displaying-data-with-the-objectdatasource-vb/_static/image26.png)
 
 **Рис. 10**: Позволить Visual Studio создать `App_Theme` папку ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image28.png))
 
@@ -172,7 +172,7 @@ ASP.NET 2.0 есть пять встроенных источников данн
 Вот и все! `styleSheetTheme` Параметр указывает, что свойства, заданные в теме *не* свойства, определенные на уровне управления. Чтобы указать, что параметры темы должные параметры управления, используйте `theme` атрибута вместо `styleSheetTheme`; к сожалению, параметры темы не отображаются в представлении конструирования Visual Studio. См. [ASP.NET темы и обложки](https://msdn.microsoft.com/library/ykzx33wh.aspx) и [темы с помощью серверных стили](https://quickstarts.asp.net/quickstartv20/aspnet/doc/themes/stylesheettheme.aspx) узнать больше о темы и обложки элементов см. в разделе [How To: Применение тем ASP.NET](https://msdn.microsoft.com/library/0yy5hxdk%28VS.80%29.aspx) Дополнительные сведения о настройке страницы для использования темы.
 
 
-[![Tон GridView отображает имя продукта, категории, поставщика, цены и неподдерживаемые сведения](displaying-data-with-the-objectdatasource-vb/_static/image31.png)](displaying-data-with-the-objectdatasource-vb/_static/image30.png)
+[![Элемент GridView отображает по имени продукта, категории, поставщика, цены и информации о поддержке](displaying-data-with-the-objectdatasource-vb/_static/image31.png)](displaying-data-with-the-objectdatasource-vb/_static/image30.png)
 
 **Рис. 12**: Элемент GridView отображает имя продукта, категории, поставщика, цены и сведения, более не поддерживается ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image32.png))
 
@@ -184,7 +184,7 @@ ASP.NET 2.0 есть пять встроенных источников данн
 Начните с добавления элемента управления DetailsView *выше* GridView в `SimpleDisplay.aspx`. Затем привяжите его к тот же элемент управления ObjectDataSource, элемент GridView. Как и с GridView, BoundField будут добавлены к элементу управления DetailsView для каждого свойства объекта, возвращаемого ObjectDataSource `Select` метод. Единственным различием является то, что поля BoundFields в элементе DetailsView располагаются по горизонтали, а не по вертикали.
 
 
-[![Aдд DetailsView на страницу и привяжите его к элементу ObjectDataSource](displaying-data-with-the-objectdatasource-vb/_static/image34.png)](displaying-data-with-the-objectdatasource-vb/_static/image33.png)
+[![Добавление элемента DetailsView на страницу и привяжите его к элементу ObjectDataSource](displaying-data-with-the-objectdatasource-vb/_static/image34.png)](displaying-data-with-the-objectdatasource-vb/_static/image33.png)
 
 **Рис. 13**: Добавление элемента DetailsView на страницу и привяжите его к элементу ObjectDataSource ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image35.png))
 
@@ -192,7 +192,7 @@ ASP.NET 2.0 есть пять встроенных источников данн
 Например GridView DetailsView поля BoundFields может быть оптимизировано для более функциональный отображения данных, возвращаемых элементом ObjectDataSource. Рис. 14 показан элемент DetailsView после BoundFields и `CssClass` заданы свойства, чтобы сделать его внешний вид, как в примере GridView.
 
 
-[![Tон DetailsView показывает одну запись](displaying-data-with-the-objectdatasource-vb/_static/image37.png)](displaying-data-with-the-objectdatasource-vb/_static/image36.png)
+[![Отображение одной записи при DetailsView](displaying-data-with-the-objectdatasource-vb/_static/image37.png)](displaying-data-with-the-objectdatasource-vb/_static/image36.png)
 
 **Рис. 14**: Отображение одной записи при DetailsView ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image38.png))
 
@@ -200,12 +200,12 @@ ASP.NET 2.0 есть пять встроенных источников данн
 Обратите внимание на то, что элемент DetailsView отображает только первую запись, полученную из источника данных. Чтобы разрешить пользователю перебрать все записи, поочередно, мы должны включить функцию разбиения для элемента DetailsView. Чтобы сделать это, вернитесь в Visual Studio и установите флажок Enable Paging в смарт-теге DetailsView.
 
 
-[![EВключить разбиение по страницам в элементе управления DetailsView](displaying-data-with-the-objectdatasource-vb/_static/image40.png)](displaying-data-with-the-objectdatasource-vb/_static/image39.png)
+[![Включить разбиение по страницам в элементе управления DetailsView](displaying-data-with-the-objectdatasource-vb/_static/image40.png)](displaying-data-with-the-objectdatasource-vb/_static/image39.png)
 
 **Рис. 15**: Включить разбиение по страницам в элементе управления DetailsView ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image41.png))
 
 
-[![Wi-ой, разбиение по страницам включено, а DetailsView позволяет пользователю просмотреть любой продукт](displaying-data-with-the-objectdatasource-vb/_static/image43.png)](displaying-data-with-the-objectdatasource-vb/_static/image42.png)
+[![Включении разбиения на страницы элемент DetailsView позволяет пользователю просматривать всех продуктов](displaying-data-with-the-objectdatasource-vb/_static/image43.png)](displaying-data-with-the-objectdatasource-vb/_static/image42.png)
 
 **Рис. 16**: С поддержкой разбиения по страницам, элемент DetailsView позволяет пользователю просматривать всех продуктов ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image44.png))
 
@@ -221,7 +221,7 @@ DetailsView не слишком разнообразны, отображаетс
 Добавьте элемент управления FormView на `SimpleDisplay.aspx` область конструктора страницы. Сначала FormView появится в виде серого, говорит о том, что нам нужно предоставить по меньшей мере, элемента управления `ItemTemplate`.
 
 
-[![Tон FormView должна включать ItemTemplate](displaying-data-with-the-objectdatasource-vb/_static/image46.png)](displaying-data-with-the-objectdatasource-vb/_static/image45.png)
+[![FormView должен включать ItemTemplate](displaying-data-with-the-objectdatasource-vb/_static/image46.png)](displaying-data-with-the-objectdatasource-vb/_static/image45.png)
 
 **Рис. 17**: FormView требуется `ItemTemplate` ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image47.png))
 
@@ -232,7 +232,7 @@ FormView можно привязать непосредственно к эле�
 [!code-aspx[Main](displaying-data-with-the-objectdatasource-vb/samples/sample6.aspx)]
 
 
-[![Tон первого продукта (Chai) отображается в пользовательский формат](displaying-data-with-the-objectdatasource-vb/_static/image49.png)](displaying-data-with-the-objectdatasource-vb/_static/image48.png)
+[![Первого продукта (Chai) отображается в пользовательский формат](displaying-data-with-the-objectdatasource-vb/_static/image49.png)](displaying-data-with-the-objectdatasource-vb/_static/image48.png)
 
 **Рис. 18**: Первого продукта (Chai) отображается в пользовательский формат ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-vb/_static/image50.png))
 
@@ -258,7 +258,7 @@ FormView можно привязать непосредственно к эле�
 - [Простой и расширенный синтаксис привязки данных в ASP.NET 2.0](http://www.15seconds.com/issue/040630.htm)
 - [Темы в ASP.NET 2.0](http://www.odetocode.com/Articles/423.aspx)
 - [Стили на стороне сервера с использованием тем.](https://quickstarts.asp.net/quickstartv20/aspnet/doc/themes/stylesheettheme.aspx)
-- [Как выполнить: Применение тем ASP.NET программными средствами](https://msdn.microsoft.com/library/tx35bd89.aspx)
+- [Практическое руководство. Применение тем ASP.NET программными средствами](https://msdn.microsoft.com/library/tx35bd89.aspx)
 
 ## <a name="about-the-author"></a>Об авторе
 

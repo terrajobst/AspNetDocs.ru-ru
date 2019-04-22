@@ -12,7 +12,7 @@ ms.openlocfilehash: a3f501a7e46e39609e4669c034cc70e8f88993a5
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59379096"
 ---
 # <a name="movie-database"></a>База данных Movie
@@ -20,5 +20,5 @@ ms.locfileid: "59379096"
 > Как создать приложения базы данных Movie за 15 минут.
 
 
-- [Создание приложения для базы данных Movie за 15 минут с помощью ASP.NET MVC (C#)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs.md)
-- [Создание приложения базы данных Movie за 15 минут с помощью ASP.NET MVC (VB)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb.md)
+- [Создание приложения для базы данных Movie за 15 минут с помощью ASP.NET MVC (C#)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs.md)
+- [Создание приложения базы данных Movie за 15 минут с помощью ASP.NET MVC (VB)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb.md)

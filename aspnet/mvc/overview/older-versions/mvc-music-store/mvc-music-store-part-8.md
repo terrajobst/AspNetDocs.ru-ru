@@ -12,7 +12,7 @@ ms.openlocfilehash: 2ba210d8c541c6c330dda74706470fa73a81474a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59379486"
 ---
 # <a name="part-8-shopping-cart-with-ajax-updates"></a>Часть 8. Корзина для покупок с обновлениями Ajax

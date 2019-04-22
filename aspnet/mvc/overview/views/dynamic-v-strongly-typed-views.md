@@ -12,7 +12,7 @@ ms.openlocfilehash: 3235fc58fbf93cb87946f8ebd4a478eff7ce80e3
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386142"
 ---
 # <a name="dynamic-v-strongly-typed-views"></a>Динамические и строго типизированные представления
@@ -52,7 +52,7 @@ ms.locfileid: "59386142"
 
 Обратите внимание, что это точно тем же возвращаемое View(topBlogs); вызывать как не строго типизированного представления. Щелкните правой кнопкой мыши внутри элемента *StonglyTypedIndex()* и выберите **Добавление представления**. На этот раз выберите **блог** класс модели и выберите **списка** как шаблон каркаса.
 
-[![5658.StrongView[1]](dynamic-v-strongly-typed-views/_static/image6.png)](dynamic-v-strongly-typed-views/_static/image5.png)
+[![5658.StrongView [1]](dynamic-v-strongly-typed-views/_static/image6.png)](dynamic-v-strongly-typed-views/_static/image5.png)
 
 В новый шаблон представления мы обеспечить поддержку intellisense.
 

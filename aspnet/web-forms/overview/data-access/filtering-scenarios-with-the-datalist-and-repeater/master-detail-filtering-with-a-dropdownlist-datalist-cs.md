@@ -12,7 +12,7 @@ ms.openlocfilehash: d6b5c234c8d0da5500ecf554c5e23cb52e94f411
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59421853"
 ---
 # <a name="masterdetail-filtering-with-a-dropdownlist-c"></a>Фильтрация "Основной/подробности" с помощью элемента управления DropDownList (C#)
@@ -49,7 +49,7 @@ ms.locfileid: "59421853"
 Затем откройте `Default.aspx` страницы и перетащите `SectionLevelTutorialListing.ascx` пользовательского элемента управления с `UserControls` папку в область конструктора. Данный пользовательский элемент управления, созданный в учебном курсе [главные страницы и структуру переходов узла](../introduction/master-pages-and-site-navigation-cs.md) , просматривает карту узла и отображает руководства из текущего раздела в виде маркированного списка.
 
 
-[![Aдд пользовательского элемента управления SectionLevelTutorialListing.ascx к странице Default.aspx](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image3.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image2.png)
+[![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image3.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image2.png)
 
 **Рис. 2**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image4.png))
 
@@ -69,7 +69,7 @@ ms.locfileid: "59421853"
 Категории в элементе управления DropDownList, перечислит нашего отчета «основной/подробности» с продуктами выбранного элемента списка отображаются ниже на странице в элементе управления DataList. Первой задачей, то категорий, отображаемых в элементе управления DropDownList. Сначала откройте `FilterByDropDownList.aspx` странице в `DataListRepeaterFiltering` папки и перетащите DropDownList с панели элементов в конструктор страницы. Затем задайте DropDownList `ID` свойства `Categories`. Щелкните ссылку выберите источник данных смарт-теге DropDownList и создайте новый ObjectDataSource, именуемый `CategoriesDataSource`.
 
 
-[![Aдд новый ObjectDataSource с именем CategoriesDataSource](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image7.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image6.png)
+[![Добавьте новый ObjectDataSource, именуемый CategoriesDataSource](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image7.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image6.png)
 
 **Рис. 4**: Добавить новый элемент управления ObjectDataSource с именем `CategoriesDataSource` ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image8.png))
 
@@ -77,7 +77,7 @@ ms.locfileid: "59421853"
 Настройка нового ObjectDataSource, таким образом, он вызывает `CategoriesBLL` класса `GetCategories()` метод. После настройки ObjectDataSource все равно небходимо указать поле источника данных, которые должны отображаться в DropDownList, а какие должно быть связано в качестве значения для каждого элемента списка. У `CategoryName` как отображение и `CategoryID` как значение для каждого элемента списка.
 
 
-[![Hсохранить элемент управления DropDownList отображает поле «Категория» и CategoryID использовать как значение](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image10.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image9.png)
+[![Иметь элемент управления DropDownList отображает поле «Категория» и CategoryID использовать как значение](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image10.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image9.png)
 
 **Рис. 5**: Иметь элемент управления DropDownList отображает `CategoryName` и использует `CategoryID` как значение ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image11.png))
 
@@ -85,7 +85,7 @@ ms.locfileid: "59421853"
 На этом этапе у нас есть элемент управления DropDownList, заполненный записями из `Categories` (все действия выполняются приблизительно за шесть секунд). Рис. 6 показаны до сих при просмотре через браузер.
 
 
-[![A Раскрывающийся список текущих категорий](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image13.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image12.png)
+[![Раскрывающийся список с текущими категориями](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image13.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image12.png)
 
 **Рис. 6**: Раскрывающийся список текущих категорий ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image14.png))
 
@@ -95,7 +95,7 @@ ms.locfileid: "59421853"
 Последний шаг в нашем отчете «основной/подробности» является отображение списка продуктов, связанных с выбранной категорией. Для этого добавьте на страницу элемент управления DataList и создайте новый ObjectDataSource, именуемый `ProductsByCategoryDataSource`. У `ProductsByCategoryDataSource` получит свои данные из `ProductsBLL` класса `GetProductsByCategoryID(categoryID)` метод. Так как этот отчет «основной/подробности» доступна только для чтения, выберите параметр (нет) на вкладках INSERT, UPDATE и DELETE.
 
 
-[![SВыберите метод GetProductsByCategoryID(categoryID)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image16.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image15.png)
+[![Выберите метод GetProductsByCategoryID(categoryID)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image16.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image15.png)
 
 **Рис. 7**: Выберите `GetProductsByCategoryID(categoryID)` метод ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image17.png))
 
@@ -103,7 +103,7 @@ ms.locfileid: "59421853"
 После нажатия кнопки Далее, мастер ObjectDataSource запрашивает значения для источника `GetProductsByCategoryID(categoryID)` метода *`categoryID`* параметра. Чтобы использовать значение выбранного `categories` элемент DropDownList источника параметра установите для элемента управления, а для ControlID – `Categories`.
 
 
-[![SET categoryID параметр со значением элемента управления DropDownList категории](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image19.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image18.png)
+[![Значение параметра categoryID значение DropDownList категорий](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image19.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image18.png)
 
 **Рис. 8**: Задайте *`categoryID`* параметр значению `Categories` DropDownList ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image20.png))
 
@@ -119,12 +119,12 @@ ms.locfileid: "59421853"
 На рис. 9 и 10 показана работа отчета «основной/подробности» в действии.
 
 
-[![Wри первом просмотре страницы, отображаются продукты отображаются](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image22.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image21.png)
+[![При первом просмотре странице отображаются продукты отображаются](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image22.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image21.png)
 
 **Рис. 9**: При первом просмотре странице отображаются продукты отображаются ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image23.png))
 
 
-[![SОтказ от нового продукта (Produce) автоматически вызывает обратную передачу, обновляется элемент управления DataList](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image25.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image24.png)
+[![Выбор нового продукта (Produce) автоматически вызывает обратную передачу, обновляется элемент управления DataList](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image25.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image24.png)
 
 **Рис. 10**: Выбор нового продукта (Produce) автоматически вызывает обратную передачу, обновляется элемент управления DataList ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image26.png))
 
@@ -156,7 +156,7 @@ ms.locfileid: "59421853"
 Причина, по значение `0` для списка «--выберите категорию--» элемента обеспечивается, так как в системе со значением категории не `0`, поэтому записи не продукта будет возвращаться при выборе элемента списка «--выберите категорию--». Чтобы проверить это, Отвлекитесь и чтобы перейти на страницу через обозреватель. Как показано на рисунке 13, при первоначальном просмотре страницы выбран элемент списка «--выберите категорию--» продукты не отображаются.
 
 
-[![Wри](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image30.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image29.png)
+[![Когда](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image30.png)](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image29.png)
 
 **Рис. 13**: При выборе элемента списка «--выберите категорию--» продукты не отображаются ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image31.png))
 
@@ -180,4 +180,4 @@ ms.locfileid: "59421853"
 В этой серии руководств пособий рецензировалась многими компетентными редакторами. Основной рецензент этого учебного Рэнди Шмидт. Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
-> [Далее](master-detail-filtering-acess-two-pages-datalist-cs.md)
+> [Вперед](master-detail-filtering-acess-two-pages-datalist-cs.md)

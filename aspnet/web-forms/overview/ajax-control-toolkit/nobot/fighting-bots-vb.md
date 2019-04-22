@@ -12,7 +12,7 @@ ms.openlocfilehash: 6baf5447d31d00b89cb7ddf526553456fecbbf6e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409477"
 ---
 # <a name="fighting-bots-vb"></a>Борьба с ботами (VB)
@@ -65,7 +65,7 @@ ms.locfileid: "59409477"
 При выполнении этого скрипта и деактивировать JavaScript или отправить форму в течение первых двух секунд или отправить форму семь раз в течение 30 секунд, вы получите сообщение об ошибке. Тем не менее этот элемент управления использовать осмотрительно, поскольку только около 90-95% пользователи активировали JavaScript, таким образом 5 – 10% пользователей не удастся `NoBot`элемента теста.
 
 
-[![Tего сообщение об ошибке может быть вызвано программы-робота](fighting-bots-vb/_static/image2.png)](fighting-bots-vb/_static/image1.png)
+[![Это сообщение об ошибке может быть вызвано программы-робота](fighting-bots-vb/_static/image2.png)](fighting-bots-vb/_static/image1.png)
 
 Это сообщение об ошибке может быть вызвано программы-робота ([Просмотр полноразмерного изображения](fighting-bots-vb/_static/image3.png))
 

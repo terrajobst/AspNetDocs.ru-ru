@@ -12,7 +12,7 @@ ms.openlocfilehash: 8292fd43ffa2bc66b4daa8f0fc09569226d90bff
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59379564"
 ---
 # <a name="using-asynchronous-methods-in-aspnet-mvc-4"></a>Использование асинхронных методов в ASP.NET MVC 4
@@ -166,7 +166,7 @@ ASP.NET MVC 4 [Controller](https://msdn.microsoft.com/library/system.web.mvc.con
 
     - Откройте диспетчер IIS и перейдите в область пулов приложений.
     - Щелкните правой кнопкой целевой пул приложений и выберите **Дополнительные параметры**.  
-        ![дополнительно](using-asynchronous-methods-in-aspnet-mvc-4/_static/image4.png)
+        ![Дополнительно](using-asynchronous-methods-in-aspnet-mvc-4/_static/image4.png)
     - В **Дополнительные параметры** » диалогового окна «Изменение *длина очереди* от 1000 до 5 000.  
         ![Длина очереди](using-asynchronous-methods-in-aspnet-mvc-4/_static/image5.png)  
   

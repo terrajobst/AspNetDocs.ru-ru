@@ -12,7 +12,7 @@ ms.openlocfilehash: 28e001059cb1853d21175da2a2b1af2c75364485
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380370"
 ---
 # <a name="databinding-to-an-accordion-c"></a>Привязка данных к Accordion (C#)
@@ -59,9 +59,9 @@ ms.locfileid: "59380370"
 [!code-css[Main](databinding-to-an-accordion-cs/samples/sample6.css)]
 
 
-[![Tданные в Гармошка поступают непосредственно из источника данных](databinding-to-an-accordion-cs/_static/image2.png)](databinding-to-an-accordion-cs/_static/image1.png)
+[![Данные в Гармошка поступают непосредственно из источника данных](databinding-to-an-accordion-cs/_static/image2.png)](databinding-to-an-accordion-cs/_static/image1.png)
 
 Данные в Гармошка поступают непосредственно из источника данных ([Просмотр полноразмерного изображения](databinding-to-an-accordion-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
-> [Далее](dynamically-adding-an-accordion-pane-cs.md)
+> [Вперед](dynamically-adding-an-accordion-pane-cs.md)

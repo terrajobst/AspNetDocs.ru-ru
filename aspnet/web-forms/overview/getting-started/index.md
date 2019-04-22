@@ -12,7 +12,7 @@ ms.openlocfilehash: 12dd89632f9ec9ebfb16bcefbd37e7311adfff08
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422828"
 ---
 # <a name="getting-started-with-aspnet-web-forms"></a>Приступая к работе с веб-форм ASP.NET
@@ -20,7 +20,7 @@ ms.locfileid: "59422828"
 > Модель веб-форм и как создавать страницы и использовать элементы управления.
 
 
-- [Начало работы с веб-формами ASP.NET 4.5 и Visual Studio 2013](getting-started-with-aspnet-45-web-forms/index.md)
+- [Начало работы с веб-формами ASP.NET 4.5 и Visual Studio 2013](getting-started-with-aspnet-45-web-forms/index.md)
 
     - [Начало работы с веб-формами и Visual Studio](getting-started-with-aspnet-45-web-forms/introduction-and-overview.md)
     - [Создание проекта](getting-started-with-aspnet-45-web-forms/create-the-project.md)
@@ -32,11 +32,11 @@ ms.locfileid: "59422828"
     - [Членство и администрирование](getting-started-with-aspnet-45-web-forms/membership-and-administration.md)
     - [Маршрутизация URL-адресов](getting-started-with-aspnet-45-web-forms/url-routing.md)
     - [Обработка ошибок ASP.NET](getting-started-with-aspnet-45-web-forms/aspnet-error-handling.md)
-- [Создание простой страницы веб-форм в Visual Studio 2013](creating-a-basic-web-forms-page.md)
-- [Редактирование кода в веб-формах ASP.NET в Visual Studio 2013](code-editing-in-web-forms-pages.md)
-- [Использование инспектора страниц для Visual Studio 2012 в веб-формах ASP.NET](using-page-inspector-in-a-visual-studio-11-beta-web-forms-project.md)
-- [Практические занятия по Visual Studio 2012](hands-on-labs/index.md)
+- [Создание простой страницы веб-форм в Visual Studio 2013](creating-a-basic-web-forms-page.md)
+- [Редактирование кода в веб-формах ASP.NET в Visual Studio 2013](code-editing-in-web-forms-pages.md)
+- [Использование инспектора страниц для Visual Studio 2012 в веб-формах ASP.NET](using-page-inspector-in-a-visual-studio-11-beta-web-forms-project.md)
+- [Практические занятия по Visual Studio 2012](hands-on-labs/index.md)
 
-    - [Новые возможности ASP.NET и веб-разработки в Visual Studio 2012](hands-on-labs/whats-new-in-aspnet-and-web-development-in-visual-studio-2012.md)
-    - [Новые возможности веб-форм в ASP.NET 4.5](hands-on-labs/whats-new-in-web-forms-in-aspnet-45.md)
-    - [Использование инспектора страниц в Visual Studio 2012](hands-on-labs/using-page-inspector-in-visual-studio-2012.md)
+    - [Новые возможности ASP.NET и веб-разработки в Visual Studio 2012](hands-on-labs/whats-new-in-aspnet-and-web-development-in-visual-studio-2012.md)
+    - [Новые возможности веб-форм в ASP.NET 4.5](hands-on-labs/whats-new-in-web-forms-in-aspnet-45.md)
+    - [Использование инспектора страниц в Visual Studio 2012](hands-on-labs/using-page-inspector-in-visual-studio-2012.md)

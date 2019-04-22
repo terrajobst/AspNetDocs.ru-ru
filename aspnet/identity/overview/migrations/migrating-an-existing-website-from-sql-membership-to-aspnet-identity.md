@@ -13,7 +13,7 @@ ms.openlocfilehash: f205dfd8692bc946ca2124655bf8bcefbdbd1779
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59394537"
 ---
 # <a name="migrating-an-existing-website-from-sql-membership-to-aspnet-identity"></a>Миграция существующего веб-сайта из членства SQL в ASP.NET Identity
@@ -83,7 +83,7 @@ ms.locfileid: "59394537"
 
 Для классов ASP.NET Identity для работы за пределами поля с данными из существующих пользователей нам нужно перенести схему базы данных в один, необходимые для ASP.NET Identity. Мы это можно сделать путем добавления новых таблиц и копирование сведения о существующем к этим таблицам. По умолчанию ASP.NET Identity использует EntityFramework для сопоставления классов модели удостоверения в базе данных для хранения или извлечения информации. Эти классы модели реализации базовых интерфейсов удостоверений, определение и объектов роли пользователя. Таблицы и столбцы в базе данных основаны на эти классы модели. Классы модели EntityFramework v2.1.0 удостоверений и их свойства, как определено ниже
 
-| **IdentityUser** | **Тип** | **IdentityRole** | **IdentityUserRole** | **IdentityUserLogin** | **IdentityUserClaim** |
+| **IdentityUser** | **Type** | **IdentityRole** | **IdentityUserRole** | **IdentityUserLogin** | **IdentityUserClaim** |
 | --- | --- | --- | --- | --- | --- |
 | Идентификатор | string | Идентификатор | RoleId | ProviderKey | Идентификатор |
 | Имя пользователя | string | name | Идентификатор пользователя | Идентификатор пользователя | ClaimType |

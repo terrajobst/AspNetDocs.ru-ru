@@ -12,7 +12,7 @@ ms.openlocfilehash: 3e1399d17840a2f5301349cb91deb07b0cc34363
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59421983"
 ---
 # <a name="validating-with-the-idataerrorinfo-interface-c"></a>Проверка с помощью интерфейса IDataErrorInfo (C#)
@@ -31,7 +31,7 @@ ms.locfileid: "59421983"
 <a id="0.5_table01"></a>
 
 
-| **Имя столбца** | **Тип данных** | **Разрешить значения null** |
+| **Имя столбца** | **Тип данных** | **Разрешить значения NULL** |
 | --- | --- | --- |
 | Идентификатор | Int | False |
 | Заголовок | Nvarchar(100) | False |
@@ -42,7 +42,7 @@ ms.locfileid: "59421983"
 В данном случае я использую Microsoft Entity Framework для создания Мои классы модели базы данных. Класс Movie, созданным Entity Framework отображается на рис. 1.
 
 
-[![Tон сущности фильма](validating-with-the-idataerrorinfo-interface-cs/_static/image1.jpg)](validating-with-the-idataerrorinfo-interface-cs/_static/image1.png)
+[![Сущность фильма](validating-with-the-idataerrorinfo-interface-cs/_static/image1.jpg)](validating-with-the-idataerrorinfo-interface-cs/_static/image1.png)
 
 **Рис 01**: Объект фильма ([Просмотр полноразмерного изображения](validating-with-the-idataerrorinfo-interface-cs/_static/image2.png))
 
@@ -56,7 +56,7 @@ ms.locfileid: "59421983"
 
 Мы используем контроллера Home список фильмов и создание новых фильмов. В листинге 1 содержится код для этого класса.
 
-**Listing 1 - Controllers\HomeController.cs**
+**В листинге 1 - Controllers\HomeController.cs**
 
 [!code-csharp[Main](validating-with-the-idataerrorinfo-interface-cs/samples/sample1.cs)]
 
@@ -73,7 +73,7 @@ ms.locfileid: "59421983"
 Класс Movie создается платформой Entity Framework. Вы увидите код для класса фильма, если развернуть файл MoviesDBModel.edmx в окне обозревателя решений и откройте файл MoviesDBModel.Designer.cs в редакторе кода (см. рис. 2).
 
 
-[![Tкод для сущности фильма](validating-with-the-idataerrorinfo-interface-cs/_static/image2.jpg)](validating-with-the-idataerrorinfo-interface-cs/_static/image3.png)
+[![Код для сущности фильма](validating-with-the-idataerrorinfo-interface-cs/_static/image2.jpg)](validating-with-the-idataerrorinfo-interface-cs/_static/image3.png)
 
 **Рис. 02**: Код для сущности фильма ([Просмотр полноразмерного изображения](validating-with-the-idataerrorinfo-interface-cs/_static/image4.png))
 
@@ -82,7 +82,7 @@ ms.locfileid: "59421983"
 
 Добавление класса в листинге 2 папку Models.
 
-**Listing 2 - Models\Movie.cs**
+**В листинге 2 - Models\Movie.cs**
 
 [!code-csharp[Main](validating-with-the-idataerrorinfo-interface-cs/samples/sample3.cs)]
 
@@ -112,7 +112,7 @@ ms.locfileid: "59421983"
 > Разделяемый метод — это метод, определенный в классе, который не является обязательным для реализации. Если не реализовать разделяемый метод, компилятор удаляет сигнатуру метода, и все вызовы метода таким образом являются без затрат времени выполнения, связанных с разделяемого метода. В редакторе кода Visual Studio, можно добавить разделяемый метод, введя ключевое слово *частичного* за которыми следует пробел, чтобы просмотреть список частичных представлений для реализации.
 
 
-**Listing 3 - Models\Movie.cs**
+**Листинг 3 - Models\Movie.cs**
 
 [!code-csharp[Main](validating-with-the-idataerrorinfo-interface-cs/samples/sample4.cs)]
 
@@ -147,7 +147,7 @@ DefaultModelBinder также проверяет свойство IDataErrorInfo
 Не нужно каким-либо образом использовать измененный класс Movie контроллер Home. Страницы, отображаемой на рис. 3 показано, что произойдет, если значение не указано для заголовка или Директор полей формы.
 
 
-[![Cметоды действий ается автоматически](validating-with-the-idataerrorinfo-interface-cs/_static/image3.jpg)](validating-with-the-idataerrorinfo-interface-cs/_static/image5.png)
+[![Автоматическое создание методов действий](validating-with-the-idataerrorinfo-interface-cs/_static/image3.jpg)](validating-with-the-idataerrorinfo-interface-cs/_static/image5.png)
 
 **Рис 03**: Форма с отсутствующими значениями ([Просмотр полноразмерного изображения](validating-with-the-idataerrorinfo-interface-cs/_static/image6.png))
 

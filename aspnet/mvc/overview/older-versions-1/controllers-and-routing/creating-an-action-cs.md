@@ -12,7 +12,7 @@ ms.openlocfilehash: c66e066bd3e241e667924dacc114f57151df822a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59389561"
 ---
 # <a name="creating-an-action-c"></a>Создание действия (C#)
@@ -28,7 +28,7 @@ ms.locfileid: "59389561"
 
 Добавьте новое действие к контроллеру, добавив новый метод к контроллеру. Например контроллер в листинге 1 содержит действия с именем Index() и действие с именем SayHello(). Оба метода доступны как действия.
 
-**Listing 1 - Controllers\HomeController.cs**
+**В листинге 1 - Controllers\HomeController.cs**
 
 [!code-csharp[Main](creating-an-action-cs/samples/sample1.cs)]
 
@@ -57,7 +57,7 @@ ms.locfileid: "59389561"
 При попытке вызвать действие контроллера CompanySecrets(), введя в адресной строке браузера /Work/CompanySecrets затем вы получите сообщение об ошибке на рис. 1.
 
 
-[![Invoking метод NonAction](creating-an-action-cs/_static/image1.jpg)](creating-an-action-cs/_static/image1.png)
+[![Вызов метода NonAction](creating-an-action-cs/_static/image1.jpg)](creating-an-action-cs/_static/image1.png)
 
 **Рис 01**: Вызов метода NonAction ([Просмотр полноразмерного изображения](creating-an-action-cs/_static/image2.png))
 

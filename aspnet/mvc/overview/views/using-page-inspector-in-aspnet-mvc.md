@@ -12,7 +12,7 @@ ms.openlocfilehash: ef0ae42e1c6114849a311164eac242db6dab2b1d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59385804"
 ---
 # <a name="using-page-inspector-in-aspnet-mvc"></a>Использование инспектора страниц в ASP.NET MVC
@@ -27,7 +27,7 @@ ms.locfileid: "59385804"
 > 
 > Учебник содержит следующие подразделы:
 > 
-> - [Предварительные требования](#_1_prerequisites)
+> - [Необходимые компоненты](#_1_prerequisites)
 > - [Создание веб-приложения](#_2_creating_a)
 > - [Использование инспектора страниц для обзора в представление](#_3_using_page)
 > - [Включить режим проверки](#_4_inspection_mode)

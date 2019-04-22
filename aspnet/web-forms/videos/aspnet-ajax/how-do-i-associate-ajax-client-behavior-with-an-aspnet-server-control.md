@@ -12,7 +12,7 @@ ms.openlocfilehash: 9fdb0665aa8a6cb038203d31f8f71a8725834cee
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59417420"
 ---
 # <a name="how-do-i-associate-ajax-client-behavior-with-an-aspnet-server-control"></a>[Инструкции] Связывание клиентского поведения AJAX с помощью элемента управления сервера ASP.NET?

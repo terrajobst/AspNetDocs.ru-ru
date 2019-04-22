@@ -12,7 +12,7 @@ ms.openlocfilehash: 883b5c3ad39922ddd51ea1d07b8d52d1c74d2153
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384296"
 ---
 # <a name="general-iis-tips"></a>Общие советы по работе со службами IIS
@@ -24,7 +24,7 @@ ms.locfileid: "59384296"
 - [Работа с полномочным администратором IIS7](working-with-iis7-deligated-admin.md)
 - [Делегированное управление для определенных функций](feature-specific-delegated-management.md)
 - [Устранение неполадок рабочих приложений ASP.NET](troubleshooting-production-aspnet-apps.md)
-- [Создание сайта с помощью диспетчера служб IIS7](creating-a-site-with-iis7-manager.md)
+- [Создание сайта с помощью диспетчера служб IIS 7](creating-a-site-with-iis7-manager.md)
 - [Установка FTP7](installing-ftp7.md)
 - [Регулирование скорости](bit-rate-throttling.md)
 - [Списки воспроизведения IIS7](iis7-playlists.md)

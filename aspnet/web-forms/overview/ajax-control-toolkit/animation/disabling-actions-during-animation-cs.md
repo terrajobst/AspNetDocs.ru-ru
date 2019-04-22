@@ -12,7 +12,7 @@ ms.openlocfilehash: 1cce2b05f125902ab05d493bebe753b2060b4d95
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384283"
 ---
 # <a name="disabling-actions-during-animation-c"></a>Отключение действий во время анимации (C#)
@@ -55,7 +55,7 @@ ms.locfileid: "59384283"
 Однако в данном сценарии это окажется бесполезной после кнопки исчезает и остается невидимым в конце анимации.
 
 
-[![Tбудет отключена кнопка HE, как только выполняется анимация](disabling-actions-during-animation-cs/_static/image2.png)](disabling-actions-during-animation-cs/_static/image1.png)
+[![Кнопка отключена, а анимация](disabling-actions-during-animation-cs/_static/image2.png)](disabling-actions-during-animation-cs/_static/image1.png)
 
 Кнопка отключена, а анимация ([Просмотр полноразмерного изображения](disabling-actions-during-animation-cs/_static/image3.png))
 

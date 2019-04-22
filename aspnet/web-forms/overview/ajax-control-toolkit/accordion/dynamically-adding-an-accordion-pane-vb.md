@@ -12,7 +12,7 @@ ms.openlocfilehash: 27823e6b65dda80391d494af6f8d8da539bc3334
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59393214"
 ---
 # <a name="dynamically-adding-an-accordion-pane-vb"></a>Динамическое добавление области Accordion (VB)
@@ -55,7 +55,7 @@ ms.locfileid: "59393214"
 [!code-css[Main](dynamically-adding-an-accordion-pane-vb/samples/sample6.css)]
 
 
-[![Tданные в Гармошка динамически была добавлена, серверный код](dynamically-adding-an-accordion-pane-vb/_static/image2.png)](dynamically-adding-an-accordion-pane-vb/_static/image1.png)
+[![Данные в Гармошка динамически добавленные серверный код](dynamically-adding-an-accordion-pane-vb/_static/image2.png)](dynamically-adding-an-accordion-pane-vb/_static/image1.png)
 
 Данные в Гармошка динамически добавленные серверного кода ([Просмотр полноразмерного изображения](dynamically-adding-an-accordion-pane-vb/_static/image3.png))
 

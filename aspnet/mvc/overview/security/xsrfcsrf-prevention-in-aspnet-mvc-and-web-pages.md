@@ -12,7 +12,7 @@ ms.openlocfilehash: de0e9cc168b9f18fd2bd83329106df45d7551b1a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386564"
 ---
 # <a name="xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages"></a>Предотвращение атак XSRF и CSRF в ASP.NET MVC и на веб-страницах
@@ -160,7 +160,7 @@ ms.locfileid: "59386564"
 
 Разработчик может настроить систему защиты от XSRF из приложения\_запуска. Конфигурация — программный. Свойства статического *AntiForgeryConfig* тип описаны ниже. Большинству пользователей, с помощью утверждений потребуется установить свойство UniqueClaimTypeIdentifier.
 
-| **Свойство** | **Описание** |
+| **Property** | **Описание** |
 | --- | --- |
 | **AdditionalDataProvider** | [IAntiForgeryAdditionalDataProvider](https://msdn.microsoft.com/library/system.web.helpers.iantiforgeryadditionaldataprovider(v=vs.111).aspx) , предоставляющий дополнительные данные во время создания токенов и использует дополнительные данные во время проверки маркера. Значение по умолчанию — *null*. Дополнительные сведения см. в разделе [IAntiForgeryAdditionalDataProvider](https://msdn.microsoft.com/library/system.web.helpers.iantiforgeryadditionaldataprovider(v=vs.111).aspx) раздел. |
 | **CookieName** | Строка, которая предоставляет имя файла cookie HTTP, который используется для хранения маркера anti-XSRF сеанса. Если это значение не задано, имя создается автоматически на основе приложения развернутого виртуального пути. Значение по умолчанию — *null*. |

@@ -12,7 +12,7 @@ ms.openlocfilehash: 268403a7b832596421120a24c64580f63eb987c3
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383924"
 ---
 # <a name="using-the-formviews-templates-vb"></a>Использование шаблонов FormView (VB)
@@ -40,7 +40,7 @@ ms.locfileid: "59383924"
 В этом учебном курсе мы рассмотрим использование элемента управления FormView для представления менее строгое отображения продуктов. Вместо полей для имени, категории, поставщика и т. д FormView `ItemTemplate` покажет эти значения, с помощью сочетания элемента заголовка и `<table>` (см. рис. 1).
 
 
-[![Tон разделяет FormView из макета Grid-Like, Наблюдавшейся в DetailsView](using-the-formview-s-templates-vb/_static/image2.png)](using-the-formview-s-templates-vb/_static/image1.png)
+[![FormView разрыва Сеткоподобной компоновки, Наблюдавшейся в DetailsView](using-the-formview-s-templates-vb/_static/image2.png)](using-the-formview-s-templates-vb/_static/image1.png)
 
 **Рис. 1**: FormView преодолевает ограничений Grid-Like макета, видны в DetailsView ([Просмотр полноразмерного изображения](using-the-formview-s-templates-vb/_static/image3.png))
 
@@ -50,7 +50,7 @@ ms.locfileid: "59383924"
 Откройте `FormView.aspx` страницы и перетащите с панели инструментов в конструктор элемента FormView. При первом добавлении FormView отображается как серый квадрат, указывая, `ItemTemplate` необходим.
 
 
-[![Tон FormView не визуализируется в конструкторе, пока предоставлен ItemTemplate](using-the-formview-s-templates-vb/_static/image5.png)](using-the-formview-s-templates-vb/_static/image4.png)
+[![FormView не визуализируется в конструкторе, пока предоставлен ItemTemplate](using-the-formview-s-templates-vb/_static/image5.png)](using-the-formview-s-templates-vb/_static/image4.png)
 
 **Рис. 2**: FormView не может быть отображен в конструкторе до `ItemTemplate` предоставляется ([Просмотр полноразмерного изображения](using-the-formview-s-templates-vb/_static/image6.png))
 
@@ -88,12 +88,12 @@ FormView привязанной к элементу управления ObjectD
 С помощью `ItemTemplate` завершения, сведения о продукте отображается в гораздо более гибкой форме. Сравните выходные данные DetailsView из последнего курса (рис. 3) с выходными данными, создаваемыми FormView в этом руководстве (рис. 4).
 
 
-[![Tон выводимые данные DetailsView](using-the-formview-s-templates-vb/_static/image8.png)](using-the-formview-s-templates-vb/_static/image7.png)
+[![Выводимые данные DetailsView](using-the-formview-s-templates-vb/_static/image8.png)](using-the-formview-s-templates-vb/_static/image7.png)
 
 **Рис. 3**: Выводимые данные DetailsView ([Просмотр полноразмерного изображения](using-the-formview-s-templates-vb/_static/image9.png))
 
 
-[![Tон выводимые данные FormView жидкостей](using-the-formview-s-templates-vb/_static/image11.png)](using-the-formview-s-templates-vb/_static/image10.png)
+[![Гибкие выводимые данные FormView](using-the-formview-s-templates-vb/_static/image11.png)](using-the-formview-s-templates-vb/_static/image10.png)
 
 **Рис. 4**: Выходные данные FormView жидкостей ([Просмотр полноразмерного изображения](using-the-formview-s-templates-vb/_static/image12.png))
 

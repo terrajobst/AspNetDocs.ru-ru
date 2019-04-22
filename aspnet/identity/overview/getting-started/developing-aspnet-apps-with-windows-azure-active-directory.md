@@ -13,7 +13,7 @@ ms.openlocfilehash: 6f8b926c78097b68e6a159f2fdd30e7b8a6477a0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59395177"
 ---
 # <a name="developing-aspnet-apps-with-azure-active-directory"></a>Разработка приложений ASP.NET с Azure Active Directory
@@ -142,7 +142,7 @@ Rick Rainey является отличным руководству, чтобы
 
 ## <a name="more-information"></a>Дополнительные сведения
 
-- [Подробный обзор: Azure веб-сайтов и аутентификации в организации с помощью Azure AD](http://rickrainey.com/2014/08/19/deep-dive-azure-websites-and-organizational-authentication-using-azure-ad/)
+- [Deep Dive: Use source control with Python projects (Подробный обзор. Azure веб-сайтов и аутентификации в организации с помощью Azure AD](http://rickrainey.com/2014/08/19/deep-dive-azure-websites-and-organizational-authentication-using-azure-ad/)
 - [Общие сведения об API Graph Azure AD](https://msdn.microsoft.com/library/azure/hh974476.aspx)
 - [Сценарии проверки подлинности в Azure AD](https://msdn.microsoft.com/library/azure/dn499820.aspx)
 - [Примеры кода Azure AD на GitHub](https://github.com/AzureADSamples)

@@ -12,7 +12,7 @@ ms.openlocfilehash: f1875ae95d79ec2a6762a547aabfbd03e0930b2c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386506"
 ---
 # <a name="using-modalpopup-with-a-repeater-control-vb"></a>Использование ModalPopup с элементом управления Repeater (VB)
@@ -49,7 +49,7 @@ ms.locfileid: "59386506"
 Затем с рядом с ним кнопка, инициирующая модальное всплывающее окно отображается каждый элемент в источнике данных.
 
 
-[![Tон модального всплывающего окна можно активировать для каждой записи источника данных](using-modalpopup-with-a-repeater-control-vb/_static/image2.png)](using-modalpopup-with-a-repeater-control-vb/_static/image1.png)
+[![Модального всплывающего окна можно активировать для каждой записи источника данных](using-modalpopup-with-a-repeater-control-vb/_static/image2.png)](using-modalpopup-with-a-repeater-control-vb/_static/image1.png)
 
 Модального всплывающего окна можно активировать для каждой записи источника данных ([Просмотр полноразмерного изображения](using-modalpopup-with-a-repeater-control-vb/_static/image3.png))
 

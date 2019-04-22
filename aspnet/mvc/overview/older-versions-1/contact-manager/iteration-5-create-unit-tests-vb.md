@@ -12,7 +12,7 @@ ms.openlocfilehash: 476e5529e4fd53c6166c53766409268939a83c72
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380669"
 ---
 # <a name="iteration-5--create-unit-tests-vb"></a>Итерация #5 – Создание модульных тестов (Visual Basic)
@@ -116,12 +116,12 @@ Visual Studio включает платформу макетирование о�
 4. Добавьте ссылку на сборку Moq к тестовому проекту, выбрав параметр меню **проект, добавить ссылку на** открыть **добавить ссылку** диалоговое окно. На вкладке обзора перейдите к папке, куда было распаковано Moq и выберите сборку Moq.dll. Нажмите кнопку **ОК** кнопку (см. рис. 2).
 
 
-[![Unblocking Moq](iteration-5-create-unit-tests-vb/_static/image1.jpg)](iteration-5-create-unit-tests-vb/_static/image1.png)
+[![Разблокировка Moq](iteration-5-create-unit-tests-vb/_static/image1.jpg)](iteration-5-create-unit-tests-vb/_static/image1.png)
 
 **Рис 01**: Разблокировка Moq ([Просмотр полноразмерного изображения](iteration-5-create-unit-tests-vb/_static/image2.png))
 
 
-[![RСписок диапазонов после добавления Moq](iteration-5-create-unit-tests-vb/_static/image2.jpg)](iteration-5-create-unit-tests-vb/_static/image3.png)
+[![Ссылки после добавления Moq](iteration-5-create-unit-tests-vb/_static/image2.jpg)](iteration-5-create-unit-tests-vb/_static/image3.png)
 
 **Рис. 02**: Ссылки после добавления Moq ([Просмотр полноразмерного изображения](iteration-5-create-unit-tests-vb/_static/image4.png))
 
@@ -184,7 +184,7 @@ Visual Studio включает платформу макетирование о�
 Можно выполнять модульные тесты в листинге 1, выбрав параметр меню **теста выполните все тесты в решении (CTRL + R, A)**. Результаты тестов отображаются в окне результатов теста (см. рис. 4).
 
 
-[![TРезультаты EST](iteration-5-create-unit-tests-vb/_static/image4.jpg)](iteration-5-create-unit-tests-vb/_static/image7.png)
+[![Результаты теста](iteration-5-create-unit-tests-vb/_static/image4.jpg)](iteration-5-create-unit-tests-vb/_static/image7.png)
 
 **Рис. 04**: Результаты теста ([Просмотр полноразмерного изображения](iteration-5-create-unit-tests-vb/_static/image8.png))
 
@@ -223,7 +223,7 @@ Return View()
 При отсутствии явной при возврате представления ViewResult.ViewName свойство возвращает пустую строку.
 
 
-**Listing 2 - Controllers\ContactControllerTest.vb**
+**В листинге 2 - Controllers\ContactControllerTest.vb**
 
 [!code-vb[Main](iteration-5-create-unit-tests-vb/samples/sample6.vb)]
 

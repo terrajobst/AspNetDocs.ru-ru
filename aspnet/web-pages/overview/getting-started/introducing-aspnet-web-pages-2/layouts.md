@@ -12,7 +12,7 @@ ms.openlocfilehash: 58f3ec28914a604aa911cc3cb73733f0d58fd49f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390420"
 ---
 # <a name="introducing-aspnet-web-pages---creating-a-consistent-layout"></a>Знакомство с веб-страниц ASP.NET — Создание согласованного макета

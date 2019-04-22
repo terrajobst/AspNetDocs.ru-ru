@@ -12,7 +12,7 @@ ms.openlocfilehash: 6e685d599e3dbc095631e3c28a603ac9c38f799c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59385895"
 ---
 # <a name="presetting-list-entries-with-cascadingdropdown-vb"></a>Предустановка записей списка с помощью CascadingDropDown (VB)
@@ -53,7 +53,7 @@ ms.locfileid: "59385895"
 Загрузку страницы в браузере будет заполнить раскрывающийся список с тремя поставщиками второй выбраны заранее.
 
 
-[![TСписок он заполняется и автоматически выбраны заранее](presetting-list-entries-with-cascadingdropdown-vb/_static/image2.png)](presetting-list-entries-with-cascadingdropdown-vb/_static/image1.png)
+[![Список заполняется и автоматически выбраны заранее](presetting-list-entries-with-cascadingdropdown-vb/_static/image2.png)](presetting-list-entries-with-cascadingdropdown-vb/_static/image1.png)
 
 Список заполняется и автоматически выбраны заранее ([Просмотр полноразмерного изображения](presetting-list-entries-with-cascadingdropdown-vb/_static/image3.png))
 

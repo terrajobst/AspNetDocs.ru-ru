@@ -12,7 +12,7 @@ ms.openlocfilehash: 5db5e30cac21bad0591f4476a1b1156b50117536
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59382268"
 ---
 # <a name="masterdetail-filtering-with-a-dropdownlist-vb"></a>Фильтрация "Основной/подробности" с помощью элемента управления DropDownList (VB)
@@ -35,7 +35,7 @@ ms.locfileid: "59382268"
 Категории в элементе управления DropDownList, перечислит нашего отчета «основной/подробности» с продуктами выбранного элемента списка отображаются ниже на странице в элементе управления GridView. Первой задачей, то категорий, отображаемых в элементе управления DropDownList. Откройте `FilterByDropDownList.aspx` странице в `Filtering` папки, перетащите DropDownList с панели элементов в конструктор страницы и задать его `ID` свойства `Categories`. Затем щелкните ссылку выберите источник данных смарт-теге DropDownList. Откроется мастер настройки источника данных.
 
 
-[![SУкажите источник данных DropDownList](master-detail-filtering-with-a-dropdownlist-vb/_static/image2.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image1.png)
+[![Укажите источник данных DropDownList](master-detail-filtering-with-a-dropdownlist-vb/_static/image2.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image1.png)
 
 **Рис. 1**: Укажите источник данных DropDownList ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image3.png))
 
@@ -43,17 +43,17 @@ ms.locfileid: "59382268"
 Добавить новый ObjectDataSource, именуемый `CategoriesDataSource` , вызывающий `CategoriesBLL` класса `GetCategories()` метод.
 
 
-[![Aдд новый ObjectDataSource с именем CategoriesDataSource](master-detail-filtering-with-a-dropdownlist-vb/_static/image5.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image4.png)
+[![Добавьте новый ObjectDataSource, именуемый CategoriesDataSource](master-detail-filtering-with-a-dropdownlist-vb/_static/image5.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image4.png)
 
 **Рис. 2**: Добавить новый элемент управления ObjectDataSource с именем `CategoriesDataSource` ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image6.png))
 
 
-[![CВыберите для использования класса CategoriesBLL](master-detail-filtering-with-a-dropdownlist-vb/_static/image8.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image7.png)
+[![Выберите для использования класса](master-detail-filtering-with-a-dropdownlist-vb/_static/image8.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image7.png)
 
 **Рис. 3**: Выбор `CategoriesBLL` класс ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image9.png))
 
 
-[![CНастройка ObjectDataSource на использование метода GetCategories()](master-detail-filtering-with-a-dropdownlist-vb/_static/image11.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image10.png)
+[![Настройте элемент ObjectDataSource для использования метода GetCategories()](master-detail-filtering-with-a-dropdownlist-vb/_static/image11.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image10.png)
 
 **Рис. 4**: Настройка ObjectDataSource для использования `GetCategories()` метод ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image12.png))
 
@@ -61,7 +61,7 @@ ms.locfileid: "59382268"
 После настройки ObjectDataSource все равно небходимо указать поле источника данных, которые должны отображаться в DropDownList, а какие должно быть связано в качестве значения для элемента списка. У `CategoryName` как отображение и `CategoryID` как значение для каждого элемента списка.
 
 
-[![Hсохранить элемент управления DropDownList отображает поле «Категория» и CategoryID использовать как значение](master-detail-filtering-with-a-dropdownlist-vb/_static/image14.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image13.png)
+[![Иметь элемент управления DropDownList отображает поле «Категория» и CategoryID использовать как значение](master-detail-filtering-with-a-dropdownlist-vb/_static/image14.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image13.png)
 
 **Рис. 5**: Иметь элемент управления DropDownList отображает `CategoryName` и использует `CategoryID` как значение ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image15.png))
 
@@ -69,7 +69,7 @@ ms.locfileid: "59382268"
 На этом этапе у нас есть элемент управления DropDownList, заполненный записями из `Categories` (все действия выполняются приблизительно за шесть секунд). Рис. 6 показаны до сих при просмотре через браузер.
 
 
-[![A Раскрывающийся список текущих категорий](master-detail-filtering-with-a-dropdownlist-vb/_static/image17.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image16.png)
+[![Раскрывающийся список с текущими категориями](master-detail-filtering-with-a-dropdownlist-vb/_static/image17.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image16.png)
 
 **Рис. 6**: Раскрывающийся список текущих категорий ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image18.png))
 
@@ -79,7 +79,7 @@ ms.locfileid: "59382268"
 Последним шагом создания отчета «основной/подробности» является отображение списка продуктов, связанных с выбранной категорией. Для этого добавьте на страницу GridView и создайте новый ObjectDataSource, именуемый `productsDataSource`. У `productsDataSource` должен получать данные от `ProductsBLL` класса `GetProductsByCategoryID(categoryID)` метод.
 
 
-[![SВыберите метод GetProductsByCategoryID(categoryID)](master-detail-filtering-with-a-dropdownlist-vb/_static/image20.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image19.png)
+[![Выберите метод GetProductsByCategoryID(categoryID)](master-detail-filtering-with-a-dropdownlist-vb/_static/image20.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image19.png)
 
 **Рис. 7**: Выберите `GetProductsByCategoryID(categoryID)` метод ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image21.png))
 
@@ -87,7 +87,7 @@ ms.locfileid: "59382268"
 После выбора этого метода мастер ObjectDataSource запрашивает значения для метода *`categoryID`* параметра. Чтобы использовать значение выбранного `categories` элемент DropDownList источника параметра установите для элемента управления, а для ControlID – `Categories`.
 
 
-[![SET categoryID параметр со значением элемента управления DropDownList категории](master-detail-filtering-with-a-dropdownlist-vb/_static/image23.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image22.png)
+[![Значение параметра categoryID значение DropDownList категорий](master-detail-filtering-with-a-dropdownlist-vb/_static/image23.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image22.png)
 
 **Рис. 8**: Задайте *`categoryID`* параметр значению `Categories` DropDownList ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image24.png))
 
@@ -100,12 +100,12 @@ ms.locfileid: "59382268"
 На рис. 9 и 10 показана работа отчета «основной/подробности» в действии.
 
 
-[![Wри первом просмотре страницы, отображаются продукты отображаются](master-detail-filtering-with-a-dropdownlist-vb/_static/image26.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image25.png)
+[![При первом просмотре странице отображаются продукты отображаются](master-detail-filtering-with-a-dropdownlist-vb/_static/image26.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image25.png)
 
 **Рис. 9**: При первом просмотре странице отображаются продукты отображаются ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image27.png))
 
 
-[![SОтказ от нового продукта (Produce) автоматически вызывает обратную передачу, обновляется GridView](master-detail-filtering-with-a-dropdownlist-vb/_static/image29.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image28.png)
+[![Выбор нового продукта (Produce) автоматически вызывает обратную передачу, обновляется GridView](master-detail-filtering-with-a-dropdownlist-vb/_static/image29.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image28.png)
 
 **Рис. 10**: Выбор нового продукта (Produce) автоматически вызывает обратную передачу, обновляется GridView ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image30.png))
 
@@ -117,7 +117,7 @@ ms.locfileid: "59382268"
 Чтобы добавить новый элемент списка DropDownList, перейдите в окно свойств и щелкните эллипсы в `Items` свойство. Добавить новый элемент списка с `Text` «--выберите категорию--» и `Value` `-1`.
 
 
-[![Aдд выберите категорию--элемента списка](master-detail-filtering-with-a-dropdownlist-vb/_static/image32.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image31.png)
+[![Добавление выберите категорию--элемента списка](master-detail-filtering-with-a-dropdownlist-vb/_static/image32.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image31.png)
 
 **Рис. 11**: Добавление выберите категорию--элемент списка ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image33.png))
 
@@ -138,7 +138,7 @@ ms.locfileid: "59382268"
 После внесения этих изменений при первом просмотре страницы выбран параметр «--выберите категорию--» и продукты не отображаются.
 
 
-[![On начальной странице нагрузки нет Товары показываются](master-detail-filtering-with-a-dropdownlist-vb/_static/image36.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image35.png)
+[![При загрузке начальной страницы продукты не отображаются](master-detail-filtering-with-a-dropdownlist-vb/_static/image36.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image35.png)
 
 **Рис. 13**: На начальной странице продукты нет нагрузки отображаются ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image37.png))
 
@@ -153,7 +153,7 @@ ms.locfileid: "59382268"
 Рис. 14 показан снимок экрана `FilterByDropDownList.aspx` при выборе параметра «--выберите категорию--». Здесь по умолчанию отображаются все продукты, и пользователь может сузить отображаемые, выбрав определенную категорию.
 
 
-[![ALl продуктов — теперь в списке по умолчанию](master-detail-filtering-with-a-dropdownlist-vb/_static/image39.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image38.png)
+[![Все продукты, теперь в списке по умолчанию](master-detail-filtering-with-a-dropdownlist-vb/_static/image39.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image38.png)
 
 **Рис. 14**: Все продукты, теперь в списке по умолчанию ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image40.png))
 

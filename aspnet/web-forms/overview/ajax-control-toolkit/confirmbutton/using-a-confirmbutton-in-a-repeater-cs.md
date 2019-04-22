@@ -12,7 +12,7 @@ ms.openlocfilehash: 1ab979f220c06d22f51931c7c00fc4d273731f85
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413949"
 ---
 # <a name="using-a-confirmbutton-in-a-repeater-c"></a>Использование ConfirmButton в элементе управления Repeater (C#)
@@ -47,9 +47,9 @@ ms.locfileid: "59413949"
 [!code-aspx[Main](using-a-confirmbutton-in-a-repeater-cs/samples/sample3.aspx)]
 
 
-[![Tон убедитесь, что рядом с каждой записи из источника данных отображается кнопка](using-a-confirmbutton-in-a-repeater-cs/_static/image2.png)](using-a-confirmbutton-in-a-repeater-cs/_static/image1.png)
+[![Появляется кнопка «подтверждение» рядом с каждой записи из источника данных](using-a-confirmbutton-in-a-repeater-cs/_static/image2.png)](using-a-confirmbutton-in-a-repeater-cs/_static/image1.png)
 
 Рядом с каждой записи из источника данных отображается «подтверждение» ([Просмотр полноразмерного изображения](using-a-confirmbutton-in-a-repeater-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
-> [Далее](using-a-confirmbutton-in-a-repeater-vb.md)
+> [Вперед](using-a-confirmbutton-in-a-repeater-vb.md)

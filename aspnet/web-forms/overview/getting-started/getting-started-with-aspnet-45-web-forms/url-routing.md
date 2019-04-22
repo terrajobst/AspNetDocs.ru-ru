@@ -12,7 +12,7 @@ ms.openlocfilehash: 992cea256302231ee7031a21c798117b73eaa01c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384328"
 ---
 # <a name="url-routing"></a>Маршрутизация URL-адресов
@@ -79,7 +79,7 @@ ms.locfileid: "59384328"
 
 > [!NOTE] 
 > 
-> **Optional**
+> **Необязательный**
 > 
 > Может оказаться проще управлять кодом, переместив `RegisterCustomRoutes` метод в отдельном классе. В *логики* папки, создайте отдельное `RouteActions` класса. Перемещение выше `RegisterCustomRoutes` метода из *Global.asax.cs* файл в новый `RoutesActions` класса. Используйте `RoleActions` класс и `createAdmin` метод в качестве примера того, как вызвать `RegisterCustomRoutes` метода из *Global.asax.cs* файл.
 

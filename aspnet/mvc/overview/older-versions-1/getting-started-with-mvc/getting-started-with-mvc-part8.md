@@ -12,7 +12,7 @@ ms.openlocfilehash: 029234cf9a28a80c487504e4e0980c214e45f53a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381969"
 ---
 # <a name="adding-a-column-to-the-model"></a>Добавление столбца в модель
@@ -28,11 +28,11 @@ ms.locfileid: "59381969"
 
 Добавьте столбец «Оценка», как показано ниже. Поскольку мы не имеем любые оценки, столбец можно разрешить значения NULL. Нажмите кнопку Сохранить.
 
-[![EОграничить редактирование фильмов таблицы](getting-started-with-mvc-part8/_static/image2.png)](getting-started-with-mvc-part8/_static/image1.png)
+[![Изменение таблицы фильмы](getting-started-with-mvc-part8/_static/image2.png)](getting-started-with-mvc-part8/_static/image1.png)
 
 Затем вернитесь в обозреватель решений и откройте файл Movies.edmx (который находится в папке \Models). Щелкните правой кнопкой мыши в области конструктора (белая область) и выберите Обновить модель из базы данных.
 
-[![Movies - Microsoft Visual Web Developer 2010 Express (11)](getting-started-with-mvc-part8/_static/image4.png)](getting-started-with-mvc-part8/_static/image3.png)
+[![Фильмы - Microsoft Visual Web Developer 2010 Express (11)](getting-started-with-mvc-part8/_static/image4.png)](getting-started-with-mvc-part8/_static/image3.png)
 
 Это приведет к запуску «Мастера обновления». Перейдите на вкладку "обновления" внутри него и нажмите кнопку Готово. Затем наш класс модели Movie обновляется с новым столбцом.
 
@@ -40,7 +40,7 @@ ms.locfileid: "59381969"
 
 После нажатия кнопки Готово, вы увидите, что сущность фильмов в нашей модели добавлен новый столбец оценки.
 
-[![Mильм сущности](getting-started-with-mvc-part8/_static/image7.png)](getting-started-with-mvc-part8/_static/image6.png)
+[![Сущности фильма](getting-started-with-mvc-part8/_static/image7.png)](getting-started-with-mvc-part8/_static/image6.png)
 
 Мы добавили столбец в модели базы данных, но представления не знаете о нем.
 
@@ -66,11 +66,11 @@ ms.locfileid: "59381969"
 
 Запустите приложение, и теперь у вас есть новое поле в базе данных, который добавляется на страницу создания. Добавьте новый фильм - со оценку - и нажмите кнопку Создать.
 
-[![Cсоздать фильм - Windows Internet Explorer](getting-started-with-mvc-part8/_static/image9.png)](getting-started-with-mvc-part8/_static/image8.png)
+[![Создайте фильм - Windows Internet Explorer](getting-started-with-mvc-part8/_static/image9.png)](getting-started-with-mvc-part8/_static/image8.png)
 
 Если нажать кнопку "Создать", после этого вы перейдете на страницу индекса там, где вы новый фильм находится в списке новый столбец оценок в базе данных
 
-[![Mильм список — Windows Internet Explorer (12)](getting-started-with-mvc-part8/_static/image11.png)](getting-started-with-mvc-part8/_static/image10.png)
+[![Список фильмов - Windows Internet Explorer (12)](getting-started-with-mvc-part8/_static/image11.png)](getting-started-with-mvc-part8/_static/image10.png)
 
 Этот основам вас к работе, делая контроллеров, связав их с представлениями и передачи вокруг жестко заданные данные. Затем мы создали и разработанные базы данных и поместить данные в. Мы извлекает данные из базы данных и отображения его в таблице HTML. Затем мы добавили Создание формы, что позволило пользователю добавлять данные в базу данных сами из веб-приложения. Мы добавили проверку, то внесенные проверки использовать JavaScript на стороне клиента. Наконец мы изменения базы данных будет содержать новый столбец данных, а затем обновить наши две страницы, для создания и отображения новых данных.
 

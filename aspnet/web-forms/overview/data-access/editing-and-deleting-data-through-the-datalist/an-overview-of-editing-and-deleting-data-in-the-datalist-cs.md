@@ -12,7 +12,7 @@ ms.openlocfilehash: 7e29ae36b81b08df2b6f52e0f6d9e1a10d9b6f19
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384938"
 ---
 # <a name="an-overview-of-editing-and-deleting-data-in-the-datalist-c"></a>Общие сведения о об изменении и удалении данных в DataList (C#)
@@ -59,7 +59,7 @@ ms.locfileid: "59384938"
 Как и в других папках, `Default.aspx` в `EditDeleteDataList` папки перечислены учебники в своем разделе. Помните, что `SectionLevelTutorialListing.ascx` пользовательский элемент управления предоставляет следующие функциональные возможности. Поэтому добавьте данный пользовательский элемент управления для `Default.aspx` , перетащив его из обозревателя решений на странице s режиме конструктора.
 
 
-[![Aдд пользовательского элемента управления SectionLevelTutorialListing.ascx к странице Default.aspx](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image3.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image2.png)
+[![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image3.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image2.png)
 
 **Рис. 2**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image4.png))
 
@@ -107,12 +107,12 @@ ms.locfileid: "59384938"
 Сначала откройте `Basics.aspx` странице в `EditDeleteDataList` папку и в режиме конструктора добавьте на страницу элемент управления DataList. S смарт-теге элемента управления DataList, создайте новый ObjectDataSource. Так как мы работаем с данными о продуктах, настройте его для использования `ProductsBLL` класса. Для получения *все* выберите продукты, `GetProducts()` метод на вкладке "SELECT".
 
 
-[![CНастройка ObjectDataSource на использование класса ProductsBLL](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image7.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image6.png)
+[![Настройка ObjectDataSource на использование класса ProductsBLL](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image7.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image6.png)
 
 **Рис. 4**: Настройка ObjectDataSource для использования `ProductsBLL` класс ([Просмотр полноразмерного изображения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image8.png))
 
 
-[![Rь сведения о продукте, с помощью метода GetProducts()](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image10.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image9.png)
+[![Возвращает сведения о продукте, с помощью метода GetProducts()](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image10.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image9.png)
 
 **Рис. 5**: Возвращает сведения о продукте с помощью `GetProducts()` метод ([Просмотр полноразмерного изображения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image11.png))
 
@@ -120,7 +120,7 @@ ms.locfileid: "59384938"
 Элемент управления DataList, например GridView, не предназначена для вставки новых данных; Таким образом, выберите параметр из раскрывающегося списка на вкладке "Вставка" (None). Также выберите (нет) для тех вкладок, UPDATE и DELETE так, как обновления и удаления будут выполняться программным способом через слой бизнес-ЛОГИКИ.
 
 
-[![C(нет) задаются ждение, раскрывающиеся списки в ObjectDataSource s для вставки, обновления и удаления вкладки](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image13.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image12.png)
+[![Убедитесь, что раскрывающемся списке указаны в элемент управления ObjectDataSource s INSERT, UPDATE и удаление вкладок заданы (нет)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image13.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image12.png)
 
 **Рис. 6**: Убедитесь, что список раскрывающегося списка в элемент управления ObjectDataSource s INSERT, UPDATE и удаление вкладок заданы (нет) ([Просмотр полноразмерного изображения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image14.png))
 
@@ -139,7 +139,7 @@ ms.locfileid: "59384938"
 Отвлекитесь и просмотрите ход работы через браузер. Как показано на рис. 7, DataList отображает продукта имя и цену за единицу для каждого продукта в двух столбцах.
 
 
-[![TНазвания продуктов HE и цены отображаются два столбца элемента управления DataList](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image16.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image15.png)
+[![Названия продуктов и цены отображаются два столбца элемента управления DataList](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image16.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image15.png)
 
 **Рис. 7**: Названия продуктов и цены отображаются два столбца элемента управления DataList ([Просмотр полноразмерного изображения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image17.png))
 
@@ -161,7 +161,7 @@ ms.locfileid: "59384938"
 `EditItemTemplate` Могут создаваться декларативно или с помощью конструктора (путем выбора параметра Правка шаблонов в смарт-теге элемента управления DataList s). Чтобы использовать параметр Правка шаблонов, сначала щелкните ссылку Изменить шаблоны в смарт-тег, а затем выберите `EditItemTemplate` элемент из раскрывающегося списка.
 
 
-[![Opt работа с EditItemTemplate DataList s](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image19.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image18.png)
+[![Необязательно для работы с DataList s EditItemTemplate](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image19.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image18.png)
 
 **Рис. 8**: Необязательно для работы с DataList s `EditItemTemplate` ([Просмотр полноразмерного изображения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image20.png))
 
@@ -169,7 +169,7 @@ ms.locfileid: "59384938"
 Затем введите название продукта: и Price: и перетащите два элемента управления TextBox из области элементов в `EditItemTemplate` интерфейс в конструкторе. Набор текстовых полей `ID` свойства `ProductName` и `UnitPrice`.
 
 
-[![Aдд текстовым полем и цену продукта s имя](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image22.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image21.png)
+[![Добавление текстового поля для s имя и цену продукта](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image22.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image21.png)
 
 **Рис. 9**: Добавьте текстовое поле для продукта — имя и цену ([Просмотр полноразмерного изображения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image23.png))
 
@@ -198,7 +198,7 @@ ms.locfileid: "59384938"
 Добавить `EditItemTemplate` две кнопки веб-элементов управления, из которого `CommandName` обновления и другие устройства, значение "Отмена". После добавления этих двух элементов управления Web кнопку Конструктор должен выглядеть следующим образом:
 
 
-[![Aдд обновление и Отмена кнопки к EditItemTemplate](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image26.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image25.png)
+[![Добавить обновление и «Отмена», чтобы EditItemTemplate](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image26.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image25.png)
 
 **Рис. 11**: Добавление, обновление и Отмена кнопки для `EditItemTemplate` ([Просмотр полноразмерного изображения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image27.png))
 
@@ -215,7 +215,7 @@ ms.locfileid: "59384938"
 После добавления этого кнопка "Изменить", Отвлекитесь и просмотрите страницу через обозреватель. В результате этого добавления каждым списком продуктов должен включать кнопка «изменить».
 
 
-[![Aдд обновление и Отмена кнопки к EditItemTemplate](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image29.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image28.png)
+[![Добавить обновление и «Отмена», чтобы EditItemTemplate](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image29.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image28.png)
 
 **Рис. 12**: Добавление, обновление и Отмена кнопки для `EditItemTemplate` ([Просмотр полноразмерного изображения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image30.png))
 
@@ -235,7 +235,7 @@ ms.locfileid: "59384938"
 После добавления этого обработчика событий, вернитесь на страницу в браузере. Щелкнув ссылку "Изменить" делает щелчке продукта редактируемой (см. рис. 13).
 
 
-[![Cщелкнув позволяет изменить кнопки редактируемых продукта](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image32.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image31.png)
+[![Щелкнув делает кнопка редактирования редактируемой продукта](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image32.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image31.png)
 
 **Рис. 13**: Нажав кнопку "Изменить" делает редактируемый продукта ([Просмотр полноразмерного изображения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image33.png))
 
@@ -283,17 +283,17 @@ ms.locfileid: "59384938"
 С помощью `EditCommand`, `CancelCommand`, и `UpdateCommand` завершения обработчики событий, посетитель можно изменить имя и цену продукта. Рис. 14-16 Показать этот редактирования рабочий процесс в действии.
 
 
-[![Wри первом просмотре страницы, все продукты находятся в режиме только для чтения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image35.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image34.png)
+[![При первом просмотре страницы, все продукты в режиме только для чтения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image35.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image34.png)
 
 **Рис. 14**: При первом просмотре страницы, все продукты, в режиме только для чтения ([Просмотр полноразмерного изображения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image36.png))
 
 
-[![TОбновление o название продукта s или цену, нажмите кнопку "Изменить"](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image38.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image37.png)
+[![Чтобы обновить продукт s имени или по цене, нажмите кнопку "Изменить"](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image38.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image37.png)
 
 **Рис. 15**: Чтобы обновить имя продукта или цены, нажмите кнопку Изменить ([Просмотр полноразмерного изображения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image39.png))
 
 
-[![Aразрыв, изменив значение, нажмите кнопку обновления, чтобы вернуться в режим только для чтения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image41.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image40.png)
+[![После изменения значения, нажмите кнопку обновления, чтобы вернуться в режим только для чтения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image41.png)](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image40.png)
 
 **Рис. 16**: После изменения значения, нажмите кнопку обновления, чтобы вернуться в режим только для чтения ([Просмотр полноразмерного изображения](an-overview-of-editing-and-deleting-data-in-the-datalist-cs/_static/image42.png))
 
@@ -343,4 +343,4 @@ DataList отсутствует точка и нажмите кнопку ред
 В этой серии руководств пособий рецензировалась многими компетентными редакторами. Зак Джонс, Алексей Pespisa и Рэнди Шмидт, стали Лиз Шалок в этом руководстве. Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
-> [Далее](performing-batch-updates-cs.md)
+> [Вперед](performing-batch-updates-cs.md)

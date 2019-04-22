@@ -12,7 +12,7 @@ ms.openlocfilehash: fa118b4d733d7848b838f80e9918d62ae60033af
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59378979"
 ---
 # <a name="creating-a-rating-control-c"></a>Создание элемента управления Rating (C#)
@@ -66,9 +66,9 @@ ms.locfileid: "59378979"
 Сохраните страницу и загрузить его в адресную строку браузера. При наведении указателя мыши на элементы (изначально пуста) рейтинг происходит эффекта JavaScript: Оценка изменений. При щелчке набор звезд, сохраняется текущая оценка. Наконец при отправке формы, серверный код выводит выбранные оценка.
 
 
-[![Cается систему оценок с минимальным использованием кода](creating-a-rating-control-cs/_static/image2.png)](creating-a-rating-control-cs/_static/image1.png)
+[![Создание оценки системы с минимальным использованием кода](creating-a-rating-control-cs/_static/image2.png)](creating-a-rating-control-cs/_static/image1.png)
 
 Создание оценки системы с минимальным использованием кода ([Просмотр полноразмерного изображения](creating-a-rating-control-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
-> [Далее](creating-a-rating-control-vb.md)
+> [Вперед](creating-a-rating-control-vb.md)

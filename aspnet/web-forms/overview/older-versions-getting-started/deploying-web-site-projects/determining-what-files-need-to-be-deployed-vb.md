@@ -12,7 +12,7 @@ ms.openlocfilehash: fe19910d693a784b8dc207462591c9f4d51cec14
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59382151"
 ---
 # <a name="determining-what-files-need-to-be-deployed-vb"></a>Определение подлежащих развертыванию файлов (VB)
@@ -93,7 +93,7 @@ Microsoft восстановлен модели проекта веб-прило
 Рис. 1 показан снимок экрана рецензий веб-сайта, при просмотре через браузер. Здесь вы увидите страницу ~ / Tech/TYASP35.aspx, который просматривает книги *обучение самостоятельно ASP.NET 3.5 за 24 часа*. Навигации, которая охватывает верхней части страницы и в меню в левом столбце основаны на структуре карты узла, определенный в `Web.sitemap`. Изображение в правом верхнем углу является одним из обложки, образы находятся в `Images` папку. Внешний вид веб сайта определяются с помощью правила каскадных стилей отдельно от файлов CSS в `Styles` папки, пока всеобъемлющая макета страницы определен на главной странице `Site.master`.
 
 
-[![Tон просматривает книги веб-сайт предлагает проверки на разнообразных заголовки](determining-what-files-need-to-be-deployed-vb/_static/image2.png)](determining-what-files-need-to-be-deployed-vb/_static/image1.png)
+[![Книга рассматривает веб-сайт предлагает проверки на ассортимент заголовков](determining-what-files-need-to-be-deployed-vb/_static/image2.png)](determining-what-files-need-to-be-deployed-vb/_static/image1.png)
 
 **Рис. 1**: Книга рассматривает веб-сайт предлагает проверки на ассортимент заголовков ([Просмотр полноразмерного изображения](determining-what-files-need-to-be-deployed-vb/_static/image3.png))
 
@@ -116,7 +116,7 @@ Microsoft восстановлен модели проекта веб-прило
 Рис. 2 показаны файлы, составляющие проекта книги проверки веб-приложения.
 
 
-[![Tв обозревателе решений перечислены файлы, которые составляют проект веб-приложения.](determining-what-files-need-to-be-deployed-vb/_static/image5.png)](determining-what-files-need-to-be-deployed-vb/_static/image4.png)
+[![В обозревателе решений перечислены файлы, которые составляют проект веб-приложения.](determining-what-files-need-to-be-deployed-vb/_static/image5.png)](determining-what-files-need-to-be-deployed-vb/_static/image4.png)
 
 **Рис. 2**: В обозревателе решений перечислены файлы, которые составляют проект веб-приложения
 
@@ -147,7 +147,7 @@ Microsoft восстановлен модели проекта веб-прило
 Рис. 3 показаны файлы, составляющие проекта веб-сайта проверки книги.
 
 
-[![Tв обозревателе решений перечислены файлы, которые составляют проект веб-сайта.](determining-what-files-need-to-be-deployed-vb/_static/image7.png)](determining-what-files-need-to-be-deployed-vb/_static/image6.png)
+[![В обозревателе решений перечислены файлы, которые составляют проект веб-сайта.](determining-what-files-need-to-be-deployed-vb/_static/image7.png)](determining-what-files-need-to-be-deployed-vb/_static/image6.png)
 
 **Рис. 3**: В обозревателе решений перечислены файлы, которые составляют проект веб-сайта
 
@@ -184,7 +184,7 @@ Microsoft восстановлен модели проекта веб-прило
 - [Совместное использование кода на нескольких страницах](https://quickstarts.asp.net/QuickStartv20/aspnet/doc/pages/code.aspx)
 - [С помощью пользовательский базовый класс для классов фонового кода страницы ASP.NET](http://aspnet.4guysfromrolla.com/articles/041305-1.aspx)
 - [Система проектов Visual Studio 2005 веб-сайта: Что это такое и зачем мы сделали его?](https://weblogs.asp.net/scottgu/archive/2005/08/21/423201.aspx)
-- [Пошаговое руководство. Преобразование проекта веб-сайта в проект веб-приложения в Visual Studio](https://msdn.microsoft.com/library/aa983476.aspx)
+- [Пошаговое руководство: Преобразование проекта веб-сайта в проект веб-приложения в Visual Studio](https://msdn.microsoft.com/library/aa983476.aspx)
 
 > [!div class="step-by-step"]
 > [Назад](asp-net-hosting-options-vb.md)

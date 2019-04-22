@@ -12,7 +12,7 @@ ms.openlocfilehash: ba9e15c63f007a15eaff1dc3f655bf787c71b34f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59387862"
 ---
 # <a name="aspnet-mvc-storefront-part-2-the-repository-pattern"></a>Интернет-магазин на ASP.NET MVC, часть 2. Шаблон репозитория

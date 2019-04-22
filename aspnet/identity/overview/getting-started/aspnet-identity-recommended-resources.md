@@ -13,7 +13,7 @@ ms.openlocfilehash: 8e476f8a4172ebbe55819cda1ceb5458426243bd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381904"
 ---
 # <a name="aspnet-identity-recommended-resources"></a>Рекомендуемые ресурсы по ASP.NET Identity
@@ -42,7 +42,7 @@ ms.locfileid: "59381904"
 - [Развертывание безопасного приложения ASP.NET MVC с членством, OAuth и базой данных SQL в Azure](https://docs.microsoft.com/aspnet/core/security/authorization/secure-data). В этом руководстве добавляется развертывания Azure, как защитить приложения с помощью ролей, как использовать API членства для добавления пользователей и ролей и дополнительные функции безопасности.
 - [Введение в ASP.NET Identity](introduction-to-aspnet-identity.md)
 - [Создание безопасного веб-приложения ASP.NET MVC 5 со входом, по электронной почте подтверждение и сброс пароля](../../../mvc/overview/security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md)
-- [Приложение ASP.NET MVC 5 с двухфакторной проверкой подлинности по SMS и электронной почте](../../../mvc/overview/security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication.md)
+- [Приложение ASP.NET MVC 5 с двухфакторной проверкой подлинности по SMS и электронной почте](../../../mvc/overview/security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication.md)
 
 <a id="feat"></a>
 

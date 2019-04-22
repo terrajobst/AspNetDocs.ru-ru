@@ -12,7 +12,7 @@ ms.openlocfilehash: 952dbbc7759e5a8a654ab561bc54011dfb7f8d90
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380084"
 ---
 # <a name="batch-updating-c"></a>Пакетное обновление (C#)
@@ -31,7 +31,7 @@ ms.locfileid: "59380084"
 В этом руководстве мы создадим GridView, где каждая строка представляет редактируемый (см. рис. 1). Так как каждая строка подготавливается в его интерфейс редактирования там s устраняет потребность в столбец редактирования, обновления и кнопки отмены. Вместо этого есть две кнопки обновления продуктов на странице, при нажатии для перечисления строк GridView, так и для обновления базы данных.
 
 
-[![EACH строки в GridView-Editable](batch-updating-cs/_static/image1.gif)](batch-updating-cs/_static/image1.png)
+[![Каждая строка в GridView представляет редактируемый](batch-updating-cs/_static/image1.gif)](batch-updating-cs/_static/image1.png)
 
 **Рис. 1**: Каждая строка в GridView представляет редактируемый ([Просмотр полноразмерного изображения](batch-updating-cs/_static/image2.png))
 
@@ -57,12 +57,12 @@ ms.locfileid: "59380084"
 Прежде чем думать о создании GridView которых строк являются изменяемыми, позвольте s сначала просто отображение информации о продукте. Откройте `BatchUpdate.aspx` странице в `BatchData` папки и перетащите элемент управления GridView с панели инструментов в конструктор. Набор GridView s `ID` для `ProductsGrid` и в его смарт-тега выберите, чтобы привязать его к элементу управления ObjectDataSource с именем `ProductsDataSource`. Настройте элемент ObjectDataSource для извлечения данных из `ProductsBLL` класс s `GetProducts` метод.
 
 
-[![CНастройка ObjectDataSource на использование класса ProductsBLL](batch-updating-cs/_static/image2.gif)](batch-updating-cs/_static/image3.png)
+[![Настройка ObjectDataSource на использование класса ProductsBLL](batch-updating-cs/_static/image2.gif)](batch-updating-cs/_static/image3.png)
 
 **Рис. 2**: Настройка ObjectDataSource для использования `ProductsBLL` класс ([Просмотр полноразмерного изображения](batch-updating-cs/_static/image4.png))
 
 
-[![Rзагружать данные продуктов, с помощью метода GetProducts](batch-updating-cs/_static/image3.gif)](batch-updating-cs/_static/image5.png)
+[![Получить данные продукта, с помощью метода GetProducts](batch-updating-cs/_static/image3.gif)](batch-updating-cs/_static/image5.png)
 
 **Рис. 3**: Получение данных продукта с помощью `GetProducts` метод ([Просмотр полноразмерного изображения](batch-updating-cs/_static/image6.png))
 
@@ -70,7 +70,7 @@ ms.locfileid: "59380084"
 Например GridView элемент управления ObjectDataSource с изменения функциями предназначены для работы на основе строки. Чтобы обновить набор записей, нам потребуется написать небольшой фрагмент кода в классе фонового кода страницы s ASP.NET, который упаковывает данные и передает его в BLL. Таким образом задайте раскрывающиеся списки в элемент управления ObjectDataSource s вкладках UPDATE, INSERT и DELETE (нет). Нажмите кнопку Готово, чтобы завершить работу мастера.
 
 
-[![SET раскрывающиеся списки в UPDATE, INSERT и DELETE вкладок (нет)](batch-updating-cs/_static/image4.gif)](batch-updating-cs/_static/image7.png)
+[![Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет)](batch-updating-cs/_static/image4.gif)](batch-updating-cs/_static/image7.png)
 
 **Рис. 4**: Задайте раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) ([Просмотр полноразмерного изображения](batch-updating-cs/_static/image8.png))
 
@@ -107,7 +107,7 @@ ms.locfileid: "59380084"
 Добавьте RequiredFieldValidator к `ItemTemplate` чтобы убедиться, что пользователь предоставит значение для каждого названия продукта s. Задайте `ControlToValidate` свойства ProductName, `ErrorMessage` свойство вам необходимо указать название продукта. и `Text` свойства \*. После внесения этих изменений `ItemTemplate`, экран должен выглядеть аналогично рис. 6.
 
 
-[![TТеперь он ProductName TemplateField содержит текстовое поле и RequiredFieldValidator](batch-updating-cs/_static/image6.gif)](batch-updating-cs/_static/image9.png)
+[![Теперь TemplateField ProductName включает текстовое поле и RequiredFieldValidator](batch-updating-cs/_static/image6.gif)](batch-updating-cs/_static/image9.png)
 
 **Рис. 6**: `ProductName` TemplateField теперь включает текстовое поле и RequiredFieldValidator ([Просмотр полноразмерного изображения](batch-updating-cs/_static/image10.png))
 
@@ -117,7 +117,7 @@ ms.locfileid: "59380084"
 Также добавьте элемент управления CompareValidator для `UnitPrice` s `ItemTemplate` чтобы убедиться, что введенное пользователем значение является значением валют, больше или равно 0,00 долл. США. Набор s проверяющий элемент управления `ControlToValidate` свойство UnitPrice, его `ErrorMessage` свойство вам необходимо ввести допустимый денежное значение. Можно опустить любые валюты символы., его `Text` свойства \*, ее `Type` свойства `Currency`, ее `Operator` свойства `GreaterThanEqual`и его `ValueToCompare` значение 0.
 
 
-[![Aдд CompareValidator, чтобы удостовериться в цену, ввода является значение валюты не отрицательны](batch-updating-cs/_static/image7.gif)](batch-updating-cs/_static/image11.png)
+[![Добавьте элемент управления CompareValidator для проверить цен, указанных это значение валюты не отрицательны](batch-updating-cs/_static/image7.gif)](batch-updating-cs/_static/image11.png)
 
 **Рис. 7**: Добавление CompareValidator, чтобы удостовериться в цену, ввода является значение валюты не отрицательны ([Просмотр полноразмерного изображения](batch-updating-cs/_static/image12.png))
 
@@ -135,12 +135,12 @@ ms.locfileid: "59380084"
 Перетащите DropDownList с панели элементов в `CategoryName` TemplateField s `ItemTemplate`, устанавливая его `ID` для `Categories`. На этом этапе мы бы обычно определение элементов управления DropDownList s источника данных через его смарт-тег, создание нового источника ObjectDataSource. Тем не менее, это будет добавлен элемент управления ObjectDataSource в `ItemTemplate`, что приведет к ObjectDataSource экземпляром, созданным для каждой строки GridView. Вместо этого разрешите s создайте ObjectDataSource за пределами s GridView полей TemplateField. Завершить редактирование шаблона и перетащите элемент управления ObjectDataSource из панели элементов в конструктор под `ProductsDataSource` ObjectDataSource. Новый ObjectDataSource следует назвать `CategoriesDataSource` и настройте его для использования `CategoriesBLL` класс s `GetCategories` метод.
 
 
-[![CНастройка ObjectDataSource на использование класса CategoriesBLL](batch-updating-cs/_static/image8.gif)](batch-updating-cs/_static/image13.png)
+[![Настройка ObjectDataSource на использование класса CategoriesBLL](batch-updating-cs/_static/image8.gif)](batch-updating-cs/_static/image13.png)
 
 **Рис. 8**: Настройка ObjectDataSource для использования `CategoriesBLL` класс ([Просмотр полноразмерного изображения](batch-updating-cs/_static/image14.png))
 
 
-[![Rзагружать данные категории, с помощью метода GetCategories](batch-updating-cs/_static/image9.gif)](batch-updating-cs/_static/image15.png)
+[![Получить категории данных с помощью метода GetCategories](batch-updating-cs/_static/image9.gif)](batch-updating-cs/_static/image15.png)
 
 **Рис. 9**: Получить категории данных с помощью `GetCategories` метод ([Просмотр полноразмерного изображения](batch-updating-cs/_static/image16.png))
 
@@ -148,7 +148,7 @@ ms.locfileid: "59380084"
 Поскольку данный элемент управления ObjectDataSource используется просто для получения данных, задайте раскрывающихся списках на вкладках UPDATE и DELETE (нет). Нажмите кнопку Готово, чтобы завершить работу мастера.
 
 
-[![SET раскрывающиеся списки в UPDATE и DELETE вкладок (нет)](batch-updating-cs/_static/image10.gif)](batch-updating-cs/_static/image17.png)
+[![Набор раскрывающиеся списки в UPDATE и DELETE вкладок (нет)](batch-updating-cs/_static/image10.gif)](batch-updating-cs/_static/image17.png)
 
 **Рис. 10**: Задать раскрывающиеся списки в обновление и удаление вкладок (нет) ([Просмотр полноразмерного изображения](batch-updating-cs/_static/image18.png))
 
@@ -161,7 +161,7 @@ ms.locfileid: "59380084"
 С помощью `CategoriesDataSource` создания и настройки, вернуться к `CategoryName` TemplateField s `ItemTemplate` и смарт-теге DropDownList s, щелкните ссылку Выбор источника данных. В мастере настройки источника данных выберите `CategoriesDataSource` параметр в первом раскрывающемся списке и выбрать `CategoryName` используемый для отображения и `CategoryID` как значение.
 
 
-[![BIND DropDownList к CategoriesDataSource](batch-updating-cs/_static/image11.gif)](batch-updating-cs/_static/image19.png)
+[![Привязка к CategoriesDataSource DropDownList](batch-updating-cs/_static/image11.gif)](batch-updating-cs/_static/image19.png)
 
 **Рис. 11**: Привязка элемента управления DropDownList для `CategoriesDataSource` ([Просмотр полноразмерного изображения](batch-updating-cs/_static/image20.png))
 
@@ -190,7 +190,7 @@ ms.locfileid: "59380084"
 Мы ve внесены несколько изменений шаблонов s GridView не приостанавливая выполнение просмотрите ход работы. Отвлекитесь и просмотрите ход работы через браузер. Как показано на рис. 13, каждая строка подготавливается с помощью его `ItemTemplate`, который содержит ячейку s, интерфейс редактирования.
 
 
-[![EACH строке GridView-Editable](batch-updating-cs/_static/image13.gif)](batch-updating-cs/_static/image21.png)
+[![Каждая строка GridView представляет редактируемый](batch-updating-cs/_static/image13.gif)](batch-updating-cs/_static/image21.png)
 
 **Рис. 13**: Каждая строка GridView представляет редактируемый ([Просмотр полноразмерного изображения](batch-updating-cs/_static/image22.png))
 
@@ -223,7 +223,7 @@ ms.locfileid: "59380084"
 На рисунке 16 показано на этой странице, при просмотре через браузер, после добавления кнопки веб-элементов управления и изменений форматирования.
 
 
-[![Tон теперь включает два обновления продуктов кнопок страниц](batch-updating-cs/_static/image16.gif)](batch-updating-cs/_static/image23.png)
+[![Теперь страница включает в себя две кнопки обновления продуктов](batch-updating-cs/_static/image16.gif)](batch-updating-cs/_static/image23.png)
 
 **Рис. 16**: Теперь включает два обновления продуктов кнопок страниц ([Просмотр полноразмерного изображения](batch-updating-cs/_static/image24.png))
 

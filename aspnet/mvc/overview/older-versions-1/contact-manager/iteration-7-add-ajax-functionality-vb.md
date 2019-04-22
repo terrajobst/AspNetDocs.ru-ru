@@ -12,7 +12,7 @@ ms.openlocfilehash: 3df4258b2de309aed5a3a598caeb1e7332c321f6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383968"
 ---
 # <a name="iteration-7--add-ajax-functionality-vb"></a>Итерации #7 – Добавление функций Ajax (VB)
@@ -94,14 +94,14 @@ ms.locfileid: "59383968"
 Позвольте s начать с изменения нашего представления индекса, таким образом, только если щелкнуть группу, контактные обновляет область представления, отображающий контактов. Красным прямоугольником на рис. 1 содержит области, нам нужно обновить.
 
 
-[![Uобновления только контакты](iteration-7-add-ajax-functionality-vb/_static/image1.jpg)](iteration-7-add-ajax-functionality-vb/_static/image1.png)
+[![Обновление только контакты](iteration-7-add-ajax-functionality-vb/_static/image1.jpg)](iteration-7-add-ajax-functionality-vb/_static/image1.png)
 
 **Рис 01**: Обновление только контакты ([Просмотр полноразмерного изображения](iteration-7-add-ajax-functionality-vb/_static/image2.png))
 
 
 Первым делом для отделения части представления, нам нужно обновить асинхронно в отдельном разделяемом (пользовательский элемент управления представления). В части представления индекса, который выводит таблицу контактов была перемещена в разделяемом в листинге 1.
 
-**Listing 1 - Views\Contact\ContactList.ascx**
+**В листинге 1 - Views\Contact\ContactList.ascx**
 
 [!code-aspx[Main](iteration-7-add-ajax-functionality-vb/samples/sample2.aspx)]
 
@@ -145,7 +145,7 @@ ms.locfileid: "59383968"
 
 Мы будем использовать библиотеку jQuery, которая входит в состав платформы Microsoft ASP.NET MVC для создания эффектов анимации. Обновленное представление индекса содержится в листинге 4.
 
-**Listing 4 - Views\Contact\Index.aspx**
+**Листинг 4 - Views\Contact\Index.aspx**
 
 [!code-aspx[Main](iteration-7-add-ajax-functionality-vb/samples/sample6.aspx)]
 
@@ -173,7 +173,7 @@ ms.locfileid: "59383968"
 
 Обновленное представление индекса содержится в листинге 5.
 
-**Listing 5 - Views\Contact\Index.aspx**
+**В листинге 5 - Views\Contact\Index.aspx**
 
 [!code-aspx[Main](iteration-7-add-ajax-functionality-vb/samples/sample8.aspx)]
 
@@ -194,7 +194,7 @@ ms.locfileid: "59383968"
 В настоящее время, чтобы удалить контакт, необходимо щелкнуть ссылку «Удалить» и нажмите кнопку «Удалить», отображаются на странице подтверждения удаления (см. рис. 2). Это может показаться массу запросов страниц, чтобы сделать что-то простое, например удаление записи базы данных.
 
 
-[![Tон страница подтверждения удаления](iteration-7-add-ajax-functionality-vb/_static/image2.jpg)](iteration-7-add-ajax-functionality-vb/_static/image3.png)
+[![Страница подтверждения удаления](iteration-7-add-ajax-functionality-vb/_static/image2.jpg)](iteration-7-add-ajax-functionality-vb/_static/image3.png)
 
 **Рис. 02**: Страница подтверждения удаления ([Просмотр полноразмерного изображения](iteration-7-add-ajax-functionality-vb/_static/image4.png))
 
@@ -203,7 +203,7 @@ ms.locfileid: "59383968"
 
 Удалить ссылка содержится в частичной ContactList. Обновленная версия ContactList частичного содержится в листинге 6.
 
-**Listing 6 - Views\Contact\ContactList.ascx**
+**В листинге 6 - Views\Contact\ContactList.ascx**
 
 [!code-aspx[Main](iteration-7-add-ajax-functionality-vb/samples/sample10.aspx)]
 

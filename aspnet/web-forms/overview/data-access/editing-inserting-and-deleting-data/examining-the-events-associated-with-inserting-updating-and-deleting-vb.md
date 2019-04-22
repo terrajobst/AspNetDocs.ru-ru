@@ -12,7 +12,7 @@ ms.openlocfilehash: f38f217b0a7c7e656cf46d442c98949be5d43b62
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59385570"
 ---
 # <a name="examining-the-events-associated-with-inserting-updating-and-deleting-vb"></a>Обзор событий, связанных со вставкой, обновлением и удалением (VB)
@@ -37,7 +37,7 @@ ms.locfileid: "59385570"
 Рис. 1 изображена эта последовательность событий и действия, при обновлении элемента управления GridView. Шаблон события на рис.1 не является уникальным для обновления с помощью GridView. Вставка, обновление или удаление данных из GridView, DetailsView и FormView запускает ту же последовательность событий предварительного и последующего уровней для веб-управления данными и элемент управления ObjectDataSource.
 
 
-[![A Серию перед и после события запускаются при обновлении данных в элементе управления GridView](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image2.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image1.png)
+[![Серию до и после события запускаются при обновлении данных в элементе управления GridView](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image2.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image1.png)
 
 **Рис. 1**: Серия до и после события Fire при обновлении данных в элементе управления GridView ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image3.png))
 
@@ -60,7 +60,7 @@ ms.locfileid: "59385570"
 Сделав это добавление к нашей `ProductsBLL` класс, мы готовы создавать упрощенный интерфейс GridView. Откройте `DataModificationEvents.aspx` в `EditInsertDelete` папку и добавьте элемент управления GridView на страницу. Создайте новый ObjectDataSource и настроить его для использования `ProductsBLL` класса с его `Select()` перегрузке `GetProducts` и его `Update()` перегрузке `UpdateProduct` перегрузку, которая принимает только `productName`, `unitPrice`, и `productID` входных параметров. Рис. 2 показан мастер создания источника данных, при сопоставлении ObjectDataSource `Update()` метод `ProductsBLL` для нового класса `UpdateProduct` перегрузки метода.
 
 
-[![MAP перегрузить метод Update() класса ObjectDataSource для нового UpdateProduct](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image5.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image4.png)
+[![Сопоставьте метод Update() класса ObjectDataSource новой перегрузке UpdateProduct](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image5.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image4.png)
 
 **Рис. 2**: Сопоставить ObjectDataSource `Update()` метод создать `UpdateProduct` перегрузки ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image6.png))
 
@@ -68,7 +68,7 @@ ms.locfileid: "59385570"
 Так как в нашем примере исходно требуется только возможность править данные, но не вставлять или удалять записи, Отвлекитесь и явно указывать, что ObjectDataSource `Insert()` и `Delete()` методы не следует сопоставлять никаким `ProductsBLL` методы класса, перейдя на вкладках INSERT и DELETE и выбрав (нет) из раскрывающегося списка.
 
 
-[![CВыберите, (нет) из раскрывающегося списка для вставки и удаления вкладки](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image8.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image7.png)
+[![Выберите значение (None) из раскрывающегося списка для вставки и удаления вкладок](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image8.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image7.png)
 
 **Рис. 3**: Выберите значение (None) из раскрывающегося списка для вставки и удаления вкладок ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image9.png))
 
@@ -91,7 +91,7 @@ ms.locfileid: "59385570"
 Хотя элемент управления ObjectDataSource имеет только `UpdateParameters` для имени продукта, цену и идентификатор, Visual Studio добавлены BoundField или CheckBoxField в GridView для каждого из полей продукта.
 
 
-[![Tон GridView содержит BoundField или CheckBoxField для каждого из полей продукта](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image11.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image10.png)
+[![GridView содержит BoundField или CheckBoxField для каждого из полей продукта](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image11.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image10.png)
 
 **Рис. 4**: GridView содержит BoundField или CheckBoxField для каждого из полей продукта ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image12.png))
 
@@ -99,7 +99,7 @@ ms.locfileid: "59385570"
 Когда конечный пользователь изменяет продукт и нажимает кнопку ее кнопкой "Обновить", GridView перечисляет те поля, которые не были доступны только для чтения. Затем он устанавливает значение соответствующего параметра в ObjectDataSource `UpdateParameters` коллекции на введенное пользователем значение. Если не создается соответствующий параметр, GridView добавляет ее в коллекцию. Таким образом, если наши GridView содержит поля BoundFields и CheckBoxFields для всех полей продукта, элемент управления ObjectDataSource вызовет перегрузку `UpdateProduct` , принимающую все эти параметры, несмотря на то, ObjectDataSource декларативная разметка указывает только три входных параметра (см. рис. 5). Аналогичным образом, если имеется определенное сочетание не только для чтения продукта поля в GridView, которое не соответствует входным параметрам для `UpdateProduct` перегрузки, будет вызвано исключение при попытке обновить.
 
 
-[![Tон GridView добавит параметры к коллекции UpdateParameters ObjectDataSource](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image14.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image13.png)
+[![GridView будет добавить параметры к коллекции UpdateParameters элемента управления ObjectDataSource](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image14.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image13.png)
 
 **Рис. 5**: GridView будет добавление параметров ObjectDataSource `UpdateParameters` коллекции ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image15.png))
 
@@ -114,7 +114,7 @@ ms.locfileid: "59385570"
 Наши GridView, вместе с `UpdateProduct` перегрузки, пользователь может изменить только имя и цену продукта, не теряя никакие другие поля продукта.
 
 
-[![Tон интерфейс позволяет редактирования только название и цену продукта](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image17.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image16.png)
+[![Интерфейс дает возможность изменять только имя и цену продукта](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image17.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image16.png)
 
 **Рис. 6**: Предоставляет интерфейс, редактирования только имя и цену продукта ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image18.png))
 
@@ -128,7 +128,7 @@ ms.locfileid: "59385570"
 Хотя в примере GridView, показанный на рис. 6, работает, `UnitPrice` не отформатировано вообще, что приводит к отображению цены, который не имеет валют, символов и с четырьмя десятичными позициями. Чтобы применить неизменяемые строки форматирования денежных единиц, просто установите `UnitPrice` BoundField `DataFormatString` свойства `{0:c}` и его `HtmlEncode` свойства `False`.
 
 
-[![SET DataFormatString и HtmlEncode свойства UnitPrice соответствующим образом](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image20.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image19.png)
+[![Настройте соответствующим образом DataFormatString и HtmlEncode свойства UnitPrice](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image20.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image19.png)
 
 **Рис. 7**: Задайте `UnitPrice` `DataFormatString` и `HtmlEncode` свойства соответствующим образом ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image21.png))
 
@@ -136,7 +136,7 @@ ms.locfileid: "59385570"
 Благодаря этому изменению неизменяемые строк, цена форматируется как денежное значение; Тем не менее, редактируемой строки, по-прежнему отображается значение без символа денежной единицы и с четырьмя десятичными позициями.
 
 
-[![Tон нередактируемые строк являются теперь отформатировано как значения валюты](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image23.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image22.png)
+[![Нередактируемые строки являются теперь отформатировано как значения валюты](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image23.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image22.png)
 
 **Рис. 8**: Являются нередактируемые строки теперь отформатировано как значения валюты ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image24.png))
 
@@ -144,7 +144,7 @@ ms.locfileid: "59385570"
 Команды форматирования, указанные в `DataFormatString` свойства могут применяться к интерфейсу редактирования свойства `ApplyFormatInEditMode` свойства `True` (по умолчанию используется `False`). Отвлекитесь и присвойте этому свойству значение `True`.
 
 
-[![SET поле UnitPrice типа BoundField в свойства applyformatineditmode поля значение true](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image26.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image25.png)
+[![Значение свойства applyformatineditmode поля UnitPrice типа BoundField значение True](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image26.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image25.png)
 
 **Рис. 9**: Задайте `UnitPrice` BoundField `ApplyFormatInEditMode` свойства `True` ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image27.png))
 
@@ -152,7 +152,7 @@ ms.locfileid: "59385570"
 Благодаря этому изменению значение `UnitPrice` отображаются в измененной строке также форматируется как денежная единица.
 
 
-[![TЗначение поля UnitPrice HE редактирования строки — теперь отформатировано как денежная единица](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image29.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image28.png)
+[![Значение поля UnitPrice редактирования строки — теперь отформатировано как денежная единица](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image29.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image28.png)
 
 **Рис. 10**: Измененный строки `UnitPrice` значение — теперь отформатировано как денежная единица ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image30.png))
 
@@ -169,7 +169,7 @@ GridView `RowUpdating` событий принимает в качестве в�
 Рис. 11 представлена как проблема, из-за символов валют в предоставленной пользователем `UnitPrice`, а также как GridView `RowUpdating` обработчик событий, которые могут использоваться правильно анализа таких входных данных.
 
 
-[![TЗначение поля UnitPrice HE редактирования строки — теперь отформатировано как денежная единица](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image32.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image31.png)
+[![Значение поля UnitPrice редактирования строки — теперь отформатировано как денежная единица](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image32.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image31.png)
 
 **Рис. 11**: Измененный строки `UnitPrice` значение — теперь отформатировано как денежная единица ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image33.png))
 
@@ -188,7 +188,7 @@ GridView `RowUpdating` событий принимает в качестве в�
 Наконец, задайте метки `CssClass` свойства `Warning`. На этом этапе конструктор должен вывести предупреждающее сообщение в красный, полужирный, курсив, очень крупный размер над элементом управления GridView, как показано на рис. 12.
 
 
-[![A Label добавлен над элементом управления GridView](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image35.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image34.png)
+[![Label добавлен над элементом управления GridView](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image35.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image34.png)
 
 **Рис. 12**: Метка имеет были добавлены выше элемента управления GridView ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image36.png))
 
@@ -206,7 +206,7 @@ GridView `RowUpdating` событий принимает в качестве в�
 Если пользователь пытается сохранить продукт без указания цены, обновление отменяется, и отображается информационное сообщение. Хотя базы данных (и бизнес-логики) позволяет `NULL` `UnitPrice` s, эта конкретная страница ASP.NET — нет.
 
 
-[![A Пользователю не разрешено оставлять пустым UnitPrice](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image38.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image37.png)
+[![Пользователь нельзя оставлять пустым UnitPrice](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image38.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image37.png)
 
 **Рис. 13**: Пользователь не может быть передано `UnitPrice` пустым ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image39.png))
 
@@ -229,12 +229,12 @@ GridView `RowUpdating` событий принимает в качестве в�
 Оставьте `Insert()` метод, указывающий на `AddProduct` метод, но снова задать раскрывающемся списке вкладки DELETE значение (None).
 
 
-[![SET вкладки «Вставка» выберите в раскрывающемся списке на метод AddProduct](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image41.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image40.png)
+[![Задайте стрелку раскрывающегося списка на вкладке INSERT на метод AddProduct](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image41.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image40.png)
 
 **Рис. 14**: Значение вкладку Вставка с раскрывающимся списком `AddProduct` метод ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image42.png))
 
 
-[![SET, списке раскрывающемся списке вкладки DELETE значение (None)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image44.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image43.png)
+[![Задайте в раскрывающемся списке вкладки DELETE значение (None)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image44.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image43.png)
 
 **Рис. 15**: Задайте удалить вкладку с раскрывающимся списком (нет) ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image45.png))
 
@@ -254,7 +254,7 @@ GridView `RowUpdating` событий принимает в качестве в�
 Рис. 16 показана эта страница при просмотре через браузер на этом этапе. Как вы видите, DetailsView указаны имя и цену первого продукта (Chai). Тем не менее, нам нужно, — это интерфейс для вставки, предоставляющий средства для пользователя, чтобы быстро добавить новый продукт в базе данных.
 
 
-[![Tон DetailsView является визуализация в данный момент в режиме только для чтения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image47.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image46.png)
+[![DetailsView не в настоящее время отрисовывается в режиме только для чтения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image47.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image46.png)
 
 **Рис. 16**: DetailsView не в настоящее время отрисовывается в режиме только для чтения ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image48.png))
 
@@ -262,7 +262,7 @@ GridView `RowUpdating` событий принимает в качестве в�
 Чтобы можно было отобразить в режиме вставки необходимо задать для элемента управления DetailsView `DefaultMode` свойства `Inserting`. Это отрисовывает элемент DetailsView в режиме вставки при первом посещении и остается после вставки новой записи. Как показано на рис. 17, такой DetailsView предоставляет быстрый интерфейс для добавления новой записи.
 
 
-[![Tон DetailsView предоставляет интерфейс для быстрого добавления нового продукта](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image50.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image49.png)
+[![DetailsView предоставляет интерфейс для быстрого добавления нового продукта](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image50.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image49.png)
 
 **Рис. 17**: DetailsView предоставляет интерфейс для быстрого добавления нового продукта ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image51.png))
 
@@ -285,7 +285,7 @@ GridView на рис. 18 он показан, полей продукта, от�
 Появится список всех записей в `Products` таблицы. Как показано на рис все столбцы нашего нового продукта не `ProductID`, `ProductName`, и `UnitPrice` имеют `NULL` значения.
 
 
-[![Tон продукта поля не представленным в DetailsView, назначенный значения NULL](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image54.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image53.png)
+[![Поля продукта не представленным в DetailsView, назначенный значения NULL](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image54.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image53.png)
 
 **Рис. 19**: Назначаются поля продукта не представленным в DetailsView `NULL` значения ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image55.png))
 
@@ -313,7 +313,7 @@ GridView на рис. 18 он показан, полей продукта, от�
 Это время при добавлении нового продукта (например Acme Soda, столбцы), `CategoryID` и `SupplierID` столбцов нового продукта устанавливаются в 1 (см. рис. 20).
 
 
-[![Nновые возможности продукты теперь имеют свои CategoryID и SupplierID значения, заданные для 1](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image57.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image56.png)
+[![Теперь у новых продуктов, их CategoryID и SupplierID значения, заданные для 1](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image57.png)](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image56.png)
 
 **Рис. 20**: Новые продукты теперь имеют их `CategoryID` и `SupplierID` значения присваивается значение 1 ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-vb/_static/image58.png))
 

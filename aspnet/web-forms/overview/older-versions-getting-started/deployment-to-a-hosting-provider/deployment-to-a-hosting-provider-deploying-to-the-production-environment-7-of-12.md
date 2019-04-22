@@ -12,7 +12,7 @@ ms.openlocfilehash: ce49baeca3fd5fe13476ea538e88f3e19dbb6c7b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59382569"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-to-the-production-environment---7-of-12"></a>Развертывание веб-приложения ASP.NET с SQL Server Compact с помощью Visual Studio или Visual Web Developer: Развертывание в рабочей среде — 7 из 12
@@ -187,7 +187,7 @@ Cytanium приветственное сообщение электронной 
 
 Убедитесь, что Elmah имеет доступ на запись к *Elmah* папку, что вызывает ошибку и затем отображение отчета об ошибках Elmah. Недопустимый URL-адрес, например запроса *Studentsxxx.aspx*. Как и раньше, вы увидите *GenericErrorPage.aspx* страницы. Нажмите кнопку **Выход** ссылку, а затем запустите *Elmah.axd*. Вы получаете **вход** странице во-первых, проверяющее, что *Web.config* преобразование успешно добавлен Elmah авторизации. После входа вы увидите отчет, отображающий ошибку, просто связано.
 
-[![Elmah.axd_Prod](deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12/_static/image41.png)](deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12/_static/image40.png)
+[![ELMAH.axd_Prod](deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12/_static/image41.png)](deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12/_static/image40.png)
 
 ## <a name="testing-in-the-production-environment"></a>Тестирование в рабочей среде
 

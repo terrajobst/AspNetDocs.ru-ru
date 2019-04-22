@@ -12,7 +12,7 @@ ms.openlocfilehash: fe82cbd43cf374439675ad811586282a1a79f488
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409490"
 ---
 # <a name="supporting-odata-v3-in-aspnet-web-api"></a>Поддержка OData v3 в веб-API ASP.NET
@@ -22,5 +22,5 @@ ms.locfileid: "59409490"
 
 - [Создание конечной точки OData v3](creating-an-odata-endpoint.md)
 - [Поддержка отношений сущностей в OData v3](working-with-entity-relations.md)
-- [Действия OData в веб-API 2](odata-actions.md)
+- [Действия OData в веб-API 2](odata-actions.md)
 - [Вызов службы OData из клиента .NET (C#)](calling-an-odata-service-from-a-net-client.md)

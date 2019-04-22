@@ -12,7 +12,7 @@ ms.openlocfilehash: 5a968bbbe5bdb6f8daad2c11c18c2b704c3bed8b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59385505"
 ---
 # <a name="master-pages-and-aspnet-ajax-vb"></a>Эталонные страницы и ASP.NET AJAX (VB)
@@ -71,7 +71,7 @@ ms.locfileid: "59385505"
 После добавления ScriptManager к странице, изменить его `ID` из `ScriptManager1` для `MyManager`.
 
 
-[![Aдд ScriptManager на главную страницу](master-pages-and-asp-net-ajax-vb/_static/image2.png)](master-pages-and-asp-net-ajax-vb/_static/image1.png)
+[![Добавление ScriptManager на главную страницу](master-pages-and-asp-net-ajax-vb/_static/image2.png)](master-pages-and-asp-net-ajax-vb/_static/image1.png)
 
 **Рис 01**: Добавить ScriptManager главной страницы ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-vb/_static/image3.png))
 
@@ -83,7 +83,7 @@ ms.locfileid: "59385505"
 Начнем с создания новой страницы в корневом каталоге с именем `ShowRandomProduct.aspx`. Не забудьте этой новой странице, чтобы привязать `Site.master` главной страницы.
 
 
-[![Aдд новой страницы ASP.NET на веб-сайт](master-pages-and-asp-net-ajax-vb/_static/image5.png)](master-pages-and-asp-net-ajax-vb/_static/image4.png)
+[![Добавьте новую страницу ASP.NET на веб-сайт](master-pages-and-asp-net-ajax-vb/_static/image5.png)](master-pages-and-asp-net-ajax-vb/_static/image4.png)
 
 **Рис. 02**: Добавьте новую страницу ASP.NET на веб-сайт ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-vb/_static/image6.png))
 
@@ -104,7 +104,7 @@ ms.locfileid: "59385505"
 Наша первая задача — для отображения сведений о случайно выбранный продукт в UpdatePanel. Начнем с перетаскивания элемента управления DetailsView в UpdatePanel. Значение элемента управления DetailsView `ID` свойства `ProductInfo` и очистите его `Height` и `Width` свойства. Разверните смарт-теге DetailsView и в раскрывающемся списке "Выбор источника данных", выберите для привязки элемента управления DetailsView для нового элемента управления SqlDataSource с именем `RandomProductDataSource`.
 
 
-[![BIND DetailsView для нового элемента управления SqlDataSource](master-pages-and-asp-net-ajax-vb/_static/image8.png)](master-pages-and-asp-net-ajax-vb/_static/image7.png)
+[![Привязка элемента управления DetailsView для нового элемента управления SqlDataSource](master-pages-and-asp-net-ajax-vb/_static/image8.png)](master-pages-and-asp-net-ajax-vb/_static/image7.png)
 
 **Рис 03**: Привязка элемента управления DetailsView для нового элемента управления SqlDataSource ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-vb/_static/image9.png))
 
@@ -117,7 +117,7 @@ ms.locfileid: "59385505"
 `TOP 1` Ключевое слово в `SELECT` предложение возвращает только первую запись, возвращенных запросом. `NEWID()` Функция создает новое значение глобальный уникальный идентификатор (GUID) и может использоваться в `ORDER BY` предложение для возврата записей в таблице в случайном порядке.
 
 
-[![CНастройка элемента управления SqlDataSource, чтобы получить одну, произвольно выбранные записи](master-pages-and-asp-net-ajax-vb/_static/image11.png)](master-pages-and-asp-net-ajax-vb/_static/image10.png)
+[![Настройка элемента управления SqlDataSource для возврата одного, случайно выбранных записи](master-pages-and-asp-net-ajax-vb/_static/image11.png)](master-pages-and-asp-net-ajax-vb/_static/image10.png)
 
 **Рис. 04**: Настройка элемента управления SqlDataSource, чтобы получить одну, произвольно выбранные записи ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-vb/_static/image12.png))
 
@@ -130,7 +130,7 @@ ms.locfileid: "59385505"
 Рис. 5 показан `ShowRandomProduct.aspx` страницы при просмотре в обозревателе. Нажмите кнопку обновления в браузере, чтобы перезагрузить страницу; Вы должны увидеть `ProductName` и `UnitPrice` значения для новой записи случайно выбранных.
 
 
-[![A Отображается имя и цену случайных продукта](master-pages-and-asp-net-ajax-vb/_static/image14.png)](master-pages-and-asp-net-ajax-vb/_static/image13.png)
+[![Отображается название и цену продукта случайных](master-pages-and-asp-net-ajax-vb/_static/image14.png)](master-pages-and-asp-net-ajax-vb/_static/image13.png)
 
 **05 рис**: Отображается название и цену продукта произвольного ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-vb/_static/image15.png))
 
@@ -159,12 +159,12 @@ ms.locfileid: "59385505"
 Благодаря этому изменению полный страницы включает время загрузки текущей отображаемой продукта. Рис. 6 показан при первом посещении страницы. Рис. 7 показана страница 15 секунд позже, после того как элемент управления Timer «установлен» и UpdatePanel обновлялся для отображения сведений о нового продукта.
 
 
-[![A Случайным образом при загрузке страницы отображается выбранного продукта](master-pages-and-asp-net-ajax-vb/_static/image17.png)](master-pages-and-asp-net-ajax-vb/_static/image16.png)
+[![Случайным образом выбрать продукт отображается при загрузке страницы](master-pages-and-asp-net-ajax-vb/_static/image17.png)](master-pages-and-asp-net-ajax-vb/_static/image16.png)
 
 **Рис 06**: При загрузке страницы отображается случайным образом выбрать продукт ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-vb/_static/image18.png))
 
 
-[![Eочень 15 секунд появится новый случайным образом выбрать продукт](master-pages-and-asp-net-ajax-vb/_static/image20.png)](master-pages-and-asp-net-ajax-vb/_static/image19.png)
+[![Каждые 15 секунд появится новый случайным образом выбрать продукт](master-pages-and-asp-net-ajax-vb/_static/image20.png)](master-pages-and-asp-net-ajax-vb/_static/image19.png)
 
 **07 рис**: Каждые 15 секунд, отображается новый случайным образом выбрать продукт ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-vb/_static/image21.png))
 
@@ -190,12 +190,12 @@ ms.locfileid: "59385505"
 Начнем с создания новой папки в веб-сайт с именем `Scripts`. Добавьте новый файл в папку скриптов с именем `TimerScript.js` типа файл JScript.
 
 
-[![Aдд новый файл JavaScript в папку Scripts](master-pages-and-asp-net-ajax-vb/_static/image23.png)](master-pages-and-asp-net-ajax-vb/_static/image22.png)
+[![Добавьте новый файл JavaScript в папку Scripts](master-pages-and-asp-net-ajax-vb/_static/image23.png)](master-pages-and-asp-net-ajax-vb/_static/image22.png)
 
 **Рис 08**: Добавьте новый файл JavaScript для `Scripts` папку ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-vb/_static/image24.png))
 
 
-[![A На веб-сайт был добавлен новый файл JavaScript](master-pages-and-asp-net-ajax-vb/_static/image26.png)](master-pages-and-asp-net-ajax-vb/_static/image25.png)
+[![На веб-сайт был добавлен новый файл JavaScript](master-pages-and-asp-net-ajax-vb/_static/image26.png)](master-pages-and-asp-net-ajax-vb/_static/image25.png)
 
 **Рис 09**: На веб-сайт был добавлен новый файл JavaScript ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-vb/_static/image27.png))
 
@@ -208,7 +208,7 @@ ms.locfileid: "59385505"
 Теперь нам нужно зарегистрировать этот пользовательский файл JavaScript в `ShowRandomProduct.aspx`. Вернитесь к `ShowRandomProduct.aspx` и добавить на страницу элемент управления ScriptManagerProxy, задать его `ID` для `MyManagerProxy`. Чтобы зарегистрировать пользовательским кодом JavaScript файл выберите элемент управления ScriptManagerProxy в конструкторе, а затем выберите окно "Свойства". Одно из свойств называется скриптов. При выборе этого свойства отображается редактор коллекции ScriptReference, показанный на рис. 10. Нажмите кнопку Добавить новую ссылку на скрипт и затем введите путь к файлу сценария в свойство Path: `~/Scripts/TimerScript.js`.
 
 
-[![Aдд ссылка на элемент управления ScriptManagerProxy](master-pages-and-asp-net-ajax-vb/_static/image29.png)](master-pages-and-asp-net-ajax-vb/_static/image28.png)
+[![Добавьте ссылку на элемент управления ScriptManagerProxy скрипт](master-pages-and-asp-net-ajax-vb/_static/image29.png)](master-pages-and-asp-net-ajax-vb/_static/image28.png)
 
 **Рис. 10**: Добавьте ссылку на элемент управления ScriptManagerProxy скрипт ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-vb/_static/image30.png))
 
@@ -230,12 +230,12 @@ ms.locfileid: "59385505"
 Рис. 11 показана эту страницу при первом посещении через браузер. Таймер выполняется в данный момент и обновляет сведения о продукте отображается каждые 15 секунд. Рис. 12 показан экран, после нажатия кнопки «Пауза». Нажмите кнопку Приостановка останавливает таймер и обновляет текст, кнопки «Возобновление». Сведения о продукте обновления (и продолжить обновление каждые 15 секунд), когда пользователь нажимает кнопку возобновления.
 
 
-[![Cелкните «Пауза», чтобы остановить элемент управления Timer](master-pages-and-asp-net-ajax-vb/_static/image32.png)](master-pages-and-asp-net-ajax-vb/_static/image31.png)
+[![Нажмите эту кнопку для остановки элемента управления Timer](master-pages-and-asp-net-ajax-vb/_static/image32.png)](master-pages-and-asp-net-ajax-vb/_static/image31.png)
 
 **Рис. 11**: Нажмите эту кнопку для остановки элемента управления Timer ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-vb/_static/image33.png))
 
 
-[![Cелкните кнопку "Продолжить", чтобы перезапустить таймер](master-pages-and-asp-net-ajax-vb/_static/image35.png)](master-pages-and-asp-net-ajax-vb/_static/image34.png)
+[![Нажмите кнопку "Продолжить", чтобы перезапустить таймер](master-pages-and-asp-net-ajax-vb/_static/image35.png)](master-pages-and-asp-net-ajax-vb/_static/image34.png)
 
 **Рис. 12**: Нажмите кнопку "Продолжить", чтобы перезапустить таймер ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-vb/_static/image36.png))
 

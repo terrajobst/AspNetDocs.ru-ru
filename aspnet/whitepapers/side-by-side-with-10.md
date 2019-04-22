@@ -12,7 +12,7 @@ ms.openlocfilehash: c4a371958d8de72628c037b3568551aaa91e0153
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380708"
 ---
 # <a name="aspnet-side-by-side-execution-of-net-framework-10-and-11"></a>Параллельное выполнение нескольких версий .NET Framework 1.0 и 1.1 в ASP.NET

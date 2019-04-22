@@ -12,7 +12,7 @@ ms.openlocfilehash: 27139782772aa00ffc556f89908449a87f1a1ea5
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386714"
 ---
 # <a name="developing-and-deploying-in-a-shared-hosting"></a>Разработка и развертывание в общем ресурсе размещения
@@ -24,4 +24,4 @@ ms.locfileid: "59386714"
 [&#9654;Просмотрите видео (46 мин.)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/developing-and-deploying-in-a-shared-hosting)
 
 > [!div class="step-by-step"]
-> [Далее](working-with-iis7-deligated-admin.md)
+> [Вперед](working-with-iis7-deligated-admin.md)

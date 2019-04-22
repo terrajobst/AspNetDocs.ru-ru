@@ -12,7 +12,7 @@ ms.openlocfilehash: 5dd5b96d0365c55cbbfa2dfe0856beda41f915e1
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384770"
 ---
 # <a name="improving-performance-with-output-caching-c"></a>Повышение производительности благодаря кэшированию вывода (C#)
@@ -109,7 +109,7 @@ ms.locfileid: "59384770"
 
 Например контроллер в листинге 5 предоставляет два действия, с именем Master() и Details(). Это действие Master() возвращает список названий фильмов и Details() действие возвращает подробные сведения о выбранный фильм.
 
-**Listing 5 – Controllers\MoviesController.cs**
+**В листинге 5 – Controllers\MoviesController.cs**
 
 [!code-csharp[Main](improving-performance-with-output-caching-cs/samples/sample5.cs)]
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 25e34512abc779bfef2d2bb99a8b62de073e8ed6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381491"
 ---
 # <a name="using-existing-stored-procedures-for-the-typed-datasets-tableadapters-vb"></a>Использование существующих хранимых процедур для адаптеров таблиц TableAdapter типизированного DataSet (VB)
@@ -39,7 +39,7 @@ ms.locfileid: "59381491"
 Visual Studio упрощает добавление новых хранимых процедур в базе данных. S позволяют добавить новую хранимую процедуру в базу данных Northwind, который возвращает все столбцы из `Products` таблицы для тех, которые имеют определенный `CategoryID` значение. В окне обозревателя серверов разверните базу данных "Борей" для отображения ее папок - диаграмм баз данных, таблиц, представлений и т. д. Как мы видели в предыдущем учебном курсе, папке Stored Procedures содержит базы данных s существующие хранимые процедуры. Чтобы добавить новую хранимую процедуру, щелкните правой кнопкой мыши папку хранимые процедуры и выберите в контекстном меню параметр Добавить новую хранимую процедуру.
 
 
-[![Rелкните правой кнопкой мыши папку хранимые процедуры и добавить новую хранимую процедуру](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image2.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image1.png)
+[![Щелкните правой кнопкой мыши папку хранимых процедур и добавить новую хранимую процедуру](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image2.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image1.png)
 
 **Рис. 1**: Щелкните правой кнопкой мыши папку хранимые процедуры и добавить новую хранимую процедуру ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image3.png))
 
@@ -58,7 +58,7 @@ Visual Studio упрощает добавление новых хранимых 
 Рис. 2 показана система Visual Studio после `Products_SelectByCategoryID` хранимая процедура была сохранена.
 
 
-[![Tон Products_SelectByCategoryID хранимая процедура была добавлена в базу данных](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image5.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image4.png)
+[![Хранимая процедура Products_SelectByCategoryID была добавлена в базу данных](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image5.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image4.png)
 
 **Рис. 2**: Хранимая процедура `Products_SelectByCategoryID` был добавлен в базу данных ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image6.png))
 
@@ -70,7 +70,7 @@ Visual Studio упрощает добавление новых хранимых 
 Сначала откройте `NorthwindWithSprocs` набора данных. Щелкните правой кнопкой мыши `ProductsTableAdapter` и выберите Добавить запрос, чтобы запустить мастер настройки запроса адаптера таблицы. В [предыдущем учебном курсе](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-vb.md) мы выбрали, чтобы создать новую хранимую процедуру для нас TableAdapter. Для этого руководства, тем не менее, мы хотим привязать новый метод TableAdapter для существующего `Products_SelectByCategoryID` хранимой процедуры. Таким образом выберите использование существующей хранимой процедуры с первым шагом мастера s и нажмите кнопку Далее.
 
 
-[![CВыберите использовать существующую хранимую процедуру параметр](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image8.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image7.png)
+[![Выберите использование существующей хранимой процедуры, параметр](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image8.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image7.png)
 
 **Рис. 3**: Выберите, использовать существующую хранимую процедуру параметр ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image9.png))
 
@@ -78,7 +78,7 @@ Visual Studio упрощает добавление новых хранимых 
 Следующий экран предоставляет стрелку раскрывающегося списка, заполненные с базой данных s хранимых процедур. Выбрав хранимой процедуры список ее входных параметров в левой части и поля данных, возвращаемых (если таковые имеются) в правой части. Выберите `Products_SelectByCategoryID` хранимую процедуру из списка и нажмите кнопку Далее.
 
 
-[![Pick хранимой процедуры Products_SelectByCategoryID](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image11.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image10.png)
+[![Выбрать Products_SelectByCategoryID хранимой процедуры](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image11.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image10.png)
 
 **Рис. 4**: Выбрать `Products_SelectByCategoryID` хранимой процедуры ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image12.png))
 
@@ -88,7 +88,7 @@ Visual Studio упрощает добавление новых хранимых 
 Так как `Products_SelectByCategoryID` хранимая процедура возвращает все продукты, которые принадлежат определенной категории, выберите первый ответ - табличные данные — и нажмите кнопку Далее.
 
 
-[![Indicate, что хранимая процедура возвращает табличные данные](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image14.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image13.png)
+[![Указывает, что хранимая процедура возвращает табличные данные](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image14.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image13.png)
 
 **Рис. 5**: Указывает, что хранимая процедура возвращает табличные данные ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image15.png))
 
@@ -96,7 +96,7 @@ Visual Studio упрощает добавление новых хранимых 
 Остается лишь для указания, что метод шаблоны для использования следуют имена для этих методов. Оставить оба свойства Fill DataTable и возвращают параметры DataTable флажок установлен, но его можно переименовать методы, которые `FillByCategoryID` и `GetProductsByCategoryID`. Нажмите кнопку Далее для просмотра сводки по задачи, которые выполнит мастер. Если все выглядит правильно, нажмите кнопку "Готово".
 
 
-[![NИмя FillByCategoryID методы и метода GetProductsByCategoryID](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image17.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image16.png)
+[![Имя FillByCategoryID методы и метода GetProductsByCategoryID](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image17.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image16.png)
 
 **Рис. 6**: Назовите методы `FillByCategoryID` и `GetProductsByCategoryID` ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image18.png))
 
@@ -125,12 +125,12 @@ Visual Studio упрощает добавление новых хранимых 
 Откройте `ExistingSprocs.aspx` странице в `AdvancedDAL` папки и перетащите DropDownList с панели инструментов в конструктор. Набор DropDownList s `ID` свойства `Categories` и его `AutoPostBack` свойства `True`. Затем из его смарт-тега привязки DropDownList новый ObjectDataSource, именуемый `CategoriesDataSource`. Настройте элемент управления ObjectDataSource, таким образом, чтобы он извлекает данные из `CategoriesBLL` класс s `GetCategories` метод. Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет).
 
 
-[![Rзагружать данные из s метода GetCategories класса CategoriesBLL](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image20.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image19.png)
+[![Получить данные из метода GetCategories класса CategoriesBLL s](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image20.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image19.png)
 
 **Рис. 7**: Получение данных из `CategoriesBLL` класс s `GetCategories` метод ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image21.png))
 
 
-[![SET раскрывающиеся списки в UPDATE, INSERT и DELETE вкладок (нет)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image23.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image22.png)
+[![Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image23.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image22.png)
 
 **Рис. 8**: Задайте раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image24.png))
 
@@ -145,12 +145,12 @@ Visual Studio упрощает добавление новых хранимых 
 Затем перетащите элемент управления GridView в конструктор, поместив его ниже элемента управления DropDownList. Набор GridView s `ID` для `ProductsByCategory` и его смарт-теге, привязать его к элементу управления ObjectDataSource с именем `ProductsByCategoryDataSource`. Настройка `ProductsByCategoryDataSource` ObjectDataSource на использование `ProductsBLLWithSprocs` класса, его получить, его данные с помощью `GetProductsByCategoryID(categoryID)` метод. Так как этот GridView будет использоваться только для отображения данных, раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) и нажмите кнопку Далее.
 
 
-[![CНастройка ObjectDataSource на использование класса ProductsBLLWithSprocs](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image26.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image25.png)
+[![Настройка ObjectDataSource на использование класса ProductsBLLWithSprocs](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image26.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image25.png)
 
 **Рис. 9**: Настройка ObjectDataSource для использования `ProductsBLLWithSprocs` класс ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image27.png))
 
 
-[![Rзагружать данные из метод GetProductsByCategoryID(categoryID)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image29.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image28.png)
+[![Получить данные из метод GetProductsByCategoryID(categoryID)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image29.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image28.png)
 
 **Рис. 10**: Получение данных из `GetProductsByCategoryID(categoryID)` метод ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image30.png))
 
@@ -158,7 +158,7 @@ Visual Studio упрощает добавление новых хранимых 
 Метод выбран на вкладке "ВЫБЕРИТЕ" ожидает параметр, чтобы последний шаг мастера запрашивает источник параметра s. Значение параметра исходного стрелку раскрывающегося списка элемента управления и выберите `Categories` элемента управления из раскрывающегося списка ControlID. Нажмите кнопку Готово, чтобы завершить работу мастера.
 
 
-[![USE Categories DropDownList как источник categoryID параметр](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image32.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image31.png)
+[![Используйте категории DropDownList как источник параметра categoryID](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image32.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image31.png)
 
 **Рис. 11**: Используйте `Categories` DropDownList как источник `categoryID` параметра ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image33.png))
 
@@ -168,7 +168,7 @@ Visual Studio упрощает добавление новых хранимых 
 Посетите страницу через обозреватель. При посещении страницы выбранные категории «Напитки» и соответствующих продуктов, перечисленных в сетке. Изменение стрелку раскрывающегося списка на альтернативные категории, как на рис. 12 показано, вызывает обратную передачу и перезагружает сетки с продуктами для новой выбранной категории.
 
 
-[![TОтображаются продукты HE в категории создания](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image35.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image34.png)
+[![Отображаются продукты категории создания](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image35.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image34.png)
 
 **Рис. 12**: Отображаются продукты категории создают ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image36.png))
 
@@ -206,12 +206,12 @@ Visual Studio упрощает добавление новых хранимых 
 Позвольте s Рассмотрим конкретный пример. Существует ограничение внешнего ключа между `Categories` и `Products` таблиц, это означает, что каждый `CategoryID` в `Products` таблицы должно быть сопоставлено `CategoryID` значение в `Categories` таблицы. Любое действие, которое будет нарушать это ограничение, например, попытки удалить категорию, связанную продуктов, приводит к нарушению ограничения внешнего ключа. Чтобы проверить это, вернемся к примеру обновление и удаление существующих двоичных данных, при работе с разделе двоичные данные (`~/BinaryData/UpdatingAndDeleting.aspx`). На этой странице перечислены каждой категории в системе, а также кнопки изменения и удаления (см. рис. 13), но при попытке удалить категорию, связанную продуктов — таких как «Напитки» — операция удаления завершается ошибкой из-за нарушения ограничения внешнего ключа (см. рис. 14).
 
 
-[![EACH категория отображается в элементе управления GridView, изменить и удалить кнопки](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image38.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image37.png)
+[![Каждая категория отображается в элементе управления GridView, изменить и удалить кнопки](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image38.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image37.png)
 
 **Рис. 13**: Каждая категория отображается в элементе управления GridView, изменить и удалить кнопок ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image39.png))
 
 
-[![Yподразделение не может удалить категории с существующих продуктов](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image41.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image40.png)
+[![Не удается удалить категории с существующих продуктов](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image41.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image40.png)
 
 **Рис. 14**: Не удается удалить категории с существующих продуктов ([Просмотр полноразмерного изображения](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image42.png))
 

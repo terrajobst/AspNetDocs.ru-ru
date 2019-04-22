@@ -12,7 +12,7 @@ ms.openlocfilehash: ac872869f97aab679384c7cda9f6c8399cd966a3
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384710"
 ---
 # <a name="aspnet-mvc-for-the-rest-of-us-part-1"></a>ASP.NET MVC для общедоступного сайта. Часть 1
@@ -24,4 +24,4 @@ ms.locfileid: "59384710"
 [&#9654;Просмотрите видео (36 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-for-the-rest-of-us-part-1)
 
 > [!div class="step-by-step"]
-> [Далее](aspnet-mvc-for-the-rest-of-us-part-2.md)
+> [Вперед](aspnet-mvc-for-the-rest-of-us-part-2.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: e2f2246e2126bd6e648f861bcb296fab62a748bb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380110"
 ---
 # <a name="aspnet-mvc-routing-overview-c"></a>Общие сведения о маршрутизации в ASP.NET MVC (C#)
@@ -95,7 +95,7 @@ URL-адрес/Home также соответствует Index() метод в 
 [!code-csharp[Main](asp-net-mvc-routing-overview-cs/samples/sample5.cs)]
 
 
-[![Invoking действия контроллера, который ожидает, что значение параметра](asp-net-mvc-routing-overview-cs/_static/image1.jpg)](asp-net-mvc-routing-overview-cs/_static/image1.png)
+[![Вызов действия контроллера, который ожидает, что значение параметра](asp-net-mvc-routing-overview-cs/_static/image1.jpg)](asp-net-mvc-routing-overview-cs/_static/image1.png)
 
 **Рис 01**: Вызов действия контроллера, который ожидает, что значение параметра ([Просмотр полноразмерного изображения](asp-net-mvc-routing-overview-cs/_static/image2.png))
 
@@ -107,4 +107,4 @@ URL-адрес/Home также соответствует Index() метод в 
 Целью данного учебника мы хотели предоставить Краткое введение в маршрутизации ASP.NET. Мы рассмотрели таблицы маршрутизации по умолчанию, которую можно получить с помощью нового приложения ASP.NET MVC. Вы узнали, как маршрут по умолчанию сопоставляет URL-адреса к действиям контроллера.
 
 > [!div class="step-by-step"]
-> [Далее](understanding-action-filters-cs.md)
+> [Вперед](understanding-action-filters-cs.md)

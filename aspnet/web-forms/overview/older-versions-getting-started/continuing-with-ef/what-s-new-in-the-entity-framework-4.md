@@ -12,7 +12,7 @@ ms.openlocfilehash: 0bc24a59e09728a5ecb6e18378c4cde0c8e046f2
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59387455"
 ---
 # <a name="whats-new-in-the-entity-framework-40"></a>Новые возможности .NET Framework 4.0
@@ -37,7 +37,7 @@ ms.locfileid: "59387455"
 
 Версия 3.5 платформы Entity Framework включает свойства навигации, но оно не включило свойства внешнего ключа в модели данных. Например `CourseID` и `StudentID` столбцы `StudentGrade` таблицы будет пропущено `StudentGrade` сущности.
 
-[![Image01](what-s-new-in-the-entity-framework-4/_static/image2.png)](what-s-new-in-the-entity-framework-4/_static/image1.png)
+[!["Image01"](what-s-new-in-the-entity-framework-4/_static/image2.png)](what-s-new-in-the-entity-framework-4/_static/image1.png)
 
 Причина этого подхода: что, строго говоря, внешние ключи являются физической реализации и не входящие в концептуальной моделью данных. Однако на практике часто бывает проще работать с сущностями в коде, когда у вас есть прямой доступ к ним.
 

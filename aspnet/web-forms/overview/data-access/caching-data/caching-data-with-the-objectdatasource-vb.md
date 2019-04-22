@@ -12,7 +12,7 @@ ms.openlocfilehash: 6bde070dae3b295c8d7a04098b874d41fab54830
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380214"
 ---
 # <a name="caching-data-with-the-objectdatasource-vb"></a>Кэширование данных с помощью ObjectDataSource (VB)
@@ -66,7 +66,7 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 Как и в других папках, `Default.aspx` в `Caching` папку перечислит учебные курсы в своем разделе. Помните, что `SectionLevelTutorialListing.ascx` пользовательский элемент управления предоставляет следующие функциональные возможности. Поэтому добавьте данный пользовательский элемент управления для `Default.aspx` , перетащив его из обозревателя решений на странице s режиме конструктора.
 
 
-[![Figure 2: Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](caching-data-with-the-objectdatasource-vb/_static/image3.png)](caching-data-with-the-objectdatasource-vb/_static/image2.png)
+[![Рис. 2. Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](caching-data-with-the-objectdatasource-vb/_static/image3.png)](caching-data-with-the-objectdatasource-vb/_static/image2.png)
 
 **Рис. 2**: Рис. 2. Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-vb/_static/image4.png))
 
@@ -91,7 +91,7 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 Сначала откройте `ObjectDataSource.aspx` странице в `Caching` папку. Перетащите элемент управления GridView с панели инструментов в конструктор, задайте его `ID` свойства `Products`и в его смарт-тега выберите, чтобы привязать его к новый элемент управления ObjectDataSource с именем `ProductsDataSource`. Настройте элемент ObjectDataSource для работы с `ProductsBLL` класса.
 
 
-[![CНастройка ObjectDataSource на использование класса ProductsBLL](caching-data-with-the-objectdatasource-vb/_static/image7.png)](caching-data-with-the-objectdatasource-vb/_static/image6.png)
+[![Настройка ObjectDataSource на использование класса ProductsBLL](caching-data-with-the-objectdatasource-vb/_static/image7.png)](caching-data-with-the-objectdatasource-vb/_static/image6.png)
 
 **Рис. 4**: Настройка ObjectDataSource для использования `ProductsBLL` класс ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-vb/_static/image8.png))
 
@@ -99,7 +99,7 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 Для этой страницы позволяют создать изменяемого элемента управления GridView, чтобы мы рассмотрим, что происходит при изменении данных, кэшированных в коллекции через интерфейс s GridView s. Оставьте стрелку раскрывающегося списка на вкладке ВЫБЕРИТЕ значение по умолчанию `GetProducts()`, но изменения выбранного элемента на вкладке "обновления" для `UpdateProduct` перегрузку, которая принимает `productName`, `unitPrice`, и `productID` как его входные параметры.
 
 
-[![SET раскрывающемся списке вкладки s обновления по перегрузке UpdateProduct соответствующие](caching-data-with-the-objectdatasource-vb/_static/image10.png)](caching-data-with-the-objectdatasource-vb/_static/image9.png)
+[![Установить обновления вкладку s раскрывающегося списка список по перегрузке UpdateProduct соответствующие](caching-data-with-the-objectdatasource-vb/_static/image10.png)](caching-data-with-the-objectdatasource-vb/_static/image9.png)
 
 **Рис. 5**: Значение s вкладку обновление с раскрывающимся списком приемлемым `UpdateProduct` перегрузки ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-vb/_static/image11.png))
 
@@ -114,7 +114,7 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 > Требуется проверка того, как настройка интерфейса правки s GridView? Если Да, обращаться к [Настройка интерфейса изменения данных](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) руководства.
 
 
-[![Eвключить поддержку GridView для редактирования, сортировку и разбиение по страницам](caching-data-with-the-objectdatasource-vb/_static/image13.png)](caching-data-with-the-objectdatasource-vb/_static/image12.png)
+[![Включите поддержку GridView для редактирования, сортировку и разбиение по страницам](caching-data-with-the-objectdatasource-vb/_static/image13.png)](caching-data-with-the-objectdatasource-vb/_static/image12.png)
 
 **Рис. 6**: Включить поддержку GridView для редактирования, сортировку и разбиение по страницам ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-vb/_static/image14.png))
 
@@ -127,7 +127,7 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 Как показано на рис. 7, изменяемого элемента управления GridView содержит имя, категорию и цену каждого из продуктов в базе данных. Отвлекитесь и протестировать функции сортировки страницы s результаты, страницы по ним и изменить запись.
 
 
-[![EACH s имя продукта, категория и цена указана в сортируемый, Pageable, изменяемого элемента управления GridView](caching-data-with-the-objectdatasource-vb/_static/image16.png)](caching-data-with-the-objectdatasource-vb/_static/image15.png)
+[![Каждого продукта — имя, категория и цена указана в сортируемый, Pageable, изменяемого элемента управления GridView](caching-data-with-the-objectdatasource-vb/_static/image16.png)](caching-data-with-the-objectdatasource-vb/_static/image15.png)
 
 **Рис. 7**: Каждого продукта — имя, категория и цена указана в сортируемый, Pageable, изменяемого элемента управления GridView ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-vb/_static/image17.png))
 
@@ -141,7 +141,7 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 Чтобы полностью оценить частоту, с помощью которого данные извлекаются из базы данных, позволяют отображать сообщение о том, когда данные повторно получаются s. Добавление элемента управления Label Web над элементом управления GridView с именем `ODSEvents`. Очистите его `Text` и установите его `EnableViewState` свойства `False`. Под метку, добавьте кнопку веб-элемент управления и задайте его `Text` значение обратной передачи.
 
 
-[![Add метку и кнопку, чтобы страница выше GridView](caching-data-with-the-objectdatasource-vb/_static/image19.png)](caching-data-with-the-objectdatasource-vb/_static/image18.png)
+[![Добавление метки и кнопку на страницу над элементом управления GridView](caching-data-with-the-objectdatasource-vb/_static/image19.png)](caching-data-with-the-objectdatasource-vb/_static/image18.png)
 
 **Рис. 8**: Добавление метки и кнопки к странице выше GridView ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-vb/_static/image20.png))
 
@@ -156,12 +156,12 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 Посетите эту страницу в браузере. При первом посещении страницы отображается инициируется событие выделение текста. Нажмите кнопку обратной передачи и обратите внимание на то, что текст не отображается (предполагая, что GridView s `EnableViewState` свойству `True`, значение по умолчанию). Это обусловлено тем, при обратной передаче GridView воссоздается из состояния представления, и поэтому t включить в элемент управления ObjectDataSource для своих данных. Сортировка, разбиение по страницам и изменение данных, тем не менее, приводит к GridView выполнять повторную привязку к источнику данных и поэтому выбор событие отобразится текст.
 
 
-[![Whenever, повторно привязываются к источнику данных, инициируется событие Selecting GridView отображается](caching-data-with-the-objectdatasource-vb/_static/image22.png)](caching-data-with-the-objectdatasource-vb/_static/image21.png)
+[![Всякий раз, когда GridView повторно привязываются к источнику данных, отображается событие Selecting](caching-data-with-the-objectdatasource-vb/_static/image22.png)](caching-data-with-the-objectdatasource-vb/_static/image21.png)
 
 **Рис. 9**: Всякий раз, когда GridView повторно привязываются к источнику данных, инициируется событие Selecting отображается ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-vb/_static/image23.png))
 
 
-[![Cщелкнув кнопку обратной передачи приводит к GridView, перестраиваются заново из состояния представления](caching-data-with-the-objectdatasource-vb/_static/image25.png)](caching-data-with-the-objectdatasource-vb/_static/image24.png)
+[![Щелкнув кнопку обратной передачи приводит к GridView, перестраиваются заново из состояния представления](caching-data-with-the-objectdatasource-vb/_static/image25.png)](caching-data-with-the-objectdatasource-vb/_static/image24.png)
 
 **Рис. 10**: Нажатие кнопки обратной передачи GridView, перестраиваются заново из состояния представления ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-vb/_static/image26.png))
 
@@ -180,7 +180,7 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 Позвольте настроить s `ProductsDataSource` ObjectDataSource для кэширования данных на 30 секунд на абсолютной шкале. Набор ObjectDataSource s `EnableCaching` свойства `True` и его `CacheDuration` значение 30. Оставьте `CacheExpirationPolicy` свойство, значение по умолчанию `Absolute`.
 
 
-[![CНастройка ObjectDataSource для кэширования данных на 30 секунд](caching-data-with-the-objectdatasource-vb/_static/image28.png)](caching-data-with-the-objectdatasource-vb/_static/image27.png)
+[![Настройте элемент ObjectDataSource для кэширования данных на 30 секунд](caching-data-with-the-objectdatasource-vb/_static/image28.png)](caching-data-with-the-objectdatasource-vb/_static/image27.png)
 
 **Рис. 11**: Настройте элемент ObjectDataSource для кэширования данных на 30 секунд ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-vb/_static/image29.png))
 

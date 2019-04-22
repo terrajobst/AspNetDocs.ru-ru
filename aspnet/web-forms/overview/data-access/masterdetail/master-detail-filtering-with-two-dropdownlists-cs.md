@@ -12,7 +12,7 @@ ms.openlocfilehash: 03d0cd7e835b5526af60a21679260f849714c37e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59421294"
 ---
 # <a name="masterdetail-filtering-with-two-dropdownlists-c"></a>Фильтрация "Основной/подробности" с помощью двух элементов управления DropDownList (C#)
@@ -37,7 +37,7 @@ ms.locfileid: "59421294"
 Откройте `MasterDetailsDetails.aspx` странице в `Filtering` Добавление элемента управления DropDownList на страницу набор папок, его `ID` свойства `Categories`и затем щелкните ссылку Настройка источника данных в его смарт-тега. В мастере настройки источника данных выберите для добавления нового источника данных.
 
 
-[![Aдд новый источник данных для элемента управления DropDownList](master-detail-filtering-with-two-dropdownlists-cs/_static/image2.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image1.png)
+[![Добавить новый источник данных для элемента управления DropDownList](master-detail-filtering-with-two-dropdownlists-cs/_static/image2.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image1.png)
 
 **Рис. 1**: Добавить новый источник данных для элемента управления DropDownList ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image3.png))
 
@@ -45,12 +45,12 @@ ms.locfileid: "59421294"
 Новый источник данных естественно, следует элементу ObjectDataSource. Назовите этот новый элемент управления ObjectDataSource `CategoriesDataSource` , который будет вызывать `CategoriesBLL` объекта `GetCategories()` метод.
 
 
-[![CВыберите для использования класса CategoriesBLL](master-detail-filtering-with-two-dropdownlists-cs/_static/image5.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image4.png)
+[![Выберите для использования класса](master-detail-filtering-with-two-dropdownlists-cs/_static/image5.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image4.png)
 
 **Рис. 2**: Выбор `CategoriesBLL` класс ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image6.png))
 
 
-[![CНастройка ObjectDataSource на использование метода GetCategories()](master-detail-filtering-with-two-dropdownlists-cs/_static/image8.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image7.png)
+[![Настройте элемент ObjectDataSource для использования метода GetCategories()](master-detail-filtering-with-two-dropdownlists-cs/_static/image8.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image7.png)
 
 **Рис. 3**: Настройка ObjectDataSource для использования `GetCategories()` метод ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image9.png))
 
@@ -58,7 +58,7 @@ ms.locfileid: "59421294"
 После настройки ObjectDataSource все равно небходимо указать поле из источника данных, которые должны отображаться в `Categories` DropDownList и какой из них должны быть настроены в качестве значения для элемента списка. Задайте `CategoryName` как отображение и `CategoryID` как значение для каждого элемента списка.
 
 
-[![Hсохранить элемент управления DropDownList отображает поле «Категория» и CategoryID использовать как значение](master-detail-filtering-with-two-dropdownlists-cs/_static/image11.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image10.png)
+[![Иметь элемент управления DropDownList отображает поле «Категория» и CategoryID использовать как значение](master-detail-filtering-with-two-dropdownlists-cs/_static/image11.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image10.png)
 
 **Рис. 4**: Иметь элемент управления DropDownList отображает `CategoryName` и использует `CategoryID` как значение ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image12.png))
 
@@ -66,7 +66,7 @@ ms.locfileid: "59421294"
 На этом этапе у нас есть элемент управления DropDownList (`Categories`) который заполняется записи из `Categories` таблицы. Когда пользователь выбирает новую категорию в элементе управления DropDownList, нам понадобятся обратную передачу для обновления продукта DropDownList, который мы собираемся создать на шаге 2. Таким образом, установите флажок Включить AutoPostBack из `categories` смарт-тега DropDownList.
 
 
-[![Eключить AutoPostBack для элемента управления DropDownList категории](master-detail-filtering-with-two-dropdownlists-cs/_static/image14.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image13.png)
+[![Включить AutoPostBack для элемента управления DropDownList категории](master-detail-filtering-with-two-dropdownlists-cs/_static/image14.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image13.png)
 
 **Рис. 5**: Включить AutoPostBack для `Categories` DropDownList ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image15.png))
 
@@ -76,12 +76,12 @@ ms.locfileid: "59421294"
 С помощью `Categories` завершения DropDownList, следующим этапом является отображение элемента управления DropDownList продуктов, принадлежащих выбранной категории. Для этого необходимо добавить другой DropDownList на страницу с именем `ProductsByCategory`. Как и в `Categories` DropDownList, создайте новый ObjectDataSource для `ProductsByCategory` DropDownList с именем `ProductsByCategoryDataSource`.
 
 
-[![Aдд новый источник данных для элемента управления ProductsByCategory DropDownList](master-detail-filtering-with-two-dropdownlists-cs/_static/image17.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image16.png)
+[![Добавить новый источник данных для элемента управления ProductsByCategory DropDownList](master-detail-filtering-with-two-dropdownlists-cs/_static/image17.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image16.png)
 
 **Рис. 6**: Добавить новый источник данных для `ProductsByCategory` DropDownList ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image18.png))
 
 
-[![Cсоздать новый элемент управления ObjectDataSource с именем ProductsByCategoryDataSource](master-detail-filtering-with-two-dropdownlists-cs/_static/image20.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image19.png)
+[![Создайте новый ObjectDataSource, именуемый ProductsByCategoryDataSource](master-detail-filtering-with-two-dropdownlists-cs/_static/image20.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image19.png)
 
 **Рис. 7**: Создайте новый ObjectDataSource с именем `ProductsByCategoryDataSource` ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image21.png))
 
@@ -89,12 +89,12 @@ ms.locfileid: "59421294"
 Так как `ProductsByCategory` потребностей DropDownList для отображения только тех продуктов, принадлежащих выбранной категории, имеют вызвать элемент управления ObjectDataSource `GetProductsByCategoryID(categoryID)` метода из `ProductsBLL` объекта.
 
 
-[![CВыберите использование класса ProductsBLL](master-detail-filtering-with-two-dropdownlists-cs/_static/image23.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image22.png)
+[![Выберите использование класса ProductsBLL](master-detail-filtering-with-two-dropdownlists-cs/_static/image23.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image22.png)
 
 **Рис. 8**: Выбор `ProductsBLL` класс ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image24.png))
 
 
-[![CНастройка ObjectDataSource на использование метод GetProductsByCategoryID(categoryID)](master-detail-filtering-with-two-dropdownlists-cs/_static/image26.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image25.png)
+[![Настройка ObjectDataSource на использование метод GetProductsByCategoryID(categoryID)](master-detail-filtering-with-two-dropdownlists-cs/_static/image26.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image25.png)
 
 **Рис. 9**: Настройка ObjectDataSource для использования `GetProductsByCategoryID(categoryID)` метод ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image27.png))
 
@@ -102,7 +102,7 @@ ms.locfileid: "59421294"
 На последнем шаге мастера необходимо указать значение *`categoryID`* параметра. Назначить этот параметр для выбранного элемента из `Categories` DropDownList.
 
 
-[![Pлное categoryID значение параметра в элементе управления DropDownList категории](master-detail-filtering-with-two-dropdownlists-cs/_static/image29.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image28.png)
+[![По запросу categoryID значение параметра в элементе управления DropDownList категории](master-detail-filtering-with-two-dropdownlists-cs/_static/image29.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image28.png)
 
 **Рис. 10**: По запросу *`categoryID`* значение параметра из `Categories` DropDownList ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image30.png))
 
@@ -110,7 +110,7 @@ ms.locfileid: "59421294"
 С помощью ObjectDataSource настроен остается только для задания поля источника данных, используемые для отображения и значения элементов управления DropDownList. Отображение `ProductName` поле и использовать `ProductID` как значение.
 
 
-[![SУкажите поля источника данных используется для DropDownList текст и значение свойства ListItems](master-detail-filtering-with-two-dropdownlists-cs/_static/image32.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image31.png)
+[![Укажите поля источника данных, используемые для текста и значение свойства DropDownList ListItems](master-detail-filtering-with-two-dropdownlists-cs/_static/image32.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image31.png)
 
 **Рис. 11**: Укажите поля источника данных используется для DropDownList `ListItem` s " `Text` и `Value` свойства ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image33.png))
 
@@ -118,12 +118,12 @@ ms.locfileid: "59421294"
 С помощью ObjectDataSource и `ProductsByCategory` DropDownList настроен нашей странице будет отображаться двух элементов управления DropDownList: первый будут перечислены все категории во время второй будут перечислены продукты, принадлежащие к выбранной категории. Когда пользователь выбирает новую категорию из первого элемента управления DropDownList, произойдет обратная передача и втором DropDownList будет повторную привязку, показывающий продукты, относящиеся к новой выбранной категории. Рис. 12 и 13 show `MasterDetailsDetails.aspx` в действии при просмотре через браузер.
 
 
-[![Wри первом просмотре странице категории «Напитки» выбрано](master-detail-filtering-with-two-dropdownlists-cs/_static/image35.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image34.png)
+[![При первом просмотре странице, выбирается категории «Напитки»](master-detail-filtering-with-two-dropdownlists-cs/_static/image35.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image34.png)
 
 **Рис. 12**: При первом просмотре странице, выбирается категории «Напитки» ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image36.png))
 
 
-[![Choosing другую категорию отображает новой категории продуктов](master-detail-filtering-with-two-dropdownlists-cs/_static/image38.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image37.png)
+[![При выборе другой категории отображаются новой категории продуктов](master-detail-filtering-with-two-dropdownlists-cs/_static/image38.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image37.png)
 
 **Рис. 13**: Выбор новой категории продуктов на разных экранах категории ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image39.png))
 
@@ -131,7 +131,7 @@ ms.locfileid: "59421294"
 В настоящее время `productsByCategory` DropDownList, при изменении *не* вызывает обратную передачу. Однако нам обратной передачи возникает, когда мы добавляем в элементе управления DetailsView для отображения сведений о выбранном продукте (шаг 3). Таким образом, установите флажок Включить AutoPostBack из `productsByCategory` смарт-тега DropDownList.
 
 
-[![Eвключить функцию AutoPostBack для productsByCategory DropDownList](master-detail-filtering-with-two-dropdownlists-cs/_static/image41.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image40.png)
+[![Включить функцию AutoPostBack для productsByCategory DropDownList](master-detail-filtering-with-two-dropdownlists-cs/_static/image41.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image40.png)
 
 **Рис. 14**: Включить функцию AutoPostBack для `productsByCategory` DropDownList ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image42.png))
 
@@ -141,17 +141,17 @@ ms.locfileid: "59421294"
 Последним шагом является отображение подробные сведения о выбранном продукте в элементе управления DetailsView. Добавление этого в элементе управления DetailsView на страницу, задайте его `ID` свойства `ProductDetails`и создайте новый ObjectDataSource, для него. Настроить данный элемент управления ObjectDataSource для извлечения данных из `ProductsBLL` класса `GetProductByProductID(productID)` метод, используя выбранное значение `ProductsByCategory` DropDownList для значения *`productID`* параметра.
 
 
-[![CВыберите использование класса ProductsBLL](master-detail-filtering-with-two-dropdownlists-cs/_static/image44.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image43.png)
+[![Выберите использование класса ProductsBLL](master-detail-filtering-with-two-dropdownlists-cs/_static/image44.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image43.png)
 
 **Рис. 15**: Выбор `ProductsBLL` класс ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image45.png))
 
 
-[![CНастройка ObjectDataSource на использование метода GetProductByProductID(productID)](master-detail-filtering-with-two-dropdownlists-cs/_static/image47.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image46.png)
+[![Настройка ObjectDataSource на использование метода GetProductByProductID(productID)](master-detail-filtering-with-two-dropdownlists-cs/_static/image47.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image46.png)
 
 **Рис. 16**: Настройка ObjectDataSource для использования `GetProductByProductID(productID)` метод ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image48.png))
 
 
-[![Pлное productID значение параметра в элементе управления ProductsByCategory DropDownList](master-detail-filtering-with-two-dropdownlists-cs/_static/image50.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image49.png)
+[![По запросу productID значение параметра в элементе управления ProductsByCategory DropDownList](master-detail-filtering-with-two-dropdownlists-cs/_static/image50.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image49.png)
 
 **Рис. 17**: По запросу *`productID`* значение параметра из `ProductsByCategory` DropDownList ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image51.png))
 
@@ -166,7 +166,7 @@ ms.locfileid: "59421294"
 Чтобы помочь удается конкретизировать эту проблему, давайте рассмотрим конкретный пример. При первом посещении страницы выбранные категории «Напитки», и ее использовании связанные продукты загружаются в `ProductsByCategory` DropDownList. Chai является выбранного продукта и сведения о нем отображаются в `ProductDetails` DetailsView, как показано на рис. 18.
 
 
-[![Tон выбранные сведения о продукте отображаются в элементе управления DetailsView](master-detail-filtering-with-two-dropdownlists-cs/_static/image53.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image52.png)
+[![Сведения о продукте выбран, отображаются в элементе управления DetailsView](master-detail-filtering-with-two-dropdownlists-cs/_static/image53.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image52.png)
 
 **Рис. 18**: Сведения о продукте выбран, отображаются в элементе управления DetailsView ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image54.png))
 
@@ -174,7 +174,7 @@ ms.locfileid: "59421294"
 Если изменить выбор категории «Напитки» на «Специи», происходит обратная передача и `ProductsByCategory` DropDownList обновляется соответствующим образом, но DetailsView по-прежнему отображаются сведения для продукта Chai.
 
 
-[![Tон ранее выбранные сведения о продукте, по-прежнему отображаться](master-detail-filtering-with-two-dropdownlists-cs/_static/image56.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image55.png)
+[![Ранее выбранные сведения о продукте, по-прежнему отображаться](master-detail-filtering-with-two-dropdownlists-cs/_static/image56.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image55.png)
 
 **Рис. 19**: Ранее выбранные сведения о продукте, по-прежнему отображаются ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image57.png))
 
@@ -186,7 +186,7 @@ ms.locfileid: "59421294"
 Сформированной в этой ситуации проблема в том, что точка в жизненном цикле страницы, который элементов управления ObjectDataSource проверять изменения параметров происходит *перед* повторная привязка связанных данных веб-элементов управления. Таким образом при выборе новой категории `ProductsByCategoryDataSource` ObjectDataSource обнаруживает изменение в значении параметра. Элемент управления ObjectDataSource, используемые `ProductDetails` DetailsView, обратите внимание, не всех изменениях, поскольку `ProductsByCategory` DropDownList еще привязывается. Далее в жизненный цикл `ProductsByCategory` выполняет повторную привязку элемента управления DropDownList управления ObjectDataSource, получение продуктов для новой выбранной категории. Хотя `ProductsByCategory` DropDownList значение изменилось, `ProductDetails` DetailsView ObjectDataSource уже выполнил его проверить значение параметра; таким образом, элемент DetailsView отображает предыдущие результаты. Это взаимодействие показан на рис. 20.
 
 
-[![Tон ProductsByCategory DropDownList значение изменения после ProductDetails DetailsView элемент управления ObjectDataSource, проверяет наличие изменений](master-detail-filtering-with-two-dropdownlists-cs/_static/image59.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image58.png)
+[![Значение элемента управления ProductsByCategory DropDownList изменяется после ObjectDataSource ProductDetails DetailsView проверяет наличие изменений](master-detail-filtering-with-two-dropdownlists-cs/_static/image59.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image58.png)
 
 **Рис. 20**: `ProductsByCategory` Изменения значения элемента управления DropDownList после `ProductDetails` DetailsView ObjectDataSource, проверяет наличие изменений ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image60.png))
 
@@ -199,7 +199,7 @@ ms.locfileid: "59421294"
 После этого явным вызовом `ProductDetails` DetailsView `DataBind()` был добавлен метод, учебника работает должным образом. Рис. 21 основные особенности, как это изменить устранено возникли проблемы с более ранней.
 
 
-[![Tон ProductDetails DetailsView является вызывает событие явным образом обновляется при ProductsByCategory DropDownList с привязкой к данным](master-detail-filtering-with-two-dropdownlists-cs/_static/image62.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image61.png)
+[![ProductDetails DetailsView не вызывает событие DataBound явным образом обновляется при ProductsByCategory DropDownList](master-detail-filtering-with-two-dropdownlists-cs/_static/image62.png)](master-detail-filtering-with-two-dropdownlists-cs/_static/image61.png)
 
 **Рис. 21**: `ProductDetails` DetailsView не явным образом обновляется при `ProductsByCategory` DropDownList `DataBound` вызывает событие ([Просмотр полноразмерного изображения](master-detail-filtering-with-two-dropdownlists-cs/_static/image63.png))
 

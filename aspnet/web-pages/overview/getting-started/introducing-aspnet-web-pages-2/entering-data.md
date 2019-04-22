@@ -12,7 +12,7 @@ ms.openlocfilehash: d76f607f1d5e779d43ee15d8f2d697e7b0f147ae
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380123"
 ---
 # <a name="introducing-aspnet-web-pages---entering-database-data-by-using-forms"></a>Знакомство с веб-страниц ASP.NET — ввод данных базы данных с помощью форм
@@ -253,7 +253,7 @@ ms.locfileid: "59380123"
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-- [Введение в веб-программирование для ASP.NET с использованием синтаксиса Razor](https://go.microsoft.com/fwlink/?LinkID=202890)
+- [Введение в программирование веб-ASP.NET, с помощью синтаксиса Razor](https://go.microsoft.com/fwlink/?LinkID=202890)
 - [SQL в инструкции INSERT](http://www.w3schools.com/sql/sql_insert.asp) на сайте W3Schools
 - [Проверка вводимых пользователем данных в ASP.NET Web Pages сайты](https://go.microsoft.com/fwlink/?LinkId=253002). Дополнительные сведения о работе с `Validation` вспомогательный.
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: c55bbeb383b15f4dc9cb95d25905cade1e8c5c29
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418902"
 ---
 # <a name="adding-animation-to-a-control-vb"></a>Добавление анимации в элемент управления (VB)
@@ -72,7 +72,7 @@ ms.locfileid: "59418902"
 При выполнении этого скрипта панели отображается и исчезает в один с половиной секунд.
 
 
-[![Tпанель HE исчезновение](adding-animation-to-a-control-vb/_static/image2.png)](adding-animation-to-a-control-vb/_static/image1.png)
+[![Исчезновение панели](adding-animation-to-a-control-vb/_static/image2.png)](adding-animation-to-a-control-vb/_static/image1.png)
 
 Исчезновение панели ([Просмотр полноразмерного изображения](adding-animation-to-a-control-vb/_static/image3.png))
 

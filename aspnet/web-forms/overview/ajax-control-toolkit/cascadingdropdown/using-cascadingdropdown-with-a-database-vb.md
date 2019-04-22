@@ -12,7 +12,7 @@ ms.openlocfilehash: d0b6f8651e327cf9ad2a3051edd323efba4f64fc
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418733"
 ---
 # <a name="using-cascadingdropdown-with-a-database-vb"></a>Использование CascadingDropDown с базой данных (VB)
@@ -86,12 +86,12 @@ ms.locfileid: "59418733"
 Загрузки страницы ASP.NET, и через некоторое время короткий список поставщиков заполняется 25 записей. Выберите одну запись и обратите внимание на то, каким образом второго раскрывающегося списка заполняется данными.
 
 
-[![TПервый список он заполняется автоматически](using-cascadingdropdown-with-a-database-vb/_static/image2.png)](using-cascadingdropdown-with-a-database-vb/_static/image1.png)
+[![Первый список заполняется автоматически](using-cascadingdropdown-with-a-database-vb/_static/image2.png)](using-cascadingdropdown-with-a-database-vb/_static/image1.png)
 
 Первый список заполняется автоматически ([Просмотр полноразмерного изображения](using-cascadingdropdown-with-a-database-vb/_static/image3.png))
 
 
-[![Tвторой список он заполняется согласно выбору, в первом списке](using-cascadingdropdown-with-a-database-vb/_static/image5.png)](using-cascadingdropdown-with-a-database-vb/_static/image4.png)
+[![Второй список заполняется согласно выбору, в первом списке](using-cascadingdropdown-with-a-database-vb/_static/image5.png)](using-cascadingdropdown-with-a-database-vb/_static/image4.png)
 
 Второй список заполняется согласно выбору, в первом списке ([Просмотр полноразмерного изображения](using-cascadingdropdown-with-a-database-vb/_static/image6.png))
 

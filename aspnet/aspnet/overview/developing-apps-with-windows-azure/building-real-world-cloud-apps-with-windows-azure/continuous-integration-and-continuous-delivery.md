@@ -12,7 +12,7 @@ ms.openlocfilehash: 0fb0a331a2a6e2af5c5097db8b57942525d24ffc
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384309"
 ---
 # <a name="continuous-integration-and-continuous-delivery-building-real-world-cloud-apps-with-azure"></a>Непрерывная интеграция и непрерывная поставка (Создание реальных облачных приложений в Azure)
@@ -34,7 +34,7 @@ ms.locfileid: "59384309"
 
 На следующей схеме из [Microsoft Patterns and Practices электронная книга о непрерывной доставке](https://aka.ms/ReleasePipeline) иллюстрирует типичный рабочий процесс. Щелкните изображение, чтобы увидеть это в полном размере в исходный контекст.
 
-[![Cрабочий процесс доставки ontinuous](continuous-integration-and-continuous-delivery/_static/image1.png)](https://msdn.microsoft.com/library/dn449955.aspx)
+[![Рабочий процесс непрерывной поставки](continuous-integration-and-continuous-delivery/_static/image1.png)](https://msdn.microsoft.com/library/dn449955.aspx)
 
 ## <a name="how-the-cloud-enables-cost-effective-ci-and-cd"></a>Как облако обеспечивает экономичное CI и CD
 

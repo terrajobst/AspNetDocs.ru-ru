@@ -12,7 +12,7 @@ ms.openlocfilehash: 8f3eced3c482291203383c53aa97b97101839cce
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392824"
 ---
 # <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-3"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms — часть 3
@@ -42,7 +42,7 @@ ms.locfileid: "59392824"
 
 Переключиться в режим **разработки** просматривать и выбирать `EntityDataSource` элемента управления. В окне **Свойства** присвойте свойству `Where` значение `it.EnrollmentDate is not null`.
 
-[![Image01](the-entity-framework-and-aspnet-getting-started-part-3/_static/image10.png)](the-entity-framework-and-aspnet-getting-started-part-3/_static/image9.png)
+[!["Image01"](the-entity-framework-and-aspnet-getting-started-part-3/_static/image10.png)](the-entity-framework-and-aspnet-getting-started-part-3/_static/image9.png)
 
 Использовать в синтаксис `Where` свойство `EntityDataSource` элемент управления является Entity SQL. Язык Entity SQL аналогична Transact-SQL, но он настраивается для использования с сущностями, а не объекты базы данных. В выражении `it.EnrollmentDate is not null`, слово `it` представляет ссылку на сущность, возвращенных запросом. Таким образом `it.EnrollmentDate` ссылается на `EnrollmentDate` свойство `Person` сущности, `EntityDataSource` управления возвращает.
 
