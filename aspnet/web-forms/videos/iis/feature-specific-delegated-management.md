@@ -12,18 +12,18 @@ ms.openlocfilehash: a37a2153f5096d4d28569da234868ec70f6b4bbd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392785"
 ---
-# <a name="feature-specific-delegated-management"></a><span data-ttu-id="e087d-103">Делегированное управление для определенных функций</span><span class="sxs-lookup"><span data-stu-id="e087d-103">Feature Specific Delegated Management</span></span>
+# <a name="feature-specific-delegated-management"></a><span data-ttu-id="85d44-103">Делегированное управление для определенных функций</span><span class="sxs-lookup"><span data-stu-id="85d44-103">Feature Specific Delegated Management</span></span>
 
-<span data-ttu-id="e087d-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="e087d-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="85d44-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="85d44-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="e087d-105">В этом видео демонстрируется работа с удаленного управления содержится код функций веб-узла с помощью удаленного / делегированного администрирования IIS7.</span><span class="sxs-lookup"><span data-stu-id="e087d-105">This video demonstrates how to work with remotely administering SPECFIC web site features with IIS7 remote / delegated administration.</span></span>
+<span data-ttu-id="85d44-105">В этом видео демонстрируется работа с удаленного управления содержится код функций веб-узла с помощью удаленного / делегированного администрирования IIS7.</span><span class="sxs-lookup"><span data-stu-id="85d44-105">This video demonstrates how to work with remotely administering SPECFIC web site features with IIS7 remote / delegated administration.</span></span>
 
-[<span data-ttu-id="e087d-106">&#9654;Просмотрите видео (8 минут)</span><span class="sxs-lookup"><span data-stu-id="e087d-106">&#9654; Watch video (8 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/feature-specific-delegated-management)
+[<span data-ttu-id="85d44-106">&#9654;Просмотрите видео (8 минут)</span><span class="sxs-lookup"><span data-stu-id="85d44-106">&#9654; Watch video (8 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/feature-specific-delegated-management)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="e087d-107">[Назад](working-with-iis7-deligated-admin.md)
-> [Вперед](troubleshooting-production-aspnet-apps.md)</span><span class="sxs-lookup"><span data-stu-id="e087d-107">[Previous](working-with-iis7-deligated-admin.md)
+> <span data-ttu-id="85d44-107">[Назад](working-with-iis7-deligated-admin.md)
+> [Вперед](troubleshooting-production-aspnet-apps.md)</span><span class="sxs-lookup"><span data-stu-id="85d44-107">[Previous](working-with-iis7-deligated-admin.md)
 [Next](troubleshooting-production-aspnet-apps.md)</span></span>

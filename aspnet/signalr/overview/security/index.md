@@ -12,14 +12,14 @@ ms.openlocfilehash: 36589215f7676b34c8372afeb7ad11ab5736861c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59389964"
 ---
-# <a name="signalr-security"></a><span data-ttu-id="65541-103">Безопасности SignalR</span><span class="sxs-lookup"><span data-stu-id="65541-103">SignalR Security</span></span>
+# <a name="signalr-security"></a><span data-ttu-id="1fca7-103">Безопасности SignalR</span><span class="sxs-lookup"><span data-stu-id="1fca7-103">SignalR Security</span></span>
 
-> <span data-ttu-id="65541-104">Понимание и решение проблем безопасности, связанных приложений SignalR.</span><span class="sxs-lookup"><span data-stu-id="65541-104">Understanding and handling security issues in SignalR applications.</span></span>
+> <span data-ttu-id="1fca7-104">Понимание и решение проблем безопасности, связанных приложений SignalR.</span><span class="sxs-lookup"><span data-stu-id="1fca7-104">Understanding and handling security issues in SignalR applications.</span></span>
 
 
-- [<span data-ttu-id="65541-105">Общие сведения о безопасности SignalR</span><span class="sxs-lookup"><span data-stu-id="65541-105">Introduction to SignalR Security</span></span>](introduction-to-security.md)
-- [<span data-ttu-id="65541-106">Проверка подлинности и авторизация для концентраторов SignalR</span><span class="sxs-lookup"><span data-stu-id="65541-106">Authentication and Authorization for SignalR Hubs</span></span>](hub-authorization.md)
-- [<span data-ttu-id="65541-107">Проверка подлинности и авторизация для постоянных подключений SignalR</span><span class="sxs-lookup"><span data-stu-id="65541-107">Authentication and Authorization for SignalR Persistent Connections</span></span>](persistent-connection-authorization.md)
+- [<span data-ttu-id="1fca7-105">Общие сведения о безопасности SignalR</span><span class="sxs-lookup"><span data-stu-id="1fca7-105">Introduction to SignalR Security</span></span>](introduction-to-security.md)
+- [<span data-ttu-id="1fca7-106">Проверка подлинности и авторизация для концентраторов SignalR</span><span class="sxs-lookup"><span data-stu-id="1fca7-106">Authentication and Authorization for SignalR Hubs</span></span>](hub-authorization.md)
+- [<span data-ttu-id="1fca7-107">Проверка подлинности и авторизация для постоянных подключений SignalR</span><span class="sxs-lookup"><span data-stu-id="1fca7-107">Authentication and Authorization for SignalR Persistent Connections</span></span>](persistent-connection-authorization.md)

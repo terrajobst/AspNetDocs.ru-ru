@@ -12,16 +12,16 @@ ms.openlocfilehash: a3df375425c4c79f1274f466a6669997a1e3676f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390620"
 ---
-# <a name="aspnet-mvc-storefront-part-1-architectural-discussion-and-overview"></a><span data-ttu-id="90f26-104">Интернет-магазин на ASP.NET MVC, часть 1. Обзор и обсуждение архитектуры</span><span class="sxs-lookup"><span data-stu-id="90f26-104">ASP.NET MVC Storefront Part 1: Architectural Discussion and Overview</span></span>
+# <a name="aspnet-mvc-storefront-part-1-architectural-discussion-and-overview"></a><span data-ttu-id="413ce-104">Интернет-магазин на ASP.NET MVC, часть 1. Обзор и обсуждение архитектуры</span><span class="sxs-lookup"><span data-stu-id="413ce-104">ASP.NET MVC Storefront Part 1: Architectural Discussion and Overview</span></span>
 
-<span data-ttu-id="90f26-105">по [Роб Conery](https://github.com/robconery)</span><span class="sxs-lookup"><span data-stu-id="90f26-105">by [Rob Conery](https://github.com/robconery)</span></span>
+<span data-ttu-id="413ce-105">по [Роб Conery](https://github.com/robconery)</span><span class="sxs-lookup"><span data-stu-id="413ce-105">by [Rob Conery](https://github.com/robconery)</span></span>
 
-<span data-ttu-id="90f26-106">Rob Conery охватывает исходную архитектуру, в части 1, где он обсуждает шаблон репозитория с Эйенд Рахайн и Стив Хармен.</span><span class="sxs-lookup"><span data-stu-id="90f26-106">Rob Conery covers the initial architecture here, in part 1, where he discusses the Repository Pattern with Ayende Rahien and Steve Harman.</span></span> <span data-ttu-id="90f26-107">Он также запрашивает Фил Хаак Каков первый: Куриный теста или «яйца» модели.</span><span class="sxs-lookup"><span data-stu-id="90f26-107">He also asks Phil Haack what's first: The Test Chicken or the Model Egg.</span></span>
+<span data-ttu-id="413ce-106">Rob Conery охватывает исходную архитектуру, в части 1, где он обсуждает шаблон репозитория с Эйенд Рахайн и Стив Хармен.</span><span class="sxs-lookup"><span data-stu-id="413ce-106">Rob Conery covers the initial architecture here, in part 1, where he discusses the Repository Pattern with Ayende Rahien and Steve Harman.</span></span> <span data-ttu-id="413ce-107">Он также запрашивает Фил Хаак Каков первый: Куриный теста или «яйца» модели.</span><span class="sxs-lookup"><span data-stu-id="413ce-107">He also asks Phil Haack what's first: The Test Chicken or the Model Egg.</span></span>
 
-[<span data-ttu-id="90f26-108">&#9654;Просмотрите видео (10 минут)</span><span class="sxs-lookup"><span data-stu-id="90f26-108">&#9654; Watch video (10 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-1-architectural-discussion-and-overview)
+[<span data-ttu-id="413ce-108">&#9654;Просмотрите видео (10 минут)</span><span class="sxs-lookup"><span data-stu-id="413ce-108">&#9654; Watch video (10 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-1-architectural-discussion-and-overview)
 
 > [!div class="step-by-step"]
-> [<span data-ttu-id="90f26-109">Далее</span><span class="sxs-lookup"><span data-stu-id="90f26-109">Next</span></span>](aspnet-mvc-storefront-part-2-the-repository-pattern.md)
+> [<span data-ttu-id="413ce-109">Вперед</span><span class="sxs-lookup"><span data-stu-id="413ce-109">Next</span></span>](aspnet-mvc-storefront-part-2-the-repository-pattern.md)

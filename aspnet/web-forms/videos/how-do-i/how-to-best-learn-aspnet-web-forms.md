@@ -12,13 +12,13 @@ ms.openlocfilehash: 3f742bbe96848b8040d3248acd3e5fa5c8e818e4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383543"
 ---
-# <a name="how-to-best-learn-aspnet-web-forms"></a><span data-ttu-id="3ce02-103">Как лучше всего дополнительные веб-форм ASP.NET</span><span class="sxs-lookup"><span data-stu-id="3ce02-103">How to Best Learn ASP.NET Web Forms</span></span>
+# <a name="how-to-best-learn-aspnet-web-forms"></a><span data-ttu-id="6a62c-103">Как лучше всего дополнительные веб-форм ASP.NET</span><span class="sxs-lookup"><span data-stu-id="6a62c-103">How to Best Learn ASP.NET Web Forms</span></span>
 
-<span data-ttu-id="3ce02-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="3ce02-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="6a62c-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="6a62c-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="3ce02-105">Корпорации Майкрософт (Joe Stagner) рассказывается о том, что необходимо для сведения об использовании веб-форм ASP.NET для разработки веб-приложений.</span><span class="sxs-lookup"><span data-stu-id="3ce02-105">Microsoft's Joe Stagner shows you what you need to learn how to use ASP.NET Web Forms to develop your web applications.</span></span>
+<span data-ttu-id="6a62c-105">Корпорации Майкрософт (Joe Stagner) рассказывается о том, что необходимо для сведения об использовании веб-форм ASP.NET для разработки веб-приложений.</span><span class="sxs-lookup"><span data-stu-id="6a62c-105">Microsoft's Joe Stagner shows you what you need to learn how to use ASP.NET Web Forms to develop your web applications.</span></span>
 
-[<span data-ttu-id="3ce02-106">&#9654;Просмотрите видео (3 мин.)</span><span class="sxs-lookup"><span data-stu-id="3ce02-106">&#9654; Watch video (3 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-best-learn-aspnet-web-forms)
+[<span data-ttu-id="6a62c-106">&#9654;Просмотрите видео (3 мин.)</span><span class="sxs-lookup"><span data-stu-id="6a62c-106">&#9654; Watch video (3 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-best-learn-aspnet-web-forms)

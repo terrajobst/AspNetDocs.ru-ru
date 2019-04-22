@@ -12,13 +12,13 @@ ms.openlocfilehash: 6497eed7f70d76d9c4eb13b3d08ab7abe1f42b5d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59393409"
 ---
-# <a name="visual-studio-vnext-videos-css-editor-color-picker"></a><span data-ttu-id="8e94b-103">Visual Studio vNext видео: Палитра в редакторе CSS</span><span class="sxs-lookup"><span data-stu-id="8e94b-103">Visual Studio vNext Videos: CSS Editor Color Picker</span></span>
+# <a name="visual-studio-vnext-videos-css-editor-color-picker"></a><span data-ttu-id="f63c6-103">Visual Studio vNext видео: Палитра в редакторе CSS</span><span class="sxs-lookup"><span data-stu-id="f63c6-103">Visual Studio vNext Videos: CSS Editor Color Picker</span></span>
 
-<span data-ttu-id="8e94b-104">по [Мэдсом Kristensen](https://github.com/madskristensen)</span><span class="sxs-lookup"><span data-stu-id="8e94b-104">by [Mads Kristensen](https://github.com/madskristensen)</span></span>
+<span data-ttu-id="f63c6-104">по [Мэдсом Kristensen](https://github.com/madskristensen)</span><span class="sxs-lookup"><span data-stu-id="f63c6-104">by [Mads Kristensen](https://github.com/madskristensen)</span></span>
 
-<span data-ttu-id="8e94b-105">В этом видео Мэдс Kristensen демонстрирует палитра цветов в редакторе Visual Studio vNext CSS, который предоставляет быстрый доступ ко всем цветам в текущей таблице, а также селектора дополнительных цветовых с пипетку.</span><span class="sxs-lookup"><span data-stu-id="8e94b-105">In this video, Mads Kristensen demonstrates the Color Picker in the Visual Studio vNext CSS editor which gives quick access to all colors in the current spreadsheet and provides an advanced color selector with an eyedropper tool.</span></span>
+<span data-ttu-id="f63c6-105">В этом видео Мэдс Kristensen демонстрирует палитра цветов в редакторе Visual Studio vNext CSS, который предоставляет быстрый доступ ко всем цветам в текущей таблице, а также селектора дополнительных цветовых с пипетку.</span><span class="sxs-lookup"><span data-stu-id="f63c6-105">In this video, Mads Kristensen demonstrates the Color Picker in the Visual Studio vNext CSS editor which gives quick access to all colors in the current spreadsheet and provides an advanced color selector with an eyedropper tool.</span></span>
 
-[<span data-ttu-id="8e94b-106">&#9654;Просмотрите видео (1 мин.)</span><span class="sxs-lookup"><span data-stu-id="8e94b-106">&#9654; Watch video (1 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/visual-studio-vnext-videos-css-editor-color-picker)
+[<span data-ttu-id="f63c6-106">&#9654;Просмотрите видео (1 мин.)</span><span class="sxs-lookup"><span data-stu-id="f63c6-106">&#9654; Watch video (1 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/visual-studio-vnext-videos-css-editor-color-picker)

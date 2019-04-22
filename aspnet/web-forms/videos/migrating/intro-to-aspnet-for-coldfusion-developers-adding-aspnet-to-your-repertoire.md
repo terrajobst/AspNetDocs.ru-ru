@@ -12,18 +12,18 @@ ms.openlocfilehash: 644996c713f589c09b991589cf940f73c798809f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59388573"
 ---
-# <a name="intro-to-aspnet-for-coldfusion-developers-adding-aspnet-to-your-repertoire"></a><span data-ttu-id="74c8c-103">Введение в ASP.NET для разработчиков ColdFusion. Добавление ASP.NET в ваш репертуар</span><span class="sxs-lookup"><span data-stu-id="74c8c-103">Intro to ASP.NET for ColdFusion Developers: Adding ASP.NET to Your Repertoire</span></span>
+# <a name="intro-to-aspnet-for-coldfusion-developers-adding-aspnet-to-your-repertoire"></a><span data-ttu-id="b49ad-103">Введение в ASP.NET для разработчиков ColdFusion. Добавление ASP.NET в ваш репертуар</span><span class="sxs-lookup"><span data-stu-id="b49ad-103">Intro to ASP.NET for ColdFusion Developers: Adding ASP.NET to Your Repertoire</span></span>
 
-<span data-ttu-id="74c8c-104">по [Microsoft](https://github.com/microsoft)</span><span class="sxs-lookup"><span data-stu-id="74c8c-104">by [Microsoft](https://github.com/microsoft)</span></span>
+<span data-ttu-id="b49ad-104">по [Microsoft](https://github.com/microsoft)</span><span class="sxs-lookup"><span data-stu-id="b49ad-104">by [Microsoft](https://github.com/microsoft)</span></span>
 
-<span data-ttu-id="74c8c-105">Этот сеансов показано сравнение код простой, но real world между ColdFusion и ASP.NET.</span><span class="sxs-lookup"><span data-stu-id="74c8c-105">This sessions shows a simple yet real world code comparison between ColdFusion and ASP.NET.</span></span>
+<span data-ttu-id="b49ad-105">Этот сеансов показано сравнение код простой, но real world между ColdFusion и ASP.NET.</span><span class="sxs-lookup"><span data-stu-id="b49ad-105">This sessions shows a simple yet real world code comparison between ColdFusion and ASP.NET.</span></span>
 
-[<span data-ttu-id="74c8c-106">&#9654;Просмотрите видео (49 мин.)</span><span class="sxs-lookup"><span data-stu-id="74c8c-106">&#9654; Watch video (49 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/intro-to-aspnet-for-coldfusion-developers-adding-aspnet-to-your-repertoire)
+[<span data-ttu-id="b49ad-106">&#9654;Просмотрите видео (49 мин.)</span><span class="sxs-lookup"><span data-stu-id="b49ad-106">&#9654; Watch video (49 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/intro-to-aspnet-for-coldfusion-developers-adding-aspnet-to-your-repertoire)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="74c8c-107">[Назад](intro-to-aspnet-for-jsp-developers-building-applications.md)
-> [Вперед](introduction-to-aspnet-for-coldfusion-developers-building-an-aspnet-application.md)</span><span class="sxs-lookup"><span data-stu-id="74c8c-107">[Previous](intro-to-aspnet-for-jsp-developers-building-applications.md)
+> <span data-ttu-id="b49ad-107">[Назад](intro-to-aspnet-for-jsp-developers-building-applications.md)
+> [Вперед](introduction-to-aspnet-for-coldfusion-developers-building-an-aspnet-application.md)</span><span class="sxs-lookup"><span data-stu-id="b49ad-107">[Previous](intro-to-aspnet-for-jsp-developers-building-applications.md)
 [Next](introduction-to-aspnet-for-coldfusion-developers-building-an-aspnet-application.md)</span></span>

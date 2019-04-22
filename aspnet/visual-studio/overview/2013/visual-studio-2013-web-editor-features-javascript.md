@@ -12,13 +12,13 @@ ms.openlocfilehash: 6367c1546235aa9a3c68ac54e4ae7270ce422124
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59396828"
 ---
-# <a name="visual-studio-2013-web-editor-features---javascript"></a><span data-ttu-id="c2fb2-103">Функции веб-редактора Visual Studio 2013. JavaScript</span><span class="sxs-lookup"><span data-stu-id="c2fb2-103">Visual Studio 2013 Web Editor Features - JavaScript</span></span>
+# <a name="visual-studio-2013-web-editor-features---javascript"></a><span data-ttu-id="43312-103">Функции веб-редактора Visual Studio 2013. JavaScript</span><span class="sxs-lookup"><span data-stu-id="43312-103">Visual Studio 2013 Web Editor Features - JavaScript</span></span>
 
-<span data-ttu-id="c2fb2-104">по [(Scott hanselman)](https://github.com/shanselman)</span><span class="sxs-lookup"><span data-stu-id="c2fb2-104">by [Scott Hanselman](https://github.com/shanselman)</span></span>
+<span data-ttu-id="43312-104">по [(Scott hanselman)](https://github.com/shanselman)</span><span class="sxs-lookup"><span data-stu-id="43312-104">by [Scott Hanselman](https://github.com/shanselman)</span></span>
 
-<span data-ttu-id="c2fb2-105">Скотт Хансельман объясняет возможности редактора JavaScript в Visual Studio 2013.</span><span class="sxs-lookup"><span data-stu-id="c2fb2-105">Scott Hanselman explains the JavaScript editor features in Visual Studio 2013.</span></span>
+<span data-ttu-id="43312-105">Скотт Хансельман объясняет возможности редактора JavaScript в Visual Studio 2013.</span><span class="sxs-lookup"><span data-stu-id="43312-105">Scott Hanselman explains the JavaScript editor features in Visual Studio 2013.</span></span>
 
-[<span data-ttu-id="c2fb2-106">&#9654;Просмотрите видео (3 мин.)</span><span class="sxs-lookup"><span data-stu-id="c2fb2-106">&#9654; Watch video (3 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/visual-studio-2013-web-editor-features-javascript)
+[<span data-ttu-id="43312-106">&#9654;Просмотрите видео (3 мин.)</span><span class="sxs-lookup"><span data-stu-id="43312-106">&#9654; Watch video (3 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/visual-studio-2013-web-editor-features-javascript)

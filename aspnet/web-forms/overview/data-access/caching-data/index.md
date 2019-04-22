@@ -12,19 +12,19 @@ ms.openlocfilehash: 5bf69b1caacf32fe6a5bce3bcd2da037b3defc26
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59395710"
 ---
-# <a name="caching-data"></a><span data-ttu-id="7e75a-103">Кэширование данных</span><span class="sxs-lookup"><span data-stu-id="7e75a-103">Caching Data</span></span>
+# <a name="caching-data"></a><span data-ttu-id="be256-103">Кэширование данных</span><span class="sxs-lookup"><span data-stu-id="be256-103">Caching Data</span></span>
 
-> <span data-ttu-id="7e75a-104">Этот набор объясняет кэширования, что может повысить производительность веб-сайта, а также способы применения кэширования на уровень представления данных с помощью элемента управления ObjectDataSource.</span><span class="sxs-lookup"><span data-stu-id="7e75a-104">This tutorial set explains caching, which can improve site performance, and how to apply caching to the Presentation Layer using the ObjectDataSource control.</span></span>
+> <span data-ttu-id="be256-104">Этот набор объясняет кэширования, что может повысить производительность веб-сайта, а также способы применения кэширования на уровень представления данных с помощью элемента управления ObjectDataSource.</span><span class="sxs-lookup"><span data-stu-id="be256-104">This tutorial set explains caching, which can improve site performance, and how to apply caching to the Presentation Layer using the ObjectDataSource control.</span></span>
 
 
-- [<span data-ttu-id="7e75a-105">Кэширование данных с помощью ObjectDataSource (C#)</span><span class="sxs-lookup"><span data-stu-id="7e75a-105">Caching Data with the ObjectDataSource (C#)</span></span>](caching-data-with-the-objectdatasource-cs.md)
-- [<span data-ttu-id="7e75a-106">Кэширование данных в архитектуре (C#)</span><span class="sxs-lookup"><span data-stu-id="7e75a-106">Caching Data in the Architecture (C#)</span></span>](caching-data-in-the-architecture-cs.md)
-- [<span data-ttu-id="7e75a-107">Кэширование данных при запуске приложения (C#)</span><span class="sxs-lookup"><span data-stu-id="7e75a-107">Caching Data at Application Startup (C#)</span></span>](caching-data-at-application-startup-cs.md)
-- [<span data-ttu-id="7e75a-108">Использование зависимостей кэша SQL (C#)</span><span class="sxs-lookup"><span data-stu-id="7e75a-108">Using SQL Cache Dependencies (C#)</span></span>](using-sql-cache-dependencies-cs.md)
-- [<span data-ttu-id="7e75a-109">Кэширование данных с помощью ObjectDataSource (VB)</span><span class="sxs-lookup"><span data-stu-id="7e75a-109">Caching Data with the ObjectDataSource (VB)</span></span>](caching-data-with-the-objectdatasource-vb.md)
-- [<span data-ttu-id="7e75a-110">Кэширование данных в архитектуре (VB)</span><span class="sxs-lookup"><span data-stu-id="7e75a-110">Caching Data in the Architecture (VB)</span></span>](caching-data-in-the-architecture-vb.md)
-- [<span data-ttu-id="7e75a-111">Кэширование данных при запуске приложения (VB)</span><span class="sxs-lookup"><span data-stu-id="7e75a-111">Caching Data at Application Startup (VB)</span></span>](caching-data-at-application-startup-vb.md)
-- [<span data-ttu-id="7e75a-112">Использование зависимостей кэша SQL (VB)</span><span class="sxs-lookup"><span data-stu-id="7e75a-112">Using SQL Cache Dependencies (VB)</span></span>](using-sql-cache-dependencies-vb.md)
+- [<span data-ttu-id="be256-105">Кэширование данных с помощью ObjectDataSource (C#)</span><span class="sxs-lookup"><span data-stu-id="be256-105">Caching Data with the ObjectDataSource (C#)</span></span>](caching-data-with-the-objectdatasource-cs.md)
+- [<span data-ttu-id="be256-106">Кэширование данных в архитектуре (C#)</span><span class="sxs-lookup"><span data-stu-id="be256-106">Caching Data in the Architecture (C#)</span></span>](caching-data-in-the-architecture-cs.md)
+- [<span data-ttu-id="be256-107">Кэширование данных при запуске приложения (C#)</span><span class="sxs-lookup"><span data-stu-id="be256-107">Caching Data at Application Startup (C#)</span></span>](caching-data-at-application-startup-cs.md)
+- [<span data-ttu-id="be256-108">Использование зависимостей кэша SQL (C#)</span><span class="sxs-lookup"><span data-stu-id="be256-108">Using SQL Cache Dependencies (C#)</span></span>](using-sql-cache-dependencies-cs.md)
+- [<span data-ttu-id="be256-109">Кэширование данных с помощью ObjectDataSource (VB)</span><span class="sxs-lookup"><span data-stu-id="be256-109">Caching Data with the ObjectDataSource (VB)</span></span>](caching-data-with-the-objectdatasource-vb.md)
+- [<span data-ttu-id="be256-110">Кэширование данных в архитектуре (VB)</span><span class="sxs-lookup"><span data-stu-id="be256-110">Caching Data in the Architecture (VB)</span></span>](caching-data-in-the-architecture-vb.md)
+- [<span data-ttu-id="be256-111">Кэширование данных при запуске приложения (VB)</span><span class="sxs-lookup"><span data-stu-id="be256-111">Caching Data at Application Startup (VB)</span></span>](caching-data-at-application-startup-vb.md)
+- [<span data-ttu-id="be256-112">Использование зависимостей кэша SQL (VB)</span><span class="sxs-lookup"><span data-stu-id="be256-112">Using SQL Cache Dependencies (VB)</span></span>](using-sql-cache-dependencies-vb.md)

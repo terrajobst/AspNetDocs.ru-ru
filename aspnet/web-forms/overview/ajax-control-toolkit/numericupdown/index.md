@@ -12,13 +12,13 @@ ms.openlocfilehash: bbe259960bdbd02e070630b6b1000e2e999469f0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59387598"
 ---
-# <a name="numericupdown"></a><span data-ttu-id="afd53-103">NumericUpDown</span><span class="sxs-lookup"><span data-stu-id="afd53-103">NumericUpDown</span></span>
+# <a name="numericupdown"></a><span data-ttu-id="48c56-103">NumericUpDown</span><span class="sxs-lookup"><span data-stu-id="48c56-103">NumericUpDown</span></span>
 
-> <span data-ttu-id="afd53-104">Этом руководстве показано, как использовать элемент управления NumericUpDown, который позволяет пользователям выбирать значения, используя стрелки вверх и вниз.</span><span class="sxs-lookup"><span data-stu-id="afd53-104">This tutorial shows how to use the NumericUpDown control, which lets users select a value using up and down arrows.</span></span>
+> <span data-ttu-id="48c56-104">Этом руководстве показано, как использовать элемент управления NumericUpDown, который позволяет пользователям выбирать значения, используя стрелки вверх и вниз.</span><span class="sxs-lookup"><span data-stu-id="48c56-104">This tutorial shows how to use the NumericUpDown control, which lets users select a value using up and down arrows.</span></span>
 
 
-- [<span data-ttu-id="afd53-105">Создание числового поля со стрелками "вверх/вниз" с помощью серверной веб-службы (C#)</span><span class="sxs-lookup"><span data-stu-id="afd53-105">Creating a Numeric Up/Down Control with a Web Service Backend (C#)</span></span>](creating-a-numeric-up-down-control-with-a-web-service-backend-cs.md)
-- [<span data-ttu-id="afd53-106">Создание числового поля со стрелками "вверх/вниз" с помощью серверной веб-службы (VB)</span><span class="sxs-lookup"><span data-stu-id="afd53-106">Creating a Numeric Up/Down Control with a Web Service Backend (VB)</span></span>](creating-a-numeric-up-down-control-with-a-web-service-backend-vb.md)
+- [<span data-ttu-id="48c56-105">Создание числового поля со стрелками "вверх/вниз" с помощью серверной веб-службы (C#)</span><span class="sxs-lookup"><span data-stu-id="48c56-105">Creating a Numeric Up/Down Control with a Web Service Backend (C#)</span></span>](creating-a-numeric-up-down-control-with-a-web-service-backend-cs.md)
+- [<span data-ttu-id="48c56-106">Создание числового поля со стрелками "вверх/вниз" с помощью серверной веб-службы (VB)</span><span class="sxs-lookup"><span data-stu-id="48c56-106">Creating a Numeric Up/Down Control with a Web Service Backend (VB)</span></span>](creating-a-numeric-up-down-control-with-a-web-service-backend-vb.md)

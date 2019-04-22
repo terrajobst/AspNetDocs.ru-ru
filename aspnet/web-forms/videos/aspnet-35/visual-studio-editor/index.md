@@ -12,18 +12,18 @@ ms.openlocfilehash: fda6eaf86f3822bce0ca0dd834cd187897bce69d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392850"
 ---
-# <a name="visual-studio-editor"></a><span data-ttu-id="b89d2-103">Редактор Visual Studio</span><span class="sxs-lookup"><span data-stu-id="b89d2-103">Visual Studio Editor</span></span>
+# <a name="visual-studio-editor"></a><span data-ttu-id="3ef15-103">Редактор Visual Studio</span><span class="sxs-lookup"><span data-stu-id="3ef15-103">Visual Studio Editor</span></span>
 
-> <span data-ttu-id="b89d2-104">Эта серия учебных видеороликов описаны новые функции редактора Visual Studio 2008, включая улучшенную поддержку JavaScript и CSS.</span><span class="sxs-lookup"><span data-stu-id="b89d2-104">This video series shows you new features of the Visual Studio 2008 editor, including enhanced support for JavaScript and CSS.</span></span>
+> <span data-ttu-id="3ef15-104">Эта серия учебных видеороликов описаны новые функции редактора Visual Studio 2008, включая улучшенную поддержку JavaScript и CSS.</span><span class="sxs-lookup"><span data-stu-id="3ef15-104">This video series shows you new features of the Visual Studio 2008 editor, including enhanced support for JavaScript and CSS.</span></span>
 
 
-- [<span data-ttu-id="b89d2-105">Поддержка новых функций конструктора в Visual Studio 2008</span><span class="sxs-lookup"><span data-stu-id="b89d2-105">New Designer Support in Visual Studio 2008</span></span>](new-designer-support-in-visual-studio-2008.md)
-- [<span data-ttu-id="b89d2-106">Поддержка JavaScript IntelliSense в Visual Studio 2008</span><span class="sxs-lookup"><span data-stu-id="b89d2-106">JavaScript Intellisense Support in Visual Studio 2008</span></span>](javascript-intellisense-support-in-visual-studio-2008.md)
-- [<span data-ttu-id="b89d2-107">Отладка JavaScript в Visual Studio 2008</span><span class="sxs-lookup"><span data-stu-id="b89d2-107">JavaScript Debugging in Visual Studio 2008</span></span>](javascript-debugging-in-visual-studio-2008.md)
-- [<span data-ttu-id="b89d2-108">Поддержка нескольких платформ в Visual Studio 2008</span><span class="sxs-lookup"><span data-stu-id="b89d2-108">Multi Targeting Support in Visual Studio 2008</span></span>](multi-targeting-support-in-visual-studio-2008.md)
-- [<span data-ttu-id="b89d2-109">IntelliSense для JScript и ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="b89d2-109">IntelliSense for Jscript and ASP.NET AJAX</span></span>](intellisense-for-jscript-and-aspnet-ajax.md)
-- [<span data-ttu-id="b89d2-110">Краткий обзор интегрированной среды разработки Visual Studio 2008</span><span class="sxs-lookup"><span data-stu-id="b89d2-110">Quick Tour of the Visual Studio 2008 Integrated Development Environment</span></span>](quick-tour-of-the-visual-studio-2008-integrated-development-environment.md)
-- [<span data-ttu-id="b89d2-111">Создание и изменение CSS-файла</span><span class="sxs-lookup"><span data-stu-id="b89d2-111">Creating and Modifying a CSS File</span></span>](creating-and-modifying-a-css-file.md)
+- [<span data-ttu-id="3ef15-105">Поддержка новых функций конструктора в Visual Studio 2008</span><span class="sxs-lookup"><span data-stu-id="3ef15-105">New Designer Support in Visual Studio 2008</span></span>](new-designer-support-in-visual-studio-2008.md)
+- [<span data-ttu-id="3ef15-106">Поддержка JavaScript IntelliSense в Visual Studio 2008</span><span class="sxs-lookup"><span data-stu-id="3ef15-106">JavaScript Intellisense Support in Visual Studio 2008</span></span>](javascript-intellisense-support-in-visual-studio-2008.md)
+- [<span data-ttu-id="3ef15-107">Отладка JavaScript в Visual Studio 2008</span><span class="sxs-lookup"><span data-stu-id="3ef15-107">JavaScript Debugging in Visual Studio 2008</span></span>](javascript-debugging-in-visual-studio-2008.md)
+- [<span data-ttu-id="3ef15-108">Поддержка нескольких платформ в Visual Studio 2008</span><span class="sxs-lookup"><span data-stu-id="3ef15-108">Multi Targeting Support in Visual Studio 2008</span></span>](multi-targeting-support-in-visual-studio-2008.md)
+- [<span data-ttu-id="3ef15-109">IntelliSense для Jscript и ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="3ef15-109">IntelliSense for Jscript and ASP.NET AJAX</span></span>](intellisense-for-jscript-and-aspnet-ajax.md)
+- [<span data-ttu-id="3ef15-110">Краткий обзор интегрированной среды разработки Visual Studio 2008</span><span class="sxs-lookup"><span data-stu-id="3ef15-110">Quick Tour of the Visual Studio 2008 Integrated Development Environment</span></span>](quick-tour-of-the-visual-studio-2008-integrated-development-environment.md)
+- [<span data-ttu-id="3ef15-111">Создание и изменение CSS-файла</span><span class="sxs-lookup"><span data-stu-id="3ef15-111">Creating and Modifying a CSS File</span></span>](creating-and-modifying-a-css-file.md)

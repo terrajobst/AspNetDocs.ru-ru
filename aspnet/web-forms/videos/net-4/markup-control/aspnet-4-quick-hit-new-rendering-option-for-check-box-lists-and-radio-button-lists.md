@@ -12,16 +12,16 @@ ms.openlocfilehash: 079a43a72e24460c37a185764f82625068116757
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390848"
 ---
-# <a name="aspnet-4-quick-hit--new-rendering-option-for-check-box-lists-and-radio-button-lists"></a><span data-ttu-id="8ed15-103">ASP.NET 4 «Быстрый Hit» — новый параметр отрисовки для флажков и списков переключателей</span><span class="sxs-lookup"><span data-stu-id="8ed15-103">ASP.NET 4 "Quick Hit" – New Rendering Option for Check Box Lists and Radio Button Lists</span></span>
+# <a name="aspnet-4-quick-hit--new-rendering-option-for-check-box-lists-and-radio-button-lists"></a><span data-ttu-id="4dea9-103">ASP.NET 4 «Быстрый Hit» — новый параметр отрисовки для флажков и списков переключателей</span><span class="sxs-lookup"><span data-stu-id="4dea9-103">ASP.NET 4 "Quick Hit" – New Rendering Option for Check Box Lists and Radio Button Lists</span></span>
 
-<span data-ttu-id="8ed15-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="8ed15-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="4dea9-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="4dea9-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="8ed15-105">В этом видео вы узнаете о параметре RepeatLayout отрисовки для флажка и список "переключатель".</span><span class="sxs-lookup"><span data-stu-id="8ed15-105">In this video you will learn about the RepeatLayout rendering option for Check Box and Radio Button lists.</span></span> 
+<span data-ttu-id="4dea9-105">В этом видео вы узнаете о параметре RepeatLayout отрисовки для флажка и список "переключатель".</span><span class="sxs-lookup"><span data-stu-id="4dea9-105">In this video you will learn about the RepeatLayout rendering option for Check Box and Radio Button lists.</span></span> 
 
-[<span data-ttu-id="8ed15-106">&#9654;Просмотрите видео (4 минуты)</span><span class="sxs-lookup"><span data-stu-id="8ed15-106">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-4-quick-hit-new-rendering-option-for-check-box-lists-and-radio-button-lists)
+[<span data-ttu-id="4dea9-106">&#9654;Просмотрите видео (4 минуты)</span><span class="sxs-lookup"><span data-stu-id="4dea9-106">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-4-quick-hit-new-rendering-option-for-check-box-lists-and-radio-button-lists)
 
 > [!div class="step-by-step"]
-> [<span data-ttu-id="8ed15-107">Далее</span><span class="sxs-lookup"><span data-stu-id="8ed15-107">Next</span></span>](aspnet-4-quick-hit-table-free-templated-controls.md)
+> [<span data-ttu-id="4dea9-107">Вперед</span><span class="sxs-lookup"><span data-stu-id="4dea9-107">Next</span></span>](aspnet-4-quick-hit-table-free-templated-controls.md)

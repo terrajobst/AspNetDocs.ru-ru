@@ -12,18 +12,18 @@ ms.openlocfilehash: bbe5c24f88562d2e4eb0b70e8d83dbd92a90460f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384803"
 ---
-# <a name="how-do-i-get-started-with-linq-to-xml"></a><span data-ttu-id="e37f2-104">[Инструкции] Начало работы с LINQ to XML?</span><span class="sxs-lookup"><span data-stu-id="e37f2-104">[How Do I:] Get Started with LINQ to XML?</span></span>
+# <a name="how-do-i-get-started-with-linq-to-xml"></a><span data-ttu-id="f99b2-104">[Инструкции] Начало работы с LINQ to XML?</span><span class="sxs-lookup"><span data-stu-id="f99b2-104">[How Do I:] Get Started with LINQ to XML?</span></span>
 
-<span data-ttu-id="e37f2-105">по [Бет Масси](https://github.com/bethmassi)</span><span class="sxs-lookup"><span data-stu-id="e37f2-105">by [Beth Massi](https://github.com/bethmassi)</span></span>
+<span data-ttu-id="f99b2-105">по [Бет Масси](https://github.com/bethmassi)</span><span class="sxs-lookup"><span data-stu-id="f99b2-105">by [Beth Massi](https://github.com/bethmassi)</span></span>
 
-<span data-ttu-id="e37f2-106">Visual Basic разработчики узнают о работе с XML в Visual Basic с помощью XML-литералов, внедренных выражений и свойства оси XML для создания, запроса и преобразования XML-документов, легко.</span><span class="sxs-lookup"><span data-stu-id="e37f2-106">Visual Basic developers will learn how to work with XML in Visual Basic using XML literals, embedded expressions and XML axis properties to create, query and transform XML documents easily.</span></span>
+<span data-ttu-id="f99b2-106">Visual Basic разработчики узнают о работе с XML в Visual Basic с помощью XML-литералов, внедренных выражений и свойства оси XML для создания, запроса и преобразования XML-документов, легко.</span><span class="sxs-lookup"><span data-stu-id="f99b2-106">Visual Basic developers will learn how to work with XML in Visual Basic using XML literals, embedded expressions and XML axis properties to create, query and transform XML documents easily.</span></span>
 
-[<span data-ttu-id="e37f2-107">&#9654;Просмотрите видео (14 минут)</span><span class="sxs-lookup"><span data-stu-id="e37f2-107">&#9654; Watch video (14 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-get-started-with-linq-to-xml)
+[<span data-ttu-id="f99b2-107">&#9654;Просмотрите видео (14 минут)</span><span class="sxs-lookup"><span data-stu-id="f99b2-107">&#9654; Watch video (14 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-get-started-with-linq-to-xml)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="e37f2-108">[Назад](how-do-i-upgrade-visual-basic-projects-to-enable-linq.md)
-> [Вперед](how-do-i-enable-xml-intellisense-and-use-xml-namespaces.md)</span><span class="sxs-lookup"><span data-stu-id="e37f2-108">[Previous](how-do-i-upgrade-visual-basic-projects-to-enable-linq.md)
+> <span data-ttu-id="f99b2-108">[Назад](how-do-i-upgrade-visual-basic-projects-to-enable-linq.md)
+> [Вперед](how-do-i-enable-xml-intellisense-and-use-xml-namespaces.md)</span><span class="sxs-lookup"><span data-stu-id="f99b2-108">[Previous](how-do-i-upgrade-visual-basic-projects-to-enable-linq.md)
 [Next](how-do-i-enable-xml-intellisense-and-use-xml-namespaces.md)</span></span>

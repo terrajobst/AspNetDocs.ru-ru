@@ -12,18 +12,18 @@ ms.openlocfilehash: f14a8207e9883cdee2e35ec98d7fd64c82470d46
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59387865"
 ---
-# <a name="aspnet-ajax-a-demonstration-of-aspnet-ajax"></a><span data-ttu-id="66465-103">ASP.NET AJAX: Демонстрация ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="66465-103">ASP.NET AJAX: A demonstration of ASP.NET AJAX</span></span>
+# <a name="aspnet-ajax-a-demonstration-of-aspnet-ajax"></a><span data-ttu-id="6101b-103">ASP.NET AJAX: Демонстрация ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="6101b-103">ASP.NET AJAX: A demonstration of ASP.NET AJAX</span></span>
 
-<span data-ttu-id="66465-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="66465-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="6101b-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="6101b-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="66465-105">См. в разделе, насколько это просто создавать с нуля с помощью ASP.NET 2.0 приложения для управления «Список дел», а затем повысить удобство работы пользователей, с помощью расширений AJAX для ASP.NET.</span><span class="sxs-lookup"><span data-stu-id="66465-105">See how easy it is to build from scratch a "To Do List" management application using ASP.NET 2.0, and then enhance the user experience using the ASP.NET AJAX Extensions.</span></span>
+<span data-ttu-id="6101b-105">См. в разделе, насколько это просто создавать с нуля с помощью ASP.NET 2.0 приложения для управления «Список дел», а затем повысить удобство работы пользователей, с помощью расширений AJAX для ASP.NET.</span><span class="sxs-lookup"><span data-stu-id="6101b-105">See how easy it is to build from scratch a "To Do List" management application using ASP.NET 2.0, and then enhance the user experience using the ASP.NET AJAX Extensions.</span></span>
 
-[<span data-ttu-id="66465-106">&#9654;Просмотрите видео (20 минут)</span><span class="sxs-lookup"><span data-stu-id="66465-106">&#9654; Watch video (20 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-ajax-a-demonstration-of-aspnet-ajax)
+[<span data-ttu-id="6101b-106">&#9654;Просмотрите видео (20 минут)</span><span class="sxs-lookup"><span data-stu-id="6101b-106">&#9654; Watch video (20 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-ajax-a-demonstration-of-aspnet-ajax)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="66465-107">[Назад](creating-and-using-an-ajax-enabled-web-service-in-a-web-site.md)
-> [Вперед](adonet-data-services-with-aspnet-ajax-support.md)</span><span class="sxs-lookup"><span data-stu-id="66465-107">[Previous](creating-and-using-an-ajax-enabled-web-service-in-a-web-site.md)
+> <span data-ttu-id="6101b-107">[Назад](creating-and-using-an-ajax-enabled-web-service-in-a-web-site.md)
+> [Вперед](adonet-data-services-with-aspnet-ajax-support.md)</span><span class="sxs-lookup"><span data-stu-id="6101b-107">[Previous](creating-and-using-an-ajax-enabled-web-service-in-a-web-site.md)
 [Next](adonet-data-services-with-aspnet-ajax-support.md)</span></span>

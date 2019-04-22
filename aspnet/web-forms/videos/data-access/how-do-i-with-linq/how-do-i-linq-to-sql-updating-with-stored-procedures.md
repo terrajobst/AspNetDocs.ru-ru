@@ -12,18 +12,18 @@ ms.openlocfilehash: b91234b1e0c163a2f6350e93e775864e32218cc0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390328"
 ---
-# <a name="how-do-i-linq-to-sql-updating-with-stored-procedures"></a><span data-ttu-id="a625f-104">Инструкции: LINQ to SQL. Обновление с хранимыми процедурами</span><span class="sxs-lookup"><span data-stu-id="a625f-104">How Do I: LINQ to SQL: Updating with Stored Procedures</span></span>
+# <a name="how-do-i-linq-to-sql-updating-with-stored-procedures"></a><span data-ttu-id="4abe8-104">Инструкции: LINQ to SQL. Обновление с хранимыми процедурами</span><span class="sxs-lookup"><span data-stu-id="4abe8-104">How Do I: LINQ to SQL: Updating with Stored Procedures</span></span>
 
-<span data-ttu-id="a625f-105">по [Скотт Stanfield](https://github.com/scottstanfield)</span><span class="sxs-lookup"><span data-stu-id="a625f-105">by [Scott Stanfield](https://github.com/scottstanfield)</span></span>
+<span data-ttu-id="4abe8-105">по [Скотт Stanfield](https://github.com/scottstanfield)</span><span class="sxs-lookup"><span data-stu-id="4abe8-105">by [Scott Stanfield](https://github.com/scottstanfield)</span></span>
 
-<span data-ttu-id="a625f-106">Переопределите логику созданного ORM update/delete/insert на собственные посредством хранимых процедур.</span><span class="sxs-lookup"><span data-stu-id="a625f-106">Override the generated ORM update/delete/insert logic with your own through stored procedures.</span></span> <span data-ttu-id="a625f-107">Видео также показано в сведениях о том, как использовать SQL Profiler для мониторинга изменений в модель ORM Сохраняла из созданного SQL наших пользовательских процедур, выполняемых с SQL, которые хранятся.</span><span class="sxs-lookup"><span data-stu-id="a625f-107">The video also shows in detail how to use the SQL Profiler to monitor the changes in the ORM from generated SQL to our custom SQL stored procs.</span></span> <span data-ttu-id="a625f-108">Поскольку мы пишем просто SQL, те же методы применяются к C# и VB разработчиков.</span><span class="sxs-lookup"><span data-stu-id="a625f-108">Since we're just writing SQL, the same techniques apply to both C# and VB developers.</span></span>
+<span data-ttu-id="4abe8-106">Переопределите логику созданного ORM update/delete/insert на собственные посредством хранимых процедур.</span><span class="sxs-lookup"><span data-stu-id="4abe8-106">Override the generated ORM update/delete/insert logic with your own through stored procedures.</span></span> <span data-ttu-id="4abe8-107">Видео также показано в сведениях о том, как использовать SQL Profiler для мониторинга изменений в модель ORM Сохраняла из созданного SQL наших пользовательских процедур, выполняемых с SQL, которые хранятся.</span><span class="sxs-lookup"><span data-stu-id="4abe8-107">The video also shows in detail how to use the SQL Profiler to monitor the changes in the ORM from generated SQL to our custom SQL stored procs.</span></span> <span data-ttu-id="4abe8-108">Поскольку мы пишем просто SQL, те же методы применяются к C# и VB разработчиков.</span><span class="sxs-lookup"><span data-stu-id="4abe8-108">Since we're just writing SQL, the same techniques apply to both C# and VB developers.</span></span>
 
-[<span data-ttu-id="a625f-109">&#9654;Просмотрите видео (15 минут)</span><span class="sxs-lookup"><span data-stu-id="a625f-109">&#9654; Watch video (15 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-linq-to-sql-updating-with-stored-procedures)
+[<span data-ttu-id="4abe8-109">&#9654;Просмотрите видео (15 минут)</span><span class="sxs-lookup"><span data-stu-id="4abe8-109">&#9654; Watch video (15 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-linq-to-sql-updating-with-stored-procedures)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="a625f-110">[Назад](how-do-i-linq-to-sql-using-stored-procedures.md)
-> [Вперед](how-do-i-linq-to-sql-executing-arbitrary-sql.md)</span><span class="sxs-lookup"><span data-stu-id="a625f-110">[Previous](how-do-i-linq-to-sql-using-stored-procedures.md)
+> <span data-ttu-id="4abe8-110">[Назад](how-do-i-linq-to-sql-using-stored-procedures.md)
+> [Вперед](how-do-i-linq-to-sql-executing-arbitrary-sql.md)</span><span class="sxs-lookup"><span data-stu-id="4abe8-110">[Previous](how-do-i-linq-to-sql-using-stored-procedures.md)
 [Next](how-do-i-linq-to-sql-executing-arbitrary-sql.md)</span></span>
