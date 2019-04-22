@@ -12,14 +12,14 @@ ms.openlocfilehash: 188ab63dd84be5559d5a3646eb95caa77ab01bd1
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392005"
 ---
 # <a name="configuring-team-foundation-server-for-web-deployment"></a>Настройка Team Foundation Server для веб-развертывания
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Этом учебнике показано, как настроить Team Foundation Server (TFS) 2010 для создания решений и развертывания веб-содержимого для различных целевых средах. Сюда входят сценарии непрерывной интеграции (CI), где при развертывании содержимого автоматически каждый раз, когда разработчик вносит изменение. Оно также может включать ручной запуск сценариев, где администратор может потребоваться активировать развертывание для определенной сборки в среде промежуточного хранения в том случае, когда сборка будет проверено и проверен в тестовой среде. Разделы в данном руководстве поможет процесса настройки, включая:
 > 
@@ -75,4 +75,4 @@ ms.locfileid: "59392005"
 - [Advanced корпоративное веб-развертывание](../advanced-enterprise-web-deployment/advanced-enterprise-web-deployment.md). Это руководство содержит инструкции по выполнению различных задач более сложные развертывания, такие как настройка развертываний баз данных для нескольких сред, исключение файлов и папок из развертывания и получение веб-приложений в автономный режим во время развертывания .
 
 > [!div class="step-by-step"]
-> [Далее](creating-a-team-project-in-tfs.md)
+> [Вперед](creating-a-team-project-in-tfs.md)

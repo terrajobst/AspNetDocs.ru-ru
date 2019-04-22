@@ -12,7 +12,7 @@ ms.openlocfilehash: ecc0733c2850bc157c7ee5b251787152393481fc
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59385258"
 ---
 # <a name="intro-to-aspnet-mvc-4"></a>Введение в ASP.NET MVC 4
@@ -86,4 +86,4 @@ F5 приводит к Visual Studio для запуска IIS Express и вып
 Готовые этот шаблон по умолчанию позволяет дома, контактов и о страницы. Он также обеспечивает поддержку для регистрации и входа в, а также ссылки для Facebook и Twitter. Следующий шаг — изменить работу этого приложения и немного поговорим об ASP.NET MVC. Закройте обозреватель и изменим код.
 
 > [!div class="step-by-step"]
-> [Далее](adding-a-controller.md)
+> [Вперед](adding-a-controller.md)

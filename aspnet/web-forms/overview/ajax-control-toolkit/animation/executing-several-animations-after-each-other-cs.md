@@ -12,7 +12,7 @@ ms.openlocfilehash: 644af2485c1a51f2de209e968ba1b3475350fa47
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59394072"
 ---
 # <a name="executing-several-animations-after-each-other-c"></a>Выполнение нескольких анимаций друг за другом (C#)
@@ -51,12 +51,12 @@ ms.locfileid: "59394072"
 При выполнении этого сценария, панели первой получает шире и затем меньшего размера.
 
 
-[![Fервый ширина будет увеличена](executing-several-animations-after-each-other-cs/_static/image2.png)](executing-several-animations-after-each-other-cs/_static/image1.png)
+[![Сначала увеличивается ширина](executing-several-animations-after-each-other-cs/_static/image2.png)](executing-several-animations-after-each-other-cs/_static/image1.png)
 
 Сначала ширина увеличивается ([Просмотр полноразмерного изображения](executing-several-animations-after-each-other-cs/_static/image3.png))
 
 
-[![Tри высота уменьшается](executing-several-animations-after-each-other-cs/_static/image5.png)](executing-several-animations-after-each-other-cs/_static/image4.png)
+[![Затем уменьшается на высоту](executing-several-animations-after-each-other-cs/_static/image5.png)](executing-several-animations-after-each-other-cs/_static/image4.png)
 
 Затем уменьшается на высоту ([Просмотр полноразмерного изображения](executing-several-animations-after-each-other-cs/_static/image6.png))
 

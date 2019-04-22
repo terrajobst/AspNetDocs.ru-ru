@@ -12,7 +12,7 @@ ms.openlocfilehash: e3e097663568b21ee3f84c7006a0bd89718ac6c2
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59380285"
 ---
 # <a name="recovering-and-changing-passwords-c"></a>Восстановление и смена паролей (C#)
@@ -63,7 +63,7 @@ ASP.NET включает в себя два веб-элементы управл
 Рис. 1 показано, как интерфейс и поведение PasswordRecovery зависит от конфигурации членства.
 
 
-[![Tон RequiresQuestionAndAnswer EnablePasswordRetrieval и EnablePasswordReset влияют на внешний вид элемента управления PasswordRecovery и поведение](recovering-and-changing-passwords-cs/_static/image2.png)](recovering-and-changing-passwords-cs/_static/image1.png)
+[![RequiresQuestionAndAnswer, EnablePasswordRetrieval и EnablePasswordReset влияют на внешний вид и поведение элемента управления PasswordRecovery](recovering-and-changing-passwords-cs/_static/image2.png)](recovering-and-changing-passwords-cs/_static/image1.png)
 
 **Рис. 1**: `RequiresQuestionAndAnswer`, `EnablePasswordRetrieval`, И `EnablePasswordReset` влияют на внешний вид и поведение элемента управления PasswordRecovery ([Просмотр полноразмерного изображения](recovering-and-changing-passwords-cs/_static/image3.png))
 
@@ -93,7 +93,7 @@ ASP.NET включает в себя два веб-элементы управл
 Когда вы настроили параметры SMTP, перейдите на `RecoverPassword.aspx` страницы в обозревателе. Сначала попробуйте ввести имя пользователя, который не существует в хранилище пользователя. Как показано на рис. 2, элемент управления PasswordRecovery отображает сообщение о том, что сведения о пользователе оказываются недоступны. Текст сообщения можно настроить с помощью элемента управления [ `UserNameFailureText` свойство](https://msdn.microsoft.com/library/system.web.ui.webcontrols.passwordrecovery.usernamefailuretext.aspx).
 
 
-[![An сообщение об ошибке отображается в том случае, если введено неправильное имя пользователя](recovering-and-changing-passwords-cs/_static/image5.png)](recovering-and-changing-passwords-cs/_static/image4.png)
+[![Сообщение об ошибке отображается в том случае, если введено неправильное имя пользователя](recovering-and-changing-passwords-cs/_static/image5.png)](recovering-and-changing-passwords-cs/_static/image4.png)
 
 **Рис. 2**: Сообщение об ошибке отображается в том случае, если введено неправильное имя пользователя ([Просмотр полноразмерного изображения](recovering-and-changing-passwords-cs/_static/image6.png))
 
@@ -101,7 +101,7 @@ ASP.NET включает в себя два веб-элементы управл
 Теперь введите имя пользователя. Используйте имя пользователя учетной записи в системе с адресом электронной почты, что вы можете получить доступ к и ответить на безопасности, которых вы знаете. После ввода имени пользователя и нажав кнопку Submit, элемент управления PasswordRecovery отображает его представления вопроса. Как с помощью представления имени пользователя, при вводе некорректное ответить на элемент управления отображает PasswordRecovery, сообщение об ошибке (см. рис. 3). Используйте [ `QuestionFailureText` свойство](https://msdn.microsoft.com/library/system.web.ui.webcontrols.passwordrecovery.questionfailuretext.aspx) осуществить это сообщение об ошибке.
 
 
-[![An сообщение об ошибке отображается в том случае, если пользователь введет недопустимый ответ на контрольный вопрос](recovering-and-changing-passwords-cs/_static/image8.png)](recovering-and-changing-passwords-cs/_static/image7.png)
+[![Сообщение об ошибке отображается в том случае, если пользователь введет недопустимый ответ на контрольный вопрос](recovering-and-changing-passwords-cs/_static/image8.png)](recovering-and-changing-passwords-cs/_static/image7.png)
 
 **Рис. 3**: Сообщение об ошибке отображается в том случае, если пользователь введет недопустимый ответ на контрольный вопрос ([Просмотр полноразмерного изображения](recovering-and-changing-passwords-cs/_static/image9.png))
 
@@ -109,7 +109,7 @@ ASP.NET включает в себя два веб-элементы управл
 Наконец введите правильный контрольному ответу и нажмите кнопку Отправить. На самом деле управления PasswordRecovery создает случайный пароль, ей назначается учетной записи пользователя, отправляет сообщение электронной почты, информирующее пользователя новым паролем (см. рис. 4), а затем отображает представлении "успешно".
 
 
-[![Tон пользователя отправляется сообщение электронной почты с His новый пароль](recovering-and-changing-passwords-cs/_static/image11.png)](recovering-and-changing-passwords-cs/_static/image10.png)
+[![Пользователю отправляется сообщение электронной почты с His новый пароль](recovering-and-changing-passwords-cs/_static/image11.png)](recovering-and-changing-passwords-cs/_static/image10.png)
 
 **Рис. 4**: Пользователю отправляется сообщение электронной почты с His новый пароль ([Просмотр полноразмерного изображения](recovering-and-changing-passwords-cs/_static/image12.png))
 
@@ -145,7 +145,7 @@ ASP.NET включает в себя два веб-элементы управл
 После внесения этих изменений вернуться к этому `RecoverPassword.aspx` и введите имя пользователя и безопасности ответа. Вы получите следует сообщение электронной почты, который выглядит, как показано на рис. 5. Обратите внимание, что `webmaster@example.com` был бы "Копия" и что обновились тему и текст.
 
 
-[![Tон темы, текста и копия списка были обновлены](recovering-and-changing-passwords-cs/_static/image14.png)](recovering-and-changing-passwords-cs/_static/image13.png)
+[![Темы, текста и список "Копия" были обновлены](recovering-and-changing-passwords-cs/_static/image14.png)](recovering-and-changing-passwords-cs/_static/image13.png)
 
 **Рис. 5**: Темы, текста и копия списка были обновлены ([Просмотр полноразмерного изображения](recovering-and-changing-passwords-cs/_static/image15.png))
 
@@ -197,7 +197,7 @@ ASP.NET включает в себя два веб-элементы управл
 Откройте `ChangePassword.aspx` странице и добавьте элемент управления ChangePassword к странице, назвав его `ChangePwd`. На этом этапе в режим конструктора должно отображаться по изменению пароля представления (см. рис. 6). Как с элементом управления PasswordRecovery, можно переключаться между представлениями через смарт-тега элемента управления. Кроме того эти представления внешний вид настраиваются через свойства различные стиля или путем их преобразования в шаблон.
 
 
-[![Aдд на страницу элемент управления ChangePassword](recovering-and-changing-passwords-cs/_static/image17.png)](recovering-and-changing-passwords-cs/_static/image16.png)
+[![Добавьте на страницу элемент управления ChangePassword](recovering-and-changing-passwords-cs/_static/image17.png)](recovering-and-changing-passwords-cs/_static/image16.png)
 
 **Рис. 6**: Добавьте на страницу элемент управления ChangePassword ([Просмотр полноразмерного изображения](recovering-and-changing-passwords-cs/_static/image18.png))
 
@@ -215,7 +215,7 @@ ASP.NET включает в себя два веб-элементы управл
 Посетите `ChangePassword.aspx` странице через браузер и измените пароль. Обратите внимание, что отображается сообщение об ошибке, если ввести новый пароль, который не соответствует требованиям не буквенно-цифровых символов, указанным в конфигурации членства и длина пароля (см. рис. 7).
 
 
-[![Aдд на страницу элемент управления ChangePassword](recovering-and-changing-passwords-cs/_static/image20.png)](recovering-and-changing-passwords-cs/_static/image19.png)
+[![Добавьте на страницу элемент управления ChangePassword](recovering-and-changing-passwords-cs/_static/image20.png)](recovering-and-changing-passwords-cs/_static/image19.png)
 
 **Рис. 7**: Добавьте на страницу элемент управления ChangePassword ([Просмотр полноразмерного изображения](recovering-and-changing-passwords-cs/_static/image21.png))
 
@@ -235,7 +235,7 @@ ASP.NET включает в себя два веб-элементы управл
 После внесения этих изменений, повторном посещении страницы и изменить пароль снова. На этот раз элемент управления ChangePassword отправляет свои собственные, формате HTML по электронной почте на адрес электронной почты пользователя в файле (см. рис. 8).
 
 
-[![An по электронной почте сообщение о том, что их пароль пользователя был изменен](recovering-and-changing-passwords-cs/_static/image23.png)](recovering-and-changing-passwords-cs/_static/image22.png)
+[![По электронной почте сообщение о том, что их пароль пользователя был изменен](recovering-and-changing-passwords-cs/_static/image23.png)](recovering-and-changing-passwords-cs/_static/image22.png)
 
 **Рис. 8**: По электронной почте сообщение о том, что их пароль пользователя был изменен ([Просмотр полноразмерного изображения](recovering-and-changing-passwords-cs/_static/image24.png))
 
@@ -273,7 +273,7 @@ ASP.NET включает в себя два веб-элементы управл
 После ввода нового пароля, подтверждение его второго текстового поля и щелкнув кнопкой "Обновить пользователя", обратная и `aspnet_Membership_SetPassword` хранимой процедуры, выполняя обновление пароля. Я советую тем читателям, интересует эта функция более тесно знакомятся с кодом, и повторите расширение функциональных возможностей для включения отправки электронного сообщения для пользователя, чей пароль был изменен.
 
 
-[![An администратор может менять пароль](recovering-and-changing-passwords-cs/_static/image26.png)](recovering-and-changing-passwords-cs/_static/image25.png)
+[![Администратор может изменить пароль пользователя](recovering-and-changing-passwords-cs/_static/image26.png)](recovering-and-changing-passwords-cs/_static/image25.png)
 
 **Рис. 9**: Администратор может изменить пароль пользователя ([Просмотр полноразмерного изображения](recovering-and-changing-passwords-cs/_static/image27.png))
 

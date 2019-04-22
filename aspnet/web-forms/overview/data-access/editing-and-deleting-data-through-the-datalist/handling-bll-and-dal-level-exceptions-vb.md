@@ -12,7 +12,7 @@ ms.openlocfilehash: 358d8605ed602720c7dd1687c8bdbb4275753529
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386103"
 ---
 # <a name="handling-bll--and-dal-level-exceptions-vb"></a>Обработка исключений уровней BLL и DAL (VB)
@@ -41,7 +41,7 @@ ms.locfileid: "59386103"
 Прежде чем думать об обработке исключений, происходящих во время обновления рабочего процесса, позвольте s сначала создать редактируемый элемент управления DataList. Откройте `ErrorHandling.aspx` странице в `EditDeleteDataList` добавьте элемент управления DataList в конструктор, набор папок, его `ID` свойства `Products`, и добавьте новый ObjectDataSource, именуемый `ProductsDataSource`. Настройка ObjectDataSource на использование `ProductsBLL` класс s `GetProducts()` записывает метод выбора; задать раскрывающиеся списки в инструкции INSERT, UPDATE и удаление вкладок (нет).
 
 
-[![Rь сведения о продукте, с помощью метода GetProducts()](handling-bll-and-dal-level-exceptions-vb/_static/image2.png)](handling-bll-and-dal-level-exceptions-vb/_static/image1.png)
+[![Возвращает сведения о продукте, с помощью метода GetProducts()](handling-bll-and-dal-level-exceptions-vb/_static/image2.png)](handling-bll-and-dal-level-exceptions-vb/_static/image1.png)
 
 **Рис. 1**: Возвращает сведения о продукте с помощью `GetProducts()` метод ([Просмотр полноразмерного изображения](handling-bll-and-dal-level-exceptions-vb/_static/image3.png))
 
@@ -60,7 +60,7 @@ ms.locfileid: "59386103"
 Отвлекитесь и просмотрите ход работы в обозревателе (см. рис. 2).
 
 
-[![EACH продукта содержит кнопку "Изменить".](handling-bll-and-dal-level-exceptions-vb/_static/image5.png)](handling-bll-and-dal-level-exceptions-vb/_static/image4.png)
+[![Кнопка «Изменить» включает в себя каждого продукта](handling-bll-and-dal-level-exceptions-vb/_static/image5.png)](handling-bll-and-dal-level-exceptions-vb/_static/image4.png)
 
 **Рис. 2**: Каждый продукт включает кнопка Изменить ([Просмотр полноразмерного изображения](handling-bll-and-dal-level-exceptions-vb/_static/image6.png))
 
@@ -115,12 +115,12 @@ ms.locfileid: "59386103"
 С помощью `Try ... Catch` блока в месте, пользователям предоставляется более подробное сообщение об ошибке, как рис. 4 и 5 show. Обратите внимание, что при возникновении исключения DataList остается в режиме редактирования. Это обусловлено тем, как только произойдет исключение, поток управления немедленно перенаправлены в `Catch` блока, минуя код, который возвращает состояние до редактирования элемента управления DataList.
 
 
-[![An сообщение об ошибке отображается в том случае, когда пользователь опускает необходимые поля](handling-bll-and-dal-level-exceptions-vb/_static/image9.png)](handling-bll-and-dal-level-exceptions-vb/_static/image8.png)
+[![Сообщение об ошибке отображается в том случае, когда пользователь опускает необходимые поля](handling-bll-and-dal-level-exceptions-vb/_static/image9.png)](handling-bll-and-dal-level-exceptions-vb/_static/image8.png)
 
 **Рис. 4**: Сообщение об ошибке отображается в том случае, когда пользователь опускает необходимые поля ([Просмотр полноразмерного изображения](handling-bll-and-dal-level-exceptions-vb/_static/image10.png))
 
 
-[![An сообщение об ошибке — это отображается при вводе отрицательное цена](handling-bll-and-dal-level-exceptions-vb/_static/image12.png)](handling-bll-and-dal-level-exceptions-vb/_static/image11.png)
+[![Сообщение об ошибке — отображаются при вводе отрицательное цены](handling-bll-and-dal-level-exceptions-vb/_static/image12.png)](handling-bll-and-dal-level-exceptions-vb/_static/image11.png)
 
 **Рис. 5**: Сообщение об ошибке — отображаются при вводе отрицательное цены ([Просмотр полноразмерного изображения](handling-bll-and-dal-level-exceptions-vb/_static/image13.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 727ef89069d3f1ddf22e993e1e3dceb144a43389
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390628"
 ---
 # <a name="customizing-the-data-modification-interface-c"></a>Настройка интерфейса изменения данных (C#)
@@ -31,7 +31,7 @@ ms.locfileid: "59390628"
 В [предыдущем учебном курсе](adding-validation-controls-to-the-editing-and-inserting-interfaces-cs.md) мы узнали, как настройка интерфейса изменения данных путем добавления веб-элементов управления проверки. В этом руководстве мы рассмотрим способы настройки фактические данные коллекции веб-элементов управления, заменив BoundField и стандартные текстовые поля в CheckBoxField и элементов управления CheckBox, альтернативный веб-элементами управления ввода. В частности мы создадим изменяемого элемента управления GridView, позволяющий продукта имя, категорию, поставщика и снят с производства обновляться. При редактировании конкретной строки, категорию и поставщика поля будут отображаться как элементов управления DropDownList, содержащую набор доступных категорий и поставщиков для выбора. Кроме того мы заменим CheckBoxField по умолчанию флажок с элементом управления RadioButtonList, предлагает два варианта: «Активный» и «Более не поддерживается».
 
 
-[![TРедактирование интерфейса включает элементов управления DropDownList и переключатели HE GridView](customizing-the-data-modification-interface-cs/_static/image2.png)](customizing-the-data-modification-interface-cs/_static/image1.png)
+[![Интерфейс правки элемента GridView включает элементов управления DropDownList и переключатели](customizing-the-data-modification-interface-cs/_static/image2.png)](customizing-the-data-modification-interface-cs/_static/image1.png)
 
 **Рис. 1**: Редактирование интерфейса включает элементов управления DropDownList и переключатели к GridView ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image3.png))
 
@@ -56,7 +56,7 @@ ms.locfileid: "59390628"
 С помощью `UpdateProduct` добавлена перегрузка, мы готовы к созданию наших изменяемого элемента управления GridView. Откройте `CustomizedUI.aspx` странице в `EditInsertDelete` папку и добавьте элемент управления GridView в конструктор. Создайте новый ObjectDataSource смарт-теге элемента GridView. Настройка ObjectDataSource для получения сведений о продуктах с помощью `ProductBLL` класса `GetProducts()` метода и обновления данных с помощью продукта `UpdateProduct` мы только что созданной перегрузки. На вкладках INSERT и DELETE выберите (нет) из раскрывающихся списков.
 
 
-[![CНастройка ObjectDataSource на использование UpdateProduct перегрузки только что создали](customizing-the-data-modification-interface-cs/_static/image5.png)](customizing-the-data-modification-interface-cs/_static/image4.png)
+[![Настройка ObjectDataSource на использование только что созданной перегрузки UpdateProduct](customizing-the-data-modification-interface-cs/_static/image5.png)](customizing-the-data-modification-interface-cs/_static/image4.png)
 
 **Рис. 2**: Настройка ObjectDataSource для использования `UpdateProduct` перегрузки только что создали ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image6.png))
 
@@ -80,7 +80,7 @@ ms.locfileid: "59390628"
 После внесения этих изменений конструктор будет выглядеть на рис. 3 с помощью декларативного синтаксиса элемента GridView, показано ниже.
 
 
-[![Rудалить ненужные поля GridView](customizing-the-data-modification-interface-cs/_static/image8.png)](customizing-the-data-modification-interface-cs/_static/image7.png)
+[![Удалить ненужные поля из GridView](customizing-the-data-modification-interface-cs/_static/image8.png)](customizing-the-data-modification-interface-cs/_static/image7.png)
 
 **Рис. 3**: Удалить ненужные поля из GridView ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image9.png))
 
@@ -90,7 +90,7 @@ ms.locfileid: "59390628"
 На этом этапе завершена GridView поведение только для чтения. При просмотре данных, каждого продукта отображается в виде строки в GridView, Отображение названия продукта, категории, поставщика и более не поддерживается состояние.
 
 
-[![TИнтерфейс только для чтения HE GridView — Complete](customizing-the-data-modification-interface-cs/_static/image11.png)](customizing-the-data-modification-interface-cs/_static/image10.png)
+[![Интерфейс только для чтения элемента GridView — завершено](customizing-the-data-modification-interface-cs/_static/image11.png)](customizing-the-data-modification-interface-cs/_static/image10.png)
 
 **Рис. 4**: Интерфейс только для чтения элемента GridView — Complete ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image12.png))
 
@@ -124,7 +124,7 @@ ms.locfileid: "59390628"
 Как мы видели в предыдущих учебных курсах, шаблон можно изменить в конструкторе или непосредственно из декларативного синтаксиса. Чтобы изменить его в конструкторе, щелкните ссылку Изменить шаблоны смарт-теге элемента GridView и работы с помощью поля «Категория» `EditItemTemplate`. Удалить элемент управления Label Web и замените элемент управления DropDownList, присвоить значение DropDownList свойство ID `Categories`.
 
 
-[![Rудалить текстовое поле и добавить DropDownList для EditItemTemplate](customizing-the-data-modification-interface-cs/_static/image14.png)](customizing-the-data-modification-interface-cs/_static/image13.png)
+[![Удалите текстовое поле и добавьте к EditItemTemplate элемента управления DropDownList](customizing-the-data-modification-interface-cs/_static/image14.png)](customizing-the-data-modification-interface-cs/_static/image13.png)
 
 **Рис. 5**: Удалите текстовое поле и добавление элемента управления DropDownList для `EditItemTemplate` ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image15.png))
 
@@ -132,7 +132,7 @@ ms.locfileid: "59390628"
 Далее нам нужно заполнить DropDownList с доступные категории. Щелкните ссылку выберите источник данных смарт-теге DropDownList и создадим новый ObjectDataSource, именуемый `CategoriesDataSource`.
 
 
-[![CСоздание нового ObjectDataSource элемента управления с именем CategoriesDataSource](customizing-the-data-modification-interface-cs/_static/image17.png)](customizing-the-data-modification-interface-cs/_static/image16.png)
+[![Создать новый элемент управления ObjectDataSource с именем CategoriesDataSource](customizing-the-data-modification-interface-cs/_static/image17.png)](customizing-the-data-modification-interface-cs/_static/image16.png)
 
 **Рис. 6**: Создать новый элемент управления ObjectDataSource с именем `CategoriesDataSource` ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image18.png))
 
@@ -140,7 +140,7 @@ ms.locfileid: "59390628"
 Чтобы данный элемент управления ObjectDataSource возвращает все категории, привяжите его к `CategoriesBLL` класса `GetCategories()` метод.
 
 
-[![BIND ObjectDataSource для метода GetCategories() CategoriesBLL](customizing-the-data-modification-interface-cs/_static/image20.png)](customizing-the-data-modification-interface-cs/_static/image19.png)
+[![Привязать ObjectDataSource к метода GetCategories() CategoriesBLL](customizing-the-data-modification-interface-cs/_static/image20.png)](customizing-the-data-modification-interface-cs/_static/image19.png)
 
 **Рис. 7**: Привязать ObjectDataSource к `CategoriesBLL` `GetCategories()` метод ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image21.png))
 
@@ -148,7 +148,7 @@ ms.locfileid: "59390628"
 Наконец, настройте параметры DropDownList таким образом, чтобы `CategoryName` поле должно отображаться на каждой DropDownList `ListItem` с `CategoryID` поле, используемое в качестве значения.
 
 
-[![HAve отображено поле «Категория» и CategoryID использовать в качестве значения](customizing-the-data-modification-interface-cs/_static/image23.png)](customizing-the-data-modification-interface-cs/_static/image22.png)
+[![Отображается в поле «Категория» и CategoryID использовать в качестве значения](customizing-the-data-modification-interface-cs/_static/image23.png)](customizing-the-data-modification-interface-cs/_static/image22.png)
 
 **Рис. 8**: У `CategoryName` поле отображается и `CategoryID` используется в качестве значения ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image24.png))
 
@@ -167,7 +167,7 @@ ms.locfileid: "59390628"
 После добавления двух элементов управления DropDownList `EditItemTemplate` s, загрузки страницы в браузере и нажмите кнопку Edit для Chef Anton's Cajun Seasoning продукта. Как показано на рис. 9, категорию и поставщика столбцы продукта, отображаются как раскрывающиеся списки, содержащий доступные категории и поставщики для выбора. Тем не менее, обратите внимание, что *первый* элементы в обоих раскрывающихся списках выбраны по умолчанию («напитки» для категории) и Exotic Liquids как поставщик, несмотря на то, что Chef Anton's Cajun Seasoning — это Condiment, предоставляемые New Orleans Cajun Радует.
 
 
-[![TПервый элемент в раскрывающемся списке указаны он выбран по умолчанию](customizing-the-data-modification-interface-cs/_static/image26.png)](customizing-the-data-modification-interface-cs/_static/image25.png)
+[![По умолчанию выбран первый элемент в раскрывающемся списке указаны](customizing-the-data-modification-interface-cs/_static/image26.png)](customizing-the-data-modification-interface-cs/_static/image25.png)
 
 **Рис. 9**: По умолчанию выбран первый элемент в раскрывающемся списке указаны ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image27.png))
 
@@ -181,7 +181,7 @@ ms.locfileid: "59390628"
 Кроме того можно задать DropDownList databindings, изменив шаблон через конструктор и щелкнув ссылку Edit DataBindings в смарт-теге DropDownList. Затем указать, что `SelectedValue` свойство должно быть связано с `CategoryID` поле использование двусторонней привязки данных (см. рис. 10). Повторите декларативным или конструктора процесса для привязки `SupplierID` поле данных `Suppliers` DropDownList.
 
 
-[![BIND CategoryID свойству SelectedValue DropDownList, используя двусторонней привязки данных](customizing-the-data-modification-interface-cs/_static/image29.png)](customizing-the-data-modification-interface-cs/_static/image28.png)
+[![Привязка CategoryID к DropDownList свойство SelectedValue, использование двусторонней привязки данных](customizing-the-data-modification-interface-cs/_static/image29.png)](customizing-the-data-modification-interface-cs/_static/image28.png)
 
 **Рис. 10**: Привязать `CategoryID` в элемент управления DropDownList `SelectedValue` двусторонняя привязка с помощью свойства данных ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image30.png))
 
@@ -189,7 +189,7 @@ ms.locfileid: "59390628"
 После привязки были применены к `SelectedValue` свойства двух элементов управления DropDownList, категорию и поставщика столбцы отредактированный продукта будет по умолчанию значения данного продукта. После нажатия кнопки обновления, `CategoryID` и `SupplierID` передаются значения выбранных стрелку раскрывающегося списка элемента `UpdateProduct` метод. Рис. 11 показана руководства, после добавления инструкции привязки данных; Обратите внимание на то, как элементы раскрывающегося списка, выбранного для Chef Anton's Cajun Seasoning будут правильно Condiment и New Orleans Cajun Delights.
 
 
-[![Tпо умолчанию выбраны HE изменить текущий категорию и поставщика значения](customizing-the-data-modification-interface-cs/_static/image32.png)](customizing-the-data-modification-interface-cs/_static/image31.png)
+[![Изменить текущий категорию и поставщика значения, выбираемые по умолчанию](customizing-the-data-modification-interface-cs/_static/image32.png)](customizing-the-data-modification-interface-cs/_static/image31.png)
 
 **Рис. 11**: Изменить текущий категорию и поставщика значения, выбираемые по умолчанию ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image33.png))
 
@@ -219,7 +219,7 @@ ms.locfileid: "59390628"
 С этим дополнительных `ListItem`, интерфейс редактирования теперь можно назначить `NULL` значения в продукт `CategoryID` и `SupplierID` поля, как показано на рис. 12.
 
 
-[![CВыберите, (нет), чтобы назначить значение NULL для категории или поставщику продукта](customizing-the-data-modification-interface-cs/_static/image35.png)](customizing-the-data-modification-interface-cs/_static/image34.png)
+[![Выберите (нет) для присвоения значения NULL для категории или поставщику продукта](customizing-the-data-modification-interface-cs/_static/image35.png)](customizing-the-data-modification-interface-cs/_static/image34.png)
 
 **Рис. 12**: Выберите значение (None) для назначения `NULL` значение для категории или поставщику продукта ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image36.png))
 
@@ -233,7 +233,7 @@ ms.locfileid: "59390628"
 Замените флажок в оба `ItemTemplate` и `EditItemTemplate` с элементом управления RadioButtonList, параметр оба RadioButtonLists `ID` свойства `DiscontinuedChoice`. Затем указывается, что RadioButtonLists должны каждый содержат два переключателя, один с меткой «активно» со значением «False» и надписью «Более не поддерживается» со значением «True». Для этого вы можете ввести `<asp:ListItem>` элементов в напрямую через декларативный синтаксис или используйте `ListItem` редактор коллекции из конструктора. Рис. 13 показан `ListItem` редактор коллекции после двух переключателей кнопку параметры были указаны.
 
 
-[![Aдд](customizing-the-data-modification-interface-cs/_static/image38.png)](customizing-the-data-modification-interface-cs/_static/image37.png)
+[![Добавить](customizing-the-data-modification-interface-cs/_static/image38.png)](customizing-the-data-modification-interface-cs/_static/image37.png)
 
 **Рис. 13**: Добавить «Активным» и «Снят с продажи» параметры RadioButtonList ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image39.png))
 
@@ -250,7 +250,7 @@ ms.locfileid: "59390628"
 Благодаря этим изменениям `Discontinued` был преобразован столбец из списка флажков в список пар кнопку radio (см. рис. 14). При правке продукта, соответствующий переключатель выбран, и неподдерживаемые состояние продукта можно изменить, выбрав переключатель «другие» и нажав кнопку обновления.
 
 
-[![Tон снят с продажи флажки были заменены Radio Button пары](customizing-the-data-modification-interface-cs/_static/image41.png)](customizing-the-data-modification-interface-cs/_static/image40.png)
+[![Неподдерживаемые флажки были заменены пары кнопку переключателя](customizing-the-data-modification-interface-cs/_static/image41.png)](customizing-the-data-modification-interface-cs/_static/image40.png)
 
 **Рис. 14**: Неподдерживаемые флажки были заменены пары кнопку Radio ([Просмотр полноразмерного изображения](customizing-the-data-modification-interface-cs/_static/image42.png))
 

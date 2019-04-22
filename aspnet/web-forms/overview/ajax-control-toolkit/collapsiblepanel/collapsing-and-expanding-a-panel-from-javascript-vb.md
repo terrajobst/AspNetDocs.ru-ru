@@ -12,7 +12,7 @@ ms.openlocfilehash: b41423cb1e587df121828b1e57045cabfede7cb5
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390835"
 ---
 # <a name="collapsing-and-expanding-a-panel-from-javascript-vb"></a>Свертывание и развертывание панели из кода JavaScript (VB)
@@ -65,7 +65,7 @@ ms.locfileid: "59390835"
 [!code-javascript[Main](collapsing-and-expanding-a-panel-from-javascript-vb/samples/sample8.js)]
 
 
-[![TТретья кнопка он изменяет состояние панели: из свернуть, чтобы развернутое и заднему](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image2.png)](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image1.png)
+[![Третья кнопка изменяет состояние панели: из свернуть, чтобы развернутое и обратно](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image2.png)](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image1.png)
 
 Третья кнопка изменяет состояние панели: из свернуть, чтобы развернутые и назад ([Просмотр полноразмерного изображения](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image3.png))
 

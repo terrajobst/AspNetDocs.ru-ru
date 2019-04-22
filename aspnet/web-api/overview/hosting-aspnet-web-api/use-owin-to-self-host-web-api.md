@@ -13,7 +13,7 @@ ms.openlocfilehash: a67db0bd061846af2db3599e0843ed7c6a22db1e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59386519"
 ---
 # <a name="use-owin-to-self-host-aspnet-web-api"></a>Использование OWIN для резидентного размещения веб-API ASP.NET 
@@ -26,7 +26,7 @@ ms.locfileid: "59386519"
 > ## <a name="software-versions-used-in-the-tutorial"></a>Версии программного обеспечения, используемые в этом руководстве
 >
 >
-> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) 
+> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) 
 > - Веб-API 5.2.7
 
 

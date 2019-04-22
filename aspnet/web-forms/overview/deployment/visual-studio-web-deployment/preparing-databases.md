@@ -12,7 +12,7 @@ ms.openlocfilehash: 786be61d48f26e5765eac0c8d6fad7551897f711
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59387690"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-preparing-for-database-deployment"></a>Веб-развертывание ASP.NET с помощью Visual Studio. Подготовка к развертыванию базы данных

@@ -12,7 +12,7 @@ ms.openlocfilehash: fedd1013c036ebdb85877a868aaaa172733e5b8a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59394709"
 ---
 # <a name="working-with-images-in-an-aspnet-web-pages-razor-site"></a>Работа с изображениями на сайте ASP.NET Web Pages (Razor)
@@ -74,7 +74,7 @@ ms.locfileid: "59394709"
 
     В коде, можно получить выбора пользователя (другими словами, имя файла образа) в списке, считывая `Request["photoChoice"]`. Сначала отобразится, если имеется выделение вообще. Если есть, можно составить путь для изображения, которое состоит из имени папки для образов и имя файла изображения пользователя. (Если вы попытались составить путь, но ничего не в `Request["photoChoice"]`, отобразится сообщение об ошибке.) Это приводит к относительный путь следующим образом:
 
-    *images/Photo1.jpg*
+    *образы/Photo1.jpg*
 
     Путь хранится в переменной с именем `imagePath` , которые потребуются позднее на странице.
 

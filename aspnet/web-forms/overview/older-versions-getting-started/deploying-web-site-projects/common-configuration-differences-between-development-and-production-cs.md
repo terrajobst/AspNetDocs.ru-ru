@@ -12,14 +12,14 @@ ms.openlocfilehash: b9d4ed08ea1e8429c1895d0631e1acac9c7eaba9
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59391459"
 ---
 # <a name="common-configuration-differences-between-development-and-production-c"></a>Распространенные различия в конфигурации между средами разработки и производства (C#)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Скачать PDF](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial05_ConfigDifferences_cs.pdf)
+[Загрузить PDF-файл](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial05_ConfigDifferences_cs.pdf)
 
 > В предыдущих учебных курсах мы развернули наш веб-сайт, скопировав все необходимые файлы из среды разработки в рабочую среду. Тем не менее это не часто бывает различия конфигурации между средами, которые требуется открытое, у вас есть уникальный файл Web.config для каждой среды. Этом руководстве рассматриваются различия в стандартной конфигурации и рассматривает стратегии обеспечения сведения о конфигурации отдельных.
 

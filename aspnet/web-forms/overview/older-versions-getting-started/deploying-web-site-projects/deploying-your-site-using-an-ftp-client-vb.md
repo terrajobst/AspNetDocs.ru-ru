@@ -12,7 +12,7 @@ ms.openlocfilehash: 70640ac12b52d50c92d1d7f65c1116b2ec36d883
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381774"
 ---
 # <a name="deploying-your-site-using-an-ftp-client-vb"></a>Развертывание сайта с помощью FTP-клиента (VB)
@@ -69,7 +69,7 @@ ms.locfileid: "59381774"
 > Нет никакого вреда от необходимости файлы исходного кода на рабочем сервере, так как они учитываются. По умолчанию ASP.NET запрещает HTTP-запросы для файлов исходного кода, таким образом, даже если файлы исходного кода присутствуют на рабочем сервере они недоступны для посетителей веб-сайта. (То есть, в том случае, если пользователь пытается посетить `http://www.yoursite.com/Default.aspx.vb` они получат страницу ошибки, которая объясняет, что эти типы файлов — `.vb` файлы — запрещены.)
 
 
-[![USE FTP-клиент для копирования необходимых файлов из рабочего стола на веб-сервер на поставщике веб-размещения.](deploying-your-site-using-an-ftp-client-vb/_static/image2.png)](deploying-your-site-using-an-ftp-client-vb/_static/image1.png)
+[![Используйте FTP-клиента, чтобы скопировать необходимые файлы с настольного компьютера на веб-сервер на поставщике веб-размещения.](deploying-your-site-using-an-ftp-client-vb/_static/image2.png)](deploying-your-site-using-an-ftp-client-vb/_static/image1.png)
 
 **Рис. 1**: Использовать FTP-клиента, чтобы скопировать необходимые файлы из рабочего стола на веб-сервер на поставщике веб-размещения ([Просмотр полноразмерного изображения](deploying-your-site-using-an-ftp-client-vb/_static/image3.png))
 
@@ -82,7 +82,7 @@ ms.locfileid: "59381774"
 > Если отобразится сообщение об ошибке при просмотре приложения Отвлекитесь и убедитесь, что вы развернули правильного набора файлов. Затем проверьте сообщение об ошибке, см. в разделе, если оно показывает все сразу же увидеть проблемы. После этого можно включать службу технической поддержки компании веб узла или отправьте свой вопрос на соответствующий форум по адресу [форумы ASP.NET](https://forums.asp.net/).
 
 
-[![Tон книги проверки сайта является теперь доступны любому пользователю с подключением к Интернету.](deploying-your-site-using-an-ftp-client-vb/_static/image5.png)](deploying-your-site-using-an-ftp-client-vb/_static/image4.png)
+[![Узел проверки книги теперь доступен всем с подключением к Интернету.](deploying-your-site-using-an-ftp-client-vb/_static/image5.png)](deploying-your-site-using-an-ftp-client-vb/_static/image4.png)
 
 **Рис. 2**: Узел проверки книги теперь доступен всем с подключением к Интернету ([Просмотр полноразмерного изображения](deploying-your-site-using-an-ftp-client-vb/_static/image6.png))
 
@@ -124,7 +124,7 @@ ms.locfileid: "59381774"
 Рис. 3 показано FileZilla, скопировав необходимые файлы. Как вы видите, ASP.NET файлов исходного кода, такие как `About.aspx.vb`, присутствуют на локальном компьютере (среда разработки) и поставщике веб-размещения (рабочей среде), так как файлы кода должны быть развернуты при использовании автоматического компиляция.
 
 
-[![USE FTP-клиент для копирования необходимых файлов из рабочего стола на веб-сервер на поставщике веб-размещения](deploying-your-site-using-an-ftp-client-vb/_static/image8.png)](deploying-your-site-using-an-ftp-client-vb/_static/image7.png)
+[![Использовать FTP-клиента, чтобы скопировать необходимые файлы с настольного компьютера на веб-сервер на поставщике веб-размещения](deploying-your-site-using-an-ftp-client-vb/_static/image8.png)](deploying-your-site-using-an-ftp-client-vb/_static/image7.png)
 
 **Рис. 3**: Использовать FTP-клиента, чтобы скопировать необходимые файлы из рабочего стола на веб-сервер на поставщике веб-размещения ([Просмотр полноразмерного изображения](deploying-your-site-using-an-ftp-client-vb/_static/image9.png))
 

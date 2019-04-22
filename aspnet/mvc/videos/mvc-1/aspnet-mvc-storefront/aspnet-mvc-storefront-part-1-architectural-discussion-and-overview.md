@@ -12,7 +12,7 @@ ms.openlocfilehash: a3df375425c4c79f1274f466a6669997a1e3676f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390620"
 ---
 # <a name="aspnet-mvc-storefront-part-1-architectural-discussion-and-overview"></a>Интернет-магазин на ASP.NET MVC, часть 1. Обзор и обсуждение архитектуры
@@ -24,4 +24,4 @@ Rob Conery охватывает исходную архитектуру, в ча
 [&#9654;Просмотрите видео (10 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-1-architectural-discussion-and-overview)
 
 > [!div class="step-by-step"]
-> [Далее](aspnet-mvc-storefront-part-2-the-repository-pattern.md)
+> [Вперед](aspnet-mvc-storefront-part-2-the-repository-pattern.md)

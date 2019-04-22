@@ -12,7 +12,7 @@ ms.openlocfilehash: 50bba1b798ddfaf69dd23098e31d446a7e7b9a1f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59394618"
 ---
 # <a name="using-auto-postback-with-cascadingdropdown-c"></a>Использование автоматической обратной передачи с помощью CascadingDropDown (C#)
@@ -57,7 +57,7 @@ ms.locfileid: "59394618"
 Таким образом, обратная передача выполняется только при наличии фактически элементы в списке, и пользователь выбирает запись.
 
 
-[![Sэлемент списка выбора, посылающий запрос](using-auto-postback-with-cascadingdropdown-cs/_static/image2.png)](using-auto-postback-with-cascadingdropdown-cs/_static/image1.png)
+[![Выбор элемента списка вызывает обратную передачу](using-auto-postback-with-cascadingdropdown-cs/_static/image2.png)](using-auto-postback-with-cascadingdropdown-cs/_static/image1.png)
 
 Выбор элемента списка вызывает обратную передачу ([Просмотр полноразмерного изображения](using-auto-postback-with-cascadingdropdown-cs/_static/image3.png))
 

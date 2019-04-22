@@ -12,7 +12,7 @@ ms.openlocfilehash: a47d428830fa6c43bcb9ce797d65b73891b44618
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381891"
 ---
 # <a name="using-asynchronous-methods-in-aspnet-45"></a>Использование асинхронных методов в ASP.NET 4.5
@@ -192,7 +192,7 @@ ASP.NET 4.5 веб-страницы в сочетании [.NET 4.5](https://msd
 
     - Откройте диспетчер IIS и перейдите в область пулов приложений.
     - Щелкните правой кнопкой целевой пул приложений и выберите **Дополнительные параметры**.  
-        ![дополнительно](using-asynchronous-methods-in-aspnet-45/_static/image4.png)
+        ![Дополнительно](using-asynchronous-methods-in-aspnet-45/_static/image4.png)
     - В **Дополнительные параметры** » диалогового окна «Изменение *длина очереди* от 1000 до 5 000.  
         ![Длина очереди](using-asynchronous-methods-in-aspnet-45/_static/image5.png)  
   

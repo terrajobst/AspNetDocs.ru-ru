@@ -12,7 +12,7 @@ ms.openlocfilehash: 473c8dd14d639fb9f4ff9e11a4c3ffa2b1a3a81e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59396035"
 ---
 # <a name="aspnet-signalr-hubs-api-guide---net-client-c"></a>Руководство по API концентраторов ASP.NET SignalR — клиент .NET (C#)
@@ -29,7 +29,7 @@ ms.locfileid: "59396035"
 > ## <a name="software-versions-used-in-this-topic"></a>Версии программного обеспечения, используемого в этом разделе
 >
 >
-> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
+> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
 > - .NET 4.5
 > - SignalR версии 2
 >

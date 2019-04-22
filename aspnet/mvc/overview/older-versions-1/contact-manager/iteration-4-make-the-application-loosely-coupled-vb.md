@@ -12,7 +12,7 @@ ms.openlocfilehash: 256536150a585a4bb0304f23c3524b18d0f552f0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392382"
 ---
 # <a name="iteration-4--make-the-application-loosely-coupled-vb"></a>Итерация #4 – Создание слабых связей в приложении (VB)
@@ -112,7 +112,7 @@ ms.locfileid: "59392382"
 
 В листинге 3 содержится измененный контроллера контактов.
 
-**Listing 3 - Controllers\ContactController.vb**
+**Листинг 3 - Controllers\ContactController.vb**
 
 [!code-vb[Main](iteration-4-make-the-application-loosely-coupled-vb/samples/sample3.vb)]
 
@@ -137,7 +137,7 @@ ms.locfileid: "59392382"
 
 ContactManagerService содержится в листинге 4. Он содержит логику проверки из класса контроллера, обратитесь в службу.
 
-**Listing 4 - Models\ContactManagerService.vb**
+**Листинг 4 - Models\ContactManagerService.vb**
 
 [!code-vb[Main](iteration-4-make-the-application-loosely-coupled-vb/samples/sample4.vb)]
 
@@ -153,7 +153,7 @@ ContactManagerService содержится в листинге 4. Он соде�
 
 В листинге 6 содержится измененный класс контроллера контактов. Обратите внимание на то, что контроллеру контакт больше не взаимодействует с репозитория ContactManager. Вместо этого обратитесь в службу контроллера взаимодействует со службой ContactManager. Каждый слой изолированное максимально из других слоев.
 
-**Listing 6 - Controllers\ContactController.vb**
+**В листинге 6 - Controllers\ContactController.vb**
 
 [!code-vb[Main](iteration-4-make-the-application-loosely-coupled-vb/samples/sample6.vb)]
 

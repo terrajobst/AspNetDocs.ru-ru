@@ -12,7 +12,7 @@ ms.openlocfilehash: 8e2aa1d2bbef02ddf26f252150121897383f1772
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59391290"
 ---
 # <a name="aspnet-4-quick-hit---imperative-javascript-syntax-for-microsoft-client-side-controls"></a>Элементы управления «Быстрый Hit» - принудительный синтаксис JavaScript для стороны клиента Microsoft ASP.NET 4
@@ -24,4 +24,4 @@ ms.locfileid: "59391290"
 [&#9654;Просмотрите видео (10 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-4-quick-hit-imperative-javascript-syntax-for-microsoft-client-side-controls)
 
 > [!div class="step-by-step"]
-> [Далее](aspnet-4-quick-hit-the-scriptloader.md)
+> [Вперед](aspnet-4-quick-hit-the-scriptloader.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: 35fcf02c20e3d20f9cb75f6a25aeb1ddac016b4e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59393773"
 ---
 # <a name="urls-in-master-pages-vb"></a>URL-адреса на эталонных страницах (VB)
@@ -75,7 +75,7 @@ URL-адрес веб-страницы, называется *относител
 Так как `<img>` элемента `src` атрибута является относительным URL-адресом, браузер пытается найти `Images` папке относительно расположения папки веб-страницы. Другими словами, обозреватель ищет файл изображения `Admin/Images/PoweredByASPNET.gif`.
 
 
-[![Tон PoweredByASPNET.gif изображение не удается найти файл](urls-in-master-pages-vb/_static/image3.png)](urls-in-master-pages-vb/_static/image2.png)
+[![Не удается найти файл изображения PoweredByASPNET.gif](urls-in-master-pages-vb/_static/image3.png)](urls-in-master-pages-vb/_static/image2.png)
 
 **Рис. 02**: `PoweredByASPNET.gif` Изображение не удается найти файл ([Просмотр полноразмерного изображения](urls-in-master-pages-vb/_static/image4.png))
 
@@ -92,7 +92,7 @@ URL-адрес веб-страницы, называется *относител
 Отвлекитесь и обновить `<img>` элемента `src` атрибут абсолютный URL-адрес, с помощью одной из форм, показанный выше, а затем перейдите `~/Admin/Default.aspx` страницы в обозревателе. Сейчас обозреватель будет правильно поиска и отображения `PoweredByASPNET.gif` файл образа (см. рис. 3).
 
 
-[![Tон PoweredByASPNET.gif изображение является, теперь отображается](urls-in-master-pages-vb/_static/image6.png)](urls-in-master-pages-vb/_static/image5.png)
+[![Изображение PoweredByASPNET.gif является теперь отображается](urls-in-master-pages-vb/_static/image6.png)](urls-in-master-pages-vb/_static/image5.png)
 
 **Рис 03**: `PoweredByASPNET.gif` — Изображения теперь отображаются ([Просмотр полноразмерного изображения](urls-in-master-pages-vb/_static/image7.png))
 

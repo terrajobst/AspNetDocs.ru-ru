@@ -12,7 +12,7 @@ ms.openlocfilehash: f6aa0e4535f88a04419695114d07ea2cf6ac7036
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59381163"
 ---
 # <a name="querying-data-with-the-sqldatasource-control-c"></a>Запрос данных с помощью элемента управления SqlDataSource (C#)
@@ -79,7 +79,7 @@ ASP.NET 2.0 предоставляет пять встроенных данны�
 Как и в других папках, `Default.aspx` в `SqlDataSource` папку перечислит учебные курсы в своем разделе. Помните, что `SectionLevelTutorialListing.ascx` пользовательский элемент управления предоставляет следующие функциональные возможности. Поэтому добавьте данный пользовательский элемент управления для `Default.aspx` , перетащив его из обозревателя решений на странице s режиме конструктора.
 
 
-[![Aдд пользовательского элемента управления SectionLevelTutorialListing.ascx к странице Default.aspx](querying-data-with-the-sqldatasource-control-cs/_static/image5.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image4.gif)
+[![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](querying-data-with-the-sqldatasource-control-cs/_static/image5.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image4.gif)
 
 **Рис. 4**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](querying-data-with-the-sqldatasource-control-cs/_static/image6.gif))
 
@@ -155,7 +155,7 @@ ASP.NET 2.0 предоставляет пять встроенных данны�
 После настройки элемента управления SqlDataSource, его можно привязать к данным веб-элемента управления GridView или DetailsView. Для этого руководства позволяют отобразить данные в элементе управления GridView s. Из панели элементов перетащите элемент управления GridView на страницу и привяжите его к `ProductsDataSource` SqlDataSource, выбрав источник данных из раскрывающегося списка в смарт-теге GridView s.
 
 
-[![Aдд GridView и привяжите его к элементу управления SqlDataSource](querying-data-with-the-sqldatasource-control-cs/_static/image13.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image12.gif)
+[![Добавьте элемент управления GridView и привяжите его к элементу управления SqlDataSource](querying-data-with-the-sqldatasource-control-cs/_static/image13.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image12.gif)
 
 **Рис. 10**: Добавьте элемент управления GridView и привяжите его к элементу управления SqlDataSource ([Просмотр полноразмерного изображения](querying-data-with-the-sqldatasource-control-cs/_static/image14.gif))
 
@@ -170,7 +170,7 @@ ASP.NET 2.0 предоставляет пять встроенных данны�
 Посетите эту страницу через обозреватель. Как показано на рис. 11, GridView перечисляет каждый продукт s `ProductID`, `ProductName`, и `UnitPrice` значения.
 
 
-[![Tон GridView отображает каждый продукт s ProductID, ProductName и UnitPrice значения](querying-data-with-the-sqldatasource-control-cs/_static/image16.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image15.gif)
+[![Элемент GridView отображает по каждого продукта s ProductID, ProductName и UnitPrice значения](querying-data-with-the-sqldatasource-control-cs/_static/image16.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image15.gif)
 
 **Рис. 11**: S GridView отображает каждый продукт `ProductID`, `ProductName`, и `UnitPrice` значения ([Просмотр полноразмерного изображения](querying-data-with-the-sqldatasource-control-cs/_static/image17.gif))
 
@@ -228,7 +228,7 @@ ASP.NET 2.0 предоставляет пять встроенных данны�
 [!code-aspx[Main](querying-data-with-the-sqldatasource-control-cs/samples/sample5.aspx)]
 
 
-[![Tон GridView показывает, что каждый идентификатор, имя и связанное имя категории продукта s](querying-data-with-the-sqldatasource-control-cs/_static/image22.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image21.gif)
+[![Все КОДЫ продуктов s, имя категории, имя и связанный показывает GridView](querying-data-with-the-sqldatasource-control-cs/_static/image22.gif)](querying-data-with-the-sqldatasource-control-cs/_static/image21.gif)
 
 **Рис. 15**: Идентификатор GridView показывает каждого продукта, имя и связанное имя категории ([Просмотр полноразмерного изображения](querying-data-with-the-sqldatasource-control-cs/_static/image23.gif))
 
@@ -260,4 +260,4 @@ ASP.NET 2.0 предоставляет пять встроенных данны�
 В этой серии руководств пособий рецензировалась многими компетентными редакторами. Сьюзан Connery Leigh Екатерина и Дэвид Suru, стали Лиз Шалок в этом руководстве. Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
-> [Далее](using-parameterized-queries-with-the-sqldatasource-cs.md)
+> [Вперед](using-parameterized-queries-with-the-sqldatasource-cs.md)

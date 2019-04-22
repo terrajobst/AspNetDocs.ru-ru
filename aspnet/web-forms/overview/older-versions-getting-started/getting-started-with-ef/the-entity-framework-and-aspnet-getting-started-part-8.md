@@ -12,7 +12,7 @@ ms.openlocfilehash: 0fd943eba4c6d80bba5ca6c4d69cbd3a8927513d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59391517"
 ---
 # <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-8"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms - часть 8
@@ -32,7 +32,7 @@ ms.locfileid: "59391517"
 
 Чтобы увидеть, как это работает, изменим элементов управления, использовать для отображения и изменения полей в существующем *Students.aspx* страницы и вы добавите форматирование и проверка метаданных поля имя и дата `Student` типа сущности.
 
-[![Image01](the-entity-framework-and-aspnet-getting-started-part-8/_static/image2.png)](the-entity-framework-and-aspnet-getting-started-part-8/_static/image1.png)
+[!["Image01"](the-entity-framework-and-aspnet-getting-started-part-8/_static/image2.png)](the-entity-framework-and-aspnet-getting-started-part-8/_static/image1.png)
 
 ## <a name="using-dynamicfield-and-dynamiccontrol-controls"></a>С помощью DynamicField и элементы управления DynamicControl
 
@@ -120,7 +120,7 @@ ms.locfileid: "59391517"
 
 Это заключительный шаг этой серии руководств по началу работы с Entity Framework. Дополнительные ресурсы, которые помогут вам понять, как использовать Entity Framework, следует выполнить [в первом учебнике этой серии руководств Далее Entity Framework](../continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md) или посетите следующие сайты:
 
-- [Часто задаваемые вопросы о платформе Entity Framework](http://www.ef-faq.org/introduction.html)
+- [Платформа Entity Framework часто задаваемые вопросы](http://www.ef-faq.org/introduction.html)
 - [Блог группы разработчиков Entity Framework](https://blogs.msdn.com/b/adonet/)
 - [Entity Framework в библиотеке MSDN](https://msdn.microsoft.com/library/bb399572.aspx)
 - [Entity Framework в центре данных для разработчиков MSDN](https://msdn.microsoft.com/data/ef.aspx)

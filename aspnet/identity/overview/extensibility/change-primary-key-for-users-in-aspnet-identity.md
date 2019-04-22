@@ -13,7 +13,7 @@ ms.openlocfilehash: 212b07494381d13f6ded96a41b846dcdf7e8ff16
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59393747"
 ---
 # <a name="change-primary-key-for-users-in-aspnet-identity"></a>Изменение первичного ключа для пользователей в ASP.NET Identity
@@ -44,7 +44,7 @@ ms.locfileid: "59393747"
 - [Для веб-форм с обновлением 2 измените учетную запись страницы для передачи типа ключа](#webformsupdate2)
 - [Для веб-форм с обновлением 3 измените учетную запись страницы для передачи типа ключа](#webformsupdate3)
 - [Запуск приложения](#run)
-- [Другие источники](#other)
+- [Другие ресурсы](#other)
 
 <a id="userclass"></a>
 ## <a name="change-the-type-of-the-key-in-the-identity-user-class"></a>Измените тип ключа в класс пользовательского удостоверения

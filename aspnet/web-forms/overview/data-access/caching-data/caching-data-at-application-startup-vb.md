@@ -12,14 +12,14 @@ ms.openlocfilehash: 58c4654691084b9574283c03c77398cb43f6751a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59393474"
 ---
 # <a name="caching-data-at-application-startup-vb"></a>Кэширование данных при запуске приложения (VB)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Скачать PDF](caching-data-at-application-startup-vb/_static/datatutorial60vb1.pdf)
+[Загрузить PDF-файл](caching-data-at-application-startup-vb/_static/datatutorial60vb1.pdf)
 
 > В любой веб-приложении некоторые данные будут часто использоваться, и некоторые данные будут использоваться редко. Мы может повысить производительность приложения ASP.NET, часто используемые данные, подход, называемый загружая заранее. Этот учебник демонстрирует один из способов упреждающего загрузки, которая является загрузка данных в кэш при запуске приложения.
 
@@ -119,7 +119,7 @@ ms.locfileid: "59393474"
 > Если у вас уже есть `Global.asax` файл в проекте, глобальный класс приложения, тип элемента не будет отображаться в диалоговом окне Добавление нового элемента.
 
 
-[![Aдд файле Global.asax, чтобы ваш веб-приложение s корневой каталог](caching-data-at-application-startup-vb/_static/image4.png)](caching-data-at-application-startup-vb/_static/image3.png)
+[![Добавьте его в корневую папку веб-приложения s](caching-data-at-application-startup-vb/_static/image4.png)](caching-data-at-application-startup-vb/_static/image3.png)
 
 **Рис. 3**: Добавить `Global.asax` файл на свой веб-приложение s корневой каталог ([Просмотр полноразмерного изображения](caching-data-at-application-startup-vb/_static/image5.png))
 
@@ -142,7 +142,7 @@ ms.locfileid: "59393474"
 Все, что s — его! При запуске приложения `LoadStaticCache()` метод получения сведений о поставщике из BLL и сохраните его в статическую переменную-член (или любой кэш хранить вы в итоге в `StaticCache` класса). Чтобы проверить это, установите точку останова в `Application_Start` метод и запустите приложение. Обратите внимание на то, что точка останова достигается при запуске приложения. Последующие запросы, но не вызывают `Application_Start` для выполнения метода.
 
 
-[![USE точку останова, чтобы убедитесь, что обработчик событий Application_Start выполняемой](caching-data-at-application-startup-vb/_static/image7.png)](caching-data-at-application-startup-vb/_static/image6.png)
+[![Использовать точку останова, чтобы убедитесь, что обработчик событий Application_Start выполняемой](caching-data-at-application-startup-vb/_static/image7.png)](caching-data-at-application-startup-vb/_static/image6.png)
 
 **Рис. 4**: Использовать точку останова, чтобы проверить, `Application_Start` обработчик событий — выполняемой ([Просмотр полноразмерного изображения](caching-data-at-application-startup-vb/_static/image8.png))
 
@@ -158,12 +158,12 @@ ms.locfileid: "59393474"
 Сначала откройте `AtApplicationStartup.aspx` странице в `Caching` папку. Перетащите элемент управления GridView с панели элементов в конструктор, установив его `ID` свойства `Suppliers`. Затем из GridView s смарт-тега выберите Создание нового источника ObjectDataSource с именем `SuppliersCachedDataSource`. Настройка ObjectDataSource на использование `StaticCache` класс s `GetSuppliers()` метод.
 
 
-[![CНастройка ObjectDataSource на использование класса StaticCache](caching-data-at-application-startup-vb/_static/image10.png)](caching-data-at-application-startup-vb/_static/image9.png)
+[![Настройка ObjectDataSource на использование класса StaticCache](caching-data-at-application-startup-vb/_static/image10.png)](caching-data-at-application-startup-vb/_static/image9.png)
 
 **Рис. 5**: Настройка ObjectDataSource на использование `StaticCache` класс ([Просмотр полноразмерного изображения](caching-data-at-application-startup-vb/_static/image11.png))
 
 
-[![USE GetSuppliers() метод для извлечения данных кэшируются поставщика](caching-data-at-application-startup-vb/_static/image13.png)](caching-data-at-application-startup-vb/_static/image12.png)
+[![Использование метода GetSuppliers() для получения кэшированных поставщика данных](caching-data-at-application-startup-vb/_static/image13.png)](caching-data-at-application-startup-vb/_static/image12.png)
 
 **Рис. 6**: Используйте `GetSuppliers()` метод для извлечения данных кэшируются поставщика ([Просмотр полноразмерного изображения](caching-data-at-application-startup-vb/_static/image14.png))
 
@@ -176,7 +176,7 @@ ms.locfileid: "59393474"
 Рис. 7 показана страница в обозревателе. Результат будет тем же мы здесь данные из BLL s `SuppliersBLL` класс, но с помощью `StaticCache` класс возвращает данные поставщика в виде кэшированных при запуске приложения. Можно установить точки останова `StaticCache` класс s `GetSuppliers()` способ проверить это.
 
 
-[![Tон кэшированных поставщика данных отображается в элементе управления GridView](caching-data-at-application-startup-vb/_static/image16.png)](caching-data-at-application-startup-vb/_static/image15.png)
+[![Кэшированные данные поставщиков отображается в элементе управления GridView](caching-data-at-application-startup-vb/_static/image16.png)](caching-data-at-application-startup-vb/_static/image15.png)
 
 **Рис. 7**: Кэшированные данные поставщиков отображается в элементе управления GridView ([Просмотр полноразмерного изображения](caching-data-at-application-startup-vb/_static/image17.png))
 

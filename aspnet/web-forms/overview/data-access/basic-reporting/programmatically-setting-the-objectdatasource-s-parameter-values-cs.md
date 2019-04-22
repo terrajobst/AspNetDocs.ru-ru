@@ -12,7 +12,7 @@ ms.openlocfilehash: 032b6665d3e99998dba870c8f7f2cdfec17737bf
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383080"
 ---
 # <a name="programmatically-setting-the-objectdatasources-parameter-values-c"></a>Программная установка значений параметров ObjectDataSource (C#)
@@ -33,7 +33,7 @@ ms.locfileid: "59383080"
 Каждый раз, когда ObjectDataSource `Select` вызывается метод ObjectDataSource прежде всего создает его [события Selecting](https://msdn.microsoft.com/library/system.web.ui.webcontrols.objectdatasource.selecting%28VS.80%29.aspx). Затем вызывается метод нижележащего объекта для ObjectDataSource. По завершении работы, ObjectDataSource [выбранные события](https://msdn.microsoft.com/library/system.web.ui.webcontrols.objectdatasource.selected%28VS.80%29.aspx) активируется (рис. 1 показана последовательность событий). Значения параметров, передаваемые в метод нижележащего объекта для ObjectDataSource можно установить или настроить в обработчик событий для `Selecting` событий.
 
 
-[![TВыбранные HE ObjectDataSource и выбрав ObjectDataSource возникают до и после нижележащего объекта метод вызывается](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image2.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image1.png)
+[![Выбранные ObjectDataSource и выбрав ObjectDataSource возникают до и после нижележащего объекта метод вызывается](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image2.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image1.png)
 
 **Рис. 1**: ObjectDataSource `Selected` и `Selecting` вызывается метод ObjectDataSource возникают до и после нижележащего объекта ([Просмотр полноразмерного изображения](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image3.png))
 
@@ -47,7 +47,7 @@ ms.locfileid: "59383080"
 Для нашего первого примера, нам нужно добавить возможность получения сотрудников, `HireDate` произошла в указанном месяце. Для поддержки этой функции в соответствие с нашей архитектурой необходимо сначала создать метод в `EmployeesTableAdapter` , сопоставляемый надлежащему оператору SQL. Для этого сначала откроем типизированный набор DataSet Northwind. Щелкните правой кнопкой мыши `EmployeesTableAdapter` метки и выберите Добавить запрос.
 
 
-[![Aдд новый запрос в EmployeesTableAdapter](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image5.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image4.png)
+[![Добавить новый запрос в EmployeesTableAdapter](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image5.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image4.png)
 
 **Рис. 2**: Добавить новый запрос к `EmployeesTableAdapter` ([Просмотр полноразмерного изображения](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image6.png))
 
@@ -55,7 +55,7 @@ ms.locfileid: "59383080"
 Выберите инструкцию SQL, которая возвращает строки. По достижении Specify a `SELECT` инструкции на экране по умолчанию `SELECT` инструкции для `EmployeesTableAdapter` уже будет загружен. Просто добавьте в `WHERE` предложение: `WHERE DATEPART(m, HireDate) = @Month`. [DATEPART](https://msdn.microsoft.com/library/ms174420.aspx) — это функция T-SQL, возвращающая определенную часть даты `datetime` типа; в данном случае мы используем `DATEPART` для возврата месяца столбца `HireDate` столбца.
 
 
-[![Rь только тех строк где HireDate столбца меньше или равно @HiredBeforeDate параметр](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image8.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image7.png)
+[![Возвращаемое только тех, где HireDate столбец строки меньше или равно @HiredBeforeDate параметр](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image8.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image7.png)
 
 **Рис. 3**: Возвращать только те строки, у которых `HireDate` столбца меньше или равно `@HiredBeforeDate` параметра ([Просмотр полноразмерного изображения](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image9.png))
 
@@ -63,7 +63,7 @@ ms.locfileid: "59383080"
 Наконец, измените `FillBy` и `GetDataBy` имена метод `FillByHiredDateMonth` и `GetEmployeesByHiredDateMonth`, соответственно.
 
 
-[![CВыберите более соответствующий метод имена чем FillBy и GetDataBy](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image11.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image10.png)
+[![Выбор более подходящих имен методов, чем FillBy и GetDataBy](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image11.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image10.png)
 
 **Рис. 4**: Выберите более соответствующий метод имена чем `FillBy` и `GetDataBy` ([Просмотр полноразмерного изображения](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image12.png))
 
@@ -71,7 +71,7 @@ ms.locfileid: "59383080"
 Нажмите кнопку Готово, чтобы завершить работу мастера и вернуться в область конструктора набора данных. `EmployeesTableAdapter` Должен включать новый набор методов для доступа к сотрудникам, принятым на работу в указанном месяце.
 
 
-[![Tон новые методы отображаются в области проектирования DataSet](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image14.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image13.png)
+[![В области проектирования DataSet появились новые методы](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image14.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image13.png)
 
 **Рис. 5**: Новые методы отображаются в области проектирования DataSet ([Просмотр полноразмерного изображения](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image15.png))
 
@@ -90,12 +90,12 @@ ms.locfileid: "59383080"
 Последним этапом в этом примере является отображение сотрудников, годовщина приема которых находится в этом месяце. Начните с добавления элемент управления GridView для `ProgrammaticParams.aspx` странице в `BasicReporting` папку и добавьте новый ObjectDataSource в качестве источника данных. Настройка ObjectDataSource на использование `EmployeesBLL` класса `SelectMethod` присвоено `GetEmployeesByHiredDateMonth(month)`.
 
 
-[![USE класс EmployeesBLL](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image17.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image16.png)
+[![Класс EmployeesBLL](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image17.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image16.png)
 
 **Рис. 6**: Используйте `EmployeesBLL` класс ([Просмотр полноразмерного изображения](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image18.png))
 
 
-[![Sвыбрать метод из GetEmployeesByHiredDateMonth(month)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image20.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image19.png)
+[![Выберите из GetEmployeesByHiredDateMonth(month)-метод](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image20.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image19.png)
 
 **Рис. 7**: SELECT From `GetEmployeesByHiredDateMonth(month)` метод ([Просмотр полноразмерного изображения](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image21.png))
 
@@ -103,7 +103,7 @@ ms.locfileid: "59383080"
 На последнем экране появляется нам предоставить `month` источника значения параметра. Так как мы это значение программно, оставьте значение источника параметра по умолчанию ни один параметр и нажмите кнопку Готово.
 
 
-[![Lоставить параметр источника значение None](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image23.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image22.png)
+[![Оставьте исходный набор параметров значение None](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image23.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image22.png)
 
 **Рис. 8**: Оставьте параметр источника, значение None ([Просмотр полноразмерного изображения](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image24.png))
 
@@ -129,7 +129,7 @@ ms.locfileid: "59383080"
 При просмотре страницы через обозреватель мы видим, что только один сотрудник был принят на работу в этом месяце (март) Лора Каллахан, которая была в компании с 1994 года.
 
 
-[![Tшланга, сотрудники которых годовщины этот месяц показаны](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image27.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image26.png)
+[![Показаны сотрудники с годовщиной отображаются в этом месяце](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image27.png)](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image26.png)
 
 **Рис. 10**: Эти сотрудники которых годовщины этот месяц отображаются ([Просмотр полноразмерного изображения](programmatically-setting-the-objectdatasource-s-parameter-values-cs/_static/image28.png))
 

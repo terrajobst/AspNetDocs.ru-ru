@@ -12,7 +12,7 @@ ms.openlocfilehash: e4c6bfe1884d3e066c7b27e07e3a069943793bdd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392291"
 ---
 # <a name="adding-animation-to-a-control-c"></a>Добавление анимации в элемент управления (C#)
@@ -72,9 +72,9 @@ ms.locfileid: "59392291"
 При выполнении этого скрипта панели отображается и исчезает в один с половиной секунд.
 
 
-[![Tпанель HE исчезновение](adding-animation-to-a-control-cs/_static/image2.png)](adding-animation-to-a-control-cs/_static/image1.png)
+[![Исчезновение панели](adding-animation-to-a-control-cs/_static/image2.png)](adding-animation-to-a-control-cs/_static/image1.png)
 
 Исчезновение панели ([Просмотр полноразмерного изображения](adding-animation-to-a-control-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
-> [Далее](executing-several-animations-at-the-same-time-cs.md)
+> [Вперед](executing-several-animations-at-the-same-time-cs.md)

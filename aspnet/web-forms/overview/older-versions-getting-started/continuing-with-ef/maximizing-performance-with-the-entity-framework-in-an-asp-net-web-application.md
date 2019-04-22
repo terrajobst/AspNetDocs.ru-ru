@@ -12,7 +12,7 @@ ms.openlocfilehash: 116c557ad0d6c158f983da75668e634c9eb9747c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59379596"
 ---
 # <a name="maximizing-performance-with-the-entity-framework-40-in-an-aspnet-4-web-application"></a>Повышение производительности с помощью Entity Framework 4.0 в 4 веб-приложения ASP.NET
@@ -242,7 +242,7 @@ ms.locfileid: "59379596"
 
 Visual Studio создает файл кода, создающий представления, которая называется *SchoolModel.Views.cs* на основе шаблона. (Вы могли заметить, что создается файл кода, даже в том случае, прежде чем выбрать **пользовательское средство**, как только вы сохраните файл шаблона.)
 
-[![Image01](maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application/_static/image28.png)](maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application/_static/image27.png)
+[!["Image01"](maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application/_static/image28.png)](maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application/_static/image27.png)
 
 Теперь можно запустить приложение и убедиться, что оно работает, как и раньше.
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 1e974d7ff259952d7dba0e968d43180f32a83d23
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59387988"
 ---
 # <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-6"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms — часть 6
@@ -56,31 +56,31 @@ TPH наследования как правило, обеспечивают б�
 
 Откройте <em>SchoolModel.edmx</em> файл, щелкните правой кнопкой мыши незанятом область в конструкторе выберите <strong>добавить</strong>, а затем выберите <strong>сущности</strong><em>.</em>
 
-[![image01](the-entity-framework-and-aspnet-getting-started-part-6/_static/image6.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image5.png)
+[!["Image01"](the-entity-framework-and-aspnet-getting-started-part-6/_static/image6.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image5.png)
 
 В **Добавление сущности** диалоговом окне имя сущности `Instructor` и задайте его **базовый тип** равным `Person`.
 
-[![image02](the-entity-framework-and-aspnet-getting-started-part-6/_static/image8.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image7.png)
+[![Image02](the-entity-framework-and-aspnet-getting-started-part-6/_static/image8.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image7.png)
 
 Нажмите кнопку **ОК**. Конструктор создает `Instructor` сущности, производный от `Person` сущности. Новая сущность еще не содержит какие-либо свойства.
 
-[![image03](the-entity-framework-and-aspnet-getting-started-part-6/_static/image10.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image9.png)
+[![Image03](the-entity-framework-and-aspnet-getting-started-part-6/_static/image10.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image9.png)
 
 Повторите процедуру для создания `Student` сущность, которая также является производным от `Person`.
 
 Только для преподавателей имеют дат приема на работу, поэтому необходимо переместить это свойство из `Person` сущность `Instructor` сущности. В `Person` сущности, щелкните правой кнопкой мыши `HireDate` свойство и нажмите кнопку **Вырезать**. Щелкните правой кнопкой мыши **свойства** в `Instructor` сущности и нажмите кнопку **вставить**.
 
-[![image04](the-entity-framework-and-aspnet-getting-started-part-6/_static/image12.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image11.png)
+[![Image04](the-entity-framework-and-aspnet-getting-started-part-6/_static/image12.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image11.png)
 
 Даты найма `Instructor` сущность не может иметь значение null. Щелкните правой кнопкой мыши `HireDate` свойство, нажмите кнопку **свойства**, а затем в **свойства** окна Изменение `Nullable` для `False`.
 
-[![image05](the-entity-framework-and-aspnet-getting-started-part-6/_static/image14.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image13.png)
+[![Image05](the-entity-framework-and-aspnet-getting-started-part-6/_static/image14.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image13.png)
 
 Повторите эту процедуру, чтобы переместить `EnrollmentDate` свойства из `Person` сущность `Student` сущности. Убедитесь, что вы также `Nullable` для `False` для `EnrollmentDate` свойство.
 
 Теперь, когда `Person` сущность имеет только свойства, которые являются общими для `Instructor` и `Student` сущности (кроме свойств навигации, которые вы не перемещаете), сущность может использоваться только как базовая сущность в структуру наследования. Таким образом необходимо убедиться, что он никогда не обрабатываются как независимые сущности. Щелкните правой кнопкой мыши `Person` сущности, выберите **свойства**, а затем в **свойства** окне измените значение свойства **абстрактный** свойства  **Значение true,**.
 
-[![image06](the-entity-framework-and-aspnet-getting-started-part-6/_static/image16.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image15.png)
+[![Image06](the-entity-framework-and-aspnet-getting-started-part-6/_static/image16.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image15.png)
 
 ## <a name="mapping-instructor-and-student-entities-to-the-person-table"></a>Сопоставление Instructor и Student сущностей в таблицу Person
 
@@ -88,11 +88,11 @@ TPH наследования как правило, обеспечивают б�
 
 Щелкните правой кнопкой мыши `Instructor` сущности и выберите **сопоставление таблицы**. В **сведения о сопоставлении** окно, нажмите кнопку **добавить таблицу или представление** и выберите **Person**.
 
-[![image07](the-entity-framework-and-aspnet-getting-started-part-6/_static/image18.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image17.png)
+[![Image07](the-entity-framework-and-aspnet-getting-started-part-6/_static/image18.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image17.png)
 
 Нажмите кнопку **добавить условие**, а затем выберите **HireDate**.
 
-[![image09](the-entity-framework-and-aspnet-getting-started-part-6/_static/image20.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image19.png)
+[![Image09](the-entity-framework-and-aspnet-getting-started-part-6/_static/image20.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image19.png)
 
 Изменение **оператор** для **—** и **значение / свойство** для **Not Null**.
 
@@ -112,7 +112,7 @@ TPH наследования как правило, обеспечивают б�
 
 И в **свойства** окно, можно удалить `Where` предложение значения, которые больше не нужны, как показано в следующем примере.
 
-[![image14](the-entity-framework-and-aspnet-getting-started-part-6/_static/image26.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image25.png)
+[![Image14](the-entity-framework-and-aspnet-getting-started-part-6/_static/image26.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image25.png)
 
 Тем не менее так как вы изменили разметка для `EntityDataSource` элементов управления, используемых `ContextTypeName` атрибут, не удается запустить **Настройка источника данных** мастер на `EntityDataSource` элементов управления, которые вы уже создали. Таким образом путем изменения разметки вместо этого будет внесите необходимые изменения.
 
@@ -128,7 +128,7 @@ TPH наследования как правило, обеспечивают б�
 
 Запустите страницу, чтобы убедиться, что он по-прежнему работает как и раньше.
 
-[![image15](the-entity-framework-and-aspnet-getting-started-part-6/_static/image28.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image27.png)
+[![Image15](the-entity-framework-and-aspnet-getting-started-part-6/_static/image28.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image27.png)
 
 Обновите следующие страницы, созданные в предыдущих учебных курсах, чтобы они использовали новый `Student` и `Instructor` объекты, а не `Person` сущностей, затем выполните их, чтобы убедиться, что они работают как раньше:
 
@@ -136,7 +136,7 @@ TPH наследования как правило, обеспечивают б�
 
     [!code-aspx[Main](the-entity-framework-and-aspnet-getting-started-part-6/samples/sample3.aspx)]
 
-    [![image16](the-entity-framework-and-aspnet-getting-started-part-6/_static/image30.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image29.png)
+    [![Image16](the-entity-framework-and-aspnet-getting-started-part-6/_static/image30.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image29.png)
 - В *About.aspx*, добавьте `EntityTypeFilter="Student"` для `StudentStatisticsEntityDataSource` управления и устранения `Where="it.EnrollmentDate is not null"`. Разметка теперь будет выглядеть примерно так: 
 
     [!code-aspx[Main](the-entity-framework-and-aspnet-getting-started-part-6/samples/sample4.aspx)]
@@ -146,7 +146,7 @@ TPH наследования как правило, обеспечивают б�
 
     [!code-aspx[Main](the-entity-framework-and-aspnet-getting-started-part-6/samples/sample5.aspx)]
 
-    [![image18](the-entity-framework-and-aspnet-getting-started-part-6/_static/image34.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image33.png)
+    [![Image18](the-entity-framework-and-aspnet-getting-started-part-6/_static/image34.png)](the-entity-framework-and-aspnet-getting-started-part-6/_static/image33.png)
 
     Разметка в *InstructorsCourses.aspx* теперь будет выглядеть примерно так:
 

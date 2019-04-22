@@ -13,7 +13,7 @@ ms.openlocfilehash: 3ba7f2d186e6f0837a32f69f964cec19fe625953
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59391485"
 ---
 # <a name="build-restful-apis-with-aspnet-web-api"></a>Создание API-интерфейсов RESTful с помощью веб-API ASP.NET
@@ -505,7 +505,7 @@ ms.locfileid: "59391485"
 
     ![Ход установки](build-restful-apis-with-aspnet-web-api/_static/image36.png)
 
-    *Ход установки*
+    *Ход выполнения установки*
 6. После завершения установки нажмите кнопку **Готово**.
 
     ![Установка завершена](build-restful-apis-with-aspnet-web-api/_static/image37.png)

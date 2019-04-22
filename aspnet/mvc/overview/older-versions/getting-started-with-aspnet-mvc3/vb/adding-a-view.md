@@ -12,7 +12,7 @@ ms.openlocfilehash: eebf36af01b27f2931fa8720b399b85edfd8c2a0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59390965"
 ---
 # <a name="adding-a-view-vb"></a>Добавление представления (VB)
@@ -42,7 +42,7 @@ ms.locfileid: "59390965"
 
 **Добавление представления** откроется диалоговое окно. Оставьте значения по умолчанию и нажмите кнопку **добавить** кнопки.
 
-[![3Добавить представление](adding-a-view/_static/image4.png "3addView")](adding-a-view/_static/image3.png)
+[![3addView](adding-a-view/_static/image4.png "3addView")](adding-a-view/_static/image3.png)
 
 *MvcMovie\Views\HelloWorld* папки и *MvcMovie\Views\HelloWorld\Index.vbhtml* создаются файл. Вы можете увидеть их в **обозревателе решений**:
 

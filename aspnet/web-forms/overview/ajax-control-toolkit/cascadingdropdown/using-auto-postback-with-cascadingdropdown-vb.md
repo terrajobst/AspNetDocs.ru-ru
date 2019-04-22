@@ -12,7 +12,7 @@ ms.openlocfilehash: 433756839532393b36935df8f237e93706b4f18c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383168"
 ---
 # <a name="using-auto-postback-with-cascadingdropdown-vb"></a>Использование автоматической обратной передачи с помощью CascadingDropDown (VB)
@@ -57,7 +57,7 @@ ms.locfileid: "59383168"
 Таким образом, обратная передача выполняется только при наличии фактически элементы в списке, и пользователь выбирает запись.
 
 
-[![Sэлемент списка выбора, посылающий запрос](using-auto-postback-with-cascadingdropdown-vb/_static/image2.png)](using-auto-postback-with-cascadingdropdown-vb/_static/image1.png)
+[![Выбор элемента списка вызывает обратную передачу](using-auto-postback-with-cascadingdropdown-vb/_static/image2.png)](using-auto-postback-with-cascadingdropdown-vb/_static/image1.png)
 
 Выбор элемента списка вызывает обратную передачу ([Просмотр полноразмерного изображения](using-auto-postback-with-cascadingdropdown-vb/_static/image3.png))
 

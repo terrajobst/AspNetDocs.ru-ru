@@ -12,7 +12,7 @@ ms.openlocfilehash: bbc54a39ba6ca3771acd7c4da37795a23e8ee2df
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383386"
 ---
 # <a name="wrapping-database-modifications-within-a-transaction-c"></a>Перенос изменений базы данных в транзакции (C#)
@@ -83,7 +83,7 @@ ms.locfileid: "59383386"
 Как и в других папках, `Default.aspx` будет использовать `SectionLevelTutorialListing.ascx` пользовательский элемент управления, чтобы получить список учебников в своем разделе. Поэтому добавьте данный пользовательский элемент управления для `Default.aspx` , перетащив его из обозревателя решений на странице s режиме конструктора.
 
 
-[![Aдд пользовательского элемента управления SectionLevelTutorialListing.ascx к странице Default.aspx](wrapping-database-modifications-within-a-transaction-cs/_static/image2.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image1.png)
+[![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](wrapping-database-modifications-within-a-transaction-cs/_static/image2.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image1.png)
 
 **Рис. 2**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-cs/_static/image2.png))
 
@@ -168,12 +168,12 @@ ms.locfileid: "59383386"
 Сначала откройте `Transactions.aspx` странице в `BatchData` папки и перетащите элемент управления GridView с панели инструментов в конструктор. Задайте его `ID` для `Products` и его смарт-теге, привязать его к элементу управления ObjectDataSource с именем `ProductsDataSource`. Настройте элемент ObjectDataSource для извлечения данных из `ProductsBLL` класс s `GetProducts` метод. Это GridView только для чтения, поэтому устанавливается раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) и нажмите кнопку Готово.
 
 
-[![Figure 5: Настройка ObjectDataSource на использование метода GetProducts класса ProductsBLL s](wrapping-database-modifications-within-a-transaction-cs/_static/image5.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image3.png)
+[![Рис. 5. Настройка ObjectDataSource на использование метода GetProducts класса ProductsBLL s](wrapping-database-modifications-within-a-transaction-cs/_static/image5.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image3.png)
 
 **Рис. 5**: Рис. 5. Настройка ObjectDataSource для использования `ProductsBLL` класс s `GetProducts` метод ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-cs/_static/image4.png))
 
 
-[![SET раскрывающиеся списки в UPDATE, INSERT и DELETE вкладок (нет)](wrapping-database-modifications-within-a-transaction-cs/_static/image6.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image5.png)
+[![Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет)](wrapping-database-modifications-within-a-transaction-cs/_static/image6.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image5.png)
 
 **Рис. 6**: Задайте раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-cs/_static/image6.png))
 
@@ -191,7 +191,7 @@ ms.locfileid: "59383386"
 На этом этапе конструктор в Visual Studio должен выглядеть снимок экрана, показанный на рис. 7.
 
 
-[![Tон страницы содержит GridView и три элемента управления Web](wrapping-database-modifications-within-a-transaction-cs/_static/image7.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image7.png)
+[![Страница содержит GridView и три кнопки веб-элементов управления](wrapping-database-modifications-within-a-transaction-cs/_static/image7.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image7.png)
 
 **Рис. 7**: Страница содержит GridView и три кнопки веб-элементов управления ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-cs/_static/image8.png))
 
@@ -210,12 +210,12 @@ ms.locfileid: "59383386"
 Чтобы продемонстрировать это, посетите эту страницу через обозреватель. Изначально вы увидите на первой странице данных, как показано на рис. 8. Затем щелкните кнопку Изменить категории (с помощью ТРАНЗАКЦИЙ). Это вызывает обратную передачу и пытаться обновить все продукты `CategoryID` значений, но приведет к нарушению ограничения внешнего ключа (см. рис. 9).
 
 
-[![Tв страничной GridView отображены продукты HE](wrapping-database-modifications-within-a-transaction-cs/_static/image8.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image9.png)
+[![Товары показываются в GridView с возможностью разбивки на страницы](wrapping-database-modifications-within-a-transaction-cs/_static/image8.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image9.png)
 
 **Рис. 8**: Товары показываются в GridView с возможностью разбивки на страницы ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-cs/_static/image10.png))
 
 
-[![Reassigning результаты категорий в нарушение ограничения Foreign Key](wrapping-database-modifications-within-a-transaction-cs/_static/image9.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image11.png)
+[![Переназначение категорий приводит к нарушению ограничения внешнего ключа](wrapping-database-modifications-within-a-transaction-cs/_static/image9.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image11.png)
 
 **Рис. 9**: Переназначение категорий приводит нарушение ограничения внешнего ключа ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-cs/_static/image12.png))
 
@@ -225,7 +225,7 @@ ms.locfileid: "59383386"
 Теперь попробуйте нажать кнопку Изменить категории (без ТРАНЗАКЦИИ). Это приведет к та же ошибка нарушения ограничения внешнего ключа (см. рис. 9), но в этот раз те продукты, `CategoryID` значения были изменены для юридических значение не будет выполнен откат. Нажмите кнопку "Назад" в браузере s и нажмите кнопку Обновить сетку. Как показано на рис. 10, `CategoryID` назначили s первые восемь продуктов. Например, на рис. 8 Chang было `CategoryID` 1, но в рис 10 ИТ s была переназначена на 2.
 
 
-[![SЗначения CategoryID ome продуктов не обновлены во время другие были](wrapping-database-modifications-within-a-transaction-cs/_static/image10.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image13.png)
+[![Некоторые значения CategoryID продуктов не обновлены во время другие были](wrapping-database-modifications-within-a-transaction-cs/_static/image10.gif)](wrapping-database-modifications-within-a-transaction-cs/_static/image13.png)
 
 **Рис. 10**: Некоторые продукты `CategoryID` значения были обновлены во время другие были не ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-cs/_static/image14.png))
 
@@ -257,4 +257,4 @@ ms.locfileid: "59383386"
 В этой серии руководств пособий рецензировалась многими компетентными редакторами. Дейв Gardner (Hilton giesenow) и Терезой Мерфи, стали Лиз Шалок в этом руководстве. Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
-> [Далее](batch-updating-cs.md)
+> [Вперед](batch-updating-cs.md)

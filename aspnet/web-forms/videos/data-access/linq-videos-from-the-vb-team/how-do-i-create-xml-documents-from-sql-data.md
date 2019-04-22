@@ -12,7 +12,7 @@ ms.openlocfilehash: 30c8b4dac7374dc07fe93cb9ab6e320216a2b778
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59389184"
 ---
 # <a name="how-do-i-create-xml-documents-from-sql-data"></a>[Инструкции] Создание XML-документов на основе данных SQL?

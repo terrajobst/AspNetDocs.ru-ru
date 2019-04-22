@@ -12,7 +12,7 @@ ms.openlocfilehash: 22203d44935e3b0ed0fed5aa2ba42c2897c38241
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59391953"
 ---
 # <a name="showing-multiple-records-per-row-with-the-datalist-control-c"></a>Отображение нескольких записей в одной строке с помощью элемента управления DataList (C#)
@@ -31,7 +31,7 @@ ms.locfileid: "59391953"
 Мы можете настроить макет элементов управления DataList s через его `RepeatColumns` и `RepeatDirection` , обозначающие, соответственно, сколько столбцов визуализируется и расположены ли эти элементы располагаются горизонтально или вертикально. Рис. 1, например, показывает элемент управления DataList, отображающий сведения о продукте в таблице с тремя столбцами.
 
 
-[![Tон DataList показывает три продукта на строку](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image2.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image1.png)
+[![Элемент управления DataList отображается по три продукта на строку](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image2.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image1.png)
 
 **Рис. 1**: Элемент управления DataList показывает три продукта на строку ([Просмотр полноразмерного изображения](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image3.png))
 
@@ -57,7 +57,7 @@ ms.locfileid: "59391953"
 Отвлекитесь и страницу в браузере. Как показано на рис. 2, элемент управления DataList визуализируется как таблица продуктов одним столбцом и несколькими строками.
 
 
-[![Bпо умолчанию y, элемент управления DataList визуализируется как таблица с одним столбцом и несколькими строками](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image5.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image4.png)
+[![По умолчанию, отображаемое DataList как таблица с одним столбцом и несколькими строками](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image5.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image4.png)
 
 **Рис. 2**: По умолчанию элемент управления DataList визуализируется как одного столбца, таблицы с несколькими строками ([Просмотр полноразмерного изображения](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image6.png))
 
@@ -69,7 +69,7 @@ ms.locfileid: "59391953"
 Изменив `RepeatDirection` свойства из `Vertical` для `Horizontal`, DataList визуализирует свои записи в одну строку, создавая один столбец на элемент источника данных. Чтобы проиллюстрировать этот эффект, щелкните в конструкторе элемента управления DataList и затем из окна свойств измените `RepeatDirection` свойства из `Vertical` для `Horizontal`. Сразу же после этого конструктор скорректирует компоновку макета DataList s, создание интерфейса с одной строкой и несколькими столбцами (см. рис. 3).
 
 
-[![Tон RepeatDirection диктует как направление передачи Свойства DataList s элементы являются Laid Out](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image8.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image7.png)
+[![RepeatDirection диктует как направление передачи Свойства DataList s их расположения Out](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image8.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image7.png)
 
 **Рис. 3**: `RepeatDirection` Свойство определяет, как элементы направление DataList s, Laid Out ([Просмотр полноразмерного изображения](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image9.png))
 
@@ -77,7 +77,7 @@ ms.locfileid: "59391953"
 При отображении небольших объемов данных, в одну строку, таблица с несколькими столбцами может быть идеальным способом максимально использовать экран. Для более крупных объемов данных тем не менее одной строки потребуется большое количество столбцов, которые отправляют элементы, удается умещается на экране справа. Figure 4 shows the products when rendered in a single-row DataList. Так как многие продукты (более чем 80), пользователю придется прокручивать экран далеко вправо, чтобы просмотреть сведения о каждом из продуктов.
 
 
-[![Fили достаточно больших источников данных, элемент управления DataList с одним столбцом будет требовать горизонтальной прокрутки](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image11.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image10.png)
+[![Для достаточно больших источников данных элемент управления DataList с одним столбцом будет требовать горизонтальной прокрутки](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image11.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image10.png)
 
 **Рис. 4**: Для достаточно больших источников данных, один столбец DataList будет требовать горизонтальной прокрутки ([Просмотр полноразмерного изображения](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image12.png))
 
@@ -89,7 +89,7 @@ ms.locfileid: "59391953"
 В нашем примере позволяют s отобразим три продукта на строку таблицы. Таким образом, задать `RepeatColumns` значение 3. После внесения этого изменения, Отвлекитесь и просмотрите результаты в браузере. Как показано на рис. 5, продукты теперь перечислены в таблице с тремя столбцами и нескольких строк.
 
 
-[![TВозможны три продукты отображаются в строке](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image14.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image13.png)
+[![Отображается три продукта на строку](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image14.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image13.png)
 
 **Рис. 5**: Отображается три продукта на строку ([Просмотр полноразмерного изображения](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image15.png))
 
@@ -97,7 +97,7 @@ ms.locfileid: "59391953"
 `RepeatDirection` Свойство влияет на расположение элементов в элементе управления DataList. Рис. 5 показаны результаты с `RepeatDirection` свойство значение `Horizontal`. Обратите внимание на то, что три первых продукта Chai, Chang и Aniseed Syrup располагаются слева направо, сверху вниз. Следующие три продукта (начиная с Chef Anton s Cajun Seasoning) отображаются в строке под первыми тремя. Изменение `RepeatDirection` обратно на `Vertical`, тем не менее, располагает Бокс этих продуктов, сверху вниз, слева направо, как показано на рис. 6.
 
 
-[![Here они Laid Out по вертикали](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image17.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image16.png)
+[![Здесь они Laid Out по вертикали](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image17.png)](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image16.png)
 
 **Рис. 6**: Здесь они Laid Out по вертикали ([Просмотр полноразмерного изображения](showing-multiple-records-per-row-with-the-datalist-control-cs/_static/image18.png))
 

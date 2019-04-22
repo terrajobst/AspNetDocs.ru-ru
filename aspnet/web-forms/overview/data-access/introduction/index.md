@@ -12,7 +12,7 @@ ms.openlocfilehash: 7ab0f76e0892e5c4fbabc71b6fa1ec71e00fcaf9
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59387611"
 ---
 # <a name="introduction"></a>Вступление
@@ -22,7 +22,7 @@ ms.locfileid: "59387611"
 
 - [Создание уровня доступа к данным (C#)](creating-a-data-access-layer-cs.md)
 - [Создание уровня бизнес-логики (C#)](creating-a-business-logic-layer-cs.md)
-- [Эталонные страницы и структура навигации веб-сайта (C#)](master-pages-and-site-navigation-cs.md)
+- [Главные страницы и структура навигации веб-сайта (C#)](master-pages-and-site-navigation-cs.md)
 - [Создание уровня доступа к данным (VB)](creating-a-data-access-layer-vb.md)
 - [Создание уровня бизнес-логики (VB)](creating-a-business-logic-layer-vb.md)
-- [Эталонные страницы и структура навигации веб-сайта (VB)](master-pages-and-site-navigation-vb.md)
+- [Главные страницы и структура навигации веб-сайта (VB)](master-pages-and-site-navigation-vb.md)

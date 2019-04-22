@@ -12,7 +12,7 @@ ms.openlocfilehash: 94318068e0fb550f5c6a4250e369000a23507a91
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59394358"
 ---
 # <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-4"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms — часть 4
@@ -30,7 +30,7 @@ ms.locfileid: "59394358"
 
 Подробные данные в разметке или в коде можно связать основных данных. В этой части руководства вы используете оба метода.
 
-[![Image01](the-entity-framework-and-aspnet-getting-started-part-4/_static/image2.png)](the-entity-framework-and-aspnet-getting-started-part-4/_static/image1.png)
+[!["Image01"](the-entity-framework-and-aspnet-getting-started-part-4/_static/image2.png)](the-entity-framework-and-aspnet-getting-started-part-4/_static/image1.png)
 
 ## <a name="displaying-and-updating-related-entities-in-a-gridview-control"></a>Отображение и обновление связанных сущностей в элементе управления GridView
 

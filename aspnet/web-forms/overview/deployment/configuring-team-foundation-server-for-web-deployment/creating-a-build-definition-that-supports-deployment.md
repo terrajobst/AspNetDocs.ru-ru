@@ -12,14 +12,14 @@ ms.openlocfilehash: 97a60274d9306ea0ee332fcc1ab9e487355dbedb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384946"
 ---
 # <a name="creating-a-build-definition-that-supports-deployment"></a>Создание определения сборки, поддерживающего развертывание
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Если вы хотите выполнять любой вид сборки в Team Foundation Server (TFS) 2010, необходимо создать определение сборки в командный проект. В этом разделе описываются способы создания нового определения построения в Team Foundation Server и как управлять веб-развертывания в рамках процесса сборки в Team Build.
 

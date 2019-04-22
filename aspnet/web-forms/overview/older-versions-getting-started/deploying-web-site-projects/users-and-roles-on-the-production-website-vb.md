@@ -12,14 +12,14 @@ ms.openlocfilehash: e97b66aed789cf6f2b2b503ae86e773ac03d74e0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392941"
 ---
 # <a name="users-and-roles-on-the-production-website-vb"></a>Пользователи и роли на рабочем веб-сайте (VB)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Скачать PDF](http://download.microsoft.com/download/5/C/5/5C57DB8C-5DEA-4B3A-92CA-4405544D313B/aspnet_tutorial16_CustomAWAT_vb.pdf)
+[Загрузить PDF-файл](http://download.microsoft.com/download/5/C/5/5C57DB8C-5DEA-4B3A-92CA-4405544D313B/aspnet_tutorial16_CustomAWAT_vb.pdf)
 
 > Средство администрирования веб-сайт ASP.NET (WSAT) предоставляет пользовательский веб-интерфейс для настройки членства и ролей и создание, изменение и удаление пользователей и ролей. К сожалению WSAT работает только при посещении от localhost, это означает, что средство администрирования рабочий веб-сайт недоступен через браузер. Хорошая новость: существуют обходные пути, которые позволяют управлять пользователями и ролями в рабочей среде. Этот учебник рассматривает эти методы обхода проблемы и другие.
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 67ca6b1dc68dc2dde4e24d4d6c6ddae04fc4bb6d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383490"
 ---
 # <a name="signalr-older-versions"></a>Более старые версии SignalR
@@ -20,23 +20,23 @@ ms.locfileid: "59383490"
 > Документацию, относящуюся к более ранним версиям SignalR.
 
 
-- [Учебник. Начало работы с SignalR 1.x](tutorial-getting-started-with-signalr.md)
-- [Учебник. Начало работы с SignalR 1.x и MVC 4](tutorial-getting-started-with-signalr-and-mvc-4.md)
-- [Обмен сообщениями с высоким уровнем периодичности в режиме реального времени с помощью SignalR 1.x](tutorial-high-frequency-realtime-with-signalr.md)
-- [Учебник. Передача сообщений с сервера с помощью ASP.NET SignalR 1.x](tutorial-server-broadcast-with-aspnet-signalr.md)
-- [Руководство по API концентраторов — сервер](signalr-1x-hubs-api-guide-server.md)
-- [Руководство по API концентраторов SignalR 1.x — клиент JavaScript](signalr-1x-hubs-api-guide-javascript-client.md)
-- [Руководство по API концентраторов — клиент .NET](signalr-1x-hubs-api-guide-net-client.md)
+- [Учебник. Начало работы с SignalR 1.x](tutorial-getting-started-with-signalr.md)
+- [Учебник. Начало работы с SignalR 1.x и MVC 4](tutorial-getting-started-with-signalr-and-mvc-4.md)
+- [Обмен сообщениями с высоким уровнем периодичности в режиме реального времени с помощью SignalR 1.x](tutorial-high-frequency-realtime-with-signalr.md)
+- [Учебник. Передача сообщений с сервера с помощью SignalR 1.x](tutorial-server-broadcast-with-aspnet-signalr.md)
+- [Руководство по API концентраторов — сервер](signalr-1x-hubs-api-guide-server.md)
+- [Руководство по API концентраторов SignalR 1.x — клиент JavaScript](signalr-1x-hubs-api-guide-javascript-client.md)
+- [Руководство по API концентраторов — клиент .NET](signalr-1x-hubs-api-guide-net-client.md)
 - [Общие сведения и обработка событий времени существования подключений в SignalR](handling-connection-lifetime-events.md)
-- [Работа с группами в SignalR 1.x](working-with-groups.md)
-- [Сопоставление пользователей SignalR с подключениями в SignalR 1.x](mapping-users-to-connections.md)
-- [Общие сведения о безопасности SignalR (SignalR 1.x)](introduction-to-security.md)
-- [Проверка подлинности и авторизация для концентраторов SignalR (SignalR 1.x)](hub-authorization.md)
-- [Проверка подлинности и авторизация для постоянных подключений SignalR (SignalR 1.x)](persistent-connection-authorization.md)
-- [Производительность SignalR (SignalR 1.x)](signalr-performance.md)
-- [Общие сведения о масштабировании в SignalR 1.x](scaleout-in-signalr.md)
-- [Масштабирование SignalR с помощью служебной шины Azure (SignalR 1.x)](scaleout-with-windows-azure-service-bus.md)
-- [Масштабирование SignalR с помощью Redis (SignalR 1.x)](scaleout-with-redis.md)
-- [Масштабирование SignalR с помощью SQL Server (SignalR 1.x)](scaleout-with-sql-server.md)
-- [Устранение неполадок SignalR (SignalR 1.x)](troubleshooting.md)
-- [Внедрение зависимостей в SignalR 1.x](dependency-injection.md)
+- [Работа с группами в SignalR 1.x](working-with-groups.md)
+- [Сопоставление пользователей SignalR с подключениями в SignalR 1.x](mapping-users-to-connections.md)
+- [Общие сведения о безопасности SignalR (SignalR 1.x)](introduction-to-security.md)
+- [Проверка подлинности и авторизация для концентраторов SignalR (SignalR 1.x)](hub-authorization.md)
+- [Проверка подлинности и авторизация для постоянных подключений SignalR (SignalR 1.x)](persistent-connection-authorization.md)
+- [Производительность SignalR (SignalR 1.x)](signalr-performance.md)
+- [Общие сведения о масштабировании в SignalR 1.x](scaleout-in-signalr.md)
+- [Масштабирование SignalR с помощью служебной шины Azure (SignalR 1.x)](scaleout-with-windows-azure-service-bus.md)
+- [Масштабирование SignalR с помощью Redis (SignalR 1.x)](scaleout-with-redis.md)
+- [Масштабирование SignalR с помощью SQL Server (SignalR 1.x)](scaleout-with-sql-server.md)
+- [Устранение неполадок SignalR (SignalR 1.x)](troubleshooting.md)
+- [Внедрение зависимостей в SignalR 1.x](dependency-injection.md)

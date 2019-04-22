@@ -12,7 +12,7 @@ ms.openlocfilehash: 41d5d85a002ac1fe674bd747ed4802f98d32ab69
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59394488"
 ---
 # <a name="mobile-apps--sites-with-aspnet"></a>Мобильные приложения и сайты с помощью ASP.NET
@@ -30,22 +30,22 @@ ms.locfileid: "59394488"
 Во второй статье своей серии авторы обсуждают использование Xamarin для нескольких платформ мобильных клиентов и показано, как реализовать аутентификацию и поддержку синхронизированных клиентского кэша данных.
 
 
-### [<a name="calling-web-api-from-a-windows-phone-8-application"></a>Вызов веб-API из приложения Windows Phone 8](../web-api/overview/mobile-clients/calling-web-api-from-a-windows-phone-8-application.md)
+### <a name="calling-web-api-from-a-windows-phone-8-applicationweb-apioverviewmobile-clientscalling-web-api-from-a-windows-phone-8-applicationmd"></a>[Вызов веб-API из приложения Windows Phone 8](../web-api/overview/mobile-clients/calling-web-api-from-a-windows-phone-8-application.md)
 
 Этот учебник end-to-end показано, как создать приложение веб-API ASP.NET, который предоставляет данные для приложения Windows Phone 8.
 
 
-### [<a name="get-started-with-azure-mobile-services"></a>Начало работы с мобильными службами Azure](https://azure.microsoft.com/documentation/articles/mobile-services-dotnet-backend-windows-store-dotnet-get-started?WT.mc_id=zumo_aspnet)
+### <a name="get-started-with-azure-mobile-serviceshttpsazuremicrosoftcomdocumentationarticlesmobile-services-dotnet-backend-windows-store-dotnet-get-startedwtmcidzumoaspnet"></a>[Начало работы с мобильными службами Azure](https://azure.microsoft.com/documentation/articles/mobile-services-dotnet-backend-windows-store-dotnet-get-started?WT.mc_id=zumo_aspnet)
 
 Приступить к использованию мобильных служб Azure с веб-API ASP.NET. Этом руководстве показано, как создать приложение мобильных служб на портале управления Azure.
 
 
-### [<a name="authentication-in-azure-mobile-services"></a>Проверка подлинности в мобильных службах Azure](https://azure.microsoft.com/documentation/articles/mobile-services-dotnet-backend-windows-store-dotnet-get-started-users/?WT.mc_id=zumo_aspnet)
+### <a name="authentication-in-azure-mobile-serviceshttpsazuremicrosoftcomdocumentationarticlesmobile-services-dotnet-backend-windows-store-dotnet-get-started-userswtmcidzumoaspnet"></a>[Проверка подлинности в мобильных службах Azure](https://azure.microsoft.com/documentation/articles/mobile-services-dotnet-backend-windows-store-dotnet-get-started-users/?WT.mc_id=zumo_aspnet)
 
 Этом руководстве показано, как выполнить проверку подлинности пользователей в мобильных службах Azure из приложения.
 
 
-### [<a name="using-push-notifications-in-azure-mobile-services"></a>С помощью Push-уведомлений в мобильных службах Azure](https://azure.microsoft.com/documentation/articles/mobile-services-dotnet-backend-windows-store-dotnet-get-started-push/?WT.mc_id=zumo_aspnet)
+### <a name="using-push-notifications-in-azure-mobile-serviceshttpsazuremicrosoftcomdocumentationarticlesmobile-services-dotnet-backend-windows-store-dotnet-get-started-pushwtmcidzumoaspnet"></a>[С помощью Push-уведомлений в мобильных службах Azure](https://azure.microsoft.com/documentation/articles/mobile-services-dotnet-backend-windows-store-dotnet-get-started-push/?WT.mc_id=zumo_aspnet)
 
 Используйте мобильные службы Azure для отправки Push-уведомлений на мобильном устройстве.
 
@@ -53,31 +53,31 @@ ms.locfileid: "59394488"
 ## <a name="develop-mobile-sites"></a>Разработка сайты для мобильных устройств
 
 
-### [<a name="deploy-an-mobile-friendly-aspnet-mvc-5-web-application-on-windows-azure-web-sites"></a>Развертывание веб-приложения адаптированный для мобильных устройств ASP.NET MVC 5 на Windows Azure веб-сайтов](https://docs.microsoft.com/azure/app-service-web/web-sites-dotnet-deploy-aspnet-mvc-mobile-app)
+### <a name="deploy-an-mobile-friendly-aspnet-mvc-5-web-application-on-windows-azure-web-siteshttpsdocsmicrosoftcomazureapp-service-webweb-sites-dotnet-deploy-aspnet-mvc-mobile-app"></a>[Развертывание веб-приложения адаптированный для мобильных устройств ASP.NET MVC 5 на Windows Azure веб-сайтов](https://docs.microsoft.com/azure/app-service-web/web-sites-dotnet-deploy-aspnet-mvc-mobile-app)
 
 Этом учебнике описываются основы для развертывания приложения MVC 5 на веб-сайте Windows Azure и создания представлений адаптированный для мобильных устройств, использующих гибкий Дизайн для начальной загрузки.
 
 
-### [<a name="add-mobile-pages-to-your-aspnet-web-forms--mvc-application"></a>Добавление мобильных страниц на ваш веб-форм ASP.NET и MVC-приложения](../whitepapers/add-mobile-pages-to-your-aspnet-web-forms-mvc-application.md)
+### <a name="add-mobile-pages-to-your-aspnet-web-forms--mvc-applicationwhitepapersadd-mobile-pages-to-your-aspnet-web-forms-mvc-applicationmd"></a>[Добавление мобильных страниц на ваш веб-форм ASP.NET и MVC-приложения](../whitepapers/add-mobile-pages-to-your-aspnet-web-forms-mvc-application.md)
 
 Данном разделе описывается различные способы для обслуживания страниц, оптимизированных для мобильных устройств из вашей веб-форм ASP.NET и MVC-приложения и предлагает архитектуры и проблем, которые следует учитывать при разработке для широкого спектра устройств проектирования.
 
 
-### [<a name="detect-the-latest-mobile-devices-using-51degreesmobi-foundation"></a>Обнаружение новейших мобильных устройствах с помощью 51degrees.mobi Foundation](https://github.com/51Degrees/dotNET-Device-Detection)
+### <a name="detect-the-latest-mobile-devices-using-51degreesmobi-foundationhttpsgithubcom51degreesdotnet-device-detection"></a>[Обнаружение новейших мобильных устройствах с помощью 51degrees.mobi Foundation](https://github.com/51Degrees/dotNET-Device-Detection)
 
 51degrees.mobi Foundation — это проект с открытым кодом независимых производителей, который расширяет возможности ASP. NET Request.Browser API, поэтому вы можете легко обнаружить мобильных устройств с недавно выпустила, включая Windows Phone 7, Android и Apple iPad.
 
 
-### [<a name="simulate-popular-mobile-devices-for-testing"></a>Имитация популярных мобильных устройств для тестирования](device-simulators.md)
+### <a name="simulate-popular-mobile-devices-for-testingdevice-simulatorsmd"></a>[Имитация популярных мобильных устройств для тестирования](device-simulators.md)
 
 Ссылки на эмуляторы и имитаторы, которые можно использовать для тестирования мобильных веб-приложений
 
 
-### [<a name="mobile-web-sites-with-aspnet-mvc-and-the-mobile-browser-definition-file"></a>Мобильные веб-сайтов с помощью ASP.NET MVC и файл определения браузера мобильного устройства](http://www.hanselman.com/blog/MixMobileWebSitesWithASPNETMVCAndTheMobileBrowserDefinitionFile.aspx)
+### <a name="mobile-web-sites-with-aspnet-mvc-and-the-mobile-browser-definition-filehttpwwwhanselmancomblogmixmobilewebsiteswithaspnetmvcandthemobilebrowserdefinitionfileaspx"></a>[Мобильные веб-сайтов с помощью ASP.NET MVC и файл определения браузера мобильного устройства](http://www.hanselman.com/blog/MixMobileWebSitesWithASPNETMVCAndTheMobileBrowserDefinitionFile.aspx)
 
 В этой беседе, представленные на конференции Microsoft MIX (Scott hanselman) описывает, как можно создать мобильное устройство понятным веб-сайты в ASP.NET MVC.
 
 
-### [<a name="develop-iphone-applications-with-aspnet"></a>Разработка приложений iPhone с помощью ASP.NET](http://labs.componentone.com/iPhone/)
+### <a name="develop-iphone-applications-with-aspnethttplabscomponentonecomiphone"></a>[Разработка приложений iPhone с помощью ASP.NET](http://labs.componentone.com/iPhone/)
 
 ComponentOne Studio для iPhone — это набор элементов управления ASP.NET, которые имитируют внешний вид iPhone и iPod touch пользовательских интерфейсов, при подготовке к просмотру в Mobile Safari.

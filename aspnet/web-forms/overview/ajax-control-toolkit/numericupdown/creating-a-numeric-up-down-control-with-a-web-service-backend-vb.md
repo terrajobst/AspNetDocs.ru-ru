@@ -12,7 +12,7 @@ ms.openlocfilehash: 0442b5e22e44e0767825026b26ad3da55777b962
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59384270"
 ---
 # <a name="creating-a-numeric-updown-control-with-a-web-service-backend-vb"></a>Создание числового поля со стрелками "вверх/вниз" с помощью серверной веб-службы (VB)
@@ -54,7 +54,7 @@ ASP.NET AJAX Control Toolkit содержит `NumericUpDown` расширите
 При запуске страницы, обратите внимание на то, как значение в текстовое поле всегда удваивается при нажмите кнопку "верхний" и уменьшается вдвое при нажатии на кнопку ниже.
 
 
-[![Oчтение чисел, которые являются степенью двойки отображаются](creating-a-numeric-up-down-control-with-a-web-service-backend-vb/_static/image2.png)](creating-a-numeric-up-down-control-with-a-web-service-backend-vb/_static/image1.png)
+[![Отображаются только те числа, которые являются степенью числа 2](creating-a-numeric-up-down-control-with-a-web-service-backend-vb/_static/image2.png)](creating-a-numeric-up-down-control-with-a-web-service-backend-vb/_static/image1.png)
 
 Отображаются только те числа, которые являются степенью двойки ([Просмотр полноразмерного изображения](creating-a-numeric-up-down-control-with-a-web-service-backend-vb/_static/image3.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 36d1166e1bd2b4c97b3cf3dd0bc3a7e8010a9443
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59393696"
 ---
 # <a name="animating-an-updatepanel-control-c"></a>Анимация элемента управления UpdatePanel (C#)
@@ -50,7 +50,7 @@ ms.locfileid: "59393696"
 Теперь всякий раз, когда происходит обратная передача внутри UpdatePanel, новое содержимое панели Плавное.
 
 
-[![TСледующий шаг мастера HE: плавный переход](animating-an-updatepanel-control-cs/_static/image2.png)](animating-an-updatepanel-control-cs/_static/image1.png)
+[![Следующий шаг мастера является плавный переход](animating-an-updatepanel-control-cs/_static/image2.png)](animating-an-updatepanel-control-cs/_static/image1.png)
 
 Следующий шаг мастера является плавный переход ([Просмотр полноразмерного изображения](animating-an-updatepanel-control-cs/_static/image3.png))
 

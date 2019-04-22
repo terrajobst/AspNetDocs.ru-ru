@@ -12,7 +12,7 @@ ms.openlocfilehash: 5f8eeeaa9bd77c0259f680198e57ade8d49cd06b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59382625"
 ---
 # <a name="creating-an-action-vb"></a>Создание действия (VB)
@@ -28,7 +28,7 @@ ms.locfileid: "59382625"
 
 Добавьте новое действие к контроллеру, добавив новый метод к контроллеру. Например контроллер в листинге 1 содержит действия с именем Index() и действие с именем SayHello(). Оба метода доступны как действия.
 
-**Listing 1 - Controllers\HomeController.vb**
+**В листинге 1 - Controllers\HomeController.vb**
 
 [!code-vb[Main](creating-an-action-vb/samples/sample1.vb)]
 
@@ -57,7 +57,7 @@ ms.locfileid: "59382625"
 При попытке вызвать действие контроллера CompanySecrets(), введя в адресной строке браузера /Work/CompanySecrets затем вы получите сообщение об ошибке на рис. 1.
 
 
-[![Invoking метод NonAction](creating-an-action-vb/_static/image1.jpg)](creating-an-action-vb/_static/image1.png)
+[![Вызов метода NonAction](creating-an-action-vb/_static/image1.jpg)](creating-an-action-vb/_static/image1.png)
 
 **Рис 01**: Вызов метода NonAction ([Просмотр полноразмерного изображения](creating-an-action-vb/_static/image2.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: e4715862d7bc89f37a74ef63ee09e69e6e2d2665
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59396893"
 ---
 # <a name="creating-a-data-access-layer-vb"></a>Создание уровня доступа к данным (VB)
@@ -37,7 +37,7 @@ ms.locfileid: "59396893"
 Чтобы создать наш слой доступа к данным (DAL), необходимо сначала создать веб-сайт и настроить базу данных. Начните с создания нового файла на основе системы веб-сайт ASP.NET. Чтобы выполнить это, перейдите к меню "файл" и выберите новый веб-сайт, отображает диалоговое окно нового веб-сайта. Выберите шаблон веб-сайт ASP.NET, задайте раскрывающемся списке расположение в файловой системе, выберите папку для размещения веб-сайта и выбранный язык Visual Basic.
 
 
-[![CСоздание веб-сайта New File System-Based](creating-a-data-access-layer-vb/_static/image2.png)](creating-a-data-access-layer-vb/_static/image1.png)
+[![Создать новый файл на основе системы веб-сайт](creating-a-data-access-layer-vb/_static/image2.png)](creating-a-data-access-layer-vb/_static/image1.png)
 
 **Рис. 1**: Создание веб-сайта New File System-Based ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image3.png))
 
@@ -92,7 +92,7 @@ ms.locfileid: "59396893"
 Мы будем использовать строго типизированных наборов DataSet для архитектуры предусмотренной данными учебными курсами. Рис. 3 показан рабочий процесс между разными слоями приложения, использующего типизированные наборы DataSet.
 
 
-[![ALl, код доступа к данным, ограничены DAL](creating-a-data-access-layer-vb/_static/image6.png)](creating-a-data-access-layer-vb/_static/image5.png)
+[![Все код доступа к данным, ограничены DAL](creating-a-data-access-layer-vb/_static/image6.png)](creating-a-data-access-layer-vb/_static/image5.png)
 
 **Рис. 3**: Все код доступа к данным, ограничены DAL ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image7.png))
 
@@ -102,7 +102,7 @@ ms.locfileid: "59396893"
 Чтобы начать создание DAL, начнем с добавления типизированный набор DataSet в свой проект. Для этого щелкните правой кнопкой мыши узел проекта в обозревателе решений и выберите команду Добавить новый элемент. В списке шаблонов выберите DataSet и назовите его `Northwind.xsd`.
 
 
-[![CВыберите, чтобы добавить новый набор данных в проект](creating-a-data-access-layer-vb/_static/image9.png)](creating-a-data-access-layer-vb/_static/image8.png)
+[![Выберите Добавить новый набор данных в проект](creating-a-data-access-layer-vb/_static/image9.png)](creating-a-data-access-layer-vb/_static/image8.png)
 
 **Рис. 4**: Выберите Добавить новый набор данных в проект ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image10.png))
 
@@ -116,7 +116,7 @@ ms.locfileid: "59396893"
 Мастер настройки TableAdapter начинает, предлагающее выбрать базу данных для работы с. Выберите в раскрывающемся списке отображаются предлагаемые базы данных в обозревателе серверов. Если базы данных Northwind не был добавлен в проводник по серверам, можно нажмите кнопку Создать подключение в данный момент для этого.
 
 
-[![CВыберите базы данных Northwind из раскрывающегося списка](creating-a-data-access-layer-vb/_static/image12.png)](creating-a-data-access-layer-vb/_static/image11.png)
+[![Выберите базу данных "Борей" в раскрывающемся списке](creating-a-data-access-layer-vb/_static/image12.png)](creating-a-data-access-layer-vb/_static/image11.png)
 
 **Рис. 5**: Выберите базу данных "Борей" в раскрывающемся списке ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image13.png))
 
@@ -124,7 +124,7 @@ ms.locfileid: "59396893"
 После выбора базы данных и нажмите кнопку Далее, появляется необходимость сохранить строку подключения в `Web.config` файл. Путем сохранения строки подключения позволяет избежать внесения ее жестких закодированных классов TableAdapter, что упрощает ситуацию, если строку подключения в будущем изменится. Если принято решение сохранить строку подключения в файле конфигурации будет располагаться в `<connectionStrings>` раздела, в котором может быть [при необходимости зашифрованных](http://aspnet.4guysfromrolla.com/articles/021506-1.aspx) целью повышения безопасности или последующего изменения посредством новой страницы свойств ASP.NET 2.0 в Средства администрирования IIS графического пользовательского интерфейса, более идеально подходит для администраторов.
 
 
-[![SСохранить строку подключения в файл Web.config](creating-a-data-access-layer-vb/_static/image15.png)](creating-a-data-access-layer-vb/_static/image14.png)
+[![Сохранить строку подключения в файл Web.config](creating-a-data-access-layer-vb/_static/image15.png)](creating-a-data-access-layer-vb/_static/image14.png)
 
 **Рис. 6**: Сохранение подключения в `Web.config` ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image16.png))
 
@@ -134,7 +134,7 @@ ms.locfileid: "59396893"
 Чтобы приступить к определению запроса SQL, сначала необходимо указать способ TableAdapter будет выдавать запрос. Можно использовать специальный оператор SQL, создайте новую хранимую процедуру или использовать существующую хранимую процедуру. В этих учебниках мы будем использовать специализированные инструкции SQL. Ссылаться на [Брайан Нойс](http://briannoyes.net/)статье Вэнса [создавать слой доступа к данным с помощью конструктора набора данных Visual Studio 2005](http://www.theserverside.net/articles/showarticle.tss?id=DataSetDesigner) пример использования хранимых процедур.
 
 
-[![Qзапрос данных с помощью инструкции SQL Ad-Hoc](creating-a-data-access-layer-vb/_static/image18.png)](creating-a-data-access-layer-vb/_static/image17.png)
+[![Запрос данных с помощью инструкции SQL Ad-Hoc](creating-a-data-access-layer-vb/_static/image18.png)](creating-a-data-access-layer-vb/_static/image17.png)
 
 **Рис. 7**: Запрос данных с помощью инструкции SQL Ad-Hoc ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image19.png))
 
@@ -142,7 +142,7 @@ ms.locfileid: "59396893"
 На этом этапе можно ввести запрос SQL вручную. При создании первого метода в адаптере TableAdapter обычно требуется, чтобы запрос будет возвращать те столбцы, которые необходимо воспроизвести в соответствующем объекте DataTable. Это можно сделать, создав запрос, возвращающий все столбцы и строки из `Products` таблицы:
 
 
-[![EЦентральный SQL запрос в текстовое поле](creating-a-data-access-layer-vb/_static/image21.png)](creating-a-data-access-layer-vb/_static/image20.png)
+[![Введите запрос SQL в текстовое поле](creating-a-data-access-layer-vb/_static/image21.png)](creating-a-data-access-layer-vb/_static/image20.png)
 
 **Рис. 8**: Введите SQL запрос в текстовое поле ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image22.png))
 
@@ -150,7 +150,7 @@ ms.locfileid: "59396893"
 В качестве альтернативы построителя запросов и конструирования запроса, графически, как показано на рис. 9.
 
 
-[![CЗапрос графически посредством редактора запросов reate](creating-a-data-access-layer-vb/_static/image24.png)](creating-a-data-access-layer-vb/_static/image23.png)
+[![Создайте запрос графически посредством редактора запросов](creating-a-data-access-layer-vb/_static/image24.png)](creating-a-data-access-layer-vb/_static/image23.png)
 
 **Рис. 9**: Создайте запрос графически посредством редактора запросов ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image25.png))
 
@@ -158,7 +158,7 @@ ms.locfileid: "59396893"
 После создания запроса, но прежде чем переходить к следующему экрану нажмите кнопку "Дополнительно" ". В проектах веб-узла «Generate Insert, Update и Delete операторы» является единственным дополнительный параметр выбран по умолчанию; Если запустить этот мастер из библиотеки классов или проекта Windows будет также выбран параметр «Использовать оптимистичный параллелизм». Не устанавливайте параметр «Использовать оптимистичный параллелизм» флажок сейчас. Оптимистичный параллелизм будет изучаться в последующих учебных курсах.
 
 
-[![Sвыберете только создать Insert, Update и Delete инструкции параметр](creating-a-data-access-layer-vb/_static/image27.png)](creating-a-data-access-layer-vb/_static/image26.png)
+[![Только создать Insert, Update и Delete инструкции SELECT параметр](creating-a-data-access-layer-vb/_static/image27.png)](creating-a-data-access-layer-vb/_static/image26.png)
 
 **Рис. 10**: Только создать Insert, Update и Delete инструкции SELECT параметр ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image28.png))
 
@@ -173,7 +173,7 @@ ms.locfileid: "59396893"
 Если этот флажок установлен, последний флажок «GenerateDBDirectMethods», создает `Insert()`, `Update()`, и `Delete()` методы адаптера таблицы. Если этот флажок не установлен, все обновления необходимо будет сделать с помощью единственной TableAdapter `Update()` метод, который принимает типизированный набор DataSet, DataTable, один DataRow или массив из DataRow. (Если вы уже снят флажок «Generate Insert, Update и Delete операторы» параметр из числа дополнительных свойств, на рис. 9, этот флажок параметра не окажет никакого воздействия.) Оставим этот флажок установленным.
 
 
-[![Cизменить имя метода GetData на GetProducts](creating-a-data-access-layer-vb/_static/image30.png)](creating-a-data-access-layer-vb/_static/image29.png)
+[![Измените имя метода GetData на GetProducts](creating-a-data-access-layer-vb/_static/image30.png)](creating-a-data-access-layer-vb/_static/image29.png)
 
 **Рис. 11**: Измените имя метода из `GetData` для `GetProducts` ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image31.png))
 
@@ -181,7 +181,7 @@ ms.locfileid: "59396893"
 Следуйте указаниям мастера, нажмите кнопку Finish. После закрытия мастера мы возвращаемся в конструктор DataSet, указывающие DataTable, что мы только что создали. Можно просмотреть список столбцов в `Products` DataTable (`ProductID`, `ProductName`, и так далее), а также методы `ProductsTableAdapter` (`Fill()` и `GetProducts()`).
 
 
-[![Tон Products DataTable и ProductsTableAdapter были добавлены к типизированному DataSet](creating-a-data-access-layer-vb/_static/image33.png)](creating-a-data-access-layer-vb/_static/image32.png)
+[![К типизированному DataSet добавлены DataTable продуктов и ProductsTableAdapter](creating-a-data-access-layer-vb/_static/image33.png)](creating-a-data-access-layer-vb/_static/image32.png)
 
 **Рис. 12**: `Products` DataTable и `ProductsTableAdapter` были добавлены к типизированному DataSet ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image34.png))
 
@@ -203,7 +203,7 @@ AllProducts.aspx.vb
 [!code-vb[Main](creating-a-data-access-layer-vb/samples/sample3.vb)]
 
 
-[![Tон список продуктов отображается в элементе управления GridView](creating-a-data-access-layer-vb/_static/image36.png)](creating-a-data-access-layer-vb/_static/image35.png)
+[![Список продуктов, отображаемый в GridView](creating-a-data-access-layer-vb/_static/image36.png)](creating-a-data-access-layer-vb/_static/image35.png)
 
 **Рис. 13**: Список продуктов, отображаемый в элементе управления GridView ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image37.png))
 
@@ -225,7 +225,7 @@ AllProducts.aspx.vb
 Мы сначала появляется запрос о способе доступа к базе данных с помощью специального оператора SQL или новой или существующей хранимой процедуры. Выберите для использования инструкции SQL ad-hoc еще раз. Затем запрашивается тип запроса SQL, мы бы хотели использовать. Поскольку нам требуется возвратить все продукты, принадлежащие к указанной категории, нам потребуется написать `SELECT` возвращающий строки.
 
 
-[![CВыберите для создания ВЫБЕРИТЕ оператор которого возвращает строки](creating-a-data-access-layer-vb/_static/image40.png)](creating-a-data-access-layer-vb/_static/image39.png)
+[![Выберите для создания инструкции SELECT, возвращающая строки](creating-a-data-access-layer-vb/_static/image40.png)](creating-a-data-access-layer-vb/_static/image39.png)
 
 **Рис. 15**: Решили создать `SELECT` инструкции которого возвращает строки ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image41.png))
 
@@ -233,7 +233,7 @@ AllProducts.aspx.vb
 Следующим шагом является определение SQL-запрос, используемый для доступа к данным. Поскольку нам требуется возвратить только те продукты, которые принадлежат определенной категории, используйте тот же `SELECT` инструкции от `GetProducts()`, но добавьте следующий `WHERE` предложение: `WHERE CategoryID = @CategoryID`. `@CategoryID` Параметр указывает мастеру TableAdapter сообщается, что мы создаем метод будет требуется входной параметр соответствующего типа (а именно неотрицательного целого).
 
 
-[![EВведите запрос, чтобы только возвращать продукты в категории указан](creating-a-data-access-layer-vb/_static/image43.png)](creating-a-data-access-layer-vb/_static/image42.png)
+[![Введите запрос на возвращение продуктов только указанной категории](creating-a-data-access-layer-vb/_static/image43.png)](creating-a-data-access-layer-vb/_static/image42.png)
 
 **Рис. 16**: Введите запрос только возвращает продукты в категории указано ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image44.png))
 
@@ -241,7 +241,7 @@ AllProducts.aspx.vb
 На заключительном этапе можно выбрать которой шаблоны использования, а также настроить имена создаваемых методов доступа к данным. Для шаблона Fill изменим имя на `FillByCategoryID` и для возврата шаблона возврата объекта DataTable ( `GetX` методы), мы используем `GetProductsByCategoryID`.
 
 
-[![CВыберите имена для методов класса TableAdapter](creating-a-data-access-layer-vb/_static/image46.png)](creating-a-data-access-layer-vb/_static/image45.png)
+[![Выберите имена для методов класса TableAdapter](creating-a-data-access-layer-vb/_static/image46.png)](creating-a-data-access-layer-vb/_static/image45.png)
 
 **Рис. 17**: Выберите имена для методов класса TableAdapter ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image47.png))
 
@@ -259,7 +259,7 @@ AllProducts.aspx.vb
 Эти параметризованные запросы можно протестировать непосредственно из конструктора DataSet. Щелкните правой кнопкой мыши метод в TableAdapter и выберите данные для предварительного просмотра. Затем введите значения для параметров и нажмите кнопку предварительного просмотра.
 
 
-[![TОтображаются те продукты, принадлежащие к категории «Напитки»](creating-a-data-access-layer-vb/_static/image50.png)](creating-a-data-access-layer-vb/_static/image49.png)
+[![Показаны эти продукты, принадлежащие к категории «Напитки»](creating-a-data-access-layer-vb/_static/image50.png)](creating-a-data-access-layer-vb/_static/image49.png)
 
 **Рис. 19**: Показаны эти продукты, принадлежащие к категории «Напитки» ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image51.png))
 
@@ -275,7 +275,7 @@ Beverages.aspx.vb
 [!code-vb[Main](creating-a-data-access-layer-vb/samples/sample5.vb)]
 
 
-[![TЭти продукты в категории «Напитки» отображаются](creating-a-data-access-layer-vb/_static/image53.png)](creating-a-data-access-layer-vb/_static/image52.png)
+[![Отображаются продукты категории «Напитки»](creating-a-data-access-layer-vb/_static/image53.png)](creating-a-data-access-layer-vb/_static/image52.png)
 
 **Рис. 20**: Эти продукты из категории «Напитки» отображаются ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image54.png))
 
@@ -285,7 +285,7 @@ Beverages.aspx.vb
 Существует два метода, обычно используется для вставки, обновления и удаления данных. Первая схема, которую я называю непосредственной схемы базы данных, включает в себя создание методов, которые при вызове проблема `INSERT`, `UPDATE`, или `DELETE` команду к базе данных, работающий с единственной записью базы данных. Такие методы обычно передается последовательность скалярных значений (целые числа, строки, логические значения, значений даты и времени и т. д.), которые соответствуют значения для вставки, обновления или удаления. Например, с помощью этого шаблона для `Products` метод удаления принимает целый параметр, таблицы, указывающее, `ProductID` записи для удаления, хотя метод вставки принимает строку для `ProductName`, десятичное значение для `UnitPrice`, целое число для `UnitsOnStock`, и т. д.
 
 
-[![Eдля базы данных немедленно отправляется ACH Insert, Update и запрос на удаление](creating-a-data-access-layer-vb/_static/image56.png)](creating-a-data-access-layer-vb/_static/image55.png)
+[![Для базы данных немедленно отправляется каждый Insert, Update и запрос на удаление](creating-a-data-access-layer-vb/_static/image56.png)](creating-a-data-access-layer-vb/_static/image55.png)
 
 **Рис. 21**: Для базы данных немедленно отправляется каждый Insert, Update и запрос на удаление ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image57.png))
 
@@ -293,7 +293,7 @@ Beverages.aspx.vb
 Другая схема, которую я буду называть шаблон пакетного обновления, является обновление всей DataSet, DataTable или коллекции из DataRow в один вызов метода. В этом шаблоне разработчик удаляет, операции вставки и изменение объектов DataRow в DataTable и затем передает эти DataRow или DataTable в метод обновления. Затем этот метод перечисляет переданные DataRow, определяет ли они были изменены, добавленных или удаленных (с помощью объекта DataRow [свойства RowState](https://msdn.microsoft.com/library/system.data.datarow.rowstate.aspx) значение) и отправляет запрос к соответствующей базе данных для каждой записи.
 
 
-[![Aвсе изменения синхронизируются с базы данных при метод Update вызывается](creating-a-data-access-layer-vb/_static/image59.png)](creating-a-data-access-layer-vb/_static/image58.png)
+[![Все изменения синхронизируются с базой данных при вызове метода обновления](creating-a-data-access-layer-vb/_static/image59.png)](creating-a-data-access-layer-vb/_static/image58.png)
 
 **Рис. 22**: Все изменения синхронизируются с базой данных, когда вызывается метод Update ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image60.png))
 
@@ -303,7 +303,7 @@ TableAdapter используется схема пакетного обновл
 Обе схемы изменения данных используют свойства `InsertCommand`, `UpdateCommand`, и `DeleteCommand` TableAdapter для обращения к их `INSERT`, `UPDATE`, и `DELETE` команды в базу данных. Можно проверять и изменять `InsertCommand`, `UpdateCommand`, и `DeleteCommand` свойства, щелкните TableAdapter в конструкторе наборов данных и затем перейдите в окно свойств. (Убедитесь, что выбран TableAdapter и что `ProductsTableAdapter` объект является выбранный в раскрывающемся списке в окне «Свойства».)
 
 
-[![TTableAdapter ему InsertCommand, UpdateCommand и свойства DeleteCommand](creating-a-data-access-layer-vb/_static/image62.png)](creating-a-data-access-layer-vb/_static/image61.png)
+[![TableAdapter имеет InsertCommand, UpdateCommand и DeleteCommand свойства](creating-a-data-access-layer-vb/_static/image62.png)](creating-a-data-access-layer-vb/_static/image61.png)
 
 **Рис. 23**: TableAdapter имеет `InsertCommand`, `UpdateCommand`, и `DeleteCommand` свойства ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image63.png))
 
@@ -311,7 +311,7 @@ TableAdapter используется схема пакетного обновл
 Чтобы просмотреть или изменить любые из этих свойств команды базы данных, щелкните `CommandText` подсвойств, чтобы открыть построитель запросов.
 
 
-[![Cастройка вставки, обновления и удаления инструкций в построителе запросов](creating-a-data-access-layer-vb/_static/image65.png)](creating-a-data-access-layer-vb/_static/image64.png)
+[![Настройка в построителе запросов INSERT, UPDATE и DELETE инструкции](creating-a-data-access-layer-vb/_static/image65.png)](creating-a-data-access-layer-vb/_static/image64.png)
 
 **Рис. 24**: Настройка `INSERT`, `UPDATE`, и `DELETE` операторы в построителе запросов ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image66.png))
 
@@ -331,7 +331,7 @@ TableAdapter используется схема пакетного обновл
 Для создания такого настраиваемого метода, вернитесь в конструктор набора данных. Щелкните правой кнопкой мыши TableAdapter и выберите Добавить запрос, возврат к мастеру TableAdapter. На втором экране указывается тип создаваемого запроса. Давайте создадим метод, который добавляется новый продукт, а затем возвращает значение вновь добавленной записи `ProductID`. Поэтому выберем создание `INSERT` запроса.
 
 
-[![Cсоздать метод для добавления создать строку к таблице Products](creating-a-data-access-layer-vb/_static/image68.png)](creating-a-data-access-layer-vb/_static/image67.png)
+[![Создайте метод для добавления новой строки к таблице Products](creating-a-data-access-layer-vb/_static/image68.png)](creating-a-data-access-layer-vb/_static/image67.png)
 
 **Рис. 25**: Создайте метод для добавления строки New `Products` таблицы ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image69.png))
 
@@ -339,7 +339,7 @@ TableAdapter используется схема пакетного обновл
 На следующем экране `InsertCommand`в `CommandText` отображается. Нарастим этот запрос, добавив `SELECT SCOPE_IDENTITY()` в конце запроса, который возвращает последнее значение identity, вставленное в `IDENTITY` столбец в той же области. (См. в разделе [технической документации](https://msdn.microsoft.com/library/ms190315.aspx) Дополнительные сведения о `SCOPE_IDENTITY()` и почему может потребоваться [использовать область\_IDENTITY() вместо @@IDENTITY](http://weblogs.sqlteam.com/travisl/archive/2003/10/29/405.aspx).) Убедитесь, что `INSERT` инструкция точкой с запятой перед добавлением `SELECT` инструкции.
 
 
-[![Augment запрос может вернуть значение SCOPE_IDENTITY()](creating-a-data-access-layer-vb/_static/image71.png)](creating-a-data-access-layer-vb/_static/image70.png)
+[![Расширение запроса для возврата значения SCOPE_IDENTITY()](creating-a-data-access-layer-vb/_static/image71.png)](creating-a-data-access-layer-vb/_static/image70.png)
 
 **Рис. 26**: Расширение запроса для возврата `SCOPE_IDENTITY()` значение ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image72.png))
 
@@ -347,7 +347,7 @@ TableAdapter используется схема пакетного обновл
 Наконец, назовите новый метод `InsertProduct`.
 
 
-[![SET имя метода для InsertProduct](creating-a-data-access-layer-vb/_static/image74.png)](creating-a-data-access-layer-vb/_static/image73.png)
+[![Задайте имя нового метода к InsertProduct](creating-a-data-access-layer-vb/_static/image74.png)](creating-a-data-access-layer-vb/_static/image73.png)
 
 **Рис. 27**: Задайте имя нового метода `InsertProduct` ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image75.png))
 
@@ -357,7 +357,7 @@ TableAdapter используется схема пакетного обновл
 По умолчанию вставьте методы без запросов методы проблему, т.е. они возвращают число затронутых строк. Тем не менее, мы хотим `InsertProduct` метод для возврата значения, возвращаемые запросом, не число обработанных строк. Для этого необходимо настроить `InsertProduct` метода `ExecuteMode` свойства `Scalar`.
 
 
-[![Cизменить свойство ExecuteMode скалярных](creating-a-data-access-layer-vb/_static/image77.png)](creating-a-data-access-layer-vb/_static/image76.png)
+[![Измените свойство ExecuteMode на скаляр](creating-a-data-access-layer-vb/_static/image77.png)](creating-a-data-access-layer-vb/_static/image76.png)
 
 **Рис. 28**: Изменение `ExecuteMode` свойства `Scalar` ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image78.png))
 
@@ -375,7 +375,7 @@ TableAdapter используется схема пакетного обновл
 [!code-sql[Main](creating-a-data-access-layer-vb/samples/sample9.sql)]
 
 
-[![Uбновить инструкцию SELECT для метода GetProducts()](creating-a-data-access-layer-vb/_static/image80.png)](creating-a-data-access-layer-vb/_static/image79.png)
+[![Обновление инструкции SELECT для метода GetProducts()](creating-a-data-access-layer-vb/_static/image80.png)](creating-a-data-access-layer-vb/_static/image79.png)
 
 **Рис. 29**: Обновление `SELECT` инструкции для `GetProducts()` метод ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image81.png))
 
@@ -444,7 +444,7 @@ TableAdapter используется схема пакетного обновл
       [!code-sql[Main](creating-a-data-access-layer-vb/samples/sample21.sql)]
 
 
-[![Tон набора данных конструктор после четырех адаптеров таблиц были добавлены](creating-a-data-access-layer-vb/_static/image84.png)](creating-a-data-access-layer-vb/_static/image83.png)
+[![Конструктор наборов данных, после добавления четырех адаптеров TableAdapter](creating-a-data-access-layer-vb/_static/image84.png)](creating-a-data-access-layer-vb/_static/image83.png)
 
 **Рис. 31**: Набор данных конструктор после четырех адаптеров таблиц были добавлены ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image85.png))
 
@@ -454,7 +454,7 @@ TableAdapter используется схема пакетного обновл
 TableAdapter и DataTable, добавленные к типизированному набору DataSet выражаются в виде файла определения схемы XML (`Northwind.xsd`). Эти данные схемы можно просмотреть, щелкнув правой кнопкой мыши `Northwind.xsd` в обозревателе решений и выбрав представление кода.
 
 
-[![Tон файл определения схемы XML (XSD) для типизированного набора DataSet типизированного](creating-a-data-access-layer-vb/_static/image87.png)](creating-a-data-access-layer-vb/_static/image86.png)
+[![Определение (XSD) файл схемы XML для типизированного типизированный набор данных](creating-a-data-access-layer-vb/_static/image87.png)](creating-a-data-access-layer-vb/_static/image86.png)
 
 **Рис. 32**: Файл определения схемы XML (XSD) для типизированного типизированный набор DataSet ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image88.png))
 
@@ -501,7 +501,7 @@ SuppliersAndProducts.aspx.vb
 [!code-vb[Main](creating-a-data-access-layer-vb/samples/sample25.vb)]
 
 
-[![TНазвание компании поставщика он указан в столбце слева, их продукты — в правом](creating-a-data-access-layer-vb/_static/image92.png)](creating-a-data-access-layer-vb/_static/image91.png)
+[![Название компании поставщика указан в столбце слева, их продукты — в правом](creating-a-data-access-layer-vb/_static/image92.png)](creating-a-data-access-layer-vb/_static/image91.png)
 
 **Рис. 35**: Название компании поставщика указан в столбце слева, их продукты — в правом ([Просмотр полноразмерного изображения](creating-a-data-access-layer-vb/_static/image93.png))
 

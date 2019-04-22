@@ -12,7 +12,7 @@ ms.openlocfilehash: 3db6947f36eb51b41d929f8c7d8835a95db8ea75
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392356"
 ---
 # <a name="adding-validation-to-the-model"></a>Добавление проверки в модель
@@ -61,11 +61,11 @@ ms.locfileid: "59392356"
 
 Ниже приведен код, показанный в интегрированной среде разработки.
 
-[![Movies - Microsoft Visual Web Developer 2010 Express (10)](getting-started-with-mvc-part7/_static/image4.png)](getting-started-with-mvc-part7/_static/image3.png)
+[![Фильмы - Microsoft Visual Web Developer 2010 Express (10)](getting-started-with-mvc-part7/_static/image4.png)](getting-started-with-mvc-part7/_static/image3.png)
 
 Запустите приложение и снова посетите /Movies/Create и нажмите кнопку Создать, не вводя никаких данных. Сообщения об ошибках отображаются сразу же без странице флэш-памяти, что мы связываем с отправкой данных выполнения всего пути к серверу. Это так, как ASP.NET MVC теперь проверяет входные данные на обоих клиента (с использованием JavaScript) и на сервере.
 
-[![Cю - Windows Internet Explorer](getting-started-with-mvc-part7/_static/image6.png)](getting-started-with-mvc-part7/_static/image5.png)
+[![Создание — Windows Internet Explorer](getting-started-with-mvc-part7/_static/image6.png)](getting-started-with-mvc-part7/_static/image5.png)
 
 Это выглядит хорошо! Теперь добавим один дополнительный столбец в базу данных.
 

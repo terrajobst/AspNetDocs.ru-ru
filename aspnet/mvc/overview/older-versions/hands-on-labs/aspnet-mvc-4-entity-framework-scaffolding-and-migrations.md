@@ -12,7 +12,7 @@ ms.openlocfilehash: ca47f6fe6d55153354d38fcf1ba5e844215279b2
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59389041"
 ---
 # <a name="aspnet-mvc-4-entity-framework-scaffolding-and-migrations"></a>Перенос и формирование шаблонов ASP.NET MVC 4 Entity Framework
@@ -110,7 +110,7 @@ ms.locfileid: "59389041"
 
     ![Сборка приложения](aspnet-mvc-4-entity-framework-scaffolding-and-migrations/_static/image3.png "сборка приложения")
 
-    *Построение приложения*
+    *Сборка приложения*
 7. В обозревателе решений щелкните правой кнопкой мыши папку controllers и выберите **Add | Контроллер**.
 8. Назовите контроллер *PersonController* и завершите **параметры формирования шаблонов** со следующими значениями.
 
@@ -198,7 +198,7 @@ ms.locfileid: "59389041"
 
     ![Сборка приложения](aspnet-mvc-4-entity-framework-scaffolding-and-migrations/_static/image13.png "сборка приложения")
 
-    *Построение приложения*
+    *Сборка приложения*
 6. В консоли диспетчера пакетов введите следующую команду:
 
     PMC
@@ -292,7 +292,7 @@ ms.locfileid: "59389041"
 
     ![Ход установки](aspnet-mvc-4-entity-framework-scaffolding-and-migrations/_static/image24.png)
 
-    *Ход установки*
+    *Ход выполнения установки*
 6. После завершения установки нажмите кнопку **Готово**.
 
     ![Установка завершена](aspnet-mvc-4-entity-framework-scaffolding-and-migrations/_static/image25.png)

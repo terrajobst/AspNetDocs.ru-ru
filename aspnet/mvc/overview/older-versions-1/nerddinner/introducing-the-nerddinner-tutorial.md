@@ -12,14 +12,14 @@ ms.openlocfilehash: ebd49295ea165ba4ef1a25398cff7dddcfa54f11
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59392200"
 ---
 # <a name="introducing-the-nerddinner-tutorial"></a>Общие сведения об учебнике по NerdDinner
 
 по [(Scott hanselman)](https://github.com/shanselman)
 
-[Скачать PDF](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
+[Загрузить PDF-файл](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
 
 > — Это наилучший способ подробнее узнать это новая платформа для создания чего-то с ним. Этом руководстве описано, как создать небольшой, но завершить приложение с помощью ASP.NET MVC 1 и рассматриваются некоторые основные принципы его.
 > 
@@ -86,4 +86,4 @@ Visual Studio 2008 или бесплатный Visual Web Developer 2008 Express
 Начнем с помощью файла -&gt;новый проект в Visual Studio, чтобы создать приложение NerdDinner.
 
 > [!div class="step-by-step"]
-> [Далее](create-a-new-aspnet-mvc-project.md)
+> [Вперед](create-a-new-aspnet-mvc-project.md)
