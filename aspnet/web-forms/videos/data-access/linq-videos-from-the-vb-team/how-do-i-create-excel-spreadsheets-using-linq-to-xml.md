@@ -12,16 +12,16 @@ ms.openlocfilehash: 1483030faf631099b8c044d1fbbdd000128f4fce
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414196"
 ---
-# <a name="how-do-i-create-excel-spreadsheets-using-linq-to-xml"></a><span data-ttu-id="bcf72-104">[Инструкции] Создание таблиц Excel с помощью LINQ to XML?</span><span class="sxs-lookup"><span data-stu-id="bcf72-104">[How Do I:] Create Excel Spreadsheets using LINQ to XML?</span></span>
+# <a name="how-do-i-create-excel-spreadsheets-using-linq-to-xml"></a><span data-ttu-id="268ad-104">[Инструкции] Создание таблиц Excel с помощью LINQ to XML?</span><span class="sxs-lookup"><span data-stu-id="268ad-104">[How Do I:] Create Excel Spreadsheets using LINQ to XML?</span></span>
 
-<span data-ttu-id="bcf72-105">по [Бет Масси](https://github.com/bethmassi)</span><span class="sxs-lookup"><span data-stu-id="bcf72-105">by [Beth Massi](https://github.com/bethmassi)</span></span>
+<span data-ttu-id="268ad-105">по [Бет Масси](https://github.com/bethmassi)</span><span class="sxs-lookup"><span data-stu-id="268ad-105">by [Beth Massi](https://github.com/bethmassi)</span></span>
 
-<span data-ttu-id="bcf72-106">Разработчики Visual Basic узнаете, как запросить их базы данных SQL Server, чтобы легко создавать электронные таблицы Excel непосредственно в редакторе Visual Basic, с помощью LINQ to XML.</span><span class="sxs-lookup"><span data-stu-id="bcf72-106">Visual Basic developers will learn how to query their SQL Server database in order to easily create Excel spreadsheets directly in the Visual Basic editor using LINQ to XML.</span></span>
+<span data-ttu-id="268ad-106">Разработчики Visual Basic узнаете, как запросить их базы данных SQL Server, чтобы легко создавать электронные таблицы Excel непосредственно в редакторе Visual Basic, с помощью LINQ to XML.</span><span class="sxs-lookup"><span data-stu-id="268ad-106">Visual Basic developers will learn how to query their SQL Server database in order to easily create Excel spreadsheets directly in the Visual Basic editor using LINQ to XML.</span></span>
 
-[<span data-ttu-id="bcf72-107">&#9654;Просмотрите видео (10 минут)</span><span class="sxs-lookup"><span data-stu-id="bcf72-107">&#9654; Watch video (10 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-create-excel-spreadsheets-using-linq-to-xml)
+[<span data-ttu-id="268ad-107">&#9654;Просмотрите видео (10 минут)</span><span class="sxs-lookup"><span data-stu-id="268ad-107">&#9654; Watch video (10 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-create-excel-spreadsheets-using-linq-to-xml)
 
 > [!div class="step-by-step"]
-> [<span data-ttu-id="bcf72-108">Назад</span><span class="sxs-lookup"><span data-stu-id="bcf72-108">Previous</span></span>](how-do-i-create-xml-documents-from-sql-data.md)
+> [<span data-ttu-id="268ad-108">Назад</span><span class="sxs-lookup"><span data-stu-id="268ad-108">Previous</span></span>](how-do-i-create-xml-documents-from-sql-data.md)

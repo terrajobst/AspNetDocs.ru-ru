@@ -12,12 +12,12 @@ ms.openlocfilehash: b217af062f53bf0e88c67a366ffc0111e4a1b4da
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59410504"
 ---
-# <a name="performance"></a><span data-ttu-id="43398-103">Производительность</span><span class="sxs-lookup"><span data-stu-id="43398-103">Performance</span></span>
+# <a name="performance"></a><span data-ttu-id="a7b79-103">Производительность</span><span class="sxs-lookup"><span data-stu-id="a7b79-103">Performance</span></span>
 
-> <span data-ttu-id="43398-104">Способ кэширования содержимого узла для повышения производительности.</span><span class="sxs-lookup"><span data-stu-id="43398-104">How to cache site content for faster performance.</span></span>
+> <span data-ttu-id="a7b79-104">Способ кэширования содержимого узла для повышения производительности.</span><span class="sxs-lookup"><span data-stu-id="a7b79-104">How to cache site content for faster performance.</span></span>
 
 
-- [<span data-ttu-id="43398-105">Использование асинхронных методов в ASP.NET 4.5</span><span class="sxs-lookup"><span data-stu-id="43398-105">Using Asynchronous Methods in ASP.NET 4.5</span></span>](using-asynchronous-methods-in-aspnet-45.md)
+- [<span data-ttu-id="a7b79-105">Использование асинхронных методов в ASP.NET 4.5</span><span class="sxs-lookup"><span data-stu-id="a7b79-105">Using Asynchronous Methods in ASP.NET 4.5</span></span>](using-asynchronous-methods-in-aspnet-45.md)

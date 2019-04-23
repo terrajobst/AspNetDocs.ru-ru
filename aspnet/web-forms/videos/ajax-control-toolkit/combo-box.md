@@ -12,18 +12,18 @@ ms.openlocfilehash: 7d99e52103d6657392d9110d1dac2cf541ea400b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413247"
 ---
-# <a name="combo-box"></a><span data-ttu-id="33535-103">Combo Box</span><span class="sxs-lookup"><span data-stu-id="33535-103">Combo Box</span></span>
+# <a name="combo-box"></a><span data-ttu-id="4e3b9-103">Combo Box</span><span class="sxs-lookup"><span data-stu-id="4e3b9-103">Combo Box</span></span>
 
-<span data-ttu-id="33535-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="33535-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="4e3b9-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="4e3b9-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="33535-105">В этом видео будет показано, как использовать новый элемент управления списком из Microsoft AJAX Control Toolkit.</span><span class="sxs-lookup"><span data-stu-id="33535-105">This video will demonstrate how to use the new Combo Box control from the Microsoft AJAX Control Toolkit.</span></span>
+<span data-ttu-id="4e3b9-105">В этом видео будет показано, как использовать новый элемент управления списком из Microsoft AJAX Control Toolkit.</span><span class="sxs-lookup"><span data-stu-id="4e3b9-105">This video will demonstrate how to use the new Combo Box control from the Microsoft AJAX Control Toolkit.</span></span>
 
-[<span data-ttu-id="33535-106">&#9654;Просмотрите видео (9 минут)</span><span class="sxs-lookup"><span data-stu-id="33535-106">&#9654; Watch video (9 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/combo-box)
+[<span data-ttu-id="4e3b9-106">&#9654;Просмотрите видео (9 минут)</span><span class="sxs-lookup"><span data-stu-id="4e3b9-106">&#9654; Watch video (9 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/combo-box)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="33535-107">[Назад](color-picker.md)
-> [Вперед](editor-control.md)</span><span class="sxs-lookup"><span data-stu-id="33535-107">[Previous](color-picker.md)
+> <span data-ttu-id="4e3b9-107">[Назад](color-picker.md)
+> [Вперед](editor-control.md)</span><span class="sxs-lookup"><span data-stu-id="4e3b9-107">[Previous](color-picker.md)
 [Next](editor-control.md)</span></span>

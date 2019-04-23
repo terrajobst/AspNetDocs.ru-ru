@@ -12,18 +12,18 @@ ms.openlocfilehash: 7ec8719a25452efed9a0d46afa05b36f3cb07ce1
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414807"
 ---
-# <a name="the-effects-of-viewstate"></a><span data-ttu-id="bdea0-103">Эффекты ViewState</span><span class="sxs-lookup"><span data-stu-id="bdea0-103">The Effects of ViewState</span></span>
+# <a name="the-effects-of-viewstate"></a><span data-ttu-id="721a9-103">Эффекты ViewState</span><span class="sxs-lookup"><span data-stu-id="721a9-103">The Effects of ViewState</span></span>
 
-<span data-ttu-id="bdea0-104">по Эрика ли</span><span class="sxs-lookup"><span data-stu-id="bdea0-104">by Eric Lee</span></span>
+<span data-ttu-id="721a9-104">по Эрика ли</span><span class="sxs-lookup"><span data-stu-id="721a9-104">by Eric Lee</span></span>
 
-<span data-ttu-id="bdea0-105">Платформа ASP.NET предоставляет механизм ViewState для автоматического сохранения состояния приложения, передающих данные вперед и назад между запросы браузера.</span><span class="sxs-lookup"><span data-stu-id="bdea0-105">The ASP.NET framework provides the ViewState mechanism to automatically maintain application state by carrying data forward and backward between browser requests.</span></span> <span data-ttu-id="bdea0-106">В этом видео мы узнаем, как ASP.NET некоторые элементы управления DropDownList и TextBox поддерживать состояние на основании значений обратной передачи формы, а не ViewState, позволяя разработчику смарт-отключить ненужные ViewState.</span><span class="sxs-lookup"><span data-stu-id="bdea0-106">In this video we see how some ASP.NET controls such as the DropDownList and TextBox maintain state based on postback form values rather than ViewState, allowing the smart developer to disable unnecessary ViewState.</span></span> <span data-ttu-id="bdea0-107">С помощью Visual Studio Team System мы видим, как это значительно уменьшает размер данных запросов и ответов и повышает производительность и масштабируемость приложения.</span><span class="sxs-lookup"><span data-stu-id="bdea0-107">Using Visual Studio Team System we can see how this dramatically reduces the size of request and response data, and improves the performance and scalability of the application.</span></span>
+<span data-ttu-id="721a9-105">Платформа ASP.NET предоставляет механизм ViewState для автоматического сохранения состояния приложения, передающих данные вперед и назад между запросы браузера.</span><span class="sxs-lookup"><span data-stu-id="721a9-105">The ASP.NET framework provides the ViewState mechanism to automatically maintain application state by carrying data forward and backward between browser requests.</span></span> <span data-ttu-id="721a9-106">В этом видео мы узнаем, как ASP.NET некоторые элементы управления DropDownList и TextBox поддерживать состояние на основании значений обратной передачи формы, а не ViewState, позволяя разработчику смарт-отключить ненужные ViewState.</span><span class="sxs-lookup"><span data-stu-id="721a9-106">In this video we see how some ASP.NET controls such as the DropDownList and TextBox maintain state based on postback form values rather than ViewState, allowing the smart developer to disable unnecessary ViewState.</span></span> <span data-ttu-id="721a9-107">С помощью Visual Studio Team System мы видим, как это значительно уменьшает размер данных запросов и ответов и повышает производительность и масштабируемость приложения.</span><span class="sxs-lookup"><span data-stu-id="721a9-107">Using Visual Studio Team System we can see how this dramatically reduces the size of request and response data, and improves the performance and scalability of the application.</span></span>
 
-[<span data-ttu-id="bdea0-108">&#9654;Просмотрите видео (10 минут)</span><span class="sxs-lookup"><span data-stu-id="bdea0-108">&#9654; Watch video (10 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/the-effects-of-viewstate)
+[<span data-ttu-id="721a9-108">&#9654;Просмотрите видео (10 минут)</span><span class="sxs-lookup"><span data-stu-id="721a9-108">&#9654; Watch video (10 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/the-effects-of-viewstate)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="bdea0-109">[Назад](using-the-load-test-agent.md)
-> [Вперед](how-do-i-integrate-defect-tracking-with-testing.md)</span><span class="sxs-lookup"><span data-stu-id="bdea0-109">[Previous](using-the-load-test-agent.md)
+> <span data-ttu-id="721a9-109">[Назад](using-the-load-test-agent.md)
+> [Вперед](how-do-i-integrate-defect-tracking-with-testing.md)</span><span class="sxs-lookup"><span data-stu-id="721a9-109">[Previous](using-the-load-test-agent.md)
 [Next](how-do-i-integrate-defect-tracking-with-testing.md)</span></span>

@@ -12,18 +12,18 @@ ms.openlocfilehash: 65a37673342344c3412ace48abf385c7bc88c1d6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59417472"
 ---
-# <a name="aspnet-vnext-videos-model-binding-part-2---filtering"></a><span data-ttu-id="ac67a-103">ASP.NET vNext видео: Привязка моделей, часть 2. Фильтрация</span><span class="sxs-lookup"><span data-stu-id="ac67a-103">ASP.NET vNext Videos: Model Binding Part 2 - Filtering</span></span>
+# <a name="aspnet-vnext-videos-model-binding-part-2---filtering"></a><span data-ttu-id="5a913-103">ASP.NET vNext видео: Привязка моделей, часть 2. Фильтрация</span><span class="sxs-lookup"><span data-stu-id="5a913-103">ASP.NET vNext Videos: Model Binding Part 2 - Filtering</span></span>
 
-<span data-ttu-id="ac67a-104">по [Damian Edwards](https://github.com/DamianEdwards)</span><span class="sxs-lookup"><span data-stu-id="ac67a-104">by [Damian Edwards](https://github.com/DamianEdwards)</span></span>
+<span data-ttu-id="5a913-104">по [Damian Edwards](https://github.com/DamianEdwards)</span><span class="sxs-lookup"><span data-stu-id="5a913-104">by [Damian Edwards](https://github.com/DamianEdwards)</span></span>
 
-<span data-ttu-id="ac67a-105">В этом видеоролике Damian Edwards продолжает демонстрации привязки модели, объясняя фильтрации.</span><span class="sxs-lookup"><span data-stu-id="ac67a-105">In this video, Damian Edwards continues the demonstration of model binding by explaining filtering.</span></span>
+<span data-ttu-id="5a913-105">В этом видеоролике Damian Edwards продолжает демонстрации привязки модели, объясняя фильтрации.</span><span class="sxs-lookup"><span data-stu-id="5a913-105">In this video, Damian Edwards continues the demonstration of model binding by explaining filtering.</span></span>
 
-[<span data-ttu-id="ac67a-106">&#9654;Просмотрите видео (1 мин.)</span><span class="sxs-lookup"><span data-stu-id="ac67a-106">&#9654; Watch video (1 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-vnext-videos-model-binding-part-2-filtering)
+[<span data-ttu-id="5a913-106">&#9654;Просмотрите видео (1 мин.)</span><span class="sxs-lookup"><span data-stu-id="5a913-106">&#9654; Watch video (1 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-vnext-videos-model-binding-part-2-filtering)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="ac67a-107">[Назад](aspnet-vnext-videos-model-binding-part-1-selecting-data.md)
-> [Вперед](aspnet-vnext-videos-model-binding-part-3-updating.md)</span><span class="sxs-lookup"><span data-stu-id="ac67a-107">[Previous](aspnet-vnext-videos-model-binding-part-1-selecting-data.md)
+> <span data-ttu-id="5a913-107">[Назад](aspnet-vnext-videos-model-binding-part-1-selecting-data.md)
+> [Вперед](aspnet-vnext-videos-model-binding-part-3-updating.md)</span><span class="sxs-lookup"><span data-stu-id="5a913-107">[Previous](aspnet-vnext-videos-model-binding-part-1-selecting-data.md)
 [Next](aspnet-vnext-videos-model-binding-part-3-updating.md)</span></span>

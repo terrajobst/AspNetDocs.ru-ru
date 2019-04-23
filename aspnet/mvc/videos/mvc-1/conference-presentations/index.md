@@ -12,14 +12,14 @@ ms.openlocfilehash: 2e79c238f4cfa3d2bcf01105fdc1e3d6e55821b8
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59416718"
 ---
-# <a name="talks"></a><span data-ttu-id="9f2e7-103">Обсуждения</span><span class="sxs-lookup"><span data-stu-id="9f2e7-103">Talks</span></span>
+# <a name="talks"></a><span data-ttu-id="29728-103">Обсуждения</span><span class="sxs-lookup"><span data-stu-id="29728-103">Talks</span></span>
 
-> <span data-ttu-id="9f2e7-104">ASP.NET MVC 1 рассказывает</span><span class="sxs-lookup"><span data-stu-id="9f2e7-104">ASP.NET MVC 1 Talks</span></span>
+> <span data-ttu-id="29728-104">ASP.NET MVC 1 рассказывает</span><span class="sxs-lookup"><span data-stu-id="29728-104">ASP.NET MVC 1 Talks</span></span>
 
 
-- [<span data-ttu-id="9f2e7-105">Создание NerdDinner.com с помощью контроллера просмотра модели Microsoft ASP.NET (MVC)</span><span class="sxs-lookup"><span data-stu-id="9f2e7-105">Creating NerdDinner.com with Microsoft ASP.NET Model View Controller (MVC)</span></span>](creating-nerddinnercom-with-microsoft-aspnet-model-view-controller-mvc.md)
-- [<span data-ttu-id="9f2e7-106">Платформа контроллера представления модели следующего поколения</span><span class="sxs-lookup"><span data-stu-id="9f2e7-106">America's Next Top Model View Controller Framework</span></span>](americas-next-top-model-view-controller-framework.md)
-- [<span data-ttu-id="9f2e7-107">Советы и рекомендации по максимально эффективному использованию платформы</span><span class="sxs-lookup"><span data-stu-id="9f2e7-107">Ninja on Fire Black Belt Tips</span></span>](ninja-on-fire-black-belt-tips.md)
+- [<span data-ttu-id="29728-105">Создание NerdDinner.com с помощью контроллера просмотра модели Microsoft ASP.NET (MVC)</span><span class="sxs-lookup"><span data-stu-id="29728-105">Creating NerdDinner.com with Microsoft ASP.NET Model View Controller (MVC)</span></span>](creating-nerddinnercom-with-microsoft-aspnet-model-view-controller-mvc.md)
+- [<span data-ttu-id="29728-106">Платформа контроллера представления модели следующего поколения</span><span class="sxs-lookup"><span data-stu-id="29728-106">America's Next Top Model View Controller Framework</span></span>](americas-next-top-model-view-controller-framework.md)
+- [<span data-ttu-id="29728-107">Советы и рекомендации по максимально эффективному использованию платформы</span><span class="sxs-lookup"><span data-stu-id="29728-107">Ninja on Fire Black Belt Tips</span></span>](ninja-on-fire-black-belt-tips.md)

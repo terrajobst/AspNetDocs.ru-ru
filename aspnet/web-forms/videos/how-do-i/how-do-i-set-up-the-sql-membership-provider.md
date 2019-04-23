@@ -12,13 +12,13 @@ ms.openlocfilehash: 496c520163e75ca6a0e017e2459daa025f33f481
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412623"
 ---
-# <a name="how-do-i-set-up-the-sql-membership-provider"></a><span data-ttu-id="4abcf-104">[Инструкции] Настройка поставщика членства SQL</span><span class="sxs-lookup"><span data-stu-id="4abcf-104">[How Do I:] Set Up the SQL Membership Provider</span></span>
+# <a name="how-do-i-set-up-the-sql-membership-provider"></a><span data-ttu-id="5e413-104">[Инструкции] Настройка поставщика членства SQL</span><span class="sxs-lookup"><span data-stu-id="5e413-104">[How Do I:] Set Up the SQL Membership Provider</span></span>
 
-<span data-ttu-id="4abcf-105">по [(Patrick Hynds)](https://twitter.com/patrickhynds)</span><span class="sxs-lookup"><span data-stu-id="4abcf-105">by [Patrick Hynds](https://twitter.com/patrickhynds)</span></span>
+<span data-ttu-id="5e413-105">по [(Patrick Hynds)](https://twitter.com/patrickhynds)</span><span class="sxs-lookup"><span data-stu-id="5e413-105">by [Patrick Hynds](https://twitter.com/patrickhynds)</span></span>
 
-<span data-ttu-id="4abcf-106">Присоединяйтесь к (Patrick Hynds), как он демонстрирует, как настроить поставщика членства SQL для добавления проверки подлинности форм на сайт веб-ASP.NET 2.0.</span><span class="sxs-lookup"><span data-stu-id="4abcf-106">Join Patrick Hynds as he demonstrates how to set up the SQL Membership Provider to add Forms authentication to your ASP.NET 2.0 Web site.</span></span> <span data-ttu-id="4abcf-107">Задействованы несколько советы и рекомендации, например с помощью aspnet\_regsql.exe программы, как описано в видео.</span><span class="sxs-lookup"><span data-stu-id="4abcf-107">There are a few tips and tricks involved, such as using the aspnet\_regsql.exe utility, which are covered in the video.</span></span>
+<span data-ttu-id="5e413-106">Присоединяйтесь к (Patrick Hynds), как он демонстрирует, как настроить поставщика членства SQL для добавления проверки подлинности форм на сайт веб-ASP.NET 2.0.</span><span class="sxs-lookup"><span data-stu-id="5e413-106">Join Patrick Hynds as he demonstrates how to set up the SQL Membership Provider to add Forms authentication to your ASP.NET 2.0 Web site.</span></span> <span data-ttu-id="5e413-107">Задействованы несколько советы и рекомендации, например с помощью aspnet\_regsql.exe программы, как описано в видео.</span><span class="sxs-lookup"><span data-stu-id="5e413-107">There are a few tips and tricks involved, such as using the aspnet\_regsql.exe utility, which are covered in the video.</span></span>
 
-[<span data-ttu-id="4abcf-108">&#9654;Просмотрите видео (9 минут)</span><span class="sxs-lookup"><span data-stu-id="4abcf-108">&#9654; Watch video (9 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-set-up-the-sql-membership-provider)
+[<span data-ttu-id="5e413-108">&#9654;Просмотрите видео (9 минут)</span><span class="sxs-lookup"><span data-stu-id="5e413-108">&#9654; Watch video (9 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-set-up-the-sql-membership-provider)
