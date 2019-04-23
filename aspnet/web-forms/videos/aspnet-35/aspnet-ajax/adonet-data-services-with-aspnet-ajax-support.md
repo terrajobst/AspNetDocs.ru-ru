@@ -12,18 +12,18 @@ ms.openlocfilehash: 5a81668c2c01fa12f7dbec506f914a388e09a9ff
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59397465"
 ---
-# <a name="adonet-data-services-with-aspnet-ajax-support"></a><span data-ttu-id="cc82b-104">Службы данных ADO.NET с поддержкой ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="cc82b-104">ADO.NET Data Services with ASP.NET AJAX Support</span></span>
+# <a name="adonet-data-services-with-aspnet-ajax-support"></a><span data-ttu-id="d9027-104">Службы данных ADO.NET с поддержкой ASP.NET AJAX</span><span class="sxs-lookup"><span data-stu-id="d9027-104">ADO.NET Data Services with ASP.NET AJAX Support</span></span>
 
-<span data-ttu-id="cc82b-105">по [Levi Broderick](https://github.com/GrabYourPitchforks)</span><span class="sxs-lookup"><span data-stu-id="cc82b-105">by [Levi Broderick](https://github.com/GrabYourPitchforks)</span></span>
+<span data-ttu-id="d9027-105">по [Levi Broderick](https://github.com/GrabYourPitchforks)</span><span class="sxs-lookup"><span data-stu-id="d9027-105">by [Levi Broderick](https://github.com/GrabYourPitchforks)</span></span>
 
-<span data-ttu-id="cc82b-106">Узнайте, как службы ADO.NET Data Services можно интегрировать с поддержкой ASP.NET AJAX без проблем.</span><span class="sxs-lookup"><span data-stu-id="cc82b-106">Find out how ADO.NET Data Services can be integrated with ASP.NET AJAX support seamlessly.</span></span> **<span data-ttu-id="cc82b-107">Технология ADP.NET служб данных доступна в [Просмотр расширений ASP.NET 3.5](https://www.asp.net/downloads/35-sp1#find) (декабрь 2007 г.).</span><span class="sxs-lookup"><span data-stu-id="cc82b-107">ADP.NET Data Services technology is available in the [ASP.NET 3.5 Extensions Preview](https://www.asp.net/downloads/35-sp1#find) (December 2007).</span></span>**
+<span data-ttu-id="d9027-106">Узнайте, как службы ADO.NET Data Services можно интегрировать с поддержкой ASP.NET AJAX без проблем.</span><span class="sxs-lookup"><span data-stu-id="d9027-106">Find out how ADO.NET Data Services can be integrated with ASP.NET AJAX support seamlessly.</span></span> <span data-ttu-id="d9027-107">**Технология ADP.NET служб данных доступна в [Просмотр расширений ASP.NET 3.5](https://www.asp.net/downloads/35-sp1#find) (декабрь 2007 г.).**</span><span class="sxs-lookup"><span data-stu-id="d9027-107">**ADP.NET Data Services technology is available in the [ASP.NET 3.5 Extensions Preview](https://www.asp.net/downloads/35-sp1#find) (December 2007).**</span></span>
 
-[<span data-ttu-id="cc82b-108">&#9654;Просмотрите видео (12 минут)</span><span class="sxs-lookup"><span data-stu-id="cc82b-108">&#9654; Watch video (12 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/adonet-data-services-with-aspnet-ajax-support)
+[<span data-ttu-id="d9027-108">&#9654;Просмотрите видео (12 минут)</span><span class="sxs-lookup"><span data-stu-id="d9027-108">&#9654; Watch video (12 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/adonet-data-services-with-aspnet-ajax-support)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="cc82b-109">[Назад](aspnet-ajax-a-demonstration-of-aspnet-ajax.md)
-> [Вперед](introduction-to-aspnet-ajax-history.md)</span><span class="sxs-lookup"><span data-stu-id="cc82b-109">[Previous](aspnet-ajax-a-demonstration-of-aspnet-ajax.md)
+> <span data-ttu-id="d9027-109">[Назад](aspnet-ajax-a-demonstration-of-aspnet-ajax.md)
+> [Вперед](introduction-to-aspnet-ajax-history.md)</span><span class="sxs-lookup"><span data-stu-id="d9027-109">[Previous](aspnet-ajax-a-demonstration-of-aspnet-ajax.md)
 [Next](introduction-to-aspnet-ajax-history.md)</span></span>

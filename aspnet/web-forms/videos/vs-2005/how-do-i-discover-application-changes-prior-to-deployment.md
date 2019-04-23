@@ -12,18 +12,18 @@ ms.openlocfilehash: 2cedf4dd161751802bf197ee6b96731259bc5c2f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402938"
 ---
-# <a name="how-do-i-discover-application-changes-prior-to-deployment"></a><span data-ttu-id="35058-104">[Инструкции] Обнаружение изменений приложения перед развертыванием?</span><span class="sxs-lookup"><span data-stu-id="35058-104">[How Do I:] Discover Application Changes Prior to Deployment?</span></span>
+# <a name="how-do-i-discover-application-changes-prior-to-deployment"></a><span data-ttu-id="08cbc-104">[Инструкции] Обнаружение изменений приложения перед развертыванием?</span><span class="sxs-lookup"><span data-stu-id="08cbc-104">[How Do I:] Discover Application Changes Prior to Deployment?</span></span>
 
-<span data-ttu-id="35058-105">по [злоумышленник пол](https://github.com/pjhacker)</span><span class="sxs-lookup"><span data-stu-id="35058-105">by [Paul Hacker](https://github.com/pjhacker)</span></span>
+<span data-ttu-id="08cbc-105">по [злоумышленник пол](https://github.com/pjhacker)</span><span class="sxs-lookup"><span data-stu-id="08cbc-105">by [Paul Hacker](https://github.com/pjhacker)</span></span>
 
-<span data-ttu-id="35058-106">Узнайте, как использовать обозреватель управления исходным кодом из Visual Studio Team System для обнаружения изменения, внесенные в веб-приложение и убедитесь, что развернуты только изменения, необходимые в работающий веб-сайт.</span><span class="sxs-lookup"><span data-stu-id="35058-106">Learn how to use the Source Control Explorer from Visual Studio Team System to discover the changes that have been made to your Web application, and to ensure that only the necessary changes get deployed to the live Web site.</span></span> <span data-ttu-id="35058-107">Мы также рассмотрим это бесплатная служебная программа, которой можно выполнить слияние изменений друг с другом, для упрощения развертывания.</span><span class="sxs-lookup"><span data-stu-id="35058-107">We also look at a free utility that allows you to merge changes together to simplify deployment.</span></span>
+<span data-ttu-id="08cbc-106">Узнайте, как использовать обозреватель управления исходным кодом из Visual Studio Team System для обнаружения изменения, внесенные в веб-приложение и убедитесь, что развернуты только изменения, необходимые в работающий веб-сайт.</span><span class="sxs-lookup"><span data-stu-id="08cbc-106">Learn how to use the Source Control Explorer from Visual Studio Team System to discover the changes that have been made to your Web application, and to ensure that only the necessary changes get deployed to the live Web site.</span></span> <span data-ttu-id="08cbc-107">Мы также рассмотрим это бесплатная служебная программа, которой можно выполнить слияние изменений друг с другом, для упрощения развертывания.</span><span class="sxs-lookup"><span data-stu-id="08cbc-107">We also look at a free utility that allows you to merge changes together to simplify deployment.</span></span>
 
-[<span data-ttu-id="35058-108">&#9654;Просмотрите видео (5 минут)</span><span class="sxs-lookup"><span data-stu-id="35058-108">&#9654; Watch video (5 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-discover-application-changes-prior-to-deployment)
+[<span data-ttu-id="08cbc-108">&#9654;Просмотрите видео (5 минут)</span><span class="sxs-lookup"><span data-stu-id="08cbc-108">&#9654; Watch video (5 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-discover-application-changes-prior-to-deployment)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="35058-109">[Назад](how-do-i-publish-and-analyze-test-results.md)
-> [Вперед](how-do-i-implement-continuous-integration-with-team-foundation.md)</span><span class="sxs-lookup"><span data-stu-id="35058-109">[Previous](how-do-i-publish-and-analyze-test-results.md)
+> <span data-ttu-id="08cbc-109">[Назад](how-do-i-publish-and-analyze-test-results.md)
+> [Вперед](how-do-i-implement-continuous-integration-with-team-foundation.md)</span><span class="sxs-lookup"><span data-stu-id="08cbc-109">[Previous](how-do-i-publish-and-analyze-test-results.md)
 [Next](how-do-i-implement-continuous-integration-with-team-foundation.md)</span></span>

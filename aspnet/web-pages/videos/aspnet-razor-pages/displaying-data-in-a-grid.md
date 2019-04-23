@@ -12,18 +12,18 @@ ms.openlocfilehash: 64d13293ba4575c035965ce173e233f1ed612b72
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403497"
 ---
-# <a name="displaying-data-in-a-grid"></a><span data-ttu-id="2d104-103">Отображение данных в сетке</span><span class="sxs-lookup"><span data-stu-id="2d104-103">Displaying Data in a Grid</span></span>
+# <a name="displaying-data-in-a-grid"></a><span data-ttu-id="c1814-103">Отображение данных в сетке</span><span class="sxs-lookup"><span data-stu-id="c1814-103">Displaying Data in a Grid</span></span>
 
-<span data-ttu-id="2d104-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="2d104-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="c1814-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="c1814-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="2d104-105">Видео сопровождением для отображения данных в учебном курсе сетки</span><span class="sxs-lookup"><span data-stu-id="2d104-105">Video accompaniment to the Displaying Data in a Grid tutorial</span></span>
+<span data-ttu-id="c1814-105">Видео сопровождением для отображения данных в учебном курсе сетки</span><span class="sxs-lookup"><span data-stu-id="c1814-105">Video accompaniment to the Displaying Data in a Grid tutorial</span></span>
 
-[<span data-ttu-id="2d104-106">&#9654;Просмотрите видео (17 минут)</span><span class="sxs-lookup"><span data-stu-id="2d104-106">&#9654; Watch video (17 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/displaying-data-in-a-grid)
+[<span data-ttu-id="c1814-106">&#9654;Просмотрите видео (17 минут)</span><span class="sxs-lookup"><span data-stu-id="c1814-106">&#9654; Watch video (17 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/displaying-data-in-a-grid)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="2d104-107">[Назад](working-with-data-part-2.md)
-> [Вперед](displaying-data-in-a-chart-part-1.md)</span><span class="sxs-lookup"><span data-stu-id="2d104-107">[Previous](working-with-data-part-2.md)
+> <span data-ttu-id="c1814-107">[Назад](working-with-data-part-2.md)
+> [Вперед](displaying-data-in-a-chart-part-1.md)</span><span class="sxs-lookup"><span data-stu-id="c1814-107">[Previous](working-with-data-part-2.md)
 [Next](displaying-data-in-a-chart-part-1.md)</span></span>

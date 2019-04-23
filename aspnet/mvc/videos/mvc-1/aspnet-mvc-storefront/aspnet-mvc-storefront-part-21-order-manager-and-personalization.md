@@ -12,18 +12,18 @@ ms.openlocfilehash: 58de55e6d19c01a367aaa571800da008b0c8c54c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403258"
 ---
-# <a name="aspnet-mvc-storefront-part-21-order-manager-and-personalization"></a><span data-ttu-id="18cbd-104">Интернет-магазин на ASP.NET MVC, часть 21. Диспетчер заказов и персонализация</span><span class="sxs-lookup"><span data-stu-id="18cbd-104">ASP.NET MVC Storefront Part 21: Order Manager and Personalization</span></span>
+# <a name="aspnet-mvc-storefront-part-21-order-manager-and-personalization"></a><span data-ttu-id="768e6-104">Интернет-магазин на ASP.NET MVC, часть 21. Диспетчер заказов и персонализация</span><span class="sxs-lookup"><span data-stu-id="768e6-104">ASP.NET MVC Storefront Part 21: Order Manager and Personalization</span></span>
 
-<span data-ttu-id="18cbd-105">по [Роб Conery](https://github.com/robconery)</span><span class="sxs-lookup"><span data-stu-id="18cbd-105">by [Rob Conery](https://github.com/robconery)</span></span>
+<span data-ttu-id="768e6-105">по [Роб Conery](https://github.com/robconery)</span><span class="sxs-lookup"><span data-stu-id="768e6-105">by [Rob Conery](https://github.com/robconery)</span></span>
 
-<span data-ttu-id="18cbd-106">В этой серии я создаю странице диспетчера заказов и поговорим о различных проблем, связанных с заказов.</span><span class="sxs-lookup"><span data-stu-id="18cbd-106">In this episode I create the Order Manager page and talk about various issues relating to order fulfillment.</span></span> <span data-ttu-id="18cbd-107">Кроме того, я представлю функций персонализации, чтобы сделать работу более понятное для пользователя.</span><span class="sxs-lookup"><span data-stu-id="18cbd-107">In addition I introduce personalization features to make the experience a bit more friendly for the user.</span></span>
+<span data-ttu-id="768e6-106">В этой серии я создаю странице диспетчера заказов и поговорим о различных проблем, связанных с заказов.</span><span class="sxs-lookup"><span data-stu-id="768e6-106">In this episode I create the Order Manager page and talk about various issues relating to order fulfillment.</span></span> <span data-ttu-id="768e6-107">Кроме того, я представлю функций персонализации, чтобы сделать работу более понятное для пользователя.</span><span class="sxs-lookup"><span data-stu-id="768e6-107">In addition I introduce personalization features to make the experience a bit more friendly for the user.</span></span>
 
-[<span data-ttu-id="18cbd-108">&#9654;Просмотрите видео (43 минуты)</span><span class="sxs-lookup"><span data-stu-id="18cbd-108">&#9654; Watch video (43 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-21-order-manager-and-personalization)
+[<span data-ttu-id="768e6-108">&#9654;Просмотрите видео (43 минуты)</span><span class="sxs-lookup"><span data-stu-id="768e6-108">&#9654; Watch video (43 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-21-order-manager-and-personalization)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="18cbd-109">[Назад](aspnet-mvc-storefront-part-20-logging.md)
-> [Вперед](aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal.md)</span><span class="sxs-lookup"><span data-stu-id="18cbd-109">[Previous](aspnet-mvc-storefront-part-20-logging.md)
+> <span data-ttu-id="768e6-109">[Назад](aspnet-mvc-storefront-part-20-logging.md)
+> [Вперед](aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal.md)</span><span class="sxs-lookup"><span data-stu-id="768e6-109">[Previous](aspnet-mvc-storefront-part-20-logging.md)
 [Next](aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal.md)</span></span>
