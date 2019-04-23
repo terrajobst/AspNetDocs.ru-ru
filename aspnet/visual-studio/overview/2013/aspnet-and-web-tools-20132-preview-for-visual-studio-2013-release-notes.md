@@ -12,7 +12,7 @@ ms.openlocfilehash: 22d4d4afd6963f23d6cfef1745a859c20b69d599
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422997"
 ---
 # <a name="aspnet-and-web-tools-20132--for-visual-studio-2013-release-notes"></a>Заметки о выпуске ASP.NET and Web Tools 2013.2 для Visual Studio 2013
@@ -44,7 +44,7 @@ ASP.NET and Web Tools для Visual Studio 2013.2 требуется Visual Stud
 - [Веб-публикация усовершенствования](#webpublish)
 - [Формирование шаблонов ASP.NET](#scaffolding)
 - [NuGet 2.8.1](#nuget)
-- [Веб-формы ASP.NET](#webforms)
+- [Веб-форм ASP.NET](#webforms)
 - [ASP.NET MVC 5.1.2](#mvc)
 - [Веб-API 2.1.2 ASP.NET](#webapi)
 - [ASP.NET Web Pages 3.1.2](#webpages)

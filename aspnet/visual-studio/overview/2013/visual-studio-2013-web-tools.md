@@ -12,7 +12,7 @@ ms.openlocfilehash: 874542305bd3f47066cfae595919285ed079aa53
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59421073"
 ---
 # <a name="hands-on-lab-visual-studio-2013-web-tools"></a>Практическое лабораторное занятие. Веб-инструменты Visual Studio 2013
@@ -324,7 +324,7 @@ ms.locfileid: "59421073"
 
     ![Окно списка ошибок](visual-studio-2013-web-tools/_static/image32.png "окно списка ошибок")
 
-    *окно "Список ошибок"*
+    *Окно "Список ошибок"*
 3. В **Web Essentials** диалоговом окне щелкните **Да** вставляемый описание &lt;meta&gt; тега.
 
     ![Диалоговое окно Web Essentials](visual-studio-2013-web-tools/_static/image33.png "Web Essentials диалоговое окно")

@@ -12,7 +12,7 @@ ms.openlocfilehash: a6b433f187495b8dcd874bcab8ddc607e6de61c9
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422529"
 ---
 # <a name="dynamically-populating-a-control-using-javascript-code-c"></a>Динамическое заполнение элемента управления с помощью кода JavaScript (C#)
@@ -55,7 +55,7 @@ ms.locfileid: "59422529"
 Обратите внимание, что в контексте типа "переключатель", выражение JavaScript `this.value` ссылается на значение «текущий», которая может быть точно те же данные `getDate()` метод может работать с.
 
 
-[![A Нажмите кнопку извлекает дату с сервера, в формате, заданном](dynamically-populating-a-control-using-javascript-code-cs/_static/image2.png)](dynamically-populating-a-control-using-javascript-code-cs/_static/image1.png)
+[![Нажмите кнопку извлекает дату с сервера, в указанном формате](dynamically-populating-a-control-using-javascript-code-cs/_static/image2.png)](dynamically-populating-a-control-using-javascript-code-cs/_static/image1.png)
 
 Нажмите кнопку извлекает дату с сервера, в формате, заданном ([Просмотр полноразмерного изображения](dynamically-populating-a-control-using-javascript-code-cs/_static/image3.png))
 

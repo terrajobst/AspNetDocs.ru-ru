@@ -12,14 +12,14 @@ ms.openlocfilehash: 175e78d7ccc669c29c63dcb53af7aad1608c7d15
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422360"
 ---
 # <a name="creating-page-layouts-with-view-master-pages-vb"></a>Создание макетов страниц с эталонными страницами представлений (VB)
 
 по [Microsoft](https://github.com/microsoft)
 
-[Скачать PDF](http://download.microsoft.com/download/e/f/3/ef3f2ff6-7424-48f7-bdaa-180ef64c3490/ASPNET_MVC_Tutorial_12_VB.pdf)
+[Загрузить PDF-файл](http://download.microsoft.com/download/e/f/3/ef3f2ff6-7424-48f7-bdaa-180ef64c3490/ASPNET_MVC_Tutorial_12_VB.pdf)
 
 > В этом руководстве вы узнаете, как создать общий макет страницы для нескольких страниц в приложении, используя преимущества представления главных страниц. Например, главной страницы представления, можно использовать для определения макета страницы с двумя столбцами и используется режим двух столбцов для всех страниц в веб-приложении.
 
@@ -37,7 +37,7 @@ ms.locfileid: "59422360"
 Начнем с создания представления главной страницы, определяющий двухколонной разметке. Добавляемый новой главной страницы представления проекта MVC, щелкнув правой кнопкой мыши папку Views\Shared, выбрав вариант меню **добавить, новый элемент**и выбрав шаблон MVC представления главной страницы (см. рис. 1).
 
 
-[![Adding главной страницы представления](creating-page-layouts-with-view-master-pages-vb/_static/image2.png)](creating-page-layouts-with-view-master-pages-vb/_static/image1.png)
+[![Добавление представления главной страницы](creating-page-layouts-with-view-master-pages-vb/_static/image2.png)](creating-page-layouts-with-view-master-pages-vb/_static/image1.png)
 
 **Рис 01**: Добавление представления главной страницы ([Просмотр полноразмерного изображения](creating-page-layouts-with-view-master-pages-vb/_static/image3.png))
 
@@ -55,7 +55,7 @@ ms.locfileid: "59422360"
 Тело главной страницы в листинге 1 содержит два представления `<div>` теги, которые соответствуют двух столбцов. Класс каскадных таблиц стилей столбцов применяется к обоим `<div>` теги. Этот класс определен в таблице стилей, объявленные в верхней части главной страницы. Можно просмотреть просмотру главной страницы представления с переключением в режим конструктора. Перейдите на вкладку "Конструктор" в левом нижнем углу редактора исходного кода (см. рис. 2).
 
 
-[![Pрецензирование главной страницы в конструкторе](creating-page-layouts-with-view-master-pages-vb/_static/image5.png)](creating-page-layouts-with-view-master-pages-vb/_static/image4.png)
+[![Предварительный просмотр главной страницы в конструкторе](creating-page-layouts-with-view-master-pages-vb/_static/image5.png)](creating-page-layouts-with-view-master-pages-vb/_static/image4.png)
 
 **Рис. 02**: Предварительный просмотр главной страницы в конструкторе ([Просмотр полноразмерного изображения](creating-page-layouts-with-view-master-pages-vb/_static/image6.png))
 
@@ -65,7 +65,7 @@ ms.locfileid: "59422360"
 После создания представления главной страницы, можно создать один или несколько представление страницы содержимого на основе главной страницы представления. Например, можно создать страницу содержимого представления индекса для контроллера Home щелкните правой кнопкой мыши папку Views\Home, выбрав **добавить, новый элемент**, выбрав **страница содержимого представления MVC** шаблон, введя имя Index.aspx и выберите команду добавить кнопки мыши (см. рис. 3).
 
 
-[![Adding страница содержимого представления](creating-page-layouts-with-view-master-pages-vb/_static/image8.png)](creating-page-layouts-with-view-master-pages-vb/_static/image7.png)
+[![Добавление представления содержимого страницы](creating-page-layouts-with-view-master-pages-vb/_static/image8.png)](creating-page-layouts-with-view-master-pages-vb/_static/image7.png)
 
 **Рис 03**: Добавление страницы содержимого представления ([Просмотр полноразмерного изображения](creating-page-layouts-with-view-master-pages-vb/_static/image9.png))
 
@@ -73,7 +73,7 @@ ms.locfileid: "59422360"
 После нажатия кнопки «Добавить», новое диалоговое окно появляется, дающий возможность выбора представления главной страницы должен быть сопоставлен страница содержимого представления (см. рис. 4). Можно перейти на главную страницу Site.master представления, созданную в предыдущем разделе.
 
 
-[![SОтказ от главной страницы](creating-page-layouts-with-view-master-pages-vb/_static/image11.png)](creating-page-layouts-with-view-master-pages-vb/_static/image10.png)
+[![Выбор главной страницы](creating-page-layouts-with-view-master-pages-vb/_static/image11.png)](creating-page-layouts-with-view-master-pages-vb/_static/image10.png)
 
 **Рис. 04**: Выбор главной страницы ([Просмотр полноразмерного изображения](creating-page-layouts-with-view-master-pages-vb/_static/image12.png))
 
@@ -101,7 +101,7 @@ ms.locfileid: "59422360"
 При запросе представления в листинге 3, он осуществляет отрисовку страницы на рис. 5. Обратите внимание на то, что представление отображает страницу с двумя столбцами. Кроме того, обратите внимание, что содержимое на странице содержимого объединяется с содержимым из главной страницы представления.
 
 
-[![Tон странице представления Index содержимого](creating-page-layouts-with-view-master-pages-vb/_static/image14.png)](creating-page-layouts-with-view-master-pages-vb/_static/image13.png)
+[![Страница содержимого представления индекса](creating-page-layouts-with-view-master-pages-vb/_static/image14.png)](creating-page-layouts-with-view-master-pages-vb/_static/image13.png)
 
 **05 рис**: Страница содержимого представления индекса ([Просмотр полноразмерного изображения](creating-page-layouts-with-view-master-pages-vb/_static/image15.png))
 
@@ -117,7 +117,7 @@ ms.locfileid: "59422360"
 При подготовке к просмотру в представление Index в браузер, требуемый заголовок отображается в заголовке окна браузера:
 
 
-[![BЗаголовок браузера](creating-page-layouts-with-view-master-pages-vb/_static/image17.png)](creating-page-layouts-with-view-master-pages-vb/_static/image16.png)
+[![Строка заголовка браузера](creating-page-layouts-with-view-master-pages-vb/_static/image17.png)](creating-page-layouts-with-view-master-pages-vb/_static/image16.png)
 
 
 Есть одно важное требование, главной страницы представления должна удовлетворять в порядке для атрибута title, для работы. Главная страница представления должен содержать `<head runat="server">` тег вместо обычной `<head>` тег для заголовка. Если `<head>` тег не поддерживает runat = «server» атрибута, то заголовок не будет отображаться. Представление по умолчанию, главной страницы содержит обязательные `<head runat="server">` тега.

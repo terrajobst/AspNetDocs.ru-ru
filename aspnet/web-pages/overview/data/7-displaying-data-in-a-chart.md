@@ -12,7 +12,7 @@ ms.openlocfilehash: f97f214abeaeb88634dd10aaebacc0d58e91ab84
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422464"
 ---
 # <a name="displaying-data-in-a-chart-with-aspnet-web-pages-razor"></a>Отображение данных на диаграмме с веб-страниц ASP.NET (Razor)
@@ -42,8 +42,8 @@ ms.locfileid: "59422464"
 
 | **Диаграмма с областями** ![Описание: Рисунок для типа диаграммы с областями](7-displaying-data-in-a-chart/_static/image1.jpg) | **Линейчатая диаграмма** ![Описание: Рисунок для типа линейчатой диаграммы](7-displaying-data-in-a-chart/_static/image2.jpg) |
 | --- | --- |
-| **Гистограмма** ![Описание: Рисунок для диаграммы типа гистограммы](7-displaying-data-in-a-chart/_static/image3.jpg) | **График** ![Описание: Рисунок для типа диаграммы «график»](7-displaying-data-in-a-chart/_static/image4.jpg) |
-| **Круговая диаграмма** ![Описание: Рисунок для кругового типа диаграммы](7-displaying-data-in-a-chart/_static/image5.jpg) | **Биржевая диаграмма** ![Описание: Рисунок для типа биржевой диаграммы](7-displaying-data-in-a-chart/_static/image6.jpg) |
+| **Гистограмма** ![Описание: Рисунок для типа диаграммы столбца](7-displaying-data-in-a-chart/_static/image3.jpg) | **График** ![Описание: Рисунок для типа диаграммы «график»](7-displaying-data-in-a-chart/_static/image4.jpg) |
+| **Круговая диаграмма** ![Описание: Рисунок для типа круговой диаграммы](7-displaying-data-in-a-chart/_static/image5.jpg) | **Биржевая диаграмма** ![Описание: Рисунок для типа биржевая диаграмма](7-displaying-data-in-a-chart/_static/image6.jpg) |
 
 ### <a name="chart-elements"></a>Элементы диаграммы
 

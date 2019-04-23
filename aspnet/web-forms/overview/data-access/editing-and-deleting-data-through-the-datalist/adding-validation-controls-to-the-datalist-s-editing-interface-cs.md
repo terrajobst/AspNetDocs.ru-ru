@@ -12,7 +12,7 @@ ms.openlocfilehash: 5dc2421f6c3fa88a9373e7ac1b7ad51be6e65b82
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422217"
 ---
 # <a name="adding-validation-controls-to-the-datalists-editing-interface-c"></a>Добавление элементов управления проверки в интерфейс правки элемента управления DataList (C#)
@@ -45,7 +45,7 @@ ms.locfileid: "59422217"
 3. Скопируйте текст внутри `<asp:Content>` и `</asp:Content>` (строки с 3 до 32), как показано на рис. 1.
 
 
-[![Cопировать текст внутри &lt;asp: Content&gt; управления](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image2.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image1.png)
+[![Скопируйте текст внутри &lt;asp: Content&gt; элемента управления](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image2.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image1.png)
 
 **Рис. 1**: Скопируйте текст внутри `<asp:Content>` управления ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image3.png))
 
@@ -59,7 +59,7 @@ ms.locfileid: "59422217"
 После перемещения содержимого и кода из `ErrorHandling.aspx` для `UIValidation.aspx`, Отвлекитесь и проверьте его страницы в браузере. Такие же выходные данные и отобразятся функции в каждом из этих двух страниц (см. рис. 2).
 
 
-[![Tон страницу UIValidation.aspx имитирует в ErrorHandling.aspx](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image5.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image4.png)
+[![Страницу UIValidation.aspx имитирует в ErrorHandling.aspx](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image5.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image4.png)
 
 **Рис. 2**: `UIValidation.aspx` Страницы имитирует в `ErrorHandling.aspx` ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image6.png))
 
@@ -85,7 +85,7 @@ ms.locfileid: "59422217"
 Позвольте s начните с добавления необходимых элементов управления проверки к DataList s `EditItemTemplate`. Эту задачу можно выполнить через конструктор, щелкнув ссылку Изменить шаблоны в смарт-теге элемента управления DataList s или с помощью декларативного синтаксиса. Позвольте шаг s с помощью параметра Правка шаблонов в режиме конструктора. После выбора для редактирования элемента управления DataList s `EditItemTemplate`, добавьте RequiredFieldValidator, перетащив его с панели инструментов в интерфейс редактирования шаблона, поместив его после `ProductName` текстового поля.
 
 
-[![Aдд RequiredFieldValidator к EditItemTemplate после ProductName текстового поля](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image8.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image7.png)
+[![Добавьте RequiredFieldValidator к EditItemTemplate после текстовое поле ProductName](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image8.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image7.png)
 
 **Рис. 3**: Добавьте RequiredFieldValidator к `EditItemTemplate After` `ProductName` TextBox ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image9.png))
 
@@ -95,7 +95,7 @@ ms.locfileid: "59422217"
 После установки этих трех свойств RequiredFieldValidator, экран должен выглядеть как на рис. 4.
 
 
-[![SET RequiredFieldValidator s ControlToValidate, ErrorMessage и свойства текстового](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image11.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image10.png)
+[![Задайте RequiredFieldValidator s ControlToValidate, ErrorMessage и свойства текста](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image11.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image10.png)
 
 **Рис. 4**: Набор RequiredFieldValidator s `ControlToValidate`, `ErrorMessage`, и `Text` свойства ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image12.png))
 
@@ -112,7 +112,7 @@ ms.locfileid: "59422217"
 После внесения этих изменений, откройте страницу в браузере. При попытке пропустить имя или ввести недопустимое значение цены при правке продукта рядом с текстовым полем отображается звездочка. Как показано на рис. 5, значение цены, включающее символ валюты, скажем 19,95 долларов США, считается недопустимым. CompareValidator s `Currency` `Type` допускает разделители между цифрами (такие как запятые или точки, в зависимости от параметров языка и региональных параметров) и плюса или минуса, но *не* допускает символ валюты. Это поведение может озадачить пользователей, поскольку интерфейс правки в настоящий момент отображает `UnitPrice` в формате валюты.
 
 
-[![An звездочка рядом с текстовых полей с недопустимые входные данные](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image14.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image13.png)
+[![Звездочка рядом с текстовые поля, содержащими Недопустимый ввод](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image14.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image13.png)
 
 **Рис. 5**: Звездочка появляется "Далее" для текстовых полей с недопустимые входные данные ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image15.png))
 
@@ -169,7 +169,7 @@ ms.locfileid: "59422217"
 Для этого перетащите элемент управления ValidationSummary из области элементов в конструктор. Расположение t элемент управления ValidationSummary что действительно важно, так как мы повторно собираетесь настроить его на отображение сводки только в качестве messagebox. После добавления элемента управления, задайте его [ `ShowSummary` свойство](https://msdn.microsoft.com/library/system.web.ui.webcontrols.validationsummary.showsummary(VS.80).aspx) для `False` и его [ `ShowMessageBox` свойство](https://msdn.microsoft.com/library/system.web.ui.webcontrols.validationsummary.showmessagebox(VS.80).aspx) для `True`. В результате этого добавления ошибок проверки обобщены в messagebox стороне клиента (см. рис. 6).
 
 
-[![Tон проверки ошибки выдаются сводкой в Messagebox клиентские](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image17.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image16.png)
+[![Проверка ошибки выдаются сводкой в Messagebox стороне клиента](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image17.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image16.png)
 
 **Рис. 6**: Проверка ошибки выдаются сводкой в Messagebox клиентские ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image18.png))
 

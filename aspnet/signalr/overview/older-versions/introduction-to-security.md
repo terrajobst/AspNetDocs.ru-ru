@@ -12,7 +12,7 @@ ms.openlocfilehash: 08106dd6df491da817e0d449e85a09a8bc0fc77c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422061"
 ---
 # <a name="introduction-to-signalr-security-signalr-1x"></a>Общие сведения о безопасности SignalR (SignalR 1.x)
@@ -30,7 +30,7 @@ ms.locfileid: "59422061"
 
 - [Основные понятия безопасности SignalR](#concepts)
 
-    - [Аутентификация и авторизация](#authentication)
+    - [Проверка подлинности и авторизация](#authentication)
     - [Маркер подключения](#connectiontoken)
     - [Повторное присоединение групп при повторном подключении](#rejoingroup)
 - [Как SignalR предотвращает подделки запросов между сайтами](#csrf)

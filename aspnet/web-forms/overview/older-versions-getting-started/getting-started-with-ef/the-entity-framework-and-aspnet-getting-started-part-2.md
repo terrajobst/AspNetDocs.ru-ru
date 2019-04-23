@@ -12,7 +12,7 @@ ms.openlocfilehash: f436044b0887d6b092ab18a6128019aa87747566
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422308"
 ---
 # <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms---part-2"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms — часть 2
@@ -58,7 +58,7 @@ ms.locfileid: "59422308"
 
 Переключиться в режим **разработки** просмотра, щелкните смарт-тег элемента управления источником данных и нажмите кнопку **Настройка источника данных** для запуска **Настройка источника данных** мастера.
 
-[![Image01](the-entity-framework-and-aspnet-getting-started-part-2/_static/image12.png)](the-entity-framework-and-aspnet-getting-started-part-2/_static/image11.png)
+[!["Image01"](the-entity-framework-and-aspnet-getting-started-part-2/_static/image12.png)](the-entity-framework-and-aspnet-getting-started-part-2/_static/image11.png)
 
 В **Настройка ObjectContext** шага мастера, выберите **SchoolEntities** как значение для **именованное соединение**и выберите **SchoolEntities**как **DefaultContainerName** значение. Затем нажмите кнопку **Далее**.
 

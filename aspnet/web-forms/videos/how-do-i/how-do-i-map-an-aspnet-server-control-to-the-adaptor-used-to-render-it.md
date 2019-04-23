@@ -12,7 +12,7 @@ ms.openlocfilehash: 757c90fac3345b448513fb4c7cd946a3d10f3f89
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59420839"
 ---
 # <a name="how-do-i-map-an-aspnet-server-control-to-the-adaptor-used-to-render-it"></a>[Инструкции] Карта ASP.NET серверный элемент управления, используемым для его отображения адаптером

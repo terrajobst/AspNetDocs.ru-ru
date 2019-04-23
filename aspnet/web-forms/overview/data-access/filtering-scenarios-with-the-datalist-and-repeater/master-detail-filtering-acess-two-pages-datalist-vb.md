@@ -12,7 +12,7 @@ ms.openlocfilehash: f71e4814d59ef1817d5a64f778ba6d572fc19145
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422737"
 ---
 # <a name="masterdetail-filtering-across-two-pages-vb"></a>Фильтрация "Основной/подробности" на двух страницах (VB)
@@ -37,7 +37,7 @@ ms.locfileid: "59422737"
 Первым шагом в создании любого отчета «основной/подробности» является отображение «основных» записей. Таким образом наша первая задача является отображение категорий в «основной» странице. Откройте `CategoryListMaster.aspx` странице в `DataListRepeaterFiltering` папки, добавьте элемент управления Repeater и, в смарт-теге, необязательно, чтобы добавить новый элемент управления ObjectDataSource. Настройте новый элемент управления ObjectDataSource, таким образом, чтобы он обращается к своим данным из `CategoriesBLL` класса `GetCategories` метод (см. рис. 1).
 
 
-[![CНастройка ObjectDataSource на использование метода GetCategories класса categoriesbll](master-detail-filtering-acess-two-pages-datalist-vb/_static/image2.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image1.png)
+[![Настройте элемент ObjectDataSource для использования метода GetCategories класса categoriesbll](master-detail-filtering-acess-two-pages-datalist-vb/_static/image2.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image1.png)
 
 **Рис. 1**: Настройка ObjectDataSource для использования `CategoriesBLL` класса `GetCategories` метод ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-vb/_static/image3.png))
 
@@ -49,7 +49,7 @@ ms.locfileid: "59422737"
 По завершении этой разметки Отвлекитесь и просмотрите ход работы через браузер. Как показано на рис. 2, элементу управления Repeater визуализируется как маркированный список, показывая имя и описание каждой категории.
 
 
-[![EACH категория отображается как элемент маркированного списка](master-detail-filtering-acess-two-pages-datalist-vb/_static/image5.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image4.png)
+[![Каждая категория отображается как элемент маркированного списка](master-detail-filtering-acess-two-pages-datalist-vb/_static/image5.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image4.png)
 
 **Рис. 2**: Каждая категория отображается как элемент маркированного списка ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-vb/_static/image6.png))
 
@@ -73,7 +73,7 @@ ms.locfileid: "59422737"
 Если вы следуете, вы можете использовать элемент привязки или подход элемента управления гиперссылки на странице. Независимо от подхода, при просмотре страницы через обозреватель каждое имя категории должно подготавливаться к просмотру как ссылку `ProductsForCategoryDetails.aspx`, передав в соответствующем `CategoryID` значение (см. рис. 3).
 
 
-[![Tон имена теперь ссылку категории на ProductsForCategoryDetails.aspx](master-detail-filtering-acess-two-pages-datalist-vb/_static/image8.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image7.png)
+[![Имена категорий теперь ссылка на ProductsForCategoryDetails.aspx](master-detail-filtering-acess-two-pages-datalist-vb/_static/image8.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image7.png)
 
 **Рис. 3**: Категория имена теперь ссылку, чтобы `ProductsForCategoryDetails.aspx` ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-vb/_static/image9.png))
 
@@ -83,7 +83,7 @@ ms.locfileid: "59422737"
 С помощью `CategoryListMaster.aspx` страница полностью, мы готовы к обратим наше внимание на реализацию страницы «подробности», `ProductsForCategoryDetails.aspx`. Открыть эту страницу, перетащите элемент управления DataList из инструментария в конструктор и задайте его `ID` свойства `ProductsInCategory`. Затем выберите смарт-теге элемента управления DataList для добавления нового источника ObjectDataSource на страницу, назовите его `ProductsInCategoryDataSource`. Настройте его таким образом, чтобы он вызывал `ProductsBLL` класса `GetProductsByCategoryID(categoryID)` метод; набора раскрывающихся списках на вкладках INSERT, UPDATE и DELETE (нет).
 
 
-[![CНастройка ObjectDataSource на использование класса ProductsBLL метод GetProductsByCategoryID(categoryID)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image11.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image10.png)
+[![Настройка ObjectDataSource на использование класса ProductsBLL метод GetProductsByCategoryID(categoryID)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image11.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image10.png)
 
 **Рис. 4**: Настройка ObjectDataSource для использования `ProductsBLL` класса `GetProductsByCategoryID(categoryID)` метод ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-vb/_static/image12.png))
 
@@ -91,7 +91,7 @@ ms.locfileid: "59422737"
 Так как `GetProductsByCategoryID(categoryID)` метод принимает входной параметр (*`categoryID`*), Выбор источника данных мастер дает возможность указать источник параметра. В качестве источника параметра строки запроса, с помощью QueryStringField `CategoryID`.
 
 
-[![USE CategoryID поля строки запроса, как источник параметра](master-detail-filtering-acess-two-pages-datalist-vb/_static/image14.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image13.png)
+[![Поле Querystring CategoryID использовать как источник параметра](master-detail-filtering-acess-two-pages-datalist-vb/_static/image14.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image13.png)
 
 **Рис. 5**: Использовать поле строки запроса `CategoryID` как источник параметра ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-vb/_static/image15.png))
 
@@ -103,7 +103,7 @@ ms.locfileid: "59422737"
 Чтобы просмотреть эту страницу в действии, запустите в `CategoryListMaster.aspx` страница; затем щелкните ссылку в маркированном списке категорий. Таким образом вы перейдете на `ProductsForCategoryDetails.aspx`, передав вдоль `CategoryID` через строку запроса. `ProductsInCategoryDataSource` ObjectDataSource в `ProductsForCategoryDetails.aspx` затем будет получать только те продукты для указанной категории и их отображения в элементе управления DataList, который отображает два продукта на строку. Рис. 6 показан снимок экрана `ProductsForCategoryDetails.aspx` при просмотре напитков.
 
 
-[![Tон отображается «Напитки», два каждой строки](master-detail-filtering-acess-two-pages-datalist-vb/_static/image17.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image16.png)
+[![Отображаются напитков, два каждой строки](master-detail-filtering-acess-two-pages-datalist-vb/_static/image17.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image16.png)
 
 **Рис. 6**: Отображаются напитков, два каждой строки ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-vb/_static/image18.png))
 
@@ -115,7 +115,7 @@ ms.locfileid: "59422737"
 Для этого добавьте FormView над элементом управления Repeater в `ProductsForCategoryDetails.aspx`. Добавьте новый элемент управления ObjectDataSource на страницу из смарт-тега FormView с именем `CategoryDataSource` и настройте его для использования `CategoriesBLL` класса `GetCategoryByCategoryID(categoryID)` метод.
 
 
-[![Aдоступ к информации о категории через метод GetCategoryByCategoryID(categoryID) класса categoriesbll](master-detail-filtering-acess-two-pages-datalist-vb/_static/image20.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image19.png)
+[![Доступ к сведениям о категории через метод GetCategoryByCategoryID(categoryID) класса categoriesbll](master-detail-filtering-acess-two-pages-datalist-vb/_static/image20.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image19.png)
 
 **Рис. 7**: Доступ к сведениям о категории через `CategoriesBLL` класса `GetCategoryByCategoryID(categoryID)` метод ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-vb/_static/image21.png))
 
@@ -132,7 +132,7 @@ ms.locfileid: "59422737"
 > В дополнение к FormView, я также добавил элемент управления "Гиперссылка" выше FormView, который возвращает пользователя обратно к списку категорий (`CategoryListMaster.aspx`). Вы можете поместить эту ссылку в другом месте или пропустить.
 
 
-[![Cкатегорий сведения — теперь отображается в верхней части страницы](master-detail-filtering-acess-two-pages-datalist-vb/_static/image23.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image22.png)
+[![— Сведения о категориях теперь отображается в верхней части страницы](master-detail-filtering-acess-two-pages-datalist-vb/_static/image23.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image22.png)
 
 **Рис. 8**: — Сведения о категориях теперь отображается в верхней части страницы ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-vb/_static/image24.png))
 
@@ -158,7 +158,7 @@ ms.locfileid: "59422737"
 После обновления базы данных соответствующим образом, вернитесь к `CategoryListMaster.aspx` странице, а затем щелкните ссылку создания. Так как не все продукты, принадлежащие к этой категории, вы увидите сообщение «Нет ни одного продукта для выбранной категории...», как показано на рис. 9.
 
 
-[![A При этом отображается сообщение, если нет продукты, принадлежащие к выбранной категории](master-detail-filtering-acess-two-pages-datalist-vb/_static/image26.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image25.png)
+[![Сообщение отображается в том случае, если нет продукты, принадлежащие к выбранной категории](master-detail-filtering-acess-two-pages-datalist-vb/_static/image26.png)](master-detail-filtering-acess-two-pages-datalist-vb/_static/image25.png)
 
 **Рис. 9**: Сообщение отображается в том случае, если нет продукты, принадлежащие к выбранной категории ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-vb/_static/image27.png))
 

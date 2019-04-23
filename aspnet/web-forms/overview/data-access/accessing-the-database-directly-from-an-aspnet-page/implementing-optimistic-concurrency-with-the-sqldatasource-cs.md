@@ -12,7 +12,7 @@ ms.openlocfilehash: e8ed68e10d2924a2174494943b654e1f46284be4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59420709"
 ---
 # <a name="implementing-optimistic-concurrency-with-the-sqldatasource-c"></a>Реализация оптимистического параллелизма с помощью элемента управления SqlDataSource (C#)
@@ -47,7 +47,7 @@ ms.locfileid: "59420709"
 На рисунке 2 показано это взаимодействие.
 
 
-[![Wри двух пользователей одновременно обновления существует запись s потенциал для одного пользователя s примет перезаписать другие s](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image2.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image1.png)
+[![При одновременном обновлении записи существует вероятность s s один пользователь изменяет перезаписать другие устройства](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image2.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image1.png)
 
 **Рис. 2**: При одновременном обновлении записи существует s потенциал s одного пользователя изменениями перезаписать другие устройства ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image2.png))
 
@@ -61,7 +61,7 @@ ms.locfileid: "59420709"
 Управление оптимистичным параллелизмом осуществляется путем обеспечения, что запись обновляемой или удаляемой имеет те же значения, как при запуске процесса обновления или удаления. Например при нажатии кнопки "Изменить" в изменяемого элемента управления GridView, значения запись s чтение из базы данных и отображаются в текстовые поля и другие веб-элементов управления. Эти исходные значения сохраняются элементом GridView. Позже, после того как пользователь вносит изменения ее и щелкает кнопкой "Обновить", `UPDATE` используется инструкция необходимо учитывать исходные и новые значения и только обновление базовой записи в базе данных, если исходные значения, что пользователь начал редактирование идентичны со значениями в базе данных. На рисунке 3 показана эта последовательность событий.
 
 
-[![Fили Update или Delete для успешного выполнения, исходные значения должен быть равным текущие значения базы данных](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image3.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image3.png)
+[![Для обновления или удаления, для успешного выполнения исходные значения должен быть равным текущие значения базы данных](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image3.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image3.png)
 
 **Рис. 3**: Для обновления или удаления будет успешной, исходные значения должен быть равным текущие значения базы данных ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image4.png))
 
@@ -78,7 +78,7 @@ ms.locfileid: "59420709"
 Сначала откройте `OptimisticConcurrency.aspx` странице из `SqlDataSource` папки. Перетащите элемент управления SqlDataSource из инструментария в конструктор, параметры его `ID` свойства `ProductsDataSourceWithOptimisticConcurrency`. Затем щелкните ссылку Настройка источника данных в смарт-теге элемента управления s. На первом экране мастера, выберите для работы с `NORTHWINDConnectionString` и нажмите кнопку Далее.
 
 
-[![CВыберите для работы с NORTHWINDConnectionString](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image4.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image5.png)
+[![Выберите для работы с NORTHWINDConnectionString](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image4.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image5.png)
 
 **Рис. 4**: Выберите для работы с `NORTHWINDConnectionString` ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image6.png))
 
@@ -86,7 +86,7 @@ ms.locfileid: "59420709"
 В этом примере мы добавим GridView, который позволяет пользователям редактировать `Products` таблицы. Таким образом, Настройка экрана инструкции Select, выберите `Products` таблицу из раскрывающегося списка и выберите `ProductID`, `ProductName`, `UnitPrice`, и `Discontinued` столбцов, как показано на рис. 5.
 
 
-[![FПЗУ таблицы Products, возвращают ProductID, ProductName, UnitPrice и неподдерживаемые столбцы](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image5.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image7.png)
+[![Из таблицы Products возвращаемое ProductID, ProductName, UnitPrice и неподдерживаемые столбцы](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image5.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image7.png)
 
 **Рис. 5**: Из `Products` таблицы, возвращаемые `ProductID`, `ProductName`, `UnitPrice`, и `Discontinued` столбцы ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image8.png))
 
@@ -152,7 +152,7 @@ ms.locfileid: "59420709"
 С помощью элемента управления SqlDataSource, настроен для поддержки оптимистичного параллелизма остается только добавить данных веб-элемента управления на страницу, который использует этот элемент управления параллелизмом. Для этого руководства позволяют s добавьте элемент управления GridView, который предоставляет режимах редактирования и функцию удаления. Для этого перетащите GridView с панели элементов в конструктор и задайте его `ID` для `Products`. Смарт-теге GridView s, привяжите его к `ProductsDataSourceWithOptimisticConcurrency` управления SqlDataSource, добавленный на шаге 1. Наконец проверьте параметры включить редактирование и разрешить удаление, в смарт-теге.
 
 
-[![BIND GridView SqlDataSource и Включение редактирования и удаления](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image6.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image9.png)
+[![Привязка элемента управления SqlDataSource GridView и разрешить правку и удаление](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image6.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image9.png)
 
 **Рис. 6**: Привязки GridView к SqlDataSource и разрешить редактирование и удаление ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image10.png))
 
@@ -173,7 +173,7 @@ ms.locfileid: "59420709"
 В окне второго обозревателя цену (оставив, название продукта как исходное значение) и нажмите кнопку обновления. При обратной передаче возвращает сетки в режим до редактирования, но не записи изменения цены. Второй обозреватель показано то же значение, что первый из них имя продукта с старая цена. Изменения, внесенные в окне второго обозревателя были потеряны. Кроме того изменения были потеряны довольно без вмешательства пользователя, так как не исключение или сообщение о том, что только что о возникновении одновременного нарушения.
 
 
-[![Tон изменяет в второй браузера окна были автоматически потеряны](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image7.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image11.png)
+[![Изменения в окне второго обозревателя автоматически удалены.](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image7.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image11.png)
 
 **Рис. 7**: Изменения в второй браузера окна были автоматически потеряны ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image12.png))
 
@@ -196,7 +196,7 @@ ms.locfileid: "59420709"
 Поскольку одновременного нарушения отклоняет изменения, внесенные одним, было бы неплохо для предупреждения пользователя при возникновении одновременного нарушения. Чтобы предупредить пользователя, позволяют s добавьте элемент управления Label Web в верхней части страницы с именем `ConcurrencyViolationMessage` которого `Text` свойство отображается следующее сообщение: Предпринята попытка обновить или удалить запись, которая одновременно был обновлен другим пользователем. Можно просмотреть изменения другого пользователя и затем повторить обновление или удалить. Задать элемент управления "Метка" s `CssClass` свойства на "Предупреждение", который является классом CSS, определенного в `Styles.css` red, курсивом, полужирным шрифтом и большого шрифта, который отображает текст. Наконец, задайте для метки s `Visible` и `EnableViewState` свойства `false`. При этом будут скрыты за исключением только обратных передач, где мы прямо устанавливаем метку его `Visible` свойства `true`.
 
 
-[![Aдд элемент управления Label к странице для отображения предупреждения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image8.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image13.png)
+[![Добавьте элемент управления Label к странице для отображения предупреждения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image8.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image13.png)
 
 **Рис. 8**: Добавьте элемент управления Label к странице для отображения предупреждения ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image14.png))
 
@@ -213,7 +213,7 @@ ms.locfileid: "59420709"
 Как показано на рис. 9, с помощью этих двух обработчиков выросли сообщение отображается при каждом возникновении одновременного нарушения.
 
 
-[![A Сообщение отображается в случае одновременного нарушения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image9.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image15.png)
+[![При возникновении одновременного нарушения отображается сообщение](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image9.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image15.png)
 
 **Рис. 9**: При возникновении одновременного нарушения отображается сообщение ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image16.png))
 

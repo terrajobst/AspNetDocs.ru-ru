@@ -12,7 +12,7 @@ ms.openlocfilehash: c7a1b9e82defaae71f0a911e5e4321f6e15ad8bf
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59422620"
 ---
 # <a name="performing-simple-validation-vb"></a>Выполнение простой проверки (VB)
@@ -32,7 +32,7 @@ ms.locfileid: "59422620"
 Я не рекомендую что нужно добавить логику проверки или базы данных, к контроллеру. Контроллер должен содержать только логику, относящуюся к управляют потоком данных приложения. Мы говорим об ярлык для простоты.
 
 
-**Listing 1 - Controllers\ProductController.vb**
+**В листинге 1 - Controllers\ProductController.vb**
 
 [!code-vb[Main](performing-simple-validation-vb/samples/sample1.vb)]
 
@@ -56,19 +56,19 @@ ms.locfileid: "59422620"
 Убедитесь, что сборка приложения осуществляется перед добавлением представления. В противном случае список классов не будет отображаться на **просмотреть класс данных** раскрывающегося списка.
 
 
-[![Tдиалоговое окно нового проекта он](performing-simple-validation-vb/_static/image1.jpg)](performing-simple-validation-vb/_static/image1.png)
+[![В диалоговом окне нового проекта](performing-simple-validation-vb/_static/image1.jpg)](performing-simple-validation-vb/_static/image1.png)
 
 **Рис 01**: Добавление представления ([Просмотр полноразмерного изображения](performing-simple-validation-vb/_static/image2.png))
 
 
-[![Tдиалоговое окно нового проекта он](performing-simple-validation-vb/_static/image2.jpg)](performing-simple-validation-vb/_static/image3.png)
+[![В диалоговом окне нового проекта](performing-simple-validation-vb/_static/image2.jpg)](performing-simple-validation-vb/_static/image3.png)
 
 **Рис. 02**: Создание представления со строгой типизацией ([Просмотр полноразмерного изображения](performing-simple-validation-vb/_static/image4.png))
 
 
 После выполнения этих действий вы получаете представления создания в листинге 2.
 
-**Listing 2 - Views\Product\Create.aspx**
+**В листинге 2 - Views\Product\Create.aspx**
 
 [!code-aspx[Main](performing-simple-validation-vb/samples/sample2.aspx)]
 
@@ -79,7 +79,7 @@ ms.locfileid: "59422620"
 Страница, на рис. 3 показано сообщения об ошибках, преобразовываемый вспомогательные функции проверки при отправке формы с отсутствующих полей и недопустимые значения.
 
 
-[![Tдиалоговое окно нового проекта он](performing-simple-validation-vb/_static/image3.jpg)](performing-simple-validation-vb/_static/image5.png)
+[![В диалоговом окне нового проекта](performing-simple-validation-vb/_static/image3.jpg)](performing-simple-validation-vb/_static/image5.png)
 
 **Рис 03**: Создать представление, отправленных с проблемами ([Просмотр полноразмерного изображения](performing-simple-validation-vb/_static/image6.png))
 
@@ -104,7 +104,7 @@ ms.locfileid: "59422620"
 Если введено недопустимое значение для поля Цена и нет значения для поля UnitsInStock отправки формы HTML для создания продукта, вы получите сообщения проверки, отображаемый на рис. 4. Откуда берутся эти сообщения об ошибках проверки?
 
 
-[![Tдиалоговое окно нового проекта он](performing-simple-validation-vb/_static/image4.jpg)](performing-simple-validation-vb/_static/image7.png)
+[![В диалоговом окне нового проекта](performing-simple-validation-vb/_static/image4.jpg)](performing-simple-validation-vb/_static/image7.png)
 
 **Рис. 04**: Prebinding ошибки проверки ([Просмотр полноразмерного изображения](performing-simple-validation-vb/_static/image8.png))
 

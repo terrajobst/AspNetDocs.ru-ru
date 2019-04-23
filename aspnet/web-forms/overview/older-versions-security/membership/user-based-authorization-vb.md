@@ -12,7 +12,7 @@ ms.openlocfilehash: 1aba8e068e80d2c2533c8aa68e75518f92b71a93
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59420657"
 ---
 # <a name="user-based-authorization-vb"></a>Авторизация на основе пользователей (VB)
@@ -45,7 +45,7 @@ ASP.NET позволяет легко определить правила авт
 Рис. 1 показан рабочий процесс конвейера ASP.NET, `FormsAuthenticationModule`и `UrlAuthorizationModule` прибытии неавторизованный запрос. В частности, на рис. 1 показан запрос для анонимных посетителем `ProtectedPage.aspx`, который является страницей, которое запрещает доступ анонимным пользователям. Так как пользователь является анонимным, `UrlAuthorizationModule` прерывает запрос и возвращает состояние HTTP 401 несанкционированный. `FormsAuthenticationModule` Затем преобразует состояния 401 на 302 — перенаправление на страницу входа. После проверки подлинности пользователя через страницу входа, он перенаправляется `ProtectedPage.aspx`. Это время `FormsAuthenticationModule` идентифицирует пользователя, в зависимости от его билет проверки подлинности. Теперь, когда пользователь проходит проверку подлинности, `UrlAuthorizationModule` разрешает доступ к странице.
 
 
-[![Tон проверки подлинности форм и рабочий процесс авторизации URL-адрес](user-based-authorization-vb/_static/image2.png)](user-based-authorization-vb/_static/image1.png)
+[![Проверка подлинности форм и рабочий процесс авторизации URL-адрес](user-based-authorization-vb/_static/image2.png)](user-based-authorization-vb/_static/image1.png)
 
 **Рис. 1**: Проверка подлинности форм и рабочий процесс авторизации URL-адрес ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image3.png))
 
@@ -59,7 +59,7 @@ ASP.NET позволяет легко определить правила авт
 Рис. 2 показан этот рабочий процесс в заблуждение.
 
 
-[![Tон по умолчанию рабочий процесс может привести к цикл толку](user-based-authorization-vb/_static/image5.png)](user-based-authorization-vb/_static/image4.png)
+[![Рабочий процесс по умолчанию может привести к путанице цикла](user-based-authorization-vb/_static/image5.png)](user-based-authorization-vb/_static/image4.png)
 
 **Рис. 2**: По умолчанию рабочий процесс может привести к цикл толку ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image6.png))
 
@@ -116,7 +116,7 @@ ASP.NET позволяет легко определить различные п
 Давайте обновим наш веб-сайт, чтобы только прошедшие проверку подлинности пользователи смогут посещать страницы ASP.NET в `Membership` папку. Для этого нам нужно добавить `Web.config` файл `Membership` папки и задать его параметры авторизации, чтобы запретить анонимным пользователям. Щелкните правой кнопкой мыши `Membership` папку в обозревателе решений, выберите меню «Добавление нового элемента» в контекстном меню и добавьте новый файл веб-конфигурации с именем `Web.config`.
 
 
-[![Aдд файл Web.config в папку членства](user-based-authorization-vb/_static/image8.png)](user-based-authorization-vb/_static/image7.png)
+[![Добавьте файл Web.config в папку членства](user-based-authorization-vb/_static/image8.png)](user-based-authorization-vb/_static/image7.png)
 
 **Рис. 3**: Добавить `Web.config` файл `Membership` папку ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image9.png))
 
@@ -124,7 +124,7 @@ ASP.NET позволяет легко определить различные п
 На этом этапе проект должен содержать два `Web.config` файлов: один в корневом каталоге, а другой в `Membership` папку.
 
 
-[![Yнаше приложение теперь должно содержать два файла Web.config](user-based-authorization-vb/_static/image11.png)](user-based-authorization-vb/_static/image10.png)
+[![Приложение теперь должно содержать два файла Web.config](user-based-authorization-vb/_static/image11.png)](user-based-authorization-vb/_static/image10.png)
 
 **Рис. 4**: Ваши приложения должны теперь содержат два `Web.config` файлов ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image12.png))
 
@@ -140,7 +140,7 @@ ASP.NET позволяет легко определить различные п
 Щелкните ссылку создания учетных записей пользователей, в левом столбце. Это требуется для `~/Membership/CreatingUserAccounts.aspx`. Так как `Web.config` файл `Membership` папка определяет правила авторизации, чтобы запретить анонимный доступ, `UrlAuthorizationModule` прерывает запрос и возвращает состояние HTTP 401 несанкционированный. `FormsAuthenticationModule` Изменяет это 302 состояния перенаправления, отправив нам на страницу входа. Обратите внимание на то, что страницы мы предпринималась попытка получить доступ к (`CreatingUserAccounts.aspx`) передается на страницу входа с помощью `ReturnUrl` параметр строки запроса.
 
 
-[![Sинс URL-адрес авторизации правила запрещают анонимный доступ, мы перенаправляются на страницу входа](user-based-authorization-vb/_static/image14.png)](user-based-authorization-vb/_static/image13.png)
+[![Так как URL-адрес авторизации правила запрещают анонимный доступ мы перенаправляются на страницу входа](user-based-authorization-vb/_static/image14.png)](user-based-authorization-vb/_static/image13.png)
 
 **Рис. 5**: Так как URL-адрес авторизации правила запрещают анонимный доступ, мы перенаправляются на страницу входа ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image15.png))
 
@@ -196,7 +196,7 @@ ASP.NET позволяет легко определить различные п
 На этом этапе мы являются анонимными, поэтому `Request.IsAuthenticated` возвращает `False` мы не направляются `UnauthorizedAccess.aspx`. Вместо этого отображается на страницу входа. Войдите в качестве пользователя, отличного от Tito, например Брюс. После ввода правильных учетных данных, страницы входа передает нам обратно `~/Membership/CreatingUserAccounts.aspx`. Тем не менее так как эта страница доступна только для Tito, мы нет доступа для ее просмотра и немедленно возвращаются на страницу входа. Однако на этот раз `Request.IsAuthenticated` возвращает `True` (и `ReturnUrl` существует параметр строки запроса), поэтому мы перенаправляются `UnauthorizedAccess.aspx` страницы.
 
 
-[![Aпроверку подлинности, неавторизованные пользователи перенаправляются UnauthorizedAccess.aspx](user-based-authorization-vb/_static/image17.png)](user-based-authorization-vb/_static/image16.png)
+[![Проверку подлинности, неавторизованные пользователи перенаправляются на UnauthorizedAccess.aspx](user-based-authorization-vb/_static/image17.png)](user-based-authorization-vb/_static/image16.png)
 
 **Рис. 6**: Проверку подлинности, неавторизованные пользователи перенаправляются `UnauthorizedAccess.aspx` ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image18.png))
 
@@ -236,7 +236,7 @@ ASP.NET позволяет легко определить различные п
 Отвлекитесь на эту страницу через обозреватель. Появится список файлов, находящихся в корневом каталоге приложения. Щелкнув любой представления или удаления элементов управления LinkButton приведет к обратной передачи, но вмешательство произойдет в том случае, так как еще не создать необходимые обработчики событий.
 
 
-[![Tв GridView перечислены файлы в корневом каталоге веб-приложения](user-based-authorization-vb/_static/image20.png)](user-based-authorization-vb/_static/image19.png)
+[![GridView Перечисляет файлы в корневом каталоге веб-приложения](user-based-authorization-vb/_static/image20.png)](user-based-authorization-vb/_static/image19.png)
 
 **Рис. 7**: GridView Перечисляет файлы в корневом каталоге веб-приложения ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image21.png))
 
@@ -252,7 +252,7 @@ ASP.NET позволяет легко определить различные п
 Этот код использует GridView `SelectedValue` свойства, чтобы определить полное имя выбранного файла. На внутреннем уровне `DataKeys` Коллекция указывается для получения `SelectedValue`, поэтому крайне важно установить GridView `DataKeyNames` свойство с именем, как описано ранее в этом шаге. [ `File` Класс](https://msdn.microsoft.com/library/system.io.file.aspx) используется для считывания содержимое выбранного файла в строку, которая затем присваивается `FileContents` текстового поля `Text` свойство, поэтому отображается содержимое файла, выбранного на странице.
 
 
-[![Tон выбран содержимое файла отображаются в текстовом поле](user-based-authorization-vb/_static/image23.png)](user-based-authorization-vb/_static/image22.png)
+[![Содержимое выбранного файла отображаются в текстовом поле](user-based-authorization-vb/_static/image23.png)](user-based-authorization-vb/_static/image22.png)
 
 **Рис. 8**: Содержимое выбранного файла отображаются в текстовом поле ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image24.png))
 
@@ -268,7 +268,7 @@ ASP.NET позволяет легко определить различные п
 Код просто отображает полное имя файла для удаления в `FileContents` TextBox *без* фактического удаления файла.
 
 
-[![Cщелкнув удалить не фактически удаляется файл](user-based-authorization-vb/_static/image26.png)](user-based-authorization-vb/_static/image25.png)
+[![Нажатие кнопки удаления файл не удаляется фактически](user-based-authorization-vb/_static/image26.png)](user-based-authorization-vb/_static/image25.png)
 
 **Рис. 9**: Нажав кнопку Delete кнопки не фактически удаляет файл ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image27.png))
 
@@ -298,7 +298,7 @@ ASP.NET позволяет легко определить различные п
 После перемещения текстового поля в LoginView `LoggedInTemplate` и обновление страницы кода для ссылки на текстовое поле с помощью `FindControl("controlId")` шаблонов, посетите страницу как анонимный пользователь. Как показано на рис. 10, `FileContents` текстовое поле не отображается. Тем не менее по-прежнему отображается представление элемента управления LinkButton.
 
 
-[![Tэлемент управления LoginView он отображает только FileContents текстовое поле для Authenticated Users](user-based-authorization-vb/_static/image29.png)](user-based-authorization-vb/_static/image28.png)
+[![Элемент управления LoginView только отрисовывает текстовое поле FileContents для прошедших проверку пользователей](user-based-authorization-vb/_static/image29.png)](user-based-authorization-vb/_static/image28.png)
 
 **Рис. 10**: Элемент управления LoginView только отображает `FileContents` текстовое поле для Authenticated Users ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image30.png))
 
@@ -318,7 +318,7 @@ ASP.NET позволяет легко определить различные п
 Как показано на рис. 11, конечный результат не является, что довольно как представление столбцов по-прежнему отображается несмотря на то, что представление элементов управления LinkButton внутри столбца скрыты. Как скрыть всего столбца GridView (и не только LinkButton) будут рассмотрены в следующем разделе.
 
 
-[![Tэлемент управления LoginView он скрывает представление элементов управления LinkButton для анонимных пользователей](user-based-authorization-vb/_static/image32.png)](user-based-authorization-vb/_static/image31.png)
+[![Элемент управления LoginView скрывает представление элементов управления LinkButton для анонимных пользователей](user-based-authorization-vb/_static/image32.png)](user-based-authorization-vb/_static/image31.png)
 
 **Рис. 11**: Элемент управления LoginView скрывает представление элементов управления LinkButton для анонимных пользователей ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image33.png))
 
@@ -341,12 +341,12 @@ ASP.NET позволяет легко определить различные п
 Как уже говорилось в [ *Обзор аутентификации форм* ](../introduction/an-overview-of-forms-authentication-vb.md) руководстве `User.Identity.Name` возвращает имя удостоверения. Это соответствует имени пользователя, введенный в элементе управления Login. При посещении страницы, второй столбец GridView Tito `Visible` свойству `True`; в противном случае он становится равным `False`. Конечным результатом будет то, что если кто-то отличного от Tito посещает страницу, либо другого пользователя, прошедшего проверку подлинности, или анонимного пользователя, удалить столбец не отображается (см. рис. 12); Тем не менее, когда Tito посещает страницу, удалить столбец присутствует (см. рис. 13).
 
 
-[![Tон удалить столбец является не отображается при посещен, кто-то отличное от Tito (например, Брюс)](user-based-authorization-vb/_static/image35.png)](user-based-authorization-vb/_static/image34.png)
+[![Удалить столбец является не отображается при посещен, кто-то отличное от Tito (например, Брюс)](user-based-authorization-vb/_static/image35.png)](user-based-authorization-vb/_static/image34.png)
 
 **Рис. 12**: Удалить столбец является не отображается при посещен, кто-то отличное от Tito (например, Брюс) ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image36.png))
 
 
-[![TУдалить столбец он отображается для Tito](user-based-authorization-vb/_static/image38.png)](user-based-authorization-vb/_static/image37.png)
+[![Удалить столбец отображается для Tito](user-based-authorization-vb/_static/image38.png)](user-based-authorization-vb/_static/image37.png)
 
 **Рис. 13**: Удалить столбец отображается для Tito ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image39.png))
 
@@ -370,7 +370,7 @@ ASP.NET позволяет легко определить различные п
 Если каким-то образом пользователя, отличного от Tito пытается выполнить `RowDeleting` обработчик событий или без проверки подлинности пользователь пытается выполнить `SelectedIndexChanged` обработчик событий, которые будут вызывать среду выполнения .NET `SecurityException`.
 
 
-[![IЕсли нужное контекст безопасности не авторизован для выполнения метода, то выдается SecurityException](user-based-authorization-vb/_static/image41.png)](user-based-authorization-vb/_static/image40.png)
+[![Если контекст безопасности не авторизован для выполнения метода, то выдается SecurityException](user-based-authorization-vb/_static/image41.png)](user-based-authorization-vb/_static/image40.png)
 
 **Рис. 14**: Если контекст безопасности не авторизован для выполнения метода, `SecurityException` возникает исключение ([Просмотр полноразмерного изображения](user-based-authorization-vb/_static/image42.png))
 
