@@ -12,7 +12,7 @@ ms.openlocfilehash: 0462d8357d83115e751a818d3c9feb4b4274e212
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402548"
 ---
 # <a name="using-dynamicpopulate-with-a-user-control-and-javascript-c"></a>Использование DynamicPopulate с пользовательским элементом управления и кодом JavaScript (C#)
@@ -67,7 +67,7 @@ ms.locfileid: "59402548"
 Вот и все! Правильно работает страницы: Пользователь щелкает один из переключателей, элемент управления в наборе средств вызывает веб-службы и отображает текущую дату в нужном формате.
 
 
-[![Tпереключатели HE находятся в пользовательский элемент управления](using-dynamicpopulate-with-a-user-control-and-javascript-cs/_static/image2.png)](using-dynamicpopulate-with-a-user-control-and-javascript-cs/_static/image1.png)
+[![Переключатели находятся в пользовательский элемент управления](using-dynamicpopulate-with-a-user-control-and-javascript-cs/_static/image2.png)](using-dynamicpopulate-with-a-user-control-and-javascript-cs/_static/image1.png)
 
 Переключатели находятся в пользовательский элемент управления ([Просмотр полноразмерного изображения](using-dynamicpopulate-with-a-user-control-and-javascript-cs/_static/image3.png))
 

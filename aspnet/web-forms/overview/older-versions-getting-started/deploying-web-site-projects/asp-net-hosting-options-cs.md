@@ -12,14 +12,14 @@ ms.openlocfilehash: 90285eac8e45d542c4ccca3e3db00493546aac57
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59398453"
 ---
 # <a name="aspnet-hosting-options-c"></a>Варианты размещения в ASP.NET (C#)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Скачать PDF](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial01_Basics_cs.pdf)
+[Загрузить PDF-файл](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial01_Basics_cs.pdf)
 
 > Веб-приложений ASP.NET обычно являются предназначены, создания и тестирования в локальной среде разработки и нужно будет развернуть в рабочей среде, когда все будет готово к выпуску. Этом руководстве представлен общий обзор процесса развертывания и служит в качестве введения в этой серии руководств.
 
@@ -93,4 +93,4 @@ ms.locfileid: "59398453"
 В этой серии руководств пособий рецензировалась многими компетентными редакторами. Основной рецензент этого учебного был Мерфи Терезой. Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [ mitchell@4GuysFromRolla.com ](mailto:mitchell@4GuysFromRolla.com).
 
 > [!div class="step-by-step"]
-> [Далее](determining-what-files-need-to-be-deployed-cs.md)
+> [Вперед](determining-what-files-need-to-be-deployed-cs.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: e6b63afb9492e810e19999c7c7ffe074ad510bda
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406773"
 ---
 # <a name="introduction-to-aspnet-web-programming-using-the-razor-syntax-visual-basic"></a>Введение в программирование веб-ASP.NET с использованием синтаксиса Razor (Visual Basic)
@@ -544,7 +544,7 @@ ms.locfileid: "59406773"
 | Полный URL-адрес | `http://mycompanyserver/humanresources/CompanyPolicy.htm` |
 | --- | --- |
 | Имя сервера | *mycompanyserver* |
-| Виртуальный путь | */HumanResources/CompanyPolicy.htm* |
+| Виртуальный путь | */humanresources/CompanyPolicy.htm* |
 | Физический путь | *C:\mywebsites\humanresources\CompanyPolicy.htm* |
 
 Виртуальный корневой каталог — /, так же, как корень диска c диск — \. (Виртуальная папка пути всегда использовать символы косой черты). Виртуальный путь к папке не нужно иметь то же имя как физический каталог; Это может быть псевдонимом. (На рабочих серверах, виртуальный путь редко соответствует как полный физический путь.)

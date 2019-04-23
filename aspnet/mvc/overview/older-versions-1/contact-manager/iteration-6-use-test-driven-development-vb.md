@@ -12,7 +12,7 @@ ms.openlocfilehash: 3fd252b94e55f02215a2733f218e68b26486691f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59397114"
 ---
 # <a name="iteration-6--use-test-driven-development-vb"></a>Итерация #6 – использование разработки, управляемой тестами (VB)
@@ -113,7 +113,7 @@ ms.locfileid: "59397114"
 Создание нового модульного теста щелкните правой кнопкой мыши папку Controllers в проекте ContactManager.Tests, выбрав **Add, новый тест**и выбрав **модульного теста** шаблона (см. рис. 1). Имя нового модульного тестирования GroupControllerTest.vb и нажмите кнопку **ОК** кнопки.
 
 
-[![Adding модульного теста GroupControllerTest](iteration-6-use-test-driven-development-vb/_static/image1.jpg)](iteration-6-use-test-driven-development-vb/_static/image1.png)
+[![Добавление GroupControllerTest модульного теста](iteration-6-use-test-driven-development-vb/_static/image1.jpg)](iteration-6-use-test-driven-development-vb/_static/image1.png)
 
 **Рис 01**: Добавление GroupControllerTest модульного теста ([Просмотр полноразмерного изображения](iteration-6-use-test-driven-development-vb/_static/image2.png))
 
@@ -130,7 +130,7 @@ ms.locfileid: "59397114"
 
 Класс контроллера группа в листинге 2 содержит минимальный код, необходимый для передачи модульного теста. Действие Index() возвращает статически закодированный список групп (группы класс определен в листинге 3).
 
-**Listing 2 - Controllers\GroupController.vb**
+**В листинге 2 - Controllers\GroupController.vb**
 
 [!code-vb[Main](iteration-6-use-test-driven-development-vb/samples/sample2.vb)]
 
@@ -141,7 +141,7 @@ ms.locfileid: "59397114"
 Когда мы добавляем классы GroupController и группы в свой проект, наш первый модульный тест успешно завершает (см. рис. 2). Мы проделали минимального объема работы, необходимые для успешного прохождения теста. Пришло время отпраздновать.
 
 
-[![Success!](iteration-6-use-test-driven-development-vb/_static/image2.jpg)](iteration-6-use-test-driven-development-vb/_static/image3.png)
+[![Успех!](iteration-6-use-test-driven-development-vb/_static/image2.jpg)](iteration-6-use-test-driven-development-vb/_static/image3.png)
 
 **Рис. 02**: Успех! ([Просмотр полноразмерного изображения](iteration-6-use-test-driven-development-vb/_static/image4.png))
 
@@ -160,7 +160,7 @@ ms.locfileid: "59397114"
 
 Измененный контроллер группа в листинге 5 содержит минимальные изменения, необходимые для передачи нового теста.
 
-**Listing 5 - Controllers\GroupController.vb**
+**В листинге 5 - Controllers\GroupController.vb**
 
 [!code-vb[Main](iteration-6-use-test-driven-development-vb/samples/sample5.vb)]
 
@@ -184,7 +184,7 @@ ms.locfileid: "59397114"
 
 [!code-vb[Main](iteration-6-use-test-driven-development-vb/samples/sample7.vb)]
 
-**Listing 8 - Controllers\GroupController.vb**
+**Листинг 8 - Controllers\GroupController.vb**
 
 [!code-vb[Main](iteration-6-use-test-driven-development-vb/samples/sample8.vb)]
 
@@ -204,11 +204,11 @@ ms.locfileid: "59397114"
 
 Листинг 11 содержит новый FakeContactManagerRepository класс, реализующий интерфейс IContactManagerRepository. В отличие от класса EntityContactManagerRepository, который также реализует интерфейс IContactManagerRepository наш класс FakeContactManagerRepository не взаимодействуют с базой данных. Класс FakeContactManagerRepository использует коллекцию в памяти как прокси для базы данных. Мы будем использовать этот класс в нашем модульные тесты, как слой имитацией хранилища.
 
-**Listing 9 - Controllers\GroupController.vb**
+**Листинг 9 - Controllers\GroupController.vb**
 
 [!code-vb[Main](iteration-6-use-test-driven-development-vb/samples/sample9.vb)]
 
-**Listing 10 - Controllers\ContactManagerService.vb**
+**Листинг 10 - Controllers\ContactManagerService.vb**
 
 [!code-vb[Main](iteration-6-use-test-driven-development-vb/samples/sample10.vb)]
 
@@ -244,7 +244,7 @@ ms.locfileid: "59397114"
 <a id="0.12_table01"></a>
 
 
-| **Имя столбца** | **Тип данных** | **Разрешить значения null** |
+| **Имя столбца** | **Тип данных** | **Разрешить значения NULL** |
 | --- | --- | --- |
 | Идентификатор | int | False |
 | name | nvarchar(50) | False |
@@ -268,12 +268,12 @@ ms.locfileid: "59397114"
 9. Нажмите кнопку "Сохранить", чтобы сохранить изменения в таблицу контактов.
 
 
-[![Cается связь таблицы в базе данных](iteration-6-use-test-driven-development-vb/_static/image3.jpg)](iteration-6-use-test-driven-development-vb/_static/image5.png)
+[![Создание связи таблицы базы данных](iteration-6-use-test-driven-development-vb/_static/image3.jpg)](iteration-6-use-test-driven-development-vb/_static/image5.png)
 
 **Рис 03**: Создание связи таблицы базы данных ([Просмотр полноразмерного изображения](iteration-6-use-test-driven-development-vb/_static/image6.png))
 
 
-[![Sсвязи между таблицами pecifying](iteration-6-use-test-driven-development-vb/_static/image4.jpg)](iteration-6-use-test-driven-development-vb/_static/image7.png)
+[![Указание связей между таблицами](iteration-6-use-test-driven-development-vb/_static/image4.jpg)](iteration-6-use-test-driven-development-vb/_static/image7.png)
 
 **Рис. 04**: Указание связей между таблицами ([Просмотр полноразмерного изображения](iteration-6-use-test-driven-development-vb/_static/image8.png))
 
@@ -289,7 +289,7 @@ ms.locfileid: "59397114"
 5. Щелкните правой кнопкой мыши свойство навигации группы, которое отображается в нижней части сущность "Контакт". Измените имя *группы* свойство навигации, чтобы *группы* (в единственном числе).
 
 
-[![Uобновления из базы данных в модели Entity Framework](iteration-6-use-test-driven-development-vb/_static/image5.jpg)](iteration-6-use-test-driven-development-vb/_static/image9.png)
+[![Обновление модели Entity Framework из базы данных](iteration-6-use-test-driven-development-vb/_static/image5.jpg)](iteration-6-use-test-driven-development-vb/_static/image9.png)
 
 **05 рис**: Обновление модели из базы данных Entity Framework ([Просмотр полноразмерного изображения](iteration-6-use-test-driven-development-vb/_static/image10.png))
 
@@ -297,7 +297,7 @@ ms.locfileid: "59397114"
 После выполнения этих действий, модель данных будет представлять таблицы контактов и групп. Конструктор сущностей должно отображаться обеих сущностей (см. рис. 6).
 
 
-[![EОтображение конструктора расходуемых сгруппировать и обратитесь в службу](iteration-6-use-test-driven-development-vb/_static/image6.jpg)](iteration-6-use-test-driven-development-vb/_static/image11.png)
+[![Конструктор сущностей, группа и контакт](iteration-6-use-test-driven-development-vb/_static/image6.jpg)](iteration-6-use-test-driven-development-vb/_static/image11.png)
 
 **Рис 06**: Конструктор сущностей, группа и Contact ([Просмотр полноразмерного изображения](iteration-6-use-test-driven-development-vb/_static/image12.png))
 
@@ -316,7 +316,7 @@ ms.locfileid: "59397114"
 
 Методы-заглушки позволила нам скомпилировать наше приложение и модульные тесты. Тем не менее теперь пришло время для фактической реализации этих методов. Окончательная версия класса EntityContactManagerRepository содержится в листинге 13.
 
-**Listing 13 - Models\EntityContactManagerRepository.vb**
+**Листинг 13 - Models\EntityContactManagerRepository.vb**
 
 [!code-vb[Main](iteration-6-use-test-driven-development-vb/samples/sample16.vb)]
 
@@ -330,7 +330,7 @@ ms.locfileid: "59397114"
 - Views\Group\Delete.aspx - форма отображает подтверждение для удаления группы контактов
 
 
-[![Tон представление Index группы](iteration-6-use-test-driven-development-vb/_static/image7.jpg)](iteration-6-use-test-driven-development-vb/_static/image13.png)
+[![Представление Index группы](iteration-6-use-test-driven-development-vb/_static/image7.jpg)](iteration-6-use-test-driven-development-vb/_static/image13.png)
 
 **07 рис**: Представление Index группы ([Просмотр полноразмерного изображения](iteration-6-use-test-driven-development-vb/_static/image14.png))
 
@@ -344,7 +344,7 @@ ms.locfileid: "59397114"
 Для проверки измененного представления приложения Visual Studio, сопровождающий этот учебник. Например на рис. 8 показана в представление Index контакт.
 
 
-[![Tон представление Contact Index](iteration-6-use-test-driven-development-vb/_static/image8.jpg)](iteration-6-use-test-driven-development-vb/_static/image15.png)
+[![Представление Index контакта](iteration-6-use-test-driven-development-vb/_static/image8.jpg)](iteration-6-use-test-driven-development-vb/_static/image15.png)
 
 **Рис 08**: Представление Index контакт ([Просмотр полноразмерного изображения](iteration-6-use-test-driven-development-vb/_static/image16.png))
 

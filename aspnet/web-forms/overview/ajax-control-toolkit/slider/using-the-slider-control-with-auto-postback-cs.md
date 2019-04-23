@@ -12,7 +12,7 @@ ms.openlocfilehash: a5b858a05470caa244902afbb404adbb2e4761b7
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402730"
 ---
 # <a name="using-the-slider-control-with-auto-postback-c"></a>С помощью элемента управления Slider с автоматической обратной передачей (C#)
@@ -51,14 +51,14 @@ ms.locfileid: "59402730"
 [!code-aspx[Main](using-the-slider-control-with-auto-postback-cs/samples/sample5.aspx)]
 
 
-[![Moving ползунок инициирует обратную передачу](using-the-slider-control-with-auto-postback-cs/_static/image2.png)](using-the-slider-control-with-auto-postback-cs/_static/image1.png)
+[![Перемещая ползунок инициирует обратную передачу](using-the-slider-control-with-auto-postback-cs/_static/image2.png)](using-the-slider-control-with-auto-postback-cs/_static/image1.png)
 
 Перемещая ползунок инициирует обратную передачу ([Просмотр полноразмерного изображения](using-the-slider-control-with-auto-postback-cs/_static/image3.png))
 
 
-[![Afterwards, дата это изменение записывается в метке](using-the-slider-control-with-auto-postback-cs/_static/image5.png)](using-the-slider-control-with-auto-postback-cs/_static/image4.png)
+[![После этого дата это изменение записывается в метке](using-the-slider-control-with-auto-postback-cs/_static/image5.png)](using-the-slider-control-with-auto-postback-cs/_static/image4.png)
 
 После этого дата это изменение записывается в метке ([Просмотр полноразмерного изображения](using-the-slider-control-with-auto-postback-cs/_static/image6.png))
 
 > [!div class="step-by-step"]
-> [Далее](databinding-the-slider-control-cs.md)
+> [Вперед](databinding-the-slider-control-cs.md)

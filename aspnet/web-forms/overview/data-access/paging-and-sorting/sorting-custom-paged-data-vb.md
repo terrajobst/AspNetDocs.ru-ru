@@ -12,7 +12,7 @@ ms.openlocfilehash: ca1bf281130bf2c726b6147f90733c8a83754563
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59399593"
 ---
 # <a name="sorting-custom-paged-data-vb"></a>Упорядочение нестандартно разбитых по страницам данных (VB)
@@ -71,7 +71,7 @@ ms.locfileid: "59399593"
 **Рис. 1**: Попробуйте вводить различные значения для хранимой процедуры s трех входных параметров
 
 
-[![TХранимая процедура s HE результаты отображаются в окне вывода](sorting-custom-paged-data-vb/_static/image3.png)](sorting-custom-paged-data-vb/_static/image2.png)
+[![Хранимая процедура s результаты отображаются в окне вывода](sorting-custom-paged-data-vb/_static/image3.png)](sorting-custom-paged-data-vb/_static/image2.png)
 
 **Рис. 2**: Хранимая процедура s результаты отображаются в окне вывода ([Просмотр полноразмерного изображения](sorting-custom-paged-data-vb/_static/image4.png))
 
@@ -145,7 +145,7 @@ ms.locfileid: "59399593"
 Рис. 7 показана первая страница результатов при сортировке по `UnitPrice` в порядке возрастания.
 
 
-[![Tу него результаты сортируются по UnitPrice](sorting-custom-paged-data-vb/_static/image10.png)](sorting-custom-paged-data-vb/_static/image9.png)
+[![Результаты сортируются по UnitPrice](sorting-custom-paged-data-vb/_static/image10.png)](sorting-custom-paged-data-vb/_static/image9.png)
 
 **Рис. 7**: Результаты сортируются по UnitPrice ([Просмотр полноразмерного изображения](sorting-custom-paged-data-vb/_static/image11.png))
 
@@ -166,7 +166,7 @@ ms.locfileid: "59399593"
 **Рис. 9**: Измените SortExpression s SupplierName BoundField CompanyName
 
 
-[![Tон теперь результаты можно упорядочить по поставщику](sorting-custom-paged-data-vb/_static/image15.png)](sorting-custom-paged-data-vb/_static/image14.png)
+[![Теперь результаты можно сортировать по поставщикам](sorting-custom-paged-data-vb/_static/image15.png)](sorting-custom-paged-data-vb/_static/image14.png)
 
 **Рис. 10**: Результаты теперь могут быть отсортированы по поставщикам ([Просмотр полноразмерного изображения](sorting-custom-paged-data-vb/_static/image16.png))
 

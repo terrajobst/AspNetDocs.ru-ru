@@ -12,7 +12,7 @@ ms.openlocfilehash: 48a66eea839f7f48899040ad20bbfee95b9a1902
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403913"
 ---
 # <a name="monitoring-and-telemetry-building-real-world-cloud-apps-with-azure"></a>Мониторинг и Телеметрия (Создание реальных облачных приложений в Azure)
@@ -36,7 +36,7 @@ ms.locfileid: "59403913"
 
 - [New Relic](http://newrelic.com/)
 - [AppDynamics](http://www.appdynamics.com/)
-- [Dynatrace](https://datamarket.azure.com/application/b4011de2-1212-4375-9211-e882766121ff)
+- [DynaTrace](https://datamarket.azure.com/application/b4011de2-1212-4375-9211-e882766121ff)
 
 [Microsoft System Center](http://www.petri.co.il/microsoft-system-center-introduction.htm#) также включает функции мониторинга.
 
@@ -72,7 +72,7 @@ ms.locfileid: "59403913"
 
 Затем вернитесь к **New Relic** странице в **надстройки** вкладка на портале и щелкните **управление**. Портал отправляет на портале управления New Relic, использование единого входа для проверки подлинности, поэтому не нужно будет вводить свои учетные данные повторно. На странице обзора представляет различные статистики производительности. (Щелкните изображение, см. в разделе Обзор полный размер страницы).
 
-[![Nновые возможности наблюдения за Relic tab](monitoring-and-telemetry/_static/image9.png)](monitoring-and-telemetry/_static/image8.png)
+[![Новая вкладка мониторинга Relic](monitoring-and-telemetry/_static/image9.png)](monitoring-and-telemetry/_static/image8.png)
 
 Ниже приведены лишь некоторые из статистические данные, которые можно увидеть.
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: de65e01b888d9ed15da3903f086b40c49b32b9fb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402418"
 ---
 # <a name="aspnet-mvc-4-mobile-features"></a>Возможности ASP.NET MVC 4 для мобильных приложений
@@ -134,7 +134,7 @@ ms.locfileid: "59402418"
 
 Перейдите на страницу тегов, используя классический браузер и эмулятор браузера мобильного устройства. Эмулятор браузера мобильного устройства показывает два изменения, внесенные.
 
-[![p2m_layoutTags.Mobile](aspnet-mvc-4-mobile-features/_static/image12.png)](aspnet-mvc-4-mobile-features/_static/image11.png)
+[![p2m_layoutTags.mobile](aspnet-mvc-4-mobile-features/_static/image12.png)](aspnet-mvc-4-mobile-features/_static/image11.png)
 
 Напротив отображения рабочего стола не изменилась.
 

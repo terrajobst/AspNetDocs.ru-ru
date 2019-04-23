@@ -12,7 +12,7 @@ ms.openlocfilehash: c6c41ba5b5414da689e63ef521f1cf22e0b55701
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404290"
 ---
 # <a name="displaying-binary-data-in-the-data-web-controls-c"></a>Отображение двоичных данных в веб-элементах управления данными (C#)
@@ -41,7 +41,7 @@ ms.locfileid: "59404290"
 В этом учебнике s вы найдете семь файлов PDF буклет в `~/Brochures` папки, по одному для каждой из категорий, за исключением морепродуктов. Я намеренно опущен, добавление буклета Морепродукты Демонстрация обработки сценариев, где не все записи связаны двоичных данных. Чтобы обновить `Categories` таблица со следующими значениями, щелкните правой кнопкой мыши `Categories` узла из обозревателя сервера и выберите Показать таблицу данных. Затем введите виртуальные пути к файлам буклет для каждой категории, имеющий буклета, как показано на рис. 1. Так как не буклет для категории морепродуктов, оставьте его `BrochurePath` значение столбца s в виде `NULL`.
 
 
-[![MВру введите значения для столбца BrochurePath таблицы Categories s](displaying-binary-data-in-the-data-web-controls-cs/_static/image1.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image1.png)
+[![Вручную введите значения в столбце категорий таблицы s BrochurePath](displaying-binary-data-in-the-data-web-controls-cs/_static/image1.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image1.png)
 
 **Рис. 1**: Вручную введите значения для `Categories` таблицы s `BrochurePath` столбца ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image2.png))
 
@@ -53,17 +53,17 @@ ms.locfileid: "59404290"
 Начнем с перетаскивания элемента управления GridView с панели инструментов в конструктор `DisplayOrDownloadData.aspx` странице в `BinaryData` папку. Набор GridView s `ID` для `Categories` и через s смарт-тега GridView, выберите привязать его к новому источнику данных. В частности, привязать его к элементу ObjectDataSource с именем `CategoriesDataSource` , получающий данные с помощью `CategoriesBLL` объект s `GetCategories()` метод.
 
 
-[![Cсоздать новый элемент управления ObjectDataSource с именем CategoriesDataSource](displaying-binary-data-in-the-data-web-controls-cs/_static/image2.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image3.png)
+[![Создайте новый ObjectDataSource, именуемый CategoriesDataSource](displaying-binary-data-in-the-data-web-controls-cs/_static/image2.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image3.png)
 
 **Рис. 2**: Создайте новый ObjectDataSource с именем `CategoriesDataSource` ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image4.png))
 
 
-[![CНастройка ObjectDataSource на использование класса CategoriesBLL](displaying-binary-data-in-the-data-web-controls-cs/_static/image3.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image5.png)
+[![Настройка ObjectDataSource на использование класса CategoriesBLL](displaying-binary-data-in-the-data-web-controls-cs/_static/image3.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image5.png)
 
 **Рис. 3**: Настройка ObjectDataSource для использования `CategoriesBLL` класс ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image6.png))
 
 
-[![Rзагружать в список из категории с помощью метода GetCategories()](displaying-binary-data-in-the-data-web-controls-cs/_static/image4.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image7.png)
+[![Получение списка категорий с помощью метода GetCategories()](displaying-binary-data-in-the-data-web-controls-cs/_static/image4.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image7.png)
 
 **Рис. 4**: Получить список из категории с помощью `GetCategories()` метод ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image8.png))
 
@@ -76,7 +76,7 @@ ms.locfileid: "59404290"
 Просмотреть эту страницу через обозреватель (см. рис. 5). Каждая из этих восьми категорий указан. Семь категорий с `BrochurePath` значения имеют `BrochurePath` значением, отображаемым в соответствующих BoundField. Морепродукты, имеющая `NULL` значение для его `BrochurePath`, отображает пустую ячейку.
 
 
-[![EУказана ACH категории — имя, описание и значение BrochurePath](displaying-binary-data-in-the-data-web-controls-cs/_static/image5.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image9.png)
+[![Показаны все категории — имя, описание и значение BrochurePath](displaying-binary-data-in-the-data-web-controls-cs/_static/image5.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image9.png)
 
 **Рис. 5**: Каждая категория — имя, описание, и `BrochurePath` перечислены значения ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image10.png))
 
@@ -92,12 +92,12 @@ ms.locfileid: "59404290"
 Это будет добавлен столбец ссылок к GridView, как показано на рис. 7. Щелкните ссылку на представление буклет будет отображаться PDF-ФАЙЛ непосредственно в браузере или запрашивать пользователя, чтобы скачать файл, в зависимости от того, установлено ли средство чтения PDF и параметров браузера s.
 
 
-[![A Категория s буклет можно просмотреть, щелкнув ссылку Просмотр буклет](displaying-binary-data-in-the-data-web-controls-cs/_static/image7.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image11.png)
+[![Буклета s категории можно просмотреть, щелкнув ссылку буклет представления](displaying-binary-data-in-the-data-web-controls-cs/_static/image7.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image11.png)
 
 **Рис. 7**: Категории s буклет можно просмотреть, щелкнув ссылку Просмотр Буклет ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image12.png))
 
 
-[![Tон категории s буклет PDF отображается](displaying-binary-data-in-the-data-web-controls-cs/_static/image8.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image13.png)
+[![Категория s буклет PDF отображается](displaying-binary-data-in-the-data-web-controls-cs/_static/image8.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image13.png)
 
 **Рис. 8**: Категория s буклет PDF отображается ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image14.png))
 
@@ -131,7 +131,7 @@ ms.locfileid: "59404290"
 Рис. 10 показана страница после внесения этих изменений. Обратите внимание, что категории морепродуктов s `BrochurePath` поле теперь отображает текст нет буклета доступны.
 
 
-[![Tон доступных буклет нет текста отображается те категории без буклета](displaying-binary-data-in-the-data-web-controls-cs/_static/image10.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image15.png)
+[![Текст нет буклет доступных отображается те категории без буклета](displaying-binary-data-in-the-data-web-controls-cs/_static/image10.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image15.png)
 
 **Рис. 10**: Текст нет буклет доступных отображается те категории без буклета ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image16.png))
 
@@ -168,7 +168,7 @@ ms.locfileid: "59404290"
 С этой страницей создан, можно просмотреть рисунок определенной категории s, посетив `DisplayCategoryPicture.aspx?CategoryID=categoryID`. Рис. 11 показана рисунок категории s «Напитки», который можно просмотреть в `DisplayCategoryPicture.aspx?CategoryID=1`.
 
 
-[![Tон s категории «Напитки» рисунок отображается](displaying-binary-data-in-the-data-web-controls-cs/_static/image11.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image17.png)
+[![S категории «Напитки», появится изображение](displaying-binary-data-in-the-data-web-controls-cs/_static/image11.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image17.png)
 
 **Рис. 11**: S категории «Напитки», изображения ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image18.png))
 
@@ -208,7 +208,7 @@ ms.locfileid: "59404290"
 Отвлекитесь и просмотреть эту страницу через обозреватель. Обратите внимание на то, как каждая запись теперь включает рисунка для категории.
 
 
-[![Tон категории s рисунок отображается для каждой строки](displaying-binary-data-in-the-data-web-controls-cs/_static/image13.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image19.png)
+[![Категория s рисунок отображается для каждой строки](displaying-binary-data-in-the-data-web-controls-cs/_static/image13.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image19.png)
 
 **Рис. 13**: Категория s рисунок отображается для каждой строки ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image20.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 86b90a21f59ee0ad52a3e6f7db19d4714282105c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401144"
 ---
 # <a name="videos"></a>Видеоролики
@@ -21,7 +21,7 @@ ms.locfileid: "59401144"
 > [!NOTE] 
 > WebMatrix не рекомендуется использовать как интегрированную среду разработки для веб-страниц ASP.NET. Используйте [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) или [Visual Studio Code](https://code.visualstudio.com/).
 
-- [Вступление](introduction/index.md)
+- [Введение](introduction/index.md)
 
     - [Краткое введение в веб-страницы ASP.NET](introduction/5-minute-introduction-to-aspnet-web-pages.md)
     - [Установка и использование средства Microsoft WebMatrix](introduction/install-and-use-the-microsoft-webmatrix-tool.md)
@@ -37,15 +37,15 @@ ms.locfileid: "59401144"
 
     - [Начало работы с WebMatrix и веб-страницами ASP.NET](aspnet-razor-pages/getting-started-with-webmatrix-and-aspnet-web-pages.md)
     - [Введение в веб-программирование на ASP.NET с синтаксисом Razor](aspnet-razor-pages/introduction-to-aspnet-web-programming-using-the-razor-syntax.md)
-    - [Создание согласованного вида (часть 1)](aspnet-razor-pages/creating-a-consistent-look-part-1.md)
-    - [Создание согласованного вида (часть 2)](aspnet-razor-pages/creating-a-consistent-look-part-2.md)
-    - [Работа с формами (часть 1)](aspnet-razor-pages/working-with-forms-part-1.md)
-    - [Работа с формами (часть 2)](aspnet-razor-pages/working-with-forms-part-2.md)
-    - [Работа с данными (часть 1)](aspnet-razor-pages/working-with-data-part-1.md)
-    - [Работа с данными (часть 2)](aspnet-razor-pages/working-with-data-part-2.md)
+    - [Создание согласованного вида (часть 1)](aspnet-razor-pages/creating-a-consistent-look-part-1.md)
+    - [Создание согласованного вида (часть 2)](aspnet-razor-pages/creating-a-consistent-look-part-2.md)
+    - [Работа с формами (часть 1)](aspnet-razor-pages/working-with-forms-part-1.md)
+    - [Работа с формами (часть 2)](aspnet-razor-pages/working-with-forms-part-2.md)
+    - [Работа с данными (часть 1)](aspnet-razor-pages/working-with-data-part-1.md)
+    - [Работа с данными (часть 2)](aspnet-razor-pages/working-with-data-part-2.md)
     - [Отображение данных в сетке](aspnet-razor-pages/displaying-data-in-a-grid.md)
-    - [Отображение данных на диаграмме (часть 1)](aspnet-razor-pages/displaying-data-in-a-chart-part-1.md)
-    - [Отображение данных на диаграмме (часть 2)](aspnet-razor-pages/displaying-data-in-a-chart-part-2.md)
+    - [Отображение данных в диаграмме (часть 1)](aspnet-razor-pages/displaying-data-in-a-chart-part-1.md)
+    - [Отображение данных в диаграмме (часть 2)](aspnet-razor-pages/displaying-data-in-a-chart-part-2.md)
     - [Работа с файлами](aspnet-razor-pages/working-with-files.md)
     - [Работа с образами](aspnet-razor-pages/working-with-images.md)
     - [Работа с видео](aspnet-razor-pages/working-with-video.md)

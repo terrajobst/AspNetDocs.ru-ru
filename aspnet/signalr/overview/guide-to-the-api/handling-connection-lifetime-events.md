@@ -12,7 +12,7 @@ ms.openlocfilehash: 9e6b0b3b86839efa393659531d8b74770226f383
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401469"
 ---
 # <a name="understanding-and-handling-connection-lifetime-events-in-signalr"></a>Общие сведения и обработка событий времени существования подключений в SignalR
@@ -31,7 +31,7 @@ ms.locfileid: "59401469"
 > ## <a name="software-versions-used-in-this-topic"></a>Версии программного обеспечения, используемого в этом разделе
 >
 >
-> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
+> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
 > - .NET 4.5
 > - SignalR версии 2
 >
@@ -254,7 +254,7 @@ SignalR версии 2 не поддерживает встроенный сер
 
 SignalR 2.1 добавляет перегрузку сервера `OnDisconnect` событие, указывающее, если клиент намеренно отключен, а не истечет время ожидания. `StopCalled` Параметр имеет значение true, если клиент явным образом закрыл подключение. В JavaScript, если ошибки на сервере под руководством клиента, чтобы отключить, сведения об ошибках передаются клиенту как `$.connection.hub.lastError`.
 
-**C#Серверный код: `stopCalled` параметр**
+**Серверный код C#: `stopCalled` параметр**
 
 [!code-csharp[Main](handling-connection-lifetime-events/samples/sample7.cs?highlight=1,3)]
 

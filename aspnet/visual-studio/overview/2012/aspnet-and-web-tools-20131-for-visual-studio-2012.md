@@ -12,7 +12,7 @@ ms.openlocfilehash: 17315dbbbdc08412e4e928256783c221a8a2cb20
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406812"
 ---
 # <a name="release-notes-for-aspnet-and-web-tools-20131-for-visual-studio-2012"></a>Заметки о выпуске ASP.NET and Web Tools 2013.1 для Visual Studio 2012
@@ -34,10 +34,10 @@ ms.locfileid: "59406812"
         - [Шаблон ASP.NET MVC 5](#mvc5template)
         - [Шаблон веб-API 2 ASP.NET](#apitemplate)
         - [Шаблоны элементов](#itemtemplate)
-    - [Entity Framework 6](#ef6)
+    - [Entity Framework 6](#ef6)
     - [Формирование шаблонов ASP.NET](#scaffold)
     - [Редактор Razor](#razor)
-    - [NuGet 2.7](#nuget)
+    - [NuGet 2.7](#nuget)
 - Известные проблемы и критические изменения
 
     - [Формирование шаблонов ASP.NET](#issuescaffolding)

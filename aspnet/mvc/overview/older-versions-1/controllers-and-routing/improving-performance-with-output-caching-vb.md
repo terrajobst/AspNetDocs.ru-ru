@@ -12,7 +12,7 @@ ms.openlocfilehash: 0f824bd5e080d42a9df3525ca47b87bcef407f7a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59405629"
 ---
 # <a name="improving-performance-with-output-caching-vb"></a>Повышение производительности благодаря кэшированию вывода (VB)
@@ -85,7 +85,7 @@ ms.locfileid: "59405629"
 
 Например контроллер в листинге 3 предоставляет действие с именем GetName(), который возвращает имя текущего пользователя. Джек входит на веб-сайт и вызывает действие GetName() действие возвращается строка «Hi Jack». Если, как следствие, Jill входит на веб-сайт и вызывает действие GetName() затем она также будет строка «Hi Jack». Строка кэшируется на веб-сервере для всех пользователей, после Джек изначально вызывает действие контроллера.
 
-**Листинг 3 – Controllers\BadUserController.vb**
+**Listing 3 – Controllers\BadUserController.vb**
 
 [!code-vb[Main](improving-performance-with-output-caching-vb/samples/sample3.vb)]
 

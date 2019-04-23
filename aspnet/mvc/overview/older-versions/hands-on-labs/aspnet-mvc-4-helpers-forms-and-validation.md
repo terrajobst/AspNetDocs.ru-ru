@@ -12,7 +12,7 @@ ms.openlocfilehash: 639a8e0e5fd9557221c95aee1bef0294df047ae8
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406318"
 ---
 # <a name="aspnet-mvc-4-helpers-forms-and-validation"></a>Вспомогательные приложения, формы и проверка в ASP.NET MVC 4
@@ -796,7 +796,7 @@ ms.locfileid: "59406318"
 
     ![Ход установки](aspnet-mvc-4-helpers-forms-and-validation/_static/image24.png)
 
-    *Ход установки*
+    *Ход выполнения установки*
 6. После завершения установки нажмите кнопку **Готово**.
 
     ![Установка завершена](aspnet-mvc-4-helpers-forms-and-validation/_static/image25.png)

@@ -12,9 +12,9 @@ ms.openlocfilehash: a0747f2d9c43cfc62a540c0296cf690d54477bf6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404992"
 ---
 # <a name="jquery-templates"></a>Подключаемый модуль jQuery Templates
 
-- [jQuery Templates, бета-версия 1](cdnjquerytemplatesbeta1.md)
+- [jQuery Templates, бета-версия 1](cdnjquerytemplatesbeta1.md)

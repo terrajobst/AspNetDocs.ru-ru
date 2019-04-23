@@ -12,7 +12,7 @@ ms.openlocfilehash: f8bb91de9642814a79d0fddd642928c25c58ebfd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402847"
 ---
 # <a name="executing-several-animations-at-the-same-time-vb"></a>Выполнение нескольких анимаций одновременно (VB)
@@ -55,7 +55,7 @@ ms.locfileid: "59402847"
 И действительно: при выполнении этого скрипта панели отображается, затем изменяет размеры (более чем утраивается его ширину и высоту, потребленных в рамках) и исчезает, в то же время.
 
 
-[![Tпанель HE существует исчезновение и изменение размера (в том числе его содержимого, благодаря механизм визуализации в браузере)](executing-several-animations-at-the-same-time-vb/_static/image2.png)](executing-several-animations-at-the-same-time-vb/_static/image1.png)
+[![Исчезновение и изменение размера (в том числе его содержимого, благодаря механизм визуализации в браузере) панели](executing-several-animations-at-the-same-time-vb/_static/image2.png)](executing-several-animations-at-the-same-time-vb/_static/image1.png)
 
 Исчезновение и изменение размера (в том числе его содержимого, благодаря механизм визуализации в браузере) панели ([Просмотр полноразмерного изображения](executing-several-animations-at-the-same-time-vb/_static/image3.png))
 

@@ -12,14 +12,14 @@ ms.openlocfilehash: 7998b5bb2983410479123514661a4ddb67afc8c6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59398375"
 ---
 # <a name="the-contact-manager-solution"></a>Решение диспетчера контактов
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Это [серии учебников](web-deployment-in-the-enterprise.md) использует примера решения&#x2014;решения диспетчера контактов&#x2014;для представления приложения корпоративного уровня с реалистичные уровень сложности. В этом разделе представлены решения диспетчера контактов, описаны основные компоненты решения и перечислены сложностей при развертывании такого приложения на различных платформах назначения в корпоративной среде.
 > 

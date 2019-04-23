@@ -12,7 +12,7 @@ ms.openlocfilehash: 5e3c049ba4349301c3c2d173d4311b3d0883bf68
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401755"
 ---
 # <a name="get-started-with-aspnet-web-api-2-c"></a>Начало работы с ASP.NET Web API 2 (C#)
@@ -29,7 +29,7 @@ HTTP не только для предоставления веб-страниц
 
 ## <a name="software-versions-used-in-the-tutorial"></a>Версии программного обеспечения, используемые в этом руководстве
 
-- [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 - Веб-API 2
 
 См. в разделе [Создание веб-API с помощью ASP.NET Core и Visual Studio для Windows](https://docs.microsoft.com/aspnet/core/tutorials/first-web-api) для более новой версии этого руководства.

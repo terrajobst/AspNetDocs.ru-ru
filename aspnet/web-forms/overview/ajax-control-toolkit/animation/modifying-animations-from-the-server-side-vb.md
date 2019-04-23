@@ -12,7 +12,7 @@ ms.openlocfilehash: fb7e992246b9c630d99a1493f344c4089540d67e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59398089"
 ---
 # <a name="modifying-animations-from-the-server-side-vb"></a>Изменение анимации со стороны сервера (VB)
@@ -55,7 +55,7 @@ ms.locfileid: "59398089"
 [!code-vb[Main](modifying-animations-from-the-server-side-vb/samples/sample6.vb)]
 
 
-[![Tанимации, он создается на стороне сервера C#кода и Visual Basic](modifying-animations-from-the-server-side-vb/_static/image2.png)](modifying-animations-from-the-server-side-vb/_static/image1.png)
+[![Анимация создается с использованием серверного C# и Visual Basic кода](modifying-animations-from-the-server-side-vb/_static/image2.png)](modifying-animations-from-the-server-side-vb/_static/image1.png)
 
 Анимация создается с использованием серверного C# и Visual Basic кода ([Просмотр полноразмерного изображения](modifying-animations-from-the-server-side-vb/_static/image3.png))
 

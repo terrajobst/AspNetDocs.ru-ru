@@ -12,7 +12,7 @@ ms.openlocfilehash: 056e89b20ccab0e56b1fab422c817d842beff446
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59400845"
 ---
 # <a name="using-textboxwatermark-in-a-formview-vb"></a>Использование элемента управления TextBoxWatermark в элементе управления FormView (VB)
@@ -49,7 +49,7 @@ ms.locfileid: "59400845"
 Теперь когда пользователь изменяет в режим вставки из `FormView` управления текстового поля для нового поставщика автоматически заполняемом выражаем благодарность `TextBoxWatermarkExtender` элемента управления. Щелкните внутри текстового поля позволяет ввода текста наполнения исчезают.
 
 
-[![Tон водяного знака в поле поступает из расширителя](using-textboxwatermark-in-a-formview-vb/_static/image2.png)](using-textboxwatermark-in-a-formview-vb/_static/image1.png)
+[![Водяной знак в поле поступает из расширения](using-textboxwatermark-in-a-formview-vb/_static/image2.png)](using-textboxwatermark-in-a-formview-vb/_static/image1.png)
 
 Водяной знак в поле поступает из расширения ([Просмотр полноразмерного изображения](using-textboxwatermark-in-a-formview-vb/_static/image3.png))
 

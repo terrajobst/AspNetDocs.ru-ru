@@ -12,7 +12,7 @@ ms.openlocfilehash: 51e3010f6e01434c495201af4af3bbdcde993da7
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59398440"
 ---
 # <a name="getting-started-with-entity-framework-40-database-first-and-aspnet-4-web-forms"></a>Начало работы с Entity Framework 4.0 Database First и ASP.NET 4 Web Forms
@@ -65,7 +65,7 @@ ms.locfileid: "59398440"
 
 Чтобы начать работу с учебником, откройте Visual Studio и создайте новый проект веб-приложения ASP.NET с помощью **веб-приложение ASP.NET** шаблона:
 
-[![Image01](the-entity-framework-and-aspnet-getting-started-part-1/_static/image12.png)](the-entity-framework-and-aspnet-getting-started-part-1/_static/image11.png)
+[!["Image01"](the-entity-framework-and-aspnet-getting-started-part-1/_static/image12.png)](the-entity-framework-and-aspnet-getting-started-part-1/_static/image11.png)
 
 Этот шаблон создает проект веб-приложения, который уже включает таблицу стилей и главные страницы:
 
@@ -212,4 +212,4 @@ ms.locfileid: "59398440"
 Теперь вы создали веб-сайт, базу данных и модель данных. В следующем пошаговом руководстве вы начнете работу с данными, с помощью модели данных и ASP.NET `EntityDataSource` элемента управления.
 
 > [!div class="step-by-step"]
-> [Далее](the-entity-framework-and-aspnet-getting-started-part-2.md)
+> [Вперед](the-entity-framework-and-aspnet-getting-started-part-2.md)

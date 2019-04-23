@@ -12,7 +12,7 @@ ms.openlocfilehash: 020f7bbe797a2c04f1ff97ea2056345028f700fb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59407618"
 ---
 # <a name="allowing-only-certain-characters-in-a-text-box-c"></a>Разрешение только некоторых символов в текстовом поле (C#)
@@ -56,9 +56,9 @@ ASP.NET AJAX Control Toolkit содержит `FilteredTextBox` элемента
 Запустите страницу и попробуйте ввести буквы в том случае, если включить JavaScript, он не будет работать; Тем не менее, на странице отображаются цифры. Тем не менее Обратите внимание, что защита `FilteredTextBox` предоставляет не пуленепробиваема: Если включен JavaScript, любые данные можно вводить в текстовом поле, поэтому необходимо использовать средства дополнительной проверки, т. е. ASP. NET-элементов управления проверки.
 
 
-[![Oможно вводить цифры чтение](allowing-only-certain-characters-in-a-text-box-cs/_static/image2.png)](allowing-only-certain-characters-in-a-text-box-cs/_static/image1.png)
+[![Можно вводить только цифры](allowing-only-certain-characters-in-a-text-box-cs/_static/image2.png)](allowing-only-certain-characters-in-a-text-box-cs/_static/image1.png)
 
 Можно вводить только цифры ([Просмотр полноразмерного изображения](allowing-only-certain-characters-in-a-text-box-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
-> [Далее](allowing-only-certain-characters-in-a-text-box-vb.md)
+> [Вперед](allowing-only-certain-characters-in-a-text-box-vb.md)

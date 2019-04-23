@@ -12,7 +12,7 @@ ms.openlocfilehash: 5cec547993722e587fc0f54486f7f2ca388db64d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404108"
 ---
 # <a name="aspnet-web-api-overview-and-getting-started-videos"></a>Общие сведения об ASP.NET Web API и Приступая к работе видео
@@ -21,9 +21,9 @@ ms.locfileid: "59404108"
 
 
 - [ASP.NET Web API](aspnet-web-api.md)
-- [ASP.NET Web API, часть 1. Создание первого веб-приложения](your-first-web-api.md)
-- [ASP.NET Web API, часть 2. Получение данных](getting-data.md)
-- [ASP.NET Web API, часть 3. Удаление и обновление](delete-and-update.md)
-- [ASP.NET Web API, часть 4. Разбиение по страницам и отправка запросов](paging-and-querying.md)
-- [ASP.NET Web API, часть 5. Пользовательская проверка](custom-validation.md)
-- [ASP.NET Web API, часть 6. Авторизация](authorization.md)
+- [Веб-API ASP.NET, часть 1: Первый веб-API](your-first-web-api.md)
+- [Веб-API ASP.NET, часть 2: Получение данных](getting-data.md)
+- [Веб-API ASP.NET, часть 3: DELETE и Update](delete-and-update.md)
+- [Веб-API ASP.NET, часть 4: Разбиение по страницам и запросов](paging-and-querying.md)
+- [Веб-API ASP.NET, часть 5: Пользовательской проверки](custom-validation.md)
+- [Веб-API ASP.NET, часть 6: Авторизации](authorization.md)

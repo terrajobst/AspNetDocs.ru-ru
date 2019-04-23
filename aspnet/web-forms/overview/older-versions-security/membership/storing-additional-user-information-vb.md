@@ -12,7 +12,7 @@ ms.openlocfilehash: 7dad99f2ae7e71cb697426bc97414fd4e4873aa5
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59400494"
 ---
 # <a name="storing-additional-user-information-vb"></a>Сохранение дополнительных сведений о пользователе (VB)
@@ -45,7 +45,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Чтобы добавить эту таблицу в базе данных, перейдите в обозреватель базы данных в Visual Studio и детализировать `SecurityTutorials` базы данных. Щелкните правой кнопкой мыши папку «таблицы» и выберите Добавить новую таблицу. Откроется интерфейс, который позволяет определить столбцы для новой таблицы.
 
 
-[![Aдд новую таблицу в базе данных SecurityTutorials](storing-additional-user-information-vb/_static/image2.png)](storing-additional-user-information-vb/_static/image1.png)
+[![Добавить новую таблицу в базе данных SecurityTutorials](storing-additional-user-information-vb/_static/image2.png)](storing-additional-user-information-vb/_static/image1.png)
 
 **Рис. 1**: Добавить новую таблицу для `SecurityTutorials` базы данных ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image3.png))
 
@@ -53,7 +53,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Затем определите `GuestbookComments`в столбцы. Начните с добавления столбца с именем `CommentId` типа `uniqueidentifier`. Этот столбец будет уникальной идентификации каждого комментария в гостевой книги, поэтому запрещать `NULL` s и пометить его как первичный ключ таблицы. Вместо того, чтобы предоставить значение для `CommentId` на каждый `INSERT`, мы может указывать, что новый `uniqueidentifier` значение должно создаваться автоматически для этого поля на `INSERT` , задав значение столбца по умолчанию `NEWID()`. После добавления этого первого поля, пометив его как первичный ключ и параметров значения по умолчанию и экран должен выглядеть аналогично снимок экрана, показанный на рис. 2.
 
 
-[![Aдд основной CommentId с именем столбца](storing-additional-user-information-vb/_static/image5.png)](storing-additional-user-information-vb/_static/image4.png)
+[![Добавление основной столбец с именем CommentId](storing-additional-user-information-vb/_static/image5.png)](storing-additional-user-information-vb/_static/image4.png)
 
 **Рис. 2**: Добавление основной столбец с именем `CommentId` ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image6.png))
 
@@ -73,7 +73,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 В левом нижнем углу диалогового окна связи по внешнему ключу, нажмите кнопку Добавить. Будут добавлены новые ограничения внешнего ключа, несмотря на то, что мы по-прежнему требуется для определения таблиц, участвующих в связи.
 
 
-[![USE внешнего ключа связи диалоговое окно, чтобы управлять ограничения внешнего ключа таблицы](storing-additional-user-information-vb/_static/image8.png)](storing-additional-user-information-vb/_static/image7.png)
+[![Используйте диалоговое окно связей по внешнему ключу для управления ограничения внешнего ключа таблицы](storing-additional-user-information-vb/_static/image8.png)](storing-additional-user-information-vb/_static/image7.png)
 
 **Рис. 3**: Использовать для управления ограничения внешнего ключа таблицы внешнего ключа связи диалоговом окне ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image9.png))
 
@@ -81,7 +81,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Затем щелкните значок многоточия в строке «Спецификации таблиц и столбцов» в правой части. Это приведет к запуску таблиц и столбцов, диалоговое окно, из которого можно указать таблицы первичного ключа и столбец и столбец внешнего ключа из `GuestbookComments` таблицы. В частности, выбирайте `aspnet_Users` и `UserId` как таблица первичного ключа и столбец, и `UserId` из `GuestbookComments` таблице как столбец внешнего ключа (см. рис. 4). После определения первичного и внешнего ключа таблицы и столбцы, нажмите кнопку ОК, чтобы вернуться в диалоговое окно связи по внешнему ключу.
 
 
-[![Establish внешнего ключа ограничения между aspnet_Users и GuesbookComments таблицы](storing-additional-user-information-vb/_static/image11.png)](storing-additional-user-information-vb/_static/image10.png)
+[![Определение внешнего ключа ограничения между aspnet_Users и GuesbookComments таблиц](storing-additional-user-information-vb/_static/image11.png)](storing-additional-user-information-vb/_static/image10.png)
 
 **Рис. 4**: Установить внешнего ключа ограничения между `aspnet_Users` и `GuesbookComments` таблиц ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image12.png))
 
@@ -91,7 +91,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Ограничения внешнего ключа можно настроить автоматическое удаление связанных дочерних записей при удалении родительской записи. Другими словами мы можете настроить это ограничение внешнего ключа, чтобы записи гостевой книги пользователя будут автоматически удалены при удалении своей учетной записи пользователя. Для этого разверните раздел «INSERT и UPDATE спецификация» и присвойте свойству «Удалить правило» Cascade.
 
 
-[![Cнастроить ограничение внешнего ключа для каскадные удаления](storing-additional-user-information-vb/_static/image14.png)](storing-additional-user-information-vb/_static/image13.png)
+[![Настройка ограничения внешнего ключа для каскадное удаление](storing-additional-user-information-vb/_static/image14.png)](storing-additional-user-information-vb/_static/image13.png)
 
 **Рис. 5**: Настроить ограничение внешнего ключа для каскадные удаления ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image15.png))
 
@@ -115,7 +115,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Мы создадим новую таблицу с именем `UserProfiles` сохранить родного города, домашней страницы и подписи для каждого пользователя. Щелкните правой кнопкой мыши папку «таблицы» в окне обозревателя базы данных и выберите команду Создать новую таблицу. Имя первого столбца `UserId` и установите для него `uniqueidentifier`. Запретить `NULL` значений и пометить столбец как первичный ключ. Добавьте столбцы с именами: `HomeTown` типа `nvarchar(50)`; `HomepageUrl` типа `nvarchar(100)`; и сигнатуры типа `nvarchar(500)`. Каждый из этих трех столбцов может принимать `NULL` значение.
 
 
-[![CСоздание таблицы UserProfiles](storing-additional-user-information-vb/_static/image17.png)](storing-additional-user-information-vb/_static/image16.png)
+[![Создать таблицу UserProfiles](storing-additional-user-information-vb/_static/image17.png)](storing-additional-user-information-vb/_static/image16.png)
 
 **Рис. 6**: Создание `UserProfiles` таблицы ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image18.png))
 
@@ -133,7 +133,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Откройте `AdditionalUserInfo.aspx` странице в `Membership` папку и добавьте элемент управления DetailsView на страницу, устанавливая его свойство ID `UserProfile` и очищая его `Width` и `Height` свойства. Разверните DetailsView смарт-тег и выберите привязать его к новый элемент управления источником данных. Это приведет к запуску мастера настройки источника данных (см. рис. 7). Первым шагом просит указать тип источника данных. Так как мы собираемся подключать напрямую к `SecurityTutorials` базы данных, выберите значок базы данных, указав `ID` как `UserProfileDataSource`.
 
 
-[![Aдд нового элемента управления SqlDataSource элемента управления с именем UserProfileDataSource](storing-additional-user-information-vb/_static/image20.png)](storing-additional-user-information-vb/_static/image19.png)
+[![Добавление нового элемента управления SqlDataSource с именем UserProfileDataSource](storing-additional-user-information-vb/_static/image20.png)](storing-additional-user-information-vb/_static/image19.png)
 
 **Рис. 7**: Добавление нового элемента управления SqlDataSource с именем `UserProfileDataSource` ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image21.png))
 
@@ -141,7 +141,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Далее запрашивает для базы данных. Мы уже определили строку подключения в `Web.config` для `SecurityTutorials` базы данных. Это имя строки подключения — `SecurityTutorialsConnectionString` — должны находиться в раскрывающемся списке. Выберите этот вариант и нажмите кнопку Далее.
 
 
-[![CВыберите SecurityTutorialsConnectionString из раскрывающегося списка](storing-additional-user-information-vb/_static/image23.png)](storing-additional-user-information-vb/_static/image22.png)
+[![Выберите SecurityTutorialsConnectionString из раскрывающегося списка](storing-additional-user-information-vb/_static/image23.png)](storing-additional-user-information-vb/_static/image22.png)
 
 **Рис. 8**: Выберите `SecurityTutorialsConnectionString` из раскрывающегося списка ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image24.png))
 
@@ -149,7 +149,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Последующие экране указать таблицы и столбцы для запроса. Выберите `UserProfiles` таблицу из раскрывающегося списка и проверьте все столбцы.
 
 
-[![Bкольцо обратно все столбцы из таблицы UserProfiles](storing-additional-user-information-vb/_static/image26.png)](storing-additional-user-information-vb/_static/image25.png)
+[![Перевести обратно все столбцы из таблицы UserProfiles](storing-additional-user-information-vb/_static/image26.png)](storing-additional-user-information-vb/_static/image25.png)
 
 **Рис. 9**: Переместить назад все столбцы из `UserProfiles` таблицы ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image27.png))
 
@@ -159,7 +159,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 К сожалению, отсутствует встроенный параметр источник для возврата текущего пользователя `UserId` значение. Нам потребуется получить это значение программно. Таким образом задайте исходного стрелку раскрывающегося списка для «Нет» нажмите кнопку Add для добавления параметра, а затем нажмите кнопку ОК.
 
 
-[![Aдд параметр фильтра на столбец UserId](storing-additional-user-information-vb/_static/image29.png)](storing-additional-user-information-vb/_static/image28.png)
+[![Добавьте параметр фильтра на столбец UserId](storing-additional-user-information-vb/_static/image29.png)](storing-additional-user-information-vb/_static/image28.png)
 
 **Рис. 10**: Добавьте параметр фильтра на `UserId` столбца ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image30.png))
 
@@ -187,7 +187,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Перейдите в обозреватель баз данных в Visual Studio и раскройте папку таблицы. Щелкните правой кнопкой мыши `aspnet_Users` таблицы и выберите «Показать таблицу данных» для просмотра записей в таблице; сделать то же самое `UserProfiles` таблицы. Рис. 11 отобразятся следующие результаты, когда Мозаичная по вертикали. В моей базе данных нет `aspnet_Users` записи для Брюс Fred и Tito, но ни одной записи в `UserProfiles` таблицы.
 
 
-[![TСодержимое HE aspnet_Users и UserProfiles таблицы отображаются](storing-additional-user-information-vb/_static/image32.png)](storing-additional-user-information-vb/_static/image31.png)
+[![Отображается содержимое aspnet_Users и UserProfiles таблиц](storing-additional-user-information-vb/_static/image32.png)](storing-additional-user-information-vb/_static/image31.png)
 
 **Рис. 11**: Содержание `aspnet_Users` и `UserProfiles` таблиц ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image33.png))
 
@@ -195,7 +195,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Добавить новую запись для `UserProfiles` таблицы, вручную введя значения для `HomeTown`, `HomepageUrl`, и `Signature` поля. Самый простой способ получить допустимый `UserId` значение в новом `UserProfiles` записи заключается в выборе `UserId` из учетной записи пользователя в `aspnet_Users` таблицы, скопируйте и вставьте его в `UserId` в `UserProfiles`. Рис. 12 показан `UserProfiles` таблицы после добавления новой записи для Брюс.
 
 
-[![A Запись была добавлена к UserProfiles Брюс](storing-additional-user-information-vb/_static/image35.png)](storing-additional-user-information-vb/_static/image34.png)
+[![Запись была добавлена к UserProfiles Брюс](storing-additional-user-information-vb/_static/image35.png)](storing-additional-user-information-vb/_static/image34.png)
 
 **Рис. 12**: Была добавлена запись `UserProfiles` для Брюс ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image36.png))
 
@@ -203,7 +203,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Вернитесь к `AdditionalUserInfo.aspx page`, выполнен вход как Брюс. Как показано на рис. 13, отображаются параметры Bruce's.
 
 
-[![Tон в настоящее время посещения пользователя является показано His параметры](storing-additional-user-information-vb/_static/image38.png)](storing-additional-user-information-vb/_static/image37.png)
+[![В настоящее время посещения он показано His параметры](storing-additional-user-information-vb/_static/image38.png)](storing-additional-user-information-vb/_static/image37.png)
 
 **Рис. 13**: В настоящее время посещения он показано His параметры ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image39.png))
 
@@ -223,7 +223,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Затем щелкните кнопку «Обновить параметры», которая будет создан параметр в объекте элемента управления SqlDataSource `UpdateParameters` сбор данных для каждого параметра в `UPDATE` инструкции. Оставьте источника для всех набора параметров значение None и нажмите кнопку ОК, чтобы закрыть диалоговое окно.
 
 
-[![SУкажите UpdateCommand и UpdateParameters элемента управления SqlDataSource](storing-additional-user-information-vb/_static/image41.png)](storing-additional-user-information-vb/_static/image40.png)
+[![Укажите UpdateCommand и UpdateParameters элемента управления SqlDataSource](storing-additional-user-information-vb/_static/image41.png)](storing-additional-user-information-vb/_static/image40.png)
 
 **Рис. 14**: Укажите SqlDataSource `UpdateCommand` и `UpdateParameters` ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image42.png))
 
@@ -239,7 +239,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Пойти дальше и проверить эту страницу через обозреватель. При посещении с пользователем, который имеет соответствующей записи в `UserProfiles`, параметры пользователя будут отображаться в интерфейс редактирования.
 
 
-[![Tон DetailsView отображает интерфейс редактирования](storing-additional-user-information-vb/_static/image44.png)](storing-additional-user-information-vb/_static/image43.png)
+[![Элемент DetailsView отображает интерфейс редактирования](storing-additional-user-information-vb/_static/image44.png)](storing-additional-user-information-vb/_static/image43.png)
 
 **Рис. 15**: Элемент DetailsView отображает интерфейс редактирования ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image45.png))
 
@@ -257,7 +257,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Вернитесь к `AdditionalUserInfo.aspx` странице через браузер и обновления данных. В данном случае отображается сообщение о состоянии полезными.
 
 
-[![A SMS-сообщений будет отображаться после обновления параметров](storing-additional-user-information-vb/_static/image47.png)](storing-additional-user-information-vb/_static/image46.png)
+[![Короткое сообщение будет отображаться после обновления параметров](storing-additional-user-information-vb/_static/image47.png)](storing-additional-user-information-vb/_static/image46.png)
 
 **Рис. 16**: Короткое сообщение отображается в том случае, если параметры будут обновлены ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image48.png))
 
@@ -309,7 +309,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Рис. 17 показано содержимое `GuestbookComments` таблицу были добавлены два комментарии.
 
 
-[![Yподразделения можно см. в комментариях в таблице GuestbookComments](storing-additional-user-information-vb/_static/image50.png)](storing-additional-user-information-vb/_static/image49.png)
+[![Вы увидите в комментариях в таблице GuestbookComments](storing-additional-user-information-vb/_static/image50.png)](storing-additional-user-information-vb/_static/image49.png)
 
 **Рис. 17**: Вы увидите в комментариях в `GuestbookComments` таблицы ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image51.png))
 
@@ -335,7 +335,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Все, что остается лишь указать столбцы, возвращаемые. Из `GuestbookComments` таблицы выберите `Subject`, `Body`, и `CommentDate` столбцы; возвращают `HomeTown`, `HomepageUrl`, и `Signature` столбцы из `UserProfiles` таблицы; и возвращать `UserName` из `aspnet_Users`. Кроме того, добавьте "`ORDER BY CommentDate DESC`" в конец `SELECT` запроса, чтобы последние записи, будут возвращены первыми. После выбора этих на на рис. 18 снимке экрана должна выглядеть интерфейс построителя запросов.
 
 
-[![Tон Constructed запроса присоединяется к GuestbookComments, UserProfiles и aspnet_Users таблицы](storing-additional-user-information-vb/_static/image53.png)](storing-additional-user-information-vb/_static/image52.png)
+[![Запрос Constructed объединяет GuestbookComments, UserProfiles и aspnet_Users таблиц](storing-additional-user-information-vb/_static/image53.png)](storing-additional-user-information-vb/_static/image52.png)
 
 **Рис. 18**: Запрос создан `JOIN` s `GuestbookComments`, `UserProfiles`, и `aspnet_Users` таблиц ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image54.png))
 
@@ -355,7 +355,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Отвлекитесь и просмотрите страницу через обозреватель. Вы увидите комментарии, добавленные в гостевую книгу на шаге 5, показанные здесь.
 
 
-[![Guestbook.aspx теперь отображает комментариях](storing-additional-user-information-vb/_static/image56.png)](storing-additional-user-information-vb/_static/image55.png)
+[![Сейчас Guestbook.aspx отображается комментариях](storing-additional-user-information-vb/_static/image56.png)](storing-additional-user-information-vb/_static/image55.png)
 
 **Рис. 19**: `Guestbook.aspx` Теперь отображает комментариях ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image57.png))
 
@@ -402,7 +402,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Посетите `EnhancedCreateUserWizard.aspx` странице через браузер и создать учетную запись пользователя. После этого вернитесь в Visual Studio и изучить содержимое `aspnet_Users` и `UserProfiles` таблиц (как это делалось обратно на рис. 12). Вы увидите новую учетную запись пользователя, в `aspnet_Users` и соответствующий `UserProfiles` строки (с `NULL` значений в параметре `HomeTown`, `HomepageUrl`, и `Signature`).
 
 
-[![A Были добавлены новой учетной записи пользователя и запись UserProfiles](storing-additional-user-information-vb/_static/image59.png)](storing-additional-user-information-vb/_static/image58.png)
+[![Были добавлены новой учетной записи пользователя и запись UserProfiles](storing-additional-user-information-vb/_static/image59.png)](storing-additional-user-information-vb/_static/image58.png)
 
 **Рис. 20**: Учетной записи пользователя и `UserProfiles` записи были добавлены ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image60.png))
 
@@ -438,7 +438,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Рис. 21 показан рабочий процесс при добавленного `WizardStep` предшествует `CreateUserWizardStep`. Поскольку к моменту сбора дополнительных сведений о пользователе `CreatedUser` вызывает событие, все что нужно сделать — обновление `CreatedUser` обработчик событий для получения этих входных данных и использовать их для `INSERT` значения параметров для инструкции (а не `DBNull.Value`).
 
 
-[![Tон CreateUserWizard рабочего процесса, когда дополнительные WizardStep предшествует CreateUserWizardStep](storing-additional-user-information-vb/_static/image62.png)](storing-additional-user-information-vb/_static/image61.png)
+[![Рабочий процесс CreateUserWizard, когда дополнительные WizardStep предшествует CreateUserWizardStep](storing-additional-user-information-vb/_static/image62.png)](storing-additional-user-information-vb/_static/image61.png)
 
 **Рис. 21**: CreateUserWizard рабочего процесса при дополнительной `WizardStep` Precedes `CreateUserWizardStep` ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image63.png))
 
@@ -446,7 +446,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Если пользовательский `WizardStep` помещается *после* `CreateUserWizardStep`, однако процесса создания учетной записи пользователя выполняется до того, как пользователь сможет войти в свой домашний города, домашней страницы или подпись. В таком случае эти дополнительные сведения необходимо вставить в базу данных после создания учетной записи пользователя, как показано на рис. 22.
 
 
-[![Tон CreateUserWizard рабочего процесса при дополнительных WizardStep поставляется после CreateUserWizardStep](storing-additional-user-information-vb/_static/image65.png)](storing-additional-user-information-vb/_static/image64.png)
+[![При поступлении дополнительных WizardStep после CreateUserWizardStep рабочего процесса CreateUserWizard](storing-additional-user-information-vb/_static/image65.png)](storing-additional-user-information-vb/_static/image64.png)
 
 **Рис. 22**: CreateUserWizard рабочего процесса при дополнительной `WizardStep` поставляется после `CreateUserWizardStep` ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image66.png))
 
@@ -458,7 +458,7 @@ ASP. Членство в .NET framework предлагает гибкие инт
 Смарт-теге элемента управления CreateUserWizard, выберите «Добавить или удалить `WizardStep` s», которая вызывает `WizardStep` диалоговое окно редактора коллекции. Добавьте новый `WizardStep`, устанавливая его `ID` для `UserSettings`, ее `Title` «Your Настройка» и его `StepType` для `Step`. Затем поместите ее так, чтобы он следует после `CreateUserWizardStep` («Регистрация для создания новой учетной записи») и перед `CompleteWizardStep` («полное»), как показано на рис. 23.
 
 
-[![Aдд новый WizardStep в элемент управления CreateUserWizard](storing-additional-user-information-vb/_static/image68.png)](storing-additional-user-information-vb/_static/image67.png)
+[![Добавьте новый WizardStep к элементу управления CreateUserWizard](storing-additional-user-information-vb/_static/image68.png)](storing-additional-user-information-vb/_static/image67.png)
 
 **Рис. 23**: Добавить новый `WizardStep` в элемент управления CreateUserWizard ([Просмотр полноразмерного изображения](storing-additional-user-information-vb/_static/image69.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 41ee7a14c26c10fb693eb3b5bf590f92a4caf3a3
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59405967"
 ---
 # <a name="web-api-routing"></a>Маршрутизация веб-API
@@ -22,5 +22,5 @@ ms.locfileid: "59405967"
 
 - [Маршрутизация в веб-API](routing-in-aspnet-web-api.md)
 - [Маршрутизация и выбор действий в веб-API](routing-and-action-selection.md)
-- [Маршрутизация атрибутов в веб-API 2](attribute-routing-in-web-api-2.md)
-- [Создание интерфейса REST API с помощью маршрутизации атрибутов в веб-API 2](create-a-rest-api-with-attribute-routing.md)
+- [Маршрутизация атрибутов в веб-API 2](attribute-routing-in-web-api-2.md)
+- [Создание интерфейса API REST с помощью маршрутизации атрибутов в веб-API 2](create-a-rest-api-with-attribute-routing.md)

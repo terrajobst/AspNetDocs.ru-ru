@@ -12,7 +12,7 @@ ms.openlocfilehash: a63bca69f137a4d4765db6a4925ff027c9d8bf7d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403588"
 ---
 # <a name="tutorial-server-broadcast-with-aspnet-signalr-1x"></a>Учебник. Передача сообщений с сервера с помощью ASP.NET SignalR 1.x
@@ -42,7 +42,7 @@ ms.locfileid: "59403588"
 
 Этот учебник содержит следующие разделы:
 
-- [Предварительные требования](#prerequisites)
+- [Необходимые компоненты](#prerequisites)
 - [Создание проекта](#createproject)
 - [Добавьте пакеты SignalR NuGet](#nugetpackages)
 - [Настройте серверный код](#server)

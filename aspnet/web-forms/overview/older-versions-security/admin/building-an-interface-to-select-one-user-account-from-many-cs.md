@@ -12,7 +12,7 @@ ms.openlocfilehash: ed255b4d5938457e82c1fca4d759b6a5691c3f6c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401768"
 ---
 # <a name="building-an-interface-to-select-one-user-account-from-many-c"></a>Создание интерфейса для выбора одной учетной записи пользователя из многих (C#)
@@ -56,7 +56,7 @@ ms.locfileid: "59401768"
 На этом этапе проекта обозреватель решений должен выглядеть снимок экрана, показанный на рис. 1.
 
 
-[![FНаши новые страницы и файл Web.config были добавлены на веб-сайт](building-an-interface-to-select-one-user-account-from-many-cs/_static/image2.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image1.png)
+[![На веб-сайт были добавлены четыре новые страницы и файл Web.config](building-an-interface-to-select-one-user-account-from-many-cs/_static/image2.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image1.png)
 
 **Рис. 1**: Четыре новых страниц и `Web.config` файла были добавлены на веб-сайт ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image3.png))
 
@@ -68,7 +68,7 @@ ms.locfileid: "59401768"
 С помощью карты узла обновлен посетите сайт через браузер. Как показано на рис. 2, навигации в левой части теперь включает элементы для администрирования учебники.
 
 
-[![Tон карты узла включает в себя Администрирование пользователей узел под названием](building-an-interface-to-select-one-user-account-from-many-cs/_static/image5.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image4.png)
+[![Карты узла имеется узел под названием Администрирование пользователей](building-an-interface-to-select-one-user-account-from-many-cs/_static/image5.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image4.png)
 
 **Рис. 2**: Администрирование пользователей узел под названием включает в себя карты узла ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image6.png))
 
@@ -82,7 +82,7 @@ ms.locfileid: "59401768"
 Чтобы отобразить сведения об учетной записи необходимые сведения о пользователе в GridView, установим GridView `AutoGenerateColumns` значение False и добавьте поля BoundField, кроме для `UserName`, `Email`, и `Comment` свойства и CheckBoxFields для `IsApproved`, `IsLockedOut`, и `IsOnline` свойства. Эта конфигурация может применяться посредством декларативная разметка элемента управления или с помощью поля-диалоговое окно. Рис. 3 показан снимок экрана полей диалоговое окно после снят флажок автоматического создания полей и полей BoundField и CheckBoxFields добавлен и настроен.
 
 
-[![Add три поля BoundFields и три CheckBoxFields к GridView](building-an-interface-to-select-one-user-account-from-many-cs/_static/image8.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image7.png)
+[![Добавьте три поля BoundFields и три CheckBoxFields к GridView](building-an-interface-to-select-one-user-account-from-many-cs/_static/image8.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image7.png)
 
 **Рис. 3**: Добавьте три поля BoundFields и три CheckBoxFields к GridView ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image9.png))
 
@@ -98,7 +98,7 @@ ms.locfileid: "59401768"
 Отвлекитесь и проверьте страницу в обозревателе. Как показано на рис. 4, `UserAccounts` GridView перечисляет имя пользователя, адрес электронной почты и других соответствующих учетных записей для всех пользователей в системе.
 
 
-[![Tучетные записи пользователей HE указаны в GridView](building-an-interface-to-select-one-user-account-from-many-cs/_static/image11.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image10.png)
+[![Учетные записи пользователей указаны в GridView](building-an-interface-to-select-one-user-account-from-many-cs/_static/image11.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image10.png)
 
 **Рис. 4**: Учетные записи пользователей указаны в GridView ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image12.png))
 
@@ -122,7 +122,7 @@ ms.locfileid: "59401768"
 Рис. 5 показан `ManageUsers.aspx` страницы при просмотре в обозревателе.
 
 
-[![Tон элемента управления Repeater перечисляет 27 фильтрации элементов управления LinkButton](building-an-interface-to-select-one-user-account-from-many-cs/_static/image14.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image13.png)
+[![Элемент управления Repeater перечисляет 27 фильтрации элементов управления LinkButton](building-an-interface-to-select-one-user-account-from-many-cs/_static/image14.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image13.png)
 
 **Рис. 5**: Элемент управления Repeater перечисляет 27 фильтрации элементов управления LinkButton ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image15.png))
 
@@ -152,7 +152,7 @@ ms.locfileid: "59401768"
 Этот код в месте тестирование функций фильтрации. При первом посещении страницы, отображаются все учетные записи пользователей (см. рис. 5). Щелчок LinkButton вызывает обратную передачу и фильтрует результаты, отображение только учетные записи пользователей, которые начинаются с A.
 
 
-[![USE элементов управления LinkButton Фильтрация для отображения этих пользователей которых имя пользователя начинается с некоторые буквы](building-an-interface-to-select-one-user-account-from-many-cs/_static/image17.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image16.png)
+[![Используется для отображения этих пользователей, имена которых начинаются с определенной буквы фильтрации элементов управления LinkButton](building-an-interface-to-select-one-user-account-from-many-cs/_static/image17.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image16.png)
 
 **Рис. 6**: Использование элементов управления LinkButton фильтрации для отображения этих пользователей которых имя пользователя начинается с некоторые буквы ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image18.png))
 
@@ -197,7 +197,7 @@ GridView, показанный на рис. 5 и 6 перечисляет все
 Рис. 7 показаны четыре элементов управления LinkButton при просмотре через представление Visual Web Developer Design.
 
 
-[![Aдд первый, назад, Далее и последнего элементов управления LinkButton под GridView](building-an-interface-to-select-one-user-account-from-many-cs/_static/image20.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image19.png)
+[![Затем добавьте во-первых, предыдущего, и последнего элементов управления LinkButton под GridView](building-an-interface-to-select-one-user-account-from-many-cs/_static/image20.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image19.png)
 
 **Рис. 7**: Во-первых, добавьте назад, Next и последнего элементов управления LinkButton под GridView ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image21.png))
 
@@ -229,12 +229,12 @@ GridView, показанный на рис. 5 и 6 перечисляет все
 Цифры 8 и 9 Показать пользовательский интерфейс разбиения на страницы в действии. На рисунке 8 показана `ManageUsers.aspx` страницы при просмотре первой страницы данных для всех учетных записей пользователей. Обратите внимание на то, что отображаются только 10 из 13 учетных записей. Щелкнув ссылку Далее или последнего вызывает обратную передачу, обновления `PageIndex` 1, и второй странице пользователя, учетные записи в сетку привязки (см. рис. 9).
 
 
-[![TОтображаются учетные записи пользователей HE первый 10](building-an-interface-to-select-one-user-account-from-many-cs/_static/image23.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image22.png)
+[![Отображаются первая учетные записи пользователей 10](building-an-interface-to-select-one-user-account-from-many-cs/_static/image23.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image22.png)
 
 **Рис. 8**: Первый учетные записи пользователей 10 отображаются ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image24.png))
 
 
-[![Cщелкнув Далее отображает ссылку на второй странице из учетных записей пользователей](building-an-interface-to-select-one-user-account-from-many-cs/_static/image26.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image25.png)
+[![Щелчок следующей ссылки отображаются на второй странице учетных записей пользователей](building-an-interface-to-select-one-user-account-from-many-cs/_static/image26.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image25.png)
 
 **Рис. 9**: Щелчок следующей ссылки отображаются на второй странице из учетных записей пользователей ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image27.png))
 
@@ -262,4 +262,4 @@ GridView, показанный на рис. 5 и 6 перечисляет все
 В этой серии руководств пособий рецензировалась многими компетентными редакторами. Основной рецензент этого учебного был Alicja Maziarz. Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [mitchell@4GuysFromRolla.com](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
-> [Далее](recovering-and-changing-passwords-cs.md)
+> [Вперед](recovering-and-changing-passwords-cs.md)

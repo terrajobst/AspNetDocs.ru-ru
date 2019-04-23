@@ -12,7 +12,7 @@ ms.openlocfilehash: f7731570a3c96f579c4717a0ab2b5e0d742457f7
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403510"
 ---
 # <a name="deploying-a-database-vb"></a>Развертывание базы данных (VB)
@@ -47,7 +47,7 @@ ms.locfileid: "59403510"
 Рис. 1 показана схема аварийного восстановления из этих четырех таблиц.
 
 
-[![Tон s книги проверки веб-приложение базы данных является состоит из четырех таблиц](deploying-a-database-vb/_static/image2.jpg)](deploying-a-database-vb/_static/image1.jpg) 
+[![S книги проверки веб-приложение базы данных всегда состоит из четырех таблиц](deploying-a-database-vb/_static/image2.jpg)](deploying-a-database-vb/_static/image1.jpg) 
 
 **Рис. 1**: S книги проверки веб-приложение базы данных всегда состоит из четырех таблиц ([Просмотр полноразмерного изображения](deploying-a-database-vb/_static/image3.jpg))
 
@@ -57,12 +57,12 @@ ms.locfileid: "59403510"
 Рис. 2 и 3 демонстрируют `Genre.aspx` и `Review.aspx` страницы в действии. Обратите внимание, URL-адрес в адресной строке для каждой страницы. На рисунке 2 ИТ s Genre.aspx? ID = 85d164ba-1123-4 c 47-82a0-c8ec75de7e0e. Так как 85d164ba-1123-4c47-82a0-c8ec75de7e0e `GenreId` значение жанр технологии, s заголовок операций чтения страниц «Рассматривает технологию» и маркированный список перечисляет отзывы пользователей на сайте, на которые распространяется действие этого жанра.
 
 
-[![Tон страница жанр технологии](deploying-a-database-vb/_static/image5.jpg)](deploying-a-database-vb/_static/image4.jpg) 
+[![Страница технологии жанра](deploying-a-database-vb/_static/image5.jpg)](deploying-a-database-vb/_static/image4.jpg) 
 
 **Рис. 2**: Страница технологии жанра ([Просмотр полноразмерного изображения](deploying-a-database-vb/_static/image6.jpg))
 
 
-[![Tон проверьте для изучения самостоятельно ASP.NET 3.5 за 24 часа.](deploying-a-database-vb/_static/image8.jpg)](deploying-a-database-vb/_static/image7.jpg) 
+[![Рассмотрение приступите к изучению ASP.NET 3.5 на 24 часа](deploying-a-database-vb/_static/image8.jpg)](deploying-a-database-vb/_static/image7.jpg) 
 
 **Рис. 3**: Рассмотрение *обучение самостоятельно ASP.NET 3.5 за 24 часа* ([Просмотр полноразмерного изображения](deploying-a-database-vb/_static/image9.jpg))
 
@@ -96,7 +96,7 @@ ms.locfileid: "59403510"
 Откройте Visual Studio и перейдите к `Reviews.mdf` базы данных. Если вы используете Visual Web Developer, перейдите в обозреватель базы данных; Если вы используете Visual Studio, с помощью обозревателя серверов. Рис. 4 показан `Reviews.mdf` базы данных в обозревателе баз данных в Visual Web Developer. Как показано на рис. 4, `Reviews.mdf` база данных состоит из четырех таблиц, три хранимые процедуры и определяемые пользователем функции.
 
 
-[![Locate базы данных в обозреватель серверов или обозревателе баз данных](deploying-a-database-vb/_static/image11.jpg)](deploying-a-database-vb/_static/image10.jpg) 
+[![Найдите базу данных в обозревателе базы данных или обозревателя серверов](deploying-a-database-vb/_static/image11.jpg)](deploying-a-database-vb/_static/image10.jpg) 
 
 **Рис. 4**: Найдите базу данных в обозреватель серверов или обозревателе баз данных ([Просмотр полноразмерного изображения](deploying-a-database-vb/_static/image12.jpg))
 
@@ -104,7 +104,7 @@ ms.locfileid: "59403510"
 Щелкните правой кнопкой мыши имя базы данных и выберите параметр «Опубликовать в поставщик» в контекстном меню. Откроется мастер публикации базы данных (см. рис. 5). Щелкните рядом с advance за пределами экрана-заставки.
 
 
-[![Tон экран-заставка мастер публикации базы данных](deploying-a-database-vb/_static/image14.jpg)](deploying-a-database-vb/_static/image13.jpg) 
+[![Экран-заставка мастер публикации базы данных](deploying-a-database-vb/_static/image14.jpg)](deploying-a-database-vb/_static/image13.jpg) 
 
 **Рис. 5**: На экране-заставке мастер публикации базы данных ([Просмотр полноразмерного изображения](deploying-a-database-vb/_static/image15.jpg))
 
@@ -115,7 +115,7 @@ ms.locfileid: "59403510"
 > Если появляется ошибка «нет объектов в базе данных *databaseName* типов допускающий применение сценариев с помощью этого мастера» при щелчке следующий экран, показанный на рис. 6, убедитесь, что путь к файлу базы данных не слишком длинный. Как отмечалось в [элемент обсуждения](http://www.codeplex.com/sqlhost/Thread/View.aspx?ThreadId=11014) на странице проекта мастер публикации баз данных, эта ошибка может возникнуть, если указан слишком длинный путь к файлу базы данных.
 
 
-[![Tон экран-заставка мастер публикации базы данных](deploying-a-database-vb/_static/image17.jpg)](deploying-a-database-vb/_static/image16.jpg) 
+[![Экран-заставка мастер публикации базы данных](deploying-a-database-vb/_static/image17.jpg)](deploying-a-database-vb/_static/image16.jpg) 
 
 **Рис. 6**: На экране-заставке мастер публикации базы данных ([Просмотр полноразмерного изображения](deploying-a-database-vb/_static/image18.jpg))
 
@@ -123,7 +123,7 @@ ms.locfileid: "59403510"
 На следующем экране можно создать файл скрипта, или, если ваш веб-узел поддерживает его, опубликовать базу данных непосредственно на веб-узле поставщика s базы данных сервера. Как показано на рис. 7, у меня возникли скрипт, написанный в файл `C:\REVIEWS.MDF.sql`.
 
 
-[![Sсценариев базы данных в файл или опубликовать его непосредственно в ваш поставщик веб-узлов](deploying-a-database-vb/_static/image20.jpg)](deploying-a-database-vb/_static/image19.jpg) 
+[![Скриптов для базы данных в файл или опубликовать на поставщике ваш веб-размещения](deploying-a-database-vb/_static/image20.jpg)](deploying-a-database-vb/_static/image19.jpg) 
 
 **Рис. 7**: Скриптов для базы данных в файл или опубликовать его непосредственно в ваш поставщик веб-узла ([Просмотр полноразмерного изображения](deploying-a-database-vb/_static/image21.jpg))
 
@@ -133,7 +133,7 @@ ms.locfileid: "59403510"
 Как показано на рис. 8, я возникла мастера, настроен для удаления существующих объектов базы данных, чтобы создать скрипт для базы данных SQL Server 2008 и опубликовать схему и данные.
 
 
-[![SУкажите параметры публикации](deploying-a-database-vb/_static/image23.jpg)](deploying-a-database-vb/_static/image22.jpg) 
+[![Укажите публикации параметров](deploying-a-database-vb/_static/image23.jpg)](deploying-a-database-vb/_static/image22.jpg) 
 
 **Рис. 8**: Задать параметры публикации ([Просмотр полноразмерного изображения](deploying-a-database-vb/_static/image24.jpg))
 
@@ -149,7 +149,7 @@ ms.locfileid: "59403510"
 Запустите среду SSMS и подключитесь к серверу базы данных web узла s с помощью сведений, предоставленных на поставщике веб-размещения.
 
 
-[![Cподключиться к s Your поставщике веб-размещения сервера базы данных](deploying-a-database-vb/_static/image26.jpg)](deploying-a-database-vb/_static/image25.jpg) 
+[![Подключение к веб-узла поставщика s базы данных сервера](deploying-a-database-vb/_static/image26.jpg)](deploying-a-database-vb/_static/image25.jpg) 
 
 **Рис. 9**: Подключения к данным поставщике веб-размещения s сервер базы данных ([Просмотр полноразмерного изображения](deploying-a-database-vb/_static/image27.jpg))
 
@@ -157,7 +157,7 @@ ms.locfileid: "59403510"
 Разверните вкладку баз данных и найдите свою базу данных. В левом верхнем углу панели инструментов нажмите кнопку Создать запрос, вставьте в команды SQL из файла скрипта, созданного с помощью мастера публикации базы данных и нажмите кнопку выполнения для выполнения этих команд на рабочем сервере базы данных. Если особенно большой файл сценария может занять несколько минут для выполнения команд.
 
 
-[![Cподключиться к s Your поставщике веб-размещения сервера базы данных](deploying-a-database-vb/_static/image29.jpg)](deploying-a-database-vb/_static/image28.jpg) 
+[![Подключение к веб-узла поставщика s базы данных сервера](deploying-a-database-vb/_static/image29.jpg)](deploying-a-database-vb/_static/image28.jpg) 
 
 **Рис. 10**: Подключения к данным поставщике веб-размещения s сервер базы данных ([Просмотр полноразмерного изображения](deploying-a-database-vb/_static/image30.jpg))
 
@@ -165,12 +165,12 @@ ms.locfileid: "59403510"
 Все, что s — его! На этом этапе разработки базы данных дублируется в рабочей среде. При обновлении базы данных в среде SSMS вы увидите, что новые объекты базы данных. Рис. 11 показана рабочие таблицы базы данных s, хранимые процедуры и определяемые пользователем функции, которые аналогичны операторам на базе данных разработки. И так как мы указали мастер публикации баз данных для публикации данных, базы данных s рабочие таблицы имеют те же данные, как таблицы s разработки базы данных во время выполнения мастера. Рис. 12 показан данные в `Books` таблицы в рабочей базе данных.
 
 
-[![Tон объекты базы данных имеют повторяется в рабочей базе данных](deploying-a-database-vb/_static/image32.jpg)](deploying-a-database-vb/_static/image31.jpg) 
+[![В рабочей базе данных были одинаковыми объекты базы данных](deploying-a-database-vb/_static/image32.jpg)](deploying-a-database-vb/_static/image31.jpg) 
 
 **Рис. 11**: База данных объекты имеют повторяется в рабочей базе данных ([Просмотр полноразмерного изображения](deploying-a-database-vb/_static/image33.jpg))
 
 
-[![Tон рабочей базы данных содержит те же данные в базе данных разработки](deploying-a-database-vb/_static/image35.jpg)](deploying-a-database-vb/_static/image34.jpg) 
+[![Рабочая база данных содержит те же данные, как и в базе данных разработки](deploying-a-database-vb/_static/image35.jpg)](deploying-a-database-vb/_static/image34.jpg) 
 
 **Рис. 12**: Рабочая база данных содержит те же данные в базе данных разработки ([Просмотр полноразмерного изображения](deploying-a-database-vb/_static/image36.jpg))
 

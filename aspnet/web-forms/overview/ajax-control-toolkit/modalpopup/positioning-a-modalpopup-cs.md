@@ -12,7 +12,7 @@ ms.openlocfilehash: db69c0cf4fc3e5d39d88d8a6478a529309020d3d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59398037"
 ---
 # <a name="positioning-a-modalpopup-c"></a>Размещение ModalPopup (C#)
@@ -55,7 +55,7 @@ ms.locfileid: "59398037"
 [!code-aspx[Main](positioning-a-modalpopup-cs/samples/sample6.aspx)]
 
 
-[![Tон модальное всплывающее окно отображается в назначенной позиции](positioning-a-modalpopup-cs/_static/image2.png)](positioning-a-modalpopup-cs/_static/image1.png)
+[![Появится модальное всплывающее окно в указанной позиции](positioning-a-modalpopup-cs/_static/image2.png)](positioning-a-modalpopup-cs/_static/image1.png)
 
 Появится модальное всплывающее окно в указанной позиции ([Просмотр полноразмерного изображения](positioning-a-modalpopup-cs/_static/image3.png))
 

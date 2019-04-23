@@ -12,7 +12,7 @@ ms.openlocfilehash: 36bc314c6709c34863d86158419257be99f4084f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59407111"
 ---
 # <a name="aspnet-mvc-3"></a>ASP.NET MVC 3
@@ -88,7 +88,7 @@ ms.locfileid: "59407111"
     - [Исправления ошибок](#0.1__Toc274034228)
     - [Критические изменения](#0.1__Toc274034229)
     - [Известные проблемы](#0.1__Toc274034230)
-- [Отказ от ответственности](#0.1__Toc274034231)
+- [Заявление об отказе](#0.1__Toc274034231)
 
 <a id="overview"></a>
 ## <a name="overview"></a>Обзор

@@ -12,7 +12,7 @@ ms.openlocfilehash: fd025699a72aea6bd39672f2f240e76528eaa8ab
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406929"
 ---
 # <a name="using-script-combining-to-improve-ajax-performance"></a>Использование сценариев объединения для повышения производительности AJAX

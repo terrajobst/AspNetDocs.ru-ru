@@ -12,7 +12,7 @@ ms.openlocfilehash: 49bdb8e6429449417f2a5ecb2a00101928e3c82e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401027"
 ---
 # <a name="batch-inserting-c"></a>Пакетная вставка (C#)
@@ -33,7 +33,7 @@ ms.locfileid: "59401027"
 Немного поработав, мы можем создать пакет Вставка интерфейс, позволяющий пользователю выбрать поставщика и категории один раз, введите ряд названий продуктов и цен за штуку и нажмите кнопку для добавления новых продуктов в базу данных (см. рис. 1). При добавлении каждого продукта, его `ProductName` и `UnitPrice` полей данных присваиваются значения, введенные в текстовые поля, хотя его `CategoryID` и `SupplierID` значения присваиваются значения из элементов управления DropDownList в верхнем fo формы. `Discontinued` И `UnitsOnOrder` значения устанавливаются в значения жестко `false` и 0 соответственно.
 
 
-[![Tон пакетной вставки интерфейса](batch-inserting-cs/_static/image2.png)](batch-inserting-cs/_static/image1.png)
+[![Интерфейс вставки пакетной службы](batch-inserting-cs/_static/image2.png)](batch-inserting-cs/_static/image1.png)
 
 **Рис. 1**: Интерфейс вставки пакета ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image3.png))
 
@@ -49,7 +49,7 @@ ms.locfileid: "59401027"
 Сначала откройте `BatchInsert.aspx` странице в `BatchData` папки и перетащите панель из панели элементов в конструктор (см. рис. 2). Задайте для свойства панели s `ID` свойства `DisplayInterface`. При добавлении панели в конструкторе, его `Height` и `Width` свойствам присваивается 50px и 125px, соответственно. Очистите значения этих свойств в окне свойств.
 
 
-[![Drag панели из панели инструментов в конструкторе](batch-inserting-cs/_static/image5.png)](batch-inserting-cs/_static/image4.png)
+[![Перетащите панель из панели элементов в конструктор](batch-inserting-cs/_static/image5.png)](batch-inserting-cs/_static/image4.png)
 
 **Рис. 2**: Перетащите панель из панели элементов в конструктор ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image6.png))
 
@@ -57,12 +57,12 @@ ms.locfileid: "59401027"
 Затем перетащите элемент управления кнопки и GridView в панель. Назначьте свойству s `ID` свойства `ProcessShipment` и его `Text` свойства процесса поставки продукта. Набор GridView s `ID` свойства `ProductsGrid` и его смарт-теге, привязать его к элементу управления ObjectDataSource с именем `ProductsDataSource`. Настройте элемент ObjectDataSource для извлечения данных из `ProductsBLL` класс s `GetProducts` метод. Так как этот GridView используется только для отображения данных, установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет). Нажмите кнопку Готово для завершения работы мастера настройки источника данных.
 
 
-[![DОтображение данных, возвращенных из класса ProductsBLL метода GetProducts s](batch-inserting-cs/_static/image8.png)](batch-inserting-cs/_static/image7.png)
+[![Просмотреть данные, возвращаемые из метода GetProducts класса ProductsBLL s](batch-inserting-cs/_static/image8.png)](batch-inserting-cs/_static/image7.png)
 
 **Рис. 3**: Отобразить данные, возвращенные из `ProductsBLL` класс s `GetProducts` метод ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image9.png))
 
 
-[![SET раскрывающиеся списки в UPDATE, INSERT и DELETE вкладок (нет)](batch-inserting-cs/_static/image11.png)](batch-inserting-cs/_static/image10.png)
+[![Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет)](batch-inserting-cs/_static/image11.png)](batch-inserting-cs/_static/image10.png)
 
 **Рис. 4**: Задайте раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image12.png))
 
@@ -79,7 +79,7 @@ ms.locfileid: "59401027"
 Отвлекитесь и просмотрите ход работы через браузер. Как показано на рис. 5, вы должны увидеть процесс поставки продукта кнопки выше элемент GridView со списком продуктов десять одновременно.
 
 
-[![Tон GridView перечисляет продукты и обеспечивает сортировку и разбиение по страницам возможности](batch-inserting-cs/_static/image14.png)](batch-inserting-cs/_static/image13.png)
+[![GridView перечисляет продукты и предлагает сортировки и разбиения по страницам](batch-inserting-cs/_static/image14.png)](batch-inserting-cs/_static/image13.png)
 
 **Рис. 5**: GridView перечисляет продукты и обеспечивает сортировку и разбиение по страницам возможности ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image15.png))
 
@@ -109,7 +109,7 @@ Start, перетащив панели из инструментария в ко
 С этой разметкой ввода вернитесь в режим конструктора. Это `<table>` должно отображаться как таблицу семь строк и четырех столбцов, в конструкторе, как показано на рис. 6.
 
 
-[![THE, вставка интерфейс состоит из четырех столбцов, таблица семь строк](batch-inserting-cs/_static/image17.png)](batch-inserting-cs/_static/image16.png)
+[![Интерфейс вставки состоит из четырех столбцов, таблица семь строк](batch-inserting-cs/_static/image17.png)](batch-inserting-cs/_static/image16.png)
 
 **Рис. 6**: Интерфейс вставки состоит из четырех столбцов, таблица семь строк ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image18.png))
 
@@ -119,7 +119,7 @@ Start, перетащив панели из инструментария в ко
 Задать поставщик DropDownList s `ID` свойства `Suppliers` и привязать его к элементу управления ObjectDataSource с именем `SuppliersDataSource`. Настройте новый элемент ObjectDataSource для извлечения данных из `SuppliersBLL` класс s `GetSuppliers` метода и обновление набора вкладке s с раскрывающимся списком (нет). Нажмите кнопку Готово, чтобы завершить работу мастера.
 
 
-[![CНастройка ObjectDataSource на использование метода Getsuppliers() класса метод GetSuppliers s](batch-inserting-cs/_static/image20.png)](batch-inserting-cs/_static/image19.png)
+[![Настройка ObjectDataSource на использование метода Getsuppliers() класса s GetSuppliers метод](batch-inserting-cs/_static/image20.png)](batch-inserting-cs/_static/image19.png)
 
 **Рис. 7**: Настройка ObjectDataSource для использования `SuppliersBLL` класс s `GetSuppliers` метод ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image21.png))
 
@@ -127,7 +127,7 @@ Start, перетащив панели из инструментария в ко
 У `Suppliers` элемент управления DropDownList отображает `CompanyName` поля данных и использование `SupplierID` поле данных в качестве его `ListItem` s значений.
 
 
-[![DОтображение поля данных CompanyName и SupplierID использования в качестве значения](batch-inserting-cs/_static/image23.png)](batch-inserting-cs/_static/image22.png)
+[![Отображения поля данных CompanyName и SupplierID использовать в качестве значения](batch-inserting-cs/_static/image23.png)](batch-inserting-cs/_static/image22.png)
 
 **Рис. 8**: Отображение `CompanyName` поля данных и использование `SupplierID` как значение ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image24.png))
 
@@ -137,7 +137,7 @@ Start, перетащив панели из инструментария в ко
 После этих двух элементов управления DropDownList добавлены и привязаны к соответствующим образом настроенных элементов управления ObjectDataSource, экран должен выглядеть аналогично рис. 9.
 
 
-[![TТеперь он строки заголовка содержит поставщики и элементов управления DropDownList категории](batch-inserting-cs/_static/image26.png)](batch-inserting-cs/_static/image25.png)
+[![Теперь содержит строки заголовка «поставщики» и «элементов управления DropDownList категории](batch-inserting-cs/_static/image26.png)](batch-inserting-cs/_static/image25.png)
 
 **Рис. 9**: Строка заголовка теперь содержит `Suppliers` и `Categories` элементов управления DropDownList ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image27.png))
 
@@ -157,7 +157,7 @@ Start, перетащив панели из инструментария в ко
 На этом этапе экран должен выглядеть аналогично рис. 10.
 
 
-[![Tон Вставка интерфейса теперь включает текстовые поля для названия продуктов и цены](batch-inserting-cs/_static/image29.png)](batch-inserting-cs/_static/image28.png)
+[![Интерфейс вставки теперь включает текстовые поля для продуктов, названия и цены](batch-inserting-cs/_static/image29.png)](batch-inserting-cs/_static/image28.png)
 
 **Рис. 10**: Вставка интерфейса теперь включает текстовые поля для названия продуктов и цены ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image30.png))
 
@@ -171,7 +171,7 @@ Start, перетащив панели из инструментария в ко
 Рис. 11 показан конструктор Visual Studio после метки был добавлен и настроен.
 
 
-[![PПоместите значение StatusLabel управления выше двух элементов управления панели](batch-inserting-cs/_static/image32.png)](batch-inserting-cs/_static/image31.png)
+[![Поместите элемент управления StatusLabel над двумя Панельными элементами управления](batch-inserting-cs/_static/image32.png)](batch-inserting-cs/_static/image31.png)
 
 **Рис. 11**: Место `StatusLabel` контроля над двумя Панельными элементами управления ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image33.png))
 
@@ -208,7 +208,7 @@ Start, перетащив панели из инструментария в ко
 > При просмотре интерфейса вставки, Отвлекитесь и проверьте его CompareValidators на цену единицы текстовые поля. Вы должны увидеть окно messagebox клиентские предупреждение при нажатии кнопки Добавить продукты из кнопки отгрузки с недопустимым денежных значений или цены с значение меньше нуля.
 
 
-[![Tон Inserting интерфейс отображается после нажатия кнопки «обработать» поставки продукта](batch-inserting-cs/_static/image35.png)](batch-inserting-cs/_static/image34.png)
+[![Интерфейс вставки отображается после нажатия кнопки «обработать» поставки продукта](batch-inserting-cs/_static/image35.png)](batch-inserting-cs/_static/image34.png)
 
 **Рис. 12**: Интерфейс вставки отображается после нажатия кнопки «обработать» поставки продукта ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image36.png))
 
@@ -237,17 +237,17 @@ Start, перетащив панели из инструментария в ко
 S рис 13, 14 и 15 Показать вставку и отображать интерфейсы в действии. На рис. 13 что пользователь ввел значение цены единицы без соответствующего имени продукта. Рис. 14 показаны отображения интерфейса после трех новых продуктов были успешно добавлены, а рис. 15 двух продуктов, добавленный в GridView (третье — на предыдущей странице).
 
 
-[![A Название продукта — требуется при вводе цена за единицу](batch-inserting-cs/_static/image38.png)](batch-inserting-cs/_static/image37.png)
+[![Название продукта — требуется при вводе цена за единицу](batch-inserting-cs/_static/image38.png)](batch-inserting-cs/_static/image37.png)
 
 **Рис. 13**: Название продукта — требуется при вводе цена за единицу ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image39.png))
 
 
-[![TВозможны три новых Veggies были добавлены для поставщика Mayumi s](batch-inserting-cs/_static/image41.png)](batch-inserting-cs/_static/image40.png)
+[![Для поставщика были добавлены три новые Veggies Mayumi s](batch-inserting-cs/_static/image41.png)](batch-inserting-cs/_static/image40.png)
 
 **Рис. 14**: Три новых Veggies были добавлены для поставщика Mayumi s ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image42.png))
 
 
-[![Tон новых продуктов можно найти на последней странице элемента управления GridView.](batch-inserting-cs/_static/image44.png)](batch-inserting-cs/_static/image43.png)
+[![Новые продукты можно найти на последней странице элемента управления GridView](batch-inserting-cs/_static/image44.png)](batch-inserting-cs/_static/image43.png)
 
 **Рис. 15**: Новые продукты можно найти на последней странице элемента управления GridView ([Просмотр полноразмерного изображения](batch-inserting-cs/_static/image45.png))
 

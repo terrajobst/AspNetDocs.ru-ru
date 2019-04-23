@@ -12,7 +12,7 @@ ms.openlocfilehash: 7f342a7749ac175c3335f260324d69a0cce30202
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59399753"
 ---
 # <a name="uploading-files-vb"></a>Отправка файлов (VB)
@@ -53,7 +53,7 @@ ms.locfileid: "59399753"
 Как и в других папках, `Default.aspx` в `BinaryData` папку перечислит учебные курсы в своем разделе. Помните, что `SectionLevelTutorialListing.ascx` пользовательский элемент управления предоставляет следующие функциональные возможности. Поэтому добавьте данный пользовательский элемент управления для `Default.aspx` , перетащив его из обозревателя решений на странице s режиме конструктора.
 
 
-[![Aдд пользовательского элемента управления SectionLevelTutorialListing.ascx к странице Default.aspx](uploading-files-vb/_static/image2.gif)](uploading-files-vb/_static/image1.png)
+[![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](uploading-files-vb/_static/image2.gif)](uploading-files-vb/_static/image1.png)
 
 **Рис. 2**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](uploading-files-vb/_static/image2.png))
 
@@ -76,7 +76,7 @@ ms.locfileid: "59399753"
 Двоичные данные, связанные с моделью данных s приложения могут храниться в одном из двух мест: в файловой системе сервера s web со ссылкой на файл, хранящийся в базе данных; или непосредственно в самой базе данных (см. рис. 4). Каждый подход имеет свои достоинства и недостатки и заслуживает более подробное рассмотрение.
 
 
-[![Bвоичные данные могут храниться в файловой системе или непосредственно в базе данных](uploading-files-vb/_static/image4.gif)](uploading-files-vb/_static/image3.png)
+[![Двоичные данные могут храниться в файловой системе или непосредственно в базе данных](uploading-files-vb/_static/image4.gif)](uploading-files-vb/_static/image3.png)
 
 **Рис. 4**: Двоичные данные могут храниться в файловой системе или непосредственно в базе данных ([Просмотр полноразмерного изображения](uploading-files-vb/_static/image4.png))
 
@@ -110,7 +110,7 @@ ms.locfileid: "59399753"
 Добавьте новый `varchar(200)` столбец `Categories` таблицу с именем `BrochurePath` и позволяет `NULL` s и щелкните значок "Сохранить" (или нажмите сочетание клавиш Ctrl + S).
 
 
-[![Aдд BrochurePath столбец в таблицу Categories](uploading-files-vb/_static/image5.gif)](uploading-files-vb/_static/image5.png)
+[![Добавить столбец BrochurePath в таблицу Categories](uploading-files-vb/_static/image5.gif)](uploading-files-vb/_static/image5.png)
 
 **Рис. 5**: Добавить `BrochurePath` столбец `Categories` таблицы ([Просмотр полноразмерного изображения](uploading-files-vb/_static/image6.png))
 
@@ -132,7 +132,7 @@ ms.locfileid: "59399753"
 Начните с добавления этих двух столбцов, чтобы `CategoriesDataTable`. Щелкните правой кнопкой мыши `CategoriesDataTable` s заголовок, выберите в контекстном меню Add, а затем выберите параметр столбец. Это создаст новый `DataColumn` таблицы данных с именем `Column1`. Переименуйте этот столбец в `Picture`. В окне «Свойства» задайте `DataColumn` s `DataType` свойства `System.Byte[]` (это не вариант в раскрывающемся списке, вам нужно ввести его в).
 
 
-[![CСоздание рисунка DataColumn с именем, типом данных является System.Byte []](uploading-files-vb/_static/image6.gif)](uploading-files-vb/_static/image7.png)
+[![Создание рисунка DataColumn с именем, типом данных является System.Byte[]](uploading-files-vb/_static/image6.gif)](uploading-files-vb/_static/image7.png)
 
 **Рис. 6**: Создание `DataColumn` именованные `Picture` которого `DataType` — `System.Byte[]` ([Просмотр полноразмерного изображения](uploading-files-vb/_static/image8.png))
 
@@ -146,7 +146,7 @@ ms.locfileid: "59399753"
 Чтобы обновить основной запрос адаптера таблицы, щелкните правой кнопкой мыши `CategoriesTableAdapter` s заголовка и выберите настройку в контекстном меню. Откроется мастер настройки адаптера таблицы, которые мы ve в число предыдущих учебных курсах. Обновить запрос, чтобы вернуть `BrochurePath` и нажмите кнопку Готово.
 
 
-[![UОбновить список столбцов в инструкции SELECT, чтобы также возвращают BrochurePath](uploading-files-vb/_static/image7.gif)](uploading-files-vb/_static/image9.png)
+[![Обновление списка столбцов в инструкции SELECT инструкции также вернет значение BrochurePath](uploading-files-vb/_static/image7.gif)](uploading-files-vb/_static/image9.png)
 
 **Рис. 7**: Обновление списка столбцов в `SELECT` инструкция также возвращает `BrochurePath` ([Просмотр полноразмерного изображения](uploading-files-vb/_static/image10.png))
 
@@ -159,12 +159,12 @@ ms.locfileid: "59399753"
 Создайте новый метод TableAdapter, который возвращает определенной категории s `Picture` значение столбца. Щелкните правой кнопкой мыши `CategoriesTableAdapter` s заголовка и выберите пункт Добавить запрос, чтобы запустить мастер настройки запроса адаптера таблицы. На первом шаге работы этот мастер спрашивает нас, если мы хотим выполнить запрос данных с помощью инструкции SQL ad-hoc, новая хранимая процедура, уже существующий. Выберите использовать инструкции SQL и нажмите кнопку Далее. Поскольку мы будет возвращать строку, выберите SELECT, которая возвращает параметр строки из второй шаг.
 
 
-[![Sвыбрать использовать инструкции SQL параметр](uploading-files-vb/_static/image8.gif)](uploading-files-vb/_static/image11.png)
+[![Выберите параметр использовать SQL-инструкции](uploading-files-vb/_static/image8.gif)](uploading-files-vb/_static/image11.png)
 
 **Рис. 8**: Выберите инструкции SQL используйте параметр ([Просмотр полноразмерного изображения](uploading-files-vb/_static/image12.png))
 
 
-[![Sинс запрос вернет записи из таблицы Categories, выберите выбрать, какие возвращает строки](uploading-files-vb/_static/image9.gif)](uploading-files-vb/_static/image13.png)
+[![Так как запрос вернет записи из таблицы Categories, выбор SELECT, возвращающая строки](uploading-files-vb/_static/image9.gif)](uploading-files-vb/_static/image13.png)
 
 **Рис. 9**: Так как запрос вернет записи из таблицы Categories, выберите выбрать, какие возвращает строки ([Просмотр полноразмерного изображения](uploading-files-vb/_static/image14.png))
 
@@ -177,7 +177,7 @@ ms.locfileid: "59399753"
 Последним шагом является для выбора имени нового метода. Используйте `FillCategoryWithBinaryDataByCategoryID` и `GetCategoryWithBinaryDataByCategoryID` для заполнения таблицы данных и возвращают объект DataTable шаблоны, соответственно. Нажмите кнопку Готово, чтобы завершить работу мастера.
 
 
-[![CВыберите имена для методов TableAdapter s](uploading-files-vb/_static/image10.gif)](uploading-files-vb/_static/image15.png)
+[![Выберите имена для методов класса TableAdapter s](uploading-files-vb/_static/image10.gif)](uploading-files-vb/_static/image15.png)
 
 **Рис. 10**: Выберите имена для адаптера таблицы s методы ([Просмотр полноразмерного изображения](uploading-files-vb/_static/image16.png))
 
@@ -212,7 +212,7 @@ ASP.NET 2.0 новых [FileUpload веб-элемента управления]
 Для демонстрации отправки файлов, откройте `FileUpload.aspx` странице в `BinaryData` папки, перетащите элемент управления FileUpload из инструментария в конструктор и задать элемент управления s `ID` свойства `UploadTest`. Затем добавьте кнопку веб-элемент управления параметр его `ID` и `Text` свойства `UploadButton` и отправьте файл выбранные соответственно. Наконец, поместите элемент управления Label Web под кнопкой, очистите его `Text` и установите его `ID` свойства `UploadDetails`.
 
 
-[![Aдд элемента управления FileUpload на страницу ASP.NET](uploading-files-vb/_static/image12.gif)](uploading-files-vb/_static/image17.png)
+[![Добавление элемента управления FileUpload страницы ASP.NET](uploading-files-vb/_static/image12.gif)](uploading-files-vb/_static/image17.png)
 
 **Рис. 12**: Добавление элемента управления FileUpload страницы ASP.NET ([Просмотр полноразмерного изображения](uploading-files-vb/_static/image18.png))
 
@@ -220,7 +220,7 @@ ASP.NET 2.0 новых [FileUpload веб-элемента управления]
 Рис. 13 показана эта страница при просмотре через браузер. Обратите внимание, что нажатие кнопки обзора можно открыть диалоговое окно выбора файла, позволяя пользователю выбрать файл со своего компьютера. После выбора файла нажмите кнопку Отправить выбранный файл вызывает обратную передачу, отправляет двоичное содержимое s выбранный файл веб-сервер.
 
 
-[![Tон пользователя можно выбрать файл для передачи со своего компьютера к серверу](uploading-files-vb/_static/image13.gif)](uploading-files-vb/_static/image19.png)
+[![Пользователь может выбрать файл для передачи со своего компьютера к серверу](uploading-files-vb/_static/image13.gif)](uploading-files-vb/_static/image19.png)
 
 **Рис. 13**: Пользователь может выбрать файл для передачи со своего компьютера к серверу ([Просмотр полноразмерного изображения](uploading-files-vb/_static/image20.png))
 
@@ -241,7 +241,7 @@ FileUpload s `SaveAs(filePath)` сохраняет переданный файл
 После завершения `Click` обработчик событий, пора протестировать страницу в браузере. Нажмите кнопку обзора и выберите файл с жесткого диска и нажмите кнопку Отправить выбранный файл. Обратная передача будет отправлять содержимое выбранного файла на веб-сервер, который затем будет отображать сведения о файле, прежде чем сохранить его для `~/Brochures` папки. После отправки файла, вернитесь в Visual Studio, а затем нажмите кнопку "Обновить" в обозревателе решений. Вы увидите файл, загруженный в папке ~/Brochures!
 
 
-[![Tон EvolutionValley.jpg передачи файлов на веб-сервер](uploading-files-vb/_static/image14.gif)](uploading-files-vb/_static/image21.png)
+[![Файл EvolutionValley.jpg будут переданы на веб-сервер](uploading-files-vb/_static/image14.gif)](uploading-files-vb/_static/image21.png)
 
 **Рис. 14**: Файл `EvolutionValley.jpg` будут переданы на веб-сервер ([Просмотр полноразмерного изображения](uploading-files-vb/_static/image22.png))
 
@@ -277,7 +277,7 @@ FileUpload s `SaveAs(filePath)` сохраняет переданный файл
 
 Дополнительные сведения по темам, обсуждавшимся в этом руководстве см. в следующих ресурсах:
 
-- [Использование типов данных большого размера](https://msdn.microsoft.com/library/ms178158.aspx)
+- [Использование типов данных больших значений](https://msdn.microsoft.com/library/ms178158.aspx)
 - [Примеры использования элемента управления fileUpload](https://quickstarts.asp.net/QuickStartv20/aspnet/doc/ctrlref/standard/fileupload.aspx)
 - [Серверный элемент управления ASP.NET 2.0 FileUpload](http://www.wrox.com/WileyCDA/Section/id-292158.html)
 - [Оборотная сторона передаваемых файлов](http://www.aspnetresources.com/articles/dark_side_of_file_uploads.aspx)

@@ -12,7 +12,7 @@ ms.openlocfilehash: b4c6d850062e1b65eacd97ffc4f34c80fedea503
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404316"
 ---
 # <a name="aspnet-signalr-hubs-api-guide---javascript-client"></a>Руководство по API концентраторов ASP.NET SignalR — клиент JavaScript
@@ -29,7 +29,7 @@ ms.locfileid: "59404316"
 > ## <a name="software-versions-used-in-this-topic"></a>Версии программного обеспечения, используемого в этом разделе
 >
 >
-> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
+> - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
 > - .NET 4.5
 > - SignalR версии 2
 >

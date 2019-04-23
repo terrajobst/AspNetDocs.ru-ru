@@ -12,7 +12,7 @@ ms.openlocfilehash: 6dda18eb27d45f8dfdb4803cf3aca3ffe96bf11e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406565"
 ---
 # <a name="debugging-stored-procedures-vb"></a>Отладка хранимых процедур (VB)
@@ -67,7 +67,7 @@ Visual Studio позволяет легко выполнять прямую от
 После предоставления значение `@CategoryID` параметра, хранимая процедура выполняется. Однако вместо запуска до завершения, отладчик останавливает выполнение на первой инструкции. Обратите внимание, желтая стрелка на поле, указывающее текущее расположение в хранимой процедуре. Можно просмотреть и изменить значения параметров в окне контрольных значений, так и навести указатель мыши на имя параметра в хранимой процедуре.
 
 
-[![Tон отладчика остановлена на первой инструкции хранимой процедуры](debugging-stored-procedures-vb/_static/image3.png)](debugging-stored-procedures-vb/_static/image2.png)
+[![Произошла остановка отладчика на первой инструкции хранимой процедуры](debugging-stored-procedures-vb/_static/image3.png)](debugging-stored-procedures-vb/_static/image2.png)
 
 **Рис. 2**: Произошла остановка отладчика на первой инструкции хранимой процедуры ([Просмотр полноразмерного изображения](debugging-stored-procedures-vb/_static/image4.png))
 
@@ -85,7 +85,7 @@ Visual Studio позволяет легко выполнять прямую от
 Прежде чем можно приступать к отладке хранимых процедур, вызывается из приложения, необходимо указать веб-приложение ASP.NET для интеграции с помощью отладчика SQL Server. Запустите правой кнопкой мыши на имя веб-сайта в обозревателе решений (`ASPNET_Data_Tutorial_74_VB`). Параметр страницы свойств в контекстном меню, выберите элемент "Параметры запуска" в левой части, а также установите флажок SQL Server в разделе отладчики (см. рис. 3).
 
 
-[![CПроверка флажок SQL Server в приложение s страницы свойств](debugging-stored-procedures-vb/_static/image6.png)](debugging-stored-procedures-vb/_static/image5.png)
+[![Установите флажок SQL Server на страницах свойств приложения s](debugging-stored-procedures-vb/_static/image6.png)](debugging-stored-procedures-vb/_static/image5.png)
 
 **Рис. 3**: Установите флажок SQL Server в приложение s страницы свойств ([Просмотр полноразмерного изображения](debugging-stored-procedures-vb/_static/image7.png))
 
@@ -108,7 +108,7 @@ Visual Studio позволяет легко выполнять прямую от
 Откройте `Products_SelectByCategoryID` хранимой процедуры и установите точку останова в начале `SELECT` инструкции, щелкнув в поле в соответствующее место или поместив курсор в начале `SELECT` инструкции и нажав клавишу F9. Как показано на рис. 4, точка останова отображается в виде красного круга в поле.
 
 
-[![Sзадать точку останова в Products_SelectByCategoryID хранимой процедуры](debugging-stored-procedures-vb/_static/image9.png)](debugging-stored-procedures-vb/_static/image8.png)
+[![Установите точку останова в Products_SelectByCategoryID хранимой процедуры](debugging-stored-procedures-vb/_static/image9.png)](debugging-stored-procedures-vb/_static/image8.png)
 
 **Рис. 4**: Установите точку останова в `Products_SelectByCategoryID` хранимой процедуры ([Просмотр полноразмерного изображения](debugging-stored-procedures-vb/_static/image10.png))
 
@@ -126,12 +126,12 @@ Visual Studio позволяет легко выполнять прямую от
 `Products_SelectByCategoryID` Хранимая процедура была создана в [существующих хранимых процедур для адаптеров таблиц TableAdapter типизированного набора DataSet s](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb.md) руководства. Его соответствующей веб-страницы (`~/AdvancedDAL/ExistingSprocs.aspx`) содержит GridView, отображающий результаты, возвращаемые этой хранимой процедуры. Посетите эту страницу в браузере. При достижении странице точки останова в `Products_SelectByCategoryID` хранимая процедура будет достигнута и системы управления версиями вернул в Visual Studio. Так же, как на шаге 1, можно пошагово s инструкции хранимой процедуры и представления и измените значения параметров.
 
 
-[![TИзначально он ExistingSprocs.aspx страница отображает напитков](debugging-stored-procedures-vb/_static/image13.png)](debugging-stored-procedures-vb/_static/image12.png)
+[![На странице ExistingSprocs.aspx изначально отображается «Напитки»](debugging-stored-procedures-vb/_static/image13.png)](debugging-stored-procedures-vb/_static/image12.png)
 
 **Рис. 6**: `ExistingSprocs.aspx` Страницы изначально отображает напитков ([Просмотр полноразмерного изображения](debugging-stored-procedures-vb/_static/image14.png))
 
 
-[![Tон хранимой процедуры s точка останова был достигнут](debugging-stored-procedures-vb/_static/image16.png)](debugging-stored-procedures-vb/_static/image15.png)
+[![Хранимая процедура s достижении точки останова](debugging-stored-procedures-vb/_static/image16.png)](debugging-stored-procedures-vb/_static/image15.png)
 
 **Рис. 7**: Хранимая процедура s, достигнута точка останова ([Просмотр полноразмерного изображения](debugging-stored-procedures-vb/_static/image17.png))
 
@@ -139,12 +139,12 @@ Visual Studio позволяет легко выполнять прямую от
 Как показано на рис. 7, значение в окно Watch `@CategoryID` параметр имеет значение 1. Это обусловлено `ExistingSprocs.aspx` страницы изначально отображает продукты в категории «Напитки», который имеет `CategoryID` значение 1. Выберите другую категорию в раскрывающемся списке. Это вызывает обратную передачу и повторно выполняет `Products_SelectByCategoryID` хранимой процедуры. Точка останова достигается снова, но на этот раз `@CategoryID` выбранного раскрывающегося элемента списка s отражает значение параметра s `CategoryID`.
 
 
-[![CВыберите другую категорию из раскрывающегося списка](debugging-stored-procedures-vb/_static/image19.png)](debugging-stored-procedures-vb/_static/image18.png)
+[![Выберите другую категорию в раскрывающемся списке](debugging-stored-procedures-vb/_static/image19.png)](debugging-stored-procedures-vb/_static/image18.png)
 
 **Рис. 8**: Выберите другую категорию в раскрывающемся списке ([Просмотр полноразмерного изображения](debugging-stored-procedures-vb/_static/image20.png))
 
 
-[![Tон @CategoryID параметр отражает в категории, выбранные на странице веб](debugging-stored-procedures-vb/_static/image22.png)](debugging-stored-procedures-vb/_static/image21.png)
+[![@CategoryID Параметр отражает категории, выбранные из веб-страницы](debugging-stored-procedures-vb/_static/image22.png)](debugging-stored-procedures-vb/_static/image21.png)
 
 **Рис. 9**: `@CategoryID` Параметр отражает в категории, выбранные из веб-страницы ([Просмотр полноразмерного изображения](debugging-stored-procedures-vb/_static/image23.png))
 

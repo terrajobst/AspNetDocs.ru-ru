@@ -12,7 +12,7 @@ ms.openlocfilehash: bf9930a3704d4ae6f0cb012a1512e23b29435f76
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59400195"
 ---
 # <a name="displaying-data-with-the-datalist-and-repeater-controls-c"></a>Отображение данных с помощью элементов управления DataList и Repeater (C#)
@@ -51,7 +51,7 @@ ms.locfileid: "59400195"
 Откройте `Default.aspx` страницы и перетащите `SectionLevelTutorialListing.ascx` пользовательского элемента управления с `UserControls` папку в область конструктора. Данный пользовательский элемент управления, созданный в учебном курсе [главные страницы и структуру переходов узла](../introduction/master-pages-and-site-navigation-cs.md) , просматривает карту узла и отображает руководства из текущего раздела в виде маркированного списка.
 
 
-[![Aдд пользовательского элемента управления SectionLevelTutorialListing.ascx к странице Default.aspx](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image3.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image2.png)
+[![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image3.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image2.png)
 
 **Рис. 2**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image4.png))
 
@@ -72,7 +72,7 @@ ms.locfileid: "59400195"
 Подобно FormView, s, выводимые данные элемента управления DataList зависит от шаблонов вместо полей BoundField, CheckBoxFields и т. д. В отличие от FormView DataList предназначена для отображения набора записей, а не одиночной. Позвольте s работы с этим руководством с рассмотрения привязки информации о продукте, чтобы элемент управления DataList. Сначала откройте `Basics.aspx` странице в `DataListRepeaterBasics` папку. Затем перетащите элемент управления DataList из инструментария в конструктор. Как показано на рис. 4, перед указанием шаблонов элементов управления DataList s, он отображается в конструкторе как серый квадрат.
 
 
-[![Dрваный край элемента управления DataList из панели элементов на конструкторе](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image7.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image6.png)
+[![Перетащите элемент DataList из инструментария в конструктор](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image7.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image6.png)
 
 **Рис. 4**: Перетащите элемент управления DataList из панели элементов на конструктор ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image8.png))
 
@@ -80,17 +80,17 @@ ms.locfileid: "59400195"
 Из элемента управления DataList s смарт-теге, добавьте новый элемент управления ObjectDataSource и настроить его для использования `ProductsBLL` класс s `GetProducts` метод. Так как мы повторно создание элементов управления DataList только для чтения в этом руководстве установлено стрелку раскрывающегося списка (нет) в s мастер вставки, обновления и удаления вкладок.
 
 
-[![OPT для создания нового источника ObjectDataSource](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image10.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image9.png)
+[![Создадим новый элемент управления ObjectDataSource](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image10.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image9.png)
 
 **Рис. 5**: Решили создать новый элемент управления ObjectDataSource ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image11.png))
 
 
-[![CНастройка ObjectDataSource на использование класса ProductsBLL](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image13.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image12.png)
+[![Настройка ObjectDataSource на использование класса ProductsBLL](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image13.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image12.png)
 
 **Рис. 6**: Настройка ObjectDataSource для использования `ProductsBLL` класс ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image14.png))
 
 
-[![Rзагружать сведения о всех продуктах с помощью метода GetProducts](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image16.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image15.png)
+[![Получение информации обо всех продуктах с помощью метода GetProducts](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image16.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image15.png)
 
 **Рис. 7**: Получить сведения о всех продуктах с помощью `GetProducts` метод ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image17.png))
 
@@ -120,7 +120,7 @@ ms.locfileid: "59400195"
 Таким образом при работе с DataList, которая предоставляет возможность правки шаблонов через конструктор, я предпочитаю использовать элементы управления Label Web, чтобы содержимое было доступно через интерфейс редактирования шаблонов. Как скоро можно будет увидеть, элементу управления Repeater требует, что содержимое шаблона s редактироваться в представлении источника. Следовательно при берет на себя создание шаблонов s по элементу управления Repeater, я часто не будем Label Web элементов управления, если я знаю, что необходимо форматировать внешний вид данных привязан текста на основе программной логики.
 
 
-[![EACH продукта s выходные данные — к просмотру с помощью элементов управления DataList s ItemTemplate](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image19.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image18.png)
+[![Каждый продукт s выходные данные — к просмотру с помощью s ItemTemplate элемента управления DataList](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image19.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image18.png)
 
 **Рис. 8**: Выходные данные каждого продукта s — к просмотру с помощью элементов управления DataList s `ItemTemplate` ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image20.png))
 
@@ -134,7 +134,7 @@ ms.locfileid: "59400195"
 Чтобы добавить файл обложки, щелкните правой кнопкой мыши `App_Themes/DataWebControls` папку, выберите команду Добавить новый элемент и выберите файл обложки из списка. Назовите файл `DataList.skin`.
 
 
-[![Cсоздать новый обложки файл с именем DataList.skin](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image22.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image21.png)
+[![Создание нового файла обложки, именуемого DataList.skin](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image22.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image21.png)
 
 **Рис. 9**: Создание нового файла обложки с именем `DataList.skin` ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image23.png))
 
@@ -149,7 +149,7 @@ ms.locfileid: "59400195"
 С добавлением этого файла обложки внешний вид элемента управления DataList обновляется в конструкторе (может потребоваться обновить представление конструктора, чтобы увидеть воздействие нового файла обложки; из меню "Вид", выберите "Обновить"). Как показано на рис. 10, каждого второго продукта имеет Светло-розовый фон цвет.
 
 
-[![Cсоздать новый обложки файл с именем DataList.skin](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image25.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image24.png)
+[![Создание нового файла обложки, именуемого DataList.skin](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image25.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image24.png)
 
 **Рис. 10**: Создание нового файла обложки с именем `DataList.skin` ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image26.png))
 
@@ -174,7 +174,7 @@ ms.locfileid: "59400195"
 В нашем примере позволяют s имеют заголовок отображается в верхней части элемента управления DataList s приводит сведения о продукте `<h3>` заголовок. Для этого добавьте `HeaderTemplate` соответствующая разметка. В конструкторе, это можно сделать, щелкнув ссылку Изменить шаблоны в смарт-теге элемента управления DataList s, выбрав шаблон заголовка из раскрывающегося списка и введя текст, когда вы выберете параметр заголовок 3 из раскрывающегося списка стиля списка (см. рис. 11).
 
 
-[![Aдд шаблона HeaderTemplate с сведения о продукте текст](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image28.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image27.png)
+[![Добавление шаблона HeaderTemplate с сведения о продукте текста](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image28.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image27.png)
 
 **Рис. 11**: Добавить `HeaderTemplate` с сведения о продукте текст ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image29.png))
 
@@ -196,7 +196,7 @@ ms.locfileid: "59400195"
 После этого добавления при просмотре страницы в обозревателе это должно выглядеть на рис. 12. Обратите внимание на то, строку заголовка и линейку между каждым списком продуктов.
 
 
-[![Tон DataList включает строку заголовка и горизонтальные правило между Each списка продуктов](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image31.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image30.png)
+[![В элементе DataList имеются строка заголовка и горизонтальные линии между перечислениями продуктов](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image31.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image30.png)
 
 **Рис. 12**: В элементе DataList имеются строка заголовка и горизонтальные правило между Each списка продуктов ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image32.png))
 
@@ -227,7 +227,7 @@ ms.locfileid: "59400195"
 Для этого запустите, перетащив элемент управления Repeater из области элементов в конструктор над DataList сведения продукта. Как и в DataList, Repeater изначально отображается как серый квадрат пока его шаблоны определены.
 
 
-[![Aдд элемента управления Repeater в конструктор](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image34.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image33.png)
+[![Добавление элемента управления Repeater в конструктор](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image34.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image33.png)
 
 **Рис. 13**: Добавление элемента управления Repeater в конструктор ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image35.png))
 
@@ -235,17 +235,17 @@ ms.locfileid: "59400195"
 Существует только один параметр s в элементу управления Repeater s смарт-тег: Выберите источник данных. Необязательно для создания нового источника ObjectDataSource и настроить его для использования `CategoriesBLL` класс s `GetCategories` метод.
 
 
-[![CСоздание нового источника ObjectDataSource](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image37.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image36.png)
+[![Создайте новый ObjectDataSource](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image37.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image36.png)
 
 **Рис. 14**: Создайте новый ObjectDataSource ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image38.png))
 
 
-[![CНастройка ObjectDataSource на использование класса CategoriesBLL](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image40.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image39.png)
+[![Настройка ObjectDataSource на использование класса CategoriesBLL](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image40.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image39.png)
 
 **Рис. 15**: Настройка ObjectDataSource для использования `CategoriesBLL` класс ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image41.png))
 
 
-[![Rзагружать сведения о всех категориях с помощью метода GetCategories](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image43.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image42.png)
+[![Получение информации обо всех категориях с помощью метода GetCategories](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image43.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image42.png)
 
 **Рис. 16**: Получить сведения о всех категорий с помощью `GetCategories` метод ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image44.png))
 
@@ -265,7 +265,7 @@ ms.locfileid: "59400195"
 Repeater создает точную разметку в соответствии с шаблонами, не более и не меньше. Рис. 17 показаны выходные данные элемента управления Repeater s при просмотре через браузер.
 
 
-[![A Однострочный HTML &lt;таблицы&gt; перечислены каждой категории в отдельном столбце](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image46.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image45.png)
+[![HTML однострочный &lt;таблицы&gt; перечислены каждой категории в отдельном столбце](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image46.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image45.png)
 
 **Рис. 17**: HTML однострочный `<table>` перечислены каждой категории в отдельном столбце ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image47.png))
 
@@ -292,7 +292,7 @@ Repeater создает точную разметку в соответстви�
 Рис. 18 показана элементу управления Repeater, после внесения этих изменений.
 
 
-[![Tон категории столбцы альтернативного цвет фона и включает строку заголовка](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image49.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image48.png)
+[![Столбцы категорий имеют чередующийся фоновый цвет и включает строку заголовка](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image49.png)](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image48.png)
 
 **Рис. 18**: Категория столбцы альтернативного цвет фона и включает строку заголовка ([Просмотр полноразмерного изображения](displaying-data-with-the-datalist-and-repeater-controls-cs/_static/image50.png))
 
@@ -316,4 +316,4 @@ Repeater создает точную разметку в соответстви�
 В этой серии руководств пособий рецензировалась многими компетентными редакторами. Эллис (Yaakov Ellis), (Liz Shulok), Рэнди Шмидт и Стейси парк, стали Лиз Шалок в этом руководстве. Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
-> [Далее](formatting-the-datalist-and-repeater-based-upon-data-cs.md)
+> [Вперед](formatting-the-datalist-and-repeater-based-upon-data-cs.md)

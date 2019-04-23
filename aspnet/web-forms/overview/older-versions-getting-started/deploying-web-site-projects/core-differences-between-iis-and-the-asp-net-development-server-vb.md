@@ -12,7 +12,7 @@ ms.openlocfilehash: e156b15356b02c25ad3dbb082096fc41ee35e465
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59403705"
 ---
 # <a name="core-differences-between-iis-and-the-aspnet-development-server-vb"></a>Основные различия между IIS и ASP.NET Development Server (VB)
@@ -50,7 +50,7 @@ ASP.NET Development Server связывает входящие запросы в
 Затем посетите *обучение самостоятельно ASP.NET 3.5 за 24 часа* страница «Просмотр книги» в среде разработки с использованием сервера разработки ASP.NET. Предположим, что вы вошли в систему с учетной записью, которая имеет достаточные разрешения для создания и изменения в текстовый файл в Интернете корневого каталога приложения рецензии на книгу отображается теми же самыми, но каждый раз, когда страница посещен даты и времени пользователя  IP-адрес хранится в `LastTYASP35Access.txt` файл. Перейдите в браузере к этому файлу; Вы увидите сообщение, подобное показанному на рис. 1.
 
 
-[![Tон текстовый файл содержит последнюю дату и время, рецензии на книгу был посещен&lt;](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image2.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image1.png)
+[![Текстовый файл содержит последнюю дату и время, был посещен рецензии на книгу&lt;](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image2.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image1.png)
 
 **Рис. 1**: Текстовый файл содержит последнюю дату и время, был посещен рецензии на книгу ([Просмотр полноразмерного изображения](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image3.png))
 
@@ -58,7 +58,7 @@ ASP.NET Development Server связывает входящие запросы в
 Развертывание веб-приложения в рабочую среду и затем посетите размещаемый *обучение самостоятельно ASP.NET 3.5 за 24 часа* страница «Просмотр» для книги. На этом этапе вы должны либо см. в разделе на странице проверки нормального распределения или сообщение об ошибке, которое показано на рис. 2. Некоторые веб-узла поставщиками предоставить разрешения на запись для анонимных ASP.NET учетной записи компьютера, в котором регистр страницы будет работать без ошибок. Если, однако на поставщике веб-размещения запрещен доступ для записи для анонимной учетной записью исключение [ `UnauthorizedAccessException` исключение](https://msdn.microsoft.com/library/system.unauthorizedaccessexception.aspx) происходит при попытке `TYASP35.aspx` страницы, пытается выполнить запись текущей даты и времени в `LastTYASP35Access.txt` файл.
 
 
-[![Tон по умолчанию машины учетная запись используется службами IIS не имеет разрешений на запись в файловой системе](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image5.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image4.png)
+[![Учетная запись компьютера по умолчанию, используемый службой IIS не имеет разрешения на запись в файловой системе](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image5.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image4.png)
 
 **Рис. 2**: По умолчанию машины учетная запись, используемая с IIS Does не имеют разрешения на запись в файловую систему ([Просмотр полноразмерного изображения](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image6.png))
 
@@ -96,7 +96,7 @@ ASP.NET Development Server связывает входящие запросы в
 Введите этот URL-адрес в адресную строку браузер для отправки запроса на сервер разработки ASP.NET для файла. Сервер ASP.NET Development Server передает запрос в среду выполнения ASP.NET для обработки. Так как мы еще не выполнили вход, а `Web.config` в `PrivateDocs` папка настроена для анонимного доступа, среда выполнения ASP.NET автоматически перенаправит нам на страницу входа, `Login.aspx` (см. рис. 3). При перенаправлении пользователя на страницу входа, ASP.NET включает в себя `ReturnUrl` параметр строки запроса, который показывает страницу, пользователь при попытке просмотра. После успешного входа пользователя могут возвращаться на эту страницу.
 
 
-[![Unauthorized пользователей будут автоматически перенаправлены на страницу входа](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image8.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image7.png)
+[![У пользователей, автоматически перенаправляется на страницу входа](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image8.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image7.png)
 
 **Рис. 3**: У пользователей, автоматически перенаправляется на страницу входа ([Просмотр полноразмерного изображения](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image9.png))
 
@@ -104,7 +104,7 @@ ASP.NET Development Server связывает входящие запросы в
 Теперь давайте посмотрим, как это ведет себя в рабочей среде. Развернуть приложение и введите прямой URL-адрес к одному из файлов PDF из `PrivateDocs` папку в рабочей среде. Вам предложат указать браузер для отправки запроса IIS для файла. Так как запрашивается статического файла, IIS извлекает и возвращает файл без вызова среды выполнения ASP.NET. В результате было выполнено; проверка авторизации не URL-адрес содержимое мы предполагаем, что закрытый PDF-ФАЙЛ доступны любой пользователь, знающий прямой URL-адрес к файлу.
 
 
-[![AАнонимные пользователи можно загрузить закрытый PDF файлы, введя прямой URL-адрес к файлу](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image11.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image10.png)
+[![Анонимные пользователи могут загрузить PDF-файлы закрытого, введя прямой URL-адрес к файлу](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image11.png)](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image10.png)
 
 **Рис. 4**: Анонимные пользователи могут загрузить закрытый PDF файлы, введя прямой URL-адрес к файлу ([Просмотр полноразмерного изображения](core-differences-between-iis-and-the-asp-net-development-server-vb/_static/image12.png))
 

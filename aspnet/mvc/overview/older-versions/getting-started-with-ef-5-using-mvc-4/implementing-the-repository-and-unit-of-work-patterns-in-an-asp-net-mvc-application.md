@@ -12,7 +12,7 @@ ms.openlocfilehash: 71ff3c269c5d1ed43a67d19442eda8e9d4728295
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59405707"
 ---
 # <a name="implementing-the-repository-and-unit-of-work-patterns-in-an-aspnet-mvc-application-9-of-10"></a>Реализация репозитория и шаблонов Unit of Work в приложении ASP.NET MVC (9 из 10)
@@ -123,7 +123,7 @@ ms.locfileid: "59405707"
 
 > [!TIP]
 > 
-> **IQueryable vs. IEnumerable**
+> **IQueryable vs. Интерфейс IEnumerable**
 > 
 > После реализации хранилище как показано ниже, даже если введено в **поиска** поле запросов, отправленных на SQL Server возвращает все строки учащегося, так как в нем не указаны условия поиска:
 > 

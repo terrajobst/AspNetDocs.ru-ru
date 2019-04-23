@@ -12,7 +12,7 @@ ms.openlocfilehash: 86781a1f46ce0c01a5d70b1f0cf8a81f3f96a032
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59405928"
 ---
 # <a name="aspnet-mvc-4-dependency-injection"></a>Внедрение зависимостей в ASP.NET MVC 4
@@ -524,7 +524,7 @@ Music Store MVC, теперь предоставляются в решении b
 
     ![Ход установки](aspnet-mvc-4-dependency-injection/_static/image16.png)
 
-    *Ход установки*
+    *Ход выполнения установки*
 6. После завершения установки нажмите кнопку **Готово**.
 
     ![Установка завершена](aspnet-mvc-4-dependency-injection/_static/image17.png)

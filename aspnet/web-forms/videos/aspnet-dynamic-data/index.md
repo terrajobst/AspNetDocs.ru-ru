@@ -12,7 +12,7 @@ ms.openlocfilehash: 11fca6096a1ada5df95971f2c77c8e72660ad864
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59400156"
 ---
 # <a name="aspnet-dynamic-data"></a>Платформа динамических данных ASP.NET
@@ -20,16 +20,16 @@ ms.locfileid: "59400156"
 > Как использовать ASP.NET Dynamic Data для создания шаблонный приложений, которые автоматически могут осуществлять доступ к данным.
 
 
-- [Формирование первого шаблона и общие сведения о платформе динамических данных](your-first-scaffold-and-what-is-dynamic-data.md)
+- [Формирование первого шаблона и общие сведения о динамических данных](your-first-scaffold-and-what-is-dynamic-data.md)
 - [Включение встроенного редактирования GridView](how-do-i-enable-inline-gridview-editing.md)
 - [Изменение отрисовки полей](how-do-i-change-how-my-fields-render.md)
 - [Обработка исключений логики бизнес-правил](how-do-i-handle-business-logic-exceptions.md)
 - [Создание пользовательских страниц](how-do-i-make-custom-pages.md)
 - [Отображение неизвестных типов данных](how-do-i-display-unknown-datatypes.md)
 - [Использование объектов DynamicControl в элементах управления ListView и DetailsView](how-do-i-use-a-dynamiccontrol-in-listview-and-detailsview-controls.md)
-- [Начало работы с платформой динамических данных](getting-started-with-dynamic-data.md)
+- [Начало работы с динамическими данными](getting-started-with-dynamic-data.md)
 - [Начало редактирования шаблонов в приложениях платформы динамических данных ASP.NET](begin-editing-the-templates-in-aspnet-dynamic-data-applications.md)
-- [Начало изменения приложений платформы динамических данных с помощью маршрутизации URL-адресов](begin-modifying-dynamic-data-applications-with-url-routing.md)
+- [Начало изменения динамических данных приложений с помощью маршрутизации URL-адресов](begin-modifying-dynamic-data-applications-with-url-routing.md)
 - [Включение встроенного редактирования в приложениях платформы динамических данных ASP.NET](enable-in-line-editing-in-aspnet-dynamic-data-applications.md)
 - [Включение связанной с таблицами маршрутизации в приложениях платформы динамических данных](how-to-enable-table-specific-routing-in-dynamic-data-applications.md)
 - [Использование проверки атрибутов в приложениях платформы динамических данных ASP.NET](how-to-use-attribute-validation-in-aspnet-dynamic-data-applications.md)

@@ -12,16 +12,16 @@ ms.openlocfilehash: 74ebdc39a81d31fb3c1ef3e5bab1857915cdc247
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59400946"
 ---
 # <a name="aspnet-single-page-application"></a>Страницы ASP.NET одного приложения
 
 - [Обзор](overview/index.md)
 
-    - [Вступление](overview/introduction/index.md)
+    - [Введение](overview/introduction/index.md)
 
-        - [Одностраничное приложение. Шаблон KnockoutJS](overview/introduction/knockoutjs-template.md)
+        - [Одностраничное приложение: Шаблон KnockoutJS](overview/introduction/knockoutjs-template.md)
         - [Библиотеки, доступные наряду с Knockout](overview/introduction/other-libraries.md)
     - [Шаблоны](overview/templates/index.md)
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: ae41660d96260991defc23c75d2dda5b9183585e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59400286"
 ---
 # <a name="web-forms-video-training-from-pluralsight"></a>Обучающее видео о веб-формах от Pluralsight
@@ -23,7 +23,7 @@ ms.locfileid: "59400286"
 - [Веб-форм ASP.NET функции](https://pluralsight.com/training/Player?author=dan-wahlin&name=webforms-02&mode=live&clip=0&course=aspdotnet-webforms4-intro)
 - [Работа с данными](https://pluralsight.com/training/Player?author=dan-wahlin&name=webforms-03&mode=live&clip=0&course=aspdotnet-webforms4-intro)
 - [Entity Framework](https://pluralsight.com/training/Player?author=dan-wahlin&name=webforms-04&mode=live&clip=0&course=aspdotnet-webforms4-intro)
-- [Эталонные страницы](https://pluralsight.com/training/Player?author=dan-wahlin&name=webforms-05&mode=live&clip=0&course=aspdotnet-webforms4-intro)
+- [Главные страницы](https://pluralsight.com/training/Player?author=dan-wahlin&name=webforms-05&mode=live&clip=0&course=aspdotnet-webforms4-intro)
 - [JavaScript и Ajax](https://pluralsight.com/training/Player?author=dan-wahlin&name=webforms-06&mode=live&clip=0&course=aspdotnet-webforms4-intro)
 - [Безопасность](https://pluralsight.com/training/Player?author=dan-wahlin&name=webforms-07&mode=live&clip=0&course=aspdotnet-webforms4-intro)
 - [С помощью динамических данных ASP.NET](https://pluralsight.com/training/Player?author=dan-wahlin&name=webforms-08&mode=live&clip=0&course=aspdotnet-webforms4-intro)

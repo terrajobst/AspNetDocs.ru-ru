@@ -13,7 +13,7 @@ ms.openlocfilehash: 9c5ef1e85f0b5ca7ead67dfe28a3a43f3e5c464a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59400039"
 ---
 # <a name="working-with-data-in-aspnet-web-api"></a>Работа с данными в веб-API ASP.NET
@@ -21,7 +21,7 @@ ms.locfileid: "59400039"
 > Как программировать CRUD (Создание, чтение, обновление и удаление) операций в веб-API.
 
 
-- [Использование веб-API 2 с Entity Framework 6](using-web-api-with-entity-framework/index.md)
+- [Использование веб-API 2 с Entity Framework 6](using-web-api-with-entity-framework/index.md)
 
     - [Создание проекта](using-web-api-with-entity-framework/part-1.md)
     - [Добавление моделей и контроллеров](using-web-api-with-entity-framework/part-2.md)
@@ -32,4 +32,4 @@ ms.locfileid: "59400039"
     - [Создание представления (пользовательский интерфейс)](using-web-api-with-entity-framework/part-7.md)
     - [Отображение сведений об элементе](using-web-api-with-entity-framework/part-8.md)
     - [Добавление нового элемента в базу данных](using-web-api-with-entity-framework/part-9.md)
-    - [Публикация приложения на веб-сайтах Azure](using-web-api-with-entity-framework/part-10.md)
+    - [Публикация приложения на веб-сайты Azure](using-web-api-with-entity-framework/part-10.md)

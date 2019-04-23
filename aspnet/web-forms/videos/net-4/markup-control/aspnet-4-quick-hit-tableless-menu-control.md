@@ -12,7 +12,7 @@ ms.openlocfilehash: 39e566a431d0e6382954c2cc2773451d20bc382b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402782"
 ---
 # <a name="aspnet-4-quick-hit--tableless-menu-control"></a>ASP.NET 4 «Быстрый Hit» — Бестабличный элемент управления Menu

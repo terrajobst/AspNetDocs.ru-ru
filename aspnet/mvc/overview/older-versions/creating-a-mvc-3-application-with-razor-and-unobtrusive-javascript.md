@@ -12,7 +12,7 @@ ms.openlocfilehash: 91c96cc413e63ad2fc160ffbb473c4f3e1ada3e4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401066"
 ---
 # <a name="creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript"></a>Создание приложения на MVC 3 с помощью Razor и ненавязчивого JavaScript
@@ -36,7 +36,7 @@ ms.locfileid: "59401066"
 
 Чтобы начать работу с учебником, откройте Visual Studio 2010 и создайте новый проект с помощью *веб-приложение ASP.NET MVC 3* шаблона. Присвойте приложению имя &quot;Mvc3Razor&quot;.
 
-[![Nновые возможности project MVC 3](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript/_static/image3.png)](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript/_static/image2.png)
+[![Новый проект MVC 3](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript/_static/image3.png)](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript/_static/image2.png)
 
 В **Создание проекта ASP.NET MVC 3** диалоговом окне выберите **веб-приложение**, выберите представлений Razor и нажмите кнопку **ОК**.
 

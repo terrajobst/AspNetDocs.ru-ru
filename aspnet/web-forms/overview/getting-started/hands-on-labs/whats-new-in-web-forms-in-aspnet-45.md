@@ -12,7 +12,7 @@ ms.openlocfilehash: 52f6ec17fb21019e93ebf2795e95d5b27e4edbe6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59401748"
 ---
 # <a name="whats-new-in-web-forms-in-aspnet-45"></a>Новые возможности веб-форм в ASP.NET 4.5
@@ -396,11 +396,11 @@ ms.locfileid: "59401748"
     [!code-csharp[Main](whats-new-in-web-forms-in-aspnet-45/samples/sample23.cs)]
 
     > [!NOTE]
-    > .NET framework 4.5 расширила существующей заметки коллекции данных. Ниже перечислены некоторые заметки данных, можно использовать: [CreditCard], [Phone], [EmailAddress], [диапазон], [сравнить], [Url], [FileExtensions], [Required], [ключ], [RegularExpression].
+    > .NET framework 4.5 расширила существующей заметки коллекции данных. Ниже перечислены некоторые заметки данных, можно использовать: [CreditCard], [Phone], [EmailAddress], [диапазон], [сравнить], [Url], [FileExtensions], [Required], [Key], [RegularExpression].
     > 
     > Вот несколько примеров использования.
     > 
-    > [Ключ]: Specifies that an attribute is the unique identifier
+    > [Key]: Specifies that an attribute is the unique identifier
     > 
     > [Range(0.4, 0.5, ErrorMessage=&quot;{Write an error message}&quot;]: Double range
     > 
@@ -650,7 +650,7 @@ ms.locfileid: "59401748"
 
     ![Ход установки](whats-new-in-web-forms-in-aspnet-45/_static/image27.png)
 
-    *Ход установки*
+    *Ход выполнения установки*
 6. После завершения установки нажмите кнопку **Готово**.
 
     ![Установка завершена](whats-new-in-web-forms-in-aspnet-45/_static/image28.png)

@@ -12,14 +12,14 @@ ms.openlocfilehash: 1500415c7ee017776c59acb05a2eaefc6956a41b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404716"
 ---
 # <a name="configuring-a-tfs-build-server-for-web-deployment"></a>Настройка сервера сборки TFS для веб-развертывания
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается Подготовка сервера сборки Team Foundation Server (TFS) для создания и развертывания решений с использованием Team Build и средство Internet Information Services (IIS) веб-развертывания (веб-развертывания).
 

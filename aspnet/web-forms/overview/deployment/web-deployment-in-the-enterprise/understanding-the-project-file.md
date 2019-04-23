@@ -12,14 +12,14 @@ ms.openlocfilehash: d774a8e13e108d1be4c39e1e909d3d9683968a0d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404927"
 ---
 # <a name="understanding-the-project-file"></a>Общие сведения о файле проекта
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Файлы проекта Microsoft Build Engine (MSBuild) лежат в основе процесса построения и развертывания. Этот раздел начинается с концептуальный обзор MSBuild и файл проекта. Он описывает ключевые компоненты, которые вы будете сталкиваться при работе с файлами проекта, и они работают, минуя пример того, как можно использовать файлы проекта для развертывания приложений в реальных условиях.
 > 

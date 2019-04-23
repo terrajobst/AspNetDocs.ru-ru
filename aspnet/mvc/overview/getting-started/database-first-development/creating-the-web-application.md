@@ -13,7 +13,7 @@ ms.openlocfilehash: 30fd42be5677df6fa6ee0630914098c30d21385b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59404524"
 ---
 # <a name="tutorial-create-the-web-application-and-data-models-for-ef-database-first-with-aspnet-mvc"></a>Учебник. Создание веб-приложения и модели данных для EF Database First с ASP.NET MVC
@@ -104,4 +104,4 @@ ms.locfileid: "59404524"
 
 Перейдите к следующему руководству, чтобы научиться создавать создания кода, на основе моделей данных.
 > [!div class="nextstepaction"]
-> [Создание представлений...](generating-views.md)
+> [Создание представлений](generating-views.md)

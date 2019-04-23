@@ -11,7 +11,7 @@ ms.openlocfilehash: c2f7ca2e7fb8d7831f21e3ba2f4713211657e1b3
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59402236"
 ---
 # <a name="getting-started-with-aspnet-mvc-5"></a>Приступая к работе с ASP.NET MVC 5
@@ -75,4 +75,4 @@ Visual Studio используется шаблон по умолчанию дл
 - [Активируйте преимущества для подписчиков Visual Studio](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers) -ваша подписка Visual Studio предоставляет вам кредиты каждый месяц, который можно использовать для оплаты служб Azure.
 
 > [!div class="step-by-step"]
-> [Далее](adding-a-controller.md)
+> [Вперед](adding-a-controller.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: 1dadbdb6fa1dc58b855402f1d6f18e8af861f756
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59399363"
 ---
 # <a name="enabling-signalr-tracing"></a>Включение трассировки SignalR
@@ -64,7 +64,7 @@ ms.locfileid: "59399363"
 
 Категории событий сервера включают следующие типы сообщений:
 
-| Исходный код | Сообщения |
+| Source | Сообщения |
 | --- | --- |
 | SignalR.SqlMessageBus | Установки поставщика SQL канала сообщений горизонтального масштабирования, операция базы данных, ошибки и события времени ожидания |
 | SignalR.ServiceBusMessageBus | Создание раздела поставщика для горизонтального масштабирования службы шины и подписки, ошибок и событий сообщений |

@@ -12,7 +12,7 @@ ms.openlocfilehash: 66b6df78a8ffed3ea7c586a995b8df8563d908bb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59407215"
 ---
 # <a name="configuring-the-production-web-application-to-use-the-production-database-vb"></a>Настройка рабочего веб-приложения для использования рабочей базы данных (VB)
@@ -53,7 +53,7 @@ ms.locfileid: "59407215"
 Откройте Visual Studio и перейдите в окно обозревателя сервера (в Visual Web Developer, это окно называется обозреватель баз данных). Щелкните правой кнопкой мыши на параметр подключения к данным и выберите параметр Добавить подключение в контекстном меню. Откроется мастер, показанный на рис. 1. Выберите необходимый источник данных и нажмите кнопку Продолжить.
 
 
-[![CВыберите, чтобы добавить новую базу данных в проводник по серверам](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image2.jpg)](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image1.jpg) 
+[![Выберите Добавить новую базу данных в проводник по серверам](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image2.jpg)](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image1.jpg) 
 
 **Рис. 1**: Выберите Добавить новую базу данных в проводник по серверам ([Просмотр полноразмерного изображения](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image3.jpg))
 
@@ -61,7 +61,7 @@ ms.locfileid: "59407215"
 Затем укажите различных базы данных сведения о подключении (см. рис. 2). Если вы зарегистрировались с помощью веб-хостинга компанию, они должны предоставлять сведения о том, как подключиться к базе данных — имя сервера базы данных, имя базы данных, имя пользователя и пароль, используемый для соединения с базой данных и т. д. После ввода этой информации нажмите кнопку ОК для завершения работы мастера и добавления базы данных в проводник по серверам.
 
 
-[![SУкажите подключение к базе данных](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image5.jpg)](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image4.jpg) 
+[![Укажите подключение к базе данных](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image5.jpg)](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image4.jpg) 
 
 **Рис. 2**: Укажите подключение к базе данных ([Просмотр полноразмерного изображения](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image6.jpg))
 
@@ -91,7 +91,7 @@ ms.locfileid: "59407215"
 После развертывания сайта в рабочей среде, посетите на рабочем сайте через браузер. Следует см. в разделе и наслаждайтесь подобное удобство работы как при локальном запуске приложения, управляемые данными. Само собой при посещении веб-сайта в рабочей среде сайт основан на рабочий сервер базы данных, тогда как посетить веб-сайт в среде разработки используется база данных в разработке. Рис. 3 показан *обучение самостоятельно ASP.NET 3.5 за 24 часа* просмотрите страницу с веб-сайта в рабочей среде (Обратите внимание, URL-адрес в адресной строке браузера s).
 
 
-[![Tон управляемые данными приложения является теперь доступны в рабочей среде!](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image8.jpg)](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image7.jpg) 
+[![Управляемые данными приложения — теперь доступны в рабочей среде!](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image8.jpg)](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image7.jpg) 
 
 **Рис. 3**: Управляемые данными приложения — теперь доступны в рабочей среде! ([Просмотр полноразмерного изображения](configuring-the-production-web-application-to-use-the-production-database-vb/_static/image9.jpg))
 

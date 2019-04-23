@@ -12,7 +12,7 @@ ms.openlocfilehash: bb9ae940ba90620a6a4c2d373117635f80e14588
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59397452"
 ---
 # <a name="building-real-world-cloud-apps-with-azure"></a>Создание реальных облачных приложений в Azure
@@ -20,7 +20,7 @@ ms.locfileid: "59397452"
 > Создание реальных облачных приложений в Azure
 
 
-- [Вступление](introduction.md)
+- [Введение](introduction.md)
 - [Полная автоматизация](automate-everything.md)
 - [Система управления версиями](source-control.md)
 - [Непрерывная интеграция и поставка](continuous-integration-and-continuous-delivery.md)
@@ -35,4 +35,4 @@ ms.locfileid: "59397452"
 - [Распределенное кэширование](distributed-caching.md)
 - [Рабочий шаблон на основе очередей](queue-centric-work-pattern.md)
 - [Дополнительные шаблоны и рекомендации](more-patterns-and-guidance.md)
-- [Приложение. Пример приложения для устранения проблем](the-fix-it-sample-application.md)
+- [Приложение. Исправление пример приложения](the-fix-it-sample-application.md)

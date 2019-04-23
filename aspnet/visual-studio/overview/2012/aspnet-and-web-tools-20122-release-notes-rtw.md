@@ -12,7 +12,7 @@ ms.openlocfilehash: e4545f36d5a2668bc6a21249a89a94ece9bb2ca2
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59397985"
 ---
 # <a name="aspnet-and-web-tools-20122-release-notes"></a>ASP.NET и веб-инструменты 2012.2 — заметки о выпуске
@@ -26,7 +26,7 @@ ms.locfileid: "59397985"
 - [Требования к программному обеспечению](#_Software_Requirements)
 - [Новые возможности в ASP.NET и веб-инструменты 2012.2](#_New_Features_in)
 
-    - [Инструментарий](#_Tooling)
+    - [инструментарий](#_Tooling);
     - [Веб-публикации](#_Web_Publishing)
     - [Шаблоны ASP.NET MVC](#_Templates)
     - [ASP.NET Web API](#_ASP.NET_Web_API)

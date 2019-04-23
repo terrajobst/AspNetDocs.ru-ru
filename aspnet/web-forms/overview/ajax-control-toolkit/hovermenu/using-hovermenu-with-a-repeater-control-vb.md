@@ -12,7 +12,7 @@ ms.openlocfilehash: 963850e1048d4fde573f28244fd32d0c4232fda4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59399194"
 ---
 # <a name="using-hovermenu-with-a-repeater-control-vb"></a>Использование HoverMenu с элементом управления Repeater (VB)
@@ -53,7 +53,7 @@ ms.locfileid: "59399194"
 Теперь каждый элемент в источнике данных отображает контекстное меню справа (`PopupPosition` атрибут) с задержкой в 50 мс (`PopDelay` атрибут).
 
 
-[![Tон меню при наведении указателя мыши отображается рядом с каждым элементом в элементу управления repeater](using-hovermenu-with-a-repeater-control-vb/_static/image2.png)](using-hovermenu-with-a-repeater-control-vb/_static/image1.png)
+[![Меню при наведении указателя мыши отображается рядом с каждым элементом в элементу управления repeater](using-hovermenu-with-a-repeater-control-vb/_static/image2.png)](using-hovermenu-with-a-repeater-control-vb/_static/image1.png)
 
 Меню при наведении указателя мыши отображается рядом с каждым элементом в элементу управления repeater ([Просмотр полноразмерного изображения](using-hovermenu-with-a-repeater-control-vb/_static/image3.png))
 

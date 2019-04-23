@@ -12,10 +12,10 @@ ms.openlocfilehash: 197aadb65bb68d8cdb9d32ff5f98104de366447d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59407800"
 ---
 # <a name="webmatrix-readme"></a>Файл сведений для WebMatrix
 
 - [Файл сведений для WebMatrix](overview.md)
-- [Файл сведений для Web Matrix и выпуска бета-версии 3 веб-страниц ASP.NET (Razor)](beta3.md)
+- [Файл сведений для Web Matrix и выпуска бета-версии 3 веб-страниц ASP.NET (Razor)](beta3.md)

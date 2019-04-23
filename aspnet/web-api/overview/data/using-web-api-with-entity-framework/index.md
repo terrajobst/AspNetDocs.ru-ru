@@ -12,7 +12,7 @@ ms.openlocfilehash: 77d34da5881f52593a76572561c3144cd2864a3a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59406548"
 ---
 # <a name="using-web-api-2-with-entity-framework-6"></a>Использование веб-API 2 с Entity Framework 6
@@ -29,4 +29,4 @@ ms.locfileid: "59406548"
 - [Создание представления (пользовательский интерфейс)](part-7.md)
 - [Отображение сведений об элементе](part-8.md)
 - [Добавление нового элемента в базу данных](part-9.md)
-- [Публикация приложения на веб-сайтах Azure](part-10.md)
+- [Публикация приложения на веб-сайты Azure](part-10.md)

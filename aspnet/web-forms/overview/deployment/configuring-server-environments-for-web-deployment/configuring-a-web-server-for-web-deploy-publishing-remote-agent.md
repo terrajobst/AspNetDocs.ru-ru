@@ -12,14 +12,14 @@ ms.openlocfilehash: d915cb5d7d40bb2cc355a5e45befe124a7b60dc4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59398492"
 ---
 # <a name="configuring-a-web-server-for-web-deploy-publishing-remote-agent"></a>Настройка веб-сервера для публикации веб-развертывания (удаленный агент)
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описываются способы настройки веб-сервер Internet Information Services (IIS), для поддержки веб-публикации и развертывания, используя службу удаленного агента средство веб-развертывания IIS (веб-развертывания).
 > 

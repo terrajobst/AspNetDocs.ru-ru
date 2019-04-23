@@ -12,7 +12,7 @@ ms.openlocfilehash: 9dbaf1cbf7eb89a47c1e7e388c4dc35b9900b97d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59399116"
 ---
 # <a name="getting-started-with-aspnet-mvc-3-vbnet"></a>Начало работы с ASP.NET MVC 3 (VB.NET)
@@ -20,7 +20,7 @@ ms.locfileid: "59399116"
 > Основы создания MVC веб-приложения ASP.NET с помощью Microsoft Visual Web Developer 2010 Express с использованием VB.NET.
 
 
-- [Введение в ASP.NET MVC 3 (VB)](intro-to-aspnet-mvc-3.md)
+- [Введение в ASP.NET MVC 3 (VB)](intro-to-aspnet-mvc-3.md)
 - [Добавление контроллера (VB)](adding-a-controller.md)
 - [Добавление представления (VB)](adding-a-view.md)
 - [Добавление модели (VB)](adding-a-model.md)

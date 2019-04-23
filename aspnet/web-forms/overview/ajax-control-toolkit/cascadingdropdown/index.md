@@ -12,7 +12,7 @@ ms.openlocfilehash: b4e8dfe9deaf8ee4196d327d94d9b99f568bd11d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59405772"
 ---
 # <a name="cascadingdropdown"></a>CascadingDropdown
@@ -23,8 +23,8 @@ ms.locfileid: "59405772"
 - [Заполнение списка с помощью CascadingDropDown (C#)](filling-a-list-using-cascadingdropdown-cs.md)
 - [Использование CascadingDropDown с базой данных (C#)](using-cascadingdropdown-with-a-database-cs.md)
 - [Предустановка записей списка с помощью CascadingDropDown (C#)](presetting-list-entries-with-cascadingdropdown-cs.md)
-- [Использование автоматической обратной передачи с помощью CascadingDropDown (C#)](using-auto-postback-with-cascadingdropdown-cs.md)
+- [Использование автоматической обратной передачи с помощью с CascadingDropDown (C#)](using-auto-postback-with-cascadingdropdown-cs.md)
 - [Заполнение списка с помощью CascadingDropDown (VB)](filling-a-list-using-cascadingdropdown-vb.md)
 - [Использование CascadingDropDown с базой данных (VB)](using-cascadingdropdown-with-a-database-vb.md)
 - [Предустановка записей списка с помощью CascadingDropDown (VB)](presetting-list-entries-with-cascadingdropdown-vb.md)
-- [Использование автоматической обратной передачи с помощью CascadingDropDown (VB)](using-auto-postback-with-cascadingdropdown-vb.md)
+- [Использование автоматической обратной передачи с помощью с CascadingDropDown (VB)](using-auto-postback-with-cascadingdropdown-vb.md)

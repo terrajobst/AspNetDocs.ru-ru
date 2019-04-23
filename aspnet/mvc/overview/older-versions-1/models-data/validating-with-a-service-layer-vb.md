@@ -12,7 +12,7 @@ ms.openlocfilehash: fc819494ef58824d485144396e3a995d906c8b42
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59398713"
 ---
 # <a name="validating-with-a-service-layer-vb"></a>Проверка с помощью уровня службы (VB)
@@ -54,7 +54,7 @@ ms.locfileid: "59398713"
 
 Контроллер продукта была обновлена в листинге 4, чтобы использовать уровень служб вместо уровня репозитория. На уровне контроллер взаимодействует с уровня службы. Слой служб взаимодействует с уровня репозитория. Каждый слой имеет отдельный ответственности.
 
-**Listing 4 - Controllers\ProductController.vb**
+**Листинг 4 - Controllers\ProductController.vb**
 
 [!code-vb[Main](validating-with-a-service-layer-vb/samples/sample4.vb)]
 

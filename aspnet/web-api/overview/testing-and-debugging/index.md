@@ -12,7 +12,7 @@ ms.openlocfilehash: 8b1241294f28441c19a34ef5471883db9d50a529
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59398063"
 ---
 # <a name="testing-and-debugging-aspnet-web-api"></a>Тестирование и отладка ASP.NET Web API
@@ -20,8 +20,8 @@ ms.locfileid: "59398063"
 > Тестирование и отладка веб-API ASP.NET
 
 
-- [Трассировка в веб-API 2](tracing-in-aspnet-web-api.md)
-- [Модульное тестирование в веб-API 2](unit-testing-with-aspnet-web-api.md)
-- [Контроллеры модульного тестирования в ASP.NET веб-API 2](unit-testing-controllers-in-web-api.md)
-- [Макетирование Entity Framework при модульном тестировании веб-API 2](mocking-entity-framework-when-unit-testing-aspnet-web-api-2.md)
-- [Устранение ошибок HTTP 405 после публикации приложений веб-API 2](troubleshooting-http-405-errors-after-publishing-web-api-applications.md)
+- [Трассировка в веб-API 2](tracing-in-aspnet-web-api.md)
+- [Модульное тестирование в веб-API 2](unit-testing-with-aspnet-web-api.md)
+- [Контроллеры модульного тестирования в ASP.NET веб-API 2](unit-testing-controllers-in-web-api.md)
+- [Макетирование Entity Framework при модульном тестировании веб-API 2](mocking-entity-framework-when-unit-testing-aspnet-web-api-2.md)
+- [Устранение ошибок HTTP 405 после публикации приложений веб-API 2](troubleshooting-http-405-errors-after-publishing-web-api-applications.md)
