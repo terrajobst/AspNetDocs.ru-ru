@@ -13,7 +13,7 @@ ms.openlocfilehash: a9e7ed63a55c146976e0221214e722f3a2292fee
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408281"
 ---
 # <a name="json-and-xml-serialization-in-aspnet-web-api"></a>Сериализация JSON и XML в веб-API ASP.NET
@@ -35,14 +35,14 @@ ms.locfileid: "59408281"
 
     - [Свойства только для чтения](#json_readonly)
     - [Даты](#json_dates)
-    - [Отступы](#json_indenting)
+    - [Отступов](#json_indenting)
     - [Смешанный регистр знаков](#json_camelcasing)
     - [Анонимные и слабо типизированных объектов](#json_anon)
 - [Модуль форматирования типа мультимедиа XML](#xml_media_type_formatter)
 
     - [Свойства только для чтения](#xml_readonly)
     - [Даты](#xml_dates)
-    - [Отступы](#xml_indenting)
+    - [Отступов](#xml_indenting)
     - [Сериализаторы XML для типа параметра](#xml_pertype)
 - [Модуль форматирования XML или JSON](#removing_the_json_or_xml_formatter)
 - [Обработка циклические ссылки объекта](#handling_circular_object_references)

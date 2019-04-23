@@ -12,14 +12,14 @@ ms.openlocfilehash: 2cd99e23904276e89cf043a2332ad07c0f01716d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59415353"
 ---
 # <a name="configuring-a-database-server-for-web-deploy-publishing"></a>Настройка сервера базы данных для публикации веб-развертывания
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается настройка сервера базы данных SQL Server 2008 R2 для поддержки веб-развертывания и публикации.
 > 

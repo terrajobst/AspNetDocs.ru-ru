@@ -12,7 +12,7 @@ ms.openlocfilehash: 488988bbf540cc809579a5ad5f80cb772ed6b1bf
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408372"
 ---
 # <a name="multiple-contentplaceholders-and-default-content-vb"></a>Несколько элементов управления ContentPlaceHolder и содержимое по умолчанию (VB)
@@ -37,7 +37,7 @@ ms.locfileid: "59408372"
 Рис. 1 показаны `Default.aspx` при просмотре через браузер. Область, помеченные красными кружками представляет разметку страницы, соответствующий `MainContent`.
 
 
-[![Tон регион в круге показывает область сейчас настраиваемое на основе страниц](multiple-contentplaceholders-and-default-content-vb/_static/image2.png)](multiple-contentplaceholders-and-default-content-vb/_static/image1.png)
+[![Область кружке показана область в настоящее время настраиваемые по принципу страниц](multiple-contentplaceholders-and-default-content-vb/_static/image2.png)](multiple-contentplaceholders-and-default-content-vb/_static/image1.png)
 
 **Рис 01**: Области в круге показывает область сейчас настраиваемое по принципу страниц ([Просмотр полноразмерного изображения](multiple-contentplaceholders-and-default-content-vb/_static/image3.png))
 
@@ -45,7 +45,7 @@ ms.locfileid: "59408372"
 Представьте, что в дополнение к области, показанный на рис. 1, также необходимо добавить элементы страниц в левый столбец под выводы и новости разделах. Для этого мы добавим другой элемент управления ContentPlaceHolder на главной странице. Для выполнения этой процедуры откройте `Site.master` главную страницу в Visual Web Developer, а затем перетащите элемент управления ContentPlaceHolder из инструментария в конструктор, после раздела новостей. Значение элемента ContentPlaceHolder `ID` для `LeftColumnContent`.
 
 
-[![Aдд управления ContentPlaceHolder на главной странице слева столбец](multiple-contentplaceholders-and-default-content-vb/_static/image5.png)](multiple-contentplaceholders-and-default-content-vb/_static/image4.png)
+[![Добавление элемента управления ContentPlaceHolder на главной странице левый столбец](multiple-contentplaceholders-and-default-content-vb/_static/image5.png)](multiple-contentplaceholders-and-default-content-vb/_static/image4.png)
 
 **Рис. 02**: Добавление элемента управления ContentPlaceHolder на главной странице столбец слева ([Просмотр полноразмерного изображения](multiple-contentplaceholders-and-default-content-vb/_static/image6.png))
 
@@ -67,7 +67,7 @@ ms.locfileid: "59408372"
 Когда вы добавите эту разметку, посетите страницу через обозреватель. Как показано на рис. 3, разметка помещаются в `Content3` содержимого элемента управления отображается в столбце слева под разделом новостей (обведена красным). Разметка помещаются в `Content2` отображается в правой части страницы (обведенный синим цветом).
 
 
-[![Tон слева теперь включает в себя отдельных страниц содержимого под новостей в секции столбцов](multiple-contentplaceholders-and-default-content-vb/_static/image8.png)](multiple-contentplaceholders-and-default-content-vb/_static/image7.png)
+[![Левый столбец теперь включает в себя содержимое конкретной страницы под разделом новости](multiple-contentplaceholders-and-default-content-vb/_static/image8.png)](multiple-contentplaceholders-and-default-content-vb/_static/image7.png)
 
 **Рис 03**: Слева столбец теперь включает в себя отдельных страниц содержимого под раздела новостей ([Просмотр полноразмерного изображения](multiple-contentplaceholders-and-default-content-vb/_static/image9.png))
 
@@ -81,7 +81,7 @@ ms.locfileid: "59408372"
 Чтобы добавить элемент управления содержимым для `LeftColumnContent` ContentPlaceHolder для `About.aspx`разверните ContentPlaceHolder смарт-тег и щелкните ссылку, создание пользовательского содержимого.
 
 
-[![Tон разработки просмотра показано About.aspx LeftColumnContent ContentPlaceHolder](multiple-contentplaceholders-and-default-content-vb/_static/image11.png)](multiple-contentplaceholders-and-default-content-vb/_static/image10.png)
+[![Режим конструктора для About.aspx показывает LeftColumnContent ContentPlaceHolder](multiple-contentplaceholders-and-default-content-vb/_static/image11.png)](multiple-contentplaceholders-and-default-content-vb/_static/image10.png)
 
 **Рис. 04**: Режим конструктора для `About.aspx` показывает `LeftColumnContent` ContentPlaceHolder ([Просмотр полноразмерного изображения](multiple-contentplaceholders-and-default-content-vb/_static/image12.png))
 
@@ -97,7 +97,7 @@ ASP.NET не требуется включение элементов управ
 В настоящее время `Default.aspx` содержит два элемента управления содержимым для `head` и `MainContent` элементов управления ContentPlaceHolder; не включает элемент управления содержимым для `LeftColumnContent`. Следовательно, если `Default.aspx` отображается `LeftColumnContent` используется по умолчанию содержимое элемента ContentPlaceHolder. Поскольку у нас есть еще для определения содержимого по умолчанию для этого элемента ContentPlaceHolder, в итоге получается, что разметка не создается для этого региона. Чтобы проверить это, посетите `Default.aspx` через браузер. Как показано на рис. 5, разметка не создается в столбце слева под разделом новостей.
 
 
-[![NСодержимое отображается для LeftColumnContent ContentPlaceHolder o](multiple-contentplaceholders-and-default-content-vb/_static/image14.png)](multiple-contentplaceholders-and-default-content-vb/_static/image13.png)
+[![Содержимое не отображается для LeftColumnContent ContentPlaceHolder](multiple-contentplaceholders-and-default-content-vb/_static/image14.png)](multiple-contentplaceholders-and-default-content-vb/_static/image13.png)
 
 **05 рис**: Содержимое не отображается для `LeftColumnContent` ContentPlaceHolder ([Просмотр полноразмерного изображения](multiple-contentplaceholders-and-default-content-vb/_static/image15.png))
 
@@ -123,7 +123,7 @@ ASP.NET не требуется включение элементов управ
 После добавления этой разметки главной страницы конструктора будет выглядеть на рис. 6.
 
 
-[![Tон главной страницы содержит элемент управления входа](multiple-contentplaceholders-and-default-content-vb/_static/image17.png)](multiple-contentplaceholders-and-default-content-vb/_static/image16.png)
+[![На главной странице включает элемент управления Login](multiple-contentplaceholders-and-default-content-vb/_static/image17.png)](multiple-contentplaceholders-and-default-content-vb/_static/image16.png)
 
 **Рис 06**: На главной странице включает элемент управления Login ([Просмотр полноразмерного изображения](multiple-contentplaceholders-and-default-content-vb/_static/image18.png))
 
@@ -145,7 +145,7 @@ ASP.NET не требуется включение элементов управ
 Рис. 7 показана эта страница при просмотре через браузер. Так как эта страница задает элемент управления содержимым для `QuickLoginUI` ContentPlaceHolder, он переопределяет содержимое по умолчанию, указанное на главной странице. В итоге получается, отображение элемента управления Login в конструирования главной страницы представления (см. рис. 6) не отображается на этой странице.
 
 
-[![Tон страницу входа Represses содержимого по умолчанию QuickLoginUI ContentPlaceHolder](multiple-contentplaceholders-and-default-content-vb/_static/image20.png)](multiple-contentplaceholders-and-default-content-vb/_static/image19.png)
+[![На страницу входа Represses QuickLoginUI ContentPlaceHolder содержимое по умолчанию](multiple-contentplaceholders-and-default-content-vb/_static/image20.png)](multiple-contentplaceholders-and-default-content-vb/_static/image19.png)
 
 **07 рис**: Страница входа в систему, Represses `QuickLoginUI` содержимого по умолчанию элемента ContentPlaceHolder ([Просмотр полноразмерного изображения](multiple-contentplaceholders-and-default-content-vb/_static/image21.png))
 
@@ -161,7 +161,7 @@ ASP.NET не требуется включение элементов управ
 На рисунке 8 показана `Default.aspx` при просмотре через браузер. Помните, что `Default.aspx` имеет только два содержимого элемента управления, указанный в его декларативной разметке - один для `head` и один для `MainContent`. В результате, по умолчанию для содержимого `LeftColumnContent` и `QuickLoginUI` отображения элементов управления ContentPlaceHolder.
 
 
-[![Tон по умолчанию содержимого LeftColumnContent и элементов управления ContentPlaceHolder QuickLoginUI отображаются](multiple-contentplaceholders-and-default-content-vb/_static/image23.png)](multiple-contentplaceholders-and-default-content-vb/_static/image22.png)
+[![По умолчанию содержимое для LeftColumnContent и элементов управления ContentPlaceHolder QuickLoginUI отображаются](multiple-contentplaceholders-and-default-content-vb/_static/image23.png)](multiple-contentplaceholders-and-default-content-vb/_static/image22.png)
 
 **Рис 08**: По умолчанию содержимое для `LeftColumnContent` и `QuickLoginUI` отображения элементов управления ContentPlaceHolder ([Просмотр полноразмерного изображения](multiple-contentplaceholders-and-default-content-vb/_static/image24.png))
 

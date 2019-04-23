@@ -12,7 +12,7 @@ ms.openlocfilehash: ce832e301c4f0cbec1aede3f7bb8a535a3b861e5
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409595"
 ---
 # <a name="how-do-i-use-the-aspnet-ajax-updateprogress-control"></a>[Инструкции] Использовать элемент управления UpdateProgress ASP.NET AJAX?

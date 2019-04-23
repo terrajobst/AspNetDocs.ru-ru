@@ -12,7 +12,7 @@ ms.openlocfilehash: a2b6d3a5ceb66c14a78b02182f49d76c72becbd4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413650"
 ---
 # <a name="interacting-with-the-content-page-from-the-master-page-c"></a>Взаимодействие со страницей содержимого на эталонной странице (C#)
@@ -51,7 +51,7 @@ ms.locfileid: "59413650"
 Наши первым делом — создать страницу содержимого, которая перечисляет продукты из базы данных "Борей". (Мы добавили базы данных Northwind в проект в предыдущем учебном курсе, [ *взаимодействие с главной страницей на странице содержимого*](interacting-with-the-master-page-from-the-content-page-cs.md).) Начните с добавления новой страницы ASP.NET `~/Admin` папку с именем `Products.aspx`, не забыв привяжите его к `Site.master` главной страницы. Рис. 1 показан обозреватель решений после добавления этой страницы на веб-сайт.
 
 
-[![Aдд новую страницу ASP.NET в папку Admin](interacting-with-the-content-page-from-the-master-page-cs/_static/image2.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image1.png)
+[![Добавьте новую страницу ASP.NET в папку администрирования](interacting-with-the-content-page-from-the-master-page-cs/_static/image2.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image1.png)
 
 **Рис 01**: Добавьте новую страницу ASP.NET к `Admin` папку ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image3.png))
 
@@ -68,7 +68,7 @@ ms.locfileid: "59413650"
 Вернитесь к `Products.aspx`. В элементе управления содержимым для `MainContent`, добавление элемента управления GridView и назовите его `ProductsGrid`. Привязки GridView к нового элемента управления SqlDataSource с именем `ProductsDataSource`.
 
 
-[![BIND GridView для нового элемента управления SqlDataSource](interacting-with-the-content-page-from-the-master-page-cs/_static/image5.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image4.png)
+[![Привязки GridView к нового элемента управления SqlDataSource](interacting-with-the-content-page-from-the-master-page-cs/_static/image5.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image4.png)
 
 **Рис. 02**: Привязки GridView к нового элемента управления SqlDataSource ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image6.png))
 
@@ -76,7 +76,7 @@ ms.locfileid: "59413650"
 Настройте мастер, чтобы он использует базы данных Northwind. Если вы работали в предыдущем учебнике, то необходимо иметь строку подключения с именем `NorthwindConnectionString` в `Web.config`. Выберите из раскрывающегося списка, эта строка подключения, как показано на рис. 3.
 
 
-[![CНастройка элемента управления SqlDataSource для использования базы данных "Борей"](interacting-with-the-content-page-from-the-master-page-cs/_static/image8.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image7.png)
+[![Настройка элемента управления SqlDataSource для использования базы данных "Борей"](interacting-with-the-content-page-from-the-master-page-cs/_static/image8.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image7.png)
 
 **Рис 03**: Настройка элемента управления SqlDataSource для использования базы данных Northwind ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image9.png))
 
@@ -84,7 +84,7 @@ ms.locfileid: "59413650"
 Затем укажите элемента управления источником данных `SELECT` инструкции, выбрав таблицы Products из раскрывающегося списка и возвращение `ProductName` и `UnitPrice` столбцов (см. рис. 4). Нажмите кнопку Далее, а затем завершить работу мастера настройки источника данных.
 
 
-[![Rь ProductName и UnitPrice поля из таблицы Products](interacting-with-the-content-page-from-the-master-page-cs/_static/image11.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image10.png)
+[![Возвращать ProductName и UnitPrice поля из таблицы Products](interacting-with-the-content-page-from-the-master-page-cs/_static/image11.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image10.png)
 
 **Рис. 04**: Вернуть `ProductName` и `UnitPrice` поля из `Products` таблицы ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image12.png))
 
@@ -95,7 +95,7 @@ ms.locfileid: "59413650"
 [!code-aspx[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample2.aspx)]
 
 
-[![EACH продукта и его цена указана в GridView](interacting-with-the-content-page-from-the-master-page-cs/_static/image14.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image13.png)
+[![И его цену каждого продукта указан в GridView](interacting-with-the-content-page-from-the-master-page-cs/_static/image14.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image13.png)
 
 **05 рис**: И его цену каждого продукта указан в GridView ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image15.png))
 
@@ -111,7 +111,7 @@ ms.locfileid: "59413650"
 Добавьте элемент управления SqlDataSource на главную страницу, назовите его `DoublePricesDataSource`. Этот SqlDataSource будет использоваться для выполнения `UPDATE` инструкции выполнить удвоение цены. В частности, нам нужно установить его `ConnectionString` и `UpdateCommand` свойства для соответствующей строкой подключения и `UPDATE` инструкции. Затем необходимо вызвать этот элемент управления SqlDataSource `Update` метод при `DoublePrice` кнопки. Чтобы задать `ConnectionString` и `UpdateCommand` свойства, выберите элемент управления SqlDataSource, а затем перейдите в окно свойств. `ConnectionString` Эти строки подключения, уже хранится в списках свойств `Web.config` в раскрывающемся списке; выберите `NorthwindConnectionString` как показано на рис. 6.
 
 
-[![CНастройка элемента управления SqlDataSource для использования NorthwindConnectionString](interacting-with-the-content-page-from-the-master-page-cs/_static/image17.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image16.png)
+[![Настройка элемента управления SqlDataSource для использования NorthwindConnectionString](interacting-with-the-content-page-from-the-master-page-cs/_static/image17.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image16.png)
 
 **Рис 06**: Настройка элемента управления SqlDataSource для использования `NorthwindConnectionString` ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image18.png))
 
@@ -124,7 +124,7 @@ ms.locfileid: "59413650"
 Эта инструкция, при выполнении возрастет `UnitPrice` значение для каждой записи в `Products` таблицы.
 
 
-[![SET свойство UpdateCommand на SqlDataSource](interacting-with-the-content-page-from-the-master-page-cs/_static/image20.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image19.png)
+[![Установите свойство UpdateCommand на SqlDataSource](interacting-with-the-content-page-from-the-master-page-cs/_static/image20.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image19.png)
 
 **07 рис**: Значение элемента SqlDataSource `UpdateCommand` свойство ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image21.png))
 
@@ -225,12 +225,12 @@ ms.locfileid: "59413650"
 Цифры 8 и 9, иллюстрируют это поведение. Рис. 8 показан при первом посещении страницы. Обратите внимание, что цена значения в обоих `RecentProducts` GridView (в левом столбце главной страницы) и `ProductsGrid` GridView (на странице содержимого). Рис. 9 показана же экране сразу же после `DoublePrice` был выполнен щелчок кнопкой. Как вы видите, новые цены мгновенно отражаются в обоих элементов управления GridView.
 
 
-[![Tон начальные значения цены](interacting-with-the-content-page-from-the-master-page-cs/_static/image23.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image22.png)
+[![Начальная цена значения](interacting-with-the-content-page-from-the-master-page-cs/_static/image23.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image22.png)
 
 **Рис 08**: Начальные значения цены ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image24.png))
 
 
-[![Tон Just-Doubled цены отображаются в элементов управления GridView](interacting-with-the-content-page-from-the-master-page-cs/_static/image26.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image25.png)
+[![Just-Doubled цены отображаются в элементов управления GridView](interacting-with-the-content-page-from-the-master-page-cs/_static/image26.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image25.png)
 
 **Рис 09**: Just-Doubled цены отображаются в элементов управления GridView ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image27.png))
 

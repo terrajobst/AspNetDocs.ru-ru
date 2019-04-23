@@ -12,7 +12,7 @@ ms.openlocfilehash: bf9cf1f5be22a5b97ec964277c11ae21066676f0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412415"
 ---
 # <a name="building-real-world-cloud-apps-with-azure"></a>Создание реальных облачных приложений в Azure
@@ -100,7 +100,7 @@ ms.locfileid: "59412415"
     - Включить высокую доступность и повышает масштабируемость за счет слабо взаимозависимость уровней Интернета и работника.
     - Демонстрация: Очереди хранилища Azure в приложении Fix It.
 - [Другие облачные приложения шаблоны и рекомендации](more-patterns-and-guidance.md).
-- [Приложение. Пример приложения для устранения проблем](the-fix-it-sample-application.md)
+- [Приложение. Исправление пример приложения](the-fix-it-sample-application.md)
 
     - Известные проблемы
     - Рекомендации
@@ -175,4 +175,4 @@ ms.locfileid: "59412415"
 - [Внутренние компоненты веб-сайты Azure с помощью Нир Машковски](https://channel9.msdn.com/Shows/Web+Camps+TV/Windows-Azure-Web-Sites-Internals-with-Nir-Mashkowski).
 
 > [!div class="step-by-step"]
-> [Далее](automate-everything.md)
+> [Вперед](automate-everything.md)

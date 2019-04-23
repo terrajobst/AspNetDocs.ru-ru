@@ -12,14 +12,14 @@ ms.openlocfilehash: c85db4289698988ead44afd452da17054bab9f07
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59417212"
 ---
 # <a name="create-a-new-aspnet-mvc-project"></a>Создание проекта ASP.NET MVC
 
 по [Microsoft](https://github.com/microsoft)
 
-[Скачать PDF](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
+[Загрузить PDF-файл](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
 
 > Это этап 1 из бесплатной [руководство по использованию приложения «NerdDinner»](introducing-the-nerddinner-tutorial.md) , пошаговое рассмотрение как создать небольшой, но завершить, веб-приложения с помощью ASP.NET MVC 1.
 > 
@@ -60,7 +60,7 @@ ms.locfileid: "59417212"
 
 Проекты ASP.NET MVC по умолчанию иметь шесть каталоги верхнего уровня:
 
-| **Каталог** | **Цель** |
+| **Каталог** | **Назначение** |
 | --- | --- |
 | **/ Контроллеров** | Место расположения классы контроллеров, которые обрабатывают запросы на URL-адрес |
 | **/ Моделей** | Место расположения классы, представляющие и манипулировать данными |

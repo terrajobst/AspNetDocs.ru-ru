@@ -12,14 +12,14 @@ ms.openlocfilehash: 3b7f154936222c85bd7897ea10cbb5ae9d1aa670
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408944"
 ---
 # <a name="application-lifecycle-management-from-development-to-production"></a>Управление жизненным циклом приложения: от разработки до рабочей среды
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе показано, как вымышленная компания управляет развертыванием веб-приложения ASP.NET до тестирования, промежуточной и рабочей сред в рамках процесса непрерывной разработки. В разделе приведены ссылки на дополнительные сведения и пошаговые руководства по выполнению конкретных задач.
 > 

@@ -12,7 +12,7 @@ ms.openlocfilehash: b0da3032e22123f415bf9865e264832739c29f61
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409022"
 ---
 # <a name="signalr-performance"></a>Производительность SignalR
@@ -50,7 +50,7 @@ ms.locfileid: "59409022"
 - [Устранение неполадок производительности](#troubleshooting)
 - [Использование счетчиков производительности SignalR](#perfcounters)
 - [Использование других счетчиков производительности](#othercounters)
-- [Другие источники](#otherresources)
+- [Другие ресурсы](#otherresources)
 
 <a id="design"></a>
 
@@ -263,12 +263,12 @@ ms.locfileid: "59409022"
 - TCPv6/подключений
 - TCPv4/подключений
 
-**Веб-служба**
+**Веб-службы**
 
 - Веб-служба\текущих подключений
 - Веб-Service\Maximum подключений
 
-**Потоки**
+**Работа с потоками**
 
 - .NET блокировки и потоки CLR\\текущих логических потоков
 - .NET блокировки и потоки CLR\\число текущих физических потоков

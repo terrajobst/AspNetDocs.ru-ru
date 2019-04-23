@@ -12,7 +12,7 @@ ms.openlocfilehash: 223fad7013a53212c0c822a87bd3e2fcc0a5f17f
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408957"
 ---
 # <a name="dynamically-controlling-updatepanel-animations-vb"></a>Динамическое управление анимациями UpdatePanel (VB)
@@ -58,7 +58,7 @@ ms.locfileid: "59408957"
 Запустите файл в браузере. При каждом нажатии кнопки текущее время отображается на панели, всегда плавный переход течение одной секунды.
 
 
-[![Tон текущее время плавный переход](dynamically-controlling-updatepanel-animations-vb/_static/image2.png)](dynamically-controlling-updatepanel-animations-vb/_static/image1.png)
+[![Текущее время плавный переход](dynamically-controlling-updatepanel-animations-vb/_static/image2.png)](dynamically-controlling-updatepanel-animations-vb/_static/image1.png)
 
 Текущее время плавный переход ([Просмотр полноразмерного изображения](dynamically-controlling-updatepanel-animations-vb/_static/image3.png))
 

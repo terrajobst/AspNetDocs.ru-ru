@@ -12,7 +12,7 @@ ms.openlocfilehash: 973878ef0afd62035b3fc840371e6c6223c8951c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413793"
 ---
 # <a name="iteration-3--add-form-validation-c"></a>Итерации #3 – Добавление проверки форм (C#)
@@ -51,7 +51,7 @@ ms.locfileid: "59413793"
 В этой второй итерации приложения диспетчера контактов мы добавляем проверки базовой форме. Мы запретить пользователям передавать контакт без ввода значения для обязательных полей формы. Кроме того, мы проверяем, номера телефонов и адреса электронной почты (см. рис. 1).
 
 
-[![Tдиалоговое окно нового проекта он](iteration-3-add-form-validation-cs/_static/image1.jpg)](iteration-3-add-form-validation-cs/_static/image1.png)
+[![В диалоговом окне нового проекта](iteration-3-add-form-validation-cs/_static/image1.jpg)](iteration-3-add-form-validation-cs/_static/image1.png)
 
 **Рис 01**: Формы с помощью проверки ([Просмотр полноразмерного изображения](iteration-3-add-form-validation-cs/_static/image2.png))
 

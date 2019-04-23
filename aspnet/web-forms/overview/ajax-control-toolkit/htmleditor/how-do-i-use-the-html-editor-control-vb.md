@@ -12,7 +12,7 @@ ms.openlocfilehash: 5fa19ef52c4538f0db427eaa9a79b074c85001ac
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59415873"
 ---
 # <a name="how-do-i-use-the-html-editor-control-vb"></a>Как использовать элемент управления редактора HTML? (VISUAL BASIC)
@@ -25,7 +25,7 @@ ms.locfileid: "59415873"
 Этот учебник призван предоставить вам Обзор элемента управления редактора HTML, включенные в AJAX Control Toolkit. Редактор HTML включает параметры для изменения размера шрифта, выбрав шрифт, изменение цвета фона, изменив цвет переднего плана, добавление ссылок, добавление изображения, изменив выравнивание текста и выполнять операции вырезания, копирования и вставки операций (см. рис. 1).
 
 
-[![Tон редактор HTML](how-do-i-use-the-html-editor-control-vb/_static/image1.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image1.png)
+[![Редактор HTML](how-do-i-use-the-html-editor-control-vb/_static/image1.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image1.png)
 
 **Рис 01**: Редактор HTML ([Просмотр полноразмерного изображения](how-do-i-use-the-html-editor-control-vb/_static/image2.png))
 
@@ -33,7 +33,7 @@ ms.locfileid: "59415873"
 Редактор HTML позволяет ввести содержимое, используя режим конструктора или HTML можно ввести напрямую. Вам также будет предоставлен параметр, чтобы просмотреть содержимое HTML (см. рис. 2).
 
 
-[![Dоект, HTML и кнопки предварительного просмотра](how-do-i-use-the-html-editor-control-vb/_static/image2.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image3.png)
+[![Проектирование, HTML и предварительной версии кнопок](how-do-i-use-the-html-editor-control-vb/_static/image2.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image3.png)
 
 **Рис. 02**: Проектирование, HTML и предварительной версии кнопок ([Просмотр полноразмерного изображения](how-do-i-use-the-html-editor-control-vb/_static/image4.png))
 
@@ -49,7 +49,7 @@ ms.locfileid: "59415873"
 В области элементов с остальной частью элементов управления AJAX Control Toolkit расположен элемент управления редактора HTML. Он называется редактирующего элемента управления (см. рис. 3).
 
 
-[![Tон элемент управления редактора HTML](how-do-i-use-the-html-editor-control-vb/_static/image3.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image5.png)
+[![Элемент управления редактора HTML](how-do-i-use-the-html-editor-control-vb/_static/image3.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image5.png)
 
 **Рис 03**: Элемент управления редактора HTML ([Просмотр полноразмерного изображения](how-do-i-use-the-html-editor-control-vb/_static/image6.png))
 
@@ -63,7 +63,7 @@ ms.locfileid: "59415873"
 На странице в листинге 1 содержит элемент управления редактора HTML, элемент управления Button и текстовым элементом управления. После нажатия кнопки, содержимое редактора HTML отображается в управлении литералов (см. рис. 4).
 
 
-[![Submitting формы с редактором HTML](how-do-i-use-the-html-editor-control-vb/_static/image4.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image7.png)
+[![Отправка формы с помощью HTML-редактора](how-do-i-use-the-html-editor-control-vb/_static/image4.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image7.png)
 
 **Рис. 04**: Отправка формы с редактором HTML ([Просмотр полноразмерного изображения](how-do-i-use-the-html-editor-control-vb/_static/image8.png))
 
@@ -75,7 +75,7 @@ ms.locfileid: "59415873"
 Вы можете настроить точно кнопки, которые отображаются в редакторе. Например может потребоваться удалить вкладку HTML, чтобы запретить пользователям переходить в режим HTML в редакторе HTML. Или, может потребоваться удалить раскрывающийся список размер шрифта, чтобы запретить пользователям создавать чрезмерно большим текст на форуме сообщение post (см. рис. 5).
 
 
-[![A настраиваемый редактор HTML](how-do-i-use-the-html-editor-control-vb/_static/image5.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image9.png)
+[![Специализированного редактора HTML](how-do-i-use-the-html-editor-control-vb/_static/image5.jpg)](how-do-i-use-the-html-editor-control-vb/_static/image9.png)
 
 **05 рис**: Объект настройки редактора HTML ([Просмотр полноразмерного изображения](how-do-i-use-the-html-editor-control-vb/_static/image10.png))
 

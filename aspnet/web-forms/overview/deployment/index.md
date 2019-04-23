@@ -12,7 +12,7 @@ ms.openlocfilehash: 8536c771e5e343bd545b6824bec6f8b85489a7d4
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59416536"
 ---
 # <a name="deployment"></a>Развертывание
@@ -22,7 +22,7 @@ ms.locfileid: "59416536"
 
 - [Веб-развертывание ASP.NET с помощью Visual Studio](visual-studio-web-deployment/index.md)
 
-    - [Вступление](visual-studio-web-deployment/introduction.md)
+    - [Введение](visual-studio-web-deployment/introduction.md)
     - [Подготовка к развертыванию базы данных](visual-studio-web-deployment/preparing-databases.md)
     - [Преобразования файла Web.config](visual-studio-web-deployment/web-config-transformations.md)
     - [Свойства проекта](visual-studio-web-deployment/project-properties.md)
@@ -34,12 +34,12 @@ ms.locfileid: "59416536"
     - [Развертывание командной строки](visual-studio-web-deployment/command-line-deployment.md)
     - [Развертывание дополнительных файлов](visual-studio-web-deployment/deploying-extra-files.md)
     - [Устранение неполадок](visual-studio-web-deployment/troubleshooting.md)
-- [ASP.NET 4. Введение в корпоративное развертывание](deploying-web-applications-in-enterprise-scenarios/index.md)
+- [ASP.NET 4. Введение в корпоративное развертывание](deploying-web-applications-in-enterprise-scenarios/index.md)
 
-    - [Сценарии корпоративных развертываний веб-приложений с помощью Visual Studio 2010](deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md)
-    - [Корпоративное веб-развертывание. Общие сведения о сценарии](deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
-    - [Управление жизненным циклом приложения: от разработки до рабочей среды](deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
-- [ASP.NET 4. Введение в корпоративное развертывание, часть 1](web-deployment-in-the-enterprise/index.md)
+    - [Сценарии корпоративных развертываний веб-приложений с помощью Visual Studio 2010](deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md)
+    - [Корпоративное веб-развертывание: Обзор сценария](deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
+    - [Управление жизненным циклом приложения: От разработки к производству](deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
+- [ASP.NET 4. Введение в корпоративное развертывание, часть 1](web-deployment-in-the-enterprise/index.md)
 
     - [Корпоративное веб-развертывание](web-deployment-in-the-enterprise/web-deployment-in-the-enterprise.md)
     - [Решение диспетчера контактов](web-deployment-in-the-enterprise/the-contact-manager-solution.md)
@@ -52,20 +52,20 @@ ms.locfileid: "59416536"
     - [Развертывание проектов баз данных](web-deployment-in-the-enterprise/deploying-database-projects.md)
     - [Создание и запуск командного файла развертывания](web-deployment-in-the-enterprise/creating-and-running-a-deployment-command-file.md)
     - [Установка веб-пакетов вручную](web-deployment-in-the-enterprise/manually-installing-web-packages.md)
-- [ASP.NET 4. Корпоративное развертывание, часть 2. Настройка серверов](configuring-server-environments-for-web-deployment/index.md)
+- [ASP.NET 4. Корпоративное развертывание, часть 2. Настройка серверов](configuring-server-environments-for-web-deployment/index.md)
 
     - [Настройка серверных сред для веб-развертывания](configuring-server-environments-for-web-deployment/configuring-server-environments-for-web-deployment.md)
     - [Выбор правильного подхода для веб-развертывания](configuring-server-environments-for-web-deployment/choosing-the-right-approach-to-web-deployment.md)
-    - [Сценарий: настройка среды тестирования для веб-развертывания](configuring-server-environments-for-web-deployment/scenario-configuring-a-test-environment-for-web-deployment.md)
-    - [Сценарий: настройка промежуточной среды для веб-развертывания](configuring-server-environments-for-web-deployment/scenario-configuring-a-staging-environment-for-web-deployment.md)
-    - [Сценарий: настройка рабочей среды для веб-развертывания](configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment.md)
+    - [Сценарий. Настройка среды тестирования для веб-развертывания](configuring-server-environments-for-web-deployment/scenario-configuring-a-test-environment-for-web-deployment.md)
+    - [Сценарий. Настройка промежуточной среды для веб-развертывания](configuring-server-environments-for-web-deployment/scenario-configuring-a-staging-environment-for-web-deployment.md)
+    - [Сценарий. Настройке рабочей среды для веб-развертывания](configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment.md)
     - [Настройка веб-сервера для публикации веб-развертывания (удаленный агент)](configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-remote-agent.md)
     - [Настройка веб-сервера для публикации веб-развертывания (обработчик веб-развертывания)](configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-web-deploy-handler.md)
     - [Настройка веб-сервера для публикации веб-развертывания (автономное развертывание)](configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-offline-deployment.md)
     - [Настройка сервера базы данных для публикации веб-развертывания](configuring-server-environments-for-web-deployment/configuring-a-database-server-for-web-deploy-publishing.md)
     - [Создание фермы серверов с помощью Web Farm Framework](configuring-server-environments-for-web-deployment/creating-a-server-farm-with-the-web-farm-framework.md)
     - [Настройка свойств развертывания для целевой среды](configuring-server-environments-for-web-deployment/configuring-deployment-properties-for-a-target-environment.md)
-- [ASP.NET 4. Корпоративное развертывание, часть 3. Настройка TFS](configuring-team-foundation-server-for-web-deployment/index.md)
+- [ASP.NET 4. Корпоративное развертывание, часть 3. Настройка TFS](configuring-team-foundation-server-for-web-deployment/index.md)
 
     - [Настройка Team Foundation Server для веб-развертывания](configuring-team-foundation-server-for-web-deployment/configuring-team-foundation-server-for-web-deployment.md)
     - [Создание командного проекта в Team Foundation Server](configuring-team-foundation-server-for-web-deployment/creating-a-team-project-in-tfs.md)
@@ -74,7 +74,7 @@ ms.locfileid: "59416536"
     - [Создание определения сборки, поддерживающего развертывание](configuring-team-foundation-server-for-web-deployment/creating-a-build-definition-that-supports-deployment.md)
     - [Развертывание конкретной сборки](configuring-team-foundation-server-for-web-deployment/deploying-a-specific-build.md)
     - [Настройка разрешений для развертывания командной сборки](configuring-team-foundation-server-for-web-deployment/configuring-permissions-for-team-build-deployment.md)
-- [ASP.NET 4. Корпоративное развертывание, часть 4. Дополнительные разделы](advanced-enterprise-web-deployment/index.md)
+- [ASP.NET 4. Корпоративное развертывание, часть 4. Дополнительные разделы](advanced-enterprise-web-deployment/index.md)
 
     - [Расширенное корпоративное веб-развертывание](advanced-enterprise-web-deployment/advanced-enterprise-web-deployment.md)
     - [Выполнение имитации развертывания](advanced-enterprise-web-deployment/performing-a-what-if-deployment.md)

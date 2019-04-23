@@ -12,7 +12,7 @@ ms.openlocfilehash: c05f0976a135615f7a272b8057eb4c56677e5117
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412428"
 ---
 # <a name="animation-depending-on-a-condition-c"></a>Анимация в зависимости от условия (C#)
@@ -53,7 +53,7 @@ ms.locfileid: "59412428"
 Обратите внимание, что знак «меньше» (`<`) в `ConditionScript` атрибут должен быть escape-(). При запуске этого скрипта, либо нет запусков анимации, один из двух или для обоих сделать.
 
 
-[![Tпанель HE исчезновение без изменения размера, поэтому второй анимации запуски, первый из них не](animation-depending-on-a-condition-cs/_static/image2.png)](animation-depending-on-a-condition-cs/_static/image1.png)
+[![Панели исчезновение без изменения размера, поэтому второй анимации запуски, первый из них не](animation-depending-on-a-condition-cs/_static/image2.png)](animation-depending-on-a-condition-cs/_static/image1.png)
 
 Панели исчезновение без изменения размера, поэтому второй анимации запуски, первый из них не ([Просмотр полноразмерного изображения](animation-depending-on-a-condition-cs/_static/image3.png))
 

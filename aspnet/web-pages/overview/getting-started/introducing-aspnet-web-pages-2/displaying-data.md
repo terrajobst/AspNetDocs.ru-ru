@@ -12,7 +12,7 @@ ms.openlocfilehash: 5415913626eb063a4cb1013ba03857c130487f42
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412181"
 ---
 # <a name="introducing-aspnet-web-pages---displaying-data"></a>Знакомство с веб-страниц ASP.NET — отображение данных
@@ -214,7 +214,7 @@ WebMatrix создает базу данных SQL Server CE ( *.sdf* файл),
 
 > [!TIP] 
 > 
-> **Язык SQL (Structured Query Language)**
+> **Язык структурированных запросов (SQL)**
 > 
 > SQL — это язык, который используется в большинство реляционных баз данных для управления данными в базе данных. Она включает команды, которые позволяют получать данные и обновить его, и, которые позволяют создавать, изменять и управлять данными в таблицах базы данных. SQL отличается от языка программирования, (например C#). С помощью SQL указать базу данных, то, что нужно, и это задание базы данных, чтобы выяснить, как получить данные или выполнять задачи. Ниже приведены примеры некоторых команд SQL и что они делают.
 > 
@@ -333,7 +333,7 @@ WebMatrix создает базу данных SQL Server CE ( *.sdf* файл),
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-- [Введение в веб-программирование для ASP.NET с использованием синтаксиса Razor](https://go.microsoft.com/fwlink/?LinkID=202890)
+- [Введение в программирование веб-ASP.NET, с помощью синтаксиса Razor](https://go.microsoft.com/fwlink/?LinkID=202890)
 
 > [!div class="step-by-step"]
 > [Назад](intro-to-web-pages-programming.md)

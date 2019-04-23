@@ -12,7 +12,7 @@ ms.openlocfilehash: 3f8073b468a431d5c4b0d222bf385c8c6d32b2a8
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59419097"
 ---
 # <a name="disabling-actions-during-animation-vb"></a>Отключение действий во время анимации (VB)
@@ -55,7 +55,7 @@ ms.locfileid: "59419097"
 Однако в данном сценарии это окажется бесполезной после кнопки исчезает и остается невидимым в конце анимации.
 
 
-[![Tбудет отключена кнопка HE, как только выполняется анимация](disabling-actions-during-animation-vb/_static/image2.png)](disabling-actions-during-animation-vb/_static/image1.png)
+[![Кнопка отключена, а анимация](disabling-actions-during-animation-vb/_static/image2.png)](disabling-actions-during-animation-vb/_static/image1.png)
 
 Кнопка отключена, а анимация ([Просмотр полноразмерного изображения](disabling-actions-during-animation-vb/_static/image3.png))
 

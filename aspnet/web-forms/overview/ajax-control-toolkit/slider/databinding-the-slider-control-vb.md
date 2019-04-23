@@ -12,7 +12,7 @@ ms.openlocfilehash: a60e09b7cdda7f924a4287aab8cda32fef5a53ac
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59419773"
 ---
 # <a name="databinding-the-slider-control-vb"></a>Привязка данных элемента управления Slider (VB)
@@ -45,7 +45,7 @@ ms.locfileid: "59419773"
 Как вы видите в браузере, привязка данных работает в обоих направлениях: Введите новое значение в текстовом поле обновляет положение ползунка. Если второе текстовое поле только для чтения, может добавить слабую защиту в текстовое поле, так как это сложнее для пользователя, чтобы вручную обновить значение в ней.
 
 
-[![Slider и текстовое поле находятся в синхронизированном](databinding-the-slider-control-vb/_static/image2.png)](databinding-the-slider-control-vb/_static/image1.png)
+[![Ползунок и текстовое поле синхронизированы](databinding-the-slider-control-vb/_static/image2.png)](databinding-the-slider-control-vb/_static/image1.png)
 
 Ползунок и текстовое поле синхронизированы ([Просмотр полноразмерного изображения](databinding-the-slider-control-vb/_static/image3.png))
 

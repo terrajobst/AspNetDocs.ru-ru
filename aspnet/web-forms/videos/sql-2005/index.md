@@ -12,7 +12,7 @@ ms.openlocfilehash: c07bfaeb29e20b042861ab59e6cd8f7d12744205
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59416185"
 ---
 # <a name="sql-2005"></a>SQL 2005
@@ -27,7 +27,7 @@ ms.locfileid: "59416185"
 - [Манипулирование данными базы данных](manipulating-database-data.md)
 - [Дополнительные сведения об SQL](more-structured-query-language.md)
 - [Общие сведения о безопасности и сетевом подключении](understanding-security-and-network-connectivity.md)
-- [Подключение веб-приложения к экспресс-выпуску SQL Server 2005](connecting-your-web-application-to-sql-server-2005-express-edition.md)
+- [Подключение веб-приложения к экспресс-выпуску SQL Server 2005](connecting-your-web-application-to-sql-server-2005-express-edition.md)
 - [Использование SQL Server Management Studio](using-sql-server-management-studio.md)
 - [Начало работы со службами Reporting Services](getting-started-with-reporting-services.md)
 - [Создание и настройка отчетов в Business Intelligence Development Studio](building-and-customizing-reports-in-business-intelligence-development-studio.md)

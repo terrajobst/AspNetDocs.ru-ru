@@ -12,7 +12,7 @@ ms.openlocfilehash: 6d25eb99f87c4c3d2c96e021e79a13c90da4a035
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414495"
 ---
 # <a name="programming-aspnet-web-pages-razor-using-visual-studio"></a>Программирование веб-страниц ASP.NET (Razor) с помощью Visual Studio
@@ -58,7 +58,7 @@ Visual Studio 2010 не поддерживает по умолчанию для 
 
 |  | Visual Studio 2010 | Visual Studio 2012 | Visual Studio 2013 |
 | --- | --- | --- | --- |
-| **Веб-страницы ASP.NET 2** | Установка ASP.NET MVC 4 | (Включено) | (Включено) |
+| **ASP.NET Web Pages 2** | Установка ASP.NET MVC 4 | (Включено) | (Включено) |
 | **Веб-страницы ASP.NET 3** |  | Обновление ASP.NET Web Pages 3 с помощью NuGet | (Включено) |
 
 Для работы с Visual Studio 2010, см. в разделе [Установка поддержки для веб-страниц ASP.NET в Visual Studio 2010](#vs2010support).

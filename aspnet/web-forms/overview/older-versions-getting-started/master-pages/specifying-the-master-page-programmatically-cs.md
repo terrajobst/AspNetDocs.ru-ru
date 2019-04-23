@@ -12,7 +12,7 @@ ms.openlocfilehash: 0d56a600b1b97d9d044fa90b678c942f0dc6fc00
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413832"
 ---
 # <a name="specifying-the-master-page-programmatically-c"></a>Программное указание эталонной страницы (C#)
@@ -42,7 +42,7 @@ ms.locfileid: "59413832"
 Рис. 1 иллюстрирует этот fusion. Шаг 1 на рис. 1 показаны исходное содержимое и иерархий управления главной страницы. Элементы управления страницы добавляются в конец этапа PreInit содержимое соответствующих элементов управления ContentPlaceHolder на главной странице (шаг 2). После этого fusion главной страницы служит в качестве корневого элемента иерархии склеенную элемента управления. Это совмещенного управления иерархии затем добавляется на страницу для создания иерархии завершенных элементов управления (шаг 3). Конечным результатом является, включающее иерархии склеенную элементов управления в иерархии элементов управления страницы.
 
 
-[![Tон главной страницы и страницы содержимого элемента управления иерархии являются совмещенного друг с другом на этапе PreInit](specifying-the-master-page-programmatically-cs/_static/image2.png)](specifying-the-master-page-programmatically-cs/_static/image1.png)
+[![Главной страницы и страницы содержимого элемента управления иерархии являются совмещенного друг с другом на этапе PreInit](specifying-the-master-page-programmatically-cs/_static/image2.png)](specifying-the-master-page-programmatically-cs/_static/image1.png)
 
 **Рис 01**: Главной страницы и страницы содержимого элемента управления иерархии являются совмещенного друг с другом на этапе PreInit ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-cs/_static/image3.png))
 
@@ -83,7 +83,7 @@ Partakes главную страницу в этом fusion зависит от 
 Иными словами, необходимо оставить `MasterPageFile` атрибут в `@Page` директива слушать получить обширные возможности разработки в Visual Studio.
 
 
-[![Visual Studio использует @Page атрибут MasterPageFile директивы для подготовки к просмотру в конструкторе](specifying-the-master-page-programmatically-cs/_static/image5.png)](specifying-the-master-page-programmatically-cs/_static/image4.png)
+[![Visual Studio использует @Page атрибут MasterPageFile директивы для подготовки к просмотру в режим конструктора](specifying-the-master-page-programmatically-cs/_static/image5.png)](specifying-the-master-page-programmatically-cs/_static/image4.png)
 
 **Рис. 02**: Visual Studio использует `@Page` директивы `MasterPageFile` атрибута для визуализации в режим конструктора ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-cs/_static/image6.png))
 
@@ -97,7 +97,7 @@ Partakes главную страницу в этом fusion зависит от 
 Создание новой главной страницы в корневой папке с именем `Alternate.master`. Также добавить новую таблицу стилей на веб-сайт с именем `AlternateStyles.css`.
 
 
-[![Add другой главной страницы и CSS-файл на веб-сайт](specifying-the-master-page-programmatically-cs/_static/image8.png)](specifying-the-master-page-programmatically-cs/_static/image7.png)
+[![Добавьте еще один главную страницу и CSS, файл на веб-сайт](specifying-the-master-page-programmatically-cs/_static/image8.png)](specifying-the-master-page-programmatically-cs/_static/image7.png)
 
 **Рис 03**: Добавить другой главной страницы и CSS-файл на веб-сайт ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-cs/_static/image9.png))
 
@@ -108,7 +108,7 @@ Partakes главную страницу в этом fusion зависит от 
 > ASP.NET включает в себя возможность определить *темы*. Тема — коллекция изображений, CSS-файлов, относящихся к стилю параметры и веб-элемента управления свойства, которые могут применяться к странице во время выполнения. Темы — способ перейти, если веб сайта макеты отличаются только в изображений, отображаемых и их правила CSS. Если макеты отличаются более значительно, например с помощью различных веб-элементов управления или необходимости радикально другой макет, затем необходимо будет использовать отдельный главные страницы. Обратитесь к дополнительными материалами в конце этого руководства, Дополнительные сведения о темах.
 
 
-[![OСтраниц содержимого, теперь можно использовать благодаря новому интерфейсу](specifying-the-master-page-programmatically-cs/_static/image11.png)](specifying-the-master-page-programmatically-cs/_static/image10.png)
+[![Страниц содержимого теперь можно использовать новый интерфейс](specifying-the-master-page-programmatically-cs/_static/image11.png)](specifying-the-master-page-programmatically-cs/_static/image10.png)
 
 **Рис. 04**: Страниц содержимого теперь можно использовать новый интерфейс ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-cs/_static/image12.png))
 
@@ -206,7 +206,7 @@ Partakes главную страницу в этом fusion зависит от 
 > Так как `Site.master` и `Alternate.master` же задали элементов управления ContentPlaceHolder неважно, какие главной страницы, выбирается при создании новой страницы содержимого. Для обеспечения согласованности, я бы предложил с помощью `Site.master`.
 
 
-[![Aдд новую страницу содержимого на веб-сайт](specifying-the-master-page-programmatically-cs/_static/image14.png)](specifying-the-master-page-programmatically-cs/_static/image13.png)
+[![Добавьте новую страницу содержимого на веб-сайт](specifying-the-master-page-programmatically-cs/_static/image14.png)](specifying-the-master-page-programmatically-cs/_static/image13.png)
 
 **05 рис**: Добавьте новую страницу содержимого на веб-сайт ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-cs/_static/image15.png))
 
@@ -251,12 +251,12 @@ Partakes главную страницу в этом fusion зависит от 
 Этот код в месте, посетите `ChooseMasterPage.aspx` страницы. Изначально `Site.master` Главная страница является выбранный (см. рис. 6), но пользователь может выбрать другой главной страницы из раскрывающегося списка.
 
 
-[![Cсодержимого страницы отображаются с помощью Site.master главной страницы](specifying-the-master-page-programmatically-cs/_static/image17.png)](specifying-the-master-page-programmatically-cs/_static/image16.png)
+[![Страницы содержимого, отображаются с помощью Site.master главной страницы](specifying-the-master-page-programmatically-cs/_static/image17.png)](specifying-the-master-page-programmatically-cs/_static/image16.png)
 
 **Рис 06**: Содержимое страницы, отображаемых с помощью `Site.master` главной страницы ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-cs/_static/image18.png))
 
 
-[![CСтраницы содержимого теперь отображаются с помощью Alternate.master главной страницы](specifying-the-master-page-programmatically-cs/_static/image20.png)](specifying-the-master-page-programmatically-cs/_static/image19.png)
+[![Страницы содержимого теперь отображаются с помощью Alternate.master главной страницы](specifying-the-master-page-programmatically-cs/_static/image20.png)](specifying-the-master-page-programmatically-cs/_static/image19.png)
 
 **07 рис**: Содержимое страницы, теперь отображаются с помощью `Alternate.master` главной страницы ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-cs/_static/image21.png))
 

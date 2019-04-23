@@ -12,7 +12,7 @@ ms.openlocfilehash: dcc2e703829cfa0b77575870feff451fd0738f56
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59416497"
 ---
 # <a name="intro-to-aspnet-mvc"></a>Введение в ASP.NET MVC
@@ -32,11 +32,11 @@ ms.locfileid: "59416497"
 
 Ниже приведены два снимка экрана приложения, который вам предстоит создать. Вы получите простую таблицу фильмов с помощью различных столбцов.
 
-[![Mильм список — Windows Internet Explorer (12)](getting-started-with-mvc-part1/_static/image2.png)](getting-started-with-mvc-part1/_static/image1.png)
+[![Список фильмов - Windows Internet Explorer (12)](getting-started-with-mvc-part1/_static/image2.png)](getting-started-with-mvc-part1/_static/image1.png)
 
 И вы получите Создание формы, поэтому мы можем добавить в список фильмов.
 
-[![Cсоздать фильм - Windows Internet Explorer (2)](getting-started-with-mvc-part1/_static/image4.png)](getting-started-with-mvc-part1/_static/image3.png)
+[![Создайте фильм - Windows Internet Explorer (2)](getting-started-with-mvc-part1/_static/image4.png)](getting-started-with-mvc-part1/_static/image3.png)
 
 ## <a name="skills-youll-learn"></a>Навыки, которые вы узнаете
 
@@ -55,17 +55,17 @@ ms.locfileid: "59416497"
 
 Visual Web Developer — это интегрированная среда разработки, или интегрированной среды разработки. Так же, как использовать Microsoft Word для записи документов, вы используете интегрированную среду разработки для создания приложений. Панель инструментов в верхней, отображаются различные параметры, доступные для вас, а также меню, вы также использовали выберите файл | Новый проект.
 
-[![Mсообщению, Visual Web Developer 2010 Express](getting-started-with-mvc-part1/_static/image6.png)](getting-started-with-mvc-part1/_static/image5.png)
+[![Microsoft Visual Web Developer 2010 Express](getting-started-with-mvc-part1/_static/image6.png)](getting-started-with-mvc-part1/_static/image5.png)
 
 ## <a name="creating-your-first-application"></a>Создание первого приложения
 
 Можно создавать приложения с помощью Visual Basic или Visual C#. Теперь выберите Visual C# с левой стороны экрана выберите «Веб-приложение ASP.NET MVC 2». Присвойте проекту имя «Movies» и нажмите кнопку ОК.
 
-[![Nновые возможности Project](getting-started-with-mvc-part1/_static/image8.png)](getting-started-with-mvc-part1/_static/image7.png)
+[![Новый проект](getting-started-with-mvc-part1/_static/image8.png)](getting-started-with-mvc-part1/_static/image7.png)
 
 В области справа находится обозреватель решений, отображаются все файлы и папки в приложении. Большие окна в середине — изменения кода и большую часть времени. Visual Studio используется шаблон по умолчанию для проекта ASP.NET MVC, который вы только что создали, поэтому у вас есть рабочее приложение прямо сейчас не выполняя никаких действий! Это связано с простых «Hello World! проект и является хорошей отправной точкой для нашего приложения.
 
-[![Mсообщению, Visual Web Developer 2010 Express](getting-started-with-mvc-part1/_static/image10.png)](getting-started-with-mvc-part1/_static/image9.png)
+[![Microsoft Visual Web Developer 2010 Express](getting-started-with-mvc-part1/_static/image10.png)](getting-started-with-mvc-part1/_static/image9.png)
 
 Нажмите кнопку «Воспроизвести» на панели инструментов.
 
@@ -77,9 +77,9 @@ Visual Web Developer — это интегрированная среда раз
 
 Это приведет к Visual Web Developer для запуска веб сервера разработки и выполнения нашего веб-приложения (не существует конфигурации или ручного действия, необходимые для этого). Затем он запустит браузер и настроить его для просмотра домашней страницы приложения. Обратите внимание, что ниже говорит что адресной строке браузера «localhost», а не что-то вида example.com. Том, что localhost всегда указывает на локальном компьютере — в этом случае работающего приложения, которые мы только что создали.
 
-[![Home страница](getting-started-with-mvc-part1/_static/image13.png)](getting-started-with-mvc-part1/_static/image12.png)
+[![Домашняя страница](getting-started-with-mvc-part1/_static/image13.png)](getting-started-with-mvc-part1/_static/image12.png)
 
 По умолчанию этот шаблон по умолчанию дает вам две страницы посетить и страницу основное имя для входа. Давайте изменить работу этого приложения и немного поговорим об ASP.NET MVC в процессе. Закройте обозреватель и позволяет изменить часть кода.
 
 > [!div class="step-by-step"]
-> [Далее](getting-started-with-mvc-part2.md)
+> [Вперед](getting-started-with-mvc-part2.md)

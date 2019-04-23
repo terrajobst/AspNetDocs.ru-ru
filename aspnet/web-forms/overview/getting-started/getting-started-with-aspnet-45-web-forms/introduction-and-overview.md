@@ -12,7 +12,7 @@ ms.openlocfilehash: 3a39e8d1979a743101d728eb3430e9aa0efb1252
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59415639"
 ---
 # <a name="getting-started-with-aspnet-45-web-forms-and-visual-studio-2017"></a>Приступая к работе с ASP.NET 4.5 и Visual Studio 2017
@@ -39,7 +39,7 @@ ms.locfileid: "59415639"
 
 Для просмотра этих областей, рассмотрите возможность изучения следующим содержимым:
 
-- [Приступая к работе с Visual C#](https://msdn.microsoft.com/library/a72418yk.aspx)
+- [Начало работы с Visual C#](https://msdn.microsoft.com/library/a72418yk.aspx)
 - [Разработка веб-](https://msdn.microsoft.com/beginner/bb308760.aspx), [HTML, CSS, JavaScript, SQL, PHP, JQuery](http://w3schools.com/)
 - [Реляционная база данных](http://en.wikipedia.org/wiki/Relational_database)
 - [Многоуровневая архитектура](http://en.wikipedia.org/wiki/Multitier_architecture)
@@ -93,7 +93,7 @@ ASP.NET 4.5, приведенные в этой серии руководств 
 - Простой пользовательский Интерфейс для создания проектов, которая предлагает [поддержку многих платформ ASP.NET](../../../../visual-studio/overview/2013/creating-web-projects-in-visual-studio.md#add) (веб-форм, MVC и веб-API).
 - [Начальная загрузка](../../../../visual-studio/overview/2013/creating-web-projects-in-visual-studio.md#bootstrap), макет, темы и framework гибкий Дизайн.
 - [ASP.NET Identity](../../../../identity/index.md), новая система членства ASP.NET, который работает так же, во всех платформах ASP.NET и работает с веб-размещения программного обеспечения, отличные от IIS.
-- [Entity Framework 6](https://msdn.microsoft.com/data/ef.aspx)
+- [Entity Framework 6](https://msdn.microsoft.com/data/ef.aspx)
 
   Обновление для платформы Entity Framework, что позволяет:
   - Извлечения и манипулирования данными в виде строго типизированных объектов
@@ -193,4 +193,4 @@ PayPal подтверждает данные учетной записи, зак
 Если возникает ошибка, соответствующее сообщение об ошибке может привести к путанице, безо всякого объяснения хороший по ее устранению. Получить справку, вы можете проверить [форумы ASP.NET](https://forums.asp.net/). Хорошим источником является раздел A и Q в [начало работы с веб-форм ASP.NET 4.5 и Visual Studio 2013 — Wingtip Toys](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) (C#) образца страницы. 
 
 > [!div class="step-by-step"]
-> [Далее](create-the-project.md)
+> [Вперед](create-the-project.md)

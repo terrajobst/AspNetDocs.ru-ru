@@ -12,14 +12,14 @@ ms.openlocfilehash: 1b6675a933f04b3eb7f5111b2ccd16c44baab7ba
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414352"
 ---
 # <a name="security-basics-and-aspnet-support-vb"></a>Общие сведения о безопасности и поддержка ASP.NET (VB)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Скачать PDF](http://download.microsoft.com/download/2/F/7/2F705A34-F9DE-4112-BBDE-60098089645E/aspnet_tutorial01_Basics_vb.pdf)
+[Загрузить PDF-файл](http://download.microsoft.com/download/2/F/7/2F705A34-F9DE-4112-BBDE-60098089645E/aspnet_tutorial01_Basics_vb.pdf)
 
 > Это первый учебник в серии руководств, которые будут рассмотрены приемы проверки подлинности посетителей через веб-формы, предоставление доступа к определенной страницы и функциональность и управление учетными записями пользователей в приложении ASP.NET.
 
@@ -139,7 +139,7 @@ ASP. Проверка подлинности форм NET предоставля
 В этой серии руководств посвящена исключительно SqlMembershipProvider.
 
 
-[![Tон поставщика модели включает различные реализации быть легко подключать в Framework](security-basics-and-asp-net-support-vb/_static/image4.png)](security-basics-and-asp-net-support-vb/_static/image3.png)
+[![Поставщик модели включает различные реализации легко подключать в платформ](security-basics-and-asp-net-support-vb/_static/image4.png)](security-basics-and-asp-net-support-vb/_static/image3.png)
 
 **Рис 03**: Поставщик модели включает различные реализации легко подключать в платформ ([Просмотр полноразмерного изображения](security-basics-and-asp-net-support-vb/_static/image5.png))
 

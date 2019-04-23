@@ -12,14 +12,14 @@ ms.openlocfilehash: 586508039b9a3d78492aa02a77a1f29c64668b5e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409698"
 ---
 # <a name="scenario-configuring-a-production-environment-for-web-deployment"></a>Сценарий: настройка рабочей среды для веб-развертывания
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описываются типичные веб-приложениях развертывания в рабочей среде и описание задачи, которые необходимо выполнить для настройки среды.
 

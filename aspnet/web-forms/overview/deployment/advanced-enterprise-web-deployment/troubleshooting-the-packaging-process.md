@@ -12,14 +12,14 @@ ms.openlocfilehash: 79774c6a1a1d05d5a7bcd82a5d7aa888933cf089
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59420111"
 ---
 # <a name="troubleshooting-the-packaging-process"></a>Устранение неполадок в процессе упаковки
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается, как собирать подробные сведения о процессе упаковки с помощью **EnablePackageProcessLoggingAndAssert** свойства в Microsoft Build Engine (MSBuild).
 > 

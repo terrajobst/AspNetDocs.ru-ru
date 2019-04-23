@@ -12,7 +12,7 @@ ms.openlocfilehash: ec0058472f8bc1d8d58e7c78deeb8b6097532510
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409737"
 ---
 # <a name="hands-on-lab-maintainable-azure-websites-managing-change-and-scale"></a>Практическое лабораторное занятие. Простые в обслуживании веб-сайты Azure: управление изменениями и масштабированием
@@ -131,7 +131,7 @@ ms.locfileid: "59409737"
 
     ![Включение Migrations](maintainable-azure-websites-managing-change-and-scale/_static/image1.png "включение миграции")
 
-    *Включение миграций*
+    *Включение миграции*
 
     > [!NOTE]
     > Эта команда добавляет **миграций** папке Quiz Компьютерщик проект, который содержит файл с именем **Configuration.cs**. **Конфигурации** класс позволяет настраивать поведение миграций для контекста.

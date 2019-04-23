@@ -12,7 +12,7 @@ ms.openlocfilehash: 149312e2ddf0a5023a4a12f5b05852f7da6b18f8
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418174"
 ---
 # <a name="aspnet-mvc-overview"></a>Общие сведения об ASP.NET MVC
@@ -29,7 +29,7 @@ MVC — это стандартный шаблон, который многие 
 В состав платформы MVC входят следующие компоненты:
 
 
-[![Invoking действия контроллера, который ожидает, что значение параметра](asp-net-mvc-overview/_static/image1.jpg)](asp-net-mvc-overview/_static/image1.png)
+[![Вызов действия контроллера, который ожидает, что значение параметра](asp-net-mvc-overview/_static/image1.jpg)](asp-net-mvc-overview/_static/image1.png)
 
 **Рис 01**: Вызов действия контроллера, который ожидает, что значение параметра ([Просмотр полноразмерного изображения](asp-net-mvc-overview/_static/image2.png))
 

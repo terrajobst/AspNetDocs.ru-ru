@@ -12,7 +12,7 @@ ms.openlocfilehash: 8234bd1b7eb74d9b03e507f00d9ad937314288be
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59411284"
 ---
 # <a name="aspnet-and-web-tools-for-visual-studio-2013-release-notes"></a>Заметки о выпуске ASP.NET and Web Tools для Visual Studio 2013
@@ -37,14 +37,14 @@ ms.locfileid: "59411284"
 - [Усовершенствования редактора Visual Studio Web](#web-editor)
 - [Поддержка веб-приложений службы приложений Azure, в Visual Studio](#waws)
 - [Веб-публикация усовершенствования](#publish)
-- [NuGet 2.7](#nuget)
-- [Веб-формы ASP.NET](#TOC9)
+- [NuGet 2.7](#nuget)
+- [Веб-форм ASP.NET](#TOC9)
 - [ASP.NET MVC 5](#TOC10)
 - [ASP.NET Web API 2](#TOC11)
 - [ASP.NET SignalR](#TOC13)
 - [ASP.NET Identity](#TOC8)
 - [Компоненты Microsoft OWIN](#TOC7)
-- [Entity Framework 6](#ef6)
+- [Entity Framework 6](#ef6)
 - [ASP.NET Razor 3](#TOC14)
 - [Приостановка приложения ASP.NET](#TOC15)
 - [Известные проблемы и критические изменения](#knownissues)

@@ -12,7 +12,7 @@ ms.openlocfilehash: ea526ce8abdf6f7013e8dd832824c21448878e0b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59416848"
 ---
 # <a name="dynamically-adding-an-accordion-pane-c"></a>Динамическое добавление области Accordion (C#)
@@ -55,7 +55,7 @@ ms.locfileid: "59416848"
 [!code-css[Main](dynamically-adding-an-accordion-pane-cs/samples/sample6.css)]
 
 
-[![Tданные в Гармошка динамически была добавлена, серверный код](dynamically-adding-an-accordion-pane-cs/_static/image2.png)](dynamically-adding-an-accordion-pane-cs/_static/image1.png)
+[![Данные в Гармошка динамически добавленные серверный код](dynamically-adding-an-accordion-pane-cs/_static/image2.png)](dynamically-adding-an-accordion-pane-cs/_static/image1.png)
 
 Данные в Гармошка динамически добавленные серверного кода ([Просмотр полноразмерного изображения](dynamically-adding-an-accordion-pane-cs/_static/image3.png))
 

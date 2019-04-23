@@ -12,14 +12,14 @@ ms.openlocfilehash: 865e901618b48bc4bfdc6d7a3ca4e8868d4cb46b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412987"
 ---
 # <a name="customizing-database-deployments-for-multiple-environments"></a>Настройка развертываний баз данных для нескольких сред
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается, как настроить свойства базы данных для конкретных целевых сред в рамках процесса развертывания.
 > 
@@ -68,7 +68,7 @@ ms.locfileid: "59412987"
 
 |  | Разработки и тестирования | Промежуточного хранения и интеграции | Рабочие |
 | --- | --- | --- | --- |
-| **Параметры сортировки для сравнения развертывания** | Исходный код | целевого объекта | целевого объекта |
+| **Параметры сортировки для сравнения развертывания** | Source | целевого объекта | целевого объекта |
 | **Развертывать свойства базы данных** | True | Только в первый раз | Только в первый раз |
 | **Всегда воссоздавать базу данных** | True | False | False |
 | **Блокировать добавочное развертывание при возможности потери данных** | False | Возможно | True |

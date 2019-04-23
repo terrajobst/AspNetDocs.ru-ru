@@ -12,7 +12,7 @@ ms.openlocfilehash: fb185c4147d516ab28d632b3e874b6f1d46f6576
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408424"
 ---
 # <a name="testing-the-strength-of-a-password-vb"></a>Тестирование надежности пароля (VB)
@@ -44,7 +44,7 @@ ms.locfileid: "59408424"
 Откройте страницу и введите сейчас: Только после ввода строчные буквы, прописные буквы, цифры и символы, считается как неразрывный пароль.
 
 
-[![Nкак пароль (), неплохо](testing-the-strength-of-a-password-vb/_static/image2.png)](testing-the-strength-of-a-password-vb/_static/image1.png)
+[![Теперь пароль (), неплохо](testing-the-strength-of-a-password-vb/_static/image2.png)](testing-the-strength-of-a-password-vb/_static/image1.png)
 
 Теперь пароль (), неплохо ([Просмотр полноразмерного изображения](testing-the-strength-of-a-password-vb/_static/image3.png))
 

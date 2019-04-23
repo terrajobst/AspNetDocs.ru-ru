@@ -12,7 +12,7 @@ ms.openlocfilehash: b52abab12503918603419c9ccfabefcffdfd7e06
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418278"
 ---
 # <a name="authenticating-users-with-forms-authentication-c"></a>Проверка подлинности пользователей с помощью проверки подлинности на основе форм (C#)
@@ -150,4 +150,4 @@ aspnet\_regsql
 В этом руководстве вы узнали, как использовать проверку подлинности форм, при создании приложения ASP.NET MVC. Во-первых вы узнали, как для создания новых пользователей и ролей, используя средство администрирования веб-сайта. Далее вы узнали, как использовать атрибут [Authorize], чтобы запретить неавторизованным пользователям из вызова действий контроллера. Наконец вы узнали, как настроить приложение MVC для хранения пользователя и сведения о роли в рабочей базе данных.
 
 > [!div class="step-by-step"]
-> [Далее](authenticating-users-with-windows-authentication-cs.md)
+> [Вперед](authenticating-users-with-windows-authentication-cs.md)

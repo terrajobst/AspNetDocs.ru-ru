@@ -12,7 +12,7 @@ ms.openlocfilehash: 3e720dd895c609d5b35848dbc4d4a6989028ff7d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418759"
 ---
 # <a name="signalr-getting-started"></a>Приступая к работе SignalR
@@ -22,8 +22,8 @@ ms.locfileid: "59418759"
 
 - [Введение в SignalR](introduction-to-signalr.md)
 - [Поддерживаемые платформы](supported-platforms.md)
-- [Учебник. Начало работы с SignalR 2](tutorial-getting-started-with-signalr.md)
+- [Учебник. Начало работы с SignalR 2](tutorial-getting-started-with-signalr.md)
 - [Учебник. Начало работы с SignalR 2 и MVC 5](tutorial-getting-started-with-signalr-and-mvc.md)
 - [Учебник. Высокочастотный в реальном времени с SignalR 2](tutorial-high-frequency-realtime-with-signalr.md)
-- [Учебник. Передача сообщений с сервера с помощью SignalR 2](tutorial-server-broadcast-with-signalr.md)
-- [Практическое лабораторное занятие. Веб-приложения в режиме реального времени с SignalR](real-time-web-applications-with-signalr.md)
+- [Учебник. Передача сообщений с сервера с помощью SignalR 2](tutorial-server-broadcast-with-signalr.md)
+- [Практическое лабораторное занятие. В режиме реального времени веб-приложений с помощью SignalR](real-time-web-applications-with-signalr.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: 988aa9252cfd93067888734006e6003347f1fb5e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414755"
 ---
 # <a name="drag-and-drop-via-reorderlist-c"></a>Перетаскивание с помощью элемента управления ReorderList (C#)
@@ -44,7 +44,7 @@ ms.locfileid: "59414755"
 - `position` (int, NULL)
 
 
-[![Tмакет таблицы AJAX HE](drag-and-drop-via-reorderlist-cs/_static/image2.png)](drag-and-drop-via-reorderlist-cs/_static/image1.png)
+[![Макет таблицы AJAX](drag-and-drop-via-reorderlist-cs/_static/image2.png)](drag-and-drop-via-reorderlist-cs/_static/image1.png)
 
 Макет таблицы AJAX ([Просмотр полноразмерного изображения](drag-and-drop-via-reorderlist-cs/_static/image3.png))
 
@@ -52,7 +52,7 @@ ms.locfileid: "59414755"
 Затем введите таблицы с несколькими значениями. Обратите внимание, что `position` столбец содержит порядок сортировки элементов.
 
 
-[![Tон начальные данные в таблице AJAX](drag-and-drop-via-reorderlist-cs/_static/image5.png)](drag-and-drop-via-reorderlist-cs/_static/image4.png)
+[![Начальные данные в таблице AJAX](drag-and-drop-via-reorderlist-cs/_static/image5.png)](drag-and-drop-via-reorderlist-cs/_static/image4.png)
 
 Начальные данные в таблице AJAX ([Просмотр полноразмерного изображения](drag-and-drop-via-reorderlist-cs/_static/image6.png))
 
@@ -83,7 +83,7 @@ ms.locfileid: "59414755"
 Выполнить этот пример в браузере и немного изменить порядок элементов списка. Затем перезагрузите страницу и/или посмотрите на базе данных. Измененная позиций вестись и также отражаются по значениям в `position` столбца в базе данных, которые все без кода, вы можете просто с помощью разметки.
 
 
-[![Tон данных в базу данных в соответствии с новой порядок элементов списка](drag-and-drop-via-reorderlist-cs/_static/image8.png)](drag-and-drop-via-reorderlist-cs/_static/image7.png)
+[![Изменения данных в базе данных в соответствии с новой порядок элементов списка](drag-and-drop-via-reorderlist-cs/_static/image8.png)](drag-and-drop-via-reorderlist-cs/_static/image7.png)
 
 Элемент данных при изменениях базы данных в соответствии со списком нового заказа ([Просмотр полноразмерного изображения](drag-and-drop-via-reorderlist-cs/_static/image9.png))
 

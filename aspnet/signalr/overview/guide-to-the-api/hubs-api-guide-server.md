@@ -12,7 +12,7 @@ ms.openlocfilehash: adfd540562ec54938860740ab280c770e24f492e
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59411414"
 ---
 # <a name="aspnet-signalr-hubs-api-guide---server-c"></a>Руководство по API концентраторов ASP.NET SignalR - Server (C#)
@@ -56,7 +56,7 @@ ms.locfileid: "59411414"
 
     - [Время жизни объекта концентратора](#transience)
     - [Венгерской имена центров в клиентах JavaScript](#hubnames)
-    - [Несколько концентраторов](#multiplehubs)
+    - [Multiple Hubs](#multiplehubs)
     - [Концентраторы со строгой типизацией](#stronglytypedhubs)
 - [Как определить методы в классе концентратора, который клиенты могут вызывать](#hubmethods)
 
@@ -270,7 +270,7 @@ ms.locfileid: "59411414"
 
 [!code-csharp[Main](hubs-api-guide-server/samples/sample19.cs)]
 
-**Асинхронное взаимодействие**
+**Асинхронный**
 
 [!code-csharp[Main](hubs-api-guide-server/samples/sample20.cs?highlight=1,7-8)]
 

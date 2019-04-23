@@ -12,7 +12,7 @@ ms.openlocfilehash: 52b1aec577634dfb9fec7753e4f9b8bf46d159f0
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59416264"
 ---
 # <a name="logging-error-details-with-aspnet-health-monitoring-c"></a>Запись в журнал сведений об ошибках с помощью наблюдения за состоянием системы ASP.NET (C#)
@@ -147,8 +147,8 @@ ms.locfileid: "59416264"
 - [Обзор наблюдения за состоянием системы ASP.NET](https://msdn.microsoft.com/library/bb398933.aspx)
 - [Конфигурации и настройке мониторинга системы ASP.NET работоспособности](http://dotnetslackers.com/articles/aspnet/ConfiguringAndCustomizingTheHealthMonitoringSystemOfASPNET.aspx)
 - [Часто задаваемые вопросы — наблюдение за работоспособностью в ASP.NET 2.0](https://blogs.msdn.com/erikreitan/archive/2006/05/22/603586.aspx)
-- [Как выполнить: Отправить сообщение электронной почты для мониторинга уведомлений о работоспособности](https://msdn.microsoft.com/library/ms227553.aspx)
-- [Как выполнить: Использовать наблюдение за работоспособностью в ASP.NET](https://msdn.microsoft.com/library/ms998306.aspx)
+- [Практическое руководство. Отправить сообщение электронной почты для мониторинга уведомлений о работоспособности](https://msdn.microsoft.com/library/ms227553.aspx)
+- [Практическое руководство. Использовать наблюдение за работоспособностью в ASP.NET](https://msdn.microsoft.com/library/ms998306.aspx)
 - [Наблюдение за работоспособностью в ASP.NET](http://aspnet.4guysfromrolla.com/articles/031407-1.aspx)
 
 > [!div class="step-by-step"]

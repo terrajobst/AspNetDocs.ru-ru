@@ -12,7 +12,7 @@ ms.openlocfilehash: 0991ce5c866aa9e31ef23812e953d9ee10dda3d1
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59409724"
 ---
 # <a name="aspnet-4-and-visual-studio-2010-web-development-overview"></a>Общие сведения о веб-разработке в ASP.NET 4 и Visual Studio 2010
@@ -22,7 +22,7 @@ ms.locfileid: "59409724"
 > [Скачайте этот технический документ](https://download.microsoft.com/download/7/1/A/71A105A9-89D6-4201-9CC5-AD6A3B7E2F22/ASP_NET_4_and_Visual_Studio_2010_Web_Development_Overview.pdf)
 
 
-**Описание**
+**Содержание**
 
 **[Основные службы](#0.2__Toc253429238 "_Toc253429238")**  
 [Файл Web.config рефакторинг](#0.2__Toc253429239 "_Toc253429239")  
@@ -89,7 +89,7 @@ ms.locfileid: "59409724"
 [Публикация одним щелчком для веб-приложений](#0.2__Toc253429296 "_Toc253429296")  
 [Resources](#0.2__Toc253429297 "_Toc253429297")
 
-**[Заявление об отказе](#0.2__Toc253429298 "_Toc253429298")**
+**[Disclaimer](#0.2__Toc253429298 "_Toc253429298")**
 
 <a id="0.2__Toc224729018"></a><a id="0.2__Toc253429238"></a><a id="0.2__Toc243304612"></a>
 
@@ -444,16 +444,16 @@ ASP.NET определяет возможности браузера, польз
 Ниже перечислены новый обозреватель файлов определений:
 
 - *BlackBerry.Browser*
-- *Chrome.Browser*
+- *chrome.browser*
 - *Default.Browser*
-- *Firefox.Browser*
-- *Gateway.Browser*
-- *generic.Browser*
+- *firefox.browser*
+- *gateway.browser*
+- *generic.browser*
 - *ie.browser*
 - *iemobile.browser*
-- *iPhone.Browser*
-- *Opera.Browser*
-- *Safari.Browser*
+- *iphone.browser*
+- *opera.browser*
+- *safari.browser*
 
 #### <a name="using-browser-capabilities-providers"></a>С помощью поставщиков возможностей браузера
 
@@ -982,7 +982,7 @@ ASP.NET 2.0 и более поздних версиях визуализации
 По умолчанию следующие серверные элементы управления ASP.NET, которые поддерживают шаблоны, будут автоматически переноситься в внешней таблицы, которая используется для применения встроенных стилей:
 
 - *FormView*
-- *Модуль*
+- *Имя входа*
 - *PasswordRecovery*
 - *Изменение пароля*
 - *Мастер*

@@ -12,7 +12,7 @@ ms.openlocfilehash: 1023d9bef311e58fb5fb0bb24cde80e8320e6bac
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59419058"
 ---
 # <a name="hands-on-lab-one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api"></a>Практическое лабораторное занятие. One ASP.NET: интеграция веб-форм ASP.NET, MVC и веб-API
@@ -48,7 +48,7 @@ ms.locfileid: "59419058"
 Для завершения этой практической работу требуется следующее:
 
 - [Visual Studio Express 2013 для Web](https://www.microsoft.com/visualstudio/) или более поздней версии
-- [Visual Studio 2013 с обновлением 1](https://go.microsoft.com/fwlink/?LinkId=301714)
+- [Visual Studio 2013 с обновлением 1](https://go.microsoft.com/fwlink/?LinkId=301714)
 
 <a id="Setup"></a>
 ### <a name="setup"></a>Установка
@@ -390,7 +390,7 @@ Entity Framework Code First рабочий процесс моделирован
 
     ![Вкладка "сборка"](one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api/_static/image32.png "Создание раздела")
 
-    *Вкладка Построение*
+    *Вкладка "сборка"*
 5. В разделе **вывода**выберите **XML-файл документации**. В поле ввода введите **приложения\_Data/XmlDocument.xml**.
 
     ![Выходные данные раздела на вкладке "Построение"](one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api/_static/image33.png "вывода раздела на вкладке \"Построение\"")

@@ -12,14 +12,14 @@ ms.openlocfilehash: 326abfe4fe86d0741b0bf807d5454d6cf87a7c12
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59411973"
 ---
 # <a name="enterprise-web-deployment-scenario-overview"></a>Корпоративное веб-развертывание. Общие сведения о сценарии
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Этой серии руководств использует примера решения с реалистичные уровень сложности, вместе с вымышленной корпоративный сценарий развертывания, чтобы предоставить справочную реализацию и дать задач и пошаговых руководствах общий контекст. В этом разделе описывается сценарий учебника и вводит в примере решения.
 

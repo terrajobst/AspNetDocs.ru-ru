@@ -12,7 +12,7 @@ ms.openlocfilehash: 97dac03e4b305b3775214801143cbc57b4221a40
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59411492"
 ---
 # <a name="creating-a-tasklist-application-with-aspnet-mvc"></a>Создание приложения Tasklist с помощью ASP.NET MVC
@@ -24,4 +24,4 @@ ms.locfileid: "59411492"
 [&#9654;Просмотрите видео (мин. 38)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/creating-a-tasklist-application-with-aspnet-mvc)
 
 > [!div class="step-by-step"]
-> [Далее](creating-a-movie-database-application-in-15-minutes-with-aspnet-mvc.md)
+> [Вперед](creating-a-movie-database-application-in-15-minutes-with-aspnet-mvc.md)

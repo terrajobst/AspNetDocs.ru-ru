@@ -12,7 +12,7 @@ ms.openlocfilehash: e4d9424d691f92aacf078faed09689daa40a44fd
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418343"
 ---
 # <a name="owin-startup-class-detection"></a>Определение класса запуска OWIN
@@ -22,7 +22,7 @@ ms.locfileid: "59418343"
 >
 > ## <a name="prerequisites"></a>Предварительные требования
 >
-> [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
+> [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
 
 
 ## <a name="owin-startup-class-detection"></a>Определение класса запуска OWIN
@@ -79,8 +79,7 @@ ms.locfileid: "59418343"
      > [!NOTE]
      > В приведенном выше коде мы закомментирован `OwinStartup` атрибут и мы полагаетесь на соглашению под управлением с именем класса `Startup` .-Press ***F5*** для запуска приложения. Несколько раз нажмите кнопку обновления.
 
-    ![](owin-startup-class-detection/_static/image4.png)
-  Примечание. Значение, показанное в образы в этом руководстве не будет соответствовать номера, который отображается. Миллисекунды строка используется для отображения нового ответа при обновлении страницы.
+    ![](owin-startup-class-detection/_static/image4.png) Примечание. Значение, показанное в образы в этом руководстве не будет соответствовать номера, который отображается. Миллисекунды строка используется для отображения нового ответа при обновлении страницы.
   Вы увидите сведения о трассировке в **вывода** окна.
 
     ![](owin-startup-class-detection/_static/image5.png)

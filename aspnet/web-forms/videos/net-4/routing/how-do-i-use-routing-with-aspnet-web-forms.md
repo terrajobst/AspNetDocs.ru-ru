@@ -12,7 +12,7 @@ ms.openlocfilehash: f5036d780ed4fd0dd8caabbf4badb39fd9ee2de3
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59417069"
 ---
 # <a name="how-do-i-use-routing-with-aspnet-web-forms"></a>Инструкции: Использование маршрутизации с помощью веб-форм ASP.NET?

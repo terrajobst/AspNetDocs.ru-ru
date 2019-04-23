@@ -12,7 +12,7 @@ ms.openlocfilehash: 7d300a1f29c7712408d17c6629da6cefb67b3cdb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59410322"
 ---
 # <a name="how-do-i"></a>Инструкции
@@ -29,7 +29,7 @@ ms.locfileid: "59410322"
 - [Защита сайта с помощью членства и ролей](how-do-i-secure-my-site-using-membership-and-roles.md)
 - [Создание страницы "Свяжитесь с нами"](how-do-i-create-a-contact-us-page.md)
 - [Создание полнофункционального портала входа в систему для клиентов](how-do-i-create-a-full-featured-customer-login-portal.md)
-- [Использование эталонных страниц и структуры навигации веб-сайта](how-do-i-use-master-pages-and-site-navigation.md)
+- [Использование главных страниц и структуры навигации веб-сайта](how-do-i-use-master-pages-and-site-navigation.md)
 - [Создание веб-сайтов, управляемых данными](how-do-i-create-data-driven-web-sites.md)
 - [Реализация HttpModule](how-do-i-implement-an-httpmodule.md)
 - [Настройка поставщика членства SQL](how-do-i-set-up-the-sql-membership-provider.md)
@@ -51,11 +51,11 @@ ms.locfileid: "59410322"
 - [Сохранение и загрузка сведений о состоянии просмотра для пользовательского серверного веб-элемента управления](how-do-i-save-and-load-view-state-information-for-a-custom-web-server-control.md)
 - [Создание и использование событий на уровне приложения в ASP.NET](how-do-i-create-and-use-application-level-events-in-aspnet.md)
 - [Простая отправка файлов в ASP.NET](how-do-i-simple-file-uploads-in-aspnet.md)
-- [Отправка нескольких файлов в ASP.NET 2](how-do-i-multiple-file-uploads-in-aspnet-2.md)
-- [Отправка нескольких файлов в ASP.NET 1](how-do-i-multiple-file-uploads-in-aspnet-1.md)
+- [Отправка нескольких файлов в ASP.NET 2](how-do-i-multiple-file-uploads-in-aspnet-2.md)
+- [Отправка нескольких файлов в ASP.NET 1](how-do-i-multiple-file-uploads-in-aspnet-1.md)
 - [Отправка файлов с помощью интерфейса в стиле AJAX](how-do-i-file-uploads-with-an-ajax-style-interface.md)
-- [Работа с эталонными страницами декларативным и программным способами](how-do-i-work-with-master-pages-declaratively-and-programmatically.md)
-- [Обработка событий на эталонных страницах и страницах содержимого](how-do-i-handle-events-in-master-and-content-pages.md)
+- [Работа с главными страницами декларативным и программным способами](how-do-i-work-with-master-pages-declaratively-and-programmatically.md)
+- [Обработка событий на главных страницах и страницах содержимого](how-do-i-handle-events-in-master-and-content-pages.md)
 - [Использование элемента управления ObjectDataSource с классом доступа к данным и бизнес-объектом](how-do-i-use-the-objectdatasource-with-a-data-access-class-and-business-object.md)
 - [Создание выбираемых пользователем тем для веб-сайта](how-do-i-create-user-selectable-themes-for-a-web-site.md)
 - [Обмен данными между клиентским кодом JavaScript и серверным кодом с помощью скрытого поля](how-do-i-share-data-between-client-javascript-and-server-code-using-a-hidden-field.md)
@@ -70,7 +70,7 @@ ms.locfileid: "59410322"
 - [Создание групп с помощью элемента управления ListView для различных данных](how-do-i-use-the-ability-to-create-groups-with-the-listview-control-for-different-data.md)
 - [Предоставление доступа к элементам HTML из серверного кода](how-do-i-make-html-elements-accessible-from-server-side-code.md)
 - [Использование ролей для сегментации функциональных возможностей на веб-сайте ASP.NET](how-do-i-use-roles-to-segment-functionality-in-an-aspnet-web-site.md)
-- [Работа с вложенными эталонными страницами по созданию стандартных макетов содержимого](how-do-i-work-with-nested-master-pages-to-create-standard-content-layouts.md)
+- [Работа с вложенными главными страницами по созданию стандартных макетов содержимого](how-do-i-work-with-nested-master-pages-to-create-standard-content-layouts.md)
 - [Определение возможностей браузера на веб-страницах ASP.NET](how-do-i-detect-browser-capabilities-in-aspnet-web-pages.md)
 - [Сопоставление серверного элемента управления ASP.NET с используемым для его отображения адаптером](how-do-i-map-an-aspnet-server-control-to-the-adaptor-used-to-render-it.md)
 - [Передача сведений с одной страницы на другую с помощью строки запроса](how-do-i-pass-information-from-one-page-to-another-using-a-query-string.md)
@@ -85,13 +85,13 @@ ms.locfileid: "59410322"
 - [Запись веб-событий в SqlWebEventProvider базы данных SQL Server](how-do-i-write-web-events-to-a-sql-server-database-using-the-sqlwebeventprovider.md)
 - [Отправка электронной почты с веб-сайта с помощью ASP.NET](how-do-i-use-aspnet-to-send-email-from-a-web-site.md)
 - [Настройка уведомлений по электронной почте для наблюдения за состоянием системы на веб-сайте ASP.NET](how-do-i-configure-email-notification-for-health-monitoring-on-an-aspnet-web-site.md)
-- [Использование проекта веб-развертывания Visual Studio 2008](how-do-i-use-a-visual-studio-2008-web-deployment-project.md)
+- [Использование проекта веб-развертывания Visual Studio 2008](how-do-i-use-a-visual-studio-2008-web-deployment-project.md)
 - [Отправка шаблонных сообщений электронной почты для событий наблюдения за состоянием системы в ASP.NET](how-do-i-send-templated-emails-for-health-monitoring-events-in-aspnet.md)
 - [Асинхронная отправка сообщений электронной почты с помощью ASP.NET](how-do-i-send-email-asynchronously-with-aspnet.md)
 - [Внедрение изображения в сообщение электронной почты с помощью ASP.NET](how-do-i-embed-an-image-in-an-email-with-aspnet.md)
 - [Реализация обработки ошибок при отправке сообщений электронной почты с помощью ASP.NET](how-do-i-implement-error-handling-when-sending-email-with-aspnet.md)
 - [Создание пользовательского поставщика событий для ведения журнала событий наблюдения за состоянием системы](how-do-i-create-a-custom-provider-for-logging-health-monitoring-events.md)
-- [Создание многократно используемого компонента для отправки сообщений электронной почты по списку рассылки](how-do-i-create-a-reusable-component-for-sending-email-to-a-distribution-list.md)
+- [Создание многократно используемого компонента для отправки сообщений электронной почты списку рассылки](how-do-i-create-a-reusable-component-for-sending-email-to-a-distribution-list.md)
 - [Предкомпиляция веб-сайта ASP.NET](how-do-i-precompile-an-aspnet-website.md)
 - [Использование класса FtpWebRequest для создания FTP-подключения к FTP-серверу](how-do-i-use-the-ftpwebrequest-class-to-create-an-ftp-connection-to-a-ftp-server.md)
 - [Экспорт данных в файл с разделителями-запятыми (CSV) в такое приложение, как Excel](how-do-i-export-data-to-a-comma-delimited-csv-file-for-an-application-like-excel.md)
@@ -114,4 +114,4 @@ ms.locfileid: "59410322"
 - [Создание первого приложения ASP.NET с помощью ASP.NET MVC](build-your-first-asp-net-application-with-asp-net-mvc.md)
 - [Эффективное изучение веб-форм ASP.NET](how-to-best-learn-aspnet-web-forms.md)
 - [Краткое введение в веб-формы ASP.NET](5-minute-introduction-to-aspnet-web-forms.md)
-- [Установка ASP.NET и средств](how-to-install-asp-net-and-tools.md)
+- [Установка ASP.NETи средств](how-to-install-asp-net-and-tools.md)

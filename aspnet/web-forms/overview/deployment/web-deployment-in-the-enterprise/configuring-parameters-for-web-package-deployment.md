@@ -12,14 +12,14 @@ ms.openlocfilehash: f738d1c0b3cd99bb6df5f8b24dca907fa0b31f4d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413104"
 ---
 # <a name="configuring-parameters-for-web-package-deployment"></a>Настройка параметров для развертывания веб-пакета
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается, как задать значения параметров, как имена веб-приложений службы Internet Information Services (IIS), строки подключения и конечные точки службы, при развертывании веб-пакета на удаленном веб-сервере IIS.
 

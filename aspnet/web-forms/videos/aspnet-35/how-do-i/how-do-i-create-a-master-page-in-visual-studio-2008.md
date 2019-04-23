@@ -12,7 +12,7 @@ ms.openlocfilehash: b9eef4f60789e4e1f4e28e06b35e0dd76006998a
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412064"
 ---
 # <a name="how-do-i-create-a-master-page-in-visual-studio-2008"></a>[Инструкции] Создание главной страницы в Visual Studio 2008
@@ -24,4 +24,4 @@ ms.locfileid: "59412064"
 [&#9654;Просмотрите видео (8 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-create-a-master-page-in-visual-studio-2008)
 
 > [!div class="step-by-step"]
-> [Далее](how-do-i-create-nested-master-page-in-visual-studio-2008.md)
+> [Вперед](how-do-i-create-nested-master-page-in-visual-studio-2008.md)

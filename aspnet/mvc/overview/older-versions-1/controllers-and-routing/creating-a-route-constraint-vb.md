@@ -12,7 +12,7 @@ ms.openlocfilehash: 8c7b2274ff396f222382488ed877599e86ae5b99
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412688"
 ---
 # <a name="creating-a-route-constraint-vb"></a>Создание ограничения маршрута (VB)
@@ -51,7 +51,7 @@ ms.locfileid: "59412688"
 Поскольку действие Details() ожидает целочисленный параметр, выполняющего запрос, содержащий отличные от целочисленное значение приведет к ошибке. Например при вводе /Product/apple URL-адрес в адресную строку браузера на страницу ошибки будет получить на рис. 1.
 
 
-[![Tдиалоговое окно нового проекта он](creating-a-route-constraint-vb/_static/image1.jpg)](creating-a-route-constraint-vb/_static/image1.png)
+[![В диалоговом окне нового проекта](creating-a-route-constraint-vb/_static/image1.jpg)](creating-a-route-constraint-vb/_static/image1.png)
 
 **Рис 01**: Просмотр страницы развернуть ([Просмотр полноразмерного изображения](creating-a-route-constraint-vb/_static/image2.png))
 

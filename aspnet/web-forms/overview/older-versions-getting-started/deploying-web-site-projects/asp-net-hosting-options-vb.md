@@ -12,14 +12,14 @@ ms.openlocfilehash: 8651ab58cb79a2c7b2ac67b0095542ab3a575534
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418408"
 ---
 # <a name="aspnet-hosting-options-vb"></a>Варианты размещения в ASP.NET (VB)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Скачать PDF](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial01_Basics_vb.pdf)
+[Загрузить PDF-файл](http://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial01_Basics_vb.pdf)
 
 > Веб-приложений ASP.NET обычно являются предназначены, создания и тестирования в локальной среде разработки и нужно будет развернуть в рабочей среде, когда все будет готово к выпуску. Этом руководстве представлен общий обзор процесса развертывания и служит в качестве введения в этой серии руководств.
 

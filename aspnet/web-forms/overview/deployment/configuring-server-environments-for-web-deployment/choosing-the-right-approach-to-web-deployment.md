@@ -12,14 +12,14 @@ ms.openlocfilehash: 65b77b016e02c2d9c8ff2b925b1567f26a6a05cc
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59407917"
 ---
 # <a name="choosing-the-right-approach-to-web-deployment"></a>Выбор правильного подхода для веб-развертывания
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > При работе с Internet Information Services (IIS) средство веб-развертывания (Web Deploy) 2.0 или более поздней, существует три основных подхода, которые можно использовать для получения упакованного веб-приложений на веб-сервер. Вы можете сделать следующее.
 > 

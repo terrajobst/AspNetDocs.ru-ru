@@ -12,7 +12,7 @@ ms.openlocfilehash: e031417f2ee22533e7b5a606fc40526d7d911efc
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413338"
 ---
 # <a name="iteration-3--add-form-validation-vb"></a>Итерации #3 – Добавление проверки форм (VB)
@@ -51,7 +51,7 @@ ms.locfileid: "59413338"
 В этой второй итерации приложения диспетчера контактов мы добавляем проверки базовой форме. Мы запретить пользователям передавать контакт без ввода значения для обязательных полей формы. Кроме того, мы проверяем, номера телефонов и адреса электронной почты (см. рис. 1).
 
 
-[![Tдиалоговое окно нового проекта он](iteration-3-add-form-validation-vb/_static/image1.jpg)](iteration-3-add-form-validation-vb/_static/image1.png)
+[![В диалоговом окне нового проекта](iteration-3-add-form-validation-vb/_static/image1.jpg)](iteration-3-add-form-validation-vb/_static/image1.png)
 
 **Рис 01**: Формы с помощью проверки ([Просмотр полноразмерного изображения](iteration-3-add-form-validation-vb/_static/image2.png))
 
@@ -114,7 +114,7 @@ ms.locfileid: "59413338"
 
 Измененный класс контроллера Contact содержится в листинге 3. Этот класс содержит новый метод ValidateContact(), который вызывается в Create() и Edit() действия.
 
-**Listing 3 - Controllers\ContactController.vb**
+**Листинг 3 - Controllers\ContactController.vb**
 
 [!code-vb[Main](iteration-3-add-form-validation-vb/samples/sample3.vb)]
 

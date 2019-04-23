@@ -12,7 +12,7 @@ ms.openlocfilehash: 4d9d064501ab2f7fe0d6ce5e1a87a128cba5e6d7
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59411310"
 ---
 # <a name="including-a-file-upload-option-when-adding-a-new-record-vb"></a>Включение параметра отправки файла при добавлении новой записи (VB)
@@ -47,7 +47,7 @@ ms.locfileid: "59411310"
 Откройте типизированный набор DataSet и в режиме конструктора щелкните правой кнопкой мыши `CategoriesTableAdapter` s заголовка и выберите Добавить запрос в контекстном меню. Будет запущен мастер настройки запроса TableAdapter, который начинается с вопроса, как запроса адаптера таблицы должен получить доступ к базе данных. Выберите использовать инструкции SQL и нажмите кнопку Далее. Следующий шаг загрузчика для типа запроса. Так как мы повторно создав запрос, чтобы добавить новую запись для `Categories` таблицы, выберите INSERT и нажмите кнопку Далее.
 
 
-[![Sвыбрать параметр ВСТАВЛЯТЬ](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image1.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image1.png)
+[![Выберите параметр вставки](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image1.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image1.png)
 
 **Рис. 1**: Выберите параметр вставки ([Просмотр полноразмерного изображения](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image2.png))
 
@@ -60,7 +60,7 @@ ms.locfileid: "59411310"
 На последнем экране мастера появляется запрос на имя нового метода адаптера таблицы. Введите `InsertWithPicture` и нажмите кнопку Готово.
 
 
-[![Nимя нового InsertWithPicture метод адаптера таблицы](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image2.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image3.png)
+[![Имя нового InsertWithPicture метод адаптера таблицы](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image2.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image3.png)
 
 **Рис. 2**: Назовите новый метод TableAdapter `InsertWithPicture` ([Просмотр полноразмерного изображения](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image4.png))
 
@@ -83,7 +83,7 @@ ms.locfileid: "59411310"
 Сначала откройте `DisplayOrDownload.aspx` странице из `BinaryData` папки. Перейдите в представление источника и скопируйте GridView и ObjectDataSource s декларативный синтаксис, вставив его в `<asp:Content>` элемент `UploadInDetailsView.aspx`. Кроме того, не забывайте следует заменять `GenerateBrochureLink` метода из класса кода программной части `DisplayOrDownload.aspx` для `UploadInDetailsView.aspx`.
 
 
-[![Cопировать и вставьте декларативный синтаксис из DisplayOrDownload.aspx UploadInDetailsView.aspx](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image3.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image5.png)
+[![Скопируйте и вставьте декларативный синтаксис из DisplayOrDownload.aspx UploadInDetailsView.aspx](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image3.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image5.png)
 
 **Рис. 3**: Скопируйте и вставьте декларативный синтаксис из `DisplayOrDownload.aspx` для `UploadInDetailsView.aspx` ([Просмотр полноразмерного изображения](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image6.png))
 
@@ -91,7 +91,7 @@ ms.locfileid: "59411310"
 После копирования декларативный синтаксис и `GenerateBrochureLink` метод через `UploadInDetailsView.aspx` странице, откройте страницу в браузер, чтобы убедиться, что все, что была скопирована на правильно. Вы должны увидеть восемь категорий перечней GridView со ссылкой для загрузки брошюры, а также его категории s.
 
 
-[![YПодразделение должна появиться каждой категории вместе с ее двоичные данные](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image4.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image7.png)
+[![Теперь вы увидите каждой категории, а также его двоичных данных](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image4.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image7.png)
 
 **Рис. 4**: Теперь вы увидите каждой категории вместе с ее двоичные данные ([Просмотр полноразмерного изображения](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image8.png))
 
@@ -103,7 +103,7 @@ ms.locfileid: "59411310"
 Запустить, щелкнув ссылку в смарт-теге ObjectDataSource s Настройка источника данных. Первый экран отображается источник данных настроен для работы с, объект `CategoriesBLL`. Оставьте этот параметр установлен равным- и нажмите кнопку Далее, чтобы перейти на экран задайте методы данных. Перейдите к вкладке «Вставка» и выбрать `InsertWithPicture` метода из раскрывающегося списка. Нажмите кнопку Готово, чтобы завершить работу мастера.
 
 
-[![CНастройка ObjectDataSource на использование метода InsertWithPicture](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image5.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image9.png)
+[![Настройка ObjectDataSource на использование метода InsertWithPicture](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image5.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image9.png)
 
 **Рис. 5**: Настройка ObjectDataSource на использование `InsertWithPicture` метод ([Просмотр полноразмерного изображения](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image10.png))
 
@@ -124,7 +124,7 @@ ms.locfileid: "59411310"
 Начало путем перетаскивания с панели инструментов в конструктор над элементом управления GridView, установка DetailsView его `ID` свойства `NewCategory` и очищая `Height` и `Width` значения свойств. Смарт-теге DetailsView s, привязать его к существующему `CategoriesDataSource` и затем установите флажок Разрешить вставку.
 
 
-[![BIND DetailsView CategoriesDataSource и вставка Enable](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image6.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image11.png)
+[![Привязка элемента управления DetailsView CategoriesDataSource и включить вставку](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image6.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image11.png)
 
 **Рис. 6**: Привязка элемента управления DetailsView для `CategoriesDataSource` и разрешить вставку ([Просмотр полноразмерного изображения](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image12.png))
 
@@ -153,7 +153,7 @@ ms.locfileid: "59411310"
 Смарт-теге DetailsView s, выберите вариант изменить шаблоны, а затем выберите `BrochurePath` TemplateField s `InsertItemTemplate` из раскрывающегося списка. Удалить текстовое поле и перетащите элемент управления FileUpload из области элементов в шаблон. Значение элемента управления FileUpload s `ID` для `BrochureUpload`. Аналогичным образом, добавление элемента управления FileUpload для `Picture` TemplateField s `InsertItemTemplate`. Значение этого элемента управления FileUpload s `ID` для `PictureUpload`.
 
 
-[![Aдд элемента управления FileUpload InsertItemTemplate](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image8.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image13.png)
+[![Добавление элемента управления FileUpload InsertItemTemplate](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image8.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image13.png)
 
 **Рис. 8**: Добавление элемента управления FileUpload для `InsertItemTemplate` ([Просмотр полноразмерного изображения](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image14.png))
 
@@ -226,7 +226,7 @@ ms.locfileid: "59411310"
 Let s Отвлекитесь и проверьте его интерфейс вставки и `ItemInserting` обработчик событий, который был создан за последние несколько шагов. Посетите `UploadInDetailsView.aspx` странице через браузер и попытка добавить категорию, но не указывается рисунок, или указать рисунок не JPG или буклета не PDF. В любом из этих случаев отображается сообщение об ошибке и отменить рабочий процесс вставки.
 
 
-[![A Предупреждение будет отображаться, если передается недопустимый тип файла](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image9.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image15.png)
+[![Предупреждение будет отображаться, если передается недопустимый тип файла](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image9.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image15.png)
 
 **Рис. 9**: Предупреждение будет отображаться, если передается недопустимый тип файла ([Просмотр полноразмерного изображения](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image16.png))
 
@@ -234,7 +234,7 @@ Let s Отвлекитесь и проверьте его интерфейс в�
 После проверки, чтобы страница нуждалась изображения, чтобы отправить и не будет принимать файлы не PDF или не JPG, добавить новую категорию с допустимым изображением JPG, если оставить поле буклет пустым. После нажатия кнопки "Вставить", будет обратной передачи страницы и добавляется новая запись `Categories` таблицу с двоичное содержимое отправленного изображения s хранятся непосредственно в базе данных. Обновляется GridView и показана строка для вновь добавленного категории, но, как показано на рис. 10, новый рисунок s категории не отображается правильно.
 
 
-[![Tон появляется новая категория s рисунок не отображается](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image10.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image17.png)
+[![Новая категория s рисунок не отображается.](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image10.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image17.png)
 
 **Рис. 10**: S новой категории, изображение не отображается ([Просмотр полноразмерного изображения](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image18.png))
 
@@ -249,7 +249,7 @@ Let s Отвлекитесь и проверьте его интерфейс в�
 Благодаря этому изменению изображение JPG теперь отображается правильно в GridView.
 
 
-[![THE JPG образов для новых категорий, подготовке к просмотру правильно](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image11.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image19.png)
+[![JPG для новых категорий являются правильно к просмотру](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image11.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image19.png)
 
 **Рис. 11**: JPG для новых категорий являются правильно к просмотру ([Просмотр полноразмерного изображения](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image20.png))
 

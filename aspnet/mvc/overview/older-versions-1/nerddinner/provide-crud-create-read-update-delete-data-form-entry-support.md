@@ -12,14 +12,14 @@ ms.openlocfilehash: 242665b3ba2e2ad2157abbe2c44ae207f15e72ce
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59410868"
 ---
 # <a name="provide-crud-create-read-update-delete-data-form-entry-support"></a>Обеспечение поддержки операций CRUD (создание, чтение, обновление и удаление) для записей форм данных
 
 по [Microsoft](https://github.com/microsoft)
 
-[Скачать PDF](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
+[Загрузить PDF-файл](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
 
 > Это 5 из бесплатной [руководство по использованию приложения «NerdDinner»](introducing-the-nerddinner-tutorial.md) , пошаговое рассмотрение как создать небольшой, но завершить, веб-приложения с помощью ASP.NET MVC 1.
 > 
@@ -36,7 +36,7 @@ ms.locfileid: "59410868"
 
 Методы действий ранее добавленного DinnersController, реализована поддержка два URL-адреса: */Dinners* и */Dinners/сведения / [id]*.
 
-| **URL-адрес** | **КОМАНДА** | **Цель** |
+| **URL** | **VERB** | **Назначение** |
 | --- | --- | --- |
 | */Dinners/* | GET | Отобразить список предстоящих ужинов HTML. |
 | */Dinners/сведения / [id]* | GET | Отображение сведений о конкретных ужин. |
@@ -45,7 +45,7 @@ ms.locfileid: "59410868"
 
 Будет добавлена поддержка взаимодействия глагол HTTP GET и HTTP POST с эти новые URL-адреса. HTTP-запросы GET на эти URL-адреса отображается исходное представление HTML данные (форма, заполняется данными ужин в случае «edit», пустую форму в случае «создать» и окно подтверждения удаления в случае «удалить»). HTTP-запросы POST к этим URL-будет сохранение, обновление и удаление данных компании Dinner в наших DinnerRepository (и из него — в базе данных).
 
-| **URL-адрес** | **КОМАНДА** | **Цель** |
+| **URL** | **VERB** | **Назначение** |
 | --- | --- | --- |
 | */Dinners/edit / [id]* | GET | Отобразить заполняются данными компании Dinner редактируемую форму HTML. |
 | ПОМЕСТИТЬ | Сохраните изменения формы для конкретной компании Dinner к базе данных. |

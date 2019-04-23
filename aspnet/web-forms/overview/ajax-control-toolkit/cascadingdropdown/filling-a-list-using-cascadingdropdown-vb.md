@@ -12,7 +12,7 @@ ms.openlocfilehash: 663dfc76dc3d07dbe9ddca002dc07cb3f9acdb1c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59419344"
 ---
 # <a name="filling-a-list-using-cascadingdropdown-vb"></a>Заполнение списка с помощью CascadingDropDown (VB)
@@ -61,7 +61,7 @@ ms.locfileid: "59419344"
 Загрузку страницы в браузере будет активировать списка, чтобы заполнить трех поставщиков.
 
 
-[![TСписок он заполняется автоматически](filling-a-list-using-cascadingdropdown-vb/_static/image2.png)](filling-a-list-using-cascadingdropdown-vb/_static/image1.png)
+[![Список заполняется автоматически](filling-a-list-using-cascadingdropdown-vb/_static/image2.png)](filling-a-list-using-cascadingdropdown-vb/_static/image1.png)
 
 Список заполняется автоматически ([Просмотр полноразмерного изображения](filling-a-list-using-cascadingdropdown-vb/_static/image3.png))
 

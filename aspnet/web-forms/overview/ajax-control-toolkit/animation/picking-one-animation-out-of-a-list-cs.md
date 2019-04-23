@@ -12,7 +12,7 @@ ms.openlocfilehash: 1cbb60431824ce642625c06cba6b5194aa547b1b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59419708"
 ---
 # <a name="picking-one-animation-out-of-a-list-c"></a>Выбор одной анимации из списка (C#)
@@ -53,7 +53,7 @@ ms.locfileid: "59419708"
 [!code-aspx[Main](picking-one-animation-out-of-a-list-cs/samples/sample5.aspx)]
 
 
-[![ONE возможные три анимации: Панели возвращает шире](picking-one-animation-out-of-a-list-cs/_static/image2.png)](picking-one-animation-out-of-a-list-cs/_static/image1.png)
+[![Одна из возможных три анимации: Получает ширину панели](picking-one-animation-out-of-a-list-cs/_static/image2.png)](picking-one-animation-out-of-a-list-cs/_static/image1.png)
 
 Одна из возможных три анимации: Получает ширину панели ([Просмотр полноразмерного изображения](picking-one-animation-out-of-a-list-cs/_static/image3.png))
 

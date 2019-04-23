@@ -12,7 +12,7 @@ ms.openlocfilehash: d7a6f29dc660cff2bfa9db8f9790d73e51a2cc1c
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59420137"
 ---
 # <a name="adding-client-side-confirmation-when-deleting-c"></a>Добавление клиентского подтверждения при удалении (C#)
@@ -65,7 +65,7 @@ JavaScript `confirm(string)` функция отображает свой стр
 Благодаря этим изменениям у нас есть полнофункциональный веб-страницы, позволяющий пользователю переключаться с одного продукта за раз, с возможностью удалить продукт, просто нажав кнопку «Удалить». Рис. 2 показан снимок экрана ход работы до сих при просмотре через браузер.
 
 
-[![Tон FormView показывает сведения об одном продукте](adding-client-side-confirmation-when-deleting-cs/_static/image3.png)](adding-client-side-confirmation-when-deleting-cs/_static/image2.png)
+[![FormView отображает информацию об одном продукте](adding-client-side-confirmation-when-deleting-cs/_static/image3.png)](adding-client-side-confirmation-when-deleting-cs/_static/image2.png)
 
 **Рис. 2**: FormView показывает сведения об одном продукте ([Просмотр полноразмерного изображения](adding-client-side-confirmation-when-deleting-cs/_static/image4.png))
 
@@ -85,7 +85,7 @@ JavaScript `confirm(string)` функция отображает свой стр
 > Строка, переданная `confirm(string)` функцию JavaScript разделенное апострофами (вместо знаков кавычек). В JavaScript строки можно выделять, используя любой из этих знаков. Мы используем здесь апострофы, чтобы выделители строки передаваемого `confirm(string)` не создавали путаницы с выделителями, используемыми для `OnClientClick` значение свойства.
 
 
-[![A Подтверждение — теперь отображается при нажатии кнопки Delete](adding-client-side-confirmation-when-deleting-cs/_static/image6.png)](adding-client-side-confirmation-when-deleting-cs/_static/image5.png)
+[![Подтверждение — теперь отображается при нажатии кнопки Delete](adding-client-side-confirmation-when-deleting-cs/_static/image6.png)](adding-client-side-confirmation-when-deleting-cs/_static/image5.png)
 
 **Рис. 3**: Подтверждение — теперь отображается при нажатии кнопки Delete ([Просмотр полноразмерного изображения](adding-client-side-confirmation-when-deleting-cs/_static/image7.png))
 
@@ -127,7 +127,7 @@ CommandField содержит единственный экземпляр уда
 > Этот метод также может использоваться для программного доступа к «удалить» CommandField в элементе управления DetailsView. Для элемента DetailsView, однако d создать обработчик событий для `DataBound` событий, так как нет DetailsView `RowDataBound` событий.
 
 
-[![Cщелкнув s GridView удаление кнопки отображает диалоговое окно подтверждения настройки](adding-client-side-confirmation-when-deleting-cs/_static/image9.png)](adding-client-side-confirmation-when-deleting-cs/_static/image8.png)
+[![Нажав кнопку Delete s GridView отображает настроенное диалоговое окно подтверждения](adding-client-side-confirmation-when-deleting-cs/_static/image9.png)](adding-client-side-confirmation-when-deleting-cs/_static/image8.png)
 
 **Рис. 4**: Щелкнув s GridView кнопки Delete отображается диалоговое окно подтверждения настроить ([Просмотр полноразмерного изображения](adding-client-side-confirmation-when-deleting-cs/_static/image10.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 6b415480fc3f1d86f74e5845eedb35d284806284
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412285"
 ---
 # <a name="web-development-best-practices"></a>Рекомендации по веб-разработке
@@ -21,4 +21,4 @@ ms.locfileid: "59412285"
 - [Запрещенные и разрешенные действия в ASP.NET](what-not-to-do-in-aspnet-and-what-to-do-instead.md)
 - [Async и Await](async-and-await.md)
 - [Создание реальных облачных приложений в Azure](../developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/index.md)
-- [Практическое лабораторное занятие. Простые в обслуживании веб-сайты Azure: управление изменениями и масштабированием](../developing-apps-with-windows-azure/maintainable-azure-websites-managing-change-and-scale.md)
+- [Практическое лабораторное занятие. Простые в обслуживании веб-сайты Azure: Управление изменениями и масштабированием](../developing-apps-with-windows-azure/maintainable-azure-websites-managing-change-and-scale.md)

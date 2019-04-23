@@ -12,14 +12,14 @@ ms.openlocfilehash: a222aa6bf52ee72e6a0f4ac5503b4b4f78d294fb
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59414326"
 ---
 # <a name="performing-a-what-if-deployment"></a>Выполнение имитации развертывания
 
 по [Джейсон Lee](https://github.com/jrjlee)
 
-[Скачать PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается выполнение «что если» (или simulated) развертываний с помощью средства веб-развертывания (Web Deploy) Internet Information Services (IIS) и средство VSDBCMD. Это позволяет определить последствия логики развертывания в конкретной целевой среде до фактического развертывания приложения.
 

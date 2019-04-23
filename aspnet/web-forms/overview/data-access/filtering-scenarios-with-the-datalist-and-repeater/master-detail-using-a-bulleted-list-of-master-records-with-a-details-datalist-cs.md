@@ -12,7 +12,7 @@ ms.openlocfilehash: d5c881592140bdf73f25fa620d58213cc283153d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59412038"
 ---
 # <a name="masterdetail-using-a-bulleted-list-of-master-records-with-a-details-datalist-c"></a>Отчет "Основной/подробности" с использованием маркированного списка основных записей с элементом управления DataList для подробных сведений (C#)
@@ -31,7 +31,7 @@ ms.locfileid: "59412038"
 В этом руководстве мы рассмотрим сжатие руководства две страницы на одной странице, которой отображается маркированный список имена категорий в левой части экрана названия каждой категории, отображаемой в качестве LinkButton. Щелкнув одну из имя категории элементов управления LinkButton вызывает обратную передачу и привязывает продукты выбранной категории s двухстолбцовый элемент управления DataList, в правой части экрана. Помимо отображения название каждой категории s, элементу управления Repeater в левой части показывает, сколько всего продуктов для данной категории (см. рис. 1).
 
 
-[![Tон категории — имя и общее число продуктов отображаются в левой части](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image2.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image1.png)
+[![Имя категории и общее число продуктов отображаются в левой части](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image2.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image1.png)
 
 **Рис. 1**: Имя категории и общее число продуктов отображаются в левой части ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image3.png))
 
@@ -62,7 +62,7 @@ ms.locfileid: "59412038"
 После добавления класса CSS и настройки разметки в `CategoriesAndProducts.aspx` страницы, перейдите в конструктор. Вы должны увидеть элемент управления Repeater, с плавающей запятой слева от элемента управления DataList (несмотря на то, что право Теперь оба просто отображается как серый полей с момента мы ve еще, чтобы настроить их источники данных или шаблоны).
 
 
-[![Tон Repeater перемещается слева от DataList](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image5.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image4.png)
+[![Плавающий элемент управления Repeater слева от элемента управления DataList](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image5.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image4.png)
 
 **Рис. 2**: Плавающий элемент управления Repeater слева от элемента управления DataList ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image6.png))
 
@@ -81,7 +81,7 @@ ms.locfileid: "59412038"
 Определение количества продуктов для каждой категории в элементу управления Repeater s `ItemDataBound` обработчик событий не требует каких-либо изменений нашей существующего уровня доступа к данным. Все изменения можно внести непосредственно в `CategoriesAndProducts.aspx` страницы. Начните с добавления нового источника ObjectDataSource с именем `CategoriesDataSource` через смарт-тег элемента управления Repeater s. Настройте `CategoriesDataSource` ObjectDataSource, так что он извлекает свои данные из `CategoriesBLL` класс s `GetCategories()` метод.
 
 
-[![CНастройка ObjectDataSource на использование s метода GetCategories() класса CategoriesBLL](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image8.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image7.png)
+[![Настройка ObjectDataSource на использование s метода GetCategories() класса CategoriesBLL](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image8.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image7.png)
 
 **Рис. 3**: Настройка ObjectDataSource для использования `CategoriesBLL` класс s `GetCategories()` метод ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image9.png))
 
@@ -122,7 +122,7 @@ ImageButton с `ID` значение свойства `ViewCategory` не под
 После добавления этого обработчика событий, Отвлекитесь и проверьте страницу в обозревателе. Обратите внимание на то, как каждая категория отображается в виде маркированного списка, отображая имя категории s и количество продуктов, связанных с категорией (см. рис. 4).
 
 
-[![EОтображаются ACH категории — имя и число продуктов](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image11.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image10.png)
+[![Отображаются каждой категории — имя и число продуктов](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image11.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image10.png)
 
 **Рис. 4**: Каждой категории — имя и число продуктов отображаются ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image12.png))
 
@@ -132,7 +132,7 @@ ImageButton с `ID` значение свойства `ViewCategory` не под
 Вместо определения количества продуктов для каждой категории, так как он с привязкой к элементу управления Repeater, этот процесс можно ускорить с помощью `CategoriesDataTable` и `CategoriesTableAdapter` уровне доступа к данным для включения этих сведений. Для этого необходимо добавить новый столбец для `CategoriesDataTable` для хранения количества соответствующих продуктов. Чтобы добавить новый столбец в таблицу данных, откройте типизированный набор DataSet (`App_Code\DAL\Northwind.xsd`), щелкните правой кнопкой мыши на объект DataTable для изменения и выберите Add / столбца. Добавить новый столбец для `CategoriesDataTable` (см. рис. 5).
 
 
-[![Aдд нового столбца к CategoriesDataSource](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image14.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image13.png)
+[![Добавление нового столбца к CategoriesDataSource](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image14.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image13.png)
 
 **Рис. 5**: Добавить новый столбец для `CategoriesDataSource` ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image15.png))
 
@@ -150,12 +150,12 @@ ImageButton с `ID` значение свойства `ViewCategory` не под
 Чтобы добавить этот новый `GetCategoriesAndNumberOfProducts()` метод, щелкните правой кнопкой мыши `CategoriesTableAdapter` и выберите новый запрос. Это дает вверх TableAdapter запроса мастер настройки, которые мы ve, используемый в предыдущих учебных курсах. Этот метод запустите мастер, указав, что запрос использует специальный оператор SQL, возвращающий строки.
 
 
-[![Cсоздать метод с помощью инструкции SQL Ad-Hoc](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image18.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image17.png)
+[![Создание метода, использующего специальный оператор SQL](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image18.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image17.png)
 
 **Рис. 7**: Создайте метод с помощью инструкции SQL Ad-Hoc ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image19.png))
 
 
-[![Tон возвращает строки инструкции SQL](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image21.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image20.png)
+[![Строки, возвращенные инструкцией SQL](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image21.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image20.png)
 
 **Рис. 8**: Возвращает строки инструкции SQL ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image22.png))
 
@@ -166,7 +166,7 @@ ImageButton с `ID` значение свойства `ViewCategory` не под
 [!code-sql[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/samples/sample7.sql)]
 
 
-[![SУкажите запрос для использования](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image24.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image23.png)
+[![Укажите запрос для использования](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image24.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image23.png)
 
 **Рис. 9**: Укажите запрос для использования ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image25.png))
 
@@ -176,7 +176,7 @@ ImageButton с `ID` значение свойства `ViewCategory` не под
 После ввода этого запроса, последний шаг — это выбрать имя для нового метода. Используйте `FillWithNumberOfProducts` и `GetCategoriesAndNumberOfProducts` для заполнения таблицы данных и возвращают объект DataTable шаблоны, соответственно.
 
 
-[![NИмя s нового TableAdapter имена FillWithNumberOfProducts методы и GetCategoriesAndNumberOfProducts](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image27.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image26.png)
+[![Имя нового имена FillWithNumberOfProducts методы TableAdapter s и GetCategoriesAndNumberOfProducts](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image27.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image26.png)
 
 **Рис. 10**: Назовите новый адаптер таблицы s методы `FillWithNumberOfProducts` и `GetCategoriesAndNumberOfProducts` ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image28.png))
 
@@ -191,7 +191,7 @@ ImageButton с `ID` значение свойства `ViewCategory` не под
 С помощью элемента управления Repeater, обратно в исходное состояние, добавить новый ObjectDataSource, именуемый `CategoriesDataSource` через смарт-тег элемента управления Repeater s. Настройка ObjectDataSource на использование `CategoriesBLL` класс, но вместо использования `GetCategories()` метод, использование `GetCategoriesAndNumberOfProducts()` вместо (см. рис. 11).
 
 
-[![CНастройка ObjectDataSource для использования метода GetCategoriesAndNumberOfProducts](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image30.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image29.png)
+[![Настройка ObjectDataSource для использования метода GetCategoriesAndNumberOfProducts](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image30.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image29.png)
 
 **Рис. 11**: Настройка ObjectDataSource для использования `GetCategoriesAndNumberOfProducts` метод ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image31.png))
 
@@ -218,7 +218,7 @@ ImageButton с `ID` значение свойства `ViewCategory` не под
 В смарт-теге элемента управления DataList s, необязательно, чтобы добавить новый ObjectDataSource, именуемый `CategoryProductsDataSource` и настройте его для использования `ProductsBLL` класс s `GetProductsByCategoryID(categoryID)` метод. Так как элемент управления DataList, в этом учебнике предоставляет интерфейс только для чтения, вы можете задать раскрывающиеся списки в INSERT, UPDATE и удаление вкладок (нет).
 
 
-[![CНастройка ObjectDataSource на использование класса ProductsBLL s метод GetProductsByCategoryID(categoryID)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image33.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image32.png)
+[![Настройка ObjectDataSource на использование метод GetProductsByCategoryID(categoryID) класса ProductsBLL s](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image33.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image32.png)
 
 **Рис. 12**: Настройка ObjectDataSource для использования `ProductsBLL` класс s `GetProductsByCategoryID(categoryID)` метод ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image34.png))
 
@@ -228,7 +228,7 @@ ImageButton с `ID` значение свойства `ViewCategory` не под
 Пока значение параметра исходного стрелку раскрывающегося списка None. Мы получим программного связывания значение этого параметра, при нажатии элемента управления LinkButton нажатии в элементу управления Repeater.
 
 
-[![Do не указывайте источник для categoryID параметр](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image36.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image35.png)
+[![Сделать не указан источник для параметра categoryID](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image36.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image35.png)
 
 **Рис. 13**: Сделать не указан источник параметров для *`categoryID`* параметра ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image37.png))
 
@@ -263,12 +263,12 @@ ImageButton с `ID` значение свойства `ViewCategory` не под
 На этих дополнениях наш учебный курс завершается. Отвлекитесь и протестировать его в браузере. Рис. 14 показано окно, при первом просмотре странице. Поскольку категория еще необходимо выбрать, продукты не отображаются. При щелчке на категории, например Produce, отображаются продукты категории продукта в виде двух столбцов (см. рис. 15).
 
 
-[![No продуктов, которые отображаются при первом просмотре странице](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image39.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image38.png)
+[![Продукты не будут отображаться при первом просмотре страницы](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image39.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image38.png)
 
 **Рис. 14**: Продукты не будут отображаться при первом просмотре страницы ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image40.png))
 
 
-[![Cщелкнув перечислены создавать категории продуктов сопоставления справа](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image42.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image41.png)
+[![Щелкнув отображаются категории Produce соответствующие продукты справа](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image42.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image41.png)
 
 **Рис. 15**: Щелкнув этой категории будут перечислены продукты сопоставления справа ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-cs/_static/image43.png))
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: ae53e23dda3ac63e26590edab692188bb44e9f65
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413208"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-introduction---1-of-12"></a>Развертывание веб-приложения ASP.NET с SQL Server Compact с помощью Visual Studio: Введение — 1 из 12
@@ -82,7 +82,7 @@ ms.locfileid: "59413208"
 
 Перед началом работы убедитесь, что у вас есть Windows 7 или более поздней версии, и на компьютере установлена одна из следующих продуктов:
 
-- [Пакет SP1 Visual Studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack)
+- [Visual Studio 2010 SP1](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack)
 - [Visual Web Developer Express 2010 с пакетом обновления 1](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VWD2010SP1Pack)
 - [Visual Studio 2012 RC или Visual Studio Express 2012 RC для Web](https://go.microsoft.com/fwlink/?LinkId=240162)
 
@@ -140,4 +140,4 @@ ms.locfileid: "59413208"
 В этом первом учебнике серии вы загрузили пример проекта Visual Studio и просмотреть компоненты веб-сайтов, которые влияют на способ развертывания приложения. В следующих учебниках вы подготовиться к развертыванию, настроив некоторые из этих процессов обрабатываться автоматически. Другие позволяет устранить вручную.
 
 > [!div class="step-by-step"]
-> [Далее](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12.md)
+> [Вперед](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12.md)

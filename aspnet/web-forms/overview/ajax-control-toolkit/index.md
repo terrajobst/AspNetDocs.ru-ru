@@ -12,7 +12,7 @@ ms.openlocfilehash: 795283c33d63272b29b91fd7037c3463bc71abad
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59410751"
 ---
 # <a name="older-versions---ajax-control-toolkit"></a>Предыдущие версии. Набор элементов управления AJAX
@@ -70,11 +70,11 @@ ms.locfileid: "59410751"
     - [Заполнение списка с помощью CascadingDropDown (C#)](cascadingdropdown/filling-a-list-using-cascadingdropdown-cs.md)
     - [Использование CascadingDropDown с базой данных (C#)](cascadingdropdown/using-cascadingdropdown-with-a-database-cs.md)
     - [Предустановка записей списка с помощью CascadingDropDown (C#)](cascadingdropdown/presetting-list-entries-with-cascadingdropdown-cs.md)
-    - [Использование автоматической обратной передачи с помощью CascadingDropDown (C#)](cascadingdropdown/using-auto-postback-with-cascadingdropdown-cs.md)
+    - [Использование автоматической обратной передачи с помощью с CascadingDropDown (C#)](cascadingdropdown/using-auto-postback-with-cascadingdropdown-cs.md)
     - [Заполнение списка с помощью CascadingDropDown (VB)](cascadingdropdown/filling-a-list-using-cascadingdropdown-vb.md)
     - [Использование CascadingDropDown с базой данных (VB)](cascadingdropdown/using-cascadingdropdown-with-a-database-vb.md)
     - [Предустановка записей списка с помощью CascadingDropDown (VB)](cascadingdropdown/presetting-list-entries-with-cascadingdropdown-vb.md)
-    - [Использование автоматической обратной передачи с помощью CascadingDropDown (VB)](cascadingdropdown/using-auto-postback-with-cascadingdropdown-vb.md)
+    - [Использование автоматической обратной передачи с помощью с CascadingDropDown (VB)](cascadingdropdown/using-auto-postback-with-cascadingdropdown-vb.md)
 - [CollapsiblePanel](collapsiblepanel/index.md)
 
     - [Свертывание и развертывание панели из кода JavaScript (C#)](collapsiblepanel/collapsing-and-expanding-a-panel-from-javascript-cs.md)
@@ -133,8 +133,8 @@ ms.locfileid: "59410751"
     - [Создание взаимоисключающих флажков (VB)](mutuallyexclusivecheckbox/creating-mutually-exclusive-checkboxes-vb.md)
 - [NoBot](nobot/index.md)
 
-    - [Борьба с ботами (C#)](nobot/fighting-bots-cs.md)
-    - [Борьба с ботами (VB)](nobot/fighting-bots-vb.md)
+    - [Борьба с программами-роботами (C#)](nobot/fighting-bots-cs.md)
+    - [Борьба с программами-роботами (VB)](nobot/fighting-bots-vb.md)
 - [NumericUpDown](numericupdown/index.md)
 
     - [Создание числового поля со стрелками "вверх/вниз" с помощью серверной веб-службы (C#)](numericupdown/creating-a-numeric-up-down-control-with-a-web-service-backend-cs.md)
@@ -151,7 +151,7 @@ ms.locfileid: "59410751"
     - [Использование нескольких элементов управления Popup (VB)](popup/using-multiple-popup-controls-vb.md)
     - [Обработка операций обратной передачи из элемента управления Popup с помощью элемента управления UpdatePanel (VB)](popup/handling-postbacks-from-a-popup-control-with-an-updatepanel-vb.md)
     - [Обработка операций обратной передачи из элемента управления Popup без использования элемента управления UpdatePanel (VB)](popup/handling-postbacks-from-a-popup-control-without-an-updatepanel-vb.md)
-- [Рейтинг](rating/index.md)
+- [Rating](rating/index.md)
 
     - [Создание элемента управления Rating (C#)](rating/creating-a-rating-control-cs.md)
     - [Создание элемента управления Rating (VB)](rating/creating-a-rating-control-vb.md)

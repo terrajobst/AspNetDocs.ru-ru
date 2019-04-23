@@ -12,7 +12,7 @@ ms.openlocfilehash: 042077cb2c0a284556a35e960177f9fd9ad508a6
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413455"
 ---
 # <a name="how-do-i-get-started-with-linq"></a>[Инструкции] Начало работы с LINQ?
@@ -24,4 +24,4 @@ ms.locfileid: "59413455"
 [&#9654;Просмотрите видео (9 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-get-started-with-linq)
 
 > [!div class="step-by-step"]
-> [Далее](how-do-i-perform-group-and-aggregate-queries.md)
+> [Вперед](how-do-i-perform-group-and-aggregate-queries.md)

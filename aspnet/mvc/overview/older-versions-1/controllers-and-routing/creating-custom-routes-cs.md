@@ -12,7 +12,7 @@ ms.openlocfilehash: 7b7324c9e0518697c0978b96b0123cb44133722b
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59418941"
 ---
 # <a name="creating-custom-routes-c"></a>Создание пользовательских маршрутов (C#)
@@ -61,7 +61,7 @@ ms.locfileid: "59418941"
 **Рис. 1. Ошибка в результате преобразования параметра**
 
 
-[![Tдиалоговое окно нового проекта он](creating-custom-routes-cs/_static/image1.jpg)](creating-custom-routes-cs/_static/image1.png)
+[![В диалоговом окне нового проекта](creating-custom-routes-cs/_static/image1.jpg)](creating-custom-routes-cs/_static/image1.png)
 
 **Рис 01**: Ошибка в результате преобразования параметра ([Просмотр полноразмерного изображения](creating-custom-routes-cs/_static/image2.png))
 

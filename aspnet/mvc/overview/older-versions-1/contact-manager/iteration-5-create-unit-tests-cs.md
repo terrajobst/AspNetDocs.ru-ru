@@ -12,7 +12,7 @@ ms.openlocfilehash: 68080859e205283f56d8f543bfa06b76bb22a39d
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408866"
 ---
 # <a name="iteration-5--create-unit-tests-c"></a>Итерация #5 – Создание модульных тестов (C#)
@@ -117,12 +117,12 @@ Visual Studio включает платформу макетирование о�
 5. После выполнения этих действий, в папке "ссылки" должно выглядеть как на рис. 2.
 
 
-[![Unblocking Moq](iteration-5-create-unit-tests-cs/_static/image1.jpg)](iteration-5-create-unit-tests-cs/_static/image1.png)
+[![Разблокировка Moq](iteration-5-create-unit-tests-cs/_static/image1.jpg)](iteration-5-create-unit-tests-cs/_static/image1.png)
 
 **Рис 01**: Разблокировка Moq ([Просмотр полноразмерного изображения](iteration-5-create-unit-tests-cs/_static/image2.png))
 
 
-[![RСписок диапазонов после добавления Moq](iteration-5-create-unit-tests-cs/_static/image2.jpg)](iteration-5-create-unit-tests-cs/_static/image3.png)
+[![Ссылки после добавления Moq](iteration-5-create-unit-tests-cs/_static/image2.jpg)](iteration-5-create-unit-tests-cs/_static/image3.png)
 
 **Рис. 02**: Ссылки после добавления Moq ([Просмотр полноразмерного изображения](iteration-5-create-unit-tests-cs/_static/image4.png))
 
@@ -155,7 +155,7 @@ Visual Studio включает платформу макетирование о�
 
 В листинге 1 содержится код для этих тестов.
 
-**Listing 1 - Models\ContactManagerServiceTest.cs**
+**В листинге 1 - Models\ContactManagerServiceTest.cs**
 
 [!code-csharp[Main](iteration-5-create-unit-tests-cs/samples/sample1.cs)]
 
@@ -185,7 +185,7 @@ Visual Studio включает платформу макетирование о�
 Можно выполнять модульные тесты в листинге 1, выбрав параметр меню **теста выполните все тесты в решении (CTRL + R, A)**. Результаты тестов отображаются в окне результатов теста (см. рис. 4).
 
 
-[![TРезультаты EST](iteration-5-create-unit-tests-cs/_static/image4.jpg)](iteration-5-create-unit-tests-cs/_static/image7.png)
+[![Результаты теста](iteration-5-create-unit-tests-cs/_static/image4.jpg)](iteration-5-create-unit-tests-cs/_static/image7.png)
 
 **Рис. 04**: Результаты теста ([Просмотр полноразмерного изображения](iteration-5-create-unit-tests-cs/_static/image8.png))
 

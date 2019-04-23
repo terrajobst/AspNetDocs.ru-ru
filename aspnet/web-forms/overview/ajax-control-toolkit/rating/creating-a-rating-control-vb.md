@@ -12,7 +12,7 @@ ms.openlocfilehash: 91523180501f1d1eb67586bf97649ad6226ec565
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59413234"
 ---
 # <a name="creating-a-rating-control-vb"></a>Создание элемента управления Rating (VB)
@@ -66,7 +66,7 @@ ms.locfileid: "59413234"
 Сохраните страницу и загрузить его в адресную строку браузера. При наведении указателя мыши на элементы (изначально пуста) рейтинг происходит эффекта JavaScript: Оценка изменений. При щелчке набор звезд, сохраняется текущая оценка. Наконец при отправке формы, серверный код выводит выбранные оценка.
 
 
-[![Cается систему оценок с минимальным использованием кода](creating-a-rating-control-vb/_static/image2.png)](creating-a-rating-control-vb/_static/image1.png)
+[![Создание оценки системы с минимальным использованием кода](creating-a-rating-control-vb/_static/image2.png)](creating-a-rating-control-vb/_static/image1.png)
 
 Создание оценки системы с минимальным использованием кода ([Просмотр полноразмерного изображения](creating-a-rating-control-vb/_static/image3.png))
 
