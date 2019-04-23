@@ -12,7 +12,7 @@ ms.openlocfilehash: 2e33c7cfae7eed3c0b38b66dad779ce7dcd77b54
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59399688"
 ---
 # <a name="how-do-i-use-the-combobox-control-vb"></a>Как использовать элемент управления ComboBox (VISUAL BASIC)
@@ -37,7 +37,7 @@ ms.locfileid: "59399688"
 Затем перетащите элемент управления ComboBox на страницу. Элемент управления ComboBox можно найти на панели элементов с помощью других элементов управления AJAX Control Toolkit и управляющих элементов-расширителей (см. рис. 1).
 
 
-[![Sпростые формы для создания бизнес-карточка](how-do-i-use-the-combobox-control-vb/_static/image1.jpg)](how-do-i-use-the-combobox-control-vb/_static/image1.png)
+[![Простая форма для создания бизнес-карточка](how-do-i-use-the-combobox-control-vb/_static/image1.jpg)](how-do-i-use-the-combobox-control-vb/_static/image1.png)
 
 **Рис 01**: Выбрав элемент управления ComboBox с панели инструментов ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-vb/_static/image2.png))
 
@@ -45,7 +45,7 @@ ms.locfileid: "59399688"
 Мы ll с помощью элемента управления ComboBox отображения статический список вариантов. Пользователь может выбрать определенный уровень spiciness для их качества пищевых продуктов в списке из трех вариантов: Насилия, среднего и "Горячий" уровень (см. рис. 2).
 
 
-[![SОтказ от из статического списка элементов](how-do-i-use-the-combobox-control-vb/_static/image2.jpg)](how-do-i-use-the-combobox-control-vb/_static/image3.png)
+[![Выбрав из статического списка элементов](how-do-i-use-the-combobox-control-vb/_static/image2.jpg)](how-do-i-use-the-combobox-control-vb/_static/image3.png)
 
 **Рис. 02**: Выбрав из статического списка элементов ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-vb/_static/image4.png))
 
@@ -53,7 +53,7 @@ ms.locfileid: "59399688"
 Существует два способа, что эти варианты можно добавить к элементу управления списком. Во-первых, выберите параметр задачи изменить параметры, при наведении указателя мыши на элемент управления в режиме конструктора и откройте редактор элементов (см. рис. 3).
 
 
-[![EОграничить редактирование элементов поля со списком](how-do-i-use-the-combobox-control-vb/_static/image3.jpg)](how-do-i-use-the-combobox-control-vb/_static/image5.png)
+[![Изменение элементов поля со списком](how-do-i-use-the-combobox-control-vb/_static/image3.jpg)](how-do-i-use-the-combobox-control-vb/_static/image5.png)
 
 **Рис 03**: Изменение поля со списком элементов ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-vb/_static/image6.png))
 
@@ -71,7 +71,7 @@ ms.locfileid: "59399688"
 Независимо от того, является ли выбрать уже существующий элемент или введите пользовательского элемента, при отправке формы, сделанный выбор появится в элементе управления label. При отправке формы, btnSubmit\_щелкните обработчик выполняет и обновляет метку (см. рис. 4).
 
 
-[![Displaying выбранный элемент](how-do-i-use-the-combobox-control-vb/_static/image4.jpg)](how-do-i-use-the-combobox-control-vb/_static/image7.png)
+[![Отображение выбранного элемента](how-do-i-use-the-combobox-control-vb/_static/image4.jpg)](how-do-i-use-the-combobox-control-vb/_static/image7.png)
 
 **Рис. 04**: Отображение выбранного элемента ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-vb/_static/image8.png))
 
@@ -104,12 +104,12 @@ ms.locfileid: "59399688"
 12. Чтобы закрыть мастер, нажмите кнопку ОК.
 
 
-[![Choosing источник данных](how-do-i-use-the-combobox-control-vb/_static/image5.jpg)](how-do-i-use-the-combobox-control-vb/_static/image9.png)
+[![Выбор источника данных](how-do-i-use-the-combobox-control-vb/_static/image5.jpg)](how-do-i-use-the-combobox-control-vb/_static/image9.png)
 
 **05 рис**: Выбор источника данных ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-vb/_static/image10.png))
 
 
-[![Choosing текст данных и значение поля](how-do-i-use-the-combobox-control-vb/_static/image6.jpg)](how-do-i-use-the-combobox-control-vb/_static/image11.png)
+[![Выбор полей текста и значения данных](how-do-i-use-the-combobox-control-vb/_static/image6.jpg)](how-do-i-use-the-combobox-control-vb/_static/image11.png)
 
 **Рис 06**: Выбор полей текста и значения данных ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-vb/_static/image12.png))
 
@@ -123,7 +123,7 @@ ms.locfileid: "59399688"
 Обратите внимание, что элемент управления ComboBox, указывающий на элемент управления SqlDataSource свойство DataSourceID. При открытии страницы в браузере отображается список фильмов из базы данных (см. рис. 7). Вы можете либо подбор фильм из списка или введите новый фильм, введя в поле со списком фильма.
 
 
-[![Displaying список фильмов](how-do-i-use-the-combobox-control-vb/_static/image7.jpg)](how-do-i-use-the-combobox-control-vb/_static/image13.png)
+[![Отображение списка фильмов](how-do-i-use-the-combobox-control-vb/_static/image7.jpg)](how-do-i-use-the-combobox-control-vb/_static/image13.png)
 
 **07 рис**: Отображается список фильмов ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-vb/_static/image14.png))
 
@@ -150,17 +150,17 @@ ms.locfileid: "59399688"
 - SuggestAppend - поле со списком отображает список и добавляет соответствующий элемент из списка на набранным (см. рис. 10).
 
 
-[![Tон ComboBox делает предложение](how-do-i-use-the-combobox-control-vb/_static/image8.jpg)](how-do-i-use-the-combobox-control-vb/_static/image15.png)
+[![Поле со списком делает предложение](how-do-i-use-the-combobox-control-vb/_static/image8.jpg)](how-do-i-use-the-combobox-control-vb/_static/image15.png)
 
 **Рис 08**: Поле со списком делает предложение ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-vb/_static/image16.png))
 
 
-[![ComboBox добавляет соответствующий текст](how-do-i-use-the-combobox-control-vb/_static/image9.jpg)](how-do-i-use-the-combobox-control-vb/_static/image17.png)
+[![Поле со списком добавляет соответствующий текст](how-do-i-use-the-combobox-control-vb/_static/image9.jpg)](how-do-i-use-the-combobox-control-vb/_static/image17.png)
 
 **Рис 09**: Поле со списком добавляет соответствующий текст ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-vb/_static/image18.png))
 
 
-[![Tон ComboBox предлагает и добавляет](how-do-i-use-the-combobox-control-vb/_static/image10.jpg)](how-do-i-use-the-combobox-control-vb/_static/image19.png)
+[![Поле со списком предлагает и добавляет](how-do-i-use-the-combobox-control-vb/_static/image10.jpg)](how-do-i-use-the-combobox-control-vb/_static/image19.png)
 
 **Рис. 10**: Поле со списком предлагает и добавляет ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-vb/_static/image20.png))
 

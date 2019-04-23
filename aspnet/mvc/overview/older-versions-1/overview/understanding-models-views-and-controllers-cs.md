@@ -12,7 +12,7 @@ ms.openlocfilehash: 8c57345c510ad0afccaabf377fda35afbfc05e17
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59383412"
 ---
 # <a name="understanding-models-views-and-controllers-c"></a>Общие сведения о моделях, представлениях и контроллерах (C#)
@@ -33,7 +33,7 @@ ms.locfileid: "59383412"
 Создание нового приложения ASP.NET MVC с помощью шаблона MVC, запустив Visual Studio 2008 и выбрав пункт меню файл, создать проект (см. рис. 1). В диалоговом окне нового проекта выберите вашем любимом языке программирования, в списке типов проектов (Visual Basic или C#) и выберите **веб-приложение ASP.NET MVC** в группе шаблонов. Нажмите кнопку "ОК".
 
 
-[![Nдиалоговое окно проекта новые возможности](understanding-models-views-and-controllers-cs/_static/image1.jpg)](understanding-models-views-and-controllers-cs/_static/image1.png)
+[![Диалоговое окно нового проекта](understanding-models-views-and-controllers-cs/_static/image1.jpg)](understanding-models-views-and-controllers-cs/_static/image1.png)
 
 **Рис 01**: Диалоговое окно нового проекта ([Просмотр полноразмерного изображения](understanding-models-views-and-controllers-cs/_static/image2.png))
 
@@ -41,7 +41,7 @@ ms.locfileid: "59383412"
 При создании нового приложения ASP.NET MVC, **Создание проекта модульных тестов** откроется диалоговое окно (см. рис. 2). Это диалоговое окно позволяет создать отдельный проект в решении для тестирования приложения ASP.NET MVC. Выберите параметр **нет, не создавать проект модульного теста** и нажмите кнопку **ОК** кнопки.
 
 
-[![CСоздание модульного теста диалоговом](understanding-models-views-and-controllers-cs/_static/image2.jpg)](understanding-models-views-and-controllers-cs/_static/image3.png)
+[![Создание диалогового окна модульного теста](understanding-models-views-and-controllers-cs/_static/image2.jpg)](understanding-models-views-and-controllers-cs/_static/image3.png)
 
 **Рис. 02**: Создание диалогового окна модульных тестов ([Просмотр полноразмерного изображения](understanding-models-views-and-controllers-cs/_static/image4.png))
 
@@ -51,7 +51,7 @@ ms.locfileid: "59383412"
 Если развернуть папку Controllers, вы увидите файл с именем AccountController.cs и файл с именем HomeController.cs. Если развернуть папку Views, вы увидите три вложенные папки с именем учетной записи, Главная и Shared. Если развернуть корневой папки, вы увидите два дополнительных файла с именем About.aspx и Index.aspx (см. рис. 3). Эти файлы, составляющие пример приложения, в состав шаблона ASP.NET MVC по умолчанию.
 
 
-[![Tон окно обозревателя решений](understanding-models-views-and-controllers-cs/_static/image3.jpg)](understanding-models-views-and-controllers-cs/_static/image5.png)
+[![Окно обозревателя решений](understanding-models-views-and-controllers-cs/_static/image3.jpg)](understanding-models-views-and-controllers-cs/_static/image5.png)
 
 **Рис 03**: Окно обозревателя решений ([Просмотр полноразмерного изображения](understanding-models-views-and-controllers-cs/_static/image6.png))
 
@@ -61,7 +61,7 @@ ms.locfileid: "59383412"
 При первом запуске приложения ASP.NET, откроется диалоговое окно, на рис. 4, в которое рекомендует включить режим отладки. Нажмите кнопку "ОК", и приложение будет запущено.
 
 
-[![Dдиалоговое окно не включена новить отладку](understanding-models-views-and-controllers-cs/_static/image4.jpg)](understanding-models-views-and-controllers-cs/_static/image7.png)
+[![Диалоговое окно отладки не включена](understanding-models-views-and-controllers-cs/_static/image4.jpg)](understanding-models-views-and-controllers-cs/_static/image7.png)
 
 **Рис. 04**: Отладка не включена диалоговое окно ([Просмотр полноразмерного изображения](understanding-models-views-and-controllers-cs/_static/image8.png))
 
@@ -69,7 +69,7 @@ ms.locfileid: "59383412"
 При запуске приложения ASP.NET MVC, Visual Studio запускает приложение в веб-браузере. Пример приложения состоит из только двух страниц: страницу индекса и страницы About. При первом запуске приложения, открытии страницы индекса (см. рис. 5). Можно перейти на страницу About, щелкнув ссылку меню в верхней правой части приложения.
 
 
-[![Tон страница индекса](understanding-models-views-and-controllers-cs/_static/image10.png)](understanding-models-views-and-controllers-cs/_static/image9.png)
+[![Страница индекса](understanding-models-views-and-controllers-cs/_static/image10.png)](understanding-models-views-and-controllers-cs/_static/image9.png)
 
 **05 рис**: Страница индекса ([Просмотр полноразмерного изображения](understanding-models-views-and-controllers-cs/_static/image11.png))
 

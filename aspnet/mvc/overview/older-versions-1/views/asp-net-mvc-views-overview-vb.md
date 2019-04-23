@@ -12,7 +12,7 @@ ms.openlocfilehash: 84af745d338e38ece438fa58d51d0929c7b92967
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59408463"
 ---
 # <a name="aspnet-mvc-views-overview-vb"></a>Общие сведения о представлениях ASP.NET MVC (VB)
@@ -87,7 +87,7 @@ View()
 
 Так как вы вызываете Response.Write() столь часто, корпорация Майкрософт предоставляет вам ярлык для вызова метода Response.Write(). Представление в листинге 3 использует разделители &lt;% = и %&gt; для быстрого вызова Response.Write().
 
-**Listing 3 - Views\Home\Index2.aspx**
+**Листинг 3 - Views\Home\Index2.aspx**
 
 [!code-aspx[Main](asp-net-mvc-views-overview-vb/samples/sample3.aspx)]
 
@@ -99,12 +99,12 @@ View()
 
 Например, в представлении в листинге 4 пользуется три вспомогательных методов HTML--BeginForm(), TextBox() и Password() помощников--для создания имени входа форме (см. рис. 1).
 
-**Listing 4 -- \Views\Home\Login.aspx**
+**Листинг 4--\Views\Home\Login.aspx**
 
 [!code-aspx[Main](asp-net-mvc-views-overview-vb/samples/sample4.aspx)]
 
 
-[![Tдиалоговое окно нового проекта он](asp-net-mvc-views-overview-vb/_static/image1.jpg)](asp-net-mvc-views-overview-vb/_static/image1.png)
+[![В диалоговом окне нового проекта](asp-net-mvc-views-overview-vb/_static/image1.jpg)](asp-net-mvc-views-overview-vb/_static/image1.png)
 
 **Рис 01**: Стандартная форма входа в систему ([Просмотр полноразмерного изображения](asp-net-mvc-views-overview-vb/_static/image2.png))
 
@@ -115,7 +115,7 @@ View()
 
 Использование методов вспомогательный метод HTML не является обязательным. Они упрощают жизнь за счет сокращения HTML и сценарий, который необходимо написать. Представление в листинге 5 представляет точное же форму, что в представлении в листинге 4 без использования вспомогательных методов HTML.
 
-**Listing 5 -- \Views\Home\Login.aspx**
+**В листинге 5--\Views\Home\Login.aspx**
 
 [!code-aspx[Main](asp-net-mvc-views-overview-vb/samples/sample5.aspx)]
 

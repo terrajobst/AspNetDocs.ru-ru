@@ -12,7 +12,7 @@ ms.openlocfilehash: f3371165a30018c8096da8b6b9de567ed6fe6365
 ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/17/2019
 ms.locfileid: "59382632"
 ---
 # <a name="using-ajax-control-toolkit-controls-and-control-extenders-vb"></a>Использование элементов управления из набора элементов AJAX и управляющих элементов-расширителей (VB)
@@ -44,17 +44,17 @@ AJAX Control Toolkit содержит набор элементов управл
 5. Вы увидите страницу, на рис. 3.
 
 
-[![SОтказ от элемент управления редактора HTML](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image1.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image1.png)
+[![Выбрав элемент управления редактора HTML](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image1.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image1.png)
 
 **Рис 01**: Выбрав элемент управления редактора HTML ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image2.png))
 
 
-[![Visual Studio конструктора с элементом управления ScriptManager и редактирования](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image2.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image3.png)
+[![Конструктор Visual Studio с помощью элемента управления ScriptManager и редактирования](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image2.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image3.png)
 
 **Рис. 02**: Конструктор Visual Studio с помощью элемента управления ScriptManager и редактирования ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image4.png))
 
 
-[![Tстраница DisplayEditor.aspx HE](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image3.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image5.png)
+[![На странице DisplayEditor.aspx](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image3.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image5.png)
 
 **Рис 03**: На странице DisplayEditor.aspx ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image6.png))
 
@@ -76,17 +76,17 @@ AJAX Control Toolkit также содержит управляющих элем
 7. Откройте страницу, выбрав параметр меню **отладка, начать отладку** или нажмите клавишу F5.
 
 
-[![Tон параметр задачи Добавить расширитель](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image4.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image7.png)
+[![Параметр задачи добавьте расширителя](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image4.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image7.png)
 
 **Рис. 04**: Параметр задачи Добавить расширитель ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image8.png))
 
 
-[![SОтказ от средства расширения ConfirmButton управления](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image5.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image9.png)
+[![Выбрав элемент управления средства расширения ConfirmButton](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image5.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image9.png)
 
 **05 рис**: Выбрав элемент управления средства расширения ConfirmButton ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image10.png))
 
 
-[![Sвыполнение свойство ConfirmButton](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image6.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image11.png)
+[![Задание свойства ConfirmButton](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image6.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image11.png)
 
 **Рис 06**: Задание свойства ConfirmButton ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image12.png))
 
@@ -94,7 +94,7 @@ AJAX Control Toolkit также содержит управляющих элем
 При открытии страницы вы увидите кнопку. При нажатии кнопки появляется диалоговое окно подтверждения на рис. 7.
 
 
-[![Displaying диалоговое окно подтверждения](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image7.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image13.png)
+[![Отображение диалоговое окно подтверждения](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image7.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image13.png)
 
 **07 рис**: Отображение диалоговое окно подтверждения ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-vb/_static/image14.png))
 
