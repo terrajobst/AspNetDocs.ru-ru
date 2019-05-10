@@ -8,12 +8,12 @@ ms.date: 10/16/2008
 ms.assetid: e83812f2-c53e-4a43-a7c1-d64c59ecf694
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/understanding-action-filters-vb
 msc.type: authoredcontent
-ms.openlocfilehash: bbedc11b9b1225b1047350c1c84a116ecef0c380
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: fb3ed252a9232a2f5a1ad4257156a142bbe5b174
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59407410"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123180"
 ---
 # <a name="understanding-action-filters-vb"></a>Общие сведения о фильтрах действий (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59407410"
 [Загрузить PDF-файл](http://download.microsoft.com/download/e/f/3/ef3f2ff6-7424-48f7-bdaa-180ef64c3490/ASPNET_MVC_Tutorial_14_VB.pdf)
 
 > Цель данного руководства — объяснить фильтров действий. Фильтр операции — атрибут, который можно применить к действию контроллера--или всего контроллера--, изменяет способ, в котором выполняется действие.
-
 
 ## <a name="understanding-action-filters"></a>Общие сведения о фильтрах действий
 
@@ -48,11 +47,9 @@ ms.locfileid: "59407410"
 
 При многократном запуске `Index()` действие, введя URL-адрес/Data/индекса в адресную строку браузера и обновление кнопку несколько раз, вы увидите то же время на 10 секунд. Выходные данные `Index()` действие кэшируется на 10 секунд (см. рис. 1).
 
-
 [![Время кэширования](understanding-action-filters-vb/_static/image2.png)](understanding-action-filters-vb/_static/image1.png)
 
 **Рис 01**: Время ([Просмотр полноразмерного изображения](understanding-action-filters-vb/_static/image3.png))
-
 
 В листинге 1 фильтр одно действие — `OutputCache` фильтр действий — применяется к `Index()` метод. Если требуется, можно применить несколько фильтров действий к одному действию. Например, может потребоваться применить оба `OutputCache` и `HandleError` фильтров действий к одному действию.
 
@@ -106,11 +103,9 @@ ms.locfileid: "59407410"
 
 В листинге 2 `OnActionExecuting()`, `OnActionExecuted()`, `OnResultExecuting()`, и `OnResultExecuted()` вызывать все методы `Log()` метод. Имя метода и текущих данных маршрута передается `Log()` метод. `Log()` Метод записывает сообщение в окне вывода Visual Studio (см. рис. 2).
 
-
 [![Запись в окно вывода Visual Studio](understanding-action-filters-vb/_static/image5.png)](understanding-action-filters-vb/_static/image4.png)
 
 **Рис. 02**: Запись в окно вывода Visual Studio ([Просмотр полноразмерного изображения](understanding-action-filters-vb/_static/image6.png))
-
 
 Контроллер Home в листинге 3 показано, как можно применить фильтр журнала действий в класс контроллера целиком. Каждый раз, когда любое из действий, предоставляемых контроллера Home вызываются — либо `Index()` метод или `About()` метод — этапы обработки, действия записываются в окно вывода Visual Studio.
 

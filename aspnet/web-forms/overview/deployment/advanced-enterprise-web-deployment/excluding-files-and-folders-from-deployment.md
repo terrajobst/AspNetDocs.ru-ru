@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: f4cc2d40-6a78-429b-b06f-07d000d4caad
 msc.legacyurl: /web-forms/overview/deployment/advanced-enterprise-web-deployment/excluding-files-and-folders-from-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 4da291af4042e6e09c6917703b160ca717eecd15
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a262ce43d7199fb1015d54d0b7c213857c360946
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59407995"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133892"
 ---
 # <a name="excluding-files-and-folders-from-deployment"></a>Исключение файлов и папок из развертывания
 
@@ -22,7 +22,6 @@ ms.locfileid: "59407995"
 [Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается, как можно исключить файлы и папки из веб-пакета развертывания при построении и упаковать проект веб-приложения.
-
 
 Этот раздел является частью серии учебников, исходя из требования к развертыванию enterprise вымышленной компании Fabrikam, Inc. В этой серии руководств используется пример решения&#x2014; [решения диспетчера контактов](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;для представления веб-приложения с более реалистичные уровень сложности, включая приложения ASP.NET MVC 3, Windows Communication Служба Foundation (WCF) и проект базы данных.
 
@@ -48,7 +47,6 @@ ms.locfileid: "59407995"
 > [!NOTE]
 > В этом файле содержится логику, которая определяет, какие файлы следует включать:   
 > *%PROGRAMFILES%\MSBuild\Microsoft\VisualStudio\v10.0\Web\ Microsoft.Web.Publishing.OnlyFilesToRunTheApp.targets*
-
 
 ## <a name="excluding-specific-files-and-folders"></a>Исключение определенных файлов и папок
 
@@ -77,9 +75,7 @@ ms.locfileid: "59407995"
 
 Это базовая структура *. wpp.targets* файла:
 
-
 [!code-xml[Main](excluding-files-and-folders-from-deployment/samples/sample1.xml)]
-
 
 Обратите внимание, что каждый элемент содержит элемент метаданных с именем **FromTarget**. Это необязательное значение, которое не влияет на процесс построения; он просто служит для указания того, почему были опущены определенными файлами или папками, если кто-то просматривает журналы построения.
 

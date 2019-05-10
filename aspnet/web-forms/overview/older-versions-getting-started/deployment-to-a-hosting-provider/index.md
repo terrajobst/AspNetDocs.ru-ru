@@ -8,17 +8,16 @@ ms.date: 11/29/2011
 ms.assetid: 6798c7e4-f08e-4802-9fa5-443f67d5df62
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider
 msc.type: chapter
-ms.openlocfilehash: 87de6c92375594ab6ee726f1b66a94a0db793fd2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: bb9a47eeb4197348e85bb469b68c0055e7c696a0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59417056"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65119439"
 ---
 # <a name="aspnet-4---web-deployment-with-sql-server-compact-using-visual-studio"></a>ASP.NET 4. Веб-развертывание в Visual Studio с помощью SQL Server Compact
 
 > В этой серии руководств показано, как создать веб-приложение ASP.NET, использующего SQL Server Compact доступен через Интернет, развернув ее стороннего поставщика услуг размещения. Требуется Visual Studio 2012 RC или Visual Studio 2010. Для более актуальные сведения о возможности развертывания, или сведения о способах развертывания выпусков SQL Server, отличных от SQL Server Compact, см. в разделе [веб-развертывание ASP.NET с помощью Visual Studio](../../deployment/visual-studio-web-deployment/introduction.md).
-
 
 - [Веб-развертывание в Visual Studio с помощью SQL Server Compact. Введение](deployment-to-a-hosting-provider-introduction-1-of-12.md)
 - [Веб-развертывание в Visual Studio с помощью SQL Server Compact. Развертывание баз данных SQL Server Compact](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12.md)

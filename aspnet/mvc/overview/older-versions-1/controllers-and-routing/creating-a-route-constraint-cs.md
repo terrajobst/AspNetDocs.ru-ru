@@ -8,19 +8,18 @@ ms.date: 02/16/2009
 ms.assetid: 0bfd06b1-12d3-4fbb-9779-a82e5eb7fe7d
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/creating-a-route-constraint-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 42c0ce5e158e2fe9387ac218ac0762b6362094f9
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 51ef859287b3424faf85f4a3606a220ab48a9466
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389580"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123435"
 ---
 # <a name="creating-a-route-constraint-c"></a>Создание ограничения маршрута (C#)
 
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > В этом руководстве Стивен Вальтер демонстрирует, как можно контролировать, как браузер запрашивает маршруты соответствия путем создания ограничения маршрута с помощью регулярных выражений.
-
 
 Использовать ограничения маршрута для ограничения браузер запросы, которые соответствуют определенным маршрутом. Регулярное выражение можно использовать для указания ограничения маршрута.
 
@@ -50,11 +49,9 @@ ms.locfileid: "59389580"
 
 Поскольку действие Details() ожидает целочисленный параметр, выполняющего запрос, содержащий отличные от целочисленное значение приведет к ошибке. Например при вводе /Product/apple URL-адрес в адресную строку браузера на страницу ошибки будет получить на рис. 1.
 
-
 [![В диалоговом окне нового проекта](creating-a-route-constraint-cs/_static/image1.jpg)](creating-a-route-constraint-cs/_static/image1.png)
 
 **Рис 01**: Просмотр страницы развернуть ([Просмотр полноразмерного изображения](creating-a-route-constraint-cs/_static/image2.png))
-
 
 Что Вы действительно хотите сделать — соответствовать только URL-адреса, содержащие productId правильное целое число. Ограничение можно использовать при определении маршрута для ограничения URL-адреса, которые соответствуют маршруту. Измененный маршрут продукта в листинге 3 содержит ограничение регулярное выражение, которое соответствует только целые числа.
 

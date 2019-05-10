@@ -8,12 +8,12 @@ ms.date: 01/23/2019
 ms.assetid: 07ec7d37-023f-43ea-b471-60b08ce338f7
 msc.legacyurl: /web-api/overview/testing-and-debugging/troubleshooting-http-405-errors-after-publishing-web-api-applications
 msc.type: authoredcontent
-ms.openlocfilehash: ce5b617cc1032d190cc2450aa554b462ea6f6156
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 336df47dd4bda813839913676f12a51b899c0cf9
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025331"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121984"
 ---
 # <a name="troubleshooting-http-405-errors-after-publishing-web-api-applications"></a>Устранение ошибок HTTP 405 после публикации приложений веб-API
 
@@ -24,7 +24,6 @@ ms.locfileid: "57025331"
 > 
 > - [Internet Information Services (IIS)](https://www.iis.net/) (версии 7 или более поздней версии)
 > - [Веб-API](../../index.md) 
-
 
 Веб-API приложения обычно используют распространенные HTTP-команды: GET, POST, PUT, DELETE, а иногда и PATCH. Неудачна разработчикам можете оказаться в ситуации, где эти команды реализуются другой модуль IIS на их рабочем сервере, который ведет к ситуации, куда будет возвращать контроллер Web API, правильно работающая в Visual Studio или на сервере разработки HTTP 405 ошибки при развертывании на рабочем сервере. К счастью, эту проблему легко устранена, но разрешение гарантирует объяснение, почему возникают проблемы.
 
@@ -58,18 +57,13 @@ ms.locfileid: "57025331"
 
 Следующий пример HTTP-запрос и ответ показаны ситуации, где HTTP-клиент пытается ПОМЕСТИТЬ значение в веб-API приложение на веб-сервере, а сервер возвращает ошибку HTTP, что состояния, которые метод PUT не допускается.
 
-
 HTTP-запроса:
-
 
 [!code-console[Main](troubleshooting-http-405-errors-after-publishing-web-api-applications/samples/sample1.cmd)]
 
-
 HTTP-ответа:
 
-
 [!code-console[Main](troubleshooting-http-405-errors-after-publishing-web-api-applications/samples/sample2.cmd)]
-
 
 В этом примере клиент HTTP при отправке запроса JSON допустимый URL-адрес для веб-API приложения на веб-сервере, но сервер вернул сообщение об ошибке HTTP 405, который указывает, что метод PUT не разрешалось использовать URL-адреса. Напротив, если URI запроса не соответствует маршрут для приложения веб-API, сервер вернет HTTP 404 ***не найден*** ошибки.
 

@@ -8,19 +8,18 @@ ms.date: 08/19/2008
 ms.assetid: b0cf4a34-2c1d-4717-bb54-ff029e722990
 msc.legacyurl: /mvc/overview/older-versions-1/deployment/using-asp-net-mvc-with-different-versions-of-iis-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 0ca34f670202a35c627a514d3394fa430f5d8f26
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3b0a9509c0600f3598fd1218a7b383430548d4c0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396347"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123248"
 ---
 # <a name="using-aspnet-mvc-with-different-versions-of-iis-c"></a>Использование ASP.NET MVC с разными версиями служб IIS (C#)
 
 по [Microsoft](https://github.com/microsoft)
 
 > В этом руководстве вы узнаете, как использовать ASP.NET MVC и маршрутизация URL-адресов, с разными версиями служб IIS. Вы узнаете, различные стратегии по использованию ASP.NET MVC с IIS 7.0 (классический режим), IIS 6.0 и более ранних версий IIS.
-
 
 Платформа ASP.NET MVC зависит от маршрутизация ASP.NET перенаправлять запросы браузера к действиям контроллера. Чтобы воспользоваться преимуществами маршрутизации ASP.NET, может потребоваться выполнить дополнительные действия по настройке веб-сервера. Все зависит от версии Internet Information Services (IIS) и режим для приложения обработки запроса.
 

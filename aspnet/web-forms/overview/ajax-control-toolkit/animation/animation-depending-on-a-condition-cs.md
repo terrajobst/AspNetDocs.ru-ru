@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: b7a28c0d-efb9-443a-80a4-1a5ee54671cd
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/animation-depending-on-a-condition-cs
 msc.type: authoredcontent
-ms.openlocfilehash: c05f0976a135615f7a272b8057eb4c56677e5117
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c5de6541b49495ce4cb1bb7c50e7089a35d50ace
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59412428"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133935"
 ---
 # <a name="animation-depending-on-a-condition-c"></a>Анимация в зависимости от условия (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59412428"
 [Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation4.cs.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation4CS.pdf)
 
 > Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Запускается ли анимация или не может также зависеть условие в виде кода JavaScript.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -51,7 +50,6 @@ ms.locfileid: "59412428"
 [!code-aspx[Main](animation-depending-on-a-condition-cs/samples/sample5.aspx)]
 
 Обратите внимание, что знак «меньше» (`<`) в `ConditionScript` атрибут должен быть escape-(). При запуске этого скрипта, либо нет запусков анимации, один из двух или для обоих сделать.
-
 
 [![Панели исчезновение без изменения размера, поэтому второй анимации запуски, первый из них не](animation-depending-on-a-condition-cs/_static/image2.png)](animation-depending-on-a-condition-cs/_static/image1.png)
 

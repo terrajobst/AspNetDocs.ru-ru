@@ -8,12 +8,12 @@ ms.date: 02/15/2013
 ms.assetid: 24ad086d-865e-433c-9ac9-05f1a553da16
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/introduction
 msc.type: authoredcontent
-ms.openlocfilehash: 0edab77cd973af129e54c7867265f86b47c349a6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8ed7414c0b27fc41360e259bfb0a4c82e88a4e15
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410140"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128676"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-introduction"></a>Веб-развертывание ASP.NET с помощью Visual Studio. Вступление
 
@@ -30,7 +30,6 @@ ms.locfileid: "59410140"
 > Если у вас есть вопросы, которые не имеют отношения к руководству, их можно разместить [форум, посвященный развертыванию ASP.NET](https://forums.asp.net/26.aspx/1?Configuration+and+Deployment) или [StackOverflow](http://stackoverflow.com).
 > 
 > Это содержимое также доступно как бесплатная электронная книга в [коллекции TechNet электронную книгу](https://social.technet.microsoft.com/wiki/contents/articles/11608.e-book-gallery-for-microsoft-technologies.aspx#ASPNETWebDeploymentusingVisualStudio).
-
 
 ## <a name="overview"></a>Обзор
 
@@ -133,7 +132,6 @@ Visual Studio не выполняет никаких действий с баз�
 
 > [!NOTE]
 > Этот учебник написан с помощью пакета Azure SDK версии 1.8.1. С тех пор были выпущены новые версии с помощью дополнительных функций. Учебники были обновлены для упоминания этих функций и ссылка на ресурсы, имеющие Дополнительные сведения о них.
-
 
 Инструкции и снимки экрана основаны на Windows 8, однако учебники объясняются различия для Windows 7.
 

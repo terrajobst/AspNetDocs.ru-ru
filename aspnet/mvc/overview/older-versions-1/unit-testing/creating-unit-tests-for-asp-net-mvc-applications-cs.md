@@ -8,12 +8,12 @@ ms.date: 08/19/2008
 ms.assetid: d3a270b9-d7b1-47f2-8775-fc3beb518b5c
 msc.legacyurl: /mvc/overview/older-versions-1/unit-testing/creating-unit-tests-for-asp-net-mvc-applications-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 1193d7dc6fc29dfdac5637c9391a82f9f3566073
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 633e28a100937c5d40d62fe5cc151e613171cc8f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59407735"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126883"
 ---
 # <a name="creating-unit-tests-for-aspnet-mvc-applications-c"></a>Создание модульных тестов для приложений ASP.NET MVC (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59407735"
 [Загрузить PDF-файл](http://download.microsoft.com/download/8/4/8/84843d8d-1575-426c-bcb5-9d0c42e51416/ASPNET_MVC_Tutorial_07_CS.pdf)
 
 > Сведения о создании модульных тестов для действий контроллера. В этом руководстве Стивен Вальтер показано, как проверить ли действие контроллера возвращает конкретное представление, возвращает определенный набор данных или другой тип результата действия.
-
 
 Целью данного учебника — продемонстрировать, как можно создавать модульные тесты для контроллеров в your ASP.NET MVC приложений. Мы обсудим, как создать три разных типа модульных тестов. Вы узнаете, как для представления, возвращаемого действием контроллера тестирования, как проверить данные представления, возвращаемое в результате действия контроллера и способы тестирования независимо от того, имеется ли одно действие контроллера перенаправит вас на второе действие контроллера.
 
@@ -58,16 +57,13 @@ ms.locfileid: "59407735"
 
 Запуском модульного теста в листинге 2, либо введя сочетание **Ctrl + R, A** или щелкнув **запустить все тесты в решении** кнопку (см. рис. 1). Если тест проходит успешно, вы увидите в окне результатов теста на рис. 2.
 
-
 [![Выполнение всех тестов в решении](creating-unit-tests-for-asp-net-mvc-applications-cs/_static/image2.png)](creating-unit-tests-for-asp-net-mvc-applications-cs/_static/image1.png)
 
 **Рис 01**: Выполнение всех тестов в решении ([Просмотр полноразмерного изображения](creating-unit-tests-for-asp-net-mvc-applications-cs/_static/image3.png))
 
-
 [![Успех!](creating-unit-tests-for-asp-net-mvc-applications-cs/_static/image5.png)](creating-unit-tests-for-asp-net-mvc-applications-cs/_static/image4.png)
 
 **Рис. 02**: Готово! ([Просмотр полноразмерного изображения](creating-unit-tests-for-asp-net-mvc-applications-cs/_static/image6.png))
-
 
 ## <a name="testing-the-view-data-returned-by-a-controller"></a>Тестирование представления данных возвращается с помощью контроллера
 

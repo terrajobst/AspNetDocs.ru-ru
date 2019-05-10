@@ -8,12 +8,12 @@ ms.date: 10/17/2013
 ms.assetid: cc764f3b-6921-486a-8f44-c6ccd1249acd
 msc.legacyurl: /mvc/overview/getting-started/introduction/adding-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: ad5f32a08270ce318c03e1b29acd74d12bbb3d3b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: da914986ff020879dfe634967b39b32250cbf43b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59394059"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120854"
 ---
 # <a name="adding-a-controller"></a>Добавление контроллера
 
@@ -34,13 +34,11 @@ MVC означает *model-view-controller*. MVC — это шаблон для
 
 Начнем с создания класса контроллера. В **обозревателе решений**, щелкните правой кнопкой мыши *контроллеров* папку и нажмите кнопку **добавить**, затем **контроллера**.
 
-
 ![](adding-a-controller/_static/image1.png)
 
 В **Добавление шаблона** диалоговом окне щелкните **контроллер MVC 5 — пустой**, а затем нажмите кнопку **добавить**.
 
 ![](adding-a-controller/_static/image2.png)  
- 
 
 Назовите новый контроллер «HelloWorldController» и нажмите кнопку **добавить**.
 
@@ -80,7 +78,6 @@ ASP.NET MVC вызывает классы другой контроллер (и 
 
 > [!NOTE]
 > Примечание по безопасности. Приведенном выше примере используется [HttpUtility.HtmlEncode](https://msdn.microsoft.com/library/ee360286(v=vs.110).aspx) для защиты приложения от злонамеренного ввода данных (JavaScript). Дополнительные сведения см. в практическом руководстве по [ Защищает от использования сценариев в веб-приложения, применяя, HTML-кодирования в строки](https://msdn.microsoft.com/library/a2a4yykt(v=vs.100).aspx).
-
 
  Запустите приложение и перейдите к пример URL-адреса (`http://localhost:xxxx/HelloWorld/Welcome?name=Scott&numtimes=4`). Вы можете попробовать различные значения `name` и `numtimes` в URL-адресе. [Система привязки модели ASP.NET MVC](http://odetocode.com/Blogs/scott/archive/2009/04/27/6-tips-for-asp-net-mvc-model-binding.aspx) автоматически сопоставляет именованные параметры из строки запроса в адресной строке параметров метода.
 

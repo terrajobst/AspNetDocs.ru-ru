@@ -8,12 +8,12 @@ ms.date: 09/08/2014
 ms.assetid: 732a2316-e49f-4f72-becd-0cd72f14457e
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/membership-and-administration
 msc.type: authoredcontent
-ms.openlocfilehash: 7263a7d7ee791be8a1369934aac4d091736a658b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 59f859ea30572fbe66184f29555ac2c5c2f22f82
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59417485"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132154"
 ---
 # <a name="membership-and-administration"></a>Членство и администрирование
 
@@ -22,7 +22,6 @@ ms.locfileid: "59417485"
 [Скачайте пример проекта Wingtip Toys (C#)](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) или [скачайте электронную книгу (PDF)](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
 > В этой серии руководств будет основы создания приложений веб-форм ASP.NET с помощью ASP.NET 4.5 и Microsoft Visual Studio Express 2013 для Web. Visual Studio 2013 [проект с исходным кодом C#](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) доступен на следующей странице этой серии руководств.
-
 
 Этом руководстве показано, как обновить пример приложения Wingtip Toys, чтобы добавить пользовательскую роль и использовать ASP.NET Identity. Он также показано, как реализовать страницу администрирования, из которого пользователь с пользовательской роли можно добавлять и удалять продукты с веб-сайта.
 
@@ -81,7 +80,6 @@ ms.locfileid: "59417485"
 > 
 > Если вы хотите хранить данные членства вместе с данными продукта, можно с помощью одного **DbContext** вы использовали для хранения данных продуктов в приведенном выше коде.
 
-
  *Внутренней* ключевое слово является модификатором доступа для типов (таких как классы) и членов типов (например, методы или свойства). Внутренние типы или члены доступны только внутри файлов, содержащихся в той же сборке *(.dll* файла). При сборке приложения, файл сборки *(.dll*) создается, содержащий код, который выполняется при запуске приложения. 
 
 Объект `RoleStore` объектом, который предоставляет управление ролями, создан на основе контекста базы данных.
@@ -89,7 +87,6 @@ ms.locfileid: "59417485"
 > [!NOTE] 
 > 
 > Обратите внимание, что при `RoleStore` создания объекта он использует универсальный `IdentityRole` типа. Это означает, что `RoleStore` допускается только для хранения `IdentityRole` объектов. Также с помощью универсальных типов, в памяти обработки ресурсов лучше.
-
 
 Далее, `RoleManager` объекта, создается на основе `RoleStore` объект, который вы только что создали. `RoleManager` объект предоставляет связанные с ролями API, который может использоваться для автоматического сохранения изменения `RoleStore`. `RoleManager` Допускается только для хранения `IdentityRole` объекты, так как в коде используется `<IdentityRole>` универсального типа.
 
@@ -102,7 +99,6 @@ ms.locfileid: "59417485"
 > [!NOTE] 
 > 
 > Обработка ошибок будет обновляться при прохождении учебника «Обработка ошибок ASP.NET» далее в этой серии руководств.
-
 
 При следующем запуске приложения пользователя с именем «canEditUser» добавляется как роль с именем «canEdit» приложения. Далее в этом руководстве вы позволит входить в систему как пользователь «canEditUser» для отображения дополнительных возможностей, которые будут добавлены в рамках этого руководства. Дополнительные сведения об ASP.NET Identity API см. в разделе [пространство имен Microsoft.AspNet.Identity](https://msdn.microsoft.com/library/microsoft.aspnet.identity(v=vs.111).aspx). Дополнительные сведения об инициализации системы удостоверений ASP.NET см. в разделе [AspnetIdentitySample](https://github.com/rustd/AspnetIdentitySample/blob/master/AspnetIdentitySample/App_Start/IdentityConfig.cs).
 

@@ -8,19 +8,18 @@ ms.date: 08/19/2008
 ms.assetid: 4bc8d19a-80f1-44b4-adbf-95ed22d691ca
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/asp-net-mvc-routing-overview-vb
 msc.type: authoredcontent
-ms.openlocfilehash: c135bacd7f9f87fac87a3c8cf41bad359bb3c0a2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ed043d76b89ce31945cf3423b0c5afca9383cc21
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379187"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123646"
 ---
 # <a name="aspnet-mvc-routing-overview-vb"></a>Общие сведения о маршрутизации в ASP.NET MVC (VB)
 
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > В этом руководстве Стивен Вальтер показано, как платформа ASP.NET MVC сопоставляет запросы браузера к действиям контроллера.
-
 
 В этом руководстве представлена важной особенностью каждое приложение ASP.NET MVC вызывается *маршрутизация ASP.NET*. Модуль маршрутизации ASP.NET отвечает за сопоставление входящий запрос браузера с определенного действия контроллера MVC. Изучив этот учебник вы сможете понять, как в таблице Стандартная Маршрутизация сопоставляет запросы к действиям контроллера.
 
@@ -94,11 +93,9 @@ URL-адрес/Home также соответствует Index() метод в 
 
 [!code-vb[Main](asp-net-mvc-routing-overview-vb/samples/sample5.vb)]
 
-
 [![Вызов действия контроллера, который ожидает, что значение параметра](asp-net-mvc-routing-overview-vb/_static/image1.jpg)](asp-net-mvc-routing-overview-vb/_static/image1.png)
 
 **Рис 01**: Вызов действия контроллера, который ожидает, что значение параметра ([Просмотр полноразмерного изображения](asp-net-mvc-routing-overview-vb/_static/image2.png))
-
 
 С другой стороны, URL-адрес/Home/Index/3, хорошо работает с действие контроллера индекса в листинге 5. Запрос /Home/Index/3 вызывает метод Index() может вызываться с параметром идентификатор, который имеет значение 3.
 

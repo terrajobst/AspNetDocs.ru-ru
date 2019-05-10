@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 719727b7-bef3-45ad-bfe9-ba5bcdb2305f
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs
 msc.type: authoredcontent
-ms.openlocfilehash: 1f093e348216750cbadb6e52f524e5edd4d6c498
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 86833a890da759e489dd11dc9afb128a9b7a75e3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390276"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125257"
 ---
 # <a name="hands-on-lab-build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs"></a>Практическое лабораторное занятие. Создание одностраничного приложения (SPA) с помощью веб-API ASP.NET и Angular.js
 
@@ -34,7 +34,6 @@ ms.locfileid: "59390276"
 > 
 > 
 > Все примеры кода и фрагменты кода включены в Web лагеря комплект обучающих материалов, доступных в [ https://aka.ms/webcamps-training-kit ](https://aka.ms/webcamps-training-kit).
-
 
 ## <a name="overview"></a>Обзор
 
@@ -66,7 +65,6 @@ ms.locfileid: "59390276"
 > [!NOTE]
 > Убедитесь, что все зависимости для этой лабораторной работы вы вернули перед запуском программы установки.
 
-
 <a id="CodeSnippets"></a>
 ### <a name="using-the-code-snippets"></a>Фрагменты кода
 
@@ -74,7 +72,6 @@ ms.locfileid: "59390276"
 
 > [!NOTE]
 > Каждого упражнения сопровождается начальный решения, расположенный в **начать** папку упражнения, чему вы сможете каждого упражнения, независимо от других. Имейте в виду, что фрагменты кода, которые добавляются во время атаки, отсутствуют эти стартовые решения и могут не работать, пока не будут выполнены упражнения. В исходном коде для упражнения, вы также найдете **окончания** папку, содержащую решение Visual Studio с кодом, полученный в результате выполнения действий, описанных в соответствующий упражнении. Эти решения можно использовать в качестве руководства, если вам нужна дополнительная помощь, отвечая на это Практическое занятие.
-
 
 ---
 
@@ -90,7 +87,6 @@ ms.locfileid: "59390276"
 
 > [!NOTE]
 > При первом запуске Visual Studio, необходимо выбрать один из предварительно определенных коллекций параметров. Каждой коллекции предопределенных соответствует конкретному стилю разработки и определяет макетов окон, поведение редактора, фрагменты кода IntelliSense и параметры диалогового окна. В этом лабораторном занятии описаны действия, необходимые для выполнения данной задачи в Visual Studio при использовании **обычные параметры разработки** коллекции. При выборе другого набора параметров для среды разработки, возможно, различия в действиях, которые следует учитывать.
-
 
 <a id="Exercise1"></a>
 ### <a name="exercise-1-creating-a-web-api"></a>Упражнение 1. Создание веб-API
@@ -251,7 +247,6 @@ ms.locfileid: "59390276"
 > 
 > ![Параметр Internet Explorer](build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs/_static/image9.png)
 
-
 1. Нажмите клавишу **F5** для запуска решения. **Вход** страница должна выглядеть в браузере.
 
     > [!NOTE]
@@ -309,7 +304,6 @@ ms.locfileid: "59390276"
 
 > [!NOTE]
 > Дополнительные сведения о AngularJS см. [ [ http://angularjs.org/ ](http://angularjs.org/) ](http://angularjs.org/).
-
 
 1. Откройте **Visual Studio Express 2013 для Web** и откройте **GeekQuiz.sln** решение находится в **источника/Ex2-CreatingASPAInterface/начало** папки. Кроме того можно продолжить с решением, полученный в предыдущем упражнении.
 2. Откройте **консоль диспетчера пакетов** из **средства** > **диспетчер пакетов NuGet**. Введите следующую команду, чтобы установить **AngularJS.Core** пакет NuGet.

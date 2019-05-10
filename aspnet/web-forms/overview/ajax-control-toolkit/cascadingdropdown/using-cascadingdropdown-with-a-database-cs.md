@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 684f0c28-a490-4e5b-b5e5-5dfb77464b49
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/cascadingdropdown/using-cascadingdropdown-with-a-database-cs
 msc.type: authoredcontent
-ms.openlocfilehash: ef40d71828237a3d086c7c1bb05de56e0770f588
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 706a099042a298f8870f36cb653f1e5d5d156f2a
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391277"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125164"
 ---
 # <a name="using-cascadingdropdown-with-a-database-c"></a>Использование CascadingDropDown с базой данных (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59391277"
 [Скачать код](http://download.microsoft.com/download/9/0/7/907760b1-2c60-4f81-aeb6-ca416a573b0d/cascadingdropdown1.cs.zip) или [скачать PDF](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/cascadingdropdown1CS.pdf)
 
 > Элемент управления CascadingDropDown в AJAX Control Toolkit расширяет элемент управления DropDownList, что изменения в одной загрузке DropDownList соответствующих значений в другой DropDownList. В порядке, чтобы это работало должны создаваться специальных веб-службы.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -85,11 +84,9 @@ ms.locfileid: "59391277"
 
 Загрузки страницы ASP.NET, и через некоторое время короткий список поставщиков заполняется 25 записей. Выберите одну запись и обратите внимание на то, каким образом второго раскрывающегося списка заполняется данными.
 
-
 [![Первый список заполняется автоматически](using-cascadingdropdown-with-a-database-cs/_static/image2.png)](using-cascadingdropdown-with-a-database-cs/_static/image1.png)
 
 Первый список заполняется автоматически ([Просмотр полноразмерного изображения](using-cascadingdropdown-with-a-database-cs/_static/image3.png))
-
 
 [![Второй список заполняется согласно выбору, в первом списке](using-cascadingdropdown-with-a-database-cs/_static/image5.png)](using-cascadingdropdown-with-a-database-cs/_static/image4.png)
 

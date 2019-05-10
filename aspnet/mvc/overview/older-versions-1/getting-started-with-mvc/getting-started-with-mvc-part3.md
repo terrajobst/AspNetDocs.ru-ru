@@ -8,19 +8,18 @@ ms.date: 08/14/2010
 ms.assetid: e8f1515c-c277-47ff-a23e-224118f13f02
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part3
 msc.type: authoredcontent
-ms.openlocfilehash: 3eff3aceea302c51e6970bb13fbee3a8bf98a71d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 462b1210c45da67058899193afcea973f3daf122
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411986"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123043"
 ---
 # <a name="adding-a-view"></a>Добавление представления
 
 по [(Scott hanselman)](https://github.com/shanselman)
 
 > Это руководство для начинающих, в котором представлены основные сведения по ASP.NET MVC. Вы создадите простое веб-приложение, которое считывает и записывает в базу данных. Посетите [центр обучения ASP.NET MVC](../../../index.md) для поиска других ASP.NET MVC, учебники и примеры.
-
 
 В этом разделе мы собираемся рассмотрим, как у нашего класса HelloWorldController использовать файл шаблона представления для аккуратно инкапсуляции создания ответов HTML обратно клиенту.
 
@@ -99,7 +98,6 @@ ms.locfileid: "59411986"
 Теперь нам требуется шаблон представления экрана приветствия! Щелкните правой кнопкой мыши в методе приветствия и выберите Add View. На этот раз мы проверьте «Создать строго типизированное представление» и выберите наш класс WelcomeViewModel из раскрывающегося списка. Это новое представление только будет знать о WelcomeViewModels и другими типами объектов.
 
 > *ПРИМЕЧАНИЕ. Нужно будет выполнена компиляция один раз, после добавления вашего WelcomeViewModel для отображения в раскрывающемся списке.*
-
 
 Вот, как должна выглядеть диалоговое окно Add View. Нажмите кнопку Добавить. ![Добавить представление в кружке](getting-started-with-mvc-part3/_static/image10.png)
 

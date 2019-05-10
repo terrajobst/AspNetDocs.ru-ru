@@ -8,19 +8,18 @@ ms.date: 10/02/2014
 ms.assetid: 0a8d6044-5fab-4213-82d6-5618d5601358
 msc.legacyurl: /web-forms/overview/security/create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset
 msc.type: authoredcontent
-ms.openlocfilehash: 3df728891103de9c8e461ab9507237c9b14e8251
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: af3653bc164810126bc3bf8f1b1794d75642d807
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390692"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133801"
 ---
 # <a name="create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset-c"></a>Создание безопасного приложения веб-форм ASP.NET с регистрацией пользователей, подтверждением электронной почты и сбросом пароля (C#)
 
 по [Erik Reitan](https://github.com/Erikre)
 
 > Этом руководстве показано, как создать приложение веб-форм ASP.NET с помощью регистрации пользователей, подтверждение по электронной почте и сбрасывать пароль с помощью системы членства ASP.NET Identity. Этот учебник был основан на Рик Андерсон [руководство по MVC](../../../mvc/overview/security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md).
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -43,7 +42,6 @@ ms.locfileid: "59390692"
 
 > [!NOTE]
 > Предупреждение: Необходимо установить [Visual Studio 2013 с обновлением 3](https://go.microsoft.com/fwlink/?LinkId=390465) или более поздней версии для работы с этим руководством.
-
 
 1. Создайте новый проект (**файл**  - &gt; **новый проект**) и выберите **веб-приложение ASP.NET** шаблона и последней версии .NET Framework версия из **новый проект** диалоговое окно.
 2. Из **новый проект ASP.NET** выберите **веб-форм** шаблона. Оставьте проверку подлинности по умолчанию как **учетные записи отдельных пользователей**. Если вы хотите разместить приложение в Azure, оставьте **разместить в облаке** флажков.   
@@ -95,7 +93,6 @@ SendGrid изменилось его API, так как этот учебник 
 ### <a name="enable-email-confirmation"></a>Включить подтверждение по электронной почте
 
  Чтобы включить подтверждение по электронной почте, вы измените код регистрации, следующим образом.  
- 
 
 1. В *учетной записи* откройте *Register.aspx.cs* кода и обновлять `CreateUser_Click` способ включения следующие выделенные изменения: 
 

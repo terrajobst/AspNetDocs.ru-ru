@@ -8,12 +8,12 @@ ms.date: 11/13/2006
 ms.assetid: 1f42e332-78dc-438b-9e35-0c97aa0ad929
 msc.legacyurl: /web-forms/overview/data-access/custom-button-actions-with-the-datalist-and-repeater/custom-buttons-in-the-datalist-and-repeater-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 5819dc3d62161fc4f31cf30c6c739654a64d86b3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ad3af89c34df4a71b6e658ba205aa4f645b4dedd
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400416"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134028"
 ---
 # <a name="custom-buttons-in-the-datalist-and-repeater-c"></a>Настраиваемые кнопки в элементах управления DataList и Repeater (C#)
 
@@ -23,18 +23,15 @@ ms.locfileid: "59400416"
 
 > В этом руководстве мы создадим интерфейс, который использует элемент управления Repeater для категорий в системе, с каждой категорией, предоставляя кнопку, чтобы отобразить соответствующие продукты с помощью элемента управления BulletedList.
 
-
 ## <a name="introduction"></a>Вступление
 
 В предыдущих учебных семнадцати элементов управления DataList и Repeater мы ve создан как примеры только для чтения и редактирования и удаления примеры. Чтобы упростить редактирование и удаление возможностей в элемент управления DataList, мы добавили кнопки элемента управления DataList s `ItemTemplate` , при нажатии вызвал обратную передачу и возникает событие элемента управления DataList, соответствующий кнопки s `CommandName` свойство. Например, добавление кнопки для `ItemTemplate` с `CommandName` свойство редактирования значении DataList s `EditCommand` срабатывание при обратной передаче; с `CommandName` удалить вызывает `DeleteCommand`.
 
 Кроме того чтобы изменить или удалить кнопки, элементы управления DataList и Repeater можно также включать кнопок, элементов управления LinkButton или ImageButtons, при нажатии выполняют определенную настраиваемую логику на стороне сервера. В этом руководстве мы создадим интерфейс, который использует элемент управления Repeater, чтобы получить список категорий в системе. Для каждой категории Repeater будет содержать кнопку, чтобы показать категории продуктов, связанные с помощью элемента управления BulletedList (см. рис. 1).
 
-
 [![Щелкнув ссылку дисплеев продуктов Показать продукты s категории в маркированном списке](custom-buttons-in-the-datalist-and-repeater-cs/_static/image2.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image1.png)
 
 **Рис. 1**: Щелчок отображает Показать ссылку продукты категории s продуктов в маркированном списке ([Просмотр полноразмерного изображения](custom-buttons-in-the-datalist-and-repeater-cs/_static/image3.png))
-
 
 ## <a name="step-1-adding-the-custom-button-tutorial-web-pages"></a>Шаг 1. Добавление веб-страниц учебного настраиваемой кнопки
 
@@ -43,57 +40,45 @@ ms.locfileid: "59400416"
 - `Default.aspx`
 - `CustomButtons.aspx`
 
-
 ![Добавление страниц ASP.NET для пользовательских кнопок руководств](custom-buttons-in-the-datalist-and-repeater-cs/_static/image4.png)
 
 **Рис. 2**: Добавление страниц ASP.NET для пользовательских кнопок руководств
 
-
 Как и в других папках, `Default.aspx` в `CustomButtonsDataListRepeater` папку перечислит учебные курсы в своем разделе. Помните, что `SectionLevelTutorialListing.ascx` пользовательский элемент управления предоставляет следующие функциональные возможности. Добавьте данный пользовательский элемент управления для `Default.aspx` , перетащив его из обозревателя решений на странице s режиме конструктора.
-
 
 [![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](custom-buttons-in-the-datalist-and-repeater-cs/_static/image6.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image5.png)
 
 **Рис. 3**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](custom-buttons-in-the-datalist-and-repeater-cs/_static/image7.png))
 
-
 Наконец, добавьте страницы как записи, чтобы `Web.sitemap` файл. В частности, добавьте следующую разметку после разбиения по страницам и сортировка с помощью элементов управления DataList и Repeater `<siteMapNode>`:
-
 
 [!code-xml[Main](custom-buttons-in-the-datalist-and-repeater-cs/samples/sample1.xml)]
 
 После обновления `Web.sitemap`, Отвлекитесь и просмотрите учебный веб-узел в обозревателе. В меню слева теперь есть элементы для редактирования, вставки и удаления учебных курсов.
 
-
 ![Карта узла теперь есть запись для пользовательских кнопок учебника](custom-buttons-in-the-datalist-and-repeater-cs/_static/image8.png)
 
 **Рис. 4**: Карта узла теперь есть запись для пользовательских кнопок учебника
-
 
 ## <a name="step-2-adding-the-list-of-categories"></a>Шаг 2. Добавление списка категорий
 
 В этом руководстве, нам нужно создать элемент управления Repeater, в которой перечислены все категории с указанием LinkButton Показать продукты, при нажатии отображает связанной категории s продуктов в виде маркированного списка. Позвольте s сначала создать простой Repeater, в котором выводятся категории в системе. Сначала откройте `CustomButtons.aspx` странице в `CustomButtonsDataListRepeater` папку. Перетащите элемент управления Repeater из области элементов в конструктор и задайте его `ID` свойства `Categories`. Создайте новый элемент управления источника данных в смарт-теге элемента управления Repeater s. В частности, создать новый элемент управления ObjectDataSource с именем `CategoriesDataSource` , который выбирает данные из `CategoriesBLL` класс s `GetCategories()` метод.
 
-
 [![Настройте элемент ObjectDataSource для использования метода GetCategories() класса CategoriesBLL s](custom-buttons-in-the-datalist-and-repeater-cs/_static/image10.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image9.png)
 
 **Рис. 5**: Настройка ObjectDataSource для использования `CategoriesBLL` класс s `GetCategories()` метод ([Просмотр полноразмерного изображения](custom-buttons-in-the-datalist-and-repeater-cs/_static/image11.png))
-
 
 В отличие от элемента управления DataList, для которого Visual Studio создает по умолчанию `ItemTemplate` в зависимости от источника данных элемента управления Repeater s шаблоны должны быть определены вручную. Кроме того, необходимо создавать и редактировать декларативно шаблонов элемента управления Repeater s (то есть здесь s не Правка шаблонов параметра в смарт-теге элемента управления Repeater s).
 
 Щелкните на вкладке "источник" в левом нижнем углу и добавьте `ItemTemplate` , отображающий имя категории s в `<h3>` элемент и его описание в абзаце тега; включает `SeparatorTemplate` , отображающий горизонтальной чертой (`<hr />`) между каждым Категория. Также добавьте LinkButton с его `Text` свойство для отображения продуктов. После выполнения этих действий декларативная разметка s страница должна выглядеть следующим образом:
 
-
 [!code-aspx[Main](custom-buttons-in-the-datalist-and-repeater-cs/samples/sample2.aspx)]
 
 Рис. 6 показана страница в обозревателе. Отображается каждый имя и описание категории. Показать продукты при нажатии кнопки, вызывает обратную передачу, но еще не выполняет никаких действий.
 
-
 [![Каждой категории — имя и описание отображается, вместе с LinkButton Показать продукты](custom-buttons-in-the-datalist-and-repeater-cs/_static/image13.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image12.png)
 
 **Рис. 6**: Каждой категории — имя и описание отображается, вместе с LinkButton Показать продукты ([Просмотр полноразмерного изображения](custom-buttons-in-the-datalist-and-repeater-cs/_static/image14.png))
-
 
 ## <a name="step-3-executing-server-side-logic-when-the-show-products-linkbutton-is-clicked"></a>Шаг 3. Выполнение на стороне сервера логики при Показать продукты LinkButton нажата
 
@@ -105,7 +90,6 @@ ms.locfileid: "59400416"
 - `CommandArgument` обычно используется для хранения значения некоторые поля данных, таких как значение первичного ключа
 
 В этом примере набор LinkButton s `CommandName` свойство ShowProducts и привязки текущей записи s значение первичного ключа `CategoryID` для `CommandArgument` свойства, используя синтаксис привязки данных `CategoryArgument='<%# Eval("CategoryID") %>'`. После указания этих двух свойств, декларативный синтаксис s LinkButton должен выглядеть следующим образом:
-
 
 [!code-aspx[Main](custom-buttons-in-the-datalist-and-repeater-cs/samples/sample3.aspx)]
 
@@ -123,16 +107,13 @@ ms.locfileid: "59400416"
 > [!NOTE]
 > Элемент управления DataList s `ItemCommand` обработчику события передаются в объект типа [ `DataListCommandEventArgs` ](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datalistcommandeventargs.aspx), который предлагает те же четыре свойства, что `RepeaterCommandEventArgs` класса.
 
-
 ## <a name="step-4-displaying-the-selected-category-s-products-in-a-bulleted-list"></a>Шаг 4. Отображение s продукты выбранной категории в маркированном списке
 
 Продукты выбранной категории s могут отображаться в элементе Repeater s `ItemTemplate` используя любое количество элементов управления. Нам удалось добавить другой вложенной Repeater, DataList, DropDownList, GridView и т. д. Поскольку мы хотим отобразить продукты в виде маркированного списка, однако мы будем использовать элемент управления BulletedList. Возвращаясь к `CustomButtons.aspx` s декларативная разметка страницы, добавьте элемент управления BulletedList для `ItemTemplate` после LinkButton Показать продукты. Набор BulletedLists s `ID` для `ProductsInCategory`. Маркированный список отображает значение поля данных, указанной с помощью `DataTextField` свойство; так как этот элемент управления будет привязан к нему, задайте сведения о продукте `DataTextField` свойства `ProductName`.
 
-
 [!code-aspx[Main](custom-buttons-in-the-datalist-and-repeater-cs/samples/sample4.aspx)]
 
 В `ItemCommand` обработчик событий, ссылаются на этот элемент управления с помощью `e.Item.FindControl("ProductsInCategory")` и привяжите его к набору продуктов, связанных с выбранной категорией.
-
 
 [!code-csharp[Main](custom-buttons-in-the-datalist-and-repeater-cs/samples/sample5.cs)]
 
@@ -145,11 +126,9 @@ ms.locfileid: "59400416"
 > [!NOTE]
 > Если вы хотите изменить поведение этого отчета таким образом, что только одна категория s продукты отображаются одновременно, просто задать элемент управления BulletedList s `EnableViewState` свойства `False`.
 
-
 [![Маркированный список используется для отображения продуктов выбранной категории](custom-buttons-in-the-datalist-and-repeater-cs/_static/image16.png)](custom-buttons-in-the-datalist-and-repeater-cs/_static/image15.png)
 
 **Рис. 7**: Маркированный список используется для отображения продуктов выбранной категории ([Просмотр полноразмерного изображения](custom-buttons-in-the-datalist-and-repeater-cs/_static/image17.png))
-
 
 ## <a name="summary"></a>Сводка
 

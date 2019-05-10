@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: c61560e9-9f6c-4985-834a-08a3eabf9c3c
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/creating-and-running-a-deployment-command-file
 msc.type: authoredcontent
-ms.openlocfilehash: cbad35c9ef83b41e9d3f9a48ff37672d22338e7e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f1477ff423e4898385066a35b42503f3c70dcc68
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59395229"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65119462"
 ---
 # <a name="creating-and-running-a-deployment-command-file"></a>Создание и запуск командного файла развертывания
 
@@ -22,7 +22,6 @@ ms.locfileid: "59395229"
 [Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается создание командный файл, который позволит выполнить развертывание с помощью файлов проекта Microsoft Build Engine (MSBuild) как один шаг, повторяемый процесс.
-
 
 Этот раздел является частью серии учебников, исходя из требования к развертыванию enterprise вымышленной компании Fabrikam, Inc. В этой серии руководств используется пример решения&#x2014; [Contact Manager](the-contact-manager-solution.md) решение&#x2014;для представления веб-приложения с более реалистичные уровень сложности, включая приложения ASP.NET MVC 3, Windows Communication Служба Foundation (WCF) и проект базы данных.
 
@@ -41,9 +40,7 @@ ms.locfileid: "59395229"
 
 *Publish.proj* файле используется **импорта** элемент для импорта файла проекта для конкретной среды.
 
-
 [!code-xml[Main](creating-and-running-a-deployment-command-file/samples/sample1.xml)]
-
 
 Таким образом при использовании MSBuild.exe для создания и развертывания решения диспетчера контактов, вам потребуется:
 
@@ -52,19 +49,14 @@ ms.locfileid: "59395229"
 
 Для этого команду MSBuild должен выглядеть примерно следующим образом:
 
-
 [!code-console[Main](creating-and-running-a-deployment-command-file/samples/sample2.cmd)]
-
 
 Здесь это простое действие, чтобы переместить повторяемых и один шаг развертывания. Все, что нужно сделать — это добавить команду MSBuild CMD-файл. В решение диспетчера контактов, в папку публикации включает в себя файл с именем *Dev.cmd публикации* , именно это и делает.
 
-
 [!code-console[Main](creating-and-running-a-deployment-command-file/samples/sample3.cmd)]
-
 
 > [!NOTE]
 > **/Fl** коммутатора MSBuild использует для создания файла журнала с именем *msbuild.log* в рабочем каталоге, в котором был вызван MSBuild.exe.
-
 
 Для развертывания или повторного развертывания решения диспетчера контактов, все что нужно сделать выполнить *Dev.cmd публикации* файл. При запуске файла будет MSBuild:
 
@@ -99,19 +91,14 @@ ms.locfileid: "59395229"
 
 Создав командный файл, содержащий инструкции MSBuild обеспечивает быстрый и простой способ создания и развертывания решений с несколькими проектами в среде определенное место назначения. Если вам нужно повторно развернуть решение в нескольких средах назначения, можно создать несколько командных файлов. В каждый командный файл команда MSBuild создаст один и тот же файл универсальный проект, но он укажет файл различных проекта для конкретной среды. Например командный файл для публикации для разработчика или тестовой среде может содержать эта команда MSBuild:
 
-
 [!code-console[Main](creating-and-running-a-deployment-command-file/samples/sample4.cmd)]
-
 
 Командный файл для публикации в промежуточной среде может содержать эта команда MSBuild:
 
-
 [!code-console[Main](creating-and-running-a-deployment-command-file/samples/sample5.cmd)]
-
 
 > [!NOTE]
 > Рекомендации по настройке файлы проекта для конкретной среды для серверных сред, см. в разделе [настройки свойств развертывания для целевой среды](../configuring-server-environments-for-web-deployment/configuring-deployment-properties-for-a-target-environment.md).
-
 
 Можно также настроить процесс сборки для каждой среды путем переопределения свойств, а также другими параметрами в команде MSBuild. Дополнительные сведения см. в разделе [Справочник по командной строке MSBuild](https://msdn.microsoft.com/library/ms164311.aspx).
 

@@ -8,12 +8,12 @@ ms.date: 04/01/2008
 ms.assetid: 041854a5-ea8c-4de0-82f1-121ba6cb2893
 msc.legacyurl: /web-forms/overview/older-versions-security/admin/unlocking-and-approving-user-accounts-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 1f6ade517bda60ac0f44811853ee9b9d06070091
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 05b82451fd3dc859109160dd6b8358c568194100
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384179"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126845"
 ---
 # <a name="unlocking-and-approving-user-accounts-vb"></a>Снятие блокировки и утверждение учетных записей пользователей (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384179"
 [Скачать код](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/VB.14.zip) или [скачать PDF](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/aspnet_tutorial14_UnlockAndApprove_vb.pdf)
 
 > Этом руководстве показано, как создавать веб-страницы управления для администраторов заблокирована и утверждены состояния пользователей. Кроме того, мы увидим утверждение новых пользователей, только после проверки адреса электронной почты.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -41,18 +40,15 @@ ms.locfileid: "59384179"
 > [!NOTE]
 > Если вы загрузили код <a id="Tutorial13"> </a> [ *восстановление и изменение паролей* ](recovering-and-changing-passwords-vb.md) учебник, вы могли заметить, `ManageUsers.aspx` страница уже содержит набор " Управление» ссылки и `UserInformation.aspx` страница предоставляет интерфейс для изменения пароля выбранного пользователя. Я решил не реплицировать эту функциональность в коде, связанные с этим руководством, так как это работало, обход API членства и операционной напрямую с базой данных SQL Server для изменения пароля пользователя. Это руководство начинается с нуля, используя `UserInformation.aspx` страницы.
 
-
 ### <a name="adding-manage-links-to-theuseraccountsgridview"></a>Добавление «Manage» ссылки на`UserAccounts`GridView
 
 Откройте `ManageUsers.aspx` странице и Добавление поля HyperLinkField к `UserAccounts` GridView. Установка для свойства `Text` свойства «Управление» и его `DataNavigateUrlFields` и `DataNavigateUrlFormatString` свойства `UserName` и «UserInformation.aspx?user={0}«, соответственно. Эти параметры позволяют настроить поле HyperLinkField таким образом, что все гиперссылки отображения текста «Manage», но каждая ссылка передается в соответствующий *UserName* значение в строку запроса.
 
 После добавления HyperLinkField к элементу GridView, Отвлекитесь и просмотрите `ManageUsers.aspx` страницы в обозревателе. Как показано на рис. 1, каждая строка GridView теперь включает ссылку «Управление». Указывает ссылку «Управление» для Брюс `UserInformation.aspx?user=Bruce`, тогда как ссылка «Управление» для Дейв указывает `UserInformation.aspx?user=Dave`.
 
-
 [![Добавляет поле HyperLinkField](unlocking-and-approving-user-accounts-vb/_static/image2.png)](unlocking-and-approving-user-accounts-vb/_static/image1.png)
 
 **Рис. 1**: Поле HyperLinkField добавляет ссылку «Управление» для каждой учетной записи пользователя ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image3.png))
-
 
 Мы создадим пользовательского интерфейса и кода для `UserInformation.aspx` странице в данный момент, но сначала давайте разговоров о как программными средствами изменить пользователя заблокирована и утверждены состояния. [ `MembershipUser` Класс](https://msdn.microsoft.com/library/system.web.security.membershipuser.aspx) имеет [ `IsLockedOut` ](https://msdn.microsoft.com/library/system.web.security.membershipuser.islockedout.aspx) и [ `IsApproved` свойства](https://msdn.microsoft.com/library/system.web.security.membershipuser.isapproved.aspx). `IsLockedOut` Свойство доступно только для чтения. Отсутствует механизм для программно блокировки записи пользователя; Чтобы разблокировать пользователя, используйте `MembershipUser` класса [ `UnlockUser` метод](https://msdn.microsoft.com/library/system.web.security.membershipuser.unlockuser.aspx). `IsApproved` Свойство для чтения и записи. Чтобы сохранить любые изменения этого свойства, необходимо вызвать `Membership` класса [ `UpdateUser` метод](https://msdn.microsoft.com/library/system.web.security.membership.updateuser.aspx), передав в измененной `MembershipUser` объекта.
 
@@ -71,11 +67,9 @@ ms.locfileid: "59384179"
 
 После добавления этих элементов управления, режиме конструктора в Visual Studio должен выглядеть на рисунке, на рис. 2.
 
-
 [![Создание пользовательского интерфейса для UserInformation.aspx](unlocking-and-approving-user-accounts-vb/_static/image5.png)](unlocking-and-approving-user-accounts-vb/_static/image4.png)
 
 **Рис. 2**: Создание пользовательского интерфейса для `UserInformation.aspx` ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image6.png))
-
 
 Полный пользовательский интерфейс, DAL следующей задачей является установка `IsApproved` флажок и другие элементы управления на основе выбранного пользователя сведений. Создайте обработчик событий для страницы `Load` событий и добавьте следующий код:
 
@@ -97,29 +91,23 @@ ms.locfileid: "59384179"
 
 В этих обработчиках событий в месте, вернемся к странице и «не утверждено» пользователя. Как показано на рис. 3, вы должны увидеть краткое сообщение на странице, означает, что пользователя `IsApproved` свойство изменена успешно.
 
-
 [![Крис был не утверждено](unlocking-and-approving-user-accounts-vb/_static/image8.png)](unlocking-and-approving-user-accounts-vb/_static/image7.png)
 
 **Рис. 3**: Крис был не утверждено ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image9.png))
 
-
 Далее выхода из системы и попробуйте войти в систему как пользователь, учетная запись которого было просто «не утверждено». Так как пользователь не утвержден, они не может выполнить вход. По умолчанию элемент управления Login отображает то же сообщение, если пользователь не может выполнить вход, независимо от причины. Однако в <a id="Tutorial6"> </a> [ *проверка пользователя учетные данные от членства пользователя Store* ](../membership/validating-user-credentials-against-the-membership-user-store-vb.md) учебном курсе было рассмаотрено улучшения элемента управления Login для отображения более подходящим сообщения. Как показано на рис. 4, Крис отображается сообщение о том, что он не может выполнить вход, так как его учетная запись еще не утверждено.
-
 
 [![Крис невозможно из-за His является учетная запись входа не утверждено](unlocking-and-approving-user-accounts-vb/_static/image11.png)](unlocking-and-approving-user-accounts-vb/_static/image10.png)
 
 **Рис. 4**: Крис невозможно из-за His является учетная запись входа не утверждено ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image12.png))
 
-
 Для тестирования функциональности заблокированной пытаются войти в систему как пользователь с правами утвержденных, но использовать неправильный пароль. Повторите эту процедуру необходимое количество раз, пока учетная запись пользователя заблокирована. Элемент управления Login также был изменен для отображения пользовательского сообщения, если попытка входа с помощью заблокированной учетной записи. Вы знаете, что учетная запись была заблокирована как только вы начнете видеть следующее сообщение на страницу входа: «Ваша учетная запись была заблокирована из-за слишком много попыток входа. Обратитесь к администратору, чтобы учетная запись разблокирована.»
 
 Вернитесь к `ManageUsers.aspx` странице и щелкните ссылку "Управление" для заблокированной пользователя. Как показано на рис. 5, вы должны увидеть значение в `LastLockedOutDateLabel` кнопки разблокировать пользователя должен быть включен. Нажмите кнопку Разблокировать пользователя, чтобы разблокировать учетную запись пользователя. После разблокирования пользователя, они смогут войти в систему.
 
-
 [![Дейв блокирована система](unlocking-and-approving-user-accounts-vb/_static/image14.png)](unlocking-and-approving-user-accounts-vb/_static/image13.png)
 
 **Рис. 5**: Дейв имеет были заблокированы из системы ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image15.png))
-
 
 ## <a name="step-2-specifying-new-users-approved-status"></a>Шаг 2. Указание новых пользователей состояние "Утверждено"
 
@@ -129,7 +117,6 @@ ms.locfileid: "59384179"
 
 > [!NOTE]
 > По умолчанию элемент управления CreateUserWizard автоматический вход в систему новой учетной записи пользователя. Это поведение зависит от элемента управления [ `LoginCreatedUser` свойство](https://msdn.microsoft.com/en-gb/library/system.web.ui.webcontrols.createuserwizard.logincreateduser.aspx). Так как «не утверждено» пользователи не могут входить на сайт, когда `DisableCreatedUser` является `True` новой учетной записи пользователя не выполнил вход в узел, независимо от значения `LoginCreatedUser` свойство.
-
 
 Программным образом при создании новых учетных записей пользователей с помощью `Membership.CreateUser` метода, чтобы создать учетную запись пользователя «не утверждено» используйте одну из перегрузок, принимающих новый пользователь `IsApproved` значением свойства в качестве входного параметра.
 
@@ -148,7 +135,6 @@ ms.locfileid: "59384179"
 > [!NOTE]
 > Чтобы использовать `MailDefinition` свойства, необходимо указать доставки почты параметры в `Web.config`. Дополнительные сведения см. [отправки электронной почты в ASP.NET](http://aspnet.4guysfromrolla.com/articles/072606-1.aspx).
 
-
 Начните с создания нового шаблона сообщения электронной почты с именем `CreateUserWizard.txt` в `EmailTemplates` папку. Для шаблона, используйте следующий текст:
 
 [!code-aspx[Main](unlocking-and-approving-user-accounts-vb/samples/sample3.aspx)]
@@ -165,15 +151,12 @@ ms.locfileid: "59384179"
 
 В итоге получается, что новые пользователи не одобрены, это означает, что они не могут войти на сайт. Кроме того, они автоматически отправляются сообщения электронной почты со ссылкой на URL-адрес проверки (см. рис. 6).
 
-
 [![Новый пользователь получает сообщение электронной почты со ссылкой на URL-адрес проверки](unlocking-and-approving-user-accounts-vb/_static/image17.png)](unlocking-and-approving-user-accounts-vb/_static/image16.png)
 
 **Рис. 6**: Новый пользователь получает сообщение электронной почты со ссылкой на URL-адрес проверки ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image18.png))
 
-
 > [!NOTE]
 > Элемент управления CreateUserWizard по умолчанию CreateUserWizard шаг выводит сообщение, информирующее пользователя своей учетной записью, будет создана и отображает кнопки "Продолжить". При нажатии этой кнопки перенаправит пользователя на указанный URL-адрес элемента управления `ContinueDestinationPageUrl` свойство. CreateUserWizard в `EnhancedCreateUserWizard.aspx` будет настроен для отправки новых пользователей к `~/Membership/AdditionalUserInfo.aspx`, который запрашивает у пользователя их проживания, URL-адрес домашней страницы и подпись. Так как эти сведения могут добавляться только по системе работают пользователи, имеет смысл обновить это свойство для обратной отправки пользователям домашнюю страницу сайта (`~/Default.aspx`). Кроме того `EnhancedCreateUserWizard.aspx` страницу или на шаге CreateUserWizard следует дополнять информировать пользователей о том, что они были отправлены проверочное сообщение электронной почты и учетной записи не активируются до их следуйте инструкциям в этом сообщении электронной почты. Я оставьте эти изменения в качестве упражнения для чтения.
-
 
 ### <a name="creating-the-verification-page"></a>Создание страницы проверки
 
@@ -187,11 +170,9 @@ ms.locfileid: "59384179"
 
 Рис. 7 показан `Verification.aspx` странице при посещении через браузер.
 
-
 [![Учетная запись нового пользователя — теперь утверждено](unlocking-and-approving-user-accounts-vb/_static/image20.png)](unlocking-and-approving-user-accounts-vb/_static/image19.png)
 
 **Рис. 7**: Учетная запись нового пользователя — теперь утверждения ([Просмотр полноразмерного изображения](unlocking-and-approving-user-accounts-vb/_static/image21.png))
-
 
 ## <a name="summary"></a>Сводка
 

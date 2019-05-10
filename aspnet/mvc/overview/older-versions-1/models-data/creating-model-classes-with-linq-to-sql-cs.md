@@ -8,12 +8,12 @@ ms.date: 10/07/2008
 ms.assetid: f84b4a16-e8bb-49e8-87a0-1832879a3501
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/creating-model-classes-with-linq-to-sql-cs
 msc.type: authoredcontent
-ms.openlocfilehash: d1895b03a2aa877bfd279995dc5647c5efefade6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e81575a05a24c60ffb16c4a6688f6cfdc5a19f30
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59414209"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65122711"
 ---
 # <a name="creating-model-classes-with-linq-to-sql-c"></a>Создание классов модели в LINQ to SQL (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59414209"
 [Загрузить PDF-файл](http://download.microsoft.com/download/1/1/f/11f721aa-d749-4ed7-bb89-a681b68894e6/ASPNET_MVC_Tutorial_10_CS.pdf)
 
 > Этот учебник призван объяснить одним из способов создание классов модели для приложения ASP.NET MVC. В этом руководстве вы узнаете, как создать классы модели и выполнять доступ к базе данных, используя преимущества Microsoft LINQ to SQL.
-
 
 Этот учебник призван объяснить одним из способов создание классов модели для приложения ASP.NET MVC. В этом руководстве вы узнаете, как создать классы модели и выполнять доступ к базе данных, используя преимущества Microsoft LINQ to SQL
 
@@ -42,29 +41,23 @@ ms.locfileid: "59414209"
 
 В этом руководстве--Чтобы проиллюстрировать, как создать классы модели — мы создать простое приложение базы данных фильмов. Первым шагом является создание новой базы данных. Щелкните правой кнопкой мыши приложение\_папка данных в окно обозревателя решений и выберите пункт меню **добавить, новый элемент**. Выберите **базы данных SQL Server** шаблон, присвойте ему имя MoviesDB.mdf и нажмите кнопку **добавить** кнопку (см. рис. 1).
 
-
 [![Добавление новой базы данных SQL Server](creating-model-classes-with-linq-to-sql-cs/_static/image2.png)](creating-model-classes-with-linq-to-sql-cs/_static/image1.png)
 
 **Рис 01**: Добавление новой базы данных SQL Server ([Просмотр полноразмерного изображения](creating-model-classes-with-linq-to-sql-cs/_static/image3.png))
-
 
 После создания новой базы данных, можно открыть базу данных, дважды щелкнув файл MoviesDB.mdf в приложении\_папку данных. Дважды щелкните файл MoviesDB.mdf открыть окно обозревателя сервера (см. рис. 2).
 
 Окно обозревателя сервера называется окна обозревателя базы данных, при использовании Visual Web Developer.
 
-
 [![В окне обозревателя серверов](creating-model-classes-with-linq-to-sql-cs/_static/image5.png)](creating-model-classes-with-linq-to-sql-cs/_static/image4.png)
 
 **Рис. 02**: В окне обозревателя серверов ([Просмотр полноразмерного изображения](creating-model-classes-with-linq-to-sql-cs/_static/image6.png))
 
-
 Нам нужно добавить одной таблицы к базе данных, представляющий наших фильмов. Щелкните правой кнопкой мыши папку «таблицы» и выберите пункт меню **добавить новую таблицу**. Если выбрать этот пункт меню открывается в конструкторе таблиц (см. рис. 3).
-
 
 [![В окне обозревателя серверов](creating-model-classes-with-linq-to-sql-cs/_static/image8.png)](creating-model-classes-with-linq-to-sql-cs/_static/image7.png)
 
 **Рис 03**: В конструкторе таблиц ([Просмотр полноразмерного изображения](creating-model-classes-with-linq-to-sql-cs/_static/image9.png))
-
 
 Нам нужно добавить следующие столбцы в нашей таблице базы данных:
 
@@ -82,19 +75,15 @@ ms.locfileid: "59414209"
 
 Наша модель MVC будет содержать LINQ к SQL классам, представляющим tblMovie таблицы базы данных. Самый простой способ создать эти классы LINQ to SQL — щелкните папку Models правой кнопкой мыши **добавить, новый элемент**выберите LINQ to SQL Classes шаблон, присвойте имя Movie.dbml классы и нажмите кнопку **добавить**кнопку (см. рис. 4).
 
-
 [![Создание LINQ для классов SQL](creating-model-classes-with-linq-to-sql-cs/_static/image11.png)](creating-model-classes-with-linq-to-sql-cs/_static/image10.png)
 
 **Рис. 04**: Создание LINQ для классов SQL ([Просмотр полноразмерного изображения](creating-model-classes-with-linq-to-sql-cs/_static/image12.png))
 
-
 Сразу после создания фильма классам LINQ to SQL, откроется реляционный конструктор объектов. Таблицы базы данных можно перетащить из окна обозревателя серверов в реляционный конструктор объектов для создания классов LINQ to SQL, представляющих таблицы конкретной базы данных. Нам нужно добавить таблицу базы данных tblMovie на реляционный конструктор объектов (см. рис. 5).
-
 
 [![С помощью реляционного конструктора объектов](creating-model-classes-with-linq-to-sql-cs/_static/image14.png)](creating-model-classes-with-linq-to-sql-cs/_static/image13.png)
 
 **05 рис**: С помощью реляционного конструктора объектов ([Просмотр полноразмерного изображения](creating-model-classes-with-linq-to-sql-cs/_static/image15.png))
-
 
 По умолчанию реляционный конструктор объектов создает класс с именем то же самое, что в таблице базы данных, перетащите в конструктор. Тем не менее, мы не будем вызывать наш класс `tblMovie`. Таким образом щелкните имя класса в конструкторе и измените имя класса для фильмов.
 
@@ -130,19 +119,15 @@ ms.locfileid: "59414209"
 
 Чтобы добавить записи в `tblMovies` таблица базы данных, щелкните правой кнопкой мыши `tblMovies` таблица в окне обозревателя серверов (окно обозревателя базы данных в Visual Web Developer) базы данных и выберите пункт меню Показать таблицу данных. Вы можете вставить `movie` записей с помощью сетки, который отображается (см. рис. 6).
 
-
 [![Вставка видео](creating-model-classes-with-linq-to-sql-cs/_static/image17.png)](creating-model-classes-with-linq-to-sql-cs/_static/image16.png)
 
 **Рис 06**: Вставка видео ([Просмотр полноразмерного изображения](creating-model-classes-with-linq-to-sql-cs/_static/image18.png))
 
-
 После добавления некоторых записей базы данных, чтобы `tblMovies` таблицы и запустить приложение, вы увидите страницу, на рис. 7. Все записи базы данных фильмов, отображаются в виде маркированного списка.
-
 
 [![Отображение видео в представлении индекса](creating-model-classes-with-linq-to-sql-cs/_static/image20.png)](creating-model-classes-with-linq-to-sql-cs/_static/image19.png)
 
 **07 рис**: Отображение видео в представлении индекса ([Просмотр полноразмерного изображения](creating-model-classes-with-linq-to-sql-cs/_static/image21.png))
-
 
 ## <a name="using-the-repository-pattern"></a>Чтобы использовать шаблон репозитория
 

@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 5138b8fe-98ff-4e73-a00b-e263fc3ff11d
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/dynamically-controlling-updatepanel-animations-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 0767b66a035069629c15e658c1e75ea78a7bd07b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 29c2673aa7b018cbe8c66eb72c256b69a2193a47
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59407657"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134030"
 ---
 # <a name="dynamically-controlling-updatepanel-animations-c"></a>Динамическое управление анимациями UpdatePanel (C#)
 
@@ -23,7 +23,6 @@ ms.locfileid: "59407657"
 
 > Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Для содержимого элемента управления UpdatePanel специальные расширения существует, во многом полагается на framework анимации: UpdatePanelAnimation. Он также может работать вместе с триггерах UpdatePanel.
 
-
 ## <a name="overview"></a>Обзор
 
 Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Для содержимого `UpdatePanel`, существует специальные расширения, которая основывается на использовании framework анимации: `UpdatePanelAnimation`. Он также может работать вместе с `UpdatePanel` триггеров.
@@ -32,31 +31,25 @@ ms.locfileid: "59407657"
 
 Первым шагом является обычным образом, чтобы включить `ScriptManager` на странице, ASP.NET AJAX library загружается и может использоваться набор элементов управления:
 
-
 [!code-aspx[Main](dynamically-controlling-updatepanel-animations-cs/samples/sample1.aspx)]
 
 Анимация в этом сценарии будет применяться для отображения в виде текущего времени. Эти сведения можно записать в метку с помощью `Page_Load()` метод, или (для простоты) используется следующий встроенный код:
-
 
 [!code-aspx[Main](dynamically-controlling-updatepanel-animations-cs/samples/sample2.aspx)]
 
 Кроме того создается кнопка для активации, обновляя время:
 
-
 [!code-aspx[Main](dynamically-controlling-updatepanel-animations-cs/samples/sample3.aspx)]
 
 Этот код помещается в переменную `<ContentTemplate>` раздел `UpdatePanel` элемент. Панели `UpdateMode` атрибута должно быть присвоено `"Conditional"`, поскольку только триггеры могут обновлять содержимое панели. В `<Triggers>` раздел `UpdatePanel`, создается триггер асинхронной обратной передачи и привязаны к `Click` события кнопки. Таким образом, если пользователь нажимает кнопку, `UpdatePanel` обновляется. Далее приведена разметка для `UpdatePanel` управления:
-
 
 [!code-aspx[Main](dynamically-controlling-updatepanel-animations-cs/samples/sample4.aspx)]
 
 Наконец `UpdatePanelAnimationExtender` должен быть настроен: Задайте `TargetControlID` атрибут с идентификатором панели и определите анимацию в модуле. Плавный переход в делает смысле, который создает удобный визуальное выделение важных фрагментов, на время обновления. Расширения разметки может выглядеть следующим образом:
 
-
 [!code-aspx[Main](dynamically-controlling-updatepanel-animations-cs/samples/sample5.aspx)]
 
 Запустите файл в браузере. При каждом нажатии кнопки текущее время отображается на панели, всегда плавный переход течение одной секунды.
-
 
 [![Текущее время плавный переход](dynamically-controlling-updatepanel-animations-cs/_static/image2.png)](dynamically-controlling-updatepanel-animations-cs/_static/image1.png)
 

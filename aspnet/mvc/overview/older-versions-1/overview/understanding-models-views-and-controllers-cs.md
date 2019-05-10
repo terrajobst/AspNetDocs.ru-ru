@@ -8,19 +8,18 @@ ms.date: 08/19/2008
 ms.assetid: 87313792-0a96-4caf-89fc-1457d54e5c1e
 msc.legacyurl: /mvc/overview/older-versions-1/overview/understanding-models-views-and-controllers-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 8c57345c510ad0afccaabf377fda35afbfc05e17
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 57dc82d02d38adc2514aa2c02c6f156ed0fb88a6
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383412"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65122056"
 ---
 # <a name="understanding-models-views-and-controllers-c"></a>Общие сведения о моделях, представлениях и контроллерах (C#)
 
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > Не понимаете, о моделях, представлениях и контроллерах? В этом руководстве Стивен Вальтер рассказывается о различных частях приложения ASP.NET MVC.
-
 
 Этот учебник дает общий обзор ASP.NET MVC моделях, представлениях и контроллерах. Другими словами, он объясняет M ", V" и C "в ASP.NET MVC.
 
@@ -32,47 +31,37 @@ ms.locfileid: "59383412"
 
 Создание нового приложения ASP.NET MVC с помощью шаблона MVC, запустив Visual Studio 2008 и выбрав пункт меню файл, создать проект (см. рис. 1). В диалоговом окне нового проекта выберите вашем любимом языке программирования, в списке типов проектов (Visual Basic или C#) и выберите **веб-приложение ASP.NET MVC** в группе шаблонов. Нажмите кнопку "ОК".
 
-
 [![Диалоговое окно нового проекта](understanding-models-views-and-controllers-cs/_static/image1.jpg)](understanding-models-views-and-controllers-cs/_static/image1.png)
 
 **Рис 01**: Диалоговое окно нового проекта ([Просмотр полноразмерного изображения](understanding-models-views-and-controllers-cs/_static/image2.png))
 
-
 При создании нового приложения ASP.NET MVC, **Создание проекта модульных тестов** откроется диалоговое окно (см. рис. 2). Это диалоговое окно позволяет создать отдельный проект в решении для тестирования приложения ASP.NET MVC. Выберите параметр **нет, не создавать проект модульного теста** и нажмите кнопку **ОК** кнопки.
-
 
 [![Создание диалогового окна модульного теста](understanding-models-views-and-controllers-cs/_static/image2.jpg)](understanding-models-views-and-controllers-cs/_static/image3.png)
 
 **Рис. 02**: Создание диалогового окна модульных тестов ([Просмотр полноразмерного изображения](understanding-models-views-and-controllers-cs/_static/image4.png))
 
-
 После нового ASP.NET MVC будет создано приложение. Вы увидите несколько папок и файлов в окне обозревателя решений. В частности вы увидите три папки с именем модели, представления и контроллеры. Как можно догадаться из имен папок, эти папки содержат файлы для реализации модели, представления и контроллеры.
 
 Если развернуть папку Controllers, вы увидите файл с именем AccountController.cs и файл с именем HomeController.cs. Если развернуть папку Views, вы увидите три вложенные папки с именем учетной записи, Главная и Shared. Если развернуть корневой папки, вы увидите два дополнительных файла с именем About.aspx и Index.aspx (см. рис. 3). Эти файлы, составляющие пример приложения, в состав шаблона ASP.NET MVC по умолчанию.
-
 
 [![Окно обозревателя решений](understanding-models-views-and-controllers-cs/_static/image3.jpg)](understanding-models-views-and-controllers-cs/_static/image5.png)
 
 **Рис 03**: Окно обозревателя решений ([Просмотр полноразмерного изображения](understanding-models-views-and-controllers-cs/_static/image6.png))
 
-
 Можно запустить его, выбрав параметр меню **отладка, начать отладку**. Кроме того можно нажать клавишу F5.
 
 При первом запуске приложения ASP.NET, откроется диалоговое окно, на рис. 4, в которое рекомендует включить режим отладки. Нажмите кнопку "ОК", и приложение будет запущено.
-
 
 [![Диалоговое окно отладки не включена](understanding-models-views-and-controllers-cs/_static/image4.jpg)](understanding-models-views-and-controllers-cs/_static/image7.png)
 
 **Рис. 04**: Отладка не включена диалоговое окно ([Просмотр полноразмерного изображения](understanding-models-views-and-controllers-cs/_static/image8.png))
 
-
 При запуске приложения ASP.NET MVC, Visual Studio запускает приложение в веб-браузере. Пример приложения состоит из только двух страниц: страницу индекса и страницы About. При первом запуске приложения, открытии страницы индекса (см. рис. 5). Можно перейти на страницу About, щелкнув ссылку меню в верхней правой части приложения.
-
 
 [![Страница индекса](understanding-models-views-and-controllers-cs/_static/image10.png)](understanding-models-views-and-controllers-cs/_static/image9.png)
 
 **05 рис**: Страница индекса ([Просмотр полноразмерного изображения](understanding-models-views-and-controllers-cs/_static/image11.png))
-
 
 Обратите внимание, что URL-адреса в адресной строке браузера. Например, при щелчке ссылки меню About URL-адрес в адресной строке браузера изменяется **/Home/About**.
 

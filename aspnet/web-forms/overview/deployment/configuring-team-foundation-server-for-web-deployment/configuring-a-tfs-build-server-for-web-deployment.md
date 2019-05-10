@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: f8400241-4f4b-4bbd-9994-54fb64909e6e
 msc.legacyurl: /web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/configuring-a-tfs-build-server-for-web-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 1500415c7ee017776c59acb05a2eaefc6956a41b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b3aaf7234706d149a3c784347528923f662c3511
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404716"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133883"
 ---
 # <a name="configuring-a-tfs-build-server-for-web-deployment"></a>Настройка сервера сборки TFS для веб-развертывания
 
@@ -22,7 +22,6 @@ ms.locfileid: "59404716"
 [Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается Подготовка сервера сборки Team Foundation Server (TFS) для создания и развертывания решений с использованием Team Build и средство Internet Information Services (IIS) веб-развертывания (веб-развертывания).
-
 
 Этот раздел является частью серии учебников, исходя из требования к развертыванию enterprise вымышленной компании Fabrikam, Inc. В этой серии руководств используется пример решения&#x2014; [решения диспетчера контактов](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;для представления веб-приложения с более реалистичные уровень сложности, включая приложения ASP.NET MVC 3, Windows Communication Служба Foundation (WCF) и проект базы данных.
 
@@ -103,7 +102,6 @@ ms.locfileid: "59404716"
 
 > [!NOTE]
 > Если процесс развертывания включает использование таких средств, как VSDBCMD.exe или SQLCMD.exe, необходимо убедиться, что они устанавливаются на сервере сборки. VSDBCMD.exe — это средство Visual Studio и обычно добавляется на сервер при установке Team Foundation Build. SQLCMD.exe — это средство SQL Server. Можно загрузить изолированную версию SQLCMD.exe из [Microsoft SQL Server 2008 R2 Feature Pack](https://go.microsoft.com/?linkid=9805134) страницы.
-
 
 ## <a name="conclusion"></a>Заключение
 

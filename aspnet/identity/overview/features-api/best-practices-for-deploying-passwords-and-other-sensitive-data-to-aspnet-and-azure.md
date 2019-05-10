@@ -9,12 +9,12 @@ ms.assetid: 97902c66-cb61-4d11-be52-73f962f2db0a
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure
 msc.type: authoredcontent
-ms.openlocfilehash: 2620d9e2eaf3c7719d9a289e42bb91270708ae79
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0e02df967df8acf346b9fcd1c75dbe304cc5407b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419448"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121548"
 ---
 # <a name="best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure-app-service"></a>Рекомендации по развертыванию паролей и других конфиденциальных данных в ASP.NET и службу приложений Azure
 
@@ -25,7 +25,6 @@ ms.locfileid: "59419448"
 > Пример кода — это простое консольное приложение веб-задания и приложения ASP.NET MVC, которому требуется доступ к базе данных подключения строка пароля, Twilio, Google и SendGrid ключи безопасности.
 > 
 > В локальной среде параметры и PHP также упоминается.
-
 
 - [Работать с паролями в среде разработки](#pwd)
 - [Работа со строками соединения в среде разработки](#con)
@@ -54,7 +53,6 @@ ms.locfileid: "59419448"
 > [!WARNING]
 > Безопасность — не добавляйте к *.config секреты* файла проекта или вернуть его в систему управления версиями. По умолчанию Visual Studio устанавливает `Build Action` для `Content`, то есть файл развертывается. Дополнительные сведения см. в разделе [почему не все файлы в папке проекта развернуты?](https://msdn.microsoft.com/library/ee942158(v=vs.110).aspx#can_i_exclude_specific_files_or_folders_from_deployment) Несмотря на то, что можно использовать любое расширение для *.config секреты* файл, лучше всего оставить *.config*, как файлы конфигурации не предоставляются службами IIS. Обратите внимание, что *AppSettingsSecrets.config* файл имеет два уровня каталогов вверх от *web.config* файла, поэтому оно полностью не входит в каталоге решения. Путем перемещения файла из каталога решений, &quot;git добавьте \* &quot; , чтобы не добавлять его в репозиторий.
 
-
 <a id="con"></a>
 ## <a name="working-with-connection-strings-in-the-development-environment"></a>Работа со строками соединения в среде разработки
 
@@ -67,14 +65,11 @@ Visual Studio создает проекты ASP.NET, использующих [L
 > [!NOTE]
 > Если вы используете `configSource` атрибута, как показано выше, чтобы переместить во внешний файл строки подключения и Visual Studio создаст новый веб-сайт, он не сможет обнаружить при использовании базы данных, и вы не получите возможность так настроить базы данных при вы pu публиковать в Azure из Visual Studio. Если вы используете `configSource` атрибута, можно использовать PowerShell для создания и развертывания веб-сайта и базы данных, или можно создать веб-сайта и базы данных на портале перед публикацией. [New AzureWebsitewithDB.ps1](https://gallery.technet.microsoft.com/scriptcenter/Ultimate-Create-Web-SQL-DB-9e0fdfd3) скрипт создает новый веб-сайт и базы данных.
 
-
 > [!WARNING]
 > Безопасность — в отличие от *AppSettingsSecrets.config* файл, файл строки внешнего соединения должен быть в том же каталоге, в корневом *web.config* файла, поэтому вам придется принимать меры предосторожности, чтобы убедиться, что не устанавливайте флажок в исходном репозитории.
 
-
 > [!NOTE]
 > **Предупреждение безопасности на файл секретов.** Рекомендуется не используйте секреты производства в разработки и тестирования. С помощью паролей производства в тестирования или разработки утечки секретов.
-
 
 <a id="wj"></a>
 ## <a name="webjobs-console-apps"></a>Консольные приложения веб-заданий
@@ -105,7 +100,6 @@ Visual Studio создает проекты ASP.NET, использующих [L
 > [!WARNING]
 > Безопасность — не будут содержать пароли и другие секретные данные в сценарии PowerShell, выполнив так сравнениях цель с помощью сценария PowerShell для развертывания конфиденциальных данных. [Get-Credential](https://technet.microsoft.com/library/hh849815.aspx) командлет предоставляет безопасный механизм для получения пароля. С помощью запросов пользовательского интерфейса можно предотвратить утечку пароль.
 
-
 ### <a name="deploying-db-connection-strings"></a>Развертывание строки подключения базы данных
 
 Строки подключения базы данных обрабатываются аналогичным образом к параметрам приложения. При развертывании веб-приложения из Visual Studio, строка подключения будет настроен автоматически. Это можно проверить на портале. Чтобы задать строку подключения рекомендуется с помощью PowerShell. Пример сценария PowerShell создает веб-сайта и базы данных, а также задает строку подключения на веб-сайте загрузки [New AzureWebsitewithDB.ps1](https://gallery.technet.microsoft.com/scriptcenter/Ultimate-Create-Web-SQL-DB-9e0fdfd3) из [библиотеки сценариев Azure](https://gallery.technet.microsoft.com/scriptcenter/site/search?f%5B0%5D.Type=RootCategory&amp;f%5B0%5D.Value=WindowsAzure).
@@ -125,6 +119,5 @@ Visual Studio создает проекты ASP.NET, использующих [L
 Пример PowerShell задает скрипт, создающий веб-приложения + базы данных, строку подключения и параметры приложения, загрузка [New AzureWebsitewithDB.ps1](https://gallery.technet.microsoft.com/scriptcenter/Ultimate-Create-Web-SQL-DB-9e0fdfd3) из [библиотеки сценариев Azure](https://gallery.technet.microsoft.com/scriptcenter/site/search?f%5B0%5D.Type=RootCategory&amp;f%5B0%5D.Value=WindowsAzure). 
 
 См. в разделе (Stefan Schackow) [Windows Azure веб-сайтов: Как работают строки приложения и строки подключения](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/)
-
 
 Особую благодарность выражаю Barry Dorrans ( [ @blowdart ](https://twitter.com/blowdart) ) и Carlos Farre за рецензирование.

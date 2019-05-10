@@ -8,12 +8,12 @@ ms.date: 10/17/2013
 ms.assetid: caa1ba4a-f9f0-4181-ba21-042e3997861d
 msc.legacyurl: /mvc/overview/getting-started/introduction/accessing-your-models-data-from-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: 91948b1b997b083606a53e6e02bc00d2c58cb791
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 17a176b8bf3b1de8a0ff9145ab6f5f26cf210503
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59418148"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120864"
 ---
 # <a name="accessing-your-models-data-from-a-controller"></a>Доступ к данным модели из контроллера
 
@@ -57,12 +57,10 @@ Visual Studio автоматически создается [CRUD](http://en.wik
 
 Щелкните ссылку **Create New** (Создать). Введите некоторые сведения о фильм, а затем нажмите кнопку **создать** кнопки.
 
-
 ![](accessing-your-models-data-from-a-controller/_static/image5.png)
 
 > [!NOTE]
 > Вы не сможете вводить десятичные точки или запятые в поле «Цена». Поддержка проверки jQuery для английского, используйте запятую (&quot;,&quot;) для десятичного разделителя и форматов даты неанглийские США, необходимо включить *globalize.js* и конкретными  *cultures/globalize.cultures.js* файла (из [ https://github.com/jquery/globalize ](https://github.com/jquery/globalize) ) и JavaScript, чтобы использовать `Globalize.parseFloat`. Я покажу, как это сделать в следующем учебном курсе. А пока вводите целые числа, такие как 10.
-
 
 Щелкнув **создать** кнопка вызывает отправку формы на сервер, где сведения о фильме сохраняются в базе данных. Затем вы перейдете к */Movies* URL-адрес, где вы увидите только что созданном фильме в листинг.
 

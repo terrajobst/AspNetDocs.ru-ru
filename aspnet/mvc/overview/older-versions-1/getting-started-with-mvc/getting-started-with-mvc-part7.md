@@ -8,19 +8,18 @@ ms.date: 08/14/2010
 ms.assetid: aa7b3e8e-e23d-49f1-b160-f99a7f2982bd
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part7
 msc.type: authoredcontent
-ms.openlocfilehash: 3db6947f36eb51b41d929f8c7d8835a95db8ea75
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9403be574324c34edf93bef1e0e4fd7ba68a3a9d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59392356"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65122775"
 ---
 # <a name="adding-validation-to-the-model"></a>Добавление проверки в модель
 
 по [(Scott hanselman)](https://github.com/shanselman)
 
 > Это руководство для начинающих, в котором представлены основные сведения по ASP.NET MVC. Вы создадите простое веб-приложение, которое считывает и записывает в базу данных. Посетите [центр обучения ASP.NET MVC](../../../index.md) для поиска других ASP.NET MVC, учебники и примеры.
-
 
 В этом разделе мы собираемся реализовать поддержку, необходимые для включения проверки входных данных в наше приложение. Мы будем убедитесь, что содержимое базы данных будет всегда правильным и предоставляют полезные сообщения об ошибках для конечных пользователей, когда они пытаются, а введите данные фильма, которое не является допустимым. Начнем с добавления немного логики проверки в класс Movie.
 

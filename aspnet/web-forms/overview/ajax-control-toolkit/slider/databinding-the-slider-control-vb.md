@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 4f3ba53f-d166-422d-b29c-403348057836
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/slider/databinding-the-slider-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: a60e09b7cdda7f924a4287aab8cda32fef5a53ac
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8f122545340ec131f693569ba749448b32f07908
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419773"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124751"
 ---
 # <a name="databinding-the-slider-control-vb"></a>Привязка данных элемента управления Slider (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59419773"
 [Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/Slider0.vb.zip) или [скачать PDF](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/slider0VB.pdf)
 
 > Элемент управления "ползунок" в AJAX Control Toolkit предоставляет графическим ползунком, которые могут контролироваться с помощью мыши. Это позволяет привязать текущее положение ползунка на другой элемент управления ASP.NET.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -43,7 +42,6 @@ ms.locfileid: "59419773"
 [!code-aspx[Main](databinding-the-slider-control-vb/samples/sample3.aspx)]
 
 Как вы видите в браузере, привязка данных работает в обоих направлениях: Введите новое значение в текстовом поле обновляет положение ползунка. Если второе текстовое поле только для чтения, может добавить слабую защиту в текстовое поле, так как это сложнее для пользователя, чтобы вручную обновить значение в ней.
-
 
 [![Ползунок и текстовое поле синхронизированы](databinding-the-slider-control-vb/_static/image2.png)](databinding-the-slider-control-vb/_static/image1.png)
 

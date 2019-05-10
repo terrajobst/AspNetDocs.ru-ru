@@ -9,12 +9,12 @@ ms.assetid: 053e23c4-13c9-40fa-87cb-3e9b0823b31e
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: c41fc06ad98665f7d48efde030c1341b06e49dd0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4ca9c141b0b48acf2c775a083398d3fb66b51cc2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59395295"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121426"
 ---
 # <a name="two-factorauthentication-using-sms-and-email-with-aspnet-identity"></a>Двухфакторная проверка подлинности с помощью SMS и электронной почты с ASP.NET Identity
 
@@ -23,7 +23,6 @@ ms.locfileid: "59395295"
 > Этом учебнике показано, как настроить двухфакторную проверку подлинности (2FA) с помощью SMS и электронной почты.
 > 
 > Эта статья написана с Рик Андерсон ([@RickAndMSFT](https://twitter.com/#!/RickAndMSFT)), Пранавом Растоги ([@rustd](https://twitter.com/rustd)), поздравить Хао и Suhas Joshi. NuGet образец был написан главным образом Хао поздравить.
-
 
 В этом разделе объясняется следующее.
 
@@ -43,7 +42,6 @@ ms.locfileid: "59395295"
 > [!NOTE]
 > Предупреждение: Необходимо установить Visual Studio [2013 с обновлением 2](https://go.microsoft.com/fwlink/?LinkId=390521) для работы с этим руководством.
 
-
 1. Создайте новый ***пустой*** веб-проект ASP.NET.
 2. В консоли диспетчера пакетов введите следующие команды:  
   
@@ -58,7 +56,6 @@ ms.locfileid: "59395295"
 
 > [!NOTE]
 > Предупреждение: Если изменить какие-либо параметры безопасности в этом образце, производства приложений потребуется пройти проверку подлинности, аудита безопасности, явным образом вызывает изменения, внесенные.
-
 
 <a id="SMS"></a>
 
@@ -212,7 +209,6 @@ ms.locfileid: "59395295"
 
 > [!NOTE]
 > Коды 2FA создаются с помощью [времени одноразовый пароль алгоритм на основе](http://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm) и коды действительны в течение шести минут. Если более чем шесть минут, чтобы ввести код, вы получите сообщение об ошибке Недопустимый код.
-
 
 <a id="combine"></a>
 

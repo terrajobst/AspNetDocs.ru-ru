@@ -8,12 +8,12 @@ ms.date: 01/06/2019
 ms.assetid: 52a4d5fe-aa31-4471-b3cb-a064f82cb791
 msc.legacyurl: /mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view
 msc.type: authoredcontent
-ms.openlocfilehash: 4a4627bdce8b8f2085150aa08cdc4c1271e09e09
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c42ec77b5d5107f3ef70e13b779fc1bebef70a14
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422009"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120705"
 ---
 # <a name="examining-the-edit-methods-and-edit-view"></a>Изучение методов Edit и представления Edit
 
@@ -98,7 +98,6 @@ ms.locfileid: "59422009"
 ## <a name="jquery-validation-for-non-english-locales"></a>Проверка jQuery для языков, отличных от английского
 
 Если вы используете компьютер английского (США), можно пропустить этот раздел и перейдите к следующему руководству. Можно загрузить версию этого учебника, Globalize [здесь](https://archive.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=aspnetmvcsamples&amp;DownloadId=16475). Отличная два часть руководства по интернационализации, см. в разделе [Надим в ASP.NET MVC 5 интернационализации](http://afana.me/post/aspnet-mvc-internationalization.aspx).
-
 
 > [!NOTE]
 > Поддержка проверки jQuery для английского, используйте запятую (&quot;,&quot;) для десятичного разделителя и форматов даты неанглийские США, необходимо включить *globalize.js* и конкретными  *cultures/globalize.cultures.js* файла (из [ https://github.com/jquery/globalize ](https://github.com/jquery/globalize) ) и JavaScript, чтобы использовать `Globalize.parseFloat`. Проверка локализованной jQuery можно получить из NuGet. (Не устанавливайте Globalize при использовании английского языка.)

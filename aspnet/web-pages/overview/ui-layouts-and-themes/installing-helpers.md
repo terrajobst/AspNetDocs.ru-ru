@@ -8,12 +8,12 @@ ms.date: 02/18/2014
 ms.assetid: 5e968ead-906a-45ea-ac2a-c70e57e1a9b1
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/installing-helpers
 msc.type: authoredcontent
-ms.openlocfilehash: 3ffb2f88fd8d2ad32fb8ea7d476ca10fdd9ac430
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 41e33c04a53a6ad257c3937cdadcec767e9217c8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59398336"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124152"
 ---
 # <a name="installing-a-helper-in-an-aspnet-web-pages-razor-site"></a>Установка вспомогательного метода на сайте ASP.NET Web Pages (Razor)
 
@@ -30,7 +30,6 @@ ms.locfileid: "59398336"
 > 
 > 
 > - WebMatrix 3
-
 
 ## <a name="overview-of-helpers"></a>Общие сведения о вспомогательных функций
 
@@ -57,7 +56,6 @@ ms.locfileid: "59398336"
 
 <a id="Additional_Resources"></a>
 ## <a name="additional-resources"></a>Дополнительные ресурсы
-
 
 [Введение в ASP.NET Web Pages 2 — основы программирования](../getting-started/introducing-razor-syntax-c.md)
 

@@ -8,12 +8,12 @@ ms.date: 01/02/2018
 ms.assetid: 75b5c1cf-84bd-434f-8a86-85c568eb5b09
 msc.legacyurl: /web-pages/overview/getting-started/introducing-aspnet-web-pages-2/deleting-data
 msc.type: authoredcontent
-ms.openlocfilehash: e9ffe0ea3e2bf817675a4a771d3471ec6eb91133
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c8620fc1abc61d514bdc039c66f7a84e67e89abe
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59406747"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133496"
 ---
 # <a name="introducing-aspnet-web-pages---deleting-database-data"></a>Знакомство с веб-страниц ASP.NET — удаление базы данных
 
@@ -33,7 +33,6 @@ ms.locfileid: "59406747"
 > - `WebGrid` Вспомогательный.
 > - SQL `Delete` команды.
 > - `Database.Execute` Метод для выполнения SQL `Delete` команды.
-
 
 ## <a name="what-youll-build"></a>Что вы создадите
 
@@ -86,7 +85,6 @@ ms.locfileid: "59406747"
 > Если приложение разрешает пользователям изменить запись, вам нужно пользователь получает записи для редактирования в любом случае. Но у вас может возникнуть желание пропустить этот шаг для удаления записи. Однако не пропускайте этот шаг. (Это также полезно для пользователей см. запись и убедитесь, что они удалить запись, они предназначены.)
 > 
 > В последующих учебного набора вы увидите, как добавить функции входа в систему, чтобы пользователю нужно войти, прежде чем удаление записи.
-
 
 Создание страницы с именем *DeleteMovie.cshtml* и замените в файле, используя следующую разметку:
 

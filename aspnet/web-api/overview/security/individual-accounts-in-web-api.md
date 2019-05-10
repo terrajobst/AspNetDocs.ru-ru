@@ -8,12 +8,12 @@ ms.date: 10/15/2014
 ms.assetid: 92c84846-f0ea-4b5e-94b6-5004874eb060
 msc.legacyurl: /web-api/overview/security/individual-accounts-in-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 29c3670ad7ab93acb0be878e5bd961d0ea446eee
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7492c4aa4c2a0a8aeed64c3462bda8fc51f35a6b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396236"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134302"
 ---
 # <a name="secure-a-web-api-with-individual-accounts-and-local-login-in-aspnet-web-api-22"></a>Защита веб-API с помощью отдельных учетных записей и локального имени входа в ASP.NET Web API 2.2
 
@@ -29,7 +29,6 @@ ms.locfileid: "59396236"
 > - [Visual Studio 2013 с обновлением 3](https://www.microsoft.com/visualstudio/eng/2013-downloads)
 > - [Веб-API 2.2](../releases/whats-new-in-aspnet-web-api-22.md)
 > - [ASP.NET Identity 2.1](../../../identity/index.md)
-
 
 В Visual Studio 2013 шаблон проекта веб-API предоставляет три варианта проверки подлинности:
 
@@ -239,7 +238,6 @@ HTTP-ответа:
 
 > [!NOTE]
 > В частности MVC, часть приложения может использовать проверку подлинности форм, которые содержат учетные данные в файле cookie. На основе файлов cookie проверки подлинности требует использования маркеров защиты от подделки, для предотвращения атак CSRF. Это проблема для веб-API, так как нет способа удобный для веб-API для отправки клиенту маркер защиты от подделки. (Дополнительные сведения об этой проблеме см. в разделе [предотвращение атак CSRF, в веб-API](preventing-cross-site-request-forgery-csrf-attacks.md).) Вызов **SuppressDefaultHostAuthentication** гарантирует, что веб-API не является уязвимым для атак CSRF учетные данные, хранящиеся в файлах cookie.
-
 
 Когда клиент запрашивает защищенному ресурсу, вот что происходит в конвейере веб-API:
 

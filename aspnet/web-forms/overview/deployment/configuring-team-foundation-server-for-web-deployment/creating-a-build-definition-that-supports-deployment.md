@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: fe47a018-f6d0-4979-80e7-5b1fa75a5865
 msc.legacyurl: /web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/creating-a-build-definition-that-supports-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 97a60274d9306ea0ee332fcc1ab9e487355dbedb
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e11c91a824446572aaf0b3bc6954b9b8ffb4eaff
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384946"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133955"
 ---
 # <a name="creating-a-build-definition-that-supports-deployment"></a>Создание определения сборки, поддерживающего развертывание
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384946"
 [Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Если вы хотите выполнять любой вид сборки в Team Foundation Server (TFS) 2010, необходимо создать определение сборки в командный проект. В этом разделе описываются способы создания нового определения построения в Team Foundation Server и как управлять веб-развертывания в рамках процесса сборки в Team Build.
-
 
 Этот раздел является частью серии учебников, исходя из требования к развертыванию enterprise вымышленной компании Fabrikam, Inc. В этой серии руководств используется пример решения&#x2014; [решения диспетчера контактов](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;для представления веб-приложения с более реалистичные уровень сложности, включая приложения ASP.NET MVC 3, Windows Communication Служба Foundation (WCF) и проект базы данных.
 
@@ -40,7 +39,6 @@ ms.locfileid: "59384946"
 
 > [!NOTE]
 > Дополнительные сведения о определений сборок, см. в разделе [определить процедуру сборки](https://msdn.microsoft.com/library/ms181715.aspx).
-
 
 В этом разделе показано, как создать определение сборки, который использует CI, таким образом, чтобы сборки активируется в том случае, когда разработчик возвращает новое содержимое. В случае успешного построения, служба сборки запускает файл пользовательского проекта для развертывания решения в тестовой среде.
 
@@ -60,7 +58,6 @@ ms.locfileid: "59384946"
 
 > [!NOTE]
 > Эта процедура&#x2014;в которой автоматической одного процесса построения, проверяет и развертывание решения&#x2014;будет наиболее подходит для развертывания в тестовых сред. Для промежуточной и рабочей среды вы гораздо более обычно требуется развернуть содержимое из предыдущего построения, которое уже проверен и проверен в тестовой среде. Этот подход описан в следующем разделе [развертывание конкретного построения](deploying-a-specific-build.md).
-
 
 ### <a name="who-performs-this-procedure"></a>Кто выполняет эту процедуру?
 
@@ -142,7 +139,6 @@ ms.locfileid: "59384946"
 
 > [!NOTE]
 > Сборок, которые реализуют логику развертывания могут завершаться сбоем, пока сервер сборки были предоставлены все разрешения, необходимые в целевой среде. Дополнительные сведения см. в разделе [Настройка разрешений для развертывания сборки Team](configuring-permissions-for-team-build-deployment.md).
-
 
 ## <a name="monitor-the-build-process"></a>Монитор процесса построения
 

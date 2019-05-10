@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 969fb28f-2bff-4fc4-b24a-27f5e2534a37
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/rating/creating-a-rating-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: fa118b4d733d7848b838f80e9918d62ae60033af
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1fde131086d4fb29c499f7f7c6281153c2766166
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59378979"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125063"
 ---
 # <a name="creating-a-rating-control-c"></a>Создание элемента управления Rating (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59378979"
 [Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/rating0.cs.zip) или [скачать PDF](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/rating0CS.pdf)
 
 > Многие веб-узлы, от электронной коммерции на сайты сообщества, предлагают пользователям скорость статьи или элементов. Обычно для этого требуется некоторые усилия на написание кода, но у нас есть набор элементов управления в своем распоряжении.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -64,7 +63,6 @@ ms.locfileid: "59378979"
 [!code-aspx[Main](creating-a-rating-control-cs/samples/sample5.aspx)]
 
 Сохраните страницу и загрузить его в адресную строку браузера. При наведении указателя мыши на элементы (изначально пуста) рейтинг происходит эффекта JavaScript: Оценка изменений. При щелчке набор звезд, сохраняется текущая оценка. Наконец при отправке формы, серверный код выводит выбранные оценка.
-
 
 [![Создание оценки системы с минимальным использованием кода](creating-a-rating-control-cs/_static/image2.png)](creating-a-rating-control-cs/_static/image1.png)
 

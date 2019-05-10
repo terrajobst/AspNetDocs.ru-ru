@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 0150e67b-c50d-4613-83ea-7b4ef8cacc5a
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/creating-api-help-pages
 msc.type: authoredcontent
-ms.openlocfilehash: e3f6a9b8a6835b034a075d580cd9a33136969990
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8308dab8bd66aa8f5a3c5fb4133fc7a3df78f671
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59395021"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125248"
 ---
 # <a name="creating-help-pages-for-aspnet-web-api"></a>Создание страниц справки для веб-API ASP.NET
 
@@ -92,7 +92,6 @@ ms.locfileid: "59395021"
 
 > [!NOTE]
 > Совет. Если вы поместите курсор в строке над методом и введите три косые черты, Visual Studio автоматически вставляет элементы XML. Затем вы можете заполнить пустые поля.
-
 
 Теперь сборки и снова запустить приложение и перейдите на страницы справки. Строками документации появятся в таблице API.
 

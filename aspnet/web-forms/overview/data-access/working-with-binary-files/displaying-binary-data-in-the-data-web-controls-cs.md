@@ -8,12 +8,12 @@ ms.date: 03/27/2007
 ms.assetid: 5cbeb9f8-5f92-4ba8-87ae-0b4d460ae6d4
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/displaying-binary-data-in-the-data-web-controls-cs
 msc.type: authoredcontent
-ms.openlocfilehash: c6c41ba5b5414da689e63ef521f1cf22e0b55701
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4c5c2befd31299b0d9dedf0a3cdb9c8a65d692ec
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404290"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127152"
 ---
 # <a name="displaying-binary-data-in-the-data-web-controls-c"></a>Отображение двоичных данных в веб-элементах управления данными (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59404290"
 [Скачайте пример приложения](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_55_CS.exe) или [скачать PDF](displaying-binary-data-in-the-data-web-controls-cs/_static/datatutorial55cs1.pdf)
 
 > В этом руководстве мы рассмотрим параметры для представления двоичных данных на веб-странице, включая отображение файла изображения и предоставление ссылку «Скачать» для PDF-файла.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -40,11 +39,9 @@ ms.locfileid: "59404290"
 
 В этом учебнике s вы найдете семь файлов PDF буклет в `~/Brochures` папки, по одному для каждой из категорий, за исключением морепродуктов. Я намеренно опущен, добавление буклета Морепродукты Демонстрация обработки сценариев, где не все записи связаны двоичных данных. Чтобы обновить `Categories` таблица со следующими значениями, щелкните правой кнопкой мыши `Categories` узла из обозревателя сервера и выберите Показать таблицу данных. Затем введите виртуальные пути к файлам буклет для каждой категории, имеющий буклета, как показано на рис. 1. Так как не буклет для категории морепродуктов, оставьте его `BrochurePath` значение столбца s в виде `NULL`.
 
-
 [![Вручную введите значения в столбце категорий таблицы s BrochurePath](displaying-binary-data-in-the-data-web-controls-cs/_static/image1.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image1.png)
 
 **Рис. 1**: Вручную введите значения для `Categories` таблицы s `BrochurePath` столбца ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image2.png))
-
 
 ## <a name="step-2-providing-a-download-link-for-the-brochures-in-a-gridview"></a>Шаг 2. Предоставляя ссылку для скачивания для брошюр в элементе управления GridView
 
@@ -52,55 +49,43 @@ ms.locfileid: "59404290"
 
 Начнем с перетаскивания элемента управления GridView с панели инструментов в конструктор `DisplayOrDownloadData.aspx` странице в `BinaryData` папку. Набор GridView s `ID` для `Categories` и через s смарт-тега GridView, выберите привязать его к новому источнику данных. В частности, привязать его к элементу ObjectDataSource с именем `CategoriesDataSource` , получающий данные с помощью `CategoriesBLL` объект s `GetCategories()` метод.
 
-
 [![Создайте новый ObjectDataSource, именуемый CategoriesDataSource](displaying-binary-data-in-the-data-web-controls-cs/_static/image2.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image3.png)
 
 **Рис. 2**: Создайте новый ObjectDataSource с именем `CategoriesDataSource` ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image4.png))
-
 
 [![Настройка ObjectDataSource на использование класса CategoriesBLL](displaying-binary-data-in-the-data-web-controls-cs/_static/image3.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image5.png)
 
 **Рис. 3**: Настройка ObjectDataSource для использования `CategoriesBLL` класс ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image6.png))
 
-
 [![Получение списка категорий с помощью метода GetCategories()](displaying-binary-data-in-the-data-web-controls-cs/_static/image4.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image7.png)
 
 **Рис. 4**: Получить список из категории с помощью `GetCategories()` метод ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image8.png))
 
-
 После завершения работы мастера настройки источников данных Visual Studio автоматически добавит поле BoundField в `Categories` GridView для `CategoryID`, `CategoryName`, `Description`, `NumberOfProducts`, и `BrochurePath` `DataColumn` s. Продолжить и удалить `NumberOfProducts` BoundField с момента `GetCategories()` запроса метода s не получить эту информацию. Также удалите `CategoryID` BoundField и переименуйте `CategoryName` и `BrochurePath` поля BoundField, кроме `HeaderText` свойства в категории и брошюры, соответственно. После внесения этих изменений, к GridView и ObjectDataSource s декларативная разметка должна выглядеть следующим образом:
-
 
 [!code-aspx[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample1.aspx)]
 
 Просмотреть эту страницу через обозреватель (см. рис. 5). Каждая из этих восьми категорий указан. Семь категорий с `BrochurePath` значения имеют `BrochurePath` значением, отображаемым в соответствующих BoundField. Морепродукты, имеющая `NULL` значение для его `BrochurePath`, отображает пустую ячейку.
 
-
 [![Показаны все категории — имя, описание и значение BrochurePath](displaying-binary-data-in-the-data-web-controls-cs/_static/image5.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image9.png)
 
 **Рис. 5**: Каждая категория — имя, описание, и `BrochurePath` перечислены значения ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image10.png))
 
-
 Вместо вывода текста `BrochurePath` столбец, необходимо создать ссылку на брошюры. Чтобы выполнить это, удалите `BrochurePath` BoundField и замените его поля HyperLinkField. Задайте новое ре HyperLinkField `HeaderText` свойства брошюр, его `Text` брошюр представление, свойства и его `DataNavigateUrlFields` свойства `BrochurePath`.
-
 
 ![Добавление поля HyperLinkField для BrochurePath](displaying-binary-data-in-the-data-web-controls-cs/_static/image6.gif)
 
 **Рис. 6**: Добавление поля HyperLinkField для `BrochurePath`
 
-
 Это будет добавлен столбец ссылок к GridView, как показано на рис. 7. Щелкните ссылку на представление буклет будет отображаться PDF-ФАЙЛ непосредственно в браузере или запрашивать пользователя, чтобы скачать файл, в зависимости от того, установлено ли средство чтения PDF и параметров браузера s.
-
 
 [![Буклета s категории можно просмотреть, щелкнув ссылку буклет представления](displaying-binary-data-in-the-data-web-controls-cs/_static/image7.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image11.png)
 
 **Рис. 7**: Категории s буклет можно просмотреть, щелкнув ссылку Просмотр Буклет ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image12.png))
 
-
 [![Категория s буклет PDF отображается](displaying-binary-data-in-the-data-web-controls-cs/_static/image8.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image13.png)
 
 **Рис. 8**: Категория s буклет PDF отображается ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image14.png))
-
 
 ## <a name="hiding-the-view-brochure-text-for-categories-without-a-brochure"></a>Скрытие текста буклет представления для категорий без буклета
 
@@ -110,19 +95,15 @@ ms.locfileid: "59404290"
 
 Чтобы включить поле HyperLinkField в поле TemplateField, установите `BrochurePath` HyperLinkField и выбрав Convert это поле в TemplateField ссылку в диалоговом окне Правка столбцов.
 
-
 ![Преобразовать поле HyperLinkField в поле TemplateField](displaying-binary-data-in-the-data-web-controls-cs/_static/image9.gif)
 
 **Рис. 9**: Преобразовать поле HyperLinkField в поле TemplateField
 
-
 Это создаст TemplateField с `ItemTemplate` , содержащее гиперссылку веб-узла со свойством `NavigateUrl` свойство привязано к `BrochurePath` значение. Замените эту разметку с помощью вызова метода `GenerateBrochureLink`, передавая значение `BrochurePath`:
-
 
 [!code-aspx[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample2.aspx)]
 
 Создайте `protected` метод в ASP.NET страницы класса вспомогательного кода s с именем `GenerateBrochureLink` , возвращающий `string` и принимает `object` как входной параметр.
-
 
 [!code-csharp[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample3.cs)]
 
@@ -130,18 +111,15 @@ ms.locfileid: "59404290"
 
 Рис. 10 показана страница после внесения этих изменений. Обратите внимание, что категории морепродуктов s `BrochurePath` поле теперь отображает текст нет буклета доступны.
 
-
 [![Текст нет буклет доступных отображается те категории без буклета](displaying-binary-data-in-the-data-web-controls-cs/_static/image10.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image15.png)
 
 **Рис. 10**: Текст нет буклет доступных отображается те категории без буклета ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image16.png))
-
 
 ## <a name="step-3-adding-a-web-page-to-display-a-category-s-picture"></a>Шаг 3. Добавление веб-страницы для отображения рисунков s категории
 
 При посещении пользователем страницы ASP.NET, они получают s HTML страницы ASP.NET. Полученный HTML только текст и не содержат любые двоичные данные. Любые дополнительные двоичные данные, такие как изображения, звуковые файлы, приложений Macromedia Flash, внедренные видео проигрывателя Windows Media и т. д. существуют как отдельные ресурсы на веб-сервере. HTML-код содержит ссылки на эти файлы, но не включает фактическое содержимое файлов.
 
 Например, в формате HTML `<img>` элемент используется для ссылки на изображения, с помощью `src` атрибут, указывающий на файл изображения следующим образом:
-
 
 [!code-html[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample4.html)]
 
@@ -151,13 +129,11 @@ ms.locfileid: "59404290"
 
 Добавьте новую страницу ASP.NET к `BinaryData` папку с именем `DisplayCategoryPicture.aspx`. При этом выбрать главную страницу установить флажок. Эта страница ожидает `CategoryID` значение в строке запроса и возвращает двоичные данные из этой категории s `Picture` столбца. Так как эта страница возвращает двоичные данные и ничего более, любую разметку в разделе HTML не требуется. Таким образом, щелкните на вкладке "источник" в левом нижнем углу и удалить все разметки страницы s, за исключением `<%@ Page %>` директива. То есть `DisplayCategoryPicture.aspx` s декларативная разметка должна состоять из одной строки:
 
-
 [!code-aspx[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample5.aspx)]
 
 Если вы видите `MasterPageFile` атрибут в `<%@ Page %>` директивы, удалите его.
 
 В классе фонового кода страницы s, добавьте следующий код, чтобы `Page_Load` обработчик событий:
-
 
 [!code-csharp[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample6.cs)]
 
@@ -167,14 +143,11 @@ ms.locfileid: "59404290"
 
 С этой страницей создан, можно просмотреть рисунок определенной категории s, посетив `DisplayCategoryPicture.aspx?CategoryID=categoryID`. Рис. 11 показана рисунок категории s «Напитки», который можно просмотреть в `DisplayCategoryPicture.aspx?CategoryID=1`.
 
-
 [![S категории «Напитки», появится изображение](displaying-binary-data-in-the-data-web-controls-cs/_static/image11.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image17.png)
 
 **Рис. 11**: S категории «Напитки», изображения ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image18.png))
 
-
 Если при просмотре `DisplayCategoryPicture.aspx?CategoryID=categoryID`, возникает исключение, которое считывает не удалось привести объект типа «System.DBNull» к типу «System.Byte []», есть две вещи, которые могут вызывать это. Во-первых, `Categories` таблицы s `Picture` столбец допускает `NULL` значения. `DisplayCategoryPicture.aspx` Страницы, тем не менее, предполагается, что имеется отличный от`NULL` имеется значение. `Picture` Свойство `CategoriesDataTable` невозможно открыть напрямую, если он имеет `NULL` значение. Если вы хотите разрешить `NULL` значений в параметре `Picture` столбце d необходимо включить следующее условие:
-
 
 [!code-csharp[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample7.cs)]
 
@@ -185,7 +158,6 @@ ms.locfileid: "59404290"
 > [!NOTE]
 > Каждый раз `DisplayCategoryPicture.aspx` будет посещен, базы данных доступна и возвращаются данные рисунка указанной категории s. Если рисунок s категории не изменилось, так как последнего просмотра пользователей, однако это затрачивать минимальные усилия. К счастью, HTTP позволяет *условного получает*. С помощью условного GET, клиент, посылающий запрос HTTP отправляет вдоль [ `If-Modified-Since` заголовок HTTP](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html) , предоставляющий дату и время, клиент последнего извлечения ресурс с веб-сервера. Если содержимое не изменилось, так как указанная дата, веб-сервер может отправить в ответ [код состояния не изменено (304)](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) и отказ от отправляет содержимое запрошенный ресурс. Короче говоря этот метод освобождает обойтись без отправки содержимого для ресурса, если он не был изменен с момента последнего обращения к клиентам его веб-сервере.
 
-
 Для реализации такого поведения, тем не менее, необходимо добавить `PictureLastModified` столбец `Categories` таблицу для фиксации, когда `Picture` а также код для проверки последнего обновления столбца `If-Modified-Since` заголовка. Дополнительные сведения о `If-Modified-Since` заголовка и условном рабочем процессе GET, см. в разделе [HTTP условного GET для хакеров RSS](http://fishbowl.pastiche.org/2002/10/21/http_conditional_get_for_rss_hackers) и [глубже рассмотрим выполнение HTTP-запросы на странице ASP.NET](http://aspnet.4guysfromrolla.com/articles/122204-1.aspx).
 
 ## <a name="step-4-displaying-the-category-pictures-in-a-gridview"></a>Шаг 4. Отображение изображений категории в элементе управления GridView
@@ -194,24 +166,19 @@ ms.locfileid: "59404290"
 
 Позволяют дополнять s `Categories` GridView в `DisplayOrDownloadData.aspx` путем добавления ImageField отображения каждого рисунка категории s. Просто добавьте ImageField и задайте его `DataImageUrlField` и `DataImageUrlFormatString` свойства `CategoryID` и `DisplayCategoryPicture.aspx?CategoryID={0}`, соответственно. Это создаст столбец GridView, отображающий `<img>` элемент которого `src` ссылки на атрибуты `DisplayCategoryPicture.aspx?CategoryID={0}`, где {0} заменяется строке GridView s `CategoryID` значение.
 
-
 ![Добавить ImageField к GridView](displaying-binary-data-in-the-data-web-controls-cs/_static/image12.gif)
 
 **Рис. 12**: Добавить ImageField к GridView
 
-
 После добавления ImageField, декларативный синтаксис s GridView должна выглядеть, как soothe следующие:
-
 
 [!code-aspx[Main](displaying-binary-data-in-the-data-web-controls-cs/samples/sample8.aspx)]
 
 Отвлекитесь и просмотреть эту страницу через обозреватель. Обратите внимание на то, как каждая запись теперь включает рисунка для категории.
 
-
 [![Категория s рисунок отображается для каждой строки](displaying-binary-data-in-the-data-web-controls-cs/_static/image13.gif)](displaying-binary-data-in-the-data-web-controls-cs/_static/image19.png)
 
 **Рис. 13**: Категория s рисунок отображается для каждой строки ([Просмотр полноразмерного изображения](displaying-binary-data-in-the-data-web-controls-cs/_static/image20.png))
-
 
 ## <a name="summary"></a>Сводка
 

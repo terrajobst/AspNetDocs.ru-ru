@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 44a22ac7-1fc7-4174-b946-c6129fb6a19b
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-test-environment-for-web-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 7ea8c74a6621200e3a0d52a7c37fed6b5eeff4e5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d580e550f2461837f0e8a4e477273348b49cb53e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391628"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132398"
 ---
 # <a name="scenario-configuring-a-test-environment-for-web-deployment"></a>Сценарий: настройка среды тестирования для веб-развертывания
 
@@ -22,7 +22,6 @@ ms.locfileid: "59391628"
 [Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается сценарий развертывания обычно web для разработчиков или тестовых сред и описание задачи, которые необходимо выполнить для настройки среды.
-
 
 Когда разработчики работают над веб-приложений, им часто предоставлен доступ к серверной среде, их можно использовать, чтобы проверить изменения в свои приложения в реалистичных условиях. Такого рода среды разработки или тестирования обычно имеет следующие характеристики:
 
@@ -47,7 +46,6 @@ ms.locfileid: "59391628"
 
 > [!NOTE]
 > Можно также использовать [развертывание Web по запросу](https://technet.microsoft.com/library/ee517345(WS.10).aspx) («temp agent»). Это похоже на удаленный агент подход с точки зрения требования и ограничения.
-
 
 В этом случае разработчики права администратора на целевых серверах и тестовой среды не распространяются ограничения безопасности, поэтому логичным выбором для тестирования веб-сервер для поддержки развертывания, с помощью удаленного агента. Это менее сложна и требует меньше начальной настройки, чем подход веб-развертывание обработчик. Также необходимо настроить сервер базы данных для поддержки удаленного доступа и развертывания.
 

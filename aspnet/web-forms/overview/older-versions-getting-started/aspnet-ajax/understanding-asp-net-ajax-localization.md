@@ -8,12 +8,12 @@ ms.date: 03/14/2008
 ms.assetid: c1a35f18-bab9-41f7-8497-15530c37a09d
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-localization
 msc.type: authoredcontent
-ms.openlocfilehash: 11e70493478d6810d63ba6b3ac813e32f03052eb
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ef4ee57496337fb13b4d1c09c058e89e04eb3138
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381332"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114593"
 ---
 # <a name="understanding-aspnet-ajax-localization"></a>Общие сведения о локализации ASP.NET AJAX
 
@@ -22,7 +22,6 @@ ms.locfileid: "59381332"
 [Загрузить PDF-файл](http://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial04_Localization_cs.pdf)
 
 > Локализация — это процесс проектирования и интеграции поддержки для конкретного языка и региональных параметров в приложение или компонент приложения. Платформа Microsoft ASP.NET предоставляет расширенную поддержку локализации для стандартных приложений ASP.NET благодаря интеграции стандартную модель локализации .NET; Платформа AJAX для Microsoft используют интегрированную модель для поддержки различных сценариев, в которых может выполняться локализации.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -105,16 +104,13 @@ ms.locfileid: "59381332"
 1. Нажмите клавишу F5. При появлении соответствующего запроса, включите отладку. При загрузке страницы, нажмите кнопку Удалить. Обратите внимание на то, что предлагается на английском языке (если компьютер настроен предпочитаю испанский язык ресурсов по умолчанию) для подтверждения.
 2. Закройте окно браузера и вернуться к странице default.aspx. В @Page директива заголовка, заменить автоматически для Culture и UICulture с es-ES. Нажмите клавишу F5, чтобы запустить веб-приложение в браузере еще раз. На этот раз Обратите внимание, что будет предложено удалить файл на испанском языке.
 
-
 [![](understanding-asp-net-ajax-localization/_static/image2.png)](understanding-asp-net-ajax-localization/_static/image1.png)
 
 ([Просмотр полноразмерного изображения](understanding-asp-net-ajax-localization/_static/image3.png))
 
-
 [![](understanding-asp-net-ajax-localization/_static/image5.png)](understanding-asp-net-ajax-localization/_static/image4.png)
 
 ([Просмотр полноразмерного изображения](understanding-asp-net-ajax-localization/_static/image6.png))
-
 
 Обратите внимание на то, что существуют несколько вариантов для этого пошагового руководства. Например сценарии удалось зарегистрировать в элементе управления ScriptManager программными средствами во время загрузки страницы.
 

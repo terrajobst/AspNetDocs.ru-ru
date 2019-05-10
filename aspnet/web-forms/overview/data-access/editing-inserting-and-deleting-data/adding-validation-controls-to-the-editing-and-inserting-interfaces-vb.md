@@ -8,12 +8,12 @@ ms.date: 07/17/2006
 ms.assetid: e3d7028a-7a22-4a4f-babe-d53afc41c0e2
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/adding-validation-controls-to-the-editing-and-inserting-interfaces-vb
 msc.type: authoredcontent
-ms.openlocfilehash: c5dd64cd3b60f7c231be8ce1c464af1582f23f5d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 02547e73dc1920f4c9228a9acd6a45344a875a55
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402710"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134704"
 ---
 # <a name="adding-validation-controls-to-the-editing-and-inserting-interfaces-vb"></a>Добавление элементов управления проверки в интерфейсы правки и вставки (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59402710"
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_19_VB.exe) или [скачать PDF](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/datatutorial19vb1.pdf)
 
 > В этом руководстве мы рассмотрим, насколько это просто добавлять элементы управления проверки к EditItemTemplate и InsertItemTemplate веб-элемента управления данными для обеспечения пользовательского интерфейса, более защищенного от непреднамеренных ошибок.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -38,11 +37,9 @@ ms.locfileid: "59402710"
 
 В [Проверка события, связанные с вставки, обновления и удаления](examining-the-events-associated-with-inserting-updating-and-deleting-vb.md) руководстве мы создали страницу, перечислявшую названия и цены продуктов в изменяемого элемента управления GridView. Кроме того, страницы включены в элементе управления DetailsView, `DefaultMode` было установлено на `Insert`, тем самым всегда подготовки к просмотру в режиме вставки. В этот DetailsView, пользователь может введите название и цену для нового продукта, щелкните Insert и его добавления в систему (см. рис. 1).
 
-
 [![Предыдущий пример позволял пользователям добавлять новые продукты и изменение существующих запросов.](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image2.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image1.png)
 
 **Рис. 1**: Предыдущий пример позволяет пользователям добавлять новые продукты и изменить существующие ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image3.png))
-
 
 Наша цель для этого учебника, — для дополнения DetailsView и GridView для предоставления элементов управления проверки. В частности наша логика проверки будет:
 
@@ -56,11 +53,9 @@ ms.locfileid: "59402710"
 2. Перейдите к декларативной разметке страницы (щелкните «источник» в нижней части страницы)
 3. Скопируйте текст внутри `<asp:Content>` и `</asp:Content>` (строки с 3 по 44), как показано на рис. 2.
 
-
 [![Скопируйте текст внутри &lt;asp: Content&gt; элемента управления](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image5.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image4.png)
 
 **Рис. 2**: Скопируйте текст внутри `<asp:Content>` управления ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image6.png))
-
 
 1. Откройте `UIValidation.aspx` страницы
 2. Перейдите к декларативной разметке страницы
@@ -74,11 +69,9 @@ ms.locfileid: "59402710"
 
 Добавление элементов управления проверки к интерфейсам правки и вставки, используемые элементами управления DetailsView и GridView полей BoundFields должны быть преобразованы в поля TemplateField. Для этого щелкните ссылки Правка столбцов и изменить поля в GridView и DetailsView смарт-тегов, соответственно. Выберите каждое из полей BoundFields и щелкните ссылку «Преобразуйте это поле в TemplateField».
 
-
 [![Преобразования каждого из полей BoundField DetailsView и GridView в поля TemplateField](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image8.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image7.png)
 
 **Рис. 3**: Преобразования каждого элемента DetailsView и GridView полей BoundField в поля TemplateField ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image9.png))
-
 
 Преобразование BoundField в поле TemplateField в диалоговом окне поля создает TemplateField, в котором видно, те же интерфейсы только для чтения, правки и вставки, BoundField, сам. В следующей разметке показан декларативный синтаксис для `ProductName` в DetailsView после его преобразования в поле TemplateField:
 
@@ -94,7 +87,6 @@ ms.locfileid: "59402710"
 
 > [!NOTE]
 > Вы можете настроить интерфейсы правки и шаблоны. Например, необходимо иметь текстовое поле `UnitPrice` поля TemplateField, отображаемой в качестве текстового поля меньше чем `ProductName` текстового поля. Для выполнения этой задачи можно задать текстового поля `Columns` свойства соответствующее значение или предоставить абсолютную ширину с помощью `Width` свойство. В следующем учебном курсе будет показано, как полностью персонализировать интерфейс правки путем замены текстового поля с другой записью веб-элемента управления.
-
 
 ## <a name="step-3-adding-the-validation-controls-to-the-gridviewsedititemtemplate-s"></a>Шаг 3. Добавление элементов управления проверки к элементу GridView`EditItemTemplate` s
 
@@ -113,40 +105,31 @@ ms.locfileid: "59402710"
 > [!NOTE]
 > Хотя в ASP.NET 1.x имеются эти же пять элементов управления проверки, ASP.NET 2.0 добавлен ряд улучшений, основной, два сценария на стороне клиента, поддержка обозревателей, отличных от Internet Explorer и способность разделять элементы управления проверки на странице в группы проверки. Дополнительные сведения о новых функциях управления проверки в 2.0 см. [разбор элементов управления проверки в ASP.NET 2.0](http://aspnet.4guysfromrolla.com/articles/112305-1.aspx).
 
-
 Начнем с добавления необходимых элементов управления проверки к `EditItemTemplate` s в поля TemplateField GridView. Для этого щелкните ссылку Изменить шаблоны смарт-теге элемента GridView для вызова интерфейса изменения шаблонов. На этой странице можно выбрать шаблон для правки из раскрывающегося списка. Поскольку нам требуется дополнить интерфейс правки, нам нужно добавить элементы управления проверки к `ProductName` и `UnitPrice`в `EditItemTemplate` s.
-
 
 [![Нам нужно расширить ProductName и UnitPrice к шаблонам EditItemTemplate](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image11.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image10.png)
 
 **Рис. 4**: Нам нужно расширить `ProductName` и `UnitPrice` `EditItemTemplate` s ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image12.png))
 
-
 В `ProductName` `EditItemTemplate`, добавьте RequiredFieldValidator, перетащив его с панели инструментов в интерфейс редактирования шаблона, поместив после текстового поля.
-
 
 [![Добавьте RequiredFieldValidator к ProductName EditItemTemplate](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image14.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image13.png)
 
 **Рис. 5**: Добавьте RequiredFieldValidator к `ProductName` `EditItemTemplate` ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image15.png))
 
-
 Все элементы управления проверки работают, проверяя ввод одного веб-ASP.NET элемента управления. Таким образом, нам нужно указать, что RequiredFieldValidator, мы только что добавили следует проверить в текстовое поле в `EditItemTemplate`; это достигается путем установки свойства элемента управления проверки [свойство ControlToValidate](https://msdn.microsoft.com/library/system.web.ui.webcontrols.basevalidator.controltovalidate(VS.80).aspx) для `ID` соответствующего веб-элемента управления. Текстовое поле в данный момент имеет довольно неопределенный `ID` из `TextBox1`, но давайте изменим его на что-нибудь более подходящее. Щелкните текстовое поле в шаблоне и затем из окна свойств измените `ID` из `TextBox1` для `EditProductName`.
-
 
 [![Изменить идентификатор текстового поля, на EditProductName](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image17.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image16.png)
 
 **Рис. 6**: Измените текстовое поле `ID` для `EditProductName` ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image18.png))
 
-
 Затем задайте RequiredFieldValidator `ControlToValidate` свойства `EditProductName`. Наконец, установите [свойство ErrorMessage](https://msdn.microsoft.com/library/system.web.ui.webcontrols.basevalidator.errormessage(VS.80).aspx) на «Необходимо указать название продукта» и [свойство Text](https://msdn.microsoft.com/library/system.web.ui.webcontrols.basevalidator.text(VS.80).aspx) для "\*«. `Text` Значение свойства, если указано, — это текст, отображаемый элементом управления проверки в том случае, если проверка завершается неудачно. `ErrorMessage` Значение свойства, которое является обязательным, используемый элементом управления ValidationSummary; Если `Text` значение свойства задано, `ErrorMessage` также является текст, отображаемый элементом управления проверки в случае недопустимого ввода.
 
 После установки этих трех свойств RequiredFieldValidator, экран должен выглядеть примерно как на рис.
 
-
 [![Задайте RequiredFieldValidator – ControlToValidate, ErrorMessage и свойства текста](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image20.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image19.png)
 
 **Рис. 7**: Задайте RequiredFieldValidator `ControlToValidate`, `ErrorMessage`, и `Text` свойства ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image21.png))
-
 
 С помощью RequiredFieldValidator, добавляемый `ProductName` `EditItemTemplate`, что все, что остается только добавить необходимую проверку к `UnitPrice` `EditItemTemplate`. Так как мы решили, что для этой страницы `UnitPrice` обязательно при правке записи, нам не нужно добавить RequiredFieldValidator. Тем не менее, необходимо добавить элемент управления CompareValidator чтобы убедиться, что `UnitPrice`, если предоставлено, верный формат как валюты и больше или равно 0.
 
@@ -161,11 +144,9 @@ ms.locfileid: "59402710"
 > [!NOTE]
 > Помните, что в *события, связанные с вставки, обновления и удаления* руководстве, мы устанавливаем BoundField `DataFormatString` свойства `{0:c}` Чтобы отформатировать его как денежная единица. Кроме того, мы устанавливаем `ApplyFormatInEditMode` присваивается значение true, приводит к GridView интерфейсам редактирования и вставки для форматирования `UnitPrice` как денежная единица. При преобразовании типа BoundField в поле TemplateField, Visual Studio отметила эти параметры и текстового поля в формате `Text` как денежную единицу, используя синтаксис привязки данных `<%# Bind("UnitPrice", "{0:c}") %>`.
 
-
 [![Звездочка рядом с текстовые поля, содержащими Недопустимый ввод](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image23.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image22.png)
 
 **Рис. 8**: Звездочка появляется "Далее" для текстовых полей с недопустимые входные данные ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image24.png))
-
 
 Когда проверка работает как-является, пользователь должен вручную удалить символ валюты при правке записи, что неприемлемо. Чтобы исправить это, у нас есть три варианта:
 
@@ -175,22 +156,18 @@ ms.locfileid: "59402710"
 
 Мы выберем параметр #1 для этого упражнения. В настоящее время `UnitPrice` форматируется как денежная единица из-за выражение привязки данных для текстового поля в `EditItemTemplate`: `<%# Bind("UnitPrice", "{0:c}") %>`. Измените оператор привязки на `Bind("UnitPrice", "{0:n2}")`, который форматирует результат как число с двумя цифрами точности. Это можно сделать напрямую через декларативный синтаксис или щелкнув ссылку Edit DataBindings из `EditUnitPrice` соответствующее текстовое поле в `UnitPrice` TemplateField `EditItemTemplate` (см. рис. 9 и 10).
 
-
 [![Щелкните ссылку Edit DataBindings текстового поля](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image26.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image25.png)
 
 **Рис. 9**: Щелкните ссылку Edit DataBindings текстового поля ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image27.png))
-
 
 [![Указание указателя формата в операторе Bind](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image29.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image28.png)
 
 **Рис. 10**: Указание указателя формата в `Bind` инструкции ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image30.png))
 
-
 Благодаря этому изменению в отформатированную цену в интерфейсе правки входят запятые как разделители групп и точка как десятичный разделитель, но оставляет символ валюты.
 
 > [!NOTE]
 > `UnitPrice` `EditItemTemplate` Не включает в себя RequiredFieldValidator, позволяя обратным передачам выходить и логике обновлений запускаться. Тем не менее `RowUpdating` обработчик событий, копируемые из *Проверка события, связанные с вставки, обновления и удаления* руководства входит Программная проверка, обеспечивающая `UnitPrice` предоставляется. Вы можете удалить эту логику, оставьте его в виде — является, или добавьте RequiredFieldValidator к `UnitPrice` `EditItemTemplate`.
-
 
 ## <a name="step-4-summarizing-data-entry-problems"></a>Шаг 4. Обобщение проблем с вводом данных
 
@@ -198,11 +175,9 @@ ms.locfileid: "59402710"
 
 Для этого перетащите элемент управления ValidationSummary из области элементов в конструктор. Расположение проверяющий элемент управления не имеет значения, так как мы собираемся настроить его на отображение сводки только в качестве messagebox. После добавления элемента управления, задайте его [свойство ShowSummary](https://msdn.microsoft.com/library/system.web.ui.webcontrols.validationsummary.showsummary(VS.80).aspx) для `False` и его [свойство ShowMessageBox](https://msdn.microsoft.com/library/system.web.ui.webcontrols.validationsummary.showmessagebox(VS.80).aspx) для `True`. В результате этого добавления в messagebox клиентские приведены все ошибки проверки.
 
-
 [![Проверка ошибки выдаются сводкой в Messagebox стороне клиента](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image32.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image31.png)
 
 **Рис. 11**: Проверка ошибки выдаются сводкой в Messagebox клиентские ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image33.png))
-
 
 ## <a name="step-5-adding-the-validation-controls-to-the-detailsviewsinsertitemtemplate"></a>Шаг 5. Добавление элементов управления проверки к элементу управления DetailsView`InsertItemTemplate`
 
@@ -214,31 +189,25 @@ ms.locfileid: "59402710"
 
 После добавления этих элементов управления проверки, новый продукт не добавлены в систему, если его имя не указано или если цена является отрицательным числом или находится в недопустимом формате.
 
-
 [![Логика проверки добавлена к интерфейсу вставки DetailsView](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image35.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image34.png)
 
 **Рис. 12**: Логика проверки добавлена к интерфейсу вставки DetailsView ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image36.png))
-
 
 ## <a name="step-6-partitioning-the-validation-controls-into-validation-groups"></a>Шаг 6. Разделение элементов управления проверки на группы проверки
 
 Наша страница состоит из двух логически неравных наборов элементов управления проверки: те, которые соответствуют GridView редактирования интерфейса и соответствующих DetailsView интерфейсу правки. По умолчанию при обратной передаче *все* проверяются элементы управления проверки на странице. Тем не менее при редактировании записи мы не хотим интерфейсу вставки DetailsView проверяющие элементы управления для проверки. Рис. 13 иллюстрируют текущую дилемму, когда пользователь изменяет продукт, вводя вполне допустимые значения, щелкнув обновления вызывает ошибку проверки, поскольку значения название и цену в интерфейсе правки пусты.
 
-
 [![Обновление продукта вызывает элементов управления проверки интерфейса вставки для активации](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image38.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image37.png)
 
 **Рис. 13**: Обновление продукта вызывает элементов управления проверки интерфейса вставки для активации ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image39.png))
-
 
 Элементы управления проверки в ASP.NET 2.0 может быть разделена на группы проверки по их `ValidationGroup` свойство. Чтобы связать набор элементов управления проверки в группу, просто установите их `ValidationGroup` в соответствии с тем же значением. В этом руководстве задайте `ValidationGroup` проверяющих элементов управления в поля TemplateField GridView к `EditValidationControls` и `ValidationGroup` свойств полей TemplateField в элементе DetailsView для `InsertValidationControls`. Эти изменения можно сделать непосредственно в декларативной разметке или в окне свойств при использовании конструктора изменить интерфейс шаблона.
 
 В дополнение к проверке элементы управления, кнопки и связанных с кнопкой в ASP.NET 2.0 также включать `ValidationGroup` свойство. Проверки группы проверки проверяются на верность только при вызове обратной передачи с помощью кнопки, который имеет то же `ValidationGroup` значение свойства. Например, в порядке для кнопки "Вставить" в элементе DetailsView для активации `InsertValidationControls` группы проверки, нам нужно установить поля CommandField и `ValidationGroup` свойства `InsertValidationControls` (см. рис. 14). Кроме того, задать GridView поля CommandField и `ValidationGroup` свойства `EditValidationControls`.
 
-
 [![Присваивает DetailsView свойству поля CommandField и ValidationGroup на InsertValidationControls](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image41.png)](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image40.png)
 
 **Рис. 14**: Задайте DetailsView поля CommandField и `ValidationGroup` свойства `InsertValidationControls` ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-editing-and-inserting-interfaces-vb/_static/image42.png))
-
 
 После внесения этих изменений DetailsView и GridView в поля TemplateField, так и в CommandFields должен выглядеть следующим образом:
 

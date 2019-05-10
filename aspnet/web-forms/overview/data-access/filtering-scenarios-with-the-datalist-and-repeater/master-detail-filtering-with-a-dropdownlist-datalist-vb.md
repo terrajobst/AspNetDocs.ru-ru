@@ -8,12 +8,12 @@ ms.date: 07/18/2007
 ms.assetid: ad0f1014-1eff-465f-bdc6-93058de00e44
 msc.legacyurl: /web-forms/overview/data-access/filtering-scenarios-with-the-datalist-and-repeater/master-detail-filtering-with-a-dropdownlist-datalist-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 1218cf3463c78e4b3bd3c7ca1c65d21590358f8a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e969768aff8b5760c55e4aa697f4ff54916a4e88
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59395554"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134431"
 ---
 # <a name="masterdetail-filtering-with-a-dropdownlist-vb"></a>Фильтрация "Основной/подробности" с помощью элемента управления DropDownList (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59395554"
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_33_VB.exe) или [скачать PDF](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/datatutorial33vb1.pdf)
 
 > В этом руководстве показано, как отображать отчеты «основной/подробности» на одной веб-странице, используя списки DropDownList для отображения «основных» записей и элемент управления DataList для «подробностей».
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -40,73 +39,57 @@ ms.locfileid: "59395554"
 - `ProductsForCategoryDetails.aspx`
 - `CategoriesAndProducts.aspx`
 
-
 ![Создание папки DataListRepeaterFiltering и добавление страниц учебника по ASP.NET](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image1.png)
 
 **Рис. 1**: Создание `DataListRepeaterFiltering` папки и добавление страниц учебника по ASP.NET
 
-
 Затем откройте `Default.aspx` страницы и перетащите `SectionLevelTutorialListing.ascx` пользовательского элемента управления с `UserControls` папку в область конструктора. Данный пользовательский элемент управления, созданный в учебном курсе [главные страницы и структуру переходов узла](../introduction/master-pages-and-site-navigation-vb.md) , просматривает карту узла и отображает руководства из текущего раздела в виде маркированного списка.
-
 
 [![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image3.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image2.png)
 
 **Рис. 2**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image4.png))
 
-
 Чтобы маркированный список отображал руководства «основной/подробности», которые будут созданы, необходимо добавить их в карту узла. Откройте `Web.sitemap` файл и добавьте следующую разметку после разметки узла карты сайта «Отображение данных с помощью элементов управления DataList и Repeater»:
 
 [!code-xml[Main](master-detail-filtering-with-a-dropdownlist-datalist-vb/samples/sample1.xml)]
-
 
 ![Обновление карты узла для добавления новых страниц ASP.NET](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image5.png)
 
 **Рис. 3**: Обновление карты узла для добавления новых страниц ASP.NET
 
-
 ## <a name="step-2-displaying-the-categories-in-a-dropdownlist"></a>Шаг 2. Отображение категорий в элементе управления DropDownList
 
 Категории в элементе управления DropDownList, перечислит нашего отчета «основной/подробности» с продуктами выбранного элемента списка отображаются ниже на странице в элементе управления DataList. Первой задачей, то категорий, отображаемых в элементе управления DropDownList. Сначала откройте `FilterByDropDownList.aspx` странице в `DataListRepeaterFiltering` папки и перетащите DropDownList с панели элементов в конструктор страницы. Затем задайте DropDownList `ID` свойства `Categories`. Щелкните ссылку выберите источник данных смарт-теге DropDownList и создайте новый ObjectDataSource, именуемый `CategoriesDataSource`.
-
 
 [![Добавьте новый ObjectDataSource, именуемый CategoriesDataSource](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image7.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image6.png)
 
 **Рис. 4**: Добавить новый элемент управления ObjectDataSource с именем `CategoriesDataSource` ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image8.png))
 
-
 Настройка нового ObjectDataSource, таким образом, он вызывает `CategoriesBLL` класса `GetCategories()` метод. После настройки ObjectDataSource все равно небходимо указать поле источника данных, которые должны отображаться в DropDownList, а какие должно быть связано в качестве значения для каждого элемента списка. У `CategoryName` как отображение и `CategoryID` как значение для каждого элемента списка.
-
 
 [![Иметь элемент управления DropDownList отображает поле «Категория» и CategoryID использовать как значение](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image10.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image9.png)
 
 **Рис. 5**: Иметь элемент управления DropDownList отображает `CategoryName` и использует `CategoryID` как значение ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image11.png))
 
-
 На этом этапе у нас есть элемент управления DropDownList, заполненный записями из `Categories` (все действия выполняются приблизительно за шесть секунд). Рис. 6 показаны до сих при просмотре через браузер.
-
 
 [![Раскрывающийся список с текущими категориями](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image13.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image12.png)
 
 **Рис. 6**: Раскрывающийся список текущих категорий ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image14.png))
 
-
 ## <a name="step-2-adding-the-products-datalist"></a>Шаг 2. Добавление элементов управления DataList продуктов
 
 Последний шаг в нашем отчете «основной/подробности» является отображение списка продуктов, связанных с выбранной категорией. Для этого добавьте на страницу элемент управления DataList и создайте новый ObjectDataSource, именуемый `ProductsByCategoryDataSource`. У `ProductsByCategoryDataSource` получит свои данные из `ProductsBLL` класса `GetProductsByCategoryID(categoryID)` метод. Так как этот отчет «основной/подробности» доступна только для чтения, выберите параметр (нет) на вкладках INSERT, UPDATE и DELETE.
-
 
 [![Выберите метод GetProductsByCategoryID(categoryID)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image16.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image15.png)
 
 **Рис. 7**: Выберите `GetProductsByCategoryID(categoryID)` метод ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image17.png))
 
-
 После нажатия кнопки Далее, мастер ObjectDataSource запрашивает значения для источника `GetProductsByCategoryID(categoryID)` метода *`categoryID`* параметра. Чтобы использовать значение выбранного `categories` элемент DropDownList источника параметра установите для элемента управления, а для ControlID – `Categories`.
-
 
 [![Значение параметра categoryID значение DropDownList категорий](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image19.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image18.png)
 
 **Рис. 8**: Задайте *`categoryID`* параметр значению `Categories` DropDownList ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image20.png))
-
 
 После завершения работы мастера настройки источника данных, Visual Studio автоматически создаст `ItemTemplate` элемента управления DataList, отображающий имя и значение каждого поля данных. Давайте улучшим элемент управления DataList, чтобы вместо этого использовать `ItemTemplate` , отображающий только название продукта, категории, поставщика, количество в единицах измерения и цену, вместе с `SeparatorTemplate` , вводящим `<hr>` между вышеуказанными элементами. Я буду использовать `ItemTemplate` из примера в [отображение данных с помощью элементов управления DataList и Repeater](../displaying-data-with-the-datalist-and-repeater/displaying-data-with-the-datalist-and-repeater-controls-vb.md) руководство, но вы можете использовать любые разметку шаблона, вы кажется наиболее визуально привлекательной.
 
@@ -118,16 +101,13 @@ ms.locfileid: "59395554"
 
 На рис. 9 и 10 показана работа отчета «основной/подробности» в действии.
 
-
 [![При первом просмотре странице отображаются продукты отображаются](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image22.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image21.png)
 
 **Рис. 9**: При первом просмотре странице отображаются продукты отображаются ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image23.png))
 
-
 [![Выбор нового продукта (Produce) автоматически вызывает обратную передачу, обновляется элемент управления DataList](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image25.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image24.png)
 
 **Рис. 10**: Выбор нового продукта (Produce) автоматически вызывает обратную передачу, обновляется элемент управления DataList ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image26.png))
-
 
 ## <a name="adding-a----choose-a-category----list-item"></a>Добавление элемента списка «--выберите категорию--»
 
@@ -135,11 +115,9 @@ ms.locfileid: "59395554"
 
 Чтобы добавить новый элемент списка DropDownList, перейдите в окно свойств и щелкните эллипсы в `Items` свойство. Добавить новый элемент списка с `Text` «--выберите категорию--» и `Value` `0`.
 
-
 ![Добавить](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image27.png)
 
 **Рис. 11**: Добавление элемента списка «--выберите категорию--»
-
 
 Кроме того можно добавить элемент списка, добавив следующую разметку в элемент управления DropDownList:
 
@@ -147,19 +125,15 @@ ms.locfileid: "59395554"
 
 Кроме того, нам нужно установить элемент управления DropDownList `AppendDataBoundItems` для `true` потому что если он становится равным `false` (по умолчанию), при привязке категорий к DropDownList из ObjectDataSource они будут перезаписывать все списки, добавленные вручную элементы.
 
-
 ![Установите для свойства AppendDataBoundItems значение true](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image28.png)
 
 **Рис. 12**: Задайте `AppendDataBoundItems` присваивается значение True
 
-
 Причина, по значение `0` для списка «--выберите категорию--» элемента обеспечивается, так как в системе со значением категории не `0`, поэтому записи не продукта будет возвращаться при выборе элемента списка «--выберите категорию--». Чтобы проверить это, Отвлекитесь и чтобы перейти на страницу через обозреватель. Как показано на рисунке 13, при первоначальном просмотре страницы выбран элемент списка «--выберите категорию--» продукты не отображаются.
-
 
 [![Когда](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image30.png)](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image29.png)
 
 **Рис. 13**: При выборе элемента списка «--выберите категорию--» продукты не отображаются ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image31.png))
-
 
 Если предпочтительнее отобразить *все* продуктов, при выборе параметра «--выберите категорию--», используйте значение `-1` вместо этого. Внимательный читатель, наверное, помните, назад в *"основной/подробности" Фильтрация с помощью элемента управления DropDownList* руководстве, мы обновили `ProductsBLL` класса `GetProductsByCategoryID(categoryID)` метод таким образом, если *`categoryID`* значение `-1` был передан в всех продуктов, возвращенных записей.
 

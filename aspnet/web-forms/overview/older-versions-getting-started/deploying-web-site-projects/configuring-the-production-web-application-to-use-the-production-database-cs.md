@@ -8,12 +8,12 @@ ms.date: 04/23/2009
 ms.assetid: 0177dabd-d888-449f-91b2-24190cf5e842
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/configuring-the-production-web-application-to-use-the-production-database-cs
 msc.type: authoredcontent
-ms.openlocfilehash: fa05645db9d43a836cc75b399153dd2e2c288f7c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1e93a5314129b2a05ede603ae9c01cd57b574f88
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59388771"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127049"
 ---
 # <a name="configuring-the-production-web-application-to-use-the-production-database-c"></a>Настройка рабочего веб-приложения для использования рабочей базы данных (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59388771"
 [Скачать код](http://download.microsoft.com/download/E/6/F/E6FE3A1F-EE3A-4119-989A-33D1A9F6F6DD/ASPNET_Hosting_Tutorial_08_CS.zip) или [скачать PDF](http://download.microsoft.com/download/C/3/9/C391A649-B357-4A7B-BAA4-48C96871FEA6/aspnet_tutorial08_DBConfig_cs.pdf)
 
 > Как уже обсуждалось в предыдущих учебных курсах, нередко различия между средами разработки и эксплуатации сведения о конфигурации. Это особенно верно для управляемых данными веб-приложений, как строки подключения базы данных отличаются между средами разработки и эксплуатации. В этом руководстве рассматриваются способы настройки рабочей среде для включения соответствующей строкой подключения более подробно.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -44,7 +43,6 @@ ms.locfileid: "59388771"
 - `AttachDbFilename` — Указывает расположение файла базы данных. Значение содержит заполнитель `|DataDirectory|`, который разрешается в полное приложение s `App_Data` папку во время выполнения.
 - `Integrated Security` — Логическое значение, указывающее, следует ли использовать указанного имени пользователя и пароля при подключении к базе данных (false) или текущего Windows учетные данные учетной записи (true).
 - `User Instance` — параметр конфигурации, относящиеся к выпусков SQL Server Express, указывающее, следует ли разрешить пользователям без прав администратора на локальном компьютере, присоединяться и подключаться к базе данных SQL Server Express Edition. См. в разделе [Express пользовательские экземпляры SQL Server](https://msdn.microsoft.com/library/ms254504.aspx) Дополнительные сведения об этом параметре.
-  
 
 Параметры строки подключения допустимый зависят от базы данных, к которому вы подключаетесь и используемого поставщика базы данных ADO.NET. Например строка подключения для подключения к Microsoft SQL Server базы данных отличается от, используемый для подключения к базе данных Oracle. Аналогично подключению к базе данных Microsoft SQL Server, с помощью поставщика SqlClient использует другую строку подключения, чем при использовании поставщика OLE DB.
 
@@ -52,19 +50,15 @@ ms.locfileid: "59388771"
 
 Откройте Visual Studio и перейдите в окно обозревателя сервера (в Visual Web Developer, это окно называется обозреватель баз данных). Щелкните правой кнопкой мыши на параметр подключения к данным и выберите параметр Добавить подключение в контекстном меню. Откроется мастер, показанный на рис. 1. Выберите необходимый источник данных и нажмите кнопку Продолжить.
 
-
 [![Выберите Добавить новую базу данных в проводник по серверам](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image2.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image1.jpg) 
 
 **Рис. 1**: Выберите Добавить новую базу данных в проводник по серверам ([Просмотр полноразмерного изображения](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image3.jpg))
 
-
 Затем укажите различных базы данных сведения о подключении (см. рис. 2). Если вы зарегистрировались с помощью веб-хостинга компанию, они должны предоставлять сведения о том, как подключиться к базе данных — имя сервера базы данных, имя базы данных, имя пользователя и пароль, используемый для соединения с базой данных и т. д. После ввода этой информации нажмите кнопку ОК для завершения работы мастера и добавления базы данных в проводник по серверам.
-
 
 [![Укажите подключение к базе данных](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image5.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image4.jpg) 
 
 **Рис. 2**: Укажите подключение к базе данных ([Просмотр полноразмерного изображения](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image6.jpg))
-
 
 Среда рабочей базы данных должны появиться в обозревателе серверов. Выберите базу данных из обозревателя сервера и перейдите в окно свойств. Там вы найдете свойство с именем строки подключения строкой подключения s базы данных. При условии, что вы используете базу данных Microsoft SQL Server в рабочей среде и Поставщик SqlClient строки подключения должен выглядеть следующим образом:
 
@@ -87,14 +81,11 @@ ms.locfileid: "59388771"
 > [!NOTE]
 > Если вы случайно развернуть `Web.config` файла, содержащего строку подключения базы данных разработки, то произойдет ошибка при попытке соединиться с базой данных приложения в рабочей среде. Эта ошибка объявляется в качестве `SqlException` с сообщение, что сервер не найден или недоступен.
 
-
 После развертывания сайта в рабочей среде, посетите на рабочем сайте через браузер. Следует см. в разделе и наслаждайтесь подобное удобство работы как при локальном запуске приложения, управляемые данными. Само собой при посещении веб-сайта в рабочей среде сайт основан на рабочий сервер базы данных, тогда как посетить веб-сайт в среде разработки используется база данных в разработке. Рис. 3 показан *обучение самостоятельно ASP.NET 3.5 за 24 часа* просмотрите страницу с веб-сайта в рабочей среде (Обратите внимание, URL-адрес в адресной строке браузера s).
-
 
 [![Управляемые данными приложения — теперь доступны в рабочей среде!](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image8.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image7.jpg) 
 
 **Рис. 3**: Управляемые данными приложения — теперь доступны в рабочей среде! ([Просмотр полноразмерного изображения](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image9.jpg))
-
 
 ### <a name="storing-connection-strings-in-a-separate-configuration-file"></a>Хранение строк подключений в отдельный файл конфигурации
 
@@ -113,14 +104,11 @@ ms.locfileid: "59388771"
 > [!NOTE]
 > Вы можете назовите файл конфигурации отличные от databaseConnectionStrings.config, если d, такие как `connectionStrings.config` или `dbInfo.config`. Тем не менее, убедитесь, что имя файла с `.config` расширение как `.config` файлы по умолчанию не предоставляются обработчиком ASP.NET. Если вы используете имя файла, что-то еще, например `connectionStrings.txt`, пользователь может указывать браузер, чтобы [www.yoursite.com/ConfigSettings/connectionStrings.txt](http://www.yoursite.com/ConfigSettings/connectionStrings.txt) и просмотреть содержимое файла!
 
-
 На этом этапе `ConfigSections` папка должна содержать три файла (см. рис. 4). Файлы databaseConnectionStrings.dev.config и databaseConnectionStrings.production.config содержат строки подключения для сред разработки и эксплуатации, соответственно. Файл databaseConnectionStrings.config содержит строку подключения, который будет использоваться для веб-приложения во время выполнения. Следовательно databaseConnectionStrings.config файл должен быть идентичен databaseConnectionStrings.dev.config файл в среде разработки, тогда как на рабочих databaseConnectionStrings.config файл должен быть идентичен databaseConnectionStrings.production.config.
-
 
 [![ConfigSections](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image11.jpg)](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image10.jpg) 
 
 **Рис. 4**: ConfigSections ([Просмотр полноразмерного изображения](configuring-the-production-web-application-to-use-the-production-database-cs/_static/image12.jpg))
-
 
 Теперь нам нужно указать `Web.config` для использования файла databaseConnectionStrings.config для его хранилища строк подключения. Откройте файл `Web.config` и замените существующий элемент `<connectionStrings>` следующим кодом:
 
@@ -132,7 +120,6 @@ ms.locfileid: "59388771"
 
 > [!NOTE]
 > Можно указать сведения для любого `Web.config` элемента в отдельный файл и использовать `configSource` атрибут для ссылки на этот файл изнутри `Web.config`.
-
 
 ## <a name="summary"></a>Сводка
 

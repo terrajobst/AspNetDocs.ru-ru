@@ -8,17 +8,16 @@ ms.date: 06/26/2014
 ms.assetid: bb807fdd-0bd8-43d0-b068-e88de7e5fd87
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4
 msc.type: chapter
-ms.openlocfilehash: 29536c222045e298e067a6fecfbb6d75597e5429
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2068b7ad8d7b47ba4dd8768e4e35a28c5cf84de3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404017"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132728"
 ---
 # <a name="supporting-odata-v4-in-aspnet-web-api"></a>Поддержка OData v4 в веб-API ASP.NET
 
 > Используйте ASP.NET Web API для создания конечных точек, которые поддерживают OData версии 4.
-
 
 - [Создание конечной точки OData v4](create-an-odata-v4-endpoint.md)
 - [Создание клиентского приложения OData v4 (C#)](create-an-odata-v4-client-app.md)

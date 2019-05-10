@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: cbebeb37-2594-41f2-b71a-f4f26520d512
 msc.legacyurl: /web-api/overview/error-handling/exception-handling
 msc.type: authoredcontent
-ms.openlocfilehash: 08b3663c1f9a08b8b3600113c32aeffb36c0d990
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: dbdbab6aefec840e2fec9e9cd33f3d124093750e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59399324"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125303"
 ---
 # <a name="exception-handling-in-aspnet-web-api"></a>Обработка исключений в веб-API ASP.NET
 
@@ -49,7 +49,6 @@ ms.locfileid: "59399324"
 
 > [!NOTE]
 > Фильтры исключений в веб-API ASP.NET, аналогичны в ASP.NET MVC. Тем не менее они объявлены в отдельном пространстве имен и функция отдельно. В частности **HandleErrorAttribute** класс, используемый в MVC не обрабатывает исключения, создаваемые контроллеров веб-API.
-
 
 Ниже приведен фильтр, который преобразует **NotImplementedException** исключения в HTTP-состояния кода 501, не реализованы:
 

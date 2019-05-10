@@ -8,12 +8,12 @@ ms.date: 02/17/2014
 ms.assetid: 360bc6e1-84c5-4b8e-a84c-ea48ab807aa4
 msc.legacyurl: /web-pages/overview/performance-and-traffic/14-analyzing-traffic
 msc.type: authoredcontent
-ms.openlocfilehash: a99ed5cc8875ef9f39234e3f394b46b5782d0bc1
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 095a5572c755446e0661c052ca9de82d636429fd
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390224"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134599"
 ---
 # <a name="tracking-visitor-information-analytics-for-an-aspnet-web-pages-razor-site"></a>Отслеживание сведений о посетителях (Analytics) для узла ASP.NET Web Pages (Razor)
 
@@ -35,7 +35,6 @@ ms.locfileid: "59390224"
 > 
 > - Веб-страниц ASP.NET (Razor) 2
 > - Библиотеку ASP.NET (пакет NuGet)
-
 
 Аналитика — это общий термин для технология, которая измеряет трафик на веб-сайте, чтобы вы могли оценить, как пользователи работают с сайта. Доступны многие службы аналитики, включая службы Google, Yahoo, StatCounter и другие.
 
@@ -60,7 +59,6 @@ ms.locfileid: "59390224"
 
 > [!NOTE]
 > При создании учетной записи аналитики, вы регистрируете URL-адрес сайта, который требуется отслеживать. Если вы тестируете все, что на локальном компьютере, не отслеживания фактического трафика (трафик только тех, которые), поэтому вы не сможете регистрировать и просматривать статистику сайта. Но эта процедура показывает, как добавить вспомогательный аналитики на страницу. При публикации узла активного сайта будет отправлять сведения поставщику аналитики.
-
 
 1. Добавьте библиотеку ASP.NET на веб-сайт, как описано в [Установка вспомогательных функций на сайте веб-страниц ASP.NET](https://go.microsoft.com/fwlink/?LinkId=252372), если не было добавлено.
 2. Создание учетной записи с помощью Google Analytics и запишите имя учетной записи.

@@ -8,12 +8,12 @@ ms.date: 07/17/2006
 ms.assetid: 6331e02e-c465-4cdf-bd3f-f07680c289d6
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/adding-client-side-confirmation-when-deleting-vb
 msc.type: authoredcontent
-ms.openlocfilehash: fc5c99ce6c5da7d004b95462a3338aefbed31b36
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 94c84a6d40b594bbab16ca1778c545389b40f595
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59388716"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126100"
 ---
 # <a name="adding-client-side-confirmation-when-deleting-vb"></a>Добавление клиентского подтверждения при удалении (VB)
 
@@ -23,7 +23,6 @@ ms.locfileid: "59388716"
 
 > В интерфейсы, которые мы создали ранее пользователь может случайно удалить данные, нажав кнопку Delete, Собираясь нажать кнопку "Изменить". В этом руководстве мы добавим диалоговое окно клиентского подтверждения, которое появляется при нажатии кнопки Delete.
 
-
 ## <a name="introduction"></a>Вступление
 
 Через нескольких последних учебных курсах мы ve узнали, как использовать архитектуру приложения, ObjectDataSource и элементов управления в сочетании для предоставления Вставка, редактирование и удаление возможностей. Удаление интерфейсы мы ve проверены актуальная были состоит из удаления кнопка, при щелчке, вызывает обратную передачу и вызывает ObjectDataSource s `Delete()` метод. `Delete()` Вызывал настроенный метод из уровня бизнес-логики, который передавал вызов далее до уровня доступа к данным, выдавая собственно оператор `DELETE` инструкции к базе данных.
@@ -32,11 +31,9 @@ ms.locfileid: "59388716"
 
 JavaScript `confirm(string)` функция отображает свой строковый входной параметр как текст внутри модальное диалоговое окно, которое поставляется с двумя кнопками - OK и Отмена (см. рис. 1). `confirm(string)` Функция возвращает логическое значение в зависимости от того, какая кнопка нажата (`true`, если пользователь нажимает кнопку "ОК", и `false` при нажатии кнопки "Отмена").
 
-
 ![JavaScript confirm(string) метод отображает модальное окно Messagebox на стороне клиента](adding-client-side-confirmation-when-deleting-vb/_static/image1.png)
 
 **Рис. 1**: JavaScript `confirm(string)` метод отображает модальное, клиентские Messagebox
-
 
 При отправке формы, если значение `false` возвращается из обработчика событий на стороне клиента, а затем Отправка формы отменяется. Используя эту возможность, мы сможем удалить кнопку s клиентская `onclick` возвращать значение вызова `confirm("Are you sure you want to delete this product?")`. Если пользователь нажимает кнопку "Отмена", `confirm(string)` вернет false, тем самым вызывая к отмене отправки формы. При отсутствии обратной передачи продукта, для которого кнопки "Удалить" была нажата не будет удален. Если, тем не менее, пользователь нажимает кнопку ОК в диалоговом окне подтверждения, обратный вызов продолжится в полной мере, и продукт будет удален. Обратитесь к [s с помощью JavaScript `confirm()` метод для отправки формы элемент управления](http://www.webreference.com/programming/javascript/confirm/) Дополнительные сведения об этом приеме.
 
@@ -45,13 +42,11 @@ JavaScript `confirm(string)` функция отображает свой стр
 > [!NOTE]
 > Использование приемов подтверждения на стороне клиента, подобных описываемым в данном учебнике предполагается, что пользователи пользуются обозревателями, поддерживающими JavaScript, и что они имеют JavaScript включен. Если одно из этих предположений не выполняются для конкретного пользователя, нажав кнопку «Удалить» вызовет немедленную обратную передачу (а не отображение messagebox подтверждение).
 
-
 ## <a name="step-1-creating-a-formview-that-supports-deletion"></a>Шаг 1. Создание элемента FormView, поддерживающего удаление
 
 Начните с добавления элемента FormView к `ConfirmationOnDelete.aspx` странице в `EditInsertDelete` папки, привязав его к элементу управления ObjectDataSource, извлекает информацию о продукте через `ProductsBLL` класс s `GetProducts()` метод. Также настройте элемент ObjectDataSource, чтобы `ProductsBLL` класс s `DeleteProduct(productID)` относящимся ObjectDataSource s `Delete()` метода; убедитесь, что на вкладках INSERT и UPDATE, раскрывающиеся списки задаются (нет). Наконец установите флажок Enable Paging в смарт-тега FormView s.
 
 После выполнения этих шагов новый декларативная разметка ObjectDataSource s будет выглядеть следующим образом:
-
 
 [!code-aspx[Main](adding-client-side-confirmation-when-deleting-vb/samples/sample1.aspx)]
 
@@ -59,23 +54,19 @@ JavaScript `confirm(string)` функция отображает свой стр
 
 Так как он привязан к элемент управления ObjectDataSource, который поддерживает только удаление, FormView s `ItemTemplate` предлагает только кнопку удаления, кнопки «Создать и обновления», где отсутствует. Декларативная разметка FormView s, тем не менее, входят дополнительные шаблоны `EditItemTemplate` и `InsertItemTemplate`, которые можно удалить. Отвлекитесь и настроить `ItemTemplate` , чтобы он отображается только подмножество продукта полей данных. Я ve настроил свой на показ имя продукта s в `<h3>` над его имена поставщика и категории (вместе с «удалить»).
 
-
 [!code-aspx[Main](adding-client-side-confirmation-when-deleting-vb/samples/sample2.aspx)]
 
 Благодаря этим изменениям у нас есть полнофункциональный веб-страницы, позволяющий пользователю переключаться с одного продукта за раз, с возможностью удалить продукт, просто нажав кнопку «Удалить». Рис. 2 показан снимок экрана ход работы до сих при просмотре через браузер.
 
-
 [![FormView отображает информацию об одном продукте](adding-client-side-confirmation-when-deleting-vb/_static/image3.png)](adding-client-side-confirmation-when-deleting-vb/_static/image2.png)
 
 **Рис. 2**: FormView показывает сведения об одном продукте ([Просмотр полноразмерного изображения](adding-client-side-confirmation-when-deleting-vb/_static/image4.png))
-
 
 ## <a name="step-2-calling-the-confirmstring-function-from-the-delete-buttons-client-side-onclick-event"></a>Шаг 2. Вызов функции confirm(string) из удаление кнопки клиентского события onclick
 
 С FormView создан, последним шагом является настройка кнопки Delete таких что при его s нажатии посетителем вызывалась функция JavaScript `confirm(string)` функция вызывается. Добавление клиентского сценария в кнопку LinkButton и ImageButton s на стороне клиента `onclick` событий можно воспользоваться `OnClientClick property`, которое является новым для ASP.NET 2.0. Поскольку нам нужно возвращение значения `confirm(string)` Функция вернула, просто присвойте этому свойству значение: `return confirm('Are you certain that you want to delete this product?');`
 
 После этого изменения декларативный синтаксис s Удалить LinkButton выглядит примерно так:
-
 
 [!code-aspx[Main](adding-client-side-confirmation-when-deleting-vb/samples/sample3.aspx)]
 
@@ -84,11 +75,9 @@ JavaScript `confirm(string)` функция отображает свой стр
 > [!NOTE]
 > Строка, переданная `confirm(string)` функцию JavaScript разделенное апострофами (вместо знаков кавычек). В JavaScript строки можно выделять, используя любой из этих знаков. Мы используем здесь апострофы, чтобы выделители строки передаваемого `confirm(string)` не создавали путаницы с выделителями, используемыми для `OnClientClick` значение свойства.
 
-
 [![Подтверждение — теперь отображается при нажатии кнопки Delete](adding-client-side-confirmation-when-deleting-vb/_static/image6.png)](adding-client-side-confirmation-when-deleting-vb/_static/image5.png)
 
 **Рис. 3**: Подтверждение — теперь отображается при нажатии кнопки Delete ([Просмотр полноразмерного изображения](adding-client-side-confirmation-when-deleting-vb/_static/image7.png))
-
 
 ## <a name="step-3-configuring-the-onclientclick-property-for-the-delete-button-in-a-commandfield"></a>Шаг 3. Настройка свойства OnClientClick для кнопки "Удалить" в поле CommandField
 
@@ -97,21 +86,17 @@ JavaScript `confirm(string)` функция отображает свой стр
 > [!NOTE]
 > При задании «удалить» s `OnClientClick` в соответствующем обработчике событий `DataBound` обработчик событий, у нас есть доступ к данных была привязана к текущей записи. Это означает, что мы можем расширить сообщение подтверждения для включения сведений о конкретной записи, например, «Вы действительно хотите удалить продукт Chai?» Такая настройка также возможна в шаблонах, использующих синтаксис привязки данных.
 
-
 На практике параметр `OnClientClick` свойство для button(s) Delete в поле CommandField, let s Добавление GridView на страницу. Настройте этот GridView использовать тот же элемент управления ObjectDataSource, элемент FormView использует. Также можно ограничьте s GridView поля BoundField, кроме включать только s название продукта, категории и поставщика. Наконец установите флажок Разрешить удаление, в смарт-теге GridView s. Это добавит поле CommandField GridView s `Columns` коллекции с его `ShowDeleteButton` свойство значение `true`.
 
 После внесения этих изменений декларативная разметка s GridView должен выглядеть следующим образом:
-
 
 [!code-aspx[Main](adding-client-side-confirmation-when-deleting-vb/samples/sample4.aspx)]
 
 CommandField содержит единственный экземпляр удалить LinkButton, может осуществляться программными средствами из GridView s `RowDataBound` обработчик событий. Как только ссылки, можно задать его `OnClientClick` свойство соответствующим образом. Создайте обработчик событий для `RowDataBound` событий, используя следующий код:
 
-
 [!code-vb[Main](adding-client-side-confirmation-when-deleting-vb/samples/sample5.vb)]
 
 Этот обработчик событий работает со строками данных (те, которые будут иметь «удалить») и начинается с программного обращения «удалить». В целом используйте следующий шаблон:
-
 
 [!code-vb[Main](adding-client-side-confirmation-when-deleting-vb/samples/sample6.vb)]
 
@@ -126,18 +111,15 @@ CommandField содержит единственный экземпляр уда
 > [!NOTE]
 > Этот метод также может использоваться для программного доступа к «удалить» CommandField в элементе управления DetailsView. Для элемента DetailsView, однако d создать обработчик событий для `DataBound` событий, так как нет DetailsView `RowDataBound` событий.
 
-
 [![Нажав кнопку Delete s GridView отображает настроенное диалоговое окно подтверждения](adding-client-side-confirmation-when-deleting-vb/_static/image9.png)](adding-client-side-confirmation-when-deleting-vb/_static/image8.png)
 
 **Рис. 4**: Щелкнув s GridView кнопки Delete отображается диалоговое окно подтверждения настроить ([Просмотр полноразмерного изображения](adding-client-side-confirmation-when-deleting-vb/_static/image10.png))
-
 
 ## <a name="using-templatefields"></a>Использование полей TemplateField
 
 Одним из недостатков CommandField является, что его кнопки должен осуществляться через индексирование и что получившийся объект должен быть приведен к типу соответствующие кнопки (кнопки LinkButton и ImageButton). Использование «магических чисел» и жестко закодированных типов приводит к проблемам, которые не могут быть обнаружены только во время выполнения. Например если вы или другой разработчик добавляет новые кнопки CommandField в какой-то момент в будущем (например, кнопка «Изменить») или изменения `ButtonType` свойство, существующий код по-прежнему будет компилироваться без ошибок, но посещение страницы может вызвать исключение или неожиданному поведению в зависимости от того, как был написан код и какие изменения были сделаны.
 
 Альтернативным подходом является преобразование s CommandFields GridView и DetailsView в поля TemplateField. При этом будут созданы TemplateField с `ItemTemplate` , содержащий LinkButton (или кнопки или ImageButton) для каждой кнопки в CommandField. Эти кнопки `OnClientClick` можно назначать декларативно, как мы показали в FormView, или можно получить доступ программными средствами в соответствующий `DataBound` обработчик событий, используя следующий шаблон:
-
 
 [!code-vb[Main](adding-client-side-confirmation-when-deleting-vb/samples/sample7.vb)]
 

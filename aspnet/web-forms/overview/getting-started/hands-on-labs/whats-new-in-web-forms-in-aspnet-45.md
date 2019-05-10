@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 0a1f88bd-97da-4ed1-86f1-605199dc75a4
 msc.legacyurl: /web-forms/overview/getting-started/hands-on-labs/whats-new-in-web-forms-in-aspnet-45
 msc.type: authoredcontent
-ms.openlocfilehash: 52f6ec17fb21019e93ebf2795e95d5b27e4edbe6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 301af8ed877b58624e419c04f605c41f27dbdd0c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401748"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132077"
 ---
 # <a name="whats-new-in-web-forms-in-aspnet-45"></a>Новые возможности веб-форм в ASP.NET 4.5
 
@@ -40,7 +40,6 @@ ms.locfileid: "59401748"
 > На портале официальный ASP.NET можно найти дополнительные примеры использования новых возможностей в веб-форм ASP.NET 4.5: [Новые возможности ASP.NET 4.5 и Visual Studio 2012](../../../../whitepapers/whats-new-in-aspnet-45-and-visual-studio-2012.md#_Toc318097385)
 > 
 > Все примеры кода и фрагменты кода включены в Web лагеря комплект обучающих материалов, доступных в [ https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409 ](https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409).
-
 
 <a id="Objectives"></a>
 ### <a name="objectives"></a>Цели
@@ -82,7 +81,6 @@ ms.locfileid: "59401748"
 
 > [!NOTE]
 > Каждого упражнения сопровождается **окончания** папку, содержащую полученное решение, должен быть получен после завершения упражнения. Это решение можно использовать как руководство, если вам нужна дополнительная помощь при работе с примерами.
-
 
 Предполагаемое время для выполнения этого лабораторного: **60 минут**.
 
@@ -610,7 +608,6 @@ ms.locfileid: "59401748"
 
 > [!NOTE]
 > Кроме того, можно развернуть это приложение для Azure следующих [приложении б: Публикация приложения ASP.NET MVC 4 с помощью веб-развертывания](#AppendixB).
-
 
 ---
 

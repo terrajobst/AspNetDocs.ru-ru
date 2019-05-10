@@ -8,12 +8,12 @@ ms.date: 07/11/2008
 ms.assetid: 3282df5e-516c-4972-8666-313828b90fb5
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/interacting-with-the-content-page-from-the-master-page-cs
 msc.type: authoredcontent
-ms.openlocfilehash: a2b6d3a5ceb66c14a78b02182f49d76c72becbd4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 341724253e9149724ff988232b0e312897756f58
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59413650"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134375"
 ---
 # <a name="interacting-with-the-content-page-from-the-master-page-c"></a>Взаимодействие со страницей содержимого на эталонной странице (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59413650"
 [Скачать код](http://download.microsoft.com/download/1/8/4/184e24fa-fcc8-47fa-ac99-4b6a52d41e97/ASPNET_MasterPages_Tutorial_07_CS.zip) или [скачать PDF](http://download.microsoft.com/download/e/b/4/eb4abb10-c416-4ba4-9899-32577715b1bd/ASPNET_MasterPages_Tutorial_07_CS.pdf)
 
 > Проверяет как вызывать методы, задайте свойства, т. д., страницы содержимого из кода на главной странице.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -50,16 +49,13 @@ ms.locfileid: "59413650"
 
 Наши первым делом — создать страницу содержимого, которая перечисляет продукты из базы данных "Борей". (Мы добавили базы данных Northwind в проект в предыдущем учебном курсе, [ *взаимодействие с главной страницей на странице содержимого*](interacting-with-the-master-page-from-the-content-page-cs.md).) Начните с добавления новой страницы ASP.NET `~/Admin` папку с именем `Products.aspx`, не забыв привяжите его к `Site.master` главной страницы. Рис. 1 показан обозреватель решений после добавления этой страницы на веб-сайт.
 
-
 [![Добавьте новую страницу ASP.NET в папку администрирования](interacting-with-the-content-page-from-the-master-page-cs/_static/image2.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image1.png)
 
 **Рис 01**: Добавьте новую страницу ASP.NET к `Admin` папку ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image3.png))
 
-
 Помните, что в [ *указание названия, метатегов и других заголовков HTML на главной странице* ](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-cs.md) руководстве мы создали пользовательскую страницу базовый класс с именем `BasePage` , создающий заголовок страницы, если это не явно задайте. Перейдите к `Products.aspx` фонового кода страницы класса, который будет наследовать `BasePage` (а не из `System.Web.UI.Page`).
 
 Наконец, обновите `Web.sitemap` файл, чтобы включить запись для этого занятия. Добавьте следующую разметку под `<siteMapNode>` для содержимого к занятию взаимодействие страниц Master:
-
 
 [!code-xml[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample1.xml)]
 
@@ -67,42 +63,32 @@ ms.locfileid: "59413650"
 
 Вернитесь к `Products.aspx`. В элементе управления содержимым для `MainContent`, добавление элемента управления GridView и назовите его `ProductsGrid`. Привязки GridView к нового элемента управления SqlDataSource с именем `ProductsDataSource`.
 
-
 [![Привязки GridView к нового элемента управления SqlDataSource](interacting-with-the-content-page-from-the-master-page-cs/_static/image5.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image4.png)
 
 **Рис. 02**: Привязки GridView к нового элемента управления SqlDataSource ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image6.png))
 
-
 Настройте мастер, чтобы он использует базы данных Northwind. Если вы работали в предыдущем учебнике, то необходимо иметь строку подключения с именем `NorthwindConnectionString` в `Web.config`. Выберите из раскрывающегося списка, эта строка подключения, как показано на рис. 3.
-
 
 [![Настройка элемента управления SqlDataSource для использования базы данных "Борей"](interacting-with-the-content-page-from-the-master-page-cs/_static/image8.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image7.png)
 
 **Рис 03**: Настройка элемента управления SqlDataSource для использования базы данных Northwind ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image9.png))
 
-
 Затем укажите элемента управления источником данных `SELECT` инструкции, выбрав таблицы Products из раскрывающегося списка и возвращение `ProductName` и `UnitPrice` столбцов (см. рис. 4). Нажмите кнопку Далее, а затем завершить работу мастера настройки источника данных.
-
 
 [![Возвращать ProductName и UnitPrice поля из таблицы Products](interacting-with-the-content-page-from-the-master-page-cs/_static/image11.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image10.png)
 
 **Рис. 04**: Вернуть `ProductName` и `UnitPrice` поля из `Products` таблицы ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image12.png))
 
-
 Вот и все! После завершения работы мастера Visual Studio добавляет два поля BoundField, кроме GridView, чтобы отобразить два поля, возвращенные объектом элемента управления SqlDataSource. Ниже приведен разметка GridView и SqlDataSource элементов управления. Рис. 5 показаны результаты выполненной работы в браузере.
 
-
 [!code-aspx[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample2.aspx)]
-
 
 [![И его цену каждого продукта указан в GridView](interacting-with-the-content-page-from-the-master-page-cs/_static/image14.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image13.png)
 
 **05 рис**: И его цену каждого продукта указан в GridView ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image15.png))
 
-
 > [!NOTE]
 > Вы можете очистить внешний вид элемента управления GridView. Некоторые предложения, включают форматирование отображаемое значение UnitPrice как денежной единицы и с помощью фоновых цветов и шрифтов, чтобы улучшить внешний вид сетки. Дополнительные сведения о отображения и форматирования данных в ASP.NET, см. Мой [работа с серии руководств данных](../../data-access/index.md).
-
 
 ## <a name="step-2-adding-a-double-prices-button-to-the-master-page"></a>Шаг 2. Добавление кнопки Double цены на главную страницу
 
@@ -110,32 +96,25 @@ ms.locfileid: "59413650"
 
 Добавьте элемент управления SqlDataSource на главную страницу, назовите его `DoublePricesDataSource`. Этот SqlDataSource будет использоваться для выполнения `UPDATE` инструкции выполнить удвоение цены. В частности, нам нужно установить его `ConnectionString` и `UpdateCommand` свойства для соответствующей строкой подключения и `UPDATE` инструкции. Затем необходимо вызвать этот элемент управления SqlDataSource `Update` метод при `DoublePrice` кнопки. Чтобы задать `ConnectionString` и `UpdateCommand` свойства, выберите элемент управления SqlDataSource, а затем перейдите в окно свойств. `ConnectionString` Эти строки подключения, уже хранится в списках свойств `Web.config` в раскрывающемся списке; выберите `NorthwindConnectionString` как показано на рис. 6.
 
-
 [![Настройка элемента управления SqlDataSource для использования NorthwindConnectionString](interacting-with-the-content-page-from-the-master-page-cs/_static/image17.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image16.png)
 
 **Рис 06**: Настройка элемента управления SqlDataSource для использования `NorthwindConnectionString` ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image18.png))
 
-
 Чтобы задать `UpdateCommand` свойство, найдите параметр UpdateQuery в окне «Свойства». Это свойство, при выборе отображает кнопку с многоточием; Нажмите эту кнопку, чтобы отобразить редактор команд и параметров диалоговое окно, показанное на рис. 7. Введите следующую команду `UPDATE` инструкции в текстовое поле диалогового окна:
-
 
 [!code-sql[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample3.sql)]
 
 Эта инструкция, при выполнении возрастет `UnitPrice` значение для каждой записи в `Products` таблицы.
 
-
 [![Установите свойство UpdateCommand на SqlDataSource](interacting-with-the-content-page-from-the-master-page-cs/_static/image20.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image19.png)
 
 **07 рис**: Значение элемента SqlDataSource `UpdateCommand` свойство ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image21.png))
 
-
 После настройки этих свойств, декларативная разметка вашей кнопки и элемента управления SqlDataSource элементов управления должен выглядеть следующим образом:
-
 
 [!code-aspx[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample4.aspx)]
 
 Все, что остается только вызвать его `Update` метод при `DoublePrice` кнопки. Создание `Click` обработчик событий для `DoublePrice` кнопку и добавьте следующий код:
-
 
 [!code-csharp[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample5.cs)]
 
@@ -157,26 +136,21 @@ ms.locfileid: "59413650"
 > [!NOTE]
 > Дополнительные сведения о создании вызов и обработку событий, см. в разделе [события и делегаты](https://msdn.microsoft.com/library/17sde2xt.aspx) и [делегатов событий в простой английской](http://www.codeproject.com/KB/cs/eventdelegates.aspx).
 
-
 Для определения события используйте следующий синтаксис:
-
 
 [!code-csharp[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample6.cs)]
 
 Поскольку нам требуется только для оповещения на странице содержимого, когда пользователь нажимает `DoublePrice` кнопку и не обязательно передавать другие дополнительные сведения, можно использовать делегат события `EventHandler`, который определяет обработчик событий, который принимает как второй параметр объекта типа `System.EventArgs`. Чтобы создать событие на главной странице, добавьте следующую строку кода для главной страницы вспомогательного класса:
 
-
 [!code-csharp[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample7.cs)]
 
 Приведенный выше код добавляет открытое событие на главную страницу с именем `PricesDoubled`. Теперь нам нужно вызывать это событие после удвоения цены. Для вызова события используйте следующий синтаксис:
-
 
 [!code-csharp[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample8.cs)]
 
 Где *отправителя* и *eventArgs* — это значения, которые вы хотите передать в обработчик событий подписчика.
 
 Обновление `DoublePrice` `Click` обработчик событий следующим кодом:
-
 
 [!code-csharp[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample9.cs)]
 
@@ -188,11 +162,9 @@ ms.locfileid: "59413650"
 
 Сначала создайте обработчик событий с именем `Master_PricesDoubled`. Из-за, как мы определили `PricesDoubled` событий на главной странице два входных параметра обработчик событий должны иметь типы `Object` и `EventArgs`, соответственно. При вызове обработчика событий `ProductsGrid` GridView `DataBind` метод повторную привязку данных к сетке.
 
-
 [!code-csharp[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample10.cs)]
 
 Полный код для обработчика событий, но еще не знаем wire главной страницы `PricesDoubled` событий в этот обработчик событий. Подписчик связывает события в обработчик событий используется следующий синтаксис:
-
 
 [!code-csharp[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample11.cs)]
 
@@ -201,7 +173,6 @@ ms.locfileid: "59413650"
 Этот код события должна быть выполнена на первом посещении страницы и последующих обратных передачах и должно выполняться в момент, предшествующий, когда может быть создано событие жизненного цикла страницы. Самое время добавить код события находится на этапе PreInit, которое происходит очень рано в жизненном цикле страницы.
 
 Откройте `~/Admin/Products.aspx` и создайте `Page_PreInit` обработчик событий:
-
 
 [!code-csharp[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample12.cs)]
 
@@ -212,11 +183,9 @@ ms.locfileid: "59413650"
 
 Давайте используем последний подход. Добавьте следующий `@MasterType` директиву в начало декларативная разметка страницы:
 
-
 [!code-aspx[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample13.aspx)]
 
 Затем добавьте следующий код привязки событий в `Page_PreInit` обработчик событий:
-
 
 [!code-csharp[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample14.cs)]
 
@@ -224,16 +193,13 @@ ms.locfileid: "59413650"
 
 Цифры 8 и 9, иллюстрируют это поведение. Рис. 8 показан при первом посещении страницы. Обратите внимание, что цена значения в обоих `RecentProducts` GridView (в левом столбце главной страницы) и `ProductsGrid` GridView (на странице содержимого). Рис. 9 показана же экране сразу же после `DoublePrice` был выполнен щелчок кнопкой. Как вы видите, новые цены мгновенно отражаются в обоих элементов управления GridView.
 
-
 [![Начальная цена значения](interacting-with-the-content-page-from-the-master-page-cs/_static/image23.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image22.png)
 
 **Рис 08**: Начальные значения цены ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image24.png))
 
-
 [![Just-Doubled цены отображаются в элементов управления GridView](interacting-with-the-content-page-from-the-master-page-cs/_static/image26.png)](interacting-with-the-content-page-from-the-master-page-cs/_static/image25.png)
 
 **Рис 09**: Just-Doubled цены отображаются в элементов управления GridView ([Просмотр полноразмерного изображения](interacting-with-the-content-page-from-the-master-page-cs/_static/image27.png))
-
 
 ## <a name="summary"></a>Сводка
 

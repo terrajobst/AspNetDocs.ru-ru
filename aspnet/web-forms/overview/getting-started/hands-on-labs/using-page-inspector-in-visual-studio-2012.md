@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 73232292-a5fe-4720-82a1-8f6553effd1f
 msc.legacyurl: /web-forms/overview/getting-started/hands-on-labs/using-page-inspector-in-visual-studio-2012
 msc.type: authoredcontent
-ms.openlocfilehash: d85fab0aeec86013761fc07ada1789b7719b24d9
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f42b1be2697ba7d1145b3e334fe8f4ebf019cd12
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396568"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133553"
 ---
 # <a name="using-page-inspector-in-visual-studio-2012"></a>Использование инспектора страниц в Visual Studio 2012
 
@@ -36,7 +36,6 @@ ms.locfileid: "59396568"
 > Это лабораторное занятие поможет усовершенствования и новые возможности, описанные ранее, применяя незначительные изменения в образец веб-приложение, в папке с исходным кодом.
 > 
 > Все примеры кода и фрагменты кода включены в Web лагеря комплект обучающих материалов, доступных в [ https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409 ](https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409).
-
 
 <a id="Objectives"></a>
 
@@ -73,7 +72,6 @@ ms.locfileid: "59396568"
 
 > [!NOTE]
 > Каждого упражнения сопровождается начальный решения, расположенный в папке "Begin" упражнения, чему вы сможете каждого упражнения, независимо от других. В исходном коде для упражнения вы найдете также окончания папку, содержащую решение Visual Studio с кодом, полученный в результате выполнения действий, описанных в соответствующий упражнении. Эти решения можно использовать в качестве руководства, если вам нужна дополнительная помощь, отвечая на это Практическое занятие.
-
 
 Предполагаемое время для выполнения этого лабораторного: **30 минут**.
 

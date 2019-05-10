@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: b9775f41-352a-4f82-baa6-23e95b342e20
 msc.legacyurl: /web-api/overview/mobile-clients/calling-web-api-from-a-windows-phone-8-application
 msc.type: authoredcontent
-ms.openlocfilehash: a5c7804c2336e91dc171b5da52819436472e81cf
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c5da14a6856f551343b6fb14f0aedc659e792f6b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59412454"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65122080"
 ---
 # <a name="calling-web-api-from-a-windows-phone-8-application-c"></a>Вызов веб-API из приложения Windows Phone 8 (C#)
 
@@ -40,7 +40,6 @@ ms.locfileid: "59412454"
 > [!NOTE]
 > Если нужно проверить возможность подключения между веб-API и проекты Windows Phone 8 в локальной системе, необходимо будет следуйте инструкциям, приведенным в *[подключение к веб-приложений API в локальном эмуляторе Windows Phone 8 Компьютер](https://go.microsoft.com/fwlink/?LinkId=324014)* статью, чтобы настроить среду тестирования.
 
-
 <a id="STEP1"></a>
 ### <a name="step-1-creating-the-web-api-bookstore-project"></a>Шаг 1. Создание веб-API Bookstore проекта
 
@@ -50,20 +49,16 @@ ms.locfileid: "59412454"
 2. Нажмите кнопку **файл**, затем **новый**, а затем **проекта**.
 3. Когда **новый проект** диалоговое окно отображается, разверните узел **установленные**, затем **шаблоны**, затем **Visual C#**, а затем **Web**.
 
-
    | [![](calling-web-api-from-a-windows-phone-8-application/_static/image2.png)](calling-web-api-from-a-windows-phone-8-application/_static/image1.png) |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                Щелкните изображение, чтобы развернуть                                                                |
 
-
 4. Выделите **веб-приложение ASP.NET**, введите **BookStore** для имени проекта и нажмите кнопку **ОК**.
 5. Когда **новый проект ASP.NET** отображается диалоговое окно, выберите пункт **веб-API** шаблона, а затем щелкните **ОК**.
-
 
    | [![](calling-web-api-from-a-windows-phone-8-application/_static/image4.png)](calling-web-api-from-a-windows-phone-8-application/_static/image3.png) |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                Щелкните изображение, чтобы развернуть                                                                |
-
 
 6. Когда откроется проект веб-API, удалите пример контроллера из проекта:
 
@@ -195,8 +190,6 @@ ms.locfileid: "59412454"
 
 Если коснуться сообщение об ошибке, отобразится дополнительная информация об ошибке:
 
-
 | [![](calling-web-api-from-a-windows-phone-8-application/_static/image16.png)](calling-web-api-from-a-windows-phone-8-application/_static/image15.png) |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                                                 Щелкните изображение, чтобы развернуть                                                                 |
-

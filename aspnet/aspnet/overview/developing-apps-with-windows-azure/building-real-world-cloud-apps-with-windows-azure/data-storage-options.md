@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: e51fcecb-cb33-4f9e-8428-6d2b3d0fe1bf
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/data-storage-options
 msc.type: authoredcontent
-ms.openlocfilehash: 9969a68a3e1aa043845fb5affd6d3b73dec4136d
-ms.sourcegitcommit: 289e051cc8a90e8f7127e239fda73047bde4de12
+ms.openlocfilehash: 8656f4a4211c2e97d71d76dd2f799412539896ca
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58425396"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118848"
 ---
 # <a name="data-storage-options-building-real-world-cloud-apps-with-azure"></a>Варианты хранения данных (Создание реальных облачных приложений в Azure)
 
@@ -22,7 +22,6 @@ ms.locfileid: "58425396"
 [Загрузить решение проект](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [скачайте электронную книгу](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > **Создание реальных облачных приложений в условиях Azure** электронная книга основана на презентацию, разработанная Скоттом Гатри. Здесь объясняется 13 шаблоны и рекомендации, которые помогут вам быть в успешном развертывании веб-приложений для облака. Сведения о книге, см. в разделе [первой главы](introduction.md).
-
 
 Большинство людей, используются для реляционных баз данных, и они стремятся не заметить другие параметры хранения данных при их разработке облачного приложения. Результат может быть неоптимальную производительность, высокий уровень расходов или что еще хуже, так как [NoSQL](http://en.wikipedia.org/wiki/NoSQL) (нереляционных) баз данных может обрабатывать некоторые задачи более эффективно, чем реляционные базы данных. Когда клиенты обратиться за помощью в решении проблемы хранения важных данных, часто бывает так, как они имеют реляционную базу данных, где один из вариантов NoSQL работали бы лучше. В таких ситуациях клиента было бы лучше, если они уже реализована решение NoSQL, перед развертыванием приложения в рабочей среде.
 
