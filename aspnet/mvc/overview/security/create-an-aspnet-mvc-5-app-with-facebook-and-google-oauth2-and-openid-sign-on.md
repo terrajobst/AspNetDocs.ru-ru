@@ -8,12 +8,12 @@ ms.date: 04/03/2015
 ms.assetid: 81ee500f-fc37-40d6-8722-f1b64720fbb6
 msc.legacyurl: /mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on
 msc.type: authoredcontent
-ms.openlocfilehash: f78100178d5cdc25a10603907e77fe81386877a6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8432a7610ac7be79ad03651a5fac21a62b0ca1f0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59386467"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112957"
 ---
 # <a name="create-an-aspnet-mvc-5-app-with-facebook-twitter-linkedin-and-google-oauth2-sign-on-c"></a>Создание приложения ASP.NET MVC 5 с единым входом с помощью учетных данных Facebook, Twitter, LinkedIn и Google OAuth2 (C#)
 
@@ -27,7 +27,6 @@ ms.locfileid: "59386467"
 > 
 > В руководстве также показано, как добавить данные профиля пользователя, а также как использовать API членства для добавления ролей. Это руководство было написано с [Рик Андерсон](https://blogs.msdn.com/rickAndy) (выполните мне в Twitter: [ @RickAndMSFT ](https://twitter.com/RickAndMSFT) ).
 
-
 <a id="start"></a>
 ## <a name="getting-started"></a>Начало работы
 
@@ -36,11 +35,9 @@ ms.locfileid: "59386467"
 > [!NOTE]
 > Необходимо установить Visual Studio [2013 с обновлением 3](https://go.microsoft.com/fwlink/?LinkId=390521) или более поздней версии с помощью Google OAuth 2 и отлаживать локально без предупреждений SSL.
 
-
 Нажмите кнопку **новый проект** из **запустить** страницы, или можно использовать меню и выберите **файл**, а затем **новый проект**.
 
 ![](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/_static/image1.png)  
- 
 
 <a id="1st"></a>
 ## <a name="creating-your-first-application"></a>Создание первого приложения
@@ -56,7 +53,6 @@ ms.locfileid: "59386467"
 Если вы выбрали **разместить в облаке**, заполните поля диалогового окна настройки.
 
 ![](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/_static/image4.png)
-
 
 ### <a name="use-nuget-to-update-to-the-latest-owin-middleware"></a>Используйте NuGet для обновления до последней по промежуточного слоя OWIN
 
@@ -161,7 +157,6 @@ ms.locfileid: "59386467"
 
 > [!WARNING]
 > Актуальные инструкции для проверки подлинности Facebook OAuth2, см. в разделе [проверки подлинности Facebook, Настройка](/aspnet/core/security/authentication/social/facebook-logins)
-
 
 <a id="mdb"></a>
 ## <a name="examine-the-membership-data"></a>Изучите данные членства

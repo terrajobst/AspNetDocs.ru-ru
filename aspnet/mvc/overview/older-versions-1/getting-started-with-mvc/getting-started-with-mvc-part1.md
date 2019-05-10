@@ -8,12 +8,12 @@ ms.date: 08/14/2010
 ms.assetid: bf4a1c19-0a94-4208-b268-a96ddcf26946
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part1
 msc.type: authoredcontent
-ms.openlocfilehash: dcc2e703829cfa0b77575870feff451fd0738f56
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f8f0014776ba1313119e8c39c63a216b0fc864e7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59416497"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123123"
 ---
 # <a name="intro-to-aspnet-mvc"></a>Введение в ASP.NET MVC
 
@@ -24,7 +24,6 @@ ms.locfileid: "59416497"
 >
 >
 > Это руководство для начинающих, в котором представлены основные сведения по ASP.NET MVC. Вы создадите простое веб-приложение, которое считывает и записывает в базу данных. Посетите [центр обучения ASP.NET MVC](../../../index.md) для поиска других ASP.NET MVC, учебники и примеры.
-
 
 Создадим наш первый веб-приложение ASP.NET MVC с помощью [Visual Web Developer 2010 Express](https://www.microsoft.com/express/Web/). Сделаем небольшое приложение списка фильмов, сообщите нам создать и список фильмов.
 

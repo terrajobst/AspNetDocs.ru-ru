@@ -8,12 +8,12 @@ ms.date: 06/09/2009
 ms.assetid: 14873c5d-81a9-455b-bd71-30fb555583e7
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/displaying-a-custom-error-page-vb
 msc.type: authoredcontent
-ms.openlocfilehash: dc3ff989b6861fe62cce0199a62adef6107206d5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 961959300f5481a297ed8a9a17131c076d1dfd69
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384192"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116701"
 ---
 # <a name="displaying-a-custom-error-page-vb"></a>Отображение страницы пользовательской ошибки (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384192"
 [Скачать код](http://download.microsoft.com/download/1/0/C/10CC829F-A808-4302-97D3-59989B8F9C01/ASPNET_Hosting_Tutorial_11_VB.zip) или [скачать PDF](http://download.microsoft.com/download/5/C/5/5C57DB8C-5DEA-4B3A-92CA-4405544D313B/aspnet_tutorial11_CustomErrors_vb.pdf)
 
 > Пользователь видят при возникновении ошибки среды выполнения в веб-приложения ASP.NET? Ответ зависит от веб сайта &lt;customErrors&gt; конфигурации. По умолчанию пользователи отображаются родительной желтый экрана, proclaiming, что произошла ошибка среды выполнения. Этом руководстве показано, как настроить эти параметры отображения красоту приятная пользовательскую страницу ошибки, соответствующий вид веб сайта.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -47,7 +46,6 @@ ms.locfileid: "59384192"
 > [!NOTE]
 > Воспроизведение ошибки в демонстрационное веб-приложение можно загрузить вы можете открыть страницу `Genre.aspx?ID=foo` напрямую или щелкните ссылку «Создать ошибка среды выполнения» в `Default.aspx`.
 
-
 Обратите внимание, сведения об исключении, представленные в **рис.1**. Сообщение об исключении, «ошибка при преобразовании строки символов в тип uniqueidentifier» находится в верхней части страницы. Тип исключения, `System.Data.SqlClient.SqlException`, присутствует в списке, а также. Также показана трассировка стека.
 
 [![](displaying-a-custom-error-page-vb/_static/image2.png)](displaying-a-custom-error-page-vb/_static/image1.png)
@@ -61,7 +59,6 @@ ms.locfileid: "59384192"
 
 > [!NOTE]
 > Если кто Усвоил материал и при использовании в качестве работы веб-узла компании DiscountASP.NET, вы можете заметить, что YSOD ошибка среды выполнения не отображаются при просмотре на действующем сайте. Это обусловлено компании DiscountASP.NET имеет свои серверы, настроенные для отображения YSOD подробности исключения по умолчанию. Хорошая новость состоит в том, что это поведение по умолчанию можно переопределить, добавив `<customErrors>` раздел вашей `Web.config` файл. В разделе «Настройка которой ошибка откроется страница» проверяет `<customErrors>` раздел подробно.
-
 
 [![](displaying-a-custom-error-page-vb/_static/image5.png)](displaying-a-custom-error-page-vb/_static/image4.png)
 
@@ -139,7 +136,6 @@ ms.locfileid: "59384192"
 > [!NOTE]
 > Ознакомьтесь с [страницы ошибок 404, один раз более](http://www.smashingmagazine.com/2009/01/29/404-error-pages-one-more-time/) рекомендации по созданию эффективной страницы ошибок 404.
 
-
 [![](displaying-a-custom-error-page-vb/_static/image19.png)](displaying-a-custom-error-page-vb/_static/image18.png)**Рис. 7**: Чем точнее сообщение отображается страница ошибки 404 с помощью пользовательской `Oops.aspx`  
  ([Просмотр полноразмерного изображения](displaying-a-custom-error-page-vb/_static/image20.png)) 
 
@@ -147,7 +143,6 @@ ms.locfileid: "59384192"
 
 > [!NOTE]
 > Пользовательскую страницу ошибки отображается только в том случае, когда выполняется запрос к ресурсу, обрабатывается обработчиком ASP.NET. Как уже говорилось в [основные различия между IIS и ASP.NET Development Server](core-differences-between-iis-and-the-asp-net-development-server-vb.md) руководства, веб-сервер может обрабатывать определенные запросы сам. По умолчанию IIS веб-сервер обрабатывает запросы для статического содержимого, такие как изображения и файлы HTML без вызова ядро ASP.NET. Следовательно Если пользователь запрашивает файл образа несуществующие они получат обратно сообщение об ошибке 404 IIS по умолчанию, а не ASP. NET настроить страницу ошибки.
-
 
 ## <a name="summary"></a>Сводка
 

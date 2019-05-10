@@ -8,12 +8,12 @@ ms.date: 05/30/2007
 ms.assetid: bd87413c-8160-4520-a8a2-43b555c4183a
 msc.legacyurl: /web-forms/overview/data-access/caching-data/caching-data-with-the-objectdatasource-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 3e8fa3fe62ee2f58cd5cfbd32d17a3613cf80c12
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 596414748365c440ca50453c3e905ba6edb43de8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59382504"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114979"
 ---
 # <a name="caching-data-with-the-objectdatasource-c"></a>Кэширование данных с помощью ObjectDataSource (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59382504"
 [Скачайте пример приложения](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_58_CS.exe) или [скачать PDF](caching-data-with-the-objectdatasource-cs/_static/datatutorial58cs1.pdf)
 
 > Кэширование может означать разницу между медленное и быстрый веб-приложения. Это руководство представляет собой первый из четырех, рассмотрим подробные кэширования в ASP.NET. Узнайте основные понятия кэширования и кэшировать на уровень представления данных через элемент управления ObjectDataSource.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -57,32 +56,25 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 - `AtApplicationStartup.aspx`
 - `SqlCacheDependencies.aspx`
 
-
 ![Добавление страниц ASP.NET для кэширования руководств](caching-data-with-the-objectdatasource-cs/_static/image1.png)
 
 **Рис. 1**: Добавление страниц ASP.NET для кэширования руководств
 
-
 Как и в других папках, `Default.aspx` в `Caching` папку перечислит учебные курсы в своем разделе. Помните, что `SectionLevelTutorialListing.ascx` пользовательский элемент управления предоставляет следующие функциональные возможности. Поэтому добавьте данный пользовательский элемент управления для `Default.aspx` , перетащив его из обозревателя решений на странице s режиме конструктора.
-
 
 [![Рис. 2. Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](caching-data-with-the-objectdatasource-cs/_static/image3.png)](caching-data-with-the-objectdatasource-cs/_static/image2.png)
 
 **Рис. 2**: Рис. 2. Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-cs/_static/image4.png))
 
-
 Наконец, добавьте эти страницы как записи для `Web.sitemap` файла. В частности, добавьте следующую разметку после работы с двоичными данными `<siteMapNode>`:
-
 
 [!code-xml[Main](caching-data-with-the-objectdatasource-cs/samples/sample1.xml)]
 
 После обновления `Web.sitemap`, Отвлекитесь и просмотрите учебный веб-узел в обозревателе. В меню слева теперь есть элементы для кэширования учебники.
 
-
 ![Карта узла теперь включают записи для кэширования учебники](caching-data-with-the-objectdatasource-cs/_static/image5.png)
 
 **Рис. 3**: Карта узла теперь включают записи для кэширования учебники
-
 
 ## <a name="step-2-displaying-a-list-of-products-in-a-web-page"></a>Шаг 2. Отображение списка продуктов на веб-странице
 
@@ -90,19 +82,15 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 
 Сначала откройте `ObjectDataSource.aspx` странице в `Caching` папку. Перетащите элемент управления GridView с панели инструментов в конструктор, задайте его `ID` свойства `Products`и в его смарт-тега выберите, чтобы привязать его к новый элемент управления ObjectDataSource с именем `ProductsDataSource`. Настройте элемент ObjectDataSource для работы с `ProductsBLL` класса.
 
-
 [![Настройка ObjectDataSource на использование класса ProductsBLL](caching-data-with-the-objectdatasource-cs/_static/image7.png)](caching-data-with-the-objectdatasource-cs/_static/image6.png)
 
 **Рис. 4**: Настройка ObjectDataSource для использования `ProductsBLL` класс ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-cs/_static/image8.png))
 
-
 Для этой страницы позволяют создать изменяемого элемента управления GridView, чтобы мы рассмотрим, что происходит при изменении данных, кэшированных в коллекции через интерфейс s GridView s. Оставьте стрелку раскрывающегося списка на вкладке ВЫБЕРИТЕ значение по умолчанию `GetProducts()`, но изменения выбранного элемента на вкладке "обновления" для `UpdateProduct` перегрузку, которая принимает `productName`, `unitPrice`, и `productID` как его входные параметры.
-
 
 [![Установить обновления вкладку s раскрывающегося списка список по перегрузке UpdateProduct соответствующие](caching-data-with-the-objectdatasource-cs/_static/image10.png)](caching-data-with-the-objectdatasource-cs/_static/image9.png)
 
 **Рис. 5**: Значение s вкладку обновление с раскрывающимся списком приемлемым `UpdateProduct` перегрузки ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-cs/_static/image11.png))
-
 
 Наконец раскрывающиеся списки на вкладках INSERT и DELETE (нет) и нажмите кнопку Готово. После завершения работы мастера настройки источника данных, Visual Studio задает ObjectDataSource s `OldValuesParameterFormatString` свойства `original_{0}`. Как уже говорилось в [Обзор Вставка, обновление и удаление данных](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-cs.md) руководстве, это свойство должно быть удалены из декларативного синтаксиса или установить обратно к значению по умолчанию `{0}`, в порядке для рабочего процесса обновления для Продолжить без ошибок.
 
@@ -113,24 +101,19 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 > [!NOTE]
 > Требуется проверка того, как настройка интерфейса правки s GridView? Если Да, обращаться к [Настройка интерфейса изменения данных](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-cs.md) руководства.
 
-
 [![Включите поддержку GridView для редактирования, сортировку и разбиение по страницам](caching-data-with-the-objectdatasource-cs/_static/image13.png)](caching-data-with-the-objectdatasource-cs/_static/image12.png)
 
 **Рис. 6**: Включить поддержку GridView для редактирования, сортировку и разбиение по страницам ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-cs/_static/image14.png))
 
-
 После внесения этих изменений GridView, GridView и ObjectDataSource s декларативная разметка должен выглядеть следующим образом:
-
 
 [!code-aspx[Main](caching-data-with-the-objectdatasource-cs/samples/sample2.aspx)]
 
 Как показано на рис. 7, изменяемого элемента управления GridView содержит имя, категорию и цену каждого из продуктов в базе данных. Отвлекитесь и протестировать функции сортировки страницы s результаты, страницы по ним и изменить запись.
 
-
 [![Каждого продукта — имя, категория и цена указана в сортируемый, Pageable, изменяемого элемента управления GridView](caching-data-with-the-objectdatasource-cs/_static/image16.png)](caching-data-with-the-objectdatasource-cs/_static/image15.png)
 
 **Рис. 7**: Каждого продукта — имя, категория и цена указана в сортируемый, Pageable, изменяемого элемента управления GridView ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-cs/_static/image17.png))
-
 
 ## <a name="step-3-examining-when-the-objectdatasource-is-requesting-data"></a>Шаг 3. Проверка при ObjectDataSource является запрос данных
 
@@ -140,14 +123,11 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 
 Чтобы полностью оценить частоту, с помощью которого данные извлекаются из базы данных, позволяют отображать сообщение о том, когда данные повторно получаются s. Добавление элемента управления Label Web над элементом управления GridView с именем `ODSEvents`. Очистите его `Text` и установите его `EnableViewState` свойства `false`. Под метку, добавьте кнопку веб-элемент управления и задайте его `Text` значение обратной передачи.
 
-
 [![Добавление метки и кнопку на страницу над элементом управления GridView](caching-data-with-the-objectdatasource-cs/_static/image19.png)](caching-data-with-the-objectdatasource-cs/_static/image18.png)
 
 **Рис. 8**: Добавление метки и кнопки к странице выше GridView ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-cs/_static/image20.png))
 
-
 При выполнении рабочего процесса доступа данных, ObjectDataSource s `Selecting` вызывает событие, прежде чем создается базовый объект и его настроенный метод вызывается. Создайте обработчик событий для этого события и добавьте следующий код:
-
 
 [!code-csharp[Main](caching-data-with-the-objectdatasource-cs/samples/sample3.cs)]
 
@@ -155,16 +135,13 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 
 Посетите эту страницу в браузере. При первом посещении страницы отображается инициируется событие выделение текста. Нажмите кнопку обратной передачи и обратите внимание на то, что текст не отображается (предполагая, что GridView s `EnableViewState` свойству `true`, значение по умолчанию). Это обусловлено тем, при обратной передаче GridView воссоздается из состояния представления, и поэтому t включить в элемент управления ObjectDataSource для своих данных. Сортировка, разбиение по страницам и изменение данных, тем не менее, приводит к GridView выполнять повторную привязку к источнику данных и поэтому выбор событие отобразится текст.
 
-
 [![Всякий раз, когда GridView повторно привязываются к источнику данных, отображается событие Selecting](caching-data-with-the-objectdatasource-cs/_static/image22.png)](caching-data-with-the-objectdatasource-cs/_static/image21.png)
 
 **Рис. 9**: Всякий раз, когда GridView повторно привязываются к источнику данных, инициируется событие Selecting отображается ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-cs/_static/image23.png))
 
-
 [![Щелкнув кнопку обратной передачи приводит к GridView, перестраиваются заново из состояния представления](caching-data-with-the-objectdatasource-cs/_static/image25.png)](caching-data-with-the-objectdatasource-cs/_static/image24.png)
 
 **Рис. 10**: Нажатие кнопки обратной передачи GridView, перестраиваются заново из состояния представления ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-cs/_static/image26.png))
-
 
 Может показаться излишним, для получения данных базы данных каждый раз, разбиваемых по страницам или сортировки данных. В конце концов так как мы повторно с разбиением на страницы по умолчанию, элемент управления ObjectDataSource получил все записи при отображении на первой странице. Даже если GridView не поддерживает сортировку и разбиение по страницам поддержки, необходимо получить данные из базы данных каждый раз при первом посещении страницы любым пользователем (и при каждой обратной передаче, если состояние просмотра отключено). Однако если GridView отображаются те же данные для всех пользователей, эти запросы дополнительной базы данных излишним. Почему бы не кэшировать результаты, возвращаемые `GetProducts()` метод и привязки GridView теми кэшированные результаты?
 
@@ -179,11 +156,9 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 
 Позвольте настроить s `ProductsDataSource` ObjectDataSource для кэширования данных на 30 секунд на абсолютной шкале. Набор ObjectDataSource s `EnableCaching` свойства `true` и его `CacheDuration` значение 30. Оставьте `CacheExpirationPolicy` свойство, значение по умолчанию `Absolute`.
 
-
 [![Настройте элемент ObjectDataSource для кэширования данных на 30 секунд](caching-data-with-the-objectdatasource-cs/_static/image28.png)](caching-data-with-the-objectdatasource-cs/_static/image27.png)
 
 **Рис. 11**: Настройте элемент ObjectDataSource для кэширования данных на 30 секунд ([Просмотр полноразмерного изображения](caching-data-with-the-objectdatasource-cs/_static/image29.png))
-
 
 Сохраните изменения и вернитесь на эту страницу в браузере. Текст событие, запускаемое выбор будет отображаться при первом посещении страницы, так как изначально данные не в кэше. В отличие от последующих обратных передачах активации, нажав кнопку обратной передачи, сортировка, разбиение по страницам или кнопки Edit или Отмена *не* повторного отображения события Selecting инициируется текста. Это обусловлено `Selecting` событие срабатывает, только если элемент управления ObjectDataSource получает данные из базового объекта; `Selecting` событий не выполняется, если данные извлекаются из кэша данных.
 
@@ -192,14 +167,11 @@ ASP.NET 2.0 предлагает широкий набор параметров 
 > [!NOTE]
 > Если вы видите текст событие Selecting часто, даже в том случае, если предполагается, что элемент управления ObjectDataSource для работы с кэшированными данными, возможно из-за нехватки памяти. Если не хватает памяти, данные, добавленные в кэш элементом ObjectDataSource может были очистки для. Если t ObjectDataSource правильно кэшировать данные или только кэши данных нерегулярно, закройте некоторые приложения, чтобы освободить память и повторите попытку.
 
-
 Рис. 12 показано s ObjectDataSource, кэширование рабочего процесса. При возникновении события Selecting текст отображается на экране, поскольку данные не найден в кэше и должны были быть получены из базового объекта. При этом текст отсутствует, однако его s, так как данные были доступны из кэша. Когда данные возвращаются из кэша существует s не вызов к базовому объекту и, следовательно, запрос базы данных не выполнен.
-
 
 ![Элемент управления ObjectDataSource сохраняет и извлекает данные из кэша данных](caching-data-with-the-objectdatasource-cs/_static/image30.png)
 
 **Рис. 12**: Элемент управления ObjectDataSource сохраняет и извлекает данные из кэша данных
-
 
 Каждое приложение ASP.NET имеет свой собственный кэш данных экземпляра, s, общими для всех страниц и посетителей. Что означает, что данные, хранящиеся в кэше данных элемент управления ObjectDataSource аналогично совместно для всех пользователей, посещающих страницу. Чтобы проверить это, откройте `ObjectDataSource.aspx` страницу в браузере. При первом просмотре странице будет отображаться текст событие Selecting (предполагается, что данные, добавленные в кэш с предыдущих тестов к этому моменту, исключен). Откройте второй экземпляр браузера и скопируйте и вставьте URL-адрес в первом экземпляре обозревателя до секунды. Во втором экземпляре обозревателя, текст события выбор не отображается, так как он s, используя те же кэшированные данные, что и первый.
 

@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: fdc3599a-5217-44c1-951f-0eec9812dce7
 msc.legacyurl: /signalr/overview/older-versions/tutorial-getting-started-with-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: 288f5017acde5a103460ace688933609fba0b02c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 87a90b47ae30bee43e0b0c1e078597db54b8e67d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391030"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113870"
 ---
 # <a name="tutorial-getting-started-with-signalr-1x"></a>Учебник. Начало работы с SignalR 1.x
 
@@ -22,7 +22,6 @@ ms.locfileid: "59391030"
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
 > В этом учебнике содержатся сведения об использовании SignalR для создания приложения разговора в режиме реального времени. Следует добавить пустой веб-приложения ASP.NET SignalR и создать HTML-страницы для отправки и отображения сообщений.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -148,7 +147,6 @@ HTML-страницы в примере кода показано, как исп
 > [!NOTE]
 > В jQuery ссылку на класс сервера и его членах находится в верхний регистр. Ссылается на пример кода C# **ChatHub** класс в jQuery как **chatHub**.
 
-
 Следующий код является, как создать функцию обратного вызова в скрипте. Класс концентратора на сервере вызывает эту функцию для отправки обновлений содержимого для каждого клиента. Две строки, кодировать в HTML содержимое перед его отображением являются необязательными и Показать простой способ предотвратить внедрение скрипта.
 
 [!code-html[Main](tutorial-getting-started-with-signalr/samples/sample7.html)]
@@ -157,7 +155,6 @@ HTML-страницы в примере кода показано, как исп
 
 > [!NOTE]
 > Такой подход гарантирует, что соединение установлено, перед выполнением обработчика событий.
-
 
 [!code-javascript[Main](tutorial-getting-started-with-signalr/samples/sample8.js)]
 

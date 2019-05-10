@@ -8,12 +8,12 @@ ms.date: 02/09/2013
 ms.assetid: 75af2e17-6ed3-4d24-8ea1-bc340027c318
 msc.legacyurl: /single-page-application/overview/templates/hottowel-template
 msc.type: authoredcontent
-ms.openlocfilehash: 017f550e2caffe1b20823e9b1880cbb4e968005a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f3457840d1597d06c1a1b1ec2a865dd70726446c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379941"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113330"
 ---
 # <a name="hot-towel-template"></a>Шаблон Hot Towel
 
@@ -30,13 +30,11 @@ ms.locfileid: "59379941"
 > 
 > "Горячий" выкинуть: Так как вы не хотите перейти к SPA без него!
 
-
 Требуется для создания SPA, но не можете решить, с которого следует начать? Используйте выкинуть "Горячий" и в секунд вы получите SPA, все средства, необходимые для создания на нем!
 
 "Горячий" выкинуть создает это идеальное начало для создания одностраничных приложений (SPA) с помощью ASP.NET. Изначально вы обеспечивается модульная структура для кода, навигация по представлению, привязки данных, с богатыми возможностями управления и простой, но элегантного стилей. "Горячий" выкинуть предоставляет все необходимое для создания SPA, позволяя вам сосредоточиться на своем приложении, а не инфраструктуру.
 
 > Дополнительные сведения о построении SPA из [Джон Папа видео, учебных пособий и курсов Pluralsight](http://johnpapa.net/spa?vsix).
-
 
 ## <a name="application-structure"></a>Структура приложений
 

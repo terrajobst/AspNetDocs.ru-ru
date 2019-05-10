@@ -8,12 +8,12 @@ ms.date: 04/17/2013
 ms.assetid: dcd4593b-1118-418a-af71-d12ff33fb36d
 msc.legacyurl: /signalr/overview/older-versions/signalr-1x-hubs-api-guide-javascript-client
 msc.type: authoredcontent
-ms.openlocfilehash: a28b6043ac183ceb66e3ef2ad322436901aa50bc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 24850fe5229490bf600e09ad4718abb575a845fa
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59412844"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116974"
 ---
 # <a name="signalr-1x-hubs-api-guide---javascript-client"></a>Руководство по API концентраторов SignalR 1.x — клиент JavaScript
 
@@ -26,7 +26,6 @@ ms.locfileid: "59412844"
 > API концентраторов SignalR позволяет вам выбрать удаленные вызовы процедур (RPC), с сервера подключенным клиентам и от клиентов к серверу. В серверном коде определяют методы, которые могут быть вызваны клиентов и вызывать методы, которые выполняются на клиенте. В клиентском коде определяют методы, которые могут вызываться с сервера и вызывать методы, которые выполняются на сервере. SignalR берет на себя все необходимое для вас клиент сервер.
 > 
 > SignalR также предлагает API низкого уровня, вызывается постоянные подключения. Введение в SignalR, концентраторы и постоянные подключения, или в этом учебнике показано, как создать полное приложение SignalR, см. в разделе [SignalR — Приступая к работе](../getting-started/index.md).
-
 
 ## <a name="overview"></a>Обзор
 
@@ -109,7 +108,6 @@ ms.locfileid: "59412844"
 > [!NOTE]
 > Для клиентов Windows 8 (Windows Store) JavaScript используйте физической посредника вместо того, динамически создаваемый. Дополнительные сведения см. в разделе [прокси, созданного как создать физический файл для SignalR](#manualproxy) далее в этом разделе.
 
-
 В представлении ASP.NET MVC 4 Razor используйте тильда для обращения к корневой папке приложения в файл справки прокси-сервера:
 
 [!code-html[Main](signalr-1x-hubs-api-guide-javascript-client/samples/sample5.html)]
@@ -176,7 +174,6 @@ ms.locfileid: "59412844"
 > [!NOTE]
 > Обычно вы регистрировать обработчики событий перед вызовом `start` метод, чтобы установить соединение. Если вы хотите зарегистрировать некоторые обработчики событий после подключения к, это можно сделать, но необходимо зарегистрировать по крайней мере один из вашей обработчик или обработчики событий перед вызовом `start` метод. Одной из причин этого является может существовать множество центров в приложении, что вы не захотите активировать `OnConnected` событий на каждый центр, если только вы собираетесь использовать для одного из них. Когда подключение будет установлено, наличие клиентский метод на прокси-сервера концентратора является указывающий SignalR для активации `OnConnected` событий. Если не зарегистрировать все обработчики событий, перед вызовом `start` метод, можно вызывать методы на концентраторе, но центра `OnConnected` не будет вызван метод и методы клиента не будет вызываться с сервера.
 
-
 <a id="connequivalence"></a>
 
 ### <a name="connectionhub-is-the-same-object-that-hubconnection-creates"></a>$. connection.hub совпадает с объектом этого $.hubConnection() создает
@@ -234,7 +231,6 @@ ms.locfileid: "59412844"
 > - Сведения об использовании подключений между доменами с Internet Explorer 9, см. в разделе [цепочке обсуждений StackOverflow](http://stackoverflow.com/questions/13573397/siganlr-ie9-cross-domain-request-dont-work).
 > - Сведения об использовании подключений между доменами с Chrome, см. в разделе [цепочке обсуждений StackOverflow](http://stackoverflow.com/questions/15467373/signalr-1-0-1-cross-domain-request-cors-with-chrome).
 > - В примере кода используется значение по умолчанию «/ signalr» URL-адрес для подключения к службе SignalR. Сведения о том, как указать другой базовый URL-адрес, см. в разделе [ASP.NET руководство по API концентраторов SignalR - Server - URL-адрес /signalr](../guide-to-the-api/hubs-api-guide-server.md#signalrurl).
-
 
 <a id="configureconnection"></a>
 

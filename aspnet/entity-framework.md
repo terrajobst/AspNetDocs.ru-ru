@@ -8,23 +8,21 @@ ms.author: riande
 ms.date: 03/12/2010
 msc.legacyurl: /entity-framework
 msc.type: content
-ms.openlocfilehash: 26862565b23f60baf3698c0c6d63c7daa147abe0
-ms.sourcegitcommit: 2d53ed9e4c8b19d3526cbc689bfa8394c9449cec
+ms.openlocfilehash: c6fe7605a7386621bd4a962b3c3b011fb80b11c8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59905661"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118255"
 ---
 # <a name="entity-framework"></a>Entity Framework
 
 Entity Framework (EF) — это объектно реляционного сопоставления, который позволяет разработчикам .NET работать с реляционными данными с помощью специфических для домена объектов. Это устраняет необходимость в большей части кода для доступа к данным, который разработчикам обычно приходится писать.
 
-
 - [Получите его:](https://msdn.com/data/ee712906) Добавить в проект и воспользоваться преимуществами этот мощный O/крепления.
 - [Начало работы:](https://msdn.com/data/ee712907) См. в руководстве по видео и учебники, которые помогут вам эффективнее использовать свои данные.
 - [Получите справку:](https://msdn.com/data/hh913619) Узнайте, как получить помощь от экспертов и участие в сообществе данных на сайте Stack Overflow.
 - [Участия.](https://github.com/aspnet/EntityFramework6) Узнайте, как помочь усовершенствовать Entity Framework, модель открытой разработки даже при посещении сайта GitHub.
-
 
 Использование Entity Framework с ASP.NET
 

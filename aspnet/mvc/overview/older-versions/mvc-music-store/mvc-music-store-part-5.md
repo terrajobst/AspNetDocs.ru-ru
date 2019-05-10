@@ -8,12 +8,12 @@ ms.date: 04/21/2011
 ms.assetid: 6b09413a-6d6a-425a-87c9-629f91b91b28
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-5
 msc.type: authoredcontent
-ms.openlocfilehash: e02e15a8955fa42692fac486dadfa426540295f7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 20b99cbe57b5dfa623205838a5929733a6c2d70d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59387495"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112988"
 ---
 # <a name="part-5-edit-forms-and-templating"></a>Часть 5. Изменение форм и создание шаблонов
 
@@ -24,7 +24,6 @@ ms.locfileid: "59387495"
 > Store музыки MVC — это реализация хранилища упрощенный пример, который продает музыкальные альбомы через Интернет и реализует базовый сайт администрирования, вход пользователя и корзины для покупок функциональные возможности.
 > 
 > В этой серии руководств описаны все шаги, необходимые для построения примера приложения ASP.NET MVC Music Store. Часть 5 описывается изменение форм и шаблонов.
-
 
 В последние главе мы были загрузка данных из базы данных и его отображения. В этой главе мы также дает редактирования данных.
 
@@ -260,7 +259,6 @@ Entity Framework создает соответствующие команды SQ
 ![](mvc-music-store-part-5/_static/image18.png)
 
 Примечание. Это показывает простой пример создания и использования вспомогательного метода в одном представлении. Дополнительные сведения о создании вспомогательные функции, которые можно использовать на протяжении всего веб-узла, см. в разделе в моем блоге: [http://bit.ly/mvc3-helper-options](http://bit.ly/mvc3-helper-options)
-
 
 > [!div class="step-by-step"]
 > [Назад](mvc-music-store-part-4.md)

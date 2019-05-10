@@ -8,12 +8,12 @@ ms.date: 02/22/2015
 ms.assetid: 148d9ca7-1af1-44b6-a9fb-91e261b9b463
 msc.legacyurl: /signalr/overview/performance/signalr-connection-density-testing-with-crank
 msc.type: authoredcontent
-ms.openlocfilehash: bb8a7da1080dc325c0479b337d114b8dcdf6e102
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 901e039fbb81651ed18d560c99745b7e7f716e01
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59390068"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116091"
 ---
 # <a name="signalr-connection-density-testing-with-crank"></a>Тестирование плотности подключений SignalR с помощью Crank
 
@@ -22,7 +22,6 @@ ms.locfileid: "59390068"
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
 > В этой статье описывается, как использовать средство ручки для тестирования приложения с несколькими клиентами имитации.
-
 
 После запуска приложения в его среде размещения (либо Azure веб-роли, службы IIS, или размещение с помощью Owin) можно проверить ответ приложения на высокий уровень плотности подключений, используя средство ручки. Среда размещения может быть сервер Internet Information Services (IIS), хостом Owin или веб-роли Azure. (Примечание: Счетчики производительности недоступны на веб-приложениях службы приложений Azure, поэтому вы не сможете получить данные о производительности от плотности Проверка подключения.)
 

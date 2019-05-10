@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: a14121ae-02cf-4024-8af0-9dd0dc810690
 msc.legacyurl: /signalr/overview/advanced/dependency-injection
 msc.type: authoredcontent
-ms.openlocfilehash: 1b5d36529b52dfcbebf34cbfa230b3b3b4e83b81
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 52978b10b6c131ac8eff4535216cc60b43fdf3de
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59405382"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120105"
 ---
 # <a name="dependency-injection-in-signalr"></a>Внедрение зависимостей в SignalR
 
@@ -37,7 +37,6 @@ ms.locfileid: "59405382"
 > ## <a name="questions-and-comments"></a>Вопросы и комментарии
 >
 > Оставьте свои отзывы на том, как вам понравилось, и этот учебник и что можно улучшить в комментариях в нижней части страницы. Если у вас есть вопросы, которые не имеют отношения к руководству, их можно разместить [форум по ASP.NET SignalR](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) или [StackOverflow.com](http://stackoverflow.com/).
-
 
 Внедрение зависимостей является способ удаления жестких зависимостей между объектами, упрощая для замены зависимости объекта, либо для тестирования (с использованием макетов объектов) или для изменения поведения во время выполнения. Этом руководстве показано, как выполнить внедрения зависимостей для концентраторов SignalR. Также показано, как использовать контейнеры IoC с SignalR. IoC-контейнер — это стандартная структура для внедрения зависимостей.
 
@@ -93,7 +92,6 @@ ms.locfileid: "59405382"
 
 > [!NOTE]
 > «IoC» означает «инверсии элемента управления», который является общий шаблон, когда платформа вызывает в код приложения. Контейнер IoC создает объектов, который «инвертирует» обычного потока управления.
-
 
 ## <a name="using-ioc-containers-in-signalr"></a>Использование контейнеров IoC в SignalR
 

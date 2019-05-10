@@ -8,12 +8,12 @@ ms.date: 08/20/2015
 ms.assetid: f50a5cdb-c06a-46ed-aa14-fc5b049dc8dc
 msc.legacyurl: /mvc/overview/security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication
 msc.type: authoredcontent
-ms.openlocfilehash: 25d21efaf2f01ee1c162408a3caf699ac818aaa7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2a0275959cbada52b53adca984ee1023a2ee2552
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384965"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112342"
 ---
 # <a name="aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication"></a>Приложение ASP.NET MVC 5 с двухфакторной проверкой подлинности по SMS и электронной почте
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384965"
 > Этом руководстве показано, как создавать веб-приложение ASP.NET MVC 5 с двухфакторной проверки подлинности. Следует выполнить [создать безопасное веб-приложение ASP.NET MVC 5 со входом, по электронной почте подтверждение и сброс пароля](create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md) прежде чем продолжить. Можно загрузить готовое приложение [здесь](https://code.msdn.microsoft.com/MVC-5-with-2FA-email-8f26d952). Загружаемый файл содержит отладки вспомогательные методы, которые позволяют тестировать подтверждение по электронной почте и SMS без настройки электронной почты или поставщика SMS.
 > 
 > Это руководство было написано с [Рик Андерсон](https://blogs.msdn.com/rickAndy) (Twitter: [ @RickAndMSFT ](https://twitter.com/RickAndMSFT) ).
-
 
 - [Создание приложения ASP.NET MVC](#createMvc)
 - [Настройка SMS для двухфакторной проверки подлинности](#SMS)
@@ -36,7 +35,6 @@ ms.locfileid: "59384965"
 
 > [!NOTE]
 > Предупреждение: Следует выполнить [создать безопасное веб-приложение ASP.NET MVC 5 со входом, по электронной почте подтверждение и сброс пароля](create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md) прежде чем продолжить. Необходимо установить [Visual Studio 2013 с обновлением 3](https://go.microsoft.com/fwlink/?LinkId=390465) или более поздней версии для работы с этим руководством.
-
 
 1. Создайте новый проект веб-ASP.NET и выберите шаблон MVC. Веб-форм также поддерживает ASP.NET Identity, поэтому можно выполнить аналогичные действия в приложении web forms.  
     ![](aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication/_static/image1.png)

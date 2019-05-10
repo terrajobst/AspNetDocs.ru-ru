@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: a19ff2ce-3f7e-4358-9a51-a1403da9c63e
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/enable-automated-unit-testing
 msc.type: authoredcontent
-ms.openlocfilehash: b0c9cd7ab36a8414e0d7d50a68b05bb09a5f24f1
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 09a7aa186605a6cce48ee94028425ded957c00d3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59387910"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117355"
 ---
 # <a name="enable-automated-unit-testing"></a>Включение автоматического модульного тестирования
 
@@ -26,7 +26,6 @@ ms.locfileid: "59387910"
 > Шаг 12 показано, как разработать набор автоматических модульных тестов для проверки нашего функционала NerdDinner и которое даст нам уверенность, изменения и улучшения в приложение в будущем.
 > 
 > Если вы используете ASP.NET MVC 3, рекомендуется следовать [Приступая к работе с MVC 3](../../older-versions/getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) или [MVC Music Store](../../older-versions/mvc-music-store/mvc-music-store-part-1.md) учебники.
-
 
 ## <a name="nerddinner-step-12-unit-testing"></a>NerdDinner Step 12: Модульное тестирование
 
@@ -264,7 +263,6 @@ Visual Studio 2008 Professional (и более поздние версии) вк
 Ниже приведены два теста, которые демонстрирует, как мы можем передать форму, передаваемую значения для вспомогательного метода UpdateModel() для использования. Мы это сделать, создании и заполнении объекта FormCollection и затем присвоить его свойству «Значение ValueProvider» на контроллере.
 
 Первый тест проверяет, что на сохранение успешным браузер перенаправляется на действие details. Второй тест проверяет, что при отправке недопустимые входные данные действия повторно отображает представление изменения еще раз с сообщением об ошибке.
-
 
 [!code-csharp[Main](enable-automated-unit-testing/samples/sample17.cs)]
 

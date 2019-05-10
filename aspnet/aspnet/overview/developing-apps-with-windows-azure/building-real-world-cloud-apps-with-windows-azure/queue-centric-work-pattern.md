@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: cc1ad51b-40c3-4c68-8620-9aaa0fd1f6cf
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/queue-centric-work-pattern
 msc.type: authoredcontent
-ms.openlocfilehash: 0d6d8375425f3a0cb915c2f7844f6c5191ea4e95
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9081691207a1a8ccd58e1a93a0be06af15c0b2d0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59392018"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118716"
 ---
 # <a name="queue-centric-work-pattern-building-real-world-cloud-apps-with-azure"></a>Шаблон на основе очередей работы (Создание реальных облачных приложений в Azure)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59392018"
 [Загрузить решение проект](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [скачайте электронную книгу](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > **Создание реальных облачных приложений в условиях Azure** электронная книга основана на презентацию, разработанная Скоттом Гатри. Здесь объясняется 13 шаблоны и рекомендации, которые помогут вам быть в успешном развертывании веб-приложений для облака. Сведения о книге, см. в разделе [первой главы](introduction.md).
-
 
 Ранее, мы видели, что с помощью нескольких служб может привести к «составного» SLA, где — это эффективный соглашение об уровне ОБСЛУЖИВАНИЯ приложения *продукта* отдельных соглашений об уровне обслуживания. Например приложение Fix It использует веб-сайтов, хранилища и базы данных SQL. В случае сбоя любого из этих служб приложения возникает сообщение об ошибке для пользователя.
 

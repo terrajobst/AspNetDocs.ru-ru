@@ -8,12 +8,12 @@ ms.date: 03/29/2013
 ms.assetid: eeef9f73-6de3-49f9-b50b-9af22108f2ce
 msc.legacyurl: /signalr/overview/older-versions/tutorial-getting-started-with-signalr-and-mvc-4
 msc.type: authoredcontent
-ms.openlocfilehash: abedf2dbf6fbc632b1857bf447f70aeb8f826d81
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 9186915df6d5de6bc20dfc0adabc54056d2f3a8c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410829"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113858"
 ---
 # <a name="tutorial-getting-started-with-signalr-1x-and-mvc-4"></a>Учебник. Начало работы с SignalR 1.x и MVC 4
 
@@ -22,7 +22,6 @@ ms.locfileid: "59410829"
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
 > Этом руководстве показано, как использовать ASP.NET SignalR для создания приложения разговора в режиме реального времени. Следует добавить SignalR в приложение MVC 4 и создать представления чата для отправки и отображения сообщений.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -76,7 +75,6 @@ ms.locfileid: "59410829"
 
 > [!NOTE]
 > Если вы используете Visual Studio 2012 и установили [обновления ASP.NET и веб-инструментами 2012.2](../../../visual-studio/overview/2012/aspnet-and-web-tools-20122-release-notes-rtw.md#_Installation), можно использовать новый шаблон элемента SignalR для создания классу hub. Чтобы сделать это, щелкните правой кнопкой мыши **концентраторов** папку, нажмите кнопку **Add | Новый элемент**выберите **класс концентратора SignalR (v1)** и имя класса **ChatHub.cs**.
-
 
 1. Замените код в **ChatHub** класса следующим кодом.
 
@@ -151,7 +149,6 @@ ms.locfileid: "59410829"
 > [!NOTE]
 > В jQuery ссылку на класс сервера и его членах находится в верхний регистр. Ссылается на пример кода C# **ChatHub** класс в jQuery как **chatHub**. Если требуется сослаться `ChatHub` класс в jQuery с обычной Pascal регистр, как это делается в C#, измените файл ChatHub.cs классов. Добавить `using` инструкцию, чтобы ссылаться на `Microsoft.AspNet.SignalR.Hubs` пространства имен. Затем добавьте `HubName` атрибут `ChatHub` классов, например `[HubName("ChatHub")]`. Наконец, обновите jQuery справочной информации для `ChatHub` класса.
 
-
 Ниже показано, как создать функцию обратного вызова в скрипте. Класс концентратора на сервере вызывает эту функцию для отправки обновлений содержимого для каждого клиента. Дополнительного обращения к `htmlEncode` функция отображает способ HTML кодирования содержимое сообщения перед его отображением на странице, чтобы предотвратить внедрение скрипта.
 
 [!code-html[Main](tutorial-getting-started-with-signalr-and-mvc-4/samples/sample7.html)]
@@ -160,7 +157,6 @@ ms.locfileid: "59410829"
 
 > [!NOTE]
 > Такой подход гарантирует, что соединение установлено, перед выполнением обработчика событий.
-
 
 [!code-javascript[Main](tutorial-getting-started-with-signalr-and-mvc-4/samples/sample8.js)]
 

@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: e6ee90bf-32a5-4987-a384-15cc7dd30c8a
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/textboxwatermark/using-textboxwatermark-in-a-formview-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 10c877e072d5caf23e78f49ebc71387fde20393d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 80d5dcec7f211f92cd9fbf2386bb7219d13ffe19
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59393617"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124592"
 ---
 # <a name="using-textboxwatermark-in-a-formview-c"></a>Использование элемента управления TextBoxWatermark в элементе управления FormView (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59393617"
 [Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/TextBoxWatermark1.cs.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/textboxwatermark1CS.pdf)
 
 > Элемент управления TextBoxWatermark в AJAX Control Toolkit расширяет текстовое поле для отображения текста в поле. Когда пользователь щелкает в поле, оно будет очищено. Если пользователь оставляет поле без ввода текста, заданными текст отображается повторно. Это также возможно в элементе управления FormView.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -47,7 +46,6 @@ ms.locfileid: "59393617"
 [!code-aspx[Main](using-textboxwatermark-in-a-formview-cs/samples/sample3.aspx)]
 
 Теперь когда пользователь изменяет в режим вставки из `FormView` управления текстового поля для нового поставщика автоматически заполняемом выражаем благодарность `TextBoxWatermarkExtender` элемента управления. Щелкните внутри текстового поля позволяет ввода текста наполнения исчезают.
-
 
 [![Водяной знак в поле поступает из расширения](using-textboxwatermark-in-a-formview-cs/_static/image2.png)](using-textboxwatermark-in-a-formview-cs/_static/image1.png)
 

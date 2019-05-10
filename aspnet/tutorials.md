@@ -6,12 +6,12 @@ description: Список пошаговых руководств по разр�
 ms.assetid: fddf8e5e-c055-4f81-b691-78deef871112
 ms.author: riande
 ms.date: 09/20/2017
-ms.openlocfilehash: 240260a496ee797556ca5dbd2c8faec79d23ac64
-ms.sourcegitcommit: 2d53ed9e4c8b19d3526cbc689bfa8394c9449cec
+ms.openlocfilehash: 106b4b88d2e7de90900b7a73570ecd6140e2db66
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59905674"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113196"
 ---
 # <a name="aspnet-tutorials"></a>Учебники по ASP.NET
 
@@ -81,7 +81,6 @@ ms.locfileid: "59905674"
 * [Отправка данных формы HTML в веб-API: Данные формы в URL-кодировке](web-api/overview/advanced/sending-html-form-data-part-1.md)
 * [Отправка данных формы HTML в веб-API: Отправка файлов и составное сообщение MIME](web-api/overview/advanced/sending-html-form-data-part-2.md)
 
-
 ## <a name="web-pages"></a>Веб-страницы
 
 * [Программирование веб-страниц ASP.NET в Visual Studio](web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio.md)
@@ -111,7 +110,6 @@ ms.locfileid: "59905674"
 * [Анализ трафика](web-pages/overview/performance-and-traffic/14-analyzing-traffic.md)
 * [Объединение и минификация активов на сайте веб-страниц ASP.NET (Razor)](web-pages/overview/performance-and-traffic/bundling-and-minifying-assets-in-an-aspnet-web-pages-razor-site.md)
 
-
 ## <a name="aspnet-signalr"></a>ASP.NET SignalR
 
 * [Учебник. Начало работы с SignalR 2](signalr/overview/getting-started/tutorial-getting-started-with-signalr.md)
@@ -129,7 +127,6 @@ ms.locfileid: "59905674"
 * [Учебник. Резидентное размещение SignalR](signalr/overview/deployment/tutorial-signalr-self-host.md)
 * [Использование SignalR с веб-приложениями в службе приложений Azure](signalr/overview/deployment/using-signalr-with-azure-web-sites.md)
 
-
 ## <a name="aspnet-identity"></a>ASP.NET Identity
 
 * [Добавление ASP.NET Identity в пустой или существующий проект веб-форм](identity/overview/getting-started/adding-aspnet-identity-to-an-empty-or-existing-web-forms-project.md)
@@ -141,7 +138,6 @@ ms.locfileid: "59905674"
 * [Изменение первичного ключа для пользователей в ASP.NET Identity](identity/overview/extensibility/change-primary-key-for-users-in-aspnet-identity.md)
 * [Миграция существующего веб-сайта из членства SQL в ASP.NET Identity](identity/overview/migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity.md)
 * [Перенос данных универсального поставщика членства и профилей пользователей в ASP.NET Identity (C#)](identity/overview/migrations/migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity.md)
-
 
 ## <a name="owin-and-katana"></a>OWIN и Katana
 

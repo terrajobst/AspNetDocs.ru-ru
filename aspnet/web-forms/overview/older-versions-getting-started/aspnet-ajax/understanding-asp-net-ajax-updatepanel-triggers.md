@@ -8,12 +8,12 @@ ms.date: 03/12/2008
 ms.assetid: faab8503-2984-48a9-8a40-7728461abc50
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-updatepanel-triggers
 msc.type: authoredcontent
-ms.openlocfilehash: e3821eee8c7bf2c2f9b45ea75ade2bd5b3b8ef19
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c61d10c28ba3975cb6fbadc6eda1f7a3c9406dfc
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59406266"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114613"
 ---
 # <a name="understanding-aspnet-ajax-updatepanel-triggers"></a>Общие сведения о триггерах UpdatePanel ASP.NET AJAX
 
@@ -22,7 +22,6 @@ ms.locfileid: "59406266"
 [Загрузить PDF-файл](http://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial02_Triggers_cs.pdf)
 
 > При работе в редакторе разметки в Visual Studio, можно заметить в (от IntelliSense), что существуют два дочерних элементов элемента управления UpdatePanel. Одно из них — элемент триггеров, который определяет элементы управления на странице (или пользовательского элемента управления, если вы используете) наступлении частичная отрисовка элемента управления UpdatePanel, в которой находится элемент.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -76,11 +75,9 @@ ms.locfileid: "59406266"
 
 1. Нажмите клавишу F5 для сборки и запуска проекта. Обратите внимание, что при нажатии кнопки обновления как панелей, обе метки изменить текст; Тем не менее если щелкнуть эту панель обновления, обновляет только Label1.
 
-
 [![](understanding-asp-net-ajax-updatepanel-triggers/_static/image2.png)](understanding-asp-net-ajax-updatepanel-triggers/_static/image1.png)
 
 ([Просмотр полноразмерного изображения](understanding-asp-net-ajax-updatepanel-triggers/_static/image3.png))
-
 
 ## <a name="under-the-hood"></a>*Внутренняя структура*
 
@@ -90,11 +87,9 @@ ms.locfileid: "59406266"
 
 Нажмите кнопку обновления этой панели и обратите внимание, что верхний UpdatePanel обновляется с текущее время сервера. В FireBug перейдите на вкладку консоли, чтобы можно было проверить запрос. Сначала проверьте параметры запроса POST:
 
-
 [![](understanding-asp-net-ajax-updatepanel-triggers/_static/image5.png)](understanding-asp-net-ajax-updatepanel-triggers/_static/image4.png)
 
 ([Просмотр полноразмерного изображения](understanding-asp-net-ajax-updatepanel-triggers/_static/image6.png))
-
 
 Обратите внимание, что UpdatePanel указал, код AJAX на стороне сервера точно, укажите дерево элемента управления было запущено через параметр ScriptManager1: `Button1` из `UpdatePanel1` элемента управления. Теперь нажмите кнопку обновления как панелей. Затем анализируя ответ, возникнуть серия разделением вертикальной чертой переменные, заданные в строке; в частности, мы см. в разделе верхнего UpdatePanel, `UpdatePanel1`, имеет весь его HTML, отправляемых в браузер. Библиотека клиентских сценариев AJAX подставляет UpdatePanel исходный HTML-содержимого с новым содержимым через `.innerHTML` свойство, и поэтому сервер отправляет измененное содержимое с сервера как HTML.
 
@@ -104,11 +99,9 @@ ms.locfileid: "59406266"
 
 Например рассмотрим элемент управления CheckBox; Проверьте класс дизассемблированного кода в .NET Reflector. Чтобы сделать это, убедитесь, что сборку System.Web открыт и перейдите к `System.Web.UI.WebControls.CheckBox` класс, открыв `RenderInputTag` метод. Найдите условного выражения, которое проверяет `AutoPostBack` свойство:
 
-
 [![](understanding-asp-net-ajax-updatepanel-triggers/_static/image8.png)](understanding-asp-net-ajax-updatepanel-triggers/_static/image7.png)
 
 ([Просмотр полноразмерного изображения](understanding-asp-net-ajax-updatepanel-triggers/_static/image9.png))
-
 
 При включенной автоматической обратной передачи на `CheckBox` управления (с помощью свойства AutoPostBack, true), полученный `<input>` тег таким образом отображается с помощью обработки сценария в ASP.NET событий его `onclick` атрибута. Перехват отправкой формы, затем позволяет ASP.NET AJAX, которые следует вставить в страницу nonintrusively, помогая избежать возможных критических изменений, которые могут возникнуть за счет использования возможно неточный строку замены. Кроме того, это позволяет *любой* пользовательский элемент управления ASP.NET, использующие всю мощь ASP.NET AJAX без дополнительного кода для поддержки его использования в контейнере UpdatePanel.
 
@@ -128,11 +121,9 @@ ms.locfileid: "59406266"
 
 Идея этой странице том стрелку раскрывающегося списка выбирается один из трех цветами, у второй метки, что флажок определяет, является ли он полужирным шрифтом, и ли отображать метки даты, а также время. Флажок не должны вызывать обновление AJAX, но следует стрелку раскрывающегося списка, несмотря на то, что он не размещается внутри UpdatePanel.
 
-
 [![](understanding-asp-net-ajax-updatepanel-triggers/_static/image11.png)](understanding-asp-net-ajax-updatepanel-triggers/_static/image10.png)
 
 ([Просмотр полноразмерного изображения](understanding-asp-net-ajax-updatepanel-triggers/_static/image12.png))
-
 
 Как происходит в том, что на приведенном выше снимке экрана, последнюю кнопку, чтобы выбрать был этот панели обновления, которое обновляется независимо top время от времени нижней правой кнопки. Дата также выключения щелчков, как дата отображается в нижнюю метку. Наконец интерес представляет цвет нижней метки: он был обновлен позже, чем текст, который показывает, что состояние элемента управления важна, и пользователи ожидают, что он сохраняется с помощью обратной передачи AJAX. *Тем не менее*, время не был обновлен. Время автоматически повторно заполнен через сохраняемость \_ \_поле состояния ПРЕДСТАВЛЕНИЯ страницы интерпретируются средой выполнения ASP.NET, когда элемент управления повторно подготовленных к просмотру на сервере. Код сервера ASP.NET AJAX не распознает, в котором элементы управления методы их состояние изменяется; он просто повторно заполняет из состояния представления, а затем выполняется события, которые подходят.
 

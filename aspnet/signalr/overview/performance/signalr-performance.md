@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: 3751f5e7-59db-4be0-a290-50abc24e5c84
 msc.legacyurl: /signalr/overview/performance/signalr-performance
 msc.type: authoredcontent
-ms.openlocfilehash: b0da3032e22123f415bf9865e264832739c29f61
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b8a44f4c924c94cdfff1ce7630539b45fe269bbf
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59409022"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113582"
 ---
 # <a name="signalr-performance"></a>Производительность SignalR
 
@@ -39,7 +39,6 @@ ms.locfileid: "59409022"
 > ## <a name="questions-and-comments"></a>Вопросы и комментарии
 >
 > Оставьте свои отзывы на том, как вам понравилось, и этот учебник и что можно улучшить в комментариях в нижней части страницы. Если у вас есть вопросы, которые не имеют отношения к руководству, их можно разместить [форум по ASP.NET SignalR](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) или [StackOverflow.com](http://stackoverflow.com/).
-
 
 Недавней презентации на производительность SignalR и масштабирования, см. в разделе [масштабирование в Интернете в реальном времени с помощью ASP.NET SignalR](https://channel9.msdn.com/Events/Build/2013/3-502).
 

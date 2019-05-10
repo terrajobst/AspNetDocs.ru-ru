@@ -8,12 +8,12 @@ ms.date: 06/06/2012
 ms.assetid: a56572ba-81c3-47af-826d-941e9c4775ec
 msc.legacyurl: /mvc/overview/performance/using-asynchronous-methods-in-aspnet-mvc-4
 msc.type: authoredcontent
-ms.openlocfilehash: 8292fd43ffa2bc66b4daa8f0fc09569226d90bff
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8d42ebf770e1b75e2867cca36e71423ba9467ee2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379564"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112436"
 ---
 # <a name="using-asynchronous-methods-in-aspnet-mvc-4"></a>Использование асинхронных методов в ASP.NET MVC 4
 
@@ -22,7 +22,6 @@ ms.locfileid: "59379564"
 > Этот учебник поможет основы создания асинхронных приложений веб-ASP.NET MVC с использованием [Visual Studio Express 2012 для Web](https://www.microsoft.com/visualstudio/11), который является бесплатной версии Microsoft Visual Studio. Можно также использовать [Visual Studio 2012](https://www.microsoft.com/visualstudio/11).
 > 
 > Полный пример приведен в этом руководстве на сайте github [https://github.com/RickAndMSFT/Async-ASP.NET/](https://github.com/RickAndMSFT/Async-ASP.NET/)
-
 
 ASP.NET MVC 4 [Controller](https://msdn.microsoft.com/library/system.web.mvc.controller(VS.108).aspx) класс в сочетании [.NET 4.5](https://msdn.microsoft.com/library/w0x726c2(VS.110).aspx) позволяет написать асинхронные методы действия, которые возвращают объект типа [задачи&lt;ActionResult&gt; ](https://msdn.microsoft.com/library/dd321424(VS.110).aspx). .NET Framework 4 появилась асинхронного программирования концепция, называемая [задачи](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx) и ASP.NET MVC 4 поддерживает [задачи](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx). Задачи представляются **задачи** типа и связанных типов в [System.Threading.Tasks](https://msdn.microsoft.com/library/system.threading.tasks.aspx) пространства имен. .NET Framework 4.5 основан на этой асинхронной поддержки за счет [await](https://msdn.microsoft.com/library/hh156528(VS.110).aspx) и [async](https://msdn.microsoft.com/library/hh156513(VS.110).aspx) ключевые слова, которые делают работу с [задачи](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx) гораздо проще, чем предыдущие объектов асинхронные подходы. [Await](https://msdn.microsoft.com/library/hh156528(VS.110).aspx) ключевое слово является синтаксическое сокращение, которое указывает, которого фрагмент кода асинхронно ожидает на другие части кода. [Async](https://msdn.microsoft.com/library/hh156513(VS.110).aspx) ключевое слово представляет подсказку, которая позволяет пометить методы как асинхронные методы на основе задач. Сочетание **await**, **async**и **задачи** объекта значительно упрощает написание асинхронного кода в .NET 4.5. Новая модель для асинхронных методов называется *асинхронную модель на основе задач* (**КОСНИТЕСЬ**). Предполагается, что у вас есть некоторый опыт работы с асинхронного программирования при помощи [await](https://msdn.microsoft.com/library/hh156528(VS.110).aspx) и [async](https://msdn.microsoft.com/library/hh156513(VS.110).aspx) ключевые слова и [задачи](https://msdn.microsoft.com/library/system.threading.tasks.task.aspx) пространства имен.
 

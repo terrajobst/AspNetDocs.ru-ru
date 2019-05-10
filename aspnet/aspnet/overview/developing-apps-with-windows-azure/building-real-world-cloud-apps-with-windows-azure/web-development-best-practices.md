@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: 52d6c941-2cd9-442f-9872-2c798d6d90cd
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/web-development-best-practices
 msc.type: authoredcontent
-ms.openlocfilehash: 1b9c7bacb37cc4487fb3af392a6048021679718d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e64e41bfc600811cecb8d20a67fb397ff9dc9a45
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396737"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118367"
 ---
 # <a name="web-development-best-practices-building-real-world-cloud-apps-with-azure"></a>Рекомендации по разработке Web (Создание реальных облачных приложений в Azure)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59396737"
 [Загрузить решение проект](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [скачайте электронную книгу](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > **Создание реальных облачных приложений в условиях Azure** электронная книга основана на презентацию, разработанная Скоттом Гатри. Здесь объясняется 13 шаблоны и рекомендации, которые помогут вам быть в успешном развертывании веб-приложений для облака. Сведения о книге, см. в разделе [первой главы](introduction.md).
-
 
 Первые три шаблоны были о настройке гибкого процесса разработки; остальные являются об архитектуре и кода. Это — это набор рекомендаций по разработке web:
 

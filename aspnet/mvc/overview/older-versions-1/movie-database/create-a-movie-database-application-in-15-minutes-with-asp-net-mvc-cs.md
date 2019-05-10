@@ -8,12 +8,12 @@ ms.date: 01/27/2009
 ms.assetid: dd1be137-91c5-47a8-8137-fecf0789c7f5
 msc.legacyurl: /mvc/overview/older-versions-1/movie-database/create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 51cc38989fb204a3d14e04fb280fdd81bfd38a4d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d27353a236b96f07fbb063032b5edcd1dee42f48
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59415171"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65122284"
 ---
 # <a name="create-a-movie-database-application-in-15-minutes-with-aspnet-mvc-c"></a>Создание приложения для базы данных Movie за 15 минут с помощью ASP.NET MVC (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59415171"
 [Скачать код](http://download.microsoft.com/download/7/2/8/728F8794-E59A-4D18-9A56-7AD2DB05BD9D/MovieApp_CS.zip)
 
 > Стивен Вальтер строит всей базы данных приложения ASP.NET MVC от начала до конца. Это руководство предназначено для вас отличным введением для тех, кто не знаком с ASP.NET MVC Framework и хотят получить представление о процессе создания приложения ASP.NET MVC.
-
 
 Цель этого руководства является дать вам представление о «что это как» для создания приложения ASP.NET MVC. В этом учебнике я смоделируйте рассматривается создание всего приложения ASP.NET MVC от начала до конца. Я покажу, как создать простое приложение на основе базы данных, показано, как список, создания и редактирования записей базы данных.
 
@@ -72,19 +71,15 @@ ms.locfileid: "59415171"
 > 
 > [https://www.microsoft.com/web/gallery/Install.aspx](https://www.microsoft.com/web/gallery/Install.aspx)
 
-
 ## <a name="creating-an-aspnet-mvc-web-application-project"></a>Создание проекта веб-приложения ASP.NET MVC
 
 Давайте начнем с создания проекта веб-приложения ASP.NET MVC в Visual Studio 2008. Выберите пункт меню **файл, создать проект** и вы увидите диалоговое окно нового проекта на рис. 1. Выберите в качестве языка программирования C# и выберите шаблон проекта веб-приложения ASP.NET MVC. Присвойте проекту имя MovieApp и нажмите кнопку "ОК".
-
 
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image1.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image1.png)
 
 **Рис 01**: В диалоговом окне нового проекта ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image2.png))
 
-
 Убедитесь, что выбран .NET Framework 3.5 из раскрывающегося списка в верхней части диалогового окна нового проекта или шаблона проекта веб-приложения ASP.NET MVC не будет отображаться.
-
 
 Каждый раз при создании проекта веб-приложение MVC, Visual Studio появится запрос на создание проекта модульного теста. Откроется диалоговое окно, на рис. 2. Так как мы не будете создавать тесты в этом руководстве из-за ограничений по времени (и, Да, мы должны будете чувствовать себя немного виновны об этом) выберите **нет** и нажмите кнопку **ОК** кнопки.
 
@@ -92,11 +87,9 @@ ms.locfileid: "59415171"
 > 
 > Visual Web Developer не поддерживает проекты тестов.
 
-
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image2.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image3.png)
 
 **Рис. 02**: Диалоговое окно создания проекта модульного теста ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image4.png))
-
 
 Приложение ASP.NET MVC имеет стандартный набор папок: в моделях, представлениях и контроллерах папку. Вы увидите этот стандартный набор папок в окне обозревателя решений. Необходимо добавить файлы в каждую папку моделях, представлениях и контроллерах для построения нашего приложения базы данных фильмов.
 
@@ -119,16 +112,13 @@ ms.locfileid: "59415171"
 > 
 > Окно обозревателя сервера с именем окна обозревателя базы данных в случае Visual Web Developer.
 
-
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image3.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image5.png)
 
 **Рис 03**: Создание базы данных Microsoft SQL Server ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image6.png))
 
-
 Далее нам нужно создать новую таблицу базы данных. Из окна обозревателя сервера, щелкните правой кнопкой мыши папку «таблицы» и выберите пункт меню **добавить новую таблицу**. Если выбрать этот пункт меню откроется конструктор таблиц базы данных. Создайте следующие столбцы базы данных:
 
 <a id="0.1_table01"></a>
-
 
 | **Имя столбца** | **Тип данных** | **Разрешить значения NULL** |
 | --- | --- | --- |
@@ -137,24 +127,19 @@ ms.locfileid: "59415171"
 | Директор | Nvarchar(100) | False |
 | DateReleased | DateTime | False |
 
-
 Первый столбец, столбец идентификатора, имеет два специальных свойства. Во-первых необходимо пометить идентификатор столбца, как столбец первичного ключа. После выбора столбца идентификатора, нажмите кнопку **задать первичный ключ** (это значок, который выглядит как ключ). Во-вторых необходимо пометить идентификатор столбца, как столбец идентификаторов. В окне «Свойства столбца» перейдите к разделу Спецификация идентификатора и разверните его. Изменение **Is Identity** в соответствии с значением **Да**. Когда вы закончите, таблица должна выглядеть как на рис. 4.
-
 
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image4.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image7.png)
 
 **Рис. 04**: В таблице базы данных фильмов ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image8.png))
 
-
 Последним шагом является сохранение новой таблицы. Нажмите кнопку "Сохранить" (значок дискеты) и присвойте новой таблицы фильмы имя.
 
 После создания таблицы, добавьте некоторые записи фильма в таблицу. Щелкните правой кнопкой мыши в таблице фильмов в окно обозревателя сервера и выберите пункт меню **Показать таблицу данных**. Введите список ваших любимых фильмов (см. рис. 5).
 
-
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image5.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image9.png)
 
 **05 рис**: Введя записей фильмов ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image10.png))
-
 
 ## <a name="creating-the-model"></a>Создание модели
 
@@ -163,7 +148,6 @@ ms.locfileid: "59415171"
 > [!NOTE] 
 > 
 > Платформа ASP.NET MVC не привязан к Microsoft Entity Framework. Базы данных можно создавать классы модели за счет использования различных реляционное сопоставление объекта (или / M) средства, включая LINQ to SQL, Subsonic и NHibernate.
-
 
 Выполните следующие действия, чтобы запустить мастер моделей EDM.
 
@@ -177,19 +161,15 @@ ms.locfileid: "59415171"
 2. В **Выбор подключения к данным** шаг, используйте *MoviesDB.mdf* подключение к данным и имя *MoviesDBEntities* параметры подключения. Нажмите кнопку **Далее** кнопки.
 3. В **Choose Your Database Objects** шаг, разверните узел таблицы, выберите таблицу фильмов. Введите пространство имен *MovieApp.Models* и нажмите кнопку **Готово** кнопки.
 
-
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image6.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image11.png)
 
 **Рис 06**: Создание модели базы данных с помощью мастера моделей EDM ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image12.png))
 
-
 После завершения мастера модели EDM, откроется в конструкторе моделей EDM. Конструктор должен отображать в таблице базы данных фильмов (см. рис. 7).
-
 
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image7.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image13.png)
 
 **07 рис**: В конструкторе моделей EDM ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image14.png))
-
 
 Нам нужно внести одно изменение, перед продолжением. Мастер EDM создает класс с именем модели *фильмы* , представляющий таблицу базы данных фильмов. Так как мы будем использовать класс фильмов для представления определенного фильма, нам нужно изменить имя класса, чтобы быть *фильма* вместо *фильмы* (единственного числа, а не во множественном числе).
 
@@ -207,11 +187,9 @@ ms.locfileid: "59415171"
 
 После выполнения этих действий создается контроллер в листинге 1. Обратите внимание на то, что он содержит методы, с именем индекса, сведения, создать и изменить. В следующих разделах мы добавим необходимый код для получения этих методов для работы.
 
-
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image8.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image15.png)
 
 **Рис 08**: Добавление нового контроллера MVC ASP.NET ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image16.png))
-
 
 **В листинге 1 — Controllers\HomeController.cs**
 
@@ -235,9 +213,7 @@ ms.locfileid: "59415171"
 
 Метод Index() возвращает представление с именем Index. Нам нужно создать это представление для отображения списка записей базы данных фильмов. Выполните следующие действия.
 
-
 Нужно построить проект (выберите пункт меню **создать, собрать решение**) перед открытием **Добавление представления** dialog» или «нет классов будет отображаться в **просмотреть класс данных** раскрывающийся список.
-
 
 1. Щелкните правой кнопкой мыши метод Index() в редакторе кода и выберите пункт меню **Добавление представления** (см. рис. 9).
 2. В диалоговом окне «Добавление представления» убедитесь, что флажок с меткой **создать строго типизированное представление** проверяется.
@@ -247,16 +223,13 @@ ms.locfileid: "59415171"
 
 После выполнения этих действий, новое представление с именем Index.aspx добавляется к папке Views\Home. Содержимое представления индекса включаются в листинге 3.
 
-
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image9.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image17.png)
 
 **Рис 09**: Добавление представления из действия контроллера ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image18.png))
 
-
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image10.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image19.png)
 
 **Рис. 10**: Создать новое представление с диалоговым окном Добавление представления ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image20.png))
-
 
 **Листинг 3 – Views\Home\Index.aspx**
 
@@ -264,11 +237,9 @@ ms.locfileid: "59415171"
 
 В представлении индекса отображаются все записи фильма из таблицы базы данных фильмов в таблице HTML. Представление содержит цикл по каждому элементу, который выполняет итерацию каждого фильма, представленный свойством ViewData.Model. Если вы запустите приложение, нажав клавишу F5, вы увидите веб-страницы на рис. 11.
 
-
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image11.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image21.png)
 
 **Рис. 11**: Представление Index ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image22.png))
-
 
 ## <a name="creating-new-database-records"></a>Создание новых записей базы данных
 
@@ -284,7 +255,6 @@ ms.locfileid: "59415171"
 > 
 > Обратите внимание на атрибут привязки. Так как мы не хотим обновить свойство идентификатор фильма из формы HTML, необходимо явно исключить это свойство.
 
-
 **Листинг 4 — Controllers\HomeController.cs (измененный метод Create)**
 
 [!code-csharp[Main](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/samples/sample4.cs)]
@@ -297,11 +267,9 @@ Visual Studio упрощает создание формы для создани
 4. Из **просмотреть класс данных** раскрывающемся списке выберите значение *MovieApp.Models.Movie*.
 5. Нажмите кнопку **добавить** кнопку, чтобы создать новое представление.
 
-
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image12.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image23.png)
 
 **Рис. 12**: Добавление представления создания ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image24.png))
-
 
 Visual Studio автоматически создает представление в листинге 5. Это представление содержит HTML-форму, включающий поля, которые соответствуют каждому из свойств класса фильма.
 
@@ -313,16 +281,13 @@ Visual Studio автоматически создает представлени
 > 
 > HTML-формы, созданные в диалоговом окне Add View создает поле идентификатора формы. Так как столбец идентификатора является столбцом идентификаторов, нам не нужен этот поля формы и ее можно безопасно удалить.
 
-
 После добавления представления создания, можно добавить новые записи фильма к базе данных. Запустите приложение, нажав клавишу F5 и нажмите кнопку Создать ссылку, чтобы просмотреть форму на рис. 13. Если заполнения и отправки формы, создается запись новый фильм в базе данных.
 
 Обратите внимание, что вы получаете проверку формы автоматически. Если не ввести дату выпуска фильма, или введите дату недействительный выпуск, отобразится форма, и выделяется поле даты выхода.
 
-
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image13.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image25.png)
 
 **Рис. 13**: Создание новой записи базы данных movie ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image26.png))
-
 
 ## <a name="editing-existing-database-records"></a>Изменение существующих записей базы данных
 
@@ -338,16 +303,13 @@ Visual Studio автоматически создает представлени
 
 Выполнение этих действий добавляет новое представление с именем Edit.aspx в папку Views\Home. Это представление содержит HTML-формы для редактирования и фильмов.
 
-
 [![В диалоговом окне нового проекта](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image14.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image27.png)
 
 **Рис. 14**: Добавление представления изменения ([Просмотр полноразмерного изображения](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image28.png))
 
-
 > [!NOTE] 
 > 
 > Изменить представление содержит поля формы HTML, соответствующее свойству, идентификатор фильма. Так как вы не хотите людей, изменив значение свойства Id, следует удалить это поле формы.
-
 
 Наконец нам нужно изменить контроллера Home, таким образом, чтобы он поддерживает редактирование записи базы данных. Обновленный класс HomeController содержится в листинге 6.
 

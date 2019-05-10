@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: 7d82d5e9-0619-4f22-9e03-32a6d52940a5
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/single-sign-on
 msc.type: authoredcontent
-ms.openlocfilehash: da1136e085776c63886b6ac25533521fa1479d4f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8f6c23eb71ea323b6ab06943097f927f717a8099
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59406292"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118747"
 ---
 # <a name="single-sign-on-building-real-world-cloud-apps-with-azure"></a>Единый вход (Создание реальных облачных приложений в Azure)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59406292"
 [Загрузить решение проект](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [скачайте электронную книгу](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > **Создание реальных облачных приложений в условиях Azure** электронная книга основана на презентацию, разработанная Скоттом Гатри. Здесь объясняется 13 шаблоны и рекомендации, которые помогут вам быть в успешном развертывании веб-приложений для облака. Сведения о книге, см. в разделе [первой главы](introduction.md).
-
 
 Существует много проблем безопасности будет учесть при разработке облачных приложений, но в этой серии статей мы сосредоточимся только на одном: единый вход. Вопрос, на который часто спрашивают такова: «Я в первую очередь создаю приложения для сотрудников, моей компании; как разместить эти приложения в облаке и по-прежнему разрешить им использовать ту же модель безопасности, Мои сотрудники знают и используют в локальной среде, когда они выполняются приложения, размещены за брандмауэром?» Одним из способов, мы реализовать этот сценарий называется Azure Active Directory (Azure AD). Azure AD позволяет вам выбрать корпоративных бизнес приложений (LOB) доступны в Интернете, и это дает возможность предоставлять эти приложения также деловым партнерам.
 

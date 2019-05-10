@@ -8,19 +8,18 @@ ms.date: 02/16/2008
 ms.assetid: 152ab1e5-aec2-4ea7-b8cc-27a24dd9acb8
 msc.legacyurl: /mvc/overview/older-versions-1/views/asp-net-mvc-views-overview-cs
 msc.type: authoredcontent
-ms.openlocfilehash: b4c35761f9cd44c866242cfe6f4f2d924e81d754
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b3f44aa9654a2a718381eaf9c856ca3e15ed1e27
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421333"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117315"
 ---
 # <a name="aspnet-mvc-views-overview-c"></a>Общие сведения о представлениях ASP.NET MVC (C#)
 
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > Что такое представлении MVC ASP.NET, и чем она отличается от HTML-страницы? В этом руководстве Стивен Вальтер знакомит вас с представлениями и показано, как можно воспользоваться преимуществами Просмотр данных и вспомогательных методов HTML в представлении.
-
 
 Цель этого руководства является предоставить Краткое введение в представления ASP.NET MVC, просмотр данных и вспомогательных методов HTML. В конце этого руководства необходимо понять, как создавать новые представления и передачи данных из контроллера в представление позволяет создавать содержимое в виде вспомогательных методов HTML.
 
@@ -68,7 +67,6 @@ View();
 > 
 > Если вы планируете создавать модульные тесты для своего приложения ASP.NET MVC является хорошей идеей явное имена представлений. Таким образом, можно создать модульный тест, чтобы убедиться, что ожидаемый Просмотр вернула действия контроллера.
 
-
 ## <a name="adding-content-to-a-view"></a>Добавление содержимого в представление
 
 Представление — это стандарт (X) HTML-документ, который может содержать скриптов. Использовать сценарии для добавления динамического содержимого в представление.
@@ -103,11 +101,9 @@ View();
 
 [!code-aspx[Main](asp-net-mvc-views-overview-cs/samples/sample4.aspx)]
 
-
 [![В диалоговом окне нового проекта](asp-net-mvc-views-overview-cs/_static/image1.jpg)](asp-net-mvc-views-overview-cs/_static/image1.png)
 
 **Рис 01**: Стандартная форма входа в систему ([Просмотр полноразмерного изображения](asp-net-mvc-views-overview-cs/_static/image2.png))
-
 
 Все методы вспомогательных методов HTML, называются свойства Html представления. Например подготовке к просмотру текстового поля, вызвав метод Html.TextBox().
 

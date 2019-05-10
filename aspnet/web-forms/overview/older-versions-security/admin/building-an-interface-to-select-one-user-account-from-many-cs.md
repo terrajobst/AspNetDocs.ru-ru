@@ -8,12 +8,12 @@ ms.date: 04/01/2008
 ms.assetid: 9e4e687c-b4ec-434f-a4ef-edb0b8f365e4
 msc.legacyurl: /web-forms/overview/older-versions-security/admin/building-an-interface-to-select-one-user-account-from-many-cs
 msc.type: authoredcontent
-ms.openlocfilehash: ed255b4d5938457e82c1fca4d759b6a5691c3f6c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ede2bf737464fde47e304e23255349599c1ea663
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401768"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116285"
 ---
 # <a name="building-an-interface-to-select-one-user-account-from-many-c"></a>Создание интерфейса для выбора одной учетной записи пользователя из многих (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59401768"
 [Скачать код](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/CS.12.zip) или [скачать PDF](http://download.microsoft.com/download/6/0/e/60e1bd94-e5f9-4d5a-a079-f23c98f4f67d/aspnet_tutorial12_SelectUser_cs.pdf)
 
 > В этом руководстве мы построим пользовательский интерфейс с сеткой разбитого на страницы, фильтруемое. В частности пользовательского интерфейса будет состоять из ряда элементов управления LinkButton для фильтрации результатов на основе начальной буквы имени пользователя и элемента управления GridView для отображения соответствующих пользователей. Мы начнем, перечисляя все учетные записи пользователя в элементе управления GridView. Затем на шаге 3, мы добавим фильтр элементов управления LinkButton. Шаг 4 рассматривает разбиение по страницам отфильтрованные результаты. Интерфейс, созданный на шагах 2 – 4 будет использоваться в последующих руководствах для выполнения административных задач для учетной записи пользователя.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -55,11 +54,9 @@ ms.locfileid: "59401768"
 
 На этом этапе проекта обозреватель решений должен выглядеть снимок экрана, показанный на рис. 1.
 
-
 [![На веб-сайт были добавлены четыре новые страницы и файл Web.config](building-an-interface-to-select-one-user-account-from-many-cs/_static/image2.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image1.png)
 
 **Рис. 1**: Четыре новых страниц и `Web.config` файла были добавлены на веб-сайт ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image3.png))
-
 
 Наконец, обновите карту узла (`Web.sitemap`) для включения записи для `ManageUsers.aspx` страницы. Добавьте следующий код XML после `<siteMapNode>` мы добавили учебников ролей.
 
@@ -67,11 +64,9 @@ ms.locfileid: "59401768"
 
 С помощью карты узла обновлен посетите сайт через браузер. Как показано на рис. 2, навигации в левой части теперь включает элементы для администрирования учебники.
 
-
 [![Карты узла имеется узел под названием Администрирование пользователей](building-an-interface-to-select-one-user-account-from-many-cs/_static/image5.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image4.png)
 
 **Рис. 2**: Администрирование пользователей узел под названием включает в себя карты узла ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image6.png))
-
 
 ## <a name="step-2-listing-all-user-accounts-in-a-gridview"></a>Шаг 2. Получение списка всех учетных записей пользователя в элементе управления GridView
 
@@ -81,11 +76,9 @@ ms.locfileid: "59401768"
 
 Чтобы отобразить сведения об учетной записи необходимые сведения о пользователе в GridView, установим GridView `AutoGenerateColumns` значение False и добавьте поля BoundField, кроме для `UserName`, `Email`, и `Comment` свойства и CheckBoxFields для `IsApproved`, `IsLockedOut`, и `IsOnline` свойства. Эта конфигурация может применяться посредством декларативная разметка элемента управления или с помощью поля-диалоговое окно. Рис. 3 показан снимок экрана полей диалоговое окно после снят флажок автоматического создания полей и полей BoundField и CheckBoxFields добавлен и настроен.
 
-
 [![Добавьте три поля BoundFields и три CheckBoxFields к GridView](building-an-interface-to-select-one-user-account-from-many-cs/_static/image8.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image7.png)
 
 **Рис. 3**: Добавьте три поля BoundFields и три CheckBoxFields к GridView ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image9.png))
-
 
 После настройки к GridView, убедитесь, что его декларативная разметка будет выглядеть примерно:
 
@@ -97,11 +90,9 @@ ms.locfileid: "59401768"
 
 Отвлекитесь и проверьте страницу в обозревателе. Как показано на рис. 4, `UserAccounts` GridView перечисляет имя пользователя, адрес электронной почты и других соответствующих учетных записей для всех пользователей в системе.
 
-
 [![Учетные записи пользователей указаны в GridView](building-an-interface-to-select-one-user-account-from-many-cs/_static/image11.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image10.png)
 
 **Рис. 4**: Учетные записи пользователей указаны в GridView ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image12.png))
-
 
 ## <a name="step-3-filtering-the-results-by-the-first-letter-of-the-username"></a>Шаг 3. Фильтрация результатов по первой букве имени пользователя
 
@@ -121,15 +112,12 @@ ms.locfileid: "59401768"
 
 Рис. 5 показан `ManageUsers.aspx` страницы при просмотре в обозревателе.
 
-
 [![Элемент управления Repeater перечисляет 27 фильтрации элементов управления LinkButton](building-an-interface-to-select-one-user-account-from-many-cs/_static/image14.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image13.png)
 
 **Рис. 5**: Элемент управления Repeater перечисляет 27 фильтрации элементов управления LinkButton ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image15.png))
 
-
 > [!NOTE]
 > Имена пользователей может начинаться с любого символа, включая цифр и знаков препинания. Чтобы просмотреть эти учетные записи, администратор будет использовать параметр всех LinkButton. Кроме того можно добавить LinkButton, чтобы вернуть все учетные записи пользователей, которые начинаются с цифры. Оставить этот в качестве упражнения для чтения.
-
 
 Щелкнув любой фильтрации элементов управления LinkButton, вызывает обратную передачу и вызывает элементу управления Repeater `ItemCommand` событий, но никак не изменяется в сетке, так как еще не писать код для фильтрации результатов. `Membership` Класс включает [ `FindUsersByName` метод](https://technet.microsoft.com/library/system.web.security.membership.findusersbyname.aspx) , возвращает эти учетные записи пользователей, имена которых соответствует указанному шаблону поиска. Этот метод можно использовать для получения только те учетные записи пользователей, которых имена пользователей начинаются с буквы, определяемое `CommandName` из отфильтрованных LinkButton, которая была нажата.
 
@@ -151,11 +139,9 @@ ms.locfileid: "59401768"
 
 Этот код в месте тестирование функций фильтрации. При первом посещении страницы, отображаются все учетные записи пользователей (см. рис. 5). Щелчок LinkButton вызывает обратную передачу и фильтрует результаты, отображение только учетные записи пользователей, которые начинаются с A.
 
-
 [![Используется для отображения этих пользователей, имена которых начинаются с определенной буквы фильтрации элементов управления LinkButton](building-an-interface-to-select-one-user-account-from-many-cs/_static/image17.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image16.png)
 
 **Рис. 6**: Использование элементов управления LinkButton фильтрации для отображения этих пользователей которых имя пользователя начинается с некоторые буквы ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image18.png))
-
 
 ## <a name="step-4-updating-the-gridview-to-use-paging"></a>Шаг 4. Обновляется GridView использовать разбиение на страницы
 
@@ -171,7 +157,6 @@ GridView, показанный на рис. 5 и 6 перечисляет все
 > [!NOTE]
 > Более подробные сведения о различиях между по умолчанию и пользовательское разбиение по страницам, а также о проблемах, связанных с реализации пользовательского разбиения по страницам, см. в разделе [эффективного разбиения на страницы через больших объемов данных](https://asp.net/learn/data-access/tutorial-25-cs.aspx). Анализ производительности разницу по умолчанию и пользовательское разбиение по страницам, см. в разделе [пользовательское разбиение по страницам в ASP.NET с помощью SQL Server 2005](http://aspnet.4guysfromrolla.com/articles/031506-1.aspx).
 
-
 Чтобы реализовать пользовательское разбиение по страницам, необходимо сначала какого-либо механизма, используемого для получения нужного подмножества записей, отображаемых GridView. Хорошая новость в том, что `Membership` класса `FindUsersByName` метод имеет перегрузку, можно указать индекс страницы и размера страницы и возвращает только учетные записи пользователей, которые попадают в этот диапазон записей.
 
 В частности, эта перегрузка имеет следующую сигнатуру: [ `FindUsersByName(usernameToMatch, pageIndex, pageSize, totalRecords)` ](https://msdn.microsoft.com/library/fa5st8b2.aspx).
@@ -180,7 +165,6 @@ GridView, показанный на рис. 5 и 6 перечисляет все
 
 > [!NOTE]
 > Данные, возвращаемые `FindUsersByName` сортируется по имени пользователя; невозможно настроить критерии сортировки.
-
 
 Чтобы использовать пользовательское разбиение по страницам, но только при привязке к элементу управления ObjectDataSource можно настроить GridView. Для элемента управления ObjectDataSource для реализации пользовательского разбиения по страницам, требуется два метода: один, передаваемый индекс начальной строки и максимальное число записей для отображения, и возвращает точные подмножества записей, которые попадают в этой области. и метод, который возвращает общее число записей, разбиваемых по страницам. `FindUsersByName` Перегрузка принимает индекс страницы и размера страницы и возвращает общее число записей с помощью `out` параметра. Поэтому имеется несовпадение интерфейс здесь.
 
@@ -196,11 +180,9 @@ GridView, показанный на рис. 5 и 6 перечисляет все
 
 Рис. 7 показаны четыре элементов управления LinkButton при просмотре через представление Visual Web Developer Design.
 
-
 [![Затем добавьте во-первых, предыдущего, и последнего элементов управления LinkButton под GridView](building-an-interface-to-select-one-user-account-from-many-cs/_static/image20.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image19.png)
 
 **Рис. 7**: Во-первых, добавьте назад, Next и последнего элементов управления LinkButton под GridView ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image21.png))
-
 
 ### <a name="keeping-track-of-the-current-page-index"></a>Слежении за индекс текущей страницы
 
@@ -228,16 +210,13 @@ GridView, показанный на рис. 5 и 6 перечисляет все
 
 Цифры 8 и 9 Показать пользовательский интерфейс разбиения на страницы в действии. На рисунке 8 показана `ManageUsers.aspx` страницы при просмотре первой страницы данных для всех учетных записей пользователей. Обратите внимание на то, что отображаются только 10 из 13 учетных записей. Щелкнув ссылку Далее или последнего вызывает обратную передачу, обновления `PageIndex` 1, и второй странице пользователя, учетные записи в сетку привязки (см. рис. 9).
 
-
 [![Отображаются первая учетные записи пользователей 10](building-an-interface-to-select-one-user-account-from-many-cs/_static/image23.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image22.png)
 
 **Рис. 8**: Первый учетные записи пользователей 10 отображаются ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image24.png))
 
-
 [![Щелчок следующей ссылки отображаются на второй странице учетных записей пользователей](building-an-interface-to-select-one-user-account-from-many-cs/_static/image26.png)](building-an-interface-to-select-one-user-account-from-many-cs/_static/image25.png)
 
 **Рис. 9**: Щелчок следующей ссылки отображаются на второй странице из учетных записей пользователей ([Просмотр полноразмерного изображения](building-an-interface-to-select-one-user-account-from-many-cs/_static/image27.png))
-
 
 ## <a name="summary"></a>Сводка
 

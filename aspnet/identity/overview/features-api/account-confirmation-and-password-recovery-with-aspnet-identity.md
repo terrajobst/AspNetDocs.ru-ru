@@ -9,12 +9,12 @@ ms.assetid: 8d54180d-f826-4df7-b503-7debf5ed9fb3
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/account-confirmation-and-password-recovery-with-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 2e4cd21d66e69590fb1642d7974e4b7f82cba0cb
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ded3a9d931cc4cd4b99c1cb5012469fe66209f76
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396425"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118027"
 ---
 # <a name="account-confirmation-and-password-recovery-with-aspnet-identity-c"></a>Учетная запись, пароль и Подтверждение восстановления с ASP.NET Identity (C#)
 
@@ -66,7 +66,6 @@ ms.locfileid: "59396425"
 ## <a name="create-an-aspnet-web-app"></a>Создание веб-приложения ASP.NET
 
 Начните с установки и запуска [Visual Studio 2017](https://visualstudio.microsoft.com/).
-
 
 1. Создайте новый проект веб-ASP.NET и выберите шаблон MVC. Веб-форм также поддерживает ASP.NET Identity, поэтому можно выполнить аналогичные действия в приложении web forms.
 2. Задайте для аутентификации **учетные записи отдельных пользователей**.
@@ -153,7 +152,6 @@ OWIN `AuthenticationManager.SignIn` метод передает в `ClaimsIdenti
 > [!WARNING]
 > Если изменить какие-либо параметры безопасности в этом образце, производства приложений потребуется пройти проверку подлинности, которая явно вызывает изменения, внесенные аудита безопасности.
 
-
 ## <a name="examine-the-code-in-appstartidentityconfigcs"></a>Изучите код в приложении\_Start\IdentityConfig.cs
 
 Пример показано, как создать учетную запись и добавить его в *администратора* роли. Следует заменить адрес электронной почты в примере с адресом электронной почты, который будет использоваться для учетной записи администратора. Самым простым способом прямо сейчас, чтобы создать учетную запись администратора является программно с помощью `Seed` метод. Мы надеемся инструмент в будущем, позволит вам создавать и администрировать пользователей и ролей. В примере кода позволяют создавать и управлять пользователями и ролями, но сначала необходимо иметь учетную запись администраторов для выполнения роли и страниц администрирования пользователя. В этом примере учетная запись администратора создается при будет заполняться данными базы данных.
@@ -184,14 +182,12 @@ OWIN `AuthenticationManager.SignIn` метод передает в `ClaimsIdenti
 > [!NOTE]
 > Почтовые клиенты часто принимают только текстовые сообщения (HTML). Необходимо предоставить сообщение в текст или HTML. В приведенном выше примере SendGrid, это делается с помощью `myMessage.Text` и `myMessage.Html` приведенного выше кода.
 
-
 Ниже показано, как отправить по электронной почте с использованием [MailMessage](https://msdn.microsoft.com/library/system.net.mail.mailmessage.aspx) класса where `message.Body` возвращает только ссылка.
 
 [!code-csharp[Main](account-confirmation-and-password-recovery-with-aspnet-identity/samples/sample8.cs)]
 
 > [!WARNING]
 > Безопасность — никогда не сохраняйте конфиденциальные данные в исходном коде. Запись и учетные данные хранятся в параметр appSetting. В Azure, вы можете безопасно хранить эти значения на **[Настройка](https://blogs.msdn.com/b/webdev/archive/2014/06/04/queuebackgroundworkitem-to-reliably-schedule-and-run-long-background-process-in-asp-net.aspx)** вкладка на портале Azure. См. в разделе [советы и рекомендации по развертыванию паролей и других конфиденциальных данных в ASP.NET и Azure](best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure.md).
-
 
 Введите свои учетные данные SendGrid, запустить приложение, регистрация с помощью псевдонима электронной почты можно выбрать ссылку подтверждение электронной почты. Чтобы узнать, как это сделать с помощью вашей [Outlook.com](http://outlook.com) учетную запись электронной почты, см. в разделе Джон Atten [ C# SMTP-конфигурация для узла SMTP Outlook.Com](http://typecastexception.com/post/2013/12/20/C-SMTP-Configuration-for-OutlookCom-SMTP-Host.aspx) и его[удостоверений ASP.NET 2.0: Параметр вверх проверки учетной записи и авторизация двухфакторной](http://typecastexception.com/post/2014/04/20/ASPNET-Identity-20-Setting-Up-Account-Validation-and-Two-Factor-Authorization.aspx) учитывает.
 

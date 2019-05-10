@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: e3d3e7ba-87f0-4032-bdd3-31f3c1aa9d9c
 msc.legacyurl: /web-api/overview/advanced/dependency-injection
 msc.type: authoredcontent
-ms.openlocfilehash: 0ad0b3c63741803e05274df4da3fcbe5481d32a4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 138ccb5800e801d382c11e3989ec3e3c074a79fe
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391940"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115705"
 ---
 # <a name="dependency-injection-in-aspnet-web-api-2"></a>Внедрение зависимостей в ASP.NET Web API 2
 
@@ -30,7 +30,6 @@ ms.locfileid: "59391940"
 > - Веб-API 2
 > - [Unity Application Block](https://www.nuget.org/packages/Unity/)
 > - Entity Framework 6 (версии 5 также работает)
-
 
 ## <a name="what-is-dependency-injection"></a>Что такое внедрение зависимостей?
 
@@ -88,7 +87,6 @@ IoC-контейнер — это программный компонент, к�
 > [!NOTE]
 > «IoC» означает «инверсии элемента управления», который является общий шаблон, когда платформа вызывает в код приложения. Контейнер IoC создает объектов, который «инвертирует» обычного потока управления.
 
-
 В этом учебнике мы будем использовать [Unity](https://msdn.microsoft.com/library/ff647202.aspx) из Microsoft Patterns &amp; рекомендации. (Включить других популярных библиотек [Castle Windsor](http://www.castleproject.org/), [Spring.Net](http://www.springframework.net/), [Autofac](https://code.google.com/p/autofac/), [Ninject](http://www.ninject.org/), и [StructureMap ](http://structuremap.github.io/documentation/).) Можно использовать диспетчер пакетов NuGet для установки Unity. Из **средства** меню в Visual Studio, выберите пункт **диспетчер пакетов NuGet**, а затем выберите **консоль диспетчера пакетов**. В окне консоли диспетчера пакетов введите следующую команду:
 
 [!code-console[Main](dependency-injection/samples/sample7.cmd)]
@@ -99,7 +97,6 @@ IoC-контейнер — это программный компонент, к�
 
 > [!NOTE]
 > Если **GetService** метод не может разрешить тип, он должен вернуть **null**. Если **GetServices** метод не может разрешить тип, она должна возвращать пустой объект коллекции. Не создают исключения для неизвестных типов.
-
 
 ## <a name="configuring-the-dependency-resolver"></a>Настройка сопоставителя зависимостей
 

@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: accfa16a-ab15-4c26-9ad4-babdc2a77d2e
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/introduction
 msc.type: authoredcontent
-ms.openlocfilehash: bf9cf1f5be22a5b97ec964277c11ae21066676f0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7daf08a88c614288170d676e665403cda244218a
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59412415"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118669"
 ---
 # <a name="building-real-world-cloud-apps-with-azure"></a>Создание реальных облачных приложений в Azure
 
@@ -24,7 +24,6 @@ ms.locfileid: "59412415"
 > В этой электронной книге описывается подход на основе шаблонов для создания реальных облачных решений. Архитектурные шаблоны относятся к процессу разработки, а также для архитектуры и самого программирования.
 > 
 > Основе содержимого лежит презентация, разработанная Скоттом Гатри и по ним в норвежская разработчикам конференции (представленная им ndc Прошедшей) в июне 2013 г. ([часть 1](http://vimeo.com/68215538), [часть 2](http://vimeo.com/68215602)) и в Microsoft Tech Ed Австралии в Сентябрь 2013 г. ([часть 1](https://channel9.msdn.com/Events/TechEd/Australia/2013/AZR324), [часть 2](https://channel9.msdn.com/Events/TechEd/Australia/2013/AZR325)). [Многие другие](more-patterns-and-guidance.md#acknowledgments) обновлены и преумножено содержимое его из видео в письменную форму.
-
 
 ## <a name="intended-audience"></a>Целевая аудитория
 

@@ -9,18 +9,16 @@ ms.assetid: 38717fc1-5989-43cf-952d-4007cc1dd923
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/getting-started/introduction-to-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 34a0d62d7afcaffa8fbac0bc774d9266efb6b165
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0268dfc16cd2cfb1e79ee14997a4c5eb247af950
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59413052"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121568"
 ---
 # <a name="introduction-to-aspnet-identity"></a>Введение в ASP.NET Identity
 
-
 > Система членства ASP.NET впервые появилась в ASP.NET 2.0 обратно в 2005 г., а поскольку затем произошло много изменений одним из способов проверки подлинности и авторизации веб-приложения обычно обрабатывают. ASP.NET Identity — это Свежий взгляд на то, что система членства должно быть при создании современных приложений для Интернета, телефона или планшета.
-
 
 ## <a name="background-membership-in-aspnet"></a>Справочная информация. Членство в ASP.NET
 
@@ -122,7 +120,6 @@ ASP.NET Identity реализуется с помощью следующей п�
    Если пользователь был успешно создан, он подписан `SignInAsync` метод.  
 
     [!code-csharp[Main](introduction-to-aspnet-identity/samples/sample6.cs?highlight=12)]
-
 
    `SignInManager.SignInAsync` Метод создает [ClaimsIdentity](https://msdn.microsoft.com/library/system.security.claims.claimsidentity.aspx). Так как ASP.NET Identity и OWIN файл Cookie проверки подлинности на основе утверждений система, платформа требует приложения для создания ClaimsIdentity для пользователя. ClaimsIdentity имеет сведения о все утверждения для пользователя, например пользователь принадлежит к роли.   
  

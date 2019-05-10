@@ -8,12 +8,12 @@ ms.date: 01/06/2019
 ms.assetid: 9f35ca15-e216-4db6-9ebf-24380b0f31b4
 msc.legacyurl: /mvc/overview/getting-started/introduction/adding-validation
 msc.type: authoredcontent
-ms.openlocfilehash: 2b5d2a355a27bfe9a3aa8b2fa4a2de79c7f74314
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6894d01af7cd142a5579f73ae5209ca13756ca52
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59387130"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65120739"
 ---
 # <a name="adding-validation"></a>Добавление проверки
 
@@ -84,7 +84,6 @@ ms.locfileid: "59387130"
 > [!NOTE]
 > Поддержка проверки jQuery для английского, используйте запятую («",»") для десятичной запятой, необходимо включить NuGet глобализации, как описано ранее в этом руководстве.
 
-
 Обратите внимание на то, как формы автоматически использовал цвет красную границу для выделения текстовые поля, которые содержат недопустимые данные и испускаемого сообщение об ошибке соответствующей проверкой рядом с каждого из них. Эти ошибки применяются как на стороне клиента (с помощью JavaScript и jQuery), так и на стороне сервера (если пользователь отключает JavaScript).
 
 Реальные преимущество в том, что вам не нужно менять ни единой строчки кода в `MoviesController` класса или в *Create.cshtml* для реализации этой проверки пользовательского интерфейса. В контроллере и представлениях, создаваемых в рамках этого руководства, автоматически применяются правила проверки, для определения которых к свойствам класса модели `Movie` были применены атрибуты. При проверке с использованием метода действия `Edit` применяются те же правила.
@@ -135,9 +134,7 @@ ms.locfileid: "59387130"
 
 С помощью атрибута `DisplayFormat` можно явно указать формат даты:
 
-
 [!code-csharp[Main](adding-validation/samples/sample8.cs)]
-
 
 `ApplyFormatInEditMode` Параметр указывает, что заданное форматирование также должны быть применены при отображении значения в текстовом поле для редактирования. (Вы не хотите, чтобы для некоторых полей, например, для денежных значений не можно символ валюты в текстовом поле для редактирования.)
 
@@ -155,7 +152,6 @@ ms.locfileid: "59387130"
 > [!code-csharp[Main](adding-validation/samples/sample9.cs)]
 > 
 > Вам потребуется отключить проверку дат jQuery для использования [диапазон](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.rangeattribute.aspx) атрибут с [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx). Это обычно не рекомендуется компилировать модели, поэтому использование с фиксированными датами [диапазон](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.rangeattribute.aspx) атрибут и [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx) не рекомендуется.
-
 
 В следующем коде демонстрируется объединение атрибутов в одной строке:
 

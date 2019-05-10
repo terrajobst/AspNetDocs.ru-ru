@@ -8,19 +8,18 @@ ms.date: 02/16/2008
 ms.assetid: 94c3e5d9-a904-445e-a34e-d92fd1ca108a
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/asp-net-mvc-controller-overview-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 33544825403db67fc3b8f0e9eae5d7671b8d2e67
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f19e7dd7fc025de2e0c387db898d36623e790e6a
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402197"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123684"
 ---
 # <a name="aspnet-mvc-controller-overview-vb"></a>Общие сведения о контроллерах в ASP.NET MVC (VB)
 
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > В этом руководстве Стивен Вальтер вы познакомитесь с контроллеров ASP.NET MVC. Вы узнаете, как создать новые контроллеры и вернуть различные типы результатов действий.
-
 
 В этом руководстве рассматриваются в разделе ASP.NET MVC контроллеров, действий контроллера, и результаты действий. После завершения этого учебника вы узнаете, как контроллеры используются для управления способом посетитель взаимодействует с веб-сайта ASP.NET MVC.
 
@@ -103,7 +102,6 @@ ms.locfileid: "59402197"
 > 
 > 
 > Класса System.Web.Mvc.Controller
-
 
 [!code-vb[Main](asp-net-mvc-controller-overview-vb/samples/sample4.vb)]
 

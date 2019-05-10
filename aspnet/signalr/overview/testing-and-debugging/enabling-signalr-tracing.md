@@ -8,12 +8,12 @@ ms.date: 08/08/2014
 ms.assetid: 30060acb-be3e-4347-996f-3870f0c37829
 msc.legacyurl: /signalr/overview/testing-and-debugging/enabling-signalr-tracing
 msc.type: authoredcontent
-ms.openlocfilehash: 1dadbdb6fa1dc58b855402f1d6f18e8af861f756
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 34fe2cdb10c4b41a6e8cac7fb1741d53c02dfc80
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59399363"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114405"
 ---
 # <a name="enabling-signalr-tracing"></a>Включение трассировки SignalR
 
@@ -37,7 +37,6 @@ ms.locfileid: "59399363"
 > ## <a name="questions-and-comments"></a>Вопросы и комментарии
 >
 > Оставьте свои отзывы на том, как вам понравилось, и этот учебник и что можно улучшить в комментариях в нижней части страницы. Если у вас есть вопросы, которые не имеют отношения к руководству, их можно разместить [форум по ASP.NET SignalR](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) или [StackOverflow.com](http://stackoverflow.com/).
-
 
 Если трассировка включена, приложение SignalR создает записи журнала для событий. Можно записывать события из клиента и сервера. Трассировка на соединение с сервером журналы, поставщике горизонтального масштабирования и события шины сообщений. Трассировка для событий подключения журналов клиента. В SignalR 2.1 и более поздних версиях трассировки на клиенте регистрирует полное содержимое сообщения вызова концентратора.
 

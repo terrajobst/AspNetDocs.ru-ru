@@ -8,12 +8,12 @@ ms.date: 06/10/2014
 ms.assetid: d1983524-e0d5-4ee6-9d87-1f552f7cb964
 msc.legacyurl: /signalr/overview/testing-and-debugging/unit-testing-signalr-applications
 msc.type: authoredcontent
-ms.openlocfilehash: 1556e8275da446e285c88d1f850d072725de057b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2cf2e88f141d89971439dc1fc4979849f8dded47
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59415678"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113452"
 ---
 # <a name="unit-testing-signalr-applications"></a>Модульное тестирование приложений SignalR
 
@@ -35,7 +35,6 @@ ms.locfileid: "59415678"
 > ## <a name="questions-and-comments"></a>Вопросы и комментарии
 >
 > Оставьте свои отзывы на том, как вам понравилось, и этот учебник и что можно улучшить в комментариях в нижней части страницы. Если у вас есть вопросы, которые не имеют отношения к руководству, их можно разместить [форум по ASP.NET SignalR](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) или [StackOverflow.com](http://stackoverflow.com/).
-
 
 <a id="unit"></a>
 ## <a name="unit-testing-signalr-applications"></a>Модульное тестирование приложений SignalR

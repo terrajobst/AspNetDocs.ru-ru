@@ -8,19 +8,18 @@ ms.date: 02/16/2009
 ms.assetid: 3cd08f02-8763-490a-b625-2ac96a24b73f
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/creating-custom-routes-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 7b7324c9e0518697c0978b96b0123cb44133722b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 58f72e390f0053d136ef00ddbda0b071ba225d98
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59418941"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123362"
 ---
 # <a name="creating-custom-routes-c"></a>Создание пользовательских маршрутов (C#)
 
 по [Microsoft](https://github.com/microsoft)
 
 > Узнайте, как добавить пользовательские маршруты для приложения ASP.NET MVC. В этом руководстве вы узнаете, как изменить таблицы маршрутизации по умолчанию в файле Global.asax.
-
 
 В этом руководстве вы узнаете, как добавить настраиваемый маршрут в приложении ASP.NET MVC. Вы узнаете, как изменение таблицы маршрутизации по умолчанию в файле Global.asax с настраиваемый маршрут.
 
@@ -60,11 +59,9 @@ ms.locfileid: "59418941"
 
 **Рис. 1. Ошибка в результате преобразования параметра**
 
-
 [![В диалоговом окне нового проекта](creating-custom-routes-cs/_static/image1.jpg)](creating-custom-routes-cs/_static/image1.png)
 
 **Рис 01**: Ошибка в результате преобразования параметра ([Просмотр полноразмерного изображения](creating-custom-routes-cs/_static/image2.png))
-
 
 ## <a name="summary"></a>Сводка
 

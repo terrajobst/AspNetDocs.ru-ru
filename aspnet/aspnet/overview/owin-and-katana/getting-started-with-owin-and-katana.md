@@ -8,12 +8,12 @@ ms.date: 09/27/2013
 ms.assetid: 6dae249f-5ac6-4f6e-bc49-13bcd5a54a70
 msc.legacyurl: /aspnet/overview/owin-and-katana/getting-started-with-owin-and-katana
 msc.type: authoredcontent
-ms.openlocfilehash: 5b5ecfcc7561e3e7bc13e1c8819a548e73ae1ab3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4dfd7b8ebb2bb48d7ef800fd522b79a7b4a045c2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59408099"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118341"
 ---
 # <a name="getting-started-with-owin-and-katana"></a>Начало работы с OWIN и Katana
 
@@ -59,7 +59,6 @@ OWIN — это спецификация принадлежащих сообще
 
 > [!NOTE]
 > Шаблон класса запуска OWIN доступен в Visual Studio 2013. Если вы используете Visual Studio 2012, просто добавьте пустой класс с именем `Startup1`и вставьте в него следующий код:
-
 
 [!code-csharp[Main](getting-started-with-owin-and-katana/samples/sample2.cs)]
 

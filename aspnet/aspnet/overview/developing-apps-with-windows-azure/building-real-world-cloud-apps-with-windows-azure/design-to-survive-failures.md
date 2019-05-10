@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: 364ce84e-5af8-4e08-afc9-75a512b01f84
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/design-to-survive-failures
 msc.type: authoredcontent
-ms.openlocfilehash: fbe618acfc70711933996f97657a4326d389b3dd
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 54bfa40a7d853e29c42512ba375271587fb6f565
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59411245"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118831"
 ---
 # <a name="design-to-survive-failures-building-real-world-cloud-apps-with-azure"></a>Проектирование для обработки отказов (Создание реальных облачных приложений в Azure)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59411245"
 [Загрузить решение проект](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [скачайте электронную книгу](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > **Создание реальных облачных приложений в условиях Azure** электронная книга основана на презентацию, разработанная Скоттом Гатри. Здесь объясняется 13 шаблоны и рекомендации, которые помогут вам быть в успешном развертывании веб-приложений для облака. Сведения о книге, см. в разделе [первой главы](introduction.md).
-
 
 Среди прочего, вам нужно подумать о при построении любого типа приложения, но особенно один, который будет выполняться в облаке, где большое число пользователей будет использовать, — это том, как разработать приложение таким образом, чтобы он корректно обрабатывать сбои и продолжали выполнять доставку значение настолько, насколько возможно. Имея достаточно времени, действия будут пойти не так в любой среде или в любой программной системы. Как приложение обрабатывает ситуации определяет как получит клиентов и сколько времени на обработку, анализа и устранения проблем.
 

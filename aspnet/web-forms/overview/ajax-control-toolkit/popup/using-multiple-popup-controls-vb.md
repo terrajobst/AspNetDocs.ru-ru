@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 4da43d77-f6c4-43a8-9124-f1e8e1c8f0a2
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/popup/using-multiple-popup-controls-vb
 msc.type: authoredcontent
-ms.openlocfilehash: ee66e166d24bb80008671c84f6512d5c54707fcf
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6f8097ed64f81d8ad9de27e19195d9a4572a0ae7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389821"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115097"
 ---
 # <a name="using-multiple-popup-controls-vb"></a>Использование нескольких элементов управления Popup (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59389821"
 [Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/PopupControl1.vb.zip) или [скачать PDF](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/popupcontrol1VB.pdf)
 
 > Расширитель PopupControl в AJAX Control Toolkit предлагает простой способ активации всплывающего окна при активации любого другого элемента управления. Можно также использовать более одного элемента управления всплывающего окна на одной странице.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -47,7 +46,6 @@ ms.locfileid: "59389821"
 [!code-aspx[Main](using-multiple-popup-controls-vb/samples/sample4.aspx)]
 
 Теперь при каждом нажатии в текстовом поле появляется календарь под полем, где можно выбрать дату. (Получение выбранную дату в текстовые поля будут освещены в другого учебника.)
-
 
 [![Календарь появляется, когда пользователь нажимает кнопку в текстовое поле](using-multiple-popup-controls-vb/_static/image2.png)](using-multiple-popup-controls-vb/_static/image1.png)
 

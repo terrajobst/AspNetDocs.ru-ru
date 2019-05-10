@@ -8,12 +8,12 @@ ms.date: 02/25/2014
 ms.assetid: 262843d6-43a2-4f1c-82d9-0b90ae6df0cf
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v3/creating-an-odata-endpoint
 msc.type: authoredcontent
-ms.openlocfilehash: fa0573738fee8f1decc13c9797f644002931e09d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e31bf3215155b4b45bcf2eb90dd6947caf99b7f8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381501"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125270"
 ---
 # <a name="creating-an-odata-v3-endpoint-with-web-api-2"></a>Создание конечной точки OData v3 с веб-API 2
 
@@ -35,7 +35,6 @@ ms.locfileid: "59381501"
 > - [Fiddler веб-отладки, прокси-сервера (необязательно)](http://www.fiddler2.com)
 >
 > В добавлена поддержка Web API OData [ASP.NET и веб-инструменты 2012.2 обновление](https://go.microsoft.com/fwlink/?LinkId=282650). Тем не менее в этом руководстве используется формирование шаблонов, который был добавлен в Visual Studio 2013.
-
 
 В этом руководстве вы создадите простой конечной точки OData, который клиенты могут выполнять запросы. Кроме того, будет создан клиент C# для конечной точки. После завершения этого учебника, следующий набор учебных курсов показано, как добавить дополнительные функциональные возможности, включая отношений сущностей, действия, и выберите развернуть $/ $.
 
@@ -77,7 +76,6 @@ ms.locfileid: "59381501"
 
 > [!NOTE]
 > По соглашению классы моделей, помещаются в папку Models. У вас нет следуют соглашению в своих собственных проектах. Однако мы будем использовать в этом руководстве.
-
 
 В файле добавьте следующее определение класса:
 

@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: 669367cf-8e30-4eb6-821d-10a7d9bb906c
 msc.legacyurl: /mvc/overview/getting-started/database-first-development/generating-views
 msc.type: authoredcontent
-ms.openlocfilehash: 7a56c0f9197a99427bcde6103ebc69d245e8ce63
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: e71e13e22d8a72e1699cfc70d4d93af603edba5b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57025761"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121230"
 ---
 # <a name="tutorial-generate-views-for-ef-database-first-with-aspnet-mvc-app"></a>Учебник. Создать представления для EF Database First с помощью приложения ASP.NET MVC
 
@@ -51,7 +51,6 @@ ms.locfileid: "57025761"
 Если произошла ошибка, возможно, так как вы не создавали проекта в предыдущем разделе. Если это так, попробуйте выполнить сборку проекта и затем снова добавьте элемента формирования шаблонов.
 
 После завершения процесса создания кода вы увидите новый контроллер и представления в вашем проекте **контроллеров** и **представления** > **учащихся** папки .
-
 
 Снова выполните те же действия, но добавить элемент формирования шаблонов для **регистрации** класса. По завершении у вас есть **EnrollmentsController.cs** файл и папку в узле **представления** с именем **регистрациями** с представлениями Create, Delete, сведений, редактирования и индекс.
 

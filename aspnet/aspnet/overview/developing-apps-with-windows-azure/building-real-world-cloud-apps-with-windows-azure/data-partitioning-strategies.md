@@ -8,12 +8,12 @@ ms.date: 06/12/2014
 ms.assetid: 513837a7-cfea-4568-a4e9-1f5901245d24
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/data-partitioning-strategies
 msc.type: authoredcontent
-ms.openlocfilehash: 1050018794526e12aad43cd473665de5ff575d7d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3aecd64bc59ffa961aa97dd30b037f9aeb2acdd8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59403562"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65118898"
 ---
 # <a name="data-partitioning-strategies-building-real-world-cloud-apps-with-azure"></a>(Создание реальных облачных приложений в Azure) стратегии секционирования данных
 
@@ -22,7 +22,6 @@ ms.locfileid: "59403562"
 [Загрузить решение проект](http://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [скачайте электронную книгу](http://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
 > **Создание реальных облачных приложений в условиях Azure** электронная книга основана на презентацию, разработанная Скоттом Гатри. Здесь объясняется 13 шаблоны и рекомендации, которые помогут вам быть в успешном развертывании веб-приложений для облака. Сведения об этой серии см. в разделе [первой главы](introduction.md).
-
 
 Ранее мы увидели, насколько это просто масштабировать веб-уровня облачного приложения, путем добавления и удаления веб-серверов. Но если они все встретились то же хранилище данных, узкое место приложения перемещает из интерфейсной части к серверной части, и уровень данных, сложнее всего масштабировать. В этой главе мы рассмотрим способ внесения уровень данных масштабируемой путем секционирования данных на несколько реляционных баз данных, или объединения с другими параметрами хранилища данных реляционной базы данных хранилища.
 

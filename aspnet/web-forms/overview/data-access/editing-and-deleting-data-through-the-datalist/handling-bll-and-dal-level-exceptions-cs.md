@@ -8,12 +8,12 @@ ms.date: 10/30/2006
 ms.assetid: f8fd58e2-f932-4f08-ab3d-fbf8ff3295d2
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/handling-bll-and-dal-level-exceptions-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 5714b118a5894731820d8e9775c8f5c8a375856c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3edd37259a3624757dd5bc69ffba7159c9b85ad1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390133"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113732"
 ---
 # <a name="handling-bll--and-dal-level-exceptions-c"></a>Обработка исключений уровней BLL и DAL (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59390133"
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_38_CS.exe) или [скачать PDF](handling-bll-and-dal-level-exceptions-cs/_static/datatutorial38cs1.pdf)
 
 > В этом руководстве будет показано, как tactfully обработки исключений, возникающих во время обновления рабочего процесса редактирования элемента управления DataList.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -35,38 +34,30 @@ ms.locfileid: "59390133"
 > [!NOTE]
 > В *обзор редактирования и удаления данных в DataList* учебнике мы рассмотрели различные методы для редактирования и удаления данных из элемента управления DataList, некоторые методы связана с использованием нового ObjectDataSource для обновления и Идет удаление. Если вы применяете эти методы, можно обрабатывать исключения из BLL и DAL с помощью ObjectDataSource s `Updated` или `Deleted` обработчики событий.
 
-
 ## <a name="step-1-creating-an-editable-datalist"></a>Шаг 1. Создание редактируемых элементов управления DataList
 
 Прежде чем думать об обработке исключений, происходящих во время обновления рабочего процесса, позвольте s сначала создать редактируемый элемент управления DataList. Откройте `ErrorHandling.aspx` странице в `EditDeleteDataList` добавьте элемент управления DataList в конструктор, набор папок, его `ID` свойства `Products`, и добавьте новый ObjectDataSource, именуемый `ProductsDataSource`. Настройка ObjectDataSource на использование `ProductsBLL` класс s `GetProducts()` записывает метод выбора; задать раскрывающиеся списки в инструкции INSERT, UPDATE и удаление вкладок (нет).
-
 
 [![Возвращает сведения о продукте, с помощью метода GetProducts()](handling-bll-and-dal-level-exceptions-cs/_static/image2.png)](handling-bll-and-dal-level-exceptions-cs/_static/image1.png)
 
 **Рис. 1**: Возвращает сведения о продукте с помощью `GetProducts()` метод ([Просмотр полноразмерного изображения](handling-bll-and-dal-level-exceptions-cs/_static/image3.png))
 
-
 После завершения работы мастера ObjectDataSource Visual Studio автоматически создает `ItemTemplate` элемента управления DataList. Введите здесь с `ItemTemplate` , отображает каждый s имя и цену продукта и содержит кнопку "Изменить". Создайте `EditItemTemplate` с элементом управления TextBox Web для имени и цены и кнопки "обновления" и "Отмена". Наконец, установите DataList s `RepeatColumns` значение 2.
 
 После внесения этих изменений декларативная разметка s страницы должен выглядеть следующим образом. Еще раз проверьте, убедитесь, что изменить "," "Отмена", и кнопки обновления имеют свои `CommandName` задать свойства для изменения, отменить и обновления, соответственно.
-
 
 [!code-aspx[Main](handling-bll-and-dal-level-exceptions-cs/samples/sample1.aspx)]
 
 > [!NOTE]
 > В этом руководстве элемент управления DataList необходимо включить состояние просмотра s.
 
-
 Отвлекитесь и просмотрите ход работы в обозревателе (см. рис. 2).
-
 
 [![Кнопка «Изменить» включает в себя каждого продукта](handling-bll-and-dal-level-exceptions-cs/_static/image5.png)](handling-bll-and-dal-level-exceptions-cs/_static/image4.png)
 
 **Рис. 2**: Каждый продукт включает кнопка Изменить ([Просмотр полноразмерного изображения](handling-bll-and-dal-level-exceptions-cs/_static/image6.png))
 
-
 В настоящее время "Изменить" только вызывает обратную передачу его t еще редактировать продукта. Чтобы включить редактирование, необходимо создать обработчики событий для элементов управления DataList s `EditCommand`, `CancelCommand`, и `UpdateCommand` события. `EditCommand` И `CancelCommand` события просто обновить DataList s `EditItemIndex` свойство и повторную привязку данных к элементу управления DataList:
-
 
 [!code-csharp[Main](handling-bll-and-dal-level-exceptions-cs/samples/sample2.cs)]
 
@@ -74,16 +65,13 @@ ms.locfileid: "59390133"
 
 Теперь позволяют s просто использовать точный код из `UpdateCommand` обработчик событий в *обзор редактирования и удаления данных в DataList* руководства. Мы добавим код для правильной обработки исключений на шаге 2.
 
-
 [!code-csharp[Main](handling-bll-and-dal-level-exceptions-cs/samples/sample3.cs)]
 
 При возникновении недопустимые входные данные которой может быть в форме созданию неправильно отформатированного цена, значение цены Недопустимая единица, например - 5,00 долл. США или заменяют s название продукта, возникает исключение. Так как `UpdateCommand` обработчик событий не включает любой код на этом этапе обработки исключений, исключение будет передано до среды выполнения ASP.NET, где он будет отображаться для конечного пользователя (см. рис. 3).
 
-
 ![При возникновении необработанного исключения, конечный пользователь видит страницу ошибки](handling-bll-and-dal-level-exceptions-cs/_static/image7.png)
 
 **Рис. 3**: При возникновении необработанного исключения, конечный пользователь видит страницу ошибки
-
 
 ## <a name="step-2-gracefully-handling-exceptions-in-the-updatecommand-event-handler"></a>Шаг 2. Аккуратная обработка исключений в обработчике событий UpdateCommand
 
@@ -93,13 +81,11 @@ ms.locfileid: "59390133"
 
 При возникновении ошибки, нам нужен только метки для отображения один раз. То есть при последующих обратных передачах метка s предупреждающее сообщение должно исчезнуть. Это можно сделать, сняв out метка s `Text` свойства или параметры его `Visible` свойства `False` в `Page_Load` обработчик событий (как делалось в [обработка BLL и исключения уровня DAL в ASP Страница .NET](../editing-inserting-and-deleting-data/handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs.md) руководстве) или путем отключения поддержки состояния представления метки s. Разрешить использовать последний вариант s.
 
-
 [!code-aspx[Main](handling-bll-and-dal-level-exceptions-cs/samples/sample4.aspx)]
 
 При возникновении исключения, мы назначим подробности исключения, чтобы `ExceptionDetails` метки элемента управления s `Text` свойство. Так как состояние просмотра отключено, при последующих обратных передачах `Text` свойство s программного изменения будут потеряны, действовавшие текст по умолчанию (пустая строка), таким образом скрывая предупреждающее сообщение.
 
 Чтобы определить, когда возникает ошибка для отображения на странице отображается информационное сообщение, необходимо добавить `Try ... Catch` блок `UpdateCommand` обработчик событий. `Try` Часть содержит код, который может привести к исключению, хотя `Catch` блок содержит код, выполняемый при возникновении исключения. Ознакомьтесь с [основы обработки исключений](https://msdn.microsoft.com/library/2w8f0bss.aspx) статьи в документации по .NET Framework, Дополнительные сведения о `Try ... Catch` блока.
-
 
 [!code-csharp[Main](handling-bll-and-dal-level-exceptions-cs/samples/sample5.cs)]
 
@@ -107,23 +93,19 @@ ms.locfileid: "59390133"
 
 Мы предоставляем более полезные пояснения конечному пользователю на основе типа исключения, перехваченного текст сообщения. Следующий код, который использовался в почти те же форму обратно в [обработка BLL и исключения уровня DAL на странице ASP.NET](../editing-inserting-and-deleting-data/handling-bll-and-dal-level-exceptions-in-an-asp-net-page-cs.md) учебник такой уровень детализации:
 
-
 [!code-csharp[Main](handling-bll-and-dal-level-exceptions-cs/samples/sample6.cs)]
 
 Для работы с этим руководством, просто вызовите `DisplayExceptionDetails` метода из `Catch` блок, передавая на Перехваченный `Exception` экземпляра (`ex`).
 
 С помощью `Try ... Catch` блока в месте, пользователям предоставляется более подробное сообщение об ошибке, как рис. 4 и 5 show. Обратите внимание, что при возникновении исключения DataList остается в режиме редактирования. Это обусловлено тем, как только произойдет исключение, поток управления немедленно перенаправлены в `Catch` блока, минуя код, который возвращает состояние до редактирования элемента управления DataList.
 
-
 [![Сообщение об ошибке отображается в том случае, когда пользователь опускает необходимые поля](handling-bll-and-dal-level-exceptions-cs/_static/image9.png)](handling-bll-and-dal-level-exceptions-cs/_static/image8.png)
 
 **Рис. 4**: Сообщение об ошибке отображается в том случае, когда пользователь опускает необходимые поля ([Просмотр полноразмерного изображения](handling-bll-and-dal-level-exceptions-cs/_static/image10.png))
 
-
 [![Сообщение об ошибке — отображаются при вводе отрицательное цены](handling-bll-and-dal-level-exceptions-cs/_static/image12.png)](handling-bll-and-dal-level-exceptions-cs/_static/image11.png)
 
 **Рис. 5**: Сообщение об ошибке — отображаются при вводе отрицательное цены ([Просмотр полноразмерного изображения](handling-bll-and-dal-level-exceptions-cs/_static/image13.png))
-
 
 ## <a name="summary"></a>Сводка
 

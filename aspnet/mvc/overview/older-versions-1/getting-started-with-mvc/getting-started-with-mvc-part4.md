@@ -8,19 +8,18 @@ ms.date: 08/14/2010
 ms.assetid: 742df67f-484d-4ef3-af6b-8c791e556b43
 msc.legacyurl: /mvc/overview/older-versions-1/getting-started-with-mvc/getting-started-with-mvc-part4
 msc.type: authoredcontent
-ms.openlocfilehash: b75057f3128662a9bbdd641dc0a7c1ba09fbbe87
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 995db714ce6365415d06dc458aee84a31c7c8fd6
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59388196"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117679"
 ---
 # <a name="creating-a-database"></a>Создание базы данных
 
 по [(Scott hanselman)](https://github.com/shanselman)
 
 > Это руководство для начинающих, в котором представлены основные сведения по ASP.NET MVC. Вы создадите простое веб-приложение, которое считывает и записывает в базу данных. Посетите [центр обучения ASP.NET MVC](../../../index.md) для поиска других ASP.NET MVC, учебники и примеры.
-
 
 В этом разделе мы собираемся создать новую SQL Express, мы будем использовать для хранения и извлечения данных фильмов. Из интегрированной среды разработки Visual Web Developer, выберите представление | Обозреватель серверов. Щелкните правой кнопкой подключения к данным и нажмите кнопку Добавить соединение...
 

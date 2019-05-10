@@ -8,12 +8,12 @@ ms.date: 02/20/2007
 ms.assetid: 9673bef3-892c-45ba-a7d8-0da3d6f48ec5
 msc.legacyurl: /web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/inserting-updating-and-deleting-data-with-the-sqldatasource-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 5be1fd787c1ee001ce46384162eaebc89ec5c0a8
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a52f5db8dbda2ec8f556d2627271f53ffbcc3045
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404784"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115077"
 ---
 # <a name="inserting-updating-and-deleting-data-with-the-sqldatasource-vb"></a>Вставка, обновление и удаление данных с помощью элемента управления SqlDataSource (VB)
 
@@ -23,7 +23,6 @@ ms.locfileid: "59404784"
 
 > В предыдущих учебных курсах мы показали, как элемент управления ObjectDataSource, разрешенное для вставки, обновления и удаления данных. Элемента управления SqlDataSource поддерживает те же операции, но этот подход отличается учебнике демонстрируется настройка элемента управления SqlDataSource для вставки, обновления и удаления данных.
 
-
 ## <a name="introduction"></a>Вступление
 
 Как уже говорилось в [Обзор для вставки, обновления и удаления](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-vb.md), элемент управления GridView предоставляет встроенные обновление и удаление возможностей, хотя в элементы управления DetailsView и FormView включают в себя Вставка поддержку вместе с редактирование и удаление функциональные возможности. Эти возможности изменения данных можно подключать к элементу управления источником данных без написания кода, нужно записать. [Обзор для вставки, обновления и удаления](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-vb.md) при просмотре с помощью элемента управления ObjectDataSource для облегчения вставки, обновления и удаления с элементами управления GridView, DetailsView и FormView. Кроме того элемента управления SqlDataSource может использоваться вместо элемента управления ObjectDataSource.
@@ -32,7 +31,6 @@ ms.locfileid: "59404784"
 
 > [!NOTE]
 > С момента мы ve описанию Вставка, редактирование и удаление возможностей элемента управления GridView, DetailsView и FormView управляет, этот учебник посвящен настройке элемента управления SqlDataSource для поддержки этих операций. Если вы хотите освежить по реализации этих функций в GridView, DetailsView и FormView, возврат к руководствам, редактирование, вставка и удаление данных, начиная с [Обзор для вставки, обновления и удаления](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-vb.md).
-
 
 ## <a name="step-1-specifyinginsertupdate-anddeletestatements"></a>Шаг 1. Указание`INSERT`,`UPDATE`, и`DELETE`инструкций
 
@@ -49,11 +47,9 @@ ms.locfileid: "59404784"
 
 Сначала откройте `InsertUpdateDelete.aspx` и `Querying.aspx` страниц из `SqlDataSource` папки. Из конструктора, `Querying.aspx` выберите SqlDataSource и GridView из первого примера ( `ProductsDataSource` и `GridView1` элементы управления). После выбора двух элементов управления, перейдите к меню "Правка" и выберите команду Копировать (или просто нажать клавиши Ctrl + C). Перейдите в конструктор `InsertUpdateDelete.aspx` и вставьте в элементах управления. После перемещения двух элементов управления для `InsertUpdateDelete.aspx`, протестировать страницу в браузере. Вы должны увидеть значения `ProductID`, `ProductName`, и `UnitPrice` столбцы для всех записей в `Products` таблицы базы данных.
 
-
 [![Все продукты в списке, упорядоченные по значению ProductID](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image1.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image1.png)
 
 **Рис. 1**: Все продукты в списке, упорядоченные по `ProductID` ([Просмотр полноразмерного изображения](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image2.png))
-
 
 ## <a name="adding-the-sqldatasource-sdeletecommandanddeleteparametersproperties"></a>Добавление элемента управления SqlDataSource s`DeleteCommand`и`DeleteParameters`свойства
 
@@ -70,15 +66,12 @@ ms.locfileid: "59404784"
 
 Из конструктора в `InsertUpdateDelete.aspx`, щелкните `ProductsDataSource` SqlDataSource и затем откройте окно свойств (из меню «Вид» выберите окно "Свойства", или просто нажмите клавишу F4). Выберите свойство DeleteQuery, чтобы открыть набор многоточие.
 
-
 ![Выберите свойство DeleteQuery из окна свойств](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image2.gif)
 
 **Рис. 2**: Выберите свойство DeleteQuery из окна свойств
 
-
 > [!NOTE]
 > T SqlDataSource имеют свойство DeleteQuery. Вместо этого DeleteQuery представляет собой сочетание `DeleteCommand` и `DeleteParameters` свойства и перечисляется, только в окне «Свойства» при просмотре окна в конструкторе. Если вам нужны в окне свойств в представлении источника, вы найдете `DeleteCommand` свойство вместо этого.
-
 
 Щелкните многоточие в свойстве DeleteQuery для открытия диалогового окна Редактор команд и параметров поле (см. рис. 3). В этом диалоговом окне можно указать `DELETE` инструкции SQL и укажите параметры. Введите следующий запрос в `DELETE` команда textbox (либо вручную или с помощью построителя запросов, если вы предпочитаете):
 
@@ -86,17 +79,14 @@ ms.locfileid: "59404784"
 
 Затем нажмите кнопку Обновить параметры, чтобы добавить `@ProductID` параметр к списку параметров ниже.
 
-
 [![Выберите свойство DeleteQuery из окна свойств](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image3.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image3.png)
 
 **Рис. 3**: Выберите свойство DeleteQuery из окна свойств ([Просмотр полноразмерного изображения](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image4.png))
-
 
 Сделать *не* предоставить значение для этого параметра (оставить ее параметр источник в None). Когда мы добавляем поддержки удаления к элементу GridView, GridView будет автоматически предоставлять значение этого параметра, используя значение его `DataKeys` коллекции, для которого была нажата для удаления строки.
 
 > [!NOTE]
 > Имя параметра, используемое в `DELETE` запроса *необходимо* совпадать со значением имя `DataKeyNames` значение в GridView, DetailsView и FormView. То есть параметр в `DELETE` инструкции намеренно называется `@ProductID` (вместо, например, `@ID`), так как является именем первичного ключевого столбца в таблице Products (и, следовательно, как значение DataKeyNames в GridView) `ProductID`.
-
 
 Если имя параметра и `DataKeyNames` значения совпадают, GridView не удается назначить автоматически параметр значение из `DataKeys` коллекции.
 
@@ -110,25 +100,20 @@ ms.locfileid: "59404784"
 
 С помощью `DeleteCommand` добавить свойство, смарт-тега GridView s теперь содержит параметр Разрешить удаление. Продолжим и установите этот флажок. Как уже говорилось в [Обзор для вставки, обновления и удаления](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-vb.md), это приводит к GridView добавить поле CommandField с его `ShowDeleteButton` свойство значение `True`. Рис. 4 показано при просмотре через обозреватель включается кнопку «Удалить». Проверьте эту страницу, удалив некоторые продукты.
 
-
 [![Каждая строка GridView теперь включает кнопку «Удалить»](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image4.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image5.png)
 
 **Рис. 4**: Каждая строка GridView теперь включает кнопки Delete ([Просмотр полноразмерного изображения](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image6.png))
-
 
 При нажатии кнопки "Удалить", происходит обратная передача, назначает GridView `ProductID` параметр значением из `DataKeys` коллекции значение для строки, кнопки "Удалить" была нажата и вызывает SqlDataSource s `Delete()` метод. Элемента управления SqlDataSource затем подключается к базе данных и выполняет `DELETE` инструкции. GridView затем выполняет повторную привязку для элемента управления SqlDataSource, получение и отображение текущего набора продуктов (который больше не включает только удаленные записи).
 
 > [!NOTE]
 > Так как использует GridView его `DataKeys` коллекцию для заполнения параметров SqlDataSource, он s жизненно важных, GridView s `DataKeyNames` свойства указать столбцы, которые составляют первичный ключ и что SqlDataSource s `SelectCommand` возвращает Эти столбцы. Кроме того он s, важно, что имя параметра в SqlDataSource s `DeleteCommand` присваивается `@ProductID`. Если `DataKeyNames` свойство не задано или не имеет параметра `@ProductsID`, нажав кнопку «Удалить» вызовет обратную передачу, но фактически не удаляются все записи.
 
-
 Рис. 5 графически показано это взаимодействие. Вернуться к [Проверка события, связанные с вставки, обновления и удаления](../editing-inserting-and-deleting-data/examining-the-events-associated-with-inserting-updating-and-deleting-vb.md) учебник по более подробный рассказ о найти цепочку событий, связанных с Вставка, обновление и удаление из данных веб-элемента управления.
-
 
 ![Нажатие кнопки удаления в GridView вызывает метод s Delete() элемента управления SqlDataSource](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image5.gif)
 
 **Рис. 5**: Нажатие кнопки удаления в GridView вызывает SqlDataSource s `Delete()` метод
-
 
 ## <a name="step-2-automatically-generating-theinsertupdate-anddeletestatements"></a>Шаг 2. Автоматическое создание`INSERT`,`UPDATE`, и`DELETE`инструкций
 
@@ -136,27 +121,21 @@ ms.locfileid: "59404784"
 
 Позволяют изучить эту возможность автоматического создания s. Добавьте в конструктор в элементе управления DetailsView `InsertUpdateDelete.aspx` и задайте его `ID` свойства `ManageProducts`. Затем выберите смарт-теге DetailsView s создать новый источник данных и создание элемента управления SqlDataSource с именем `ManageProductsDataSource`.
 
-
 [![Создание нового элемента управления SqlDataSource с именем ManageProductsDataSource](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image6.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image7.png)
 
 **Рис. 6**: Создать новый именованный SqlDataSource `ManageProductsDataSource` ([Просмотр полноразмерного изображения](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image8.png))
 
-
 С помощью мастера настройки источника данных, необязательно использовать `NORTHWINDConnectionString` подключения строку и нажмите кнопку Далее. От настройки на экране инструкции Select, оставьте укажите столбцы из таблицы или представления переключатель выбран и выбрать `Products` таблицу из раскрывающегося списка. Выберите `ProductID`, `ProductName`, `UnitPrice`, и `Discontinued` столбцы из списка флажок.
-
 
 [![Используя таблицы Products, возвратить ProductID, ProductName, UnitPrice и неподдерживаемые столбцы](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image7.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image9.png)
 
 **Рис. 7**: С помощью `Products` таблицы, возвращаемые `ProductID`, `ProductName`, `UnitPrice`, и `Discontinued` столбцы ([Просмотр полноразмерного изображения](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image10.png))
 
-
 Для автоматического создания `INSERT`, `UPDATE`, и `DELETE` операторов на основании выбранной таблицы и столбцы, нажмите кнопку "Дополнительно" и проверьте формирования `INSERT`, `UPDATE`, и `DELETE` флажок инструкций.
-
 
 ![Проверка инструкций флажок Создать INSERT, UPDATE и DELETE](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image8.gif)
 
 **Рис. 8**: Проверьте формирования `INSERT`, `UPDATE`, и `DELETE` инструкций флажок
-
 
 Создание `INSERT`, `UPDATE`, и `DELETE` инструкций флажок будет только можно отметить флажком Если выбранную таблицу имеет первичный ключ и первичный ключевой столбец (или столбцы) включены в список возвращаемых столбцов. Флажок использования оптимистичного параллелизма, который становится доступным для выбора после формирования `INSERT`, `UPDATE`, и `DELETE` инструкций флажок, будут дополнять `WHERE` предложений в итоговом `UPDATE` и `DELETE` инструкции, чтобы предоставить управление оптимистичным параллелизмом. Пока оставьте этот флажок снят флажок; в следующем учебном курсе мы рассмотрим оптимистического параллелизма с помощью элемента управления SqlDataSource.
 
@@ -172,17 +151,14 @@ ms.locfileid: "59404784"
 
 Посетите страницу в браузере и запишите изменения, удаления и новые кнопки, включенных в DetailsView. Нажав кнопку "Изменить" включает DetailsView в режим редактирования, который отображает каждый BoundField которого `ReadOnly` свойству `False` (по умолчанию) как TextBox и CheckBoxField как флажок.
 
-
 [![DetailsView s по умолчанию интерфейс редактирования](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image9.gif)](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image11.png)
 
 **Рис. 9**: S DetailsView по умолчанию интерфейс правки ([Просмотр полноразмерного изображения](inserting-updating-and-deleting-data-with-the-sqldatasource-vb/_static/image12.png))
-
 
 Аналогичным образом можно удалить текущий выбранный продукт или добавления нового продукта в систему. Так как `InsertCommand` оператор работает только с `ProductName`, `UnitPrice`, и `Discontinued` столбцы, либо имеют другие столбцы `NULL` или значения по умолчанию, присваивается базой данных после инструкции insert. Так же, как с помощью ObjectDataSource, если `InsertCommand` отсутствует любой таблицы базы данных, столбцы, где t позволяют `NULL` s и Дон t имеет значения по умолчанию, в SQL возникает ошибка при попытке выполнить `INSERT` инструкции.
 
 > [!NOTE]
 > S DetailsView, вставка и редактирование интерфейсы не хватает каких-либо настройки или проверки. Добавление элементов управления проверки или настроить интерфейсы, необходимо преобразовать полей BoundField в поля TemplateField. Ссылаться на [Добавление проверяющих элементов управления для редактирования и вставки интерфейсы](../editing-inserting-and-deleting-data/adding-validation-controls-to-the-editing-and-inserting-interfaces-vb.md) и [Настройка интерфейса изменения данных](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) учебники Дополнительные сведения.
-
 
 Кроме того, следует помнить, что для обновления и удаления, DetailsView использует текущий продукт s `DataKey` значение, которое присутствует, только если `DataKeyNames` свойство настроено. Если изменение или удаление не действовать, убедитесь, что `DataKeyNames` свойству.
 
@@ -198,7 +174,6 @@ ms.locfileid: "59404784"
 
 > [!NOTE]
 > При Добавление параметров, у которых нет соответствующих полей в данных веб-элемент управления, помните, что эти значения параметров будет необходимо назначить значения какие-либо действия. Эти значения могут быть: жестко непосредственно в `InsertCommand` или `UpdateCommand`; могут поступать из какого-либо предварительно определенные источника (строки запроса, состояние сеанса, веб-элементов управления на странице и т. д.); так и программными средствами, как мы видели в предыдущем учебном курсе.
-
 
 ## <a name="summary"></a>Сводка
 

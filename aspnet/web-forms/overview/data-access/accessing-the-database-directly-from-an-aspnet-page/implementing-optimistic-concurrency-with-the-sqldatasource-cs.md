@@ -8,12 +8,12 @@ ms.date: 02/20/2007
 ms.assetid: df999966-ac48-460e-b82b-4877a57d6ab9
 msc.legacyurl: /web-forms/overview/data-access/accessing-the-database-directly-from-an-aspnet-page/implementing-optimistic-concurrency-with-the-sqldatasource-cs
 msc.type: authoredcontent
-ms.openlocfilehash: e8ed68e10d2924a2174494943b654e1f46284be4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: dd2b44803f00f7e194e2c41f448d579865da58b6
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59420709"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65115121"
 ---
 # <a name="implementing-optimistic-concurrency-with-the-sqldatasource-c"></a>Реализация оптимистического параллелизма с помощью элемента управления SqlDataSource (C#)
 
@@ -23,18 +23,15 @@ ms.locfileid: "59420709"
 
 > В этом руководстве мы просмотрите основные оптимистическое управление параллелизмом и исследуйте способы реализации с помощью элемента управления SqlDataSource.
 
-
 ## <a name="introduction"></a>Вступление
 
 В предыдущем учебном курсе было рассмотрено, как добавить Вставка, обновление и удаление возможностей для элемента управления SqlDataSource. Иными словами, чтобы предоставить эти функции необходимо было указывать соответствующий `INSERT`, `UPDATE`, или `DELETE` инструкции SQL в элементе управления s `InsertCommand`, `UpdateCommand`, или `DeleteCommand` свойства, а также соответствующий параметры в `InsertParameters`, `UpdateParameters`, и `DeleteParameters` коллекций. Хотя эти свойства и коллекции можно указать вручную, «мастер настройки источника данных s Дополнительно» предлагает создать `INSERT`, `UPDATE`, и `DELETE` на основе инструкций флажок, который будет автоматически создавать эти инструкции `SELECT` инструкции.
 
 А также формирования `INSERT`, `UPDATE`, и `DELETE` флажок инструкций, в диалоговом окне Дополнительные параметры создания SQL включает параметр использования оптимистичного параллелизма (см. рис. 1). Если флажок установлен, `WHERE` предложения в автоматически сформированного `UPDATE` и `DELETE` инструкции изменены только выполнить обновление или удаление, если основной базы данных не был изменен после его последней загрузки данных в сетку.
 
-
 ![Вы можете добавить поддержку оптимистичный параллелизм с расширенными диалоговое окно параметров Создание кода SQL](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image1.gif)
 
 **Рис. 1**: Вы можете добавить поддержку оптимистичный параллелизм с расширенными диалоговое окно параметров Создание кода SQL
-
 
 Вернитесь в [реализации оптимистичного параллелизма](../editing-inserting-and-deleting-data/implementing-optimistic-concurrency-cs.md) учебнике мы рассмотрели основные принципы управления оптимистичным параллелизмом и как добавить его к элементу ObjectDataSource. В этом руководстве мы ретуширование основные управление оптимистичным параллелизмом и исследуйте его с помощью элемента управления SqlDataSource реализации.
 
@@ -46,28 +43,22 @@ ms.locfileid: "59420709"
 
 На рисунке 2 показано это взаимодействие.
 
-
 [![При одновременном обновлении записи существует вероятность s s один пользователь изменяет перезаписать другие устройства](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image2.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image1.png)
 
 **Рис. 2**: При одновременном обновлении записи существует s потенциал s одного пользователя изменениями перезаписать другие устройства ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image2.png))
-
 
 Чтобы предотвратить возникновение такой ситуации из unfolding разновидность [управления параллелизмом](http://en.wikipedia.org/wiki/Concurrency_control) должен быть реализован. [Оптимистичный параллелизм](http://en.wikipedia.org/wiki/Optimistic_concurrency_control) фокус данного учебника работает на предположении, что, хотя здесь могут возникать конфликты параллелизма профессиональным сейчас или позже, подавляющее большинство случаев такие конфликты не возникают. Таким образом Если конфликт возникает, управление оптимистичным параллелизмом просто пользователю сохранить их изменения удается так, как и те же данные были изменены другим пользователем.
 
 > [!NOTE]
 > Для приложений, где предполагается, что будет много конфликтов параллелизма, или если такие конфликты не являются приемлемой затем пессимистическое управление параллелизмом можно использовать вместо этого. Вернуться к [реализации оптимистичного параллелизма](../editing-inserting-and-deleting-data/implementing-optimistic-concurrency-cs.md) учебника более глубокое обсуждение управление пессимистичным параллелизмом.
 
-
 Управление оптимистичным параллелизмом осуществляется путем обеспечения, что запись обновляемой или удаляемой имеет те же значения, как при запуске процесса обновления или удаления. Например при нажатии кнопки "Изменить" в изменяемого элемента управления GridView, значения запись s чтение из базы данных и отображаются в текстовые поля и другие веб-элементов управления. Эти исходные значения сохраняются элементом GridView. Позже, после того как пользователь вносит изменения ее и щелкает кнопкой "Обновить", `UPDATE` используется инструкция необходимо учитывать исходные и новые значения и только обновление базовой записи в базе данных, если исходные значения, что пользователь начал редактирование идентичны со значениями в базе данных. На рисунке 3 показана эта последовательность событий.
-
 
 [![Для обновления или удаления, для успешного выполнения исходные значения должен быть равным текущие значения базы данных](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image3.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image3.png)
 
 **Рис. 3**: Для обновления или удаления будет успешной, исходные значения должен быть равным текущие значения базы данных ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image4.png))
 
-
 Существуют различные подходы к реализации оптимистичного параллелизма (см. в разделе [статье](http://www.eggheadcafe.com/articles/pbrombergresume.asp) [логика обновления оптимистичного параллелизма](http://www.eggheadcafe.com/articles/20050719.asp) для кратко рассмотрим несколько вариантов). Методика элемента управления SqlDataSource (а также ADO.NET типизированные наборы данных, используемые в наших уровня доступа к данным) расширяет `WHERE` предложение сравнением всех исходных значений. Следующие `UPDATE` инструкция, к примеру, обновляет название и цену продукта, только в том случае, если текущие значения базы данных равны значениям, которые были изначально получены при обновлении записи GridView. `@ProductName` И `@UnitPrice` параметры содержат новые значения, введенные пользователем, в то время как `@original_ProductName` и `@original_UnitPrice` содержат значения, которые были изначально загружены в GridView, если была нажата кнопка редактирования:
-
 
 [!code-sql[Main](implementing-optimistic-concurrency-with-the-sqldatasource-cs/samples/sample1.sql)]
 
@@ -77,37 +68,29 @@ ms.locfileid: "59420709"
 
 Сначала откройте `OptimisticConcurrency.aspx` странице из `SqlDataSource` папки. Перетащите элемент управления SqlDataSource из инструментария в конструктор, параметры его `ID` свойства `ProductsDataSourceWithOptimisticConcurrency`. Затем щелкните ссылку Настройка источника данных в смарт-теге элемента управления s. На первом экране мастера, выберите для работы с `NORTHWINDConnectionString` и нажмите кнопку Далее.
 
-
 [![Выберите для работы с NORTHWINDConnectionString](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image4.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image5.png)
 
 **Рис. 4**: Выберите для работы с `NORTHWINDConnectionString` ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image6.png))
 
-
 В этом примере мы добавим GridView, который позволяет пользователям редактировать `Products` таблицы. Таким образом, Настройка экрана инструкции Select, выберите `Products` таблицу из раскрывающегося списка и выберите `ProductID`, `ProductName`, `UnitPrice`, и `Discontinued` столбцов, как показано на рис. 5.
-
 
 [![Из таблицы Products возвращаемое ProductID, ProductName, UnitPrice и неподдерживаемые столбцы](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image5.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image7.png)
 
 **Рис. 5**: Из `Products` таблицы, возвращаемые `ProductID`, `ProductName`, `UnitPrice`, и `Discontinued` столбцы ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image8.png))
 
-
 После выбора столбцов, нажмите кнопку «Дополнительно», чтобы открыть диалоговое окно Дополнительные параметры создания SQL. Проверьте формирования `INSERT`, `UPDATE`, и `DELETE` инструкций и используйте флажки оптимистичного параллелизма и нажмите кнопку OK (см рис. 1 показана). Завершите работу мастера, нажав кнопку Далее, а затем завершите.
 
 После завершения работы мастера настройки источника данных Отвлекитесь и просмотрите полученный в результате `DeleteCommand` и `UpdateCommand` свойства и `DeleteParameters` и `UpdateParameters` коллекций. Самый простой способ сделать это — щелкните на вкладке "источник" в левом нижнем углу для декларативного синтаксиса страницы s см. в разделе. Там вы найдете `UpdateCommand` значение:
-
 
 [!code-sql[Main](implementing-optimistic-concurrency-with-the-sqldatasource-cs/samples/sample2.sql)]
 
 С семью параметрами в `UpdateParameters` коллекции:
 
-
 [!code-aspx[Main](implementing-optimistic-concurrency-with-the-sqldatasource-cs/samples/sample3.aspx)]
 
 Аналогичным образом `DeleteCommand` свойство и `DeleteParameters` коллекции должен выглядеть следующим образом:
 
-
 [!code-sql[Main](implementing-optimistic-concurrency-with-the-sqldatasource-cs/samples/sample4.sql)]
-
 
 [!code-aspx[Main](implementing-optimistic-concurrency-with-the-sqldatasource-cs/samples/sample5.aspx)]
 
@@ -121,11 +104,9 @@ ms.locfileid: "59420709"
 > [!NOTE]
 > Так как мы повторно не с помощью элемента управления SqlDataSource CTRL + s, вставка возможности, вы можете удалить `InsertCommand` свойство и его `InsertParameters` коллекции.
 
-
 ## <a name="correctly-handlingnullvalues"></a>Для правильной обработки`NULL`значения
 
 К сожалению, дополненной `UPDATE` и `DELETE` у автоматически созданных инструкций с помощью мастера настройки источника данных при использовании оптимистичного параллелизма *не* работают с записи, содержащие `NULL` значения. Чтобы понять, почему, рассмотрим наши s SqlDataSource `UpdateCommand`:
-
 
 [!code-sql[Main](implementing-optimistic-concurrency-with-the-sqldatasource-cs/samples/sample6.sql)]
 
@@ -134,9 +115,7 @@ ms.locfileid: "59420709"
 > [!NOTE]
 > Эта ошибка сначала было передано в корпорацию Майкрософт в июне 2004 в [SqlDataSource создает неправильный инструкций SQL](https://connect.microsoft.com/VisualStudio/feedback/ViewFeedback.aspx?FeedbackID=93937) и сообщается, что планируется исправить в следующей версии ASP.NET.
 
-
 Чтобы устранить эту проблему, необходимо вручную обновить `WHERE` предложений в обоих `UpdateCommand` и `DeleteCommand` свойства **все** столбцы, которые могут иметь `NULL` значения. Как правило, изменять `[ColumnName] = @original_ColumnName` для:
-
 
 [!code-sql[Main](implementing-optimistic-concurrency-with-the-sqldatasource-cs/samples/sample7.sql)]
 
@@ -144,27 +123,22 @@ ms.locfileid: "59420709"
 
 Применяя его к нашему примеру приводит следующий измененный `UpdateCommand` и `DeleteCommand` значения:
 
-
 [!code-sql[Main](implementing-optimistic-concurrency-with-the-sqldatasource-cs/samples/sample8.sql)]
 
 ## <a name="step-2-adding-a-gridview-with-edit-and-delete-options"></a>Шаг 2. Добавление элемента GridView с помощью редактирования и удаления параметров
 
 С помощью элемента управления SqlDataSource, настроен для поддержки оптимистичного параллелизма остается только добавить данных веб-элемента управления на страницу, который использует этот элемент управления параллелизмом. Для этого руководства позволяют s добавьте элемент управления GridView, который предоставляет режимах редактирования и функцию удаления. Для этого перетащите GridView с панели элементов в конструктор и задайте его `ID` для `Products`. Смарт-теге GridView s, привяжите его к `ProductsDataSourceWithOptimisticConcurrency` управления SqlDataSource, добавленный на шаге 1. Наконец проверьте параметры включить редактирование и разрешить удаление, в смарт-теге.
 
-
 [![Привязка элемента управления SqlDataSource GridView и разрешить правку и удаление](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image6.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image9.png)
 
 **Рис. 6**: Привязки GridView к SqlDataSource и разрешить редактирование и удаление ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image10.png))
-
 
 После добавления элемента GridView, настроить его внешний вид, удалив `ProductID` BoundField, изменение `ProductName` BoundField s `HeaderText` свойство для продукта и ее обновления `UnitPrice` BoundField таким образом, чтобы его `HeaderText` свойство просто цена. В идеальном случае мы d улучшения интерфейса редактирования для включения RequiredFieldValidator для `ProductName` значение и CompareValidator для `UnitPrice` значение (чтобы гарантировать, что s числовое значение в правильном формате). Ссылаться на [Настройка интерфейса изменения данных](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-cs.md) учебник по более подробно рассмотрим Настройка s GridView, интерфейс редактирования.
 
 > [!NOTE]
 > GridView, которые необходимо включить состояние представления s, так как исходные значения, передаваемые с GridView элемента управления SqlDataSource сохраняются в состоянии представления.
 
-
 После внесения этих изменений в GridView, декларативная разметка GridView и SqlDataSource должен выглядеть следующим образом:
-
 
 [!code-aspx[Main](implementing-optimistic-concurrency-with-the-sqldatasource-cs/samples/sample9.aspx)]
 
@@ -172,14 +146,11 @@ ms.locfileid: "59420709"
 
 В окне второго обозревателя цену (оставив, название продукта как исходное значение) и нажмите кнопку обновления. При обратной передаче возвращает сетки в режим до редактирования, но не записи изменения цены. Второй обозреватель показано то же значение, что первый из них имя продукта с старая цена. Изменения, внесенные в окне второго обозревателя были потеряны. Кроме того изменения были потеряны довольно без вмешательства пользователя, так как не исключение или сообщение о том, что только что о возникновении одновременного нарушения.
 
-
 [![Изменения в окне второго обозревателя автоматически удалены.](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image7.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image11.png)
 
 **Рис. 7**: Изменения в второй браузера окна были автоматически потеряны ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image12.png))
 
-
 Была причина, почему второй браузера s изменения не были зафиксированы, так как `UPDATE` инструкцию s `WHERE` предложение отфильтрованы все записи и поэтому не обработала все строки. Позвольте s рассмотрим `UPDATE` инструкцию еще раз:
-
 
 [!code-sql[Main](implementing-optimistic-concurrency-with-the-sqldatasource-cs/samples/sample10.sql)]
 
@@ -188,23 +159,19 @@ ms.locfileid: "59420709"
 > [!NOTE]
 > Принцип работы DELETE таким же образом. С помощью двух окнах браузера откройте начните с редактирования данного продукта с одной и сохранять свои изменения. После сохранения изменений в один браузер, нажмите кнопку Delete на один продукт, в другой. Поскольку исходные значения Дон t связываете `DELETE` операторов `WHERE` предложение, удаление автоматически завершается сбоем.
 
-
 С точки зрения конечного пользователя s во второе окно браузера после нажатия кнопки обновления сетки возвращает режиму до редактирования, но их изменения были потеряны. Тем не менее существует s не визуальной обратной связи, не пользуйтесь свои изменения. В идеальном случае случае утери для одновременного нарушения изменения пользователя s мы d уведомлением и, возможно, сохранить сетке в режиме редактирования. Позвольте s рассмотрим, как для выполнения этой задачи.
 
 ## <a name="step-3-determining-when-a-concurrency-violation-has-occurred"></a>Шаг 3. Определения возникновения одновременного нарушения
 
 Поскольку одновременного нарушения отклоняет изменения, внесенные одним, было бы неплохо для предупреждения пользователя при возникновении одновременного нарушения. Чтобы предупредить пользователя, позволяют s добавьте элемент управления Label Web в верхней части страницы с именем `ConcurrencyViolationMessage` которого `Text` свойство отображается следующее сообщение: Предпринята попытка обновить или удалить запись, которая одновременно был обновлен другим пользователем. Можно просмотреть изменения другого пользователя и затем повторить обновление или удалить. Задать элемент управления "Метка" s `CssClass` свойства на "Предупреждение", который является классом CSS, определенного в `Styles.css` red, курсивом, полужирным шрифтом и большого шрифта, который отображает текст. Наконец, задайте для метки s `Visible` и `EnableViewState` свойства `false`. При этом будут скрыты за исключением только обратных передач, где мы прямо устанавливаем метку его `Visible` свойства `true`.
 
-
 [![Добавьте элемент управления Label к странице для отображения предупреждения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image8.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image13.png)
 
 **Рис. 8**: Добавьте элемент управления Label к странице для отображения предупреждения ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image14.png))
 
-
 При выполнении обновления или удаления, GridView s `RowUpdated` и `RowDeleted` обработчики событий срабатывать после его источник данных выполнил запрошенную update или delete. Мы можем определить, сколько строк участвовало операцию из этих обработчиков событий. Если ни одной строки были затронуты, нам требуется вывести `ConcurrencyViolationMessage` метки.
 
 Создайте обработчик событий для обоих `RowUpdated` и `RowDeleted` события и добавьте следующий код:
-
 
 [!code-csharp[Main](implementing-optimistic-concurrency-with-the-sqldatasource-cs/samples/sample11.cs)]
 
@@ -212,11 +179,9 @@ ms.locfileid: "59420709"
 
 Как показано на рис. 9, с помощью этих двух обработчиков выросли сообщение отображается при каждом возникновении одновременного нарушения.
 
-
 [![При возникновении одновременного нарушения отображается сообщение](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image9.gif)](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image15.png)
 
 **Рис. 9**: При возникновении одновременного нарушения отображается сообщение ([Просмотр полноразмерного изображения](implementing-optimistic-concurrency-with-the-sqldatasource-cs/_static/image16.png))
-
 
 ## <a name="summary"></a>Сводка
 

@@ -8,19 +8,18 @@ ms.date: 03/02/2009
 ms.assetid: 4733b9f1-9999-48fb-8b73-6038fbcc5ecb
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/validating-with-the-idataerrorinfo-interface-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 3e1399d17840a2f5301349cb91deb07b0cc34363
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 938b180da02b1963acffd021d18621d75d1d0447
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421983"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65117560"
 ---
 # <a name="validating-with-the-idataerrorinfo-interface-c"></a>Проверка с помощью интерфейса IDataErrorInfo (C#)
 
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > Стивен Вальтер показано, как для отображения пользовательской проверки ошибок путем реализации интерфейса IDataErrorInfo в классе модели.
-
 
 Этот учебник призван объяснить одним из подходов к проверке в ASP.NET MVC-приложениях. Вы узнаете, как запретить кто-то отправка формы HTML без указания значения для обязательных полей формы. В этом руководстве вы узнаете, как выполнять проверку с помощью интерфейса IErrorDataInfo.
 
@@ -30,7 +29,6 @@ ms.locfileid: "59421983"
 
 <a id="0.5_table01"></a>
 
-
 | **Имя столбца** | **Тип данных** | **Разрешить значения NULL** |
 | --- | --- | --- |
 | Идентификатор | Int | False |
@@ -38,19 +36,15 @@ ms.locfileid: "59421983"
 | Директор | Nvarchar(100) | False |
 | DateReleased | DateTime | False |
 
-
 В данном случае я использую Microsoft Entity Framework для создания Мои классы модели базы данных. Класс Movie, созданным Entity Framework отображается на рис. 1.
-
 
 [![Сущность фильма](validating-with-the-idataerrorinfo-interface-cs/_static/image1.jpg)](validating-with-the-idataerrorinfo-interface-cs/_static/image1.png)
 
 **Рис 01**: Объект фильма ([Просмотр полноразмерного изображения](validating-with-the-idataerrorinfo-interface-cs/_static/image2.png))
 
-
 > [!NOTE] 
 > 
 > Дополнительные сведения об использовании платформы Entity Framework для создания классов модели базы данных, см. Мой руководстве Creating Model Classes with Entity Framework.
-
 
 ## <a name="the-controller-class"></a>Класс контроллера
 
@@ -72,11 +66,9 @@ ms.locfileid: "59421983"
 
 Класс Movie создается платформой Entity Framework. Вы увидите код для класса фильма, если развернуть файл MoviesDBModel.edmx в окне обозревателя решений и откройте файл MoviesDBModel.Designer.cs в редакторе кода (см. рис. 2).
 
-
 [![Код для сущности фильма](validating-with-the-idataerrorinfo-interface-cs/_static/image2.jpg)](validating-with-the-idataerrorinfo-interface-cs/_static/image3.png)
 
 **Рис. 02**: Код для сущности фильма ([Просмотр полноразмерного изображения](validating-with-the-idataerrorinfo-interface-cs/_static/image4.png))
-
 
 Класс Movie — это разделяемый класс. Это означает, что мы можем добавить еще один разделяемый класс с тем же именем, чтобы расширить функциональные возможности класса Movie. Мы добавим логику проверки в новый разделяемый класс.
 
@@ -110,7 +102,6 @@ ms.locfileid: "59421983"
 > [!NOTE] 
 > 
 > Разделяемый метод — это метод, определенный в классе, который не является обязательным для реализации. Если не реализовать разделяемый метод, компилятор удаляет сигнатуру метода, и все вызовы метода таким образом являются без затрат времени выполнения, связанных с разделяемого метода. В редакторе кода Visual Studio, можно добавить разделяемый метод, введя ключевое слово *частичного* за которыми следует пробел, чтобы просмотреть список частичных представлений для реализации.
-
 
 **Листинг 3 - Models\Movie.cs**
 
@@ -146,11 +137,9 @@ DefaultModelBinder также проверяет свойство IDataErrorInfo
 
 Не нужно каким-либо образом использовать измененный класс Movie контроллер Home. Страницы, отображаемой на рис. 3 показано, что произойдет, если значение не указано для заголовка или Директор полей формы.
 
-
 [![Автоматическое создание методов действий](validating-with-the-idataerrorinfo-interface-cs/_static/image3.jpg)](validating-with-the-idataerrorinfo-interface-cs/_static/image5.png)
 
 **Рис 03**: Форма с отсутствующими значениями ([Просмотр полноразмерного изображения](validating-with-the-idataerrorinfo-interface-cs/_static/image6.png))
-
 
 Обратите внимание на то, что значение DateReleased проверяется автоматически. Так как свойство DateReleased не допускает значения NULL, DefaultModelBinder выдает ошибку проверки для этого свойства автоматически при его не имеет значения. Если вы хотите изменить сообщение об ошибке для свойства DateReleased необходимо создать настраиваемый связыватель модели.
 

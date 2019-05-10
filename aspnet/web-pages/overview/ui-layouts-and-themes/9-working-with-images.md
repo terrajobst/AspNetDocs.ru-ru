@@ -8,12 +8,12 @@ ms.date: 02/20/2014
 ms.assetid: 778c4e58-4372-4d25-bab9-aec4a8d8e38d
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/9-working-with-images
 msc.type: authoredcontent
-ms.openlocfilehash: fedd1013c036ebdb85877a868aaaa172733e5b8a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 53514b3c314fc182a43c82974ffcfa8158a636a1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59394709"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114389"
 ---
 # <a name="working-with-images-in-an-aspnet-web-pages-razor-site"></a>Работа с изображениями на сайте ASP.NET Web Pages (Razor)
 
@@ -44,7 +44,6 @@ ms.locfileid: "59394709"
 >   
 > 
 > Этот учебник также работает с WebMatrix 3.
-
 
 <a id="Adding_an_Image"></a>
 ## <a name="adding-an-image-to-a-web-page-dynamically"></a>Динамическое добавление изображения на веб-страницу
@@ -133,7 +132,6 @@ ms.locfileid: "59394709"
 > 
 > Идентификатор GUID (глобальный уникальный идентификатор) является идентификатором, который обычно отображается в виде следующим образом: `936DA01F-9ABD-4d9d-80C7-02AF85C822A8`. Цифры и буквы (от A до F) отличаются для каждого идентификатора GUID, но все они соответствуют шаблону с помощью групп 8-4-4-4-12 символов. (С технической точки зрения GUID представляет 16-байтовый/128-разрядное число). Если вам требуется идентификатор GUID, можно вызвать специализированный код, который создает идентификатор GUID для вас. Идея идентификаторы GUID в том, что между огромного размера, числа (3,4 x 10<sup>38</sup>) и алгоритм создания его, полученного числа гарантированно быть одного типа. Идентификаторы GUID, таким образом, являются хорошим способом для создания имен для таких вещей, в том случае, когда необходимо гарантировать, что вы не использовали дважды тем же именем. Недостаток, само собой, заключается в том, что идентификаторы GUID не особенно понятное для пользователя, поэтому они обычно используются, когда имя используется только в коде.
 
-
 <a id="Resizing_an_Image"></a>
 ## <a name="resizing-an-image"></a>Изменение размера изображения
 
@@ -218,7 +216,6 @@ ms.locfileid: "59394709"
 
 <a id="Additional_Resources"></a>
 ## <a name="additional-resources"></a>Дополнительные ресурсы
-
 
 [Работа с файлами на сайте страниц ASP.NET Web](https://go.microsoft.com/fwlink/?LinkId=202896)
 

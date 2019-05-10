@@ -8,12 +8,12 @@ ms.date: 10/30/2006
 ms.assetid: 3ecc21c5-da0e-40ab-abb4-fac1e47398ad
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/adding-validation-controls-to-the-datalist-s-editing-interface-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 5dc2421f6c3fa88a9373e7ac1b7ad51be6e65b82
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1c379cb6f50ca927db1c5aa43ebd277082a72498
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422217"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116941"
 ---
 # <a name="adding-validation-controls-to-the-datalists-editing-interface-c"></a>Добавление элементов управления проверки в интерфейс правки элемента управления DataList (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59422217"
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_39_CS.exe) или [скачать PDF](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/datatutorial39cs1.pdf)
 
 > В этом руководстве мы рассмотрим, насколько это просто добавлять элементы управления проверки к EditItemTemplate элемента управления DataList для предоставления более защищенного от непреднамеренных ошибок пользовательского интерфейса для редактирования.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -44,11 +43,9 @@ ms.locfileid: "59422217"
 2. Перейдите к декларативной разметке страницы s (щелкните «источник» в нижней части страницы)
 3. Скопируйте текст внутри `<asp:Content>` и `</asp:Content>` (строки с 3 до 32), как показано на рис. 1.
 
-
 [![Скопируйте текст внутри &lt;asp: Content&gt; элемента управления](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image2.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image1.png)
 
 **Рис. 1**: Скопируйте текст внутри `<asp:Content>` управления ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image3.png))
-
 
 1. Откройте `UIValidation.aspx` страницы
 2. Перейдите к декларативной разметке страницы s
@@ -58,11 +55,9 @@ ms.locfileid: "59422217"
 
 После перемещения содержимого и кода из `ErrorHandling.aspx` для `UIValidation.aspx`, Отвлекитесь и проверьте его страницы в браузере. Такие же выходные данные и отобразятся функции в каждом из этих двух страниц (см. рис. 2).
 
-
 [![Страницу UIValidation.aspx имитирует в ErrorHandling.aspx](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image5.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image4.png)
 
 **Рис. 2**: `UIValidation.aspx` Страницы имитирует в `ErrorHandling.aspx` ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image6.png))
-
 
 ## <a name="step-2-adding-the-validation-controls-to-the-datalist-s-edititemtemplate"></a>Шаг 2. Добавление элементов управления проверки к DataList s EditItemTemplate
 
@@ -81,24 +76,19 @@ ms.locfileid: "59422217"
 > [!NOTE]
 > Хотя в ASP.NET 1.x имеются эти же пять элементов управления проверки, ASP.NET 2.0 добавлен ряд улучшений, основной, два сценария на стороне клиента, поддержка браузеров в дополнение к Internet Explorer и способность разделять элементы управления проверки на странице в группы проверки. Дополнительные сведения о новых функциях управления проверки в 2.0 см. [разбор элементов управления проверки в ASP.NET 2.0](http://aspnet.4guysfromrolla.com/articles/112305-1.aspx).
 
-
 Позвольте s начните с добавления необходимых элементов управления проверки к DataList s `EditItemTemplate`. Эту задачу можно выполнить через конструктор, щелкнув ссылку Изменить шаблоны в смарт-теге элемента управления DataList s или с помощью декларативного синтаксиса. Позвольте шаг s с помощью параметра Правка шаблонов в режиме конструктора. После выбора для редактирования элемента управления DataList s `EditItemTemplate`, добавьте RequiredFieldValidator, перетащив его с панели инструментов в интерфейс редактирования шаблона, поместив его после `ProductName` текстового поля.
-
 
 [![Добавьте RequiredFieldValidator к EditItemTemplate после текстовое поле ProductName](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image8.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image7.png)
 
 **Рис. 3**: Добавьте RequiredFieldValidator к `EditItemTemplate After` `ProductName` TextBox ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image9.png))
 
-
 Все элементы управления проверки работают, проверяя ввод одного веб-ASP.NET элемента управления. Таким образом, нам нужно указать, следует проверить RequiredFieldValidator, мы только что добавили `ProductName` текстового поля; это делается заданием проверяющий элемент управления s [ `ControlToValidate` свойство](https://msdn.microsoft.com/library/system.web.ui.webcontrols.basevalidator.controltovalidate(VS.80).aspx) для `ID` из соответствующего веб-элемента управления (`ProductName`, в данном экземпляре). Затем задайте [ `ErrorMessage` свойство](https://msdn.microsoft.com/library/system.web.ui.webcontrols.basevalidator.errormessage(VS.80).aspx) чтобы необходимо предоставить имя продукта s и [ `Text` свойство](https://msdn.microsoft.com/library/system.web.ui.webcontrols.basevalidator.text(VS.80).aspx) для \*. `Text` Значение свойства, если указано, — это текст, отображаемый элементом управления проверки в том случае, если проверка завершается неудачно. `ErrorMessage` Значение свойства, которое является обязательным, используемый элементом управления ValidationSummary; Если `Text` значение свойства задано, `ErrorMessage` значение свойства отображается элементом управления проверки в случае недопустимого ввода.
 
 После установки этих трех свойств RequiredFieldValidator, экран должен выглядеть как на рис. 4.
 
-
 [![Задайте RequiredFieldValidator s ControlToValidate, ErrorMessage и свойства текста](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image11.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image10.png)
 
 **Рис. 4**: Набор RequiredFieldValidator s `ControlToValidate`, `ErrorMessage`, и `Text` свойства ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image12.png))
-
 
 С помощью RequiredFieldValidator, добавляемый `EditItemTemplate`, что все, что остается только добавить необходимую проверку для цены товара s текстовое поле. Поскольку `UnitPrice` является необязательным при правке записи, мы кое t необходимость добавьте RequiredFieldValidator. Тем не менее, необходимо добавить элемент управления CompareValidator чтобы убедиться, что `UnitPrice`, если предоставлено, верный формат как валюты и больше или равно 0.
 
@@ -106,16 +96,13 @@ ms.locfileid: "59422217"
 
 После добавления этих две выявленные при проверке элементов управления DataList s `EditItemTemplate` s должен выглядеть следующим образом:
 
-
 [!code-aspx[Main](adding-validation-controls-to-the-datalist-s-editing-interface-cs/samples/sample1.aspx)]
 
 После внесения этих изменений, откройте страницу в браузере. При попытке пропустить имя или ввести недопустимое значение цены при правке продукта рядом с текстовым полем отображается звездочка. Как показано на рис. 5, значение цены, включающее символ валюты, скажем 19,95 долларов США, считается недопустимым. CompareValidator s `Currency` `Type` допускает разделители между цифрами (такие как запятые или точки, в зависимости от параметров языка и региональных параметров) и плюса или минуса, но *не* допускает символ валюты. Это поведение может озадачить пользователей, поскольку интерфейс правки в настоящий момент отображает `UnitPrice` в формате валюты.
 
-
 [![Звездочка рядом с текстовые поля, содержащими Недопустимый ввод](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image14.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image13.png)
 
 **Рис. 5**: Звездочка появляется "Далее" для текстовых полей с недопустимые входные данные ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image15.png))
-
 
 Когда проверка работает как-является, пользователь должен вручную удалить символ валюты при правке записи, что неприемлемо. Кроме того при наличии недопустимые входные данные в редактирования интерфейса ни обновление и Отмена кнопок, при нажатии, вызовет обратную передачу. В идеальном случае кнопки "Отмена" вернет DataList состояние до редактирования независимо от того, допустимость s входные данные пользователя. Кроме того, следует проверить допустимость данные страницы s перед обновлением сведения о продукте в элементе управления DataList s `UpdateCommand` обработчик событий, в логику на стороне клиента можно обойти, пользователей, чьи браузеры либо кое t поддержка JavaScript или элементов управления проверки поддержка отключена.
 
@@ -133,7 +120,6 @@ ms.locfileid: "59422217"
 
 > [!NOTE]
 > При удалении формат денежной единицы от редактирования интерфейса, я нахожу полезным поместить символ валюты в качестве текста за пределами текстового поля. Это служит как подсказку для пользователя, который не обязательно должны указать символ валюты.
-
 
 ## <a name="fixing-the-cancel-button"></a>Исправление кнопки "Отмена"
 
@@ -153,7 +139,6 @@ ms.locfileid: "59422217"
 
 Добавьте следующий код в начало `UpdateCommand` обработчик событий непосредственно перед `Try` блок:
 
-
 [!code-csharp[Main](adding-validation-controls-to-the-datalist-s-editing-interface-cs/samples/sample2.cs)]
 
 В результате этого добавления продукта будет пытаться обновить только в том случае, если переданные данные является допустимым. Большинство пользователей не сможет обратной передачи недопустимых данных из-за клиентские скрипты элементов управления проверки, но пользователи, которых браузеры кое t поддерживает JavaScript или, имеют отключена поддержка JavaScript, можно обойти проверки на стороне клиента и отправить недопустимые данные.
@@ -161,18 +146,15 @@ ms.locfileid: "59422217"
 > [!NOTE]
 > Внимательный читатель, наверное, помните, при обновлении данных с помощью GridView, не нужно явно проверять `Page.IsValid` свойства в классе фонового кода страницы s. Это обусловлено обращается к GridView `Page.IsValid` свойство для США и продолжить обновление, только в том случае, если он возвращает значение `True`.
 
-
 ## <a name="step-3-summarizing-data-entry-problems"></a>Шаг 3. Обобщение проблем с вводом данных
 
 В дополнение к пяти проверяющие элементы управления, включает ASP.NET [управления ValidationSummary](https://msdn.microsoft.com/library/f9h59855(VS.80).aspx), которое отображает `ErrorMessage` s элементов управления проверки, обнаруживших недопустимые данные. Эти сводные данные могут отображаться в виде текста на веб-странице или через модальное, клиентские messagebox. Позвольте s улучшения этого учебника, чтобы включить клиентский messagebox, обобщение проблем, выявленных проверкой.
 
 Для этого перетащите элемент управления ValidationSummary из области элементов в конструктор. Расположение t элемент управления ValidationSummary что действительно важно, так как мы повторно собираетесь настроить его на отображение сводки только в качестве messagebox. После добавления элемента управления, задайте его [ `ShowSummary` свойство](https://msdn.microsoft.com/library/system.web.ui.webcontrols.validationsummary.showsummary(VS.80).aspx) для `False` и его [ `ShowMessageBox` свойство](https://msdn.microsoft.com/library/system.web.ui.webcontrols.validationsummary.showmessagebox(VS.80).aspx) для `True`. В результате этого добавления ошибок проверки обобщены в messagebox стороне клиента (см. рис. 6).
 
-
 [![Проверка ошибки выдаются сводкой в Messagebox стороне клиента](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image17.png)](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image16.png)
 
 **Рис. 6**: Проверка ошибки выдаются сводкой в Messagebox клиентские ([Просмотр полноразмерного изображения](adding-validation-controls-to-the-datalist-s-editing-interface-cs/_static/image18.png))
-
 
 ## <a name="summary"></a>Сводка
 

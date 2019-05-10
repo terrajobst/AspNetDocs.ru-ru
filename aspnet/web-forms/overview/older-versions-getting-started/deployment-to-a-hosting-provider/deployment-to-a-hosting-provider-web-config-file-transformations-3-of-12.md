@@ -8,12 +8,12 @@ ms.date: 11/17/2011
 ms.assetid: 2b0df3d9-450b-4ea6-b315-4c9650722cad
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-web-config-file-transformations-3-of-12
 msc.type: authoredcontent
-ms.openlocfilehash: 2b289099f7f9a928b2d63a09ac5ccd685d9d4386
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ed442e2bd3140264facc7644d89589dbbe8840e7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59406540"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65119368"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-webconfig-file-transformations---3-of-12"></a>Развертывание веб-приложения ASP.NET с SQL Server Compact с помощью Visual Studio или Visual Web Developer: Преобразования файла Web.Config — 3 из 12
 
@@ -24,7 +24,6 @@ ms.locfileid: "59406540"
 > Этой серии руководств показано, как развернуть (публикации) ASP.NET проекта веб-приложения, который содержит базу данных SQL Server Compact с помощью Visual Studio 2012 RC или Visual Studio Express 2012 RC для Web. Также можно использовать Visual Studio 2010, если установить обновление веб-публикации. Введение в серии, см. в разделе [в первом учебнике серии](deployment-to-a-hosting-provider-introduction-1-of-12.md).
 > 
 > Учебник, в котором показаны компоненты развертывания, появившиеся после выпуска версии-КАНДИДАТА Visual Studio 2012, содержит сведения о развертывании выпусков SQL Server, отличных от SQL Server Compact и содержит сведения о развертывании веб-приложения службы приложений Azure, см. в разделе [веб-развертывание ASP.NET с помощью Visual Studio](../../deployment/visual-studio-web-deployment/introduction.md).
-
 
 ## <a name="overview"></a>Обзор
 
@@ -95,7 +94,6 @@ ms.locfileid: "59406540"
 > [!NOTE] 
 > 
 > **Примечание по безопасности** никогда не отображать сведения об ошибке для просмотра в реальном приложении, или сохранить эту информацию в общедоступном расположении. Злоумышленники могут использовать сведения об ошибке, чтобы обнаружить уязвимости на узле. Если вы используете ELMAH в приложении, не забудьте скачков, в котором можно настроить ELMAH, чтобы свести к минимуму угрозы безопасности. В примере ELMAH в этом руководстве не должен считаться рекомендуемой конфигурацией. Это пример, в котором был сделан для иллюстрации способ обработки приложения должен уметь создавать файлы в папку.
-
 
 ## <a name="setting-an-environment-indicator"></a>Настройка индикатора среды
 

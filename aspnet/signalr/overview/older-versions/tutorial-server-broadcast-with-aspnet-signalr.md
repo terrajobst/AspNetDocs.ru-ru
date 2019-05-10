@@ -8,12 +8,12 @@ ms.date: 04/10/2013
 ms.assetid: ab7b2554-956a-4f6d-b2a0-4ae0c62e8580
 msc.legacyurl: /signalr/overview/older-versions/tutorial-server-broadcast-with-aspnet-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: a63bca69f137a4d4765db6a4925ff027c9d8bf7d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 68908be34f6b010e512677fe5f5e31bfdefab592
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59403588"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65116069"
 ---
 # <a name="tutorial-server-broadcast-with-aspnet-signalr-1x"></a>Учебник. Передача сообщений с сервера с помощью ASP.NET SignalR 1.x
 
@@ -26,7 +26,6 @@ ms.locfileid: "59403588"
 > Приложение, которое вы создадите в этом руководстве имитирует биржевые сводки, типичный сценарий для широковещательных функциональные возможности сервера.
 > 
 > Комментарии в этом руководстве приветствуются. Если у вас есть вопросы, которые не имеют отношения к руководству, их можно разместить [форум по ASP.NET SignalR](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) или [StackOverflow.com](http://stackoverflow.com).
-
 
 ## <a name="overview"></a>Обзор
 
@@ -54,7 +53,6 @@ ms.locfileid: "59403588"
 
 > [!NOTE]
 > Если вы не хотите работать шаги по созданию приложения, можно установить пакет SignalR.Sample в новом **пустое веб-приложение ASP.NET** проекта, а также считывать эти шаги для получения объяснения кода. Первой части этого руководства охватывает подмножество SignalR.Sample код, а вторая часть Описание ключевых особенностей дополнительные функции в пакете SignalR.Sample.
-
 
 <a id="prerequisites"></a>
 

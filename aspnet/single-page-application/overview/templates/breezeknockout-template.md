@@ -8,12 +8,12 @@ ms.date: 01/30/2013
 ms.assetid: 3bd94827-3c59-448f-abc3-36e6df4858db
 msc.legacyurl: /single-page-application/overview/templates/breezeknockout-template
 msc.type: authoredcontent
-ms.openlocfilehash: 482119a97f30e24472231897e8db31685c451a0f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 5bb9ee8f758a25afa6baf3ccbaf7d5864754c7df
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59400793"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113362"
 ---
 # <a name="breezeknockout-template"></a>Шаблон Breeze/Knockout
 
@@ -22,7 +22,6 @@ ms.locfileid: "59400793"
 > Шаблон Breeze/Knockout было написано с Ворд колокольчика
 > 
 > [Загрузить шаблон Breeze/Knockout](https://go.microsoft.com/fwlink/?LinkId=282649)
-
 
 Вы уже слышали о «одностраничное приложение» (SPA) и хотите узнать, что это такое. Хотя можно прочитать об этом, вместо этого будет испытывать его самостоятельно. Но у кого остается время, чтобы загрузить пример? Если у вас есть Visual Studio, у вас есть пример одностраничного приложения и под управлением в меньше, чем 60 секунд с ASP.NET MVC 4 шаблон «Breeze/Knockout одностраничного приложения».
 

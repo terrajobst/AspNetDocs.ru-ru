@@ -8,12 +8,12 @@ ms.date: 03/02/2009
 ms.assetid: 204b7e86-f560-4611-8adb-785b33e777b9
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/creating-a-controller-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 180b34e45ae97c64c82906c93aa647c4924d8539
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 60636b79ab5fc06ca904dee90ce74f256e046d12
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59398115"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65123631"
 ---
 # <a name="creating-a-controller-vb"></a>Создание контроллера (VB)
 
@@ -21,29 +21,23 @@ ms.locfileid: "59398115"
 
 > В этом руководстве Стивен Вальтер демонстрирует, как можно добавить контроллер в приложении ASP.NET MVC.
 
-
 Чтобы объяснить, как можно создать новый ASP.NET MVC контроллеры является целью данного учебника. Вы научитесь создавать контроллеры, как с помощью команды меню добавления контроллера Visual Studio, так и вручную создав файл класса.
 
 ### <a name="using-the-add-controller-menu-option"></a>С помощью контроллера добавить команду меню
 
 Самый простой способ создать новый контроллер — щелкните правой кнопкой мыши папку Controllers в окне обозревателя решений Visual Studio и выберите **Add, контроллера** пункт меню (см. рис. 1). Если выбрать этот пункт меню открывает **Добавление контроллера** диалоговое окно (см. рис. 2).
 
-
 [![В диалоговом окне нового проекта](creating-a-controller-vb/_static/image1.jpg)](creating-a-controller-vb/_static/image1.png)
 
 **Рис 01**: Добавление нового контроллера ([Просмотр полноразмерного изображения](creating-a-controller-vb/_static/image2.png))
-
 
 [![В диалоговом окне нового проекта](creating-a-controller-vb/_static/image2.jpg)](creating-a-controller-vb/_static/image3.png)
 
 **Рис. 02**: Диалоговое окно добавления контроллера ([Просмотр полноразмерного изображения](creating-a-controller-vb/_static/image4.png))
 
-
 Обратите внимание, что первая часть имени контроллера будет выделен в **Добавление контроллера** диалоговое окно. Имя каждого контроллера должно заканчиваться суффиксом *контроллера*. Например, можно создать контроллер с именем *ProductController* , но не контроллер с именем *продукта*.
 
-
 Если вы создаете контроллер, который отсутствует *контроллера* суффикса, то вы не сможете заставить контроллер. Не сделать, — я потрачены впустую бесконечные часы мою жизнь после совершения этой ошибки.
-
 
 **В листинге 1 - Controllers\ProductController.vb**
 
@@ -55,11 +49,9 @@ ms.locfileid: "59398115"
 
 При создании контроллера, у вас есть возможность создать методы действий создания, обновления и сведения автоматически (см. рис. 3). Если выбран этот параметр, создается класс контроллера в листинге 2.
 
-
 [![Автоматическое создание методов действий](creating-a-controller-vb/_static/image3.jpg)](creating-a-controller-vb/_static/image5.png)
 
 **Рис 03**: Автоматическое создание методов действий ([Просмотр полноразмерного изображения](creating-a-controller-vb/_static/image6.png))
-
 
 **В листинге 2 - Controllers\CustomerController.vb**
 
@@ -75,11 +67,9 @@ ms.locfileid: "59398115"
 2. Назовите новый класс PersonController.vb и нажмите кнопку **добавить** кнопки.
 3. Измените полученный файл, класс наследуется от базового класса System.Web.Mvc.Controller класса (см. Листинг 3).
 
-
 [![Создание нового класса](creating-a-controller-vb/_static/image4.jpg)](creating-a-controller-vb/_static/image7.png)
 
 **Рис. 04**: Создание нового класса ([Просмотр полноразмерного изображения](creating-a-controller-vb/_static/image8.png))
-
 
 **Листинг 3 - Controllers\PersonController.vb**
 

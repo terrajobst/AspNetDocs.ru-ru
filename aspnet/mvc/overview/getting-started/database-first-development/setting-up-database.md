@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.assetid: 095abad4-3bfe-4f06-b092-ae6a735b7e49
 msc.legacyurl: /mvc/overview/getting-started/database-first-development/setting-up-database
 msc.type: authoredcontent
-ms.openlocfilehash: d99fdb5382037038d4428ff1946f39aee380fb75
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: a760767839a834a9c7e9fe358a3fd806a833261f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57055911"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65121175"
 ---
 # <a name="tutorial-get-started-with-ef-database-first-using-mvc-5"></a>Учебник. Начало работы с EF Database First с помощью MVC 5
 
@@ -35,14 +35,11 @@ ms.locfileid: "57055911"
 
 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
 
-
 ## <a name="set-up-the-database"></a>Настройка базы данных
 
 Чтобы имитировать среду размещения существующей базы данных, сначала создать базу данных с предварительно заполняется данными и затем создать веб-приложения, которое подключается к базе данных.
 
-
 Этот учебник был разработан использование LocalDB с Visual Studio 2017. Вместо LocalDB можно использовать существующий сервер базы данных, но в зависимости от установленной версии Visual Studio и тип базы данных, все средства анализа данных в Visual Studio может не поддерживаться. Если средства недоступны для базы данных, может потребоваться выполнить некоторые шаги конкретной базы данных в пакет управления для базы данных.
-
 
 Если у вас есть проблема с инструменты для баз данных в вашей версии Visual Studio, убедитесь, что вы установили последнюю версию инструменты для баз данных. Сведения об обновлении или установке инструменты для баз данных, см. в разделе [Microsoft SQL Server Data Tools](https://msdn.microsoft.com/data/hh297027).
 

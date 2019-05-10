@@ -8,12 +8,12 @@ ms.date: 04/16/2013
 ms.assetid: ad2a5da5-2e79-40ea-bc84-028d327f5982
 msc.legacyurl: /signalr/overview/older-versions/tutorial-high-frequency-realtime-with-signalr
 msc.type: authoredcontent
-ms.openlocfilehash: 179f6dd3a60f8c49770ee34af93d54defad0adc4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e37e63a410952ec170cbbaadeeb54eae7e82b3b5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379421"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65113704"
 ---
 # <a name="high-frequency-realtime-with-signalr-1x"></a>Обмен сообщениями с высоким уровнем периодичности в режиме реального времени с помощью SignalR 1.x
 
@@ -28,7 +28,6 @@ ms.locfileid: "59379421"
 > Основные понятия, представленных в этом руководстве имеют приложений в режиме реального времени играх и других приложений моделирования.
 > 
 > Комментарии в этом руководстве приветствуются. Если у вас есть вопросы, которые не имеют отношения к руководству, их можно разместить [форум по ASP.NET SignalR](https://forums.asp.net/1254.aspx/1?ASP+NET+SignalR) или [StackOverflow.com](http://stackoverflow.com).
-
 
 ## <a name="overview"></a>Обзор
 

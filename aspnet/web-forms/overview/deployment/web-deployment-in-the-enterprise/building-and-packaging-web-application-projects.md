@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 94e92f80-a7e3-4d18-9375-ff8be5d666ac
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/building-and-packaging-web-application-projects
 msc.type: authoredcontent
-ms.openlocfilehash: 82134b8da7ab5ca49fef8e769128db9010fd231f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1d0ee0264ce6461d7b0159f1a44de4de31e2d079
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396334"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65114677"
 ---
 # <a name="building-and-packaging-web-application-projects"></a>Сборка и упаковка проектов веб-приложений
 
@@ -27,7 +27,6 @@ ms.locfileid: "59396334"
 > - Как средство Internet Information Services (IIS) веб-развертывания (Web Deploy) включает веб-приложения в пакет развертывания.
 > - Том, как сборки и упаковки процесс и о созданных файлах.
 
-
 Процесс построения и развертывания для проектов веб-приложений в Visual Studio 2010, поддерживается конвейера публикации в Интернете. WPP предоставляет набор целевых объектов Microsoft Build Engine (MSBuild), которые расширяют функциональные возможности MSBuild и включить его для интеграции с веб-развертывания. В Visual Studio вы увидите этот расширенных функций на страницах свойств для проекта веб-приложения. **Пакета и публикация веб-** страницы, вместе с **упаковка и публикация SQL** странице позволяет настроить как проект веб-приложения создается установочный пакет для развертывания по завершении процесса сборки.
 
 ![](building-and-packaging-web-application-projects/_static/image1.png)
@@ -36,17 +35,13 @@ ms.locfileid: "59396334"
 
 Если вы взгляните на файл проекта C#-на основе веб-проект приложения, можно увидеть, что он импортирует два TARGETS-файлы.
 
-
 [!code-xml[Main](building-and-packaging-web-application-projects/samples/sample1.xml)]
-
 
 Первый **импорта** инструкции являются общими для всех проектов Visual C#. Этот файл *Microsoft.CSharp.targets*, содержащий целевые объекты и задачи, относящиеся к Visual C#. Например, компилятор C# (**Csc**) здесь вызове задачи. *Microsoft.CSharp.targets* файл в свою очередь импортирует *Microsoft.Common.targets* файл. Определяет целевые объекты, которые являются общими для всех проектов, например **построения**, **Перестроить**, **запуска**, **компиляции**, и **очистить** . Второй **импорта** инструкция относится только к проектам веб-приложений. *Microsoft.WebApplication.targets* файл в свою очередь импортирует *Microsoft.Web.Publishing.targets* файла. *Microsoft.Web.Publishing.targets* файл по сути *является* конвейера публикации в Интернете. Он определяет целевые объекты, например **пакета** и **MSDeployPublish**, что вызвать веб-развертывания для выполнения различных задач развертывания.
 
 Чтобы понять, как используются эти дополнительные целевые объекты, в примере решения диспетчера контактов, откройте *Publish.proj* файл и взгляните на **BuildProjects** целевой объект.
 
-
 [!code-xml[Main](building-and-packaging-web-application-projects/samples/sample2.xml)]
-
 
 Этот целевой объект использует **MSBuild** задачи для создания различных проектов. Обратите внимание, что **DeployOnBuild** и **DeployTarget** свойства:
 
@@ -58,7 +53,6 @@ ms.locfileid: "59396334"
 > [!NOTE]
 > Чтобы просмотреть файл проекта (например, <em>ContactManager.Mvc.csproj</em>) в Visual Studio 2010, необходимо сначала нужно выгрузить проект из решения. В <strong>обозревателе решений</strong> окно, щелкните правой кнопкой мыши узел проекта и нажмите кнопку <strong>выгрузить проект</strong>. Щелкните правой кнопкой мыши узел проекта и нажмите кнопку <strong>изменить</strong><em>[файл проекта]</em>). Файл проекта откроется в необработанном виде XML. Не забудьте перезагрузить проект в том случае, когда все будет готово.  
 > Дополнительные сведения о целевых объектов MSBuild, задачи, и <strong>импорта</strong> инструкций, см. в разделе [основные сведения о файле проекта](understanding-the-project-file.md). Более подробное введение в файлы проекта и WPP, см. в разделе [Inside the Microsoft Build Engine: С помощью MSBuild и Team Foundation Build](http://amzn.com/0735645248) Саид Ибрагим Хашими и William Bartholomew, ISBN: 978-0-7356-4524-0.
-
 
 ## <a name="what-is-a-web-deployment-package"></a>Что такое пакет веб-развертывания?
 
@@ -87,7 +81,6 @@ ms.locfileid: "59396334"
 
 > [!NOTE]
 > В Visual Studio 2010 конвейера публикации в Интернете не поддерживает предварительно скомпилированные страницы в веб-приложении перед упаковкой. Следующая версия Visual Studio и WPP будет включать возможность предварительной компиляции веб-приложения, как средство упаковки.
-
 
 ## <a name="conclusion"></a>Заключение
 
