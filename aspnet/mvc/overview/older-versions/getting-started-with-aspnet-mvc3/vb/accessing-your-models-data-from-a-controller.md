@@ -8,12 +8,12 @@ ms.date: 01/12/2011
 ms.assetid: cad00de1-3c68-4ff4-a436-54236d449459
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/accessing-your-models-data-from-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: 289dd429081fde12699db678e619a9fd5ed98942
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: beaad3440a9f333ab22f29d0c6683d71e8962fc2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59403289"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130054"
 ---
 # <a name="accessing-your-models-data-from-a-controller-vb"></a>Доступ к данным модели из контроллера (VB)
 
@@ -28,7 +28,6 @@ ms.locfileid: "59403289"
 > Если вы используете Visual Studio 2010 вместо Visual Web Developer 2010, установите необходимые компоненты, щелкнув следующую ссылку: [Необходимые компоненты для Visual Studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
 > 
 > Проект Visual Web Developer с VB.NET исходный код доступен на следующей странице в этом разделе. [Загрузить версию VB.NET](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098). Если вы предпочитаете C#, переключитесь в [C# версии](../cs/accessing-your-models-data-from-a-controller.md) работы с этим руководством.
-
 
 В этом разделе вы создадите новый `MoviesController` класса и написать код, который извлекает данные фильма и отображает его в браузере с помощью шаблона представления. Обязательно выполните сборку своего приложения, прежде чем продолжить.
 
@@ -112,7 +111,6 @@ Entity Framework Code First обнаружил, что указывает стр
 
 > [!NOTE]
 > Если отобразится сообщение об ошибке при двойном щелчке *Movies.sdf*, убедитесь, что вы установили **средств Visual Studio 2010 с пакетом обновления 1 для SQL Server Compact 4.0**. (Ссылки на программное обеспечение, см. список необходимых компонентов в первой части этой серии руководств.) При установке выпуска теперь необходимо закрыть и снова открыть Visual Web Developer.
-
 
 [![DB_explorer](accessing-your-models-data-from-a-controller/_static/image14.png)](accessing-your-models-data-from-a-controller/_static/image13.png)
 

@@ -8,12 +8,12 @@ ms.date: 01/27/2009
 ms.assetid: d1608db3-660d-4079-8c15-f452ff01f1db
 msc.legacyurl: /mvc/overview/older-versions-1/overview/understanding-the-asp-net-mvc-execution-process
 msc.type: authoredcontent
-ms.openlocfilehash: 4a47f51b08b66dfe9636b3992786df19d0ad72ad
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 28940947253e0af43886cf1231f8aaf4615526cc
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59414937"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125472"
 ---
 # <a name="understanding-the-aspnet-mvc-execution-process"></a>Общие сведения о процессе выполнения ASP.NET MVC
 
@@ -21,14 +21,12 @@ ms.locfileid: "59414937"
 
 > Узнайте, как платформа ASP.NET MVC обрабатывает запрос браузера пошаговые.
 
-
 Запросы на основе ASP.NET MVC веб-приложения сначала пройти через **UrlRoutingModule** объект, являющийся модулем HTTP. Этот модуль анализирует запрос и выбирает маршрут. **UrlRoutingModule** объекта выбирает первый объект маршрута, соответствующий текущему запросу. (Объект маршрута — это класс, реализующий **RouteBase**, и обычно является экземпляром **маршрута** класса.) Если подходящих маршрутов нет, **UrlRoutingModule** объекта ничего не делает и передает запрос обратно на обычный запрос ASP.NET или IIS обработку.
 
 Из выбранного **маршрута** объекта, **UrlRoutingModule** объектом **IRouteHandler** объекта, связанного с **маршрута**объекта. Как правило, в приложении MVC, это будет экземпляр **значение MvcRouteHandler**. **IRouteHandler** создает экземпляр **IHttpHandler** и передает его **IHttpContext** объекта. По умолчанию **IHttpHandler** экземпляра для MVC — **MvcHandler** объекта. **MvcHandler** объект затем выбирает контроллер, который будет обрабатывать запрос.
 
 > [!NOTE]
 > Когда MVC веб-приложение ASP.NET работает в IIS 7.0, без расширения имени файла является обязательным для проектов MVC. Тем не менее в IIS 6.0, обработчик необходимо, чтобы расширение имени файла MVC было связано с библиотекой DLL ISAPI ASP.NET.
-
 
 Модуль и обработчик, являются точками входа с платформой ASP.NET MVC. Они выполняют следующие действия:
 

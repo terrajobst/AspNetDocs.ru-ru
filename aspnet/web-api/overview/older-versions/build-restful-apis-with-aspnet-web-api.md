@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 87daa99f-3810-407e-b969-dd28a192959d
 msc.legacyurl: /web-api/overview/older-versions/build-restful-apis-with-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 3ba7f2d186e6f0837a32f69f964cec19fe625953
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 35b115d6b4f84084e78e429bbb4842670e57bba4
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391485"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132265"
 ---
 # <a name="build-restful-apis-with-aspnet-web-api"></a>Создание API-интерфейсов RESTful с помощью веб-API ASP.NET
 
@@ -33,7 +33,6 @@ ms.locfileid: "59391485"
 > 
 > 
 > Все примеры кода и фрагменты кода включены в Web лагеря комплект обучающих материалов, доступных в [ https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409 ](https://go.microsoft.com/fwlink/?LinkID=248297&clcid=0x409).
-
 
 <a id="Objectives"></a>
 ### <a name="objectives"></a>Цели
@@ -70,7 +69,6 @@ ms.locfileid: "59391485"
 
 > [!NOTE]
 > Каждого упражнения сопровождается **окончания** папку, содержащую полученное решение, должен быть получен после завершения упражнения. Это решение можно использовать как руководство, если вам нужна дополнительная помощь при работе с примерами.
-
 
 Предполагаемое время для выполнения этого лабораторного: **60 минут**.
 
@@ -420,7 +418,6 @@ ms.locfileid: "59391485"
 
 > [!NOTE]
 > Кроме того, можно развернуть это приложение для Azure следующих [приложение в: Публикация приложения ASP.NET MVC 4 с помощью веб-развертывания](#AppendixC).
-
 
 ---
 

@@ -8,12 +8,12 @@ ms.date: 01/12/2011
 ms.assetid: d3633f64-5d3c-45c9-ae4b-cb1563e3739f
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/adding-a-view
 msc.type: authoredcontent
-ms.openlocfilehash: eebf36af01b27f2931fa8720b399b85edfd8c2a0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: cf2e73b4245de6fe702b8c74550e6c7fc701a47f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390965"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129973"
 ---
 # <a name="adding-a-view-vb"></a>Добавление представления (VB)
 
@@ -28,7 +28,6 @@ ms.locfileid: "59390965"
 > Если вы используете Visual Studio 2010 вместо Visual Web Developer 2010, установите необходимые компоненты, щелкнув следующую ссылку: [Необходимые компоненты для Visual Studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
 > 
 > Проект Visual Web Developer с VB.NET исходный код доступен на следующей странице в этом разделе. [Загрузить версию VB.NET](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098). Если вы предпочитаете C#, переключитесь в [C# версии](../cs/adding-a-view.md) работы с этим руководством.
-
 
 В этом разделе мы собираемся изменить `HelloWorldController` класс для использования в файл шаблона представления для отчетливой инкапсуляции процесса создания HTML-ответов клиенту.
 

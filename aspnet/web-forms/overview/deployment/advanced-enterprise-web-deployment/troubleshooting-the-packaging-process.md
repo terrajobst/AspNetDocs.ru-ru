@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 794bd819-00fc-47e2-876d-fc5d15e0de1c
 msc.legacyurl: /web-forms/overview/deployment/advanced-enterprise-web-deployment/troubleshooting-the-packaging-process
 msc.type: authoredcontent
-ms.openlocfilehash: 79774c6a1a1d05d5a7bcd82a5d7aa888933cf089
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8ad649dfff085a8774cc13c11d8a3e3d48277d66
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59420111"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128702"
 ---
 # <a name="troubleshooting-the-packaging-process"></a>Устранение неполадок в процессе упаковки
 
@@ -34,7 +34,6 @@ ms.locfileid: "59420111"
 > > [!NOTE]
 > > **EnablePackageProcessLoggingAndAssert** свойство работает только при построении проекта с помощью **Отладка** конфигурации. Свойство учитывается в других конфигурациях.
 
-
 Этот раздел является частью серии учебников, исходя из требования к развертыванию enterprise вымышленной компании Fabrikam, Inc. В этой серии руководств используется пример решения&#x2014; [решения диспетчера контактов](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;для представления веб-приложения с более реалистичные уровень сложности, включая приложения ASP.NET MVC 3, Windows Communication Служба Foundation (WCF) и проект базы данных.
 
 Метод развертывания в основе этих учебников основан на разбиение проекта файл подход, описанный в [основные сведения о файле проекта](../web-deployment-in-the-enterprise/understanding-the-project-file.md), в которой процесс построения управляется двумя файлы проекта&#x2014;один с Создание инструкции, которые применяются для каждой целевой среде и содержащего параметры построения и развертывания для конкретной среды. Во время сборки файл проекта для конкретной среды объединяется в файл проекта независимой от среды, чтобы полный набор инструкций построения.
@@ -45,13 +44,10 @@ ms.locfileid: "59420111"
 
 Множество из этих целевых объектов WPP включать условную логику, которая записывает в журнал Дополнительные сведения при **EnablePackageProcessLoggingAndAssert** свойству **true**. Например, если вы просмотрите **пакета** целевой объект, вы увидите его создает дополнительный журнал directory и выводит список файлов в текстовый файл, если **EnablePackageProcessLoggingAndAssert** равен **true**.
 
-
 [!code-xml[Main](troubleshooting-the-packaging-process/samples/sample1.xml)]
-
 
 > [!NOTE]
 > Целевые объекты WPP определяются в *Microsoft.Web.Publishing.targets* файл в папке % PROGRAMFILES (x 86) %\MSBuild\Microsoft\VisualStudio\v10.0\Web. Можно открыть этот файл и просмотрите целевые объекты в Visual Studio 2010 или редакторе XML. Постарайтесь не измените содержимое файла.
-
 
 ## <a name="enabling-the-additional-logging"></a>Включить дополнительное ведение журнала
 
@@ -59,27 +55,20 @@ ms.locfileid: "59420111"
 
 При построении проекта из командной строки можно указать значение для **EnablePackageProcessLoggingAndAssert** свойство аргумент командной строки:
 
-
 [!code-console[Main](troubleshooting-the-packaging-process/samples/sample2.cmd)]
-
 
 Если вы используете пользовательском файле проекта для сборки проектов, можно включить **EnablePackageProcessLoggingAndAssert** значение в **свойства** атрибут **MSBuild**задачи:
 
-
 [!code-xml[Main](troubleshooting-the-packaging-process/samples/sample3.xml)]
-
 
 Если вы используете определение сборки Team Foundation Server (TFS) для построения проектов, можно просто указать значение для **EnablePackageProcessLoggingAndAssert** свойство в **Аргументы MSBuild** строки:![](troubleshooting-the-packaging-process/_static/image1.png)
 
 > [!NOTE]
 > Дополнительные сведения о создании и настройке определений сборки см. в разделе [Создание сборки определение что поддерживает развертывания](../configuring-team-foundation-server-for-web-deployment/creating-a-build-definition-that-supports-deployment.md).
 
-
 Кроме того, если вы хотите включить пакет в каждой сборки, можно изменить файл проекта для проекта веб-приложения задать **EnablePackageProcessLoggingAndAssert** свойства **true**. Следует добавить свойство к первому **PropertyGroup** элемент в файле с расширением CSPROJ или VBPROJ-файл.
 
-
 [!code-xml[Main](troubleshooting-the-packaging-process/samples/sample4.xml)]
-
 
 ## <a name="reviewing-the-log-files"></a>Просмотр файлов журнала
 
@@ -100,7 +89,6 @@ ms.locfileid: "59420111"
 
 > [!NOTE]
 > Имена дополнительных файлов журналов обычно соответствуют WPP целевых объектов. Вы можете просмотреть эти целевые объекты с помощью проверки *Microsoft.Web.Publishing.targets* файл в папке % PROGRAMFILES (x 86) %\MSBuild\Microsoft\VisualStudio\v10.0\Web.
-
 
 Если содержимое веб-пакет не вашим ожиданиям, просмотр этих файлов может быть удобно для определения, на какой момент в процесс вещей пошло не так.
 

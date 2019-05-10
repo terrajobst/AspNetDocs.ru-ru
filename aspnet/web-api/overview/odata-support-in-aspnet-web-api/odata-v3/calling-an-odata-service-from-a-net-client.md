@@ -8,12 +8,12 @@ ms.date: 02/26/2014
 ms.assetid: 6f448917-ad23-4dcc-9789-897fad74051b
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v3/calling-an-odata-service-from-a-net-client
 msc.type: authoredcontent
-ms.openlocfilehash: d35c0057f5c29e399e45d0a58467de7f106d9994
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6b5ab979518615356baaeeb824e0a621eb59a38f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389977"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130785"
 ---
 # <a name="calling-an-odata-service-from-a-net-client-c"></a>Вызов службы OData из клиента .NET (C#)
 
@@ -29,7 +29,6 @@ ms.locfileid: "59389977"
 > - [Visual Studio 2013](https://my.visualstudio.com/Downloads?q=visual%20studio%202013) (работает с Visual Studio 2012)
 > - [Библиотека клиентов служб данных WCF](https://msdn.microsoft.com/library/cc668772.aspx)
 > - Веб-API 2. (Пример службы OData создается с помощью веб-API 2, но клиентское приложение не зависит от веб-API).
-
 
 В этом руководстве мы рассмотрим создание клиентского приложения, которая вызывает службу OData. Служба OData предоставляет следующие сущности:
 
@@ -57,7 +56,6 @@ ms.locfileid: "59389977"
 
 > [!NOTE]
 > Остальные шаги см. в проект.
-
 
 В обозревателе решений щелкните правой кнопкой мыши **ссылки** и выберите **Add Service Reference**.
 
@@ -201,7 +199,6 @@ OData определяет [параметры запроса](../supporting-oda
 
 > [!NOTE]
 > Почему PATCH и MERGE? Исходная спецификация HTTP 1.1 ([RCF 2616](http://tools.ietf.org/html/rfc2616)) не был определен любого метода HTTP с семантикой «частичное обновление». Чтобы обеспечить поддержку частичных обновлений, спецификации протокола OData определен метод MERGE. В 2010 [RFC 5789](http://tools.ietf.org/html/rfc5789) определенный метод PATCH для частичного обновления. Можно ознакомиться с некоторыми журнала в этом [блога](https://blogs.msdn.com/b/astoriateam/archive/2008/05/20/merge-vs-replace-semantics-for-update-operations.aspx) блоге WCF Data Services. В настоящее время ИСПРАВЛЕНИЙ предпочтительнее СЛИЯНИЯ. Контроллер OData, созданные путем формирования шаблонов веб-API поддерживает оба метода.
-
 
 Если вы хотите заменить всю сущность (семантикой PUT), укажите **ReplaceOnUpdate** параметр. В результате WCF для отправки запроса HTTP PUT.
 

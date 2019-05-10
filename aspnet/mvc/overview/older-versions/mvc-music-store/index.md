@@ -8,17 +8,16 @@ ms.date: 09/28/2011
 ms.assetid: f016a6b4-2a38-4e83-8c34-f6d7f2b49ba2
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store
 msc.type: chapter
-ms.openlocfilehash: 65f4c90ed0038c56479995153ea0ad787b7b7e11
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2ad62c230984ac92f6377764c172643bf2cec9db
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59417394"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129698"
 ---
 # <a name="aspnet-mvc-3-music-store"></a>ASP.NET MVC 3 Music Store
 
 > Как создать приложение Music Store MVC, пример приложения, который продает музыкальные альбомы через Интернет и, реализующий Администрирование веб-сайтов, вход пользователя и функции корзины для покупок.
-
 
 - [Часть 1. Общие сведения и файл -> Создать проект](mvc-music-store-part-1.md)
 - [Часть 2. Контроллеры](mvc-music-store-part-2.md)

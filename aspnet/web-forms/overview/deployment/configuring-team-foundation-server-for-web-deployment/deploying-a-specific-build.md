@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: c979535f-48a3-4ec4-a633-a77889b86ddb
 msc.legacyurl: /web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/deploying-a-specific-build
 msc.type: authoredcontent
-ms.openlocfilehash: 0ab58aee6f1203beaf3990536b059f8209e66547
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6bede6b36c24ade928ab052e14daec1e017bd0b2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59393487"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131943"
 ---
 # <a name="deploying-a-specific-build"></a>Развертывание конкретной сборки
 
@@ -22,7 +22,6 @@ ms.locfileid: "59393487"
 [Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается развертывание веб-пакеты и скрипты базы данных из определенной предыдущей сборки в новое место назначения, например в промежуточной или производственной среде.
-
 
 Этот раздел является частью серии учебников, исходя из требования к развертыванию enterprise вымышленной компании Fabrikam, Inc. В этой серии руководств используется пример решения&#x2014; [решения диспетчера контактов](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;для представления веб-приложения с более реалистичные уровень сложности, включая приложения ASP.NET MVC 3, Windows Communication Служба Foundation (WCF) и проект базы данных.
 
@@ -47,21 +46,15 @@ ms.locfileid: "59393487"
 > [!NOTE]
 > **OutputRoot** — это имя часто используемые свойства. Файлы Visual C# и Visual Basic проекта также объявлять это свойство для хранения корневой каталог для всех выходных данных сборки.
 
-
 [!code-xml[Main](deploying-a-specific-build/samples/sample1.xml)]
-
 
 Если требуется, чтобы в файле проекта для развертывания веб-пакетов и скриптов в другом расположении базы данных&#x2014;выходные данные предыдущей сборки TFS, такие как&#x2014;вам просто нужно переопределить **OutputRoot** свойство. Следует задать значение свойства в соответствующую папку на сервере Team Build. При запуске MSBuild из командной строки, можно указать значение для **OutputRoot** аргумент командной строки:
 
-
 [!code-console[Main](deploying-a-specific-build/samples/sample2.cmd)]
-
 
 На практике, тем не менее, будет также нужно пропустить **построения** целевой&#x2014;нет смысла в создании решения в том случае, если вы не планируете использовать выходные данные сборки. Это можно сделать путем указания целей, которые вы хотите выполнить из командной строки:
 
-
 [!code-console[Main](deploying-a-specific-build/samples/sample3.cmd)]
-
 
 Однако в большинстве случаев необходимо встроить логики развертывания в определении сборки TFS. Это позволяет пользователям с **помещать сборки в очередь** разрешений на активацию развертывания из любой установки Visual Studio с подключением к серверу TFS.
 

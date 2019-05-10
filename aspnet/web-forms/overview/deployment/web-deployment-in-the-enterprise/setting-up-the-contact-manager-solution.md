@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 200b973c-776b-4a9b-9e82-39fda6120a52
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/setting-up-the-contact-manager-solution
 msc.type: authoredcontent
-ms.openlocfilehash: d0a7c29a590fcde504e5f5227806df62454f6add
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d9774ee01cb0515d7e733b24baa661f2648bd7c4
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410491"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131045"
 ---
 # <a name="setting-up-the-contact-manager-solution"></a>Настройка решения диспетчера контактов
 
@@ -22,7 +22,6 @@ ms.locfileid: "59410491"
 [Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается скачивание и настройка решения диспетчера контактов для локального запуска на компьютере разработчика.
-
 
 ## <a name="system-requirements"></a>Требования к системе
 
@@ -70,7 +69,6 @@ ms.locfileid: "59410491"
 > [!NOTE]
 > Дополнительные сведения о aspnet\_regsql служебной программы, см. в разделе [средство регистрации ASP.NET SQL Server (Aspnet\_regsql.exe)](https://msdn.microsoft.com/library/ms229862(v=vs.100).aspx).
 
-
 Следующим шагом является убедитесь, что строки подключения в решение диспетчера контактов указывают на локальном экземпляре SQL Server Express.
 
 **Чтобы обновить строки соединения**
@@ -97,7 +95,6 @@ ms.locfileid: "59410491"
 
 > [!NOTE]
 > Если вы выполните следующие действия без предварительного создания базы данных служб приложений, ASP.NET создаст базу данных первой попытке создать пользователя. Тем не менее вручную создав базу данных дает гораздо больший контроль над набора средств служб приложения, которые требуется поддерживать.
-
 
 **Чтобы запустить решение диспетчера контактов**
 

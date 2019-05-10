@@ -8,12 +8,12 @@ ms.date: 01/18/2008
 ms.assetid: 112a674d-716f-41a6-99b8-4074d65a54c0
 msc.legacyurl: /web-forms/overview/older-versions-security/membership/creating-the-membership-schema-in-sql-server-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 17fbc85ab1be16e2b4a5c179db3c24645a6a0a64
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 8e4feb864d8586024ded0f71eb854f15e7c233e1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404173"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131326"
 ---
 # <a name="creating-the-membership-schema-in-sql-server-vb"></a>Создание схемы членства в SQL Server (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59404173"
 [Скачать код](http://download.microsoft.com/download/3/f/5/3f5a8605-c526-4b34-b3fd-a34167117633/ASPNET_Security_Tutorial_04_VB.zip) или [скачать PDF](http://download.microsoft.com/download/3/f/5/3f5a8605-c526-4b34-b3fd-a34167117633/aspnet_tutorial04_MembershipSetup_vb.pdf)
 
 > Этот учебник начинает проверять методы для добавления необходимую схему в базу данных для использования SqlMembershipProvider. После этого мы проверка ключей таблиц в схеме и обсудить их назначении и важности. Этот учебник завершает со взгляда на инструкции по определению приложения ASP.NET, какой поставщик, следует использовать платформу членства.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -56,19 +55,15 @@ ms.locfileid: "59404173"
 
 В обозревателе решений щелкните правой кнопкой мыши `App_Data` папку и выберите команду Добавить новый элемент. (Если вы не видите `App_Data` в проекте, щелкните правой кнопкой мыши проект в обозревателе решений, выберите Добавить папку ASP.NET и выбрать `App_Data`.) В диалоговом окне Add New Item выберите, чтобы добавить новую базу данных SQL с именем `SecurityTutorials.mdf`. В этом руководстве мы добавим `SqlMembershipProvider` схемы к этой базе данных; в последующих руководствах мы создадим дополнительных таблиц для захвата наши данные приложения.
 
-
 [![Добавить новую базу данных SQL с именем SecurityTutorials.mdf базы данных в папку App_Data](creating-the-membership-schema-in-sql-server-vb/_static/image2.png)](creating-the-membership-schema-in-sql-server-vb/_static/image1.png)
 
 **Рис. 1**: Добавление новой базы данных SQL с именем `SecurityTutorials.mdf` базы данных для `App_Data` папку ([Просмотр полноразмерного изображения](creating-the-membership-schema-in-sql-server-vb/_static/image3.png))
 
-
 Добавление базы данных к `App_Data` папки автоматически включит его в представлении обозревателя базы данных. (В экспресс-выпуск не - версии Visual Studio, обозреватель баз данных называется обозревателя серверов). Перейдите в обозреватель базы данных и разверните узел только что добавленные `SecurityTutorials` базы данных. Если вы не видите обозреватель баз данных на экране, перейдите к меню "Вид" и выберите Обозреватель баз данных или нажмите сочетание клавиш Ctrl + Alt + S. Как показано на рис. 2, `SecurityTutorials` база данных пуста — он содержит ни одной таблицы, нет представлений и хранимых процедур.
-
 
 [![Базы данных SecurityTutorials сейчас пуст.](creating-the-membership-schema-in-sql-server-vb/_static/image5.png)](creating-the-membership-schema-in-sql-server-vb/_static/image4.png)
 
 **Рис. 2**: `SecurityTutorials` Базы данных сейчас пуст ([Просмотр полноразмерного изображения](creating-the-membership-schema-in-sql-server-vb/_static/image6.png))
-
 
 ## <a name="step-2-adding-thesqlmembershipproviderschema-to-the-database"></a>Шаг 2. Добавление`SqlMembershipProvider`схемы в базу данных
 
@@ -99,34 +94,27 @@ ms.locfileid: "59404173"
 
 Сначала необходимо закрыть Visual Studio, чтобы убедиться, что закрыты все блокировки, наложенные Visual Studio в файле базы данных. Затем запустите SQL Server Management Studio и подключитесь к `localhost\InstanceName` базы данных для SQL Server 2005 Express Edition. Как отмечалось ранее, скорее всего, имя экземпляра должно `SQLExpress`. Для проверки подлинности выберите проверку подлинности Windows.
 
-
 [![Подключитесь к экземпляру SQL Server 2005, экспресс-выпуск](creating-the-membership-schema-in-sql-server-vb/_static/image8.png)](creating-the-membership-schema-in-sql-server-vb/_static/image7.png)
 
 **Рис. 3**: Подключение к экземпляру SQL Server 2005 Express Edition ([Просмотр полноразмерного изображения](creating-the-membership-schema-in-sql-server-vb/_static/image9.png))
-
 
 После подключения к экземпляру SQL Server 2005 Express Edition, Management Studio отображаются папки для базы данных, параметры безопасности, серверные объекты и т. д. Если развернуть вкладку базы данных вы увидите, что `SecurityTutorials.mdf` база данных является *не* зарегистрированным в экземпляре базы данных -, нам нужно сначала присоединить базу данных.
 
 Щелкните правой кнопкой мыши на папку базы данных и выберите присоединение в контекстном меню. Откроется диалоговое окно Присоединение баз данных. На этой странице нажмите кнопку "Добавить", перейдите к `SecurityTutorials.mdf` базы данных и нажмите кнопку ОК. Рис. 4 показано диалоговое окно Присоединение баз данных после `SecurityTutorials.mdf` выбрать базу данных. Рис. 5 показан в обозревателе объектов среды Management Studio после присоединения базы данных.
 
-
 [![Присоедините базу данных SecurityTutorials.mdf](creating-the-membership-schema-in-sql-server-vb/_static/image11.png)](creating-the-membership-schema-in-sql-server-vb/_static/image10.png)
 
 **Рис. 4**: Присоединение `SecurityTutorials.mdf` базы данных ([Просмотр полноразмерного изображения](creating-the-membership-schema-in-sql-server-vb/_static/image12.png))
-
 
 [![SecurityTutorials.mdf базы данных появится в папке базы данных](creating-the-membership-schema-in-sql-server-vb/_static/image14.png)](creating-the-membership-schema-in-sql-server-vb/_static/image13.png)
 
 **Рис. 5**: `SecurityTutorials.mdf` Базы данных появится в папке базы данных ([Просмотр полноразмерного изображения](creating-the-membership-schema-in-sql-server-vb/_static/image15.png))
 
-
 Как показано на рис. 5, `SecurityTutorials.mdf` базы данных имеет имя, а abstruse. Давайте изменим его, чтобы легче запоминать (и проще набирать) имя. Щелкните правой кнопкой мыши, в базе данных, выберите команду "Переименовать" в контекстном меню и переименуйте его `SecurityTutorialsDatabase`. При этом не изменяется имя файла, имени базы данных использует для собственной идентификации в SQL Server.
-
 
 [![Переименовать базу данных для SecurityTutorialsDatabase](creating-the-membership-schema-in-sql-server-vb/_static/image17.png)](creating-the-membership-schema-in-sql-server-vb/_static/image16.png)
 
 **Рис. 6**: Переименовать базу данных для `SecurityTutorialsDatabase`([Просмотр полноразмерного изображения](creating-the-membership-schema-in-sql-server-vb/_static/image18.png))
-
 
 На этом этапе мы знаем, имена сервера и базы данных для `SecurityTutorials.mdf` файл базы данных: `localhost\InstanceName` и `SecurityTutorialsDatabase`, соответственно. Теперь мы готовы установить службами приложений через `aspnet_regsql.exe` средство.
 
@@ -136,19 +124,15 @@ ms.locfileid: "59404173"
 
 Под управлением `aspnet_regsql.exe` графического пользовательского интерфейса ASP.NET мастер установки SQL Server запускает средство без аргументов командной строки. Мастер позволяет легко добавлять или удалять службы приложения ASP.NET в указанной базе данных. Первый экран мастера, показанный на рис. 7, описывающая назначение инструмента.
 
-
 [![Используйте программу установки мастер ASP.NET SQL Server делает для добавления схемы членства](creating-the-membership-schema-in-sql-server-vb/_static/image20.png)](creating-the-membership-schema-in-sql-server-vb/_static/image19.png)
 
 **Рис. 7**: Используйте ASP.NET SQL Server создает программа установки мастера для добавления схемы членства ([Просмотр полноразмерного изображения](creating-the-membership-schema-in-sql-server-vb/_static/image21.png))
 
-
 Второй шаг в мастере запрашивает ли мы хотим добавить службы приложений или удалить их. Поскольку мы хотим добавить таблицы, представления и хранимые процедуры, необходимые для `SqlMembershipProvider`, выбрать SQL Server настройте для параметра службы приложений. Позже Если вы хотите удалить эту схему из базы данных, повторно запустите этот мастер, но вместо этого выбрать сведения о службах удаление приложений из существующего параметра базы данных.
-
 
 [![Нажмите кнопку настроить для приложения служб SQL Server](creating-the-membership-schema-in-sql-server-vb/_static/image23.png)](creating-the-membership-schema-in-sql-server-vb/_static/image22.png)
 
 **Рис. 8**: Выберите SQL Server можно настроить для параметра службы приложений ([Просмотр полноразмерного изображения](creating-the-membership-schema-in-sql-server-vb/_static/image24.png))
-
 
 Третий шаг запрашивает сведения о базе данных: имя сервера, сведения о проверке подлинности и имя базы данных. Если действия с этим руководством и добавили `SecurityTutorials.mdf` базы данных для `App_Data`, присоединена к `localhost\InstanceName`и переименован в `SecurityTutorialsDatabase`, затем используйте следующие значения:
 
@@ -156,11 +140,9 @@ ms.locfileid: "59404173"
 - Аутентификация Windows
 - База данных: `SecurityTutorialsDatabase`
 
-
 [![Введите сведения о базе данных](creating-the-membership-schema-in-sql-server-vb/_static/image26.png)](creating-the-membership-schema-in-sql-server-vb/_static/image25.png)
 
 **Рис. 9**: Введите сведения о базе данных ([Просмотр полноразмерного изображения](creating-the-membership-schema-in-sql-server-vb/_static/image27.png))
-
 
 После ввода сведений о базе данных, нажмите кнопку "Далее". Последним шагом описаны шаги, которые будут выполнены. Для установки службы приложений и завершите работу мастера, нажмите кнопку "Далее".
 
@@ -169,11 +151,9 @@ ms.locfileid: "59404173"
 
 После завершения работы мастера вернитесь в Visual Studio и перейдите в обозревателе базы данных. Разверните папку «таблицы». Вы увидите несколько таблиц, имена которых начинаются с префикса `aspnet_`. Аналогично широкий набор представлений и хранимых процедур можно найти в папках, представления и хранимые процедуры. Эти объекты базы данных, составляющие схему службы приложения. Мы рассмотрим объекты конкретного членство и роли базы данных на шаге 3.
 
-
 [![Широкий набор таблиц, представлений и хранимых процедур были добавлены в базу данных](creating-the-membership-schema-in-sql-server-vb/_static/image29.png)](creating-the-membership-schema-in-sql-server-vb/_static/image28.png)
 
 **Рис. 10**: В различные таблицы, представления и хранимые процедуры были добавлены в базу данных ([Просмотр полноразмерного изображения](creating-the-membership-schema-in-sql-server-vb/_static/image30.png))
-
 
 > [!NOTE]
 > `aspnet_regsql.exe` Графический пользовательский интерфейс программы устанавливает схему служб всего приложения. Но при выполнении `aspnet_regsql.exe` из командной строки можно указать, какие конкретного приложения служб компонентов для установки (или удаления). Таким образом, если вы хотите добавить только таблицы, представления и хранимых процедур, необходимых для `SqlMembershipProvider` и `SqlRoleProvider` поставщиков, запустите `aspnet_regsql.exe` из командной строки. Кроме того, вы можете вручную запустить соответствующий подмножество T-SQL создания сценариев, используемых `aspnet_regsql.exe`. Эти сценарии находятся в `WINDIR%\Microsoft.Net\Framework\v2.0.50727\` папки с именами вида `InstallCommon.sql`, `InstallMembership.sql`, `InstallRoles.sql`, `InstallProfile.sql`, `InstallSqlState.sql`, и т. д.
@@ -190,11 +170,9 @@ ms.locfileid: "59404173"
 
 На платформах членства и ролей разработаны таким образом, что одно хранилище пользователя и роли могут совместно использоваться множества различных приложений. Приложение ASP.NET, использующее платформы членства или ролей необходимо указать, какие секции приложения для использования. Короче говоря нескольких веб-приложений можно использовать одинаковые хранилища пользователя и роли. Рис. 11 показана хранилищ пользователя и роли, на которые секционируются в три приложения: HRSite CustomerSite и SalesSite. Эти три веб-приложения каждого имеют собственные уникальных пользователей и ролей, но все они физически хранить учетные данные учетной записи и роли в тех же таблицах базы данных.
 
-
 [![Учетные записи пользователей, которые могут быть секционированы несколькими приложениями](creating-the-membership-schema-in-sql-server-vb/_static/image32.png)](creating-the-membership-schema-in-sql-server-vb/_static/image31.png)
 
 **Рис. 11**: Пользователя учетные записи могут быть секционированы по несколько приложений ([Просмотр полноразмерного изображения](creating-the-membership-schema-in-sql-server-vb/_static/image33.png))
-
 
 `aspnet_Applications` Таблица является то, что определяет этих секций. Строки в этой таблице представлены каждого приложения, которое использует базу данных для хранения учетных записей пользователей. `aspnet_Applications` Таблица имеет четыре столбца: `ApplicationId`, `ApplicationName`, `LoweredApplicationName`, и `Description`.`ApplicationId` имеет тип [ `uniqueidentifier` ](https://msdn.microsoft.com/library/ms187942.aspx) и является первичным ключом таблицы; `ApplicationName` предоставляет уникальное имя понятном для каждого приложения.
 

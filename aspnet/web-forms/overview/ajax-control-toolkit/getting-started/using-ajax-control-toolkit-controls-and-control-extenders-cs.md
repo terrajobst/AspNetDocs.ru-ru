@@ -8,12 +8,12 @@ ms.date: 05/12/2009
 ms.assetid: c1e6b51c-3bc3-4bf7-9916-9991197af3dd
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/getting-started/using-ajax-control-toolkit-controls-and-control-extenders-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 82fae91e40ec2f1508fe5c82992eeef4abc4e19a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1acafaadaf373b488b9e85b7ba31f08cd3b53e85
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419227"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127104"
 ---
 # <a name="using-ajax-control-toolkit-controls-and-control-extenders-c"></a>Использование элементов управления из набора элементов AJAX и управляющих элементов-расширителей (C#)
 
@@ -21,13 +21,11 @@ ms.locfileid: "59419227"
 
 > Сведения о добавлении элементов управления AJAX Control Toolkit и расширителей для страниц ASP.NET.
 
-
 AJAX Control Toolkit содержит набор элементов управления и управляющих элементов-расширителей. Из этого краткого руководства вы узнаете, как добавить элементы управления и управляющих элементов-расширителей для страницы ASP.NET.
 
 > [!NOTE] 
 > 
 > Инструкции по установке AJAX Control Toolkit и добавление AJAX Control Toolkit на панель элементов Visual Studio или Visual Web Developer, см. в этом руководстве [приступить к работе с AJAX Control Toolkit](get-started-with-the-ajax-control-toolkit-cs.md).
-
 
 ## <a name="using-ajax-control-toolkit-controls"></a>С помощью элементов набора элементов управления AJAX
 
@@ -43,21 +41,17 @@ AJAX Control Toolkit содержит набор элементов управл
 4. Запустите веб-сайт, выбрав вариант меню **отладка, начать отладку** или нажмите клавишу F5.
 5. Вы увидите страницу, на рис. 3.
 
-
 [![Выбрав элемент управления редактора HTML](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image1.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image1.png)
 
 **Рис 01**: Выбрав элемент управления редактора HTML ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image2.png))
-
 
 [![Конструктор Visual Studio с помощью элемента управления ScriptManager и редактирования](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image2.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image3.png)
 
 **Рис. 02**: Конструктор Visual Studio с помощью элемента управления ScriptManager и редактирования ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image4.png))
 
-
 [![На странице DisplayEditor.aspx](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image3.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image5.png)
 
 **Рис 03**: На странице DisplayEditor.aspx ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image6.png))
-
 
 ## <a name="using-ajax-control-toolkit-control-extenders"></a>С помощью набора средств управляющих элементов-расширителей элементов управления AJAX
 
@@ -75,29 +69,23 @@ AJAX Control Toolkit также содержит управляющих элем
 6. Выберите элемент управления в конструкторе и разверните средств расширения, Button1\_ConfirmButtonExtender узла в окне «Свойства» (см. рис. 6). Назначьте *действительно?* ConfirmText свойству.
 7. Откройте страницу, выбрав параметр меню **отладка, начать отладку** или нажмите клавишу F5.
 
-
 [![Параметр задачи добавьте расширителя](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image4.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image7.png)
 
 **Рис. 04**: Параметр задачи Добавить расширитель ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image8.png))
-
 
 [![Выбрав элемент управления средства расширения ConfirmButton](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image5.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image9.png)
 
 **05 рис**: Выбрав элемент управления средства расширения ConfirmButton ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image10.png))
 
-
 [![Задание свойства ConfirmButton](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image6.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image11.png)
 
 **Рис 06**: Задание свойства ConfirmButton ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image12.png))
 
-
 При открытии страницы вы увидите кнопку. При нажатии кнопки появляется диалоговое окно подтверждения на рис. 7.
-
 
 [![Отображение диалоговое окно подтверждения](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image7.jpg)](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image13.png)
 
 **07 рис**: Отображение диалоговое окно подтверждения ([Просмотр полноразмерного изображения](using-ajax-control-toolkit-controls-and-control-extenders-cs/_static/image14.png))
-
 
 Обратите внимание на то, что обычно не перетащить расширитель элемента управления на страницу. Вместо этого использовать **Добавить расширитель** задач параметр, чтобы добавить расширение к элементу управления, уже добавленных на страницу. Обратите внимание на то, кроме того, настройте элемент управления свойства расширителя, открыв окно свойств для расширяемого элемента управления.
 

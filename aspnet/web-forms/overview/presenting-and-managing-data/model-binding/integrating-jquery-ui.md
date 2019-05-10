@@ -8,12 +8,12 @@ ms.date: 02/27/2014
 ms.assetid: 3cbab37b-fb0f-4751-9ec4-74e068c3f380
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/integrating-jquery-ui
 msc.type: authoredcontent
-ms.openlocfilehash: 5e9cbb4ca4c45fabfa53f9e3d2537250f1231ba0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c8d711dd44950116f3a3e09d5d12c507918c543f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59421970"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131998"
 ---
 # <a name="integrating-jquery-ui-datepicker-with-model-binding-and-web-forms"></a>Интеграция Datepicker пользовательского интерфейса JQuery с помощью привязки модели и веб-форм
 
@@ -26,7 +26,6 @@ ms.locfileid: "59421970"
 > Этот учебник основан на проект, созданный в [первый](retrieving-data.md) и [второй](updating-deleting-and-creating-data.md) части серии.
 > 
 > Вы можете [загрузить](https://go.microsoft.com/fwlink/?LinkId=286116) весь проект полностью на C# или Visual Basic. Загружаемый код работает с Visual Studio 2012 или Visual Studio 2013. Он использует шаблон Visual Studio 2012, который немного отличается от шаблона Visual Studio 2013, в этом учебнике.
-
 
 ## <a name="what-youll-build"></a>Вы создадите
 

@@ -8,12 +8,12 @@ ms.date: 01/12/2011
 ms.assetid: 002ada5c-f114-47ab-a441-57dbdb728ea0
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/cs/accessing-your-models-data-from-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: a2e2957ffe766282f127b6fb537af00673aa440f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 48fe7af73a5e5d8a3cd4c4ec152c57726fb021ba
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389847"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130207"
 ---
 # <a name="accessing-your-models-data-from-a-controller-c"></a>Доступ к данным модели из контроллера (C#)
 
@@ -115,7 +115,6 @@ Entity Framework Code First обнаружил, что указывает стр
 
 > [!NOTE]
 > Если отобразится сообщение об ошибке при двойном щелчке *Movies.sdf*, убедитесь, что вы установили [SQL Server Compact 4.0](https://www.microsoft.com/web/gallery/install.aspx?appid=SQLCE;SQLCEVSTools_4_0)(среды выполнения и средства поддержки). (Ссылки на программное обеспечение, см. список необходимых компонентов в первой части этой серии руководств.) При установке выпуска теперь необходимо закрыть и снова открыть Visual Web Developer.
-
 
 [![DB_explorer](accessing-your-models-data-from-a-controller/_static/image14.png "DB_explorer")](accessing-your-models-data-from-a-controller/_static/image13.png)
 

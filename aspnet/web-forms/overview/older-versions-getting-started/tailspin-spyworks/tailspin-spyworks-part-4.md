@@ -8,12 +8,12 @@ ms.date: 07/21/2010
 ms.assetid: 4fab47d5-a6ec-4fdc-91f0-651a093a24b9
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-4
 msc.type: authoredcontent
-ms.openlocfilehash: 63afd25e2ccf22d3c7ae5c5048c80a8cf060d4cf
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7af1b8afa2ecc8df9846f2edd2091b26b93a811c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59382827"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131020"
 ---
 # <a name="part-4-listing-products"></a>Часть 4. Публикация продуктов
 
@@ -22,7 +22,6 @@ ms.locfileid: "59382827"
 > Tailspin Spyworks демонстрирует, как чрезвычайно прост процесс создания мощных и масштабируемых приложений для платформы .NET. Он демонстрирует способы использования новые возможности в ASP.NET 4 для создание Интернет-магазина, включая покупок, извлечения и администрирования.
 > 
 > В этой серии руководств описаны все действия, предпринимаемые для создайте пример приложения Tailspin Spyworks. Часть 4 охватывает список продуктов с помощью элемента управления GridView.
-
 
 ## <a id="_Toc260221670"></a>  Список продуктов с помощью элемента управления GridView
 

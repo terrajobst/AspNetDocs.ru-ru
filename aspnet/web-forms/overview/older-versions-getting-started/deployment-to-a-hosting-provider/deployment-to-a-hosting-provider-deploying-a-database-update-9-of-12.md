@@ -8,12 +8,12 @@ ms.date: 11/17/2011
 ms.assetid: a8d776af-4735-4612-87f6-9f326587f2d3
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-a-database-update-9-of-12
 msc.type: authoredcontent
-ms.openlocfilehash: 3bae4d72c8b653a5cda500b05dde50c6a7201589
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3a5600aff3ba63cb7046e42d0bfd587c4181d99e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59413117"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130273"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-a-database-update---9-of-12"></a>Развертывание веб-приложения ASP.NET с SQL Server Compact с помощью Visual Studio или Visual Web Developer: Развертывание обновления базы данных - 9, 12
 
@@ -24,7 +24,6 @@ ms.locfileid: "59413117"
 > Этой серии руководств показано, как развернуть (публикации) ASP.NET проекта веб-приложения, который содержит базу данных SQL Server Compact с помощью Visual Studio 2012 RC или Visual Studio Express 2012 RC для Web. Также можно использовать Visual Studio 2010, если установить обновление веб-публикации. Введение в серии, см. в разделе [в первом учебнике серии](deployment-to-a-hosting-provider-introduction-1-of-12.md).
 > 
 > Учебник, в котором показаны компоненты развертывания, появившиеся после выпуска версии-КАНДИДАТА Visual Studio 2012, содержит сведения о развертывании выпусков SQL Server, отличных от SQL Server Compact и содержит сведения о развертывании веб-приложения службы приложений Azure, см. в разделе [веб-развертывание ASP.NET с помощью Visual Studio](../../deployment/visual-studio-web-deployment/introduction.md).
-
 
 ## <a name="overview"></a>Обзор
 
@@ -88,7 +87,6 @@ Visual Studio развертывает обновленное приложени
 
 > [!NOTE]
 > Когда приложение используется в рабочей среде следует реализация плана резервного копирования. То есть вы должны периодически скопировать *School-Prod.sdf* и *aspnet Prod.sdf* файлы с рабочего сайта в место безопасного хранения, и должен сохранение нескольких поколений ОС, таких резервные копии. При обновлении базы данных, следует создайте резервную копию из непосредственно перед изменением. Затем Если вы сделаете ошибку и не обнаружит его до, после его развертывания в рабочей среде, по-прежнему можно восстановить базу данных к состоянию, в котором он находился перед его был поврежден.
-
 
 Когда Visual Studio открывает URL-адрес домашней страницы в браузере, *приложения\_offline.htm* откроется страница. После удаления *приложения\_offline.htm* файл, можно перейти к домашней странице еще раз, чтобы проверить, что обновление успешно развернут.
 

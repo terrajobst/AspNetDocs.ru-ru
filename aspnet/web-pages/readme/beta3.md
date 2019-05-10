@@ -8,12 +8,12 @@ ms.date: 01/10/2011
 ms.assetid: ffa3d5c9-91e5-4da3-b409-560b0c7fbbf0
 msc.legacyurl: /web-pages/readme/beta3
 msc.type: content
-ms.openlocfilehash: 7f0c5ff599235157bd11f5f86a26b8882e0f29dc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: dc1d9237c04a7fcdbf4db6ccc8c36d255f6de003
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381813"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124116"
 ---
 # <a name="web-matrix-and-aspnet-web-pages-razor-beta-3-release-readme"></a>Файл сведений для Web Matrix и выпуска бета-версии 3 веб-страниц ASP.NET (Razor)
 
@@ -41,7 +41,6 @@ ms.locfileid: "59381813"
 
 > Бета-версия Microsoft WebMatrix представляет собой стек разработки бесплатного, которая устанавливается за считанные минуты. Веб-сервера он интегрируется с базой данных и платформами программирования для создания единой, интегрированной среды. WebMatrix бета-версии можно использовать для упрощения разработки кода, тестирования и публикации собственного ASP.NET или PHP, веб-сайта или бета-версии WebMatrix можно использовать для создания нового веб-сайтов с помощью популярных приложений с открытым кодом как DotNetNuke, Umbraco, WordPress и Joomla. Бета-версии WebMatrix использует же мощный веб-сервер, СУБД и платформы среду, которая будет выполняться веб-сайта в Интернете, что упрощает переход от разработки в рабочей среде и ускоряет.
 
-
 <a id="Installation_Notes"></a>
 
 ## <a name="installation"></a>Установка
@@ -50,13 +49,11 @@ ms.locfileid: "59381813"
 > 
 > При возникновении проблем во время установки, см. [Устранение неполадок с Microsoft Web Platform Installer](https://go.microsoft.com/fwlink/?LinkId=196212).
 
-
 <a id="Installation_Notes0"></a>
 
 ## <a name="instructions-for-publishing-applications"></a>Инструкции для публикации приложений
 
 > См. в разделе [пошаговые инструкции для публикации приложений](https://go.microsoft.com/fwlink/?LinkID=196149)
-
 
 <a id="Known_Issues"></a>
 
@@ -80,12 +77,10 @@ ms.locfileid: "59381813"
 > - Windows XP с пакетом обновления 3 (SP3)
 > - Windows Server 2003 с пакетом обновления 2 (SP2)
 
-
 #### <a name="issue-cannot-install-webmatrix-beta-3-if-microsoft-visual-studio-2008-is-installed-without-microsoft-visual-studio-2008-sp1"></a>Проблема. Не удается установить WebMatrix бета-версии 3, если Microsoft Visual Studio 2008 установлено без Microsoft Visual Studio 2008 с пакетом обновления 1
 
 > **Инструкции по решению**  
 > Установка [Microsoft Visual Studio 2008 SP1](https://www.microsoft.com/downloads/details.aspx?FamilyId=FBEE1648-7106-44A7-9649-6D9F6D58056E&amp;displaylang=en) из центра загрузки Майкрософт.
-
 
 #### <a name="issue-some-assemblies-for-sql-server-compact-40-are-not-installed-in-the-gac"></a>Проблема. Некоторые сборки для SQL Server Compact 4.0 не установлены в глобальном кэше СБОРОК
 
@@ -101,14 +96,12 @@ ms.locfileid: "59381813"
 >   
 > Затем переустановите SQL Server Compact 4.0.
 
-
 #### <a name="issue-cannot-uninstall-sql-server-compact-using-the-command-line"></a>Проблема. Не удается удалить SQL Server Compact с помощью командной строки
 
 > Удаление SQL Server Compact через параметры командной строки не работает в этом выпуске.
 > 
 > **Инструкции по решению**  
 > Используйте *программы и компоненты* на панели управления Windows, чтобы удалить Microsoft SQL Server Compact 4.0.
-
 
 <a id="Known_Issues_ASPNET"></a>
 
@@ -134,7 +127,6 @@ ms.locfileid: "59381813"
 > 
 > [!code-cshtml[Main](beta3/samples/sample1.cshtml)]
 
-
 <a id="Changes"></a>
 
 #### <a name="changes-in-beta-3-for-aspnet-web-pages-with-razor-syntax"></a>Изменения в бета-версии 3 для веб-страниц ASP.NET с синтаксисом Razor
@@ -142,7 +134,6 @@ ms.locfileid: "59381813"
 #### <a name="change-hrefattribute-method-removed"></a>Изменение: Удален метод «HrefAttribute»
 
 > `HrefAttribute` Метод `WebPage` класс был удален. Этот вспомогательный был использован для кодирования небезопасные символы URL-адреса. Он больше не требуется, так как ASP.NET Razor автоматически кодирует строки. (Использовать новый `Html.Raw` метод для обработки строк без кодировки.)
-
 
 #### <a name="change-syntax-for-declarative-helper-helpers-changed"></a>Изменение: Синтаксис для декларативной "@helper" Изменить вспомогательные функции
 
@@ -158,16 +149,13 @@ ms.locfileid: "59381813"
 > 
 > Обратите внимание, что `@{ }` символы исходный код во вспомогательном методе больше не используется. Это обусловлено содержимое из вспомогательных методов, обрабатываются как блок кода по умолчанию. Вспомогательное приложение выводит разметку, начинающуюся с открывающей `<a>` тега. Если вспомогательное приложение необходимо подготовить обычного текста или меток, которые будут отсутствовать закрывающий тег (например, `<meta>` тегов), визуализируемое содержимое должно быть в `<text></text>` теги.
 
-
 #### <a name="change-webpagecontexthttpcontext-removed"></a>Изменение: «WebPageContext.HttpContext» удален
 
 > `WebPageContext.HttpContext` Свойство был удален. Взамен рекомендуется использовать `HttpContext.Current`. ( `WebPageContext.HttpContext` Свойство просто обернул это.)
 
-
 #### <a name="change-facebook-helper-moved-to-new-package"></a>Изменение: Вспомогательный модуль «Facebook» перемещен в новый пакет
 
 > `Facebook` Вспомогательный был перемещен в *Facebook.Helper* библиотеки, которая содержит `Facebook` вспомогательный метод и дополнительные функции. Необходимо установить эту библиотеку как отдельный пакет, как описано в «Установка вспомогательных функций с помощью диспетчера пакетов» в этом руководстве [Приступая к работе со страницами ASP.NET](https://go.microsoft.com/fwlink/?LinkId=202889).
-
 
 #### <a name="change-membership-role-and-security-types-moves-to-new-assembly"></a>Изменение: Типы членства, ролей и безопасности переходит к новой сборки
 
@@ -178,13 +166,11 @@ ms.locfileid: "59381813"
 > - `SimpleRoleProvider`
 > - `WebSecurity`
 
-
 #### <a name="change-tagbuilder-class-moved-to-systemwebwebpagesdll-assembly"></a>Изменение: Класс «TagBuilder» перемещен в сборку System.Web.WebPages.dll
 
 > `TagBuilde` r класс был перемещен в сборку System.Web.WebPages.dll. Ранее это было в сборке, который был частью ASP.NET MVC. Это изменение означает, что не нужно установить ASP.NET MVC, чтобы использовать `TagBuilder` класса.
 > 
 > Тем не менее, класс является по-прежнему в `System.Web.Mvc` пространства имен. Чтобы использовать `TagBuilder` класса (например, в пользовательских ASP.NET Razor вспомогательный объект), необходимо сослаться на пространство имен (например, путем добавления `@using System.Web.Mvc` в код).
-
 
 #### <a name="change-request-validation-syntax-changed-validation-class-removed"></a>Изменение: Изменено; синтаксис проверки запроса Удален класс «Проверка»
 
@@ -197,7 +183,6 @@ ms.locfileid: "59381813"
 > Чтобы отключить автоматическую проверку запросов, вызовите `Request.Unvalidated` метод, передав ему имя поля или другой объект post, который вы хотите пропустить проверку запроса для. Этот метод можно использовать для обхода проверки для всех элементов в `Form`, `QueryString`, `Cookies`, и `ServerVariables` коллекций. Следующие примеры показывают, как использовать `Unvalidated` метод:
 > 
 > [!code-csharp[Main](beta3/samples/sample4.cs)]
-
 
 <a id="Issues"></a>
 
@@ -212,13 +197,11 @@ ms.locfileid: "59381813"
 > **Инструкции по решению**  
 > Убедитесь, что имя, переданное в `InitializeDatabaseConnection` метод совпадений, профиль пользователя из таблицы в базе данных членства, или убедитесь, что `autoCreateTables` параметр имеет значение false.
 
-
 #### <a name="issue-failed-to-generate-a-user-instance-of-sql-server-error"></a>Проблема. Ошибка «Не удалось сформировать пользовательский экземпляр SQL Server»
 
 > Если приложение WebMatrix использует SQL Server Express и работает IIS 7.5 на Windows 7 или Windows Server 2008 R2, вы увидите ошибку, указывающую, что SQL Server не удалось получить путь локального приложения пользователя во время выполнения.
 > 
 > **Инструкции по решению** убедитесь в том, что учетная запись Windows, то приложение запущено под (как правило, NETWORK SERVICE) имеет разрешения на чтение и запись для корневой папки приложения и вложенные папки например *приложения\_данных*. Более подробные сведения см. в статье базы знаний [проблемы с SQL Server Express пользователя при создании экземпляров и ASP.net Web Application Projects](https://support.microsoft.com/kb/2002980).
-
 
 #### <a name="issue-in-visual-studio-namespaces-for-custom-assemblies-dlls-are-not-imported-automatically"></a>Проблема. В Visual Studio пространства имен для пользовательских сборок (DLL) не импортируются автоматически
 
@@ -227,13 +210,11 @@ ms.locfileid: "59381813"
 > **Инструкции по решению**  
 > Включить `using` инструкции (`imports` в Visual Basic), ссылающийся на сущности, которые не распознаются во время разработки.
 
-
 #### <a name="issue-visual-studio-intellisense-and-project-templates-available-only-in-aspnet-mvc-version-3"></a>Проблема. Visual Studio IntelliSense и шаблоны проектов доступны только в ASP.NET MVC версии 3
 
 > Установка веб-страниц ASP.NET не также устанавливает средства для Visual Studio такие как IntelliSense и шаблоны проектов для приложений ASP.NET Web Pages.
 > 
 > **Инструкции по решению** использовать IntelliSense и шаблоны проектов для приложений веб-страниц ASP.NET в Visual Studio, установить версия-Кандидат ASP.NET MVC 3 с помощью установщика веб-платформы или [автономный установщик](https://go.microsoft.com/fwlink/?LinkID=191797).
-
 
 #### <a name="issue-lthelpergt-class-cannot-be-found-error"></a>Проблема: "&lt;вспомогательный&gt; не удалось найти класс» ошибка
 
@@ -241,7 +222,6 @@ ms.locfileid: "59381813"
 > 
 > **Инструкции по решению**  
 > Закомментируйте вызовы все вспомогательные функции в сайт, запустите  *\_администратора* и установить пакет или пакеты, содержащие вспомогательные методы, которые вы хотите использовать. После установки пакета, Раскомментируйте строки, которые ссылаются на вспомогательные функции.
-
 
 #### <a name="issue-deploying-beta-3-aspnet-razor-assemblies-to-the-bin-folder-might-not-work-on-hosting-sites"></a>Проблема. Развертывание сборок бета-версии 3 ASP.NET Razor в папку Bin может не работать для размещения сайтов
 
@@ -253,7 +233,6 @@ ms.locfileid: "59381813"
 > 
 > **Инструкции по решению** обратитесь к поставщику услуг размещения, убедитесь, что ошибки возникают из-за конфликта версий поставщика сборок и выбираете. Если Да, запрашивают поставщика услуг размещения об обновлении сборки в глобальном кэше СБОРОК на сервере.
 
-
 #### <a name="issue-reading-feeds-or-other-external-data-via-a-proxy-server"></a>Проблема. Чтение веб-каналы или другие внешние источники данных через прокси-сервер
 
 > Если на сервер сайта находится за прокси-сервер, может потребоваться настроить сведения прокси-сервера в *Web.config* файл, чтобы иметь возможность считывать данные, поступающие от за пределами вашего сайта. Например, если вы используете `ReCaptcha` helper, вспомогательное приложение взаимодействует со службой reCAPTCHA, но может быть заблокирован прокси-сервером. Аналогично веб-каналы, которые используются в веб-страниц в ASP.NET, такие как веб-канал, используемый диспетчером пакетов, может потребоваться настройка прокси-сервера.
@@ -264,7 +243,6 @@ ms.locfileid: "59381813"
 > 
 > Дополнительные сведения о настройке прокси-сервер, см. в разделе [ &lt;прокси&gt; (сетевые параметры)](https://msdn.microsoft.com/library/sa91de1e.aspx) на сайте MSDN.
 
-
 #### <a name="issue-microsoftwebinfrastructuredll-cannot-be-loaded-error"></a>Проблема. Ошибка «Не удается загрузить Microsoft.Web.Infrastructure.dll»
 
 > Если вы ранее установили бета-версии 1 веб-страниц ASP.NET с синтаксисом Razor и затем установить версию бета-версии 3, все соответствующие сборки установлены в глобальном кэше СБОРОК, за исключением *Microsoft.Web.Infrastructure.dll*. Как следствие, при запуске ASP.NET Razor pages, появится сообщение об ошибке, которое указывает, что *Microsoft.Web.Infrastructure.dll* не может быть загружен.
@@ -273,7 +251,6 @@ ms.locfileid: "59381813"
 > 
 > **Инструкции по решению**  
 > В панели управления удалите веб-страниц ASP.NET. Затем переустановите бета-версии 3.
-
 
 #### <a name="issue-uninstalling-the-net-framework-version-4-disables-aspnet-web-pages-with-razor-syntax"></a>Проблема. Удаление .NET Framework версии 4 отключает веб-страниц ASP.NET с синтаксисом Razor
 
@@ -287,14 +264,12 @@ ms.locfileid: "59381813"
 > 
 > [!code-xml[Main](beta3/samples/sample6.xml)]
 
-
 #### <a name="issue-applications-previously-deployed-with-aspnet-assemblies-in-the-bin-folder-experience-errors"></a>Проблема. Приложения, ранее развернутые с использованием ASP.NET сборок в папке Bin возникать ошибки
 
 > Во время развертывания, копии сборок веб-страниц ASP.NET (например, *Microsoft.WebPages.dll*) для *Bin* папку веб-сайта на сервере. (Это может произойти автоматически во время развертывания или потому, что разработчик явно копии сборок.) Тем не менее при установке бета-версии 3, ошибки происходит, например ошибки, которые не удается найти определенные типы. Это происходит, поскольку несколько типов веб-страниц ASP.NET были перемещены в разных пространствах имен для бета-версии 3.
 > 
 > **Инструкции по решению**   
 > Очистить *Bin* папке развернутого приложения, скопируйте новые сборки в папку (или повторного развертывания приложения), а затем перезапустите приложение.
-
 
 #### <a name="issue-extensionless-urls-do-not-find-cshtmlvbhtml-files-on-iis-7-or-iis-75"></a>Проблема. URL-адреса без расширений приложения не удается найти файлы.cshtml/.vbhtml на IIS 7 или IIS 7.5
 
@@ -312,7 +287,6 @@ ms.locfileid: "59381813"
 > 
 > [!code-xml[Main](beta3/samples/sample7.xml)]
 
-
 #### <a name="issue-using-web-application-project-or-aspnet-mvc-and-aspnet-web-pages-in-the-same-application"></a>Проблема. С помощью проекта веб-приложения или ASP.NET MVC и ASP.NET Web pages в одном приложении
 
 > При использовании веб-страниц ASP.NET в проекте веб-приложения или приложения ASP.NET MVC, может появиться ошибка, *WebPageHttpApplication* не удается найти.
@@ -327,7 +301,6 @@ ms.locfileid: "59381813"
 > [!code-csharp[Main](beta3/samples/sample9.cs)]
 > 
 > Это фактически отменяет изменения, которая была введена для выпуска бета-версии 1 веб-страниц ASP.NET с синтаксисом Razor.
-
 
 #### <a name="issue-deploying-an-application-to-a-computer-that-does-not-have-sql-server-compact-installed"></a>Проблема. Развертывание приложения на компьютере, не SQL Server Compact установлена
 
@@ -345,7 +318,6 @@ ms.locfileid: "59381813"
 > 
 > 
 > [!code-xml[Main](beta3/samples/sample10.xml)]
-
 
 #### <a name="issue-database-and-webgrid-helpers-do-not-work-in-medium-trust-in-visual-basic"></a>Проблема. Базы данных и WebGrid вспомогательные функции не работают в со средним уровнем доверия в Visual Basic
 
@@ -380,7 +352,6 @@ ms.locfileid: "59381813"
 > 
 > [!code-vb[Main](beta3/samples/sample16.vb)]
 
-
 #### <a name="issue-microsoft-visual-c-2008-runtime-libraries-are-required"></a>Проблема. Необходимы библиотеки времени выполнения Microsoft Visual C++ 2008
 
 > Собственные библиотеки DLL из SQL Server Compact 4.0, потребуется Microsoft Visual C++ 2008 Runtime Libraries (x 86, IA64 и x 64), пакетом обновления 1.
@@ -392,7 +363,6 @@ ms.locfileid: "59381813"
 > 
 > [!NOTE]
 > Обратите внимание, что установка .NET Framework 2.0, 3.0, или 4 не *не* установить SP1 библиотеки среды выполнения Visual C++ 2008.
-
 
 #### <a name="issue-if-sql-server-compact-is-installed-prior-to-installing-net-framework-on-the-computer-its-provider-invariant-name-is-not-registered-in-the-net-framework-machineconfig-file"></a>Проблема. Если перед установкой .NET Framework на компьютере установлен SQL Server Compact, его неизменяемое имя поставщика не зарегистрирован в файле machine.config .NET Framework
 
@@ -408,7 +378,6 @@ ms.locfileid: "59381813"
 > 
 > Затем переустановите [SQL Server Compact 4.0 CTP-версия 1](https://www.microsoft.com/downloads/details.aspx?FamilyID=0d2357ea-324f-46fd-88fc-7364c80e4fdb&amp;displaylang=en).
 
-
 <a id="Known_Issues_Installing_Applications"></a>
 
 ### <a name="installing-applications"></a>Установка приложений
@@ -417,7 +386,6 @@ ms.locfileid: "59381813"
 
 > **Инструкции по решению**  
 > Отсутствует. Приложение может занять некоторое время, чтобы установить, но правильную установку.
-
 
 <a id="Known_Issues_Publishing_Applications"></a>
 
@@ -430,14 +398,12 @@ ms.locfileid: "59381813"
 > **Инструкции по решению**  
 > Убедитесь, что прежде чем опубликовать сайт, URL-адрес назначения в **параметры публикации** диалоговое окно начинается с `http://` или `https://`.
 
-
 #### <a name="issue-publishing-a-mysql-database-fails-with-the-error-failed-to-publish-the-database-this-can-happen-if-the-remote-database-cannot-run-the-script"></a>Проблема. Публикация базы данных MySQL завершается с ошибкой «не удалось опубликовать базу данных. Это может произойти, если удаленная база данных нельзя запустить сценарий.»
 
 > Эта ошибка может возникнуть по ряду причин. Одна из причин, можно увидеть, эта ошибка — Если скрипт базы данных одинарная кавычка (') и не может базы данных MySQL назначения по умолчанию используется кодировка UTF-8.
 > 
 > **Инструкции по решению**  
 > Задайте кодировку по умолчанию для удаленной базы данных MySQL в UTF-8.
-
 
 <a id="Known_Issues_Other_Issues"></a>
 
@@ -448,7 +414,6 @@ ms.locfileid: "59381813"
 > При запуске отчета для узла, когда вы вводите текст в *фильтровать по URL-адрес* поле и нажмите кнопку *поиска*, ничего не происходит. Это, поскольку этот элемент управления не работает при *Group By* присваивается состояние отчета *тип проблемы*, который используется по умолчанию.
 > 
 > **Инструкции по решению** в *Group By* вкладку ленты, нажмите кнопку *URL-адрес* для группировки записей по их URL-адрес источника. Текстовое поле и кнопку для фильтрации записей в этом состоянии функциональна.
-
 
 #### <a name="issue-wcf-applications-fail-to-run-with-iis-express"></a>Проблема. WCF приложения перестают работать с IIS Express
 
@@ -469,7 +434,6 @@ ms.locfileid: "59381813"
 > 
 >     [!code-console[Main](beta3/samples/sample19.cmd)]
 
-
 #### <a name="issue-webmatrix-beta-3-is-unable-to-perform-certain-tasks-that-require-elevation"></a>Проблема. WebMatrix бета-версии 3 не может выполнить определенные задачи, требующие повышения прав
 
 > WebMatrix бета-версии 3 не может выполнить определенные задачи, требующие повышения прав, таких как установка дополнительных компонентов в следующих ситуациях:
@@ -483,14 +447,12 @@ ms.locfileid: "59381813"
 > - В Windows Vista или Windows 7 включите контроль учетных Записей.
 > - В Windows XP добавьте пользователя в группу безопасности администраторов.
 
-
 #### <a name="issue-site-from-web-gallery-is-disabled"></a>Проблема. Отключена «Site from Web Gallery.»
 
 > **Site from Web Gallery** параметр отключен, если не установлен установщик веб-платформы 3.0.
 > 
 > **Инструкции по решению**  
 > Установка [Microsoft Web Platform Installer 3.0](https://go.microsoft.com/fwlink/?LinkID=194638).
-
 
 #### <a name="issue-on-windows-server-2003-iis-express-does-not-start-for-a-non-administrative-user"></a>Проблема. В Windows Server 2003 IIS Express не запускается для обычных пользователей
 
@@ -501,14 +463,12 @@ ms.locfileid: "59381813"
 >   
 > [Приложение, которое запускается с пользователь без прав администратора не может прослушивать HTTP-трафика компьютера, на котором приложение выполняется в Windows Vista, Windows Server 2003 или Windows XP.](https://support.microsoft.com/kb/939786)
 
-
 #### <a name="issue-google-chrome-is-not-available-as-a-run-option"></a>Проблема. Google Chrome не поддерживается в случае выполнения
 
 > Google Chrome не отображается в списке браузеров в разделе **запуска** на **Главная** вкладки.
 > 
 > **Инструкции по решению**  
 > В некоторых версиях Google Chrome не регистрируют себя правильно с функцией программы по умолчанию в Windows. Обойти это ограничение, Google Chrome, выберите пункт *Настройка и управление Google Chrome* меню, щелкните *параметры*, а затем нажмите кнопку *марки Google Chrome обозревателем по умолчанию*.
-
 
 #### <a name="issue-the-foreign-key-dialog-box-doesnt-allow-entering-a-primary-key"></a>Проблема. Диалоговое окно «Foreign Key» не позволяет ввести первичный ключ
 
@@ -517,14 +477,12 @@ ms.locfileid: "59381813"
 > **Инструкции по решению**  
 > Это сделано намеренно. Необходимо ввести имя первичного ключа из таблицы первичного ключа.
 
-
 #### <a name="issue-the-relationships-button-is-disabled"></a>Проблема. Кнопка «Связи» отключена
 
 > **Связи** под кнопкой **таблицы** вкладке **баз данных** рабочей области отключен для базы данных SQL Server Compact.
 > 
 > **Инструкции по решению**  
 > Отсутствует. SQL Server Compact не поддерживает связи между таблицами.
-
 
 #### <a name="issue-parameterized-sql-queries-throw-exceptions"></a>Проблема. Параметризованные SQL-запросы исключения.
 
@@ -536,7 +494,6 @@ ms.locfileid: "59381813"
 > [!code-sql[Main](beta3/samples/sample20.sql)]
 > 
 > [!code-vb[Main](beta3/samples/sample21.vb)]
-
 
 <a id="More_Info"></a>
 

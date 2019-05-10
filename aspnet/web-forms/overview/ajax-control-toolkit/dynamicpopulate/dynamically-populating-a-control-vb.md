@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 27305347-7b5d-4519-97b7-197a357e7f6e
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dynamicpopulate/dynamically-populating-a-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: c9fdbe5f0e24aa3f09f11a67c6d13a32897e8b85
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 369beea703f84bb787ec132a357f016c2a74e6bd
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59388378"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131221"
 ---
 # <a name="dynamically-populating-a-control-vb"></a>Динамическое заполнение элемента управления (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59388378"
 [Скачать код](http://download.microsoft.com/download/d/8/f/d8f2f6f9-1b7c-46ad-9252-e1fc81bdea3e/dynamicpopulate0.vb.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/dynamicpopulate0VB.pdf)
 
 > Элемент управления DynamicPopulate в ASP.NET AJAX Control Toolkit вызывает веб-службы (или метод страницы) и заполняет результирующее значение в целевой элемент управления на странице без обновления страницы.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -64,7 +63,6 @@ ms.locfileid: "59388378"
 [!code-aspx[Main](dynamically-populating-a-control-vb/samples/sample5.aspx)]
 
 Откройте страницу ASP.NET в браузере и нажмите кнопку ""; Вы получите текущую дату в формате месяц день год.
-
 
 [![Нажмите кнопку извлекает дату с сервера](dynamically-populating-a-control-vb/_static/image2.png)](dynamically-populating-a-control-vb/_static/image1.png)
 

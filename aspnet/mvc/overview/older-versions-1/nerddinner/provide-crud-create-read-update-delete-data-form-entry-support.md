@@ -8,12 +8,12 @@ ms.date: 07/27/2010
 ms.assetid: bbb976e5-6150-4283-a374-c22fbafe29f5
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/provide-crud-create-read-update-delete-data-form-entry-support
 msc.type: authoredcontent
-ms.openlocfilehash: 242665b3ba2e2ad2157abbe2c44ae207f15e72ce
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b3123af9a1477bc496a0d229d628510fc202b6d2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410868"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128342"
 ---
 # <a name="provide-crud-create-read-update-delete-data-form-entry-support"></a>Обеспечение поддержки операций CRUD (создание, чтение, обновление и удаление) для записей форм данных
 
@@ -26,7 +26,6 @@ ms.locfileid: "59410868"
 > Шаг 5 показано, как использовать наш класс DinnersController, включите поддержку для изменения, создание и удаление ужинов с ним, а также.
 > 
 > Если вы используете ASP.NET MVC 3, рекомендуется следовать [Приступая к работе с MVC 3](../../older-versions/getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) или [MVC Music Store](../../older-versions/mvc-music-store/mvc-music-store-part-1.md) учебники.
-
 
 ## <a name="nerddinner-step-5-create-update-delete-form-scenarios"></a>NerdDinner Step 5: Создание, обновление и удаление формы сценариев
 

@@ -8,12 +8,12 @@ ms.date: 07/21/2010
 ms.assetid: f70a310c-9557-4743-82cb-655265676d39
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-6
 msc.type: authoredcontent
-ms.openlocfilehash: 34c8776636478e8c40064bb29ae0311ee4fdc8d8
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b0caa89dc9ffb5bb7451fa2d9d346c7db2bf1466
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59409789"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130871"
 ---
 # <a name="part-6-aspnet-membership"></a>Часть 6. Членство в ASP.NET
 
@@ -22,7 +22,6 @@ ms.locfileid: "59409789"
 > Tailspin Spyworks демонстрирует, как чрезвычайно прост процесс создания мощных и масштабируемых приложений для платформы .NET. Он демонстрирует способы использования новые возможности в ASP.NET 4 для создание Интернет-магазина, включая покупок, извлечения и администрирования.
 > 
 > В этой серии руководств описаны все действия, предпринимаемые для создайте пример приложения Tailspin Spyworks. Часть 6 добавляет членства ASP.NET.
-
 
 ## <a id="_Toc260221672"></a>  Работа с ASP.NET Membership
 
@@ -99,7 +98,6 @@ SubmitOrder выполняет следующие действия:
 - Примите все элементы в Корзина для покупок и использовать их для создания новой записи заказа и связанные записи OrderDetails.
 - Вычисления, дата отгрузки.
 - Очистите корзину для покупок.
-
 
 [!code-csharp[Main](tailspin-spyworks-part-6/samples/sample10.cs)]
 

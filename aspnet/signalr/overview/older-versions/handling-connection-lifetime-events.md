@@ -8,12 +8,12 @@ ms.date: 06/05/2013
 ms.assetid: e608e263-264d-448b-b0eb-6eeb77713b22
 msc.legacyurl: /signalr/overview/older-versions/handling-connection-lifetime-events
 msc.type: authoredcontent
-ms.openlocfilehash: a8121a2d7c4ed14e296dc72c72ca7c25939a2b50
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2fb671e730a1d41c07b350bf1d64ac1d0b1be55c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59414014"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65128797"
 ---
 # <a name="understanding-and-handling-connection-lifetime-events-in-signalr-1x"></a>Понимание и обработка событий времени существования подключений в SignalR 1.x
 
@@ -28,7 +28,6 @@ ms.locfileid: "59414014"
 > - [Способ обработки событий времени существования подключений в классе концентратора](index.md)
 > - [Способ обработки событий времени существования подключений в клиентах JavaScript](index.md)
 > - [Способ обработки событий времени существования подключений в клиентах .NET](index.md)
-
 
 ## <a name="overview"></a>Обзор
 
@@ -132,7 +131,6 @@ ms.locfileid: "59414014"
 > 
 > [!IMPORTANT]
 > Последовательность событий, описанные здесь не гарантируется. SignalR делает все возможное для вызова события времени жизни подключения предсказуемым образом в соответствии с этой схемой, но существует много разновидностей событий сети и множество способов, в которых их обработки базовой связи платформ, таких как транспорт API-интерфейсы. Например `Reconnected` событие не может быть вызвано при повторном подключении клиента или `OnConnected` обработчик на сервере может выполняться, когда для установления соединения не удалось. В этом разделе описывается только эффекты, которые обычно будут получены, определенных в обычных условиях.
-
 
 <a id="clientdisconnect"></a>
 

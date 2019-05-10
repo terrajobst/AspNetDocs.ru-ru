@@ -8,12 +8,12 @@ ms.date: 08/19/2008
 ms.assetid: d0136da6-81a4-4815-b002-baa84744c09e
 msc.legacyurl: /mvc/overview/older-versions-1/security/preventing-javascript-injection-attacks-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 2d954cbc001a62f021f942f1ff44522a2769f516
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e7294be63ac06dbf548df9d99c07503d4bfff55f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389587"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125507"
 ---
 # <a name="preventing-javascript-injection-attacks-c"></a>Предотвращение атак, осуществляемых путем внедрения кода JavaScript (C#)
 
@@ -23,7 +23,6 @@ ms.locfileid: "59389587"
 
 > Предотвратить атаки путем внедрения кода JavaScript и Cross-Site Scripting атаки для вас. В этом руководстве Стивен Вальтер объясняется, как можно легко обойти эти типы атак с HTML-кодирование содержимого.
 
-
 Чтобы объяснить, как предотвратить атаки путем внедрения кода JavaScript в приложениях ASP.NET MVC является целью данного учебника. В этом руководстве рассматриваются два подхода к защите веб-сайта от атак путем внедрения кода JavaScript. Вы узнаете, как для предотвращения атак путем внедрения кода JavaScript путем кодирования данных, которые можно просматривать. Кроме того, вы узнаете, как для предотвращения атак путем внедрения кода JavaScript путем кодирования данных, вы принимаете.
 
 ## <a name="what-is-a-javascript-injection-attack"></a>Что такое атака путем внедрения кода JavaScript?
@@ -32,11 +31,9 @@ ms.locfileid: "59389587"
 
 Представьте, что вы создали веб-сайт клиентов обратной связи (см. рис. 1). Клиенты могут посетить веб-сайт и введите отзыв на обсуждают опыт использования ваших продуктов. Когда клиент отправляет свои отзывы, отзывы и предложения отобразится на странице обратной связи.
 
-
 [![Веб-сайт отзывов клиентов](preventing-javascript-injection-attacks-cs/_static/image2.png)](preventing-javascript-injection-attacks-cs/_static/image1.png)
 
 **Рис 01**: Веб-сайт отзывов клиентов ([Просмотр полноразмерного изображения](preventing-javascript-injection-attacks-cs/_static/image3.png))
-
 
 Использует веб-сайт отзывов клиентов `controller` в листинге 1. Это `controller` содержит два действия с именем `Index()` и `Create()`.
 
@@ -64,11 +61,9 @@ ms.locfileid: "59389587"
 
 Этот текст представляет сценарий JavaScript, который выводит окно предупреждающего сообщения. Когда кто-то отправляет этот сценарий в отзыв форме сообщения <em>Boo!</em> будет отображаться всякий раз, когда любой пользователь посещает веб-сайт отзывов клиентов в будущем (см. рис. 2).
 
-
 [![Путем внедрения кода JavaScript](preventing-javascript-injection-attacks-cs/_static/image5.png)](preventing-javascript-injection-attacks-cs/_static/image4.png)
 
 **Рис. 02**: Путем внедрения кода JavaScript ([Просмотр полноразмерного изображения](preventing-javascript-injection-attacks-cs/_static/image6.png))
-
 
 Теперь вашего первого ответа для атак путем внедрения кода JavaScript может быть безразличие. Можно подумать, что атаки путем внедрения кода JavaScript являются просто *вандализм* атаки. Разработчик может посчитать, что никто не можем всё по-настоящему злой путем фиксации атака путем внедрения кода JavaScript.
 
@@ -92,11 +87,9 @@ ms.locfileid: "59389587"
 
 Что означает для HTML-кодирования строки? Когда вы HTML кодирования строки, опасные символы, такие как `<` и `>` заменяются ссылки на сущности HTML, такие как `&lt;` и `&gt;`. Поэтому если строка `<script>alert("Boo!")</script>` HTML-код в кодировке, они преобразуются в нумерованные `&lt;script&gt;alert(&quot;Boo!&quot;)&lt;/script&gt;`. Закодированной строки больше не выполняется как сценарий JavaScript при интерпретации браузером. Вместо этого вы получите безвредным страницы на рис. 3.
 
-
 [![Атака нарушается, JavaScript](preventing-javascript-injection-attacks-cs/_static/image8.png)](preventing-javascript-injection-attacks-cs/_static/image7.png)
 
 **Рис 03**: Изменило атаки JavaScript ([Просмотр полноразмерного изображения](preventing-javascript-injection-attacks-cs/_static/image9.png))
-
 
 Обратите внимание, что в `Index` просматривать в листинге 3 только значение `feedback.Message` кодируется. Значение `feedback.EntryDate` не кодируется. Необходимо только кодировать данные, введенные пользователем. Так как значение EntryDate был создан в контроллере, не требуются для HTML кодирования это значение.
 

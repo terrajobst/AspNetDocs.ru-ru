@@ -8,12 +8,12 @@ ms.date: 01/12/2011
 ms.assetid: 28970e1b-1845-4015-86ef-121e52a6c397
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/adding-a-new-field
 msc.type: authoredcontent
-ms.openlocfilehash: 387c0ab407df2badfd8ff848b6a13c68769fbba7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c723134e829da23db8a43ef228db47ce9826f3e8
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379863"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129991"
 ---
 # <a name="adding-a-new-field-to-the-movie-model-and-database-table-vb"></a>Добавление нового поля в модель Movie и таблицу базы данных (VB)
 
@@ -28,7 +28,6 @@ ms.locfileid: "59379863"
 > Если вы используете Visual Studio 2010 вместо Visual Web Developer 2010, установите необходимые компоненты, щелкнув следующую ссылку: [Необходимые компоненты для Visual Studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
 > 
 > Проект Visual Web Developer с VB.NET исходный код доступен на следующей странице в этом разделе. [Загрузить версию VB.NET](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098). Если вы предпочитаете C#, переключитесь в [C# версии](../cs/adding-a-new-field.md) работы с этим руководством.
-
 
 В этом разделе будет внести некоторые изменения в классы моделей и узнайте, как обновить схему базы данных в соответствии с изменениями модели.
 
@@ -80,7 +79,6 @@ ms.locfileid: "59379863"
 > [!NOTE] 
 > 
 > **Предупреждение** следует включить этот подход для автоматического удаления и повторного создания базы данных только в том случае, если вы используете базу данных разработки или тестирования, и *никогда не* рабочей базы данных, которая содержит реальные данные. С его помощью на производственном сервере может привести к потере данных.
-
 
 В **обозревателе решений**, щелкните правой кнопкой мыши *моделей* папку, выберите **добавить**, а затем выберите **класс**.
 

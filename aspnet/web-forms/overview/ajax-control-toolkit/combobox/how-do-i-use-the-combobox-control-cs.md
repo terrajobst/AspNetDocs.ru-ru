@@ -8,19 +8,18 @@ ms.date: 05/12/2009
 ms.assetid: 0bbf4134-04df-4226-8930-d5bb99e27128
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/combobox/how-do-i-use-the-combobox-control-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 2d23e65f817c11e45adab56ea054a7c46a35d4f3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1c5fc61300441303b39e348d3eee83b6ee6847b4
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59386441"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132172"
 ---
 # <a name="how-do-i-use-the-combobox-control-c"></a>Как использовать элемент управления ComboBox (C#)
 
 по [Microsoft](https://github.com/microsoft)
 
 > Поля со списком является элементом управления ASP.NET AJAX, сочетающий в себе гибкость текстовое поле со списком параметров, из которых пользователи могут выбирать.
-
 
 Целью данного учебника является описанием элемента управления ComboBox набор средств управления AJAX. Поле со списком работает подобно сочетания между стандартного элемента управления DropDownList в ASP.NET и элемент управления TextBox. Можно выбрать из списка существующих элементов или введите новый элемент.
 
@@ -36,27 +35,21 @@ ms.locfileid: "59386441"
 
 Затем перетащите элемент управления ComboBox на страницу. Элемент управления ComboBox можно найти на панели элементов с помощью других элементов управления AJAX Control Toolkit и управляющих элементов-расширителей (см. рис. 1).
 
-
 [![Простая форма для создания бизнес-карточка](how-do-i-use-the-combobox-control-cs/_static/image1.jpg)](how-do-i-use-the-combobox-control-cs/_static/image1.png)
 
 **Рис 01**: Выбрав элемент управления ComboBox с панели инструментов ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-cs/_static/image2.png))
 
-
 Мы ll с помощью элемента управления ComboBox отображения статический список вариантов. Пользователь может выбрать определенный уровень spiciness для их качества пищевых продуктов в списке из трех вариантов: Насилия, среднего и "Горячий" уровень (см. рис. 2).
-
 
 [![Выбрав из статического списка элементов](how-do-i-use-the-combobox-control-cs/_static/image2.jpg)](how-do-i-use-the-combobox-control-cs/_static/image3.png)
 
 **Рис. 02**: Выбрав из статического списка элементов ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-cs/_static/image4.png))
 
-
 Существует два способа, что эти варианты можно добавить к элементу управления списком. Во-первых, выберите параметр задачи изменить параметры, при наведении указателя мыши на элемент управления в режиме конструктора и откройте редактор элементов (см. рис. 3).
-
 
 [![Изменение элементов поля со списком](how-do-i-use-the-combobox-control-cs/_static/image3.jpg)](how-do-i-use-the-combobox-control-cs/_static/image5.png)
 
 **Рис 03**: Изменение поля со списком элементов ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-cs/_static/image6.png))
-
 
 Второй вариант — Чтобы добавить список элементов между открывающим и закрывающим &lt;asp: поле со списком&gt; тегов в представлении источника. На странице в листинге 1 содержит обновленные ComboBox со списком элементов.
 
@@ -70,11 +63,9 @@ ms.locfileid: "59386441"
 
 Независимо от того, является ли выбрать уже существующий элемент или введите пользовательского элемента, при отправке формы, сделанный выбор появится в элементе управления label. При отправке формы, btnSubmit\_щелкните обработчик выполняет и обновляет метку (см. рис. 4).
 
-
 [![Отображение выбранного элемента](how-do-i-use-the-combobox-control-cs/_static/image4.jpg)](how-do-i-use-the-combobox-control-cs/_static/image7.png)
 
 **Рис. 04**: Отображение выбранного элемента ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-cs/_static/image8.png))
-
 
 Поле со списком поддерживает те же свойства, что элемент управления DropDownList для извлечения выбранного элемента, после отправки формы:
 
@@ -103,16 +94,13 @@ ms.locfileid: "59386441"
 11. Вернитесь в **Выбор источника данных** шаг, выберите заголовок столбца для поля для отображения и идентификатор столбца для данных поле (см. рисунок).
 12. Чтобы закрыть мастер, нажмите кнопку ОК.
 
-
 [![Выбор источника данных](how-do-i-use-the-combobox-control-cs/_static/image5.jpg)](how-do-i-use-the-combobox-control-cs/_static/image9.png)
 
 **05 рис**: Выбор источника данных ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-cs/_static/image10.png))
 
-
 [![Выбор полей текста и значения данных](how-do-i-use-the-combobox-control-cs/_static/image6.jpg)](how-do-i-use-the-combobox-control-cs/_static/image11.png)
 
 **Рис 06**: Выбор полей текста и значения данных ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-cs/_static/image12.png))
-
 
 Выполнив описанные выше действия, поле со списком привязан к элементу управления SqlDataSource, представляющий фильмы из таблицы базы данных фильмов. Исходный код страницы выглядит как листинга 2, (я вычистил форматирование немного).
 
@@ -122,11 +110,9 @@ ms.locfileid: "59386441"
 
 Обратите внимание, что элемент управления ComboBox, указывающий на элемент управления SqlDataSource свойство DataSourceID. При открытии страницы в браузере отображается список фильмов из базы данных (см. рис. 7). Вы можете либо подбор фильм из списка или введите новый фильм, введя в поле со списком фильма.
 
-
 [![Отображение списка фильмов](how-do-i-use-the-combobox-control-cs/_static/image7.jpg)](how-do-i-use-the-combobox-control-cs/_static/image13.png)
 
 **07 рис**: Отображается список фильмов ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-cs/_static/image14.png))
-
 
 ## <a name="setting-the-dropdownstyle"></a>Параметр значением DropDownStyle
 
@@ -149,21 +135,17 @@ ms.locfileid: "59386441"
 - Append - поле со списком не содержит список и добавляет соответствующий элемент из списка на набранным (см. рис. 9).
 - SuggestAppend - поле со списком отображает список и добавляет соответствующий элемент из списка на набранным (см. рис. 10).
 
-
 [![Поле со списком делает предложение](how-do-i-use-the-combobox-control-cs/_static/image8.jpg)](how-do-i-use-the-combobox-control-cs/_static/image15.png)
 
 **Рис 08**: Поле со списком делает предложение ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-cs/_static/image16.png))
-
 
 [![Поле со списком добавляет соответствующий текст](how-do-i-use-the-combobox-control-cs/_static/image9.jpg)](how-do-i-use-the-combobox-control-cs/_static/image17.png)
 
 **Рис 09**: Поле со списком добавляет соответствующий текст ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-cs/_static/image18.png))
 
-
 [![Поле со списком предлагает и добавляет](how-do-i-use-the-combobox-control-cs/_static/image10.jpg)](how-do-i-use-the-combobox-control-cs/_static/image19.png)
 
 **Рис. 10**: Поле со списком предлагает и добавляет ([Просмотр полноразмерного изображения](how-do-i-use-the-combobox-control-cs/_static/image20.png))
-
 
 ## <a name="summary"></a>Сводка
 

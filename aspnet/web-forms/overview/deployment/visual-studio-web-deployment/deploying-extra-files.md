@@ -8,12 +8,12 @@ ms.date: 03/23/2015
 ms.assetid: 1cd91055-84bc-42c6-9d80-646f41429d4d
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-extra-files
 msc.type: authoredcontent
-ms.openlocfilehash: 7ec80056a845429d5971bb174f6348b4b7a9587d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 03afcf91b79bc7d7d294eae3dc43a8f780d94e20
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379603"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131906"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-deploying-extra-files"></a>Веб-развертывание ASP.NET с помощью Visual Studio. Развертывание дополнительных файлов
 
@@ -22,7 +22,6 @@ ms.locfileid: "59379603"
 [Загрузите начальный проект](http://go.microsoft.com/fwlink/p/?LinkId=282627)
 
 > В этой серии руководств показано, как развернуть ASP.NET (публикации) веб-приложения для веб-приложениях службы приложений Azure или стороннего поставщика услуг размещения, с помощью Visual Studio 2012 или Visual Studio 2010. Сведения об этой серии см. в разделе [в первом учебнике серии](introduction.md).
-
 
 ## <a name="overview"></a>Обзор
 

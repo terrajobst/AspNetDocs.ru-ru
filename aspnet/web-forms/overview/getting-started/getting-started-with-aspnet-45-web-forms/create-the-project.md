@@ -8,12 +8,12 @@ ms.date: 09/08/2014
 ms.assetid: 2ce36f78-8ecb-4ab1-b748-6d0ab633ea3f
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create-the-project
 msc.type: authoredcontent
-ms.openlocfilehash: 9e2cd1beca03b81140b9d58c5e43dbf7c6b8808b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1819704a4cfd3e6b82de1d8db916e729459d244f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59393058"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130915"
 ---
 # <a name="create-the-project"></a>Создание проекта
 
@@ -22,7 +22,6 @@ ms.locfileid: "59393058"
 [Скачайте пример проекта Wingtip Toys (C#)](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) или [скачайте электронную книгу (PDF)](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
 > В этой серии руководств будет основы создания приложений веб-форм ASP.NET с помощью ASP.NET 4.5 и Microsoft Visual Studio Express 2013 для Web. Visual Studio 2013 [проект с исходным кодом C#](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) доступен на следующей странице этой серии руководств.
-
 
 В этом руководстве будет создать, просмотреть и выполнение проекта по умолчанию в Visual Studio, которая позволит вам ознакомиться с возможностями платформы ASP.NET. Кроме того просмотрите среды Visual Studio.
 
@@ -83,7 +82,6 @@ ms.locfileid: "59393058"
 > 
 > - [Веб-API ASP.NET](../../../../web-api/index.md) — это платформа для создания служб HTTP, которые охватывают широкий круг клиентов, включая браузеры и мобильные устройства.
 > - [ASP.NET SignalR](../../../../signalr/index.md) — это библиотека, которая упрощает разработку функций в режиме реального времени.
-
 
 ### <a name="reviewing-the-project"></a>Просмотр проекта
 

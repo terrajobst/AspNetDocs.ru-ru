@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 6980ee2e-d6b0-4a08-8fb6-ab96362dd0e3
 msc.legacyurl: /web-api/overview/hosting-aspnet-web-api/host-aspnet-web-api-in-an-azure-worker-role
 msc.type: authoredcontent
-ms.openlocfilehash: bfb23aafb814010e8651965dad91ca20a37fd786
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ec9904e0bff090be0f504036ae73977cfca0cb31
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404628"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130836"
 ---
 # <a name="host-aspnet-web-api-2-in-an-azure-worker-role"></a>Размещение ASP.NET Web API 2 в рабочей роли Azure
 
@@ -32,7 +32,6 @@ ms.locfileid: "59404628"
 > - [Visual Studio 2013](https://my.visualstudio.com/Downloads?q=visual%20studio%202013)
 > - Веб-API 2
 > - [Пакет Azure SDK для .NET 2.3](https://azure.microsoft.com/downloads/)
-
 
 ## <a name="create-a-microsoft-azure-project"></a>Создание проекта Microsoft Azure
 
@@ -123,7 +122,6 @@ ms.locfileid: "59404628"
 
 > [!NOTE]
 > Если вы получаете исключение, как показано ниже, см. раздел [этой записи блога](https://blogs.msdn.com/b/praburaj/archive/2013/11/20/fileloadexception-on-microsoft-owin-when-running-on-worker-role.aspx) решение этой проблемы. «Не удалось загрузить файл или сборку "Microsoft.Owin, Version = 2.0.2.0, язык и региональные параметры = neutral, PublicKeyToken = 31bf3856ad364e35" или одну из ее зависимостей. Определение манифеста расположены сборки не соответствует ссылки на сборку. (Исключение от HRESULT: 0x80131040)»
-
 
 Эмулятор вычислений назначает локальный IP-адрес конечной точки. IP-адрес можно найти, просмотрев пользовательский Интерфейс эмулятора вычислений. Щелкните правой кнопкой мыши значок эмулятора в задаче области уведомлений и выберите **Показать пользовательский Интерфейс эмулятора вычислений**.
 

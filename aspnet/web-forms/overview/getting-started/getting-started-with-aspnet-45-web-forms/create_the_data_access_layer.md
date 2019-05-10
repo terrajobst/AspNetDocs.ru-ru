@@ -8,12 +8,12 @@ ms.date: 09/08/2014
 ms.assetid: 0bbf7a6e-d7eb-4091-91e4-fff892777f32
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create_the_data_access_layer
 msc.type: authoredcontent
-ms.openlocfilehash: bc91eba17938de15f03ecc1e745aac57c7eac7a1
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 61a9dae22efed9cb7e8957a8c131396cbdeea3c9
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419500"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131357"
 ---
 # <a name="create-the-data-access-layer"></a>Создание уровня доступа к данным
 
@@ -22,7 +22,6 @@ ms.locfileid: "59419500"
 [Скачайте пример проекта Wingtip Toys (C#)](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) или [скачайте электронную книгу (PDF)](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
 > В этой серии руководств будет основы создания приложений веб-форм ASP.NET с помощью ASP.NET 4.5 и Microsoft Visual Studio Express 2013 для Web. Visual Studio 2013 [проект с исходным кодом C#](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) доступен на следующей странице этой серии руководств.
-
 
 Это руководство содержит инструкции для создания, доступа и просмотра данных из базы данных с помощью веб-форм ASP.NET и Entity Framework Code First. Этот учебник основан на предыдущем учебном курсе «Создать проект» и является частью серии руководств Store Toy Wingtip. Если после завершения данного учебника, вы сможете создать группу классов доступа к данным, которые находятся в *моделей* папку проекта.
 
@@ -119,7 +118,6 @@ ms.locfileid: "59419500"
 > 
 > При желании базе, чтобы создать заново при каждом запуске приложения, вы можете использовать `DropCreateDatabaseAlways` вместо класса `DropCreateDatabaseIfModelChanges` класса. Тем не менее для этой серии руководств, используйте `DropCreateDatabaseIfModelChanges` класса.
 
-
 На этом этапе в этом руководстве будет иметь *моделей* папки с помощью четырех новых классов и класса одно значение по умолчанию:
 
 ![Создание уровня доступа к данным — папку Models](create_the_data_access_layer/_static/image3.png)
@@ -136,7 +134,6 @@ ms.locfileid: "59419500"
 > 
 > В обозревателе решений, можно выбрать либо *Global.asax* файл или *Global.asax.cs* файл для изменения *Global.asax.cs* файл.
 
-
 1. Добавьте следующий код, они выделены желтым цветом, чтобы `Application_Start` метод в *Global.asax.cs* файл.   
 
     [!code-csharp[Main](create_the_data_access_layer/samples/sample5.cs?highlight=9-10,22-23)]
@@ -144,7 +141,6 @@ ms.locfileid: "59419500"
 > [!NOTE] 
 > 
 > В браузере должен поддерживать HTML5 для просмотра кода выделены желтым цветом при просмотре этой серии руководств в браузере.
-
 
 Как показано в приведенном выше коде, при запуске приложения, приложения указывает, что осуществляется инициализатора, который будет выполняться при первом данные. Две дополнительные пространства имен являются обязательными для доступа к `Database` объекта и `ProductDatabaseInitializer` объекта.
 

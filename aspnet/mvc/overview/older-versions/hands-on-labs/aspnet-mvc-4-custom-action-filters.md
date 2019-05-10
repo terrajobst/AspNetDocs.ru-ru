@@ -8,12 +8,12 @@ ms.date: 02/18/2013
 ms.assetid: 969ab824-1b98-4552-81fe-b60ef5fc6887
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-custom-action-filters
 msc.type: authoredcontent
-ms.openlocfilehash: 32587c7b0fd3075cd46678922b40bda2019f3a26
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: eaeb32180f79fabf557cbc38ff067eb26b47fea7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381137"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129755"
 ---
 # <a name="aspnet-mvc-4-custom-action-filters"></a>Фильтры настраиваемых действий в ASP.NET MVC 4
 
@@ -76,7 +76,6 @@ ASP.NET MVC предоставляет фильтры действий для в
 > [!NOTE]
 > Каждого упражнения сопровождается **окончания** папку, содержащую полученное решение, должен быть получен после завершения упражнения. Это решение можно использовать как руководство, если вам нужна дополнительная помощь при работе с примерами.
 
-
 <a id="Exercise1"></a>
 
 <a id="Exercise_1_Logging_Actions"></a>
@@ -95,7 +94,6 @@ ASP.NET MVC предоставляет фильтры действий для в
 > - **Исключение** фильтр, который выполняется при наличии необработанного исключения в методе действия, начиная с фильтрами авторизации и заканчивая выполнения результата. Фильтры исключений можно использовать для ведения журнала или отображения страниц об ошибках.
 > 
 > Дополнительные сведения о поставщиках фильтров см. на этой ссылке MSDN: ([https://msdn.microsoft.com/library/dd410209.aspx](https://msdn.microsoft.com/library/dd410209.aspx)).
-
 
 <a id="AboutLoggingFeature"></a>
 
@@ -132,7 +130,6 @@ ASP.NET MVC предоставляет фильтры действий для в
 > - **OnResultExecuted**(ResultExecutedContext filterContext): После выполнения результата (после визуализации представления).
 > 
 > Путем переопределения любого из этих методов в производном классе, можно выполнить собственный код фильтрации.
-
 
 1. Откройте **начать** решений, расположенный **\Source\Ex01-LoggingActions\Begin** папки.
 
@@ -352,7 +349,6 @@ ASP.NET MVC предоставляет фильтры действий для в
 
 > [!NOTE]
 > Кроме того, можно развернуть это приложение на веб-сайтов Windows Azure ниже [приложении б: Публикация приложения ASP.NET MVC 4 с помощью веб-развертывания](#AppendixB).
-
 
 ---
 

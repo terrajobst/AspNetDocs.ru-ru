@@ -8,17 +8,16 @@ ms.date: 10/05/2011
 ms.assetid: 1bcf9a1c-ed34-4ed0-ab91-253df08fc6ff
 msc.legacyurl: /web-forms/videos/vs-2005
 msc.type: chapter
-ms.openlocfilehash: 25d9cc02ef9b0e8f068c9e84469d9661b06f0b28
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 7bfa41c62ece2c5ac34fc290560ee16a82248de0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381111"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131497"
 ---
 # <a name="visual-studio-2005"></a>Visual Studio 2005
 
 > Как работать с Visual Studio 2005 Team System и надстройки для выполнения тестирования, развертывания и других задач.
-
 
 - [Введение в модульное тестирование в Team System](introduction-to-unit-testing-with-team-system.md)
 - [Введение в тестирование веб-приложений в Team System](introduction-to-testing-web-applications-with-team-system.md)

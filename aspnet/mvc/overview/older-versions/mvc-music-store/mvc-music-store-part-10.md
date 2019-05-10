@@ -8,12 +8,12 @@ ms.date: 04/21/2011
 ms.assetid: 0c6e4c2f-fcdb-4978-9656-1990c6f15727
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-10
 msc.type: authoredcontent
-ms.openlocfilehash: 48404f449ce2641bdff55b9ad75aa5eec1aee46b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f701d1fbabc3e1a97c3750d00e96bf8dba1105cd
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59403302"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129720"
 ---
 # <a name="part-10-final-updates-to-navigation-and-site-design-conclusion"></a>Часть 10. Окончательные обновления структуры навигации и проекта сайта, заключение
 
@@ -24,7 +24,6 @@ ms.locfileid: "59403302"
 > Store музыки MVC — это реализация хранилища упрощенный пример, который продает музыкальные альбомы через Интернет и реализует базовый сайт администрирования, вход пользователя и корзины для покупок функциональные возможности.  
 >   
 > В этой серии руководств описаны все шаги, необходимые для построения примера приложения ASP.NET MVC Music Store. Часть 10 охватывает окончательные обновления структуры навигации и проекта сайта, заключение.
-
 
 Мы завершили все основные функции по нашем сайте, но по-прежнему у нас есть некоторые возможности для добавления в структуру переходов узла, на домашней странице и странице Обзор Store.
 
@@ -133,7 +132,6 @@ ms.locfileid: "59403302"
 ## <a name="conclusion"></a>Заключение
 
 Мы уже видели, что ASP.NET MVC упрощает создание сложных веб-сайт с помощью доступа к базе данных, членство, AJAX, и т.д. довольно быстро. Будем надеяться, что приведенная в этом учебнике вам инструменты, которые необходимо приступить к созданию собственных ASP.NET MVC приложений!
-
 
 > [!div class="step-by-step"]
 > [Назад](mvc-music-store-part-9.md)

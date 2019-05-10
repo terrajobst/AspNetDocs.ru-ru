@@ -8,12 +8,12 @@ ms.date: 06/26/2014
 ms.assetid: 47202362-3808-4add-9a69-c9d1f91d5e4e
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4/create-an-odata-v4-client-app
 msc.type: authoredcontent
-ms.openlocfilehash: 14d4b01a2ea8a4582294053416b626e7f1801b50
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a0016cf2cc7bffe6268664395ccb38e140090310
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59411518"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126128"
 ---
 # <a name="create-an-odata-v4-client-app-c"></a>Создание клиентского приложения OData v4 (C#)
 
@@ -27,7 +27,6 @@ ms.locfileid: "59411518"
 
 > [!NOTE]
 > Можно также добавить консольное приложение, в то же решение Visual Studio, которая содержит службу OData.
-
 
 ## <a name="install-the-odata-client-code-generator"></a>Установите генератор кода клиент OData
 
@@ -43,7 +42,6 @@ ms.locfileid: "59411518"
 
 > [!NOTE]
 > Если поместить обоих проектов в одном решении, убедитесь, что запустить ProductService проект без отладки. На следующем шаге необходимо сохранить во время внесения изменений в проект консольного приложения службы.
-
 
 ## <a name="generate-the-service-proxy"></a>Создание прокси-службы
 

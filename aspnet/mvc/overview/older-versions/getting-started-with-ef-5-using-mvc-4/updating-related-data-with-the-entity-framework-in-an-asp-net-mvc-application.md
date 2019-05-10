@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: 7871dc05-2750-470f-8b4c-3a52511949bc
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 5dc49d7467db01e62db147c7083ed62379d23940
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 68f8bdeeb85bc66cf790c2005cf0f0ff24b3b653
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59394163"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129772"
 ---
 # <a name="updating-related-data-with-the-entity-framework-in-an-aspnet-mvc-application-6-of-10"></a>Обновление связанных данных с Entity Framework в приложении ASP.NET MVC (6 из 10)
 
@@ -26,7 +26,6 @@ ms.locfileid: "59394163"
 > > [!NOTE] 
 > > 
 > > Если вы столкнулись с проблемами, не удается устранить, [скачать завершенного глава](building-the-ef5-mvc4-chapter-downloads.md) и попробуйте воспроизвести проблему. Обычно можно найти решение проблемы, сравнивая код, чтобы полный код. Некоторые распространенные ошибки и способы их устранения, см. в разделе [ошибки и способы их устранения.](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#errors)
-
 
 В предыдущем руководстве вы отобразили связанные данные; в этом руководстве описано обновление связанных данных. Для большинства связей это можно сделать путем обновления полей внешнего ключа. Для связей многие ко многим Entity Framework не предоставляет таблицы соединения напрямую, поэтому необходимо явно добавить и удалить сущности и из соответствующих свойств навигации.
 
@@ -194,14 +193,12 @@ ms.locfileid: "59394163"
 Измените некоторые назначения курсов и нажмите кнопку **Сохранить**. Вносимые вами изменения отражаются на странице индекса.
 
  Примечание. Подход к редактированию данных курсов для преподавателя работает также в том случае, когда ограниченном числе курсов. Для коллекций большего размера следовало бы применять другой пользовательский интерфейс и другой метод обновления.  
- 
 
 ## <a name="update-the-delete-method"></a>Обновите метод Delete
 
 Измените код в метод HttpPost Delete, чтобы запись назначения office (если таковые имеются) удаляется при удалении преподавателя:
 
 [!code-csharp[Main](updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample22.cs?highlight=6,10)]
-
 
 Если вы попытаетесь удалить преподавателя, назначенный в подразделение, от имени администратора, вы получите ошибки ссылочной целостности. См. в разделе [текущей версии этого учебника](../../getting-started/getting-started-with-ef-using-mvc/updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application.md) для дополнительный код, который автоматически удалит преподавателя из любой отдел, где преподавателя присваивается в качестве администратора.
 

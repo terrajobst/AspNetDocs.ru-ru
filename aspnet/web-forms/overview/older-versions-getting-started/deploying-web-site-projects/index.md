@@ -8,17 +8,16 @@ ms.date: 05/16/2012
 ms.assetid: 6f72bde8-f2f1-4e4a-94e5-494c3c153c14
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects
 msc.type: chapter
-ms.openlocfilehash: 79e09dddb39bd00019584da2ab199c03a42c67f8
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 43c2397ef4ccc5eacb2ff4c5d04f62b9c8c481b7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59412545"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134424"
 ---
 # <a name="deploying-web-site-projects-in-visual-studio-2008-and-earlier"></a>Развертывание проектов веб-сайтов в Visual Studio 2008 и более ранних версиях
 
 > Веб-приложений ASP.NET обычно являются предназначены, создания и тестирования в локальной среде разработки и нужно будет развернуть в рабочей среде, когда все будет готово к выпуску. В этой серии руководств подробно процесс развертывания.
-
 
 - [Варианты размещения в ASP.NET (C#)](asp-net-hosting-options-cs.md)
 - [Определение подлежащих развертыванию файлов (C#)](determining-what-files-need-to-be-deployed-cs.md)

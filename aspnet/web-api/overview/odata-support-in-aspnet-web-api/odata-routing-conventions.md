@@ -9,19 +9,18 @@ ms.custom: seoapril2019
 ms.assetid: adbc175a-14eb-4ab2-a441-d056ffa8266f
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-routing-conventions
 msc.type: authoredcontent
-ms.openlocfilehash: 8916f8b7a024636be1be055457081487f46a7936
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 63df4a82cd8df92631485b2544117844cfd0ca56
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421632"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130477"
 ---
 # <a name="routing-conventions-in-aspnet-web-api-2-odata"></a>Соглашение о маршрутизации в ASP.NET Web API 2 Odata
 
 по [Майк Уоссон](https://github.com/MikeWasson)
 
 > В этой статье описывается соглашений о маршрутизации, веб-API 2 в ASP.NET 4.x использует конечные точки OData.
-
 
 Когда веб-API получает запрос OData, он сопоставляет запрос имени контроллера и действия. Сопоставление основано на методе HTTP и URI. Например `GET /odata/Products(1)` сопоставляется `ProductsController.GetProduct`.
 
@@ -53,7 +52,6 @@ ms.locfileid: "59421632"
 
 > [!NOTE]
 > Сегменты пути OData не всегда соответствуют сегментов URI-адреса. Например «1» считается сегмента пути.
-
 
 **Имена контроллеров.** Имя контроллера всегда является производным от в корне пути к ресурсу набора сущностей. Например, если путь к ресурсу — `/Products(1)/Supplier`, веб-API ищет контроллер с именем `ProductsController`.
 

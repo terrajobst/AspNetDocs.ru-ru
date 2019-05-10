@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: 0d6fb83b-71f7-425d-8dec-981197d7ec42
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: f86212c1cb559c164342997fb0e4208339b5e3cc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: cc629f84bbf8c271780a8e7deba3d04d23d5fbb1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421125"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129820"
 ---
 # <a name="reading-related-data-with-the-entity-framework-in-an-aspnet-mvc-application-5-of-10"></a>Чтение связанных данных с Entity Framework в приложении ASP.NET MVC (5 из 10)
 
@@ -26,7 +26,6 @@ ms.locfileid: "59421125"
 > > [!NOTE] 
 > > 
 > > Если вы столкнулись с проблемами, не удается устранить, [скачать завершенного глава](building-the-ef5-mvc4-chapter-downloads.md) и попробуйте воспроизвести проблему. Обычно можно найти решение проблемы, сравнивая код, чтобы полный код. Некоторые распространенные ошибки и способы их устранения, см. в разделе [ошибки и способы их устранения.](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#errors)
-
 
 В предыдущем учебном курсе мы завершили модели School. В этом руководстве можно прочитать и отображения связанных данных — то есть данные, которые Entity Framework загружает в свойства навигации.
 
@@ -176,7 +175,6 @@ ms.locfileid: "59421125"
 > 
 > [!code-cshtml[Main](reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample11.cshtml)]
 
-
 Код начинается с создания экземпляра модели представления и помещения его в список преподавателей. Код указывает упреждающую загрузку для `Instructor.OfficeAssignment` и `Instructor.Courses` свойство навигации.
 
 [!code-csharp[Main](reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample12.cs?highlight=3-4)]
@@ -237,7 +235,6 @@ ms.locfileid: "59421125"
 
 > [!NOTE]
 > *.Css* файл кэшируется в браузерах. Если вы не видите изменений, при запуске приложения, выполните обновление жесткого (удерживайте нажатой клавишу CTRL, щелкая мышью **обновить** кнопку, или нажмите клавиши CTRL + F5).
-
 
 Откройте страницу и выберите преподавателя. Вы увидите сетку, которая отображает курсы, назначенные выбранному преподавателю, и для каждого курса отобразится имя связанного факультета.
 

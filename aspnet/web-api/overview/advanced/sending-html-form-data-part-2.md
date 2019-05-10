@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: a7f3c1b5-69d9-4261-b082-19ffafa5f16a
 msc.legacyurl: /web-api/overview/advanced/sending-html-form-data-part-2
 msc.type: authoredcontent
-ms.openlocfilehash: 70e150a32f208cf75086f959d484d86e8501c6bd
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f5aaebb96f631dfb6b0da1fbca96cd93a6a7fe2d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59419929"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126232"
 ---
 # <a name="sending-html-form-data-in-aspnet-web-api-file-upload-and-multipart-mime"></a>Отправка данных формы HTML в веб-API ASP.NET: Отправка файлов и составное сообщение MIME
 
@@ -26,7 +26,6 @@ ms.locfileid: "59419929"
 
 > [!NOTE]
 > [Скачивание готового проекта](https://code.msdn.microsoft.com/ASPNET-Web-API-File-Upload-a8c0fb0d).
-
 
 Ниже приведен пример HTML-форму для передачи файла:
 
@@ -44,7 +43,6 @@ ms.locfileid: "59419929"
 
 > [!NOTE]
 > Часть границ включает компонент случайных (&quot;41184676334&quot;) чтобы убедиться, что строка границ не отображается случайно внутри части сообщения.
-
 
 Каждая часть сообщения содержит один или несколько заголовков, следуют содержимого части.
 

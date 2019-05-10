@@ -8,12 +8,12 @@ ms.date: 01/12/2011
 ms.assetid: b4e76c1a-f66e-43a0-aa72-f39df79c07c1
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/cs/adding-a-new-field
 msc.type: authoredcontent
-ms.openlocfilehash: a06def9c434bd79d63bb74d105c1788e993e231a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: acac3ade54cc51c8004f9ea5f0ee4157d15251e5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383917"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130181"
 ---
 # <a name="adding-a-new-field-to-the-movie-model-and-table-c"></a>Добавление нового поля в модель и таблицу Movie (C#)
 
@@ -32,7 +32,6 @@ ms.locfileid: "59383917"
 > Если вы используете Visual Studio 2010 вместо Visual Web Developer 2010, установите необходимые компоненты, щелкнув следующую ссылку: [Необходимые компоненты для Visual Studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
 > 
 > Проект Visual Web Developer с исходным кодом C# — прилагаются в этом разделе. [Загрузить версию C#](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098). Если вы предпочитаете Visual Basic, переключитесь в [версии Visual Basic](../vb/intro-to-aspnet-mvc-3.md) работы с этим руководством.
-
 
 В этом разделе будет внести некоторые изменения в классы моделей и узнайте, как обновить схему базы данных в соответствии с изменениями модели.
 
@@ -84,7 +83,6 @@ ms.locfileid: "59383917"
 > [!NOTE] 
 > 
 > **Предупреждение** следует включить этот подход для автоматического удаления и повторного создания базы данных только в том случае, если вы используете базу данных разработки или тестирования, и *никогда не* рабочей базы данных, которая содержит реальные данные. С его помощью на производственном сервере может привести к потере данных.
-
 
 В **обозревателе решений**, щелкните правой кнопкой мыши *моделей* папку, выберите **добавить**, а затем выберите **класс**.
 

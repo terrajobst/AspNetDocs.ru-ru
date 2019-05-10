@@ -8,19 +8,18 @@ ms.date: 03/26/2015
 ms.assetid: c205805f-efdd-4fa7-9616-f26eab180611
 msc.legacyurl: /mvc/overview/performance/profile-and-debug-your-aspnet-mvc-app-with-glimpse
 msc.type: authoredcontent
-ms.openlocfilehash: 078382191595d1f65b5ebe9d0de8d41cd70e376d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 051253d1e7a09f6285ebe0a83f87155de8467536
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419890"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129415"
 ---
 # <a name="profile-and-debug-your-aspnet-mvc-app-with-glimpse"></a>Профилирование и отладка приложения ASP.NET MVC с помощью Glimpse
 
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Glimpse — бурно и семейству пакетов NuGet с открытым кодом, предоставляющий подробные сведения о производительности, отладку и диагностические сведения для приложений ASP.NET. Он просто установить, простой и сверхбыстрой и отображает ключевые показатели производительности в нижней части каждой страницы. Он дает возможность углубиться в приложении, если вам нужно узнать, что происходит на сервере. Glimpse предоставляет намного ценную информацию, мы рекомендуем использовать его на протяжении всего цикла разработки, включая Azure тестовой среды. Хотя [Fiddler](http://www.telerik.com/fiddler) и [средства разработки F-12](https://msdn.microsoft.com/library/ie/gg589512(v=vs.85).aspx) предоставляют на стороне клиента представления, представление предоставляет подробную информацию с сервера. Этот учебник посвящен с помощью Glimpse ASP.NET MVC и EF пакеты, но доступны многие другие пакеты. По возможности я будет связан соответствующий [Окиньте документация](http://getglimpse.com/Docs/) которого я целях. Представление — это проект с открытым исходным кодом, слишком у вас есть доступ к исходному коду и документы.
-
 
 - [Установка краткого описания](#ig)
 - [Включить краткого описания для localhost](#eg)
@@ -116,7 +115,6 @@ ms.locfileid: "59419890"
 
 > [!WARNING]
 > Безопасность — мультимедийными данными, предоставляемые Glimpse может привести к безопасности приложения. Майкрософт не производит аудита безопасности из краткого описания для использования в приложениях для производства.
-
 
 Сведения о добавлении ролей, см. в разделе my [развертывание веб-приложения Secure ASP.NET MVC 5 с членством, OAuth и базой данных SQL в Azure](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-mvc-app-membership-oauth-sql-database/) руководства.
 

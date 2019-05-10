@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: f7073f50-d765-456d-9957-926ce60f35f6
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/executing-animations-using-client-side-code-vb
 msc.type: authoredcontent
-ms.openlocfilehash: ff143aa102973279c53fe4ba052c4766f099c77d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 123ce48a203a69b9a2d50b8bb09c290a84afdac7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59382216"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127511"
 ---
 # <a name="executing-animations-using-client-side-code-vb"></a>Выполнение анимаций с помощью клиентского кода (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59382216"
 [Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation10.vb.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation10VB.pdf)
 
 > Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Выполнение анимации могут также инициироваться с помощью пользовательского кода JavaScript на стороне клиента.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -61,7 +60,6 @@ ms.locfileid: "59382216"
 Ниже приведен полный код клиентского JavaScript, который эмулирует щелкните на панели после полной загрузки страницы Обратите внимание, что `pageLoad()` вызываемый ASP.NET AJAX один раз страницы используется имя функции и все включены библиотеки были JavaScript загрузить.
 
 [!code-html[Main](executing-animations-using-client-side-code-vb/samples/sample8.html)]
-
 
 [![Анимация запускается немедленно, без щелчка мыши](executing-animations-using-client-side-code-vb/_static/image2.png)](executing-animations-using-client-side-code-vb/_static/image1.png)
 

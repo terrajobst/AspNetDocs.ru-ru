@@ -8,12 +8,12 @@ ms.date: 06/26/2007
 ms.assetid: 7d821db5-6cbb-4b38-af14-198f9155fc82
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/wrapping-database-modifications-within-a-transaction-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 2fc7ba3d62d41685c234756709707ff14f81b316
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c759df39f30b69264187babdb6d3422aff17e99c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59380318"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132837"
 ---
 # <a name="wrapping-database-modifications-within-a-transaction-vb"></a>Перенос изменений базы данных в транзакции (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59380318"
 [Скачать код](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_63_VB.zip) или [скачать PDF](wrapping-database-modifications-within-a-transaction-vb/_static/datatutorial63vb1.pdf)
 
 > Это руководство представляет собой первый из четырех, ищущий обновление, удаление и вставка пакеты данных. В этом руководстве мы Узнайте, как транзакции базы данных позволяют вносить изменения пакета должно быть выполнено как атомарную операцию, которая гарантирует, что все действия завершится успехом или ошибкой все шаги.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -38,7 +37,6 @@ ms.locfileid: "59380318"
 
 > [!NOTE]
 > При изменении данных в пакетной транзакции, атомарность требуется не всегда. В некоторых сценариях может быть допускается использование некоторых изменений данных успешно и другими пользователями в одном пакете ошибкой, например, когда удаление набора данных по электронной почте из клиента веб-службы электронной почты. Если есть s обработать базу данных ошибок во время выполнения удаления, ее вероятно приемлемым, что эти записи, обрабатываются без ошибок остаются удаленные s. В таком случае DAL не нужно изменять для поддержки транзакций базы данных. Существуют другие пакетной операции ситуации, тем не менее, где важна атомарность. Если клиент перемещается ее средств с одного банковского счета на другой, необходимо выполнить две операции: должно быть вычтено из первой учетной записи и затем добавляется второй денежные средства. Банк может не волнует, что первым шагом успешного выполнения, но второй шаг не удастся, его пользователи терпимо будут обеспокоен. Я советую вам для работы с этим руководством и реализовать усовершенствования в слой DAL для поддержки транзакций базы данных, даже если вы не планируете использовать их в пакетной вставки, обновления и удаления интерфейсы, которые мы будем строить в трех следующих руководствах.
-
 
 ## <a name="an-overview-of-transactions"></a>Общие сведения о транзакции
 
@@ -56,9 +54,7 @@ ms.locfileid: "59380318"
 > [!NOTE]
 > [ `TransactionScope` Класс](https://msdn.microsoft.com/library/system.transactions.transactionscope.aspx) в `System.Transactions` пространства имен позволяет разработчикам программным способом программы-оболочки для ряд инструкций в пределах транзакции и включает в себя поддержку сложных операций с участием нескольких источников, таких как две разные базы данных или даже разнородных типов хранилищ данных, таких как базы данных Microsoft SQL Server, базы данных Oracle и веб-службы. Я решил использовать транзакции ADO.NET в этом руководстве, а не хранить `TransactionScope` класс, поскольку ADO.NET определено точнее, для транзакций базы данных и во многих случаях являются гораздо меньше много ресурсов. Кроме того, в некоторых обстоятельствах `TransactionScope` класс использует координатор распределенных транзакций Microsoft (MSDTC). Проблемы конфигурации, реализации и производительности окружающей MSDTC упрощает довольно специализированные и дополнительные темы и выходит за рамки этих учебников.
 
-
 При работе с поставщиком SqlClient в ADO.NET, транзакции инициируются путем вызова [ `SqlConnection` класс](https://msdn.microsoft.com/library/system.data.sqlclient.sqlconnection.aspx) s [ `BeginTransaction` метод](https://msdn.microsoft.com/library/system.data.sqlclient.sqlconnection.begintransaction.aspx), который возвращает [ `SqlTransaction` объекта](https://msdn.microsoft.com/library/system.data.sqlclient.sqltransaction.aspx). Инструкции изменения данных, в состав транзакции, помещаются в `try...catch` блока. Если произошла ошибка в операторе в `try` block, выполнение передается `catch` блока, где можно выполнить откат транзакции с помощью `SqlTransaction` объект s [ `Rollback` метод](https://msdn.microsoft.com/library/system.data.sqlclient.sqltransaction.rollback.aspx). Если все операторы завершился успешно, вызов `SqlTransaction` объект s [ `Commit` метод](https://msdn.microsoft.com/library/system.data.sqlclient.sqltransaction.commit.aspx) в конце `try` блок фиксирует транзакцию. В следующем фрагменте кода показана схема работы. См. в разделе [поддержание согласованности базы данных с транзакциями](http://aspnet.4guysfromrolla.com/articles/072705-1.aspx) дополнительный синтаксис и примеры использования транзакций с помощью ADO.NET.
-
 
 [!code-vb[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample1.vb)]
 
@@ -74,32 +70,25 @@ ms.locfileid: "59380318"
 - `BatchDelete.aspx`
 - `BatchInsert.aspx`
 
-
 ![Добавление страниц ASP.NET для элемента управления SqlDataSource руководств](wrapping-database-modifications-within-a-transaction-vb/_static/image1.gif)
 
 **Рис. 1**: Добавление страниц ASP.NET для элемента управления SqlDataSource руководств
 
-
 Как и в других папках, `Default.aspx` будет использовать `SectionLevelTutorialListing.ascx` пользовательский элемент управления, чтобы получить список учебников в своем разделе. Поэтому добавьте данный пользовательский элемент управления для `Default.aspx` , перетащив его из обозревателя решений на странице s режиме конструктора.
-
 
 [![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](wrapping-database-modifications-within-a-transaction-vb/_static/image2.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image1.png)
 
 **Рис. 2**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-vb/_static/image2.png))
 
-
 Наконец, добавьте эти четыре страницы как записи для `Web.sitemap` файла. В частности, добавьте следующую разметку после Настройка карты узла `<siteMapNode>`:
-
 
 [!code-xml[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample2.xml)]
 
 После обновления `Web.sitemap`, Отвлекитесь и просмотрите учебный веб-узел в обозревателе. В меню слева теперь есть элементы по работе с пакетными данными учебниками.
 
-
 ![Карта узла теперь включают записи для работы с учебниками пакетными данными](wrapping-database-modifications-within-a-transaction-vb/_static/image3.gif)
 
 **Рис. 3**: Карта узла теперь включают записи для работы с учебниками пакетными данными
-
 
 ## <a name="step-2-updating-the-data-access-layer-to-support-database-transactions"></a>Шаг 2. Обновление уровня доступа к данным для поддержки транзакций базы данных
 
@@ -111,14 +100,11 @@ ms.locfileid: "59380318"
 
 Типизированный набор DataSet `Northwind.xsd` находится в `App_Code` папка s `DAL` во вложенную папку. Создайте вложенную папку в `DAL` папку с именем `TransactionSupport` и добавьте новый файл класса с именем `ProductsTableAdapter.TransactionSupport.vb` (см. рис. 4). Этот файл будет содержать частичная реализация `ProductsTableAdapter` , включает методы для выполнения изменений данных, используя транзакцию.
 
-
 ![Добавьте папку с именем TransactionSupport и файл класса с именем ProductsTableAdapter.TransactionSupport.vb](wrapping-database-modifications-within-a-transaction-vb/_static/image4.gif)
 
 **Рис. 4**: Добавьте папку с именем `TransactionSupport` и файл класса с именем `ProductsTableAdapter.TransactionSupport.vb`
 
-
 Введите следующий код в `ProductsTableAdapter.TransactionSupport.vb` файла:
-
 
 [!code-vb[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample3.vb)]
 
@@ -130,13 +116,11 @@ ms.locfileid: "59380318"
 
 С помощью этих методов завершения, мы повторно Готово для добавления методов для `ProductsDataTable` или BLL, выполнить ряд команд в рамках транзакции. Следующий метод использует шаблон пакетного обновления для обновления `ProductsDataTable` экземпляра с помощью транзакции. Он запускает транзакцию путем вызова `BeginTransaction` метод, а затем используется `Try...Catch` блок для выдачи инструкции изменения данных. Если вызов `Adapter` объект s `Update` метода приводят к возникновению исключения будут перенесены выполнения `catch` блока, где будет выполнен откат транзакции и исключение создается повторно. Помните, что `Update` метод реализует шаблон пакетного обновления путем перечисления строк, предоставленного `ProductsDataTable` и выполнение необходимого `InsertCommand`, `UpdateCommand`, и `DeleteCommand` s. Если любой из этих команд приведет к ошибке, транзакция откатывается, Отмена предыдущего изменения, внесенные во время существования транзакции s. Следует `Update` инструкции завершаются без ошибки, транзакция фиксируется в полном объеме.
 
-
 [!code-vb[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample4.vb)]
 
 Добавить `UpdateWithTransaction` метод `ProductsTableAdapter` класса через разделяемый класс в `ProductsTableAdapter.TransactionSupport.vb`. Кроме того, этот метод может быть добавлен к s уровня бизнес-логики `ProductsBLL` класса несколько незначительных синтаксических изменений. А именно, keyword `Me` в `Me.BeginTransaction()`, `Me.CommitTransaction()`, и `Me.RollbackTransaction()` потребуется заменить `Adapter` (Помните, что `Adapter` — это имя свойства в `ProductsBLL` типа `ProductsTableAdapter`).
 
 `UpdateWithTransaction` Метод использует шаблон пакетного обновления, но ряд вызовов непосредственные методы DB также может использоваться в пределах области транзакции, как показано в следующем метод. `DeleteProductsWithTransaction` Метод принимает в качестве входных данных `List(Of T)` типа `Integer`, которые являются `ProductID` удаляемых. Запускает транзакцию путем вызова, метод `BeginTransaction` и затем в `Try` block, выполняет итерацию предоставленного списка вызова непосредственного шаблона DB `Delete` метод для каждого `ProductID` значение. Если какие-либо вызовы `Delete` завершается ошибкой, управление передается `Catch` блока, где откат транзакции и исключение создается повторно. Если во всех вызовах `Delete` выполниться успешно, а затем транзакция фиксируется. Добавьте следующий метод для `ProductsBLL` класса.
-
 
 [!code-vb[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample5.vb)]
 
@@ -154,12 +138,10 @@ ms.locfileid: "59380318"
 
 Откройте `ProductsBLL` и добавьте метод с именем `UpdateWithTransaction` который просто вызывает вниз, чтобы соответствующий метод DAL. Теперь должно существовать два новых метода в `ProductsBLL`: `UpdateWithTransaction`, который вы только что добавили, и `DeleteProductsWithTransaction`, который был добавлен на шаге 3.
 
-
 [!code-vb[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample6.vb)]
 
 > [!NOTE]
 > Эти методы не включают `DataObjectMethodAttribute` атрибут, назначенный большинство методов в `ProductsBLL` класса потому, что мы будем вызывает эти методы непосредственно из кода классов страницы ASP.NET. Помните, что `DataObjectMethodAttribute` используется для пометки, какие методы должны отображаться в ObjectDataSource s Настройка источника данных, мастера и какие вкладке (SELECT, UPDATE, INSERT или DELETE). Так как GridView не имеет встроенной возможности пакетной службы, изменение или удаление, необходимо программным способом вызова этих методов вместо того, чтобы использовать без кода декларативный подход.
-
 
 ## <a name="step-5-atomically-updating-database-data-from-the-presentation-layer"></a>Шаг 5. Атомарным образом обновление баз данных от слоя представления
 
@@ -167,37 +149,29 @@ ms.locfileid: "59380318"
 
 Сначала откройте `Transactions.aspx` странице в `BatchData` папки и перетащите элемент управления GridView с панели инструментов в конструктор. Задайте его `ID` для `Products` и его смарт-теге, привязать его к элементу управления ObjectDataSource с именем `ProductsDataSource`. Настройте элемент ObjectDataSource для извлечения данных из `ProductsBLL` класс s `GetProducts` метод. Это GridView только для чтения, поэтому устанавливается раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) и нажмите кнопку Готово.
 
-
 [![Настройка ObjectDataSource на использование метода GetProducts класса ProductsBLL s](wrapping-database-modifications-within-a-transaction-vb/_static/image5.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image3.png)
 
 **Рис. 5**: Настройка ObjectDataSource для использования `ProductsBLL` класс s `GetProducts` метод ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-vb/_static/image4.png))
-
 
 [![Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет)](wrapping-database-modifications-within-a-transaction-vb/_static/image6.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image5.png)
 
 **Рис. 6**: Задайте раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-vb/_static/image6.png))
 
-
 После завершения работы мастера настройки источников данных Visual Studio создаст поля BoundFields и CheckBoxField для полей данных продукта. Удалить все эти поля, за исключением `ProductID`, `ProductName`, `CategoryID`, и `CategoryName` и переименуйте `ProductName` и `CategoryName` поля BoundField, кроме `HeaderText` свойства Product и Category, соответственно. В смарт-теге флажок Enable Paging. После внесения этих изменений, GridView и ObjectDataSource s декларативная разметка должна выглядеть следующим образом:
-
 
 [!code-aspx[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample7.aspx)]
 
 Добавьте три элемента управления кнопки Web над элементом управления GridView. Значение первой кнопки s свойство Text для обновления сетки, второй s, чтобы изменить категории (с помощью ТРАНЗАКЦИЙ) и третьим s, чтобы изменить категории (без ТРАНЗАКЦИИ).
 
-
 [!code-aspx[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample8.aspx)]
 
 На этом этапе конструктор в Visual Studio должен выглядеть снимок экрана, показанный на рис. 7.
-
 
 [![Страница содержит GridView и три кнопки веб-элементов управления](wrapping-database-modifications-within-a-transaction-vb/_static/image7.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image7.png)
 
 **Рис. 7**: Страница содержит GridView и три кнопки веб-элементов управления ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-vb/_static/image8.png))
 
-
 Создание обработчиков событий для каждого из трех кнопки s `Click` события и используйте следующий код:
-
 
 [!code-vb[Main](wrapping-database-modifications-within-a-transaction-vb/samples/sample9.vb)]
 
@@ -209,26 +183,21 @@ ms.locfileid: "59380318"
 
 Чтобы продемонстрировать это, посетите эту страницу через обозреватель. Изначально вы увидите на первой странице данных, как показано на рис. 8. Затем щелкните кнопку Изменить категории (с помощью ТРАНЗАКЦИЙ). Это вызывает обратную передачу и пытаться обновить все продукты `CategoryID` значений, но приведет к нарушению ограничения внешнего ключа (см. рис. 9).
 
-
 [![Товары показываются в GridView с возможностью разбивки на страницы](wrapping-database-modifications-within-a-transaction-vb/_static/image8.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image9.png)
 
 **Рис. 8**: Товары показываются в GridView с возможностью разбивки на страницы ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-vb/_static/image10.png))
-
 
 [![Переназначение категорий приводит к нарушению ограничения внешнего ключа](wrapping-database-modifications-within-a-transaction-vb/_static/image9.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image11.png)
 
 **Рис. 9**: Переназначение категорий приводит нарушение ограничения внешнего ключа ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-vb/_static/image12.png))
 
-
 Теперь нажмите кнопку "Назад" в браузере s и затем нажмите кнопку Обновить сетку. При обновлении данных точно такие же выходные данные должны увидеть, как показано на рис. 8. То есть, даже если некоторые из продуктов `CategoryID` s было изменено на допустимые значения и обновлен в базе данных, они откатывались обратно в том случае, когда произошло нарушение ограничения внешнего ключа.
 
 Теперь попробуйте нажать кнопку Изменить категории (без ТРАНЗАКЦИИ). Это приведет к та же ошибка нарушения ограничения внешнего ключа (см. рис. 9), но в этот раз те продукты, `CategoryID` значения были изменены для юридических значение не будет выполнен откат. Нажмите кнопку "Назад" в браузере s и нажмите кнопку Обновить сетку. Как показано на рис. 10, `CategoryID` назначили s первые восемь продуктов. Например, на рис. 8 Chang было `CategoryID` 1, но в рис 10 ИТ s была переназначена на 2.
 
-
 [![Некоторые значения CategoryID продуктов не обновлены во время другие были](wrapping-database-modifications-within-a-transaction-vb/_static/image10.gif)](wrapping-database-modifications-within-a-transaction-vb/_static/image13.png)
 
 **Рис. 10**: Некоторые продукты `CategoryID` значения были обновлены во время другие были не ([Просмотр полноразмерного изображения](wrapping-database-modifications-within-a-transaction-vb/_static/image14.png))
-
 
 ## <a name="summary"></a>Сводка
 

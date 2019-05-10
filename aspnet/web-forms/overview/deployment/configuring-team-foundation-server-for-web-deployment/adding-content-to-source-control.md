@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 86c14aab-c2dd-4f73-b40c-c6d52fa44950
 msc.legacyurl: /web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/adding-content-to-source-control
 msc.type: authoredcontent
-ms.openlocfilehash: a609b761543e4994aa4a7f86636bd16e9cd74683
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 16073dd2fb0ea1cc4ddbc94c843181933dc174c1
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396724"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131546"
 ---
 # <a name="adding-content-to-source-control"></a>Добавление содержимого в систему управления версиями
 
@@ -22,7 +22,6 @@ ms.locfileid: "59396724"
 [Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе объясняется, как для добавления содержимого в систему управления версиями в Team Foundation Server (TFS) 2010. Описывает добавление решений и проектов к командному проекту в TFS, а также описание способов добавления внешних зависимостей, таких как платформы или сборки в систему управления версиями.
-
 
 Этот раздел является частью серии учебников, исходя из требования к развертыванию enterprise вымышленной компании Fabrikam, Inc. В этой серии руководств используется пример решения&#x2014; [решения диспетчера контактов](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;для представления веб-приложения с более реалистичные уровень сложности, включая приложения ASP.NET MVC 3, Windows Communication Служба Foundation (WCF) и проект базы данных.
 
@@ -116,7 +115,6 @@ ms.locfileid: "59396724"
 
 > [!NOTE]
 > Включение папки пакетов является типичным, что происходит при добавлении платформы Entity Framework, то есть одинаковые ресурсы к решению, используя расширения NuGet для Visual Studio 2010.
-
 
 **Для добавления содержимого не входящих в проект в систему управления версиями**
 

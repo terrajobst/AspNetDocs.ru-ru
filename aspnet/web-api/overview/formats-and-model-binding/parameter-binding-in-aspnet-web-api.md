@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: e42c8388-04ed-4341-9fdb-41b1b4c06320
 msc.legacyurl: /web-api/overview/formats-and-model-binding/parameter-binding-in-aspnet-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: f121f12ce689a079412bbd5392fde4fea863ff1f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: da0b9e12fcbe5cd2bfb5478162b7453d34931edf
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401976"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65127522"
 ---
 # <a name="parameter-binding-in-aspnet-web-api"></a>Привязка параметров в веб-API ASP.NET
 
@@ -173,7 +173,6 @@ ms.locfileid: "59401976"
 
 > [!NOTE]
 > Если ваш **ExecuteBindingAsync** метод считывает текст сообщения запроса, переопределить **WillReadBody** свойство возвращает значение true. Текст запроса могут быть небуферизованный поток, можно прочитать только один раз, поэтому веб-API применяет правило, не более одной привязки можно прочитать тело сообщения.
-
 
 Чтобы применить пользовательский **HttpParameterBinding**, можно определить атрибут, который является производным от **ParameterBindingAttribute**. Для `ETagParameterBinding`, мы определим два атрибута, один для `if-match` заголовки и один для `if-none-match` заголовки. Оба являются производными от абстрактного базового класса.
 

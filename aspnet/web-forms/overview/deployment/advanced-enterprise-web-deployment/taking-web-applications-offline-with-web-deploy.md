@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 3e9f6e7d-8967-4586-94d5-d3a122f12529
 msc.legacyurl: /web-forms/overview/deployment/advanced-enterprise-web-deployment/taking-web-applications-offline-with-web-deploy
 msc.type: authoredcontent
-ms.openlocfilehash: 017eceb8567859fdbe28bb87af844eee20dfa525
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ba54454bcb6f5e4ceb269b128a6b72a4b75f64be
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59415483"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131399"
 ---
 # <a name="taking-web-applications-offline-with-web-deploy"></a>Перевод веб-приложений в автономный режим с помощью веб-развертывания
 
@@ -22,7 +22,6 @@ ms.locfileid: "59415483"
 [Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описывается перевод веб-приложения автономно в течение автоматического развертывания с помощью средство Internet Information Services (IIS) веб-развертывания (веб-развертывания). Пользователи, просматривающие веб-приложению перенаправляются *приложения\_offline.htm* файл до завершения развертывания.
-
 
 Этот раздел является частью серии учебников, исходя из требования к развертыванию enterprise вымышленной компании Fabrikam, Inc. В этой серии руководств используется пример решения&#x2014; [решения диспетчера контактов](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;для представления веб-приложения с более реалистичные уровень сложности, включая приложения ASP.NET MVC 3, Windows Communication Служба Foundation (WCF) и проект базы данных.
 
@@ -70,18 +69,13 @@ ms.locfileid: "59415483"
 > [!NOTE]
 > В следующей процедуре предполагается, что вы используете пользовательский файл проекта MSBuild для управления процесс развертывания, как описано в разделе [основные сведения о файле проекта](../web-deployment-in-the-enterprise/understanding-the-project-file.md). При развертывании из Visual Studio, необходимо использовать другой подход. Саид Ибрагим Хашими описывает один такой новый подход в [как занять Your публикации веб-приложений вне сети во время](http://sedodream.com/2012/01/08/HowToTakeYourWebAppOfflineDuringPublishing.aspx).
 
-
 Для развертывания *приложения\_автономной* файл на целевой веб-сайт IIS, необходимо вызвать с помощью MSDeploy.exe [веб-развертывания **contentPath** поставщика](https://technet.microsoft.com/library/dd569034(WS.10).aspx). **ContentPath** поставщик поддерживает физический каталог пути и пути к веб-сайта или приложения IIS, что делает его идеальным выбором для синхронизации файлов между папкой проекта Visual Studio и веб-приложение IIS. Чтобы развернуть файл, MSDeploy команда должна выглядеть следующим образом:
-
 
 [!code-console[Main](taking-web-applications-offline-with-web-deploy/samples/sample1.cmd)]
 
-
 Чтобы удалить файл из конечного сайта в конце процесса развертывания, MSDeploy команда должна выглядеть следующим образом:
 
-
 [!code-console[Main](taking-web-applications-offline-with-web-deploy/samples/sample2.cmd)]
-
 
 Чтобы автоматизировать эти команды в рамках процесса построения и развертывания, необходимо интегрировать их в пользовательский файл проекта MSBuild. Далее описано, как это сделать.
 
@@ -129,9 +123,7 @@ ms.locfileid: "59415483"
 
 *. Wpp.targets* файл должен выглядеть примерно следующим образом:
 
-
 [!code-xml[Main](taking-web-applications-offline-with-web-deploy/samples/sample8.xml)]
-
 
 Ниже приведены основные преимущества Примечание в этом примере.
 
@@ -160,7 +152,6 @@ ms.locfileid: "59415483"
 
 > [!NOTE]
 > Если развертывание завершается сбоем, *приложения\_offline.htm* файл останется на месте, и приложение будет работать автономно. Обычно это требуемое поведение. Чтобы перенести приложение обратно в оперативный режим, вы можете удалить *приложения\_offline.htm* файл из веб-сервере. Кроме того, если вы устраните ошибки и выполнить успешное развертывание, *приложения\_offline.htm* файл будет удален.
-
 
 ## <a name="conclusion"></a>Заключение
 

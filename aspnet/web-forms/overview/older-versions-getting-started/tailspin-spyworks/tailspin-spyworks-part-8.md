@@ -8,12 +8,12 @@ ms.date: 07/21/2010
 ms.assetid: 5aeadf8f-39f3-4f07-a78f-1c310c64fb23
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-8
 msc.type: authoredcontent
-ms.openlocfilehash: db8db4e3bff8047b48a7528b5146873ab6d84714
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 707dc9d87ae324a7897c971a451e40bc54c96cb3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59398687"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130595"
 ---
 # <a name="part-8-final-pages-exception-handling-and-conclusion"></a>Часть 8. Последние страницы, обработка исключений и заключение
 
@@ -22,7 +22,6 @@ ms.locfileid: "59398687"
 > Tailspin Spyworks демонстрирует, как чрезвычайно прост процесс создания мощных и масштабируемых приложений для платформы .NET. Он демонстрирует способы использования новые возможности в ASP.NET 4 для создание Интернет-магазина, включая покупок, извлечения и администрирования.
 > 
 > В этой серии руководств описаны все действия, предпринимаемые для создайте пример приложения Tailspin Spyworks. Часть 8 добавляет страницу контактов, о странице и обработка исключений. Это заключение серии.
-
 
 ## <a id="_Toc260221680"></a>  Обратитесь к странице (отправка по электронной почте из ASP.NET)
 

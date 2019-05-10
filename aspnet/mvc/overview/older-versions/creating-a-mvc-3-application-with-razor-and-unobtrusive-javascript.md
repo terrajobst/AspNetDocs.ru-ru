@@ -8,12 +8,12 @@ ms.date: 11/01/2010
 ms.assetid: 658b149b-d770-46bf-8b4b-4e47cca242f3
 msc.legacyurl: /mvc/overview/older-versions/creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript
 msc.type: authoredcontent
-ms.openlocfilehash: 91c96cc413e63ad2fc160ffbb473c4f3e1ada3e4
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: fb63493ff22c9261fc5746a998a32f2511141f87
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401066"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130386"
 ---
 # <a name="creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript"></a>Создание приложения на MVC 3 с помощью Razor и ненавязчивого JavaScript
 
@@ -22,7 +22,6 @@ ms.locfileid: "59401066"
 > Список пользователей примера веб-приложения показывает, насколько он прост для создания приложений ASP.NET MVC 3, с помощью представлений Razor. Пример приложения показано, как использовать новый обработчик представлений Razor в ASP.NET MVC версии 3 и Visual Studio 2010 для создания вымышленной список пользователей веб-сайта, включает в себя функции, такие как создание, отображение, редактирование и удаление пользователей.
 > 
 > Этот учебник описывает шаги, предпринятые для создания примера приложения ASP.NET MVC 3 список пользователей. Проект Visual Studio с C# и VB исходный код доступен в этой статье прилагаются: [Скачайте](https://code.msdn.microsoft.com/aspnetmvcsamples/Release/ProjectReleases.aspx?ReleaseId=5114). Если у вас есть вопросы об этом руководстве, сообщите о них для [форум MVC](https://forums.asp.net/1146.aspx).
-
 
 ## <a name="overview"></a>Обзор
 
@@ -185,7 +184,6 @@ ms.locfileid: "59401066"
 
 > [!NOTE]
 > Иногда, в ASP.NET MVC 3 бета-версии, необходимо отправить форму, чтобы запустить проверку на стороне клиента. Это может быть изменено в окончательном выпуске.
-
 
 ## <a name="creating-the-create-view"></a>Создание представления создания
 

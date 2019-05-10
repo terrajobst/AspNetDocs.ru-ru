@@ -8,12 +8,12 @@ ms.date: 11/28/2017
 ms.custom: seoapril2019
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
 msc.type: authoredcontent
-ms.openlocfilehash: 5e3c049ba4349301c3c2d173d4311b3d0883bf68
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3e35c2bc0e46dfdb4544b772775eddd533f27be3
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401755"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125227"
 ---
 # <a name="get-started-with-aspnet-web-api-2-c"></a>Начало работы с ASP.NET Web API 2 (C#)
 
@@ -52,7 +52,6 @@ HTTP не только для предоставления веб-страниц
 
 > [!NOTE]
 > Можно также создать проект веб-API с помощью &quot;веб-API&quot; шаблона. Шаблон веб-API ASP.NET MVC использует для предоставления страницы справки по API. Я использую пустой шаблон в этом руководстве, поскольку я хочу показать веб-API без MVC. В общем случае не нужно знать ASP.NET MVC позволяет использовать веб-API.
-
 
 ## <a name="adding-a-model"></a>Добавление модели
 
@@ -93,7 +92,6 @@ HTTP не только для предоставления веб-страниц
 
 > [!NOTE]
 > Не нужно поместить в папку с именем контроллеры контроллеров. Имя папки — это просто удобный способ организации исходные файлы.
-
 
 Если этот файл еще не открыт, дважды щелкните файл, чтобы открыть его. Замените код в этот файл следующее:
 

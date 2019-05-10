@@ -8,12 +8,12 @@ ms.date: 07/21/2010
 ms.assetid: 15d4652b-d5aa-4172-b186-2c7f96ba316d
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-1
 msc.type: authoredcontent
-ms.openlocfilehash: 70d2efb789d694a0aaecc046615c7b3622079dc1
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 05a3ace3d8fef9c1f3593f7948e42b4725d70134
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385362"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130586"
 ---
 # <a name="part-1-file--new-project"></a>Часть 1. "Файл -> Создать проект"
 
@@ -23,7 +23,6 @@ ms.locfileid: "59385362"
 > 
 > В этой серии руководств описаны все действия, предпринимаемые для создайте пример приложения Tailspin Spyworks. Часть 1 рассматриваются общие сведения и файл/создать проект.
 
-
 ## <a id="_Toc260221666"></a>  Общие сведения о
 
 Это руководство представляет собой введение в веб-форм ASP.NET. Мы будет запускаться медленно, поэтому уровня веб-разработка для начинающих допустимо.
@@ -31,7 +30,6 @@ ms.locfileid: "59385362"
 Приложение, которое мы будем строить является простого Интернет-магазина.
 
 ![](tailspin-spyworks-part-1/_static/image1.jpg)
-
 
 Посетители могут просматривать продукты по категориям:
 
@@ -54,7 +52,6 @@ ms.locfileid: "59385362"
 После упорядочения, они увидят экран подтверждения простой:
 
 ![](tailspin-spyworks-part-1/_static/image7.jpg)
-
 
 Начнем с создания проекта веб-форм ASP.NET в Visual Studio 2010, и постепенно добавлять функции, чтобы создать работающее приложение. Попутно мы обсудим доступа к базе данных, представления списка и сетки, обновление страниц данных, проверка данных с помощью главных страниц для согласованный макет страницы, AJAX, проверки, членство пользователей и многое другое.
 

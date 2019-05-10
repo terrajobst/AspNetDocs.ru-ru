@@ -8,19 +8,18 @@ ms.date: 08/23/2012
 ms.assetid: 5894dc13-5d45-4dad-8096-136499120f1d
 msc.legacyurl: /mvc/overview/performance/bundling-and-minification
 msc.type: authoredcontent
-ms.openlocfilehash: 9e4a2a9fc56393ac816f25a1039b233aa8961608
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 79d6b38c6464a749db9cd6d35e1f277b0adf2a02
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383841"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129423"
 ---
 # <a name="bundling-and-minification"></a>Объединение и минификация
 
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Объединение и Минификация существуют два следующих способа можно использовать в ASP.NET 4.5 для улучшения времени загрузки запроса. Объединение и Минификация повышает время загрузки, уменьшая количество запросов к серверу и уменьшения размера запрошенных ресурсов (например, CSS и JavaScript.)
-
 
 Большая часть текущего поддерживаются основные браузеры ограничить число [одновременных подключений](http://www.browserscope.org/?category=network) для каждого имени узла до шести. Это означает, что при обработке шесть запросов, дополнительные запросы на получение ресурсов на узле будут помещаться в очередь с помощью браузера. В приведенном ниже рисунке вкладки сети средства разработчика IE F12 схеме также показано время для активы, необходимые представления About примера приложения.
 
@@ -96,7 +95,6 @@ ms.locfileid: "59383841"
 
 > [!NOTE]
 > Если не `EnableOptimizations` — `true` или атрибута отладки в [элемент compilation](https://msdn.microsoft.com/library/s10awwz0.aspx) в *Web.config* задан как `false`, файлы не будет объединено или уменьшено. Кроме того не будет использоваться .min версию файлов, полный отладочных версий будут выбраны. `EnableOptimizations` переопределяет атрибут debug в [элемент compilation](https://msdn.microsoft.com/library/s10awwz0.aspx) в *Web.config* файла
-
 
 ## <a name="using-bundling-and-minification-with-aspnet-web-forms-and-web-pages"></a>С помощью объединения и Минификации с веб-форм ASP.NET и веб-страниц
 

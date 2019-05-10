@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: b83f47c4-8521-4d0a-8644-e8f77e39733e
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: a79cca143df9a10b4255796a6d034688713e4e52
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d55f01bd2204a2fdb26664827b92c72d68e00a89
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379759"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129805"
 ---
 # <a name="handling-concurrency-with-the-entity-framework-in-an-aspnet-mvc-application-7-of-10"></a>Обработка параллелизма с помощью Entity Framework в приложении ASP.NET MVC (7 из 10)
 
@@ -26,7 +26,6 @@ ms.locfileid: "59379759"
 > > [!NOTE] 
 > > 
 > > Если вы столкнулись с проблемами, не удается устранить, [скачать завершенного глава](building-the-ef5-mvc4-chapter-downloads.md) и попробуйте воспроизвести проблему. Обычно можно найти решение проблемы, сравнивая код, чтобы полный код. Некоторые распространенные ошибки и способы их устранения, см. в разделе [ошибки и способы их устранения.](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#errors)
-
 
 В двух предыдущих руководствах вы работали со связанными данными. Этом руководстве показано, как обеспечивать параллелизм. Вы создадите веб-страниц, которые работают с `Department` сущности и страницы, изменять и удалять `Department` сущностей будет обрабатывать ошибки параллелизма. На следующих рисунках показаны страницы индекса и Delete, включая некоторые сообщения, которые отображаются при возникновении конфликта параллелизма.
 

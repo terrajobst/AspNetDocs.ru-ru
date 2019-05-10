@@ -8,17 +8,16 @@ ms.date: 02/14/2013
 ms.assetid: bdb18d02-9f61-4676-836d-6fdea94f9282
 msc.legacyurl: /whitepapers/aspnet-and-web-tools-20122-release-notes
 msc.type: content
-ms.openlocfilehash: 45e2d1b10665a8ca1965f0761bfa6bfd13444c8e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a4ea1d7c146309e1d5e8be944d496e9fd87bca3e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419513"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125710"
 ---
 # <a name="aspnet-and-web-tools-20122-release-notes"></a>ASP.NET и веб-инструменты 2012.2 — заметки о выпуске
 
 > В этом документе описывается выпуск ASP.NET и веб-инструментами 2012.2. Это обновление для веб-средства Visual Studio и ASP.NET.
-
 
 - [Замечания по установке](#_Installation)
 - [Документация](#_Documentation)

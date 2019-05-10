@@ -8,12 +8,12 @@ ms.date: 04/21/2011
 ms.assetid: b3193d33-2d0b-4d98-9712-58bd897c62ec
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6
 msc.type: authoredcontent
-ms.openlocfilehash: b1e7bd0b16190b00e0e78a01ef71475e1c8d048a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: bc031dd5be61cc6707c522f85f6af77a420c8b31
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59394826"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129658"
 ---
 # <a name="part-6-using-data-annotations-for-model-validation"></a>Часть 6. Использование заметок к данным для проверки модели
 
@@ -24,7 +24,6 @@ ms.locfileid: "59394826"
 > Store музыки MVC — это реализация хранилища упрощенный пример, который продает музыкальные альбомы через Интернет и реализует базовый сайт администрирования, вход пользователя и корзины для покупок функциональные возможности.  
 >   
 > В этой серии руководств описаны все шаги, необходимые для построения примера приложения ASP.NET MVC Music Store. Часть 6 рассматривается, с помощью заметок к данным для проверки модели.
-
 
 У нас есть основная проблема, связанная с формами наших Create и Edit: они не выполняют никакой проверки. Мы можем такие вещи, как оставить обязательные поля пустым или тип буквы в поле «Цена» и является первой ошибки, мы увидим из базы данных.
 
@@ -76,7 +75,6 @@ ms.locfileid: "59394826"
 Удовлетворяет требованиям проверки, введя одну букву в поле заголовка, поэтому сообщение проверки немедленно удаляется.
 
 ![](mvc-music-store-part-6/_static/image3.png)
-
 
 > [!div class="step-by-step"]
 > [Назад](mvc-music-store-part-5.md)

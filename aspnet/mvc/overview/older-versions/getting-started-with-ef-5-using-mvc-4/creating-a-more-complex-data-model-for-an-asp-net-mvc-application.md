@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: f81f3d80-3674-4d8e-a9b1-87feed1a93c9
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/creating-a-more-complex-data-model-for-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 15bdaa588792c3cf4a8e6eee651e0675f959f942
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2ba7ca22074fe3c131209482180f8f7706714dd5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59382242"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129833"
 ---
 # <a name="creating-a-more-complex-data-model-for-an-aspnet-mvc-application-4-of-10"></a>Создание более сложной модели данных для приложения ASP.NET MVC (4 из 10)
 
@@ -26,7 +26,6 @@ ms.locfileid: "59382242"
 > > [!NOTE] 
 > > 
 > > Если вы столкнулись с проблемами, не удается устранить, [скачать завершенного глава](building-the-ef5-mvc4-chapter-downloads.md) и попробуйте воспроизвести проблему. Обычно можно найти решение проблемы, сравнивая код, чтобы полный код. Некоторые распространенные ошибки и способы их устранения, см. в разделе [ошибки и способы их устранения.](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#errors)
-
 
 В предыдущих руководствах вы работали с простой модели данных, состоящей из трех сущностей. В этом руководстве вы добавите дополнительные сущности и связи, а также настроите модель данных путем указания форматирования, проверки и правила сопоставления базы данных. Вы увидите два способа настройки модели данных: путем добавления атрибутов к классам сущностей и добавив код в класс контекста базы данных.
 
@@ -52,9 +51,7 @@ ms.locfileid: "59382242"
 
 С помощью атрибута `DisplayFormat` можно явно указать формат даты:
 
-
 [!code-csharp[Main](creating-a-more-complex-data-model-for-an-asp-net-mvc-application/samples/sample2.cs)]
-
 
 `ApplyFormatInEditMode` Параметр указывает, что заданное форматирование также должны быть применены при отображении значения в текстовом поле для редактирования. (Вы не хотите, чтобы для некоторых полей, например, для денежных значений не можно символ валюты в текстовом поле для редактирования.)
 
@@ -124,7 +121,6 @@ ms.locfileid: "59382242"
 
 > [!NOTE]
 > Если вы попытаетесь выполнить компиляцию до создания всех этих классов сущностей, могут возникнуть ошибки компилятора.
-
 
 ## <a name="create-the-instructor-entity"></a>Создание сущности Instructor
 
@@ -260,7 +256,6 @@ ms.locfileid: "59382242"
 
 [!code-csharp[Main](creating-a-more-complex-data-model-for-an-asp-net-mvc-application/samples/sample24.cs)]
 
-
 ## <a name="modifying-the-student-entity"></a>Изменение сущности Student
 
 ![Student_entity](creating-a-more-complex-data-model-for-an-asp-net-mvc-application/_static/image10.png)
@@ -378,7 +373,6 @@ ms.locfileid: "59382242"
 > [!code-xml[Main](creating-a-more-complex-data-model-for-an-asp-net-mvc-application/samples/sample35.xml?highlight=1-2)]
 > 
 > В новой базе данных нет данных для переноса и `update-database` команда является гораздо большей долей вероятности завершится без ошибок. Инструкции о том, как удалить базу данных, см. в разделе [как удалить базу данных из Visual Studio 2012](http://romiller.com/2013/05/17/how-to-drop-a-database-from-visual-studio-2012/).
-
 
 Открыть базу данных в **обозревателя серверов** как вы делали это раньше и разверните **таблиц** узел, чтобы увидеть, что все таблицы были созданы. (Если у вас есть **обозревателя серверов** откройте из более ранних времени, щелкните **обновить** кнопки.)
 

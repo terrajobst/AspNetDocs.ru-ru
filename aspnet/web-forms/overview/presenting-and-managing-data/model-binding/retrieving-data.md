@@ -8,15 +8,14 @@ ms.date: 02/27/2014
 ms.assetid: 9f24fb82-c7ac-48da-b8e2-51b3da17e365
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/retrieving-data
 msc.type: authoredcontent
-ms.openlocfilehash: 29baaf2917e47ac46a78a252721be725b4e9b58f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 08cb65f9ef8f5c36070454e011f41554d81f333f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59398479"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131531"
 ---
 # <a name="retrieving-and-displaying-data-with-model-binding-and-web-forms"></a>Извлечение и отображение данных с помощью привязки модели и веб-форм
-
 
 > В этой серии руководств показано основными аспектами с помощью привязки модели с проектом веб-форм ASP.NET. Привязка модели упрощает взаимодействие с данными более эффективную чем работа с данными объектов источника (например, элемент управления ObjectDataSource и SqlDataSource). Эта серия начинается с вводный материал и перемещает до более продвинутых в последующих руководствах.
 > 
@@ -34,7 +33,6 @@ ms.locfileid: "59398479"
 > - Microsoft Visual Studio 2017 или Microsoft Visual Studio Community 2017
 >   
 > Этот учебник также работает с Visual Studio 2012 и Visual Studio 2013, но существуют некоторые различия в пользовательский интерфейс и проекта шаблон.
-
 
 ## <a name="what-youll-build"></a>Вы создадите
 
@@ -96,7 +94,6 @@ ms.locfileid: "59398479"
    4. Главная страница веб-формы, выберите **Site.Master**.
    
    5. Нажмите кнопку **ОК**.
-   
 
 ## <a name="add-the-data-model"></a>Добавление модели данных
 

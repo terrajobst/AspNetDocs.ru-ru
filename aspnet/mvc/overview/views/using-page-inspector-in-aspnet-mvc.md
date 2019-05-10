@@ -8,12 +8,12 @@ ms.date: 08/15/2012
 ms.assetid: c7e4e1ab-4932-4614-9f53-aaf7c706d498
 msc.legacyurl: /mvc/overview/views/using-page-inspector-in-aspnet-mvc
 msc.type: authoredcontent
-ms.openlocfilehash: ef0ae42e1c6114849a311164eac242db6dab2b1d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 5da3e142c52a770f59222c21d9f9a53cbbdbf498
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385804"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126344"
 ---
 # <a name="using-page-inspector-in-aspnet-mvc"></a>Использование инспектора страниц в ASP.NET MVC
 
@@ -38,7 +38,6 @@ ms.locfileid: "59385804"
 > - [В палитре цветов CSS](#css_color_picker)
 > - [Сопоставление динамические элементы страниц JavaScript](#map_dynamic_elements)
 
-
 <a id="_prerequisites"></a><a id="_1_prerequisites"></a>
 
 ## <a name="prerequisites"></a>Предварительные требования
@@ -47,7 +46,6 @@ ms.locfileid: "59385804"
 
 > [!NOTE]
 > Чтобы получить последнюю версию инспектор страниц, используйте [установщика веб-платформы](https://go.microsoft.com/fwlink/?LinkId=255386) установке Windows Azure SDK для .NET 2.0.
-
 
 Инспектор страниц входит в состав инструменты разработчика Microsoft Web. Последняя версия — 1.3. Чтобы проверить, какая версия у, запустите Visual Studio и выберите **о Microsoft Visual Studio** из **помочь** меню.
 
@@ -179,7 +177,6 @@ ms.locfileid: "59385804"
 > [!NOTE]
 > Эта функция требует версии 1.3 инспектора страниц.
 
-
 Автосинхронизация CSS позволяет напрямую изменить CSS-файл и увидеть изменения прямо в браузере инспектора страниц.
 
 Нажмите кнопку **инспектировать** чтобы перевести инспектор страниц в режиме инспектирования.
@@ -238,7 +235,6 @@ ms.locfileid: "59385804"
 
 > [!NOTE]
 > Шаблон одностраничного приложения требуется [ASP.NET и веб-инструментами 2012.2](https://go.microsoft.com/fwlink/?LinkId=282650) обновления.
-
 
 В Visual Studio, выберите **файл** &gt; **новый проект**. Слева разверните **Visual C#** выберите **Web**, а затем выберите **веб-приложение ASP.NET MVC 4**. Нажмите кнопку **ОК**.
 

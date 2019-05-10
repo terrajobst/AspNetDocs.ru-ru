@@ -8,19 +8,18 @@ ms.date: 08/15/2012
 ms.assetid: 27dc4fc8-1b51-43b0-933f-fc1b52476523
 msc.legacyurl: /mvc/overview/older-versions/aspnet-mvc-4-mobile-features
 msc.type: authoredcontent
-ms.openlocfilehash: de65e01b888d9ed15da3903f086b40c49b32b9fb
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 62050f561440a2c0fbbe91ec49fb1f9e30885e9f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402418"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130347"
 ---
 # <a name="aspnet-mvc-4-mobile-features"></a>Возможности ASP.NET MVC 4 для мобильных приложений
 
 по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
 
 > Теперь есть версия этого руководства с примерами кода в MVC 5 [развертывание MVC 5 мобильных веб-приложения ASP.NET на веб-сайтов Azure](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-mvc-mobile-app/).
-
 
 Этом учебнике описываются основы работы с мобильными функциями в ASP.NET MVC 4, веб-приложения. Для этого руководства можно использовать [Visual Studio Express 2012](https://www.microsoft.com/visualstudio/11/products/express) или Visual Web Developer 2010 Express пакетом обновления 1 (&quot;Visual Web Developer или VWD&quot;). Профессиональные версии Visual Studio можно использовать, если у вас уже есть.
 
@@ -214,7 +213,6 @@ ms.locfileid: "59402418"
 > [!NOTE]
 > Если вы используете Internet Explorer 9 и вы не видите `BundleMobileConfig` строку выше в выделение желтым цветом, нажмите кнопку [кнопка просмотра в режиме совместимости](https://windows.microsoft.com/windows7/How-to-use-Compatibility-View-in-Internet-Explorer-9)![изображение кнопки «Просмотр в режиме совместимости» (отключено)](http://res2.windows.microsoft.com/resbox/en/Windows 7/main/f080e77f-9b66-4ac8-9af0-803c4f8a859c_15.jpg " Изображение кнопки «Просмотр в режиме совместимости» (отключено)") в IE, чтобы изменить контур значок ![изображение кнопки «Просмотр в режиме совместимости» (отключено)](http://res2.windows.microsoft.com/resbox/en/Windows 7/main/f080e77f-9b66-4ac8-9af0-803c4f8a859c_15.jpg "изображение кнопки «Просмотр в режиме совместимости» (отключено) ") сплошной ![изображение кнопки просмотра в режиме совместимости (on)](http://res1.windows.microsoft.com/resbox/en/Windows 7/main/156805ff-3130-481b-a12d-4d3a96470f36_14.jpg "изображение кнопки просмотра в режиме совместимости (on)"). Вместо этого учебника можно просмотреть в FireFox или Chrome.
 
-
 Откройте *MvcMobile\Views\Shared\\_Layout.Mobile.cshtml* файл и добавьте следующий код непосредственно после `Html.Partial` вызова:
 
 [!code-cshtml[Main](aspnet-mvc-4-mobile-features/samples/sample12.cshtml)]
@@ -229,7 +227,6 @@ ms.locfileid: "59402418"
 
 > [!NOTE]
 > Можно отлаживать мобильных конкретный код, [параметр строку агента пользователя](http://www.howtogeek.com/113439/how-to-change-your-browsers-user-agent-without-installing-any-extensions/) IE или Chrome для iPhone, а затем с помощью средств разработчика F-12. Если не отображается в браузере мобильного **Главная**, **говорящего**, **тега**, и **даты** связи, как кнопки, ссылки на jQuery Mobile сценарии и файлы CSS, скорее всего, не подходят.
-
 
 Помимо изменения стиля, вы увидите **отображение мобильного представления** и ссылку, которая позволяет переключать представление для мобильных устройств, чтобы представление рабочего стола. Выберите **представление рабочего стола** отображается ссылка, а представление рабочего стола.
 
@@ -251,7 +248,6 @@ ms.locfileid: "59402418"
 > и следующий заголовок для добавления *Views\Shared\\_Layout.cshtml* файла.
 >
 > [!code-html[Main](aspnet-mvc-4-mobile-features/samples/sample16.html)]
-
 
 Перейдите к *AllTags* страницу в классическом браузере. Представление переключателя мини-приложения не отображаются в классическом браузере, поскольку он добавляется только к странице макета для мобильных устройств. Далее в этом руководстве вы увидите, как можно добавить мини-приложение переключателя представление рабочего стола.
 

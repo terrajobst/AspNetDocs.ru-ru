@@ -8,12 +8,12 @@ ms.date: 02/15/2013
 ms.assetid: 9cad0833-486a-4474-a7f3-7715542ec4ce
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-a-database-update
 msc.type: authoredcontent
-ms.openlocfilehash: 86dcac0b95f07a310bdaaa4e69db0a83f8734744
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 942cc3cbf472f76d2521247df97c856deb19b06b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59416640"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131928"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-deploying-a-database-update"></a>Веб-развертывание ASP.NET с помощью Visual Studio. Развертывание обновления базы данных
 
@@ -22,7 +22,6 @@ ms.locfileid: "59416640"
 [Загрузите начальный проект](http://go.microsoft.com/fwlink/p/?LinkId=282627)
 
 > В этой серии руководств показано, как развернуть ASP.NET (публикации) веб-приложения для веб-приложениях службы приложений Azure или стороннего поставщика услуг размещения, с помощью Visual Studio 2012 или Visual Studio 2010. Сведения об этой серии см. в разделе [в первом учебнике серии](introduction.md).
-
 
 ## <a name="overview"></a>Обзор
 
@@ -130,7 +129,7 @@ ms.locfileid: "59416640"
 
 1. Откройте **веб-публикации** мастера, щелкнув правой кнопкой мыши проект ContosoUniversity команду **публикации**.
 2. Выберите **теста** профиля.
-3. Нажмите кнопку **параметры** вкладки.
+3. Перейдите на вкладку **Параметры** .
 4. В разделе **DefaultConnection**выберите **обновления базы данных**.
 5. Отключите эти дополнительные сценарии, которые настроены на выполнение для первоначального развертывания:
 

@@ -8,12 +8,12 @@ ms.date: 03/14/2014
 ms.assetid: 58b583cd-c4ab-47a3-8527-8c92c298c91f
 msc.legacyurl: /whitepapers/aspnet-web-deployment-content-map
 msc.type: content
-ms.openlocfilehash: 3f36f0c504678e1e8b40aef99db81ab99101568b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 96873c8f2b0ad2415f371aceb651400c801a3338
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383941"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125664"
 ---
 # <a name="aspnet-web-deployment---recommended-resources"></a>Веб-развертывание в ASP.NET. Рекомендуемые ресурсы
 
@@ -24,7 +24,6 @@ ms.locfileid: "59383941"
 > > [!NOTE] 
 > > 
 > > Многие из этих ресурсов описания функций развертывания, которые доступны только в том случае, если установить последний выпуск [Visual Studio обновление веб-публикации](https://go.microsoft.com/fwlink/?LinkID=208120). Некоторые функции доступны только в Visual Studio 2012 или Visual Studio 2013.
-
 
 В этом разделе содержатся следующие подразделы.
 
@@ -48,9 +47,7 @@ ms.locfileid: "59383941"
 - [Получение справки с помощью вопроса конкретного развертывания](#gettinghelp)
 - [Дополнительные ресурсы](#additional)
 
-
 <a id="understanding"></a>
-
 
 ## <a name="understanding-deployment-options-for-web-projects"></a>Основные сведения о параметрах развертывания для веб-проектов
 
@@ -59,17 +56,13 @@ ms.locfileid: "59383941"
 - [Усовершенствования веб-публикации Visual Studio 2012](../visual-studio/overview/2012/visual-studio-2012-web-publishing-improvements.md) (видео Скотт Хансельман).
 - [Общие сведения о Post для веб-развертывания в VS 2010](http://vishaljoshi.blogspot.com/2009/09/overview-post-for-web-deployment-in-vs.html) (блог работы). Более старые записи блога, но некоторые из ресурсов Visual Studio 2010 она связывает сведений, которые все еще актуальны для Visual Studio 2012.
 
-
 <a id="findinghosting"></a>
-
 
 ## <a name="finding-hosting-providers-for-an-aspnet-application"></a>Поиск размещения поставщиков для приложения ASP.NET
 
 - [Размещение ASP.NET](https://asp.net/hosting)
 
-
 <a id="fromvs"></a>
-
 
 ## <a name="deploying-a-web-application-from-visual-studio"></a>Развертывание веб-приложения из Visual Studio
 
@@ -78,7 +71,6 @@ ms.locfileid: "59383941"
 - [Практическое руководство. Развертывание, публикация веб-проекта с помощью одним щелчком в Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx) (ссылаться информации для мастера веб-публикации Visual Studio).
 - [Развертывание веб-приложения ASP.NET с SQL Server Compact с помощью Visual Studio](../web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-introduction-1-of-12.md). Это более ранняя версия **веб-развертывание ASP.NET с помощью Visual Studio** перечисляются в верхней части этого раздела. Теперь главным образом используются сведения о развертывании базы данных SQL Server Compact и способы перехода с SQL Server Compact до полного выпуска SQL Server.
 - [.NET многоуровневого приложения с помощью хранилища таблиц, очередей и больших двоичных объектов](https://code.msdn.microsoft.com/Windows-Azure-Multi-Tier-eadceb36) (сайт Microsoft Azure). 5 серии руководств, показано, как создать проект MVC и развернуть его в Windows Azure облачную службу.
-
 
 <a id="package"></a>
 ## <a name="deploying-a-web-application-by-creating-and-installing-a-web-deployment-package"></a>Развертывание веб-приложения необходимо создать и установить пакет веб-развертывания
@@ -91,9 +83,7 @@ ms.locfileid: "59383941"
 
 Также в следующем разделе.
 
-
 <a id="ci"></a>
-
 
 ## <a name="deploying-a-web-application-using-a-continuous-integration-ci-process"></a>Развертывание веб-приложения, с помощью процесса непрерывной интеграции (CI)
 
@@ -107,9 +97,7 @@ ms.locfileid: "59383941"
 
 См. также [убедившись, что приложение находится в автономном режиме во время развертывания](aspnet-web-deployment-content-map.md#appoffline) ниже на этой странице.
 
-
 <a id="transforms"></a>
-
 
 ## <a name="using-webconfig-transformations-to-change-settings-in-the-destination-webconfig-file-or-appconfig-file-during-deployment"></a>С помощью преобразования Web.config, чтобы изменить параметры в файле app.config или в файл Web.config во время развертывания
 
@@ -121,9 +109,7 @@ ms.locfileid: "59383941"
 - [XDT (преобразование документа XML), выпуск состоится codeplex.com](https://blogs.msdn.com/b/webdev/archive/2013/04/23/xdt-xml-document-transform-released-on-codeplex-com.aspx) (блог .NET веб-разработки и средства). Объявляет о доступности исходного кода для модуля преобразования файла Web.config и перечисляет некоторые средства, которые ее используют.
 - [Windows Azure веб-сайты: Приложения строки and Connection Strings Work](https://blogs.msdn.com/b/windowsazure/archive/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work.aspx) (блог Microsoft Azure). Преобразует альтернативой Web.config, если целевой среды является веб-сайтов Windows Azure и вы хотите преобразовать `appSettings` или `connectionStrings`.
 
-
 <a id="webdeployparms"></a>
-
 
 ## <a name="using-web-deploy-parameters-to-change-settings-in-the-destination-web-application-during-deployment"></a>С помощью веб-развертывания параметров для изменения параметров в конечное веб-приложение во время развертывания
 
@@ -134,9 +120,7 @@ ms.locfileid: "59383941"
 - [Vs развертывание параметризации Web. Преобразования Web.config](http://vishaljoshi.blogspot.com/2010/06/parameterization-vs-webconfig.html) (блог работы).
 - [Windows Azure веб-сайты: Приложения строки and Connection Strings Work](https://blogs.msdn.com/b/windowsazure/archive/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work.aspx) (блог Microsoft Azure). Альтернативы веб-развертывание параметров, если целевой среды веб-сайтов Windows Azure и требуется параметризовать соответствующие `appSettings` или `connectionStrings`.
 
-
 <a id="appoffline"></a>
-
 
 ## <a name="making-sure-an-application-is-off-line-during-deployment"></a>Убедившись, что приложение находится в автономном режиме во время развертывания
 
@@ -146,9 +130,7 @@ ms.locfileid: "59383941"
 - [Веб-публикации обновлений для приложения в автономный режим и usechecksum](https://blogs.msdn.com/b/webdev/archive/2013/10/30/web-publishing-updates-for-app-offline-and-usechecksum.aspx) (блог веб-разработки Майкрософт). Другой вариант для автоматического использования приложения\_offline.htm файл.
 - [Веб-развертывание RTW-версии 3.5](https://blogs.iis.net/msdeploy/archive/2013/07/09/webdeploy-3-5-rtw.aspx) (IIS.net сайт). Новая функция в развертывание 3.5 Web для пользовательского приложения\_offline.htm файлов.
 
-
 <a id="databasewithweb"></a>
-
 
 ## <a name="deploying-a-database-or-changes-to-a-database-as-part-of-web-application-deployment"></a>Развертывание базы данных или изменения в базу данных как часть развертывания веб-приложений
 
@@ -160,9 +142,7 @@ ms.locfileid: "59383941"
 
 См. также развертывание веб-приложения путем создания и установки пакет веб-развертывания и развертывания веб-приложения с помощью процесса непрерывной интеграции (CI) ранее на этой странице.
 
-
 <a id="databaseseparate"></a>
-
 
 ## <a name="deploying-a-database-separately-from-web-application-deployment"></a>Развертывание базы данных отдельно от развертывания веб-приложений
 
@@ -174,9 +154,7 @@ ms.locfileid: "59383941"
 - [Перенос ориентированных на данные приложений в Windows Azure](https://msdn.microsoft.com/library/jj156154.aspx) (MSDN).
 - [Миграция баз данных SQL Server в базу данных Azure SQL Windows](https://msdn.microsoft.com/library/windowsazure/jj156160.aspx) (MSDN).
 
-
 <a id="aspnetmembership"></a>
-
 
 ## <a name="deploying-a-web-application-that-uses-aspnet-application-services-such-as-membership-and-profiling"></a>Развертывание веб-приложения, который использует приложение ASP.NET службах, таких как членство и профилирование
 
@@ -186,9 +164,7 @@ ms.locfileid: "59383941"
 - [Настройка веб-сайта, использующего службы приложений](../web-forms/overview/older-versions-getting-started/deploying-web-site-projects/configuring-a-website-that-uses-application-services-cs.md). Для веб-сайта проектов но это также касается проектов веб-приложений.
 - [Пользователи и роли на рабочем веб-сайте](../web-forms/overview/older-versions-getting-started/deploying-web-site-projects/users-and-roles-on-the-production-website-cs.md). Для веб-сайта проектов но это также касается проектов веб-приложений.
 
-
 <a id="precompiling"></a>
-
 
 ## <a name="precompiling-for-deployment"></a>Предварительная компиляция для развертывания
 
@@ -196,18 +172,14 @@ ms.locfileid: "59383941"
 - [Упаковка и публикация проекта веб-Tab, свойства проекта](https://msdn.microsoft.com/library/dd410108.aspx) (MSDN).
 - [Advanced предварительной компиляции диалоговое окно параметров](https://msdn.microsoft.com/library/hh475319.aspx) (MSDN).
 
-
 <a id="intranet"></a>
-
 
 ## <a name="deploying-an-intranet-web-application"></a>Развертывание веб-приложения интрасети
 
 - [Используйте параметр локальной аутентификации в организации (AD FS) с ASP.NET в Visual Studio 2013](http://www.cloudidentity.com/blog/2014/02/12/use-the-on-premises-organizational-authentication-option-adfs-with-asp-net-in-visual-studio-2013/) (блог по Витторио Берточчи.).
 - [Создание сайта интрасети с использованием ASP.NET MVC](https://msdn.microsoft.com/library/gg703322(VS.98).aspx) (MSDN). Более старые записанный пошагового руководства для Visual Studio 2010, не отражает значительных изменений в шаблоны проектов интрасети, появившихся в Visual Studio 2013.
 
-
 <a id="automating"></a>
-
 
 ## <a name="automating-common-deployment-tasks-that-are-not-automated-out-of-the-box"></a>Автоматизация основных задач развертывания, которые не обрабатываются автоматически без дополнительной настройки
 
@@ -220,26 +192,20 @@ ms.locfileid: "59383941"
 - [Как сборки .NET пакетов](https://blogs.msdn.com/webdevtools/archive/2010/02/19/how-to-package-com-component.aspx) (блог средства веб-разработки). Как развертывать сборки в глобальный кэш сборок.
 - [В сценарии все: Initialize вашей виртуальной Машине Windows Azure для вашей веб-сервера IIS, веб-развертывания и другие материалы](http://www.tugberkugurlu.com/archive/script-out-everything-initialize-your-windows-azure-vm-for-your-web-server-with-iis-web-deploy-and-other-stuff) (Тугберк Ugurlu блог).
 
-
 <a id="configuringservers"></a>
-
 
 ## <a name="configuring-web-servers-so-that-developers-can-deploy-web-applications-to-them-using-web-deploy"></a>Настройка веб-серверов, таким образом, разработчики могут развернуть веб-приложений к ним с помощью веб-развертывания
 
 - [Установку и настройку веб-развертывание для администраторов и без прав администратора развертываний](https://www.iis.net/learn/install/installing-publishing-technologies/installing-and-configuring-web-deploy) (IIS.net сайт).
 
-
 <a id="hostingprovider"></a>
-
 
 ## <a name="configuring-servers-for-a-hosting-provider"></a>Настройка серверов для поставщика услуг размещения
 
 - [Руководство по развертыванию размещение Microsoft ASP.NET 4](https://go.microsoft.com/fwlink/?LinkId=191365) (Центр загрузки Майкрософт).
 - [Создать файл XML профиля](https://www.iis.net/learn/web-hosting/joining-the-web-hosting-gallery/generate-a-profile-xml-file) (IIS.net сайт).
 
-
 <a id="troubleshooting"></a>
-
 
 ## <a name="troubleshooting-deployment-problems"></a>Устранение проблем с развертыванием
 
@@ -252,18 +218,14 @@ ms.locfileid: "59383941"
 - [Распространенные различия конфигурации между средами разработки и эксплуатации](../web-forms/overview/older-versions-getting-started/deploying-web-site-projects/common-configuration-differences-between-development-and-production-cs.md).
 - [Размещение приложений ASP.NET в со средним уровнем доверия](http://www.4guysfromrolla.com/articles/100307-1.aspx) (4 Guys с сайта Rolla).
 
-
 <a id="gettinghelp"></a>
-
 
 ## <a name="getting-help-with-a-specific-deployment-question"></a>Получение справки с помощью вопроса конкретного развертывания
 
 - [Форум по конфигурации ASP.NET и развертывания](https://forums.asp.net/26.aspx/1?Configuration and Deployment).
 - [StackOverflow.com](http://www.StackOverflow.com).
 
-
 <a id="additional"></a>
-
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 

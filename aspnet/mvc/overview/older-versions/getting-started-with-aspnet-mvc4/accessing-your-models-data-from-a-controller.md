@@ -8,12 +8,12 @@ ms.date: 08/28/2012
 ms.assetid: 61e0206d-7f32-4018-992d-0a51b48b37dc
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/accessing-your-models-data-from-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: 45683fc2b40f58a6344ec8670e6a93df89b587fe
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b40bb8b06ae7c89a33ae2aead9578cf507503531
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59402912"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129950"
 ---
 # <a name="accessing-your-models-data-from-a-controller"></a>Доступ к данным модели из контроллера
 
@@ -21,7 +21,6 @@ ms.locfileid: "59402912"
 
 > > [!NOTE]
 > > Обновленную версию этого учебника доступен [здесь](../../getting-started/introduction/getting-started.md) , использующий ASP.NET MVC 5 и Visual Studio 2013. Она более безопасные, гораздо проще следовать и показаны дополнительные возможности.
-
 
 В этом разделе вы создадите новый `MoviesController` класса и написать код, который извлекает данные фильма и отображает его в браузере с помощью шаблона представления.
 
@@ -120,7 +119,6 @@ Entity Framework Code First обнаружил, что указывает стр
 > [!NOTE]
 > Если не отображается в обозревателе базы данных, из **средства** меню, выберите **подключение к базе данных**, затем отменить **Выбор источника данных** диалоговое окно. Это приведет к принудительной откройте обозреватель баз данных.
 
-
 > [!NOTE]
 > Если вы используете материалов по VWD или Visual Studio 2010 и появляется сообщение об ошибке, аналогичную одно из следующих расположений:
 > 
@@ -128,7 +126,6 @@ Entity Framework Code First обнаружил, что указывает стр
 > - &quot;Исключение InvalidOperation было обработано пользовательским кодом&quot; переданном объекте SqlConnection не указан исходный каталог.
 > 
 > Необходимо установить [SQL Server Data Tools](https://blogs.msdn.com/b/rickandy/archive/2012/08/02/installing-and-using-sql-server-data-tools-ssdt-on-visual-studio-2010-and-vwd.aspx) и [LocalDB](https://www.microsoft.com/web/gallery/install.aspx?appid=SQLLocalDBOnly_11_0). Проверьте `MovieDBContext` строка подключения, указанная на предыдущей странице.
-
 
 Щелкните правой кнопкой мыши `Movies` таблицы и выберите **Показать таблицу данных** для просмотра данных, вы создали.
 

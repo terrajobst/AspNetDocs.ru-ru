@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: 4ba029b6-ee7c-4e45-a0e7-b703c37e5d9a
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: eeed594e785b99146140dcd2833a95bf6e467823
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: abb59f16759a7d32c6900baf96fe3a1299170922
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390445"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129789"
 ---
 # <a name="creating-an-entity-framework-data-model-for-an-aspnet-mvc-application-1-of-10"></a>Создание модели данных Entity Framework для приложения ASP.NET MVC (1 из 10)
 
@@ -57,7 +57,6 @@ ms.locfileid: "59390445"
 > ## <a name="original-version-of-the-tutorial"></a>Исходная версия этого руководства
 > 
 > Исходная версия руководства доступна в [EF 4.1 и MVC 3 электронная книга](https://social.technet.microsoft.com/wiki/contents/articles/11608.e-book-gallery-for-microsoft-technologies.aspx#GettingStartedwiththeEntityFramework4.1usingASP.NETMVC).
-
 
 ## <a name="the-contoso-university-web-application"></a>Веб-приложение университета Contoso
 
@@ -130,7 +129,6 @@ ms.locfileid: "59390445"
 
 > [!NOTE]
 > При попытке компиляции проекта до завершения создания всех этих классов сущностей, вы получите ошибки компилятора.
-
 
 ### <a name="the-student-entity"></a>Сущность Student
 

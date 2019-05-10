@@ -8,12 +8,12 @@ ms.date: 02/28/2014
 ms.assetid: 9c1e3a75-b644-4480-8326-11300b1ec4b3
 msc.legacyurl: /mvc/overview/getting-started/lifecycle-of-an-aspnet-mvc-5-application
 msc.type: authoredcontent
-ms.openlocfilehash: 952d13fec206bdb8d398cead70d10335731f583d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f4a9b3fb61552b070db11fba617b5627fcd71cd5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402223"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124086"
 ---
 # <a name="lifecycle-of-an-aspnet-mvc-5-application"></a>Жизненный цикл приложения ASP.NET MVC 5
 
@@ -31,7 +31,6 @@ ms.locfileid: "59402223"
 - Размещение и цель всеми переопределяемыми методами на [контроллера](https://msdn.microsoft.com/library/system.web.mvc.controller.aspx) объекта в конвейере обработки запросов. Может или не иметь необходимости переопределять любые один метод, но важно понимать их роль в жизненном цикле приложения таким образом, вы можете написать код на этапе соответствующие жизненного цикла для эффекта, вы нашли.
 - Схемы из дутого вверх, показывающая способ вызова каждого из типов фильтра (проверки подлинности, авторизации, действие и результат).
 - Ссылка на полезные статьи или блога из каждого интересующую точку в представлении «Подробности».
-
 
 ## <a name="next-steps"></a>Следующие шаги
 

@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: d49940cb-d38c-456a-b800-5f0eb705d09f
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/textboxwatermark/using-textboxwatermark-with-validation-controls-cs
 msc.type: authoredcontent
-ms.openlocfilehash: f833868d9dbf51a9714b9bbe6730a24badc169d0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 6ed3777e72adbb1a648a6f5215820d597a13bc92
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59391017"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65124506"
 ---
 # <a name="using-textboxwatermark-with-validation-controls-c"></a>Использование элемента управления TextBoxWatermark с проверяющими элементами управления (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59391017"
 [Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/TextBoxWatermark2.cs.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/textboxwatermark2CS.pdf)
 
 > Элемент управления TextBoxWatermark в AJAX Control Toolkit расширяет текстовое поле для отображения текста в поле. Когда пользователь щелкает в поле, оно будет очищено. Если пользователь оставляет поле без ввода текста, заданными текст отображается повторно. Это может привести с проверяющими элементами управления ASP.NET, на той же странице, но может преодолеть эти проблемы.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -47,7 +46,6 @@ ms.locfileid: "59391017"
 Наконец добавьте код на стороне сервера для вывода текст в поле, если не проверяющий элемент управления выдаваться сообщение об ошибке:
 
 [!code-aspx[Main](using-textboxwatermark-with-validation-controls-cs/samples/sample4.aspx)]
-
 
 [![Проверяющий элемент управления сообщает, что отсутствует текст в поле](using-textboxwatermark-with-validation-controls-cs/_static/image2.png)](using-textboxwatermark-with-validation-controls-cs/_static/image1.png)
 

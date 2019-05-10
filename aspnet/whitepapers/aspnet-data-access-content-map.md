@@ -8,12 +8,12 @@ ms.date: 07/25/2013
 ms.assetid: f8157be1-4ab9-469e-ad3a-0ccc80b56c00
 msc.legacyurl: /whitepapers/aspnet-data-access-content-map
 msc.type: content
-ms.openlocfilehash: d120c184f6cf7dd0db075bbfac17214d7467664a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1bb5c15f8b34c516dcc2d3c5723eb74b133a9188
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383724"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125686"
 ---
 # <a name="aspnet-data-access---recommended-resources"></a>Доступ к данным ASP.NET. Рекомендуемые ресурсы
 
@@ -22,7 +22,6 @@ ms.locfileid: "59383724"
 > Если известно, учета, замечательный блог [stackoverflow](http://stackoverflow.com) потока или любую ссылку, которая будет полезна, [отправьте нам сообщение электронной почты](mailto:aspnetue@microsoft.com?subject=Data Access Content Map) со ссылкой.
 > 
 > Последние обновленные 4/3/2014
-
 
 В нем содержатся следующие подразделы:
 
@@ -74,7 +73,6 @@ ms.locfileid: "59383724"
 <a id="cf"></a>
 
 ### <a name="using-entity-framework-code-first"></a>Сначала с помощью кода Entity Framework
-  
 
 Следующие учебники предложения загружаемые примеры приложений:
 
@@ -94,7 +92,6 @@ ms.locfileid: "59383724"
 <a id="efcfmigrations"></a>
 
 ### <a name="using-entity-framework-code-first-migrations"></a>С помощью Entity Framework Code First Migrations
-  
 
 Большая часть Code First руководствах, перечисленных выше титульной миграций. Также ознакомьтесь со следующими ресурсами.
 

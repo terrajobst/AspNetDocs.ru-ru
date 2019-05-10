@@ -8,12 +8,12 @@ ms.date: 06/19/2013
 ms.assetid: 7a87f16f-0e19-4f15-a88a-094ae866c4a2
 msc.legacyurl: /mvc/overview/older-versions/using-oauth-providers-with-mvc
 msc.type: authoredcontent
-ms.openlocfilehash: c2fe74c3d7b1aa0d230f1893f6ba7dcaa7a88419
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 5dfd1305376a62f4987caea242ca0f6aac1018e9
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396987"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129636"
 ---
 # <a name="using-oauth-providers-with-mvc-4"></a>Использование поставщиков OAuth с MVC 4
 
@@ -24,7 +24,6 @@ ms.locfileid: "59396987"
 > Чтобы использовать внешних учетных данных в веб-приложение ASP.NET MVC 5, см. в разделе [Создание приложения ASP.NET MVC 5 с использованием Facebook и Google OAuth2 и OpenID единого входа](../security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md).
 > 
 > Включение эти учетные данные в веб-сайтов обеспечивает значительное преимущество, так как миллионам пользователей уже есть учетные записи с помощью этих внешних поставщиков. Эти пользователи могут быть более необходимо, чтобы зарегистрироваться для веб-узла, если они не нужно создавать и запоминать новый набор учетных данных. Кроме того после входа пользователя через одного из этих поставщиков, можно включить операции социальных сетей от поставщика.
-
 
 ## <a name="what-youll-build"></a>Вы создадите
 

@@ -8,19 +8,18 @@ ms.date: 03/02/2009
 ms.assetid: 3975a52f-bd15-4edd-8f3d-1df93672515b
 msc.legacyurl: /mvc/overview/older-versions-1/views/using-the-tagbuilder-class-to-build-html-helpers-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 3227560c1d0c48f7738e26c87a0dbb140c410eee
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c8eaea9932a30c744b9a69861619ce9458b5a23a
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410101"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130296"
 ---
 # <a name="using-the-tagbuilder-class-to-build-html-helpers-c"></a>Используя класс TagBuilder для создания вспомогательных методов HTML (C#)
 
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
 > Стивен Вальтер представлены полезные служебный класс в платформе ASP.NET MVC с именем класс TagBuilder. Класс TagBuilder для простого создания HTML-теги.
-
 
 Платформа ASP.NET MVC включает в себя полезные служебный класс с именем класс TagBuilder, который можно использовать при создании вспомогательных методов HTML. Класс TagBuilder, как и предполагает имя класса, позволяет легко создавать HTML-теги. Из этого краткого руководства вам будет предоставлен Обзор класс TagBuilder и вы узнаете, как использовать этот класс при построении простой вспомогательный метод HTML, который отображает HTML &lt;img&gt; теги.
 
@@ -33,7 +32,6 @@ ms.locfileid: "59410101"
 - MergeAttribute() - предоставляет возможность добавить атрибуты к тегу. Существует несколько перегрузок этого метода.
 - SetInnerText() - позволяет задать внутренний текст тега. Внутренний текст — автоматически кодировать в HTML.
 - ToString() — обеспечивает возможность визуализации тега. Можно указать, хотите ли вы создать обычный тег, открывающего тега, закрывающий тег или самозакрывающийся тег.
-  
 
 Класс TagBuilder имеет четыре важных свойства:
 
@@ -64,11 +62,9 @@ ms.locfileid: "59410101"
 
 [!code-aspx[Main](using-the-tagbuilder-class-to-build-html-helpers-cs/samples/sample2.aspx)]
 
-
 [![В диалоговом окне нового проекта](using-the-tagbuilder-class-to-build-html-helpers-cs/_static/image1.jpg)](using-the-tagbuilder-class-to-build-html-helpers-cs/_static/image1.png)
 
 **Рис 01**: Использование вспомогательного метода образа ([Просмотр полноразмерного изображения](using-the-tagbuilder-class-to-build-html-helpers-cs/_static/image2.png))
-
 
 Обратите внимание на то, что необходимо импортировать пространство имен, связанное со вспомогательным методом изображение в верхней части представления Index.aspx. Вспомогательный метод импортируется с следующую директиву:
 

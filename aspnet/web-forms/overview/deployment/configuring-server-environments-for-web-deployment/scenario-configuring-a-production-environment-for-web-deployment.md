@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 2e861511-450e-4752-a61e-4a01933f9b6e
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 586508039b9a3d78492aa02a77a1f29c64668b5e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2d76e715cdbf6ec484fa0ff98b3b3d1d8dfd3961
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59409698"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65125838"
 ---
 # <a name="scenario-configuring-a-production-environment-for-web-deployment"></a>Сценарий: настройка рабочей среды для веб-развертывания
 
@@ -22,7 +22,6 @@ ms.locfileid: "59409698"
 [Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описываются типичные веб-приложениях развертывания в рабочей среде и описание задачи, которые необходимо выполнить для настройки среды.
-
 
 В рабочей среде — это окончательный адресат для веб-приложения или веб-сайта. На этом этапе приложение прошла тестирование будет развернута в промежуточной среде и готов к «go live». Характеристики рабочей среде можно широко различаться в зависимости от характера и цели веб-содержимого, размер вашей организации, целевую аудиторию и множество других факторов. В сценарии корпоративного масштаба в рабочей среде может иметь следующие характеристики:
 
@@ -33,7 +32,6 @@ ms.locfileid: "59409698"
 
 > [!NOTE]
 > Горизонтальное масштабирование развертывания базы данных на нескольких серверах выходит за рамки данного руководства. Дополнительные сведения по этой теме можно найти [SQL Server Books Online](https://technet.microsoft.com/library/ms130214.aspx).
-
 
 Например, в нашей [сценарий учебника](../deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md), Team Build server включает в себя определений сборок, которые позволяют пользователям создавать решения диспетчера контактов и развернуть его в промежуточной среде за один шаг. Когда приложение готово к развертыванию в рабочей среде, из-за ограничений, налагаемых требований к безопасности и сетевой инфраструктурой, администратор производственной среде необходимо вручную скопировать веб-пакета на рабочий веб-сервер и импорт его с помощью диспетчера Internet Information Services (IIS).
 

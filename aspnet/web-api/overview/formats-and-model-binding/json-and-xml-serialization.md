@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: 1cd7525d-de5e-4ab6-94f0-51480d3255d1
 msc.legacyurl: /web-api/overview/formats-and-model-binding/json-and-xml-serialization
 msc.type: authoredcontent
-ms.openlocfilehash: a9e7ed63a55c146976e0221214e722f3a2292fee
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 00fa07f00eabf7e6c883c5e9ceaf9a38a8f49605
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59408281"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65126166"
 ---
 # <a name="json-and-xml-serialization-in-aspnet-web-api"></a>Сериализация JSON и XML в веб-API ASP.NET
 
@@ -221,7 +221,6 @@ XML-сериализатор не поддерживает анонимные т
 
 > [!NOTE]
 > Ссылки на объекты не являются стандартными в формате JSON. Прежде чем использовать эту функцию, учитывать ли ваши клиенты смогут проанализировать результаты. Возможно, лучше просто удалить циклов с диаграммы. Например в ссылке из сотрудников отдела в этом примере требуется не действительно.
-
 
 Для сохранения ссылок на объекты в формате XML, можно двумя способами. Более простой способ — добавить `[DataContract(IsReference=true)]` к классу модели. *IsReference* параметр включает ссылки на объекты. Помните, что **DataContract** делает сериализации согласиться, поэтому также необходимо будет добавить **DataMember** атрибуты к свойствам:
 

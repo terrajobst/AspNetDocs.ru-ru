@@ -8,12 +8,12 @@ ms.date: 02/27/2014
 ms.assetid: b90978bd-795d-4871-9ade-1671caff5730
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/using-query-string-values-to-retrieve-data
 msc.type: authoredcontent
-ms.openlocfilehash: 7ba95f24085c403c669bc5d6df4dee7c87fbd90a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 143ddcb40b576a3129e659b90bfc8321c061a547
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59414248"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130238"
 ---
 # <a name="using-query-string-values-to-filter-data-with-model-binding-and-web-forms"></a>Использование строковых значений запросов для фильтрации данных с помощью привязки модели и веб-форм
 
@@ -26,7 +26,6 @@ ms.locfileid: "59414248"
 > Этот учебник основан на проект, созданный в [более ранних](retrieving-data.md) части серии.
 > 
 > Вы можете [загрузить](https://go.microsoft.com/fwlink/?LinkId=286116) весь проект полностью на C# или Visual Basic. Загружаемый код работает с Visual Studio 2012 или Visual Studio 2013. Он использует шаблон Visual Studio 2012, который немного отличается от шаблона Visual Studio 2013, в этом учебнике.
-
 
 ## <a name="what-youll-build"></a>Вы создадите
 

@@ -8,12 +8,12 @@ ms.date: 02/15/2013
 ms.assetid: 82b8dea0-f062-4ee4-8784-3ffa30fbb1ca
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/command-line-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: c9aadec642837953dde4cf3e89ec9a7d484b380e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: e6fc995ca812a461247989204caff580d06e2343
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401339"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134270"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-command-line-deployment"></a>Веб-развертывание ASP.NET с помощью Visual Studio. Развертывание командной строки
 
@@ -22,7 +22,6 @@ ms.locfileid: "59401339"
 [Загрузите начальный проект](http://go.microsoft.com/fwlink/p/?LinkId=282627)
 
 > В этой серии руководств показано, как развернуть ASP.NET (публикации) веб-приложения для веб-приложениях службы приложений Azure или стороннего поставщика услуг размещения, с помощью Visual Studio 2012 или Visual Studio 2010. Сведения об этой серии см. в разделе [в первом учебнике серии](introduction.md).
-
 
 ## <a name="overview"></a>Обзор
 

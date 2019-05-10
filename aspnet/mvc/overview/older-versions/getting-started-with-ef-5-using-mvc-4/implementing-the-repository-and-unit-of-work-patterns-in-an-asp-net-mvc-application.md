@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: 44761193-04ba-4990-9f90-145d3c10a716
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 71ff3c269c5d1ed43a67d19442eda8e9d4728295
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d0d6c9dd5234c8085b5c1dea5552854486314010
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59405707"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65129776"
 ---
 # <a name="implementing-the-repository-and-unit-of-work-patterns-in-an-aspnet-mvc-application-9-of-10"></a>Реализация репозитория и шаблонов Unit of Work в приложении ASP.NET MVC (9 из 10)
 
@@ -26,7 +26,6 @@ ms.locfileid: "59405707"
 > > [!NOTE] 
 > > 
 > > Если вы столкнулись с проблемами, не удается устранить, [скачать завершенного глава](building-the-ef5-mvc4-chapter-downloads.md) и попробуйте воспроизвести проблему. Обычно можно найти решение проблемы, сравнивая код, чтобы полный код. Некоторые распространенные ошибки и способы их устранения, см. в разделе [ошибки и способы их устранения.](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#errors)
-
 
 В предыдущем руководстве вы использовали наследования для уменьшения избыточный код в `Student` и `Instructor` классов сущностей. В этом руководстве вы увидите некоторые способы использования репозиторий и блок рабочих шаблонов для операций CRUD. Как и в предыдущем учебном курсе это одним вам предстоит изменить, как работает ваш код со страницы вы уже создан, а не создавать новые страницы.
 
@@ -51,7 +50,6 @@ ms.locfileid: "59405707"
 
 > [!NOTE]
 > Существует много способов реализации репозиторий и блок рабочих шаблонов. Можно использовать классы репозитория с или без класс рабочих единиц. Вы можете реализовать один репозиторий для всех типов сущностей или для каждого типа. Если вы реализуете одной для каждого типа, можно использовать отдельные классы, универсального базового класса и производных классов или абстрактного базового класса и производных классов. Можно включать бизнес-логики в репозиторий или ограничить его логики доступа к данным. Можно также создать уровень абстракции в класс контекста базы данных с помощью [IDbSet](https://msdn.microsoft.com/library/gg679233(v=vs.103).aspx) существует интерфейсов вместо [DbSet](https://msdn.microsoft.com/library/system.data.entity.dbset(v=vs.103).aspx) типы для наборов сущностей. Подход к реализации уровня абстракции в этом учебнике — один из вариантов, о котором стоит подумать, не рекомендацию для всех сценариях и средах.
-
 
 ## <a name="creating-the-student-repository-class"></a>Создание класса Student репозитория
 
@@ -142,7 +140,6 @@ ms.locfileid: "59405707"
 > [!code-sql[Main](implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application/samples/sample16.sql)]
 > 
 > (В следующем учебнике рассматриваются анализ запросов, отправленных на SQL Server.)
-
 
 Ниже показано, как реализовать методы репозитории, которые позволяют указать, что это действия должны выполняться в базе данных.
 

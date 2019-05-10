@@ -8,12 +8,12 @@ ms.date: 01/12/2011
 ms.assetid: 741259e1-54ac-4f71-b4e8-2bd5560bb950
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/adding-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: 144b00d9ec263231c29365caa2f3fb7b96a7ea16
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0c637f5758f8196c19ef8d5c71009e85f9dd706e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59415535"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130041"
 ---
 # <a name="adding-a-controller-vb"></a>Добавление контроллера (VB)
 
@@ -28,7 +28,6 @@ ms.locfileid: "59415535"
 > Если вы используете Visual Studio 2010 вместо Visual Web Developer 2010, установите необходимые компоненты, щелкнув следующую ссылку: [Необходимые компоненты для Visual Studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
 > 
 > Проект Visual Web Developer с VB.NET исходный код доступен на следующей странице в этом разделе. [Загрузить версию VB.NET](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098). Если вы предпочитаете C#, переключитесь в [C# версии](../cs/adding-a-controller.md) работы с этим руководством.
-
 
 MVC означает *model-view-controller*. MVC — это шаблон для разработки приложений, таким образом, что каждая часть имеет отдельный ответственности:
 
