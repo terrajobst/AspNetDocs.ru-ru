@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 219149e1-3ee9-4b79-8fe4-7433f6b7d15b
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/executing-several-animations-at-the-same-time-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 0d9c566a301c8b64e33e67b0e9415a5955b5436e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f6ca48ff8bc4be982e0eff55d8d9c3385176897b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59388222"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108233"
 ---
 # <a name="executing-several-animations-at-the-same-time-c"></a>Выполнение нескольких анимаций одновременно (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59388222"
 [Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation2.cs.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation2CS.pdf)
 
 > Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Он одновременное выполнение нескольких анимаций параллельно.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -53,7 +52,6 @@ ms.locfileid: "59388222"
 [!code-aspx[Main](executing-several-animations-at-the-same-time-cs/samples/sample5.aspx)]
 
 И действительно: при выполнении этого скрипта панели отображается, затем изменяет размеры (более чем утраивается его ширину и высоту, потребленных в рамках) и исчезает, в то же время.
-
 
 [![Исчезновение и изменение размера (в том числе его содержимого, благодаря механизм визуализации в браузере) панели](executing-several-animations-at-the-same-time-cs/_static/image2.png)](executing-several-animations-at-the-same-time-cs/_static/image1.png)
 

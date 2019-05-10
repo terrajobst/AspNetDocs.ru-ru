@@ -9,12 +9,12 @@ ms.custom: seoapril2019
 ms.assetid: c125ca47-606a-4d6f-a1fc-1fc62928af93
 msc.legacyurl: /web-api/overview/older-versions/creating-a-web-api-that-supports-crud-operations
 msc.type: authoredcontent
-ms.openlocfilehash: 855c3fa35d82173c87d13adb51e10fd13698ade5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3c2a41482b7f9b60a8864b853df23ab5991b6da7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381358"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108747"
 ---
 # <a name="enabling-crud-operations-in-aspnet-web-api-1"></a>Включение операций CRUD в ASP.NET веб-API 1
 
@@ -29,7 +29,6 @@ ms.locfileid: "59381358"
 > 
 > - Visual Studio 2012
 > - Веб-API 1 (также работает с веб-API 2)
-
 
 Обозначает CRUD &quot;создание, чтение, обновление и удаление,&quot; являющиеся четыре основных операций базы данных. Многие службы HTTP также моделировать операции CRUD с помощью REST или API-интерфейсов в стиле REST.
 
@@ -136,7 +135,6 @@ ms.locfileid: "59381358"
 > [!NOTE]
 > Не бывает необходимо поместить в папку с именем контроллеры контроллеров. Имя папки не имеет значения; Это просто удобный способ организации исходные файлы.
 
-
 **Добавление контроллера** мастер создаст файл с именем ProductsController.cs в папку "контроллеры". Если этот файл еще не открыт, дважды щелкните файл, чтобы открыть его. Добавьте следующий **с помощью** инструкции:
 
 [!code-csharp[Main](creating-a-web-api-that-supports-crud-operations/samples/sample4.cs)]
@@ -147,7 +145,6 @@ ms.locfileid: "59381358"
 
 > [!NOTE]
 > Вызов `new ProductRepository()` в контроллере не является лучшим Дизайн, привязывает контроллера для конкретной реализации `IProductRepository`. Лучший подход, см. в разделе [с помощью сопоставителя зависимостей Web API](../advanced/dependency-injection.md).
-
 
 ## <a name="getting-a-resource"></a>Получение сведений о ресурсе
 
@@ -205,7 +202,6 @@ ms.locfileid: "59381358"
 
 > [!NOTE]
 > В этом примере не проверяет `Product`. Сведения о проверке модели, см. в разделе [проверка модели в веб-API ASP.NET](../formats-and-model-binding/model-validation-in-aspnet-web-api.md).
-
 
 ## <a name="updating-a-resource"></a>Обновление ресурса
 
