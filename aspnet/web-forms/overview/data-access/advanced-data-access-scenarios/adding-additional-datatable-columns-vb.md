@@ -8,12 +8,12 @@ ms.date: 07/18/2007
 ms.assetid: 1e8e65f9-fe3e-4250-810b-c90227786bed
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/adding-additional-datatable-columns-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 985e052abbe1065ba2d6816911f686cb61c85a6d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 969dd42295530396eca4195a8897a5ee93a61bf2
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59416471"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133429"
 ---
 # <a name="adding-additional-datatable-columns-vb"></a>Добавление дополнительных столбцов DataTable (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59416471"
 [Скачать код](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_70_VB.zip) или [скачать PDF](adding-additional-datatable-columns-vb/_static/datatutorial70vb1.pdf)
 
 > При использовании мастера TableAdapter, чтобы создать типизированный набор DataSet, соответствующем объекте DataTable содержит столбцы, возвращаемые запросом к основной базе данных. Но бывают случаи, когда объект DataTable нужно включать дополнительные столбцы. В этом руководстве мы Узнайте, почему рекомендуется использовать хранимые процедуры когда нам требуется дополнительных столбцов DataTable.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -48,19 +47,15 @@ ms.locfileid: "59416471"
 
 Откройте `NorthwindWithSprocs` набора данных и щелкните правой кнопкой мыши `ProductsDataTable`. Выберите команду "Добавить" в контекстном меню, а затем выберите столбец.
 
-
 [![Добавить новый столбец для ProductsDataTable](adding-additional-datatable-columns-vb/_static/image2.png)](adding-additional-datatable-columns-vb/_static/image1.png)
 
 **Рис. 1**: Добавить новый столбец для `ProductsDataTable` ([Просмотр полноразмерного изображения](adding-additional-datatable-columns-vb/_static/image3.png))
 
-
 Это будет добавлен новый столбец к таблице DataTable с именем Column1 типа `System.String`. Нам необходимо изменить это имя столбца s PriceQuartile и его тип на `System.Int32` так, как он будет использоваться для хранения числа от 1 до 4. Выберите столбец, добавленные в `ProductsDataTable` и в окне «Свойства» задайте `Name` свойства PriceQuartile и `DataType` свойства `System.Int32`.
-
 
 [![Задайте имя нового столбца-s и свойств типа данных](adding-additional-datatable-columns-vb/_static/image5.png)](adding-additional-datatable-columns-vb/_static/image4.png)
 
 **Рис. 2**: Задайте новый столбец s `Name` и `DataType` свойства ([Просмотр полноразмерного изображения](adding-additional-datatable-columns-vb/_static/image6.png))
-
 
 Как показано на рис. 2, существуют дополнительные свойства, которые могут быть установлены, например ли значения в столбце должны быть уникальными, если столбец является столбцом с автоматическим приращением, ли база данных `NULL` значения допускаются и т. д. Оставьте эти значения, значения по умолчанию.
 
@@ -68,22 +63,17 @@ ms.locfileid: "59416471"
 
 Теперь, когда `ProductsDataTable` был обновлен для включения `PriceQuartile` столбца, мы готовы к созданию `GetProductsWithPriceQuartile` метод. Запустить, щелкнув правой кнопкой мыши в TableAdapter и выбрав добавить запрос в контекстном меню. Откроется мастер настройки запроса TableAdapter, который сначала запрашивает относительно хотим ли мы использовать специализированные инструкции SQL или новой или существующей хранимой процедуры. Поскольку мы кое t, но имеется хранимая процедура, возвращающая данные квартиль цена, позвольте s разрешить TableAdapter для создания этой хранимой процедуры для нас. Выберите параметр создания новой хранимой процедуры и нажмите кнопку Далее.
 
-
 [![Дать указание мастеру TableAdapter для создания хранимой процедуры для нас](adding-additional-datatable-columns-vb/_static/image8.png)](adding-additional-datatable-columns-vb/_static/image7.png)
 
 **Рис. 3**: Дать указание мастеру TableAdapter для создания хранимой процедуры для США ([Просмотр полноразмерного изображения](adding-additional-datatable-columns-vb/_static/image9.png))
 
-
 В последующих экране, показанном на рис. 4 мастер спрашивает нас, какой тип запроса для добавления. Так как `GetProductsWithPriceQuartile` метод будет возвращать все столбцы и записи `Products` таблицы, выберите SELECT, который возвращает строки и нажмите кнопку Далее.
-
 
 [![Наш запрос будет инструкцию SELECT, возвращает несколько строк](adding-additional-datatable-columns-vb/_static/image11.png)](adding-additional-datatable-columns-vb/_static/image10.png)
 
 **Рис. 4**: Наш запрос будет `SELECT` оператор, возвращает несколько строк ([Просмотр полноразмерного изображения](adding-additional-datatable-columns-vb/_static/image12.png))
 
-
 Далее мы будет предложено ввести `SELECT` запроса. В мастере, введите следующий запрос:
-
 
 [!code-sql[Main](adding-additional-datatable-columns-vb/samples/sample1.sql)]
 
@@ -94,41 +84,32 @@ ms.locfileid: "59416471"
 > [!NOTE]
 > Дополнительные сведения о функции NTILE и SQL Server 2005 s других функциях ранжирования см. в разделе [возвращение ранжированные результаты с помощью Microsoft SQL Server 2005](http://www.4guysfromrolla.com/webtech/010406-1.shtml) и [разделе Ранжирующие функции](https://msdn.microsoft.com/library/ms189798.aspx) из [SQL Документации по Server 2005](https://msdn.microsoft.com/library/ms189798.aspx).
 
-
 После ввода `SELECT` запроса и нажмите кнопку Далее, мастер запрашивает нам предоставить имя хранимой процедуры, она будет создана. Присвойте имя новой хранимой процедуры `Products_SelectWithPriceQuartile` и нажмите кнопку Далее.
-
 
 [![Имя хранимой процедуры Products_SelectWithPriceQuartile](adding-additional-datatable-columns-vb/_static/image14.png)](adding-additional-datatable-columns-vb/_static/image13.png)
 
 **Рис. 5**: Имя хранимой процедуры `Products_SelectWithPriceQuartile` ([Просмотр полноразмерного изображения](adding-additional-datatable-columns-vb/_static/image15.png))
 
-
 Наконец мы предложено назовите методы адаптера таблицы. Оставить оба заполнения таблицы данных и вернуться в DataTable флажков с новым именем методы `FillWithPriceQuartile` и `GetProductsWithPriceQuartile`.
-
 
 [![Методы TableAdapter s имя и нажмите кнопку Готово.](adding-additional-datatable-columns-vb/_static/image17.png)](adding-additional-datatable-columns-vb/_static/image16.png)
 
 **Рис. 6**: Назовите методы TableAdapter s и нажмите "Готово" ([Просмотр полноразмерного изображения](adding-additional-datatable-columns-vb/_static/image18.png))
 
-
 С помощью `SELECT` указан запрос и хранимой процедуры и методы адаптера таблицы с именем, щелкните "Готово", чтобы завершить работу мастера. На этом этапе может появиться предупреждение или две из мастера, о том, что `OVER` конструкция или оператор SQL не поддерживается. Эти предупреждения можно игнорировать.
 
 По завершении работы мастера TableAdapter должен включать `FillWithPriceQuartile` и `GetProductsWithPriceQuartile` методы и базы данных должен содержать хранимую процедуру с именем `Products_SelectWithPriceQuartile`. Отвлекитесь и убедитесь, что TableAdapter действительно содержит этот новый метод и что хранимая процедура правильно добавлен к базе данных. При проверке базы данных, если вы не видите хранимой процедуры try щелкните правой кнопкой мыши папку хранимые процедуры и выполнить операцию.
-
 
 ![Убедитесь, что в адаптер таблицы был добавлен новый метод](adding-additional-datatable-columns-vb/_static/image19.png)
 
 **Рис. 7**: Убедитесь, что в адаптер таблицы был добавлен новый метод
 
-
 [![Убедитесь, что база данных содержит Products_SelectWithPriceQuartile хранимой процедуры](adding-additional-datatable-columns-vb/_static/image21.png)](adding-additional-datatable-columns-vb/_static/image20.png)
 
 **Рис. 8**: Убедитесь, что база данных содержит `Products_SelectWithPriceQuartile` хранимой процедуры ([Просмотр полноразмерного изображения](adding-additional-datatable-columns-vb/_static/image22.png))
 
-
 > [!NOTE]
 > Одним из преимуществ использования хранимых процедур вместо специализированные инструкции SQL — это что повторный запуск мастера настройки адаптера таблицы не будет изменять списки столбцов хранимых процедур. Проверьте, щелкнув правой кнопкой мыши в TableAdapter, выбрав в контекстном меню для запуска мастера настройку и затем нажмите кнопку Finish, чтобы завершить его. Теперь перейдите к базе данных и представление `Products_SelectWithPriceQuartile` хранимой процедуры. Обратите внимание на то, что его список столбцов не был изменен. Мы использовались специализированные инструкции SQL, повторно запустив мастер настройки TableAdapter будет существовавшему этот запрос s список столбцов для сопоставления со списком столбцов основного запроса, тем самым убирая инструкцию NTILE из запроса, используемого `GetProductsWithPriceQuartile` метод.
-
 
 При s уровня доступа к данным `GetProductsWithPriceQuartile` вызова метода, выполняет TableAdapter `Products_SelectWithPriceQuartile` хранимой процедуры и добавляет строку к `ProductsDataTable` для каждой возвращаемой записи. Поля данных, возвращаемых хранимой процедурой, сопоставляются `ProductsDataTable` s столбцов. Так как `PriceQuartile` поля данных, возвращаемых хранимой процедурой, его значение будет назначено `ProductsDataTable` s `PriceQuartile` столбца.
 
@@ -140,7 +121,6 @@ ms.locfileid: "59416471"
 
 Прежде чем мы будет использовать новый `GetProductsWithPriceQuartile` метод от слоя представления, мы должны сначала добавить соответствующий метод BLL. Откройте `ProductsBLLWithSprocs` и добавьте следующий код:
 
-
 [!code-vb[Main](adding-additional-datatable-columns-vb/samples/sample2.vb)]
 
 Как другие методы получения данных, которые в `ProductsBLLWithSprocs`, `GetProductsWithPriceQuartile` метод просто вызывает DAL соответствующий s `GetProductsWithPriceQuartile` метод и возвращает его результаты.
@@ -149,16 +129,13 @@ ms.locfileid: "59416471"
 
 С добавлением BLL завершения мы будет готов создать страницу ASP.NET, показывающий квартиль цена для каждого продукта. Откройте `AddingColumns.aspx` странице в `AdvancedDAL` папки и перетащите элемент управления GridView с панели элементов в конструктор, установив его `ID` свойства `Products`. Смарт-теге GridView s, привязать его к элементу управления ObjectDataSource с именем `ProductsDataSource`. Настройка ObjectDataSource на использование `ProductsBLLWithSprocs` класс s `GetProductsWithPriceQuartile` метод. Так как это будет только для чтения сетка, установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет).
 
-
 [![Настройка ObjectDataSource на использование класса ProductsBLLWithSprocs](adding-additional-datatable-columns-vb/_static/image24.png)](adding-additional-datatable-columns-vb/_static/image23.png)
 
 **Рис. 9**: Настройка ObjectDataSource для использования `ProductsBLLWithSprocs` класс ([Просмотр полноразмерного изображения](adding-additional-datatable-columns-vb/_static/image25.png))
 
-
 [![Получить сведения о продукте из метода GetProductsWithPriceQuartile](adding-additional-datatable-columns-vb/_static/image27.png)](adding-additional-datatable-columns-vb/_static/image26.png)
 
 **Рис. 10**: Сведения о продукте из `GetProductsWithPriceQuartile` метод ([Просмотр полноразмерного изображения](adding-additional-datatable-columns-vb/_static/image28.png))
-
 
 После завершения работы мастера настройки источников данных Visual Studio автоматически добавит BoundField или CheckBoxField GridView для каждого поля данных, возвращаемых методом. Одно из этих полей данных является `PriceQuartile`, который является столбцом, добавленным к `ProductsDataTable` на шаге 1.
 
@@ -166,25 +143,20 @@ ms.locfileid: "59416471"
 
 После внесения этих изменений GridView и ObjectDataSource s декларативная разметка должна выглядеть следующим образом:
 
-
 [!code-aspx[Main](adding-additional-datatable-columns-vb/samples/sample3.aspx)]
 
 Рис. 11 показана эта страница при посещении через браузер. Обратите внимание на то, что изначально продукты упорядочены по цене, их в порядке убывания с каждой назначен соответствующий продукт `PriceQuartile` значение. Само собой эти данные можно отсортировать по другим критериям со значением столбца квартиль цены, по-прежнему отражения ранжирования продукта s отношении цена (см. рис. 12).
-
 
 [![Продукты сортируются по их цены](adding-additional-datatable-columns-vb/_static/image30.png)](adding-additional-datatable-columns-vb/_static/image29.png)
 
 **Рис. 11**: Продукты сортируются по их цены ([Просмотр полноразмерного изображения](adding-additional-datatable-columns-vb/_static/image31.png))
 
-
 [![Продукты упорядочены по именам](adding-additional-datatable-columns-vb/_static/image33.png)](adding-additional-datatable-columns-vb/_static/image32.png)
 
 **Рис. 12**: Продукты упорядочены по их именам ([Просмотр полноразмерного изображения](adding-additional-datatable-columns-vb/_static/image34.png))
 
-
 > [!NOTE]
 > Несколько строк кода, мы может дополнить GridView, чтобы он цветных строк продукта на основе их `PriceQuartile` значение. Мы может этих продуктов в первый квартиль светло-зеленый, во второй квартиль Светло-желтый цвет и так далее. Я призываю вас ознакомиться немного, чтобы добавить эту функцию. Если вы хотите освежить на форматирование элемента управления GridView, обратитесь к [форматирование на основе по данным](../custom-formatting/custom-formatting-based-upon-data-vb.md) руководства.
-
 
 ## <a name="an-alternative-approach---creating-another-tableadapter"></a>Альтернативный подход — создание другого адаптера таблицы
 

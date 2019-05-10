@@ -8,12 +8,12 @@ ms.date: 10/17/2006
 ms.assetid: ee20742f-6fb7-49a0-a009-058fe363aacb
 msc.legacyurl: /web-forms/overview/data-access/filtering-scenarios-with-the-datalist-and-repeater/master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb
 msc.type: authoredcontent
-ms.openlocfilehash: bdf1d69ea8020ce055d7765591cf2d488de71245
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0f7f42545d2492c7330da57f7e767199f50b659e
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59388705"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108440"
 ---
 # <a name="masterdetail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb"></a>Отчет "Основной/подробности" с использованием маркированного списка основных записей с элементом управления DataList для подробных сведений (VB)
 
@@ -23,18 +23,15 @@ ms.locfileid: "59388705"
 
 > В этом руководстве мы рассмотрим сжатие две страницы "основной/подробности" отчет о предыдущем учебном курсе на одной странице, которой отображается маркированный список имена категорий в левой части экрана и в правой части экрана продукты выбранной категории.
 
-
 ## <a name="introduction"></a>Вступление
 
 В [предыдущем учебном курсе](master-detail-filtering-acess-two-pages-datalist-vb.md) мы рассмотрели размещение отчета «основной/подробности» на двух страницах. На главной странице мы использовали элемент управления Repeater для отображения маркированного списка категорий. Имя каждой категории было гиперссылкой, при нажатии бы взять пользователя на страницу сведений о, где двухстолбцовый элемент управления DataList двух столбцов отображались продукты принадлежащих выбранной категории.
 
 В этом руководстве мы рассмотрим сжатие руководства две страницы на одной странице, которой отображается маркированный список имена категорий в левой части экрана названия каждой категории, отображаемой в качестве LinkButton. Щелкнув одну из имя категории элементов управления LinkButton вызывает обратную передачу и привязывает продукты выбранной категории s двухстолбцовый элемент управления DataList, в правой части экрана. Помимо отображения название каждой категории s, элементу управления Repeater в левой части показывает, сколько всего продуктов для данной категории (см. рис. 1).
 
-
 [![Имя категории и общее число продуктов отображаются в левой части](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image2.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image1.png)
 
 **Рис. 1**: Имя категории и общее число продуктов отображаются в левой части ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image3.png))
-
 
 ## <a name="step-1-displaying-a-repeater-in-the-left-portion-of-the-screen"></a>Шаг 1. Отображение элемента Repeater в левой части экрана
 
@@ -42,11 +39,9 @@ ms.locfileid: "59388705"
 
 Откройте `CategoriesAndProducts.aspx` странице из `DataListRepeaterFiltering` папку и добавьте на страницу элемент управления Repeater и DataList. Значение элемента управления Repeater s `ID` для `Categories` и DataList s для `CategoryProducts`. Перейдите в представление источника и поместить в элементы управления Repeater и DataList `<div>` элементов. То есть, заключите элементу управления Repeater в `<div>` элемент первой и затем DataList в свой собственный `<div>` элемент сразу после элемента управления Repeater. На этом этапе ваш разметка должна выглядеть следующим образом:
 
-
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample1.aspx)]
 
 Для перемещения элемента управления Repeater слева от DataList, нам нужно использовать `float` атрибут стиля CSS, следующим образом:
-
 
 [!code-html[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample2.html)]
 
@@ -54,18 +49,15 @@ ms.locfileid: "59388705"
 
 Вместо того чтобы указать параметр стиля непосредственно через первый `<p>` элемент s `style` атрибут, давайте вместо этого создайте новый класс CSS в s `Styles.css` с именем `FloatLeft`:
 
-
 [!code-css[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample3.css)]
 
 Затем можно заменить `<div>` с `<div class="FloatLeft">`.
 
 После добавления класса CSS и настройки разметки в `CategoriesAndProducts.aspx` страницы, перейдите в конструктор. Вы должны увидеть элемент управления Repeater, с плавающей запятой слева от элемента управления DataList (несмотря на то, что право Теперь оба просто отображается как серый полей с момента мы ve еще, чтобы настроить их источники данных или шаблоны).
 
-
 [![Плавающий элемент управления Repeater слева от элемента управления DataList](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image5.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image4.png)
 
 **Рис. 2**: Плавающий элемент управления Repeater слева от элемента управления DataList ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image6.png))
-
 
 ## <a name="step-2-determining-the-number-of-products-for-each-category"></a>Шаг 2. Определение количества продуктов для каждой категории
 
@@ -80,11 +72,9 @@ ms.locfileid: "59388705"
 
 Определение количества продуктов для каждой категории в элементу управления Repeater s `ItemDataBound` обработчик событий не требует каких-либо изменений нашей существующего уровня доступа к данным. Все изменения можно внести непосредственно в `CategoriesAndProducts.aspx` страницы. Начните с добавления нового источника ObjectDataSource с именем `CategoriesDataSource` через смарт-тег элемента управления Repeater s. Настройте `CategoriesDataSource` ObjectDataSource, так что он извлекает свои данные из `CategoriesBLL` класс s `GetCategories()` метод.
 
-
 [![Настройка ObjectDataSource на использование s метода GetCategories() класса CategoriesBLL](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image8.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image7.png)
 
 **Рис. 3**: Настройка ObjectDataSource для использования `CategoriesBLL` класс s `GetCategories()` метод ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image9.png))
-
 
 Каждый элемент в `Categories` Repeater должен быть активны и, при нажатии `CategoryProducts` DataList, должны отображаться продукты выбранной категории. Это можно сделать, сделав каждой категории гиперссылки, связывание вернитесь на эту же страницу (`CategoriesAndProducts.aspx`), но передав `CategoryID` через строку запроса, примерно так же, что мы видели в предыдущем учебном курсе. Преимуществом такого подхода — что отображение продуктов определенной категории s страницы могут добавляться в закладки или проиндексирован поисковую систему.
 
@@ -93,23 +83,18 @@ ms.locfileid: "59388705"
 > [!NOTE]
 > Вы являетесь рекомендуется повторить описанные в этом руководстве, с помощью элемента управления HyperLink или `<a>` элемента вместо элемента управления LinkButton.
 
-
 В следующей разметке показан декларативный синтаксис для элемента управления Repeater и элемент управления ObjectDataSource. Обратите внимание, что элемент управления Repeater s отображают маркированный список с каждым элементом как LinkButton.
-
 
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample4.aspx)]
 
 > [!NOTE]
 > В этом руководстве Repeater должен иметь состояние представления включено (Обратите внимание, из-за отсутствия `EnableViewState="False"` из декларативного синтаксиса элемента управления Repeater s). На шаге 3 мы создадим обработчик событий для элемента управления Repeater s `ItemCommand` событий, в котором мы будем обновлять DataList s ObjectDataSource s `SelectParameters` коллекции. Элемент управления Repeater s `ItemCommand`, не будет запускаться, если состояние представления отключено. См. в разделе [головоломка возникает вопрос ASP.NET](http://scottonwriting.net/sowblog/posts/1263.aspx) и [свое решение](http://scottonwriting.net/sowBlog/posts/1268.aspx) Дополнительные сведения о том, почему состояние представления должно быть включено для элемента управления Repeater s `ItemCommand` событие.
 
-
 ImageButton с `ID` значение свойства `ViewCategory` не поддерживает его `Text` набор свойств. Если мы хотели только отображаемое имя категории, мы бы свойство Text декларативно, через синтаксис привязки данных, следующим образом:
-
 
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample5.aspx)]
 
 Тем не менее, мы хотим Показать имя категории s *и* количество продуктов, принадлежащих к этой категории. Эти сведения можно получить из элемента управления Repeater s `ItemDataBound` обработчик событий с помощью вызова `ProductBLL` класс s `GetCategoriesByProductID(categoryID)` и определения, сколько записей возвращаются в результирующем `ProductsDataTable`, как приведенный ниже иллюстрирует:
-
 
 [!code-vb[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample6.vb)]
 
@@ -118,71 +103,55 @@ ImageButton с `ID` значение свойства `ViewCategory` не под
 > [!NOTE]
 > Кроме того, можно было добавить *функцию форматирования* в класс фонового кода страницы s ASP.NET, получающую s `CategoryName` и `CategoryID` значения и возвращает `CategoryName` объединяется с числом продукты в категории (как определено вызовом `GetCategoriesByProductID(categoryID)` метод). Результаты функции форматирования можно декларативно присвоить s LinkButton свойство Text, нет необходимости в `ItemDataBound` обработчик событий. Ссылаться на [использование полей TemplateField в элементе управления GridView](../custom-formatting/using-templatefields-in-the-gridview-control-vb.md) или [форматирование элементов управления DataList и Repeater от данных](../displaying-data-with-the-datalist-and-repeater/formatting-the-datalist-and-repeater-based-upon-data-vb.md) учебники, Дополнительные сведения об использовании функций форматирования.
 
-
 После добавления этого обработчика событий, Отвлекитесь и проверьте страницу в обозревателе. Обратите внимание на то, как каждая категория отображается в виде маркированного списка, отображая имя категории s и количество продуктов, связанных с категорией (см. рис. 4).
-
 
 [![Отображаются каждой категории — имя и число продуктов](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image11.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image10.png)
 
 **Рис. 4**: Каждой категории — имя и число продуктов отображаются ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image12.png))
 
-
 ## <a name="updating-thecategoriesdatatableandcategoriestableadapterto-include-the-number-of-products-for-each-category"></a>Обновление`CategoriesDataTable`и`CategoriesTableAdapter`для включения количества продуктов для каждой категории
 
 Вместо определения количества продуктов для каждой категории, так как он с привязкой к элементу управления Repeater, этот процесс можно ускорить с помощью `CategoriesDataTable` и `CategoriesTableAdapter` уровне доступа к данным для включения этих сведений. Для этого необходимо добавить новый столбец для `CategoriesDataTable` для хранения количества соответствующих продуктов. Чтобы добавить новый столбец в таблицу данных, откройте типизированный набор DataSet (`App_Code\DAL\Northwind.xsd`), щелкните правой кнопкой мыши на объект DataTable для изменения и выберите Add / столбца. Добавить новый столбец для `CategoriesDataTable` (см. рис. 5).
-
 
 [![Добавление нового столбца к CategoriesDataSource](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image14.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image13.png)
 
 **Рис. 5**: Добавить новый столбец для `CategoriesDataSource` ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image15.png))
 
-
 Это будет добавлен новый столбец с именем `Column1`, которые можно изменить, просто введя другое имя. Переименуйте этот новый столбец в `NumberOfProducts`. Далее нам нужно настроить этот столбец s свойства. Щелкните новый столбец и перейдите в окно свойств. Изменить столбец s `DataType` свойства из `System.String` для `System.Int32` и задайте `ReadOnly` свойства `True`, как показано на рис. 6.
-
 
 ![Устанавливать свойства только для чтения нового столбца и тип данных](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image16.png)
 
 **Рис. 6**: Задайте `DataType` и `ReadOnly` свойства нового столбца
 
-
 Хотя `CategoriesDataTable` теперь имеет `NumberOfProducts` столбец, его значение не устанавливается в любой из соответствующих s запросов адаптера таблицы. Корпорация Майкрософт может обновлять `GetCategories()` метод для возврата этих сведений, если требуется такая информация возвращается каждый раз, чтобы получить сведения о категории. Если, однако нам требуется только получение количества соответствующих продуктов для категорий в редких случаях (например, как только для этого руководства), то можно оставить `GetCategories()` как- и создать новый метод, возвращающий данную информацию. S позволяют использовать такой подход адекватен, создадим новый метод с именем `GetCategoriesAndNumberOfProducts()`.
 
 Чтобы добавить этот новый `GetCategoriesAndNumberOfProducts()` метод, щелкните правой кнопкой мыши `CategoriesTableAdapter` и выберите новый запрос. Это дает вверх TableAdapter запроса мастер настройки, которые мы ve, используемый в предыдущих учебных курсах. Этот метод запустите мастер, указав, что запрос использует специальный оператор SQL, возвращающий строки.
-
 
 [![Создание метода, использующего специальный оператор SQL](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image18.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image17.png)
 
 **Рис. 7**: Создайте метод с помощью инструкции SQL Ad-Hoc ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image19.png))
 
-
 [![Строки, возвращенные инструкцией SQL](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image21.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image20.png)
 
 **Рис. 8**: Возвращает строки инструкции SQL ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image22.png))
 
-
 На следующем экране мастера запрос на указание запрос для использования. Для возвращения каждой категории s `CategoryID`, `CategoryName`, и `Description` поля, а также количество продуктов, связанных с категорией, используйте следующую команду `SELECT` инструкции:
 
-
 [!code-sql[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample7.sql)]
-
 
 [![Укажите запрос для использования](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image24.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image23.png)
 
 **Рис. 9**: Укажите запрос для использования ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image25.png))
 
-
 Обратите внимание, что, вычисляющего количество продуктов, связанных с категорией псевдонимом `NumberOfProducts`. Это соответствие имен вызывает связывание значения, возвращенного этот вложенный запрос, которым будет связана `CategoriesDataTable` s `NumberOfProducts` столбца.
 
 После ввода этого запроса, последний шаг — это выбрать имя для нового метода. Используйте `FillWithNumberOfProducts` и `GetCategoriesAndNumberOfProducts` для заполнения таблицы данных и возвращают объект DataTable шаблоны, соответственно.
-
 
 [![Имя нового имена FillWithNumberOfProducts методы TableAdapter s и GetCategoriesAndNumberOfProducts](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image27.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image26.png)
 
 **Рис. 10**: Назовите новый адаптер таблицы s методы `FillWithNumberOfProducts` и `GetCategoriesAndNumberOfProducts` ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image28.png))
 
-
 На этом этапе уровня доступа к данным был расширен для включения количества продуктов по категориям. Так как все слой презентации направляет все вызовы DAL через отдельный уровня бизнес-логики необходимо добавить соответствующий `GetCategoriesAndNumberOfProducts` метод `CategoriesBLL` класса:
-
 
 [!code-vb[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample8.vb)]
 
@@ -190,14 +159,11 @@ ImageButton с `ID` значение свойства `ViewCategory` не под
 
 С помощью элемента управления Repeater, обратно в исходное состояние, добавить новый ObjectDataSource, именуемый `CategoriesDataSource` через смарт-тег элемента управления Repeater s. Настройка ObjectDataSource на использование `CategoriesBLL` класс, но вместо использования `GetCategories()` метод, использование `GetCategoriesAndNumberOfProducts()` вместо (см. рис. 11).
 
-
 [![Настройка ObjectDataSource для использования метода GetCategoriesAndNumberOfProducts](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image30.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image29.png)
 
 **Рис. 11**: Настройка ObjectDataSource для использования `GetCategoriesAndNumberOfProducts` метод ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image31.png))
 
-
 Затем обновите `ItemTemplate` таким образом, LinkButton s `Text` свойство назначается декларативно с помощью синтаксиса привязки данных и включает в себя `CategoryName` и `NumberOfProducts` полей данных. Полная декларативная разметка для элемента управления Repeater и `CategoriesDataSource` ObjectDataSource выполните:
-
 
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample9.aspx)]
 
@@ -212,29 +178,23 @@ ImageButton с `ID` значение свойства `ViewCategory` не под
 > [!NOTE]
 > Это одна из проблем, возникающих при использовании элемента управления LinkButton в элементе управления Repeater. Мы использовали гиперссылки для передачи в `CategoryID` через строку запроса вместо этого мы использовать это поле строки запроса как источник для значения параметра s.
 
-
 Прежде чем думать об отсутствии `SelectedValue` свойства для элемента управления Repeater, однако let s сначала привязать элемент управления DataList к элементу ObjectDataSource и указать его `ItemTemplate`.
 
 В смарт-теге элемента управления DataList s, необязательно, чтобы добавить новый ObjectDataSource, именуемый `CategoryProductsDataSource` и настройте его для использования `ProductsBLL` класс s `GetProductsByCategoryID(categoryID)` метод. Так как элемент управления DataList, в этом учебнике предоставляет интерфейс только для чтения, вы можете задать раскрывающиеся списки в INSERT, UPDATE и удаление вкладок (нет).
-
 
 [![Настройка ObjectDataSource на использование метод GetProductsByCategoryID(categoryID) класса ProductsBLL s](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image33.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image32.png)
 
 **Рис. 12**: Настройка ObjectDataSource для использования `ProductsBLL` класс s `GetProductsByCategoryID(categoryID)` метод ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image34.png))
 
-
 Так как `GetProductsByCategoryID(categoryID)` метод ожидает входной параметр (*`categoryID`*), мастер настройки источников данных можно указать источник параметра s. Категории были перечислены в элементе управления GridView или DataList, мы d значение параметра исходного стрелку раскрывающегося списка элемента управления, а для ControlID – `ID` данных веб-элемента управления. Однако, поскольку отсутствует элемент управления Repeater `SelectedValue` свойство, он не может использоваться в качестве источника параметра. Если выбран, вы обнаружите, что раскрывающемся списке ControlID содержит только один элемент управления `ID``CategoryProducts`, `ID` элемента управления DataList.
 
 Пока значение параметра исходного стрелку раскрывающегося списка None. Мы получим программного связывания значение этого параметра, при нажатии элемента управления LinkButton нажатии в элементу управления Repeater.
-
 
 [![Сделать не указан источник для параметра categoryID](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image36.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image35.png)
 
 **Рис. 13**: Сделать не указан источник параметров для *`categoryID`* параметра ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image37.png))
 
-
 После завершения работы мастера настройки источников данных Visual Studio автоматически создает элемент управления DataList s `ItemTemplate`. Замените это значение по умолчанию `ItemTemplate` с шаблоном мы используется в предыдущем учебном курсе; Кроме того, набор элементов управления DataList s `RepeatColumns` значение 2. После внесения этих изменений декларативная разметка для DataList и его связанный элемент управления ObjectDataSource должен выглядеть следующим образом:
-
 
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample10.aspx)]
 
@@ -250,28 +210,23 @@ ImageButton с `ID` значение свойства `ViewCategory` не под
 
 Следующие `ItemTemplate` разметки для элемента управления Repeater категории реализует шаги 1 и 2. Обратите внимание как `CommandArgument` значения элемента данных s `CategoryID` используя синтаксис привязки данных:
 
-
 [!code-aspx[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample11.aspx)]
 
 При каждом создании `ItemCommand` обработчик событий, рекомендуется всегда сначала проверять входящее значение `CommandName` поскольку значение *любой* `Command` вызывает событие *любой* кнопка, LinkButton, или Вызовет ImageButton в элементе Repeater `ItemCommand` событие. Хотя в настоящее время только теперь у нас один LinkButton, в будущем мы (или другие разработчики нашей команды) может добавить дополнительную кнопку веб-элементов управления к элементу управления Repeater, при нажатии вызывает же `ItemCommand` обработчик событий. Таким образом, он s, следует всегда убедитесь, что выбран `CommandName` свойство и только приступить программной логикой, если он соответствует значение, ожидаемое.
 
 Убедившись, что переданный `CommandName` значение равно ListProducts, обработчик событий, после чего присваивает ей `CategoryProductsDataSource` ObjectDataSource s `CategoryID` значение переданного параметра `CommandArgument`. Такое изменение принадлежащего элементу ObjectDataSource s `SelectParameters` автоматически вынуждает элемент управления DataList, чтобы заново привязать себя к источнику данных, с продуктами для новой выбранной категории.
 
-
 [!code-vb[Main](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/samples/sample12.vb)]
 
 На этих дополнениях наш учебный курс завершается. Отвлекитесь и протестировать его в браузере. Рис. 14 показано окно, при первом просмотре странице. Поскольку категория еще необходимо выбрать, продукты не отображаются. При щелчке на категории, например Produce, отображаются продукты категории продукта в виде двух столбцов (см. рис. 15).
-
 
 [![Продукты не будут отображаться при первом просмотре страницы](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image39.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image38.png)
 
 **Рис. 14**: Продукты не будут отображаться при первом просмотре страницы ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image40.png))
 
-
 [![Щелкнув отображаются категории Produce соответствующие продукты справа](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image42.png)](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image41.png)
 
 **Рис. 15**: Щелкнув этой категории будут перечислены продукты сопоставления справа ([Просмотр полноразмерного изображения](master-detail-using-a-bulleted-list-of-master-records-with-a-details-datalist-vb/_static/image43.png))
-
 
 ## <a name="summary"></a>Сводка
 

@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 2488a91e-b0a8-465a-b874-3233f724b56b
 msc.legacyurl: /web-forms/overview/deployment/configuring-team-foundation-server-for-web-deployment/configuring-permissions-for-team-build-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 62e5c5622743447e1119141469c894dc905e6b43
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 5699f72af6b8d7f18d1a2c631dfdedd63c66e1e6
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381059"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133854"
 ---
 # <a name="configuring-permissions-for-team-build-deployment"></a>Настройка разрешений для развертывания командной сборки
 
@@ -22,7 +22,6 @@ ms.locfileid: "59381059"
 [Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описываются способы настройки разрешения, чтобы включить сервер сборки для развертывания содержимого на веб-серверов и серверов баз данных как часть автоматизированного процесса сборки.
-
 
 Этот раздел является частью серии учебников, исходя из требования к развертыванию enterprise вымышленной компании Fabrikam, Inc. В этой серии руководств используется пример решения&#x2014; [решения диспетчера контактов](../web-deployment-in-the-enterprise/the-contact-manager-solution.md)&#x2014;для представления веб-приложения с более реалистичные уровень сложности, включая приложения ASP.NET MVC 3, Windows Communication Служба Foundation (WCF) и проект базы данных.
 
@@ -36,7 +35,6 @@ ms.locfileid: "59381059"
 
 > [!NOTE]
 > Учетной записи сетевой службы используется учетная запись компьютера для проверки подлинности на других компьютерах. Учетные записи компьютера принимать форму * [домен]\[имя компьютера] ***$**&#x2014;к примеру, **FABRIKAM\TFSBUILD$**. Таким образом Если службе сборки выполняется с помощью удостоверения сетевой службы, следует предоставлять любые разрешения, необходимые для идентификатор учетной записи для сервера сборки.
-
 
 ## <a name="configuring-web-server-permissions"></a>Настройка разрешений веб-сервера
 

@@ -8,12 +8,12 @@ ms.date: 02/20/2014
 ms.assetid: eee916e4-ba4c-439a-a24e-68df7d45a569
 msc.legacyurl: /web-pages/overview/data/working-with-files
 msc.type: authoredcontent
-ms.openlocfilehash: 4a62cce3af57b507882744f948ce208becdb03ac
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 3ff852232212ddda4930597731911be60c092667
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59382307"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108948"
 ---
 # <a name="working-with-files-in-an-aspnet-web-pages-razor-site"></a>Работа с файлами на сайте ASP.NET Web Pages (Razor)
 
@@ -48,7 +48,6 @@ ms.locfileid: "59382307"
 >   
 > 
 > Этот учебник также работает с WebMatrix 3.
-
 
 <a id="Creating_a_Text_File"></a>
 ## <a name="creating-a-text-file-and-writing-data-to-it"></a>Создание текстового файла и запись в нее данных
@@ -145,7 +144,6 @@ ms.locfileid: "59382307"
 > 
 > Можно использовать Microsoft Excel, чтобы сохранить данные, содержащиеся в электронную таблицу в формате с разделителями запятыми (*.csv* файла). При этом файл сохраняется в виде обычного текста, а не в формате Excel. Каждая строка в таблице, разделенные разрыв строки в текстовом файле и каждого элемента данных, разделенные запятой. Код, показанный в предыдущем примере можно использовать для чтения файла с разделителями запятыми Excel так же, изменив имя файла данных в коде.
 
-
 <a id="Deleting_Files"></a>
 ## <a name="deleting-files"></a>Удаление файлов
 
@@ -154,7 +152,6 @@ ms.locfileid: "59382307"
 > [!NOTE] 
 > 
 > **Важные** в рабочем веб-сайте, вы обычно ограничивать доступ для внесения изменений в данные. Дополнительные сведения о том, как настроить членство и о способах авторизации пользователей для выполнения задач на узле, см. в разделе [Добавление безопасности и членство в сайте веб-страниц ASP.NET](https://go.microsoft.com/fwlink/?LinkId=202904).
-
 
 1. На веб-сайте, создайте вложенную папку с именем *образы*.
 2. Скопируйте один или несколько *.jpg* файлы в *образы* папки.
@@ -255,7 +252,6 @@ ms.locfileid: "59382307"
 
 <a id="Additional_Resources"></a>
 ## <a name="additional-resources"></a>Дополнительные ресурсы
-
 
 [Работа с изображениями на сайте страниц ASP.NET Web](https://go.microsoft.com/fwlink/?LinkId=202897)
 

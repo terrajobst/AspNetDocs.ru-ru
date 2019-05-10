@@ -8,19 +8,18 @@ ms.date: 02/10/2010
 ms.assetid: 5a5537bf-2aaa-49e7-839f-9e6522b829d8
 msc.legacyurl: /whitepapers/aspnet-and-iis6
 msc.type: content
-ms.openlocfilehash: dbdf6d2815a05465b0ffb7bb322c9f80af13a251
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2e7812f34481afe9a71927c0d9ba2a9abc9632e4
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59405161"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106796"
 ---
 # <a name="running-aspnet-11-with-iis-60"></a>Запуск ASP.NET 1.1 со службами IIS 6.0
 
 > Хотя Windows Server 2003 включает в себя IIS 6.0 и ASP.NET 1.1, эти компоненты отключены по умолчанию. Этот технический документ описывает способ включения IIS 6.0 и ASP.NET 1.1 и рекомендует несколько параметров конфигурации для обеспечения оптимальной производительности из IIS и ASP.NET.
 > 
 > Применяется к ASP.NET 1.1 и IIS 6.0.
-
 
 В ASP.NET 1.1 поставляется с Windows Server 2003, который также включает последнюю версию из Internet Information Server (IIS) версии 6.0. IIS 6.0 и ASP.NET 1.1 предназначены для тесно интегрированы и ASP.NET теперь по умолчанию для новой модели рабочих процессов IIS 6.0.
 

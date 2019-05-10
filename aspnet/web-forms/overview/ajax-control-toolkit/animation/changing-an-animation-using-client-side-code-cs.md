@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 2bfbc5cc-f942-44b7-a62d-a29520f1da9a
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/changing-an-animation-using-client-side-code-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 8bdee58aa04e1c8217c2a727b96aa8b239fe1aca
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0ec519c8920e66e8b9081d53b4247ab517d819f5
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59395612"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132238"
 ---
 # <a name="changing-an-animation-using-client-side-code-c"></a>Изменение анимаций с помощью клиентского кода (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59395612"
 [Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation11.cs.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation11CS.pdf)
 
 > Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Также можно изменить анимации с помощью пользовательского кода JavaScript на стороне клиента.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -69,7 +68,6 @@ ms.locfileid: "59395612"
 Следующий код JavaScript назначает этот descripting JSON для `OnClick` анимации текущего расширителя и запускает его:
 
 [!code-html[Main](changing-an-animation-using-client-side-code-cs/samples/sample7.html)]
-
 
 [![Анимация запускается немедленно, без щелчка мыши (и с очень небольшой разметкой)](changing-an-animation-using-client-side-code-cs/_static/image2.png)](changing-an-animation-using-client-side-code-cs/_static/image1.png)
 

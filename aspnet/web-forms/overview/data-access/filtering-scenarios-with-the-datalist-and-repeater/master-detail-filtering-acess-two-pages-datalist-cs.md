@@ -8,12 +8,12 @@ ms.date: 10/30/2010
 ms.assetid: 68b8c023-92fa-4df6-9563-1764e16e4b04
 msc.legacyurl: /web-forms/overview/data-access/filtering-scenarios-with-the-datalist-and-repeater/master-detail-filtering-acess-two-pages-datalist-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 4fbb165f8ce80d560589a43c60920a6e68893d46
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: cdb6accefc97e413c5b4c9be30af3c729db6a452
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390510"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109577"
 ---
 # <a name="masterdetail-filtering-across-two-pages-c"></a>Фильтрация "Основной/подробности" на двух страницах (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59390510"
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_34_CS.exe) или [скачать PDF](master-detail-filtering-acess-two-pages-datalist-cs/_static/datatutorial34cs1.pdf)
 
 > В этом руководстве мы рассмотрим размещение отчета «основной/подробности» на двух страницах. В «основной» странице мы используем элементом управления Repeater для визуализации списка категорий, который, если он выбран, пользователь сможет перейти к странице «сведения» где двухстолбцовый элемент управления DataList показывает продукты, принадлежащие к выбранной категории.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -36,11 +35,9 @@ ms.locfileid: "59390510"
 
 Первым шагом в создании любого отчета «основной/подробности» является отображение «основных» записей. Таким образом наша первая задача является отображение категорий в «основной» странице. Откройте `CategoryListMaster.aspx` странице в `DataListRepeaterFiltering` папки, добавьте элемент управления Repeater и, в смарт-теге, необязательно, чтобы добавить новый элемент управления ObjectDataSource. Настройте новый элемент управления ObjectDataSource, таким образом, чтобы он обращается к своим данным из `CategoriesBLL` класса `GetCategories` метод (см. рис. 1).
 
-
 [![Настройте элемент ObjectDataSource для использования метода GetCategories класса categoriesbll](master-detail-filtering-acess-two-pages-datalist-cs/_static/image2.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image1.png)
 
 **Рис. 1**: Настройка ObjectDataSource для использования `CategoriesBLL` класса `GetCategories` метод ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-cs/_static/image3.png))
-
 
 Затем определите шаблоны элемента Repeater, таким образом, чтобы он отображает каждый имя и описание категории как элемент в маркированном списке. Давайте еще не волноваться о наличии каждой категории ссылку на страницу сведений. Ниже показана декларативная разметка для элемента управления Repeater и ObjectDataSource.
 
@@ -48,11 +45,9 @@ ms.locfileid: "59390510"
 
 По завершении этой разметки Отвлекитесь и просмотрите ход работы через браузер. Как показано на рис. 2, элементу управления Repeater визуализируется как маркированный список, показывая имя и описание каждой категории.
 
-
 [![Каждая категория отображается как элемент маркированного списка](master-detail-filtering-acess-two-pages-datalist-cs/_static/image5.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image4.png)
 
 **Рис. 2**: Каждая категория отображается как элемент маркированного списка ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-cs/_static/image6.png))
-
 
 ## <a name="step-2-turning-the-category-name-into-a-link-to-the-details-page"></a>Шаг 2. Превращение имени категории в ссылку на страницу сведений
 
@@ -72,29 +67,23 @@ ms.locfileid: "59390510"
 
 Если вы следуете, вы можете использовать элемент привязки или подход элемента управления гиперссылки на странице. Независимо от подхода, при просмотре страницы через обозреватель каждое имя категории должно подготавливаться к просмотру как ссылку `ProductsForCategoryDetails.aspx`, передав в соответствующем `CategoryID` значение (см. рис. 3).
 
-
 [![Имена категорий теперь ссылка на ProductsForCategoryDetails.aspx](master-detail-filtering-acess-two-pages-datalist-cs/_static/image8.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image7.png)
 
 **Рис. 3**: Категория имена теперь ссылку, чтобы `ProductsForCategoryDetails.aspx` ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-cs/_static/image9.png))
-
 
 ## <a name="step-3-listing-the-products-that-belong-to-the-selected-category"></a>Шаг 3. Перечисление продуктов, принадлежащих выбранной категории
 
 С помощью `CategoryListMaster.aspx` страница полностью, мы готовы к обратим наше внимание на реализацию страницы «подробности», `ProductsForCategoryDetails.aspx`. Открыть эту страницу, перетащите элемент управления DataList из инструментария в конструктор и задайте его `ID` свойства `ProductsInCategory`. Затем выберите смарт-теге элемента управления DataList для добавления нового источника ObjectDataSource на страницу, назовите его `ProductsInCategoryDataSource`. Настройте его таким образом, чтобы он вызывал `ProductsBLL` класса `GetProductsByCategoryID(categoryID)` метод; набора раскрывающихся списках на вкладках INSERT, UPDATE и DELETE (нет).
 
-
 [![Настройка ObjectDataSource на использование класса ProductsBLL метод GetProductsByCategoryID(categoryID)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image11.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image10.png)
 
 **Рис. 4**: Настройка ObjectDataSource для использования `ProductsBLL` класса `GetProductsByCategoryID(categoryID)` метод ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-cs/_static/image12.png))
 
-
 Так как `GetProductsByCategoryID(categoryID)` метод принимает входной параметр (*`categoryID`*), Выбор источника данных мастер дает возможность указать источник параметра. В качестве источника параметра строки запроса, с помощью QueryStringField `CategoryID`.
-
 
 [![Поле Querystring CategoryID использовать как источник параметра](master-detail-filtering-acess-two-pages-datalist-cs/_static/image14.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image13.png)
 
 **Рис. 5**: Использовать поле строки запроса `CategoryID` как источник параметра ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-cs/_static/image15.png))
-
 
 Как мы видели в предыдущих учебных курсах, после завершения работы мастера выберите источник данных, Visual Studio автоматически создает `ItemTemplate` со списком Имя поля данных и значение каждого элемента управления DataList. Замените этот шаблон, перечисляющий только название, поставщика и цену продукта. Кроме того, значение элемента управления DataList `RepeatColumns` значение 2. После внесения этих изменений декларативная разметка элементов управления DataList и ObjectDataSource должен выглядеть следующим образом:
 
@@ -102,11 +91,9 @@ ms.locfileid: "59390510"
 
 Чтобы просмотреть эту страницу в действии, запустите в `CategoryListMaster.aspx` страница; затем щелкните ссылку в маркированном списке категорий. Таким образом вы перейдете на `ProductsForCategoryDetails.aspx`, передав вдоль `CategoryID` через строку запроса. `ProductsInCategoryDataSource` ObjectDataSource в `ProductsForCategoryDetails.aspx` затем будет получать только те продукты для указанной категории и их отображения в элементе управления DataList, который отображает два продукта на строку. Рис. 6 показан снимок экрана `ProductsForCategoryDetails.aspx` при просмотре напитков.
 
-
 [![Отображаются напитков, два каждой строки](master-detail-filtering-acess-two-pages-datalist-cs/_static/image17.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image16.png)
 
 **Рис. 6**: Отображаются напитков, два каждой строки ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-cs/_static/image18.png))
-
 
 ## <a name="step-4-displaying-category-information-on-productsforcategorydetailsaspx"></a>Шаг 4. Отображение сведений о категории на ProductsForCategoryDetails.aspx
 
@@ -114,11 +101,9 @@ ms.locfileid: "59390510"
 
 Для этого добавьте FormView над элементом управления Repeater в `ProductsForCategoryDetails.aspx`. Добавьте новый элемент управления ObjectDataSource на страницу из смарт-тега FormView с именем `CategoryDataSource` и настройте его для использования `CategoriesBLL` класса `GetCategoryByCategoryID(categoryID)` метод.
 
-
 [![Доступ к сведениям о категории через метод GetCategoryByCategoryID(categoryID) класса categoriesbll](master-detail-filtering-acess-two-pages-datalist-cs/_static/image20.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image19.png)
 
 **Рис. 7**: Доступ к сведениям о категории через `CategoriesBLL` класса `GetCategoryByCategoryID(categoryID)` метод ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-cs/_static/image21.png))
-
 
 Как и в `ProductsInCategoryDataSource` ObjectDataSource добавлен на шаге 3, `CategoryDataSource`в мастер настройки источников данных запрашивает источник для `GetCategoryByCategoryID(categoryID)` входных параметров метода. Использовать одинаковые параметры что и раньше, установив источник параметра строки запроса и значение QueryStringField `CategoryID` (см. рис. 5).
 
@@ -131,11 +116,9 @@ ms.locfileid: "59390510"
 > [!NOTE]
 > В дополнение к FormView, я также добавил элемент управления "Гиперссылка" выше FormView, который возвращает пользователя обратно к списку категорий (`CategoryListMaster.aspx`). Вы можете поместить эту ссылку в другом месте или пропустить.
 
-
 [![— Сведения о категориях теперь отображается в верхней части страницы](master-detail-filtering-acess-two-pages-datalist-cs/_static/image23.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image22.png)
 
 **Рис. 8**: — Сведения о категориях теперь отображается в верхней части страницы ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-cs/_static/image24.png))
-
 
 ## <a name="step-5-displaying-a-message-if-no-products-belong-to-the-selected-category"></a>Шаг 5. Отображение сообщения при отсутствии продуктов в выбранной категории
 
@@ -157,11 +140,9 @@ ms.locfileid: "59390510"
 
 После обновления базы данных соответствующим образом, вернитесь к `CategoryListMaster.aspx` странице, а затем щелкните ссылку создания. Так как не все продукты, принадлежащие к этой категории, вы увидите сообщение «Нет ни одного продукта для выбранной категории...», как показано на рис. 9.
 
-
 [![Сообщение отображается в том случае, если нет продукты, принадлежащие к выбранной категории](master-detail-filtering-acess-two-pages-datalist-cs/_static/image26.png)](master-detail-filtering-acess-two-pages-datalist-cs/_static/image25.png)
 
 **Рис. 9**: Сообщение отображается в том случае, если нет продукты, принадлежащие к выбранной категории ([Просмотр полноразмерного изображения](master-detail-filtering-acess-two-pages-datalist-cs/_static/image27.png))
-
 
 ## <a name="summary"></a>Сводка
 

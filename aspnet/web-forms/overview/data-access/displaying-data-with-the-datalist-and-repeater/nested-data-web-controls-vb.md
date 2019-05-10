@@ -8,12 +8,12 @@ ms.date: 09/13/2006
 ms.assetid: 8b7fcf7b-722b-498d-a4e4-7c93701e0c95
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/nested-data-web-controls-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 0d0aa2c52df284bae48907d0c0c1e5d4587c1b9e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: b4eb90aec60767e80e90f4cb315440da27e208db
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421424"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108336"
 ---
 # <a name="nested-data-web-controls-vb"></a>Вложенные веб-элементы управления данными (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59421424"
 [Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_32_VB.exe) или [скачать PDF](nested-data-web-controls-vb/_static/datatutorial32vb1.pdf)
 
 > В этом учебном курсе мы изучим способ использования элемента управления Repeater вложенным в другой элемент управления Repeater. Примеры иллюстрируют заполнять внутренний Repeater декларативно и программно.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -34,11 +33,9 @@ ms.locfileid: "59421424"
 
 В этом учебном курсе мы изучим способ использования элемента управления Repeater вложенным в другой элемент управления Repeater. Внешний элемент управления Repeater будет содержать элемент для каждой категории в базе данных, отображая категории s имя и описание. Каждого элемента категории s внутреннему элементу управления Repeater будет отображать информацию о каждом продукте, принадлежащем к этой категории (см. рис. 1) в виде маркированного списка. Наши примеры иллюстрируют заполнять внутренний Repeater декларативно и программно.
 
-
 [![Перечислены каждой категории вместе с ее продуктами](nested-data-web-controls-vb/_static/image2.png)](nested-data-web-controls-vb/_static/image1.png)
 
 **Рис. 1**: Каждая категория вместе с ее продуктами перечислены ([Просмотр полноразмерного изображения](nested-data-web-controls-vb/_static/image3.png))
-
 
 ## <a name="step-1-creating-the-category-listing"></a>Шаг 1. Создание списка категорий
 
@@ -46,39 +43,31 @@ ms.locfileid: "59421424"
 
 Сначала откройте `NestedControls.aspx` странице в `DataListRepeaterBasics` папку и добавьте элемент управления Repeater к странице, устанавливая его `ID` свойства `CategoryList`. В смарт-теге элемента управления Repeater s, решили создать новый ObjectDataSource, именуемый `CategoriesDataSource`.
 
-
 [![Назовите новый элемент управления ObjectDataSource CategoriesDataSource](nested-data-web-controls-vb/_static/image5.png)](nested-data-web-controls-vb/_static/image4.png)
 
 **Рис. 2**: Новый ObjectDataSource следует назвать `CategoriesDataSource` ([Просмотр полноразмерного изображения](nested-data-web-controls-vb/_static/image6.png))
 
-
 Настройте элемент управления ObjectDataSource, таким образом, чтобы он извлекает данные из `CategoriesBLL` класс s `GetCategories` метод.
-
 
 [![Настройте элемент ObjectDataSource для использования метода GetCategories класса CategoriesBLL s](nested-data-web-controls-vb/_static/image8.png)](nested-data-web-controls-vb/_static/image7.png)
 
 **Рис. 3**: Настройка ObjectDataSource для использования `CategoriesBLL` класс s `GetCategories` метод ([Просмотр полноразмерного изображения](nested-data-web-controls-vb/_static/image9.png))
 
-
 Чтобы указать шаблон повторителя s содержимого необходимо перейти в представление источника и вручную ввести декларативный синтаксис. Добавить `ItemTemplate` , отображающий имя категории s в `<h4>` и описание категории s в элементе абзаца (`<p>`). Кроме того, позволяют s отделим каждую категорию горизонтальной чертой (`<hr>`). После внесения этих изменений страница должна содержать декларативный синтаксис для элемента управления Repeater и элемент управления ObjectDataSource, аналогичную следующей:
-
 
 [!code-aspx[Main](nested-data-web-controls-vb/samples/sample1.aspx)]
 
 Рис. 4 показаны результаты выполненной работы в браузере.
 
-
 [![Каждой категории — имя и описание присутствует в списке, разделенных горизонтальная линия](nested-data-web-controls-vb/_static/image11.png)](nested-data-web-controls-vb/_static/image10.png)
 
 **Рис. 4**: Каждой категории — имя и описание присутствует в списке, разделены горизонтальной чертой ([Просмотр полноразмерного изображения](nested-data-web-controls-vb/_static/image12.png))
-
 
 ## <a name="step-2-adding-the-nested-product-repeater"></a>Шаг 2. Добавление элемента управления Repeater вложенного продукта
 
 В завершении создания списка категорий, DAL следующей задачей является добавление элемента управления Repeater для `CategoryList` s `ItemTemplate` , отображающий сведения об этих продуктов, принадлежащих к соответствующей категории. Существует ряд способов, мы можем извлечь данные для этого внутреннего элемента управления Repeater, два из которых мы вскоре исследуем. Теперь позволяют s просто создать продуктов Repeater в `CategoryList` Repeater s `ItemTemplate`. В частности позвольте s продуктов отображения элемента управления Repeater, каждый продукт в маркированном списке с каждым элемент списка, включая s имя и цену продукта.
 
 Для создания этого элемента управления Repeater, необходимо вручную ввести декларативный синтаксис внутренний Repeater s и шаблоны в `CategoryList` s `ItemTemplate`. Добавьте следующую разметку в `CategoryList` Repeater s `ItemTemplate`:
-
 
 [!code-aspx[Main](nested-data-web-controls-vb/samples/sample2.aspx)]
 
@@ -94,11 +83,9 @@ ms.locfileid: "59421424"
 
 К сожалению элемент управления Repeater разрешает его шаблоны для редактирования в режиме конструктора, поэтому необходимо вручную добавить декларативный синтаксис для этого элемента управления ObjectDataSource. Следующий синтаксис показывает `CategoryList` Repeater s `ItemTemplate` после добавления этого нового источника ObjectDataSource (`ProductsByCategoryDataSource`):
 
-
 [!code-aspx[Main](nested-data-web-controls-vb/samples/sample3.aspx)]
 
 При использовании подхода ObjectDataSource, нам нужно установить `ProductsByCategoryList` Repeater s `DataSourceID` свойства `ID` из элемента управления ObjectDataSource (`ProductsByCategoryDataSource`). Кроме того, обратите внимание, что наш элемент управления ObjectDataSource имеет `<asp:Parameter>` элемент, который задает *`categoryID`* значение, которое будет передано в `GetProductsByCategoryID(categoryID)` метод. Но как указать это значение? В идеальном случае мы d можно просто установить `DefaultValue` свойство `<asp:Parameter>` элемент, используя синтаксис привязки данных, следующим образом:
-
 
 [!code-aspx[Main](nested-data-web-controls-vb/samples/sample4.aspx)]
 
@@ -108,30 +95,25 @@ ms.locfileid: "59421424"
 
 Создайте обработчик событий для `CategoryList` Repeater s `ItemDataBound` событий следующим кодом:
 
-
 [!code-vb[Main](nested-data-web-controls-vb/samples/sample5.vb)]
 
 Этот обработчик событий начинает, гарантируя, что мы повторно с данными элементов, вместо того, чтобы элемент заголовка, нижнего колонтитула или разделитель. Далее создается ссылка фактический `CategoriesRow` экземпляр, который только что был привязан к текущему `RepeaterItem`. Наконец, мы указываем ссылку ObjectDataSource в `ItemTemplate` и назначить его `CategoryID` значение параметра для `CategoryID` текущего `RepeaterItem`.
 
 С помощью этого обработчика событий `ProductsByCategoryList` в каждом объекте `RepeaterItem` привязан к продуктам в `RepeaterItem` категории. Рис. 5 показан снимок экрана результирующие выходные данные.
 
-
 [![Внешний элемент управления Repeater перечисляет каждую категорию; Один внутренний перечислены продукты для этой категории](nested-data-web-controls-vb/_static/image14.png)](nested-data-web-controls-vb/_static/image13.png)
 
 **Рис. 5**: Внешний элемент управления Repeater перечисляет каждую категорию; в списках один внутренний продукты для этой категории ([Просмотр полноразмерного изображения](nested-data-web-controls-vb/_static/image15.png))
 
-
 ## <a name="accessing-the-products-by-category-data-programmatically"></a>Программный доступ к продуктам по данным категорий
 
 Вместо использования элемента ObjectDataSource для получения продуктов для текущей категории, мы создаем метод в класс фонового кода страницы s наших ASP.NET (или в `App_Code` папке или в отдельном проекте библиотеки классов), возвращающий соответствующий набор продукты при передаче в `CategoryID`. Предположим, что нам необходимо было такого метода в классе фонового кода страницы s ASP.NET и что он именуется `GetProductsInCategory(categoryID)`. С помощью этого метода можно привязывать продукты для текущей категории к внутреннему элементу управления Repeater, используя следующий синтаксис:
-
 
 [!code-aspx[Main](nested-data-web-controls-vb/samples/sample6.aspx)]
 
 Элемент управления Repeater s `DataSource` свойство использует синтаксис привязки данных, чтобы указать, что его данные исходят от `GetProductsInCategory(categoryID)` метод. Так как `Eval("CategoryID")` возвращает значение типа `Object`, мы приводим объект к `Integer` перед передачей его в `GetProductsInCategory(categoryID)` метод. Обратите внимание, что `CategoryID` запрашиваемых, ниже приведен синтаксис через привязку данных `CategoryID` в *внешнего* Repeater (`CategoryList`), то s привязаны к записям в `Categories` таблицы. Таким образом, нам известно, что `CategoryID` не может быть базой `NULL` значение, поэтому мы просто можно привести `Eval` метод без проверки, если мы повторно освободили `DBNull`.
 
 В этом случае нам необходимо создать `GetProductsInCategory(categoryID)` метод, который будет извлекать соответствующий набор продуктов для заданного *`categoryID`*. Это можно сделать путем простого возврата `ProductsDataTable` возвращаемые `ProductsBLL` класс s `GetProductsByCategoryID(categoryID)` метод. Разрешить создание s `GetProductsInCategory(categoryID)` метод в класс фонового кода для наших `NestedControls.aspx` страницы. Сделать это следующим образом:
-
 
 [!code-vb[Main](nested-data-web-controls-vb/samples/sample7.vb)]
 
@@ -141,7 +123,6 @@ ms.locfileid: "59421424"
 
 > [!NOTE]
 > Создание метода может показаться `GetProductsInCategory(categoryID)` метод в класс фонового кода страницы s ASP.NET. В конце концов, этот метод просто создает экземпляр `ProductsBLL` класса и возвращает результаты его `GetProductsByCategoryID(categoryID)` метод. Почему просто не вызвать этот метод напрямую из синтаксиса привязки данных во внутреннем Repeater, например: `DataSource='<%# ProductsBLL.GetProductsByCategoryID(CType(Eval("CategoryID"), Integer)) %>'`? Несмотря на то, что этот синтаксис не будет работать с текущей реализацией класса `ProductsBLL` класса (так как `GetProductsByCategoryID(categoryID)` метод является методом экземпляра), можно изменить `ProductsBLL` чтобы он включал статический `GetProductsByCategoryID(categoryID)` метод или чтобы класс включал статический метод `Instance()` метод, чтобы вернуть новый экземпляр `ProductsBLL` класса.
-
 
 Хотя такие изменения устранят нужду для `GetProductsInCategory(categoryID)` метод в класс фонового кода страницы s ASP.NET, метод класса фонового кода дает нам большую гибкость в работе с полученными данными, как скоро можно будет увидеть.
 
@@ -153,7 +134,6 @@ ms.locfileid: "59421424"
 
 Для обеспечения данной функциональности, нам нужно только внести небольшое изменение в `GetProductsInCategory(categoryID)` метод в класс фонового кода страницы s наших ASP.NET. Вместо того, чтобы вслепую возвращать результаты `ProductsBLL` класс s `GetProductsByCategoryID(categoryID)` , можно вместо этого сначала обратиться к *все* продуктов (если они еще не получен) и затем вернуть только отфильтрованное представление продукты, зависимости от переданного `CategoryID`.
 
-
 [!code-vb[Main](nested-data-web-controls-vb/samples/sample8.vb)]
 
 Обратите внимание на добавление переменной уровня страницы, `allProducts`. Содержит сведения о всех продуктах и заполняется первый раз `GetProductsInCategory(categoryID)` вызывается метод. Убедившись, что `allProducts` объект создан и заполнен, метод фильтрует результаты s DataTable, таким образом, что только строки, в которых `CategoryID` соответствует указанному `CategoryID` доступны. Этот подход уменьшает количество раз, в базе данных осуществляется из *N* + 1 до двух.
@@ -162,7 +142,6 @@ ms.locfileid: "59421424"
 
 > [!NOTE]
 > Один интуитивно причин, что уменьшение числа обращений к базе данных будет несомненно повысят производительность. Тем не менее это может оказаться так. Если у вас есть большое количество продуктов, `CategoryID` — `NULL`, для примера, а затем вызов `GetProducts` метод возвращает число продуктов, которые никогда не отображаются. Кроме того, возвращение всех продуктов может быть излишним, если вы повторно отображается только подмножество категорий, в которых может быть в случае, если реализовано разбиение на страницы.
-
 
 Как всегда, когда дело доходит до анализа производительности двух методик, только Подогнанное является контролируемое тестирование для вашего приложения s распространенных сценариев.
 

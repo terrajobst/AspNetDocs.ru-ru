@@ -8,17 +8,16 @@ ms.date: 02/24/2012
 ms.assetid: 11b3547a-7c4f-4849-8e27-3cfbe255034e
 msc.legacyurl: /web-forms/videos/data-access/how-do-i-with-linq
 msc.type: chapter
-ms.openlocfilehash: 2ab3cbb14cf3e7398db995458090bf532fc643d1
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2139f8f9a09512fe4267003d4027887102f03335
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59412103"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106766"
 ---
 # <a name="how-do-i-with-linq"></a>Вопросы пользователей по LINQ
 
 > Эта серия учебных видеороликов поможет выполнить все, что нужно знать, предусматривающих в использование LINQ в качестве веб-разработчик.
-
 
 - [LINQ to SQL: обзор](how-do-i-linq-to-sql-overview.md)
 - [LINQ to SQL: Модель данных](how-do-i-linq-to-sql-data-model.md)

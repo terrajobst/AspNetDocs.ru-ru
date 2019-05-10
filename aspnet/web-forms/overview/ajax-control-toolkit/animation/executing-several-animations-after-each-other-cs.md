@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 7dc02b18-2b5d-4844-b7c5-cbd818477163
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/executing-several-animations-after-each-other-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 644af2485c1a51f2de209e968ba1b3475350fa47
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: a5b11b14458fdf06fb4ee18ae94c4846307e2115
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59394072"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108855"
 ---
 # <a name="executing-several-animations-after-each-other-c"></a>Выполнение нескольких анимаций друг за другом (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59394072"
 [Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation3.cs.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation3CS.pdf)
 
 > Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Он одновременное выполнение нескольких анимаций один за другим.
-
 
 Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Он одновременное выполнение нескольких анимаций один за другим.
 
@@ -50,11 +49,9 @@ ms.locfileid: "59394072"
 
 При выполнении этого сценария, панели первой получает шире и затем меньшего размера.
 
-
 [![Сначала увеличивается ширина](executing-several-animations-after-each-other-cs/_static/image2.png)](executing-several-animations-after-each-other-cs/_static/image1.png)
 
 Сначала ширина увеличивается ([Просмотр полноразмерного изображения](executing-several-animations-after-each-other-cs/_static/image3.png))
-
 
 [![Затем уменьшается на высоту](executing-several-animations-after-each-other-cs/_static/image5.png)](executing-several-animations-after-each-other-cs/_static/image4.png)
 

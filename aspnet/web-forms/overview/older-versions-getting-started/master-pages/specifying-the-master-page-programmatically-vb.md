@@ -8,12 +8,12 @@ ms.date: 07/28/2008
 ms.assetid: 0edcd653-f24a-41aa-aef4-75f868fe5ac2
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/specifying-the-master-page-programmatically-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 96f6ebb47af38c77cba11a92c883700730324226
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d075d0b66da8a0f4e2f0155c08b09a02a4ca71fb
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389236"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106944"
 ---
 # <a name="specifying-the-master-page-programmatically-vb"></a>Программное указание эталонной страницы (VB)
 
@@ -23,11 +23,9 @@ ms.locfileid: "59389236"
 
 > Ищет на уровне страницы содержимого главной страницы программно через обработчик событий PreInit.
 
-
 ## <a name="introduction"></a>Вступление
 
 Так как в примере со вступительной статьей в [ *Создание сайта макета с помощью главных страниц*](creating-a-site-wide-layout-using-master-pages-vb.md), все содержимое страницы ссылаетесь на их главную страницу декларативно с помощью `MasterPageFile` атрибут в `@Page`директива. Например, следующая `@Page` директива связывает страницы содержимого на главную страницу `Site.master`:
-
 
 [!code-aspx[Main](specifying-the-master-page-programmatically-vb/samples/sample1.aspx)]
 
@@ -41,11 +39,9 @@ ms.locfileid: "59389236"
 
 Рис. 1 иллюстрирует этот fusion. Шаг 1 на рис. 1 показаны исходное содержимое и иерархий управления главной страницы. Элементы управления страницы добавляются в конец этапа PreInit содержимое соответствующих элементов управления ContentPlaceHolder на главной странице (шаг 2). После этого fusion главной страницы служит в качестве корневого элемента иерархии склеенную элемента управления. Это совмещенного управления иерархии затем добавляется на страницу для создания иерархии завершенных элементов управления (шаг 3). Конечным результатом является, включающее иерархии склеенную элементов управления в иерархии элементов управления страницы.
 
-
 [![Главной страницы и страницы содержимого элемента управления иерархии являются совмещенного друг с другом на этапе PreInit](specifying-the-master-page-programmatically-vb/_static/image2.png)](specifying-the-master-page-programmatically-vb/_static/image1.png)
 
 **Рис 01**: Главной страницы и страницы содержимого элемента управления иерархии являются совмещенного друг с другом на этапе PreInit ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image3.png))
-
 
 ## <a name="step-2-setting-themasterpagefileproperty-from-code"></a>Шаг 2. Параметр`MasterPageFile`свойство из кода
 
@@ -55,18 +51,15 @@ Partakes главную страницу в этом fusion зависит от 
 
 Сначала откройте `Default.aspx.vb`, файл класса фонового кода для домашней страницы в нашем сайте. Добавьте обработчик событий для страницы `PreInit` событий, введя следующий код:
 
-
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample2.vb)]
 
 Здесь можно задать `MasterPageFile` свойства. Обновите код, чтобы он присваивает значение «~ / Site.master» для `MasterPageFile` свойство.
-
 
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample3.vb)]
 
 Если установить точку останова и запуск с отладкой, вы увидите, что каждый раз, когда `Default.aspx` посещенные страницы или каждый раз, когда имеется обратную передачу на эту страницу `Page_PreInit` выполнения обработчика событий и `MasterPageFile` назначается свойство «~ / Site.master».
 
 Кроме того, можно переопределить `Page` класса `OnPreInit` метод и набор `MasterPageFile` существует свойство. В этом примере не установим главной страницы в конкретной страницы, а лишь из `BasePage`. Помните, мы создали пользовательского базового класса страницы (`BasePage`) обратно в [ *указание названия, метатегов и других заголовков HTML на главной странице* ](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-vb.md) руководства. В настоящее время `BasePage` переопределяет `Page` класса `OnLoadComplete` метод, где он задает страницы `Title` значение в зависимости от данных карты узла. Давайте обновим `BasePage` также переопределить `OnPreInit` метод программное указание главной страницы.
-
 
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample4.vb)]
 
@@ -82,11 +75,9 @@ Partakes главную страницу в этом fusion зависит от 
 
 Иными словами, необходимо оставить `MasterPageFile` атрибут в `@Page` директива слушать получить обширные возможности разработки в Visual Studio.
 
-
 [![Visual Studio использует @Page атрибут MasterPageFile директивы для подготовки к просмотру в режим конструктора](specifying-the-master-page-programmatically-vb/_static/image5.png)](specifying-the-master-page-programmatically-vb/_static/image4.png)
 
 **Рис. 02**: Visual Studio использует `@Page` директивы `MasterPageFile` атрибута для визуализации в режим конструктора ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image6.png))
-
 
 ## <a name="step-3-creating-an-alternative-master-page"></a>Шаг 3. Создание альтернатива главную страницу
 
@@ -96,22 +87,18 @@ Partakes главную страницу в этом fusion зависит от 
 
 Создание новой главной страницы в корневой папке с именем `Alternate.master`. Также добавить новую таблицу стилей на веб-сайт с именем `AlternateStyles.css`.
 
-
 [![Добавьте еще один главную страницу и CSS, файл на веб-сайт](specifying-the-master-page-programmatically-vb/_static/image8.png)](specifying-the-master-page-programmatically-vb/_static/image7.png)
 
 **Рис 03**: Добавить другой главной страницы и CSS-файл на веб-сайт ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image9.png))
-
 
 Я разработал `Alternate.master` главной страницы, чтобы заголовок, отображаемый в верхней части страницы, по центру и на темно-синего цвета фона. Я выданных левого столбца и перемещены, содержимое под `MainContent` управления ContentPlaceHolder, который теперь распространяется на всю ширину страницы. Кроме того, одобрила неупорядоченный список занятий и заменены горизонтальный список выше `MainContent`. Также обновим шрифтов и цветов, используемых главной страницы (и, следовательно, и его страниц). Рис. 4 показан `Default.aspx` при использовании `Alternate.master` главной страницы.
 
 > [!NOTE]
 > ASP.NET включает в себя возможность определить *темы*. Тема — коллекция изображений, CSS-файлов, относящихся к стилю параметры и веб-элемента управления свойства, которые могут применяться к странице во время выполнения. Темы — способ перейти, если веб сайта макеты отличаются только в изображений, отображаемых и их правила CSS. Если макеты отличаются более значительно, например с помощью различных веб-элементов управления или необходимости радикально другой макет, затем необходимо будет использовать отдельный главные страницы. Обратитесь к дополнительными материалами в конце этого руководства, Дополнительные сведения о темах.
 
-
 [![Страниц содержимого теперь можно использовать новый интерфейс](specifying-the-master-page-programmatically-vb/_static/image11.png)](specifying-the-master-page-programmatically-vb/_static/image10.png)
 
 **Рис. 04**: Страниц содержимого теперь можно использовать новый интерфейс ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image12.png))
-
 
 Когда главным и разметки страницы содержимого включенные, `MasterPage` класса проверки, чтобы убедиться, что каждый содержимое ContentPlaceHolder на главной странице, ссылается на элемент управления на странице содержимого. Исключение возникает в том случае, если найден элемент управления содержимым, который ссылается на несуществующий ContentPlaceHolder. Другими словами, крайне важно наличие ContentPlaceHolder, назначаемый страницы содержимого главной страницы для каждого содержимого элемента управления на странице содержимого.
 
@@ -126,11 +113,9 @@ Partakes главную страницу в этом fusion зависит от 
 
 Чтобы получить ваши `Alternate.master` главной страницы, чтобы выглядеть примерно так, чтобы анализировать (см. рис. 4), начинается с определения стилей на главной странице в `AlternateStyles.css` стилей. Добавьте следующие правила в `AlternateStyles.css`:
 
-
 [!code-css[Main](specifying-the-master-page-programmatically-vb/samples/sample5.css)]
 
 Затем добавьте следующие декларативная разметка для `Alternate.master`. Как вы видите, `Alternate.master` содержит четыре элемента управления ContentPlaceHolder с тем же `ID` значения, что и элементы управления ContentPlaceHolder `Site.master`. Кроме того он включает элемент управления ScriptManager, который необходим для этих страниц в наш веб-сайт, использующих платформа AJAX для ASP.NET.
-
 
 [!code-aspx[Main](specifying-the-master-page-programmatically-vb/samples/sample6.aspx)]
 
@@ -139,7 +124,6 @@ Partakes главную страницу в этом fusion зависит от 
 Чтобы проверить это новое обновление главной страницы `BasePage` класса `OnPreInit` метод, чтобы `MasterPageFile` свойству присваивается значение `"~/Alternate.maser"` и посетите веб-сайта. Каждой странице, должны работать без ошибок, за исключением двух: `~/Admin/AddProduct.aspx` и `~/Admin/Products.aspx`. Добавление продукта к элементу управления DetailsView в `~/Admin/AddProduct.aspx` приводит `NullReferenceException` из строки кода, который пытается установить на главной странице `GridMessageText` свойство. При посещении `~/Admin/Products.aspx` `InvalidCastException` возникает исключение при загрузке страницы с сообщением: «Не удалось привести объект типа "ASP.alternate\_master" к типу "ASP.site\_master".»
 
 Эти ошибки возникают, поскольку `Site.master` кода класс содержит открытые события, свойства и методы, которые не определены в `Alternate.master`. У части эти две страницы, содержащей разметку `@MasterType` директива, которая ссылается на `Site.master` главной страницы.
-
 
 [!code-aspx[Main](specifying-the-master-page-programmatically-vb/samples/sample7.aspx)]
 
@@ -157,18 +141,15 @@ Partakes главную страницу в этом fusion зависит от 
 
 Обновление вашей `BaseMasterPage` таким образом, чтобы он содержит следующий код:
 
-
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample8.vb)]
 
 Перейдите к `Site.master` кода класса и его производными `BaseMasterPage`. Так как `BaseMasterPage` содержит элементы, отмеченные `MustOverride` нам нужно переопределить эти члены в `Site.master`. Добавление `Overrides` ключевое слово для определения методов и свойств. Также обновить код, который вызывает `PricesDoubled` событие в `DoublePrice` кнопки `Click` обработчик событий с помощью вызова на базовый класс `OnPricesDoubled` метод.
 
 После внесения этих изменений `Site.master` вспомогательного класса должен содержать следующий код:
 
-
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample9.vb)]
 
 Необходимо также обновить `Alternate.master`элемента вспомогательного класса для наследования от `BaseMasterPage` и переопределите два `MustOverride` членов. Но поскольку `Alternate.master` не содержит элемент управления GridView, что списки самым свежим продуктам и меткой, которая выводит сообщение после нового продукта не добавляется в базу данных, эти методы не нужно ничего делать.
-
 
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample10.vb)]
 
@@ -176,11 +157,9 @@ Partakes главную страницу в этом fusion зависит от 
 
 Теперь, когда мы завершили `BaseMasterPage` класса и имеете наши два главных страниц, расширяет его, последним этапом является обновление `~/Admin/AddProduct.aspx` и `~/Admin/Products.aspx` страниц для ссылки на данный общий тип. Сначала измените `@MasterType` директив в обе страницы из:
 
-
 [!code-aspx[Main](specifying-the-master-page-programmatically-vb/samples/sample11.aspx)]
 
 В:
-
 
 [!code-aspx[Main](specifying-the-master-page-programmatically-vb/samples/sample12.aspx)]
 
@@ -188,11 +167,9 @@ Partakes главную страницу в этом fusion зависит от 
 
 Имеется одно небольшое изменение, который должен выполняться в `~/Admin/AddProduct.aspx`. Элемента управления DetailsView `ItemInserted` обработчик событий использует оба строго типизированный `Master` свойство и слабо типизированной `Page.Master` свойство. Мы исправили строго типизированную ссылку, когда мы обновили `@MasterType` директива, но мы по-прежнему необходимо обновить слабо типизированную ссылку. Замените следующую строку кода:
 
-
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample13.vb)]
 
 Следующим образом, что приводит к `Page.Master` к базовому типу:
-
 
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample14.vb)]
 
@@ -205,14 +182,11 @@ Partakes главную страницу в этом fusion зависит от 
 > [!NOTE]
 > Так как `Site.master` и `Alternate.master` же задали элементов управления ContentPlaceHolder неважно, какие главной страницы, выбирается при создании новой страницы содержимого. Для обеспечения согласованности, я бы предложил с помощью `Site.master`.
 
-
 [![Добавьте новую страницу содержимого на веб-сайт](specifying-the-master-page-programmatically-vb/_static/image14.png)](specifying-the-master-page-programmatically-vb/_static/image13.png)
 
 **05 рис**: Добавьте новую страницу содержимого на веб-сайт ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image15.png))
 
-
 Обновление `Web.sitemap` файл, чтобы включить запись для этого занятия. Добавьте следующую разметку под `<siteMapNode>` занятия главные страницы и ASP.NET AJAX:
-
 
 [!code-xml[Main](specifying-the-master-page-programmatically-vb/samples/sample15.xml)]
 
@@ -220,11 +194,9 @@ Partakes главную страницу в этом fusion зависит от 
 
 Добавьте кнопку веб-элемент управления на страницу и задайте его `ID` и `Text` свойства `SaveLayout` и «Выбор макета сохранить», соответственно. На этом этапе декларативная разметка страницы должна выглядеть следующего вида:
 
-
 [!code-aspx[Main](specifying-the-master-page-programmatically-vb/samples/sample16.aspx)]
 
 При первом посещении страницы необходимо отобразить выбранный главную страницу выбора пользователя. Создание `Page_Load` обработчик событий и добавьте следующий код:
-
 
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample17.vb)]
 
@@ -232,34 +204,27 @@ Partakes главную страницу в этом fusion зависит от 
 
 Также необходимо написать код, который сохраняет выбора пользователя в `MyMasterPage` переменной сеанса. Создайте обработчик событий для `SaveLayout` кнопки `Click` событий и добавьте следующий код:
 
-
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample18.vb)]
 
 > [!NOTE]
 > К моменту `Click` выполнения обработчика событий при обратной передаче, главной страницы уже выбран. Таким образом выбора с раскрывающимся списком пользователя не будет действовать, пока не посетите следующую страницу. `Response.Redirect` Заставляет браузер, чтобы повторно запросить `ChooseMasterPage.aspx`.
 
-
 С помощью `ChooseMasterPage.aspx` страница полностью, наша последняя задача — иметь `BasePage` назначить `MasterPageFile` значение в зависимости от значения `MyMasterPage` переменной сеанса. Если не задано переменной сеанса `BasePage` по умолчанию `Site.master`.
-
 
 [!code-vb[Main](specifying-the-master-page-programmatically-vb/samples/sample19.vb)]
 
 > [!NOTE]
 > После перемещения кода, который назначает `Page` объекта `MasterPageFile` свойство из `OnPreInit` обработчик событий и на два отдельных метода. Это первый метод `SetMasterPageFile`, назначает `MasterPageFile` свойства равным значению, возвращенному методом второй `GetMasterPageFileFromSession`. Отмеченное `SetMasterPageFile` метод `Overridable` таким образом, чтобы будущие классы, расширяющие `BasePage` можно при необходимости переопределить его, чтобы реализовать пользовательскую логику, при необходимости. Мы рассмотрим пример переопределения `BasePage`в `SetMasterPageFile` свойство в следующем учебном курсе.
 
-
 Этот код в месте, посетите `ChooseMasterPage.aspx` страницы. Изначально `Site.master` Главная страница является выбранный (см. рис. 6), но пользователь может выбрать другой главной страницы из раскрывающегося списка.
-
 
 [![Страницы содержимого, отображаются с помощью Site.master главной страницы](specifying-the-master-page-programmatically-vb/_static/image17.png)](specifying-the-master-page-programmatically-vb/_static/image16.png)
 
 **Рис 06**: Содержимое страницы, отображаемых с помощью `Site.master` главной страницы ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image18.png))
 
-
 [![Страницы содержимого теперь отображаются с помощью Alternate.master главной страницы](specifying-the-master-page-programmatically-vb/_static/image20.png)](specifying-the-master-page-programmatically-vb/_static/image19.png)
 
 **07 рис**: Содержимое страницы, теперь отображаются с помощью `Alternate.master` главной страницы ([Просмотр полноразмерного изображения](specifying-the-master-page-programmatically-vb/_static/image21.png))
-
 
 ## <a name="summary"></a>Сводка
 

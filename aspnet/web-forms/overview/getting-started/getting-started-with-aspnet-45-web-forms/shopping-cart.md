@@ -8,12 +8,12 @@ ms.date: 09/08/2014
 ms.assetid: 6898c601-6c31-432f-8388-e6843f8a17cb
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/shopping-cart
 msc.type: authoredcontent
-ms.openlocfilehash: e079318b37563b1b7afe0f842f5b463541de0a81
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1c54449e778eac96133cccdc90d86cbbaf05a70f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59405434"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132112"
 ---
 # <a name="shopping-cart"></a>Корзина для покупок
 
@@ -22,7 +22,6 @@ ms.locfileid: "59405434"
 [Скачайте пример проекта Wingtip Toys (C#)](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) или [скачайте электронную книгу (PDF)](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
 > В этой серии руководств будет основы создания приложений веб-форм ASP.NET с помощью ASP.NET 4.5 и Microsoft Visual Studio Express 2013 для Web. Visual Studio 2013 [проект с исходным кодом C#](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) доступен на следующей странице этой серии руководств.
-
 
 В данном учебнике бизнес-логику, потребуется для добавления в корзину веб-форм ASP.NET пример приложения Wingtip Toys. Этот учебник основан на предыдущем учебном курсе «Отображение элементов и сведения о данных» и является частью серии руководств Store Toy Wingtip. После завершения этого учебника, пользователей примера приложения будет иметь возможность добавлять, удалять и изменять продукты в корзину.
 
@@ -49,7 +48,6 @@ ms.locfileid: "59405434"
 > [!NOTE] 
 > 
 > Состояние сеанса ASP.NET — удобное место для хранения данных конкретного пользователя, которой истечет после пользователь оставляет сайт. Неправильное использование состояния сеанса может негативно влиять на производительность на больших сайтах, работают и используйте работает состояния сеанса для демонстрационных целей. Пример проекта Wingtip Toys демонстрируется использование состояния сеанса без внешнего поставщика, где хранимая в процессе на сервере веб-сайта состояние сеанса. Для больших сайтах, которые предоставляют несколько экземпляров приложения и сайты, использующие несколько экземпляров приложения на разных серверах, рассмотрите возможность использования **службы кэша Windows Azure**. Эта служба кэширования предоставляет службы распределенного кэширования, внешним по отношению к веб-сайта и позволяет решить проблему с помощью состояния сеанса в процессе. Дополнительные сведения см. [Практическое использование состояния сеанса ASP.NET с помощью Windows Azure Web Sites](https://docs.microsoft.com/azure/redis-cache/cache-aspnet-session-state-provider).
-
 
 ### <a name="add-cartitem-as-a-model-class"></a>Добавить CartItem в качестве класса модели
 
@@ -128,7 +126,6 @@ ms.locfileid: "59405434"
 > [!NOTE] 
 > 
 > Изменение кода (*AddToCart.aspx.cs*) для этой страницы, а не на странице пользовательского интерфейса (*AddToCart.aspx*).
-
 
 #### <a name="to-create-the-add-to-cart-functionality"></a>Для создания Add-To-Cart функциональные возможности:
 
@@ -215,7 +212,6 @@ ms.locfileid: "59405434"
 > [!NOTE] 
 > 
 > Приведенный выше код использует обнуляемый тип "`int?`«. Обнуляемые типы могут представлять все значения базового типа, а также как значение null. Дополнительные сведения см. [обнуляемые типы, с помощью](https://msdn.microsoft.com/library/2cf62fcy(v=vs.110).aspx).
-
 
 ### <a name="modify-the-shopping-cart-display"></a>Изменить отображение корзины для покупок
 

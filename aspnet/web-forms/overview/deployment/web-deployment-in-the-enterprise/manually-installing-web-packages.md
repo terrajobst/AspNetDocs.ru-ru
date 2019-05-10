@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: f11d22a7-5d32-4ad0-8a9b-276460a61c06
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/manually-installing-web-packages
 msc.type: authoredcontent
-ms.openlocfilehash: 9d0e57eb85242a0d6fa8ca9eef7f6c741862069d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f778549d3e26989a2e71ef21171adec521842729
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59408801"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132132"
 ---
 # <a name="manually-installing-web-packages"></a>Установка веб-пакетов вручную
 
@@ -29,7 +29,6 @@ ms.locfileid: "59408801"
 > 
 > В этих случаях единственным вариантом может быть порт веб-пакета на целевом сервере, и вручную импортировать его в IIS. Несмотря на то, что такой подход исключает возможность автоматического развертывания, это по-прежнему очень эффективно методика для публикации веб-приложения&#x2014;просто скопировать в один ZIP-файл на веб-сервер и использовать мастер помогает выполнить процесс импорта.
 
-
 Этот раздел является частью серии учебников, исходя из требования к развертыванию enterprise вымышленной компании Fabrikam, Inc. В этой серии руководств используется пример решения&#x2014; [решения диспетчера контактов](the-contact-manager-solution.md)&#x2014;для представления веб-приложения с более реалистичные уровень сложности, включая приложения ASP.NET MVC 3, Windows Communication Служба Foundation (WCF) и проект базы данных.
 
 ## <a name="task-overview"></a>Общие сведения о задачах
@@ -44,7 +43,6 @@ ms.locfileid: "59408801"
 
 > [!NOTE]
 > В этом разделе, лучше всего использовать в сочетании с [Настройка веб-сервера для публикации веб-развертывания (автономный режим развертывания)](../configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-offline-deployment.md), объясняется, как установить необходимые компоненты и Подготовка на веб-сайте IIS для импорта пакета.
-
 
 ## <a name="create-a-web-deployment-package"></a>Создать пакет веб-развертывания
 
@@ -68,9 +66,7 @@ ms.locfileid: "59408801"
 
 Можно создать пакет веб-развертывания из командной строки, вызвав **пакета** целевой объект, для проекта веб-приложения, с помощью MSBuild. Команда должна выглядеть примерно следующим образом:
 
-
 [!code-console[Main](manually-installing-web-packages/samples/sample1.cmd)]
-
 
 Какой подход можно использовать, конечный результат одинаков. WPP создает пакет веб-развертывания в ZIP-файл, а также различные вспомогательные ресурсы, в папку выходных данных для проекта веб-приложения.
 

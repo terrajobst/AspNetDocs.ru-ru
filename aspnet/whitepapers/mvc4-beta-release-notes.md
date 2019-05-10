@@ -8,12 +8,12 @@ ms.date: 09/09/2011
 ms.assetid: 666407bb-81de-4319-89ba-0302c382a208
 msc.legacyurl: /whitepapers/mvc4-beta-release-notes
 msc.type: content
-ms.openlocfilehash: b7722d5c282f07b35dd18d08911fa562dae6afc2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 17800dfe091bbb7afb25f7f41e3bd885b882edb0
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59387936"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108365"
 ---
 # <a name="aspnet-mvc-4"></a>ASP.NET MVC 4
 
@@ -21,7 +21,6 @@ ms.locfileid: "59387936"
 > 
 > > [!NOTE]
 > > Это не самая последняя версия. Заметки о выпуске ASP.NET MVC 4, версия-Кандидат доступны [здесь](mvc4-release-notes.md).
-
 
 - [Замечания по установке](#_Toc303253802)
 - [Документация](#_Toc303253803)

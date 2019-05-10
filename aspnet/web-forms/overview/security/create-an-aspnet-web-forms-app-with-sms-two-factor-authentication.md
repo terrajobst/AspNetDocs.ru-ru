@@ -8,12 +8,12 @@ ms.date: 10/09/2014
 ms.assetid: 716264ae-ab72-45de-bfc5-53a6237089cf
 msc.legacyurl: /web-forms/overview/security/create-an-aspnet-web-forms-app-with-sms-two-factor-authentication
 msc.type: authoredcontent
-ms.openlocfilehash: 2010de510cf44bba1b95d29dbdb573ab78f452f7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 02c511f0e99e306daaf595da5bc618fe738e806c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411362"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106788"
 ---
 # <a name="create-an-aspnet-web-forms-app-with-sms-two-factor-authentication-c"></a>Создание приложения веб-форм ASP.NET с двухфакторной проверкой подлинности по SMS (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59411362"
 [Загрузка приложения ASP.NET Web Forms с помощью электронной почты и SMS двухфакторной проверки подлинности](https://code.msdn.microsoft.com/ASPNET-Web-Forms-App-with-5a0ff94e)
 
 > Этом руководстве показано, как создать приложение веб-форм ASP.NET с двухфакторной проверки подлинности. Этот учебник был разработан в дополнение к учебника под названием [Создание безопасного приложения веб-форм ASP.NET с регистрацией пользователей, отправить по электронной почте подтверждение и сброс пароля](create-a-secure-aspnet-web-forms-app-with-user-registration-email-confirmation-and-password-reset.md). Кроме того, этот учебник был основан на Рик Андерсон [руководство по MVC](../../../mvc/overview/security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication.md).
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -42,7 +41,6 @@ ms.locfileid: "59411362"
 
 > [!NOTE]
 > Внимание! Необходимо установить [Visual Studio 2013 с обновлением 3](https://go.microsoft.com/fwlink/?LinkId=390465) или более поздней версии для работы с этим руководством.
-
 
 1. Создайте новый проект (**файл**  - &gt; **новый проект**) и выберите **веб-приложение ASP.NET** шаблон вместе с .NET Framework версии 4.5.2 из **новый проект** диалоговое окно.
 2. Из **новый проект ASP.NET** выберите **веб-форм** шаблона. Оставьте проверку подлинности по умолчанию как **учетные записи отдельных пользователей**. Щелкните **ОК** для создания нового проекта.  

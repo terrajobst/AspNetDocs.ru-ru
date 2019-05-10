@@ -8,19 +8,18 @@ ms.date: 01/26/2011
 ms.assetid: 393df4a8-b1db-44c4-9db7-2b533ca887d0
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/continuing-with-ef/what-s-new-in-the-entity-framework-4
 msc.type: authoredcontent
-ms.openlocfilehash: 0bc24a59e09728a5ecb6e18378c4cde0c8e046f2
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 29d2bd61e8361b130e7b9415dad4fe1d5b847945
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59387455"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109311"
 ---
 # <a name="whats-new-in-the-entity-framework-40"></a>Новые возможности .NET Framework 4.0
 
 по [том Дайкстра](https://github.com/tdykstra)
 
 > В этой серии руководств основан на веб-приложение университета Contoso, которая создается с [Приступая к работе с платформой Entity Framework](../getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1.md) серии руководств. Если вы не прошли предыдущих учебных курсах, в качестве отправной точки для этого учебника вы можете [загрузить приложение](https://code.msdn.microsoft.com/ASPNET-Web-Forms-97f8ee9a) , он был создан. Вы также можете [загрузить приложение](https://code.msdn.microsoft.com/ASPNET-Web-Forms-6c7197aa) , созданный путем завершения серии руководств. Если у вас есть вопросы о учебники, их можно разместить [форум ASP.NET Entity Framework](https://forums.asp.net/1227.aspx).
-
 
 В предыдущем руководстве вы узнали некоторые методы для максимально увеличить производительность веб-приложение, использующее Entity Framework. Этом руководстве рассматриваются некоторые из наиболее важных новых функций в версии 4 платформы Entity Framework и ссылки на ресурсы, которые предоставляют более подробное введение все новые функции. Ниже приведены компоненты, выделенным в этом руководстве:
 

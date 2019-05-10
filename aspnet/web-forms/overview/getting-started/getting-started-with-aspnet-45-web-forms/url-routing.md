@@ -8,12 +8,12 @@ ms.date: 09/08/2014
 ms.assetid: 4f4bf092-c400-471f-a876-78fda0417890
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/url-routing
 msc.type: authoredcontent
-ms.openlocfilehash: 992cea256302231ee7031a21c798117b73eaa01c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f8a374be79a41b34dc8f17fa8d44c6e0680984d7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384328"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108603"
 ---
 # <a name="url-routing"></a>Маршрутизация URL-адресов
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384328"
 [Скачайте пример проекта Wingtip Toys (C#)](http://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) или [скачайте электронную книгу (PDF)](http://download.microsoft.com/download/0/F/B/0FBFAA46-2BFD-478F-8E56-7BF3C672DF9D/Getting%20Started%20with%20ASP.NET%204.5%20Web%20Forms%20and%20Visual%20Studio%202013.pdf)
 
 > В этой серии руководств будет основы создания приложений веб-форм ASP.NET с помощью ASP.NET 4.5 и Microsoft Visual Studio Express 2013 для Web. Visual Studio 2013 [проект с исходным кодом C#](https://go.microsoft.com/fwlink/?LinkID=389434&clcid=0x409) доступен на следующей странице этой серии руководств.
-
 
 В этом руководстве вы измените пример приложения Wingtip Toys для поддержки маршрутизации URL-адрес. Маршрутизация позволяет использовать URL-адреса, которые являются понятное, легче для запоминания и лучше поддерживается поисковыми веб-приложения. Этот учебник основан на предыдущем учебном курсе «Членство и администрирование» и является частью серии руководств Wingtip Toys.
 
@@ -82,7 +81,6 @@ ms.locfileid: "59384328"
 > **Необязательный**
 > 
 > Может оказаться проще управлять кодом, переместив `RegisterCustomRoutes` метод в отдельном классе. В *логики* папки, создайте отдельное `RouteActions` класса. Перемещение выше `RegisterCustomRoutes` метода из *Global.asax.cs* файл в новый `RoutesActions` класса. Используйте `RoleActions` класс и `createAdmin` метод в качестве примера того, как вызвать `RegisterCustomRoutes` метода из *Global.asax.cs* файл.
-
 
 Вы также могли заметить, `RegisterRoutes` вызов метода с помощью `RouteConfig` объект, находящийся в начале `Application_Start` обработчик событий. Этот вызов выполняется для маршрутизации по умолчанию. Она включалась в код по умолчанию, при создании приложения с помощью шаблона веб-форм Visual Studio.
 

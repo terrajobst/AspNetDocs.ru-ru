@@ -8,12 +8,12 @@ ms.date: 02/27/2014
 ms.assetid: 266e7866-e327-4687-b29d-627a0925e87d
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/sorting-paging-and-filtering-data
 msc.type: authoredcontent
-ms.openlocfilehash: 1159d75ec5b2f7e5ac94da0a15acf24b5400798b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f8e64392af6110f36c6af98c4e4e9481c94a0d82
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59387480"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106927"
 ---
 # <a name="sorting-paging-and-filtering-data-with-model-binding-and-web-forms"></a>Сортировка, разбиение по страницам и фильтрация данных с помощью привязки модели и веб-форм
 
@@ -26,7 +26,6 @@ ms.locfileid: "59387480"
 > Этот учебник основан на проект, созданный в первом [часть](retrieving-data.md) ряда.
 > 
 > Вы можете [загрузить](https://go.microsoft.com/fwlink/?LinkId=286116) весь проект полностью на C# или Visual Basic. Загружаемый код работает с Visual Studio 2012 или Visual Studio 2013. Он использует шаблон Visual Studio 2012, который немного отличается от шаблона Visual Studio 2013, в этом учебнике.
-
 
 ## <a name="what-youll-build"></a>Вы создадите
 

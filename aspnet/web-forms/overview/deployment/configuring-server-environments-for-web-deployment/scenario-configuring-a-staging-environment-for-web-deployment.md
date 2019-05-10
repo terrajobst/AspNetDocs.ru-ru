@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: 5a8e49b7-5317-4125-b107-7e2466b47bb3
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-staging-environment-for-web-deployment
 msc.type: authoredcontent
-ms.openlocfilehash: 7e66c6cd8c7296b889dfe6cc1ebd1eb62cda10ea
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: eaa61ca850817f8dd98955b59e94be93389bf256
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384336"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65106836"
 ---
 # <a name="scenario-configuring-a-staging-environment-for-web-deployment"></a>Сценарий: настройка промежуточной среды для веб-развертывания
 
@@ -22,7 +22,6 @@ ms.locfileid: "59384336"
 [Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > В этом разделе описываются типичные веб-приложениях развертывания в промежуточной среде и описание задачи, которые необходимо выполнить для настройки среды.
-
 
 Множество организаций с помощью промежуточной среды для предварительного просмотра обновлений для веб-приложений или веб-сайтов. Это дает возможность исследовать и просмотрите новые функциональные возможности или содержимое, прежде чем узел «переходит в реальном времени», или другими словами, развертывается в рабочей среде сотрудников в организации. Промежуточная среда позволяет реплицировать в рабочей среде, как можно точнее для обеспечения реалистичного Предварительный просмотр. Такого рода промежуточной среде, как правило, имеет следующие характеристики:
 
@@ -33,7 +32,6 @@ ms.locfileid: "59384336"
 
 > [!NOTE]
 > Горизонтальное масштабирование развертывания базы данных на нескольких серверах выходит за рамки данного руководства. Дополнительные сведения по этой теме можно найти [SQL Server Books Online](https://technet.microsoft.com/library/ms130214.aspx).
-
 
 Например, в нашем [сценарий учебника](../deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md), Team Foundation Server (TFS) управляет решение диспетчера контактов. Администратор TFS, Rob Walters создаст определение сборки, которая позволяет разработчикам активировать развертывание в промежуточной среде, при необходимости.
 

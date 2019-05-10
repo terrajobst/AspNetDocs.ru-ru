@@ -8,12 +8,12 @@ ms.date: 02/24/2014
 ms.assetid: 7a77c2c0-deea-4290-a9c3-97958891758e
 msc.legacyurl: /web-pages/overview/security/16-adding-security-and-membership
 msc.type: authoredcontent
-ms.openlocfilehash: 1291417755e3fa4fb030bc6ba3089c38c4719c71
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0be3e767a42939a3c343f6d4a730eb1d9a6b367c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389671"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65112378"
 ---
 # <a name="adding-security-and-membership-to-an-aspnet-web-pages-razor-site"></a>Добавление безопасности и членство на узел ASP.NET Web Pages (Razor)
 
@@ -42,7 +42,6 @@ ms.locfileid: "59389671"
 > - Веб-страниц ASP.NET (Razor) 2
 > - WebMatrix 3
 > - Библиотека вспомогательных методов ASP.NET Web
-
 
 Веб-сайта можно настроить таким образом, пользователи могут входить в него &#8212; то есть, чтобы сайт поддерживал *членства*. Это может быть полезно по многим причинам. Например у узла может быть страниц, которые должны быть доступны только для членов. В некоторых случаях может потребоваться пользователям входить в систему, чтобы отправить отзыв или комментарий.
 

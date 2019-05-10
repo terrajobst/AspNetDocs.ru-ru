@@ -8,12 +8,12 @@ ms.date: 03/31/2010
 ms.assetid: 67b25f4c-2823-42b6-b07d-1d650b3fd711
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting/using-the-formview-s-templates-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 268403a7b832596421120a24c64580f63eb987c3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ae21259a14378ea6b41f5d45cf2cac6954175dfa
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59383924"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109106"
 ---
 # <a name="using-the-formviews-templates-vb"></a>Использование шаблонов FormView (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59383924"
 [Скачайте пример приложения](http://download.microsoft.com/download/5/7/0/57084608-dfb3-4781-991c-407d086e2adc/ASPNET_Data_Tutorial_14_VB.exe) или [скачать PDF](using-the-formview-s-templates-vb/_static/datatutorial14vb1.pdf)
 
 > В отличие от элемента управления DetailsView FormView не состоит из полей. Вместо этого FormView подготавливается к просмотру с помощью шаблонов. В этом учебном курсе мы рассмотрим использование элемента управления FormView для представления менее строгое представление данных.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -39,21 +38,17 @@ ms.locfileid: "59383924"
 
 В этом учебном курсе мы рассмотрим использование элемента управления FormView для представления менее строгое отображения продуктов. Вместо полей для имени, категории, поставщика и т. д FormView `ItemTemplate` покажет эти значения, с помощью сочетания элемента заголовка и `<table>` (см. рис. 1).
 
-
 [![FormView разрыва Сеткоподобной компоновки, Наблюдавшейся в DetailsView](using-the-formview-s-templates-vb/_static/image2.png)](using-the-formview-s-templates-vb/_static/image1.png)
 
 **Рис. 1**: FormView преодолевает ограничений Grid-Like макета, видны в DetailsView ([Просмотр полноразмерного изображения](using-the-formview-s-templates-vb/_static/image3.png))
-
 
 ## <a name="step-1-binding-the-data-to-the-formview"></a>Шаг 1. Привязка данных к элементу FormView
 
 Откройте `FormView.aspx` страницы и перетащите с панели инструментов в конструктор элемента FormView. При первом добавлении FormView отображается как серый квадрат, указывая, `ItemTemplate` необходим.
 
-
 [![FormView не визуализируется в конструкторе, пока предоставлен ItemTemplate](using-the-formview-s-templates-vb/_static/image5.png)](using-the-formview-s-templates-vb/_static/image4.png)
 
 **Рис. 2**: FormView не может быть отображен в конструкторе до `ItemTemplate` предоставляется ([Просмотр полноразмерного изображения](using-the-formview-s-templates-vb/_static/image6.png))
-
 
 `ItemTemplate` Могут быть созданы вручную (через декларативный синтаксис) или может быть автоматически созданная по привязке FormView к элементу управления источником данных через конструктор. Автоматически создаваемый `ItemTemplate` содержит HTML, что списки имя каждого поля и метки, свойство `Text` свойство привязано к значению поля. Этот подход также автоматически создает `InsertItemTemplate` и `EditItemTemplate`, которые заполняются элементы управления вводом для каждого поля данных, возвращаемых элементом управления источника данных.
 
@@ -62,7 +57,6 @@ ms.locfileid: "59383924"
 Если вам предпочтительнее создать `ItemTemplate` вручную, можно добавить и настроить элемент управления ObjectDataSource, перетащив его с панели инструментов в конструктор. Однако не устанавливайте FormView источника данных из конструктора. Вместо этого перейдите в представление источника и вручную установить значение `DataSourceID` свойства `ID` значение элемента управления ObjectDataSource. Вручную добавьте `ItemTemplate`.
 
 Какой бы подход был выбран, на этом этапе декларативная разметка элемента FormView должна выглядеть следующим образом:
-
 
 [!code-aspx[Main](using-the-formview-s-templates-vb/samples/sample1.aspx)]
 
@@ -76,7 +70,6 @@ FormView привязанной к элементу управления ObjectD
 
 В следующем примере показана декларативная разметка FormView после `ItemTemplate`его завершения структуры:
 
-
 [!code-aspx[Main](using-the-formview-s-templates-vb/samples/sample2.aspx)]
 
 Обратите внимание, что синтаксис привязки данных — `<%# Eval("ProductName") %>`, для примера можно внедрить непосредственно в выходные данные шаблона. То есть, его не нужно назначать в элемент управления Label `Text` свойство. Например, у нас есть `ProductName` значением, отображаемым в `<h3>` элемента с помощью `<h3><%# Eval("ProductName") %></h3>`, что для продукта Chai, будет визуализироваться как `<h3>Chai</h3>`.
@@ -87,16 +80,13 @@ FormView привязанной к элементу управления ObjectD
 
 С помощью `ItemTemplate` завершения, сведения о продукте отображается в гораздо более гибкой форме. Сравните выходные данные DetailsView из последнего курса (рис. 3) с выходными данными, создаваемыми FormView в этом руководстве (рис. 4).
 
-
 [![Выводимые данные DetailsView](using-the-formview-s-templates-vb/_static/image8.png)](using-the-formview-s-templates-vb/_static/image7.png)
 
 **Рис. 3**: Выводимые данные DetailsView ([Просмотр полноразмерного изображения](using-the-formview-s-templates-vb/_static/image9.png))
 
-
 [![Гибкие выводимые данные FormView](using-the-formview-s-templates-vb/_static/image11.png)](using-the-formview-s-templates-vb/_static/image10.png)
 
 **Рис. 4**: Выходные данные FormView жидкостей ([Просмотр полноразмерного изображения](using-the-formview-s-templates-vb/_static/image12.png))
-
 
 ## <a name="summary"></a>Сводка
 

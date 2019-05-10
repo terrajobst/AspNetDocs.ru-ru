@@ -8,12 +8,12 @@ ms.date: 03/14/2008
 ms.assetid: 6ab4efb6-aab6-45ac-ad2c-bdec5848ef9e
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-authentication-and-profile-application-services
 msc.type: authoredcontent
-ms.openlocfilehash: 18056c917b32680678c536229e8e26d5cc7db161
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 1087d9120411e51fd61d073169a88cac6cdaf15b
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59395138"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109495"
 ---
 # <a name="understanding-aspnet-ajax-authentication-and-profile-application-services"></a>Общие сведения о службах проверки подлинности и приложений профилей ASP.NET AJAX
 
@@ -22,7 +22,6 @@ ms.locfileid: "59395138"
 [Загрузить PDF-файл](http://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial03_MSAjax_ASP.NET_Services_cs.pdf)
 
 > Служба проверки подлинности позволяет пользователям вводить учетные данные для получения файл cookie проверки подлинности и службы шлюза, чтобы разрешить пользовательские профили предоставляется ASP.NET. Использование службы проверки подлинности ASP.NET AJAX совместим с стандартную проверку подлинности форм ASP.NET, поэтому приложения, в настоящее время с помощью форм (например, с именем входа, управления) будет не разбит путем обновления до службы проверки подлинности AJAX.
-
 
 ## <a name="introduction"></a>Вступление
 

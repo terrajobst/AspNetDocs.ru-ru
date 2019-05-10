@@ -8,12 +8,12 @@ ms.date: 08/03/2007
 ms.assetid: 5811b8ff-ed56-40fc-9397-6b69ae09a8f6
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/working-with-computed-columns-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 9ded6526a2c4f1063843f3448ba3a2023686f529
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ba01931dd4c728067975f2949d4ed81adcd97e2f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421177"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108609"
 ---
 # <a name="working-with-computed-columns-vb"></a>Работа с вычисляемыми столбцами (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59421177"
 [Скачать код](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_71_VB.zip) или [скачать PDF](working-with-computed-columns-vb/_static/datatutorial71vb1.pdf)
 
 > При создании таблицы базы данных Microsoft SQL Server позволяет определить вычисляемый столбец, значение которого вычисляется из выражения, которое обычно ссылается на другие значения в одной и той же записи базы данных. Такие значения доступны только для чтения в базе данных, которую требуется специальные рекомендации при работе с адаптеров таблиц TableAdapter. В этом руководстве мы узнаем, как для решения этих проблем, вызванных вычисляемых столбцов.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -42,7 +41,6 @@ Microsoft SQL Server позволяет  *[вычисляемые столбцы
 
 Сначала откройте `Suppliers` определение таблицы щелкните правой кнопкой мыши `Suppliers` таблицу в обозревателе серверов и выбрав в контекстном меню Открыть определение таблицы. Это отображаются столбцы таблицы и их свойств, например их тип данных, ли они позволяют `NULL` s и т. д. Чтобы добавить вычисляемый столбец, запустите, введя имя столбца в определении таблицы. Затем введите выражение в текстовое поле (Формула) в разделе "Спецификация вычисляемого столбца" в окне «Свойства столбца» (см. рис. 1). Имя вычисляемого столбца `FullContactName` и с помощью следующего выражения:
 
-
 [!code-sql[Main](working-with-computed-columns-vb/samples/sample1.sql)]
 
 Обратите внимание, что строки могут быть объединены в SQL с помощью `+` оператор. `CASE` Инструкция может использоваться как условную на традиционных языках программирования. В предыдущем выражении `CASE` инструкция может быть прочитан как: Если `ContactTitle` не `NULL` вывод `ContactTitle` порождения объединяются с запятой, в противном случае значение nothing. Дополнительные сведения о полезность `CASE` инструкции, см. в разделе [The Power SQL `CASE` инструкций](http://www.4guysfromrolla.com/webtech/102704-1.shtml).
@@ -50,19 +48,15 @@ Microsoft SQL Server позволяет  *[вычисляемые столбцы
 > [!NOTE]
 > Вместо использования `CASE` здесь инструкции, можно было бы также использовать `ISNULL(ContactTitle, '')`. [`ISNULL(checkExpression, replacementValue)`](https://msdn.microsoft.com/library/ms184325.aspx) Возвращает *checkExpression* если оно не равно NULL, в противном случае возвращается *replacementValue*. Хотя либо `ISNULL` или `CASE` будет работать в этом случае есть более сложных сценариях где гибкость `CASE` инструкции не могут быть сопоставлены с `ISNULL`.
 
-
 После добавления этого вычисляемого столбца экран должен выглядеть как на снимке на рис. 1.
-
 
 [![Добавить вычисляемый столбец с именем FullContactName таблицу Suppliers](working-with-computed-columns-vb/_static/image2.png)](working-with-computed-columns-vb/_static/image1.png)
 
 **Рис. 1**: Добавить вычисляемый столбец с именем `FullContactName` для `Suppliers` таблицы ([Просмотр полноразмерного изображения](working-with-computed-columns-vb/_static/image3.png))
 
-
 После именования вычисляемого столбца и введите выражение, сохраните изменения в таблицу, щелкнув значок "Сохранить" на панели инструментов, нажав клавиши Ctrl + S и, перейдя в меню "файл" и выбрав сохранение `Suppliers`.
 
 Сохранение в таблице следует обновить обозреватель серверов, включая только что добавленного столбца в `Suppliers` список столбцов таблицы s. Кроме того, выражения, введенные в текстовое поле (Формула) автоматически настроит эквивалентное выражение, которое удаляет ненужные пробелы, окружает имена столбцов в квадратные скобки (`[]`) и включает в себя круглые скобки, чтобы показать более явно порядок операций:
-
 
 [!code-sql[Main](working-with-computed-columns-vb/samples/sample2.sql)]
 
@@ -71,18 +65,15 @@ Microsoft SQL Server позволяет  *[вычисляемые столбцы
 > [!NOTE]
 > По умолчанию вычисляемых столбцов физически не хранится в таблице, но вместо этого вычисляются заново каждый раз, когда они указаны в запросе. Тем не менее, установив флажок сохраняется, можно заставить SQL Server для физического хранения вычисляемых столбцов в таблице. Это позволяет создать индекс создан по вычисляемому столбцу, что может повысить производительность запросов, которые используют значение этого вычисляемого столбца в их `WHERE` предложения. См. в разделе [создание индексов вычисляемых столбцов](https://msdn.microsoft.com/library/ms189292.aspx) Дополнительные сведения.
 
-
 ## <a name="step-2-viewing-the-computed-column-s-values"></a>Шаг 2. Просмотр значений s вычисляемого столбца
 
 Прежде чем мы приступить к работе в слое доступа к данным, позволяют s внимательно просмотреть `FullContactName` значения. В обозревателе сервера щелкните правой кнопкой мыши `Suppliers` имя таблицы и выберите в контекстном меню нового запроса. Откроется диалоговое окно запроса, который предлагает выбрать, какие таблицы следует включить в запрос. Добавление `Suppliers` таблицы и нажмите кнопку Закрыть. Затем проверьте `CompanyName`, `ContactName`, `ContactTitle`, и `FullContactName` столбцы из таблицы Поставщики. Наконец щелкните значок красный восклицательный знак в панели инструментов, чтобы выполнить запрос и просмотреть результаты.
 
 Как показано на рис. 2, в результатах будет содержаться `FullContactName`, перечисляющее `CompanyName`, `ContactName`, и `ContactTitle` столбцы, используя формат `ContactName` (`ContactTitle`, `CompanyName`).
 
-
 [![FullContactName использует формат ContactName (ОрганизацияИлиОтдел, CompanyName)](working-with-computed-columns-vb/_static/image5.png)](working-with-computed-columns-vb/_static/image4.png)
 
 **Рис. 2**: `FullContactName` Использует формат `ContactName` (`ContactTitle`, `CompanyName`) ([Просмотр полноразмерного изображения](working-with-computed-columns-vb/_static/image6.png))
-
 
 ## <a name="step-3-adding-thesupplierstableadapterto-the-data-access-layer"></a>Шаг 3. Добавление`SuppliersTableAdapter`уровень доступа к данным
 
@@ -96,32 +87,25 @@ Microsoft SQL Server позволяет  *[вычисляемые столбцы
 
 Сначала откройте `NorthwindWithSprocs` набора данных в `~/App_Code/DAL` папку. Щелкните правой кнопкой мыши в конструкторе и, в контекстном меню выберите команду Добавить новый адаптер таблицы. Это приведет к запуску мастера настройки адаптера таблицы. Укажите базу данных для запроса данных из (`NORTHWNDConnectionString` из `Web.config`) и нажмите кнопку Далее. Так как мы еще не создали все хранимые процедуры для запрос или изменение `Suppliers` таблица, установите создать новые хранимые процедуры, чтобы мастер создаст их для нас и нажмите кнопку Далее.
 
-
 [![Выберите создать новые хранимые процедуры параметр](working-with-computed-columns-vb/_static/image8.png)](working-with-computed-columns-vb/_static/image7.png)
 
 **Рис. 3**: Выберите создать новые хранимые процедуры параметр ([Просмотр полноразмерного изображения](working-with-computed-columns-vb/_static/image9.png))
 
-
 Последующий шаг запрашивает основного запроса. Введите следующий запрос, возвращающий `SupplierID`, `CompanyName`, `ContactName`, и `ContactTitle` столбцы для каждого поставщика. Обратите внимание, что этот запрос намеренно пропущены вычисляемого столбца (`FullContactName`); мы обновим соответствующую хранимую процедуру для включения данного столбца на шаге 4.
-
 
 [!code-sql[Main](working-with-computed-columns-vb/samples/sample3.sql)]
 
 После ввода основного запроса и кнопку "Далее", мастер позволяет нам имя четыре хранимые процедуры, которые он создает. Назовите эти хранимые процедуры `Suppliers_Select`, `Suppliers_Insert`, `Suppliers_Update`, и `Suppliers_Delete`, как показано на рис. 4.
 
-
 [![Настройка имен хранимых процедур, автоматически созданный](working-with-computed-columns-vb/_static/image11.png)](working-with-computed-columns-vb/_static/image10.png)
 
 **Рис. 4**: Настройка имен хранимых процедур Auto-Generated ([Просмотр полноразмерного изображения](working-with-computed-columns-vb/_static/image12.png))
 
-
 Следующий шаг мастера позволяет нам имени s методов класса TableAdapter и шаблоны, используемые для доступа и обновления данных. Оставьте все три флажков, но Переименовать `GetData` метод `GetSuppliers`. Нажмите кнопку Готово, чтобы завершить работу мастера.
-
 
 [![Переименуйте метод GetData в GetSuppliers](working-with-computed-columns-vb/_static/image14.png)](working-with-computed-columns-vb/_static/image13.png)
 
 **Рис. 5**: Переименуйте `GetData` метод `GetSuppliers` ([Просмотр полноразмерного изображения](working-with-computed-columns-vb/_static/image15.png))
-
 
 После нажатия кнопки Готово, мастер создания четырех хранимых процедур и добавить соответствующем объекте DataTable и TableAdapter к типизированному DataSet.
 
@@ -134,26 +118,21 @@ Microsoft SQL Server позволяет  *[вычисляемые столбцы
 
 Для начала перейдите в проводник по серверам и перейти к папке Stored Procedures. Откройте `Suppliers_Select` хранимой процедуры и обновление `SELECT` запрос, чтобы включить `FullContactName` вычисляемого столбца:
 
-
 [!code-sql[Main](working-with-computed-columns-vb/samples/sample4.sql)]
 
 Сохранить изменения в хранимую процедуру, щелкнув значок "Сохранить" на панели инструментов, нажав клавиши Ctrl + S и выбрав сохранения `Suppliers_Select` параметр меню "файл".
 
 Затем вернитесь в конструктор DataSet, щелкните правой кнопкой мыши `SuppliersTableAdapter`и выберите команду "Настройка" в контекстном меню. Обратите внимание, что `Suppliers_Select` теперь включает столбец `FullContactName` столбца в коллекции столбцов данных.
 
-
 [![Запустите мастер настройки TableAdapter s для обновления столбцов s DataTable](working-with-computed-columns-vb/_static/image17.png)](working-with-computed-columns-vb/_static/image16.png)
 
 **Рис. 6**: Запустить s адаптера таблицы мастер настройки, чтобы обновить s DataTable столбцы ([Просмотр полноразмерного изображения](working-with-computed-columns-vb/_static/image18.png))
 
-
 Нажмите кнопку Готово, чтобы завершить работу мастера. Это автоматически добавит соответствующего столбца в `SuppliersDataTable`. Мастер TableAdapter, обнаружение `FullContactName` столбец является вычисляемым столбцом и доступен только для чтения. Следовательно, он задает столбец s `ReadOnly` свойства `true`. Чтобы проверить это, выберите столбец из `SuppliersDataTable` и перейдите в окно свойств (см. рис. 7). Обратите внимание, что `FullContactName` столбец s `DataType` и `MaxLength` свойства задаются также соответствующим образом.
-
 
 [![FullContactName столбец помечен как доступный только для чтения](working-with-computed-columns-vb/_static/image20.png)](working-with-computed-columns-vb/_static/image19.png)
 
 **Рис. 7**: `FullContactName` Столбец помечен как доступный только для чтения ([Просмотр полноразмерного изображения](working-with-computed-columns-vb/_static/image21.png))
-
 
 ## <a name="step-5-adding-agetsupplierbysupplieridmethod-to-the-tableadapter"></a>Шаг 5. Добавление`GetSupplierBySupplierID`метод в TableAdapter
 
@@ -161,32 +140,25 @@ Microsoft SQL Server позволяет  *[вычисляемые столбцы
 
 Щелкните правой кнопкой мыши `SuppliersTableAdapter` в конструкторе набора данных и выберите вариант Добавить запрос в контекстном меню. Как мы делали на шаге 3, позволить мастеру создать новую хранимую процедуру для нас, выбрав параметр создания новой хранимой процедуры (см. рис. 3 показана этот шаг мастера). Так как этот метод возвращает запись с несколькими столбцами, указывают, что мы хотим использовать SQL-запрос, который является SELECT, возвращающая строки и нажмите кнопку Далее.
 
-
 [![Выберите SELECT, возвращающая строки параметр](working-with-computed-columns-vb/_static/image23.png)](working-with-computed-columns-vb/_static/image22.png)
 
 **Рис. 8**: Выберите SELECT, возвращающая строки параметра ([Просмотр полноразмерного изображения](working-with-computed-columns-vb/_static/image24.png))
 
-
 Последующий шаг запрос на указание запрос, используемый для этого метода. Введите следующую команду, которая возвращает те же поля данных, как основной запрос, но для определенного поставщика.
-
 
 [!code-sql[Main](working-with-computed-columns-vb/samples/sample5.sql)]
 
 Следующий экран появляется запрос на имя хранимой процедуры, которая будет создаваться автоматически. Назовите эту хранимую процедуру `Suppliers_SelectBySupplierID` и нажмите кнопку Далее.
 
-
 [![Имя хранимой процедуры Suppliers_SelectBySupplierID](working-with-computed-columns-vb/_static/image26.png)](working-with-computed-columns-vb/_static/image25.png)
 
 **Рис. 9**: Имя хранимой процедуры `Suppliers_SelectBySupplierID` ([Просмотр полноразмерного изображения](working-with-computed-columns-vb/_static/image27.png))
 
-
 Наконец указаниям мастера нам для данных, доступ к шаблонов и имена методов для адаптера таблицы. Оставить установленными оба флажка, но Переименовать `FillBy` и `GetDataBy` методы `FillBySupplierID` и `GetSupplierBySupplierID`, соответственно.
-
 
 [![Имя FillBySupplierID методы TableAdapter и GetSupplierBySupplierID](working-with-computed-columns-vb/_static/image29.png)](working-with-computed-columns-vb/_static/image28.png)
 
 **Рис. 10**: Назовите методы TableAdapter `FillBySupplierID` и `GetSupplierBySupplierID` ([Просмотр полноразмерного изображения](working-with-computed-columns-vb/_static/image30.png))
-
 
 Нажмите кнопку Готово, чтобы завершить работу мастера.
 
@@ -196,7 +168,6 @@ Microsoft SQL Server позволяет  *[вычисляемые столбцы
 
 Создайте новый файл класса с именем `SuppliersBLLWithSprocs` в `~/App_Code/BLL` папку и добавьте следующий код:
 
-
 [!code-vb[Main](working-with-computed-columns-vb/samples/sample6.vb)]
 
 Как и другие классы BLL `SuppliersBLLWithSprocs` имеет `Protected` `Adapter` свойство, которое возвращает экземпляр `SuppliersTableAdapter` класса вместе с двумя `Public` методы: `GetSuppliers` и `UpdateSupplier`. `GetSuppliers` Метод вызывает и возвращает `SuppliersDataTable` возвращаемых соответствующим `GetSupplier` метод уровне доступа к данным. `UpdateSupplier` Метод извлекает сведения об определенном поставщике, обновляется через вызов DAL s `GetSupplierBySupplierID(supplierID)` метод. Затем он обновляет `CategoryName`, `ContactName`, и `ContactTitle` свойства и фиксирует эти изменения в базе данных путем вызова уровня доступа к данным s `Update` , передавая в измененной `SuppliersRow` объекта.
@@ -204,16 +175,13 @@ Microsoft SQL Server позволяет  *[вычисляемые столбцы
 > [!NOTE]
 > За исключением `SupplierID` и `CompanyName`, все столбцы в таблице поставщиков позволяют `NULL` значения. Таким образом Если переданный `contactName` или `contactTitle` параметры являются `Nothing` нам нужно установить соответствующие `ContactName` и `ContactTitle` свойства `NULL` значение базы данных с помощью `SetContactNameNull` и `SetContactTitleNull`методы, соответственно.
 
-
 ## <a name="step-7-working-with-the-computed-column-from-the-presentation-layer"></a>Шаг 7. Работа с вычисляемым столбцом от слоя представления
 
 С вычисляемым столбцом, добавляемый `Suppliers` соответствующим образом обновить таблицу и DAL и BLL, мы готовы создать страницу ASP.NET, который работает с `FullContactName` вычисляемый столбец. Сначала откройте `ComputedColumns.aspx` странице в `AdvancedDAL` папки и перетащите элемент управления GridView с панели инструментов в конструктор. Набор GridView s `ID` свойства `Suppliers` и его смарт-теге, привязать его к элементу управления ObjectDataSource с именем `SuppliersDataSource`. Настройка ObjectDataSource на использование `SuppliersBLLWithSprocs` класс, мы добавили обратно в шаге 6 и нажмите кнопку Далее.
 
-
 [![Настройка ObjectDataSource на использование класса SuppliersBLLWithSprocs](working-with-computed-columns-vb/_static/image32.png)](working-with-computed-columns-vb/_static/image31.png)
 
 **Рис. 11**: Настройка ObjectDataSource для использования `SuppliersBLLWithSprocs` класс ([Просмотр полноразмерного изображения](working-with-computed-columns-vb/_static/image33.png))
-
 
 Существует только два метода, определенного в `SuppliersBLLWithSprocs` класса: `GetSuppliers` и `UpdateSupplier`. Убедитесь, что эти два метода, указываются в SELECT и соответственно обновить вкладки и щелкните "Готово", чтобы завершить настройку элемента управления ObjectDataSource.
 
@@ -223,30 +191,24 @@ Microsoft SQL Server позволяет  *[вычисляемые столбцы
 
 После внесения этих изменений к GridView и элемент управления ObjectDataSource, их декларативная разметка должен выглядеть следующим образом:
 
-
 [!code-aspx[Main](working-with-computed-columns-vb/samples/sample7.aspx)]
 
 Затем посетите эту страницу через обозреватель. Как показано на рис. 12, каждый поставщик указан в сетке, которая включает в себя `FullContactName` столбца, значение которого является просто объединением других трех столбцов в формате `ContactName` (`ContactTitle`, `CompanyName`).
-
 
 [![Каждый поставщик, перечисленных в сетке](working-with-computed-columns-vb/_static/image35.png)](working-with-computed-columns-vb/_static/image34.png)
 
 **Рис. 12**: Каждый поставщик, перечисленных в сетке ([Просмотр полноразмерного изображения](working-with-computed-columns-vb/_static/image36.png))
 
-
 Нажав кнопку "Изменить" для определенного поставщика вызывает обратную передачу и имеет этой строки, отображаемый в его интерфейс изменения (см. рис. 13). Первые три столбца визуализации в интерфейс редактирования по умолчанию - элемент управления TextBox `Text` свойству присваивается значение поля данных. `FullContactName` Столбца, однако остается как текст. При добавлении полей BoundFields к GridView по завершении работы мастера настройки источника данных, `FullContactName` BoundField s `ReadOnly` было установлено на `True` так как соответствующий `FullContactName` столбец в `SuppliersDataTable` имеет его `ReadOnly` свойство значение `True`. Как указано в шаге 4 `FullContactName` s `ReadOnly` было установлено на `True` поскольку TableAdapter обнаружил, что столбец является вычисляемым.
-
 
 [![Столбец FullContactName является недоступны для редактирования](working-with-computed-columns-vb/_static/image38.png)](working-with-computed-columns-vb/_static/image37.png)
 
 **Рис. 13**: `FullContactName` Столбец является недоступны для редактирования ([Просмотр полноразмерного изображения](working-with-computed-columns-vb/_static/image39.png))
 
-
 Продолжим и обновить значение одного или нескольких столбцов, редактируемый и нажмите кнопку обновления. Обратите внимание как `FullContactName` s значение автоматически обновляется в соответствии с изменениями.
 
 > [!NOTE]
 > GridView в настоящее время использует поля BoundField, кроме изменяемых полей, приводит к интерфейс редактирования по умолчанию. Так как `CompanyName` поле является обязательным, его следует преобразовать в поле TemplateField, включающий RequiredFieldValidator. Оставить этот в качестве упражнения для интересующихся. Обратитесь к [Добавление проверяющих элементов управления для редактирования и вставки интерфейсы](../editing-inserting-and-deleting-data/adding-validation-controls-to-the-editing-and-inserting-interfaces-vb.md) учебника пошаговые инструкции по преобразование BoundField в поле TemplateField и добавление элементов управления проверки.
-
 
 ## <a name="summary"></a>Сводка
 

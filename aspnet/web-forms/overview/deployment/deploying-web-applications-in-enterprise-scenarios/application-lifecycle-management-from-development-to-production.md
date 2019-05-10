@@ -8,12 +8,12 @@ ms.date: 05/04/2012
 ms.assetid: f97a1145-6470-4bca-8f15-ccfb25fb903c
 msc.legacyurl: /web-forms/overview/deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production
 msc.type: authoredcontent
-ms.openlocfilehash: 3b7f154936222c85bd7897ea10cbb5ae9d1aa670
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 230cf4393db0ee19cfc42ed54359d61e7926a49d
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59408944"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109287"
 ---
 # <a name="application-lifecycle-management-from-development-to-production"></a>Управление жизненным циклом приложения: от разработки до рабочей среды
 
@@ -27,7 +27,6 @@ ms.locfileid: "59408944"
 > 
 > > [!NOTE]
 > > Для простоты в этом разделе не рассматриваются обновление баз данных как часть процесса развертывания. Тем не менее вносить добавочные обновления функций баз данных является обязательным для различных сценариев развертывания enterprise, и вы найдете рекомендации о том, как это сделать далее в этой серии руководств. Дополнительные сведения см. в разделе [развертывание проектов баз данных](../web-deployment-in-the-enterprise/deploying-database-projects.md).
-
 
 ## <a name="overview"></a>Обзор
 
@@ -94,7 +93,6 @@ ms.locfileid: "59408944"
 > Эти файлы пользовательского проекта работы не зависит от механизма, используемого для вызова MSBuild. Например, можно использовать командной строке MSBuild напрямую, как описано в разделе [основные сведения о файле проекта](../web-deployment-in-the-enterprise/understanding-the-project-file.md). Позволяет выполнять файлы проекта из командный файл, как описано в разделе [Создание и запуск командного файла развертывания](../web-deployment-in-the-enterprise/creating-and-running-a-deployment-command-file.md). Кроме того, позволяет выполнять файлы проекта из определения сборки в TFS, как описано в разделе [Создание определения сборки, развертывания поддерживает](../configuring-team-foundation-server-for-web-deployment/creating-a-build-definition-that-supports-deployment.md).  
 > В обоих случаях конечным результатом является же&#x2014;MSBuild выполняет файл объединенных проекта и развертывает решение к целевой среде. Это обеспечивает высокую степень гибкости в том, как запустить процесс публикации.
 
-
 Когда он создан пользовательский проект файлы, Мэтт добавляет их в папку решения и проверяет их в систему управления версиями.
 
 ### <a name="create-build-definitions"></a>Создание определений построений
@@ -125,15 +123,12 @@ ms.locfileid: "59408944"
 
 **DeployToTest** создавать блоки определения этих аргументов в MSBuild:
 
-
 [!code-console[Main](application-lifecycle-management-from-development-to-production/samples/sample1.cmd)]
-
 
 **DeployOnBuild = true** и **DeployTarget = пакет** свойства используются в том случае, когда Team Build создает проекты в решении. Если проект является проектом веб-приложения, эти свойства указать MSBuild для создания пакета веб-развертывания для проекта. **TargetEnvPropsFile** свойство сообщает *Publish.proj* где найти файл проекта от среды, чтобы импортировать файл.
 
 > [!NOTE]
 > Подробное пошаговое руководство о том, как создать определение сборки следующим образом, см. в разделе [Создание определения сборки, развертывания поддерживает](../configuring-team-foundation-server-for-web-deployment/creating-a-build-definition-that-supports-deployment.md).
-
 
 *Publish.proj* файл содержит целевые объекты, которые занимаются каждого проекта в решении. Тем не менее она также включает условную логику, что пропускает эти сборки целевых объектов, если при выполнении файла в Team Build. Это позволяет воспользоваться преимуществами возможностей дополнительные сборки Team Build предлагает, такие как возможность выполнять модульные тесты. Если сборки решения или блок тестов завершаются ошибкой, *Publish.proj* файл не выполняется и не будет развернуто приложение.
 
@@ -164,9 +159,7 @@ ms.locfileid: "59408944"
 
 **DeployToStaging** создавать блоки определения этих аргументов в MSBuild:
 
-
 [!code-console[Main](application-lifecycle-management-from-development-to-production/samples/sample2.cmd)]
-
 
 **TargetEnvPropsFile** свойство сообщает *Publish.proj* где найти файл проекта от среды, чтобы импортировать файл. **OutputRoot** свойство переопределяет значение встроенных и указывает расположение папки сборки, которая содержит ресурсы, которые вы хотите развернуть. Когда Роб ставит в очередь построение, он использует **параметры** tab, чтобы предоставить обновленное значение **OutputRoot** свойство.
 
@@ -175,24 +168,19 @@ ms.locfileid: "59408944"
 > [!NOTE]
 > Дополнительные сведения о том, как создать определение сборки следующим образом, см. в разделе [развертывание конкретного построения](../configuring-team-foundation-server-for-web-deployment/deploying-a-specific-build.md).
 
-
 **DeployToStaging-WhatIf** определение сборки содержит ту же логику развертывания **DeployToStaging** определение сборки. Тем не менее, он включает дополнительный аргумент **WhatIf = true**:
 
-
 [!code-console[Main](application-lifecycle-management-from-development-to-production/samples/sample3.cmd)]
-
 
 В рамках *Publish.proj* файл, **WhatIf** свойство указывает, что все ресурсы для развертывания следует опубликовывать в режиме «что если». Другими словами файлы журнала создаются как в том случае, если развертывание вышли вперед, но ничего не изменилось в целевой среде. Это позволяет оценить влияние предложенное развертывания&#x2014;в частности, что будут добавляться, что будут обновлены, и что будут удалены&#x2014;перед внесением любых изменений фактически.
 
 > [!NOTE]
 > Дополнительные сведения о настройке «what if» развертываний см. в разделе [выполнение развертывания «What If»](../advanced-enterprise-web-deployment/performing-a-what-if-deployment.md).
 
-
 После развертывания приложения на основной веб-сервер в промежуточной среде, WFF автоматически синхронизировать приложения по всем серверам в ферме серверов.
 
 > [!NOTE]
 > Дополнительные сведения о настройке WFF для синхронизации веб-серверов см. в разделе [Создание фермы серверов с помощью Web Farm Framework](../configuring-server-environments-for-web-deployment/creating-a-server-farm-with-the-web-farm-framework.md).
-
 
 ## <a name="deployment-to-production"></a>Развертывание в рабочей среде
 

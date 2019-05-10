@@ -8,12 +8,12 @@ ms.date: 06/01/2015
 ms.assetid: c0090595-ab3b-4b9b-9e16-7a1891e8cb2f
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/troubleshooting
 msc.type: authoredcontent
-ms.openlocfilehash: b59cd34036c733579e678eab78097d3393f3e671
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 652ed86826616dec5a4d1900dd57d7e6fd43a4e7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421086"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65108880"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-troubleshooting"></a>Веб-развертывание ASP.NET с помощью Visual Studio. Устранение неполадок
 
@@ -22,7 +22,6 @@ ms.locfileid: "59421086"
 [Загрузите начальный проект](http://go.microsoft.com/fwlink/p/?LinkId=282627)
 
 > В этой серии руководств показано, как развернуть ASP.NET (публикации) веб-приложения для веб-приложениях службы приложений Azure или стороннего поставщика услуг размещения, с помощью Visual Studio 2012 или Visual Studio 2010. Сведения об этой серии см. в разделе [в первом учебнике серии](introduction.md).
-
 
 На этой странице описываются некоторые общие проблемы, которые могут возникнуть при развертывании веб-приложения ASP.NET с помощью Visual Studio. Для каждого из них предоставляются один или несколько возможных причин, так и соответствующие решения.
 

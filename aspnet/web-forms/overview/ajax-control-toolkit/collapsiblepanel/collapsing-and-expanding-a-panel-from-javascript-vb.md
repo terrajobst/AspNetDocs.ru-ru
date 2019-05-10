@@ -8,12 +8,12 @@ ms.date: 06/02/2008
 ms.assetid: 298789b4-2964-49f5-a0a8-d4dbeb9ff2c2
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/collapsiblepanel/collapsing-and-expanding-a-panel-from-javascript-vb
 msc.type: authoredcontent
-ms.openlocfilehash: b41423cb1e587df121828b1e57045cabfede7cb5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: f9e279e8700024f28cf589581f09a4bbd95118de
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59390835"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65133524"
 ---
 # <a name="collapsing-and-expanding-a-panel-from-javascript-vb"></a>Свертывание и развертывание панели из кода JavaScript (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59390835"
 [Скачать код](http://download.microsoft.com/download/8/a/a/8aab3c3e-de6f-463f-805c-5fda567eef6e/CollapsiblePanel1.vb.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/collapsiblepanel1VB.pdf)
 
 > Элемент управления CollapsiblePanel в ASP.NET AJAX Control Toolkit расширяет панель и предоставляет ему возможность свернуть его содержимое и развернуть ее снова. Эти два действия также может запускаться из пользовательского кода JavaScript.
-
 
 ## <a name="overview"></a>Обзор
 
@@ -63,7 +62,6 @@ ms.locfileid: "59390835"
 Третья кнопка переключает состояние панели: из свернуты развернут и наоборот. `CollapsiblePanelExtender` Предоставляет `toggle()` метод, который делает именно это: изменяет состояние панели. Однако имеется также другой подход (который внутренне используется `toggle()` метод): `get_Collapsed()` Метод `CollapsiblePanelExtender()` сообщает о том, свернута ли панели или нет. В зависимости от возвращаемого значения функции, она затем либо развернут (`_doOpen()` метод) или свернут (`_doClose()`) метод:
 
 [!code-javascript[Main](collapsing-and-expanding-a-panel-from-javascript-vb/samples/sample8.js)]
-
 
 [![Третья кнопка изменяет состояние панели: из свернуть, чтобы развернутое и обратно](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image2.png)](collapsing-and-expanding-a-panel-from-javascript-vb/_static/image1.png)
 

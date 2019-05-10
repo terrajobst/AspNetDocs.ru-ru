@@ -8,12 +8,12 @@ ms.date: 03/31/2010
 ms.assetid: 85554606-47cb-4e4f-9848-eed9da579056
 msc.legacyurl: /web-forms/overview/data-access/introduction/creating-a-business-logic-layer-cs
 msc.type: authoredcontent
-ms.openlocfilehash: fd3bf46394f562462c561bf06370d2f372e47d0a
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c0278841b7b0701f09b2de5115e06da87aed49cf
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59415267"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65109039"
 ---
 # <a name="creating-a-business-logic-layer-c"></a>Создание уровня бизнес-логики (C#)
 
@@ -23,18 +23,15 @@ ms.locfileid: "59415267"
 
 > В этом руководстве будет показано, как централизовать бизнес-правилам в слой бизнес-логики (BLL), выступающем в качестве посредника при обмене данными между слоем представления и слоем DAL.
 
-
 ## <a name="introduction"></a>Вступление
 
 Уровень доступа к данным (DAL) создан в [руководства по использованию](creating-a-data-access-layer-cs.md) четко разделяет данные доступа логики от логики представления. Тем не менее хотя DAL четко отделяет сведения о данных доступа от слоя представления, любой бизнес-правила, которые могут применяться не реализуется. Например, для нашего приложения мы может потребоваться запретить `CategoryID` или `SupplierID` поля `Products` таблицы, если для `Discontinued` поле имеет значение 1 или нам может понадобиться принудительное применение правил старшинства, запрещающих ситуации, в котором Сотрудник управляется человек, который был принят на работу позже него. Другим распространенным сценарием является авторизации может быть только пользователи в определенной роли, могут удалять продукты или можно изменить `UnitPrice` значение.
 
 В этом руководстве будет показано, как для централизации этих бизнес-правил в слой бизнес-логики (BLL), выступающем в качестве посредника при обмене данными между слоем представления и слоем DAL. В реальном приложении слой бизнес-ЛОГИКИ должен быть реализован как отдельный проект библиотеки классов; Однако этих руководствах мы реализуем BLL как ряд классов в наших `App_Code` папки для упрощения структуры проекта. Рис. 1 показаны связи архитектуры между слоя представления, BLL и DAL.
 
-
 ![BLL отделяет слой представления от уровня доступа к данным и налагает бизнес-правила](creating-a-business-logic-layer-cs/_static/image1.png)
 
 **Рис. 1**: BLL отделяет слой представления от уровня доступа к данным и налагает бизнес-правила
-
 
 ## <a name="step-1-creating-the-bll-classes"></a>Шаг 1. Создание классов BLL
 
@@ -44,17 +41,14 @@ ms.locfileid: "59415267"
 
 Создайте четыре файла классов BLL во `BLL` во вложенную папку. Для этого щелкните правой кнопкой мыши `BLL` во вложенную папку, выберите команду Добавить новый элемент и выберите шаблон класса. Присвойте имя этим четырем классам `ProductsBLL`, `CategoriesBLL`, `SuppliersBLL`, и `EmployeesBLL`.
 
-
 ![Добавьте четыре новых класса в папку App_Code](creating-a-business-logic-layer-cs/_static/image2.png)
 
 **Рис. 2**: Добавьте четыре новых класса в `App_Code` папки
-
 
 Далее добавим методы к каждому из классов, чтобы просто перенести методы, определенные для TableAdapters из первого руководства. Пока эти методы будут просто вызываться непосредственно из DAL; впоследствии мы вернемся Добавление любые необходимые бизнес-логики.
 
 > [!NOTE]
 > Если вы используете Visual Studio Standard Edition или более поздней версии (то есть вы *не* с помощью Visual Web Developer), существует возможность проектировать классы визуально с помощью [конструктор классов](https://msdn.microsoft.com/library/default.asp?url=/library/dv_vstechart/html/clssdsgnr.asp). Ссылаться на [блог конструктор класса](https://blogs.msdn.com/classdesigner/default.aspx) Дополнительные сведения об этой новой возможности в Visual Studio.
-
 
 Для `ProductsBLL` придется добавить целых семь методов:
 
@@ -67,7 +61,6 @@ ms.locfileid: "59415267"
 - `DeleteProduct(productID)` Удаляет указанный продукт из базы данных
 
 ProductsBLL.cs
-
 
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample1.cs)]
 
@@ -107,7 +100,6 @@ ProductsBLL.cs
 
 Достоин упоминания метод является `SuppliersBLL` класса `UpdateSupplierAddress` метод. Этот метод предоставляет интерфейс для обновления только сведения о адрес поставщика. На внутреннем уровне этот метод считывает в `SupplierDataRow` для указанного `supplierID` (с помощью `GetSupplierBySupplierID`), задает его свойства, связанные с адресом и затем вызывается метод `SupplierDataTable` `Update` метод. `UpdateSupplierAddress` Метод следующим образом:
 
-
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample2.cs)]
 
 См. в этой статье загрузки для Завершенная реализация классов BLL.
@@ -116,21 +108,17 @@ ProductsBLL.cs
 
 В первом учебном курсе были рассмотрены примеры работы непосредственно с типизированный набор DataSet, программными средствами, но с добавлением наши классы BLL, уровень представления предназначен для работы с BLL вместо этого. В `AllProducts.aspx` пример из руководства по использованию `ProductsTableAdapter` использовался для привязки списка продуктов к GridView, как показано в следующем коде:
 
-
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample3.cs)]
 
 Для использования нового BLL классы, все, которые необходимо изменить — первая часть кода просто заменить `ProductsTableAdapter` со `ProductBLL` объекта:
-
 
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample4.cs)]
 
 Классы BLL может осуществляться с помощью элемента управления ObjectDataSource также декларативно (что может типизированный набор DataSet). Здесь мы рассмотрим ObjectDataSource более подробно в следующих руководствах.
 
-
 [![Список продуктов, отображаемый в GridView](creating-a-business-logic-layer-cs/_static/image4.png)](creating-a-business-logic-layer-cs/_static/image3.png)
 
 **Рис. 3**: Список продуктов, отображаемый в элементе управления GridView ([Просмотр полноразмерного изображения](creating-a-business-logic-layer-cs/_static/image5.png))
-
 
 ## <a name="step-3-adding-field-level-validation-to-the-datarow-classes"></a>Шаг 3. Добавление проверки на уровне полей к классам DataRow
 
@@ -145,24 +133,19 @@ ProductsBLL.cs
 
 Помимо обязательного выполнения этих правил в базе данных они должны также обязательно выполняться на уровне объекта DataSet. На самом деле длина поля и является ли значение обязательного уже определены для каждого объекта DataTable набора DataColumns объекта. Чтобы просмотреть существующие проверки уровня полей автоматически, перейдите в конструктор DataSet, выберите поле из одного из DataTable, а затем выберите окно "Свойства". Как показано на рис. 4, `QuantityPerUnit` DataColumn в `ProductsDataTable` имеет максимальную длину 20 символов и допускает `NULL` значения. Если для свойства `ProductsDataRow` `QuantityPerUnit` строковое значение длиннее 20 символов `ArgumentException` будет создано.
 
-
 [![DataColumn обеспечивает базовую проверку на уровне полей](creating-a-business-logic-layer-cs/_static/image7.png)](creating-a-business-logic-layer-cs/_static/image6.png)
 
 **Рис. 4**: DataColumn обеспечивает базовую на уровне полей проверку ([Просмотр полноразмерного изображения](creating-a-business-logic-layer-cs/_static/image8.png))
 
-
 К сожалению, мы не может указать проверяются границы, например `UnitPrice` значение должно быть больше или равно нулю, в окне «Свойства». Для обеспечения этого типа проверки на уровне полей необходимо создать обработчик событий для объекта DataTable [ColumnChanging](https://msdn.microsoft.com/library/system.data.datatable.columnchanging%28VS.80%29.aspx) событий. Как упоминалось в [предыдущем учебном курсе](creating-a-data-access-layer-cs.md), объекты DataSet, DataTables и DataRow, создаваемые типизированный набор DataSet можно расширить посредством использования частичных классов. С помощью этой методики, мы можем создать `ColumnChanging` обработчик событий для `ProductsDataTable` класса. Начните с создания класса в `App_Code` папку с именем `ProductsDataTable.ColumnChanging.cs`.
-
 
 [![Добавьте новый класс в папку App_Code](creating-a-business-logic-layer-cs/_static/image10.png)](creating-a-business-logic-layer-cs/_static/image9.png)
 
 **Рис. 5**: Добавьте новый класс к `App_Code` папку ([Просмотр полноразмерного изображения](creating-a-business-logic-layer-cs/_static/image11.png))
 
-
 Создайте обработчик событий для `ColumnChanging` событие, которое гарантирует, что `UnitPrice`, `UnitsInStock`, `UnitsOnOrder`, и `ReorderLevel` значения столбцов (в противном случае `NULL`) больше или равно нулю. Если любой из таких столбцов выходит за пределы диапазона, возникает исключение `ArgumentException`.
 
 ProductsDataTable.ColumnChanging.cs
-
 
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample5.cs)]
 
@@ -180,13 +163,11 @@ ProductsDataTable.ColumnChanging.cs
 
 Для принудительного применения этого бизнес-правила в `UpdateProducts` может начинаться с проверки, если метод `Discontinued` было присвоено `true` и, таким образом, мы вызовем `GetProductsBySupplierID` чтобы определить, сколько продуктов было приобретено у этого поставщика продуктов. Если только один продукт приобретается у этого поставщика, мы выдаем `ApplicationException`.
 
-
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample6.cs)]
 
 ## <a name="responding-to-validation-errors-in-the-presentation-tier"></a>Реакция на ошибки проверки в слое представления
 
 При обращении к BLL из слоя представления мы можно решить, следует ли пытаться обрабатывать все исключения, которые могут возникнуть, или позволить им обнаружиться ASP.NET (который создает событие `HttpApplication`в `Error` событий). Для обработки исключения при работе со слоем BLL программно, мы используем [try... catch](https://msdn.microsoft.com/library/0yd65esw.aspx) блока, как показано в следующем примере:
-
 
 [!code-csharp[Main](creating-a-business-logic-layer-cs/samples/sample7.cs)]
 

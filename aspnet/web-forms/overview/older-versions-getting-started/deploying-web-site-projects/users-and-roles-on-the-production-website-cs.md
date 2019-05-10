@@ -8,12 +8,12 @@ ms.date: 06/09/2009
 ms.assetid: dbc54313-5d05-4285-98b3-726edea6d0c9
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/users-and-roles-on-the-production-website-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 691de0a29ce4798d2f18a58141b833db9cddb2d5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 2c213d443197e24168b4799056374ec25d0b6e0f
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396607"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65134218"
 ---
 # <a name="users-and-roles-on-the-production-website-c"></a>Пользователи и роли на рабочем веб-сайте (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59396607"
 [Загрузить PDF-файл](http://download.microsoft.com/download/5/C/5/5C57DB8C-5DEA-4B3A-92CA-4405544D313B/aspnet_tutorial16_CustomAWAT_cs.pdf)
 
 > Средство администрирования веб-сайт ASP.NET (WSAT) предоставляет пользовательский веб-интерфейс для настройки членства и ролей и создание, изменение и удаление пользователей и ролей. К сожалению WSAT работает только при посещении от localhost, это означает, что средство администрирования рабочий веб-сайт недоступен через браузер. Хорошая новость: существуют обходные пути, которые позволяют управлять пользователями и ролями в рабочей среде. Этот учебник рассматривает эти методы обхода проблемы и другие.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -80,7 +79,6 @@ WSAT состоит из трех разделов:
 
 > [!NOTE]
 > Не забудьте изменить строку подключения в `databaseConnectionStrings.config` файл обратно в базу данных разработки строка подключения после завершения работы с WSAT в противном случае вы будете работать с рабочими данными при тестировании на сайте через разработку Среда. Также имейте в виду, что методики, которую мы только что обсудили позволяет нам использовать WSAT для удаленного управления пользователями и ролями, изменения в любые другие WSAT конфигурации параметры (правила доступа, SMTP настройки, отладки и трассировки параметров и т. д.) изменение `Web.config` файл. Следовательно любые изменения, внесенные в параметры применимы к среде разработки, а не к рабочей среде.
-
 
 ## <a name="creating-custom-user-and-role-management-web-pages"></a>Создание настраиваемого пользовательского и роль управления веб-страниц
 
