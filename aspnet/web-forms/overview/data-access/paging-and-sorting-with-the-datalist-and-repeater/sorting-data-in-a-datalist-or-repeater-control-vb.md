@@ -8,12 +8,12 @@ ms.date: 11/13/2006
 ms.assetid: 97c13898-0741-45f9-b3fa-7540ab1679e6
 msc.legacyurl: /web-forms/overview/data-access/paging-and-sorting-with-the-datalist-and-repeater/sorting-data-in-a-datalist-or-repeater-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 844b05f2b046d2c865805150b6ddc5b9c2ebb658
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: ecb077d6000b1c96b3a6b72900e6b97947a06ef7
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59414157"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65131147"
 ---
 # <a name="sorting-data-in-a-datalist-or-repeater-control-vb"></a>Сортировка данных в элементе управления DataList или Repeater (VB)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59414157"
 [Скачайте пример приложения](http://download.microsoft.com/download/4/a/7/4a7a3b18-d80e-4014-8e53-a6a2427f0d93/ASPNET_Data_Tutorial_45_VB.exe) или [скачать PDF](sorting-data-in-a-datalist-or-repeater-control-vb/_static/datatutorial45vb1.pdf)
 
 > В этом руководстве будет рассмотрен способ включения поддержки в элементах управления DataList и Repeater сортировки, а также способах создания элементов управления DataList или Repeater, данные которого может быть, разбитых на страницы и сортировки.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -50,31 +49,25 @@ ms.locfileid: "59414157"
 
 Прежде чем думать о реализации любого из функции, связанные с сортировки позволяют s начнем с получения списка продуктов в элементе управления Repeater. Сначала откройте `Sorting.aspx` странице в `PagingSortingDataListRepeater` папку. Добавление элемента управления Repeater на веб-страницу, установка его `ID` свойства `SortableProducts`. В смарт-теге элемента управления Repeater s, создайте новый ObjectDataSource, именуемый `ProductsDataSource` и настройте его для получения данных из `ProductsBLL` класс s `GetProducts()` метод. Выберите параметр из раскрывающегося списка на вкладках INSERT, UPDATE и DELETE (нет).
 
-
 [![Создание нового ObjectDataSource и настроить его для использования метода GetProductsAsPagedDataSource()](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image2.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image1.png)
 
 **Рис. 1**: Создание нового ObjectDataSource и настройте его для использования `GetProductsAsPagedDataSource()` метод ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image3.png))
-
 
 [![Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image5.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image4.png)
 
 **Рис. 2**: Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image6.png))
 
-
 В отличие от с DataList, Visual Studio не создает автоматически `ItemTemplate` для элемента управления Repeater, после ее привязки к источнику данных. Кроме того, необходимо добавить это `ItemTemplate` декларативно, как смарт-тег элемента управления s Repeater отсутствует параметр Правка шаблонов в элементе управления DataList s. S позволяют использовать тот же `ItemTemplate` из предыдущего учебника, отображаемые s название продукта, поставщика и категории.
 
 После добавления `ItemTemplate`, Repeater и ObjectDataSource s должна выглядеть следующим образом:
-
 
 [!code-aspx[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample1.aspx)]
 
 Рис. 3 показан эту страницу при просмотре через браузер.
 
-
 [![Отображается каждый продукт s имя поставщика и категории](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image8.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image7.png)
 
 **Рис. 3**: Отображается каждый s имя продукта, поставщика и категории ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image9.png))
-
 
 ## <a name="step-3-instructing-the-objectdatasource-to-sort-the-data"></a>Шаг 3. Элемент управления ObjectDataSource для сортировки данных с инструкциями
 
@@ -82,18 +75,15 @@ ms.locfileid: "59414157"
 
 Чтобы передать данные сортировки из страницы ASP.NET элемент управления ObjectDataSource, создайте обработчик событий для `Selecting` событие и используйте следующий код:
 
-
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample2.vb)]
 
 *SortExpression* имя поля данных для сортировки данных путем (например, ProductName) должно быть присвоено значение. Нет свойства сортировки, связанных с направлением, поэтому если необходимо отсортировать данные в порядке убывания, добавьте строку DESC для *sortExpression* значение (например, ProductName DESC).
 
 Попробуйте другие значения жестко для *sortExpression* и проверить результаты в браузере. Как показано на рис. 4, при использовании DESC ProductName как *sortExpression*, продукты сортируются по их имени в обратном алфавитном порядке.
 
-
 [![Продукты сортируются по имени в обратном алфавитном порядке](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image11.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image10.png)
 
 **Рис. 4**: Продукты сортируются по имени в обратном алфавитном порядке ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image12.png))
-
 
 ## <a name="step-4-creating-the-sorting-interface-and-remembering-the-sort-expression-and-direction"></a>Шаг 4. Создавать интерфейс сортировки и запоминать выражением сортировки и направлением
 
@@ -103,40 +93,32 @@ ms.locfileid: "59414157"
 
 `ListItem` `Text` Свойства может быть присвоено любое значение (например, имя), но `Value` свойства должно быть присвоено имя поля данных (например, ProductName). Чтобы отсортировать результаты в порядке убывания, добавьте строку DESC на имя поля данных, таких как ProductName DESC.
 
-
 ![Добавление ListItem для каждого из полей данных поддерживает сортировку](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image13.png)
 
 **Рис. 5**: Добавление `ListItem` для каждого поля данных поддерживает сортировку
-
 
 Наконец добавьте кнопку веб-элемент управления справа от элемента управления DropDownList. Задайте его `ID` для `RefreshRepeater` и его `Text` свойства для обновления.
 
 После создания `ListItem` s и добавив "Обновить", DropDownList и кнопка s должен выглядеть следующим образом:
 
-
 [!code-aspx[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample3.aspx)]
 
 С помощью сортировки полный DropDownList, мы теперь нужно обновить элемент управления ObjectDataSource s `Selecting` обработчик событий, что в ней используется выбранный `SortBy``ListItem` s `Value` свойство, в отличие от выражение сортировки жестко.
-
 
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample4.vb)]
 
 На этом этапе при первом просмотре странице продукты будут сначала упорядочены по `ProductName` поля данных, так как он s `SortBy` `ListItem` выбран по умолчанию (см. рис. 6). Выбрать другой параметр, например категория сортировки, а также команда Обновить вызывает обратную передачу и повторно отсортировать данные по имени категории, как показано на рис. 7.
 
-
 [![Они отсортированы сначала по имени](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image15.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image14.png)
 
 **Рис. 6**: Они отсортированы сначала по имени ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image16.png))
-
 
 [![Они теперь отсортированы по категории](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image18.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image17.png)
 
 **Рис. 7**: Они теперь отсортированы по категориям ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image19.png))
 
-
 > [!NOTE]
 > Нажав кнопку "Обновить" приводит к быть автоматически переупорядочены так как состояние представления элемента управления Repeater s отключена, приводящий к элементу управления Repeater, выполнять повторную привязку к источнику данных при каждой обратной передаче данных. Если вы ve оставить Repeater s состояние представления включено, изменив порядок сортировки выберите в раскрывающемся списке не повлияет на порядок сортировки. Чтобы исправить это, создайте обработчик событий для кнопки Обновить s `Click` событий и повторную привязку элемента управления Repeater к источнику данных (путем вызова элементу управления Repeater s `DataBind()` метод).
-
 
 ## <a name="remembering-the-sort-expression-and-direction"></a>Запоминание выражением сортировки и направлением
 
@@ -150,11 +132,9 @@ ms.locfileid: "59414157"
 
 В [предыдущем учебном курсе](paging-report-data-in-a-datalist-or-repeater-control-vb.md) мы увидели, как можно реализовать разбиение по страницам по умолчанию с элементом управления DataList. Позвольте s расширить этот предыдущего примера, включив возможность сортировать разбитых на страницы данных. Сначала откройте `SortingWithDefaultPaging.aspx` и `Paging.aspx` страниц в `PagingSortingDataListRepeater` папку. Из `Paging.aspx` нажмите кнопку "источник", чтобы просмотреть декларативная разметка страницы s. Копировать выделенный текст (см. рис. 8) и вставьте его в декларативной разметке `SortingWithDefaultPaging.aspx` между `<asp:Content>` теги.
 
-
 [![Репликация в декларативной разметке &lt;asp: Content&gt; теги из Paging.aspx SortingWithDefaultPaging.aspx](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image21.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image20.png)
 
 **Рис. 8**: Репликация в декларативной разметке `<asp:Content>` тегов `Paging.aspx` для `SortingWithDefaultPaging.aspx` ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image22.png))
-
 
 После копирования декларативная разметка, скопируйте методы и свойства в `Paging.aspx` странице s вспомогательного класса в класс фонового кода для `SortingWithDefaultPaging.aspx`. Далее, Отвлекитесь и просмотрите `SortingWithDefaultPaging.aspx` страницу в браузере. Он должен продемонстрировать одинаковые функции и внешний вид, как `Paging.aspx`.
 
@@ -165,7 +145,6 @@ ms.locfileid: "59414157"
 Ранее в этом учебнике мы добавили поддержку сортировки, указав выражение сортировки из ObjectDataSource s `Selecting` обработчик событий. Это хорошо работает при ObjectDataSource возвращается объект, который можно сортировать, например `ProductsDataTable` возвращаемые `GetProducts()` метод. Тем не менее `PagedDataSource` объект, возвращаемый `GetProductsAsPagedDataSource` метод не поддерживает сортировку его внутренний источник данных. Вместо этого нам нужно отсортировать результаты, возвращаемые `GetProducts()` метод *перед* мы поместили в `PagedDataSource`.
 
 Для этого создайте новый метод в `ProductsBLL` класса `GetProductsSortedAsPagedDataSource(sortExpression, pageIndex, pageSize)`. Чтобы отсортировать `ProductsDataTable` возвращаемые `GetProducts()` метод, укажите `Sort` свойство по умолчанию `DataTableView`:
-
 
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample5.vb)]
 
@@ -179,16 +158,13 @@ ms.locfileid: "59414157"
 
 После внесения этих изменений декларативная разметка ObjectDataSource s должен выглядеть:
 
-
 [!code-aspx[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample6.aspx)]
 
 На этом этапе `SortingWithDefaultPaging.aspx` страницы будут отсортированы результаты в алфавитном порядке по названию продукта (см. рис. 9). Это обусловлено тем, по умолчанию значение ProductName, передается в качестве `GetProductsSortedAsPagedDataSource` метод s *sortExpression* параметра.
 
-
 [![По умолчанию результаты сортируются по ProductName](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image24.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image23.png)
 
 **Рис. 9**: По умолчанию результаты сортируются по `ProductName` ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image25.png))
-
 
 Если вручную добавить `sortExpression` поля строки запроса, такие как `SortingWithDefaultPaging.aspx?sortExpression=CategoryName` результаты будут отсортированы по заданному `sortExpression`. Тем не менее это `sortExpression` параметр не включается в строке запроса при переходе на другую страницу данных. На самом деле, нажав кнопку на странице Далее или последней кнопки вернетесь нас к `Paging.aspx`! Кроме того здесь s в настоящее время сортировки интерфейс. Единственным способом, пользователь может изменить порядок сортировки разбитых на страницы данных является прямое управление строку запроса.
 
@@ -198,31 +174,25 @@ ms.locfileid: "59414157"
 
 В настоящее время `RedirectUser` метод принимает только один входной параметр индекс отображаемой страницы. Тем не менее могут возникнуть ситуации, когда необходимо перенаправить пользователя на определенную страницу данных, используя выражение сортировки, отличные от какие s, указанный в строке запроса. Сейчас мы создадим интерфейс упорядочения для этой страницы, которая будет содержать несколько кнопку веб-элементов управления для сортировки данных с помощью указанного столбца. При нажатии одной из этих кнопок, необходимо перенаправить пользователя, передавая значение выражения сортировки, соответствующие. Для обеспечения данной функциональности, создайте две версии `RedirectUser` метод. Первый из них должен принимать только индекс страницы для отображения, а второй принимает выражение страницы индекса и сортировки.
 
-
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample7.vb)]
 
 В первом примере в этом руководстве мы создали сортировки интерфейс, с помощью элемента управления DropDownList. В этом примере s позволяют использовать три кнопки веб-элементы управления, расположенный выше элемента управления DataList, один для сортировки с помощью `ProductName`, один для `CategoryName`и один для `SupplierName`. Добавьте три кнопки веб-элементы управления, настройка их `ID` и `Text` свойства соответствующим образом:
-
 
 [!code-aspx[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample8.aspx)]
 
 Создайте `Click` обработчик событий для каждого. Обработчики событий должны вызывать `RedirectUser` метода, возвращает пользователя на первую страницу, с помощью соответствующих сортировки выражения.
 
-
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample9.vb)]
 
 При первом просмотре страницы, данные отсортированы по названию продукта в алфавитном порядке (см. рис. 9). Нажмите кнопку "Далее" для перехода на второй странице данных и нажмите кнопку сортировки, кнопка категории. Это возвращает нас к первой странице данных, отсортированных по имени категории (см. рис. 10). Аналогичным образом щелкнув кнопку поставщика сортировки сортирует данные поставщиком, начиная с первой страницы данных. Выбор сортировки запоминается как страницам данные. Рис. 11 показана страница после сортировки по категориям и затем перейти на тринадцатого страницу данных.
-
 
 [![Продукты упорядочены по категории](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image27.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image26.png)
 
 **Рис. 10**: Продукты сортируются по категориям ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image28.png))
 
-
 [![Выражение сортировки данные запоминаются при разбиения на страницы через](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image30.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image29.png)
 
 **Рис. 11**: Выражение сортировки — запоминаются при разбиения на страницы через Data ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image31.png))
-
 
 ## <a name="step-6-custom-paging-through-records-in-a-repeater"></a>Шаг 6. Пользовательское разбиение по страницам по записям в элементе управления Repeater
 
@@ -236,53 +206,41 @@ ms.locfileid: "59414157"
 
 Откройте `SortingWithCustomPaging.aspx` странице в `PagingSortingDataListRepeater` папку и добавьте элемент управления Repeater к странице, установив его `ID` свойства `Products`. В смарт-теге элемента управления Repeater s, создайте новый ObjectDataSource, именуемый `ProductsDataSource`. Настройте его для выбора данных из `ProductsBLL` класс s `GetProductsPaged` метод.
 
-
 [![Настройте элемент ObjectDataSource для использования метода GetProductsPaged класса ProductsBLL s](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image33.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image32.png)
 
 **Рис. 12**: Настройка ObjectDataSource для использования `ProductsBLL` класс s `GetProductsPaged` метод ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image34.png))
 
-
 Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) и нажмите кнопку "Далее". Мастер настройки источника данных, а теперь запрашивает источники `GetProductsPaged` метод s *startRowIndex* и *maximumRows* входных параметров. На самом деле эти параметры игнорируются. Вместо этого *startRowIndex* и *maximumRows* значения будут передаваться в `Arguments` свойства в элемент управления ObjectDataSource s `Selecting` обработчик событий, как и как мы указали *sortExpression* в этой демонстрации первый учебник s. Таким образом оставьте источника параметра раскрывающиеся списки в мастере, установленному None.
-
 
 [![Оставьте набор источников параметра None](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image36.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image35.png)
 
 **Рис. 13**: Оставьте параметр источников, задайте значение None ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image37.png))
 
-
 > [!NOTE]
 > Сделать *не* набора ObjectDataSource s `EnablePaging` свойства `true`. Это приведет к ObjectDataSource автоматически включать свой собственный *startRowIndex* и *maximumRows* параметров `SelectMethod` s существующий список параметров. `EnablePaging` Свойство полезно, когда пользовательские привязки, разбитых на страницы данных к элементу управления GridView, DetailsView и FormView, так как эти элементы управления ожидать определенных элементом управления ObjectDataSource s доступен только при `EnablePaging` свойство `true`. Поскольку мы имеем вручную добавить поддержку разбиения по страницам для элементов управления DataList и Repeater, оставьте это свойство установлено в `false` (по умолчанию), как мы будем позаботимся необходимую функциональность непосредственно в странице ASP.NET.
 
-
 Наконец, определите Repeater s `ItemTemplate` , чтобы были показаны название продукта s, категорию и поставщика. После внесения этих изменений Repeater и ObjectDataSource s декларативный синтаксис должен выглядеть следующим образом:
-
 
 [!code-aspx[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample10.aspx)]
 
 Отвлекитесь и посетить страницу через обозреватель и обратите внимание на то, что записи не возвращаются. Это обусловлено тем, мы ve еще для указания *startRowIndex* и *maximumRows* значения параметров; таким образом, значение 0 передается в обоих. Чтобы задать эти значения, создайте обработчик событий для ObjectDataSource s `Selecting` событий и задать эти параметры программным образом значения для жестко запрограммированные значения от 0 до 5, соответственно:
 
-
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample11.vb)]
 
 После этого изменения на странице при просмотре в обозревателе отображаются первые пять продуктов.
-
 
 [![Отображаются первые пять записи](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image39.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image38.png)
 
 **Рис. 14**: Отображаются первые пять записи ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image40.png))
 
-
 > [!NOTE]
 > Произойти продуктов, перечисленных на рис. 14, должны быть отсортированы по названию продукта, так как `GetProductsPaged` хранимую процедуру, которая выполняет эффективный пользовательского разбиения по страницам запрос упорядочивает результаты по `ProductName`.
 
-
 Чтобы разрешить пользователям перемещаться по страницам, нам нужно отслеживать индекс начальной строки и максимальное число строк и помнить эти значения во время обратной передачи. В примере разбиение по страницам по умолчанию мы использовали поля строки запроса, чтобы сохранить эти значения; для этой демонстрации позволяют сохранять эти сведения в состоянии представления страницы s s. Создайте следующие два свойства:
-
 
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample12.vb)]
 
 Затем обновите код в обработчике событий выбор, заняв `StartRowIndex` и `MaximumRows` свойства вместо жестко запрограммированные значения от 0 до 5:
-
 
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample13.vb)]
 
@@ -292,41 +250,33 @@ ms.locfileid: "59414157"
 
 Использование let s, первый же "," Назад "," следующего, последнее разбиение по страницам интерфейс используется в примере разбиение по страницам по умолчанию, включая Label Web, просматривается элемент управления, отображающий какие страницы данных и существует общее количество страниц. Добавьте четыре кнопки веб-элементов управления и метку под элемент управления Repeater.
 
-
 [!code-aspx[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample14.aspx)]
 
 Создайте `Click` обработчики событий для четырех кнопок. При нажатии одной из этих кнопок, нам нужно обновить `StartRowIndex` и привяжите данные к элементу управления Repeater. Код для кнопок First, Previous и Next довольно проста, но для кнопки последней как определить индекс начальной строки для последней странице данных? Для вычисления этого индекса, а также вы можете определить Включение кнопки следующего и последнего нам необходимо знать, сколько записей в целом разбиваемых по страницам. Мы можете определить, вызвав `ProductsBLL` класс s `TotalNumberOfProducts()` метод. S позволяют создать свойство только для чтения, страницам с именем `TotalRowCount` , возвращающий результаты `TotalNumberOfProducts()` метод:
-
 
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample15.vb)]
 
 С этим свойством теперь мы можем определить последний индекс начальной строки страницы s. В частности, он s целочисленный результат из `TotalRowCount` минус 1, деленное на `MaximumRows`, умноженному на `MaximumRows`. Теперь можно написать `Click` обработчики событий для четырех кнопок интерфейса разбиения на страницы:
 
-
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample16.vb)]
 
 Наконец нам нужно отключить кнопки первый» и «назад в интерфейсе разбиения по страницам, при просмотре первой страницы данных и Далее» и «последняя кнопок, при просмотре на последней странице. Для этого добавьте следующий код в элемент управления ObjectDataSource s `Selecting` обработчик событий:
-
 
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample17.vb)]
 
 После добавления этих `Click` обработчики событий и код, чтобы включить или отключить элементы интерфейса разбиения по страницам, на основании текущий индекс начальной строки, проверка страницы в браузере. Как показано на рис. 15, при первом просмотре странице первого и кнопок будут отключены. Щелкните Далее, чтобы отобразить на второй странице данных, при щелчке последнего отображается последняя страница (см. рис. 16 и 17). При просмотре на последней странице данных кнопки "Далее" и "Дата последнего будут отключены.
 
-
 [![Назад и последней кнопки будут отключены при просмотре первой страницы продуктов](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image42.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image41.png)
 
 **Рис. 15**: Назад и последней кнопки будут отключены при просмотре первой страницы продукты ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image43.png))
-
 
 [![Вторая страница продукты отображаются](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image45.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image44.png)
 
 **Рис. 16**: Вторая страница продукты отображаются ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image46.png))
 
-
 [![Щелкнув последний отображает последней странице данных](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image48.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image47.png)
 
 **Рис. 17**: Щелкнув последнего отображает данные из окончательного страницы ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image49.png))
-
 
 ## <a name="step-7-including-sorting-support-with-the-custom-paged-repeater"></a>Шаг 7. Включая поддержки со специальной сортировки, разбитых на страницы элемент управления Repeater
 
@@ -340,40 +290,32 @@ ms.locfileid: "59414157"
 
 Начните с обновления ObjectDataSource s `SelectMethod` свойство и добавление *sortExpression* `Parameter`. Убедитесь, что *sortExpression* `Parameter` s `Type` свойству `String`. После завершения этих первых двух задач, декларативная разметка ObjectDataSource s должен выглядеть следующим образом:
 
-
 [!code-aspx[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample18.aspx)]
 
 Теперь нам нужны уровня страницы `SortExpression` свойство, значение которого выполняется сериализация в состояние представления. Если значение выражения не сортировки не задана, используйте ProductName по умолчанию:
-
 
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample19.vb)]
 
 Прежде чем элемент управления ObjectDataSource вызывает `GetProductsPagedAndSorted` метод, нам нужно установить *sortExpression* `Parameter` значению `SortExpression` свойство. В `Selecting` обработчик событий, добавьте следующую строку кода:
 
-
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample20.vb)]
 
 Остается только реализовать интерфейс сортировки. Как и в последнем примере, позвольте s имеют сортировки интерфейс, реализованный с помощью три кнопки веб-элементы управления разрешает пользователю сортировать результаты по имени продукта, категории или поставщику.
-
 
 [!code-aspx[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample21.aspx)]
 
 Создание `Click` обработчики событий для эти три элемента управления. В случае сброса обработчик, `StartRowIndex` 0, задайте `SortExpression` соответствующее значение и повторную привязку данных к элементу управления Repeater:
 
-
 [!code-vb[Main](sorting-data-in-a-datalist-or-repeater-control-vb/samples/sample22.vb)]
 
 Все, что s — его! Хотя существуют несколько этапов, чтобы получить пользовательское разбиение по страницам и сортировка реализована, действия были очень похоже на те, которые необходимы для разбиения на страницы по умолчанию. Рис. 18 показаны продукты, при просмотре на последней странице данных при сортировке по категориям.
-
 
 [![Отображаются последние данные страницы, отсортировано по категориям,](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image51.png)](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image50.png)
 
 **Рис. 18**: Последняя страница данных, отсортировано по категориям, отображается ([Просмотр полноразмерного изображения](sorting-data-in-a-datalist-or-repeater-control-vb/_static/image52.png))
 
-
 > [!NOTE]
 > В предыдущих примерах, при сортировке по поставщику SupplierName использовался в качестве выражения сортировки. Тем не менее для реализации пользовательского разбиения по страницам, нам нужно использовать CompanyName. Это обусловлено тем, хранимая процедура отвечает за реализацию пользовательского разбиения по страницам `GetProductsPagedAndSorted` передает выражение сортировки в `ROW_NUMBER()` ключевое слово, `ROW_NUMBER()` ключевого слова требуется действительное имя столбца, а не псевдоним. Таким образом, необходимо использовать `CompanyName` (имя столбца в `Suppliers` таблицы) вместо того чтобы псевдоним, используемый в `SELECT` запроса (`SupplierName`) для выражения сортировки.
-
 
 ## <a name="summary"></a>Сводка
 

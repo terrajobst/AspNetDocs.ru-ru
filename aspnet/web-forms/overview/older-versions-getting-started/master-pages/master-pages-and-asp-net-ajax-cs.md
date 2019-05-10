@@ -8,12 +8,12 @@ ms.date: 07/11/2008
 ms.assetid: 0c55eb66-ba44-4d49-98e8-5c87fd9b1111
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/master-pages-and-asp-net-ajax-cs
 msc.type: authoredcontent
-ms.openlocfilehash: b8bc435e4b2b1eeedaab424695715e5ec51e116d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 0880b2d6666ec3ae618573aa3a884ca4865c317c
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381865"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65132814"
 ---
 # <a name="master-pages-and-aspnet-ajax-c"></a>Эталонные страницы и ASP.NET AJAX (C#)
 
@@ -22,7 +22,6 @@ ms.locfileid: "59381865"
 [Скачать код](http://download.microsoft.com/download/1/8/4/184e24fa-fcc8-47fa-ac99-4b6a52d41e97/ASPNET_MasterPages_Tutorial_08_CS.zip) или [скачать PDF](http://download.microsoft.com/download/e/b/4/eb4abb10-c416-4ba4-9899-32577715b1bd/ASPNET_MasterPages_Tutorial_08_CS.pdf)
 
 > Рассматриваются варианты использования ASP.NET AJAX и главных страниц. Рассматривает использование ScriptManagerProxy класса; Описание порядка загрузки различных файлов JS в зависимости от того, используется ли в базе данных Master ScriptManager страницы или страницы содержимого.
-
 
 ## <a name="introduction"></a>Вступление
 
@@ -35,11 +34,9 @@ ms.locfileid: "59381865"
 > [!NOTE]
 > Этот учебник не исследовать, разработка или создание поддерживающих AJAX веб-приложений с помощью платформы AJAX для ASP.NET. Дополнительные сведения об использовании AJAX [видеоролики по ASP.NET AJAX](../../../videos/aspnet-ajax/index.md) и [учебники](../aspnet-ajax/understanding-partial-page-updates-with-asp-net-ajax.md), а также как эти ресурсы, перечисленные в разделе «Дополнительные материалы» в конце этого руководства.
 
-
 ## <a name="examining-the-markup-emitted-by-the-scriptmanager-control"></a>Изучение разметке, генерируемой элементом управления ScriptManager
 
 Элемент управления ScriptManager создает разметку, которая заставляет браузер, чтобы скачать файлы JavaScript, состав клиентской библиотеки ASP.NET AJAX. Он также добавляет немного подставляемый код JavaScript на страницу, который инициализирует этой библиотеки. В следующем примере показано содержимое, которое добавляется в выводимые данные страницы, содержащей элемент управления ScriptManager:
-
 
 [!code-html[Main](master-pages-and-asp-net-ajax-cs/samples/sample1.html)]
 
@@ -49,7 +46,6 @@ ms.locfileid: "59381865"
 
 > [!NOTE]
 > Если вы планируете, в том числе функций AJAX в пользовательском интерфейсе на главной странице, затем у вас нет выбора в нескольких - ScriptManager должен включать на главной странице.
-
 
 Недостатком добавления ScriptManager на главную страницу является, что приведенный выше скрипт создается в *каждые* страницы, независимо от того, следует ли его необходимые. Очевидно, что это приводит к неиспользуемого пропускной способности для этих страниц, которые имеют ScriptManager, включенных (через главную страницу), но не используйте какие-либо функции платформа AJAX для ASP.NET. Но насколько теряется пропускной способности?
 
@@ -61,7 +57,6 @@ ms.locfileid: "59381865"
 > [!NOTE]
 > Если вы по-прежнему не хотите поместить элемент управления ScriptManager на главной странице, рассмотрите возможность веб-формы ( `<form runat="server">` разметки на главной странице). Каждая страница ASP.NET, которая использует модель обратной передачи должен включать ровно одну веб-форму. При добавлении веб-формы добавляются дополнительные материалы: число скрытых полях формы, `<form>` тег, и при необходимости JavaScript функции для инициирования обратной передачи из скрипта. Эта разметка не требуется для страниц, которые не обратной передачи. Эта разметка лишние удалось устранить, удалив веб-форма с главной страницы и вручную добавлять его в каждую страницу содержимого, которому он требуется. Однако преимущества веб-формы на главной странице перевешивают ее недостатки от необходимости излишне добавлены некоторые содержимого страницы.
 
-
 ## <a name="step-1-adding-a-scriptmanager-control-to-the-master-page"></a>Шаг 1. Добавление элемента управления ScriptManager главной страницы
 
 Каждый веб-страницы, использующее платформу ASP.NET AJAX должен содержать точно один элемент управления ScriptManager. Из-за этого требования обычно имеет смысл для размещения одного элемента управления ScriptManager на главной странице, таким образом, чтобы все страницы содержимого имели автоматически включается элемент управления ScriptManager. Кроме того ScriptManager должен указываться перед любым серверных элементов управления ASP.NET AJAX, такие как элементы управления UpdatePanel и UpdateProgress. Таким образом лучше поместить ScriptManager до элементов управления ContentPlaceHolder в веб-формы.
@@ -70,11 +65,9 @@ ms.locfileid: "59381865"
 
 После добавления ScriptManager к странице, изменить его `ID` из `ScriptManager1` для `MyManager`.
 
-
 [![Добавление ScriptManager на главную страницу](master-pages-and-asp-net-ajax-cs/_static/image2.png)](master-pages-and-asp-net-ajax-cs/_static/image1.png)
 
 **Рис 01**: Добавить ScriptManager главной страницы ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-cs/_static/image3.png))
-
 
 ## <a name="step-2-using-the-aspnet-ajax-framework-from-a-content-page"></a>Шаг 2. С помощью платформы ASP.NET AJAX из страницы содержания
 
@@ -82,16 +75,13 @@ ms.locfileid: "59381865"
 
 Начнем с создания новой страницы в корневом каталоге с именем `ShowRandomProduct.aspx`. Не забудьте этой новой странице, чтобы привязать `Site.master` главной страницы.
 
-
 [![Добавьте новую страницу ASP.NET на веб-сайт](master-pages-and-asp-net-ajax-cs/_static/image5.png)](master-pages-and-asp-net-ajax-cs/_static/image4.png)
 
 **Рис. 02**: Добавьте новую страницу ASP.NET на веб-сайт ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-cs/_static/image6.png))
 
-
 Помните, что в [ *указание названия, метатегов и других заголовков HTML на главной странице* ](specifying-the-title-meta-tags-and-other-html-headers-in-the-master-page-cs.md) руководстве мы создали пользовательскую страницу базовый класс с именем `BasePage` , создавший заголовок страницы, если он был не задан явно. Перейдите к `ShowRandomProduct.aspx` фонового кода страницы класса, который будет наследовать `BasePage` (а не из `System.Web.UI.Page`).
 
 Наконец, обновите `Web.sitemap` файл, чтобы включить запись для этого занятия. Добавьте следующую разметку под `<siteMapNode>` хозяин занятие взаимодействие содержимого страниц:
-
 
 [!code-xml[Main](master-pages-and-asp-net-ajax-cs/samples/sample2.xml)]
 
@@ -103,37 +93,29 @@ ms.locfileid: "59381865"
 
 Наша первая задача — для отображения сведений о случайно выбранный продукт в UpdatePanel. Начнем с перетаскивания элемента управления DetailsView в UpdatePanel. Значение элемента управления DetailsView `ID` свойства `ProductInfo` и очистите его `Height` и `Width` свойства. Разверните смарт-теге DetailsView и в раскрывающемся списке "Выбор источника данных", выберите для привязки элемента управления DetailsView для нового элемента управления SqlDataSource с именем `RandomProductDataSource`.
 
-
 [![Привязка элемента управления DetailsView для нового элемента управления SqlDataSource](master-pages-and-asp-net-ajax-cs/_static/image8.png)](master-pages-and-asp-net-ajax-cs/_static/image7.png)
 
 **Рис 03**: Привязка элемента управления DetailsView для нового элемента управления SqlDataSource ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-cs/_static/image9.png))
 
-
 Настройка элемента управления SqlDataSource для подключения к базе данных Northwind с помощью `NorthwindConnectionString` (созданный в учебном курсе [ *взаимодействие с главной страницей на странице содержимого* ](interacting-with-the-content-page-from-the-master-page-cs.md) руководстве). При настройке запроса SELECT решили указать пользовательские инструкции SQL, а затем введите следующий запрос:
-
 
 [!code-sql[Main](master-pages-and-asp-net-ajax-cs/samples/sample3.sql)]
 
 `TOP 1` Ключевое слово в `SELECT` предложение возвращает только первую запись, возвращенных запросом. [ `NEWID()` Функция](https://msdn.microsoft.com/library/ms190348.aspx) создает новую [значение глобальный уникальный идентификатор (GUID)](http://en.wikipedia.org/wiki/Globally_Unique_Identifier) и может использоваться в `ORDER BY` предложение для возврата записей в таблице в случайном порядке.
 
-
 [![Настройка элемента управления SqlDataSource для возврата одного, случайно выбранных записи](master-pages-and-asp-net-ajax-cs/_static/image11.png)](master-pages-and-asp-net-ajax-cs/_static/image10.png)
 
 **Рис. 04**: Настройка элемента управления SqlDataSource, чтобы получить одну, произвольно выбранные записи ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-cs/_static/image12.png))
 
-
 После завершения работы мастера, Visual Studio создает BoundField для двух столбцов, возвращаемых запросом выше. На этом этапе декларативная разметка страницы должна выглядеть следующего вида:
-
 
 [!code-aspx[Main](master-pages-and-asp-net-ajax-cs/samples/sample4.aspx)]
 
 Рис. 5 показан `ShowRandomProduct.aspx` страницы при просмотре в обозревателе. Нажмите кнопку обновления в браузере, чтобы перезагрузить страницу; Вы должны увидеть `ProductName` и `UnitPrice` значения для новой записи случайно выбранных.
 
-
 [![Отображается название и цену продукта случайных](master-pages-and-asp-net-ajax-cs/_static/image14.png)](master-pages-and-asp-net-ajax-cs/_static/image13.png)
 
 **05 рис**: Отображается название и цену продукта произвольного ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-cs/_static/image15.png))
-
 
 ### <a name="automatically-displaying-a-new-product-every-15-seconds"></a>Автоматическое отображение нового продукта каждые 15 секунд
 
@@ -141,11 +123,9 @@ ms.locfileid: "59381865"
 
 Для выполнения этой задачи таймера из области элементов перетащите в UpdatePanel. Изменение таймера `ID` из `Timer1` для `ProductTimer` и его `Interval` свойство от 60000 до 15000. `Interval` Свойство указывает количество миллисекунд между обратными передачами; он 15000 при указании таймер, чтобы вызвать обратную передачу частичной каждые 15 секунд. На этом этапе таймера должен выглядеть следующим образом:
 
-
 [!code-aspx[Main](master-pages-and-asp-net-ajax-cs/samples/sample5.aspx)]
 
 Создайте обработчик события для таймера `Tick` событий. В этом обработчике событий, нам нужно привязать данные к элементу управления DetailsView, вызвав DetailsView `DataBind` метод. Таким образом предписывает элементу управления DetailsView для повторного получения данных от элемента управления источника данных, который выбирает и отобразить новый случайным образом выбранной записи (так же, как при перезагрузке страницы, щелкнув кнопку обновления браузера).
-
 
 [!code-csharp[Main](master-pages-and-asp-net-ajax-cs/samples/sample6.cs)]
 
@@ -153,21 +133,17 @@ ms.locfileid: "59381865"
 
 Чтобы лучше понять, почему так происходит, давайте добавим элемент управления Label UpdatePanel, время последнего обновления отображения. Добавьте элемент управления Label Web внутри UpdatePanel, задайте его `ID` для `LastUpdateTime`и снимите его `Text` свойство. Создайте обработчик событий для UpdatePanel `Load` событий и отображение текущего времени в метке. (UpdatePanel `Load` событие, возникающее при каждой обратной передаче страницы полным или частичным.)
 
-
 [!code-csharp[Main](master-pages-and-asp-net-ajax-cs/samples/sample7.cs)]
 
 Благодаря этому изменению полный страницы включает время загрузки текущей отображаемой продукта. Рис. 6 показан при первом посещении страницы. Рис. 7 показана страница 15 секунд позже, после того как элемент управления Timer «установлен» и UpdatePanel обновлялся для отображения сведений о нового продукта.
-
 
 [![Случайным образом выбрать продукт отображается при загрузке страницы](master-pages-and-asp-net-ajax-cs/_static/image17.png)](master-pages-and-asp-net-ajax-cs/_static/image16.png)
 
 **Рис 06**: При загрузке страницы отображается случайным образом выбрать продукт ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-cs/_static/image18.png))
 
-
 [![Каждые 15 секунд появится новый случайным образом выбрать продукт](master-pages-and-asp-net-ajax-cs/_static/image20.png)](master-pages-and-asp-net-ajax-cs/_static/image19.png)
 
 **07 рис**: Каждые 15 секунд, отображается новый случайным образом выбрать продукт ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-cs/_static/image21.png))
-
 
 ## <a name="step-3-using-the-scriptmanagerproxy-control"></a>Шаг 3. Использование элемента управления ScriptManagerProxy
 
@@ -177,7 +153,6 @@ ms.locfileid: "59381865"
 
 > [!NOTE]
 > Страницы ASP.NET только может иметь не более одного управления ScriptManager. Таким образом невозможно добавить элемент управления ScriptManager со страницей содержимого, если элемент управления ScriptManager уже определен на главной странице. Единственная цель ScriptManagerProxy является позволяют разработчикам определить ScriptManager на главной странице, но по-прежнему иметь возможность добавления ScriptManager настроек на основе страниц.
-
 
 Чтобы увидеть элемент управления ScriptManagerProxy в действии, давайте дополнить UpdatePanel в `ShowRandomProduct.aspx` для включения кнопка, использующая скрипт на стороне клиента, чтобы приостановить или возобновить элемент управления Timer. Элемент управления Timer имеет три метода со стороны клиента, которые можно использовать для достижения этого нужной функции.
 
@@ -189,32 +164,25 @@ ms.locfileid: "59381865"
 
 Начнем с создания новой папки в веб-сайт с именем `Scripts`. Добавьте новый файл в папку скриптов с именем `TimerScript.js` типа файл JScript.
 
-
 [![Добавьте новый файл JavaScript в папку Scripts](master-pages-and-asp-net-ajax-cs/_static/image23.png)](master-pages-and-asp-net-ajax-cs/_static/image22.png)
 
 **Рис 08**: Добавьте новый файл JavaScript для `Scripts` папку ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-cs/_static/image24.png))
-
 
 [![На веб-сайт был добавлен новый файл JavaScript](master-pages-and-asp-net-ajax-cs/_static/image26.png)](master-pages-and-asp-net-ajax-cs/_static/image25.png)
 
 **Рис 09**: На веб-сайт был добавлен новый файл JavaScript ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-cs/_static/image27.png))
 
-
 Добавьте следующий сценарий в файл TimerScript.js:
-
 
 [!code-csharp[Main](master-pages-and-asp-net-ajax-cs/samples/sample8.cs)]
 
 Теперь нам нужно зарегистрировать этот пользовательский файл JavaScript в `ShowRandomProduct.aspx`. Вернитесь к `ShowRandomProduct.aspx` и добавить на страницу элемент управления ScriptManagerProxy, задать его `ID` для `MyManagerProxy`. Чтобы зарегистрировать пользовательским кодом JavaScript файл выберите элемент управления ScriptManagerProxy в конструкторе, а затем выберите окно "Свойства". Одно из свойств называется скриптов. При выборе этого свойства отображается редактор коллекции ScriptReference, показанный на рис. 10. Нажмите кнопку Добавить новую ссылку на скрипт и затем введите путь к файлу сценария в свойство Path: `~/Scripts/TimerScript.js`.
 
-
 [![Добавьте ссылку на элемент управления ScriptManagerProxy скрипт](master-pages-and-asp-net-ajax-cs/_static/image29.png)](master-pages-and-asp-net-ajax-cs/_static/image28.png)
 
 **Рис. 10**: Добавьте ссылку на элемент управления ScriptManagerProxy скрипт ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-cs/_static/image30.png))
 
-
 После добавления ссылки на сценарий управления ScriptManagerProxy декларативной разметки обновляется для включения `<Scripts>` коллекции с одним `ScriptReference` запись, как в следующем примере разметки показано:
-
 
 [!code-aspx[Main](master-pages-and-asp-net-ajax-cs/samples/sample9.aspx)]
 
@@ -222,23 +190,19 @@ ms.locfileid: "59381865"
 
 Теперь мы можем вызвать `ToggleTimer` функции, определенной в `TimerScript.js` от клиентского скрипта в `ShowRandomProduct.aspx` страницы. Добавьте следующий код HTML внутри UpdatePanel.
 
-
 [!code-aspx[Main](master-pages-and-asp-net-ajax-cs/samples/sample10.aspx)]
 
 Отобразится кнопка с текстом «Пауза». Каждый раз, когда он выбран, функцию JavaScript `ToggleTimer` вызывается, передавая ссылку на кнопку и значение идентификатора элемента управления Timer (`ProductTimer`). Обратите внимание на синтаксис для получения `id` значение элемента управления Timer. `<%=ProductTimer.ClientID%>` выдает значение `ProductTimer` элемента управления Timer `ClientID` свойство. В [ *именовании Идентификаторов элемента управления на страницах содержимого* ](control-id-naming-in-content-pages-cs.md) руководстве мы обсудили различия между серверным `ID` значение и итоговый клиентская `id` значение и как `ClientID` возвращает клиентский `id`.
 
 Рис. 11 показана эту страницу при первом посещении через браузер. Таймер выполняется в данный момент и обновляет сведения о продукте отображается каждые 15 секунд. Рис. 12 показан экран, после нажатия кнопки «Пауза». Нажмите кнопку Приостановка останавливает таймер и обновляет текст, кнопки «Возобновление». Сведения о продукте обновления (и продолжить обновление каждые 15 секунд), когда пользователь нажимает кнопку возобновления.
 
-
 [![Нажмите эту кнопку для остановки элемента управления Timer](master-pages-and-asp-net-ajax-cs/_static/image32.png)](master-pages-and-asp-net-ajax-cs/_static/image31.png)
 
 **Рис. 11**: Нажмите эту кнопку для остановки элемента управления Timer ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-cs/_static/image33.png))
 
-
 [![Нажмите кнопку "Продолжить", чтобы перезапустить таймер](master-pages-and-asp-net-ajax-cs/_static/image35.png)](master-pages-and-asp-net-ajax-cs/_static/image34.png)
 
 **Рис. 12**: Нажмите кнопку "Продолжить", чтобы перезапустить таймер ([Просмотр полноразмерного изображения](master-pages-and-asp-net-ajax-cs/_static/image36.png))
-
 
 ## <a name="summary"></a>Сводка
 
