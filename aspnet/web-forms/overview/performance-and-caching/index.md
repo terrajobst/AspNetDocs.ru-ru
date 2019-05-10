@@ -8,16 +8,15 @@ ms.date: 08/08/2011
 ms.assetid: da2d581a-019e-4183-84a6-70bf04822b44
 msc.legacyurl: /web-forms/overview/performance-and-caching
 msc.type: chapter
-ms.openlocfilehash: b217af062f53bf0e88c67a366ffc0111e4a1b4da
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 73e9d81ed659eac2a6817f2cf1f472a71df8b882
+ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410504"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65130973"
 ---
-# <a name="performance"></a><span data-ttu-id="a7b79-103">Производительность</span><span class="sxs-lookup"><span data-stu-id="a7b79-103">Performance</span></span>
+# <a name="performance"></a><span data-ttu-id="7720c-103">Производительность</span><span class="sxs-lookup"><span data-stu-id="7720c-103">Performance</span></span>
 
-> <span data-ttu-id="a7b79-104">Способ кэширования содержимого узла для повышения производительности.</span><span class="sxs-lookup"><span data-stu-id="a7b79-104">How to cache site content for faster performance.</span></span>
+> <span data-ttu-id="7720c-104">Способ кэширования содержимого узла для повышения производительности.</span><span class="sxs-lookup"><span data-stu-id="7720c-104">How to cache site content for faster performance.</span></span>
 
-
-- [<span data-ttu-id="a7b79-105">Использование асинхронных методов в ASP.NET 4.5</span><span class="sxs-lookup"><span data-stu-id="a7b79-105">Using Asynchronous Methods in ASP.NET 4.5</span></span>](using-asynchronous-methods-in-aspnet-45.md)
+- [<span data-ttu-id="7720c-105">Использование асинхронных методов в ASP.NET 4.5</span><span class="sxs-lookup"><span data-stu-id="7720c-105">Using Asynchronous Methods in ASP.NET 4.5</span></span>](using-asynchronous-methods-in-aspnet-45.md)
