@@ -1,10 +1,2 @@
----
-ms.openlocfilehash: 96cd0276487695ef8c46f3817f139e3f449744a5
-ms.sourcegitcommit: 24e58ac74c660306cd98c580eb5cb9e87d823330
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58134161"
----
-> [!NOTE]
-> <span data-ttu-id="4ae4f-101">Эта статья относится к ASP.NET SignalR.</span><span class="sxs-lookup"><span data-stu-id="4ae4f-101">This article refers to ASP.NET SignalR.</span></span> <span data-ttu-id="4ae4f-102">Если вы сейчас думаете об использовании SignalR для включения сценариев в реальном времени с помощью Java, Node.js, или в сценарии без сервера, взгляните на [ASP.NET Core SignalR](/aspnet/core/signalr/introduction).</span><span class="sxs-lookup"><span data-stu-id="4ae4f-102">If you're thinking about using SignalR to enable real-time scenarios with Java, Node.js, or in a serverless scenario, take a look at [ASP.NET Core SignalR](/aspnet/core/signalr/introduction).</span></span> <span data-ttu-id="4ae4f-103">Если вы уже использовали ASP.NET SignalR, взгляните на [различий между версиями](/aspnet/core/signalr/version-differences) страницы, чтобы понять различия в версиях и усовершенствованиях в ASP.NET Core SignalR.</span><span class="sxs-lookup"><span data-stu-id="4ae4f-103">If you've already used ASP.NET SignalR, take a look at the [version differences](/aspnet/core/signalr/version-differences) page to understand the differences in the versions and the improvements in ASP.NET Core SignalR.</span></span> <span data-ttu-id="4ae4f-104">Наконец, если вы знаете, вы будете выполнять приложения в режиме реального времени в Microsoft Azure, взгляните на [служба Azure SignalR](/azure/azure-signalr/signalr-overview), так как он обеспечивает облачных горизонтального масштабирования, когда приложениям требуется его.</span><span class="sxs-lookup"><span data-stu-id="4ae4f-104">Finally, if you know you'll be running your real-time apps in Microsoft Azure, take a look at the [Azure SignalR Service](/azure/azure-signalr/signalr-overview), as it provides cloud-based scale-out once your apps need it.</span></span>
+> [!WARNING]
+> <span data-ttu-id="6e678-101">Эта документация не для последней версии SignalR.</span><span class="sxs-lookup"><span data-stu-id="6e678-101">This documentation isn't for the latest version of SignalR.</span></span> <span data-ttu-id="6e678-102">Взгляните на [ASP.NET Core SignalR](/aspnet/core/signalr/introduction).</span><span class="sxs-lookup"><span data-stu-id="6e678-102">Take a look at [ASP.NET Core SignalR](/aspnet/core/signalr/introduction).</span></span>
