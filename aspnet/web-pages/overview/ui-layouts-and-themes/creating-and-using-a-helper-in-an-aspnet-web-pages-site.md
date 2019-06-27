@@ -8,12 +8,12 @@ ms.date: 02/17/2014
 ms.assetid: 46bff772-01e0-40f0-9ae6-9e18c5442ee6
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes/creating-and-using-a-helper-in-an-aspnet-web-pages-site
 msc.type: authoredcontent
-ms.openlocfilehash: 1f5109324ff3ce919e88fe976587a179eeaa5a5d
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 380663951094c9fc7d5f0601e30995fa073a204b
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65116040"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67410970"
 ---
 # <a name="creating-and-using-a-helper-in-an-aspnet-web-pages-razor-site"></a>Создание и использование вспомогательного метода на сайте ASP.NET Web Pages (Razor)
 
@@ -71,7 +71,7 @@ ms.locfileid: "65116040"
     Чтобы вызвать вспомогательный метод, вы создали, используйте `@` следуют вспомогательного приложения где, точка, имя файла, а затем имя вспомогательного. (При наличии нескольких папок в *приложения\_кода* папки, можно использовать синтаксис `@FolderName.FileName.HelperName` для вызова вспомогательное приложение в любой папке уровень вложенности). Текст, добавляемый в кавычки в круглых скобках является текста для отображения вспомогательное приложение как часть примечания в веб-страницы.
 3. Сохраните страницу и запустите его в браузере. Вспомогательная функция создает элемент Заметки справа где вызывается вспомогательный метод: между двумя абзацами.
 
-    ![Снимок экрана, показывающий страницу в браузере, и способ вспомогательный метод создания разметки, который помещает рамку вокруг указанного текста.](creating-and-using-a-helper-in-an-aspnet-web-pages-site/_static/image1.jpg)
+    ![Снимок экрана, показывающий страницу в браузере, и способ вспомогательный метод создания разметки, который помещает рамку вокруг указанного текста.](creating-and-using-a-helper-in-an-aspnet-web-pages-site/_static/image1.png)
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 

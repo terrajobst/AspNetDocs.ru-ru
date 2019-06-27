@@ -8,12 +8,12 @@ ms.date: 02/20/2005
 ms.assetid: 2bb109d2-e299-46ea-9054-fa0263b59165
 msc.legacyurl: /web-forms/overview/moving-to-aspnet-20/caching
 msc.type: authoredcontent
-ms.openlocfilehash: 39f4eb7b0859cf52fe3ed2531e9c349b465b9327
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 4f0b021ca6ca151544dd9fb0587ed9e0cf14ff65
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65116856"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411240"
 ---
 # <a name="caching"></a>Кэширование
 
@@ -94,7 +94,7 @@ SQL Server 7 и 2000 используют модель на основе опр�
 | AspNet\_SqlCacheUnRegisterTableStoredProcedure | Отменяет регистрацию зависимости кэша SQL для таблицы, удалив записи в таблице уведомлений и удаляет триггер. |
 | AspNet\_SqlCacheUpdateChangeIdStoredProcedure | Обновляет таблицу уведомлений, увеличивая changeId с измененной таблицей. ASP.NET использует это значение, чтобы определить, если данные были изменены. Как показано ниже, данная хранимая процедура выполняется с помощью триггера, который создается при включении таблицы. |
 
-- Триггер SQL Server вызывается ***таблицы\_имя *\_AspNet\_SqlCacheNotification\_триггера** создается для таблицы. Этот триггер выполняет AspNet\_SqlCacheUpdateChangeIdStoredProcedure при выполнении инструкции INSERT, UPDATE или DELETE для таблицы.
+- Триггер SQL Server вызывается  **_таблицы\_имя_\_AspNet\_SqlCacheNotification\_триггера** создается для таблицы. Этот триггер выполняет AspNet\_SqlCacheUpdateChangeIdStoredProcedure при выполнении инструкции INSERT, UPDATE или DELETE для таблицы.
 - Роль SQL Server называется **aspnet\_ChangeNotification\_ReceiveNotificationsOnlyAccess** добавляется в базу данных.
 
 **Aspnet\_ChangeNotification\_ReceiveNotificationsOnlyAccess** роль SQL Server имеет разрешения EXEC для AspNet\_SqlCachePollingStoredProcedure. Чтобы модель опроса работал правильно, необходимо добавить учетной записи процесса для aspnet\_ChangeNotification\_ReceiveNotificationsOnlyAccess роли. Aspnet\_regsql.exe средство не сделает это за вас.

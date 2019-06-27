@@ -8,12 +8,12 @@ ms.date: 06/09/2009
 ms.assetid: cb061642-faf3-41b2-9372-69e13444d458
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/displaying-a-custom-error-page-cs
 msc.type: authoredcontent
-ms.openlocfilehash: f56241a6a3d1d54f917d366b08edb4a1a43bbce8
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 2b84b4e0f57bdddb83fc79494b66be76edcad664
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65134449"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411005"
 ---
 # <a name="displaying-a-custom-error-page-c"></a>Отображение страницы пользовательской ошибки (C#)
 
@@ -137,8 +137,10 @@ ms.locfileid: "65134449"
 > [!NOTE]
 > Ознакомьтесь с [страницы ошибок 404, один раз более](http://www.smashingmagazine.com/2009/01/29/404-error-pages-one-more-time/) рекомендации по созданию эффективной страницы ошибок 404.
 
-[![](displaying-a-custom-error-page-cs/_static/image19.png)](displaying-a-custom-error-page-cs/_static/image18.png)**Рис. 7**: Чем точнее сообщение отображается страница ошибки 404 с помощью пользовательской `Oops.aspx`  
- ([Просмотр полноразмерного изображения](displaying-a-custom-error-page-cs/_static/image20.png)) 
+[![](displaying-a-custom-error-page-cs/_static/image19.png)](displaying-a-custom-error-page-cs/_static/image18.png)
+
+**Рис. 7**: Чем точнее сообщение отображается страница ошибки 404 с помощью пользовательской `Oops.aspx`  
+([Просмотр полноразмерного изображения](displaying-a-custom-error-page-cs/_static/image20.png)) 
 
 Так как вы знаете, что `404.aspx` страницы достигается только в том случае, если пользователь запрашивает страницу, которая не найдена, можно улучшить данную страницу для включения функции, чтобы помочь пользователю устранить этот особого типа ошибки. Например, можно создавать таблицу базы данных, которая сопоставляет известно неправильный URL-адреса, хороший URL-адреса и затем `404.aspx` пользовательскую страницу ошибки выполните запрос к таблице и предложить страниц, пользователь может пытаться связаться.
 

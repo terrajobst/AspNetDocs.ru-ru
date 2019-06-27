@@ -8,12 +8,12 @@ ms.date: 02/18/2014
 ms.assetid: 673d502f-2c16-4a6f-bb63-dbfd9a77ef47
 msc.legacyurl: /web-pages/overview/data/5-working-with-data
 msc.type: authoredcontent
-ms.openlocfilehash: 4ed2a2a1ee3cff7a50e67b6571b85f74d01efab7
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 45e988d037465e59ad352bb9444af2c69fd3cd70
+ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133216"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411270"
 ---
 # <a name="introduction-to-working-with-a-database-in-aspnet-web-pages-razor-sites"></a>Введение в работу с базой данных в ASP.NET Web Pages (Razor) узлов
 
@@ -94,7 +94,7 @@ ms.locfileid: "65133216"
 
     Когда все будет готово, определение будет выглядеть следующим образом:
 
-    ![[изображение]](5-working-with-data/_static/image2.jpg)
+    ![[изображение]](5-working-with-data/_static/image2.png)
 17. Нажмите клавиши Ctrl + S для сохранения таблицы.
 
 ## <a name="adding-data-to-the-database"></a>Добавление данных в базу данных
