@@ -63,19 +63,19 @@ API-Интерфейс позволяет операции CRUD в базе да
 
 | Authors |  |
 | --- | -- |
-| Получение api/authors | Получение всех авторов. |
-| GET api/authors / {id} | Получить автора по идентификатору. |
-| POST/api/authors | Создание нового автора. |
-| PUT/API/authors / {id} | Обновите существующие автора. |
-| DELETE/API/authors / {id} | Удалите автора. |
+| GET api/authors | Получение всех авторов. |
+| GET api/authors/{id} | Получить автора по идентификатору. |
+| POST /api/authors | Создание нового автора. |
+| PUT /api/authors/{id} | Обновите существующие автора. |
+| DELETE /api/authors/{id} | Удалите автора. |
 
 | Books |  |
 | --- | -- |
-| ПОЛУЧИТЬ /api/books | Получите все книги. |
-| GET/API/books / {id} | Получите книгу по идентификатору. |
-| POST/api/книг | Создайте новую книгу. |
-| PUT/API/books / {id} | Обновите существующую книгу. |
-| DELETE/API/books / {id} | Удалите книгу. |
+| GET /api/books | Получите все книги. |
+| GET /api/books/{id} | Получите книгу по идентификатору. |
+| POST /api/books | Создайте новую книгу. |
+| PUT /api/books/{id} | Обновите существующую книгу. |
+| DELETE /api/books/{id} | Удалите книгу. |
 
 ## <a name="view-the-database-optional"></a>Представление базы данных (необязательно)
 
