@@ -7,12 +7,12 @@ ms.author: riande
 title: Документация по ASP.NET
 ms.date: 08/24/2018
 description: Сведения о разработке ASP.NET и веб-приложениях ASP.NET. Вы можете получить документацию, примеры кода, учебники и многое другое.
-ms.openlocfilehash: c907f2ba66ba6ff197ced0c67243a963ffab17e3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: 4bfa5b2a161cdf67f3d2df0057bd68958d8a5769
+ms.sourcegitcommit: f774732a3960fca079438a88a5472c37cf7be08a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59384725"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68810739"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -27,7 +27,7 @@ ms.locfileid: "59384725"
                         <ul id="core_overview" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>ASP.NET Core — это новая кроссплатформенная среда .NET на основе исходного кода для создания современных облачных веб-приложений в Windows, macOS или Linux.</p>
+                                    <p>ASP.NET Core — это кроссплатформенная среда .NET на основе исходного кода для создания современных облачных веб-приложений в Windows, macOS или Linux.</p>
                                     <p><a href="https://docs.microsoft.com/aspnet/core/choose-aspnet-framework" data-raw-source="[Learn the benefits of both ASP.NET Core and ASP.NET](https://docs.microsoft.com/aspnet/core/choose-aspnet-framework)">Узнайте о преимуществах ASP.NET Core и ASP.NET</a> и выберите ту платформу, которая подходит именно вам.</p>
                                 </div>
                             </li>
@@ -148,7 +148,6 @@ ms.locfileid: "59384725"
                             <li class="fullSpan">
                                 <div class="container footer">
                                     <p><a href="https://github.com/aspnet/Docs/blob/master/CONTRIBUTING.md">Участие в разработке документов и примеров ASP.NET Core</a></p>
-                                    <p><a href="https://docs.microsoft.com/dotnet/articles/project-json">Поиск документации для версии Visual Studio 2015/project.json</a></p>
                                 </div>
                             </li>
                         </ul>
