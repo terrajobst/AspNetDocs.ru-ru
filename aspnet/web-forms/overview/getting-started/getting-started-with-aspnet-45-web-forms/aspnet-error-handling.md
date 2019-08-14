@@ -309,7 +309,7 @@ ELMAH теперь готов для хранения необработанны
 
 ## <a name="tutorial-series-conclusion"></a>Заключение серии руководств
 
-*Спасибо, просматривая. Я надеюсь, этот набор учебников помогли вам ознакомиться с веб-форм ASP.NET. Дополнительные сведения о функциях веб-форм в ASP.NET 4.5 и Visual Studio 2013, см. в статье* [ *ASP.NET and Web Tools для заметки о выпуске Visual Studio 2013* ](../../../../visual-studio/overview/2013/release-notes.md)  *. Кроме того, убедитесь, что взгляните на упомянутые в этом руководстве* * **дальнейшие действия *** опробовать раздел и defintely* [ *бесплатную пробную версию Azure* ](https://azure.microsoft.com/pricing/free-trial/)* .*
+*Спасибо, просматривая. Я надеюсь, этот набор учебников помогли вам ознакомиться с веб-форм ASP.NET. Дополнительные сведения о функциях веб-форм в ASP.NET 4.5 и Visual Studio 2013, см. в статье* [ *ASP.NET and Web Tools для заметки о выпуске Visual Studio 2013* ](../../../../visual-studio/overview/2013/release-notes.md)  *. Кроме того, убедитесь, что взгляните на упомянутые в этом руководстве ** **дальнейшие действия** **опробовать раздел и defintely* [*бесплатную пробную версию Azure*](https://azure.microsoft.com/pricing/free-trial/)* .*
 
 ![Еще раз благодарим - Эрик](aspnet-error-handling/_static/image10.png)  
 
