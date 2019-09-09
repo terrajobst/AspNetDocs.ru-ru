@@ -1,30 +1,30 @@
 ---
 uid: webhooks/source
-title: Исходный код ASP.NET веб-перехватчики и пакетов NuGet | Документация Майкрософт
+title: ASP.NET веб-перехватчики и пакеты NuGet | Документация Майкрософт
 author: rick-anderson
-description: Ссылки на исходный код ASP.NET веб-перехватчики и пакеты NuGet
+description: Ссылки на исходный код веб-перехватчиков ASP.NET и пакеты NuGet
 ms.author: riande
 ms.date: 01/17/2012
 ms.assetid: 91a62bfa-ea3a-41f9-a2e1-e90d2c8fc8ca
-ms.openlocfilehash: f88d9247f9d8aa0c5edc1ffc462be21d9319a725
-ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
+ms.openlocfilehash: 8d07848754d9efda9c893b8ba54ac6d0c0214a53
+ms.sourcegitcommit: b95316530fa51087d6c400ff91814fe37e73f7e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67410805"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000706"
 ---
-# <a name="aspnet-webhooks-source-code-and-nuget-packages"></a>Исходный код ASP.NET веб-перехватчики и пакеты NuGet
+# <a name="aspnet-webhooks-source-code-and-nuget-packages"></a>ASP.NET веб-перехватчики, исходный код и пакеты NuGet
 
-Веб-перехватчики Microsoft ASP.NET является частью семейства Microsoft ASP.NET, модулей и размещен как управляющий [открытым проектом источник на GitHub](https://github.com/aspnet/WebHooks). Это означает, что мы принимаем работы, но см. в [рекомендациями по участию](https://github.com/aspnet/Home/blob/master/CONTRIBUTING.md) перед отправкой запроса на включение внесенных изменений.
+Microsoft ASP.NET веб-перехватчики входят в Microsoft ASP.NET семейства модулей и размещаются в виде проекта с [открытым исходным кодом на сайте GitHub](https://github.com/aspnet/WebHooks). Это означает, что мы принимаем вклады, но перед отправкой запроса на вытягивание ознакомьтесь с [рекомендациями по публикации](https://github.com/aspnet/Home/blob/master/CONTRIBUTING.md) .
 
-Теперь этот электронной документации, который вы читаете также размещен как управляющий [открытым исходным кодом на GitHub](http://docs.asp.net/en/latest/contribute/style-guide.html#style-guide) , а также принимает вклад.
+Эта интерактивная документация, которую вы читаете сейчас, также размещена [на сайте GitHub в виде открытого кода](http://docs.asp.net/en/latest/contribute/style-guide.html#style-guide) , а также принимает вклады.
 
 ## <a name="nuget-packages"></a>Пакеты NuGet
 
-[Пакеты NuGet](https://nuget.org/packages?q=Microsoft.AspNet.WebHooks) можно разделить на три части:
+[Пакеты NuGet](https://nuget.org/packages?q=Microsoft.AspNet.WebHooks) делятся на три части:
 
-* [Распространенные](https://www.nuget.org/packages?q=Microsoft.AspNet.WebHooks.Common): Распространенные пакет, который разделяется между отправителями и получателями.
+* [Общие](https://www.nuget.org/packages?q=Microsoft.AspNet.WebHooks.Common): Общий пакет, который совместно используется отправителями и получателями.
 
-* [Отправитель](https://www.nuget.org/packages?q=Microsoft.AspNet.WebHooks.Custom): Набор пакетов, поддержкой собственных веб-перехватчики пересылки другим пользователям. Функциональные возможности для отправки веб-перехватчики описан более подробно в [отправки веб-перехватчики](sending/senders).
+* [Отправитель](https://www.nuget.org/packages?q=Microsoft.AspNet.WebHooks.Custom): Набор пакетов, поддерживающих отправку собственных веб-перехватчиков другим пользователям. Функция отправки веб-перехватчиков более подробно описана в разделе [отправляются](sending/senders.md)вызовы.
 
-* [Приемники](https://www.nuget.org/packages?q=Microsoft.AspNet.WebHooks.Receivers): Набор пакетов, поддерживающих получение веб-перехватчики от других. Функциональность для получения веб-перехватчики описан более подробно в [получения веб-перехватчики](receiving/index.md).
+* [Получатели](https://www.nuget.org/packages?q=Microsoft.AspNet.WebHooks.Receivers): Набор пакетов, поддерживающих получение веб-перехватчиков от других. Дополнительные сведения о возможностях получения веб-перехватчиков [см. в](receiving/index.md)этой статье.
