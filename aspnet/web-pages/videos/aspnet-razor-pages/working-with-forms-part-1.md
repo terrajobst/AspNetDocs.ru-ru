@@ -2,28 +2,28 @@
 uid: web-pages/videos/aspnet-razor-pages/working-with-forms-part-1
 title: Работа с формами (часть 1) | Документация Майкрософт
 author: JoeStagner
-description: Видео сопровождением для работы с учебником форм (часть 1)
+description: Аккомпанимент видео с учебником работа с формами (часть 1)
 ms.author: riande
 ms.date: 02/25/2011
 ms.assetid: bf751e1f-7db9-4039-be55-d1ee33769c3a
 msc.legacyurl: /web-pages/videos/aspnet-razor-pages/working-with-forms-part-1
 msc.type: video
-ms.openlocfilehash: 812bbe4acc6ae7f364bab98d3ffc4be0f1388c2b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: dcbc86e137f8e4d2539f27bf6d188df90119d867
+ms.sourcegitcommit: 84b1681d4e6253e30468c8df8a09fe03beea9309
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59378414"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445493"
 ---
-# <a name="working-with-forms-part-1"></a><span data-ttu-id="c4d61-103">Работа с формами (часть 1)</span><span class="sxs-lookup"><span data-stu-id="c4d61-103">Working with Forms (Part 1)</span></span>
+# <a name="working-with-forms-part-1"></a><span data-ttu-id="fc3e9-103">Работа с формами (часть 1)</span><span class="sxs-lookup"><span data-stu-id="fc3e9-103">Working with Forms (Part 1)</span></span>
 
-<span data-ttu-id="c4d61-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="c4d61-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="fc3e9-104">кем [Джо Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="fc3e9-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="c4d61-105">Видео сопровождением для работы с учебником форм (часть 1)</span><span class="sxs-lookup"><span data-stu-id="c4d61-105">Video accompaniment to the Working with Forms tutorial (Part 1)</span></span>
+<span data-ttu-id="fc3e9-105">Аккомпанимент видео с учебником работа с формами (часть 1)</span><span class="sxs-lookup"><span data-stu-id="fc3e9-105">Video accompaniment to the Working with Forms tutorial (Part 1)</span></span>
 
-[<span data-ttu-id="c4d61-106">&#9654;Просмотрите видео (14 минут)</span><span class="sxs-lookup"><span data-stu-id="c4d61-106">&#9654; Watch video (14 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/working-with-forms-part-1)
+<span data-ttu-id="fc3e9-106">[&#9654;Смотреть видео (14 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/working-with-forms-(part-1))</span><span class="sxs-lookup"><span data-stu-id="fc3e9-106">[&#9654; Watch video (14 minutes)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/working-with-forms-(part-1))</span></span>
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="c4d61-107">[Назад](creating-a-consistent-look-part-2.md)
-> [Вперед](working-with-forms-part-2.md)</span><span class="sxs-lookup"><span data-stu-id="c4d61-107">[Previous](creating-a-consistent-look-part-2.md)
+> <span data-ttu-id="fc3e9-107">[Назад](creating-a-consistent-look-part-2.md)
+> [Вперед](working-with-forms-part-2.md)</span><span class="sxs-lookup"><span data-stu-id="fc3e9-107">[Previous](creating-a-consistent-look-part-2.md)
 [Next](working-with-forms-part-2.md)</span></span>
