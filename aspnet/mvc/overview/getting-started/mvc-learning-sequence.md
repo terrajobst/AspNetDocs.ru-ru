@@ -1,55 +1,55 @@
 ---
 uid: mvc/overview/getting-started/mvc-learning-sequence
-title: MVC рекомендуемые учебники и статьи | Документация Майкрософт
+title: Рекомендуемые учебники и статьи по MVC | Документация Майкрософт
 author: Rick-Anderson
-description: Эта страница содержит ссылки на учебники по ASP.NET MVC и предлагаемые последовательность, которая будет выполнять их.
+description: На этой странице содержатся ссылки на учебники по ASP.NET MVC и предлагаемую последовательность действий.
 ms.author: riande
 ms.date: 05/22/2015
 ms.assetid: 8513a57a-2d45-4d6b-881c-15a01c5cbb1c
 msc.legacyurl: /mvc/overview/getting-started/mvc-learning-sequence
 msc.type: authoredcontent
-ms.openlocfilehash: e78ad67187b2da96ca3766e6914e396508aa180e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: abaf01ed91dfab8429b872b74c30d4b31a8a2583
+ms.sourcegitcommit: 84b1681d4e6253e30468c8df8a09fe03beea9309
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59417550"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445736"
 ---
 # <a name="mvc-recommended-tutorials-and-articles"></a>Рекомендуемые учебники и статьи по MVC
 
-по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
+по [Рик Андерсон (]((https://twitter.com/RickAndMSFT))
 
 <a id="pwd"></a>
 ## <a name="getting-started"></a>Начало работы
 
-- [Приступая к работе с ASP.NET MVC 5](introduction/getting-started.md) This 11 частей хорошо подходит для запуска.
-- [Pluralsight ASP.NET MVC 5 Fundamentals](https://pluralsight.com/training/Player?author=scott-allen&amp;name=aspdotnet-mvc5-fundamentals-m1-introduction&amp;mode=live&amp;clip=0&amp;course=aspdotnet-mvc5-fundamentals) (видеокурс)
-- [Введение в ASP.NET MVC](https://www.microsoftvirtualacademy.com/training-courses/introduction-to-asp-net-mvc) Джон Гэллоуэй, Кристофер Харрисон
-- [Жизненный цикл приложения ASP.NET MVC 5](lifecycle-of-an-aspnet-mvc-5-application.md) PDF-документ, что диаграммы жизненного цикла приложения ASP.NET MVC 5.
+- [Начало работы с ASP.NET MVC 5](introduction/getting-started.md) Мы рекомендуем начать с этой серии статей из 11.
+- [Основы Pluralsight ASP.NET MVC 5](https://pluralsight.com/training/Player?author=scott-allen&amp;name=aspdotnet-mvc5-fundamentals-m1-introduction&amp;mode=live&amp;clip=0&amp;course=aspdotnet-mvc5-fundamentals) (Видеокурс)
+- [Введение в ASP.NET MVC](https://channel9.msdn.com/Series/Introduction-to-ASP-NET-MVC) с Jon Гэллоуэй и Кристофер Харрисон
+- [Жизненный цикл приложения ASP.NET MVC 5](lifecycle-of-an-aspnet-mvc-5-application.md) Документ в формате PDF, который составляет диаграмму жизненного цикла приложения ASP.NET MVC 5.
 
 <a id="con"></a>
 ## <a name="working-with-data"></a>Работа с данными
 
-- [Начало работы с EF 6 Code First с помощью MVC 5](getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md) том Дайкстра великолепную серии углубляется в EF.
+- [Начало работы с EF 6 Code First с использованием MVC 5](getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md) Dykstra)ный ряд, подробноный в EF.
 
 <a id="wj"></a>
 ## <a name="security"></a>Безопасность
 
-- [Создание приложения ASP.NET MVC с проверкой подлинности и база данных SQL и развертывание в Azure](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-mvc-app-membership-oauth-sql-database/) этот популярный руководстве описывается создание простого приложения и добавление членства и ролей.
-- [Создание приложения ASP.NET MVC 5 с Facebook, Twitter, LinkedIn и Google OAuth2 Sign-on](../security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md) этом руководстве показано, как создавать веб-приложения ASP.NET MVC 5, которая позволяет пользователям входить в систему с помощью OAuth 2.0 с учетными данными из внешней проверки подлинности Поставщик, например Facebook, Twitter, LinkedIn, Microsoft или Google.
-- [Создание безопасного веб-приложения ASP.NET MVC 5 со входом, по электронной почте подтверждение и сброс пароля](../security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md) сначала в серии, посвященной удостоверений, включает в себя код, чтобы [повторно отправить ссылку для подтверждения](../security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md#rsend).
-- [Приложения ASP.NET MVC 5 с помощью SMS и электронной почты двухфакторной проверки подлинности](../security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication.md) второй на серии удостоверений.
+- [Создание приложения ASP.NET MVC с проверкой подлинности и базой данных SQL и развертывание в Azure](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-mvc-app-membership-oauth-sql-database/) Этот популярный учебник поможет вам создать простое приложение и добавить членство и роли.
+- [Создание приложения ASP.NET MVC 5 с помощью единого входа Facebook, Twitter, LinkedIn и Google OAuth2](../security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md) В этом руководстве показано, как создать веб-приложение ASP.NET MVC 5, которое позволяет пользователям входить в систему с помощью OAuth 2,0 с учетными данными от внешнего поставщика проверки подлинности, например Facebook, Twitter, LinkedIn, Microsoft или Google.
+- [Создание безопасного веб-приложения ASP.NET MVC 5 с входом, подтверждением электронной почты и сбросом пароля](../security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md) Первая серия удостоверений содержит код для [повторной отправки ссылки для подтверждения](../security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md#rsend).
+- [Приложение ASP.NET MVC 5 с использованием SMS и двухфакторной проверки подлинности по электронной почте](../security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication.md) Секунду в ряде удостоверений.
 - [Рекомендации по развертыванию паролей и других конфиденциальных данных в ASP.NET и службу приложений Azure](../../../identity/overview/features-api/best-practices-for-deploying-passwords-and-other-sensitive-data-to-aspnet-and-azure.md)
-- [Двухфакторная проверка подлинности с помощью SMS и электронной почты с ASP.NET Identity](../../../identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity.md) `isPersistent` и файл cookie безопасности кода, для которых пользователю необходимо иметь учетную запись проверенные электронной почты, прежде чем они могут войти на, как SignInManager проверяет наличие 2FA требование и многое другое.
-- [Подтверждение учетной записи и восстановление пароля в ASP.NET Identity](../../../identity/overview/features-api/account-confirmation-and-password-recovery-with-aspnet-identity.md) содержит сведения о удостоверение не найдено в [создать безопасное веб-приложение ASP.NET MVC 5 со входом, по электронной почте подтверждение и сброс пароля](../security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md) : их let Пользователи сбрасывать забытый пароль.
+- [Двухфакторная проверка подлинности с помощью SMS и электронной почты с ASP.NET Identity](../../../identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity.md) `isPersistent` и cookie безопасности, код, требующий, чтобы пользователь имел проверенную учетную запись электронной почты, прежде чем они смогут войти в систему, как SignInManager проверяет требования 2FA и многое другое.
+- [Подтверждение учетной записи и восстановление пароля с ASP.NET Identity](../../../identity/overview/features-api/account-confirmation-and-password-recovery-with-aspnet-identity.md) Сведения об удостоверениях, не найденных в [создании безопасного веб-приложения ASP.NET MVC 5 с входом, подтверждением электронной почты и сбросом пароля,](../security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md) например о том, как разрешить пользователям сбрасывать забытый пароль.
 
 <a id="da"></a>
 ## <a name="azure"></a>Azure
 
-- [Создание веб-приложение ASP.NET в Azure](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-get-started/) короткие и простые руководства, развертываемых в Azure.
-- [Создание приложения ASP.NET MVC с проверкой подлинности и база данных SQL и развертывание в Azure](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-mvc-app-membership-oauth-sql-database/)
+- [Создание веб-приложения ASP.NET в Azure](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-get-started/) Краткое и простое руководство по развертыванию в Azure.
+- [Создание приложения ASP.NET MVC с проверкой подлинности и базой данных SQL и развертывание в Azure](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-mvc-app-membership-oauth-sql-database/)
 
 <a id="perf"></a>
-## <a name="performance-and-debugging"></a>Производительности и отладки
+## <a name="performance-and-debugging"></a>Производительность и отладка
 
 - [Профилирование и отладка приложения ASP.NET MVC с помощью Glimpse](../performance/profile-and-debug-your-aspnet-mvc-app-with-glimpse.md)
