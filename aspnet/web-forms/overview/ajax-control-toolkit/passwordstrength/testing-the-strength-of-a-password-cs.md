@@ -1,50 +1,50 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/passwordstrength/testing-the-strength-of-a-password-cs
-title: Тестирование надежности пароля (C#) | Документация Майкрософт
+title: Проверка надежности пароля (C#) | Документация Майкрософт
 author: wenz
-description: Таким образом, чтобы отложенной Пользователи склонны выберите простые пароли, которые легко взломать пароли в любом месте, являются обязательными. Элемент управления PasswordStrength в ASP. Н...
+description: Пароли требуются почти в любом месте, чтобы отложенные пользователи могли выбирать простые пароли, которые легко прерывать работу. Элемент управления Пассвордстренгс в ASP. N...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: cb4afbae-9b8f-483d-9729-476d4b9f85fc
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/passwordstrength/testing-the-strength-of-a-password-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 1aeea5af6fee22a91893e52b6ebe15f9ed00db45
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: e55eab9feebc18f39dd40c59cfb423208296b6c5
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65115271"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74598852"
 ---
 # <a name="testing-the-strength-of-a-password-c"></a>Тестирование надежности пароля (C#)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/PasswordStrength0.cs.zip) или [скачать PDF](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/passwordstrength0CS.pdf)
+[Скачать код](https://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/PasswordStrength0.cs.zip) или [скачать PDF](https://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/passwordstrength0CS.pdf)
 
-> Таким образом, чтобы отложенной Пользователи склонны выберите простые пароли, которые легко взломать пароли в любом месте, являются обязательными. PasswordStrength управления в ASP.NET AJAX Control Toolkit можно проверить, насколько хорошо работает пароль.
+> Пароли требуются почти в любом месте, чтобы отложенные пользователи могли выбирать простые пароли, которые легко прерывать работу. Элемент управления Пассвордстренгс в наборе средств управления AJAX ASP.NET может проверить, насколько хорош пароль.
 
 ## <a name="overview"></a>Обзор
 
-Таким образом, чтобы отложенной Пользователи склонны выберите простые пароли, которые легко взломать пароли в любом месте, являются обязательными. `PasswordStrength` Элемента управления в ASP.NET AJAX Control Toolkit можно проверить, насколько хорошо работает пароль.
+Пароли требуются почти в любом месте, чтобы отложенные пользователи могли выбирать простые пароли, которые легко прерывать работу. Элемент управления `PasswordStrength` в наборе средств управления AJAX ASP.NET может проверить, насколько хорош пароль.
 
 ## <a name="steps"></a>Шаги
 
-`PasswordStrength` Управления расширяет текстовое поле и проверяет, является ли пароль в нем достаточно хорошо. Он предлагает множество возможностей с помощью атрибутов; Ниже приведены лишь некоторые из них.
+Элемент управления `PasswordStrength` расширяет текстовое поле и проверяет, достаточно ли в нем пароля. Он предлагает множество вариантов через атрибуты. Вот лишь некоторые из них:
 
-- `MinimumNumericCharacters` Минимальное число цифр в пароле
-- `MinimumSymbolCharacters` Минимальное число специальных символов (не буквы и цифры) в пароле
-- `PreferredPasswordLength` Минимальная длина пароля
-- `RequiresUpperAndLowerCaseCharacters` нужно ли использовать прописные и строчные буквы пароль
+- `MinimumNumericCharacters` минимальное количество числовых символов, необходимое для пароля
+- `MinimumSymbolCharacters` минимальное число символов (не букв и цифр), необходимое для пароля
+- `PreferredPasswordLength` минимальной длины пароля
+- `RequiresUpperAndLowerCaseCharacters`, должен ли пароль использовать как прописные, так и строчные буквы
 
-`StrengthIndicatorType` Предоставляет информацию, как представлять стойкость пароля, как текст (значение `"Text"`) или в качестве своего рода индикатор хода выполнения (значение `"BarIndicator"`). В `DisplayPosition` атрибут, настройкой где отображаются сведения. Ниже приведен полный пример, включая ASP.NET AJAX `ScriptManager` управления `PasswordStrength` управления и, конечно, текстовое поле, где пользователь может ввести пароль. Для целей демонстрации поле последняя форма является регулярное текстовое поле, а не поле пароля, чтобы вы могли видеть во время разработки, при вводе.
+`StrengthIndicatorType` предоставляет сведения о том, как представлять стойкость пароля в виде текста (значение `"Text"`) или в виде индикатора выполнения (value `"BarIndicator"`). В атрибуте `DisplayPosition` вы настраиваете место отображения информации. Ниже приведен полный пример, включая элемент управления `ScriptManager` AJAX ASP.NET, элемент управления `PasswordStrength` и само собой текстовое поле, в котором пользователь может ввести пароль. В целях демонстрации Последнее поле формы является обычным текстовым полем, а не полем пароля, что позволяет увидеть во время разработки то, что вы вводите.
 
 [!code-aspx[Main](testing-the-strength-of-a-password-cs/samples/sample1.aspx)]
 
-Откройте страницу и введите сейчас: Только после ввода строчные буквы, прописные буквы, цифры и символы, считается как неразрывный пароль.
+Запуск страницы и ввод в конец: только после ввода строчных букв, прописных букв, цифр и символов пароль считается недопустимым.
 
-[![Теперь пароль (), неплохо](testing-the-strength-of-a-password-cs/_static/image2.png)](testing-the-strength-of-a-password-cs/_static/image1.png)
+[![теперь пароль (достаточно) хорошо](testing-the-strength-of-a-password-cs/_static/image2.png)](testing-the-strength-of-a-password-cs/_static/image1.png)
 
-Теперь пароль (), неплохо ([Просмотр полноразмерного изображения](testing-the-strength-of-a-password-cs/_static/image3.png))
+Теперь пароль (достаточно) хорошо ([щелкните, чтобы просмотреть изображение с полным размером](testing-the-strength-of-a-password-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
 > [Вперед](testing-the-strength-of-a-password-vb.md)

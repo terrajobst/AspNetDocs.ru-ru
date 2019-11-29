@@ -2,228 +2,228 @@
 uid: web-forms/overview/data-access/basic-reporting/displaying-data-with-the-objectdatasource-cs
 title: Отображение данных с помощью ObjectDataSource (C#) | Документация Майкрософт
 author: rick-anderson
-description: В этом учебнике рассматривается в элемент управления ObjectDataSource, с помощью этого элемента управления, можно привязать данные, полученные из BLL, созданные в предыдущем учебном курсе без havi...
+description: В этом учебнике рассматривается элемент управления ObjectDataSource, использующий этот элемент управления. Вы можете привязать данные, полученные из BLL, созданного в предыдущем руководстве, без Хави...
 ms.author: riande
 ms.date: 03/31/2010
 ms.assetid: af882aef-56f5-4e9a-8f95-3977fde20e74
 msc.legacyurl: /web-forms/overview/data-access/basic-reporting/displaying-data-with-the-objectdatasource-cs
 msc.type: authoredcontent
-ms.openlocfilehash: ac478bcee78dc476ac224d2c2f460648b27d2ebb
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 9419504ace15b39c35a034dda22f2700ee720157
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65134001"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74608912"
 ---
 # <a name="displaying-data-with-the-objectdatasource-c"></a>Отображение данных с помощью элемента управления ObjectDataSource (C#)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Скачайте пример приложения](http://download.microsoft.com/download/4/6/3/463cf87c-4724-4cbc-b7b5-3f866f43ba50/ASPNET_Data_Tutorial_4_CS.exe) или [скачать PDF](displaying-data-with-the-objectdatasource-cs/_static/datatutorial04cs1.pdf)
+[Скачивание примера приложения](https://download.microsoft.com/download/4/6/3/463cf87c-4724-4cbc-b7b5-3f866f43ba50/ASPNET_Data_Tutorial_4_CS.exe) или [Загрузка PDF-файла](displaying-data-with-the-objectdatasource-cs/_static/datatutorial04cs1.pdf)
 
-> В этом учебнике рассматривается в элемент управления ObjectDataSource, с помощью этого элемента управления, можно привязать данные, полученные из BLL, созданные в предыдущем учебном курсе без необходимости написания строки кода!
+> В этом учебнике рассматривается элемент управления ObjectDataSource, использующий этот элемент управления. Вы можете привязать данные, полученные из BLL, созданного в предыдущем учебном курсе, без необходимости писать строчку кода!
 
-## <a name="introduction"></a>Вступление
+## <a name="introduction"></a>Введение
 
-Мы можем приступить к исследованию возможностей для выполнения разных общих данных и отчетов-задач, связанных с нашей приложения веб-сайта и архитектура макет страниц. На предыдущих уроках мы рассмотрели программные методы привязки данных в DAL и BLL данных веб-элемента управления на странице ASP.NET. Этот синтаксис, назначение данных веб-элемента управления `DataSource` свойства к данным для отображения и последующего вызова элемента управления `DataBind()` метод был шаблон, используемый в приложениях ASP.NET 1.x и можно продолжать использовать в приложениях 2.0. Тем не менее ASP.NET 2.0 новых источников данных предлагают также декларативный метод работы с данными. Использование этих элементов управления, можно привязать данные, полученные из BLL, созданных в [предыдущем учебном курсе](../introduction/creating-a-business-logic-layer-cs.md) без необходимости написания строки кода!
+Теперь, когда архитектура приложения и макет страницы веб-сайта завершены, мы готовы приступить к изучению способов выполнения разнообразных задач, связанных с данными и отчетами. В предыдущих руководствах мы рассмотрели, как программно привязывать данные из DAL и BLL к веб-элементу управления данными на странице ASP.NET. Этот синтаксис назначает свойство `DataSource` веб-элемента управления данными для отображаемых данных, а затем вызывает метод `DataBind()` элемента управления в качестве шаблона, используемого в приложениях ASP.NET 1. x, и может продолжать использовать в приложениях 2,0. Однако новые элементы управления источниками данных ASP.NET 2.0 обеспечивают декларативный способ работы с данными. С помощью этих элементов управления можно привязывать данные, полученные из BLL, созданного в [предыдущем учебном курсе](../introduction/creating-a-business-logic-layer-cs.md) , без написания кода!
 
-ASP.NET 2.0 есть пять встроенных источников данных [SqlDataSource](https://msdn.microsoft.com/library/dz12d98w(vs.80).aspx), [AccessDataSource](https://msdn.microsoft.com/library/8e5545e1.aspx), [ObjectDataSource](https://msdn.microsoft.com/library/9a4kyhcx.aspx), [XmlDataSource](https://msdn.microsoft.com/library/e8d8587a(en-US,VS.80).aspx), и [SiteMapDataSource](https://msdn.microsoft.com/library/5ex9t96x(en-US,VS.80).aspx) несмотря на то, что вы можете создавать собственные [элементами управления источниками данных, пользовательских](https://msdn.microsoft.com/library/default.asp?url=/library/dnvs05/html/DataSourceCon1.asp), при необходимости. Так как мы уже создали архитектуру нашего учебного приложения, мы будем использовать элемент управления ObjectDataSource к нашим классам BLL.
+ASP.NET 2,0 поставляется с пятью встроенными элементами управления источниками данных: [SqlDataSource](https://msdn.microsoft.com/library/dz12d98w(vs.80).aspx), [AccessDataSource](https://msdn.microsoft.com/library/8e5545e1.aspx), [ObjectDataSource](https://msdn.microsoft.com/library/9a4kyhcx.aspx), [XmlDataSource](https://msdn.microsoft.com/library/e8d8587a(en-US,VS.80).aspx)и [SiteMapDataSource](https://msdn.microsoft.com/library/5ex9t96x(en-US,VS.80).aspx) , хотя при необходимости можно создавать собственные [пользовательские элементы управления источниками данных](https://msdn.microsoft.com/library/default.asp?url=/library/dnvs05/html/DataSourceCon1.asp). Поскольку мы разработали архитектуру для нашего учебного приложения, мы будем использовать ObjectDataSource для наших классов BLL.
 
-![ASP.NET 2.0 включает пять встроенных источников данных](displaying-data-with-the-objectdatasource-cs/_static/image1.png)
+![ASP.NET 2,0 включает пять встроенных элементов управления источниками данных](displaying-data-with-the-objectdatasource-cs/_static/image1.png)
 
-**Рис. 1**: ASP.NET 2.0 включает пять встроенных источников данных
+**Рис. 1**. ASP.NET 2,0 включает пять встроенных элементов управления источниками данных
 
-Элемент управления ObjectDataSource выступает в качестве прокси-сервер для работы с некоторыми объектами. Чтобы настроить элемент управления ObjectDataSource мы укажите это базовый объект и его методы сопоставлении ObjectDataSource `Select`, `Insert`, `Update`, и `Delete` методы. После того как был указан этот базовый объект и его методы сопоставляются с ObjectDataSource, можно будет привязать ObjectDataSource к данных веб-элемента управления. ASP.NET имеется немало веб-элемент управления GridView, DetailsView, RadioButtonList и DropDownList, включая, помимо прочих. Во время жизненного цикла страницы, данные веб-элемент управления может потребоваться доступ к данным он привязан, которой он предстоит выполнить путем вызова метода `Select` метода; Если данные веб-элемент управления поддерживает вставку, обновление или удаление, может вызывать его ObjectDataSource `Insert`, `Update`, или `Delete` методы. Эти вызовы перенаправялет к методам соответствующего базового объекта ObjectDataSource как показано на следующей схеме.
+Элемент управления ObjectDataSource выступает в качестве прокси-сервера для работы с другим объектом. Чтобы настроить ObjectDataSource, мы указываем этот базовый объект и как его методы сопоставляются с методами `Select`, `Insert`, `Update`и `Delete` ObjectDataSource. После указания этого базового объекта и его методов, сопоставленных с ObjectDataSource, можно привязать ObjectDataSource к веб-элементу управления данными. ASP.NET поставляется с множеством веб-элементов управления данными, включая GridView, DetailsView, RadioButtonList и DropDownList, среди прочих. Во время жизненного цикла страницы для веб-элемента управления данными может потребоваться доступ к данным, к которым он привязан, что достигается путем вызова метода `Select` элемента ObjectDataSource. Если веб-элемент управления данными поддерживает вставку, обновление или удаление, то могут выполняться вызовы методов `Insert`, `Update`или `Delete` ObjectDataSource. Затем эти вызовы направляются ObjectDataSource в соответствующие методы базового объекта, как показано на следующей схеме.
 
-[![Элемент управления ObjectDataSource выступает в качестве прокси-сервера](displaying-data-with-the-objectdatasource-cs/_static/image3.png)](displaying-data-with-the-objectdatasource-cs/_static/image2.png)
+[![элемент управления ObjectDataSource выступает в качестве прокси-сервера](displaying-data-with-the-objectdatasource-cs/_static/image3.png)](displaying-data-with-the-objectdatasource-cs/_static/image2.png)
 
-**Рис. 2**: Элемент управления ObjectDataSource выступает в качестве учетной записи-посредника ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image4.png))
+**Рис. 2**. элемент управления ObjectDataSource выступает в качестве учетной записи-посредника ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image4.png))
 
-Хотя элемент управления ObjectDataSource можно использовать для вызова методов для вставки, обновления или удаления данных, мы рассмотрим только возврат данных. используя элемент управления ObjectDataSource и веб-элементы управления, которые изменяют данные будут посвящены следующие учебники.
+Хотя ObjectDataSource можно использовать для вызова методов для вставки, обновления или удаления данных, давайте просто рассмотрим возврат данных. в следующих учебных курсах рассматривается использование веб-элементов управления ObjectDataSource и Data, изменяющих данные.
 
-## <a name="step-1-adding-and-configuring-the-objectdatasource-control"></a>Шаг 1. Добавление и настройка элемента управления ObjectDataSource
+## <a name="step-1-adding-and-configuring-the-objectdatasource-control"></a>Шаг 1. Добавление и настройка элемента управления ObjectDataSource
 
-Сначала откройте `SimpleDisplay.aspx` странице в `BasicReporting` папки, перейдите в представление конструктора и перетащите элемент управления ObjectDataSource из панели элементов в область конструктора страницы. ObjectDataSource появится как серый квадрат в области конструктора, так как он не создает никакой разметки; он просто получает доступ к данным путем вызова метода из указанного объекта. Данные, возвращаемые элементу ObjectDataSource могут отображаться с данным веб-элемента управления GridView, DetailsView, FormView и т. д.
+Для начала откройте страницу `SimpleDisplay.aspx` в папке `BasicReporting`, переключитесь на представление конструирования, а затем перетащите элемент управления ObjectDataSource с панели элементов на область конструктора страницы. Элемент управления ObjectDataSource отображается в области конструктора в виде серого прямоугольника, так как он не создает никакой разметки. Он просто обращается к данным, вызывая метод из указанного объекта. Данные, возвращаемые ObjectDataSource, могут отображаться веб-элементом управления данными, таким как GridView, DetailsView, FormView и т. д.
 
 > [!NOTE]
-> В качестве альтернативы можно сначала добавить данные веб-элемента управления на страницу, а затем из его смарт-тега выберите &lt;новый источник данных&gt; параметр из раскрывающегося списка.
+> Кроме того, можно сначала добавить веб-элемент управления данными на страницу, а затем из смарт-тега выбрать параметр &lt;создать источник данных&gt; из раскрывающегося списка.
 
-Чтобы указать базового объекта ObjectDataSource и сопоставлении методы этого объекта ObjectDataSource, щелкните ссылку Настройка источника данных смарт-теге ObjectDataSource.
+Чтобы указать базовый объект ObjectDataSource и способ его соответствия методам объекта ObjectDataSource, щелкните ссылку Настроить источник данных из смарт-тега ObjectDataSource.
 
-[![Нажмите кнопку ссылка Configure Data Source в смарт-теге](displaying-data-with-the-objectdatasource-cs/_static/image6.png)](displaying-data-with-the-objectdatasource-cs/_static/image5.png)
+[![щелкните ссылку Настройка источника данных из смарт-тега.](displaying-data-with-the-objectdatasource-cs/_static/image6.png)](displaying-data-with-the-objectdatasource-cs/_static/image5.png)
 
-**Рис. 3**: Нажмите кнопку настроить связь с источником данных в смарт-теге ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image7.png))
+**Рис. 3**. Щелкните ссылку Настройка источника данных из смарт-тега ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image7.png))
 
-Откроется мастер настройки источника данных. Во-первых нам необходимо указать объект, который является элемент управления ObjectDataSource для работы с. Если установлен флажок «Show only data components», выберите в раскрывающемся списке на этом экране перечислены только объекты, имеющие `DataObject` атрибута. В настоящее время нас в списке есть классы TableAdapters в типизированный набор DataSet и классы BLL, которые мы создали в предыдущем учебном курсе. Если вы забыли добавить `DataObject` атрибутов к классам уровня бизнес-логики вы не увидите их в этом списке. В этом случае снимите флажок «Show only data components» для просмотра всех объектов, в том числе классы BLL (а также другие классы в типизированный набор DataSet DataTables, DataRows и т. д.).
+Откроется мастер настройки источника данных. Сначала необходимо указать объект, с которым будет работать элемент управления ObjectDataSource. Если установлен флажок "Показывать только компоненты данных", раскрывающийся список на этом экране содержит только те объекты, которые были дополнены атрибутом `DataObject`. В настоящее время наш список включает адаптеры таблиц в типизированном наборе данных и классы BLL, созданные в предыдущем руководстве. Если вы забыли добавить атрибут `DataObject` к классам уровня бизнес-логики, они не будут отображаться в этом списке. В этом случае снимите флажок "Показывать только компоненты данных", чтобы просмотреть все объекты, которые должны содержать классы BLL (вместе с другими классами в типизированном наборе DataSet, DataTables, DataRow и т. д.).
 
-В этом первом экране выберите `ProductsBLL` класса из раскрывающегося списка и нажмите кнопку Далее.
+На первом экране выберите класс `ProductsBLL` из раскрывающегося списка и нажмите кнопку Далее.
 
-[![Укажите объект для использования с элементом управления ObjectDataSource](displaying-data-with-the-objectdatasource-cs/_static/image9.png)](displaying-data-with-the-objectdatasource-cs/_static/image8.png)
+[![указать объект для использования с элементом управления ObjectDataSource](displaying-data-with-the-objectdatasource-cs/_static/image9.png)](displaying-data-with-the-objectdatasource-cs/_static/image8.png)
 
-**Рис. 4**: Укажите объект для использования с элементом управления ObjectDataSource ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image10.png))
+**Рис. 4**. Указание объекта для использования с элементом управления ObjectDataSource ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image10.png))
 
-На следующем экране мастер предложит указать элемент управления ObjectDataSource должен вызывать метод. В раскрывающемся списке перечислены методы, возвращающие данные в объект выбран на предыдущем экране. Здесь мы видим, `GetProductByProductID`, `GetProducts`, `GetProductsByCategoryID`, и `GetProductsBySupplierID`. Выберите `GetProducts` метод в раскрывающемся списке и нажмите кнопку Готово (Если вы добавили `DataObjectMethodAttribute` для `ProductBLL`в методы, как показано в предыдущем учебном курсе, этот параметр будет выбран по умолчанию).
+На следующем экране мастера появится запрос на выбор метода, который должен вызывать элемент управления ObjectDataSource. Раскрывающийся список содержит методы, возвращающие данные в объекте, выбранном на предыдущем экране. Здесь мы видим `GetProductByProductID`, `GetProducts`, `GetProductsByCategoryID`и `GetProductsBySupplierID`. Выберите метод `GetProducts` из раскрывающегося списка и нажмите кнопку "Готово" (если вы добавили `DataObjectMethodAttribute` в методы `ProductBLL`, как показано в предыдущем руководстве, этот параметр будет выбран по умолчанию).
 
-[![Выберите метод для возврата данных на вкладке SELECT](displaying-data-with-the-objectdatasource-cs/_static/image12.png)](displaying-data-with-the-objectdatasource-cs/_static/image11.png)
+[![выбор метода возврата данных на вкладке «Выбор»](displaying-data-with-the-objectdatasource-cs/_static/image12.png)](displaying-data-with-the-objectdatasource-cs/_static/image11.png)
 
-**Рис. 5**: Выберите метод для возвращения данных на вкладке "ВЫБЕРИТЕ" ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image13.png))
+**Рис. 5**. Выбор метода возврата данных на вкладке "выбор" ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image13.png))
 
-## <a name="configure-the-objectdatasource-manually"></a>Настройте элемент ObjectDataSource вручную
+## <a name="configure-the-objectdatasource-manually"></a>Настройка ObjectDataSource вручную
 
-Мастер настройки источника данных элемента управления ObjectDataSource позволяет быстро указать объект, который используется и связывания вызываются какие методы объекта. Тем не менее, можно настроить элемент управления ObjectDataSource через его свойства в окне «Свойства» или непосредственно в декларативной разметке. Просто задайте `TypeName` свойство в тип базового объекта, которое будет использоваться и `SelectMethod` на метод, который вызывается при получении данных.
+Мастер настройки источников данных ObjectDataSource позволяет быстро указать используемый объект и определить, какие методы объекта вызываются. Однако можно настроить ObjectDataSource с помощью его свойств либо с помощью окно свойств, либо непосредственно в декларативной разметке. Просто задайте для свойства `TypeName` тип используемого базового объекта, а `SelectMethod` методу, который будет вызываться при извлечении данных.
 
 [!code-aspx[Main](displaying-data-with-the-objectdatasource-cs/samples/sample1.aspx)]
 
-Даже если вы предпочитаете мастер настройки источников данных, которые могут возникнуть ситуации, когда вам нужно вручную настроить элемент управления ObjectDataSource, как в мастере отображаются только классы, созданные разработчиком. Если вы хотите привязать ObjectDataSource к классу в .NET Framework, такие как [класс членства](https://msdn.microsoft.com/library/system.web.security.membership.aspx), чтобы получить доступ к учетной записи пользователя, или [класс Directory](https://msdn.microsoft.com/library/system.io.directory.aspx) для работы с сведений о файловой системе необходимо вручную задать свойства элемента ObjectDataSource.
+Даже если вы предпочитаете Мастер настройки источников данных, может возникнуть необходимость ручной настройки ObjectDataSource, так как мастер отображает только классы, созданные разработчиком. Если необходимо привязать ObjectDataSource к классу в .NET Framework например, в [классе членства](https://msdn.microsoft.com/library/system.web.security.membership.aspx), для доступа к сведениям об учетной записи пользователя или к [классу каталога](https://msdn.microsoft.com/library/system.io.directory.aspx) для работы со сведениями файловой системы, необходимо вручную задать свойства ObjectDataSource.
 
-## <a name="step-2-adding-a-data-web-control-and-binding-it-to-the-objectdatasource"></a>Шаг 2. Добавление веб-элемент данных и его привязка к элементу ObjectDataSource
+## <a name="step-2-adding-a-data-web-control-and-binding-it-to-the-objectdatasource"></a>Шаг 2. Добавление веб-элемента управления данными и его привязка к ObjectDataSource
 
-После добавления на страницу и настройки ObjectDataSource мы готовы добавить веб-элементы управления для отображения данных, возвращенных ObjectDataSource на страницу `Select` метод. Все данные веб-элемента управления можно привязать к элементу ObjectDataSource; Давайте взглянем на отображение данных в GridView, DetailsView и FormView.
+После того как ObjectDataSource добавлен на страницу и настроен, мы готовы к добавлению веб-элементов управления данными на страницу для вывода данных, возвращаемых методом `Select` ObjectDataSource. Любой веб-элемент управления данными может быть привязан к элементу ObjectDataSource; Рассмотрим отображение данных ObjectDataSource в элементе управления GridView, DetailsView и FormView.
 
-## <a name="binding-a-gridview-to-the-objectdatasource"></a>Привязка элемента управления GridView к элементу ObjectDataSource
+## <a name="binding-a-gridview-to-the-objectdatasource"></a>Привязка элемента управления GridView к элементу управления ObjectDataSource
 
-Добавление элемента управления GridView с панели инструментов для `SimpleDisplay.aspx`в область конструктора. Смарт-теге элемента GridView выберите элемент управления ObjectDataSource, который мы добавили на шаге 1. Автоматически будет создано поле BoundField в GridView для каждого свойства, возвращаемые данные из элемента управления ObjectDataSource `Select` метод (а именно, свойства, определенные в объекте Products DataTable).
+Добавление элемента управления GridView из панели элементов в область конструктора `SimpleDisplay.aspx`. В смарт-теге GridView выберите элемент управления ObjectDataSource, добавленный на шаге 1. Это автоматически создаст BoundField в GridView для каждого свойства, возвращаемого данными из метода `Select` ObjectDataSource (а именно, свойства, определенные в таблице Products.).
 
-[![Элемент GridView добавлен на страницу и привязан к элементу ObjectDataSource](displaying-data-with-the-objectdatasource-cs/_static/image15.png)](displaying-data-with-the-objectdatasource-cs/_static/image14.png)
+[![элемент GridView добавлен на страницу и привязан к элементу управления ObjectDataSource](displaying-data-with-the-objectdatasource-cs/_static/image15.png)](displaying-data-with-the-objectdatasource-cs/_static/image14.png)
 
-**Рис. 6**: GridView добавлен на страницу и привязки к элементу ObjectDataSource ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image16.png))
+**Рис. 6**. элемент управления GridView добавлен на страницу и привязан к элементу ObjectDataSource ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image16.png))
 
-Затем можно настроить, изменить порядок или удалять поля BoundFields элемента GridView, выбрав пункт Правка столбцов в смарт-теге.
+Затем можно настроить, изменить или удалить BoundFields GridView, щелкнув параметр Edit Columns (изменить столбцы) в смарт-теге.
 
-[![Управление BoundFields элемента GridView в диалоговом окне редактирования столбцов](displaying-data-with-the-objectdatasource-cs/_static/image18.png)](displaying-data-with-the-objectdatasource-cs/_static/image17.png)
+[![управления BoundFields GridView с помощью диалогового окна "изменение столбцов"](displaying-data-with-the-objectdatasource-cs/_static/image18.png)](displaying-data-with-the-objectdatasource-cs/_static/image17.png)
 
-**Рис. 7**: Диалоговое окно управления GridView поля BoundField, кроме через изменение столбцов ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image19.png))
+**Рис. 7**. Управление BoundFields GridView с помощью диалогового окна "изменение столбцов" ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image19.png))
 
-Отвлекитесь и измените поля BoundFields элемента GridView, удаляя `ProductID`, `SupplierID`, `CategoryID`, `QuantityPerUnit`, `UnitsInStock`, `UnitsOnOrder`, и `ReorderLevel` полей BoundField. Просто выберите из списка в нижнем левом поле типа BoundField и нажмите кнопку "Удалить" (красный знак Х) для их удаления. Затем изменим порядок полей BoundFields так, что `CategoryName` и `SupplierName` стояли перед полем `UnitPrice` нужно выделить. для этого и нажав кнопку со стрелкой вверх. Задайте `HeaderText` свойства для оставшихся полей BoundFields `Products`, `Category`, `Supplier`, и `Price`, соответственно. После `Price` установим в денежном формате BoundField `HtmlEncode` значение False и его `DataFormatString` свойства `{0:c}`. И наконец, выровняем `Price` справа и `Discontinued` флажок по центру: воспользуемся `ItemStyle` / `HorizontalAlign` свойство.
+Уделите немного времени, чтобы изменить BoundFields GridView, удалив `ProductID`, `SupplierID`, `CategoryID`, `QuantityPerUnit`, `UnitsInStock`, `UnitsOnOrder`и `ReorderLevel` BoundFields. Просто выберите BoundField из списка в левом нижнем углу и нажмите кнопку Удалить (красный значок X), чтобы удалить их. Затем измените расположение BoundFields, чтобы `CategoryName` и `SupplierName` BoundFields предшествовать `UnitPrice` BoundField, выбрав эти BoundFields и щелкнув стрелку вверх. Задайте для свойств `HeaderText` оставшихся BoundFields значения `Products`, `Category`, `Supplier`и `Price`соответственно. Затем по`Price` BoundField в формате валюты, задав для свойства `HtmlEncode` BoundField значение false, а для свойства `DataFormatString` значение `{0:c}`. Наконец, выровняйте `Price` по правому краю и `Discontinued` флажок в центре через свойство `ItemStyle`/`HorizontalAlign`.
 
 [!code-aspx[Main](displaying-data-with-the-objectdatasource-cs/samples/sample2.aspx)]
 
-[![Настроенные поля BoundFields элемента GridView](displaying-data-with-the-objectdatasource-cs/_static/image21.png)](displaying-data-with-the-objectdatasource-cs/_static/image20.png)
+[![были настроены BoundFields GridView](displaying-data-with-the-objectdatasource-cs/_static/image21.png)](displaying-data-with-the-objectdatasource-cs/_static/image20.png)
 
-**Рис. 8**: GridView настроенные поля BoundFields ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image22.png))
+**Рис. 8**. BoundFields GridView были настроены ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image22.png))
 
-## <a name="using-themes-for-a-consistent-look"></a>Использование тем для единообразия
+## <a name="using-themes-for-a-consistent-look"></a>Использование тем для единообразного вида
 
-Эти учебники стремятся удалить все параметры на уровне управления, вместо этого использование каскадных таблиц стилей, определенных во внешнем файле, когда это возможно. `Styles.css` Файл содержит `DataWebControlStyle`, `HeaderStyle`, `RowStyle`, и `AlternatingRowStyle` классы CSS, которые должны использоваться для оформления данных веб-элементы управления, используемые в этих учебниках. Для этого нужно присвоить GridView `CssClass` свойства `DataWebControlStyle`и его `HeaderStyle`, `RowStyle`, и `AlternatingRowStyle` свойств `CssClass` свойства соответствующим образом.
+Эти учебники посвящены удалению любых параметров стиля уровня элемента управления, вместо этого при необходимости можно использовать каскадные таблицы стилей, определенные во внешнем файле. Файл `Styles.css` содержит классы CSS `DataWebControlStyle`, `HeaderStyle`, `RowStyle`и `AlternatingRowStyle`, которые следует использовать для диктовки внешнего вида веб-элементов управления данными, используемых в этих учебниках. Для этого можно задать для свойства `CssClass` GridView значение `DataWebControlStyle`, а также свойства `HeaderStyle`, `RowStyle`и `AlternatingRowStyle` свойства `CssClass` соответственно.
 
-Если настроить перечисленные свойства `CssClass` свойствами на уровне веб-элемента управления, необходимо явно установить значения этих свойств для всех данных, веб-элемент управления, добавленный в ходе наших уроков. Более удобный подход является определение свойств, связанных с CSS по умолчанию для элементов управления GridView, DetailsView и FormView при помощи темы. Тема — это коллекция свойств уровня управления, изображения и классы CSS, которые можно применять к страницам на сайте для обеспечения общего вида и впечатления.
+Если установить эти `CssClass` свойства в веб-элементе управления, нам нужно не забывать явно задавать значения этих свойств для каждого и каждого веб-элемента управления данными, добавляемых в наши руководства. Более управляемый подход заключается в определении свойств, связанных с CSS по умолчанию для элементов управления GridView, DetailsView и FormView, с помощью темы. Тема — это коллекция параметров свойств уровня элементов управления, изображений и классов CSS, которые можно применить к страницам на сайте для обеспечения общего внешнего вида и поведения.
 
-Нашей теме не будет ни изображений, ни файлов CSS (Мы оставим таблицу стилей `Styles.css` как-, определенную в корневой папке веб-приложения), но будут две обложки. Обложка — это файл, определяющий свойства по умолчанию для веб-элемента управления. В частности, у нас будет файл обложки для элементов управления GridView и DetailsView, указывающее, значение по умолчанию `CssClass`-связанных свойств.
+Наша тема не будет включать изображения или файлы CSS (мы будем оставлять таблицу стилей `Styles.css` "как есть", определенную в корневой папке веб-приложения), но будет содержать две обложки. Обложка — это файл, который определяет свойства по умолчанию для веб-элемента управления. В частности, у нас будет файл обложки для элементов управления GridView и DetailsView, указывающий свойства, связанные с `CssClass`по умолчанию.
 
-Начните с добавления нового файла обложки в проект с именем `GridView.skin` , щелкнув имя проекта в обозревателе решений и выбрав Add New Item.
+Для начала добавьте новый файл обложки в проект с именем `GridView.skin`, щелкнув правой кнопкой мыши имя проекта в обозреватель решений и выбрав пункт Добавить новый элемент.
 
-[![Добавление файла обложки GridView.skin](displaying-data-with-the-objectdatasource-cs/_static/image24.png)](displaying-data-with-the-objectdatasource-cs/_static/image23.png)
+[![добавить файл обложки с именем GridView. Skin](displaying-data-with-the-objectdatasource-cs/_static/image24.png)](displaying-data-with-the-objectdatasource-cs/_static/image23.png)
 
-**Рис. 9**: Добавьте файл обложки, имя `GridView.skin` ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image25.png))
+**Рис. 9**. Добавление файла обложки с именем `GridView.skin` ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image25.png))
 
-Файлы обложки нужно добавить в тему, которая хранится в `App_Themes` папку. Так как мы еще нет такую папку, Visual Studio любезно предложит ее создать нас при добавлении первого файла обложки. Нажмите "Да", чтобы создать `App_Theme` папку и сохранить новый `GridView.skin` файл существует.
+Файлы обложки необходимо поместить в тему, расположенную в папке `App_Themes`. Так как у нас еще нет такой папки, Visual Studio будет предлагать создать ее для нас при добавлении нашей первой обложки. Нажмите кнопку Да, чтобы создать папку `App_Theme` и поместить в нее новый файл `GridView.skin`.
 
-[![Visual Studio создаст папку App_Theme](displaying-data-with-the-objectdatasource-cs/_static/image27.png)](displaying-data-with-the-objectdatasource-cs/_static/image26.png)
+[![позволить Visual Studio создать App_Theme папку](displaying-data-with-the-objectdatasource-cs/_static/image27.png)](displaying-data-with-the-objectdatasource-cs/_static/image26.png)
 
-**Рис. 10**: Позволить Visual Studio создать `App_Theme` папку ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image28.png))
+**Рис. 10**. Разрешите Visual Studio создать папку `App_Theme` ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image28.png))
 
-Это создаст новую тему в `App_Themes` папку с именем GridView в файле обложки `GridView.skin`.
+Будет создана новая тема в папке `App_Themes` с именем GridView с файлом обложки `GridView.skin`.
 
-![Темы GridView имеет были добавлены к папке App_Theme](displaying-data-with-the-objectdatasource-cs/_static/image29.png)
+![Тема GridView добавлена в папку App_Theme](displaying-data-with-the-objectdatasource-cs/_static/image29.png)
 
-**Рис. 11**: Имеет тему GridView добавлен `App_Theme` папки
+**Рис. 11**. Тема GridView добавлена в папку `App_Theme`
 
-Переименуйте тему GridView в DataWebControls (правой кнопкой мыши папку GridView в `App_Theme` папку и выберите Переименовать). После этого введите следующую разметку в `GridView.skin` файла:
+Переименуйте тему GridView в WebControl (щелкните правой кнопкой мыши папку GridView в папке `App_Theme` и выберите пункт Переименовать). Затем введите в файл `GridView.skin` следующую разметку:
 
 [!code-aspx[Main](displaying-data-with-the-objectdatasource-cs/samples/sample3.aspx)]
 
-Определяет свойства по умолчанию `CssClass`-связанных свойств для всех элементов GridView на всех страницах, при помощи темы DataWebControls. Добавим обложку для элемента DetailsView, веб-элемента управления, который мы будем использовать вскоре данных. Добавить новую обложку тему DataWebControls, с именем `DetailsView.skin` и добавьте следующую разметку:
+Это определяет свойства по умолчанию для свойств, связанных с `CssClass`, для любого элемента управления GridView на любой странице, использующей тему WebControl. Давайте добавим еще одну обложку DetailsView, веб-элемент управления данными, который скоро будет использоваться. Добавьте новую обложку в тему WebControl с именем `DetailsView.skin` и добавьте следующую разметку:
 
 [!code-aspx[Main](displaying-data-with-the-objectdatasource-cs/samples/sample4.aspx)]
 
-С помощью наших определена тема осталось применить тему к странице ASP.NET. Можно применить тему, на основе страниц или для всех страниц в веб-сайта. Применим нашу тему для всех страниц на веб-сайте. Для этого добавьте следующую разметку для `Web.config` `<system.web>` разделе:
+После определения темы последним шагом является применение темы к нашей ASP.NET странице. Тему можно применять к отдельным страницам или ко всем страницам на веб-сайте. Давайте будем использовать эту тему для всех страниц на веб-сайте. Для этого добавьте следующую разметку в раздел `<system.web>` `Web.config`:
 
 [!code-xml[Main](displaying-data-with-the-objectdatasource-cs/samples/sample5.xml)]
 
-Вот и все! `styleSheetTheme` Параметр указывает, что свойства, заданные в теме *не* свойства, определенные на уровне управления. Чтобы указать, что параметры темы должные параметры управления, используйте `theme` атрибута вместо `styleSheetTheme`; к сожалению, параметры темы, заданного с помощью `theme` атрибута не отображаются в представлении конструирования Visual Studio. См. [ASP.NET темы и обложки](https://msdn.microsoft.com/library/ykzx33wh.aspx) и [темы с помощью серверных стили](https://quickstarts.asp.net/quickstartv20/aspnet/doc/themes/stylesheettheme.aspx) узнать больше о темы и обложки элементов см. в разделе [How To: Применение тем ASP.NET](https://msdn.microsoft.com/library/0yy5hxdk(VS.80).aspx) Дополнительные сведения о настройке страницы для использования темы.
+Вот и все! Параметр `styleSheetTheme` указывает, что свойства, заданные в теме, *не* должны переопределять свойства, заданные на уровне элемента управления. Чтобы указать, что параметры темы должны закозырить параметры управления, вместо `styleSheetTheme`используйте `theme` атрибут. к сожалению, параметры темы, указанные с помощью атрибута `theme`, не отображаются в представление конструирования Visual Studio. Дополнительные сведения о темах и обложках см. в разделе [Общие сведения о темах и обложках ASP.NET](https://msdn.microsoft.com/library/ykzx33wh.aspx) и [стили на стороне сервера с помощью тем](https://quickstarts.asp.net/quickstartv20/aspnet/doc/themes/stylesheettheme.aspx) . Дополнительные сведения о настройке страницы для использования темы см. [в разделе Практические руководства. применение ASP.NET тем](https://msdn.microsoft.com/library/0yy5hxdk(VS.80).aspx) .
 
-[![Элемент GridView отображает по имени продукта, категории, поставщика, цены и информации о поддержке](displaying-data-with-the-objectdatasource-cs/_static/image31.png)](displaying-data-with-the-objectdatasource-cs/_static/image30.png)
+[![элементе GridView отображаются название продукта, категория, поставщик, Цена и неподдерживаемые сведения.](displaying-data-with-the-objectdatasource-cs/_static/image31.png)](displaying-data-with-the-objectdatasource-cs/_static/image30.png)
 
-**Рис. 12**: Элемент GridView отображает имя продукта, категории, поставщика, цены и сведения, более не поддерживается ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image32.png))
+**Рис. 12**. Отображение имени продукта, категории, поставщика, цены и неподдерживаемой информации в элементе GridView ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image32.png))
 
-## <a name="displaying-one-record-at-a-time-in-the-detailsview"></a>Отображение одной записи за раз в DetailsView
+## <a name="displaying-one-record-at-a-time-in-the-detailsview"></a>Отображение одной записи за раз в элементе DetailsView
 
-Элемент GridView отображает по одной строке для каждой записи, полученной элементом управления источником данных, к которому он привязан. Бывают случаи, тем не менее, когда необходимо отобразить записи или только одной записи за раз. [Управления DetailsView](https://msdn.microsoft.com/library/s3w1w7t4.aspx) обеспечивает эти функциональные возможности, создает элемент HTML `<table>` с двумя столбцами и одной строке для каждого столбца или свойства, привязанного к элементу управления. Элемент DetailsView можно считать элемента GridView с одной записью Повернуть на 90 градусов.
+Элемент GridView отображает по одной строке для каждой записи, возвращенной элементом управления источником данных, к которому он привязан. Однако бывают ситуации, когда нам нужно отобразить единственную запись или только одну запись за раз. [Элемент управления DetailsView](https://msdn.microsoft.com/library/s3w1w7t4.aspx) предлагает эту функцию, который готовится к просмотру как HTML-`<table>` с двумя столбцами и одной строкой для каждого столбца или свойства, привязанного к элементу управления. Можно представить DetailsView как GridView с одной записью, повернутой на 90 градусов.
 
-Начните с добавления элемента управления DetailsView *выше* GridView в `SimpleDisplay.aspx`. Затем привяжите его к тот же элемент управления ObjectDataSource, элемент GridView. Как и с GridView, BoundField будут добавлены к элементу управления DetailsView для каждого свойства объекта, возвращаемого ObjectDataSource `Select` метод. Единственным различием является то, что поля BoundFields в элементе DetailsView располагаются по горизонтали, а не по вертикали.
+Начните с добавления элемента управления DetailsView *над* GridView в `SimpleDisplay.aspx`. Затем привяжите его к тому же элементу управления ObjectDataSource, что и GridView. Как и в GridView, BoundField будет добавлен к элементу DetailsView для каждого свойства в объекте, возвращаемом методом `Select` ObjectDataSource. Единственное отличие заключается в том, что BoundFields DetailsView располагаются горизонтально, а не вертикально.
 
-[![Добавление элемента DetailsView на страницу и привяжите его к элементу ObjectDataSource](displaying-data-with-the-objectdatasource-cs/_static/image34.png)](displaying-data-with-the-objectdatasource-cs/_static/image33.png)
+[![добавить элемент DetailsView на страницу и привязать его к элементу управления ObjectDataSource](displaying-data-with-the-objectdatasource-cs/_static/image34.png)](displaying-data-with-the-objectdatasource-cs/_static/image33.png)
 
-**Рис. 13**: Добавление элемента DetailsView на страницу и привяжите его к элементу ObjectDataSource ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image35.png))
+**Рис. 13**. Добавление элемента DetailsView на страницу и привязка его к ObjectDataSource ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image35.png))
 
-Например GridView DetailsView поля BoundFields может быть оптимизировано для более функциональный отображения данных, возвращаемых элементом ObjectDataSource. Рис. 14 показан элемент DetailsView после BoundFields и `CssClass` заданы свойства, чтобы сделать его внешний вид, как в примере GridView.
+Как и GridView, BoundFields элемента DetailsView можно настроить таким образом, чтобы обеспечить более настраиваемое отображение данных, возвращаемых ObjectDataSource. На рис. 14 показана DetailsView после того, как свойства BoundFields и `CssClass` были настроены таким образом, чтобы его внешний вид был похож на пример GridView.
 
-[![Отображение одной записи при DetailsView](displaying-data-with-the-objectdatasource-cs/_static/image37.png)](displaying-data-with-the-objectdatasource-cs/_static/image36.png)
+[![элемент DetailsView показывает одну запись](displaying-data-with-the-objectdatasource-cs/_static/image37.png)](displaying-data-with-the-objectdatasource-cs/_static/image36.png)
 
-**Рис. 14**: Отображение одной записи при DetailsView ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image38.png))
+**Рис. 14**. элемент DetailsView отображает одну запись ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image38.png))
 
-Обратите внимание на то, что элемент DetailsView отображает только первую запись, полученную из источника данных. Чтобы разрешить пользователю перебрать все записи, поочередно, мы должны включить функцию разбиения для элемента DetailsView. Чтобы сделать это, вернитесь в Visual Studio и установите флажок Enable Paging в смарт-теге DetailsView.
+Обратите внимание, что элемент DetailsView отображает только первую запись, возвращенную ее источником данных. Чтобы разрешить пользователю выполнять все записи по отдельности, необходимо включить разбиение по страницам DetailsView. Для этого вернитесь в Visual Studio и установите флажок Включить разбиение по страницам в смарт-теге DetailsView.
 
-[![Включить разбиение по страницам в элементе управления DetailsView](displaying-data-with-the-objectdatasource-cs/_static/image40.png)](displaying-data-with-the-objectdatasource-cs/_static/image39.png)
+[![включить разбиение по страницам в элементе управления DetailsView](displaying-data-with-the-objectdatasource-cs/_static/image40.png)](displaying-data-with-the-objectdatasource-cs/_static/image39.png)
 
-**Рис. 15**: Включить разбиение по страницам в элементе управления DetailsView ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image41.png))
+**Рис. 15**. Включение разбиения по страницам в элементе управления DetailsView ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image41.png))
 
-[![Включении разбиения на страницы элемент DetailsView позволяет пользователю просматривать всех продуктов](displaying-data-with-the-objectdatasource-cs/_static/image43.png)](displaying-data-with-the-objectdatasource-cs/_static/image42.png)
+[![с включенным разбиением на страницы DetailsView позволяет пользователю просматривать любой из продуктов.](displaying-data-with-the-objectdatasource-cs/_static/image43.png)](displaying-data-with-the-objectdatasource-cs/_static/image42.png)
 
-**Рис. 16**: С поддержкой разбиения по страницам, элемент DetailsView позволяет пользователю просматривать всех продуктов ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image44.png))
+**Рис. 16**. при включенном разбиении по страницам DetailsView позволяет пользователю просматривать любой из продуктов ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image44.png)).
 
-Мы поговорим о разбиении на страницы в последующих руководствах.
+Дополнительные сведения о разбиении на страницы см. в следующих руководствах.
 
 ## <a name="a-more-flexible-layout-for-showing-one-record-at-a-time"></a>Более гибкий макет для отображения одной записи за раз
 
-DetailsView не слишком разнообразны, отображается ли он записей, возвращаемых элементом управления ObjectDataSource. Требуется более гибкое представление данных. Например, чтобы не выводить название продукта, категория, поставщик, цена и информация о поддержке в отдельной строке, мы может потребоваться отображения имени продукта и цена стояли в `<h4>` заголовок с категорию и поставщика сведения о пользователях ниже название и цену в меньший размер шрифта. И мы не нужны названия параметров (продукта, категории и т. д.) рядом со значениями.
+Элемент DetailsView очень жестко показывает, как он отображает каждую запись, возвращенную из ObjectDataSource. Нам может потребоваться более гибкое представление данных. Например, вместо отображения названия продукта, категории, поставщика, цены и сведений о неподдерживаемой информации в отдельной строке нам может потребоваться показать название и цену продукта в заголовке `<h4>`, а сведения о категории и поставщике отображаются под названием и ценой меньшего размера шрифта. И мы можем не позаботиться о названиях свойств (продукт, Категория и т. д.) рядом со значениями.
 
-[Управления FormView](https://msdn.microsoft.com/library/fyf1dk77.aspx) обеспечивает настройку такого типа. Вместо полей (как GridView и DetailsView), элемент FormView использует шаблоны, которые позволяют смешивать веб-элементов управления, статический HTML и [синтаксис привязки данных](http://www.15seconds.com/issue/040630.htm). Если вы знакомы с элементом управления Repeater в ASP.NET 1.x, можно представить себе элемент FormView как Repeater, выводящего на экран только одну запись.
+[Элемент управления FormView](https://msdn.microsoft.com/library/fyf1dk77.aspx) обеспечивает этот уровень настройки. Вместо использования полей (таких как GridView и DetailsView), FormView использует шаблоны, которые позволяют использовать сочетание веб-элементов управления, статического HTML и [синтаксиса привязки данных](http://www.15seconds.com/issue/040630.htm). Если вы знакомы с элементом управления Repeater из ASP.NET 1. x, вы можете представить FormView как Repeater для отображения одной записи.
 
-Добавьте элемент управления FormView на `SimpleDisplay.aspx` область конструктора страницы. Сначала FormView появится в виде серого, говорит о том, что нам нужно предоставить по меньшей мере, элемента управления `ItemTemplate`.
+Добавление элемента управления FormView в рабочую область конструктора `SimpleDisplay.aspx` страницы. Изначально FormView отображается в виде серого блока, что информирует нас о том, что необходимо предоставить, как минимум, `ItemTemplate`элемента управления.
 
 [![FormView должен включать ItemTemplate](displaying-data-with-the-objectdatasource-cs/_static/image46.png)](displaying-data-with-the-objectdatasource-cs/_static/image45.png)
 
-**Рис. 17**: FormView требуется `ItemTemplate` ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image47.png))
+**Рис. 17**. элемент FormView должен включать `ItemTemplate` ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image47.png))
 
-FormView можно привязать непосредственно к элементу управления источника данных через смарт-тега FormView, который автоматически создаст стандартный шаблон `ItemTemplate` автоматически (вместе с `EditItemTemplate` и `InsertItemTemplate`, если элемент управления ObjectDataSource `InsertMethod` и `UpdateMethod` свойств). Тем не менее, для этого примера давайте привязки данных к FormView и указать его `ItemTemplate` вручную. Сначала FormView `DataSourceID` свойства `ID` элемента управления ObjectDataSource, `ObjectDataSource1`. Создайте `ItemTemplate` , чтобы он отображал имя продукта и цену в `<h4>` элемента и категории и shipper имен ниже, позволяет уменьшить размер шрифта.
+Можно привязать FormView непосредственно к элементу управления источника данных с помощью смарт-тега FormView, который автоматически создает `ItemTemplate` по умолчанию (вместе с `EditItemTemplate` и `InsertItemTemplate`, если заданы свойства `InsertMethod` и `UpdateMethod` элемента управления ObjectDataSource). Однако в этом примере мы выполним привязку данных к FormView и указываем его `ItemTemplate` вручную. Начните с установки свойства `DataSourceID` FormView в `ID` элемента управления ObjectDataSource `ObjectDataSource1`. Затем создайте `ItemTemplate` таким образом, чтобы он отображал название и цену продукта в `<h4>` элементе, а названия категорий и грузоотправителей под меньшим размером шрифта.
 
 [!code-aspx[Main](displaying-data-with-the-objectdatasource-cs/samples/sample6.aspx)]
 
-[![Первого продукта (Chai) отображается в пользовательский формат](displaying-data-with-the-objectdatasource-cs/_static/image49.png)](displaying-data-with-the-objectdatasource-cs/_static/image48.png)
+[![первый продукт (Chai) отображается в пользовательском формате](displaying-data-with-the-objectdatasource-cs/_static/image49.png)](displaying-data-with-the-objectdatasource-cs/_static/image48.png)
 
-**Рис. 18**: Первого продукта (Chai) отображается в пользовательский формат ([Просмотр полноразмерного изображения](displaying-data-with-the-objectdatasource-cs/_static/image50.png))
+**Рис. 18**. первый продукт (Chai) отображается в настраиваемом формате ([щелкните, чтобы просмотреть изображение с полным размером](displaying-data-with-the-objectdatasource-cs/_static/image50.png))
 
-`<%# Eval(propertyName) %>` — Это синтаксис привязки данных. `Eval` Метод возвращает значение указанного свойства для текущего объекта, привязываемого к элементу управления FormView. В статье Алекса Гомера [упрощенное и расширенных данных привязки синтаксис в ASP.NET 2.0](http://www.15seconds.com/issue/040630.htm) Дополнительные сведения о протоколах передачи привязки данных.
+`<%# Eval(propertyName) %>` является синтаксисом привязки данных. Метод `Eval` возвращает значение указанного свойства для текущего объекта, привязанного к элементу управления FormView. Ознакомьтесь со статьей об [упрощенном и расширенном синтаксисе привязки данных в ASP.NET 2,0](http://www.15seconds.com/issue/040630.htm) , чтобы получить дополнительные сведения о Homer данных.
 
-Как и элемент DetailsView FormView отображает только первую запись, возвращенную элементом управления ObjectDataSource. Вы можете включить разбиение по страницам в FormView, чтобы пошагово одного продукта за раз.
+Как и DetailsView, FormView показывает только первую запись, возвращенную из ObjectDataSource. Можно включить разбиение по страницам в FormView, чтобы посетители могли пошагово прокручивать продукты по одному за раз.
 
 ## <a name="summary"></a>Сводка
 
-Доступ и отображение данных на уровне бизнес-логики может осуществляться без написания кода благодаря элементу управления ObjectDataSource ASP.NET 2.0. ObjectDataSource вызывает указанный метод класса и возвращает результаты. Эти результаты могут отображаться в данных веб-элемента управления, к которому привязан элемент управления ObjectDataSource. В этом учебнике мы рассмотрели привязки элементов управления GridView, DetailsView и FormView к ObjectDataSource.
+Доступ к данным уровня бизнес-логики и их отображение могут осуществляться без написания строки кода благодаря элементу управления ObjectDataSource в ASP.NET 2.0. ObjectDataSource вызывает указанный метод класса и возвращает результаты. Эти результаты могут отображаться в веб-элементе управления данными, привязанном к ObjectDataSource. В этом учебнике мы рассматривали привязку элементов управления GridView, DetailsView и FormView к элементу ObjectDataSource.
 
-Пока мы видели только способ использования ObjectDataSource для вызова метода без параметров, но что делать, если мы хотим вызвать любой метод, принимающий входные параметры, такие как `ProductBLL` класса `GetProductsByCategoryID(categoryID)`? Чтобы вызвать любой метод, принимающий один или несколько параметров нам нужно настроить элемент ObjectDataSource для указания значений для этих параметров. Узнаете, как для этого в наших [следующему руководству](declarative-parameters-cs.md).
+До сих пор мы видели, как использовать ObjectDataSource для вызова метода без параметров, но что если бы мы хотим вызвать метод, который предполагает ввод входных параметров, например `GetProductsByCategoryID(categoryID)`класса `ProductBLL`? Чтобы вызвать метод, который ожидает один или несколько параметров, необходимо настроить ObjectDataSource для указания значений этих параметров. Мы посмотрим, как это сделать в [следующем руководстве](declarative-parameters-cs.md).
 
-Счастливого вам программирования!
+Поздравляем с программированием!
 
 ## <a name="further-reading"></a>Дополнительные сведения
 
-Дополнительные сведения по темам, обсуждавшимся в этом руководстве см. в следующих ресурсах:
+Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 
 - [Создание собственных элементов управления источниками данных](https://msdn.microsoft.com/library/ms364049.aspx)
-- [Примеры использования элемента GridView ASP.NET 2.0](https://msdn.microsoft.com/library/aa479339.aspx)
-- [Простой и расширенный синтаксис привязки данных в ASP.NET 2.0](http://www.15seconds.com/issue/040630.htm)
-- [Темы в ASP.NET 2.0](http://www.odetocode.com/Articles/423.aspx)
-- [Стили на стороне сервера с использованием тем.](https://quickstarts.asp.net/quickstartv20/aspnet/doc/themes/stylesheettheme.aspx)
-- [Практическое руководство. Применение тем ASP.NET программными средствами](https://msdn.microsoft.com/library/tx35bd89.aspx)
+- [Примеры GridView для ASP.NET 2,0](https://msdn.microsoft.com/library/aa479339.aspx)
+- [Упрощенный и расширенный синтаксис привязки данных в ASP.NET 2,0](http://www.15seconds.com/issue/040630.htm)
+- [Темы в ASP.NET 2,0](http://www.odetocode.com/Articles/423.aspx)
+- [Стили на стороне сервера, использующие темы](https://quickstarts.asp.net/quickstartv20/aspnet/doc/themes/stylesheettheme.aspx)
+- [Как программно применить темы ASP.NET](https://msdn.microsoft.com/library/tx35bd89.aspx)
 
 ## <a name="about-the-author"></a>Об авторе
 
-[Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP.NET и основатель веб- [4GuysFromRolla.com](http://www.4guysfromrolla.com), работает с веб-технологиями Microsoft с 1998 года. Скотт — независимый консультант, преподаватель и автор. Его последняя книга — [ *Sams Teach ASP.NET 2.0 in 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Ним можно связаться по адресу [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти в [ http://ScottOnWriting.NET ](http://ScottOnWriting.NET).
+[Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP. NET и основатель [4GuysFromRolla.com](http://www.4guysfromrolla.com), работал с веб-технологиями Майкрософт с 1998. Скотт работает как независимый консультант, преподаватель и модуль записи. Его последняя книга — [*Sams обучать себя ASP.NET 2,0 за 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Он доступен по адресу [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти по адресу [http://ScottOnWriting.NET](http://ScottOnWriting.NET).
 
-## <a name="special-thanks-to"></a>Особая благодарность
+## <a name="special-thanks-to"></a>Специальная благодарность
 
-В этой серии руководств пособий рецензировалась многими компетентными редакторами. Основной рецензент этого учебного был (Hilton giesenow). Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
+Эта серия руководств была рассмотрена многими полезными рецензентами. Специалист по интересу для этого руководства был Хилтон Гизнау. Хотите ознакомиться с моими будущими статьями MSDN? Если это так, расположите строку в [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
 > [Вперед](declarative-parameters-cs.md)

@@ -2,60 +2,60 @@
 uid: web-forms/overview/ajax-control-toolkit/modalpopup/handling-postbacks-from-a-modalpopup-vb
 title: Обработка обратных передач из ModalPopup (VB) | Документация Майкрософт
 author: wenz
-description: Элемент управления ModalPopup в AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью средств на стороне клиента. Особое внимание следует принимать при терминалом...
+description: Элемент управления ModalPopup в наборе средств AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью клиентских средств. При торговом терминале необходимо уделить особое внимание.
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: f70ac2b3-900f-40fa-858f-ab057904506b
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/modalpopup/handling-postbacks-from-a-modalpopup-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 3c1951e1ae4f97982d1263dfa9dc29454f7ce55a
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: df0b71b3e336a0d230869623473bdac24b3dd07b
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65132675"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74606638"
 ---
 # <a name="handling-postbacks-from-a-modalpopup-vb"></a>Обработка обратных передач из ModalPopup (VB)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup3.vb.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup3VB.pdf)
+[Скачать код](https://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup3.vb.zip) или [скачать PDF](https://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup3VB.pdf)
 
-> Элемент управления ModalPopup в AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью средств на стороне клиента. Специальные необходимо соблюдать осторожность при обратной передачи из в контекстное меню.
+> Элемент управления ModalPopup в наборе средств AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью клиентских средств. При создании обратной передачи во всплывающем окне необходимо соблюдать особое внимание.
 
 ## <a name="overview"></a>Обзор
 
-Элемент управления ModalPopup в AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью средств на стороне клиента. Специальные необходимо соблюдать осторожность при обратной передачи из в контекстное меню.
+Элемент управления ModalPopup в наборе средств AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью клиентских средств. При создании обратной передачи во всплывающем окне необходимо соблюдать особое внимание.
 
 ## <a name="steps"></a>Шаги
 
-Для активации функции ASP.NET AJAX и Control Toolkit, `ScriptManager` управления необходимо поместить в любом месте на странице (но в `<form>` элемента):
+Чтобы активировать функциональные возможности ASP.NET AJAX и набора элементов управления, элемент управления `ScriptManager` должен быть размещен в любом месте страницы (но в элементе `<form>`):
 
 [!code-aspx[Main](handling-postbacks-from-a-modalpopup-vb/samples/sample1.aspx)]
 
-Добавьте панель, который служит в качестве модального всплывающего окна. Существует пользователь может ввести имя и адрес электронной почты. Кнопка позволяет закрыть всплывающее окно и сохранить их. Обратите внимание, что `OnClick` атрибут имеет значение, что обратная передача происходит при нажатии этой кнопки:
+Затем добавьте панель, которая выступает в качестве модального всплывающего окна. Здесь пользователь может ввести имя и адрес электронной почты. Кнопка используется для закрытия всплывающего окна и сохранения данных. Обратите внимание, что атрибут `OnClick` задан таким образом, что при нажатии на эту кнопку происходит обратная передача:
 
 [!code-aspx[Main](handling-postbacks-from-a-modalpopup-vb/samples/sample2.aspx)]
 
-Сама страница состоит из двух меток для точно те же данные: имя и адрес электронной почты. Кнопка используется для запуска модального всплывающего окна:
+Сама страница состоит из двух меток для одних и тех же сведений: имя и адрес электронной почты. Кнопка используется для запуска модального всплывающего окна:
 
 [!code-aspx[Main](handling-postbacks-from-a-modalpopup-vb/samples/sample3.aspx)]
 
-Чтобы сделать всплывающее окно отображается, добавьте `ModalPopupExtender` элемента управления. Задайте `PopupControlID` атрибут ID панели и `TargetControlID` идентификатору кнопки:
+Чтобы отобразить всплывающее окно, добавьте элемент управления `ModalPopupExtender`. Задайте атрибуту `PopupControlID` идентификатор панели и `TargetControlID` ИДЕНТИФИКАТОРу кнопки:
 
 [!code-aspx[Main](handling-postbacks-from-a-modalpopup-vb/samples/sample4.aspx)]
 
-Теперь всякий раз, когда `Save` нажатии кнопки внутри модального всплывающего окна на стороне сервера `SaveData()` выполнения метода. Здесь вы можете сохранить введенные данные в хранилище данных. Для простоты новые данные, просто вывести в метке:
+Теперь при нажатии кнопки `Save` в модальном всплывающем окне выполняется метод `SaveData()` на стороне сервера. Там можно сохранить введенные данные в хранилище данных. В целях простоты новые данные просто выводятся в метке:
 
 [!code-vb[Main](handling-postbacks-from-a-modalpopup-vb/samples/sample5.vb)]
 
-Кроме того элементы управления textbox внутри модального всплывающего окна должен быть заполнен действующие имя и адрес электронной почты. Тем не менее это требуется только при отсутствии обратной передачи. Если обратная передача, функция viewstate ASP.NET автоматически заполнят текстовых полей с соответствующими значениями.
+Кроме того, элементы управления TextBox в модальном всплывающем окне должны быть заполнены текущим именем и сообщением электронной почты. Однако это необходимо только в том случае, если обратная передача не выполняется. При наличии обратной передачи функция ViewState ASP.NET автоматически заполняет текстовые поля соответствующими значениями.
 
 [!code-vb[Main](handling-postbacks-from-a-modalpopup-vb/samples/sample6.vb)]
 
-[![Модальное всплывающее окно вызывает обратную передачу](handling-postbacks-from-a-modalpopup-vb/_static/image2.png)](handling-postbacks-from-a-modalpopup-vb/_static/image1.png)
+[![модальное всплывающее окно вызывает обратную передачу](handling-postbacks-from-a-modalpopup-vb/_static/image2.png)](handling-postbacks-from-a-modalpopup-vb/_static/image1.png)
 
-Модальное всплывающее окно вызывает обратную передачу ([Просмотр полноразмерного изображения](handling-postbacks-from-a-modalpopup-vb/_static/image3.png))
+Модальное всплывающее окно вызывает обратную передачу ([щелкните, чтобы просмотреть изображение с полным размером](handling-postbacks-from-a-modalpopup-vb/_static/image3.png))
 
 > [!div class="step-by-step"]
 > [Назад](using-modalpopup-with-a-repeater-control-vb.md)

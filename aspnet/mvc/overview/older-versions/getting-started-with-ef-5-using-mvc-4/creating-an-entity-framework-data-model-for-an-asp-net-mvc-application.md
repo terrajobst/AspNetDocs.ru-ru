@@ -1,62 +1,62 @@
 ---
 uid: mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application
-title: Создание модели данных Entity Framework для приложения ASP.NET MVC (1 из 10) | Документация Майкрософт
+title: Создание Entity Framework модели данных для приложения ASP.NET MVC (1 из 10) | Документация Майкрософт
 author: tdykstra
-description: Для Visual Studio 2013, Entity Framework 6 и MVC 5 доступна более новая версия этого цикла руководств. Web приложения университета Contoso образец de...
+description: Более новая версия этой серии руководств доступна для Visual Studio 2013, Entity Framework 6 и MVC 5. Пример веб-приложения для университета Contoso — de...
 ms.author: riande
 ms.date: 07/30/2013
 ms.assetid: 4ba029b6-ee7c-4e45-a0e7-b703c37e5d9a
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: abb59f16759a7d32c6900baf96fe3a1299170922
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 8ee5aa22b6b2329b01d41437f30508e28a2288b2
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65129789"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74595971"
 ---
-# <a name="creating-an-entity-framework-data-model-for-an-aspnet-mvc-application-1-of-10"></a>Создание модели данных Entity Framework для приложения ASP.NET MVC (1 из 10)
+# <a name="creating-an-entity-framework-data-model-for-an-aspnet-mvc-application-1-of-10"></a>Создание Entity Framework модели данных для приложения ASP.NET MVC (1 из 10)
 
-по [том Дайкстра](https://github.com/tdykstra)
+от [Tom Dykstra)](https://github.com/tdykstra)
 
-[Скачать завершенный проект](http://code.msdn.microsoft.com/Getting-Started-with-dd0e2ed8)
+[Скачать завершенный проект](https://code.msdn.microsoft.com/Getting-Started-with-dd0e2ed8)
 
 > > [!NOTE] 
 > > 
-> > Объект [новой версии этой серии руководств](../../getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md) доступны для Visual Studio 2013, Entity Framework 6 и MVC 5.
+> > [Более новая версия этой серии руководств](../../getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md) доступна для Visual Studio 2013, Entity Framework 6 и MVC 5.
 > 
 > 
-> Пример веб-приложение университета Contoso демонстрирует создание приложения ASP.NET MVC 4, используя Entity Framework 5 и Visual Studio 2012. В этом примере приложения реализуется веб-сайт вымышленного университета Contoso. На нем предусмотрены различные функции, в том числе прием учащихся, создание курсов и назначение преподавателей. В этой серии руководств описывается построение примера приложения университета Contoso. Вы можете [загрузить готовое приложение](https://code.msdn.microsoft.com/Getting-Started-with-dd0e2ed8).
+> Пример веб-приложения для университета Contoso демонстрирует создание приложений ASP.NET MVC 4 с помощью Entity Framework 5 и Visual Studio 2012. В этом примере приложения реализуется веб-сайт вымышленного университета Contoso. На нем предусмотрены различные функции, в том числе прием учащихся, создание курсов и назначение преподавателей. В этой серии руководств объясняется, как создать пример приложения университета Contoso. Вы можете [скачать готовое приложение](https://code.msdn.microsoft.com/Getting-Started-with-dd0e2ed8).
 > 
 > ## <a name="code-first"></a>Code First
 > 
-> Существует три способа, которыми можно работать с данными в Entity Framework: *Database First*, *Model First*, и *Code First*. Это руководство предназначено для Code First. Сведения о различиях между этими рабочими процессами и рекомендации о том, как выбрать наиболее подходящий для вашего сценария, см. в разделе [рабочие процессы разработки Entity Framework](https://msdn.microsoft.com/library/ms178359.aspx#dbfmfcf).
+> Существует три способа работы с данными в Entity Framework: *Database First*, *Model First*и *Code First*. Это руководство предназначено для Code First. Сведения о различиях между этими рабочими процессами и рекомендации по выбору наиболее подходящего сценария см. в разделе [рабочие процессы разработки Entity Framework](https://msdn.microsoft.com/library/ms178359.aspx#dbfmfcf).
 > 
 > ## <a name="mvc"></a>MVC
 > 
-> Создание примера приложения на базе [ASP.NET MVC](../../../index.md). Если вы предпочитаете работать с моделью веб-форм ASP.NET, см. в разделе [привязки модели и Web Forms](../../../../web-forms/overview/presenting-and-managing-data/model-binding/retrieving-data.md) серии руководств и [схема содержимого для доступа к данным ASP.NET](../../../../whitepapers/aspnet-data-access-content-map.md).
+> Пример приложения основан на [ASP.NET MVC](../../../index.md). Если вы предпочитаете работать с моделью веб-форм ASP.NET, см. статью " [Привязка модели и веб-формы](../../../../web-forms/overview/presenting-and-managing-data/model-binding/retrieving-data.md) " серии руководств и [Схема содержимого ASP.NET Data Access](../../../../whitepapers/aspnet-data-access-content-map.md).
 > 
 > ## <a name="software-versions"></a>Версии программного обеспечения
 > 
-> | **В этом руководстве показано** | **Также работает с** |
+> | **Показано в руководстве** | **Также работает с** |
 > | --- | --- |
-> | Windows 8 | Windows 7 |
-> | Visual Studio 2012 | Visual Studio Express 2012 для Web. Это автоматически устанавливается с помощью пакета SDK Windows Azure, если у вас нет Visual STUDIO 2012 или VS 2012 Express для Web. Visual Studio 2013 должна работать, но руководства не был протестирован с ним и некоторые элементы меню и диалоговые окна отличаются. [Windows Azure SDK версии Visual STUDIO 2013](https://go.microsoft.com/fwlink/p/?linkid=323510) необходим для развертывания Windows Azure. |
-> | .NET 4.5 | Большая часть функций, представленных будет работать в .NET 4, но некоторые не будут. Например для поддержки перечисления в EF требуется .NET 4.5. |
+> | Windows 8 | Windows 7 |
+> | Visual Studio 2012 | Visual Studio 2012 Express для Web. Это автоматически устанавливается пакетом Windows Azure SDK, если у вас еще нет VS 2012 или VS 2012 Express для Web. Visual Studio 2013 должны работать, но учебник не тестировался с ним, и некоторые пункты меню и диалоговые окна отличаются. Для развертывания Windows Azure требуется [версия VS 2013 пакета SDK для Windows Azure](https://go.microsoft.com/fwlink/p/?linkid=323510) . |
+> | .NET 4.5 | Большинство показанных функций будет работать в .NET 4, но некоторые не будут. Например, для поддержки перечисления в EF требуется .NET 4,5. |
 > | Entity Framework 5 |  |
-> | [Windows Azure SDK 2.1](https://go.microsoft.com/fwlink/p/?linkid=323511) | Если вы пропустите шаги развертывания Windows Azure, вам не требуется пакет SDK. При выпуске новой версии пакета SDK, ссылка будет установить новую версию. В этом случае может потребоваться изменить некоторые инструкции для нового пользовательского интерфейса и функций. |
+> | [Пакет Windows Azure SDK 2,1](https://go.microsoft.com/fwlink/p/?linkid=323511) | Если пропустить шаги развертывания Windows Azure, пакет SDK не требуется. При выпуске новой версии пакета SDK ссылка установит новую версию. В этом случае может потребоваться адаптировать некоторые инструкции к новому ИНТЕРФЕЙСу и функциям. |
 > 
 > ## <a name="questions"></a>Вопросы
 > 
-> Если у вас есть вопросы, которые не имеют отношения к руководству, их можно разместить [форум ASP.NET Entity Framework](https://forums.asp.net/1227.aspx), [Entity Framework и LINQ to Entities форум](https://social.msdn.microsoft.com/forums/adodotnetentityframework/threads/), или [ StackOverflow.com](http://stackoverflow.com/).
+> Если у вас есть вопросы, которые не связаны непосредственно с этим руководством, вы можете опубликовать их на [форуме по ASP.NET Entity Framework](https://forums.asp.net/1227.aspx), на [форуме Entity Framework и LINQ to Entities](https://social.msdn.microsoft.com/forums/adodotnetentityframework/threads/)или [StackOverflow.com](http://stackoverflow.com/).
 > 
 > ## <a name="acknowledgments"></a>Благодарности
 > 
-> См. в последнем руководстве серии для [подтверждений и Примечание о VB](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#acknowledgments).
+> Для получения [подтверждений и замечаний о VB](advanced-entity-framework-scenarios-for-an-mvc-web-application.md#acknowledgments)см. Последнее руководство в серии.
 > 
-> ## <a name="original-version-of-the-tutorial"></a>Исходная версия этого руководства
+> ## <a name="original-version-of-the-tutorial"></a>Исходная версия учебника
 > 
-> Исходная версия руководства доступна в [EF 4.1 и MVC 3 электронная книга](https://social.technet.microsoft.com/wiki/contents/articles/11608.e-book-gallery-for-microsoft-technologies.aspx#GettingStartedwiththeEntityFramework4.1usingASP.NETMVC).
+> Исходная версия учебника доступна в [электронной книге EF 4,1/MVC 3](https://social.technet.microsoft.com/wiki/contents/articles/11608.e-book-gallery-for-microsoft-technologies.aspx#GettingStartedwiththeEntityFramework4.1usingASP.NETMVC).
 
 ## <a name="the-contoso-university-web-application"></a>Веб-приложение университета Contoso
 
@@ -70,23 +70,23 @@ ms.locfileid: "65129789"
 
 Стиль пользовательского интерфейса этого сайта практически полностью основан на встроенных шаблонах, поскольку это позволяет сосредоточиться на изучении и использовании возможностей платформы Entity Framework.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 
-Инструкции и снимки экрана в этом руководстве предполагается, что вы используете [Visual Studio 2012](https://www.microsoft.com/visualstudio/eng/downloads) или [Visual Studio 2012 Express для Web](https://go.microsoft.com/fwlink/?LinkID=275131), новейшие обновления и пакета Azure SDK для .NET, установлен по состоянию на июль, 2013. Вы можете получить все это с помощью следующей ссылки:
+В руководстве и снимках экрана в этом учебнике предполагается, что вы используете [Visual studio 2012](https://www.microsoft.com/visualstudio/eng/downloads) или [Visual Studio 2012 Express для Web](https://go.microsoft.com/fwlink/?LinkID=275131), с последним обновлением и пакетом SDK Azure для .NET, установленным начиная с июля 2013. Все это можно получить по следующей ссылке:
 
 [Пакет Azure SDK для .NET (Visual Studio 2012)](https://go.microsoft.com/fwlink/?LinkId=254364)
 
-Если у вас установлена среда Visual Studio, указанной выше ссылке установит недостающие компоненты. Если у вас нет Visual Studio, ссылку установит Visual Studio 2012 Express для Web. Можно использовать Visual Studio 2013, но некоторые необходимые процедуры и экраны будут отличаться.
+Если у вас установлена Visual Studio, на приведенной выше ссылке будут установлены все отсутствующие компоненты. Если у вас нет Visual Studio, ссылка установит Visual Studio 2012 Express для Web. Можно использовать Visual Studio 2013, но некоторые необходимые процедуры и экраны будут отличаться.
 
-## <a name="create-an-mvc-web-application"></a>Создать веб-приложение MVC
+## <a name="create-an-mvc-web-application"></a>Создание веб-приложения MVC
 
-Откройте Visual Studio и создайте новый проект C# с именем «ContosoUniversity» с помощью **веб-приложение ASP.NET MVC 4** шаблона. Убедитесь, что целевой **.NET Framework 4.5** (вы будете использовать [ `enum` свойства](https://msdn.microsoft.com/data/hh859576.aspx), которых требуется .NET 4.5).
+Откройте Visual Studio и создайте новый C# проект с именем "ContosoUniversity" с помощью шаблона **веб-приложения ASP.NET MVC 4** . Убедитесь, что вы используете **.NET Framework 4,5** (вы будете использовать [Свойства`enum`](https://msdn.microsoft.com/data/hh859576.aspx), для которых требуется .NET 4,5).
 
 ![New_project_dialog_box](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image3.png)
 
-В **создания проекта ASP.NET MVC 4** диалогового окна выберите **веб-приложение** шаблона.
+В диалоговом окне **Новый проект ASP.NET MVC 4** выберите шаблон **Интернет приложение** .
 
-Оставьте **Razor** системы выбранных представлений и оставить **Создание проекта модульного теста** флажок снят.
+Оставьте выбранным обработчик представлений **Razor** и оставьте флажок **создать проект модульного теста** снятым.
 
 Нажмите кнопку **ОК**.
 
@@ -96,30 +96,30 @@ ms.locfileid: "65129789"
 
 Выполните незначительную настройку меню, макета и домашней страницы сайта.
 
-Откройте *Views\Shared\\_Layout.cshtml*и замените содержимое файла следующим кодом. Изменения выделены.
+Откройте *Views\Shared\\_layout. cshtml*и замените содержимое файла следующим кодом. Изменения выделены.
 
 [!code-cshtml[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample1.cshtml?highlight=5,15,25-28,43)]
 
 Этот код вносит следующие изменения:
 
-- Заменяет экземпляры шаблона «My ASP.NET MVC Application» и «ваша эмблема здесь» с «Contoso University».
-- Добавляет несколько ссылки на действия, которые будут использоваться позже в этом руководстве.
+- Заменяет экземпляры шаблона "мое приложение ASP.NET MVC" и "ваш логотип здесь" на "университет Contoso".
+- Добавляет ссылки на действия, которые будут использоваться далее в этом руководстве.
 
-В *Views\Home\Index.cshtml*, замените содержимое файла следующим кодом, чтобы исключить абзацев шаблона о ASP.NET и MVC:
+В *Views\Home\Index.cshtml*замените содержимое файла следующим кодом, чтобы исключить абзацы шаблона для ASP.NET и MVC:
 
 [!code-cshtml[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample2.cshtml)]
 
-В *Controllers\HomeController.cs*, измените значение `ViewBag.Message` в `Index` методом действия «Welcome to университета Contoso!», как показано в следующем примере:
+В *Controllers\HomeController.CS*измените значение `ViewBag.Message` в методе действия `Index` на "Добро пожаловать в Contoso университета!", как показано в следующем примере:
 
 [!code-csharp[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample3.cs?highlight=3)]
 
-Нажмите клавиши CTRL + F5 для запуска сайта. Появится домашняя страница с меню.
+Нажмите клавиши CTRL + F5, чтобы запустить сайт. Домашняя страница отображается в главном меню.
 
 ![Contoso_University_home_page](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image5.png)
 
 ## <a name="create-the-data-model"></a>Создание модели данных
 
-Теперь необходимо создать классы сущностей для приложения университета Contoso. Сначала вы возьмете следующих трех сущностей:
+Теперь необходимо создать классы сущностей для приложения университета Contoso. Начнем с следующих трех сущностей:
 
 ![Class_diagram](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image6.png)
 
@@ -128,25 +128,25 @@ ms.locfileid: "65129789"
 В следующих разделах создаются классы для каждой из этих сущностей.
 
 > [!NOTE]
-> При попытке компиляции проекта до завершения создания всех этих классов сущностей, вы получите ошибки компилятора.
+> Если вы попытаетесь скомпилировать проект до завершения создания всех этих классов сущностей, вы получите ошибки компилятора.
 
 ### <a name="the-student-entity"></a>Сущность Student
 
 ![Student_entity](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image7.png)
 
-В *моделей* папке создайте *Student.cs* и замените существующий код следующим кодом:
+В папке *Models* создайте *Student.CS* и замените имеющийся код следующим кодом:
 
 [!code-csharp[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample4.cs)]
 
-Свойство `StudentID` будет использоваться в качестве столбца первичного ключа в таблице базы данных, соответствующей этому классу. По умолчанию Entity Framework интерпретирует свойство с именем `ID` или *classname* `ID` как первичный ключ.
+Свойство `StudentID` будет использоваться в качестве столбца первичного ключа в таблице базы данных, соответствующей этому классу. По умолчанию Entity Framework интерпретирует свойство с именем `ID` или *classname* `ID` в качестве первичного ключа.
 
-Свойство `Enrollments` является *свойством навигации*. Свойства навигации содержат другие сущности, связанные с этой сущностью. В этом случае `Enrollments` свойство `Student` сущность будет содержать все `Enrollment` сущностей, которые связаны `Student` сущности. Другими словами если заданный `Student` строк в базе данных имеет два связанных `Enrollment` строк (значение строки, которые содержат первичный ключ этого учащегося в их `StudentID` внешний ключевой столбец), в котором `Student` сущности `Enrollments` свойство навигации будет содержать две этих `Enrollment` сущностей.
+Свойство `Enrollments` является *свойством навигации*. Свойства навигации содержат другие сущности, связанные с этой сущностью. В этом случае свойство `Enrollments` сущности `Student` будет содержать все `Enrollment` сущности, связанные с этой сущностью `Student`. Иными словами, если данная строка `Student` в базе данных содержит две связанные `Enrollment` строки (строки, которые содержат значение первичного ключа учащегося в их `StudentID` внешнем ключевом столбце), то `Student` `Enrollments`ной сущности будут содержать эти две `Enrollment` сущности.
 
-Свойства навигации, обычно определяются как `virtual` таким образом, чтобы они можно воспользоваться преимуществами определенные функциональные возможности Entity Framework, такие как *отложенная загрузка*. (Отложенная загрузка, будет рассматриваться далее в [чтение связанных данных](reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application.md) далее в этой серии руководств.
+Свойства навигации обычно определяются как `virtual`, чтобы они могли воспользоваться преимуществами определенных Entity Frameworkных функций, таких как *Отложенная загрузка*. (Отложенная загрузка будет объяснена позже, в руководстве по [чтению связанных данных](reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application.md) далее в этой серии.
 
 Если свойство навигации может содержать несколько сущностей (как в отношениях "многие ко многим" или "один ко многим"), оно должно иметь тип списка, допускающий добавление, удаление и обновление записей, такой как `ICollection`.
 
-### <a name="the-enrollment-entity"></a>Сущность Enrollment
+### <a name="the-enrollment-entity"></a>Сущность регистрации
 
 ![Enrollment_entity](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image8.png)
 
@@ -154,111 +154,111 @@ ms.locfileid: "65129789"
 
 [!code-csharp[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample5.cs)]
 
-— Свойство Grade [перечисления](https://msdn.microsoft.com/data/hh859576.aspx). Знак вопроса после `Grade` объявление типа указывает, что `Grade` свойство [допускает значения NULL](https://msdn.microsoft.com/library/2cf62fcy.aspx). Корпоративного класса, который имеет значение null отличается от нулевой оценки тем — значение null означает, что это оценка не известна или еще не назначена.
+Свойство Grade является [перечислением](https://msdn.microsoft.com/data/hh859576.aspx). Знак вопроса после объявления типа `Grade` указывает, что свойство `Grade` [допускает значение NULL](https://msdn.microsoft.com/library/2cf62fcy.aspx). Оценка, имеющая значение null, отличается от нулевой — значение NULL означает, что категория не известна или еще не была назначена.
 
 Свойство `StudentID` представляет собой внешний ключ. Ему соответствует свойство навигации `Student`. Сущность `Enrollment` связана с одной сущностью `Student`, поэтому это свойство может содержать одну сущность `Student` (в отличие от представленного ранее свойства навигации `Student.Enrollments`, которое может содержать несколько сущностей `Enrollment`).
 
 Свойство `CourseID` представляет собой внешний ключ. Ему соответствует свойство навигации `Course`. Сущность `Enrollment` связана с одной сущностью `Course`.
 
-### <a name="the-course-entity"></a>Сущности Course
+### <a name="the-course-entity"></a>Сущность Course
 
 ![Course_entity](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image9.png)
 
-В *моделей* папке создайте *Course.cs*, заменив существующий код следующим кодом:
+В папке *Models* создайте *Course.CS*, заменив существующий код следующим кодом:
 
 [!code-csharp[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample6.cs)]
 
 Свойство `Enrollments` является свойством навигации. Сущность `Course` может быть связана с любым числом сущностей `Enrollment`.
 
-Мы скажем: сведения о [[DatabaseGenerated](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.schema.databasegeneratedattribute(v=vs.110).aspx)([параметр DatabaseGeneratedOption](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.schema.databasegeneratedoption(v=vs.95).aspx). Нет)] атрибута в следующем учебном курсе. Фактически, этот атрибут позволяет ввести первичный ключ для курса, а не использовать базу данных, чтобы создать его.
+Мы рассмотрим дополнительные сведения о [[датабасеженератед](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.schema.databasegeneratedattribute(v=vs.110).aspx)([датабасеженератедоптион](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.schema.databasegeneratedoption(v=vs.95).aspx). Нет)] в следующем руководстве. Фактически, этот атрибут позволяет ввести первичный ключ для курса, а не использовать базу данных, чтобы создать его.
 
 ## <a name="create-the-database-context"></a>Создание контекста базы данных
 
-Основным классом, который координирует функциональные возможности Entity Framework для заданной модели данных является *контекст базы данных* класса. Этот класс создается путем наследования от [System.Data.Entity.DbContext](https://msdn.microsoft.com/library/system.data.entity.dbcontext(v=VS.103).aspx) класса. В коде указываются сущности, которые включаются в модель данных. Также вы можете настроить реакцию платформы Entity Framework на некоторые события. В этом проекте соответствующий класс называется `SchoolContext`.
+Класс main, который координирует Entity Framework функциональные возможности для конкретной модели данных, является классом *контекста базы данных* . Этот класс создается путем наследования от класса [System. Data. Entity. DbContext](https://msdn.microsoft.com/library/system.data.entity.dbcontext(v=VS.103).aspx) . В коде указываются сущности, которые включаются в модель данных. Также вы можете настроить реакцию платформы Entity Framework на некоторые события. В этом проекте соответствующий класс называется `SchoolContext`.
 
-Создайте папку с именем *DAL* (для уровня доступа к данным). В этой папке создайте новый файл класса с именем *SchoolContext.cs*и замените существующий код следующим кодом:
+Создайте папку с именем *DAL* (для уровня доступа к данным). В этой папке создайте новый файл класса с именем *SchoolContext.CS*и замените существующий код следующим кодом:
 
 [!code-csharp[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample7.cs)]
 
-Этот код создает [DbSet](https://msdn.microsoft.com/library/system.data.entity.dbset(v=VS.103).aspx) свойство для каждого набора сущностей. В терминологии Entity Framework *набор сущностей* обычно соответствует таблице базы данных и *сущности* соответствует строке в таблице.
+Этот код создает свойство [DbSet](https://msdn.microsoft.com/library/system.data.entity.dbset(v=VS.103).aspx) для каждого набора сущностей. В терминологии Entity Framework *набор сущностей* обычно соответствует таблице базы данных, а *сущность* соответствует строке в таблице.
 
-`modelBuilder.Conventions.Remove` Инструкции в [OnModelCreating](https://msdn.microsoft.com/library/system.data.entity.dbcontext.onmodelcreating(v=vs.103).aspx) метод предотвращает имена таблиц имена во множественном числе. Если вы не сделаете этого, созданные таблицы будет называться `Students`, `Courses`, и `Enrollments`. Вместо этого будет имена таблиц `Student`, `Course`, и `Enrollment`. В среде разработчиков нет единого мнения о том, следует ли использовать имена таблиц во множественном числе. В этом руководстве используется существительные в единственном числе, но важно то, что вы можете выбрать любую форму, вы предпочитаете, включая или исключая эту строку кода.
+Инструкция `modelBuilder.Conventions.Remove` в методе [OnModelCreating](https://msdn.microsoft.com/library/system.data.entity.dbcontext.onmodelcreating(v=vs.103).aspx) предотвращает множественное преобразование имен таблиц. Если этого не сделать, то созданные таблицы будут называться `Students`, `Courses`и `Enrollments`. Вместо этого имена таблиц будут `Student`, `Course`и `Enrollment`. В среде разработчиков нет единого мнения о том, следует ли использовать имена таблиц во множественном числе. В этом руководстве используется форма единственного числа, но важно отметить, что вы можете выбрать любую из этих форм, включив или опустив эту строку кода.
 
 ## <a name="sql-server-express-localdb"></a>SQL Server Express LocalDB
 
-[LocalDB](https://blogs.msdn.com/b/sqlexpress/archive/2011/07/12/introducing-localdb-a-better-sql-express.aspx) — это облегченная версия SQL Server Express Database Engine, запускаемая по запросу и работает в пользовательском режиме. LocalDB выполняется в специального режима выполнения SQL Server Express, которая позволяет работать с базами данных как *.mdf* файлов. Как правило, хранятся файлы базы данных LocalDB в *приложения\_данных* папку веб-проекта. Функции пользовательского экземпляра в SQL Server Express также позволяет работать с *.mdf* файлы, но функции пользовательского экземпляра устарело; таким образом, рекомендуется использовать LocalDB для работы с *.mdf* файлов.
+[LocalDB](https://blogs.msdn.com/b/sqlexpress/archive/2011/07/12/introducing-localdb-a-better-sql-express.aspx) — это упрощенная версия SQL Server Express ядро СУБД, которая запускается по запросу и запускается в пользовательском режиме. LocalDB выполняется в специальном режиме выполнения SQL Server Express, который позволяет работать с базами данных в виде *MDF* -файлов. Как правило, файлы базы данных LocalDB хранятся в папке *приложения\_данных* веб-проекта. Функция пользовательского экземпляра в SQL Server Express также позволяет работать с *MDF* -файлами, но функция пользовательского экземпляра является устаревшей. Поэтому для работы с *MDF* -файлами рекомендуется использовать LocalDB.
 
-Обычно SQL Server Express не используется для рабочих веб-приложений. LocalDB в частности не рекомендуется для использования в рабочей среде с веб-приложение, так как он не предназначен для работы со службами IIS.
+Обычно SQL Server Express не используется для рабочих веб-приложений. LocalDB в частности не рекомендуется для использования в рабочей среде с веб-приложением, поскольку оно не предназначено для работы с IIS.
 
-В Visual Studio 2012 и более поздних версий LocalDB устанавливается по умолчанию с помощью Visual Studio. В Visual Studio 2010 и более ранних версиях SQL Server Express (без LocalDB) устанавливается по умолчанию с помощью Visual Studio; необходимо вручную установить его, если вы используете Visual Studio 2010.
+В Visual Studio 2012 и более поздних версиях LocalDB устанавливается по умолчанию в Visual Studio. В Visual Studio 2010 и более ранних версиях SQL Server Express (без LocalDB) устанавливается по умолчанию в Visual Studio. его необходимо установить вручную, если вы используете Visual Studio 2010.
 
-В этом руководстве вы будете работать с LocalDB, чтобы базы данных могут храниться в *приложения\_данных* папке, что *.mdf* файл. Откройте корневой *Web.config* файл и добавьте новую строку подключения для `connectionStrings` коллекции, как показано в следующем примере. (Обязательно обновите *Web.config* файл в корневой папке проекта. Имеется также *Web.config* файл находится в *представления* вложенную папку, не нужно обновлять.)
+В этом учебнике вы будете работать с LocalDB, чтобы базу данных можно было хранить в папке *App\_Data* в файле *MDF* . Откройте корневой файл *Web. config* и добавьте новую строку подключения в коллекцию `connectionStrings`, как показано в следующем примере. (Убедитесь, что вы обновляете файл *Web. config* в корневой папке проекта. Кроме того, файл *Web. config* находится в вложенной папке *views* , которую не нужно обновлять.)
 
 [!code-xml[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample8.xml)]
 
-По умолчанию, Entity Framework ищет строку подключения с именем, так же, как `DbContext` класс (`SchoolContext` для этого проекта). В строке подключения, вы добавили указан с именем базы данных LocalDB *ContosoUniversity.mdf* в *приложения\_данных* папки. Дополнительные сведения см. в разделе [строки подключения SQL Server для веб-приложений ASP.NET](https://msdn.microsoft.com/library/jj653752.aspx).
+По умолчанию Entity Framework ищет строку подключения с именем, совпадающую с классом `DbContext` (`SchoolContext` для этого проекта). Добавленная строка подключения указывает базу данных LocalDB с именем *ContosoUniversity. mdf* , расположенную в папке *app\_Data* . Дополнительные сведения см. в разделе [SQL Server строки подключения для веб-приложений ASP.NET](https://msdn.microsoft.com/library/jj653752.aspx).
 
-Вам не нужен для указания строки подключения. Если вы не указали строку подключения, Entity Framework будет создан для вас; Тем не менее, база данных может не быть *приложения\_данных* папку приложения. Сведения о котором будет создана база данных, см. в разделе [Code First для новой базы данных](https://msdn.microsoft.com/data/jj193542).
+В действительности нет необходимости указывать строку подключения. Если строка подключения не указана, Entity Framework создаст ее. Однако база данных может отсутствовать в папке *приложения\_данных* приложения. Сведения о том, где будет создана база данных, см. в разделе [Code First к новой базе данных](https://msdn.microsoft.com/data/jj193542).
 
-`connectionStrings` Коллекция также имеет строку подключения с именем `DefaultConnection` — используется для базы данных членства. Не используется в базе данных членства в этом руководстве. Единственное различие между две строки подключения — это имя базы данных и значение атрибута name.
+Коллекция `connectionStrings` также содержит строку подключения с именем `DefaultConnection`, которая используется для базы данных членства. Вы не будете использовать базу данных членства в этом руководстве. Единственное различие между двумя строками подключения — имя базы данных и значение атрибута Name.
 
-## <a name="set-up-and-execute-a-code-first-migration"></a>Настройка и выполнение Code First Migration
+## <a name="set-up-and-execute-a-code-first-migration"></a>Настройка и выполнение миграции Code First
 
-При первом запуске для разработки приложений, данных изменении модели часто и каждый раз изменения модели, он получает не синхронизировано с базой данных. Вы можете настроить Entity Framework автоматически удалить и повторно создать базу данных каждый раз при изменении модели данных. Это не проблема на ранних этапах разработки, поскольку тестовые данные легко воссоздать, но после развертывания в рабочей среде обычно требуется обновить схему базы данных без удаления базы данных. Функция миграций позволяет Code First для обновления базы данных без удаления и повторного создания. На ранних этапах цикла разработки проекта может потребоваться использовать [DropCreateDatabaseIfModelChanges](https://msdn.microsoft.com/library/gg679604(v=vs.103).aspx) drop, повторно создайте и повторно заполнить базу данных при каждом изменении модели. Один вы получите все готово для развертывания приложения, можно преобразовать в этот подход миграции. В этом руководстве будет использоваться только миграций. Дополнительные сведения см. в разделе [Code First Migrations](https://msdn.microsoft.com/data/jj591621) и [миграций серию](https://blogs.msdn.com/b/adonet/archive/2014/03/12/migrations-screencast-series.aspx).
+При первом запуске разработки приложения модель данных изменяется часто, и каждый раз, когда модель изменяется, она получает несинхронизированную с базой данных. Можно настроить Entity Framework для автоматического удаления и повторного создания базы данных при каждом изменении модели данных. Это не проблема на раннем этапе разработки, так как тестовые данные легко создаются повторно, но после развертывания в рабочей среде обычно требуется обновить схему базы данных без удаления базы данных. Функция миграции позволяет Code First обновлять базу данных без удаления и повторного создания. На ранних этапах цикла разработки нового проекта можно использовать [дропкреатедатабасеифмоделчанжес](https://msdn.microsoft.com/library/gg679604(v=vs.103).aspx) для удаления, повторного создания и восстановления начального значения базы данных при каждом изменении модели. Вы готовы к развертыванию приложения, поэтому можете преобразовать его в подход к миграции. В этом учебнике будут использоваться только миграции. Дополнительные сведения см. в статье о [сериях презентаций](https://blogs.msdn.com/b/adonet/archive/2014/03/12/migrations-screencast-series.aspx)для [Code First migrations](https://msdn.microsoft.com/data/jj591621) и миграции.
 
-### <a name="enable-code-first-migrations"></a>Включение Code First Migrations
+### <a name="enable-code-first-migrations"></a>Включить Code First Migrations
 
-1. Из **средства** меню, щелкните **диспетчер пакетов NuGet** и затем **консоль диспетчера пакетов**.
+1. В меню **Сервис** выберите **Диспетчер пакетов NuGet** , а затем **консоль диспетчера пакетов**.
 
     ![Selecting_Package_Manager_Console](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image10.png)
-2. В `PM>` командной строке введите следующую команду:
+2. В командной строке `PM>` введите следующую команду:
 
     [!code-powershell[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample9.ps1)]
 
-    ![команды Enable-migrations](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image11.png)
+    ![Команда "включить-миграция"](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image11.png)
 
-    Эта команда создает *миграций* папки в проекте ContosoUniversity и он помещает в нее *Configuration.cs* файл, который можно изменять для настройки миграций.
+    Эта команда создает папку *migrations* в проекте ContosoUniversity и помещает в эту папку файл *Configuration.CS* , который можно изменить для настройки миграции.
 
-    ![Папку migrations](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image12.png)
+    ![Папка "миграции"](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image12.png)
 
-    `Configuration` Класс включает `Seed` метод, вызываемый при создании базы данных, и каждый раз при его обновлении после изменении модели данных.
+    Класс `Configuration` включает метод `Seed`, который вызывается при создании базы данных и каждый раз, когда она обновляется после изменения модели данных.
 
     [!code-csharp[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample10.cs)]
 
-    Цель такого `Seed` метод — научить вас вставляемый тестовые данные в базу данных после Code First его создает или обновляет его.
+    Этот метод `Seed` позволяет вставлять тестовые данные в базу данных после того, как Code First создает их или обновляет.
 
-### <a name="set-up-the-seed-method"></a>Настройка метода заполнения
+### <a name="set-up-the-seed-method"></a>Настройка метода начального значения
 
-[Начальное значение](https://msdn.microsoft.com/library/hh829453(v=vs.103).aspx) метод выполняется, когда Code First Migrations создает базу данных, и каждый раз, он обновляет базу данных на последней миграции. Метод заполнения предназначена для вставки данных в таблицы перед приложения в первый раз обращается к базе данных.
+Метод [SEED](https://msdn.microsoft.com/library/hh829453(v=vs.103).aspx) запускается, когда Code First migrations создает базу данных и каждый раз, когда она обновляет базу данных до последней миграции. Цель метода начального значения заключается в том, чтобы можно было вставлять данные в таблицы, прежде чем приложение будет получать доступ к базе данных в первый раз.
 
-В более ранних версиях Code First, до выпуска миграций было обычным `Seed` методы для вставки проверочных данных, так как при каждом изменении модели во время разработки базы данных должны были быть полностью удаляется и создается заново с нуля. С помощью Code First Migrations, тест, данные сохраняются после изменения базы данных, таким образом включая тестовых данных в [начальное значение](https://msdn.microsoft.com/library/hh829453(v=vs.103).aspx) метод обычно не требуется. На самом деле, вы не хотите `Seed` метод для вставки данных теста при использовании миграции для развертывания базы данных в рабочей среде, так как `Seed` метод будет выполняться в рабочей среде. В этом случае требуется `Seed` метод для вставки в базу данных только данные, которые требуется вставить в рабочей среде. Например, может потребоваться базы данных, для включения названия фактическое отделов в `Department` таблицы, когда приложение становится доступным для рабочей среды.
+В более ранних версиях Code First до выпуска миграций было распространено `Seed` методов вставки тестовых данных, так как при каждом изменении модели во время разработки база данных была полностью удалена и создана заново с нуля. При использовании Code First Migrations тестовые данные сохранены после изменения базы данных, поэтому, как правило, не требуется включать данные тестирования в метод [SEED](https://msdn.microsoft.com/library/hh829453(v=vs.103).aspx) . На самом деле вы не хотите, чтобы метод `Seed` вставил тестовые данные, если вы будете использовать миграции для развертывания базы данных в рабочей среде, так как метод `Seed` будет выполняться в рабочей среде. В этом случае необходимо, чтобы метод `Seed` вставил в базу данных только те данные, которые необходимо вставить в рабочую среду. Например, может потребоваться, чтобы база данных включала фактические имена отделов в таблицу `Department`, когда приложение станет доступным в рабочей среде.
 
-В этом учебнике вы будете использовать миграции для развертывания, а `Seed` метод в любом случае Вставка тестовых данных для повышения его читаемости увидеть, как работает функциональных возможностей приложения без необходимости вручную вставить большие объемы данных.
+В рамках этого руководства вы будете использовать миграции для развертывания, но метод `Seed` будет в любом случае вставлять тестовые данные, чтобы упростить просмотр работы функций приложения без необходимости вручную вставлять большой объем данных.
 
-1. Замените содержимое файла *Configuration.cs* файла следующий код, который загрузит тестовые данные в новую базу данных. 
+1. Замените содержимое файла *Configuration.CS* следующим кодом, который будет загружать тестовые данные в новую базу данных. 
 
     [!code-csharp[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample11.cs)]
 
-    [Начальное значение](https://msdn.microsoft.com/library/hh829453(v=vs.103).aspx) метод принимает объект контекста базы данных как входной параметр и код в метод использует этот объект для добавления новых сущностей в базу данных. Для каждого типа сущности, код создает коллекцию новых сущностей, добавляет их в соответствующий [DbSet](https://msdn.microsoft.com/library/system.data.entity.dbset(v=vs.103).aspx) свойства, а затем сохраняет изменения в базе данных. Нет необходимости вызывать [SaveChanges](https://msdn.microsoft.com/library/system.data.entity.dbcontext.savechanges(v=VS.103).aspx) метод после каждой группы сущностей, как показано здесь, но это поможет вам найти источник проблемы, если возникает исключение, когда код записывает в базу данных.
+    Метод [SEED](https://msdn.microsoft.com/library/hh829453(v=vs.103).aspx) принимает объект контекста базы данных в качестве входного параметра, а код в методе использует этот объект для добавления новых сущностей в базу данных. Для каждого типа сущности код создает коллекцию новых сущностей, добавляет их в соответствующее свойство [DbSet](https://msdn.microsoft.com/library/system.data.entity.dbset(v=vs.103).aspx) , а затем сохраняет изменения в базе данных. Не нужно вызывать метод [SaveChanges](https://msdn.microsoft.com/library/system.data.entity.dbcontext.savechanges(v=VS.103).aspx) после каждой группы сущностей, как это сделано здесь, но это помогает узнать источник проблемы, если исключение возникает во время записи кода в базу данных.
 
-    Некоторые операторы, которые вставляют данные используют [AddOrUpdate](https://msdn.microsoft.com/library/system.data.entity.migrations.idbsetextensions.addorupdate(v=vs.103).aspx) метод для выполнения операции «вставки-обновления». Так как `Seed` метод работает с каждой миграции, нельзя просто вставить данные, так как строки, вы пытаетесь добавить уже будут существует после первой миграции, который создает базу данных. Операция «вставки-обновления» позволяет избежать ошибок, произойдет при попытке вставить строку, которая уже существует, но он ***переопределяет*** любые изменения данных, внесенные во время тестирования приложения. Тестовыми данными в некоторых таблицах вы не хотите, чтобы происходить: в некоторых случаях при изменении данных во время тестирования необходимым вам изменениям после обновления базы данных. В этом случае необходимо выполнить операцию вставки условного: вставить строку, только в том случае, если он еще не существует. Метод заполнения использует оба подхода.
+    Некоторые инструкции, которые вставляют данные, используют метод [AddOrUpdate](https://msdn.microsoft.com/library/system.data.entity.migrations.idbsetextensions.addorupdate(v=vs.103).aspx) для выполнения операции "Upsert". Поскольку метод `Seed` выполняется при каждой миграции, невозможно просто вставить данные, так как добавляемые строки уже будут существовать после первой миграции, которая создает базу данных. Операция "Upsert" предотвращает ошибки, которые могут возникать при попытке вставить уже существующую строку, но ***переопределяет*** любые изменения данных, которые могли быть сделаны при тестировании приложения. При использовании тестовых данных в некоторых таблицах может быть нежелательно: в некоторых случаях при изменении данных во время тестирования необходимо сохранить изменения после обновления базы данных. В этом случае необходимо выполнить операцию условной вставки: вставить строку, если она еще не существует. Метод SEED использует оба подхода.
 
-    Первый параметр, передаваемый [AddOrUpdate](https://msdn.microsoft.com/library/system.data.entity.migrations.idbsetextensions.addorupdate(v=vs.103).aspx) метод задает свойство, используемое для проверки, если строка уже существует. Для тестовых данных учащихся, вы предоставляете `LastName` свойство может использоваться для этой цели, так как каждой фамилии в списке является уникальным:
+    Первый параметр, передаваемый методу [AddOrUpdate](https://msdn.microsoft.com/library/system.data.entity.migrations.idbsetextensions.addorupdate(v=vs.103).aspx) , указывает свойство, используемое для проверки, существует ли уже строка. Для данных тестового учащегося, которые вы предоставляете, для этой цели можно использовать свойство `LastName`, так как каждое Последнее имя в списке является уникальным:
 
     [!code-csharp[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample12.cs)]
 
-    Предполагается, что последний имена являются уникальными. Если вручную добавить учащихся с повторяющимся именем последнего, вы получите следующее исключение при очередном выполнении миграции.
+    В этом коде предполагается, что последние имена являются уникальными. Если вы вручную добавите учащийся с дубликатом фамилии, вы получите следующее исключение при следующем выполнении миграции.
 
     Последовательность содержит более одного элемента
 
-    Дополнительные сведения о `AddOrUpdate` метод, см. в разделе [Будьте внимательны с помощью метода AddOrUpdate 4.3 EF](http://thedatafarm.com/blog/data-access/take-care-with-ef-4-3-addorupdate-method/) блога Джули Лерман.
+    Дополнительные сведения о методе `AddOrUpdate` см. в разделе о [методе EF 4,3 AddOrUpdate](http://thedatafarm.com/blog/data-access/take-care-with-ef-4-3-addorupdate-method/) в блоге Юлия Лерман.
 
-    Код, который добавляет `Enrollment` сущности не используют `AddOrUpdate` метод. Он проверяет, если сущность уже существует и вставляет сущность, если он не существует. Такой подход позволяет сохранить изменения, внесенные для регистрации корпоративного уровня, при выполнении миграции. Код просматривает каждый член `Enrollment` [списка](https://msdn.microsoft.com/library/6sh2ey19.aspx) и если регистрации не найден в базе данных, он добавляет регистрации к базе данных. Первый раз, обновить базу данных, базы данных будут пусты, поэтому он добавляет каждой регистрации.
+    Код, добавляющий `Enrollment` сущности, не использует метод `AddOrUpdate`. Он проверяет, существует ли сущность, и вставляет сущность, если она не существует. Этот подход позволит сохранить изменения, вносимые в регистрацию при выполнении миграции. Код выполняет цикл по каждому элементу [списка](https://msdn.microsoft.com/library/6sh2ey19.aspx) `Enrollment`и если регистрация не найдена в базе данных, она добавляет регистрацию в базу данных. При первом обновлении базы данных она будет пустой, поэтому она добавит каждую регистрацию.
 
     [!code-csharp[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample13.cs)]
 
-    Сведения об отладке `Seed` метод и способ обработки избыточных данных, например, два учащихся с именем «Александр Carson», см. в разделе [заполнения и отладка Entity Framework (EF) DBs](https://blogs.msdn.com/b/rickandy/archive/2013/02/12/seeding-and-debugging-entity-framework-ef-dbs.aspx) в блоге Рика Андерсона:.
-2. Выполните построение проекта.
+    Сведения об отладке метода `Seed` и обработке избыточных данных, таких как два учащихся с именем "Александр Carson", см. в разделе [Заполнение и отладка Entity Framework (EF) баз данных](https://blogs.msdn.com/b/rickandy/archive/2013/02/12/seeding-and-debugging-entity-framework-ef-dbs.aspx) в блоге Рик Андерсон (.
+2. Постройте проект.
 
 ### <a name="create-and-execute-the-first-migration"></a>Создание и выполнение первой миграции
 
@@ -268,83 +268,83 @@ ms.locfileid: "65129789"
 
     ![](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image13.png)
 
-    `add-migration` Команда добавляет в папку Migrations *[метки даты]\_InitialCreate.cs* файл, содержащий код, который создает базу данных. Первый параметр (`InitialCreate)` используется для файла имя и может быть любым; обычно выбрать слово или фразу, которая обобщает, что необходимо сделать после миграции. Например, можно назвать миграцию &quot;AddDepartmentTable&quot;.
+    Команда `add-migration` добавляет в папку миграции файл *[датестамп]\_InitialCreate.CS* , содержащий код, который создает базу данных. Первый параметр (`InitialCreate)` используется для имени файла и может быть любым нужным; обычно вы выбираете слово или фразу, которая суммирует данные, выполняемые при миграции. Например, вы можете присвоить более поздней миграции имя &quot;AddDepartmentTable&quot;.
 
-    ![Папку migrations с первоначальной миграции](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image14.png)
+    ![Папка миграций с начальной миграцией](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image14.png)
 
-    `Up` Метод `InitialCreate` класс создает таблицы базы данных, которые соответствуют наборам сущностей модели данных, и `Down` метод удаляет их. Функция миграций вызывает метод `Up`, чтобы реализовать изменения модели данных для миграции. При вводе команды для отката обновления функция миграций вызывает метод `Down`. В следующем коде показано содержимое `InitialCreate` файла:
+    Метод `Up` класса `InitialCreate` создает таблицы базы данных, соответствующие наборам сущностей модели данных, а метод `Down` удаляет их. Функция миграций вызывает метод `Up`, чтобы реализовать изменения модели данных для миграции. При вводе команды для отката обновления функция миграций вызывает метод `Down`. В следующем коде показано содержимое файла `InitialCreate`:
 
     [!code-csharp[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample15.cs)]
 
-    `update-database` Выполняется команда `Up` метод для создания базы данных, а затем выполняется `Seed` метод для заполнения базы данных.
+    Команда `update-database` запускает метод `Up` для создания базы данных, а затем запускает метод `Seed` для заполнения базы данных.
 
-Базы данных SQL Server создан для вашей модели данных. Имя базы данных — *ContosoUniversity*и *.mdf* файл находится в проекте *приложения\_данных* папку потому что это вы указали в вашей Строка подключения.
+Для модели данных создана SQL Serverная база данных. Имя базы данных — *ContosoUniversity*, а *MDF* -файл — в папке *\_данных приложения* проекта, так как это будет указано в строке подключения.
 
-Можно использовать либо **обозревателя серверов** или **обозреватель объектов SQL Server** (SSOX) для просмотра базы данных в Visual Studio. В этом руководстве вы используете **обозревателя серверов**. В Visual Studio Express 2012 для Web **обозревателя серверов** называется **обозреватель баз данных**.
+Для просмотра базы данных в Visual Studio можно использовать либо **Обозреватель сервера** , либо **Обозреватель объектов SQL Server** (SSOX). В этом учебнике используется **Обозреватель сервера**. В Visual Studio Express 2012 для Web **Обозреватель сервера** называется **Обозреватель базы данных**.
 
-1. Из **представление** меню, щелкните **обозревателя серверов**.
-2. Нажмите кнопку **добавить подключение** значок.
+1. В меню **вид** выберите пункт **Обозреватель сервера**.
+2. Щелкните значок **Добавить подключение** .
 
     ![](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image15.png)
-3. При появлении с **Выбор источника данных** диалоговое окно, нажмите кнопку **Microsoft SQL Server**, а затем нажмите кнопку **Продолжить**.  
+3. При появлении запроса в диалоговом окне **Выбор источника данных** выберите **Microsoft SQL Server**и нажмите кнопку **продолжить**.  
   
     ![](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image16.png)
-4. В **добавить подключение** диалогового окна введите **(localdb) \v11.0** для **имя сервера**. В разделе **выберите или введите имя базы данных**выберите **ContosoUniversity.**  
+4. В диалоговом окне **Добавление соединения** введите **(LocalDB) \V11.0** в поле **имя сервера**. В поле **выберите или введите имя базы данных**выберите **ContosoUniversity.**  
   
     ![](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image17.png)
 5. Нажмите кнопку **ОК**.
-6. Разверните **SchoolContext** и раскройте **таблиц**.  
+6. Разверните **SchoolContext** , а затем — **таблицы**.  
   
     ![](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image18.png)
-7. Щелкните правой кнопкой мыши **учащихся** таблицы и нажмите кнопку **Показать таблицу данных** Чтобы просмотреть созданные столбцы и строки, которые были вставлены в таблицу.
+7. Щелкните правой кнопкой мыши таблицу **Student** и выберите команду **Показать данные таблицы** , чтобы просмотреть созданные столбцы и строки, вставленные в таблицу.
 
-    ![Таблица Student](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image19.png)
+    ![Таблица учащихся](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image19.png)
 
-## <a name="creating-a-student-controller-and-views"></a>Создание контроллера учащихся и представлений
+## <a name="creating-a-student-controller-and-views"></a>Создание контроллера и представлений учащихся
 
-Следующим шагом является создание ASP.NET MVC контроллера и представлений в приложении, которая может работать с одной из этих таблиц.
+Следующим шагом является создание контроллера MVC ASP.NET и представлений в приложении, которые могут работать с одной из этих таблиц.
 
-1. Для создания `Student` контроллер, щелкните правой кнопкой мыши **контроллеров** папку в **обозревателе решений**выберите **добавить**и нажмите кнопку **контроллера** . В **Добавление контроллера** диалоговое окно, задайте следующие параметры и нажмите кнопку **добавить**: 
+1. Чтобы создать контроллер `Student`, щелкните правой кнопкой мыши папку **Controllers** в **Обозреватель решений**, выберите **добавить**, а затем щелкните **контроллер**. В диалоговом окне **Добавление контроллера** выберите следующие параметры и нажмите кнопку **Добавить**. 
 
-   - Имя контроллера: **StudentController**.
-   - Шаблон: **Контроллер MVC с действиями чтения и записи и представлениями, использующий Entity Framework**.
-   - Класс модели: **Учащегося (ContosoUniversity.Models)**. (Если вы не видите этот параметр в раскрывающемся списке, постройте проект и повторите попытку.)
-   - Класс контекста данных: **SchoolContext (ContosoUniversity.Models)**.
-   - Представления: **Razor (CSHTML)**. (По умолчанию).
+   - Имя контроллера: **студентконтроллер**.
+   - Шаблон: **контроллер MVC с действиями чтения и записи и представлениями с использованием Entity Framework**.
+   - Класс модели: **Student (ContosoUniversity. Models)** . (Если этот параметр не отображается в раскрывающемся списке, выполните сборку проекта и повторите попытку.)
+   - Класс контекста данных: **SchoolContext (ContosoUniversity. Models)** .
+   - Представления: **Razor (CSHTML)** . (Значение по умолчанию.)
 
      ![Add_Controller_dialog_box_for_Student_controller](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image20.png)
-2. Visual Studio открывает *Controllers\StudentController.cs* файла. Видно, что класс переменной будет создана, создающий экземпляр объекта контекста базы данных:
+2. Visual Studio откроет файл *контроллерс\студентконтроллер.КС* . Вы видите, что создана переменная класса, которая создает экземпляр объекта контекста базы данных:
 
      [!code-csharp[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample16.cs)]
 
-     `Index` Метод действия Получает список учащихся из *учащихся* сущности, установки по `Students` свойство экземпляра контекста базы данных:
+     Метод действия `Index` возвращает список учащихся из набора сущностей *Student* , считывая свойство `Students` экземпляра контекста базы данных:
 
      [!code-csharp[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample17.cs)]
 
-     *Student\Index.cshtml* представление отображает этот список в таблице:
+     В представлении *студент\индекс.кштмл* этот список отображается в таблице:
 
      [!code-cshtml[Main](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/samples/sample18.cshtml)]
 3. Нажмите клавиши CTRL+F5, чтобы запустить проект.
 
-     Нажмите кнопку **учащихся** tab, чтобы просмотреть тестовые данные, `Seed` добавленные методом.
+     Щелкните вкладку **students (учащиеся** ), чтобы просмотреть тестовые данные, вставленные методом `Seed`.
 
      ![Страница индекса учащихся](creating-an-entity-framework-data-model-for-an-asp-net-mvc-application/_static/image21.png)
 
-## <a name="conventions"></a>Соглашения
+## <a name="conventions"></a>Обозначения
 
-Объем кода, нужно было написать в порядке для платформы Entity Framework иметь возможность создать для вас всей базы данных из-за использования минимальна *соглашения*, или предположения, сделанные в Entity Framework. Некоторые из них упомянутые ранее:
+Объем кода, который вам пришлось писать, чтобы Entity Framework мог создать полную базу данных для вас, является минимальным из-за использования *соглашений*или допущений, которые делает Entity Framework. Некоторые из них уже были отмечены:
 
-- Во множественном числе форм имен классов сущностей используются в качестве имен таблиц.
+- В качестве имен таблиц используются множественные формы имен классов сущностей.
 - В качестве имен столбцов используются имена свойств сущностей.
-- Свойства сущности, которые называются `ID` или *classname* `ID` распознаются как свойства первичного ключа.
+- Свойства сущности с именами `ID` или *classname* `ID` распознаются как свойства первичного ключа.
 
-Вы уже видели, что могут быть переопределены соглашения (например, вы указали что имена таблиц не должны быть имена во множественном числе), и вы узнаете о условные обозначения и их в Переопределите [Создание более сложной модели данных](creating-a-more-complex-data-model-for-an-asp-net-mvc-application.md) учебника Далее в этой серии. Дополнительные сведения см. в разделе [первый соглашения о коде](https://msdn.microsoft.com/data/jj679962).
+Вы видели, что соглашения могут быть переопределены (например, вы указали, что имена таблиц не должны быть преобразованы в множественный вид), и вы узнаете больше о соглашениях и о том, как их переопределить в руководстве [Создание более сложной модели данных](creating-a-more-complex-data-model-for-an-asp-net-mvc-application.md) далее в этой серии. Дополнительные сведения см. в разделе [соглашения Code First](https://msdn.microsoft.com/data/jj679962).
 
 ## <a name="summary"></a>Сводка
 
-Теперь вы создали простое приложение, которое использует Entity Framework и SQL Server Express для хранения и отображения данных. В следующем руководстве вы узнаете, как выполнять основные CRUD (Создание, чтение, обновление и удаление) операции. Вы можете оставить отзыв в нижней части этой страницы. Сообщите нам, как вам понравилось этой части руководства, и как можно улучшить его.
+Теперь вы создали простое приложение, которое использует Entity Framework и SQL Server Express для хранения и вывода данных. В следующем учебнике вы узнаете, как выполнять базовые операции CRUD (создание, чтение, обновление, удаление). Вы можете оставить отзыв в нижней части этой страницы. Сообщите нам, как вам нравится эта часть руководства, и как ее улучшить.
 
-Ссылки на другие ресурсы Entity Framework можно найти в [схема содержимого для доступа к данным ASP.NET](../../../../whitepapers/aspnet-data-access-content-map.md).
+Ссылки на другие ресурсы Entity Framework можно найти в [карте содержимого ASP.NET Data Access](../../../../whitepapers/aspnet-data-access-content-map.md).
 
 > [!div class="step-by-step"]
 > [Вперед](implementing-basic-crud-functionality-with-the-entity-framework-in-asp-net-mvc-application.md)

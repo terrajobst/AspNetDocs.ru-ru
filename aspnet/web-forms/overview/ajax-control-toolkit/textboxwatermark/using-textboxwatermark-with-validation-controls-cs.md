@@ -1,55 +1,55 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/textboxwatermark/using-textboxwatermark-with-validation-controls-cs
-title: Использование элемента управления TextBoxWatermark с проверяющими элементами управления (C#) | Документация Майкрософт
+title: Использование элемента управления textboxwatermark с элементами управления проверкиC#() | Документация Майкрософт
 author: wenz
-description: Элемент управления TextBoxWatermark в AJAX Control Toolkit расширяет текстовое поле для отображения текста в поле. Когда пользователь щелкает в поле, его я...
+description: Элемент управления элемента управления textboxwatermark в наборе средств AJAX Control Toolkit расширяет текстовое поле, чтобы текст отображался в поле. Когда пользователь щелкает в поле, он...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: d49940cb-d38c-456a-b800-5f0eb705d09f
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/textboxwatermark/using-textboxwatermark-with-validation-controls-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 6ed3777e72adbb1a648a6f5215820d597a13bc92
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: bc9498b1c5ba2f38b90706c9200ffa813a945fa9
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65124506"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74610861"
 ---
 # <a name="using-textboxwatermark-with-validation-controls-c"></a>Использование элемента управления TextBoxWatermark с проверяющими элементами управления (C#)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/TextBoxWatermark2.cs.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/textboxwatermark2CS.pdf)
+[Скачать код](https://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/TextBoxWatermark2.cs.zip) или [скачать PDF](https://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/textboxwatermark2CS.pdf)
 
-> Элемент управления TextBoxWatermark в AJAX Control Toolkit расширяет текстовое поле для отображения текста в поле. Когда пользователь щелкает в поле, оно будет очищено. Если пользователь оставляет поле без ввода текста, заданными текст отображается повторно. Это может привести с проверяющими элементами управления ASP.NET, на той же странице, но может преодолеть эти проблемы.
+> Элемент управления элемента управления textboxwatermark в наборе средств AJAX Control Toolkit расширяет текстовое поле, чтобы текст отображался в поле. Когда пользователь щелкает в поле, он очищается. Если пользователь оставляет поле без ввода текста, заполняется предварительно заполненный текст. Это может конфликтовать с элементами управления проверки ASP.NET на той же странице, но эти проблемы можно преодолеть.
 
 ## <a name="overview"></a>Обзор
 
-`TextBoxWatermark` В AJAX Control Toolkit, расширяет текстовое поле для отображения текста в поле. Когда пользователь щелкает в поле, оно будет очищено. Если пользователь оставляет поле без ввода текста, заданными текст отображается повторно. Это может привести с проверяющими элементами управления ASP.NET, на той же странице, но может преодолеть эти проблемы.
+Элемент управления `TextBoxWatermark` в наборе средств AJAX Control Toolkit расширяет текстовое поле, позволяя отображать текст в поле. Когда пользователь щелкает в поле, он очищается. Если пользователь оставляет поле без ввода текста, заполняется предварительно заполненный текст. Это может конфликтовать с элементами управления проверки ASP.NET на той же странице, но эти проблемы можно преодолеть.
 
 ## <a name="steps"></a>Шаги
 
-Базовая настройка примера является следующее: `TextBox` водяными знаками элемента управления с помощью `TextBoxWatermarkExtender` элемента управления. Кнопка запускает обратную передачу и позже будет использоваться для активации элементов управления проверки на странице. Кроме того `ScriptManager` управления необходим для инициализации ASP.NET AJAX:
+Базовая настройка образца состоит из следующих элементов: элемент управления `TextBox` с водяным знаком с помощью элемента управления `TextBoxWatermarkExtender`. Кнопка активирует обратную передачу и затем будет использоваться для активации элементов управления проверки на странице. Кроме того, для инициализации ASP.NET AJAX требуется элемент управления `ScriptManager`:
 
 [!code-aspx[Main](using-textboxwatermark-with-validation-controls-cs/samples/sample1.aspx)]
 
-Теперь добавьте `RequiredFieldValidator` элемент управления, который проверяет, существует ли текстовое поле при отправке формы. `InitialValue` Свойства проверяющего элемента управления должно быть присвоено значение, которое используется в `TextBoxWatermarkExtender` управления: При отправке формы неизменными текстовое значение значение предела в ней:
+Теперь добавьте элемент управления `RequiredFieldValidator`, который проверяет, есть ли в поле текст при отправке формы. Свойству `InitialValue` проверяющего элемента управления должно быть присвоено то же значение, которое используется в `TextBoxWatermarkExtender`ном элементе. при отправке формы значение неизмененного текстового поля — это значение водяного знака в нем:
 
 [!code-aspx[Main](using-textboxwatermark-with-validation-controls-cs/samples/sample2.aspx)]
 
-Тем не менее есть одна проблема, при таком подходе: Если клиент отключает JavaScript, поле не автоматически заполняемом с текстом водяного знака, поэтому `RequiredFieldValidator` не вызывает сообщение об ошибке. Таким образом, второй `RequiredFieldValidator` управления необходим, который проверяет наличие пустом текстовом поле (пропуск `InitialValue` атрибут).
+Однако существует одна проблема, связанная с этим подходом: Если клиент отключает JavaScript, текстовое поле не заполняется текстом водяного знака, поэтому `RequiredFieldValidator` не запускает сообщение об ошибке. Поэтому требуется второй элемент управления `RequiredFieldValidator`, проверяющий наличие пустого текстового поля (без атрибута `InitialValue`).
 
 [!code-aspx[Main](using-textboxwatermark-with-validation-controls-cs/samples/sample3.aspx)]
 
-Так как оба проверяющие элементы управления используют `Display` = `"Dynamic"`, конечный пользователь не может отличить от внешнего вида, какой из двух проверяющие элементы управления произошло; вместо этого, похоже, возникла только один из них.
+Поскольку оба проверяющего элемента управления используют `Display`=`"Dynamic"`, конечный пользователь не может отличить внешний вид, в котором были запущены два проверяющих элемента управления. Вместо этого он выглядит как есть только один из них.
 
-Наконец добавьте код на стороне сервера для вывода текст в поле, если не проверяющий элемент управления выдаваться сообщение об ошибке:
+Наконец, добавьте некоторый серверный код для вывода текста в поле, если средство проверки не выдавало сообщение об ошибке:
 
 [!code-aspx[Main](using-textboxwatermark-with-validation-controls-cs/samples/sample4.aspx)]
 
-[![Проверяющий элемент управления сообщает, что отсутствует текст в поле](using-textboxwatermark-with-validation-controls-cs/_static/image2.png)](using-textboxwatermark-with-validation-controls-cs/_static/image1.png)
+[![проверяющей элемент управления сообщает, что в поле нет текста](using-textboxwatermark-with-validation-controls-cs/_static/image2.png)](using-textboxwatermark-with-validation-controls-cs/_static/image1.png)
 
-Проверяющий элемент управления сообщает, что в поле отсутствует текст ([Просмотр полноразмерного изображения](using-textboxwatermark-with-validation-controls-cs/_static/image3.png))
+Проверяющий элемент управления сообщает, что в поле нет текста ([щелкните, чтобы просмотреть изображение с полным размером](using-textboxwatermark-with-validation-controls-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
 > [Назад](using-textboxwatermark-in-a-formview-cs.md)

@@ -1,45 +1,45 @@
 ---
 uid: web-forms/overview/data-access/editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-cs
-title: Обзор вставки, обновления и удаления данных (C#) | Документация Майкрософт
+title: Общие сведения о вставке, обновлении и удалении данных (C#) | Документация Майкрософт
 author: rick-anderson
-description: В этом руководстве мы будет показано, как сопоставить элементу ObjectDataSource Insert(), Update(), и классы Delete() методов к методам BLL, а также способы настройки...
+description: В этом учебнике мы рассмотрим, как сопоставлять методы вставки (), Update () и Delete () ObjectDataSource с методами классов BLL, а также как конфигу...
 ms.author: riande
 ms.date: 07/17/2006
 ms.assetid: b651dc58-93c7-4f83-a74e-3b99f6d60848
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-cs
 msc.type: authoredcontent
-ms.openlocfilehash: e1329868766f0304d0f852b2e592eca1e21ef4d4
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: e26b8e841f86272a158b0c09b62ab2790d01d191
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65134333"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74571467"
 ---
-# <a name="an-overview-of-inserting-updating-and-deleting-data-c"></a>Обзор вставки, обновления и удаления данных (C#)
+# <a name="an-overview-of-inserting-updating-and-deleting-data-c"></a>Общие сведения о вставке, обновлении и удалении данных (C#)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_16_CS.exe) или [скачать PDF](an-overview-of-inserting-updating-and-deleting-data-cs/_static/datatutorial16cs1.pdf)
+[Скачивание примера приложения](https://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_16_CS.exe) или [Загрузка PDF-файла](an-overview-of-inserting-updating-and-deleting-data-cs/_static/datatutorial16cs1.pdf)
 
-> В этом руководстве мы будет показано, как сопоставить элементу ObjectDataSource Insert(), Update(), и классы Delete() методов к методам BLL, а также настройке элементов управления GridView, DetailsView и FormView для обеспечения возможностей изменения данных.
+> В этом учебнике мы рассмотрим, как сопоставлять методы вставки (), Update () и Delete () ObjectDataSource с методами классов BLL, а также как настроить элементы управления GridView, DetailsView и FormView для предоставления возможностей изменения данных.
 
-## <a name="introduction"></a>Вступление
+## <a name="introduction"></a>Введение
 
-Через нескольких последних учебных курсах мы изучали отображение данных на странице ASP.NET с помощью элементов управления GridView, DetailsView и FormView. Эти элементы управления просто работать с данными, которые им предоставлены. Часто эти элементы управления получить доступ к данным с помощью элементу управления источником данных, таких как элемент управления ObjectDataSource. Мы увидели, как ObjectDataSource действует как прокси между страницей ASP.NET и базовых данных. Когда GridView необходимые для отображения данных, он вызывает методы `Select()` метод, который в свою очередь вызывает метод из наших бизнес логики (BLL), которая вызывает метод в соответствующий доступ уровне данным (DAL) TableAdapter, который в свою очередь отправляет `SELECT` запроса к базе данных "Борей".
+В нескольких прошлых учебных курсах мы рассмотрели, как отображать данные на странице ASP.NET с помощью элементов управления GridView, DetailsView и FormView. Эти элементы управления просто работают с предоставляемыми им данными. Как правило, эти элементы управления обращаются к данным с помощью элемента управления источниками данных, например ObjectDataSource. Мы увидели, как элемент управления ObjectDataSource выступает в качестве прокси-сервера между страницей ASP.NET и базовыми данными. Когда GridView необходимо отображать данные, он вызывает метод `Select()` ObjectDataSource, который, в свою очередь, вызывает метод из уровня бизнес-логики (BLL), который вызывает метод в соответствующем адаптере (DAL) уровня доступа к данным, который, в свою очередь, отправляет запрос `SELECT` в базу данных Northwind.
 
-Помните, что при создании TableAdapter в DAL в [наш первый Учебник](../introduction/creating-a-data-access-layer-cs.md), Visual Studio автоматически добавляла методы для вставки, обновления и удаления данных из основного таблица базы данных. Кроме того, в [Создание слой бизнес-логики](../introduction/creating-a-business-logic-layer-cs.md) мы разработали методы в BLL, которая произвела вызов в эти методы DAL изменения данных.
+Вспомним, что при создании TableAdapters в DAL в [первом учебном курсе](../introduction/creating-a-data-access-layer-cs.md)Visual Studio автоматически добавила методы для вставки, обновления и удаления данных из базовой таблицы базы данных. Более того, при [создании уровня бизнес-логики](../introduction/creating-a-business-logic-layer-cs.md) мы разработали в BLL методы, которые вызывали эти методы DAL по изменению данных.
 
-В дополнение к его `Select()` метод, элемент управления ObjectDataSource также имеет `Insert()`, `Update()`, и `Delete()` методы. Как и `Select()` метод, эти три метода могут быть сопоставлены методам базового объекта. Во время настройки для вставки, обновления или удаления данных элементы управления GridView, DetailsView и FormView предоставляют пользовательский интерфейс для изменения базовых данных. Этот пользовательский интерфейс вызывает `Insert()`, `Update()`, и `Delete()` методов ObjectDataSource, которые затем вызвать базового объекта, связанного с методов (см. рис. 1).
+В дополнение к методу `Select()`, ObjectDataSource также имеет методы `Insert()`, `Update()`и `Delete()`. Как и метод `Select()`, эти три метода можно сопоставить с методами в базовом объекте. При настройке для вставки, обновления или удаления данных элементы управления GridView, DetailsView и FormView предоставляют пользовательский интерфейс для изменения базовых данных. Этот пользовательский интерфейс вызывает методы `Insert()`, `Update()`и `Delete()` ObjectDataSource, которые затем вызывают связанные с ним методы базового объекта (см. рис. 1).
 
-[![Insert(), Update() и Delete() методов ObjectDataSource служат в качестве прокси в BLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image2.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image1.png)
+[![методы вставки (), обновления () и удаления () ObjectDataSource являются прокси-сервером в BLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image2.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image1.png)
 
-**Рис. 1**: ObjectDataSource `Insert()`, `Update()`, и `Delete()` методы служат в качестве учетной записи-посредника в BLL ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image3.png))
+**Рис. 1**. методы `Insert()`, `Update()`и `Delete()` ObjectDataSource являются прокси-сервером в BLL ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image3.png))
 
-В этом руководстве мы будет показано, как сопоставить ObjectDataSource `Insert()`, `Update()`, и `Delete()` методы в методах классов в BLL, а также настройке элементов управления GridView, DetailsView и FormView для обеспечения изменения данных возможности.
+В этом учебнике мы рассмотрим, как сопоставлять методы `Insert()`, `Update()`и `Delete()` ObjectDataSource с методами классов в BLL, а также как настроить элементы управления GridView, DetailsView и FormView для предоставления возможностей изменения данных.
 
-## <a name="step-1-creating-the-insert-update-and-delete-tutorials-web-pages"></a>Шаг 1. Создание Insert, Update и Delete учебники веб-страниц
+## <a name="step-1-creating-the-insert-update-and-delete-tutorials-web-pages"></a>Шаг 1. Создание веб-страниц учебников по вставке, обновлению и удалению
 
-Прежде чем приступать, показывающих, как вставка, обновление и удаление данных, давайте немного, чтобы создавать страницы ASP.NET в нашем проекте веб-сайта, что нам понадобится для этого учебника и нескольких следующих. Начните с добавления новой папки с именем `EditInsertDelete`. Добавьте следующие страницы ASP.NET в этой папке, не забывая связывать каждую с `Site.master` главной страницы:
+Прежде чем начать изучение вставки, обновления и удаления данных, давайте сначала создадим страницы ASP.NET в нашем проекте веб-сайта, которые понадобятся для работы с этим руководством и следующих нескольких. Для начала добавьте новую папку с именем `EditInsertDelete`. Затем добавьте в эту папку следующие страницы ASP.NET, чтобы связать каждую страницу с главной страницей `Site.master`:
 
 - `Default.aspx`
 - `Basics.aspx`
@@ -51,329 +51,329 @@ ms.locfileid: "65134333"
 - `ConfirmationOnDelete.aspx`
 - `UserLevelAccess.aspx`
 
-![Добавление страниц ASP.NET для данных учебных курсов по изменению](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image4.png)
+![Добавление страниц ASP.NET для руководств, связанных с изменением данных](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image4.png)
 
-**Рис. 2**: Добавление страниц ASP.NET для данных учебных курсов по изменению
+**Рис. 2**. добавление страниц ASP.NET для руководств, связанных с изменением данных
 
-Как и в других папках, `Default.aspx` в `EditInsertDelete` папку перечислит учебные курсы в своем разделе. Помните, что `SectionLevelTutorialListing.ascx` пользовательский элемент управления предоставляет следующие функциональные возможности. Поэтому добавьте данный пользовательский элемент управления для `Default.aspx` , перетащив его из обозревателя решений в режиме конструктора.
+Как и в других папках, `Default.aspx` в папке `EditInsertDelete` будут перечислены учебники в разделе. Вспомним, что `SectionLevelTutorialListing.ascx` пользовательский элемент управления предоставляет эти функции. Таким образом, добавьте этот пользовательский элемент управления в `Default.aspx`, перетащив его из обозреватель решений на представление конструирования страницы.
 
-[![Добавление элемента управления Sectionleveltutoriallisting.ascx к странице Default.aspx](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image6.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image5.png)
+[![добавить пользовательский элемент управления SectionLevelTutorialListing. ascx в Default. aspx](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image6.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image5.png)
 
-**Рис. 3**: Добавить `SectionLevelTutorialListing.ascx` для пользовательского элемента управления `Default.aspx` ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image7.png))
+**Рис. 3**. Добавление пользовательского элемента управления `SectionLevelTutorialListing.ascx` в `Default.aspx` ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image7.png))
 
-Наконец, добавьте страницы как записи, чтобы `Web.sitemap` файл. В частности, добавьте следующую разметку после узла настраиваемого форматирования `<siteMapNode>`:
+Наконец, добавьте страницы в качестве записей в файл `Web.sitemap`. В частности, добавьте следующую разметку после настраиваемого `<siteMapNode>`форматирования:
 
 [!code-xml[Main](an-overview-of-inserting-updating-and-deleting-data-cs/samples/sample1.xml)]
 
-После обновления `Web.sitemap`, Отвлекитесь и просмотрите учебный веб-узел в обозревателе. В меню слева теперь есть элементы для редактирования, вставки и удаления учебных курсов.
+После обновления `Web.sitemap`просмотрите веб-сайт учебников в браузере. В меню слева теперь содержатся элементы для учебников по редактированию, вставке и удалению.
 
-![Карта узла теперь включают записи для редактирования, вставки и удаления учебных курсов](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image8.png)
+![На карте веб-узла теперь есть записи для учебников по редактированию, вставке и удалению.](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image8.png)
 
-**Рис. 4**: Карта узла теперь включают записи для редактирования, вставки и удаления учебных курсов
+**Рис. 4**. схема узла теперь включает в себя записи для руководства по редактированию, вставке и удалению
 
-## <a name="step-2-adding-and-configuring-the-objectdatasource-control"></a>Шаг 2. Добавление и настройка элемента управления ObjectDataSource
+## <a name="step-2-adding-and-configuring-the-objectdatasource-control"></a>Шаг 2. Добавление и настройка элемента управления ObjectDataSource
 
-С момента GridView, DetailsView и FormView, каждый по-разному их возможностей изменения данных и макета давайте рассмотрим каждый из них по отдельности. А не у каждого элемента управления, используя свой собственный элемент управления ObjectDataSource, тем не менее, просто создадим один элемент управления ObjectDataSource, можно предоставить все примеры три элемента управления.
+Поскольку GridView, DetailsView и FormView имеют разные возможности изменения данных и макет, давайте рассмотрим каждый из них по отдельности. Однако, вместо того, чтобы каждый элемент управления использовал собственный объект ObjectDataSource, давайте создадим только один объект ObjectDataSource, который может совместно использоваться всеми тремя примерами элементов управления.
 
-Откройте `Basics.aspx` странице, перетащите элемент управления ObjectDataSource из панели элементов в конструктор и щелкните ссылку Настройка источника данных из его смарт-тега. Так как `ProductsBLL` — это единственный класс BLL, предоставляющий редактирования, вставки и удаления методов, настройте элемент ObjectDataSource для использования этого класса.
+Откройте страницу `Basics.aspx`, перетащите элемент управления ObjectDataSource из области элементов в конструктор и щелкните ссылку Настроить источник данных из своего смарт-тега. Поскольку `ProductsBLL` является единственным классом BLL, предоставляющим методы редактирования, вставки и удаления, настройте ObjectDataSource для использования этого класса.
 
-[![Настройка ObjectDataSource на использование класса ProductsBLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image10.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image9.png)
+[![настроить ObjectDataSource для использования класса ProductsBLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image10.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image9.png)
 
-**Рис. 5**: Настройка ObjectDataSource для использования `ProductsBLL` класс ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image11.png))
+**Рис. 5**. Настройка ObjectDataSource для использования класса `ProductsBLL` ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image11.png))
 
-На следующем экране можно указать методы класса `ProductsBLL` класса сопоставляются с ObjectDataSource `Select()`, `Insert()`, `Update()`, и `Delete()` , выбрав соответствующую вкладку и выбрать метод стрелку раскрывающегося списка. Рис. 6, которая должна быть знакома к этому моменту, сопоставляет ObjectDataSource `Select()` метод `ProductsBLL` класса `GetProducts()` метод. `Insert()`, `Update()`, И `Delete()` методы можно настроить, выбрав соответствующую вкладку в списке в верхней.
+На следующем экране можно указать, какие методы класса `ProductsBLL` сопоставляются `Select()`, `Insert()`, `Update()`и `Delete()` ObjectDataSource, выбрав соответствующую вкладку и выбрав метод из раскрывающегося списка. Рис. 6, который должен выглядеть знакомым, теперь сопоставляет метод `Select()` ObjectDataSource с методом `GetProducts()` класса `ProductsBLL`. Методы `Insert()`, `Update()`и `Delete()` можно настроить, выбрав соответствующую вкладку в верхней части списка.
 
-[![Иметь элемент управления ObjectDataSource возвращает все продукты](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image13.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image12.png)
+[![, что ObjectDataSource возвращает все продукты](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image13.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image12.png)
 
-**Рис. 6**: Иметь элемент управления ObjectDataSource возвращает все продукты ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image14.png))
+**Рис. 6**. возвращение всех продуктов с помощью ObjectDataSource ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image14.png))
 
-Рис. 7, 8 и 9 Показать ObjectDataSource UPDATE, INSERT и DELETE вкладки. Настройте эти вкладки, чтобы `Insert()`, `Update()`, и `Delete()` методы вызывают `ProductsBLL` класса `UpdateProduct`, `AddProduct`, и `DeleteProduct` методы, соответственно.
+На рисунках 7, 8 и 9 показаны вкладки обновления, вставки и удаления элемента управления ObjectDataSource. Настройте эти вкладки таким образом, чтобы методы `Insert()`, `Update()`и `Delete()` вызывали методы `UpdateProduct`, `AddProduct`и `DeleteProduct` класса `ProductsBLL` соответственно.
 
-[![Сопоставление метода Update() элемента управления ObjectDataSource методу UpdateProduct класса ProductBLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image16.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image15.png)
+[![привяжите метод Update () ObjectDataSource к методу UpdateProduct класса Продуктблл](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image16.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image15.png)
 
-**Рис. 7**: Сопоставить ObjectDataSource `Update()` метод `ProductBLL` класса `UpdateProduct` метод ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image17.png))
+**Рис. 7**. сопоставьте метод `Update()` ObjectDataSource с методом `UpdateProduct` класса `ProductBLL` ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image17.png))
 
-[![Сопоставление метода Insert() ObjectDataSource методу AddProduct класс ProductBLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image19.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image18.png)
+[![сопоставлять метод вставки () ObjectDataSource с методом AddProduct класса Продуктблл](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image19.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image18.png)
 
-**Рис. 8**: Сопоставить ObjectDataSource `Insert()` метод `ProductBLL` добавить класса `Product` метод ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image20.png))
+**Рис. 8**. привязка метода `Insert()` ObjectDataSource к методу Add `Product` класса `ProductBLL` ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image20.png))
 
-[![Сопоставление метода Delete() ObjectDataSource методу DeleteProduct класса ProductBLL](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image22.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image21.png)
+[![соотнести метод Delete () ObjectDataSource с методом DeleteProduct класса Продуктблл](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image22.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image21.png)
 
-**Рис. 9**: Сопоставить ObjectDataSource `Delete()` метод `ProductBLL` класса `DeleteProduct` метод ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image23.png))
+**Рис. 9**. сопоставьте метод `Delete()` ObjectDataSource с методом `DeleteProduct` класса `ProductBLL` ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image23.png))
 
-Вы могли заметить, что раскрывающихся списках на вкладках UPDATE, INSERT и DELETE эти методы уже выбран. Это обусловлено использованием из `DataObjectMethodAttribute` , установлен для методов класса `ProductsBLL`. Например методу DeleteProduct имеет следующую сигнатуру:
+Возможно, вы заметили, что в раскрывающихся списках на вкладках обновления, вставки и удаления уже были выбраны эти методы. Это спасибо за использование `DataObjectMethodAttribute`, которые оформляют методы `ProductsBLL`. Например, метод DeleteProduct имеет следующую сигнатуру:
 
 [!code-csharp[Main](an-overview-of-inserting-updating-and-deleting-data-cs/samples/sample2.cs)]
 
-`DataObjectMethodAttribute` Указывает назначение каждого метода, будь то для выбора, вставки, обновления, или удаление и ли его значение по умолчанию. Если при создании классов BLL эти атрибуты были пропущены, вы будет необходимо вручную выбрать методы обновления, вставки и удаления вкладок.
+Атрибут `DataObjectMethodAttribute` указывает назначение каждого метода — выбор, вставка, обновление или удаление, а также значение по умолчанию. Если эти атрибуты пропущены при создании классов BLL, необходимо вручную выбрать эти методы на вкладках обновление, вставка и удаление.
 
-Убедившись, что соответствующий `ProductsBLL` сопоставлены методам ObjectDataSource `Insert()`, `Update()`, и `Delete()` методов, нажмите кнопку Готово, чтобы завершить работу мастера.
+Убедившись, что соответствующие методы `ProductsBLL` сопоставляются с методами `Insert()`, `Update()`и `Delete()` ObjectDataSource, нажмите кнопку Готово, чтобы завершить работу мастера.
 
 ## <a name="examining-the-objectdatasources-markup"></a>Проверка разметки ObjectDataSource
 
-После настройки ObjectDataSource с помощью мастера, перейдите в представление источника, чтобы проверить созданную декларативную разметку. `<asp:ObjectDataSource>` Тег задает базовый объект и вызываемые методы. Кроме того, существуют `DeleteParameters`, `UpdateParameters`, и `InsertParameters` , которые соответствуют входные параметры для `ProductsBLL` класса `AddProduct`, `UpdateProduct`, и `DeleteProduct` методов:
+После настройки ObjectDataSource с помощью мастера перейдите к представлению исходного кода, чтобы проверить созданную декларативную разметку. Тег `<asp:ObjectDataSource>` указывает базовый объект и методы для вызова. Кроме того, существуют `DeleteParameters`, `UpdateParameters`и `InsertParameters`, которые сопоставляются с входными параметрами для методов `AddProduct`, `UpdateProduct`и `DeleteProduct` класса `ProductsBLL`:
 
 [!code-aspx[Main](an-overview-of-inserting-updating-and-deleting-data-cs/samples/sample3.aspx)]
 
-Элемент управления ObjectDataSource включает параметр для каждого из входных параметров для соответствующих методов, так же, как список `SelectParameter` s присутствует, после настройки ObjectDataSource на вызов метода select, который требуется входной параметр (например `GetProductsByCategoryID(categoryID)`). Как скоро можно будет увидеть, их значения `DeleteParameters`, `UpdateParameters`, и `InsertParameters` задаются автоматически GridView, DetailsView и FormView до вызова ObjectDataSource `Insert()`, `Update()`, или `Delete()` метод. Эти значения можно задать программным образом, при необходимости, также будет рассмотрено в дальнейших учебных курсах.
+ObjectDataSource включает параметр для каждого из входных параметров для связанных с ним методов, так же как список `SelectParameter` s присутствует, когда ObjectDataSource настроен для вызова метода Select, ожидающего входного параметра (например, `GetProductsByCategoryID(categoryID)`). Как скоро будет видно, значения этих `DeleteParameters`, `UpdateParameters`и `InsertParameters` задаются автоматически с помощью элементов управления GridView, DetailsView и FormView перед вызовом метода `Insert()`, `Update()`или `Delete()` ObjectDataSource. Эти значения также можно задать программным способом, как описано в следующем учебном курсе.
 
-Один побочный эффект использования мастера для настройки к ObjectDataSource в том, что Visual Studio [свойство OldValuesParameterFormatString](https://msdn.microsoft.com/library/system.web.ui.webcontrols.objectdatasource.oldvaluesparameterformatstring(VS.80).aspx) для `original_{0}`. Значение этого свойства используется для включения исходных значений данных, редактируемой и полезно в двух сценариях:
+Одним из побочных эффектов использования мастера для настройки ObjectDataSource является то, что Visual Studio устанавливает для [свойства OldValuesParameterFormatString](https://msdn.microsoft.com/library/system.web.ui.webcontrols.objectdatasource.oldvaluesparameterformatstring(VS.80).aspx) значение `original_{0}`. Это значение свойства используется для включения исходных значений изменяемых данных и полезно в двух сценариях:
 
-- Если при правке записи, пользователи могут изменять значение первичного ключа. В этом случае новым значением первичного ключа и исходным значением первичного ключа необходимо указать, чтобы найти и будет иметь значение по соответствующим образом обновлено записи с исходным значением первичного ключа.
-- При использовании оптимистичного параллелизма. Оптимистичный параллелизм – методика убедитесь, что два одновременно работающих пользователей не перезаписать изменения друг друга и это тема будущего учебного курса.
+- Если при редактировании записи пользователь может изменить значение первичного ключа. В этом случае необходимо предоставить новое значение первичного ключа и исходное значение первичного ключа, чтобы можно было найти запись с исходным значением первичного ключа и соответствующим образом обновить его значение.
+- При использовании оптимистичного параллелизма. Оптимистическая блокировка — это метод, гарантирующий, что два одновременно работающих пользователя не перезапишут изменения, и это раздел для будущего руководства.
 
-`OldValuesParameterFormatString` Свойство указывает имя базового объекта update и delete методы для исходных значений входных параметров. Мы обсудим это свойство и его назначение, более подробно при изучении оптимистичного параллелизма. Я упомянул его сейчас, тем не менее, так как исходные значения методам BLL не ожидают, и поэтому очень важно, что мы удалим это свойство. Оставив `OldValuesParameterFormatString` свойство задано только значение по умолчанию (`{0}`) приведет к ошибке при попытке вызвать ObjectDataSource данных веб-элемента управления `Update()` или `Delete()` методы так, как ObjectDataSource будет попытка передать входные параметры `UpdateParameters` или `DeleteParameters` указан, а также исходные значения параметров.
+Свойство `OldValuesParameterFormatString` указывает имя входных параметров в методах Update и DELETE базового объекта для исходных значений. Мы обсудим это свойство и его назначение более подробно при рассмотрении оптимистичного параллелизма. Однако я выберу его сейчас, так как методы BLL не предполагают исходные значения, поэтому важно удалить это свойство. Если для свойства `OldValuesParameterFormatString` задано значение, отличное от значения по умолчанию (`{0}`), то при попытке веб-элемента управления данными вызвать методы `Update()` или `Delete()` будет возникать ошибка, так как ObjectDataSource попытается передать как `UpdateParameters`, так и `DeleteParameters`, как и исходные параметры значения.
 
-Если это не очень на этом этапе, не беспокойтесь, мы рассмотрим это свойство и его программа в следующем учебном курсе. Пока просто не забудьте удалить это объявление свойства из декларативного синтаксиса или присвоено значение по умолчанию ({0}).
+Если это не совсем понятно в этом присоединении ке, не беспокойтесь, мы рассмотрим это свойство и его служебную программу в следующем учебном курсе. Сейчас нужно просто удалить это объявление свойства целиком из декларативного синтаксиса или установить значение по умолчанию ({0}).
 
 > [!NOTE]
-> Если вы просто очистите `OldValuesParameterFormatString` значение свойства из окна свойств в режиме конструктора, свойство по-прежнему будет существовать в декларативном синтаксисе, но задать пустую строку. Это, увы, по-прежнему приведет та же проблема, описанных выше. Таким образом, либо удалите свойство полностью из декларативного синтаксиса или из окна свойств установите значение по умолчанию, `{0}`.
+> Если вы просто удаляете значение свойства `OldValuesParameterFormatString` из окно свойств в представление конструирования, оно по-прежнему будет существовать в декларативном синтаксисе, но должно быть задано как пустая строка. Это, увы, по-прежнему приведет к возникновению описанной выше проблемы. Поэтому либо удалите свойство из декларативного синтаксиса, либо из окно свойств, установите значение по умолчанию `{0}`.
 
-## <a name="step-3-adding-a-data-web-control-and-configuring-it-for-data-modification"></a>Шаг 3. Добавление веб-элемент данных и настроить его для изменения данных
+## <a name="step-3-adding-a-data-web-control-and-configuring-it-for-data-modification"></a>Шаг 3. Добавление веб-элемента управления данными и его настройка для изменения данных
 
-После добавления на страницу и настройки ObjectDataSource мы готовы добавить веб-элементы управления на страницу, чтобы отобразить данные и предоставляют средства для конечного пользователя изменить его. Мы рассмотрим GridView, DetailsView и FormView отдельно, так как эти данные веб-элементов управления по-разному их возможностей изменения данных и конфигурации.
+После того как ObjectDataSource добавлен на страницу и настроен, мы готовы к добавлению веб-элементов управления данными на страницу, чтобы отобразить данные и предоставить пользователю возможность изменить их. Мы будем просматривать GridView, DetailsView и FormView отдельно, так как эти веб-элементы управления данными отличаются возможностями и конфигурацией изменения данных.
 
-Как мы увидим в оставшейся части этой статьи, Добавление расширенных возможностей редактирования, вставки и удаления поддержка с помощью GridView, DetailsView и FormView является очень простой установкой нескольких флажков. Существует множество тонкостей и крайних случаев, в реальной жизни, делающих предоставление этих функций более сложным, чем просто выберите команду и нажмите кнопку. Этот учебник, тем не менее, рассматриваются только возможности модификации упрощенный данных. Последующих учебных курсах будут рассмотрены вопросы, которые непременно возникнут в реальных условиях.
+Как мы увидим в оставшейся части этой статьи, Добавление базовой поддержки редактирования, вставки и удаления с помощью элементов управления GridView, DetailsView и FormView — это так же просто, как проверка нескольких флажков. В реальной среде существует множество тонкостей и пограничных вариантов, которые обеспечивают более функциональную функциональность, чем просто наpointсь и щелкая. Тем не менее, в этом учебнике основное внимание уделяется исключительно упрощению возможностей изменения данных. В следующих учебных курсах будут рассмотрены проблемы, которые, как нереальности, будут возникать в реальных параметрах.
 
 ## <a name="deleting-data-from-the-gridview"></a>Удаление данных из GridView
 
-Для начала перетаскивания элемента управления GridView с панели инструментов в конструктор. Затем привяжите элемент управления ObjectDataSource к GridView, выбрав его из раскрывающегося списка в смарт-теге элемента GridView. На этом этапе декларативная разметка GridView будет:
+Начните с перетаскивания элемента управления GridView с панели инструментов в конструктор. Затем привяжите ObjectDataSource к GridView, выбрав его из раскрывающегося списка в смарт-теге GridView. На этом этапе декларативная разметка GridView будет выглядеть следующим образом:
 
 [!code-aspx[Main](an-overview-of-inserting-updating-and-deleting-data-cs/samples/sample4.aspx)]
 
-Привязка элемента GridView к элементу ObjectDataSource через его смарт-тег имеет два преимущества:
+Привязка элемента управления GridView к ObjectDataSource через его смарт-тег имеет два преимущества:
 
-- Поля BoundFields и CheckBoxFields создаются автоматически для каждого из полей, возвращаемые элементом ObjectDataSource. Кроме того BoundField и CheckBoxField элемента свойства задаются на основании метаданных базового поля. Например `ProductID`, `CategoryName`, и `SupplierName` поля помечены только для чтения в `ProductsDataTable` и поэтому не должно быть обновляемым при редактировании. Для размещения этого, эти поля BoundField, кроме [свойств только для чтения](https://msdn.microsoft.com/library/system.web.ui.webcontrols.boundfield.readonly(VS.80).aspx) присваивается `true`.
-- [Свойство DataKeyNames](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.datakeynames(VS.80).aspx) назначается полей первичного ключа базового объекта. Это важно, когда то уникальный с помощью GridView для редактирования или удаления данных, поскольку это свойство указывает поле (или набор полей) определяет каждую запись. Дополнительные сведения о `DataKeyNames` свойство, обращаться к [Master/Detail, с помощью выбираемого основного элемента GridView с DetailView](../masterdetail/master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs.md) руководства.
+- BoundFields и Чеккбоксфиелдс создаются автоматически для каждого поля, возвращаемого ObjectDataSource. Более того, свойства BoundField и CheckBoxField задаются на основе метаданных базового поля. Например, поля `ProductID`, `CategoryName`и `SupplierName` помечаются как доступные только для чтения в `ProductsDataTable` и поэтому не должны обновляться при редактировании. Для этого [свойства ReadOnly](https://msdn.microsoft.com/library/system.web.ui.webcontrols.boundfield.readonly(VS.80).aspx) BoundFields имеют значение `true`.
+- [Свойству DataKeyNames](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.datakeynames(VS.80).aspx) присваивается поле первичного ключа базового объекта. Это важно при использовании элемента управления GridView для редактирования или удаления данных, так как это свойство указывает поле (или набор полей), уникально идентифицирующее каждую запись. Дополнительные сведения о свойстве `DataKeyNames` см. в разделе " [основной/подробности" с помощью выбираемого справочника по GridView с подробным](../masterdetail/master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs.md) руководством по DetailView.
 
-Хотя GridView можно привязать к элементу ObjectDataSource через декларативный синтаксис или окно "Свойства", для этого необходимо вручную добавить соответствующую BoundField и `DataKeyNames` разметки.
+Хотя GridView можно привязать к ObjectDataSource через окно свойств или декларативный синтаксис, это требует ручного добавления соответствующей разметки BoundField и `DataKeyNames`.
 
-Элемент управления GridView предоставляет встроенную поддержку редактирования на уровне строк и удаления. Настройка GridView для поддержки удаления добавляется столбец кнопок «Delete». Когда конечный пользователь нажимает кнопку «Удалить» для конкретной строки, обратная передача и GridView выполняет следующие действия:
+Элемент управления GridView обеспечивает встроенную поддержку редактирования и удаления на уровне строк. Настройка GridView для поддержки удаления добавляет столбец кнопок удаления. Когда пользователь нажимает кнопку Удалить для определенной строки, выполняется обратная передача, и GridView выполняет следующие действия:
 
-1. ObjectDataSource `DeleteParameters` присваиваются значения
-2. ObjectDataSource `Delete()` вызывается метод, удаление указанной записи
-3. GridView повторную привязку к элементу ObjectDataSource, вызвав его `Select()` метод
+1. Значения `DeleteParameters` ObjectDataSource назначены
+2. Вызывается метод `Delete()` ObjectDataSource, удаляя указанную запись
+3. Элемент управления GridView повторно привязывается к ObjectDataSource, вызывая метод `Select()`
 
-Значения, присвоенные `DeleteParameters` являются значениями `DataKeyNames` поля, для которого была нажата для удаления строки. Поэтому крайне важно, элемента GridView `DataKeyNames` установлено правильно. Если он отсутствует, `DeleteParameters` будет назначен `null` значение на шаге 1, что в свою очередь не приведет любой удаленных записей на шаге 2.
+Значения, присваиваемые `DeleteParameters`, являются значениями полей `DataKeyNames` строки, для которых была нажата кнопка Delete. Поэтому крайне важно, чтобы свойство `DataKeyNames` GridView было правильно установлено. Если он отсутствует, `DeleteParameters` будет назначено `null` значение на шаге 1, что, в свою очередь, не приведет к удалению записей на шаге 2.
 
 > [!NOTE]
-> `DataKeys` Коллекция хранится в состояние элемента управления GridView s, это означает, что `DataKeys` значения будут сохранены для обратной передачи, даже если состояние представления GridView s была отключена. Тем не менее очень важно состояния представления остается включенной для элементов управления GridView, который поддерживает изменение или удаление (поведение по умолчанию). Если задать GridView s `EnableViewState` свойства `false`, поведение редактирования и удаления, хорошо подходит для одного пользователя, но если одновременно работающих пользователей, удаление данных, существует возможность, что этими пользователями может случайно Удаление или изменение записей, которые они не собирались. См. мою запись в блоге [предупреждение: Проблема параллелизма с помощью ASP.NET 2.0 элементов управления GridView/DetailsView/FormView среды, поддерживающих правку и/или удаление и которых состояние просмотра отключено](http://scottonwriting.net/sowblog/archive/2006/10/03/163215.aspx), Дополнительные сведения.
+> Коллекция `DataKeys` хранится в состоянии управления GridView s, что означает, что `DataKeys` значения будут сохраняться в обратной передаче, даже если состояние представления GridView s было отключено. Однако очень важно, чтобы состояние представления оставалось включенным для элементов управления GridView, поддерживающих редактирование или удаление (поведение по умолчанию). Если для свойства `EnableViewState` GridView s задано значение `false`, то поведение редактирования и удаления будет работать для одного пользователя, но при наличии одновременных пользователей удаление данных существует вероятность того, что эти одновременные пользователи могут случайно удалить или изменить записи, которые им не планировалось. См. мою запись блога, [Предупреждение: проблемы параллелизма с ASP.NET 2,0 gridviews/DetailsView/FormView, которые поддерживают редактирование и (или) удаление, а состояние представления — отключено](http://scottonwriting.net/sowblog/archive/2006/10/03/163215.aspx), для получения дополнительных сведений.
 
-Это предупреждение также относится к DetailsViews и FormView среды.
+Это же предупреждение также относится к DetailsView и FormView.
 
-Для Удаление возможностей к GridView, просто перейдите к его смарт-тег и установите флажок "Разрешить удаление".
+Чтобы добавить возможности удаления в GridView, просто перейдите к смарт-тегу и установите флажок Включить удаление.
 
-![Проверьте включение, удаление флажок](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image24.png)
+![Установите флажок "включить удаление".](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image24.png)
 
-**Рис. 10**: Проверьте включение, удаление флажок
+**Рис. 10**. Установка флажка "включить удаление"
 
-Установив в смарт-теге флажок Разрешить удаление добавлено поле добавляет CommandField к GridView. CommandField отображает столбец в GridView с кнопками для выполнения одной или нескольких из следующих задач: Выбор записи, редактирование и удаление записи. Ранее была рассмотрена CommandField в действии с помощью записей в [Master/Detail, с помощью выбираемого основного элемента GridView с DetailView](../masterdetail/master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs.md) руководства.
+Установка флажка "включить удаление" из смарт-тега добавляет CommandField в GridView. CommandField визуализирует столбец в GridView с кнопками для выполнения одной или нескольких следующих задач: Выбор записи, изменение записи и удаление записи. Ранее мы видели CommandField в действии с выбором записей в [главной и подробной среде с помощью выбираемого главного элемента управления GridView с учебником Details DetailView](../masterdetail/master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs.md) .
 
-CommandField содержит ряд `ShowXButton` свойств, которые указывают, какие из набора кнопок изображаются CommandField. Установив флажок Разрешить удаление CommandField которого `ShowDeleteButton` свойство `true` был добавлен в коллекцию столбцов GridView.
+CommandField содержит ряд свойств `ShowXButton`, которые указывают, какие ряды кнопок отображаются в CommandField. Установив флажок Enable (включить удаление) CommandField, свойство `ShowDeleteButton` которого `true`, было добавлено в коллекцию Columns GridView.
 
 [!code-aspx[Main](an-overview-of-inserting-updating-and-deleting-data-cs/samples/sample5.aspx)]
 
-На этом этапе Верите или нет, мы закончили Добавление поддержки удаления к элементу GridView! Как показано на рис. 11, при просмотре страницы через обозреватель столбец кнопок «Delete» присутствует.
+На этом этапе вы считаете, что он или нет, мы сделали Добавление поддержки удаления в GridView! Как показано на рис. 11, при посещении этой страницы через браузер имеется столбец с кнопками «удалить».
 
-[![CommandField добавляет столбец кнопок «Delete»](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image26.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image25.png)
+[![CommandField добавляет столбец кнопок удаления](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image26.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image25.png)
 
-**Рис. 11**: CommandField добавляет столбец из удаление кнопки ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image27.png))
+**Рис. 11**. CommandField добавляет столбец кнопок удаления ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image27.png))
 
-Если вы уже создаете этот учебник с нуля самостоятельно, при тестировании этой странице нажмите кнопку «Удалить» будет выдано исключение. Далее вы узнаете о том, почему возникают эти исключения и способы их устранения.
-
-> [!NOTE]
-> Если вы создаете пример вместе с помощью этого учебника, загрузки, эти проблемы уже учтены для. Тем не менее я рекомендую ознакомиться с указанных ниже с целью определения возможных проблем, возникающих, а также поиска подходящих обходных сведениям.
-
-Если при попытке удаления продукта, возникнет исключение с сообщением, аналогичную "*ObjectDataSource 'ObjectDataSource1' не удалось найти неуниверсальный метод 'DeleteProduct' с параметрами: productID, исходное\_ ProductID*,» скорее всего вы забыли удалить `OldValuesParameterFormatString` свойства из элемента управления ObjectDataSource. С помощью `OldValuesParameterFormatString` свойство задано, ObjectDataSource пытается передать входные параметры `productID` и `original_ProductID` входные параметры `DeleteProduct` метод. `DeleteProduct`, однако принимает только один входной параметр, поэтому исключение. Удаление `OldValuesParameterFormatString` свойство (или присвойте ей значение `{0}`) указывает, что элемент управления ObjectDataSource пытается передать исходный входной параметр.
-
-[![Убедитесь, что свойство OldValuesParameterFormatString был очищен](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image29.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image28.png)
-
-**Рис. 12**: Убедитесь, что `OldValuesParameterFormatString` свойство имеет был очищен Out ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image30.png))
-
-Даже если удалить `OldValuesParameterFormatString` свойство, вы по-прежнему будет вызвано исключение при попытке удаления продукта с сообщением: "*Конфликт инструкции DELETE с ограничением ССЫЛКУ" FK\_порядок\_сведения\_закупочного*.» Базы данных Northwind содержит ограничение внешнего ключа между `Order Details` и `Products` таблицы, это означает, что продукт нельзя удалить из системы, если один или несколько записей о нем в `Order Details` таблицы. Поскольку все продукты в базе данных Northwind имеют хотя бы одну запись `Order Details`, перед удалением любых продуктов, необходимо удалить записи сведений о связанных заказах продуктов.
-
-[![Ограничение внешнего ключа препятствует удалению продуктов](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image32.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image31.png)
-
-**Рис. 13**: Ограничение внешнего ключа запрещает удаление продуктов ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image33.png))
-
-В этом руководстве, просто удалим все записи из `Order Details` таблицы. В реальном приложении необходимо либо:
-
-- У другого экрана, чтобы управлять сведений о порядке
-- Дополнить `DeleteProduct` для включения логики, чтобы удалить сведения о заказе указанного продукта
-- Изменение запроса SQL, используемого TableAdapter для включения удаления деталей заказа указанного продукта
-
-Просто удалим все записи из `Order Details` Чтобы обойти ограничение внешнего ключа. Перейдите в проводник по серверам в Visual Studio, щелкните правой кнопкой мыши `NORTHWND.MDF` узел и выберите новый запрос. Затем в окне запроса выполните следующую инструкцию SQL: `DELETE FROM [Order Details]`
-
-[![Удалите все записи из таблицы Order сведения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image35.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image34.png)
-
-**Рис. 14**: Удалить все записи из `Order Details` таблицы ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image36.png))
-
-После очистки `Order Details` таблицы, нажав кнопку "Удалить" приведет к удалению продукта без ошибок. Если при нажатии кнопки Delete не приводит к удалению продукта, проверьте, чтобы убедиться, что GridView `DataKeyNames` свойству поле первичного ключа (`ProductID`).
+Если вы создаете этот учебник с нуля самостоятельно, при тестировании этой страницы нажатие кнопки удалить вызовет исключение. Продолжайте чтение, чтобы узнать, почему были вызваны эти исключения и как их исправить.
 
 > [!NOTE]
-> При нажатии кнопки "Удалить" обратная передача и удаляется запись. Это может быть опасно, так как это легко случайно нажмите кнопку Удалить ошибиться. В следующем учебном курсе будет показано, как добавление клиентского подтверждения при удалении записи.
+> Если вы используете загрузку, прилагаемую к этому учебнику, эти проблемы уже были внесены в учетную запись. Однако я рекомендую ознакомиться с приведенными ниже сведениями, чтобы определить проблемы, которые могут возникнуть и подходящие решения.
 
-## <a name="editing-data-with-the-gridview"></a>Редактирование данных с помощью GridView
+Если при попытке удалить продукт вы получаете исключение, сообщение о котором похоже на "*ObjectDataSource ' ObjectDataSource1 ' не может найти неуниверсальный метод ' DeleteProduct ', имеющий параметры: ProductID, original\_ProductID*, вероятно, вы забыли удалить свойство `OldValuesParameterFormatString` из ObjectDataSource. Если указано свойство `OldValuesParameterFormatString`, ObjectDataSource пытается передать в метод `DeleteProduct` `productID` и `original_ProductID` входные параметры. Однако `DeleteProduct`принимает только один входной параметр, поэтому это исключение. Удаление свойства `OldValuesParameterFormatString` (или присвоение ему значения `{0}`) заставляет ObjectDataSource не пытаться передать исходный входной параметр.
 
-Помимо удаления, элемент управления GridView также предоставляет встроенную поддержку редактирования на уровне строк. Настройка GridView для поддержки редактирования добавляется столбец кнопок кнопки изменения. С точки зрения конечного пользователя, щелкнув строки редактирования кнопку причин, по которым строка становится изменяемой превратив ячейки в текстовые поля, содержащий существующие значения и заменить "Изменить", с обновлением и кнопки "Отмена". После внесения необходимых изменения, конечный пользователь может щелкнуть кнопкой "Обновить", чтобы сохранить изменения "или" Отмена ", чтобы отбросить их. В любом случае после нажатия кнопки обновления "или" Отмена "GridView возвращает состояние до редактирования.
+[![убедитесь, что свойство OldValuesParameterFormatString было удалено.](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image29.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image28.png)
 
-С нашей точки зрения разработчика страницы когда конечный пользователь нажимает кнопку «Изменить» для конкретной строки, обратная передача и GridView выполняет следующие действия:
+**Рис. 12**. Убедитесь, что свойство `OldValuesParameterFormatString` было удалено ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image30.png))
 
-1. GridView `EditItemIndex` свойство назначено индекс строки, была нажата, кнопка "Изменить"
-2. GridView повторную привязку к элементу ObjectDataSource, вызвав его `Select()` метод
-3. Индекс строки, который соответствует `EditItemIndex` и отображается в «режиме правки». В этом режиме "Изменить" заменяется кнопки "обновления" и "Отмена" и поля BoundField, кроме которого `ReadOnly` свойства имеют значение False (по умолчанию) подготавливаются к просмотру как элементы управления TextBox Web, `Text` которых присвоены значения полей данных.
+Даже если вы удалили свойство `OldValuesParameterFormatString`, по-прежнему возникает исключение при попытке удалить продукт с сообщением: "*инструкция DELETE конфликтует с ссылочным ограничением FK\_Order\_details\_Products"* . База данных Northwind содержит ограничение внешнего ключа между `Order Details` и `Products` таблицей, что означает, что продукт нельзя удалить из системы, если для него есть одна или несколько записей в таблице `Order Details`. Так как каждый продукт в базе данных Northwind имеет по крайней мере одну запись в `Order Details`, мы не можем удалить какие бы то ни было продукты, пока не удалим соответствующие записи о заказах продукта.
 
-В этот момент разметка возвращается обозревателю, позволяя пользователю вносить изменения в данные строки. Когда пользователь щелкает кнопкой "Обновить", происходит обратная передача и GridView выполняет следующие действия:
+[![ограничение внешнего ключа запрещает удаление продуктов](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image32.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image31.png)
 
-1. ObjectDataSource `UpdateParameters` значения присваиваются значения, введенные конечным пользователем в интерфейс правки элемента GridView
-2. ObjectDataSource `Update()` метод, выполняя обновление указанной записи
-3. GridView повторную привязку к элементу ObjectDataSource, вызвав его `Select()` метод
+**Рис. 13**. ограничение внешнего ключа запрещает удаление продуктов ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image33.png))
 
-Значения первичного ключа, назначенные `UpdateParameters` на шаге 1, берутся из значений, указанных в `DataKeyNames` свойство, тогда как вторичного ключа значения берутся из текста в элементы управления TextBox Web для редактируемой строки. Как в случае удаления, крайне важно, элемента GridView `DataKeyNames` установлено правильно. Если он отсутствует, `UpdateParameters` значение первичного ключа будет назначаться `null` значение на шаге 1, что в свою очередь не приведет любой обновленных записей на шаге 2.
+В нашем руководстве мы просто удалим все записи из таблицы `Order Details`. В реальном приложении необходимо выполнить одно из следующих действий:
 
-Функциональные возможности редактирования может быть активирован, просто установив флажок Enable Editing в смарт-теге элемента GridView.
+- Наличие другого экрана для управления сведениями о заказах
+- Расширение метода `DeleteProduct` для включения логики для удаления указанных сведений о заказе продукта
+- Изменение SQL запроса, используемого TableAdapter для включения удаления указанных сведений о заказе продукта
 
-![Проверка включения редактирования флажок](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image37.png)
+Просто удалим все записи из таблицы `Order Details`, чтобы обойти ограничение внешнего ключа. Перейдите в обозреватель сервера в Visual Studio, щелкните правой кнопкой мыши узел `NORTHWND.MDF` и выберите команду Создать запрос. Затем в окне запроса выполните следующую инструкцию SQL: `DELETE FROM [Order Details]`
 
-**Рис. 15**: Проверка включения редактирования флажок
+[![удалить все записи из таблицы Order Details](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image35.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image34.png)
 
-Проверка флажок Enable Editing добавит поле CommandField (при необходимости) и задайте его `ShowEditButton` свойства `true`. Как было сказано ранее, CommandField содержит ряд `ShowXButton` свойств, которые указывают, какие из набора кнопок изображаются CommandField. Установив флажок Enable Editing добавляет `ShowEditButton` свойства существующих CommandField:
+**Рис. 14**. Удаление всех записей из таблицы `Order Details` ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image36.png))
+
+После очистки `Order Details` таблице нажатие кнопки удалить приведет к удалению продукта без ошибок. Если нажатие кнопки удалить не приводит к удалению продукта, убедитесь, что для свойства `DataKeyNames` GridView установлено значение поля первичный ключ (`ProductID`).
+
+> [!NOTE]
+> При нажатии кнопки "Удалить" происходит обратная передача, и запись удаляется. Это может быть опасно, поскольку несложно случайно нажать кнопку "Удалить" в неверной строке. В следующем учебном курсе мы покажем, как добавить подтверждение на стороне клиента при удалении записи.
+
+## <a name="editing-data-with-the-gridview"></a>Изменение данных с помощью GridView
+
+Вместе с удалением элемент управления GridView также предоставляет встроенную поддержку редактирования на уровне строк. Настройка элемента управления GridView для поддержки редактирования добавляет столбец кнопок редактирования. С точки зрения конечного пользователя нажатие кнопки Правка строки приводит к тому, что эта строка становится редактируемой, а ячейки переходят в текстовые поля, содержащие существующие значения, и заменяют кнопку изменить кнопками обновления и отмены. После внесения необходимых изменений конечный пользователь может нажать кнопку обновить, чтобы сохранить изменения, или кнопку Отмена, чтобы отменить их. В любом случае после нажатия кнопки Обновить или отмена GridView возвращается в состояние предварительного редактирования.
+
+С нашей точки зрения разработчик страницы, когда пользователь нажимает кнопку "Изменить" для определенной строки, выполняется обратная передача, и GridView выполняет следующие действия:
+
+1. Свойство `EditItemIndex` GridView присвоено индексу строки, для которой была нажата кнопка "Изменить"
+2. Элемент управления GridView повторно привязывается к ObjectDataSource, вызывая метод `Select()`
+3. Индекс строки, соответствующий `EditItemIndex`, подготавливается к просмотру в режиме правки. В этом режиме кнопка "Изменить" заменяется кнопками обновления и отмены и BoundFields, свойства `ReadOnly` которых имеют значение false (по умолчанию), отображаются как веб-элементы управления TextBox, `Text` свойства которых присваиваются значениям полей данных.
+
+На этом этапе в браузер возвращается разметка, позволяющая конечному пользователю вносить любые изменения в данные строки. Когда пользователь нажимает кнопку "Обновить", происходит обратная передача, и GridView выполняет следующие действия:
+
+1. `UpdateParameters` значениям ObjectDataSource присваиваются значения, вводимых конечным пользователем в интерфейс редактирования GridView.
+2. Вызывается метод `Update()` ObjectDataSource, который обновляет указанную запись
+3. Элемент управления GridView повторно привязывается к ObjectDataSource, вызывая метод `Select()`
+
+Значения первичного ключа, назначенные `UpdateParameters` на шаге 1, берутся из значений, указанных в свойстве `DataKeyNames`, тогда как значения непервичного ключа берутся из текста в веб-элементах управления TextBox для редактируемой строки. Как и при удалении, крайне важно, чтобы свойство `DataKeyNames` GridView было правильно установлено. Если он отсутствует, `UpdateParameters` значение первичного ключа будет присвоено `null` значению на шаге 1, что, в свою очередь, не приведет к обновлению записей на шаге 2.
+
+Функциональность редактирования можно активировать, просто установив флажок Включить редактирование в смарт-теге GridView.
+
+![Установите флажок Enable Edit (включить редактирование).](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image37.png)
+
+**Рис. 15**. Установка флажка "включить редактирование"
+
+Установка флажка Enable Edit (включить редактирование) добавит CommandField (при необходимости) и присвойте свойству `ShowEditButton` значение `true`. Как мы видели ранее, CommandField содержит ряд свойств `ShowXButton`, которые указывают, какие серии кнопок отображаются в CommandField. Установив флажок Enable Edit (включить редактирование), вы добавите свойство `ShowEditButton` к существующему CommandField:
 
 [!code-aspx[Main](an-overview-of-inserting-updating-and-deleting-data-cs/samples/sample6.aspx)]
 
-Это все, что требуется для добавления элементарного редактирования. Как показано на рисунке 16, интерфейс редактирования довольно каждого типа BoundField которого `ReadOnly` свойству `false` (по умолчанию) подготавливается к просмотру как элемент TextBox. Сюда входят такие поля, как `CategoryID` и `SupplierID`, которые являются ключевыми для других таблиц.
+Это все, что необходимо для добавления поддержки элементарного редактирования. Как показано в Figure16, интерфейс правки грубый каждый BoundField, свойство `ReadOnly` которого имеет значение `false` (значение по умолчанию) подготавливается к просмотру как текстовое поле. Сюда входят такие поля, как `CategoryID` и `SupplierID`, которые являются ключами к другим таблицам.
 
-[![Нажав кнопку "Изменить" s Chai отображается строка в режиме редактирования](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image39.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image38.png)
+[![нажатии кнопки "Изменить" в списке Chai s отображает строку в режиме редактирования](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image39.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image38.png)
 
-**Рис. 16**: Щелкнув Chai s кнопка "Изменить" отображает строку в режиме правки ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image40.png))
+**Рис. 16**. нажатие кнопки "Изменить" в списке Chai s отображает строку в режиме редактирования ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image40.png))
 
-В дополнение к просить пользователей для непосредственного редактирования значения внешнего ключа, интерфейс редактирования хватает одним из следующих способов:
+Помимо предоставления пользователям возможности изменять значения внешних ключей напрямую, интерфейс интерфейса правки не имеет следующих отличий.
 
-- Если пользователь введет `CategoryID` или `SupplierID` , не существует в базе данных, `UPDATE` нарушают ограничение внешнего ключа, вызывая исключение создано.
-- Интерфейс редактирования отсутствует какой-либо проверки. Если не указать требуемое значение (например, `ProductName`), или введите строковое значение, где ожидается числовое значение (например, введя «Слишком много!» в `UnitPrice` текстовое поле), будет вызвано исключение. Следующем учебном курсе будет рассмотрено Добавление элементов управления проверки к интерфейсу редактирования.
-- В настоящее время *все* полей продукта, которые не только для чтения должны быть включены в GridView. Если сейчас, чтобы удалить поле из GridView, скажем `UnitPrice`, при обновлении данных GridView не устанавливал бы значение `UnitPrice` `UpdateParameters` значение, которое изменит записи базы данных `UnitPrice` для `NULL` значение. Аналогичным образом, если требуемое поле, такие как `ProductName`, удаляется из GridView, операция обновления заканчивается аварийно с тем же "*столбце «ProductName» запрещены значения NULL*" исключение, упомянутых выше.
-- Интерфейс редактирования форматирование оставляет желать много лучшего. `UnitPrice` Показано с четырьмя десятичными. В идеале `CategoryID` и `SupplierID` должны включать элементов управления DropDownList, список категорий и поставщиков в системе.
+- Если пользователь вводит `CategoryID` или `SupplierID`, которых нет в базе данных, `UPDATE` будет нарушать ограничение внешнего ключа, что приведет к возникновению исключения.
+- Интерфейс редактирования не включает проверку. Если не указано требуемое значение (например, `ProductName`) или введите строковое значение, в котором ожидается числовое значение (например, введите "слишком много!"). в текстовое поле `UnitPrice`) будет создано исключение. В следующем учебнике будет рассмотрено Добавление элементов управления проверки в пользовательский интерфейс редактирования.
+- Сейчас *все* поля продуктов, которые не предназначены только для чтения, должны быть включены в GridView. Если бы было необходимо удалить поле из GridView, скажем `UnitPrice`, при обновлении данных GridView не задаст значение `UnitPrice` `UpdateParameters`, что привело бы к изменению `UnitPrice` записи базы данных на `NULL` значение. Аналогичным образом, если обязательное поле, например `ProductName`, удаляется из GridView, обновление завершится ошибкой с тем же «*Column ' ProductName ' не допускает значения NULL*», упомянутого выше.
+- Форматирование интерфейса редактирования оставляет массу необходимости. `UnitPrice` отображается с четырьмя десятичными точками. В идеале значения `CategoryID` и `SupplierID` будут содержать элементов управления DropDownList, в которых перечислены категории и поставщики в системе.
 
-Всеми этими недостатками, которые нам придется смириться с сейчас, но будет устранена в последующих учебных курсах.
+Это все недостатки, с которыми мы будем жить сейчас, но они будут рассмотрены в следующих руководствах.
 
-## <a name="inserting-editing-and-deleting-data-with-the-detailsview"></a>Вставка, редактирование и удаление данных с помощью элемента управления DetailsView
+## <a name="inserting-editing-and-deleting-data-with-the-detailsview"></a>Вставка, изменение и удаление данных с помощью элемента DetailsView
 
-Как мы видели в предыдущих учебных курсах, элемент управления DetailsView отображает по одной записи за раз и, например GridView, предоставляет возможность редактирования и удаления отображаемой записи. Оба пользователя опыт редактирования и удаления элементов в элементе управления DetailsView и рабочий процесс на стороне ASP.NET идентичны данным, элемента управления GridView. Когда DetailsView отличается от GridView — что он также предоставляет встроенную поддержку вставки.
+Как мы видели в предыдущих учебных курсах, элемент управления DetailsView отображает по одной записи за раз и, как GridView, позволяет изменять и удалять отображаемую в данный момент запись. Опыт конечного пользователя, редактирующий и удаляющий элементы из элемента DetailsView и рабочего процесса из ASP.NET, идентичен элементу GridView. Если элемент DetailsView отличается от GridView, он также предоставляет встроенную поддержку вставки.
 
-Для демонстрации возможностей изменения данных элемента управления GridView, начните с добавления элемента управления DetailsView для `Basics.aspx` странице над существующей GridView и привяжите его к существующей ObjectDataSource смарт-теге DetailsView. Затем очистите DetailsView `Height` и `Width` свойства и установите флажок Enable Paging в смарт-теге. Чтобы включить редактирование, вставка и удаление поддержки, просто установите флажки Разрешить изменение, включение вставки и разрешить удаление смарт-тега.
+Чтобы продемонстрировать возможности изменения данных GridView, начните с добавления элемента DetailsView на страницу `Basics.aspx` над существующим элементом управления GridView и привяжите его к существующему ObjectDataSource через смарт-тег DetailsView. Затем очистите свойства `Height` и `Width` DetailsView, а также установите флажок Включить разбиение по страницам в смарт-теге. Чтобы включить поддержку редактирования, вставки и удаления, просто установите флажки Включить редактирование, включить вставку и включить удаление в смарт-теге.
 
-![Настройка элемента управления DetailsView для поддержки редактирования, вставки и удаления](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image41.png)
+![Настройка элемента DetailsView для поддержки редактирования, вставки и удаления](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image41.png)
 
-**Рис. 17**: Настройка элемента управления DetailsView для поддержки редактирования, вставки и удаления
+**Рис. 17**. Настройка DetailsView для поддержки редактирования, вставки и удаления
 
-Как с GridView, добавление редактирования, вставки или удаления поддержки добавлено поле добавляет CommandField к элементу управления DetailsView, как показано в следующем декларативный синтаксис:
+Как и в случае с GridView, Добавление поддержки правки, вставки или удаления добавляет CommandField к элементу DetailsView, как показано в следующем декларативном синтаксисе:
 
 [!code-aspx[Main](an-overview-of-inserting-updating-and-deleting-data-cs/samples/sample7.aspx)]
 
-Обратите внимание на то, что для элемента DetailsView CommandField отображается в конце коллекции столбцов по умолчанию. Поскольку DetailsView поля отображаются как строки, CommandField отображается как строка с инструкцией Insert, изменять и удалять кнопки в нижней части элемента управления DetailsView.
+Обратите внимание, что для DetailsView CommandField по умолчанию отображается в конце коллекции Columns. Поскольку поля DetailsView подготавливаются к просмотру как строки, CommandField отображается в виде строки с кнопками вставки, правки и удаления в нижней части элемента DetailsView.
 
-[![Настройка элемента управления DetailsView для поддержки редактирования, вставки и удаления](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image43.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image42.png)
+[![настроить DetailsView для поддержки редактирования, вставки и удаления](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image43.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image42.png)
 
-**Рис. 18**: Настройка элемента управления DetailsView для поддержки редактирования, вставки и удаления ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image44.png))
+**Рис. 18**. Настройка элемента DetailsView для поддержки редактирования, вставки и удаления ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image44.png))
 
-При нажатии кнопки Delete запускает ту же последовательность событий, как и в случае с GridView: обратная передача, следуют DetailsView, заполнение его ObjectDataSource `DeleteParameters` на основе `DataKeyNames` значений; и завершения с помощью вызова его ObjectDataSource `Delete()` метод, который удаляет продукт из базы данных. Также редактирования в элементе DetailsView работает таким образом, идентична GridView.
+При нажатии кнопки "Удалить" начинается та же последовательность событий, что и для GridView: обратная передача. после чего элемент управления DetailsView заполняет `DeleteParameters` на основе значений `DataKeyNames`; и завершился с вызовом метода `Delete()` ObjectDataSource, который фактически удаляет продукт из базы данных. Редактирование в DetailsView также работает точно так же, как GridView.
 
-Для вставки, конечному пользователю предоставляется New кнопка, при нажатии отображает DetailsView в «режиме вставки». В «режиме вставки» "Создать" заменяется кнопки вставки "и" Отмена "и" только эти поля BoundField, кроме которого `InsertVisible` свойству `true` (по умолчанию), отображаются. Поля данных определены как поля автоприращения, такие как `ProductID`, имеют свои [свойство InsertVisible](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datacontrolfield.insertvisible(VS.80).aspx) присвоено `false` при привязке к источнику данных через смарт-тег элемента управления DetailsView.
+Для вставки конечного пользователя отображается новая кнопка, которая при нажатии отображает DetailsView в режиме вставки. При использовании "режима вставки" Новая кнопка заменяется кнопками вставки и отмены и только те BoundFields, для которых свойство `InsertVisible` имеет значение `true` (по умолчанию). Эти поля данных, идентифицируемые как поля автоприращения, такие как `ProductID`, имеют [свойство инсертвисибле](https://msdn.microsoft.com/library/system.web.ui.webcontrols.datacontrolfield.insertvisible(VS.80).aspx) со значением `false` при привязке элемента DetailsView к источнику данных через смарт-тег.
 
-При привязке источника данных в элементе управления DetailsView через смарт-тег, Visual Studio задает `InsertVisible` свойства `false` только для полей автоприращения. Поля, доступные только для чтения, таких как `CategoryName` и `SupplierName`, будет отображаться в пользовательском интерфейсе «режиме вставки», если только их `InsertVisible` явно задано значение `false`. Отвлекитесь и задавать эти два поля `InsertVisible` свойства `false`, либо через декларативный синтаксис DetailsView или изменить поля ссылку в смарт-тег. Рис. 19 показана установка `InsertVisible` свойства `false` по ссылке на изменить поля.
+При привязке источника данных к элементу DetailsView через смарт-тег Visual Studio устанавливает свойство `InsertVisible` в значение `false` только для полей автоприращения. Поля, предназначенные только для чтения, такие как `CategoryName` и `SupplierName`, будут отображаться в пользовательском интерфейсе "режим вставки", если только для свойства `InsertVisible` явно не задано значение `false`. Потратьте немного времени, чтобы задать для этих двух полей `InsertVisible` свойства `false`, с помощью декларативного синтаксиса DetailsView или ссылки Edit Fields (изменить поля) в смарт-теге. На рис. 19 показано, как задать свойства `InsertVisible` для `false`, щелкнув ссылку Edit Fields (изменить поля).
 
-[![Поставщики Northwind теперь поставляют Продукт Acme Tea](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image46.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image45.png)
+[![Northwind Traders теперь предлагает ACME чай](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image46.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image45.png)
 
-**Рис. 19**: Northwind Traders теперь предлагает Acme Tea ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image47.png))
+**Рис. 19**. Теперь компания Northwind Traders предлагает ACME-чай ([щелкните, чтобы просмотреть изображение полного размера](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image47.png))
 
-После задания `InsertVisible` свойства, представление `Basics.aspx` в браузере и нажмите кнопку "Создать". Рис. 20 показан элемент DetailsView, при добавлении нового напитка, Acme Tea, чтобы Линейка наших продуктов.
+После задания свойств `InsertVisible` просмотрите страницу `Basics.aspx` в браузере и нажмите кнопку Создать. На рис. 20 показана DetailsView при добавлении нового напитков, Acme чай в нашу линейку продуктов.
 
-[![Поставщики Northwind теперь поставляют Продукт Acme Tea](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image49.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image48.png)
+[![Northwind Traders теперь предлагает ACME чай](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image49.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image48.png)
 
-**Рис. 20**: Northwind Traders теперь предлагает Acme Tea ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image50.png))
+**Рис. 20**. Теперь компания Northwind Traders предлагает ACME чай ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image50.png))
 
-После ввода сведений о продукте Acme Tea и нажатия кнопки "Вставить", обратная передача и добавляется новая запись `Products` таблицы базы данных. Так как этот DetailsView перечисляет продукты в порядке, с которой они существуют в таблице базы данных, мы должны перейти к последней странице продукта для просмотра нового продукта.
+После ввода сведений для «Acme» и нажатия кнопки «Вставить» происходит обратная передача, а новая запись добавляется в таблицу базы данных `Products`. Так как эта DetailsView перечисляет продукты в порядке, в котором они существуют в таблице базы данных, для просмотра нового продукта необходимо выполнить страницу до последнего продукта.
 
-[![Подробные сведения о продукте Acme Tea](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image52.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image51.png)
+[![сведения о чай](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image52.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image51.png)
 
-**Рис. 21**: Подробные сведения о продукте Acme Tea ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image53.png))
+**Рисунок 21**. сведения для «Acme» ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image53.png))
 
 > [!NOTE]
-> DetailsView [свойство CurrentMode](https://msdn.microsoft.com/library/system.web.ui.webcontrols.detailsview.currentmode(VS.80).aspx) указывает отображение интерфейс и может принимать одно из следующих значений: `Edit`, `Insert`, или `ReadOnly`. [Свойства DefaultMode](https://msdn.microsoft.com/library/system.web.ui.webcontrols.detailsview.defaultmode(VS.80).aspx) указывает режим элемента управления DetailsView возврата после правки или вставки завершен и может использоваться для отображения элемент DetailsView, окончательно редактирования или вставки в режиме вставки.
+> [Свойство куррентмоде](https://msdn.microsoft.com/library/system.web.ui.webcontrols.detailsview.currentmode(VS.80).aspx) элемента DetailsView указывает отображаемый интерфейс и может принимать одно из следующих значений: `Edit`, `Insert`или `ReadOnly`. [Свойство DefaultMode](https://msdn.microsoft.com/library/system.web.ui.webcontrols.detailsview.defaultmode(VS.80).aspx) указывает режим, в который элемент DetailsView возвращает значение после завершения операции правки или вставки. он удобен для отображения элемента DetailsView, который постоянно находится в режиме правки или вставки.
 
-Выберите команды и вставляете или изменяете возможности DetailsView страдал те же ограничения, что GridView: пользователь должен ввести существующие `CategoryID` и `SupplierID` значения в текстовом поле; в интерфейсе отсутствует логики проверки; все поля продукта, которые не допускают `NULL` значения или не иметь значение по умолчанию значение, указанное на уровне базы данных должны быть включены в интерфейс вставки и т. д.
+Точка и щелчок функции вставки и правки элемента управления DetailsView пострадает от тех же ограничений, что и GridView: пользователь должен ввести существующие `CategoryID` и `SupplierID` значения через текстовое поле. в интерфейсе отсутствует логика проверки. все поля продуктов, которые не допускают `NULL` значений или не имеют значения по умолчанию, заданного на уровне базы данных, должны быть включены в интерфейс вставки и т. д.
 
-Методы будут рассмотрены для расширения и улучшение GridView интерфейс правки в будущих статьях, которые могут применяться для элемента управления DetailsView интерфейсы правки и вставки также.
+Методы, которые мы рассмотрим для расширения и улучшения интерфейса редактирования GridView в будущих статьях, можно также применить к интерфейсам правки и вставки элемента управления DetailsView.
 
-## <a name="using-the-formview-for-a-more-flexible-data-modification-user-interface"></a>Использование FormView для более гибкий интерфейс пользователя изменения данных
+## <a name="using-the-formview-for-a-more-flexible-data-modification-user-interface"></a>Использование элемента FormView для более гибкого пользовательского интерфейса изменения данных
 
-FormView предлагает встроенную поддержку для редактирования, вставки и удаления данных, но он использует шаблоны вместо полей есть отсутствует место для добавления полей BoundFields или CommandField, используемые элементами управления GridView и DetailsView для предоставления данных интерфейс изменения. Вместо этого этот интерфейс веб-элементы управления для сбора пользователя входных данных при добавлении нового элемента или редактировании существующего, а также создать, изменить, удалить, вставки, обновления и кнопок отмены необходимо вручную добавить к соответствующим шаблонам. К счастью Visual Studio автоматически создает необходимые элементы интерфейса при привязке FormView к источнику данных с помощью раскрывающегося списка в смарт-тег.
+FormView предлагает встроенную поддержку вставки, редактирования и удаления данных, но поскольку в ней используются шаблоны вместо полей, нет места для добавления BoundFields или CommandField, используемых элементами управления GridView и DetailsView для предоставления данных. интерфейс изменения. Вместо этого интерфейс веб-элементов управления для сбора вводимых пользователем данных при добавлении нового элемента или редактировании существующего объекта вместе с кнопками создать, изменить, удалить, вставить, обновить и отменить необходимо вручную добавить в соответствующие шаблоны. К счастью, Visual Studio автоматически создаст необходимый интерфейс при привязке элемента FormView к источнику данных с помощью раскрывающегося списка в смарт-теге.
 
-Чтобы продемонстрировать данные методы, сначала добавьте элемент управления FormView для `Basics.aspx` странице и из смарт-тега FormView, привязать его к элементу ObjectDataSource, который уже создан. При этом будут созданы `EditItemTemplate`, `InsertItemTemplate`, и `ItemTemplate` для FormView TextBox веб-элементами управления для сбора входных данных пользователя и кнопку веб-элементы управления для создания, изменение, удаление, вставки, обновления и кнопки отмены. Кроме того, FormView `DataKeyNames` свойству поле первичного ключа (`ProductID`) объектов, возвращаемых элементом ObjectDataSource. Наконец установите флажок Enable Paging в смарт-тега FormView.
+Чтобы продемонстрировать эти методы, начните с добавления элемента управления FormView на страницу `Basics.aspx` и из смарт-тега FormView привяжите его к уже созданному ObjectDataSource. Это приведет к созданию `EditItemTemplate`, `InsertItemTemplate`и `ItemTemplate` для элемента управления FormView с TextBox для получения веб-элементов управления ввода и кнопок пользователя для кнопок создать, изменить, удалить, вставить, обновить и отменить. Кроме того, для свойства `DataKeyNames` FormView задается поле первичного ключа (`ProductID`) объекта, возвращаемого ObjectDataSource. Наконец, установите флажок Включить разбиение по страницам в смарт-теге FormView.
 
-Ниже приведена декларативная разметка для элемента FormView `ItemTemplate` после привязки FormView к ObjectDataSource. По умолчанию для всех полей нелогических значений продукта привязан к `Text` свойства элемента управления Label Web при всех полей логических значений (`Discontinued`) привязывается к `Checked` свойство как отключенный элемент управления CheckBox Web. Чтобы активировать определенное поведение FormView при нажатии кнопки New, Edit и Delete, крайне важно, их `CommandName` быть заданы значения для `New`, `Edit`, и `Delete`, соответственно.
+Ниже показана декларативная разметка для `ItemTemplate` FormView после привязки элемента управления FormView к ObjectDataSource. По умолчанию каждое поле продукта, не являющегося логическим значением, привязано к свойству `Text` элемента управления Label, тогда как каждое поле логического значения (`Discontinued`) привязано к свойству `Checked` отключенного веб-элемента управления CheckBox. Чтобы кнопки создания, изменения и удаления вызывали определенное поведение FormView при щелчке, необходимо установить для их `CommandName` значения `New`, `Edit`и `Delete`соответственно.
 
 [!code-aspx[Main](an-overview-of-inserting-updating-and-deleting-data-cs/samples/sample8.aspx)]
 
-Рис. 22 показан FormView `ItemTemplate` при просмотре через браузер. Все поля продуктов отображается с кнопками New, Edit и Delete в нижней.
+На рис. 22 показано `ItemTemplate` FormView при просмотре в браузере. Каждое поле продукта отображается с кнопками создать, изменить и удалить внизу.
 
-[![ItemTemplate по умолчанию FormView указаны все поля продуктов вместе с New, изменять и удалять кнопки](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image55.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image54.png)
+[![Дефаут FormView ItemTemplate содержит список всех полей продуктов, а также кнопки "создать", "Изменить" и "Удалить".](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image55.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image54.png)
 
-**Рис. 22**: По умолчанию FormView `ItemTemplate` перечислены Each продукта поля вместе с New, Edit и удалять кнопки ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image56.png))
+**Рис. 22**. дефаут FormView `ItemTemplate` список всех полей продуктов вместе с кнопками "создать", "Изменить" и "Удалить" ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image56.png))
 
-Как с помощью GridView и DetailsView, нажав кнопку «Удалить» или любой кнопки, LinkButton или ImageButton которого `CommandName` свойство имеет значение Delete вызывает обратную передачу, заполняет ObjectDataSource `DeleteParameters` основании FormView `DataKeyNames`значение и вызывает ObjectDataSource `Delete()` метод.
+Как и в случае с GridView и DetailsView, нажатием кнопки удалить или любой кнопкой, LinkButton или ImageButton, свойство `CommandName` которого имеет значение Delete, вызывает обратную передачу, заполняет `DeleteParameters` ObjectDataSource на основе значения `DataKeyNames` FormView и вызывает метод `Delete()` ObjectDataSource.
 
-При нажатии кнопки Edit обратная передача и привязываются к `EditItemTemplate`, который отвечает за отображение интерфейса редактирования. Этот интерфейс включает веб-элементы управления для редактирования данных, а также кнопки обновления и отмены. Значение по умолчанию `EditItemTemplate` созданные Visual Studio содержит метку для всех полей автоприращения (`ProductID`), текстового поля для всех полей нелогических значений и флажок для всех полей логических значений. Это очень похоже на автоматически сгенерированные поля BoundFields в элементах управления GridView и DetailsView.
+При нажатии кнопки "Изменить" происходит обратная передача данных, и данные повторно привязываются к `EditItemTemplate`, которая отвечает за визуализацию интерфейса редактирования. Этот интерфейс включает веб-элементы управления для редактирования данных вместе с кнопками обновления и отмены. `EditItemTemplate` по умолчанию, создаваемая Visual Studio, содержит метку для всех полей автоприращения (`ProductID`), текстовое поле для каждого поля значения, не являющегося логическим, и флажок для каждого поля логического значения. Такое поведение очень похоже на автоматическое создание BoundFields в элементах управления GridView и DetailsView.
 
 > [!NOTE]
-> Одной небольшой проблемой FormView автоматическое создание `EditItemTemplate` является обработки TextBox Web для полей, которые доступны только для чтения, таких как `CategoryName` и `SupplierName`. Мы рассмотрим это учесть чуть ниже.
+> Одной из мелких проблем с автосозданием `EditItemTemplate` FormView является то, что она отображает веб-элементы управления TextBox для полей, доступных только для чтения, таких как `CategoryName` и `SupplierName`. В ближайшее время мы увидим, как это учитывать.
 
-Элементы управления TextBox в `EditItemTemplate` имеют свои `Text` , привязанное к значению, их соответствующие поля данных при помощи *двусторонней привязки данных*. Двусторонняя привязка к данным, обозначенное с помощью `<%# Bind("dataField") %>`, выполняет привязку данных обоих во время привязки данных к шаблону и заполнении параметров ObjectDataSource для вставки и редактирования записей. То есть в том случае, когда пользователь нажимает кнопку редактирования из `ItemTemplate`, `Bind()` метод возвращает значение указанного поля. После того как пользователь производит свои изменения и последнее обновление, отправленные обратно значения, соответствующие полям данных, заданные с помощью `Bind()` применяются к элементу ObjectDataSource `UpdateParameters`. Кроме того, односторонней привязки данных, обозначенное с помощью `<%# Eval("dataField") %>`, только извлекает значения полей данных при привязке данных к шаблону и выполняет *не* возврата значений, введенных пользователем в параметры источника данных при обратной передаче.
+Элементы управления TextBox в `EditItemTemplate` имеют свойства `Text`, привязанные к значению соответствующего поля данных с помощью *двухсторонней привязки*. Двусторонняя привязка, обозначенная `<%# Bind("dataField") %>`, выполняет привязку данных как при привязке к шаблону, так и при заполнении параметров ObjectDataSource для вставки или изменения записей. То есть когда пользователь нажимает кнопку "Изменить" в `ItemTemplate`, метод `Bind()` возвращает указанное значение поля данных. После того как пользователь вносит изменения и нажимает кнопку обновить, значения, соответствующие полям данных, указанным с помощью `Bind()`, применяются к `UpdateParameters`у ObjectDataSource. Кроме того, односторонняя привязка, обозначающая `<%# Eval("dataField") %>`, извлекает значения полей данных только при привязке данных к шаблону и *не* возвращает значения, вводимых пользователем, в параметры источника данных при обратной передаче.
 
-В следующей декларативной разметке показан FormView `EditItemTemplate`. Обратите внимание, что `Bind()` метод используется в синтаксис привязки данных и элементы управления, обновление и Отмена Web кнопку иметь их `CommandName` свойства, установите соответствующим образом.
+В следующей декларативной разметке показано `EditItemTemplate`FormView. Обратите внимание, что метод `Bind()` используется в синтаксисе привязки данных, и для веб-элементов управления "обновление" и "Отмена" заданы соответствующие свойства `CommandName`.
 
 [!code-aspx[Main](an-overview-of-inserting-updating-and-deleting-data-cs/samples/sample9.aspx)]
 
-Наши `EditItemTemplate`, это выберите, будут вызывать исключение, если предпринимается попытка использовать его. Проблема в том, что `CategoryName` и `SupplierName` поля подготавливаются к просмотру как элементы управления TextBox Web в `EditItemTemplate`. Необходимо либо изменить эти текстовые поля в метки или полностью удалить их. Давайте просто удалить их из `EditItemTemplate`.
+На этом этапе наш `EditItemTemplate`вызовет исключение при попытке использовать его. Проблема заключается в том, что поля `CategoryName` и `SupplierName` отображаются как веб-элементы управления TextBox в `EditItemTemplate`. Необходимо изменить эти текстовые поля на метки или полностью удалить их. Давайте просто удалим их полностью из `EditItemTemplate`.
 
-Рис. 23 показан элемент FormView в обозревателе после нажатия "Изменить" для продукта Chai. Обратите внимание, что `SupplierName` и `CategoryName` поля, показанные на `ItemTemplate` , больше нет, так как мы только что были удалены из `EditItemTemplate`. При нажатии кнопки обновления FormView последовательно выполняет все же последовательность действий, как элементы управления GridView и DetailsView.
+На рис. 23 показан элемент FormView в браузере после нажатия кнопки Edit (изменить) для Chai. Обратите внимание, что поля `SupplierName` и `CategoryName`, показанные в `ItemTemplate`, больше не существуют, так как они были удалены из `EditItemTemplate`. При нажатии кнопки "перейти" FormView выполняет ту же последовательность шагов, что и элементы управления GridView и DetailsView.
 
-[![По умолчанию в шаблоне EditItemTemplate все редактируемые поля продуктов как TextBox и CheckBox](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image58.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image57.png)
+[![по умолчанию в EditItemTemplate показывается каждое редактируемое поле продукта в виде текстового поля или флажка](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image58.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image57.png)
 
-**Рис. 23**: По умолчанию `EditItemTemplate` показывает Each редактируемой продукта поле как TextBox и CheckBox ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image59.png))
+**Рис. 23**. по умолчанию в `EditItemTemplate` отображаются все редактируемые поля продуктов в виде текстового поля или флажка ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image59.png)).
 
-При нажатии кнопки вставки FormView `ItemTemplate` обратная. Тем не менее данные не привязан к FormView, так как добавляется новая запись. `InsertItemTemplate` Интерфейс включает веб-элементы управления для добавления новой записи, а также кнопки вставки и "Отмена". Значение по умолчанию `InsertItemTemplate` созданные Visual Studio содержит текстовое поле для всех полей нелогических значений и флажок для всех полей логических значений, аналогичную автоматически созданные `EditItemTemplate`элемента интерфейса. Эти элементы управления TextBox их `Text` , привязанное к значению соответствующего поля данных с помощью двусторонней привязки данных.
+Когда вы нащелкнули кнопку "вставить", `ItemTemplate` подается обратная передача. Однако данные не привязаны к элементу FormView, так как добавляется новая запись. Интерфейс `InsertItemTemplate` включает веб-элементы управления для добавления новой записи вместе с кнопками вставки и отмены. `InsertItemTemplate` по умолчанию, создаваемая Visual Studio, содержит текстовое поле для каждого поля значения, не являющегося логическим, и флажок для каждого поля логического значения, аналогично автоматически созданному интерфейсу `EditItemTemplate`. Элементы управления TextBox имеют свойство `Text`, привязанное к значению соответствующего поля данных, используя двустороннюю привязку данных.
 
-В следующей декларативной разметке показан FormView `InsertItemTemplate`. Обратите внимание, что `Bind()` метод используется в синтаксис привязки данных и элементы управления Insert и Отмена Web кнопки имеют свои `CommandName` свойства, установите соответствующим образом.
+В следующей декларативной разметке показано `InsertItemTemplate`FormView. Обратите внимание, что метод `Bind()` используется в синтаксисе привязки данных, и для веб-элементов управления "Вставка" и "Отмена" заданы соответствующие свойства `CommandName`.
 
 [!code-aspx[Main](an-overview-of-inserting-updating-and-deleting-data-cs/samples/sample10.aspx)]
 
-Имеется один важный нюанс с FormView автоматическое создание `InsertItemTemplate`. В частности, элементы управления TextBox Web создаются даже для полей, доступных только для чтения, таких как `CategoryName` и `SupplierName`. Как с помощью `EditItemTemplate`, нам необходимо удалить эти текстовые поля из `InsertItemTemplate`.
+Существует тонкость автоматического создания `InsertItemTemplate`в FormView. В частности, веб-элементы управления TextBox создаются даже для тех полей, которые доступны только для чтения, например `CategoryName` и `SupplierName`. Как и в случае с `EditItemTemplate`, необходимо удалить эти текстовые поля из `InsertItemTemplate`.
 
-Рис. 24 показан элемент FormView в браузере, при добавлении нового продукта, Acme Coffee. Обратите внимание, что `SupplierName` и `CategoryName` поля, показанные на `ItemTemplate` , больше нет, так как мы только что были удалены. При нажатии кнопки "Вставить" выручка FormView ту же последовательность шагов в элементе управления DetailsView, добавив новую запись для `Products` таблицы. Рис. 25 показаны сведения о продукте Acme Coffee в FormView, после его вставки.
+На рис. 24 показан элемент FormView в браузере при добавлении нового продукта, Acme кофе. Обратите внимание, что поля `SupplierName` и `CategoryName`, показанные в `ItemTemplate`, больше не существуют, так как они были удалены. При нажатии кнопки «Вставить» FormView выполняет ту же последовательность шагов, что и элемент управления DetailsView, добавляя новую запись в таблицу `Products`. На рис. 25 показаны сведения о продукте ACME кофе в элементе FormView после его вставки.
 
-[![Шаблон InsertItemTemplate определяет интерфейс вставки FormView](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image61.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image60.png)
+[![InsertItemTemplate определяет интерфейс вставки FormView](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image61.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image60.png)
 
-**Рис. 24**: `InsertItemTemplate` Определяет интерфейс вставки FormView ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image62.png))
+**Рис. 24**. `InsertItemTemplate` определяет интерфейс вставки FormView ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image62.png))
 
-[![Подробные сведения о новом продукте, Acme Coffee, отображаются в элеменет FormView](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image64.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image63.png)
+[![сведения о новом продукте, Acme кофе, отображаются в элементе FormView.](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image64.png)](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image63.png)
 
-**Рис. 25**: Подробные сведения о новом продукте, Acme Coffee, отображаются в элеменет FormView ([Просмотр полноразмерного изображения](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image65.png))
+**Рис. 25**. сведения о новом продукте, Acme кофе, отображаются в элементе FormView ([щелкните, чтобы просмотреть изображение с полным размером](an-overview-of-inserting-updating-and-deleting-data-cs/_static/image65.png)).
 
-Интерфейсы правки и вставки на три различные шаблона, выделяя только для чтения, FormView позволяет точнее контролировать эти интерфейсы, чем DetailsView и GridView.
+Разделив интерфейсы только для чтения, редактирования и вставки на три отдельных шаблона, FormView обеспечивает более тонкую степень контроля над этими интерфейсами, чем DetailsView и GridView.
 
 > [!NOTE]
-> DetailsView, FormView, такие как `CurrentMode` свойство указывает отображение интерфейса и его `DefaultMode` свойство указывает режим FormView возврат после изменения или завершения вставки.
+> Как и DetailsView, свойство `CurrentMode` FormView указывает отображаемый интерфейс, а его свойство `DefaultMode` указывает режим, в который функция FormView возвращает значение после завершения операции редактирования или вставки.
 
 ## <a name="summary"></a>Сводка
 
-В этом учебнике мы рассмотрели основные принципы Вставка, редактирование и удаление данных с помощью GridView, DetailsView и FormView. Все эти три элемента управления предоставляют некоторый уровень возможностей изменения данных, которые могут использоваться без написания кода на странице ASP.NET благодаря веб-элементы управления данными и элемент управления ObjectDataSource. Тем не менее простой точки и нажмите кнопку методы отрисовки довольно frail и упрощенный данных изменения пользовательского интерфейса. Для выполнения проверки, добавления программных значений, корректно обрабатывать исключения, настройки пользовательского интерфейса и т. д., нам нужно будет использовать множество методов, которые будут рассмотрены нескольких следующих учебных курсах.
+В этом учебнике мы рассмотрели основы вставки, редактирования и удаления данных с помощью элементов управления GridView, DetailsView и FormView. Все три этих элемента управления предоставляют определенный уровень встроенных возможностей изменения данных, которые можно использовать без написания единой строки кода на странице ASP.NET благодаря веб-элементам управления данными и ObjectDataSource. Однако простые методы Point и Click отображают довольно фраил и наивный пользовательский интерфейс изменения данных. Чтобы обеспечить проверку, внедрять программные значения, корректно обрабатывать исключения, настраивать пользовательский интерфейс и т. д., необходимо полагаться на множество методов, которые будут обсуждаться в следующих нескольких руководствах.
 
-Счастливого вам программирования!
+Поздравляем с программированием!
 
 ## <a name="about-the-author"></a>Об авторе
 
-[Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP.NET и основатель веб- [4GuysFromRolla.com](http://www.4guysfromrolla.com), работает с веб-технологиями Microsoft с 1998 года. Скотт — независимый консультант, преподаватель и автор. Его последняя книга — [ *Sams Teach ASP.NET 2.0 in 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Ним можно связаться по адресу [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти в [ http://ScottOnWriting.NET ](http://ScottOnWriting.NET).
+[Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP. NET и основатель [4GuysFromRolla.com](http://www.4guysfromrolla.com), работал с веб-технологиями Майкрософт с 1998. Скотт работает как независимый консультант, преподаватель и модуль записи. Его последняя книга — [*Sams обучать себя ASP.NET 2,0 за 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Он доступен по адресу [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти по адресу [http://ScottOnWriting.NET](http://ScottOnWriting.NET).
 
 > [!div class="step-by-step"]
 > [Вперед](examining-the-events-associated-with-inserting-updating-and-deleting-cs.md)

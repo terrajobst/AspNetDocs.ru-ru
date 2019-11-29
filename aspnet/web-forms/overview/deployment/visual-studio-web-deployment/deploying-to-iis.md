@@ -8,12 +8,12 @@ ms.date: 01/16/2019
 ms.assetid: 8bf2c4fb-4ee5-4841-bfc2-03462c1f7a7a
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis
 msc.type: authoredcontent
-ms.openlocfilehash: c45003325832258466a787bc589bf40e844248a2
-ms.sourcegitcommit: 4b324a11131e38f920126066b94ff478aa9927f8
+ms.openlocfilehash: 738318cce442fdc5d58dd1e4c992d4941be2487e
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "70985859"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74591244"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-deploying-to-test"></a>Веб-развертывание ASP.NET с помощью Visual Studio: развертывание в тест
 
@@ -49,7 +49,7 @@ ms.locfileid: "70985859"
 
 Скачайте и установите решение и проект начального решения Visual Studio для университета университетов contoso. Это решение содержит завершенный учебник. 
 
-[Скачать начальный проект](http://go.microsoft.com/fwlink/p/?LinkId=282627)
+[Скачать начальный проект](https://go.microsoft.com/fwlink/p/?LinkId=282627)
 
 ## <a name="install-iis"></a>Установка служб IIS
 
@@ -109,7 +109,7 @@ ms.locfileid: "70985859"
 
 7. В диалоговом окне **Изменение пула приложений** измените **версию CLR .NET** на **.NET CLR v 4.0.30319**. Нажмите кнопку **ОК**.
 
-   ![Selecting_.NET_4_for_DefaultAppPool](deploying-to-iis/_static/image6a.png)
+   ![Selecting_. NET_4_for_DefaultAppPool](deploying-to-iis/_static/image6a.png)
 
 Теперь все готово для публикации веб-приложения в службах IIS. Однако сначала создайте базы данных для тестирования.
 

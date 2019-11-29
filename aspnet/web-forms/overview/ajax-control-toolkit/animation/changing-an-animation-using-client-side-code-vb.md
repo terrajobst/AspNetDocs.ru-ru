@@ -1,57 +1,57 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/animation/changing-an-animation-using-client-side-code-vb
-title: Изменение анимаций с помощью клиентского кода (Visual Basic) | Документация Майкрософт
+title: Изменение анимации с помощью кода на стороне клиента (VB) | Документация Майкрософт
 author: wenz
-description: Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Можно также анимации...
+description: Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Анимация также может...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: a7fe5de5-a964-4780-ae5e-70821dfb50a0
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/changing-an-animation-using-client-side-code-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 476b807ca48744648b6e2435af6db7b343c0f854
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: cce0a5a901f71edd40eada59ac7eeba93222e2b3
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65108760"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74606925"
 ---
 # <a name="changing-an-animation-using-client-side-code-vb"></a>Изменение анимаций с помощью клиентского кода (VB)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation11.vb.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation11VB.pdf)
+[Скачать код](https://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation11.vb.zip) или [скачать PDF](https://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation11VB.pdf)
 
-> Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Также можно изменить анимации с помощью пользовательского кода JavaScript на стороне клиента.
+> Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Анимацию также можно изменить с помощью пользовательского кода JavaScript на стороне клиента.
 
 ## <a name="overview"></a>Обзор
 
-Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Также можно изменить анимации с помощью пользовательского кода JavaScript на стороне клиента.
+Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Анимацию также можно изменить с помощью пользовательского кода JavaScript на стороне клиента.
 
 ## <a name="steps"></a>Шаги
 
-Во-первых, включите `ScriptManager` страницы; затем ASP.NET AJAX library загружена, что позволяет использовать набор средств управления:
+Во-первых, включите `ScriptManager` на странице. затем загружается библиотека ASP.NET AJAX, что позволяет использовать набор средств управления.
 
 [!code-aspx[Main](changing-an-animation-using-client-side-code-vb/samples/sample1.aspx)]
 
-Анимация будет применяться к панели текста, который выглядит следующим образом:
+Анимация будет применена к панели текста, которая выглядит следующим образом:
 
 [!code-aspx[Main](changing-an-animation-using-client-side-code-vb/samples/sample2.aspx)]
 
-В связанный класс CSS для панели определить цвет фона, удобная и также установить фиксированную ширину для панели:
+В связанном классе CSS для панели задайте хороший цвет фона, а также задайте фиксированную ширину панели:
 
 [!code-css[Main](changing-an-animation-using-client-side-code-vb/samples/sample3.css)]
 
-Фактический анимация запускается с HTML-кнопок:
+Фактическая анимация запускается с помощью кнопки HTML:
 
 [!code-aspx[Main](changing-an-animation-using-client-side-code-vb/samples/sample4.aspx)]
 
-Затем добавьте `AnimationExtender` на страницу, предоставляя `ID`, `TargetControlID` атрибут и обязательным `runat="server"`:
+Затем добавьте `AnimationExtender` на страницу, указав `ID`, атрибут `TargetControlID` и `runat="server"`обязательную:
 
 [!code-aspx[Main](changing-an-animation-using-client-side-code-vb/samples/sample5.aspx)]
 
-Следует отметить, что не `<Animations>` узел в `AnimationExtender` элемента управления. Пользовательский код JavaScript используется для предоставления анимации для использования с элементом управления.
+Обратите внимание, что в элементе управления `AnimationExtender` нет `<Animations>` узла. Пользовательский код JavaScript используется для предоставления анимаций, используемых с элементом управления.
 
-Как и в API сервера из `AnimationExtender`, нет простого способа еще назначить анимации расширителя. Тем не менее расширителя предоставляют несколько методов для чтения и записи анимации зарегистрировано различные события (`OnClick`, `OnLoad`, и так далее). Далее приводятся некоторые примеры.
+Как и в случае с API сервера `AnimationExtender`, еще нет простого способа присвоить анимацию расширительу. Однако расширитель предоставляет несколько методов для чтения и записи анимации, зарегистрированной с различными событиями (`OnClick`, `OnLoad`и т. д.). Далее приводятся некоторые примеры.
 
 - `get_OnClick()`
 - `set_OnClick()`
@@ -59,19 +59,19 @@ ms.locfileid: "65108760"
 - `set_OnLoad()`
 - `...`
 
-Формат возвращаемого значения `get_*()` функции и формат аргумента для `set_*()` функции представляет собой строку JSON, предоставляя объектное представление XML-разметку, которые бы. В настоящее время невозможно передать объект в, но можно считать объект из данной анимации (`get_OnXXXBehavior()` методов).
+Формат возвращаемого значения функций `get_*()` и формат аргумента для функций `set_*()` являются строкой JSON, предоставляя объектное представление того, что будет иметь XML-разметка. В настоящее время невозможно передать объект в, но можно считать объект из заданной анимации (`get_OnXXXBehavior()` методы).
 
-Здесь представляет собой строку JSON (без кавычек разделителя и форматировать хорошо) представляющий анимацию, инициируемой этой кнопкой, но анимации на панели, изменяя его размер и исчезновение в то же время:
+Ниже приведена строка JSON (без кавычек и отформатированных), представляющая анимацию, активируемую кнопкой, но анимирование панели путем изменения ее размера и исчезновения ее в то же время:
 
 [!code-json[Main](changing-an-animation-using-client-side-code-vb/samples/sample6.json)]
 
-Следующий код JavaScript назначает этот descripting JSON для `OnClick` анимации текущего расширителя и запускает его:
+Следующий код JavaScript назначает этот JSON-скрипта `OnClick` анимации текущего расширителя и выполняет его:
 
 [!code-html[Main](changing-an-animation-using-client-side-code-vb/samples/sample7.html)]
 
-[![Анимация запускается немедленно, без щелчка мыши (и с очень небольшой разметкой)](changing-an-animation-using-client-side-code-vb/_static/image2.png)](changing-an-animation-using-client-side-code-vb/_static/image1.png)
+[![анимация выполняется немедленно, без щелчка мышью (и с очень маленькой разметкой)](changing-an-animation-using-client-side-code-vb/_static/image2.png)](changing-an-animation-using-client-side-code-vb/_static/image1.png)
 
-Анимация запускается немедленно, без щелчка мышью (и с очень небольшой разметкой) ([Просмотр полноразмерного изображения](changing-an-animation-using-client-side-code-vb/_static/image3.png))
+Анимация выполняется немедленно, без щелчка мышью (и с очень маленькой разметкой) ([щелкните, чтобы просмотреть изображение с полным размером](changing-an-animation-using-client-side-code-vb/_static/image3.png)).
 
 > [!div class="step-by-step"]
 > [Назад](executing-animations-using-client-side-code-vb.md)

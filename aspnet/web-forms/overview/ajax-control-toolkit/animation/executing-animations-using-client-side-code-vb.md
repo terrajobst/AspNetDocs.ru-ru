@@ -1,69 +1,69 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/animation/executing-animations-using-client-side-code-vb
-title: Выполнение анимаций с помощью клиентского кода (Visual Basic) | Документация Майкрософт
+title: Запуск анимации с помощью кода на стороне клиента (VB) | Документация Майкрософт
 author: wenz
-description: Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Выполнение анимации...
+description: Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Выполнение анимации...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: f7073f50-d765-456d-9957-926ce60f35f6
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/executing-animations-using-client-side-code-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 123ce48a203a69b9a2d50b8bb09c290a84afdac7
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 7ef36900d20d8d07c3c6f3b63ce96568a377a0ed
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65127511"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74575482"
 ---
 # <a name="executing-animations-using-client-side-code-vb"></a>Выполнение анимаций с помощью клиентского кода (VB)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation10.vb.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation10VB.pdf)
+[Скачать код](https://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation10.vb.zip) или [скачать PDF](https://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation10VB.pdf)
 
-> Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Выполнение анимации могут также инициироваться с помощью пользовательского кода JavaScript на стороне клиента.
+> Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Выполнение анимации также может быть запущено с помощью пользовательского кода JavaScript на стороне клиента.
 
 ## <a name="overview"></a>Обзор
 
-Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Выполнение анимации могут также инициироваться с помощью пользовательского кода JavaScript на стороне клиента.
+Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Выполнение анимации также может быть запущено с помощью пользовательского кода JavaScript на стороне клиента.
 
 ## <a name="steps"></a>Шаги
 
-Во-первых, включите `ScriptManager` страницы; затем ASP.NET AJAX library загружена, что позволяет использовать набор средств управления:
+Во-первых, включите `ScriptManager` на странице. затем загружается библиотека ASP.NET AJAX, что позволяет использовать набор средств управления.
 
 [!code-aspx[Main](executing-animations-using-client-side-code-vb/samples/sample1.aspx)]
 
-Анимация будет применяться к панели текста, который выглядит следующим образом:
+Анимация будет применена к панели текста, которая выглядит следующим образом:
 
 [!code-aspx[Main](executing-animations-using-client-side-code-vb/samples/sample2.aspx)]
 
-В связанный класс CSS для панели определить цвет фона, удобная и также установить фиксированную ширину для панели:
+В связанном классе CSS для панели задайте хороший цвет фона, а также задайте фиксированную ширину панели:
 
 [!code-css[Main](executing-animations-using-client-side-code-vb/samples/sample3.css)]
 
-Затем добавьте `AnimationExtender` на страницу, предоставляя `ID`, `TargetControlID` атрибут и обязательным `runat="server"`:
+Затем добавьте `AnimationExtender` на страницу, указав `ID`, атрибут `TargetControlID` и `runat="server"`обязательную:
 
 [!code-aspx[Main](executing-animations-using-client-side-code-vb/samples/sample4.aspx)]
 
-В рамках `<Animations>` узла, используйте `<OnClick>` для запуска анимации один раз пользователь нажимает кнопку на панели. Добавьте две анимации, выполняемый в параллельном режиме:
+В `<Animations>` узле используйте `<OnClick>` для запуска анимации после того, как пользователь щелкнет панель. Добавьте две анимации для выполнения параллельно:
 
 [!code-xml[Main](executing-animations-using-client-side-code-vb/samples/sample5.xml)]
 
-Для целей демонстрации этой анимации (и другие анимации, созданные с помощью набора средств элементов управления) выполняется с помощью кода JavaScript, когда страница выполняется. Во-первых, нам нужен доступ к `AnimationExtender` элемента управления. Библиотека ASP.NET AJAX предоставляет `$find()` функции для выполнения этой задачи:
+В целях демонстрации эта анимация (и любая другая анимация, созданная с помощью набора средств управления) выполняется с помощью кода JavaScript после выполнения страницы. Прежде всего нам нужен доступ к элементу управления `AnimationExtender`. Библиотека ASP.NET AJAX предоставляет функцию `$find()` для этой задачи:
 
 [!code-csharp[Main](executing-animations-using-client-side-code-vb/samples/sample6.cs)]
 
-`AnimationExtender` Элемент управления предоставляет Интерфейс с широкими возможностями, включая методы с именами, идентичными обработчики событий, используемые в XML-разметку: `OnClick()`, `OnLoad()`, и т. д. Например, вызов `OnClick()` анимации в выполнении метода `<OnClick>` элемент `AnimationExtender` управления:
+Элемент управления `AnimationExtender` предоставляет богатый API, включая методы с именами, идентичными обработчикам событий, используемым в XML-разметке: `OnClick()`, `OnLoad()`и т. д. Например, вызов метода `OnClick()` выполняет анимацию в элементе `<OnClick>` элемента управления `AnimationExtender`:
 
 [!code-javascript[Main](executing-animations-using-client-side-code-vb/samples/sample7.js)]
 
-Ниже приведен полный код клиентского JavaScript, который эмулирует щелкните на панели после полной загрузки страницы Обратите внимание, что `pageLoad()` вызываемый ASP.NET AJAX один раз страницы используется имя функции и все включены библиотеки были JavaScript загрузить.
+Ниже приведен полный код JavaScript на стороне клиента, который имитирует щелчок на панели после полной загрузки страницы. Обратите внимание, что используется имя `pageLoad()` функции, которое вызывается ASP.NET AJAX после загрузки страницы и всех включенных библиотек JavaScript.
 
 [!code-html[Main](executing-animations-using-client-side-code-vb/samples/sample8.html)]
 
-[![Анимация запускается немедленно, без щелчка мыши](executing-animations-using-client-side-code-vb/_static/image2.png)](executing-animations-using-client-side-code-vb/_static/image1.png)
+[![анимация выполняется немедленно, без щелчка мышью](executing-animations-using-client-side-code-vb/_static/image2.png)](executing-animations-using-client-side-code-vb/_static/image1.png)
 
-Анимация запускается немедленно, без щелчка мышью ([Просмотр полноразмерного изображения](executing-animations-using-client-side-code-vb/_static/image3.png))
+Анимация выполняется немедленно без щелчка мышью ([щелкните, чтобы просмотреть изображение с полным размером](executing-animations-using-client-side-code-vb/_static/image3.png)).
 
 > [!div class="step-by-step"]
 > [Назад](modifying-animations-from-the-server-side-vb.md)

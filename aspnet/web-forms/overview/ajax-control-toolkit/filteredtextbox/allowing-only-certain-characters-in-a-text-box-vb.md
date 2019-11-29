@@ -1,62 +1,62 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/filteredtextbox/allowing-only-certain-characters-in-a-text-box-vb
-title: Разрешение только некоторых символов в текстовом поле (Visual Basic) | Документация Майкрософт
+title: Разрешение только некоторых символов в текстовом поле (VB) | Документация Майкрософт
 author: wenz
-description: Проверяющие элементы управления ASP.NET гарантирует, что вводимые пользователем данные разрешены только некоторых символов. Тем не менее это по-прежнему не позволяет пользователям вводить недопустимые...
+description: Элементы управления проверки ASP.NET могут гарантировать, что вводимые пользователем данные допускаются только в определенных символах. Однако это по-прежнему не мешает пользователям вводить недопустимые...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: 33af23f1-4016-4740-8fb2-37d1773452cd
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/filteredtextbox/allowing-only-certain-characters-in-a-text-box-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 6e0f13140fcafd666a89c27acb829e4e762eff29
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 895708ebecc30c5f35e6ecd0349604bb777cbd93
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65127449"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74573941"
 ---
 # <a name="allowing-only-certain-characters-in-a-text-box-vb"></a>Разрешение только некоторых символов в текстовом поле (VB)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/4/c/2/4c2def7a-0d23-4055-91f9-1f18504167d7/FilteredTextBox0.vb.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/filteredtextbox0VB.pdf)
+[Скачать код](https://download.microsoft.com/download/4/c/2/4c2def7a-0d23-4055-91f9-1f18504167d7/FilteredTextBox0.vb.zip) или [скачать PDF](https://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/filteredtextbox0VB.pdf)
 
-> Проверяющие элементы управления ASP.NET гарантирует, что вводимые пользователем данные разрешены только некоторых символов. Тем не менее это по-прежнему не запрещает пользователям вводить недопустимые символы и при попытке отправить форму.
+> Элементы управления проверки ASP.NET могут гарантировать, что вводимые пользователем данные допускаются только в определенных символах. Однако это по-прежнему не мешает пользователям вводить недопустимые символы и пытаться отправить форму.
 
 ## <a name="overview"></a>Обзор
 
-Проверяющие элементы управления ASP.NET гарантирует, что вводимые пользователем данные разрешены только некоторых символов. Тем не менее это по-прежнему не запрещает пользователям вводить недопустимые символы и при попытке отправить форму.
+Элементы управления проверки ASP.NET могут гарантировать, что вводимые пользователем данные допускаются только в определенных символах. Однако это по-прежнему не мешает пользователям вводить недопустимые символы и пытаться отправить форму.
 
 ## <a name="steps"></a>Шаги
 
-ASP.NET AJAX Control Toolkit содержит `FilteredTextBox` элемента управления, который расширяет текстового поля. После активации, можно вводить только определенный набор символов в поле.
+Набор средств ASP.NET AJAX Control Toolkit содержит элемент управления `FilteredTextBox`, расширяющий текстовое поле. После активации в поле может быть вставлен только определенный набор символов.
 
-Чтобы это работало, необходимо сначала обычным образом ASP.NET AJAX `ScriptManager` которого загружала библиотеки JavaScript, которые также используется ASP.NET AJAX Control Toolkit:
+Чтобы это работало, сначала необходимо использовать ASP.NET AJAX `ScriptManager`, который загружает библиотеки JavaScript, которые также используются набором средств управления AJAX ASP.NET.
 
 [!code-aspx[Main](allowing-only-certain-characters-in-a-text-box-vb/samples/sample1.aspx)]
 
-Затем нам нужно текстового поля:
+Затем нам нужно текстовое поле:
 
 [!code-aspx[Main](allowing-only-certain-characters-in-a-text-box-vb/samples/sample2.aspx)]
 
-Наконец `FilteredTextBoxExtender` берет на себя ограничение символов, пользователь может ввести элемент управления. Сначала задайте `TargetControlID` атрибут `ID` из `TextBox` элемента управления. Выберите один из доступных `FilterType` значений:
+Наконец, элемент управления `FilteredTextBoxExtender` позаботится об ограничении символов, которые разрешено вводить пользователю. Сначала присвойте атрибуту `TargetControlID` `ID` элемента управления `TextBox`. Затем выберите одно из доступных значений `FilterType`:
 
-- `Custom` по умолчанию; Вы должны предоставить список допустимых знаков
+- `Custom` по умолчанию; необходимо предоставить список допустимых символов
 - `LowercaseLetters` только строчные буквы
 - `Numbers` только цифры
 - `UppercaseLetters` только прописные буквы
 
-Если `Custom FilterType` используется, `ValidChars` свойство должно быть задано и укажите список символов, которые может ввести. Между прочим: при попытке вставить текст в текстовое поле, будут удалены все недопустимые символы.
+Если используется `Custom FilterType`, необходимо задать свойство `ValidChars` и предоставить список символов, которые могут быть введены. Кстати: при попытке вставить текст в текстовое поле удаляются все недопустимые символы.
 
-Далее приведена разметка для `FilteredTextBoxExtender` элемент управления, который допускает только цифры (то, что также было бы возможным с `FilterType="Numbers"`):
+Ниже приведена разметка для элемента управления `FilteredTextBoxExtender`, которая допускает только цифры (что также было бы возможно с `FilterType="Numbers"`):
 
 [!code-aspx[Main](allowing-only-certain-characters-in-a-text-box-vb/samples/sample3.aspx)]
 
-Запустите страницу и попробуйте ввести буквы в том случае, если включить JavaScript, он не будет работать; Тем не менее, на странице отображаются цифры. Тем не менее Обратите внимание, что защита `FilteredTextBox` предоставляет не пуленепробиваема: Если включен JavaScript, любые данные можно вводить в текстовом поле, поэтому необходимо использовать средства дополнительной проверки, т. е. ASP. NET-элементов управления проверки.
+Запустите страницу и попытайтесь ввести букву, если JavaScript включен, он не будет работать. Однако на странице цифры отображаются. Однако обратите внимание, что `FilteredTextBox` защиты не является маркированным: Если включен JavaScript, любые данные могут быть введены в текстовое поле, поэтому необходимо использовать дополнительные средства проверки, например ASP. Элементы управления проверки NET.
 
-[![Можно вводить только цифры](allowing-only-certain-characters-in-a-text-box-vb/_static/image2.png)](allowing-only-certain-characters-in-a-text-box-vb/_static/image1.png)
+[![могут быть указаны только цифры](allowing-only-certain-characters-in-a-text-box-vb/_static/image2.png)](allowing-only-certain-characters-in-a-text-box-vb/_static/image1.png)
 
-Можно вводить только цифры ([Просмотр полноразмерного изображения](allowing-only-certain-characters-in-a-text-box-vb/_static/image3.png))
+Можно указать только цифры ([щелкните, чтобы просмотреть изображение с полным размером](allowing-only-certain-characters-in-a-text-box-vb/_static/image3.png))
 
 > [!div class="step-by-step"]
 > [Назад](allowing-only-certain-characters-in-a-text-box-cs.md)

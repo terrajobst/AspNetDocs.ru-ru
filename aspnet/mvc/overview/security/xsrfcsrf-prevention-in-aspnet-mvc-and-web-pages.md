@@ -8,12 +8,12 @@ ms.date: 03/14/2013
 ms.assetid: aadc5fa4-8215-4fc7-afd5-bcd2ef879728
 msc.legacyurl: /mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages
 msc.type: authoredcontent
-ms.openlocfilehash: 6fcfcda5b95e5844f7d357ac0cbb6d1fd2e215ac
-ms.sourcegitcommit: 84b1681d4e6253e30468c8df8a09fe03beea9309
+ms.openlocfilehash: fb7e76101cbe6a874ddf5b3429ca2dc6d474334b
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445772"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74595764"
 ---
 # <a name="xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages"></a>Предотвращение атак XSRF и CSRF в ASP.NET MVC и на веб-страницах
 
@@ -128,7 +128,7 @@ ms.locfileid: "73445772"
 
 Многие из развертываний, использующих проверку подлинности на основе утверждений, в частности используют [службу контроля доступа Azure](https://msdn.microsoft.com/library/windowsazure/gg429786.aspx) (ACS). ACS позволяет разработчику настраивать отдельных *поставщиков удостоверений* (например, ADFS, поставщика учетных записей Майкрософт, поставщиков OpenID Connect, таких как Yahoo! и т. д.), а поставщики удостоверений возвращают *идентификаторы имен*. Эти идентификаторы имен могут содержать личные сведения (PII), такие как адрес электронной почты, или анонимно, например частный личный идентификатор (PPID). Независимо от этого, кортеж (поставщик удостоверений, идентификатор имени) достаточно подходит как соответствующий маркер отслеживания для конкретного пользователя, пока он выполняет просмотр сайта, поэтому среда выполнения веб-стека ASP.NET может использовать кортеж вместо имени пользователя при создании и Проверка маркеров поля Anti-XSRF. Конкретные URI для поставщика удостоверений и идентификатор имени:
 
-- `http://schemas.microsoft.com/accesscontrolservice/2010/07/claims/identityprovider`
+- `https://schemas.microsoft.com/accesscontrolservice/2010/07/claims/identityprovider`
 - `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier`
 
 (Дополнительные сведения см. на [странице документации по ACS](https://msdn.microsoft.com/library/windowsazure/gg185971.aspx) .)

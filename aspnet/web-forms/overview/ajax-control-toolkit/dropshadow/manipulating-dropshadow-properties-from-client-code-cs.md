@@ -1,6 +1,6 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/dropshadow/manipulating-dropshadow-properties-from-client-code-cs
-title: Обработка свойств DropShadow из клиентского кода (C#) | Документация Майкрософт
+title: Управление свойствами DropShadow из клиентского кода (C#) | Документация Майкрософт
 author: wenz
 description: Настройка интерфейса правки элемента управления DataList
 ms.author: riande
@@ -8,54 +8,54 @@ ms.date: 06/02/2008
 ms.assetid: c83ca3e6-c0bf-4158-a166-40c1ab0f33da
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dropshadow/manipulating-dropshadow-properties-from-client-code-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 2c71b859fb50eaf6c66a4103fb878104ce10eba3
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 790f0d881e43518600968d6c175d4eaa53d0e5f9
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65134322"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74574093"
 ---
 # <a name="manipulating-dropshadow-properties-from-client-code-c"></a>Обработка свойств DropShadow из клиентского кода (C#)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/5/1/6/51652a81-500b-4f6b-88d3-617103e7941e/DropShadow2.cs.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/dropshadow2CS.pdf)
+[Скачать код](https://download.microsoft.com/download/5/1/6/51652a81-500b-4f6b-88d3-617103e7941e/DropShadow2.cs.zip) или [скачать PDF](https://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/dropshadow2CS.pdf)
 
-> Элемент управления DropShadow в AJAX Control Toolkit расширяет панель с эффектом отбрасывания тени. Также можно изменить свойства этого расширителя с помощью клиентского кода JavaScript.
+> Элемент управления DropShadow в наборе средств AJAX Control Toolkit расширяет панель с тенью. Свойства этого расширителя также можно изменить с помощью клиентского кода JavaScript.
 
 ## <a name="overview"></a>Обзор
 
-Элемент управления DropShadow в AJAX Control Toolkit расширяет панель с эффектом отбрасывания тени. Также можно изменить свойства этого расширителя с помощью клиентского кода JavaScript.
+Элемент управления DropShadow в наборе средств AJAX Control Toolkit расширяет панель с тенью. Свойства этого расширителя также можно изменить с помощью клиентского кода JavaScript.
 
 ## <a name="steps"></a>Шаги
 
-Код начинается с панель, содержащую несколько строк текста:
+Код начинается с панели, содержащей несколько строк текста:
 
 [!code-aspx[Main](manipulating-dropshadow-properties-from-client-code-cs/samples/sample1.aspx)]
 
-Связанный класс CSS предоставляет панели неплохо фоновый цвет:
+Связанный класс CSS предоставляет панели хороший цвет фона:
 
 [!code-css[Main](manipulating-dropshadow-properties-from-client-code-cs/samples/sample2.css)]
 
-`DropShadowExtender` Добавляется расширение панели с помощью эффекта тени, непрозрачность, равным 50%:
+`DropShadowExtender` добавляется для расширения панели с эффектом тени, для параметра Opacity устанавливается значение 50%:
 
 [!code-aspx[Main](manipulating-dropshadow-properties-from-client-code-cs/samples/sample3.aspx)]
 
-Затем, ASP.NET AJAX `ScriptManager` управления включает набор средств управления для работы:
+Затем элемент управления `ScriptManager` AJAX ASP.NET позволяет набору элементов управления работать:
 
 [!code-aspx[Main](manipulating-dropshadow-properties-from-client-code-cs/samples/sample4.aspx)]
 
-Другую панель содержит две ссылки на JavaScript для непрозрачности тени: ссылку "минус" уменьшается прозрачности тени, плюс ссылку повышает его.
+Другая панель содержит две ссылки JavaScript для настройки непрозрачности тени. ссылка «минус» уменьшает прозрачность тени, а ссылка «плюс» увеличивает ее.
 
 [!code-aspx[Main](manipulating-dropshadow-properties-from-client-code-cs/samples/sample5.aspx)]
 
-Функция JavaScript, которая `changeOpacity()` необходимо затем найти `DropShadowExtender` управления на этой странице. AJAX для ASP.NET определяет `$find()` метод для именно этой задачи. Затем `get_Opacity()` метод извлекает текущий непрозрачность `set_Opacity()` метод устанавливает его. Код JavaScript помещает текущее значение непрозрачности в `<label>` элемент:
+После этого функция JavaScript `changeOpacity()` должна сначала найти элемент управления `DropShadowExtender` на странице. ASP.NET AJAX определяет метод `$find()` для точности этой задачи. Затем метод `get_Opacity()` извлекает текущую непрозрачность, метод `set_Opacity()` задает его. Затем код JavaScript помещает текущее значение непрозрачности в элемент `<label>`:
 
 [!code-html[Main](manipulating-dropshadow-properties-from-client-code-cs/samples/sample6.html)]
 
-[![Прозрачность изменяется на стороне клиента](manipulating-dropshadow-properties-from-client-code-cs/_static/image2.png)](manipulating-dropshadow-properties-from-client-code-cs/_static/image1.png)
+[![на стороне клиента изменяется непрозрачность](manipulating-dropshadow-properties-from-client-code-cs/_static/image2.png)](manipulating-dropshadow-properties-from-client-code-cs/_static/image1.png)
 
-Прозрачность изменяется на стороне клиента ([Просмотр полноразмерного изображения](manipulating-dropshadow-properties-from-client-code-cs/_static/image3.png))
+Непрозрачность изменяется на стороне клиента ([щелкните, чтобы просмотреть изображение с полным размером](manipulating-dropshadow-properties-from-client-code-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
 > [Назад](adjusting-the-z-index-of-a-dropshadow-cs.md)

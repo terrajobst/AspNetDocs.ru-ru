@@ -1,55 +1,55 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/popup/using-multiple-popup-controls-cs
-title: Использование нескольких элементов управления Popup (C#) | Документация Майкрософт
+title: Использование нескольких элементов управления PopupC#() | Документация Майкрософт
 author: wenz
-description: Расширитель PopupControl в AJAX Control Toolkit предлагает простой способ активации всплывающего окна при активации любого другого элемента управления. Можно также использовать m...
+description: Расширитель Попупконтрол в наборе средств AJAX Control Toolkit предоставляет простой способ активации всплывающего окна при активации любого другого элемента управления. Также можно использовать m...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: 91511b0b-311d-481f-9e7c-73f07b813b79
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/popup/using-multiple-popup-controls-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 498afada4e020d0edf8dabef5d4a00336e15c5f5
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 8700fe89af591e8b481e853580b0efa0cddbf1bc
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65115144"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74611659"
 ---
 # <a name="using-multiple-popup-controls-c"></a>Использование нескольких элементов управления Popup (C#)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/PopupControl1.cs.zip) или [скачать PDF](http://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/popupcontrol1CS.pdf)
+[Скачать код](https://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/PopupControl1.cs.zip) или [скачать PDF](https://download.microsoft.com/download/2/d/c/2dc10e34-6983-41d4-9c08-f78f5387d32b/popupcontrol1CS.pdf)
 
-> Расширитель PopupControl в AJAX Control Toolkit предлагает простой способ активации всплывающего окна при активации любого другого элемента управления. Можно также использовать более одного элемента управления всплывающего окна на одной странице.
+> Расширитель Попупконтрол в наборе средств AJAX Control Toolkit предоставляет простой способ активации всплывающего окна при активации любого другого элемента управления. На одной странице также можно использовать несколько элементов управления Popup.
 
 ## <a name="overview"></a>Обзор
 
-Расширитель PopupControl в AJAX Control Toolkit предлагает простой способ активации всплывающего окна при активации любого другого элемента управления. Можно также использовать более одного элемента управления всплывающего окна на одной странице.
+Расширитель Попупконтрол в наборе средств AJAX Control Toolkit предоставляет простой способ активации всплывающего окна при активации любого другого элемента управления. На одной странице также можно использовать несколько элементов управления Popup.
 
 ## <a name="steps"></a>Шаги
 
-Для активации функции ASP.NET AJAX и Control Toolkit, `ScriptManager` управления необходимо поместить в любом месте на странице (но в `<form>` элемента):
+Чтобы активировать функциональные возможности ASP.NET AJAX и набора элементов управления, элемент управления `ScriptManager` должен быть размещен в любом месте страницы (но в элементе `<form>`):
 
 [!code-aspx[Main](using-multiple-popup-controls-cs/samples/sample1.aspx)]
 
-Добавьте панель, который служит в качестве всплывающего окна. В данном способе панель содержит `Calendar` элемента управления. Во избежание обновления страниц, вызванных календаря обратных передач, панели помещается в `UpdatePanel` управления:
+Затем добавьте панель, которая выступает в качестве всплывающего. В текущем сценарии панель содержит элемент управления `Calendar`. Чтобы избежать обновления страниц, вызванных обратными передачами календаря, панель помещается в элемент управления `UpdatePanel`:
 
 [!code-aspx[Main](using-multiple-popup-controls-cs/samples/sample2.aspx)]
 
-Страница также содержит два текстовых поля. Для каждого текстового поля всплывающего окна календаря появляться после активации текстового поля.
+Страница также содержит два текстовых поля. Для каждого текстового поля всплывающее окно календаря появляется после активации текстового поля.
 
 [!code-aspx[Main](using-multiple-popup-controls-cs/samples/sample3.aspx)]
 
-Теперь Расширьте каждый из двух текстовых полях с `PopupControlExtender`. `TargetControlID` Атрибут содержит идентификатор элемента управления, привязанных к расширителя. `PopupControlID` Атрибут содержит идентификатор всплывающей панели. В этом случае оба расширителей Показать той же панели, но различных панелях, возможно, также.
+Теперь расширьте каждое из двух текстовых полей с помощью `PopupControlExtender`. Атрибут `TargetControlID` предоставляет идентификатор элемента управления, привязанного к расширителю. Атрибут `PopupControlID` содержит идентификатор всплывающей панели. В этом случае оба расширителя отображают одну и ту же панель, но также могут быть разными панелями.
 
 [!code-aspx[Main](using-multiple-popup-controls-cs/samples/sample4.aspx)]
 
-Теперь при каждом нажатии в текстовом поле появляется календарь под полем, где можно выбрать дату. (Получение выбранную дату в текстовые поля будут освещены в другого учебника.)
+Теперь, когда вы щелкнули текстовое поле, под полем появляется календарь, позволяющий выбрать дату. (Чтобы получить выбранную дату обратно в текстовые поля, появятся различные учебники.)
 
-[![Календарь появляется, когда пользователь нажимает кнопку в текстовое поле](using-multiple-popup-controls-cs/_static/image2.png)](using-multiple-popup-controls-cs/_static/image1.png)
+[![календарь появляется, когда пользователь щелкает текстовое поле](using-multiple-popup-controls-cs/_static/image2.png)](using-multiple-popup-controls-cs/_static/image1.png)
 
-Календарь появляется, когда пользователь нажимает кнопку в текстовое поле ([Просмотр полноразмерного изображения](using-multiple-popup-controls-cs/_static/image3.png))
+Календарь появляется, когда пользователь щелкает текстовое поле ([щелкните, чтобы просмотреть изображение с полным размером](using-multiple-popup-controls-cs/_static/image3.png)).
 
 > [!div class="step-by-step"]
 > [Вперед](handling-postbacks-from-a-popup-control-with-an-updatepanel-cs.md)

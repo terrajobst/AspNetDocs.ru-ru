@@ -1,61 +1,61 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/animation/disabling-actions-during-animation-cs
-title: Отключение действий во время анимации (C#) | Документация Майкрософт
+title: Отключение действий во время анимацииC#() | Документация Майкрософт
 author: wenz
-description: Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Она также поддерживает действия...
+description: Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Он также поддерживает действие...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: 918026b4-2f63-421d-8546-df12856960a8
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/disabling-actions-during-animation-cs
 msc.type: authoredcontent
-ms.openlocfilehash: dd69317c4a9b5a98302683766e6bc699d3b6396d
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: e91205ad2f9e6ee1fdd869ceb7587c3a82754772
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65108653"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74599738"
 ---
 # <a name="disabling-actions-during-animation-c"></a>Отключение действий во время анимации (C#)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation7.cs.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation7CS.pdf)
+[Скачать код](https://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation7.cs.zip) или [скачать PDF](https://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation7CS.pdf)
 
-> Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Она также поддерживает действия, например, щелчки мышью. Тем не менее при щелчка кнопкой мыши запускает анимацию, желательно отключить щелчки мыши во время анимации.
+> Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Он также поддерживает действия, например щелчки мыши. Однако когда щелчок мыши запускает анимацию, желательно отключить щелчки мыши во время анимации.
 
 ## <a name="overview"></a>Обзор
 
-Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Она также поддерживает действия, например, щелчки мышью. Тем не менее при щелчка кнопкой мыши запускает анимацию, желательно отключить щелчки мыши во время анимации.
+Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Он также поддерживает действия, например щелчки мыши. Однако когда щелчок мыши запускает анимацию, желательно отключить щелчки мыши во время анимации.
 
 ## <a name="steps"></a>Шаги
 
-Во-первых, включите `ScriptManager` страницы; затем ASP.NET AJAX library загружена, что позволяет использовать набор средств управления:
+Во-первых, включите `ScriptManager` на странице. затем загружается библиотека ASP.NET AJAX, что позволяет использовать набор средств управления.
 
 [!code-aspx[Main](disabling-actions-during-animation-cs/samples/sample1.aspx)]
 
-Анимация будет применяться к HTML-кнопка следующим образом:
+Анимация будет применена к HTML-кнопке следующим образом:
 
 [!code-aspx[Main](disabling-actions-during-animation-cs/samples/sample2.aspx)]
 
-Обратите внимание, что элемент управления HTML используется вместо веб-элемент управления, поскольку мы не хотим, кнопку, чтобы создать обратной передачи; он просто должен запустить клиентские анимации для нас.
+Обратите внимание, что элемент управления HTML используется вместо веб-элемента управления, так как не нужно, чтобы кнопка была создана обратной передачей. Он просто запускает анимацию на стороне клиента для нас.
 
-Затем добавьте `AnimationExtender` на страницу, предоставляя `ID`, `TargetControlID` атрибут и обязательным `runat="server"`:
+Затем добавьте `AnimationExtender` на страницу, указав `ID`, атрибут `TargetControlID` и `runat="server"`обязательную:
 
 [!code-aspx[Main](disabling-actions-during-animation-cs/samples/sample3.aspx)]
 
-В рамках `<Animations>` узел, `<OnClick>` является правильного элемента для обработки щелчка мыши. Тем не менее во время анимации, а также может быть нажата кнопка. `<EnableAction>` Элемент заняться. Параметр `Enabled="false"` отключает кнопку как часть анимации. Так как мы используем несколько отдельных анимаций, (Отключение кнопки и фактическое анимации), `<Parallel>` элемент является обязательным для объединения одной анимации вместе в одну. Вот полная разметка для `AnimationExtender`:
+В `<Animations>` узле `<OnClick>` является правым элементом для управления щелчком мыши. Однако во время анимации кнопка может быть нажата. Элемент `<EnableAction>` может позаботиться об этом. Параметр `Enabled="false"` отключает кнопку как часть анимации. Так как мы используем несколько отдельных анимаций (отключив кнопку и фактические анимации), элемент `<Parallel>` необходим для объединения одной анимации в одну. Ниже приведена полная разметка для `AnimationExtender`.
 
 [!code-aspx[Main](disabling-actions-during-animation-cs/samples/sample4.aspx)]
 
-Также возможно включить кнопку после анимации, используя следующий XML-элемент в конец списка:
+Кроме того, можно было бы снова включить кнопку после анимации, используя следующий XML-элемент в конце списка:
 
 [!code-xml[Main](disabling-actions-during-animation-cs/samples/sample5.xml)]
 
-Однако в данном сценарии это окажется бесполезной после кнопки исчезает и остается невидимым в конце анимации.
+Однако в данном сценарии это будет бесполезно, так как кнопка исчезает и не отображается в конце анимации.
 
-[![Кнопка отключена, а анимация](disabling-actions-during-animation-cs/_static/image2.png)](disabling-actions-during-animation-cs/_static/image1.png)
+[![кнопка отключена сразу после запуска анимации](disabling-actions-during-animation-cs/_static/image2.png)](disabling-actions-during-animation-cs/_static/image1.png)
 
-Кнопка отключена, а анимация ([Просмотр полноразмерного изображения](disabling-actions-during-animation-cs/_static/image3.png))
+Кнопка будет отключена сразу после запуска анимации ([щелкните, чтобы просмотреть изображение с полным размером](disabling-actions-during-animation-cs/_static/image3.png)).
 
 > [!div class="step-by-step"]
 > [Назад](animating-in-response-to-user-interaction-cs.md)

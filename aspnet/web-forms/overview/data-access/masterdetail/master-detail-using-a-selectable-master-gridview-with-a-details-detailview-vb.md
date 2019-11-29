@@ -1,143 +1,143 @@
 ---
 uid: web-forms/overview/data-access/masterdetail/master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb
-title: «Основной/подробности» с помощью выбираемого основного элемента GridView с DetailView (Visual Basic) | Документация Майкрософт
+title: "\"Основной/подробности\" с помощью выбираемого элемента управления GridView с подробностями DetailView (VB) | Документация Майкрософт"
 author: rick-anderson
-description: Этом учебном курсе будет GridView, строки которого включают название и цену каждого продукта, а также кнопки "выбрать". При нажатии кнопки Select для particu...
+description: В этом учебнике есть элемент управления GridView, чьи строки содержат имя и цену каждого продукта вместе с кнопкой выбора. Нажмите кнопку выбрать для партику...
 ms.author: riande
 ms.date: 03/31/2010
 ms.assetid: 1d1a7c93-971d-4690-9c5e-dac0e5014a09
 msc.legacyurl: /web-forms/overview/data-access/masterdetail/master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 4f97508aabe64d83a29ae50134d608f64c9cf72e
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: a953c00acc4c37fd563321477b6b21689d6e686c
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65131435"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74576443"
 ---
 # <a name="masterdetail-using-a-selectable-master-gridview-with-a-details-detailview-vb"></a>Отчет "Основной/подробности" с помощью элемента управления GridView с возможностью выбора для основной информации и элемента управления DetailView для подробных сведений (VB)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Скачайте пример приложения](http://download.microsoft.com/download/5/d/7/5d7571fc-d0b7-4798-ad4a-c976c02363ce/ASPNET_Data_Tutorial_10_VB.exe) или [скачать PDF](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/datatutorial10vb1.pdf)
+[Скачивание примера приложения](https://download.microsoft.com/download/5/d/7/5d7571fc-d0b7-4798-ad4a-c976c02363ce/ASPNET_Data_Tutorial_10_VB.exe) или [Загрузка PDF-файла](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/datatutorial10vb1.pdf)
 
-> Этом учебном курсе будет GridView, строки которого включают название и цену каждого продукта, а также кнопки "выбрать". При нажатии кнопки Select для конкретного продукта приведет к его полные сведения для отображения в элементе управления DetailsView на этой же странице.
+> В этом учебнике есть элемент управления GridView, чьи строки содержат имя и цену каждого продукта вместе с кнопкой выбора. Нажатие кнопки выбрать для конкретного продукта приведет к тому, что все его полные сведения будут отображаться в элементе управления DetailsView на той же странице.
 
-## <a name="introduction"></a>Вступление
+## <a name="introduction"></a>Введение
 
-В [предыдущем учебном курсе](master-detail-filtering-across-two-pages-vb.md) мы рассмотрели создание отчета «основной/подробности» с помощью двух веб-страницах: «основной» веб-страницы, с которой отображался список поставщиков и веб-странице «Подробности», перечислявшей продукты, предоставляемые выбранным Поставщик. Этот формат отчета могут быть включены в одну страницу. Этом учебном курсе будет GridView, строки которого включают название и цену каждого продукта, а также кнопки "выбрать". При нажатии кнопки Select для конкретного продукта приведет к его полные сведения для отображения в элементе управления DetailsView на этой же странице.
+В [предыдущем учебном курсе](master-detail-filtering-across-two-pages-vb.md) было показано, как создать отчет «основной/подробности» с помощью двух веб-страниц: «главной» веб-страницы, из которой был отображен список поставщиков. и веб-страницу "сведения", в которой перечислены продукты, предоставляемые выбранным поставщиком. Этот формат отчета с двумя страницами можно сжать на одну страницу. В этом учебнике есть элемент управления GridView, чьи строки содержат имя и цену каждого продукта вместе с кнопкой выбора. Нажатие кнопки выбрать для конкретного продукта приведет к тому, что все его полные сведения будут отображаться в элементе управления DetailsView на той же странице.
 
-[![При нажатии кнопки Select отображаются сведения о продукте](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image2.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image1.png)
+[![нажатии кнопки выбрать отображает сведения о продукте.](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image2.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image1.png)
 
-**Рис. 1**: При нажатии кнопки Select отображаются сведения о продукте ([Просмотр полноразмерного изображения](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image3.png))
+**Рис. 1**. нажатие кнопки "выбрать" отображает сведения о продукте ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image3.png))
 
-## <a name="step-1-creating-a-selectable-gridview"></a>Шаг 1. Создание доступный для выбора элемента управления GridView
+## <a name="step-1-creating-a-selectable-gridview"></a>Шаг 1. Создание выбираемого элемента управления GridView
 
-Вспомним, что две страницы «основной/подробности» сообщить, что каждой основной записи имелась гиперссылка, при щелчке, отправленных пользователя на страницу подробностей, передав имя выбранной строки `SupplierID` значение в строке запроса. Такие гиперссылка добавлялась к каждой строке GridView, использующей HyperLinkField. Для одной страницы основной/подробности отчета, нам понадобится кнопки для каждой строки GridView, при нажатии на ней отображаются сведения. Можно настроить элемент управления GridView для включения кнопки Select для каждой строки, которая вызывает обратную передачу и помечает эту строку как GridView [SelectedRow](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.selectedrow.aspx).
+Вспомним, что в двух-страничном отчете «основной/подробности» каждая Главная запись включала гиперссылку, которая при щелчке отправляет пользователю на страницу сведений, передавая `SupplierID` значение нажатой строки в строке запроса. Такая гиперссылка была добавлена в каждую строку GridView с помощью HyperLinkField. Для одностраничного отчета «основной/подробности» требуется кнопка для каждой строки GridView, при нажатии которой отображаются подробные сведения. Элемент управления GridView можно настроить для включения кнопки выбора для каждой строки, которая вызывает обратную передачу, и помечает эту строку как [Селектедров](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.selectedrow.aspx)GridView.
 
-Начните с добавления элемента управления GridView для `DetailsBySelecting.aspx` странице в `Filtering` папки, установка его `ID` свойства `ProductsGrid`. Добавьте новый ObjectDataSource, именуемый `AllProductsDataSource` , вызывающий `ProductsBLL` класса `GetProducts()` метод.
+Для начала добавьте элемент управления GridView на страницу `DetailsBySelecting.aspx` в папке `Filtering`, установив для свойства `ID` значение `ProductsGrid`. Затем добавьте новый элемент управления ObjectDataSource с именем `AllProductsDataSource`, который вызывает метод `GetProducts()` класса `ProductsBLL`.
 
-[![Создание нового ObjectDataSource, именуемого AllProductsDataSource](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image5.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image4.png)
+[![создать элемент управления ObjectDataSource с именем Аллпродуктсдатасаурце](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image5.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image4.png)
 
-**Рис. 2**: Создайте элемент управления ObjectDataSource с именем `AllProductsDataSource` ([Просмотр полноразмерного изображения](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image6.png))
+**Рис. 2**. Создание элемента управления ObjectDataSource с именем `AllProductsDataSource` ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image6.png))
 
-[![Использование класса ProductsBLL](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image8.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image7.png)
+[![использования класса ProductsBLL](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image8.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image7.png)
 
-**Рис. 3**: Используйте `ProductsBLL` класс ([Просмотр полноразмерного изображения](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image9.png))
+**Рис. 3**. использование класса `ProductsBLL` ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image9.png))
 
-[![Настройка ObjectDataSource на вызов метода GetProducts()](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image11.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image10.png)
+[![настроить ObjectDataSource для вызова метода Products ()](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image11.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image10.png)
 
-**Рис. 4**: Настройка ObjectDataSource на Invoke `GetProducts()` метод ([Просмотр полноразмерного изображения](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image12.png))
+**Рис. 4**. Настройка ObjectDataSource для вызова метода `GetProducts()` ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image12.png))
 
-Измените поля GridView удаления все, кроме `ProductName` и `UnitPrice` полей BoundField. Кроме того, вы можете настроить эти поля BoundField, при необходимости, например при форматировании `UnitPrice` BoundField как денежной единицы и изменив `HeaderText` свойств полей BoundFields. Эти действия можно выполнить графически, щелкнув ссылку Правка столбцов смарт-теге элемента GridView, или путем ручной настройки декларативного синтаксиса.
+Измените поля GridView, удалив все, кроме `ProductName` и `UnitPrice` BoundFields. Кроме того, вы можете настроить эти BoundFields по мере необходимости, например форматирование `UnitPrice` BoundField в виде валюты и изменение свойств `HeaderText` BoundFields. Эти действия можно выполнить графически, щелкнув ссылку Edit Columns (изменить столбцы) в смарт-теге GridView или настроив декларативный синтаксис вручную.
 
-[![Удалите все, кроме ProductName и UnitPrice полей BoundField](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image14.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image13.png)
+[![удалить все BoundFields, кроме ProductName и UnitPrice](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image14.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image13.png)
 
-**Рис. 5**: Удалить все, но `ProductName` и `UnitPrice` полей BoundField ([Просмотр полноразмерного изображения](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image15.png))
+**Рис. 5**. удаление всех `ProductName` и `UnitPrice` BoundFields ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image15.png))
 
-Окончательная разметка GridView является:
+Последняя разметка для GridView:
 
 [!code-aspx[Main](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/samples/sample1.aspx)]
 
-Далее нам нужно пометить GridView как выбираемый, которая будет добавлена кнопка Select для каждой строки. Для этого просто установите флажок Разрешить выделение в смарт-теге элемента GridView.
+Далее необходимо пометить GridView как выбираемое, что приведет к добавлению кнопки выбрать в каждую строку. Чтобы сделать это, просто установите флажок Включить выбор в смарт-теге GridView.
 
-[![Убедитесь в доступный для выбора строки GridView](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image17.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image16.png)
+[![сделать строки GridView выбираемыми](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image17.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image16.png)
 
-**Рис. 6**: Доступным для выделения строк GridView ([Просмотр полноразмерного изображения](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image18.png))
+**Рис. 6**. обеспечение выбора строк GridView ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image18.png))
 
-Установить флажок Enabling Selection добавлено поле добавляет CommandField для `ProductsGrid` GridView с его `ShowSelectButton` свойство присвоено значение True. В результате кнопка "выбрать" для каждой строки GridView, как показано на рис. 6. По умолчанию, кнопки Select визуализируются как LinkButton, но можно использовать кнопки или ImageButtons вместо через CommandField `ButtonType` свойство.
+При проверке параметра "Включение выбора" в `ProductsGrid` GridView добавляется элемент CommandField со свойством `ShowSelectButton`, установленным в значение true. Это приводит к нажатию кнопки SELECT для каждой строки GridView, как показано на рис. 6. По умолчанию кнопки выбора отображаются как LinkButton, но вместо этого можно использовать кнопки или Имажебуттонс в свойстве `ButtonType` CommandField.
 
 [!code-aspx[Main](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/samples/sample2.aspx)]
 
-При нажатии кнопки Select строки GridView обратная и GridView `SelectedRow` обновляется свойство. В дополнение к `SelectedRow` элемент GridView предоставляет свойства, [SelectedIndex](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.selectedindex%28VS.80%29.aspx), [SelectedValue](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.selectedvalue%28VS.80%29.aspx), и [SelectedDataKey](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.selecteddatakey%28VS.80%29.aspx) свойства. `SelectedIndex` Свойство возвращает индекс выбранной строки, тогда как `SelectedValue` и `SelectedDataKey` свойства возвращают значения, основанные на GridView [свойство DataKeyNames](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.datakeynames%28VS.80%29.aspx).
+При нажатии кнопки выбора строки GridView происходит обратная передача, и свойство `SelectedRow` GridView обновляется. В дополнение к свойству `SelectedRow` GridView предоставляет свойства [SelectedIndex](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.selectedindex%28VS.80%29.aspx), [SelectedValue](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.selectedvalue%28VS.80%29.aspx)и [селектеддатакэй](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.selecteddatakey%28VS.80%29.aspx) . Свойство `SelectedIndex` возвращает индекс выбранной строки, тогда как свойства `SelectedValue` и `SelectedDataKey` возвращают значения, основанные на [свойстве DataKeyNames](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.datakeynames%28VS.80%29.aspx)элемента GridView.
 
-`DataKeyNames` Свойство позволяет связать одно или несколько полей данных значения с каждой строкой и часто применяется для соотнесения уникально идентифицирующей информации из базовых данных с каждой строкой GridView. `SelectedValue` Свойство возвращает значение первого `DataKeyNames` поля данных для выбранной строки, тогда как `SelectedDataKey` свойство возвращает выбранной строки `DataKey` объект, содержащий все значения для указанных полей ключа данных для этой строки.
+Свойство `DataKeyNames` используется для связывания одного или нескольких значений полей данных с каждой строкой и обычно используется для уникальной идентификации сведений из базовых данных в каждой строке GridView. Свойство `SelectedValue` возвращает значение первого `DataKeyNames` поля данных для выбранной строки, где, как свойство `SelectedDataKey` возвращает объект `DataKey` выбранной строки, который содержит все значения для указанных полей ключа данных для этой строки.
 
-`DataKeyNames` Свойству автоматически присваивается уникальная идентификация поля данных при привязке источника данных к GridView, DetailsView и FormView через конструктор. Хотя это свойство задано для нас автоматически в предшествующих учебных курсах, примеры работали бы без `DataKeyNames` указанное свойство. Тем не менее, для элемента gridviewс возможностью выбора в этом руководстве, а также для последующих учебных курсах, в которых мы будет изучать вставку, обновление и удаление `DataKeyNames` свойства должен быть задан правильно. Отвлекитесь и убедитесь, что элемента GridView `DataKeyNames` свойству `ProductID`.
+При привязке источника данных к GridView, DetailsView или FormView в конструкторе свойству `DataKeyNames` автоматически присваивается однозначно идентифицирующее поле данных. Хотя это свойство было задано автоматически в предыдущих учебных курсах, примеры работали бы без указанного свойства `DataKeyNames`. Однако для элемента управления GridView в этом учебнике, а также для будущих руководств, в которых мы будем изучать вставку, обновление и удаление, необходимо правильно задать свойство `DataKeyNames`. Подождите, что свойство `DataKeyNames` GridView имеет значение `ProductID`.
 
-Давайте просмотрим наши достижения в данный момент через браузер. Обратите внимание на то, что GridView перечисляет названия и цены всех продуктов вместе с кнопкой Select типа LinkButton. При нажатии кнопки Select вызывает обратную передачу. На шаге 2 будет показано, как заставить DetailsView отвечать на эту обратную передачу, отображая подробности о выбранном продукте.
+Давайте проверим наш ход работы через браузер. Обратите внимание, что в элементе управления GridView указаны имя и цена для всех продуктов, а также выбрана LinkButton. Нажатие кнопки выбрать приводит к выполнению обратной передачи. На этапе 2 мы посмотрим, как элемент DetailsView будет отвечать на эту обратную передачу, отображая сведения о выбранном продукте.
 
-[![Каждая строка продукта содержит кнопку LinkButton SELECT](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image20.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image19.png)
+[![каждая строка продукта содержит SELECT LinkButton](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image20.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image19.png)
 
-**Рис. 7**: Каждая строка продукта содержит кнопкой Select типа LinkButton ([Просмотр полноразмерного изображения](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image21.png))
+**Рис. 7**. Каждая строка продукта содержит команду LinkButton ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image21.png)).
 
 ## <a name="highlighting-the-selected-row"></a>Выделение выбранной строки
 
-`ProductsGrid` GridView есть `SelectedRowStyle` свойство, которое может использоваться для указания стиля оформления выбранной строки. При должном использовании это может повысить удобство работы пользователя с более четко показывая, какая строка GridView выбрана. Для этого руководства пусть выбранная строка будет выделяться желтым фоном.
+`ProductsGrid` GridView имеет свойство `SelectedRowStyle`, которое можно использовать для диктовки визуального стиля для выбранной строки. Это может повысить эффективность работы пользователя. Это позволяет более точно показать, какая строка GridView выбрана в данный момент. В этом руководстве мы добавим выделенную строку желтым фоном.
 
-Как и в предыдущих учебных курсах, постараемся сохранить относящиеся к эстетическим деталям параметры, определенные в виде классов CSS. Таким образом, создайте новый класс CSS в `Styles.css` с именем `SelectedRowStyle`.
+Как и в предыдущих учебных курсах, мы стремимся к тому, чтобы параметры, связанные с Aesthetic, определялись как классы CSS. Поэтому создайте новый класс CSS в `Styles.css` с именем `SelectedRowStyle`.
 
 [!code-css[Main](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/samples/sample3.css)]
 
-Чтобы применить этот класс CSS для `SelectedRowStyle` свойство *все* изменение элементов управления GridView в серии учебных `GridView.skin` обложки в `DataWebControls` темы для включения `SelectedRowStyle` параметры, как показано ниже:
+Чтобы применить этот класс CSS к свойству `SelectedRowStyle` *всех* элементов управления GridView в серии руководств, измените обложку `GridView.skin` в теме `DataWebControls`, чтобы включить параметры `SelectedRowStyle`, как показано ниже.
 
 [!code-aspx[Main](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/samples/sample4.aspx)]
 
-С этим добавлением выбранная строка GridView теперь выделяется желтым цветом.
+С этим добавлением выбранная строка GridView теперь выделяется желтым цветом фона.
 
-[![Настройка внешнего вида выбранной строки, с помощью свойства SelectedRowStyle элемента GridView](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image23.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image22.png)
+[![настроить внешний вид выбранной строки с помощью свойства Селектедровстиле GridView](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image23.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image22.png)
 
-**Рис. 8**: Настройка с помощью внешнего вида выбранные строки GridView `SelectedRowStyle` свойство ([Просмотр полноразмерного изображения](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image24.png))
+**Рис. 8**. Настройка внешнего вида выбранной строки с помощью свойства `SelectedRowStyle` GridView ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image24.png))
 
-## <a name="step-2-displaying-the-selected-products-details-in-a-detailsview"></a>Шаг 2. Отображение сведений о выбранном продукте в элементе управления DetailsView
+## <a name="step-2-displaying-the-selected-products-details-in-a-detailsview"></a>Шаг 2. Отображение сведений о выбранном продукте в элементе DetailsView
 
-С помощью `ProductsGrid` GridView готов, остается лишь добавить элемент DetailsView, отображающий сведения о конкретном выбранном продукте. Добавьте элемент управления DetailsView над GridView и создайте новый ObjectDataSource, именуемый `ProductDetailsDataSource`. Поскольку мы хотим, чтобы этот DetailsView отображал информацию о выбранном продукте конкретном, Настройка `ProductDetailsDataSource` использовать `ProductsBLL` класса `GetProductByProductID(productID)` метод.
+По завершении `ProductsGrid` GridView остается только добавить DetailsView, отображающий сведения о конкретном выбранном продукте. Добавьте элемент управления DetailsView над элементом GridView и создайте новый объект ObjectDataSource с именем `ProductDetailsDataSource`. Так как мы хотим, чтобы эта DetailsView отображала определенную информацию о выбранном продукте, настройте `ProductDetailsDataSource` для использования метода `GetProductByProductID(productID)` класса `ProductsBLL`.
 
-[![Вызов метода класса ProductsBLL GetProductByProductID(productID)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image26.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image25.png)
+[![вызвать метод Жетпродуктбипродуктид (productID) класса ProductsBLL](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image26.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image25.png)
 
-**Рис. 9**: Вызвать `ProductsBLL` класса `GetProductByProductID(productID)` метод ([Просмотр полноразмерного изображения](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image27.png))
+**Рис. 9**. вызов метода `GetProductByProductID(productID)` класса `ProductsBLL` ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image27.png))
 
-У *`productID`* значение параметра, полученные из элемента управления GridView `SelectedValue` свойство. Как уже говорилось ранее, GridView `SelectedValue` свойство возвращает значение первого ключа данных для выбранной строки. Таким образом, крайне важно, GridView `DataKeyNames` свойству `ProductID`, так что выбранной строки `ProductID` значение возвращается `SelectedValue`.
+Получите значение *`productID`* параметра, полученное из свойства `SelectedValue` элемента управления GridView. Как мы обсуждали ранее, свойство `SelectedValue` GridView возвращает первое значение ключа данных для выбранной строки. Поэтому крайне важно, чтобы свойство `DataKeyNames` GridView было установлено в значение `ProductID`, чтобы возвращаемое значение `ProductID` строки возвращалось `SelectedValue`.
 
-[![Значение параметра productID свойство SelectedValue элемента GridView](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image29.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image28.png)
+[![задать параметр productID для свойства SelectedValue GridView](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image29.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image28.png)
 
-**Рис. 10**: Задайте *`productID`* параметра к элементу GridView `SelectedValue` свойство ([Просмотр полноразмерного изображения](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image30.png))
+**Рис. 10**. установка параметра *`productID`* для свойства `SelectedValue` GridView ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image30.png))
 
-Один раз `productDetailsDataSource` ObjectDataSource правильно настроен и привязан к элементу DetailsView, это руководство представляет собой полный! При первом посещении страницы выбранные строки отсутствуют, поэтому GridView `SelectedValue` возвращает `Nothing`. Так как отсутствуют продукты с `NULL` `ProductID` значение, не возвращает записей `GetProductByProductID(productID)` метода, это означает, что DetailsView не отображается (см. рис. 11). При нажатии кнопки Select строки GridView, обратная передача и DetailsView обновляется. Это раз свойство GridView `SelectedValue` возвращает `ProductID` выбранной строки, `GetProductByProductID(productID)` возвращает метод `ProductsDataTable` с информацией о данном конкретном продукте, а DetailsView показывает эти подробности (см. рис. 12).
+После того как `productDetailsDataSource` ObjectDataSource правильно настроен и привязан к элементу DetailsView, этот учебник завершен. При первом посещении страницы не выбрана ни одна строка, поэтому свойство `SelectedValue` GridView возвращает `Nothing`. Поскольку нет продуктов со значением `NULL` `ProductID`, метод `GetProductByProductID(productID)` не возвращает никаких записей, что означает, что элемент DetailsView не отображается (см. рис. 11). При нажатии кнопки выбора строки GridView происходит обратная передача и обновляется элемент DetailsView. В этот раз `SelectedValue` свойство GridView возвращает `ProductID` выбранной строки, метод `GetProductByProductID(productID)` возвращает `ProductsDataTable` со сведениями об этом конкретном продукте, а DetailsView показывает эти сведения (см. рис. 12).
 
-[![Отображается при первом посещении страниц по только в GridView](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image32.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image31.png)
+[![при первом посещении отображается только GridView](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image32.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image31.png)
 
-**Рис. 11**: При первом посещении отображается только GridView ([Просмотр полноразмерного изображения](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image33.png))
+**Рис. 11**. при первом посещении отображается только GridView ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image33.png))
 
-[![При выборе строки, отображаются сведения о продукте](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image35.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image34.png)
+[![после выбора строки отображаются сведения о продукте](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image35.png)](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image34.png)
 
-**Рис. 12**: При выборе строки, отображаются сведения о продукте ([Просмотр полноразмерного изображения](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image36.png))
+**Рис. 12**. при выборе строки отображаются сведения о продукте ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-vb/_static/image36.png)).
 
 ## <a name="summary"></a>Сводка
 
-В этом и трех предшествующих учебных курсах мы рассмотрели ряд приемов отображения отчетов «основной/подробности». В этом учебном курсе мы рассмотрели использование элемента gridviewс возможностью выбора для размещения основных записей и DetailsView для отображения сведений о выбранных основных записях на этой же странице. В предыдущих учебных курсах мы рассмотрели способ отображения обобщенных и подробных отчетов с помощью списков DropDownList и отображение основных записей на одной странице, а также записей на другом.
+В этом и предыдущих трех руководствах мы видели ряд методов отображения отчетов «основной/подробности». В этом учебнике мы рассмотрели использование выбранного элемента управления GridView для размещения основных записей и DetailsView, чтобы отобразить сведения о выбранной главной записи на той же странице. В предыдущих руководствах мы рассмотрели, как отображать отчеты "основной/подробности" с помощью элементов управления DropDownList и отображать главные записи на одной веб-странице и в подробных записях на другом.
 
-Данный учебный курс завершает рассмотрение отчетов «основной/подробности». Начиная с следующем учебном курсе мы начнем и исследование настраиваемого форматирования с помощью GridView, DetailsView и FormView. Мы увидим, как настроить внешний вид этих элементов управления на основе данных, привязанных к ним, как создать сводку данных в нижнем колонтитуле элемента GridView и как использовать шаблоны, чтобы получить большую степень контроля над компоновкой.
+Этот учебник завершает изучение отчетов «основной/подробности». Начиная с следующего учебника мы начнем исследование настраиваемого форматирования с помощью GridView, DetailsView и FormView. Мы посмотрим, как настроить внешний вид этих элементов управления на основе привязанных к ним данных, как суммировать данные в нижнем колонтитуле GridView и как использовать шаблоны для получения более высокого уровня контроля над макетом.
 
-Счастливого вам программирования!
+Поздравляем с программированием!
 
 ## <a name="about-the-author"></a>Об авторе
 
-[Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP.NET и основатель веб- [4GuysFromRolla.com](http://www.4guysfromrolla.com), работает с веб-технологиями Microsoft с 1998 года. Скотт — независимый консультант, преподаватель и автор. Его последняя книга — [ *Sams Teach ASP.NET 2.0 in 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Ним можно связаться по адресу [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти в [ http://ScottOnWriting.NET ](http://ScottOnWriting.NET).
+[Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP. NET и основатель [4GuysFromRolla.com](http://www.4guysfromrolla.com), работал с веб-технологиями Майкрософт с 1998. Скотт работает как независимый консультант, преподаватель и модуль записи. Его последняя книга — [*Sams обучать себя ASP.NET 2,0 за 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Он доступен по адресу [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти по адресу [http://ScottOnWriting.NET](http://ScottOnWriting.NET).
 
-## <a name="special-thanks-to"></a>Особая благодарность
+## <a name="special-thanks-to"></a>Специальная благодарность
 
-В этой серии руководств пособий рецензировалась многими компетентными редакторами. Основной рецензент этого учебного был (Hilton giesenow). Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
+Эта серия руководств была рассмотрена многими полезными рецензентами. Специалист по интересу для этого руководства был Хилтон Гизнау. Хотите ознакомиться с моими будущими статьями MSDN? Если это так, расположите строку в [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
 > [Назад](master-detail-filtering-across-two-pages-vb.md)

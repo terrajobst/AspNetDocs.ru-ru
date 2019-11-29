@@ -1,71 +1,71 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/modalpopup/launching-a-modal-popup-window-from-server-code-vb
-title: Запуск модального всплывающего окна из серверного кода (Visual Basic) | Документация Майкрософт
+title: Запуск модального всплывающего окна из серверного кода (VB) | Документация Майкрософт
 author: wenz
-description: Элемент управления ModalPopup в AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью средств на стороне клиента. Тем не менее в некоторых сценариях требуется, t...
+description: Элемент управления ModalPopup в наборе средств AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью клиентских средств. Однако в некоторых сценариях требуется, чтобы t...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: 36ca81d7-906d-4db2-952b-add18a4ff421
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/modalpopup/launching-a-modal-popup-window-from-server-code-vb
 msc.type: authoredcontent
-ms.openlocfilehash: b98546952174bfcf08736195c87d515eda150319
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 1368a78d35ac6461bbc2e852e468f42eef2c0d2c
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65132607"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74606592"
 ---
 # <a name="launching-a-modal-popup-window-from-server-code-vb"></a>Запуск модального всплывающего окна из серверного кода (VB)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup1.vb.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup1VB.pdf)
+[Скачать код](https://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup1.vb.zip) или [скачать PDF](https://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup1VB.pdf)
 
-> Элемент управления ModalPopup в AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью средств на стороне клиента. Тем не менее в некоторых сценариях требуется запуск Открытие модального всплывающего окна на стороне сервера.
+> Элемент управления ModalPopup в наборе средств AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью клиентских средств. Однако в некоторых сценариях требуется, чтобы открытие модального всплывающего окна вызывалось на стороне сервера.
 
 ## <a name="overview"></a>Обзор
 
-Элемент управления ModalPopup в AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью средств на стороне клиента. Тем не менее в некоторых сценариях требуется запуск Открытие модального всплывающего окна на стороне сервера.
+Элемент управления ModalPopup в наборе средств AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью клиентских средств. Однако в некоторых сценариях требуется, чтобы открытие модального всплывающего окна вызывалось на стороне сервера.
 
 ## <a name="steps"></a>Шаги
 
-Во-первых веб-элемента управления кнопки ASP.NET должен продемонстрировать, как работает элемент управления ModalPopup. Добавьте кнопку в &lt;формы&gt; элемент на новой странице:
+Прежде всего, для демонстрации работы элемента управления ModalPopup требуется веб-элемент управления ASP.NET Button. Добавьте такую кнопку в элемент &lt;Form&gt; на новой странице:
 
 [!code-aspx[Main](launching-a-modal-popup-window-from-server-code-vb/samples/sample1.aspx)]
 
-Затем необходимо разметку для контекстного меню, которые вы хотите создать. Определяют его как `<asp:Panel>` управления и убедитесь, что он включает элемент управления Button. Элемент управления ModalPopup предоставляет функциональные возможности для создания такой кнопки закрытия контекстного меню. в противном случае нет простого способа перейдите к нему упразднены.
+Затем требуется разметка для всплывающего окна, которое необходимо создать. Определите его как элемент управления `<asp:Panel>` и убедитесь, что он включает элемент управления "Кнопка". Элемент управления ModalPopup предлагает функциональные возможности, позволяющие сделать такую кнопку закрытой. в противном случае нет простого способа разрешить его.
 
 [!code-aspx[Main](launching-a-modal-popup-window-from-server-code-vb/samples/sample2.aspx)]
 
-Добавьте элемент управления ModalPopup из набора средств AJAX ASP.NET на страницу. Задать свойства для кнопки, который загружает элемент управления, кнопки, что делает его исчезают и идентификатор фактическое всплывающего окна.
+Затем добавьте элемент управления ModalPopup из набора средств AJAX для ASP.NET на страницу. Задайте свойства для кнопки, которая загружает элемент управления, кнопку, которая исчезает, и идентификатор фактического всплывающего окна.
 
 [!code-aspx[Main](launching-a-modal-popup-window-from-server-code-vb/samples/sample3.aspx)]
 
-Как и все веб-страницы, на базе ASP.NET AJAX; Диспетчера скриптов, необходимый для загрузки библиотеки JavaScript, необходимые для различных браузеры:
+Как и для всех веб-страниц на основе ASP.NET AJAX; Диспетчер скриптов необходим для загрузки необходимых библиотек JavaScript для различных целевых браузеров:
 
 [!code-aspx[Main](launching-a-modal-popup-window-from-server-code-vb/samples/sample4.aspx)]
 
-Запустите пример в браузере. При нажатии кнопки на кнопке, откроется модальное всплывающее окно. Чтобы получить тот же эффект, с помощью кода на стороне сервера, необходима новая кнопка:
+Запустите пример в браузере. При нажатии кнопки появляется модальное всплывающее окно. Чтобы добиться того же результата с помощью кода на стороне сервера, требуется новая кнопка:
 
 [!code-aspx[Main](launching-a-modal-popup-window-from-server-code-vb/samples/sample5.aspx)]
 
-Как вы видите, нажмите кнопку создает обратную передачу и выполняет `ServerButton_Click()` метод на сервере. В этом методе вызывается функция JavaScript `launchModal()` выполняется должна быть точной, функция JavaScript, которая выполняется после загрузки страницы:
+Как видите, нажатие кнопки приводит к созданию обратной передачи и выполнению метода `ServerButton_Click()` на сервере. В этом методе функция JavaScript с именем `launchModal()` выполняется как точная, функция JavaScript будет выполняться после загрузки страницы:
 
 [!code-aspx[Main](launching-a-modal-popup-window-from-server-code-vb/samples/sample6.aspx)]
 
-Задача `launchModal()` является отображение ModalPopup. `launchModal()` Функция выполняется после загрузки страницы HTML. В этот момент Однако платформа AJAX для ASP.NET не был полностью загружен еще. Таким образом `launchModal()` функция просто задает переменную, которая впоследствии необходимо отображать элемент управления ModalPopup:
+Задача `launchModal()` заключается в отображении ModalPopup. Функция `launchModal()` выполняется после загрузки полной HTML-страницы. Однако в этот момент платформа ASP.NET AJAX еще не была полностью загружена. Таким образом, функция `launchModal()` просто задает переменную, которую элемент управления ModalPopup должен показывать позже:
 
 [!code-html[Main](launching-a-modal-popup-window-from-server-code-vb/samples/sample7.html)]
 
-`pageLoad()` Функция JavaScript — это специальная функция, которая выполняется после полной загрузки ASP.NET AJAX. Поэтому добавим код этой функции для отображения элемента управления ModalPopup, но только если `launchModal()` был вызван до:
+`pageLoad()` функция JavaScript — это специальная функция, которая выполняется после полной загрузки ASP.NET AJAX. Поэтому мы добавим код в эту функцию для отображения элемента управления ModalPopup, но только при вызове `launchModal()` до:
 
 [!code-javascript[Main](launching-a-modal-popup-window-from-server-code-vb/samples/sample8.js)]
 
-`$find()` Функция ищет именованный элемент на странице и ожидает, что в качестве параметра идентификатор на стороне сервера. Таким образом `$find("mpe")` возвращает представление клиентского элемента управления ModalPopup; его `show()` метод позволяет отображается всплывающее окно.
+Функция `$find()` ищет именованный элемент на странице и ожидает идентификатор на стороне сервера в качестве параметра. Таким образом, `$find("mpe")` Возвращает клиентское представление элемента управления ModalPopup; его `show()` метод позволяет отображать всплывающее окно.
 
-[![Модальное всплывающее окно появляется при нажатии одной из кнопок](launching-a-modal-popup-window-from-server-code-vb/_static/image2.png)](launching-a-modal-popup-window-from-server-code-vb/_static/image1.png)
+[![модальное всплывающее окно появляется при нажатии одной из кнопок](launching-a-modal-popup-window-from-server-code-vb/_static/image2.png)](launching-a-modal-popup-window-from-server-code-vb/_static/image1.png)
 
-Модальное всплывающее окно появляется при нажатии одной из кнопок ([Просмотр полноразмерного изображения](launching-a-modal-popup-window-from-server-code-vb/_static/image3.png))
+Модальное всплывающее окно появляется при нажатии одной из кнопок ([щелкните, чтобы просмотреть изображение с полным размером](launching-a-modal-popup-window-from-server-code-vb/_static/image3.png)).
 
 > [!div class="step-by-step"]
 > [Назад](positioning-a-modalpopup-cs.md)

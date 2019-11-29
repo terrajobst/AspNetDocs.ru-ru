@@ -1,146 +1,146 @@
 ---
 uid: web-forms/overview/data-access/masterdetail/master-detail-filtering-with-a-dropdownlist-vb
-title: Фильтрация с помощью элемента управления DropDownList (VB) основной/подробности | Документация Майкрософт
+title: Фильтрация "основной/подробности" с помощью DropDownList (VB) | Документация Майкрософт
 author: rick-anderson
-description: В этом руководстве будет показано, как отображение основных записей в элемент управления DropDownList и сведений выбранного элемента списка в элементе управления GridView.
+description: В этом учебнике мы рассмотрим, как отобразить основные записи в элементе управления DropDownList и сведения о выбранном элементе списка в GridView.
 ms.author: riande
 ms.date: 03/31/2010
 ms.assetid: ea44717e-ab2e-46cd-a692-e4a9c0de194c
 msc.legacyurl: /web-forms/overview/data-access/masterdetail/master-detail-filtering-with-a-dropdownlist-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 665acdc303b97d393b714f0b2605ee65b27e0feb
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 62cd296a3f36e1779666a6b5db15b0ce2488d0e4
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65124243"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74639958"
 ---
 # <a name="masterdetail-filtering-with-a-dropdownlist-vb"></a>Фильтрация "Основной/подробности" с помощью элемента управления DropDownList (VB)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Скачайте пример приложения](http://download.microsoft.com/download/5/d/7/5d7571fc-d0b7-4798-ad4a-c976c02363ce/ASPNET_Data_Tutorial_7_VB.exe) или [скачать PDF](master-detail-filtering-with-a-dropdownlist-vb/_static/datatutorial07vb1.pdf)
+[Скачивание примера приложения](https://download.microsoft.com/download/5/d/7/5d7571fc-d0b7-4798-ad4a-c976c02363ce/ASPNET_Data_Tutorial_7_VB.exe) или [Загрузка PDF-файла](master-detail-filtering-with-a-dropdownlist-vb/_static/datatutorial07vb1.pdf)
 
-> В этом руководстве будет показано, как отображение основных записей в элемент управления DropDownList и сведений выбранного элемента списка в элементе управления GridView.
+> В этом учебнике мы рассмотрим, как отобразить основные записи в элементе управления DropDownList и сведения о выбранном элементе списка в GridView.
 
-## <a name="introduction"></a>Вступление
+## <a name="introduction"></a>Введение
 
-Распространенным типом отчета является *отчет "основной/подробности"*, в который начинается с демонстрации определенного набора «основных» записей. Пользователь может затем перейти к одной из основных записей, таким образом просматривая основной записи «подробности». «Основной/подробности» сообщает являются идеальным выбором для визуализации отношений «один ко многим», например отчет все категории и позволяющего пользователю выбрать определенную категорию и отобразить соответствующие продукты. Кроме того отчеты «основной/подробности» полезны для отображения подробных сведений из чрезвычайно «широких» таблиц (таблиц со множеством столбцов). Например, уровень «основной» отчета «основной/подробности» могут отображаться только продукта имя и цену за единицу продуктов в базе данных, и подробное изучение конкретного продукта будет отображать дополнительные поля продукта (категория, поставщик, количество в единицах измерения, и т. д).
+Общий тип отчета — это отчет « *основной/подробности*», в котором начинается отчет, в котором показан набор «основных» записей. Затем пользователь может выполнить детализацию до одной из основных записей, тем самым просмотрев сведения о главной записи. Отчеты «основной/подробности» являются идеальным выбором для визуализации связей «один ко многим», например для отчета, отображающего все категории, и предоставления пользователю возможности выбора определенной категории и отображения связанных с ней продуктов. Кроме того, отчеты «основной/подробности» полезны для отображения подробных сведений из особенно «широких» таблиц (с большим количеством столбцов). Например, уровень «основной» отчета «основной/подробности» может показывать только название продукта и цену за единицу в базе данных, а детализация конкретного продукта покажет дополнительные поля продуктов (категория, поставщик, количество на единицу и т. д.).
 
-Существует много способов, с помощью которых можно реализовать отчета «основной/подробности». В этом и трех следующих руководствах мы рассмотрим различные отчеты «основной/подробности». В этом руководстве мы рассмотрим отображение основных записей в [управления DropDownList](https://msdn.microsoft.com/library/dtx91y0z.aspx) и сведений выбранного элемента списка в элементе управления GridView. В частности отчет «основной/подробности» этого руководства будут перечислены категории и сведения о продукте.
+Существует множество способов реализации отчета «основной/подробности». В этом и следующих трех учебных курсах мы рассмотрим разнообразные отчеты «основной/подробности». В этом учебнике мы рассмотрим, как отобразить основные записи в [элементе управления DropDownList](https://msdn.microsoft.com/library/dtx91y0z.aspx) и сведения о выбранном элементе списка в GridView. В частности, в отчете «основной/подробности» этого учебника будут перечислены сведения о категории и продукте.
 
-## <a name="step-1-displaying-the-categories-in-a-dropdownlist"></a>Шаг 1. Отображение категорий в элементе управления DropDownList
+## <a name="step-1-displaying-the-categories-in-a-dropdownlist"></a>Шаг 1. Отображение категорий в элементе DropDownList
 
-Категории в элементе управления DropDownList, перечислит нашего отчета «основной/подробности» с продуктами выбранного элемента списка отображаются ниже на странице в элементе управления GridView. Первой задачей, то категорий, отображаемых в элементе управления DropDownList. Откройте `FilterByDropDownList.aspx` странице в `Filtering` папки, перетащите DropDownList с панели элементов в конструктор страницы и задать его `ID` свойства `Categories`. Затем щелкните ссылку выберите источник данных смарт-теге DropDownList. Откроется мастер настройки источника данных.
+В нашем отчете «основной/подробности» будут перечислены категории в DropDownList, а продукты выбранного элемента списка отображаются на странице в элементе управления GridView. Первая задача, предшествующая нам, заключается в том, чтобы отобразить категории в DropDownList. Откройте страницу `FilterByDropDownList.aspx` в папке `Filtering`, перетащите DropDownList с панели элементов на конструктор страницы и задайте для свойства `ID` значение `Categories`. Затем щелкните ссылку Выбор источника данных из смарт-тега DropDownList. Отобразится мастер настройки источника данных.
 
-[![Укажите источник данных DropDownList](master-detail-filtering-with-a-dropdownlist-vb/_static/image2.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image1.png)
+[![указать источник данных DropDownList](master-detail-filtering-with-a-dropdownlist-vb/_static/image2.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image1.png)
 
-**Рис. 1**: Укажите источник данных DropDownList ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image3.png))
+**Рис. 1**. Указание источника данных DropDownList ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-with-a-dropdownlist-vb/_static/image3.png))
 
-Добавить новый ObjectDataSource, именуемый `CategoriesDataSource` , вызывающий `CategoriesBLL` класса `GetCategories()` метод.
+Выберите, чтобы добавить новый элемент ObjectDataSource с именем `CategoriesDataSource`, который вызывает метод `GetCategories()` класса `CategoriesBLL`.
 
-[![Добавьте новый ObjectDataSource, именуемый CategoriesDataSource](master-detail-filtering-with-a-dropdownlist-vb/_static/image5.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image4.png)
+[![добавить новый элемент управления ObjectDataSource с именем CategoriesDataSource](master-detail-filtering-with-a-dropdownlist-vb/_static/image5.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image4.png)
 
-**Рис. 2**: Добавить новый элемент управления ObjectDataSource с именем `CategoriesDataSource` ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image6.png))
+**Рис. 2**. Добавление нового элемента управления ObjectDataSource с именем `CategoriesDataSource` ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-with-a-dropdownlist-vb/_static/image6.png))
 
-[![Выберите для использования класса](master-detail-filtering-with-a-dropdownlist-vb/_static/image8.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image7.png)
+[![выбрать использование класса CategoriesBLL](master-detail-filtering-with-a-dropdownlist-vb/_static/image8.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image7.png)
 
-**Рис. 3**: Выбор `CategoriesBLL` класс ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image9.png))
+**Рис. 3**. Выбор использования класса `CategoriesBLL` ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-with-a-dropdownlist-vb/_static/image9.png))
 
-[![Настройте элемент ObjectDataSource для использования метода GetCategories()](master-detail-filtering-with-a-dropdownlist-vb/_static/image11.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image10.png)
+[![настроить ObjectDataSource для использования метода-Categories ()](master-detail-filtering-with-a-dropdownlist-vb/_static/image11.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image10.png)
 
-**Рис. 4**: Настройка ObjectDataSource для использования `GetCategories()` метод ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image12.png))
+**Рис. 4**. Настройка ObjectDataSource для использования метода `GetCategories()` ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-with-a-dropdownlist-vb/_static/image12.png))
 
-После настройки ObjectDataSource все равно небходимо указать поле источника данных, которые должны отображаться в DropDownList, а какие должно быть связано в качестве значения для элемента списка. У `CategoryName` как отображение и `CategoryID` как значение для каждого элемента списка.
+После настройки ObjectDataSource необходимо указать поле источника данных, которое должно быть отображено в элементе управления DropDownList, и какое из значений должно быть связано со значением элемента списка. По`CategoryName` поле в качестве отображаемого и `CategoryID` в качестве значения для каждого элемента списка.
 
-[![Иметь элемент управления DropDownList отображает поле «Категория» и CategoryID использовать как значение](master-detail-filtering-with-a-dropdownlist-vb/_static/image14.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image13.png)
+[![отображать поле CategoryName и использовать CategoryID в качестве значения](master-detail-filtering-with-a-dropdownlist-vb/_static/image14.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image13.png)
 
-**Рис. 5**: Иметь элемент управления DropDownList отображает `CategoryName` и использует `CategoryID` как значение ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image15.png))
+**Рис. 5**. отображение поля `CategoryName` в DropDownList и использование `CategoryID` в качестве значения ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-with-a-dropdownlist-vb/_static/image15.png))
 
-На этом этапе у нас есть элемент управления DropDownList, заполненный записями из `Categories` (все действия выполняются приблизительно за шесть секунд). Рис. 6 показаны до сих при просмотре через браузер.
+На этом этапе у нас есть элемент управления DropDownList, который заполняется записями из таблицы `Categories` (все это выполняется около шести секунд). На рис. 6 показан ход работы в браузере.
 
-[![Раскрывающийся список с текущими категориями](master-detail-filtering-with-a-dropdownlist-vb/_static/image17.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image16.png)
+[![раскрывающийся список с текущими категориями](master-detail-filtering-with-a-dropdownlist-vb/_static/image17.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image16.png)
 
-**Рис. 6**: Раскрывающийся список текущих категорий ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image18.png))
+**Рис. 6**. раскрывающийся список с текущими категориями ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-with-a-dropdownlist-vb/_static/image18.png))
 
-## <a name="step-2-adding-the-products-gridview"></a>Шаг 2. Добавление элемента GridView с продуктами
+## <a name="step-2-adding-the-products-gridview"></a>Шаг 2. Добавление элемента управления GridView для продуктов
 
-Последним шагом создания отчета «основной/подробности» является отображение списка продуктов, связанных с выбранной категорией. Для этого добавьте на страницу GridView и создайте новый ObjectDataSource, именуемый `productsDataSource`. У `productsDataSource` должен получать данные от `ProductsBLL` класса `GetProductsByCategoryID(categoryID)` метод.
+Последним шагом в нашем отчете «основной/подробности» является отображение списка продуктов, связанных с выбранной категорией. Для этого добавьте элемент управления GridView на страницу и создайте новый элемент ObjectDataSource с именем `productsDataSource`. Элементы управления `productsDataSource` изменяют свои данные из метода `GetProductsByCategoryID(categoryID)` класса `ProductsBLL`.
 
-[![Выберите метод GetProductsByCategoryID(categoryID)](master-detail-filtering-with-a-dropdownlist-vb/_static/image20.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image19.png)
+[![выбрать метод GetProductsByCategoryID (КодТипа)](master-detail-filtering-with-a-dropdownlist-vb/_static/image20.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image19.png)
 
-**Рис. 7**: Выберите `GetProductsByCategoryID(categoryID)` метод ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image21.png))
+**Рис. 7**. выбор метода `GetProductsByCategoryID(categoryID)` ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-with-a-dropdownlist-vb/_static/image21.png))
 
-После выбора этого метода мастер ObjectDataSource запрашивает значения для метода *`categoryID`* параметра. Чтобы использовать значение выбранного `categories` элемент DropDownList источника параметра установите для элемента управления, а для ControlID – `Categories`.
+После выбора этого метода мастер ObjectDataSource запрашивает значение параметра *`categoryID`* метода. Чтобы использовать значение выбранного элемента DropDownList `categories`, установите источник параметра в значение Control, а для ControlID — значение `Categories`.
 
-[![Значение параметра categoryID значение DropDownList категорий](master-detail-filtering-with-a-dropdownlist-vb/_static/image23.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image22.png)
+[![задать для параметра categoryID значение элемента DropDownList категорий](master-detail-filtering-with-a-dropdownlist-vb/_static/image23.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image22.png)
 
-**Рис. 8**: Задайте *`categoryID`* параметр значению `Categories` DropDownList ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image24.png))
+**Рис. 8**. Установка для параметра *`categoryID`* значения `Categories` DropDownList ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-with-a-dropdownlist-vb/_static/image24.png))
 
-Отвлекитесь и просмотрите ход работы в браузере. При первом просмотре страницы, продукты, принадлежащие выбранной категории (Напитки) отображаются (как показано на рис. 9), но изменения в элемент управления DropDownList данные не обновляются. Это обусловлено тем, для обновления GridView необходимо осуществление обратной передачи. Для этого у нас есть два варианта (ни один из которых требует написания кода):
+Уделите немного времени для проверки хода выполнения в браузере. При первом посещении страницы отображаются эти продукты, относящиеся к выбранной категории (напитки) (как показано на рис. 9), но изменение DropDownList не приводит к обновлению данных. Это связано с тем, что для обновления элемента управления GridView должна быть выполнена обратная передача. Для этого у нас есть два варианта (ни один из них не требует написания кода):
 
-- **Задайте свойства AutoPostBack**[свойство AutoPostBack](https://msdn.microsoft.com/library/system.web.ui.webcontrols.listcontrol.autopostback%28VS.80%29.aspx)**значение true.** (Это можно сделать, выбрав вариант включить AutoPostBack в смарт-теге DropDownList.) Это приведет к запуску обратную передачу при выборе DropDownList элемент изменен пользователем. Таким образом когда пользователь выбирает новую категорию в элементе управления DropDownList произойдет обратная передача и GridView будет обновлен продуктами для новой выбранной категории. (Это подход, который я использовал в этом руководстве).
-- **Добавьте кнопку веб-элемент управления рядом с DropDownList.** Задайте его `Text` свойство для обновления или что-то подобное. При таком подходе пользователь потребуется выбрать новую категорию и нажмите кнопку. Нажмите кнопку вызывает обратную передачу и обновление GridView отображены продукты выбранной категории.
+- **Задайте**для[Свойства автообратный вызов](https://msdn.microsoft.com/library/system.web.ui.webcontrols.listcontrol.autopostback%28VS.80%29.aspx)категорий**значение true.** (Это можно сделать, установив флажок Включить автообратную передачу в смарт-теге DropDownList.) Это приведет к запуску обратной передачи при изменении пользователем выбранного элемента DropDownList. Таким образом, когда пользователь выбирает новую категорию из DropDownList, произойдет обратная передача, и GridView будет обновлен с использованием продуктов для вновь выбранной категории. (Это подход, который я использовал в этом учебнике.)
+- **Добавьте веб-элемент управления "Кнопка" рядом с DropDownList.** Задайте для свойства `Text` значение обновить или что-то подобное. При таком подходе пользователю нужно будет выбрать новую категорию и нажать кнопку. Нажатие кнопки приведет к обратной передаче и обновлению GridView для вывода списка продуктов выбранной категории.
 
-На рис. 9 и 10 показана работа отчета «основной/подробности» в действии.
+На рисунках 9 и 10 показан отчет «основной/подробности» в действии.
 
-[![При первом просмотре странице отображаются продукты отображаются](master-detail-filtering-with-a-dropdownlist-vb/_static/image26.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image25.png)
+[![при первом посещении страницы отображаются продукты напитков](master-detail-filtering-with-a-dropdownlist-vb/_static/image26.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image25.png)
 
-**Рис. 9**: При первом просмотре странице отображаются продукты отображаются ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image27.png))
+**Рис. 9**. при первом посещении страницы отображаются продукты напитков ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-with-a-dropdownlist-vb/_static/image27.png)).
 
-[![Выбор нового продукта (Produce) автоматически вызывает обратную передачу, обновляется GridView](master-detail-filtering-with-a-dropdownlist-vb/_static/image29.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image28.png)
+[![выборе нового продукта (фрукты) автоматически вызывает обратную передачу, обновляя элемент GridView](master-detail-filtering-with-a-dropdownlist-vb/_static/image29.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image28.png)
 
-**Рис. 10**: Выбор нового продукта (Produce) автоматически вызывает обратную передачу, обновляется GridView ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image30.png))
+**Рис. 10**. Выбор нового продукта (фрукты) автоматически вызывает обратную передачу, обновляя элемент управления GridView ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-with-a-dropdownlist-vb/_static/image30.png))
 
-## <a name="adding-a----choose-a-category----list-item"></a>Добавление элемента списка «--выберите категорию--»
+## <a name="adding-a----choose-a-category----list-item"></a>Добавление элемента списка "--выберите категорию--"
 
-При первом просмотре `FilterByDropDownList.aspx` странице категорий, по умолчанию, показывающие отображаются продукты в GridView выбран первый элемент списка DropDownList (Напитки). Вместо отображения продуктов первой категории, нам может потребоваться вместо этого элемент DropDownList выбран, — говорит нечто вроде: «--выберите категорию--».
+При первом посещении страницы `FilterByDropDownList.aspx` по умолчанию выбирается первый элемент списка в элементе управления DropDownList, отображая продукты категории «напитки» в GridView. Вместо того чтобы показывать продукты первой категории, нам может потребоваться выбрать элемент DropDownList, который выглядит примерно так: "--выберите категорию--".
 
-Чтобы добавить новый элемент списка DropDownList, перейдите в окно свойств и щелкните эллипсы в `Items` свойство. Добавить новый элемент списка с `Text` «--выберите категорию--» и `Value` `-1`.
+Чтобы добавить новый элемент списка в DropDownList, перейдите к окно свойств и щелкните многоточие в свойстве `Items`. Добавьте новый элемент списка с `Text` "--выберите категорию--" и `-1``Value`.
 
-[![Добавление выберите категорию--элемента списка](master-detail-filtering-with-a-dropdownlist-vb/_static/image32.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image31.png)
+[![Добавить--выберите категорию--элемент списка](master-detail-filtering-with-a-dropdownlist-vb/_static/image32.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image31.png)
 
-**Рис. 11**: Добавление выберите категорию--элемент списка ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image33.png))
+**Рис. 11**. Добавление a--Выбор категории--элемент списка ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-with-a-dropdownlist-vb/_static/image33.png))
 
-Кроме того можно добавить элемент списка, добавив следующую разметку в элемент управления DropDownList:
+Кроме того, можно добавить элемент списка, добавив в DropDownList следующую разметку:
 
 [!code-aspx[Main](master-detail-filtering-with-a-dropdownlist-vb/samples/sample1.aspx)]
 
-Кроме того, нам нужно установить элемент управления DropDownList `AppendDataBoundItems` значение True, так как при привязке категорий к DropDownList из ObjectDataSource они будут перезаписывать все элементы списка, добавленные вручную, если `AppendDataBoundItems` не установлено значение True.
+Кроме того, необходимо присвоить `AppendDataBoundItems`у элемента управления DropDownList значение true, так как при привязке категорий к DropDownList из ObjectDataSource они будут перезаписывать все добавленные вручную элементы списка, если `AppendDataBoundItems` не имеет значения true.
 
-![Установите для свойства AppendDataBoundItems значение true](master-detail-filtering-with-a-dropdownlist-vb/_static/image34.png)
+![Присвойте свойству Аппенддатабаундитемс значение true.](master-detail-filtering-with-a-dropdownlist-vb/_static/image34.png)
 
-**Рис. 12**: Задайте `AppendDataBoundItems` присваивается значение True
+**Рис. 12**. установка свойства `AppendDataBoundItems` в значение true
 
-После внесения этих изменений при первом просмотре страницы выбран параметр «--выберите категорию--» и продукты не отображаются.
+После внесения этих изменений при первом посещении страницы выбирается параметр "--выбрать категорию--", и продукты не отображаются.
 
-[![При загрузке начальной страницы продукты не отображаются](master-detail-filtering-with-a-dropdownlist-vb/_static/image36.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image35.png)
+[![при начальной загрузке страницы продукты не отображаются](master-detail-filtering-with-a-dropdownlist-vb/_static/image36.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image35.png)
 
-**Рис. 13**: На начальной странице продукты нет нагрузки отображаются ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image37.png))
+**Рис. 13**. при начальной загрузке страницы продукты не отображаются ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-with-a-dropdownlist-vb/_static/image37.png))
 
-Поскольку выбран элемент списка «--выберите категорию--» продукты не отображаются при, так как его значение равно `-1` и нет ни одного продукта в базе данных с помощью `CategoryID` из `-1`. Если это поведение необходимо, то дело сделано на этом этапе! Если, однако будет отображаться *все* категорий при выборе элемента списка «--выберите категорию--» вернитесь `ProductsBLL` и настройте `GetProductsByCategoryID(categoryID)` метод, чтобы он вызывал `GetProducts()` метод Если переданный в *`categoryID`* меньше нуля:
+Причина, по которой продукты не отображаются, не отображается, поскольку выбран элемент списка "--выберите категорию--", так как его значение `-1`, а в базе данных нет продуктов с `CategoryID` `-1`. Если это желаемое поведение, то на этом этапе вы закончите! Если же вы хотите отобразить *все* категории при выборе элемента списка "--выберите категорию--", вернитесь к классу `ProductsBLL` и настройте метод `GetProductsByCategoryID(categoryID)`, чтобы он вызывал метод `GetProducts()`, если переданный в *`categoryID`* параметр меньше нуля:
 
 [!code-vb[Main](master-detail-filtering-with-a-dropdownlist-vb/samples/sample2.vb)]
 
-Используемый прием аналогичен приемом, использованным для отображения всех поставщиков в [декларативные параметры](../basic-reporting/declarative-parameters-cs.md) учебника, несмотря на то, что в этом примере мы используем значение `-1` для указания, что все записи должны быть извлечь в отличие от `Nothing`. Это обусловлено *`categoryID`* параметр `GetProductsByCategoryID(categoryID)` метод ожидает в качестве целочисленное значение, переданное в, тогда как в этом руководстве декларативным параметрам передавался входной строковой параметр.
+Используемая методика аналогична подходу, который мы использовали для отображения всех поставщиков в учебнике по [декларативным параметрам](../basic-reporting/declarative-parameters-cs.md) , хотя в этом примере используется значение `-1`, указывающее, что необходимо извлечь все записи, а не `Nothing`. Это обусловлено тем, что параметр *`categoryID`* метода `GetProductsByCategoryID(categoryID)` предполагает, что передано целочисленное значение, в то время как в учебнике по декларативным параметрам мы передали входной параметр String.
 
-Рис. 14 показан снимок экрана `FilterByDropDownList.aspx` при выборе параметра «--выберите категорию--». Здесь по умолчанию отображаются все продукты, и пользователь может сузить отображаемые, выбрав определенную категорию.
+На рис. 14 показан снимок экрана `FilterByDropDownList.aspx` при выборе параметра «--выберите категорию--». Здесь все продукты отображаются по умолчанию, и пользователь может уменьшить отображаемые данные, выбрав определенную категорию.
 
-[![Все продукты, теперь в списке по умолчанию](master-detail-filtering-with-a-dropdownlist-vb/_static/image39.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image38.png)
+[![все продукты теперь перечислены по умолчанию](master-detail-filtering-with-a-dropdownlist-vb/_static/image39.png)](master-detail-filtering-with-a-dropdownlist-vb/_static/image38.png)
 
-**Рис. 14**: Все продукты, теперь в списке по умолчанию ([Просмотр полноразмерного изображения](master-detail-filtering-with-a-dropdownlist-vb/_static/image40.png))
+**Рис. 14**. Теперь все продукты перечислены по умолчанию ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-with-a-dropdownlist-vb/_static/image40.png))
 
 ## <a name="summary"></a>Сводка
 
-При отображении иерархически связанных данных часто полезно представлять данные с помощью отчетов «основной/подробности», из которых пользователь может начать изучение данных в верхней части иерархии и перейти к подробным сведениям. В этом руководстве было рассмотрено создание "основной/подробности" простой отчет, показывающий продукты выбранной категории. Это осуществлялось с помощью элемента управления DropDownList для списка категорий и GridView для продуктов, принадлежащих выбранной категории.
+При отображении иерархически связанных данных часто бывает удобно представлять данные с помощью отчетов «основной/подробности», из которых пользователь может начать изучение данных из верхней части иерархии и детализировать подробные сведения. В этом учебнике мы рассмотрели создание простого отчета «основной/подробности», в котором отображаются продукты выбранной категории. Это было выполнено с помощью DropDownList для списка категорий и GridView для продуктов, принадлежащих выбранной категории.
 
-В [следующему руководству](master-detail-filtering-with-two-dropdownlists-vb.md) мы рассмотрим один шаг интерфейс DropDownList, с помощью двух элементов управления DropDownList.
+В [следующем учебном курсе](master-detail-filtering-with-two-dropdownlists-vb.md) мы рассмотрим интерфейс DropDownList на один шаг дальше, используя два элементов управления DropDownList.
 
-Счастливого вам программирования!
+Поздравляем с программированием!
 
 ## <a name="about-the-author"></a>Об авторе
 
-[Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP.NET и основатель веб- [4GuysFromRolla.com](http://www.4guysfromrolla.com), работает с веб-технологиями Microsoft с 1998 года. Скотт — независимый консультант, преподаватель и автор. Его последняя книга — [ *Sams Teach ASP.NET 2.0 in 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Ним можно связаться по адресу [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти в [ http://ScottOnWriting.NET ](http://ScottOnWriting.NET).
+[Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP. NET и основатель [4GuysFromRolla.com](http://www.4guysfromrolla.com), работал с веб-технологиями Майкрософт с 1998. Скотт работает как независимый консультант, преподаватель и модуль записи. Его последняя книга — [*Sams обучать себя ASP.NET 2,0 за 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Он доступен по адресу [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти по адресу [http://ScottOnWriting.NET](http://ScottOnWriting.NET).
 
 > [!div class="step-by-step"]
 > [Назад](master-detail-using-a-selectable-master-gridview-with-a-details-detailview-cs.md)

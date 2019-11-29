@@ -1,61 +1,61 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/animation/modifying-animations-from-the-server-side-vb
-title: Изменение анимации со стороны сервера (Visual Basic) | Документация Майкрософт
+title: Изменение анимации со стороны сервера (VB) | Документация Майкрософт
 author: wenz
-description: Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Анимации могут также...
+description: Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Анимации также могут быть...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: addcf4aa-340a-460b-9c64-506424a1f725
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/modifying-animations-from-the-server-side-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 5ba5a32b53fc304ec3a3f1af5c6533a6a0622ac0
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: ebc311d1a931ad611d9556799c94440d41a9cf49
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65127352"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74575208"
 ---
 # <a name="modifying-animations-from-the-server-side-vb"></a>Изменение анимации со стороны сервера (VB)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation9.vb.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation9VB.pdf)
+[Скачать код](https://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation9.vb.zip) или [скачать PDF](https://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation9VB.pdf)
 
-> Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Также может измениться анимации на стороне сервера
+> Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Анимации также можно изменить на стороне сервера
 
 ## <a name="overview"></a>Обзор
 
-Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Также может измениться анимации на стороне сервера
+Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Анимации также можно изменить на стороне сервера
 
 ## <a name="steps"></a>Шаги
 
-Во-первых, включите `ScriptManager` страницы; затем ASP.NET AJAX library загружена, что позволяет использовать набор средств управления:
+Во-первых, включите `ScriptManager` на странице. затем загружается библиотека ASP.NET AJAX, что позволяет использовать набор средств управления.
 
 [!code-aspx[Main](modifying-animations-from-the-server-side-vb/samples/sample1.aspx)]
 
-Анимация будет применяться к панели текста, который выглядит следующим образом:
+Анимация будет применена к панели текста, которая выглядит следующим образом:
 
 [!code-aspx[Main](modifying-animations-from-the-server-side-vb/samples/sample2.aspx)]
 
-В связанный класс CSS для панели определить цвет фона, удобная и также установить фиксированную ширину для панели:
+В связанном классе CSS для панели задайте хороший цвет фона, а также задайте фиксированную ширину панели:
 
 [!code-css[Main](modifying-animations-from-the-server-side-vb/samples/sample3.css)]
 
-Остальная часть кода выполняется на стороне сервера и не использует разметки; Вместо этого он использует код для создания `AnimationExtender` управления:
+Остальная часть кода выполняется на стороне сервера и не использует разметку; Вместо этого он использует код для создания элемента управления `AnimationExtender`:
 
 [!code-aspx[Main](modifying-animations-from-the-server-side-vb/samples/sample4.aspx)]
 
-Тем не менее набор элементов управления в настоящее время не предоставляет доступ к API для создания отдельных анимаций. Тем не менее можно задать `AnimationExtender`свойство Animations в строку содержащего XML-разметку, при назначении анимации декларативно. Чтобы создать XML, который не может содержать `<Animations>` элемент, можно использовать XML платформы .NET Framework поддерживает или, как в следующем коде, просто укажите строку:
+Однако набор элементов управления в настоящее время не предоставляет доступ к API для создания отдельных анимаций. Однако можно задать для свойства анимации `AnimationExtender`строку, содержащую XML-разметку, используемую при декларативном назначении анимации. Чтобы создать XML-файл, который не должен содержать элемент `<Animations>` можно использовать поддержку XML .NET Framework или, как показано в следующем коде, просто укажите строку:
 
 [!code-vb[Main](modifying-animations-from-the-server-side-vb/samples/sample5.vb)]
 
-Наконец, добавьте `AnimationExtender` управления в текущую страницу в `<form runat="server">` элемент, убедившись, что анимация включена и выполняется:
+Наконец, добавьте элемент управления `AnimationExtender` на текущую страницу в элементе `<form runat="server">`, убедившись, что анимация включена и выполняется:
 
 [!code-vb[Main](modifying-animations-from-the-server-side-vb/samples/sample6.vb)]
 
-[![Анимация создается с использованием серверного C# и Visual Basic кода](modifying-animations-from-the-server-side-vb/_static/image2.png)](modifying-animations-from-the-server-side-vb/_static/image1.png)
+[![анимация создается с помощью кода/VB на стороне C#сервера](modifying-animations-from-the-server-side-vb/_static/image2.png)](modifying-animations-from-the-server-side-vb/_static/image1.png)
 
-Анимация создается с использованием серверного C# и Visual Basic кода ([Просмотр полноразмерного изображения](modifying-animations-from-the-server-side-vb/_static/image3.png))
+Анимация создается с помощью кода/VB на стороне C#сервера ([щелкните, чтобы просмотреть изображение с полным размером](modifying-animations-from-the-server-side-vb/_static/image3.png)).
 
 > [!div class="step-by-step"]
 > [Назад](triggering-an-animation-in-another-control-vb.md)

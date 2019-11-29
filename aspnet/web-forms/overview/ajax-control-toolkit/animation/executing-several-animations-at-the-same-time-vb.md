@@ -1,61 +1,61 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/animation/executing-several-animations-at-the-same-time-vb
-title: Выполнение нескольких анимаций одновременно (Visual Basic) | Документация Майкрософт
+title: Одновременное исполнение нескольких анимаций (VB) | Документация Майкрософт
 author: wenz
-description: Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Он позволяет выполнять severa...
+description: Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Он позволяет запускать серьезность...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: 2469f7ea-1489-42fb-a8e1-414c90141ce9
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/executing-several-animations-at-the-same-time-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 02eb078a4fb8fddbbac18e4631214f354388cc2f
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: fc11debd06c897c29db56d42167d483f5608cdf8
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133415"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74575322"
 ---
-# <a name="executing-several-animations-at-the-same-time-vb"></a>Выполнение нескольких анимаций одновременно (VB)
+# <a name="executing-several-animations-at-the-same-time-vb"></a>Одновременное исполнение нескольких анимаций (VB)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation2.vb.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation2VB.pdf)
+[Скачать код](https://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation2.vb.zip) или [скачать PDF](https://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation2VB.pdf)
 
-> Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Он одновременное выполнение нескольких анимаций параллельно.
+> Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Он позволяет параллельно запускать несколько анимаций.
 
 ## <a name="overview"></a>Обзор
 
-Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Он одновременное выполнение нескольких анимаций параллельно.
+Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Он позволяет параллельно запускать несколько анимаций.
 
 ## <a name="steps"></a>Шаги
 
-Во-первых, включите `ScriptManager` страницы; затем ASP.NET AJAX library загружена, что позволяет использовать набор средств управления:
+Во-первых, включите `ScriptManager` на странице. затем загружается библиотека ASP.NET AJAX, что позволяет использовать набор средств управления.
 
 [!code-aspx[Main](executing-several-animations-at-the-same-time-vb/samples/sample1.aspx)]
 
-Анимация будет применяться к панели текста, который выглядит следующим образом:
+Анимация будет применена к панели текста, которая выглядит следующим образом:
 
 [!code-aspx[Main](executing-several-animations-at-the-same-time-vb/samples/sample2.aspx)]
 
-В связанный класс CSS для панели определить цвет фона, удобная и также установить фиксированную ширину для панели:
+В связанном классе CSS для панели задайте хороший цвет фона, а также задайте фиксированную ширину панели:
 
 [!code-css[Main](executing-several-animations-at-the-same-time-vb/samples/sample3.css)]
 
-Затем добавьте `AnimationExtender` на страницу, предоставляя `ID`, `TargetControlID` атрибут и обязательным `runat="server"`:
+Затем добавьте `AnimationExtender` на страницу, указав `ID`, атрибут `TargetControlID` и `runat="server"`обязательную:
 
 [!code-aspx[Main](executing-several-animations-at-the-same-time-vb/samples/sample4.aspx)]
 
-В рамках `<Animations>` узла, используйте `<OnLoad>` для запуска анимации после полной загрузки страницы. Как правило `<OnLoad>` принимает только одна анимация. Платформа анимации позволяет объединить несколько анимаций в один с помощью `<Parallel>` элемент. Все анимации в `<Parallel>` выполняются одновременно.
+В `<Animations>` узле используйте `<OnLoad>` для запуска анимации после полной загрузки страницы. Как правило, `<OnLoad>` принимает только одну анимацию. Платформа анимации позволяет объединить несколько анимаций в одну с помощью элемента `<Parallel>`. Все анимации в `<Parallel>` выполняются одновременно.
 
-Вот возможные разметку для `AnimationExtender` элемента управления, исчезновение и изменение размера панели, в то же время:
+Ниже приведена возможная разметка для элемента управления `AnimationExtender`, плавное уменьшение и изменение размера панели.
 
 [!code-aspx[Main](executing-several-animations-at-the-same-time-vb/samples/sample5.aspx)]
 
-И действительно: при выполнении этого скрипта панели отображается, затем изменяет размеры (более чем утраивается его ширину и высоту, потребленных в рамках) и исчезает, в то же время.
+И действительно: при запуске этого скрипта панель отображается, затем изменяется размер (больше, чем утраивается ее ширина и вдвое высота) и плавно исчезает.
 
-[![Исчезновение и изменение размера (в том числе его содержимого, благодаря механизм визуализации в браузере) панели](executing-several-animations-at-the-same-time-vb/_static/image2.png)](executing-several-animations-at-the-same-time-vb/_static/image1.png)
+[![панель вытекает и изменяет ее размер (включая содержимое, благодаря подсистеме рендеринга в браузере).](executing-several-animations-at-the-same-time-vb/_static/image2.png)](executing-several-animations-at-the-same-time-vb/_static/image1.png)
 
-Исчезновение и изменение размера (в том числе его содержимого, благодаря механизм визуализации в браузере) панели ([Просмотр полноразмерного изображения](executing-several-animations-at-the-same-time-vb/_static/image3.png))
+Панель вытекает и изменяет ее размер (включая содержимое, благодаря подсистеме рендеринга в браузере) ([щелкните, чтобы просмотреть изображение с полным размером](executing-several-animations-at-the-same-time-vb/_static/image3.png)).
 
 > [!div class="step-by-step"]
 > [Назад](adding-animation-to-a-control-vb.md)

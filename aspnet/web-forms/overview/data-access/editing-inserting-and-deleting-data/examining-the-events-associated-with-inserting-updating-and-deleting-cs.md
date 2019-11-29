@@ -1,282 +1,282 @@
 ---
 uid: web-forms/overview/data-access/editing-inserting-and-deleting-data/examining-the-events-associated-with-inserting-updating-and-deleting-cs
-title: Обзор событий, связанных со вставкой, обновлением и удалением (C#) | Документация Майкрософт
+title: Изучение событий, связанных с вставкой, обновлением и удалением (C#) | Документация Майкрософт
 author: rick-anderson
-description: В этом учебном курсе мы рассмотрим использование событий, возникающих до, во время и после вставки обновления или удаления веб-элемента управления данными ASP.NET. КО...
+description: В этом учебнике мы рассмотрим использование событий, происходящих до, во время и после операции вставки, обновления или удаления веб-элемента управления данными ASP.NET. W...
 ms.author: riande
 ms.date: 07/17/2006
 ms.assetid: dab291a0-a8b5-46fa-9dd8-3d35b249201f
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/examining-the-events-associated-with-inserting-updating-and-deleting-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 8cec4f43063dfc6a624e4f3d819dacd5f1275242
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: a8c1388b73524a8bb918b67aa265db894c07636f
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65131601"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74572401"
 ---
 # <a name="examining-the-events-associated-with-inserting-updating-and-deleting-c"></a>Обзор событий, связанных со вставкой, обновлением и удалением (C#)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Скачайте пример приложения](http://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_17_CS.exe) или [скачать PDF](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/datatutorial17cs1.pdf)
+[Скачивание примера приложения](https://download.microsoft.com/download/9/c/1/9c1d03ee-29ba-4d58-aa1a-f201dcc822ea/ASPNET_Data_Tutorial_17_CS.exe) или [Загрузка PDF-файла](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/datatutorial17cs1.pdf)
 
-> В этом учебном курсе мы рассмотрим использование событий, возникающих до, во время и после вставки обновления или удаления веб-элемента управления данными ASP.NET. Также будет показано, как настройка интерфейса правки для обновления только подмножества полей продукта.
+> В этом учебнике мы рассмотрим использование событий, происходящих до, во время и после операции вставки, обновления или удаления веб-элемента управления данными ASP.NET. Также будет показано, как настроить интерфейс редактирования, чтобы обновить только подмножество полей продукта.
 
-## <a name="introduction"></a>Вступление
+## <a name="introduction"></a>Введение
 
-При использовании встроенных Вставка, редактирование или удаление функций элементов управления GridView, DetailsView и FormView, разнообразные действия происходят при упорядочении пользователь не завершит процесс добавления новой записи или удаления существующей записи. Как уже говорилось в [предыдущем учебном курсе](an-overview-of-inserting-updating-and-deleting-data-cs.md), при изменении строки в GridView, "Изменить" заменяется на кнопки "обновления" и "Отмена" и преобразование полей BoundField в текстовые поля. Когда конечный пользователь обновляет данные и последнее обновление, при обратной передаче выполняются следующие действия:
+При использовании встроенных функций вставки, редактирования или удаления элементов управления GridView, DetailsView или FormView при завершении пользователем процесса добавления новой записи или обновления или удаления существующей записи происходит ряд действий. Как мы обсуждали в [предыдущем учебном курсе](an-overview-of-inserting-updating-and-deleting-data-cs.md), при редактировании строки в GridView кнопка "Изменить" заменяется кнопками "Обновить" и "Отмена", а BoundFields превращается в текстовые поля. После того как конечный пользователь обновит данные и нажмет кнопку обновить, на обратную передачу выполняются следующие действия.
 
-1. GridView заполняет его ObjectDataSource `UpdateParameters` с уникальными идентифицирующими полями измененной записи (с помощью `DataKeyNames` свойства) и значения, введенные пользователем
-2. GridView вызывает его ObjectDataSource `Update()` метод, который в свою очередь вызывает соответствующий метод из базового объекта (`ProductsDAL.UpdateProduct`, в нашем предыдущем учебном курсе)
-3. Базовые данные, в которых теперь отражены внесенные изменения, повторно привязываются к GridView
+1. GridView заполняет `UpdateParameters` ObjectDataSource уникальными идентифицирующими полями (с помощью свойства `DataKeyNames`) и значениями, указанными пользователем.
+2. GridView вызывает метод `Update()` ObjectDataSource, который, в свою очередь, вызывает соответствующий метод в базовом объекте (`ProductsDAL.UpdateProduct`, в нашем предыдущем руководстве).
+3. Базовые данные, которые теперь содержат обновленные изменения, повторно привязаны к GridView
 
-Во время этой последовательности операций, ряд событий, благодаря чему мы можем создавать обработчики событий для добавления специальной логики там, где требуется. Например, до шага 1, GridView `RowUpdating` вызывает событие. Мы на этом этапе можно отменить запрос на обновление, если имеется ошибка проверки. Когда `Update()` вызывается метод, ObjectDataSource `Updating` события, предоставляя возможность добавить или настроить значения любого из `UpdateParameters`. После основного элемента управления ObjectDataSource методу объекта, порождается событие ObjectDataSource `Updated` события. Обработчик событий для `Updated` может проверить сведения об операции обновления, например, сколько строк затронуто и ли возникло исключение. Наконец, после шага 2, GridView `RowUpdated` вызывает событие; обработчик этого события может рассмотреть дополнительную информацию о так же, операция обновления выполняется.
+В ходе этой последовательности действий вызывается ряд событий, что позволяет нам создавать обработчики событий для добавления настраиваемой логики там, где это необходимо. Например, перед шагом 1 срабатывает событие `RowUpdating` GridView. На этом этапе можно отменить запрос на обновление в случае возникновения ошибки проверки. При вызове метода `Update()` срабатывает событие `Updating` ObjectDataSource, предоставляя возможность добавлять или настраивать значения любого из `UpdateParameters`. После завершения выполнения метода базового объекта ObjectDataSource возникает событие `Updated` ObjectDataSource. Обработчик события `Updated` может проверить сведения об операции обновления, например количество затронутых строк и наличие исключения. Наконец, после шага 2 срабатывает событие `RowUpdated` GridView. обработчик событий для этого события может проверять дополнительные сведения о только что выполненной операции обновления.
 
-Рис. 1 изображена эта последовательность событий и действия, при обновлении элемента управления GridView. Шаблон события на рис.1 не является уникальным для обновления с помощью GridView. Вставка, обновление или удаление данных из GridView, DetailsView и FormView запускает ту же последовательность событий предварительного и последующего уровней для веб-управления данными и элемент управления ObjectDataSource.
+На рис. 1 показана эта серия событий и действий при обновлении элемента управления GridView. Шаблон события на рис. 1 не является уникальным для обновления с помощью GridView. Вставка, обновление или удаление данных из GridView, DetailsView или FormView преЦипитатес одной и той же последовательности событий до и после уровня для веб-элемента управления данными и ObjectDataSource.
 
-[![Серию до и после события запускаются при обновлении данных в элементе управления GridView](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image2.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image1.png)
+[При обновлении данных в GridView ![вызывается ряд событий, выполняемых до и после события](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image2.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image1.png)
 
-**Рис. 1**: Серия до и после события Fire при обновлении данных в элементе управления GridView ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image3.png))
+**Рис. 1**. запуск действий, выполняемых до и после событий, при обновлении данных в элементе управления GridView ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image3.png))
 
-В этом учебном курсе мы рассмотрим применение этих событй для расширения встроенных Вставка, обновление и удаление возможностей ASP.NET данных веб-элементов управления. Также будет показано, как настройка интерфейса правки для обновления только подмножества полей продукта.
+В этом учебнике мы рассмотрим использование этих событий для расширения встроенных возможностей вставки, обновления и удаления веб-элементов управления данными ASP.NET. Также будет показано, как настроить интерфейс редактирования, чтобы обновить только подмножество полей продукта.
 
-## <a name="step-1-updating-a-productsproductnameandunitpricefields"></a>Шаг 1. Обновление продукта`ProductName`и`UnitPrice`поля
+## <a name="step-1-updating-a-productsproductnameandunitpricefields"></a>Шаг 1. Обновление полей`ProductName`и`UnitPrice`продукта
 
-В интерфейсы правки из предыдущего учебника *все* полей продукта, которые не были доступны только для чтения полями, доступными. Если требовалось удалить поле из GridView - сказать `QuantityPerUnit` — при обновлении данных веб-управления данными не устанавливал бы значение ObjectDataSource `QuantityPerUnit` `UpdateParameters` значение. Элемент управления ObjectDataSource передавал бы `null` значение в `UpdateProduct` метод слоя бизнес-логики (BLL), который изменит записи измененной базы данных `QuantityPerUnit` столбец `NULL` значение. Аналогичным образом, если требуемое поле, такие как `ProductName`, удаляется из интерфейса правки, операция обновления заканчивается аварийно с "*столбце «ProductName» запрещены значения NULL*" исключение. Причина такого поведения было, поскольку элемент управления ObjectDataSource был настроен для вызова `ProductsBLL` класса `UpdateProduct` метод, который требуется входной параметр для каждого из полей продукта. Таким образом, ObjectDataSource `UpdateParameters` коллекция содержала значение параметра для каждого метода входных параметров.
+В интерфейсах редактирования из предыдущего учебника должны быть добавлены *все* поля продукта, которые не были доступны только для чтения. Если бы было необходимо удалить поле из GridView-скажите `QuantityPerUnit`-при обновлении данных веб-элемент управления не задаст значение `QuantityPerUnit` `UpdateParameters` ObjectDataSource. Затем ObjectDataSource передавал `null` значение в метод `UpdateProduct` бизнес-логики (BLL), который изменит `QuantityPerUnit` столбец измененной записи базы данных на значение `NULL`. Аналогично, если обязательное поле, например `ProductName`, удаляется из интерфейса правки, обновление завершится ошибкой с исключением "*столбец" ProductName "не допускает значения NULL*". Причина этого поведения была вызвана тем, что ObjectDataSource был настроен на вызов метода `UpdateProduct` класса `ProductsBLL`, который ожидал входного параметра для каждого поля продукта. Таким образом, коллекция `UpdateParameters` ObjectDataSource содержала параметр для каждого входного параметра метода.
 
-Если требуется предоставить веб-элемента управления, который позволяет пользователю обновлять только подмножество полей данных, то необходимо либо программно задать отсутствующие значения `UpdateParameters` значения в коллекции `Updating` обработчика событий или создать и вызвать метод BLL, ожидает только подмножество полей. Рассмотрим такой подход адекватен.
+Если мы хотим предоставить веб-элемент управления данными, позволяющий конечному пользователю обновлять только подмножество полей, необходимо либо программно задать отсутствующие значения `UpdateParameters` в обработчике событий `Updating` ObjectDataSource, либо создать и вызвать метод BLL, который предполагает наличие только подмножества полей. Давайте рассмотрим этот второй подход.
 
-В частности, давайте создадим страницу, отображающую только `ProductName` и `UnitPrice` полей в изменяемого элемента управления GridView. Интерфейс правки элемента GridView допускает только пользователю изменить два отображаемых поля, `ProductName` и `UnitPrice`. Поскольку этот интерфейс правки предоставляет только подмножество полей продукта, необходимо либо создание нового ObjectDataSource, использующий существующего слоя BLL `UpdateProduct` метод и содержит недостающие значения полей продукта установить в обработчике его `Updating` событий обработчик, или мы должны создать новый метод BLL, который ожидает только подмножества полей, определенных в GridView. В этом учебнике давайте использовать последний вариант и создадим перегрузку метода `UpdateProduct` метод, который принимает только три входных параметра: `productName`, `unitPrice`, и `productID`:
+В частности, создадим страницу, отображающую только поля `ProductName` и `UnitPrice` в редактируемом элементе управления GridView. Этот интерфейс редактирования GridView позволяет пользователю только обновлять два отображаемых поля: `ProductName` и `UnitPrice`. Поскольку этот интерфейс редактирования предоставляет только подмножество полей продукта, нам нужно создать элемент ObjectDataSource, использующий существующий метод `UpdateProduct` BLL и имеющий отсутствующие значения полей продукта, заданные программно в `Updating` обработчике событий, или необходимо создать новый метод BLL, который предполагает только подмножество полей, определенных в GridView. В этом руководстве мы будем использовать второй вариант и создаем перегрузку метода `UpdateProduct`, который принимает только три входных параметра: `productName`, `unitPrice`и `productID`:
 
 [!code-csharp[Main](examining-the-events-associated-with-inserting-updating-and-deleting-cs/samples/sample1.cs)]
 
-Исходное, такие как `UpdateProduct` метод, данная перегрузка начинает с проверки, если в базе данных с указанным — это продукт `ProductID`. Если нет, он возвращает `false`, означает, что сбой запроса на обновление информации о продукте. В противном случае он обновляет существующую запись продукта `ProductName` и `UnitPrice` поля соответствующим образом и обновление фиксируется посредством вызова метода `Update()` метод, передавая `ProductsRow` экземпляра.
+Как и исходный метод `UpdateProduct`, эта перегрузка начинается с проверки наличия в базе данных продукта с указанным `ProductID`. В противном случае возвращается `false`, указывающий на сбой запроса на обновление сведений о продукте. В противном случае он обновляет существующие `ProductName` записи продукта и `UnitPrice` поля соответствующим образом и фиксирует обновление, вызывая метод `Update()` TableAdapter, передавая экземпляр `ProductsRow`.
 
-Сделав это добавление к нашей `ProductsBLL` класс, мы готовы создавать упрощенный интерфейс GridView. Откройте `DataModificationEvents.aspx` в `EditInsertDelete` папку и добавьте элемент управления GridView на страницу. Создайте новый ObjectDataSource и настроить его для использования `ProductsBLL` класса с его `Select()` перегрузке `GetProducts` и его `Update()` перегрузке `UpdateProduct` перегрузку, которая принимает только `productName`, `unitPrice`, и `productID` входных параметров. Рис. 2 показан мастер создания источника данных, при сопоставлении ObjectDataSource `Update()` метод `ProductsBLL` для нового класса `UpdateProduct` перегрузки метода.
+Это дополнение к нашему `ProductsBLL` классу, мы готовы к созданию упрощенного интерфейса GridView. Откройте `DataModificationEvents.aspx` в папке `EditInsertDelete` и добавьте GridView на страницу. Создайте новый элемент ObjectDataSource и настройте его так, чтобы он использовал `ProductsBLL` класс с соответствующим `Select()` сопоставлением метода `GetProducts` и его `Update()` сопоставление с перегрузкой `UpdateProduct`, принимающей только входные параметры `productName`, `unitPrice`и `productID`. На рис. 2 показан мастер создания источника данных при сопоставлении метода `Update()` ObjectDataSource с новой перегрузкой метода `UpdateProduct` класса `ProductsBLL`.
 
-[![Сопоставьте метод Update() класса ObjectDataSource новой перегрузке UpdateProduct](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image5.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image4.png)
+[![сопоставьте метод Update () элемента ObjectDataSource с новой перегрузкой UpdateProduct](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image5.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image4.png)
 
-**Рис. 2**: Сопоставить ObjectDataSource `Update()` метод создать `UpdateProduct` перегрузки ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image6.png))
+**Рис. 2**. сопоставьте метод `Update()` ObjectDataSource с новой перегрузкой `UpdateProduct` ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image6.png))
 
-Так как в нашем примере исходно требуется только возможность править данные, но не вставлять или удалять записи, Отвлекитесь и явно указывать, что ObjectDataSource `Insert()` и `Delete()` методы не следует сопоставлять никаким `ProductsBLL` методы класса, перейдя на вкладках INSERT и DELETE и выбрав (нет) из раскрывающегося списка.
+Поскольку в нашем примере изначально требуется возможность редактирования только данных, но не для вставки или удаления записей, потратьте немного времени, чтобы явно указать, что методы `Insert()` и `Delete()` ObjectDataSource не должны сопоставляться ни с одним из методов класса `ProductsBLL`, перейдя на вкладки вставки и удаления и выбрав (нет) в раскрывающемся списке.
 
-[![Выберите значение (None) из раскрывающегося списка для вставки и удаления вкладок](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image8.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image7.png)
+[![выберите (нет) из раскрывающегося списка для вкладок Вставка и удаление.](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image8.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image7.png)
 
-**Рис. 3**: Выберите значение (None) из раскрывающегося списка для вставки и удаления вкладок ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image9.png))
+**Рис. 3**. Выбор (нет) из раскрывающегося списка для вкладок вставки и удаления ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image9.png))
 
-После завершения работы этого мастера установите флажок Enable Editing смарт-теге элемента GridView.
+После завершения работы мастера установите флажок Включить редактирование в смарт-теге GridView.
 
-После выполнения мастера создания источника данных и привязки, к GridView Visual Studio создан декларативный синтаксис для обоих элементов управления. Перейдите к представлению источника для проверки декларативная разметка ObjectDataSource, как показано ниже:
+После завершения работы мастера создания источника данных и привязки к GridView в Visual Studio был создан декларативный синтаксис для обоих элементов управления. Перейдите в представление исходного кода, чтобы проверить декларативную разметку ObjectDataSource, показанную ниже.
 
 [!code-aspx[Main](examining-the-events-associated-with-inserting-updating-and-deleting-cs/samples/sample2.aspx)]
 
-Поскольку нет сопоставлений для ObjectDataSource `Insert()` и `Delete()` методов, существуют не `InsertParameters` или `DeleteParameters` разделы. Кроме того, с момента `Update()` относящимся `UpdateProduct` перегрузку метода, которая принимает только три входных параметра, `UpdateParameters` присутствуют только три экземпляра `Parameter` экземпляров.
+Поскольку нет сопоставлений для методов `Insert()` и `Delete()` ObjectDataSource, разделы `InsertParameters` или `DeleteParameters` отсутствуют. Более того, так как метод `Update()` сопоставлен с перегрузкой метода `UpdateProduct`, которая принимает только три входных параметра, раздел `UpdateParameters` содержит только три экземпляра `Parameter`.
 
-Обратите внимание, что ObjectDataSource `OldValuesParameterFormatString` свойству `original_{0}`. Это свойство задается автоматически в Visual Studio при использовании мастера настройки источника данных. Тем не менее поскольку наши методы слоя BLL не рассчитывают на получение исходного `ProductID` значение для передачи в, полностью удалить это назначение свойства из декларативного синтаксиса ObjectDataSource.
+Обратите внимание, что свойство `OldValuesParameterFormatString` ObjectDataSource имеет значение `original_{0}`. Это свойство задается автоматически с помощью Visual Studio при использовании мастера настройки источника данных. Однако, поскольку наши методы BLL не предполагают, что исходное значение `ProductID` передается, удалите это назначение свойства из декларативного синтаксиса ObjectDataSource.
 
 > [!NOTE]
-> Если вы просто очистите `OldValuesParameterFormatString` значение свойства из окна свойств в режиме конструктора, свойство по-прежнему будет существовать в декларативном синтаксисе, но устанавливается в пустую строку. Либо удалите свойство полностью из декларативного синтаксиса или из окна свойств установите значение по умолчанию, `{0}`.
+> Если вы просто удалите значение свойства `OldValuesParameterFormatString` из окно свойств в представление конструирования, это свойство по-прежнему будет существовать в декларативном синтаксисе, но будет установлено в виде пустой строки. Либо удалите свойство из декларативного синтаксиса, либо в окно свойств задайте значение по умолчанию `{0}`.
 
-Хотя элемент управления ObjectDataSource имеет только `UpdateParameters` для имени продукта, цену и идентификатор, Visual Studio добавлены BoundField или CheckBoxField в GridView для каждого из полей продукта.
+Хотя элемент ObjectDataSource содержит только `UpdateParameters` названия, цены и идентификатора продукта, Visual Studio добавил BoundField или CheckBoxField в GridView для каждого из полей продукта.
 
-[![GridView содержит BoundField или CheckBoxField для каждого из полей продукта](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image11.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image10.png)
+[![GridView содержит BoundField или CheckBoxField для каждого из полей продукта.](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image11.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image10.png)
 
-**Рис. 4**: GridView содержит BoundField или CheckBoxField для каждого из полей продукта ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image12.png))
+**Рисунок 4**. элемент GridView содержит BoundField или CheckBoxField для каждого из полей продукта ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image12.png)).
 
-Когда конечный пользователь изменяет продукт и нажимает кнопку ее кнопкой "Обновить", GridView перечисляет те поля, которые не были доступны только для чтения. Затем он устанавливает значение соответствующего параметра в ObjectDataSource `UpdateParameters` коллекции на введенное пользователем значение. Если не создается соответствующий параметр, GridView добавляет ее в коллекцию. Таким образом, если наши GridView содержит поля BoundFields и CheckBoxFields для всех полей продукта, элемент управления ObjectDataSource вызовет перегрузку `UpdateProduct` , принимающую все эти параметры, несмотря на то, ObjectDataSource декларативная разметка указывает только три входных параметра (см. рис. 5). Аналогичным образом, если имеется определенное сочетание не только для чтения продукта поля в GridView, которое не соответствует входным параметрам для `UpdateProduct` перегрузки, будет вызвано исключение при попытке обновить.
+Когда пользователь редактирует продукт и нажимает кнопку "Обновить", GridView перечисляет поля, которые не были доступны только для чтения. Затем он устанавливает значение соответствующего параметра в коллекции `UpdateParameters` ObjectDataSource в значение, указанное пользователем. Если соответствующий параметр отсутствует, GridView добавляет его в коллекцию. Таким образом, если наш элемент GridView содержит BoundFields и Чеккбоксфиелдс для всех полей продукта, то ObjectDataSource будет вызывать перегрузку `UpdateProduct`, которая принимает все эти параметры, несмотря на тот факт, что декларативная разметка ObjectDataSource указывает только три входных параметра (см. рис. 5). Аналогично, если в GridView имеется некоторое сочетание полей продуктов, не предназначенных только для чтения, которые не соответствуют входным параметрам для перегрузки `UpdateProduct`, при попытке обновления будет вызвано исключение.
 
-[![GridView будет добавить параметры к коллекции UpdateParameters элемента управления ObjectDataSource](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image14.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image13.png)
+[![GridView добавит параметры в коллекцию UpdateParameters ObjectDataSource](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image14.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image13.png)
 
-**Рис. 5**: GridView будет добавление параметров ObjectDataSource `UpdateParameters` коллекции ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image15.png))
+**Рис. 5**. элемент управления GridView добавит параметры в коллекцию `UpdateParameters` ObjectDataSource ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image15.png))
 
-Чтобы убедиться, что элемент управления ObjectDataSource вызывает `UpdateProduct` , принимающую только продукта имя, цену и идентификатор, нам нужно ограничить GridView полями для только что `ProductName` и `UnitPrice`. Это можно сделать, удалив другие поля BoundFields и CheckBoxFields, путем, установкой `ReadOnly` свойства `true`, или с помощью некоторого сочетания этих двух. В этом руководстве Давайте просто удалим все поля GridView, за исключением `ProductName` и `UnitPrice` полей BoundField, после чего декларативная разметка GridView будет выглядеть так:
+Чтобы убедиться, что ObjectDataSource вызывает перегрузку `UpdateProduct`, которая принимает только имя продукта, цену и идентификатор, необходимо ограничить GridView, чтобы поля с возможностью редактирования были только для `ProductName` и `UnitPrice`. Это можно сделать, удалив другие BoundFields и Чеккбоксфиелдс, установив для этих полей `ReadOnly` свойство `true`или несколько комбинаций этих двух значений. В этом руководстве мы просто удалим все поля GridView, кроме `ProductName` и `UnitPrice` BoundFields, после чего декларативная разметка GridView будет выглядеть следующим образом:
 
 [!code-aspx[Main](examining-the-events-associated-with-inserting-updating-and-deleting-cs/samples/sample3.aspx)]
 
-Несмотря на то что `UpdateProduct` рассчитывает на три входных параметра, у нас есть только два поля BoundFields в нашей GridView. Это обусловлено `productID` входной параметр имеет значение первичного ключа и передается посредством значения `DataKeyNames` свойство для редактируемой строки.
+Несмотря на то, что перегрузка `UpdateProduct` предполагает три входных параметра, в элементе GridView есть только два BoundFields. Это связано с тем, что входной параметр `productID` является значением первичного ключа и передается через значение свойства `DataKeyNames` для редактируемой строки.
 
-Наши GridView, вместе с `UpdateProduct` перегрузки, пользователь может изменить только имя и цену продукта, не теряя никакие другие поля продукта.
+Наш GridView вместе с перегрузкой `UpdateProduct` позволяет пользователю изменять только название и цену продукта, не теряя никаких других полей продукта.
 
-[![Интерфейс дает возможность изменять только имя и цену продукта](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image17.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image16.png)
+[![интерфейс позволяет изменять только название и цену продукта](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image17.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image16.png)
 
-**Рис. 6**: Предоставляет интерфейс, редактирования только имя и цену продукта ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image18.png))
+**Рис. 6**. интерфейс позволяет изменять только название и цену продукта ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image18.png)).
 
 > [!NOTE]
-> Как уже обсуждалось в предыдущем учебном курсе, очень важно, чтобы GridView состояние представления s быть включены (поведение по умолчанию). Если задать GridView s `EnableViewState` свойства `false`, возникает риск случайного удаления или изменения записей параллельно работающими пользователями. См. в разделе [предупреждение: Проблема параллелизма с помощью ASP.NET 2.0 элементов управления GridView/DetailsView/FormView среды, поддерживающих правку и/или удаление и которых состояние просмотра отключено](http://scottonwriting.net/sowblog/archive/2006/10/03/163215.aspx) Дополнительные сведения.
+> Как обсуждалось в предыдущем руководстве, крайне важно, чтобы состояние представления GridView s было включено (поведение по умолчанию). Если для свойства `EnableViewState` GridView s задано значение `false`, возникает риск непреднамеренного удаления или изменения записей одновременно выполняющимися пользователями. См. [Предупреждение: ошибка параллелизма с ASP.NET 2,0 gridviews/DetailsView/FormView, которые поддерживают редактирование и (или) удаление, а состояние представления — "отключено](http://scottonwriting.net/sowblog/archive/2006/10/03/163215.aspx) " для получения дополнительных сведений.
 
-## <a name="improving-theunitpriceformatting"></a>Улучшение`UnitPrice`форматирование
+## <a name="improving-theunitpriceformatting"></a>Улучшение форматирования`UnitPrice`
 
-Хотя в примере GridView, показанный на рис. 6, работает, `UnitPrice` не отформатировано вообще, что приводит к отображению цены, который не имеет валют, символов и с четырьмя десятичными позициями. Чтобы применить неизменяемые строки форматирования денежных единиц, просто установите `UnitPrice` BoundField `DataFormatString` свойства `{0:c}` и его `HtmlEncode` свойства `false`.
+Хотя пример GridView, показанный на рис. 6, работает, поле `UnitPrice` не отформатировано, в результате отображается цена, в которой отсутствуют символы валют и есть четыре десятичных знака. Чтобы применить форматирование валюты для неизменяемых строк, просто задайте для свойства `DataFormatString` `UnitPrice` BoundField значение `{0:c}`, а для свойства `HtmlEncode` — значение `false`.
 
-[![Настройте соответствующим образом DataFormatString и HtmlEncode свойства UnitPrice](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image20.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image19.png)
+[![соответствующим образом задать свойства Датаформатстринг и HtmlEncode UnitPrice](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image20.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image19.png)
 
-**Рис. 7**: Задайте `UnitPrice` `DataFormatString` и `HtmlEncode` свойства соответствующим образом ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image21.png))
+**Рис. 7**. настройка свойств `DataFormatString` и `HtmlEncode` для `UnitPrice`соответственно ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image21.png))
 
-Благодаря этому изменению неизменяемые строк, цена форматируется как денежное значение; Тем не менее, редактируемой строки, по-прежнему отображается значение без символа денежной единицы и с четырьмя десятичными позициями.
+После этого изменения Цена нередактируемых строк форматируется как валюта. Однако измененная строка по-прежнему отображает значение без символа валюты и с четырьмя десятичными разрядами.
 
-[![Нередактируемые строк, теперь отформатировано как значения валюты](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image23.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image22.png)
+[![неизменяемые строки теперь форматируются как денежные значения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image23.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image22.png)
 
-**Рис. 8**: Являются нередактируемые строки теперь отформатировано как значения валюты ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image24.png))
+**Рис. 8**. неизменяемые строки теперь форматируются как денежные значения ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image24.png))
 
-Команды форматирования, указанные в `DataFormatString` свойства могут применяться к интерфейсу редактирования свойства `ApplyFormatInEditMode` свойства `true` (по умолчанию используется `false`). Отвлекитесь и присвойте этому свойству значение `true`.
+Инструкции форматирования, указанные в свойстве `DataFormatString`, можно применить к интерфейсу редактирования, задав для свойства `ApplyFormatInEditMode` BoundField значение `true` (значение по умолчанию — `false`). Уделите время, чтобы задать для этого свойства значение `true`.
 
-[![Значение свойства applyformatineditmode поля UnitPrice типа BoundField значение true](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image26.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image25.png)
+[![задать для свойства Апплиформатинедитмоде UnitPrice BoundField значение true](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image26.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image25.png)
 
-**Рис. 9**: Задайте `UnitPrice` BoundField `ApplyFormatInEditMode` свойства `true` ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image27.png))
+**Рис. 9**. установка свойства `ApplyFormatInEditMode` `UnitPrice` BoundField в значение `true` ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image27.png))
 
-Благодаря этому изменению значение `UnitPrice` отображаются в измененной строке также форматируется как денежная единица.
+После этого изменения значение `UnitPrice`, отображаемое в измененной строке, также форматируется как денежная единица.
 
-[![Значение поля UnitPrice редактирования строки — теперь отформатировано как денежная единица](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image29.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image28.png)
+[![значение UnitPrice измененной строки теперь отформатировано как денежное](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image29.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image28.png)
 
-**Рис. 10**: Измененный строки `UnitPrice` значение — теперь отформатировано как денежная единица ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image30.png))
+**Рис. 10**. значение `UnitPrice` измененной строки теперь отформатировано как денежная единица ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image30.png))
 
-Тем не менее, обновлении продукта с символом денежной единицы в текстовом поле, например $19,00 вызывает `FormatException`. Если GridView пытается присвоить предоставленные пользователем значения ObjectDataSource `UpdateParameters` коллекции, его не удается преобразовать `UnitPrice` строку «$19,00» в `decimal` требует параметр (см. рис. 11). Чтобы исправить это можно создать обработчик событий для элемента GridView `RowUpdating` событий, который будет анализировать предоставленное пользователем `UnitPrice` как валюта `decimal`.
+Однако обновление продукта с помощью символа валюты в текстовом поле, например $19,00, вызывает `FormatException`. Когда GridView пытается назначить предоставленные пользователем значения для коллекции `UpdateParameters` ObjectDataSource, не удается преобразовать `UnitPrice` строку "$19,00" в `decimal`, необходимую для параметра (см. рис. 11). Чтобы устранить эту проблему, можно создать обработчик событий для события `RowUpdating` GridView и проанализировать предоставленные пользователем `UnitPrice` как `decimal`в формате валюты.
 
-GridView `RowUpdating` событий принимает в качестве второго параметра объект типа [GridViewUpdateEventArgs](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridviewupdateeventargs(VS.80).aspx), который включает `NewValues` в качестве одного из его свойств предоставленные пользователем значения можно назначенные ObjectDataSource `UpdateParameters` коллекции. Мы существующее значение `UnitPrice` значение в `NewValues` синтаксический анализ коллекции с десятичным значением в формате валюты в следующих строках кода в `RowUpdating` обработчик событий:
+Событие `RowUpdating` GridView принимает в качестве второго параметра объект типа [гридвиевупдативентаргс](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridviewupdateeventargs(VS.80).aspx), который включает словарь `NewValues` в качестве одного из свойств, которые содержат предоставленные пользователем значения, готовые для назначения коллекции `UpdateParameters` ObjectDataSource. Можно перезаписать существующее значение `UnitPrice` в коллекции `NewValues` десятичным значением, проанализированным с помощью формата валюты, со следующими строками кода в обработчике событий `RowUpdating`:
 
 [!code-csharp[Main](examining-the-events-associated-with-inserting-updating-and-deleting-cs/samples/sample4.cs)]
 
-Если пользователь предоставил `UnitPrice` значение (например, «$19,00»), это значение переопределяется десятичным значением, вычисленные поиском решения [Decimal.Parse](https://msdn.microsoft.com/library/system.decimal.parse(VS.80).aspx), рассматривающим значение как денежная единица. Это правильно интерпретировать знак десятичного разделителя в случае символов валют, запятых, десятичных запятых и т. д. и использует [перечисление NumberStyles](https://msdn.microsoft.com/library/system.globalization.numberstyles(VS.80).aspx) в [System.Globalization](https://msdn.microsoft.com/library/abeh092z(VS.80).aspx) пространства имен.
+Если пользователь предоставил `UnitPrice` значение (например, "$19,00"), это значение перезаписывается десятичным значением, вычисленным [десятичным. Parse](https://msdn.microsoft.com/library/system.decimal.parse(VS.80).aspx), анализируя значение как денежную единицу. Это приведет к правильному анализу десятичного значения в случае любых символов валют, запятыми, десятичных разделителей и т. д., а также использует [Перечисление NumberStyles](https://msdn.microsoft.com/library/system.globalization.numberstyles(VS.80).aspx) в пространстве имен [System. Globalization](https://msdn.microsoft.com/library/abeh092z(VS.80).aspx) .
 
-Рис. 11 представлена как проблема, из-за символов валют в предоставленной пользователем `UnitPrice`, а также как GridView `RowUpdating` обработчик событий, которые могут использоваться правильно анализа таких входных данных.
+На рис. 11 показана и проблема, вызванная символами валют в предоставленных пользователем `UnitPrice`, а также способ использования обработчика событий `RowUpdating` GridView для правильного анализа таких входных данных.
 
-[![Значение поля UnitPrice редактирования строки — теперь отформатировано как денежная единица](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image32.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image31.png)
+[![значение UnitPrice измененной строки теперь отформатировано как денежное](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image32.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image31.png)
 
-**Рис. 11**: Измененный строки `UnitPrice` значение — теперь отформатировано как денежная единица ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image33.png))
+**Рис. 11**. значение `UnitPrice` измененной строки теперь отформатировано как денежная единица ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image33.png))
 
-## <a name="step-2-prohibitingnull-unitprices"></a>Шаг 2. Запрет`NULL UnitPrices`
+## <a name="step-2-prohibitingnull-unitprices"></a>Шаг 2. запрет`NULL UnitPrices`
 
-Хотя база данных настроена так, чтобы разрешить `NULL` значения в `Products` таблицы `UnitPrice` столбца, мы может потребоваться заблокировать пользователи, посещающие страницу вместо `NULL` `UnitPrice` значение. То есть если пользователь не ввел `UnitPrice` значение при правке строки продукта вместо сохранения результатов в базу данных, необходимо отобразить сообщение о том, что на данной странице всех изменяемых продуктов необходимо указывать цену.
+Хотя база данных настроена на разрешение `NULL` значений в столбце `UnitPrice` таблицы `Products`, может потребоваться запретить пользователям, посещающих эту конкретную страницу, указать значение `NULL` `UnitPrice`. Это значит, что если пользователю не удается ввести `UnitPrice` значение при редактировании строки продукта, вместо сохранения результатов в базе данных нужно отобразить сообщение, информирующее пользователя, что на этой странице для всех измененных продуктов должна быть указана цена.
 
-`GridViewUpdateEventArgs` , Переданное в GridView `RowUpdating` содержит обработчик событий `Cancel` свойство, если значение `true`, прекращает процедуру обновления. Давайте расширим `RowUpdating` обработчик событий, чтобы задать `e.Cancel` для `true` и выводит сообщение, объясняющее причину, если `UnitPrice` значение в `NewValues` коллекция `null`.
+`GridViewUpdateEventArgs` объект, переданный в обработчик событий `RowUpdating` GridView, содержит свойство `Cancel`, которое, если задано значение `true`, прерывает процесс обновления. Добавим обработчик событий `RowUpdating`, чтобы задать `e.Cancel` для `true` и выдать сообщение, объясняющее, почему `UnitPrice` значение `NewValues` коллекции `null`.
 
-Начните с добавления элемента управления Label Web на страницу с именем `MustProvideUnitPriceMessage`. Этот элемент управления метка будет отображаться, если пользователь не указал `UnitPrice` значение при обновлении продукта. Задание метки `Text` значение «Необходимо указать цену продукта.» Я также создал новый класс CSS в `Styles.css` с именем `Warning` со следующим определением:
+Сначала добавьте веб-элемент управления Label на страницу с именем `MustProvideUnitPriceMessage`. Этот элемент управления Label будет отображаться, если пользователю не удастся указать `UnitPrice` значение при обновлении продукта. Задайте для свойства `Text` метки значение "необходимо указать цену на продукт". Я также создал новый класс CSS в `Styles.css` с именем `Warning` со следующим определением:
 
 [!code-css[Main](examining-the-events-associated-with-inserting-updating-and-deleting-cs/samples/sample5.css)]
 
-Наконец, задайте метки `CssClass` свойства `Warning`. На этом этапе конструктор должен вывести предупреждающее сообщение в красный, полужирный, курсив, очень крупный размер над элементом управления GridView, как показано на рис. 12.
+Наконец, задайте для свойства `CssClass` метки значение `Warning`. На этом этапе конструктор должен отображать предупреждающее сообщение красным, полужирным курсивом, очень большим размером шрифта над GridView, как показано на рис. 12.
 
-[![Label добавлен над элементом управления GridView](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image35.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image34.png)
+[![Добавление метки над GridView](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image35.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image34.png)
 
-**Рис. 12**: Метка имеет были добавлены выше элемента управления GridView ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image36.png))
+**Рис. 12**. над элементом управления GridView была добавлена метка ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image36.png))
 
-По умолчанию эта метка должна быть скрыт, поэтому установите его `Visible` свойства `false` в `Page_Load` обработчик событий:
+По умолчанию эта метка должна быть скрыта, поэтому установите для свойства `Visible` значение `false` в обработчике событий `Page_Load`:
 
 [!code-csharp[Main](examining-the-events-associated-with-inserting-updating-and-deleting-cs/samples/sample6.cs)]
 
-Если пользователь пытается обновить продукт без указания `UnitPrice`, нам нужно отменить обновление и отобразить предупреждение. Дополнения к GridView `RowUpdating` обработчик событий следующим образом:
+Если пользователь пытается обновить продукт без указания `UnitPrice`, необходимо отменить обновление и отобразить метку предупреждения. Дополните обработчик событий `RowUpdating` GridView следующим образом:
 
 [!code-csharp[Main](examining-the-events-associated-with-inserting-updating-and-deleting-cs/samples/sample7.cs)]
 
-Если пользователь пытается сохранить продукт без указания цены, обновление отменяется, и отображается информационное сообщение. Хотя базы данных (и бизнес-логики) позволяет `NULL` `UnitPrice` s, эта конкретная страница ASP.NET — нет.
+Если пользователь пытается сохранить продукт без указания цены, обновление отменяется и выводится полезное сообщение. Хотя база данных (и бизнес-логика) допускает `NULL` `UnitPrice` s, эта конкретная страница ASP.NET не имеет.
 
-[![Пользователь нельзя оставлять пустым UnitPrice](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image38.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image37.png)
+[![пользователь не может оставить поле UnitPrice пустым](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image38.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image37.png)
 
-**Рис. 13**: Пользователь не может быть передано `UnitPrice` пустым ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image39.png))
+**Рис. 13**. пользователь не может оставить `UnitPrice` пустым ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image39.png))
 
-Сих пор мы рассмотрели способы использования элемента GridView `RowUpdating` событий для программного изменения значений параметров, присвоенных ObjectDataSource `UpdateParameters` коллекцию как для отмены процедуры обновления полностью. Эти концепции переносятся на элементы управления DetailsView и FormView и применимы для вставки и удаления.
+До сих пор мы увидели, как использовать событие `RowUpdating` GridView для программного изменения значений параметров, присвоенных `UpdateParameters` коллекции ObjectDataSource, а также как полностью отменить процесс обновления. Эти понятия переносятся на элементы управления DetailsView и FormView, а также применяются к вставке и удалению.
 
-Эти задачи можно также выполнить на уровне ObjectDataSource с помощью обработчиков событий для его `Inserting`, `Updating`, и `Deleting` события. Эти события возникают до вызова соответствующего метода базового объекта и последней возможность изменить коллекцию входных параметров или бесповоротно отменить операцию. Обработчики событий для этих трех событий передают объект типа [ObjectDataSourceMethodEventArgs](https://msdn.microsoft.com/library/system.web.ui.webcontrols.objectdatasourcemethodeventargs(VS.80).aspx) , имеет два представляющих интерес свойства:
+Эти задачи также можно выполнить на уровне ObjectDataSource с помощью обработчиков событий для его `Inserting`, `Updating`и `Deleting` событий. Эти события срабатывают перед вызовом связанного метода базового объекта и предоставляют последнюю возможность изменить коллекцию входных параметров или отменить операцию. Обработчики событий для этих трех событий передаются объекту типа [обжектдатасаурцемесодевентаргс](https://msdn.microsoft.com/library/system.web.ui.webcontrols.objectdatasourcemethodeventargs(VS.80).aspx) , который имеет два важных свойства:
 
-- [Отмена](https://msdn.microsoft.com/library/system.componentmodel.canceleventargs.cancel(VS.80).aspx), который, если значение `true`, отмена выполняемой операции
-- [InputParameters](https://msdn.microsoft.com/library/system.web.ui.webcontrols.objectdatasourcemethodeventargs.inputparameters(VS.80).aspx), который представляет коллекцию `InsertParameters`, `UpdateParameters`, или `DeleteParameters`, в зависимости от того, является ли обработчик событий для `Inserting`, `Updating`, или `Deleting` событий
+- [Отмена](https://msdn.microsoft.com/library/system.componentmodel.canceleventargs.cancel(VS.80).aspx), которая, если задано значение `true`, отменяет выполняемую операцию
+- [InputParameters](https://msdn.microsoft.com/library/system.web.ui.webcontrols.objectdatasourcemethodeventargs.inputparameters(VS.80).aspx)— коллекция `InsertParameters`, `UpdateParameters`или `DeleteParameters`в зависимости от того, предназначен ли обработчик для события `Inserting`, `Updating`или `Deleting`
 
-Чтобы продемонстрировать работу со значениями параметров на уровне ObjectDataSource, включим в элементе управления DetailsView на нашей странице, которая позволяет пользователям добавлять новый продукт. Этот DetailsView будет использоваться в качестве интерфейса для быстрого добавления нового продукта к базе данных. При добавлении нового продукта давайте разрешает пользователю вводить значения для только следует единый пользовательский интерфейс `ProductName` и `UnitPrice` поля. По умолчанию те значения, которые не предоставляются в интерфейсу вставки DetailsView будет присвоено `NULL` базы данных значение. Тем не менее, мы используем ObjectDataSource `Inserting` событие, чтобы ввести другие значения по умолчанию, как скоро можно будет увидеть.
+Чтобы продемонстрировать работу со значениями параметров на уровне ObjectDataSource, включите на странице элемент управления DetailsView, позволяющий пользователям добавить новый продукт. Эта DetailsView будет использоваться для предоставления интерфейса для быстрого добавления нового продукта в базу данных. Чтобы обеспечить единообразный пользовательский интерфейс при добавлении нового продукта, можно позволить пользователю вводить только значения полей `ProductName` и `UnitPrice`. По умолчанию эти значения, которые не передаются в интерфейсе вставки DetailsView, будут установлены в значение `NULL` базы данных. Однако мы можем использовать событие `Inserting` ObjectDataSource для вставки различных значений по умолчанию, как мы увидим чуть позже.
 
-## <a name="step-3-providing-an-interface-to-add-new-products"></a>Шаг 3. Обеспечение интерфейса для добавления новых продуктов
+## <a name="step-3-providing-an-interface-to-add-new-products"></a>Шаг 3. предоставление интерфейса для добавления новых продуктов
 
-Перетащите инструментария в конструктор над элементом управления GridView, DetailsView очистите его `Height` и `Width` свойства и привязки его к элементу ObjectDataSource уже присутствует на странице. Это добавит BoundField или CheckBoxField для каждого из полей продукта. Так как мы хотим использовать этот DetailsView для добавления новых продуктов, необходимо установить флажок Разрешить вставку в смарт-теге; Тем не менее, нет такого параметра нет, поскольку ObjectDataSource `Insert()` метод не сопоставляется методу в `ProductsBLL` классов (Напомним, что этого сопоставления мы установили значение (None) при настройке источника данных см. рис. 3).
+Перетащите элемент DetailsView с панели элементов в конструктор над элементом управления GridView, очистите его `Height` и `Width` свойства и привяжите его к ObjectDataSource, уже присутствующему на странице. Это приведет к добавлению BoundField или CheckBoxField для каждого из полей продукта. Так как мы хотим использовать эту DetailsView для добавления новых продуктов, необходимо установить флажок Включить вставку из смарт-тега. Однако такой вариант отсутствует, поскольку метод `Insert()` ObjectDataSource не сопоставлен с методом в классе `ProductsBLL` (Помните, что при настройке источника данных для этого сопоставления задано значение (нет).
 
-Чтобы настроить элемент управления ObjectDataSource, щелкните ссылку Настройка источника данных из его смарт-тег, запуск мастера. Первый экран дает возможность изменить базовый объект, к которому привязан элемент управления ObjectDataSource; Оставьте `ProductsBLL`. На следующем экране перечисляются сопоставления методов ObjectDataSource к базовому объекту. Несмотря на то, что мы явно указали, что `Insert()` и `Delete()` методы не следует сопоставлять никаким методам, если перейти на вкладках INSERT и DELETE вы увидите, что сопоставление существует. Это обусловлено `ProductsBLL` `AddProduct` и `DeleteProduct` методы используют `DataObjectMethodAttribute` атрибут, чтобы указать, что они являются методами по умолчанию для `Insert()` и `Delete()`, соответственно. Таким образом мастер ObjectDataSource выбирает эти каждый раз при запуске мастера при отсутствии явно указано другое значение.
+Чтобы настроить ObjectDataSource, выберите ссылку Настроить источник данных из смарт-тега, запустив мастер. Первый экран позволяет изменить базовый объект, к которому привязан элемент управления ObjectDataSource; Оставьте значение `ProductsBLL`. На следующем экране перечисляются сопоставления методов ObjectDataSource с базовым объектом. Хотя мы явно указали, что методы `Insert()` и `Delete()` не должны сопоставляться ни с одним из методов, при переходе на вкладки вставки и удаления вы увидите, что сопоставление находится там. Это обусловлено тем, что методы `AddProduct` и `DeleteProduct` `ProductsBLL`используют атрибут `DataObjectMethodAttribute`, чтобы указать, что они являются методами по умолчанию для `Insert()` и `Delete()`соответственно. Таким образом, мастер ObjectDataSource выбирает их каждый раз при запуске мастера, если не указано другое значение.
 
-Оставьте `Insert()` метод, указывающий на `AddProduct` метод, но снова задать раскрывающемся списке вкладки DELETE значение (None).
+Оставьте `Insert()` метод, указывающий на метод `AddProduct`, но снова установите в раскрывающемся списке вкладки удаление значение (нет).
 
-[![Задайте стрелку раскрывающегося списка на вкладке INSERT на метод AddProduct](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image41.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image40.png)
+[![установить в раскрывающемся списке вкладки вставки метод AddProduct](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image41.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image40.png)
 
-**Рис. 14**: Значение вкладку Вставка с раскрывающимся списком `AddProduct` метод ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image42.png))
+**Рис. 14**. выбор метода `AddProduct` в раскрывающемся списке вкладки вставки ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image42.png))
 
-[![Задайте в раскрывающемся списке вкладки DELETE значение (None)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image44.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image43.png)
+[![установить для раскрывающегося списка вкладки удаления значение (нет)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image44.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image43.png)
 
-**Рис. 15**: Задайте удалить вкладку с раскрывающимся списком (нет) ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image45.png))
+**Рис. 15**. Установка для раскрывающегося списка вкладки удаления значения (нет) ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image45.png))
 
-После внесения этих изменений декларативный синтаксис серверного элемента управления ObjectDataSource будет расширен для включения `InsertParameters` коллекции, как показано ниже:
+После внесения этих изменений декларативный синтаксис ObjectDataSource будет расширен для включения коллекции `InsertParameters`, как показано ниже:
 
 [!code-aspx[Main](examining-the-events-associated-with-inserting-updating-and-deleting-cs/samples/sample8.aspx)]
 
-Повторный запуск мастера вернулось `OldValuesParameterFormatString` свойство. Отвлекитесь и удалите это свойство при установке для него значение по умолчанию (`{0}`) либо совсем удалив его из декларативного синтаксиса.
+При повторном запуске мастера добавляется свойство `OldValuesParameterFormatString`. Уделите время очистить это свойство, присвоив ему значение по умолчанию (`{0}`) или полностью удалив его из декларативного синтаксиса.
 
-С помощью ObjectDataSource, предоставляя возможности вставки смарт-теге DetailsView теперь включает флажок Разрешить вставку; Вернитесь в конструктор и установите этот флажок. Затем сократите элемент DetailsView, таким образом, чтобы он имеет только два поля BoundField, кроме - `ProductName` и `UnitPrice` - и CommandField. На этом этапе DetailsView должен выглядеть как:
+Теперь, когда элемент управления ObjectDataSource предоставляет возможности вставки, в смарт-теге DetailsView будет включен флажок Включить вставку. Вернитесь в конструктор и установите этот флажок. Затем немного очистить элемент DetailsView, чтобы он получил только два BoundFields-`ProductName` и `UnitPrice`-и CommandField. На этом этапе декларативный синтаксис DetailsView должен выглядеть следующим образом:
 
 [!code-aspx[Main](examining-the-events-associated-with-inserting-updating-and-deleting-cs/samples/sample9.aspx)]
 
-Рис. 16 показана эта страница при просмотре через браузер на этом этапе. Как вы видите, DetailsView указаны имя и цену первого продукта (Chai). Тем не менее, нам нужно, — это интерфейс для вставки, предоставляющий средства для пользователя, чтобы быстро добавить новый продукт в базе данных.
+На рис. 16 показана эта страница при просмотре в браузере на этом этапе. Как видите, в DetailsView отображается название и цена первого продукта (Chai). Однако мы хотим вставить интерфейс вставки, предоставляющий пользователю возможность быстро добавить новый продукт в базу данных.
 
-[![DetailsView не в настоящее время отрисовывается в режиме только для чтения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image47.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image46.png)
+[![элемент DetailsView в настоящее время отображается в режиме только для чтения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image47.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image46.png)
 
-**Рис. 16**: DetailsView не в настоящее время отрисовывается в режиме только для чтения ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image48.png))
+**Рис. 16**. сейчас DetailsView отображается в режиме только для чтения ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image48.png)).
 
-Чтобы можно было отобразить в режиме вставки необходимо задать для элемента управления DetailsView `DefaultMode` свойства `Inserting`. Это отрисовывает элемент DetailsView в режиме вставки при первом посещении и остается после вставки новой записи. Как показано на рис. 17, такой DetailsView предоставляет быстрый интерфейс для добавления новой записи.
+Чтобы отобразить DetailsView в режиме вставки, необходимо задать для свойства `DefaultMode` значение `Inserting`. При первом посещении отображается элемент DetailsView в режиме вставки, после чего он сохраняется после вставки новой записи. Как показано на рис. 17, такой элемент DetailsView предоставляет быстрый интерфейс для добавления новой записи.
 
-[![DetailsView предоставляет интерфейс для быстрого добавления нового продукта](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image50.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image49.png)
+[![DetailsView предоставляет интерфейс для быстрого добавления нового продукта.](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image50.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image49.png)
 
-**Рис. 17**: DetailsView предоставляет интерфейс для быстрого добавления нового продукта ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image51.png))
+**Рис. 17**. элемент DetailsView предоставляет интерфейс для быстрого добавления нового продукта ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image51.png)).
 
-Когда пользователь вводит имя и цену продукта (например «Acme Water» и 1,99, как показано на рис. 17) и нажимает кнопку Insert, обратная передача и начинается поток операций вставки улучшалась новой записи о продукте, добавляемый базы данных. DetailsView сохраняет свой интерфейс для вставки и GridView автоматически повторно привязывается к источнику данных для включения нового продукта, как показано на рис. 18.
+Когда пользователь вводит название продукта и цену (например, "Acme вода" и 1,99, как показано на рис. 17) и нажимает кнопку "вставить", выполняется обратная передача и начинается процесс вставки, улучшалась в новую запись продукта, добавляемую в базу данных. Элемент управления DetailsView сохраняет свой интерфейс вставки, и GridView автоматически повторно привязывается к своему источнику данных, чтобы включить новый продукт, как показано на рис. 18.
 
 ![Продукт](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image52.png)
 
-**Рис. 18**: Продукт «Acme Water» был добавлен в базу данных
+**Рис. 18**. в базу данных добавлен продукт «Acme».
 
-GridView на рис. 18 он показан, полей продукта, отсутствующим в интерфейсе DetailsView `CategoryID`, `SupplierID`, `QuantityPerUnit`, и так далее, назначаются `NULL` базы данных значения. Это можно увидеть, выполнив следующие действия:
+Хотя элемент управления GridView на рис. 18 не отображает его, поля продукта, отсутствующие в интерфейсе DetailsView `CategoryID`, `SupplierID`, `QuantityPerUnit`и т. д., назначаются `NULL` значениям базы данных. Это можно увидеть, выполнив следующие действия.
 
-1. Перейдите в проводник по серверам в Visual Studio
-2. Развернув `NORTHWND.MDF` узел базы данных
-3. Щелкните правой кнопкой мыши `Products` базы данных
-4. Выберите Показать таблицу данных
+1. Переход к обозреватель сервера в Visual Studio
+2. Развертывание узла базы данных `NORTHWND.MDF`
+3. Щелкните правой кнопкой мыши узел таблицы базы данных `Products`
+4. Выбор представления данных таблицы
 
-Появится список всех записей в `Products` таблицы. Как показано на рис все столбцы нашего нового продукта не `ProductID`, `ProductName`, и `UnitPrice` имеют `NULL` значения.
+В результате будут перечислены все записи в таблице `Products`. Как показано на рис. 19, все наши новые столбцы продукта, кроме `ProductID`, `ProductName`и `UnitPrice`, имеют `NULL` значения.
 
-[![Поля продукта не представленным в DetailsView, назначенный значения NULL](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image54.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image53.png)
+[![полям продуктов, не предоставленным в DetailsView, присваиваются значения NULL](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image54.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image53.png)
 
-**Рис. 19**: Назначаются поля продукта не представленным в DetailsView `NULL` значения ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image55.png))
+**Рис. 19**. полям продуктов, не предоставленным в DetailsView, присваиваются `NULL` значения ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image55.png))
 
-Необходимо предоставить значение по умолчанию, отличное от `NULL` для одного или нескольких из этих значений столбца, либо потому что `NULL` не оптимальным вариантом по умолчанию или потому что сам столбец базы данных не позволяет `NULL` s. Для выполнения этой задачи мы можно программно задать значения параметров DetailsView `InputParameters` коллекции. Это назначение можно сделать либо в случае обработчик для элемента DetailsView `ItemInserting` событий или ObjectDataSource `Inserting` событий. Так как мы уже обсуждали в с помощью событий предварительного и последующего уровней данных Web управлять уровнем, рассмотрим использование событий ObjectDataSource в настоящее время.
+Нам может потребоваться предоставить значение по умолчанию, отличное от `NULL` для одного или нескольких значений этих столбцов, так как `NULL` не является лучшим вариантом по умолчанию или если столбец базы данных не допускает `NULL` s. Для этого мы можем программно задавать значения параметров коллекции `InputParameters` DetailsView. Это назначение можно выполнить либо в обработчике событий для события `ItemInserting` DetailsView, либо в событии `Inserting` ObjectDataSource. Поскольку мы уже рассматривали использование событий предварительного и последующей обработки на уровне веб-элемента управления данными, давайте рассмотрим использование событий ObjectDataSource в этот раз.
 
-## <a name="step-4-assigning-values-to-thecategoryidandsupplieridparameters"></a>Шаг 4. Назначение значений для`CategoryID`и`SupplierID`параметров
+## <a name="step-4-assigning-values-to-thecategoryidandsupplieridparameters"></a>Шаг 4. Присвоение значений параметрам`CategoryID`и`SupplierID`
 
-В этом руководстве давайте предположим, что для нашего приложения при добавлении нового продукта посредством этого интерфейса необходимо полям `CategoryID` и `SupplierID` значение 1. Как упоминалось ранее, элемент управления ObjectDataSource имеется пара событий предварительного и последующего уровней которые запускаются во время изменения данных. При его `Insert()` вызова метода, элемент управления ObjectDataSource прежде всего создает его `Inserting` , затем вызывает метод, его `Insert()` метод был сопоставлен с и наконец создает `Inserted` событий. `Inserting` Дает нам последнюю возможность настроить входные параметры или полностью отменить операцию.
+В этом учебнике мы представим, что для нашего приложения при добавлении нового продукта через этот интерфейс ему следует назначить `CategoryID` и `SupplierID` значение 1. Как упоминалось ранее, ObjectDataSource имеет пару событий до и после уровня, которые срабатывают во время процесса изменения данных. Когда вызывается метод `Insert()`, ObjectDataSource сначала создает событие `Inserting`, затем вызывает метод, которому сопоставлен метод `Insert()`, и, наконец, вызывает событие `Inserted`. Обработчик событий `Inserting` предоставляет нам последнюю возможность настроить входные параметры или отменить операцию.
 
 > [!NOTE]
-> В реальном приложении, скорее всего вы захотите разрешить пользователю указать категорию и поставщика или имела возможность выбрать это значение для них на основе определенных критериев или бизнес логики (а не вслепую выбирать идентификатор, равный 1). Тем не менее в примере как программным способом задать значение входного параметра в событии предыдущего уровня элемента управления ObjectDataSource.
+> В реальных приложениях, скорее всего, потребуется либо предоставить пользователю указание категории и поставщика, либо выбрать для них это значение на основе определенных критериев или бизнес-логики (вместо того, чтобы явно выбрать идентификатор 1). В этом примере показано, как программно задать значение входного параметра из события предварительного уровня ObjectDataSource.
 
-Отвлекитесь и создайте обработчик событий для элемента управления ObjectDataSource `Inserting` событий. Обратите внимание на то, что второй входной параметр обработчика события является объектом типа `ObjectDataSourceMethodEventArgs`, имеющего свойство для доступа к коллекции параметров (`InputParameters`) и свойство для отмены операции (`Cancel`).
+Уделите время созданию обработчика событий для события `Inserting` ObjectDataSource. Обратите внимание, что второй входной параметр обработчика событий — это объект типа `ObjectDataSourceMethodEventArgs`, имеющий свойство для доступа к коллекции параметров (`InputParameters`) и свойство для отмены операции (`Cancel`).
 
 [!code-csharp[Main](examining-the-events-associated-with-inserting-updating-and-deleting-cs/samples/sample10.cs)]
 
-На этом этапе `InputParameters` свойство содержит ObjectDataSource `InsertParameters` коллекции со значениями, присвоенными из элемента управления DetailsView. Чтобы изменить значение одного из этих параметров, просто используйте: `e.InputParameters["paramName"] = value`. Таким образом Чтобы задать `CategoryID` и `SupplierID` для значения 1, настроить `Inserting` обработчик событий, чтобы выглядеть следующим образом:
+На этом этапе свойство `InputParameters` содержит коллекцию `InsertParameters` ObjectDataSource со значениями, назначенными из элемента DetailsView. Чтобы изменить значение одного из этих параметров, просто используйте: `e.InputParameters["paramName"] = value`. Таким образом, чтобы задать `CategoryID` и `SupplierID` значения 1, настройте обработчик событий `Inserting` так, чтобы он выглядел следующим образом:
 
 [!code-csharp[Main](examining-the-events-associated-with-inserting-updating-and-deleting-cs/samples/sample11.cs)]
 
-Это время при добавлении нового продукта (например Acme Soda, столбцы), `CategoryID` и `SupplierID` столбцов нового продукта устанавливаются в 1 (см. рис. 20).
+На этот раз при добавлении нового продукта (например, Acme Soda) для столбцов `CategoryID` и `SupplierID` нового продукта устанавливается значение 1 (см. рис. 20).
 
-[![Теперь у новых продуктов, их CategoryID и SupplierID значения, заданные для 1](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image57.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image56.png)
+[![новые продукты теперь имеют значения CategoryID и КодПоставщика, равные 1](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image57.png)](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image56.png)
 
-**Рис. 20**: Новые продукты теперь имеют их `CategoryID` и `SupplierID` значения присваивается значение 1 ([Просмотр полноразмерного изображения](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image58.png))
+**Рис. 20**. новые продукты теперь имеют свои `CategoryID` и `SupplierID` значения 1 ([щелкните, чтобы просмотреть изображение с полным размером](examining-the-events-associated-with-inserting-updating-and-deleting-cs/_static/image58.png))
 
 ## <a name="summary"></a>Сводка
 
-Во время редактирования, вставки и удаления процесса веб-управления данными и ObjectDataSource Пройдите ряд событий предварительного и последующего уровней. В этом учебнике мы рассмотрели события предыдущего уровня и узнали, как использовать их для настройки входных параметров или отмены операции изменения данных полностью, оба из веб-управления и события элемента управления ObjectDataSource. В следующем учебном курсе мы рассмотрим создание и использование обработчиков событий для событий последующего уровня.
+Во время процесса редактирования, вставки и удаления веб-элемент управления данными и ObjectDataSource просматривает ряд событий до и после предыдущего уровня. В этом учебнике мы рассмотрели события предварительного уровня и увидели, как их использовать для настройки входных параметров или отмены операции изменения данных в целом как из веб-элемента управления данными, так и из событий ObjectDataSource. В следующем учебном курсе мы рассмотрим создание и использование обработчиков событий для событий последующего уровня.
 
-Счастливого вам программирования!
+Поздравляем с программированием!
 
 ## <a name="about-the-author"></a>Об авторе
 
-[Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP.NET и основатель веб- [4GuysFromRolla.com](http://www.4guysfromrolla.com), работает с веб-технологиями Microsoft с 1998 года. Скотт — независимый консультант, преподаватель и автор. Его последняя книга — [ *Sams Teach ASP.NET 2.0 in 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Ним можно связаться по адресу [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти в [ http://ScottOnWriting.NET ](http://ScottOnWriting.NET).
+[Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP. NET и основатель [4GuysFromRolla.com](http://www.4guysfromrolla.com), работал с веб-технологиями Майкрософт с 1998. Скотт работает как независимый консультант, преподаватель и модуль записи. Его последняя книга — [*Sams обучать себя ASP.NET 2,0 за 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Он доступен по адресу [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти по адресу [http://ScottOnWriting.NET](http://ScottOnWriting.NET).
 
-## <a name="special-thanks-to"></a>Особая благодарность
+## <a name="special-thanks-to"></a>Специальная благодарность
 
-В этой серии руководств пособий рецензировалась многими компетентными редакторами. (Jackie goor) и (Liz Shulok), стали Лиз Шалок в этом руководстве. Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
+Эта серия руководств была рассмотрена многими полезными рецензентами. Потенциальные рецензенты для этого учебника были основными редакторами и основными рецензентами. Хотите ознакомиться с моими будущими статьями MSDN? Если это так, расположите строку в [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
 > [Назад](an-overview-of-inserting-updating-and-deleting-data-cs.md)

@@ -1,65 +1,65 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/animation/animating-in-response-to-user-interaction-vb
-title: Анимация в ответ на взаимодействие пользователя (Visual Basic) | Документация Майкрософт
+title: Анимация в ответ на взаимодействие с пользователем (VB) | Документация Майкрософт
 author: wenz
-description: Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Анимацию можно star...
+description: Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Анимация может иметь вид звезды...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: c8204c05-ec27-40fe-933d-88e4e727a482
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/animating-in-response-to-user-interaction-vb
 msc.type: authoredcontent
-ms.openlocfilehash: fa774eecd872e79e3b05f6a6ebe177be895b8191
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 629d79505cebd49c2f05333bfbf78166f80fc6cb
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65112915"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74607029"
 ---
 # <a name="animating-in-response-to-user-interaction-vb"></a>Анимация в ответ на взаимодействие пользователя (VB)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation6.vb.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation6VB.pdf)
+[Скачать код](https://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation6.vb.zip) или [скачать PDF](https://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation6VB.pdf)
 
-> Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Анимации могут запускаться автоматически или могут быть предприняты взаимодействием с пользователем, например, щелкнув мышью.
+> Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Анимации могут запускаться автоматически или могут запускаться пользователем, например, при щелчке мышью.
 
 ## <a name="overview"></a>Обзор
 
-Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Анимации могут запускаться автоматически или могут быть предприняты взаимодействием с пользователем, например, щелкнув мышью.
+Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. Анимации могут запускаться автоматически или могут запускаться пользователем, например, при щелчке мышью.
 
 ## <a name="steps"></a>Шаги
 
-Во-первых, включите `ScriptManager` страницы; затем ASP.NET AJAX library загружена, что позволяет использовать набор средств управления:
+Во-первых, включите `ScriptManager` на странице. затем загружается библиотека ASP.NET AJAX, что позволяет использовать набор средств управления.
 
 [!code-aspx[Main](animating-in-response-to-user-interaction-vb/samples/sample1.aspx)]
 
-Анимация будет применяться к панели текста, который выглядит следующим образом:
+Анимация будет применена к панели текста, которая выглядит следующим образом:
 
 [!code-aspx[Main](animating-in-response-to-user-interaction-vb/samples/sample2.aspx)]
 
-В связанный класс CSS для панели определить цвет фона, удобная и также установить фиксированную ширину для панели:
+В связанном классе CSS для панели задайте хороший цвет фона, а также задайте фиксированную ширину панели:
 
 [!code-css[Main](animating-in-response-to-user-interaction-vb/samples/sample3.css)]
 
-Затем добавьте `AnimationExtender` на страницу, предоставляя `ID`, `TargetControlID` атрибут и обязательным `runat="server"`:
+Затем добавьте `AnimationExtender` на страницу, указав `ID`, атрибут `TargetControlID` и `runat="server"`обязательную:
 
 [!code-aspx[Main](animating-in-response-to-user-interaction-vb/samples/sample4.aspx)]
 
-В рамках `<Animations>` узел, существует пять способов для запуска анимации с помощью взаимодействия с пользователем (неотображаемый элемент является `<OnLoad>` которого будет выполнена после полной загрузки страницы в целом):
+В `<Animations>` узле существует пять способов запуска анимации с помощью взаимодействия с пользователем (отсутствующий элемент — `<OnLoad>` что выполняется после полной загрузки страницы целиком):
 
-- `<OnClick>` (щелчка мыши на элементе управления)
-- `<OnHoverOut>` (указатель мыши покидает элемент управления)
-- `<OnHoverOver>` (указатель мыши находится над элементом управления, остановка `<OnHoverOut>` анимации)
-- `<OnMouseOut>` (указатель мыши покидает элемент управления)
-- `<OnMouseOver>` (указатель мыши находится над элементом управления, не останавливает `<OnMouseOut>` анимации)
+- `<OnClick>` (щелчок мышью в элементе управления)
+- `<OnHoverOut>` (мышь выходит за пределы элемента управления)
+- `<OnHoverOver>` (наведение указателя мыши на элемент управления, остановка `<OnHoverOut>`ной анимации)
+- `<OnMouseOut>` (мышь выходит за пределы элемента управления)
+- `<OnMouseOver>` (наведение указателя мыши на элемент управления, но не останавливает анимацию `<OnMouseOut>`)
 
-В этом случае `<OnClick>` используется. При нажатии на панели, он изменяется и исчезает, в то же время.
+В этом сценарии используется `<OnClick>`. Когда пользователь щелкает эту панель, он изменяется и постепенно исчезает.
 
 [!code-aspx[Main](animating-in-response-to-user-interaction-vb/samples/sample5.aspx)]
 
-[![Нажатие клавиши мыши запускает анимацию](animating-in-response-to-user-interaction-vb/_static/image2.png)](animating-in-response-to-user-interaction-vb/_static/image1.png)
+[![щелчок мышью запускает анимацию](animating-in-response-to-user-interaction-vb/_static/image2.png)](animating-in-response-to-user-interaction-vb/_static/image1.png)
 
-Нажатие клавиши мыши запускает анимацию ([Просмотр полноразмерного изображения](animating-in-response-to-user-interaction-vb/_static/image3.png))
+Щелчок мышью запускает анимацию ([щелкните, чтобы просмотреть изображение с полным размером](animating-in-response-to-user-interaction-vb/_static/image3.png))
 
 > [!div class="step-by-step"]
 > [Назад](picking-one-animation-out-of-a-list-vb.md)

@@ -2,60 +2,60 @@
 uid: web-forms/overview/ajax-control-toolkit/modalpopup/positioning-a-modalpopup-cs
 title: Размещение ModalPopup (C#) | Документация Майкрософт
 author: wenz
-description: Элемент управления ModalPopup в AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью средств на стороне клиента. Тем не менее не предлагает элемент управления...
+description: Элемент управления ModalPopup в наборе средств AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью клиентских средств. Однако элемент управления не предлагает...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: 1caac9d0-e21e-49d6-a8ff-e563a736d6ca
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/modalpopup/positioning-a-modalpopup-cs
 msc.type: authoredcontent
-ms.openlocfilehash: 362e0f84ce336d320e016dd19d2dd286560f75c6
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 8034f5aeb5a1a80f1ea8cbc9d638f3dfb1a38706
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65115397"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74599015"
 ---
 # <a name="positioning-a-modalpopup-c"></a>Размещение ModalPopup (C#)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup4.cs.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup4CS.pdf)
+[Скачать код](https://download.microsoft.com/download/2/4/0/24052038-f942-4336-905b-b60ae56f0dd5/ModalPopup4.cs.zip) или [скачать PDF](https://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/modalpopup4CS.pdf)
 
-> Элемент управления ModalPopup в AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью средств на стороне клиента. Однако элемент управления не предоставляет встроенные функциональные возможности для размещения всплывающего окна.
+> Элемент управления ModalPopup в наборе средств AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью клиентских средств. Однако элемент управления не предоставляет встроенные функции для позиционирования всплывающего окна.
 
 ## <a name="overview"></a>Обзор
 
-Элемент управления ModalPopup в AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью средств на стороне клиента. Однако элемент управления не предоставляет встроенные функциональные возможности для размещения всплывающего окна.
+Элемент управления ModalPopup в наборе средств AJAX Control Toolkit предоставляет простой способ создания модального всплывающего окна с помощью клиентских средств. Однако элемент управления не предоставляет встроенные функции для позиционирования всплывающего окна.
 
 ## <a name="steps"></a>Шаги
 
-Для активации функции ASP.NET AJAX и Control Toolkit, `ScriptManager`. элемент управления необходимо поместить в любом месте на странице (но в `<form>` элемента):
+Чтобы активировать функциональные возможности ASP.NET AJAX и набора элементов управления, `ScriptManager`. элемент управления должен размещаться в любом месте страницы (но в элементе `<form>`):
 
 [!code-aspx[Main](positioning-a-modalpopup-cs/samples/sample1.aspx)]
 
-Добавьте панель, который служит в качестве модального всплывающего окна. Кнопка используется для закрытия всплывающего окна:
+Затем добавьте панель, которая выступает в качестве модального всплывающего окна. Кнопка используется для закрытия всплывающего окна:
 
 [!code-aspx[Main](positioning-a-modalpopup-cs/samples/sample2.aspx)]
 
-Каждый раз, когда всплывающее окно отображается, он должен размещаться в определенное место на странице. Для выполнения этой задачи будет создана функция JavaScript на стороне клиента. Сначала выполняется попытка доступа к панели. Выполняется успешно, положение панели задается с помощью CSS и JavaScript (изменение будет положение всплывающего окна в). Тем не менее `ModalPopupExtender` управления также пытается положение всплывающего окна. Таким образом код JavaScript многократно всплывающее окно, каждую десятую долю секунды.
+При отображении всплывающего окна оно должно располагаться в определенном месте страницы. Для этой задачи создается клиентская функция JavaScript. Сначала он пытается получить доступ к панели. В случае успешности положение панели задается с помощью CSS и JavaScript (измените положение всплывающего окна в нем). Однако элемент управления `ModalPopupExtender` также пытается расположить всплывающее окно. Таким образом, код JavaScript многократно помещает всплывающее окно в каждую десятую часть секунды.
 
 [!code-html[Main](positioning-a-modalpopup-cs/samples/sample3.html)]
 
-Как вы видите, возвращаемое значение `setTimeout()` метод JavaScript сохраняется в глобальной переменной. Это позволяет остановить повторное размещение всплывающего окна по требованию, с помощью `clearTimeout()` метод:
+Как видите, возвращаемое значение метода `setTimeout()` JavaScript сохраняется в глобальной переменной. Это позволяет предотвратить повторное позиционирование всплывающего окна по запросу с помощью метода `clearTimeout()`:
 
 [!code-javascript[Main](positioning-a-modalpopup-cs/samples/sample4.js)]
 
-Теперь осталось сделать лишь для вызова этих функций всякий раз, когда соответствующие браузера. `movePanel()` Функция JavaScript должен вызываться при нажатии кнопки, который запускает панели:
+Теперь все, что осталось сделать, — это заставить браузер вызывать эти функции при необходимости. Функция `movePanel()` JavaScript должна вызываться при нажатии кнопки, которая активирует панель:
 
 [!code-aspx[Main](positioning-a-modalpopup-cs/samples/sample5.aspx)]
 
-И `stopMoving()` функции вступает в действие, когда всплывающее окно закрывается, это может быть предприняты в `ModalPopupExtender` управления:
+При закрытии всплывающего окна функция `stopMoving()` вступает в игру. это может быть вызвано в элементе управления `ModalPopupExtender`:
 
 [!code-aspx[Main](positioning-a-modalpopup-cs/samples/sample6.aspx)]
 
-[![Появится модальное всплывающее окно в указанной позиции](positioning-a-modalpopup-cs/_static/image2.png)](positioning-a-modalpopup-cs/_static/image1.png)
+[![модальное всплывающее окно отображается в указанной позиции](positioning-a-modalpopup-cs/_static/image2.png)](positioning-a-modalpopup-cs/_static/image1.png)
 
-Появится модальное всплывающее окно в указанной позиции ([Просмотр полноразмерного изображения](positioning-a-modalpopup-cs/_static/image3.png))
+Модальное всплывающее окно отображается в указанной позиции ([щелкните, чтобы просмотреть изображение с полным размером](positioning-a-modalpopup-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
 > [Назад](handling-postbacks-from-a-modalpopup-cs.md)

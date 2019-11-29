@@ -2,52 +2,52 @@
 uid: web-forms/overview/ajax-control-toolkit/mutuallyexclusivecheckbox/creating-mutually-exclusive-checkboxes-vb
 title: Создание взаимоисключающих флажков (VB) | Документация Майкрософт
 author: wenz
-description: 'Когда может быть выбран только один из набора параметров, обычно используются переключателей. Не существует недостаток, но: Один раз одной в группе переключателя...'
+description: 'Если можно выбрать только один из наборов параметров, обычно используются переключатели. Однако существует недостаток: один переключатель в группе,...'
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: e9dd1d5a-a1db-4114-981d-6a91acb1d709
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/mutuallyexclusivecheckbox/creating-mutually-exclusive-checkboxes-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 5bf96cf287f2fe5f394449587c70d9fc6fb33af9
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: f33936dd4d71f6bbf08f02966eefe44c8c152eba
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65132550"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74606466"
 ---
 # <a name="creating-mutually-exclusive-checkboxes-vb"></a>Создание взаимоисключающих флажков (VB)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/MutuallyExclusiveCheckBox0.vb.zip) или [скачать PDF](http://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/mutuallyexclusivecheckbox0VB.pdf)
+[Скачать код](https://download.microsoft.com/download/9/3/f/93f8daea-bebd-4821-833b-95205389c7d0/MutuallyExclusiveCheckBox0.vb.zip) или [скачать PDF](https://download.microsoft.com/download/b/6/a/b6ae89ee-df69-4c87-9bfb-ad1eb2b23373/mutuallyexclusivecheckbox0VB.pdf)
 
-> Когда может быть выбран только один из набора параметров, обычно используются переключателей. Не существует недостаток, но: Выбрав один переключатель в группе, не поддерживается снимите флажки всех переключателей. Флажки, можно снять в любой момент, но не являются взаимоисключающими. В этом руководстве приведены преимущества обоих подходов: флажки, которые являются взаимоисключающими.
+> Если можно выбрать только один из наборов параметров, обычно используются переключатели. Несмотря на то, что один переключатель в группе выбран, снять флажок все переключатели невозможно. Флажки в любое время можно снять, но они не являются взаимоисключающими. В этом учебнике лучше использовать оба подхода: флажки, которые являются взаимоисключающими.
 
 ## <a name="overview"></a>Обзор
 
-Когда может быть выбран только один из набора параметров, обычно используются переключателей. Не существует недостаток, но: Выбрав один переключатель в группе, не поддерживается снимите флажки всех переключателей. Флажки, можно снять в любой момент, но не являются взаимоисключающими. В этом руководстве приведены преимущества обоих подходов: флажки, которые являются взаимоисключающими.
+Если можно выбрать только один из наборов параметров, обычно используются переключатели. Несмотря на то, что один переключатель в группе выбран, снять флажок все переключатели невозможно. Флажки в любое время можно снять, но они не являются взаимоисключающими. В этом учебнике лучше использовать оба подхода: флажки, которые являются взаимоисключающими.
 
 ## <a name="steps"></a>Шаги
 
-ASP.NET AJAX Control Toolkit содержит расширения MutuallyExclusiveCheckBox. Это дает возможность программистам назначить любой checkbox с именем группы (`Key` атрибут). Все флажки в той же группе может одновременно выбрать только один.
+Набор средств управления ASP.NET AJAX содержит расширитель Мутуаллексклусивечеккбокс. Это позволяет программистам назначать любой флажок имени группы (`Key` атрибут). Из всех флажков в одной группе можно выбрать только один из них.
 
-Давайте начнем с размещением два флажка на новой странице ASP.NET. Может существовать несколько, но два из них достаточно для демонстрации принципа:
+Начнем с установки двух флажков на новой странице ASP.NET. Для демонстрации принципа может быть больше, но два из них достаточно:
 
 [!code-aspx[Main](creating-mutually-exclusive-checkboxes-vb/samples/sample1.aspx)]
 
-Для оба флажка элемент управления MutuallyExclusiveCheckBoxExtender должны быть размещены на странице. Оба ключевые атрибуты должны иметь одинаковое значение, так же, как значение, которое атрибутов кнопку radio HTML-элементов должны совпадать для обозначения группы, которым они принадлежат. Свойство TargetControlID расширителя указывает на идентификатор поля с флажком.
+Для обоих флажков на странице должен быть размещен элемент управления Мутуаллексклусивечеккбоксекстендер. Оба ключевых атрибута должны иметь одинаковое значение, так же как атрибуты значений элементов переключателя HTML должны быть идентичны, чтобы обозначить группу, к которой они принадлежат. Свойство TargetControlID расширителя указывает на идентификатор флажка.
 
 [!code-aspx[Main](creating-mutually-exclusive-checkboxes-vb/samples/sample2.aspx)]
 
-Наконец, включите ASP.NET AJAX `ScriptManager` которая необходима для всех элементов ASP.NET AJAX Control Toolkit:
+Наконец, включите ASP.NET AJAX `ScriptManager`, необходимый для всех элементов набора средств управления AJAX ASP.NET:
 
 [!code-aspx[Main](creating-mutually-exclusive-checkboxes-vb/samples/sample3.aspx)]
 
-Сохранить и запустить эту страницу: Можно проверить и снимите оба флажка, но никогда не установлены оба флажка нельзя.
+Сохраните и запустите страницу. Вы можете установить флажки и снять флажки, однако в этом случае оба флажка не будут установлены.
 
-[![Одновременно можно проверить только один флажок](creating-mutually-exclusive-checkboxes-vb/_static/image2.png)](creating-mutually-exclusive-checkboxes-vb/_static/image1.png)
+[![только один флажок можно проверить за раз](creating-mutually-exclusive-checkboxes-vb/_static/image2.png)](creating-mutually-exclusive-checkboxes-vb/_static/image1.png)
 
-Одновременно можно проверить только один флажок ([Просмотр полноразмерного изображения](creating-mutually-exclusive-checkboxes-vb/_static/image3.png))
+Только один флажок может быть проверен за раз ([щелкните, чтобы просмотреть изображение с полным размером](creating-mutually-exclusive-checkboxes-vb/_static/image3.png))
 
 > [!div class="step-by-step"]
 > [Назад](creating-mutually-exclusive-checkboxes-cs.md)

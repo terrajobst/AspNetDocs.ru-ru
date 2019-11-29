@@ -1,78 +1,78 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/animation/adding-animation-to-a-control-vb
-title: Добавление анимации в элемент управления (Visual Basic) | Документация Майкрософт
+title: Добавление анимации в элемент управления (VB) | Документация Майкрософт
 author: wenz
-description: Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. В этом руководстве показано как...
+description: Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. В этом руководстве показано, как...
 ms.author: riande
 ms.date: 06/02/2008
 ms.assetid: c120187e-963e-4439-bb85-32771bc7f1f4
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/adding-animation-to-a-control-vb
 msc.type: authoredcontent
-ms.openlocfilehash: edc80db42c7b1adf25214e1d6ae6d8a938a4be12
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: efaee9c1665d795dc1a889b9ac9f25dd1c08f4e2
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65130767"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74607173"
 ---
 # <a name="adding-animation-to-a-control-vb"></a>Добавление анимации в элемент управления (VB)
 
-по [Кристиан Wenz](https://github.com/wenz)
+по [Кристиан Венз](https://github.com/wenz)
 
-[Скачать код](http://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation1.vb.zip) или [скачать PDF](http://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation1VB.pdf)
+[Скачать код](https://download.microsoft.com/download/f/9/a/f9a26acd-8df4-4484-8a18-199e4598f411/Animation1.vb.zip) или [скачать PDF](https://download.microsoft.com/download/6/7/1/6718d452-ff89-4d3f-a90e-c74ec2d636a3/animation1VB.pdf)
 
-> Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Этом руководстве показано, как настроить такой анимации.
+> Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. В этом руководстве показано, как настроить подобную анимацию.
 
 ## <a name="overview"></a>Обзор
 
-Отображается этот элемент управления в ASP.NET AJAX Control Toolkit не только элемент управления, но всю платформу для добавления анимации в элемент управления. Этом руководстве показано, как настроить такой анимации.
+Элемент управления Animation в наборе средств ASP.NET AJAX Control Toolkit — это не просто элемент управления, но вся платформа для добавления анимации в элемент управления. В этом руководстве показано, как настроить подобную анимацию.
 
 ## <a name="steps"></a>Шаги
 
-Первым шагом является обычным образом, чтобы включить `ScriptManager` на странице, ASP.NET AJAX library загружается и может использоваться набор элементов управления:
+Первым шагом является включение `ScriptManager` на страницу, чтобы загрузить библиотеку ASP.NET AJAX и использовать набор элементов управления.
 
 [!code-aspx[Main](adding-animation-to-a-control-vb/samples/sample1.aspx)]
 
-Анимация в этом сценарии будут применяться к панели текста, который выглядит следующим образом:
+Анимация в этом сценарии будет применена к панели текста, которая выглядит следующим образом:
 
 [!code-aspx[Main](adding-animation-to-a-control-vb/samples/sample2.aspx)]
 
-Связанный класс CSS для панели определяет цвет фона и шириной:
+Связанный класс CSS для панели определяет цвет фона и ширину:
 
 [!code-css[Main](adding-animation-to-a-control-vb/samples/sample3.css)]
 
-Далее, необходимо `AnimationExtender`. После предоставления `ID` и обычные `runat="server"`, `TargetControlID` атрибута необходимо задать для элемента управления для анимации в нашем случае панели:
+Далее требуется `AnimationExtender`. После предоставления `ID` и обычного `runat="server"`атрибут `TargetControlID` должен быть установлен на элемент управления для анимации в нашем случае, панель:
 
 [!code-aspx[Main](adding-animation-to-a-control-vb/samples/sample4.aspx)]
 
-Всего применяется анимация декларативно, используя синтаксис XML, к сожалению в настоящее время не полностью поддерживается технологией IntelliSense в Visual Studio. Корневым узлом является `<Animations>;` в этот узел, несколько событий разрешены определяющие при анимации take(s) месте:
+Вся анимация применяется декларативно с использованием синтаксиса XML, к сожалению, в настоящее время не полностью поддерживается IntelliSense в Visual Studio. Корневой узел `<Animations>;` в пределах этого узла; разрешено несколько событий, которые определяют, когда происходит анимация (-ов):
 
-- `OnClick` (щелчка мыши)
-- `OnHoverOut` (когда указатель мыши покидает элемент управления)
-- `OnHoverOver` (при наведении указателя мыши над элементом управления, остановка `OnHoverOut` анимации)
-- `OnLoad` (когда страницы загрузки)
-- `OnMouseOut` (когда указатель мыши покидает элемент управления)
-- `OnMouseOver` (при наведении указателя мыши над элементом управления, не останавливает `OnMouseOut` анимации)
+- `OnClick` (щелчок мышью)
+- `OnHoverOut` (когда мышь покидает элемент управления)
+- `OnHoverOver` (при наведении указателя мыши на элемент управления, остановка `OnHoverOut`ной анимации)
+- `OnLoad` (при загрузке страницы)
+- `OnMouseOut` (когда мышь покидает элемент управления)
+- `OnMouseOver` (при наведении указателя мыши на элемент управления, не останавливая `OnMouseOut` анимацию)
 
-Платформа framework поставляется с набором анимации, каждый из них, представленный собственным XML-элементом. Ниже указаны:
+Платформа поставляется с набором анимаций, каждый из которых представлен собственным XML-элементом. Выбор осуществляется следующим образом:
 
-- `<Color>` (Изменение цвета)
-- `<FadeIn>` (плавный переход)
-- `<FadeOut>` (исчезновение)
+- `<Color>` (изменение цвета)
+- `<FadeIn>` (снижение)
+- `<FadeOut>` (плавное уменьшение)
 - `<Property>` (изменение свойства элемента управления)
-- `<Pulse>` (pulsating)
+- `<Pulse>` (пулсатинг)
 - `<Resize>` (изменение размера)
-- `<Scale>` (Пропорциональное изменение размера)
+- `<Scale>` (пропорциональное изменение размера)
 
-В этом примере панели должны скрывать. Анимация должна осуществляться 1,5 секунды (`Duration` атрибут), отображение 24 (анимации шаги) кадров в секунду (`Fps` атрибут). Вот полная разметка для `AnimationExtender` управления:
+В этом примере панель будет исчезать. Анимация должна принимать 1,5 секунд (`Duration` атрибут), отображая 24 кадра (шаги анимации) в секунду (`Fps` атрибут). Ниже приведена полная разметка для элемента управления `AnimationExtender`.
 
 [!code-aspx[Main](adding-animation-to-a-control-vb/samples/sample5.aspx)]
 
-При выполнении этого скрипта панели отображается и исчезает в один с половиной секунд.
+При выполнении этого сценария панель отображается и постепенно исчезает в течение одной и половины секунд.
 
-[![Исчезновение панели](adding-animation-to-a-control-vb/_static/image2.png)](adding-animation-to-a-control-vb/_static/image1.png)
+[![панель выходит из затухания](adding-animation-to-a-control-vb/_static/image2.png)](adding-animation-to-a-control-vb/_static/image1.png)
 
-Исчезновение панели ([Просмотр полноразмерного изображения](adding-animation-to-a-control-vb/_static/image3.png))
+Панель выйдет из режима исчезновения ([щелкните, чтобы просмотреть изображение с полным размером](adding-animation-to-a-control-vb/_static/image3.png))
 
 > [!div class="step-by-step"]
 > [Назад](dynamically-controlling-updatepanel-animations-cs.md)

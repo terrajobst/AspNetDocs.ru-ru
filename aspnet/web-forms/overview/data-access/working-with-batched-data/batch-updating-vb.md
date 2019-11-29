@@ -1,252 +1,252 @@
 ---
 uid: web-forms/overview/data-access/working-with-batched-data/batch-updating-vb
-title: Пакетного обновления (Visual Basic) | Документация Майкрософт
+title: Пакетное обновление (VB) | Документация Майкрософт
 author: rick-anderson
-description: Узнайте, как обновление нескольких записей базы данных в рамках одной операции. В слой пользовательского интерфейса, мы создаем GridView, где каждая строка является редактируемой. В данных...
+description: Узнайте, как обновить несколько записей базы данных за одну операцию. На уровне пользовательского интерфейса создается элемент управления GridView, в котором каждая строка является редактируемой. В данных...
 ms.author: riande
 ms.date: 06/26/2007
 ms.assetid: d191a204-d7ea-458d-b81c-0b9049ecb55f
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/batch-updating-vb
 msc.type: authoredcontent
-ms.openlocfilehash: 94e432815d5c597f7e98a0059e2b1cf9add2953b
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: f0bb83b17585876dd6d28a5893a223cce15da31d
+ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65134654"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74591232"
 ---
 # <a name="batch-updating-vb"></a>Пакетное обновление (VB)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Скачать код](http://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_64_VB.zip) или [скачать PDF](batch-updating-vb/_static/datatutorial64vb1.pdf)
+[Скачать код](https://download.microsoft.com/download/3/9/f/39f92b37-e92e-4ab3-909e-b4ef23d01aa3/ASPNET_Data_Tutorial_64_VB.zip) или [скачать PDF](batch-updating-vb/_static/datatutorial64vb1.pdf)
 
-> Узнайте, как обновление нескольких записей базы данных в рамках одной операции. В слой пользовательского интерфейса, мы создаем GridView, где каждая строка является редактируемой. В уровень доступа к данным мы Подведем краткие несколько операций обновления в рамках транзакции, чтобы гарантировать, что все обновления успешно или откатываются все обновления.
+> Узнайте, как обновить несколько записей базы данных за одну операцию. На уровне пользовательского интерфейса создается элемент управления GridView, в котором каждая строка является редактируемой. На уровне доступа к данным мы переносите несколько операций обновления в рамках транзакции, чтобы гарантировать успешность всех обновлений или откат всех обновлений.
 
-## <a name="introduction"></a>Вступление
+## <a name="introduction"></a>Введение
 
-В [предыдущем учебном курсе](wrapping-database-modifications-within-a-transaction-vb.md) мы узнали, как расширить уровень доступа к данным, чтобы добавить поддержку транзакций базы данных. Транзакции базы данных гарантирует, что ряд инструкций, изменяющих данные будут рассматриваться как одной элементарной операцией, которая гарантирует, что все изменения завершится ошибкой, или все успешно завершится. Благодаря этой низкого уровня DAL функции в сторону мы повторно готовы обратим наше внимание на создании пакетной службы интерфейсы изменения данных.
+В [предыдущем учебном курсе](wrapping-database-modifications-within-a-transaction-vb.md) было показано, как расширить уровень доступа к данным, чтобы добавить поддержку транзакций базы данных. Транзакции базы данных гарантируют, что ряд инструкций изменения данных будет обрабатываться как одна атомарная операция, что гарантирует, что все изменения завершатся неудачей или все будет успешным. Благодаря этой функции DAL низкого уровня мы перейдем к созданию интерфейсов модификации данных пакетной службы.
 
-В этом руководстве мы создадим GridView, где каждая строка представляет редактируемый (см. рис. 1). Так как каждая строка подготавливается в его интерфейс редактирования там s устраняет потребность в столбец редактирования, обновления и кнопки отмены. Вместо этого есть две кнопки обновления продуктов на странице, при нажатии для перечисления строк GridView, так и для обновления базы данных.
+В этом учебнике будет построен элемент управления GridView, в котором каждая строка является редактируемой (см. рис. 1). Поскольку каждая строка подготавливается к просмотру в интерфейсе редактирования, нет необходимости в столбцах кнопок Правка, обновить и Отмена. Вместо этого на странице есть две кнопки обновить продукты, которые при нажатии перечисляют строки GridView и обновляют базу данных.
 
-[![Каждая строка в GridView представляет редактируемый](batch-updating-vb/_static/image1.gif)](batch-updating-vb/_static/image1.png)
+[![, что каждая строка в GridView является редактируемой](batch-updating-vb/_static/image1.gif)](batch-updating-vb/_static/image1.png)
 
-**Рис. 1**: Каждая строка в GridView представляет редактируемый ([Просмотр полноразмерного изображения](batch-updating-vb/_static/image2.png))
+**Рис. 1**. Каждая строка в GridView является редактируемой ([щелкните, чтобы просмотреть изображение с полным размером](batch-updating-vb/_static/image2.png))
 
-Позвольте s приступить к работе!
+Давайте приступим к работе!
 
 > [!NOTE]
-> В [выполнение пакетных обновлений](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb.md) руководстве мы создали пакетного редактирования интерфейса с помощью элемента управления DataList. Этот учебник отличается от предыдущего тем, что он использует элемент управления GridView и пакетное обновление выполняется в пределах транзакции. После завершения этого учебника я советую вам, чтобы вернуться в предыдущем учебном курсе и обновить ее, чтобы использовать функции базы данных связанные с транзакциями, добавленные в предыдущем учебном курсе.
+> В учебнике [выполнение пакетного обновления](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb.md) мы создали интерфейс редактирования пакетной службы с помощью элемента управления DataList. Этот учебник отличается от предыдущего в том, что использует GridView и пакетное обновление выполняется внутри области транзакции. По завершении работы с этим руководством я рекомендую вернуться к предыдущему учебнику и обновить его, чтобы использовать функции, связанные с транзакциями базы данных, добавленные в предыдущем руководстве.
 
-## <a name="examining-the-steps-for-making-all-gridview-rows-editable"></a>Проверка действий по созданию редактируемой всех строк GridView
+## <a name="examining-the-steps-for-making-all-gridview-rows-editable"></a>Изучение шагов, позволяющих вносить изменения в все строки GridView
 
-Как уже говорилось в [Обзор Вставка, обновление и удаление данных](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-vb.md) руководстве GridView предлагает встроенную поддержку для изменения ее базовых данных, на основе строки. На внутреннем уровне GridView отмечает строку редактируются через его [ `EditIndex` свойство](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.editindex(VS.80).aspx). Как GridView, привязанный к источнику данных, он проверяет каждую строку, чтобы увидеть, если индекс строки равен значению `EditIndex`. Если Да, интерфейсы этой строки преобразования, поля отображаются с использованием их редактирования. Для полей BoundField, интерфейс редактирования является текстовое поле которого `Text` свойству присваивается значение поля данных, определяемое BoundField s `DataField` свойство. Для поля TemplateField `EditItemTemplate` используется вместо `ItemTemplate`.
+Как обсуждалось в [обзоре руководства по вставке, обновлению и удалению данных](../editing-inserting-and-deleting-data/an-overview-of-inserting-updating-and-deleting-data-vb.md) , GridView предлагает встроенную поддержку редактирования базовых данных для отдельных строк. На внутреннем уровне элемент управления GridView замещает строку, которую можно редактировать с помощью [свойства`EditIndex`](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.editindex(VS.80).aspx). Так как GridView привязан к источнику данных, он проверяет каждую строку на предмет того, что индекс строки равен значению `EditIndex`. В этом случае поля строки отображаются с помощью своих интерфейсов редактирования. Для BoundFields интерфейс редактирования — это текстовое поле, которому свойству `Text` присваивается значение поля данных, заданное свойством BoundField `DataField`. Для полей TemplateField вместо `ItemTemplate`используется `EditItemTemplate`.
 
-Помните, что редактирования рабочий процесс начинается, когда пользователь нажимает кнопку редактирования строк. Это вызывает обратную передачу, задает GridView s `EditIndex` индекс выбранной строки s, а для повторных привязок данных в сетку. При нажатии кнопки "Отмена" строк при обратной передаче `EditIndex` присваивается значение `-1` перед повторной привязкой данных в сетку. Поскольку s строк GridView начинаются индексации с нуля, Настройка `EditIndex` для `-1` приводит к отображению GridView в режиме только для чтения.
+Помните, что рабочий процесс редактирования запускается, когда пользователь нажимает кнопку изменить строку. Это вызывает обратную передачу, задает для свойства `EditIndex` GridView s значение индекса clickd Row, а затем повторно привязывает данные к сетке. При нажатии кнопки "Отмена" в случае обратной передачи `EditIndex` присваивается значение `-1` перед повторной привязкой данных к сетке. Так как GridView-строки в начале индексирования начинаются с нуля, установка `EditIndex` в `-1` приводит к отображению GridView в режиме только для чтения.
 
-`EditIndex` Свойство хорошо подходит для редактирования строки, но не предназначен для пакетной службы редактирования. Чтобы сделать доступными для редактирования всего GridView, необходимо иметь строки, отрисовки с помощью его интерфейс редактирования. Самый простой способ выполнения этой задачи является создание, где каждый редактируемое поле реализуется в соответствии с его интерфейс редактирования TemplateField `ItemTemplate`.
+Свойство `EditIndex` хорошо подходит для редактирования отдельных строк, но не предназначено для пакетного редактирования. Чтобы сделать весь элемент GridView доступным для редактирования, необходимо, чтобы каждая строка отображалась с помощью интерфейса правки. Самый простой способ сделать это — создать место, где каждое редактируемое поле реализуется как TemplateField с интерфейсом правки, определенным в `ItemTemplate`.
 
-Следующие несколько шагов мы создадим полностью изменяемого элемента управления GridView. На шаге 1 мы начнем с создания GridView и его ObjectDataSource и преобразовать его поля BoundFields и CheckBoxField в поля TemplateField. В шагах 2 и 3 мы перейдем в интерфейсы правки из полей TemplateField `EditItemTemplate` s, чтобы их `ItemTemplate` s.
+В следующих нескольких шагах мы создадим полностью редактируемый элемент управления GridView. На этапе 1 мы начнем с создания GridView и его ObjectDataSource и преобразуйте его BoundFields и CheckBoxField в полей TemplateField. В шагах 2 и 3 мы перейдем интерфейсы редактирования из полей TemplateField `EditItemTemplate` s в их `ItemTemplate` s.
 
-## <a name="step-1-displaying-product-information"></a>Шаг 1. Отображение информации о продукте
+## <a name="step-1-displaying-product-information"></a>Шаг 1. Отображение сведений о продукте
 
-Прежде чем думать о создании GridView которых строк являются изменяемыми, позвольте s сначала просто отображение информации о продукте. Откройте `BatchUpdate.aspx` странице в `BatchData` папки и перетащите элемент управления GridView с панели инструментов в конструктор. Набор GridView s `ID` для `ProductsGrid` и в его смарт-тега выберите, чтобы привязать его к элементу управления ObjectDataSource с именем `ProductsDataSource`. Настройте элемент ObjectDataSource для извлечения данных из `ProductsBLL` класс s `GetProducts` метод.
+Прежде чем беспокоиться о создании элемента управления GridView, где доступны строки для редактирования, начнем с простого отображения сведений о продукте. Откройте страницу `BatchUpdate.aspx` в папке `BatchData` и перетащите элемент управления GridView с панели инструментов в конструктор. Установите `ID` GridView s `ProductsGrid` и, выбрав его смарт-тег, привяжите его к новому ObjectDataSource с именем `ProductsDataSource`. Настройте ObjectDataSource для извлечения данных из `GetProducts` метода `ProductsBLL` классов.
 
-[![Настройка ObjectDataSource на использование класса ProductsBLL](batch-updating-vb/_static/image2.gif)](batch-updating-vb/_static/image3.png)
+[![настроить ObjectDataSource для использования класса ProductsBLL](batch-updating-vb/_static/image2.gif)](batch-updating-vb/_static/image3.png)
 
-**Рис. 2**: Настройка ObjectDataSource для использования `ProductsBLL` класс ([Просмотр полноразмерного изображения](batch-updating-vb/_static/image4.png))
+**Рис. 2**. Настройка ObjectDataSource для использования класса `ProductsBLL` ([щелкните, чтобы просмотреть изображение с полным размером](batch-updating-vb/_static/image4.png))
 
-[![Получить данные продукта, с помощью метода GetProducts](batch-updating-vb/_static/image3.gif)](batch-updating-vb/_static/image5.png)
+[![получения данных о продуктах с помощью метода Products](batch-updating-vb/_static/image3.gif)](batch-updating-vb/_static/image5.png)
 
-**Рис. 3**: Получение данных продукта с помощью `GetProducts` метод ([Просмотр полноразмерного изображения](batch-updating-vb/_static/image6.png))
+**Рис. 3**. получение данных о продукте с помощью метода `GetProducts` ([щелкните, чтобы просмотреть изображение с полным размером](batch-updating-vb/_static/image6.png))
 
-Например GridView элемент управления ObjectDataSource с изменения функциями предназначены для работы на основе строки. Чтобы обновить набор записей, нам потребуется написать небольшой фрагмент кода в классе фонового кода страницы s ASP.NET, который упаковывает данные и передает его в BLL. Таким образом задайте раскрывающиеся списки в элемент управления ObjectDataSource s вкладках UPDATE, INSERT и DELETE (нет). Нажмите кнопку Готово, чтобы завершить работу мастера.
+Как и в GridView, функции изменения ObjectDataSource предназначены для работы с каждым строкой. Чтобы обновить набор записей, необходимо написать фрагмент кода в классе кода программной части ASP.NET Page s, который пакетируют данные и передает их BLL. Поэтому в раскрывающихся списках на вкладках "Обновить", "вставить" и "Удалить" выберите значение (нет). Чтобы завершить работу мастера, нажмите кнопку Готово.
 
-[![Установите раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет)](batch-updating-vb/_static/image4.gif)](batch-updating-vb/_static/image7.png)
+[![установить в раскрывающихся списках на вкладках обновления, вставки и удаления значение (нет)](batch-updating-vb/_static/image4.gif)](batch-updating-vb/_static/image7.png)
 
-**Рис. 4**: Задайте раскрывающиеся списки в UPDATE, INSERT и удаление вкладок (нет) ([Просмотр полноразмерного изображения](batch-updating-vb/_static/image8.png))
+**Рис. 4**. Установка раскрывающихся списков на вкладках обновления, вставки и удаления в (нет) ([щелкните, чтобы просмотреть изображение с полным размером](batch-updating-vb/_static/image8.png))
 
-После завершения работы мастера настройки источников данных, декларативная разметка ObjectDataSource s должен выглядеть следующим образом:
+После завершения работы мастера настройки источника данных декларативная разметка ObjectDataSource s должна выглядеть следующим образом:
 
 [!code-aspx[Main](batch-updating-vb/samples/sample1.aspx)]
 
-Завершение работы мастера настройки источника данных также приводит к Visual Studio для создания поля BoundFields и CheckBoxField для полей данных продукта в GridView. Для этого руководства позволяют s только разрешает пользователю просматривать и редактировать s название продукта, категории, цены и снят с производства. Удалите все, кроме `ProductName`, `CategoryName`, `UnitPrice`, и `Discontinued` поля и переименуйте `HeaderText` свойства из первых трех полей продукта, категория и цена, соответственно. Наконец установите флажки включить разбиение по страницам и включить сортировку в смарт-теге GridView s.
+Завершение работы мастера настройки источника данных также приводит к тому, что Visual Studio создает BoundFields и CheckBoxField для полей данных продукта в GridView. В рамках этого руководства разрешить пользователю только просматривать и изменять название продукта, категорию, цену и состояние неподдерживаемого состояния. Удалите все поля, кроме `ProductName`, `CategoryName`, `UnitPrice`и `Discontinued`, и переименуйте свойства `HeaderText` для первых трех полей на продукты, категорию и цену соответственно. Наконец, установите флажки Включить разбиение по страницам и включить сортировку в смарт-теге GridView s.
 
-На этом этапе у GridView есть три поля BoundFields (`ProductName`, `CategoryName`, и `UnitPrice`) и по полю CheckBoxField (`Discontinued`). Нам нужно преобразовать эти четыре поля в поля TemplateField, а затем переместите интерфейс правки из TemplateField s `EditItemTemplate` для его `ItemTemplate`.
-
-> [!NOTE]
-> Мы изучили создание и настройка полей TemplateField в [Настройка интерфейса изменения данных](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) руководства. Мы рассмотрим действия преобразования поля BoundFields и CheckBoxField в поля TemplateField и определение их редактирования интерфейсов в их `ItemTemplate` s, но если вы уверены, или требуется такая Дон t каких-либо опасений обращаться к этому руководству более ранней.
-
-Смарт-теге GridView s щелкните ссылку Изменить столбцы, чтобы открыть диалоговое окно "поля". Выберите каждое поле затем щелкните преобразовать это поле в TemplateField ссылку.
-
-![Преобразование существующего поля BoundFields и CheckBoxField в поля TemplateField](batch-updating-vb/_static/image5.gif)
-
-**Рис. 5**: Преобразование существующего поля BoundFields и CheckBoxField в поля TemplateField
-
-После того, каждое поле TemplateField, мы будет готов для перемещения редактирования интерфейса из `EditItemTemplate` s, чтобы `ItemTemplate` s.
-
-## <a name="step-2-creating-theproductnameunitprice-anddiscontinuedediting-interfaces"></a>Шаг 2. Создание`ProductName`,`UnitPrice`, и`Discontinued`редактирования интерфейсы
-
-Создание `ProductName`, `UnitPrice`, и `Discontinued` редактирования интерфейсы речь этот шаг и работают довольно просто, как каждый интерфейс уже определено в TemplateField s `EditItemTemplate`. Создание `CategoryName` интерфейс редактирования немного сложнее, поскольку нам необходимо создать DropDownList возможно категорий. Это `CategoryName` интерфейс редактирования является взялись за на шаге 3.
-
-Позвольте s начинаются с `ProductName` TemplateField. Щелкните ссылку Изменить шаблоны в смарт-теге GridView s и детализировать `ProductName` TemplateField s `EditItemTemplate`. Выберите текстовое поле, скопируйте его в буфер обмена и вставьте его в `ProductName` TemplateField s `ItemTemplate`. Измените текстовое поле s `ID` свойства `ProductName`.
-
-Добавьте RequiredFieldValidator к `ItemTemplate` чтобы убедиться, что пользователь предоставит значение для каждого названия продукта s. Задайте `ControlToValidate` свойства ProductName, `ErrorMessage` свойство вам необходимо указать название продукта. и `Text` свойства \*. После внесения этих изменений `ItemTemplate`, экран должен выглядеть аналогично рис. 6.
-
-[![Теперь TemplateField ProductName включает текстовое поле и RequiredFieldValidator](batch-updating-vb/_static/image6.gif)](batch-updating-vb/_static/image9.png)
-
-**Рис. 6**: `ProductName` TemplateField теперь включает текстовое поле и RequiredFieldValidator ([Просмотр полноразмерного изображения](batch-updating-vb/_static/image10.png))
-
-Для `UnitPrice` интерфейс редактирования, запуска путем копирования из текстового поля `EditItemTemplate` для `ItemTemplate`. Затем поместите $ перед в текстовое поле и задайте его `ID` свойство UnitPrice и его `Columns` значение 8.
-
-Также добавьте элемент управления CompareValidator для `UnitPrice` s `ItemTemplate` чтобы убедиться, что введенное пользователем значение является значением валют, больше или равно 0,00 долл. США. Набор s проверяющий элемент управления `ControlToValidate` свойство UnitPrice, его `ErrorMessage` свойство вам необходимо ввести допустимый денежное значение. Можно опустить любые валюты символы., его `Text` свойства \*, ее `Type` свойства `Currency`, ее `Operator` свойства `GreaterThanEqual`и его `ValueToCompare` значение 0.
-
-[![Добавьте элемент управления CompareValidator для проверить цен, указанных это значение валюты не отрицательны](batch-updating-vb/_static/image7.gif)](batch-updating-vb/_static/image11.png)
-
-**Рис. 7**: Добавление CompareValidator, чтобы удостовериться в цену, ввода является значение валюты не отрицательны ([Просмотр полноразмерного изображения](batch-updating-vb/_static/image12.png))
-
-Для `Discontinued` TemplateField используется флажок уже определен в `ItemTemplate`. Просто установите для его `ID` для Discontinued и его `Enabled` свойства `True`.
-
-## <a name="step-3-creating-thecategorynameediting-interface"></a>Шаг 3. Создание`CategoryName`интерфейс редактирования
-
-Интерфейс правки в `CategoryName` TemplateField s `EditItemTemplate` содержит текстовое поле, которое отображает значение `CategoryName` поля данных. Нам нужно заменить с помощью элемента управления DropDownList, перечислены возможные категории.
+На этом этапе GridView имеет три BoundFields (`ProductName`, `CategoryName`и `UnitPrice`) и CheckBoxField (`Discontinued`). Необходимо преобразовать эти четыре поля в полей TemplateField, а затем переместить интерфейс редактирования из TemplateField s `EditItemTemplate` в `ItemTemplate`.
 
 > [!NOTE]
-> [Настройка интерфейса изменения данных](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) учебник содержит обсуждение более тщательной и завершения настройки шаблона для включения элемента управления DropDownList в отличие от текстового поля. При выполнении этих шагов они представлены кратко. Более подробно рассмотрено создание и настройка DropDownList категорий, обращаться к [Настройка интерфейса изменения данных](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) руководства.
+> Мы изучили создание и настройку полей TemplateField в руководстве по [настройке интерфейса изменения данных](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) . Мы рассмотрим шаги по преобразованию BoundFields и CheckBoxField в полей TemplateField и определении их интерфейсов редактирования в `ItemTemplate` s, но если вы захотите или потребуете обновления, не сможете вернуться к предыдущему руководству.
 
-Перетащите DropDownList с панели элементов в `CategoryName` TemplateField s `ItemTemplate`, устанавливая его `ID` для `Categories`. На этом этапе мы бы обычно определение элементов управления DropDownList s источника данных через его смарт-тег, создание нового источника ObjectDataSource. Тем не менее, это будет добавлен элемент управления ObjectDataSource в `ItemTemplate`, что приведет к ObjectDataSource экземпляром, созданным для каждой строки GridView. Вместо этого разрешите s создайте ObjectDataSource за пределами s GridView полей TemplateField. Завершить редактирование шаблона и перетащите элемент управления ObjectDataSource из панели элементов в конструктор под `ProductsDataSource` ObjectDataSource. Новый ObjectDataSource следует назвать `CategoriesDataSource` и настройте его для использования `CategoriesBLL` класс s `GetCategories` метод.
+Из смарт-тега GridView s щелкните ссылку изменить столбцы, чтобы открыть диалоговое окно поля. Затем выберите каждое поле и щелкните преобразовать это поле в ссылку TemplateField.
 
-[![Настройка ObjectDataSource на использование класса CategoriesBLL](batch-updating-vb/_static/image8.gif)](batch-updating-vb/_static/image13.png)
+![Преобразование существующих BoundFields и CheckBoxField в полей TemplateField](batch-updating-vb/_static/image5.gif)
 
-**Рис. 8**: Настройка ObjectDataSource для использования `CategoriesBLL` класс ([Просмотр полноразмерного изображения](batch-updating-vb/_static/image14.png))
+**Рис. 5**. Преобразование существующих BoundFields и CheckBoxField в полей TemplateField
 
-[![Получить категории данных с помощью метода GetCategories](batch-updating-vb/_static/image9.gif)](batch-updating-vb/_static/image15.png)
+Теперь, когда каждое поле является TemplateField, мы перейдем к перемещению интерфейса редактирования из `EditItemTemplate` s в `ItemTemplate` s.
 
-**Рис. 9**: Получить категории данных с помощью `GetCategories` метод ([Просмотр полноразмерного изображения](batch-updating-vb/_static/image16.png))
+## <a name="step-2-creating-theproductnameunitprice-anddiscontinuedediting-interfaces"></a>Шаг 2. Создание`ProductName`,`UnitPrice`и`Discontinued`интерфейсов редактирования
 
-Поскольку данный элемент управления ObjectDataSource используется просто для получения данных, задайте раскрывающихся списках на вкладках UPDATE и DELETE (нет). Нажмите кнопку Готово, чтобы завершить работу мастера.
+Создание `ProductName`, `UnitPrice`и `Discontinued` интерфейсов редактирования является темой этого шага и довольно проста, так как каждый интерфейс уже определен в `EditItemTemplate`TemplateField s. Создание интерфейса редактирования `CategoryName` является немного более сложным, поскольку необходимо создать DropDownList для применимых категорий. Этот `CategoryName` интерфейс редактирования разрешается на шаге 3.
 
-[![Набор раскрывающиеся списки в UPDATE и DELETE вкладок (нет)](batch-updating-vb/_static/image10.gif)](batch-updating-vb/_static/image17.png)
+Давайте начнем с `ProductName` TemplateField. Щелкните ссылку Edit Templates (изменить шаблоны) в смарт-теге GridView s и перейдите к `ProductName` TemplateField s `EditItemTemplate`. Выберите текстовое поле, скопируйте его в буфер обмена и вставьте в `ProductName` TemplateField s `ItemTemplate`. Измените для свойства `ID` TextBox значение `ProductName`.
 
-**Рис. 10**: Задать раскрывающиеся списки в обновление и удаление вкладок (нет) ([Просмотр полноразмерного изображения](batch-updating-vb/_static/image18.png))
+Затем добавьте RequiredFieldValidator в `ItemTemplate`, чтобы гарантировать, что пользователь предоставит значение для каждого названия продукта. Задайте для свойства `ControlToValidate` значение ProductName, для свойства `ErrorMessage` необходимо указать имя продукта. и свойство `Text` для \*. После внесения этих дополнений в `ItemTemplate`экран должен выглядеть примерно так, как показано на рис. 6.
 
-После завершения работы мастера, `CategoriesDataSource` s должна выглядеть следующим образом:
+[![TemplateField ProductName теперь включает в себя текстовое поле и RequiredFieldValidator](batch-updating-vb/_static/image6.gif)](batch-updating-vb/_static/image9.png)
+
+**Рис. 6**. `ProductName` TemplateField теперь содержит текстовое поле и RequiredFieldValidator ([щелкните, чтобы просмотреть изображение с полным размером](batch-updating-vb/_static/image10.png))
+
+Для интерфейса редактирования `UnitPrice` Начните с копирования текстового поля из `EditItemTemplate` в `ItemTemplate`. Затем поместите $ перед текстовым полем и задайте для свойства `ID` значение UnitPrice, а для свойства `Columns` — значение 8.
+
+Также добавьте объект CompareValidator в `ItemTemplate` `UnitPrice` s, чтобы убедиться, что значение, указанное пользователем, является допустимым значением валюты, которое больше или равно $0,00. Задайте для свойства `ControlToValidate` проверяющего элемента управления значение UnitPrice, для свойства `ErrorMessage` необходимо ввести допустимое значение валюты. Не указывайте символы валют., свойство `Text` для \*, его свойство `Type` для `Currency`, свойство `Operator` в `GreaterThanEqual`, а свойство `ValueToCompare` — в значение 0.
+
+[![добавить объект CompareValidator для обеспечения того, что указанная цена является неотрицательным значением валюты](batch-updating-vb/_static/image7.gif)](batch-updating-vb/_static/image11.png)
+
+**Рис. 7**. Добавление элемента CompareValidator для обеспечения того, что указанная цена является неотрицательным значением валюты ([щелкните, чтобы просмотреть изображение с полным размером](batch-updating-vb/_static/image12.png))
+
+Для `Discontinued` TemplateField можно использовать флажок, уже определенный в `ItemTemplate`. Просто задайте для его `ID` значение больше, а для свойства `Enabled` — значение `True`.
+
+## <a name="step-3-creating-thecategorynameediting-interface"></a>Шаг 3. Создание интерфейса редактирования`CategoryName`
+
+Интерфейс редактирования в `CategoryName` TemplateField s `EditItemTemplate` содержит текстовое поле, в котором отображается значение поля данных `CategoryName`. Необходимо заменить его на DropDownList, в котором перечислены возможные категории.
+
+> [!NOTE]
+> Руководство по [настройке интерфейса изменения данных](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) содержит более подробное и полное описание настройки шаблона для включения DropDownList, а не текстового поля. Хотя приведенные здесь действия завершены, они представлены кратко. Более подробные сведения о создании и настройке DropDownList см. в разделе [Настройка интерфейса изменения данных](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) .
+
+Перетащите DropDownList с панели элементов на `CategoryName` TemplateField s `ItemTemplate`, установив для его `ID` значение `Categories`. На этом этапе мы обычно определяем источник данных элементов управления DropDownList s через смарт-тег, создавая новый элемент управления ObjectDataSource. Однако это приведет к добавлению ObjectDataSource в `ItemTemplate`, что приведет к созданию экземпляра ObjectDataSource для каждой строки GridView. Вместо этого давайте создадим элемент управления ObjectDataSource за пределами GridView s полей TemplateField. Завершите редактирование шаблона и перетащите элемент управления ObjectDataSource с панели элементов в конструктор под `ProductsDataSource` ObjectDataSource. Присвойте новому элементу ObjectDataSource имя `CategoriesDataSource` и настройте его для использования метода `CategoriesBLL` класса s `GetCategories`.
+
+[![настроить ObjectDataSource для использования класса CategoriesBLL](batch-updating-vb/_static/image8.gif)](batch-updating-vb/_static/image13.png)
+
+**Рис. 8**. Настройка ObjectDataSource для использования класса `CategoriesBLL` ([щелкните, чтобы просмотреть изображение с полным размером](batch-updating-vb/_static/image14.png))
+
+[![получения данных категории с помощью метода Categories](batch-updating-vb/_static/image9.gif)](batch-updating-vb/_static/image15.png)
+
+**Рис. 9**. получение данных категории с помощью метода `GetCategories` ([щелкните, чтобы просмотреть изображение с полным размером](batch-updating-vb/_static/image16.png))
+
+Так как этот элемент ObjectDataSource используется только для получения данных, установите в раскрывающихся списках на вкладках обновление и удаление значение (нет). Чтобы завершить работу мастера, нажмите кнопку Готово.
+
+[![установить в раскрывающихся списках на вкладках обновить и удалить значение (нет)](batch-updating-vb/_static/image10.gif)](batch-updating-vb/_static/image17.png)
+
+**Рис. 10**. Установка в раскрывающихся списках на вкладках "Обновить" и "Удалить" (нет) ([щелкните, чтобы просмотреть изображение с полным размером](batch-updating-vb/_static/image18.png))
+
+После завершения работы мастера декларативная разметка `CategoriesDataSource` s должна выглядеть следующим образом:
 
 [!code-aspx[Main](batch-updating-vb/samples/sample2.aspx)]
 
-С помощью `CategoriesDataSource` создания и настройки, вернуться к `CategoryName` TemplateField s `ItemTemplate` и смарт-теге DropDownList s, щелкните ссылку Выбор источника данных. В мастере настройки источника данных выберите `CategoriesDataSource` параметр в первом раскрывающемся списке и выбрать `CategoryName` используемый для отображения и `CategoryID` как значение.
+После создания и настройки `CategoriesDataSource` вернитесь к `CategoryName` TemplateField s `ItemTemplate` а в смарт-теге DropDownList s щелкните ссылку Выбор источника данных. В мастере настройки источника данных выберите параметр `CategoriesDataSource` из первого раскрывающегося списка и выберите использование `CategoryName` для вывода и `CategoryID` в качестве значения.
 
-[![Привязка к CategoriesDataSource DropDownList](batch-updating-vb/_static/image11.gif)](batch-updating-vb/_static/image19.png)
+[![привязать DropDownList к CategoriesDataSource](batch-updating-vb/_static/image11.gif)](batch-updating-vb/_static/image19.png)
 
-**Рис. 11**: Привязка элемента управления DropDownList для `CategoriesDataSource` ([Просмотр полноразмерного изображения](batch-updating-vb/_static/image20.png))
+**Рис. 11**. Привязка DropDownList к `CategoriesDataSource` ([щелкните, чтобы просмотреть изображение с полным размером](batch-updating-vb/_static/image20.png))
 
-На этом этапе `Categories` DropDownList перечислены все категории, но он не еще автоматически выбирать подходящую категорию для продукта, привязанный к строке GridView. Для этого нам нужно установить `Categories` DropDownList s `SelectedValue` продукт s `CategoryID` значение. Щелкните ссылку Edit DataBindings в смарт-теге DropDownList s и связать `SelectedValue` свойство с `CategoryID` поле данных, как показано на рис. 12.
+На этом этапе `Categories` DropDownList перечисляет все категории, но не автоматически выбирает соответствующую категорию для продукта, привязанного к строке GridView. Для этого необходимо установить `Categories` DropDownList `SelectedValue` в значение Product s `CategoryID`. Щелкните ссылку Edit DataBindings (Редактировать привязки данных) в смарт-теге DropDownList и свяжите свойство `SelectedValue` с полем данных `CategoryID`, как показано на рис. 12.
 
-![Привязать значение CategoryID продукта s к свойству SelectedValue s DropDownList](batch-updating-vb/_static/image12.gif)
+![Привяжите значение CategoryID продукта к свойству DropDownList SelectedValue](batch-updating-vb/_static/image12.gif)
 
-**Рис. 12**: Привязать продукт s `CategoryID` значение для элемента управления DropDownList s `SelectedValue` свойство
+**Рис. 12**. Привязка значения Product `CategoryID` к свойству `SelectedValue` DropDownList
 
-Один последний остается проблема: Если t продукта `CategoryID` значения указаны, то инструкция привязки данных на `SelectedValue` приведет к возникновению исключения. Это обусловлено DropDownList содержит только элементы для категорий и не предлагает вариант для этих продуктов, имеющих `NULL` базы данных значение `CategoryID`. Чтобы исправить это, установите DropDownList s `AppendDataBoundItems` свойства `True` и добавьте новый элемент в элемент управления DropDownList, пропуск `Value` свойство из декларативного синтаксиса. То есть, убедитесь, что `Categories` декларативный синтаксис серверного элемента управления DropDownList s выглядит следующим образом:
+Последняя проблема остается: Если для продукта не задано значение `CategoryID`, инструкция DataBinding в `SelectedValue` вызовет исключение. Это обусловлено тем, что DropDownList содержит только элементы для категорий и не предоставляет параметр для тех продуктов, которые имеют `NULL` значение базы данных для `CategoryID`. Чтобы устранить эту проблему, задайте для свойства DropDownList `AppendDataBoundItems` значение `True` и добавьте новый элемент в DropDownList, опустив свойство `Value` из декларативного синтаксиса. Это значит, что декларативный синтаксис `Categories` DropDownList выглядит следующим образом:
 
 [!code-aspx[Main](batch-updating-vb/samples/sample3.aspx)]
 
-Обратите внимание как `<asp:ListItem Value="">` --выберите один--имеет его `Value` атрибут явно задать пустую строку. Вернуться к [Настройка интерфейса изменения данных](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) учебника Зачем нужна это еще один элемент DropDownList для обработки более глубокое обсуждение `NULL` случай и почему назначение `Value` Важно свойству пустую строку.
+Обратите внимание, что `<asp:ListItem Value="">`--выберите один--атрибут `Value` явно задан пустой строкой. Ознакомьтесь с руководством по [настройке интерфейса изменения данных](../editing-inserting-and-deleting-data/customizing-the-data-modification-interface-vb.md) , чтобы получить более полное представление о том, почему этот дополнительный элемент DropDownList необходим для обработки `NULL` случае, и зачем назначение свойства `Value` пустой строке является обязательным.
 
 > [!NOTE]
-> Существует проблема потенциальной производительности и масштабируемости здесь, о котором стоит упомянуть. Так как каждая строка содержит элемента управления DropDownList, использующий `CategoriesDataSource` в качестве источника данных, `CategoriesBLL` класс s `GetCategories` будет вызван метод *n* посетите раз на каждой странице, где *n* число строки GridView. Эти *n* вызовы `GetCategories` привести *n* запросы к базе данных. Это влияние на базе удалось уменьшилось путем кэширования возвращенного категорий в кэше для каждого запроса или через уровень кэширования, используя кэширование зависимостей или истечения срока действия очень короткое время под управлением SQL. Дополнительные сведения о каждом запросе параметр, кэширования см. в разделе [ `HttpContext.Items` Store кэша на запрос](http://aspnet.4guysfromrolla.com/articles/060904-1.aspx).
+> Здесь есть потенциальная ошибка производительности и масштабируемости, которую стоит упомянуть. Поскольку каждая строка содержит элемент управления DropDownList, использующий `CategoriesDataSource` в качестве источника данных, метод `CategoriesBLL` класса s `GetCategories` будет называться *n* раз на страницу посещения страницы, где *n* — число строк в GridView. Эти *n* вызовов `GetCategories` приводят к появлению *n* запросов к базе данных. Это влияние на базу данных можно уменьшить путем кэширования возвращенных категорий либо в кэше запросов, либо с помощью уровня кэширования с использованием зависимости кэширования SQL или с очень коротким сроком действия на основе времени. Дополнительные сведения о параметре кэширования для каждого запроса см. в разделе [`HttpContext.Items` хранилище кэша для каждого запроса](http://aspnet.4guysfromrolla.com/articles/060904-1.aspx).
 
-## <a name="step-4-completing-the-editing-interface"></a>Шаг 4. Завершение работы интерфейс правки
+## <a name="step-4-completing-the-editing-interface"></a>Шаг 4. Завершение интерфейса редактирования
 
-Мы ve внесены несколько изменений шаблонов s GridView не приостанавливая выполнение просмотрите ход работы. Отвлекитесь и просмотрите ход работы через браузер. Как показано на рис. 13, каждая строка подготавливается с помощью его `ItemTemplate`, который содержит ячейку s, интерфейс редактирования.
+Мы внесли ряд изменений в шаблоны GridView s без приостановки для просмотра хода выполнения. Уделите время для просмотра хода выполнения в браузере. Как показано на рис. 13, каждая строка отображается с помощью `ItemTemplate`, которая содержит интерфейс редактирования ячеек.
 
-[![Каждая строка GridView представляет редактируемый](batch-updating-vb/_static/image13.gif)](batch-updating-vb/_static/image21.png)
+[![, что каждая строка GridView доступна для редактирования](batch-updating-vb/_static/image13.gif)](batch-updating-vb/_static/image21.png)
 
-**Рис. 13**: Каждая строка GridView представляет редактируемый ([Просмотр полноразмерного изображения](batch-updating-vb/_static/image22.png))
+**Рис. 13**. Каждая строка GridView доступна для редактирования ([щелкните, чтобы просмотреть изображение с полным размером](batch-updating-vb/_static/image22.png))
 
-Существует несколько незначительных проблем форматирования, которые мы следует обратить на этом этапе. Во-первых, обратите внимание, что `UnitPrice` значение содержит четыре десятичных запятых. Чтобы устранить эту проблему, нужно вернуть `UnitPrice` TemplateField s `ItemTemplate` и, в текстовое поле s смарт-теге, щелкните ссылку Edit DataBindings. Затем укажите, `Text` свойство форматируются в виде числа.
+На этом этапе следует соблюдать несколько проблем, связанных с форматированием. Сначала обратите внимание, что значение `UnitPrice` содержит четыре десятичных знака. Чтобы устранить эту проблему, вернитесь к `UnitPrice` TemplateField s `ItemTemplate` и в смарт-теге TextBox щелкните ссылку изменить привязки к данным. Затем укажите, что свойство `Text` должно быть отформатировано как число.
 
-![Форматировать как число свойства Text](batch-updating-vb/_static/image14.gif)
+![Форматирование свойства Text как числа](batch-updating-vb/_static/image14.gif)
 
-**Рис. 14**: Формат `Text` свойство как число
+**Рис. 14**. форматирование свойства `Text` в виде числа
 
-Во-вторых, позволяющие s center флажок в `Discontinued` столбца (а не его по левому краю). Щелкните смарт-теге GridView s Правка столбцов и выберите `Discontinued` TemplateField из списка полей в левом нижнем углу. Детализировать `ItemStyle` и задайте `HorizontalAlign` свойство центр, как показано на рис. 15.
+Во-вторых, давайте разберем флажок в столбце `Discontinued` (вместо того, чтобы он был выровнен по левому краю). Щелкните Edit Columns (изменить столбцы) в смарт-теге GridView s и выберите `Discontinued` TemplateField из списка полей в левом нижнем углу. Детализируйте углублением `ItemStyle` и задайте для свойства `HorizontalAlign` значение Center, как показано на рис. 15.
 
-![Center неподдерживаемые флажок](batch-updating-vb/_static/image15.gif)
+![Центрирование снятого флажка](batch-updating-vb/_static/image15.gif)
 
-**Рис. 15**: Center `Discontinued` флажок
+**Рис. 15**. центрирование флажка `Discontinued`
 
-Затем добавьте элемент управления ValidationSummary на страницу и задать его `ShowMessageBox` свойства `True` и его `ShowSummary` свойства `False`. Кроме того, добавить кнопку веб-элементов управления, при щелчке, обновит s изменения, внесенные пользователем. В частности, добавьте две кнопки веб-элементы управления, одного над элементом управления GridView и под ней задание оба элемента управления `Text` свойства для обновления продуктов.
+Затем добавьте на страницу элемент управления ValidationSummary и задайте для его свойства `ShowMessageBox` значение `True`, а для свойства `ShowSummary` значение `False`. Также добавьте веб-элементы управления "Кнопка", которые при нажатии обновит изменения пользователя. В частности, добавьте два веб-элемента управления "Кнопка", один из которых находится над GridView, и один под ним, устанавливая оба элемента управления, `Text` свойства для обновления продуктов.
 
-С момента GridView s интерфейс редактирования определен в его полей TemplateField `ItemTemplate` s, `EditItemTemplate` s избыточным и может быть удален.
+Поскольку интерфейс редактирования GridView s определен в его полей TemplateField `ItemTemplate` s, `EditItemTemplate` s являются избыточными и могут быть удалены.
 
-После внесения указанных выше упоминалось форматирование, добавление элемента управления Button и удаление ненужный `EditItemTemplate` s, ваши страницы s должен выглядеть следующим образом:
+После внесения перечисленных выше изменений форматирования, добавления элементов управления "Кнопка" и удаления ненужных `EditItemTemplate` s декларативный синтаксис страниц должен выглядеть следующим образом:
 
 [!code-aspx[Main](batch-updating-vb/samples/sample4.aspx)]
 
-На рисунке 16 показано на этой странице, при просмотре через браузер, после добавления кнопки веб-элементов управления и изменений форматирования.
+Рис. 16 показывает эту страницу при просмотре через браузер после добавления веб-элементов управления "Кнопка" и внесения изменений форматирования.
 
-[![Теперь страница включает в себя две кнопки обновления продуктов](batch-updating-vb/_static/image16.gif)](batch-updating-vb/_static/image23.png)
+[![страница теперь содержит две кнопки обновления продуктов](batch-updating-vb/_static/image16.gif)](batch-updating-vb/_static/image23.png)
 
-**Рис. 16**: Теперь включает два обновления продуктов кнопок страниц ([Просмотр полноразмерного изображения](batch-updating-vb/_static/image24.png))
+**Рис. 16**. Теперь страница содержит две кнопки обновления продуктов ([щелкните, чтобы просмотреть изображение с полным размером](batch-updating-vb/_static/image24.png)).
 
-## <a name="step-5-updating-the-products"></a>Шаг 5. Обновления продуктов
+## <a name="step-5-updating-the-products"></a>Шаг 5. Обновление продуктов
 
-При посещении этой страницы они делает их изменения и затем выберите один из двух кнопок продукты с обновлением. На этом этапе нам нужно каким-либо образом сохранить введенные пользователем значения для каждой строки в `ProductsDataTable` экземпляра и затем передать его в метод BLL, который затем будет передавать, `ProductsDataTable` экземпляра DAL s `UpdateWithTransaction` метод. `UpdateWithTransaction` Метод, который мы создали в [предыдущем учебном курсе](wrapping-database-modifications-within-a-transaction-vb.md), гарантирует, что пакет изменений будет обновляться в виде атомарной операции.
+При посещении пользователем этой страницы будут внесены изменения, а затем нажата одна из двух кнопок обновления продуктов. В этот момент нам нужно каким-то образом сохранить значения, заданные пользователем для каждой строки, в `ProductsDataTable` экземпляре, а затем передать его в метод BLL, который затем передаст этот экземпляр `ProductsDataTable` в метод DAL s `UpdateWithTransaction`. Метод `UpdateWithTransaction`, созданный в [предыдущем руководстве](wrapping-database-modifications-within-a-transaction-vb.md), гарантирует, что пакет изменений будет обновлен как атомарная операция.
 
 Создайте метод с именем `BatchUpdate` в `BatchUpdate.aspx.vb` и добавьте следующий код:
 
 [!code-vb[Main](batch-updating-vb/samples/sample5.vb)]
 
-Этот метод начинается с получения всех продуктов в `ProductsDataTable` через вызов BLL s `GetProducts` метод. Затем выполняется перечисление `ProductGrid` GridView s [ `Rows` коллекции](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.rows(VS.80).aspx). `Rows` Коллекция содержит [ `GridViewRow` экземпляр](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridviewrow.aspx) для каждой строки, отображаемый в GridView. Так как мы продемонстрируем максимум десять строк на одной странице, GridView s `Rows` коллекции будет иметь не более десяти элементов.
+Этот метод начинается путем возвращения всех продуктов в `ProductsDataTable` с помощью вызова метода `GetProducts` BLL. Затем выполняется перечисление коллекции `ProductGrid` GridView s [`Rows`](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridview.rows(VS.80).aspx). Коллекция `Rows` содержит [экземпляр`GridViewRow`](https://msdn.microsoft.com/library/system.web.ui.webcontrols.gridviewrow.aspx) для каждой строки, отображаемой в GridView. Так как мы видим не более десяти строк на странице, `Rows` коллекция GridView s будет содержать не более десяти элементов.
 
-Для каждой строки `ProductID` извлечен из `DataKeys` коллекции и соответствующий `ProductsRow` выбирается из `ProductsDataTable`. Программным способом указываются четыре TemplateField ввода элемента управления и их значения присвоены `ProductsRow` s свойств экземпляра. После каждого GridView значений строк используется для обновления `ProductsDataTable`, он передаваемых в BLL s `UpdateWithTransaction` метод, который, как мы видели в предыдущем учебном курсе просто вызывает DAL s `UpdateWithTransaction` метод.
+Для каждой строки, `ProductID` извлеченной из коллекции `DataKeys` и выбрана соответствующая `ProductsRow` из `ProductsDataTable`. На четыре элемента управления вводом TemplateField программными ссылками, а также их значения, назначенные свойствам экземпляра `ProductsRow`. После того, как для обновления `ProductsDataTable`используются все значения строк GridView, они передавались методу `UpdateWithTransaction` BLL, который, как мы видели в предыдущем руководстве, просто вызывает метод DAL s `UpdateWithTransaction`.
 
-Алгоритм обновления пакетной службы, используемый в этом учебнике обновляет каждую строку в `ProductsDataTable` , соответствует строке в GridView, независимо от того, менялся ли сведения о продукте s. Во время таких людей с нарушениями зрения обновлений обычно не проблемы с производительностью, они может привести к излишним записей, если изменяется во время аудита в таблицу базы данных. Вернитесь в [выполнение пакетных обновлений](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb.md) учебнике мы изучили пакета обновление интерфейса с помощью элемента управления DataList и добавить код, который обновит только те записи, которые действительно были изменены пользователем. Вы можете использовать методы из [выполнение пакетных обновлений](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb.md) обновление кода в этом руководстве, при необходимости.
+Алгоритм пакетного обновления, используемый в этом руководстве, обновляет каждую строку в `ProductsDataTable`, соответствующую строке в GridView, независимо от того, изменились ли сведения о продукте. Хотя подобные обновления, как правило, не являются проблемой с производительностью, они могут привести к излишним записям при повторном аудите изменений в таблице базы данных. В учебнике [выполнение пакетных обновлений](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb.md) мы изучили интерфейс обновления пакетной службы с помощью DataList и добавили код, который будет обновлять только те записи, которые фактически были изменены пользователем. При необходимости вы можете использовать методы [выполнения пакетных обновлений](../editing-and-deleting-data-through-the-datalist/performing-batch-updates-vb.md) для обновления кода в этом руководстве.
 
 > [!NOTE]
-> При привязке источника данных к GridView через его смарт-тег, Visual Studio автоматически назначает данных источника s первичного ключа значения GridView s `DataKeyNames` свойство. Если не удалось привязать ObjectDataSource к GridView через смарт-тега GridView s, как описано на шаге 1, то необходимо вручную задать GridView s `DataKeyNames` значение ProductID, чтобы получить доступ к `ProductID` значение для каждой строки через `DataKeys` коллекции.
+> При привязке источника данных к GridView через его смарт-тег Visual Studio автоматически назначает значения первичного ключа (-ов) источника данных для свойства `DataKeyNames` GridView s. Если вы не привязали ObjectDataSource к GridView с помощью смарт-тега GridView s, как описано в шаге 1, необходимо вручную задать для свойства `DataKeyNames` GridView s значение ProductID, чтобы получить доступ к `ProductID`ному значению для каждой строки через коллекцию `DataKeys`.
 
-Код, используемый в `BatchUpdate` аналогично тому, который использовался в BLL s `UpdateProduct` методы, основным же различием является, в `UpdateProduct` методы только один `ProductRow` извлекается экземпляр из архитектуры. Код, который назначает свойства `ProductRow` является одинаковым в разных `UpdateProducts` методы и код в `For Each` цикл `BatchUpdate`, так как общий шаблон.
+Код, используемый в `BatchUpdate`, аналогичен тому, который использовался в методах `UpdateProduct` BLL, основное различие заключается в том, что в методах `UpdateProduct` извлекается только один экземпляр `ProductRow` из архитектуры. Код, который назначает свойства `ProductRow`, одинаков между методами `UpdateProducts` и кодом в цикле `For Each` в `BatchUpdate`, как и общий шаблон.
 
-Для работы с этим учебником необходимо иметь `BatchUpdate` метод вызывается при нажатии одной из кнопок продукты с обновлением. Создание обработчиков событий для `Click` события этих двух элементов управления и добавьте следующий код в обработчиках событий:
+Для работы с этим руководством необходимо, чтобы метод `BatchUpdate` вызывался при нажатии любой из кнопок обновить продукты. Создайте обработчики событий для `Click` событий этих двух элементов управления "Кнопка" и добавьте следующий код в обработчики событий:
 
 [!code-vb[Main](batch-updating-vb/samples/sample6.vb)]
 
-Сначала выполняется вызов для `BatchUpdate`. Далее, [ `ClientScript` свойство](https://msdn.microsoft.com/library/system.web.ui.page.clientscript(VS.80).aspx) используется для добавления JavaScript, который будет отображать окно messagebox, который считывает продукты были обновлены.
+Сначала выполняется вызов `BatchUpdate`. Затем [свойство`ClientScript`](https://msdn.microsoft.com/library/system.web.ui.page.clientscript(VS.80).aspx) используется для вставки JavaScript, который будет отображать MessageBox, считывающие продукты, которые были обновлены.
 
-Внимательно протестировать этот код. Посетите `BatchUpdate.aspx` через браузер, изменить число строк и нажмите одну из кнопок продукты с обновлением. Предположим, что нет ошибок проверки входных данных, вы должны увидеть окно messagebox, которая считывает продукты были обновлены. Чтобы проверить атомарность обновления, рассмотрите возможность добавления случайный `CHECK` ограничения, например, которая запрещает режим `UnitPrice` значения 1234,56. А затем из `BatchUpdate.aspx`, изменить несколько записей, не забывая задать один из продуктов s `UnitPrice` в запрещенное значение (1234,56). Это должно привести к ошибке, щелкнув продукты с обновлением с другими изменениями во время операции отката к исходным значениям.
+Протестируйте этот код, уделите минуту. Откройте `BatchUpdate.aspx` через браузер, измените несколько строк и нажмите одну из кнопок обновить продукты. Если нет ошибок проверки ввода, вы увидите MessageBox, считывающий продукты, которые были обновлены. Чтобы проверить атомарность обновления, рассмотрите возможность добавления случайного ограничения `CHECK`, например, которое запрещает `UnitPrice` значения 1234,56. Затем из `BatchUpdate.aspx`измените несколько записей, установив для одного из них `UnitPrice` значение запрещено (1234,56). Это должно привести к ошибке при нажатии кнопки обновить продукты с другими изменениями во время отката пакетной операции к исходным значениям.
 
-## <a name="an-alternativebatchupdatemethod"></a>Альтернативы`BatchUpdate`метод
+## <a name="an-alternativebatchupdatemethod"></a>Альтернативный метод`BatchUpdate`
 
-`BatchUpdate` Метод, мы просто проверить извлекает *все* продуктов из BLL s `GetProducts` метод, а затем обновляет только те записи, которые отображаются в GridView. Этот подход является идеальным, если GridView не использовать разбиение по страницам, но если это так, может существовать несколько сотен, тысяч или десятков тысяч продуктов, но только десять строк в GridView. В этом случае получение всех продуктов из базы данных только для изменения 10 из них является идеальным.
+Метод `BatchUpdate`, который мы только что проверили, извлекает *все* продукты из метода `GetProducts` BLL, а затем обновляет только те записи, которые отображаются в GridView. Этот подход идеально подходит, если GridView не использует разбиение на страницы, но если это так, то могут быть сотни, тысячи или десятки тысяч продуктов, но только десять строк в GridView. В этом случае получение всех продуктов из базы данных только для изменения 10 из них является менее идеальным вариантом.
 
-Для этих типов ситуаций, рассмотрите возможность использования следующих `BatchUpdateAlternate` метод вместо:
+Для этих типов ситуаций рассмотрите возможность использования следующего `BatchUpdateAlternate` метода:
 
 [!code-vb[Main](batch-updating-vb/samples/sample7.vb)]
 
-`BatchMethodAlternate` начинается, создав новую пустую `ProductsDataTable` с именем `products`. Он, а затем шаги-GridView s `Rows` коллекции и для каждой строки получает сведения конкретного продукта, с помощью FTPS BLL `GetProductByProductID(productID)` метод. Полученный `ProductsRow` экземпляр имеет его свойства, обновленные в так же, как `BatchUpdate`, но после обновления строки, он импортируется в `products` `ProductsDataTable` через DataTable s [ `ImportRow(DataRow)` метод](https://msdn.microsoft.com/library/system.data.datatable.importrow(VS.80).aspx).
+`BatchMethodAlternate` начинается с создания нового пустого `ProductsDataTable` с именем `products`. Затем в коллекции GridView s `Rows` и для каждой строки получается информация о продукте с помощью метода `GetProductByProductID(productID)` BLL. Свойства полученного экземпляра `ProductsRow` обновляются так же, как `BatchUpdate`, но после обновления строки она импортируется в `products` `ProductsDataTable` с помощью метода DataTable s [`ImportRow(DataRow)`](https://msdn.microsoft.com/library/system.data.datatable.importrow(VS.80).aspx).
 
-После `For Each` завершения цикла `products` содержит один `ProductsRow` экземпляра для каждой строки GridView. Поскольку каждое из `ProductsRow` были добавлены экземпляры `products` (а не обновление), если мы просто передать его в `UpdateWithTransaction` метод `ProductsTableAdapter` попытается вставить каждой записи в базе данных. Вместо этого нам нужно указать, что каждая из этих строк был изменен (не добавлен).
+После завершения цикла `For Each` `products` содержит один экземпляр `ProductsRow` для каждой строки в GridView. Так как каждый из `ProductsRow`ных экземпляров был добавлен в `products` (вместо обновления), если они передаются в метод `UpdateWithTransaction`, `ProductsTableAdapter` попытается вставить каждую из записей в базу данных. Вместо этого необходимо указать, что каждая из этих строк была изменена (не добавлена).
 
-Это можно сделать, добавив новый метод BLL с именем `UpdateProductsWithTransaction`. `UpdateProductsWithTransaction`, показано ниже, наборы `RowState` каждого из `ProductsRow` экземпляров в `ProductsDataTable` для `Modified` , а затем передает `ProductsDataTable` в DAL s `UpdateWithTransaction` метод.
+Это можно сделать, добавив новый метод в BLL с именем `UpdateProductsWithTransaction`. `UpdateProductsWithTransaction`, показанный ниже, устанавливает `RowState` для каждого экземпляра `ProductsRow` в `ProductsDataTable` в `Modified`, а затем передает `ProductsDataTable` методу DAL s `UpdateWithTransaction`.
 
 [!code-vb[Main](batch-updating-vb/samples/sample8.vb)]
 
 ## <a name="summary"></a>Сводка
 
-GridView предоставляет возможности редактирования встроенные строки, но не предоставляет поддержку для создания полностью доступно для редактирования интерфейсов. Как мы видели в этом руководстве, такие интерфейсы возможны, но требует некоторой работы. Для создания элемента управления GridView, где каждая строка редактируемой, нам нужно преобразовать поля s GridView в поля TemplateField и редактирования интерфейс определяется в `ItemTemplate` s. Кроме того, обновить все - тип кнопки веб-элементов управления необходимо добавить на страницу, отдельно от GridView. Эти кнопки `Click` обработчики событий нужно перечислить GridView s `Rows` сбора, хранения изменений в `ProductsDataTable`и передача обновленную информацию в соответствующий метод BLL.
+GridView предоставляет встроенные возможности редактирования для отдельных строк, но не поддерживает создание полностью изменяемых интерфейсов. Как мы видели в этом руководстве, такие интерфейсы возможны, но для них требуется немного работы. Чтобы создать элемент управления GridView, в котором каждая строка является редактируемой, необходимо преобразовать поля GridView s в полей TemplateField и определить интерфейс редактирования в `ItemTemplate` s. Кроме того, на страницу должны быть добавлены веб-элементы управления для обновления всех типов, отделенные от GridView. Эти кнопки `Click` обработчикам событий необходимо перечислить коллекцию `Rows` GridView, сохранить изменения в `ProductsDataTable`и передать обновленные сведения в соответствующий метод BLL.
 
-В следующем учебном курсе будет показано, как создать интерфейс для удаления пакета. В частности, каждая строка GridView будет установить флажок для включения, а вместо-тип кнопки, мы должны удалить выделенные строки кнопок.
+В следующем учебном курсе будет показано, как создать интерфейс для пакетного удаления. В частности, каждая строка GridView будет включать в себя флажок, а вместо кнопки Обновить все-типы будут выбраны кнопки Удалить выбранные строки.
 
-Счастливого вам программирования!
+Поздравляем с программированием!
 
 ## <a name="about-the-author"></a>Об авторе
 
-[Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP.NET и основатель веб- [4GuysFromRolla.com](http://www.4guysfromrolla.com), работает с веб-технологиями Microsoft с 1998 года. Скотт — независимый консультант, преподаватель и автор. Его последняя книга — [ *Sams Teach ASP.NET 2.0 in 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Ним можно связаться по адресу [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти в [ http://ScottOnWriting.NET ](http://ScottOnWriting.NET).
+[Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP. NET и основатель [4GuysFromRolla.com](http://www.4guysfromrolla.com), работал с веб-технологиями Майкрософт с 1998. Скотт работает как независимый консультант, преподаватель и модуль записи. Его последняя книга — [*Sams обучать себя ASP.NET 2,0 за 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Он доступен по адресу [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти по адресу [http://ScottOnWriting.NET](http://ScottOnWriting.NET).
 
-## <a name="special-thanks-to"></a>Особая благодарность
+## <a name="special-thanks-to"></a>Специальная благодарность
 
-В этой серии руководств пособий рецензировалась многими компетентными редакторами. Терезой Мерфи и Дэвид Suru, стали Лиз Шалок в этом руководстве. Хотите поработать с моих последующих статей для MSDN? Если Да, напишите мне [ mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
+Эта серия руководств была рассмотрена многими полезными рецензентами. Потенциальные рецензенты для этого учебника были Терезой Мерфи и Дэвид суру. Хотите ознакомиться с моими будущими статьями MSDN? Если это так, расположите строку в [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
 > [Назад](wrapping-database-modifications-within-a-transaction-vb.md)
