@@ -1,20 +1,20 @@
 ---
 uid: webhooks/receiving/dependencies
-title: Зависимости получателя ASP.NET веб-перехватчиков | Документация Майкрософт
+title: Зависимости приемника веб-перехватчиков ASP.NET | Документация Майкрософт
 author: rick-anderson
-description: Зависимости получателя и внедрение зависимостей в ASP.NET веб-перехватчики.
+description: Зависимости получателя и внедрение зависимостей в веб-перехватчики ASP.NET.
 ms.author: riande
 ms.date: 01/17/2012
 ms.assetid: 5125e483-c2bb-435b-8cd1-21d3499bfaaf
-ms.openlocfilehash: c44cfe3ed310aa728a989b108c410e8786e4f514
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.openlocfilehash: 477b8828209d0da1d485ef883b0f99b4e1b9b5bf
+ms.sourcegitcommit: 6f0e10e4ca61a1e5534b09c655fd35cdc6886c8a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57048731"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564874"
 ---
-# <a name="aspnet-webhooks-receiver-dependencies"></a>Зависимости получателя ASP.NET веб-перехватчиков
+# <a name="aspnet-webhooks-receiver-dependencies"></a>Зависимости получателя веб-перехватчиков ASP.NET
 
-Веб-перехватчики Microsoft ASP.NET разработан с помощью внедрения зависимостей в виду. Большинство зависимостей в системе могут быть заменены альтернативных реализаций, с помощью надежной подсистемы внедрения зависимостей.
+Microsoft ASP.NET веб-перехватчиков разрабатывается с учетом внедрения зависимостей. Большинство зависимостей в системе можно заменить альтернативными реализациями с помощью подсистемы внедрения зависимостей.
 
-См. в разделе [DependencyScopeExtensions](https://github.com/aspnet/WebHooks/blob/master/src/Microsoft.AspNet.WebHooks.Receivers/Extensions/DependencyScopeExtensions.cs) список зависимости получателя. Если зависимости не был зарегистрирован, используется реализация по умолчанию. См. в разделе [ReceiverServices](https://github.com/aspnet/WebHooks/blob/master/src/Microsoft.AspNet.WebHooks.Receivers/Services/ReceiverServices.cs) список реализации по умолчанию.
+Список зависимостей получателей см. в разделе [депенденцископикстенсионс](https://github.com/aspnet/aspnetWebHooks/blob/master/src/Microsoft.AspNet.WebHooks.Receivers/Extensions/DependencyScopeExtensions.cs) . Если зависимости не зарегистрированы, используется реализация по умолчанию. Список реализаций по умолчанию см. в разделе [рецеиверсервицес](https://github.com/aspnet/aspnetWebHooks/blob/master/src/Microsoft.AspNet.WebHooks.Receivers/Services/ReceiverServices.cs) .
