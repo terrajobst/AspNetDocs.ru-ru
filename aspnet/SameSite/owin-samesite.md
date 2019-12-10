@@ -5,12 +5,12 @@ description: Работа с файлами cookie SameSite и открытым 
 ms.author: riande
 ms.date: 12/6/2019
 uid: owin-samesite
-ms.openlocfilehash: fc64315e8c3614e460c9a8d551bcb0848b3fe8f9
-ms.sourcegitcommit: 516a168548252ff0eaae2c02ec4bd9ffcfa8375e
+ms.openlocfilehash: ac5ae24eeb9e8e1cc6296667a4bebef72c3eb62c
+ms.sourcegitcommit: 7b1e1784213dd4c301635f9e181764f3e2f94162
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74951884"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74993074"
 ---
 # <a name="samesite-cookies-and-the-open-web-interface-for-net-owin"></a>SameSite файлы cookie и открытый веб-интерфейс для .NET (OWIN)
 
@@ -39,7 +39,7 @@ ms.locfileid: "74951884"
 
 `SystemWebCookieManager` зависит от интерфейсов API `System.Web` .NET 4.7.2, чтобы обеспечить поддержку `SameSite`, а также исправления для изменения поведения.
 
-Причины, по которым следует использовать `SystemWebCookieManager`, описаны в [вопросах интеграции файлов cookie OWIN и System. Web Response](https://github.com/aspnet/AspNetKatana/wiki/System.Web-response-cookie-integration-issues). `SystemWebCookieManager` рекомендуется использовать при запуске на `System.Web`. 
+Причины, по которым следует использовать `SystemWebCookieManager`, описаны в [вопросах интеграции файлов cookie OWIN и System. Web Response](https://github.com/aspnet/AspNetKatana/wiki/System.Web-response-cookie-integration-issues). `SystemWebCookieManager` рекомендуется использовать при запуске на `System.Web`.
 
 Следующий код задает `SameSite` для `Lax`:
 
@@ -74,9 +74,7 @@ owinContext.Response.Cookies.Append("My Key", "My Value", new CookieOptions()
 * Указывает, что файлы cookie обрабатываются как `SameSite=Lax` по умолчанию.
 * Указывает файлы cookie, явно подтверждающие `SameSite=None` для включения межсайтовой доставки, должны быть помечены как `Secure`. `None` — это новая запись для отказаться.
 * По умолчанию в [фев 2020](https://blog.chromium.org/2019/10/developers-get-ready-for-new.html)планируется включить по [Chrome](https://chromestatus.com/feature/5088147346030592) . Браузеры начали переходить к этому стандарту в 2019.
-* Поддерживается исправлениями, которые были выпущены, как описано в следующих СТАТЬях:
-  * [Статья базы знаний 4531182](https://support.microsoft.com/help/4531182/kb4531182)
-  * [Статья базы знаний 4524421](https://support.microsoft.com/help/4524421/kb4524421)
+* Поддерживается исправлениями, которые были выпущены, как описано в статьях базы знаний. Для получения дополнительной информации см. <xref:samesite/kbs-samesite>.
 
 <a name="sob"></a>
 
@@ -123,12 +121,12 @@ Chrome 78 + дает неверные результаты, так как это
 
 Google не делает доступными более старые версии Chrome. Следуйте инструкциям в [скачивании Chromium](https://www.chromium.org/getting-involved/download-chromium) , чтобы протестировать старые версии Chrome. **Не** скачивать Chrome из ссылок, предоставленных при поиске старых версий Chrome.
 
-* [Chromium 76 Win64](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/664998/)
-* [Chromium 74 Win64](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/638880/)
+* [Chromium 76 Win64](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/664998/)
+* [Chromium 74 Win64](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/638880/)
 
 ### <a name="test-with-safari"></a>Тестирование с помощью Safari
 
-Safari 12 строго реализовал ранее созданный черновик и завершается ошибкой, если новое значение `None` находится в файле cookie. `None` исключается с помощью кода обнаружения браузеров, [поддерживающего более старые браузеры](#sob) в этом документе. Протестируйте имена входа в стиле ОС Safari 12, Safari 13 и WebKit с помощью MSAL, ADAL или любой используемой библиотеки. Проблема зависит от базовой версии ОС. OSX Можаве (10,14) и iOS 12 имеют проблемы совместимости с новым поведением `SameSite`. Обновление операционной системы до OSX Catalina (10,15) или iOS 13 решает проблему. В настоящее время Safari не имеет флага согласия для проверки нового поведения спецификации.
+Safari 12 строго реализовал ранее созданный черновик и завершается ошибкой, если новое значение `None` находится в файле cookie. `None` исключается с помощью кода обнаружения браузеров, [поддерживающего более старые браузеры](#sob) в этом документе. Протестируйте имена входа в стиле ОС Safari 12, Safari 13 и WebKit с помощью MSAL, ADAL или любой используемой библиотеки. Эта проблема зависит от базовой версии ОС. OSX Можаве (10,14) и iOS 12 имеют проблемы совместимости с новым поведением `SameSite`. Обновление операционной системы до OSX Catalina (10,15) или iOS 13 решает проблему. В настоящее время Safari не имеет флага согласия для проверки нового поведения спецификации.
 
 ### <a name="test-with-firefox"></a>Тестирование с помощью Firefox
 
@@ -144,7 +142,7 @@ Safari 12 строго реализовал ранее созданный чер
 
 ### <a name="test-with-electron"></a>Тестирование с электронными данными
 
-В версии электронного хранения входят старые версии Chromium. Например, используемая командами версия электронного характера — Chromium 66, которая приводит к более старому поведению. Необходимо выполнить собственное тестирование совместимости с версией электронного продукта, используемого вашим продуктом. См. раздел [Поддержка более старых браузеров](#sob) в следующем разделе.
+Версии Electron включают в себя более старые версии Chromium. Например, используемая командами версия электронного характера — Chromium 66, которая приводит к более старому поведению. Необходимо выполнить собственное тестирование совместимости с версией электронного продукта, используемого вашим продуктом. См. раздел [Поддержка более старых браузеров](#sob) в следующем разделе.
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
