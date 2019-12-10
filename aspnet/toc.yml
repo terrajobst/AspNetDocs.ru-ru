@@ -152,11 +152,11 @@
                   href: web-forms/overview/deployment/configuring-server-environments-for-web-deployment/configuring-server-environments-for-web-deployment.md
                 - name: Выбор правильного подхода для веб-развертывания
                   href: web-forms/overview/deployment/configuring-server-environments-for-web-deployment/choosing-the-right-approach-to-web-deployment.md
-                - name: 'Сценарий: настройка среды тестирования для веб-развертывания'
+                - name: Сценарий. настройка среды тестирования для веб-развертывания
                   href: web-forms/overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-test-environment-for-web-deployment.md
-                - name: 'Сценарий: настройка промежуточной среды для веб-развертывания'
+                - name: Сценарий. настройка промежуточной среды для веб-развертывания
                   href: web-forms/overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-staging-environment-for-web-deployment.md
-                - name: 'Сценарий: настройка рабочей среды для веб-развертывания'
+                - name: Сценарий. настройка рабочей среды для веб-развертывания
                   href: web-forms/overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment.md
                 - name: Настройка веб-сервера для публикации веб-развертывания (удаленный агент)
                   href: web-forms/overview/deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-remote-agent.md
@@ -1986,7 +1986,7 @@
                   href: web-forms/videos/net-4/core/aspnet-4-quick-hit-predictable-client-ids.md
                 - name: Метод программы HtmlEncoder
                   href: web-forms/videos/net-4/core/aspnet-4-quick-hit-the-htmlencoder-utility-method.md
-            - name: Данные
+            - name: Data
               href: web-forms/videos/net-4/data/index.md
               items:
                 - name: Выбор сохраняемых строк GridView
@@ -3768,6 +3768,8 @@
   items:
     - name: Техническая документация
       href: whitepapers/overview.md
+    - name: ASP.NET SameSite
+      href: SameSite/system-web-samesite.md
     - name: "Общие сведения о веб-разработке в ASP.NET\_4 и Visual Studio\_2010"
       href: whitepapers/aspnet4/index.md
       items:
