@@ -107,7 +107,7 @@ ms.locfileid: "65125450"
 
 [!code-csharp[Main](use-viewdata-and-implement-viewmodel-classes/samples/sample10.cs)]
 
-И теперь Edit and Create экранам поддерживают раскрывающихся списках для выбора страны.
+И теперь экраны Edit и Create поддерживают раскрывающиеся списки для выбора страны или региона.
 
 ### <a name="custom-shaped-viewmodel-classes"></a>Custom образный классов модели представления
 
