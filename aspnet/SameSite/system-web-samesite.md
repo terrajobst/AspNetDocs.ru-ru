@@ -3,18 +3,18 @@ title: Работа с файлами cookie SameSite в ASP.NET
 author: rick-anderson
 description: Узнайте, как использовать для SameSite файлов cookie в ASP.NET
 ms.author: riande
-ms.date: 12/03/2019
+ms.date: 1/22/2019
 uid: samesite/system-web-samesite
-ms.openlocfilehash: 47a3d7576edb0e818c39b32fbbcb98475248e18e
-ms.sourcegitcommit: 7b1e1784213dd4c301635f9e181764f3e2f94162
+ms.openlocfilehash: d2160bd9aeb93398b49b3a0e5e7a8a4404a5bc63
+ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74993066"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76519197"
 ---
 # <a name="work-with-samesite-cookies-in-aspnet"></a>Работа с файлами cookie SameSite в ASP.NET
 
-Автор: [Рик Андерсон](https://twitter.com/RickAndMSFT)
+Автор: [Рик Андерсон](https://twitter.com/RickAndMSFT) (Rick Anderson)
 
 SameSite — это черновик [IETF](https://ietf.org/about/) , предназначенный для обеспечения защиты от атак с подделкой межсайтовых запросов (CSRF). [Черновик SameSite 2019](https://tools.ietf.org/html/draft-west-cookie-incrementalism-00):
 
@@ -25,7 +25,7 @@ SameSite — это черновик [IETF](https://ietf.org/about/) , пред�
 
 Параметр `None` вызывает проблемы совместимости с клиентами, которые реализовали ранее [2016 черновой версии Standard](https://tools.ietf.org/html/draft-west-first-party-cookies-07) (например, iOS 12). См. раздел [Поддержка более старых браузеров](#sob) в этом документе.
 
-Каждый компонент ASP.NET Core, который создает файлы cookie, должен решить, подходит ли SameSite.
+Каждый компонент ASP.NET, порождаемый файлами cookie, должен решить, подходит ли SameSite.
 
 ## <a name="api-usage-with-samesite"></a>Использование API с SameSite
 
@@ -44,6 +44,10 @@ SameSite — это черновик [IETF](https://ietf.org/about/) , пред�
 * Указывает файлы cookie, явно подтверждающие `SameSite=None` для включения межсайтовой доставки, должны быть помечены как `Secure`. `None` — это новая запись для отказаться.
 * Поддерживается выдаваемыми исправлениями, описанными в КИЛОБАЙТах, перечисленных выше.
 * По умолчанию в [фев 2020](https://blog.chromium.org/2019/10/developers-get-ready-for-new.html)планируется включить по [Chrome](https://chromestatus.com/feature/5088147346030592) . Браузеры начали переходить к этому стандарту в 2019.
+
+### <a name="azure-app-servicesamesite-cookie-handling"></a>Служба приложений Azure — обработка файлов cookie SameSite
+
+Дополнительные сведения см. в статье [Обработка SameSite файлов cookie в службе приложений Azure и обновление .NET Framework 4.7.2](https://azure.microsoft.com/updates/app-service-samesite-cookie-update/) .
 
 <a name="sob"></a>
 

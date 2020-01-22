@@ -1,215 +1,215 @@
 ---
 uid: identity/overview/extensibility/change-primary-key-for-users-in-aspnet-identity
-title: Изменение первичного ключа для пользователей в ASP.NET Identity - ASP.NET 4.x
+title: Изменение первичного ключа для пользователей в ASP.NET Identity-ASP.NET 4. x
 author: Rick-Anderson
-description: В Visual Studio 2013 веб-приложения по умолчанию использует строковое значение для ключа для учетных записей пользователей. ASP.NET Identity позволяет изменить тип...
+description: В Visual Studio 2013 веб-приложение по умолчанию использует строковое значение для ключа учетных записей пользователей. ASP.NET Identity позволяет изменить тип...
 ms.author: riande
 ms.date: 09/30/2014
 ms.assetid: 44925849-5762-4504-a8cd-8f0cd06f6dc3
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/extensibility/change-primary-key-for-users-in-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 540a355819ac2b2e58d7c73284899f6ca2f684d1
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 0afea8eacfc646f1489b87629fdb2d437815d88c
+ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65118093"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76519145"
 ---
 # <a name="change-primary-key-for-users-in-aspnet-identity"></a>Изменение первичного ключа для пользователей в ASP.NET Identity
 
-по [Tom FitzMacken](https://github.com/tfitzmac)
+от [Tom фитзмаккен](https://github.com/tfitzmac)
 
-> В Visual Studio 2013 веб-приложения по умолчанию использует строковое значение для ключа для учетных записей пользователей. ASP.NET Identity позволяет изменить тип ключа в соответствии с требованиями данных. Например можно изменить тип ключа из строки в целое число.
+> В Visual Studio 2013 веб-приложение по умолчанию использует строковое значение для ключа учетных записей пользователей. ASP.NET Identity позволяет изменить тип ключа в соответствии с требованиями к данным. Например, можно изменить тип ключа с строки на целое число.
 > 
-> В этом разделе показано, как начать с веб-приложения по умолчанию и измените ключ учетной записи пользователя в целое число. Можно использовать такие же изменения для реализации ключу любого типа в проекте. Показано, как внести эти изменения в веб-приложения по умолчанию, но вы можете применить аналогичные изменения специальных приложений. Он показывает изменения, необходимые при работе с веб-форм или MVC.
+> В этом разделе показано, как начать работу с веб-приложением по умолчанию и изменить ключ учетной записи пользователя на целое число. Вы можете использовать те же изменения для реализации любого типа ключа в проекте. В нем показано, как внести эти изменения в веб-приложение по умолчанию, но можно применить аналогичные изменения к настроенному приложению. В нем отображаются изменения, необходимые при работе с MVC или веб-формами.
 > 
 > ## <a name="software-versions-used-in-the-tutorial"></a>Версии программного обеспечения, используемые в этом руководстве
 > 
 > 
 > - Visual Studio 2013 с обновлением 2 (или более поздней версии)
-> - ASP.NET Identity 2.1 или более поздней версии
+> - ASP.NET Identity 2,1 или более поздней версии
 
-Для выполнения шагов в этом руководстве, необходимо иметь Visual Studio 2013 с обновлением 2 (или более поздней версии) и веб-приложения, созданные на основе шаблона веб-приложения ASP.NET. Шаблон, изменения в обновлении 3. В этом разделе показано, как изменить шаблон с обновлением 2 и с обновлением 3.
+Для выполнения действий, описанных в этом руководстве, необходимо иметь Visual Studio 2013 обновление 2 (или более поздней версии) и веб-приложение, созданное из шаблона веб-приложения ASP.NET. Шаблон изменен в обновлении 3. В этом разделе показано, как изменить шаблон в обновлении 2 и обновлении 3.
 
 В этом разделе содержатся следующие подразделы.
 
-- [Измените тип ключа в класс пользовательского удостоверения](#userclass)
-- [Добавьте настраиваемые классы удостоверений, использующие тип ключа](#customclass)
-- [Изменение контекста класса и диспетчера пользователей для использования данного типа ключа](#context)
-- [Изменение конфигурации запуска для использования данного типа ключа](#startup)
-- [Для MVC с обновлением 2 измените AccountController передаваемый тип ключа](#mvcupdate2)
-- [Для MVC с обновлением 3 измените AccountController и ManageController для передачи типа ключа](#mvcupdate3)
-- [Для веб-форм с обновлением 2 измените учетную запись страницы для передачи типа ключа](#webformsupdate2)
-- [Для веб-форм с обновлением 3 измените учетную запись страницы для передачи типа ключа](#webformsupdate3)
-- [Запуск приложения](#run)
+- [Изменение типа ключа в классе удостоверений пользователя](#userclass)
+- [Добавление настраиваемых классов удостоверений, использующих тип ключа](#customclass)
+- [Изменение класса контекста и диспетчера пользователей для использования типа ключа](#context)
+- [Изменение конфигурации запуска для использования типа ключа](#startup)
+- [Для MVC с обновлением 2 Измените AccountController, чтобы передать тип ключа.](#mvcupdate2)
+- [Для MVC с обновлением 3 Измените AccountController и Манажеконтроллер, чтобы передать тип ключа.](#mvcupdate3)
+- [Для веб-форм с обновлением 2 изменение страниц учетной записи для передачи типа ключа](#webformsupdate2)
+- [Для веб-форм с обновлением 3 изменение страниц учетной записи для передачи типа ключа](#webformsupdate3)
+- [Запустить приложение](#run)
 - [Другие ресурсы](#other)
 
 <a id="userclass"></a>
-## <a name="change-the-type-of-the-key-in-the-identity-user-class"></a>Измените тип ключа в класс пользовательского удостоверения
+## <a name="change-the-type-of-the-key-in-the-identity-user-class"></a>Изменение типа ключа в классе удостоверений пользователя
 
-В проекте, созданные на основе шаблона веб-приложение ASP.NET укажите, что класс ApplicationUser использует целое число для ключа для учетных записей пользователей. В IdentityModels.cs, изменить наследование из IdentityUser с типом класса ApplicationUser **int** TKey универсального параметра. Можно также передать имена трех настраиваемый класс, который еще не реализован.
+В проекте, созданном из шаблона веб-приложения ASP.NET, укажите, что класс Аппликатионусер использует целое число для ключа учетных записей пользователей. В IdentityModels.cs измените класс Аппликатионусер, чтобы он наследовался от Идентитюсер, имеющего тип **int** для универсального параметра TKey. Вы также передаете имена трех настраиваемых классов, которые еще не реализованы.
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample1.cs?highlight=1-2)]
 
-Тип ключа был изменен, но, по умолчанию остальной части приложения предполагает, что ключ является строкой. Необходимо явно указать тип ключа в программный код, предполагающий строка.
+Вы изменили тип ключа, но по умолчанию остальная часть приложения по-прежнему предполагает, что ключ является строкой. Необходимо явно указать тип ключа в коде, который предполагает наличие строки.
 
-В **ApplicationUser** измените **GenerateUserIdentityAsync** метод для включения целое число, как показано в выделенный ниже код. Это изменение не требуется для проектов веб-форм с помощью шаблона с обновлением 3.
+В классе **аппликатионусер** измените метод **женератеусеридентитясинк** , чтобы включить int, как показано в выделенном ниже коде. Это изменение не требуется для проектов веб-форм с шаблоном обновления 3.
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample2.cs?highlight=2)]
 
 <a id="customclass"></a>
-## <a name="add-customized-identity-classes-that-use-the-key-type"></a>Добавьте настраиваемые классы удостоверений, использующие тип ключа
+## <a name="add-customized-identity-classes-that-use-the-key-type"></a>Добавление настраиваемых классов удостоверений, использующих тип ключа
 
-Другие классы удостоверений, например IdentityUserRole, IdentityUserClaim, IdentityUserLogin, IdentityRole, UserStore, RoleStore, по-прежнему настраиваются для использования ключа строки. Создание новых версий этих классов, указать целое число для ключа. Необходимо предоставить много кода реализации в этих классах, главным образом только при установке int как ключ.
+Другие классы удостоверений, такие как Идентитюсерроле, Идентитюсерклаим, Идентитюсерлогин, Идентитироле, UserStore, Ролесторе, по-прежнему настраиваются на использование строкового ключа. Создайте новые версии этих классов, которые указывают целочисленное значение для ключа. Вам не нужно предоставлять много кода реализации в этих классах, поэтому в основном просто устанавливается int в качестве ключа.
 
-Добавьте следующие классы в файле IdentityModels.cs.
+Добавьте следующие классы в файл IdentityModels.cs.
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample3.cs)]
 
 <a id="context"></a>
-## <a name="change-the-context-class-and-user-manager-to-use-the-key-type"></a>Изменение контекста класса и диспетчера пользователей для использования данного типа ключа
+## <a name="change-the-context-class-and-user-manager-to-use-the-key-type"></a>Изменение класса контекста и диспетчера пользователей для использования типа ключа
 
-В IdentityModels.cs, измените определение **ApplicationDbContext** класс для использования нового настроить классы и **int** для ключа, как показано в выделенном коде.
+В IdentityModels.cs измените определение класса **ApplicationDbContext** , чтобы использовать новые настраиваемые классы и **int** для ключа, как показано в выделенном коде.
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample4.cs?highlight=1-2)]
 
-Данный параметр ThrowIfV1Schema больше не является допустимым в конструкторе. Измените конструктор, поэтому он не передает значение ThrowIfV1Schema.
+Параметр ThrowIfV1Schema больше не является допустимым в конструкторе. Измените конструктор, чтобы он не передавал значение ThrowIfV1Schema.
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample5.cs)]
 
-Откройте IdentityConfig.cs и измените **ApplicationUserManger** класс для использования нового пользователя хранилища класс для сохранения данных и **int** для ключа.
+Откройте IdentityConfig.cs и измените класс **аппликатионусерманжер** , чтобы использовать новый класс пользовательского хранилища для сохранения данных **и целое число для ключа** .
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample6.cs?highlight=1,3,12,14,32,37,48)]
 
-В шаблоне с обновлением 3 необходимо изменить класс ApplicationSignInManager.
+В шаблоне обновления 3 необходимо изменить класс Аппликатионсигнинманажер.
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample7.cs?highlight=1)]
 
 <a id="startup"></a>
-## <a name="change-start-up-configuration-to-use-the-key-type"></a>Изменение конфигурации запуска для использования данного типа ключа
+## <a name="change-start-up-configuration-to-use-the-key-type"></a>Изменение конфигурации запуска для использования типа ключа
 
-В Startup.Auth.cs замените код OnValidateIdentity, как показано ниже. Обратите внимание на то, что определение getUserIdCallback, анализирует строковое значение в целое число.
+В Startup.Auth.cs замените код Онвалидатеидентити, как показано ниже. Обратите внимание, что определение Жетусеридкаллбакк анализирует строковое значение в целое число.
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample8.cs?highlight=7-12)]
 
-Если проект не распознает универсальную реализацию **GetUserId** метод, может потребоваться обновить пакет NuGet удостоверения ASP.NET до версии 2.1
+Если проект не распознает универсальную реализацию метода **UserID** , может потребоваться обновить пакет NuGet ASP.NET Identity до версии 2,1.
 
-Классы инфраструктуры, используемые для идентификации ASP.NET внесено много изменений. При попытке компиляции проекта, можно заметить большое число ошибок. К счастью оставшихся ошибок все похожи. Класс идентификации ожидает, что целое число для ключа, но контроллера (или веб-формы) передает значение строки. В каждом случае необходимо преобразовать в строку и целое число путем вызова **GetUserId&lt;int&gt;**. Можно работать через список ошибок из компиляции или ниже изменения.
+Вы внесли много изменений в классы инфраструктуры, используемые ASP.NET Identity. Если вы попытаетесь скомпилировать проект, вы увидите множество ошибок. К счастью, все остальные ошибки похожи. Класс Identity ожидает для ключа целое число, но контроллер (или веб-форма) передает строковое значение. В каждом случае необходимо преобразовать строку в тип и целое число, вызвав метод GetString **&lt;int&gt;** . Вы можете работать со списком ошибок из компиляции или следовать приведенным ниже изменениям.
 
-Оставшиеся изменения зависят от типа проекта, вы создаете и какие обновления установлены в Visual Studio. Вы можете перейти непосредственно на соответствующий раздел по ссылке
+Остальные изменения зависят от типа создаваемого проекта и обновления, установленного в Visual Studio. Вы можете перейти непосредственно к соответствующему разделу, перейдя по следующим ссылкам.
 
-- [Для MVC с обновлением 2 измените AccountController передаваемый тип ключа](#mvcupdate2)
-- [Для MVC с обновлением 3 измените AccountController и ManageController для передачи типа ключа](#mvcupdate3)
-- [Для веб-форм с обновлением 2 измените учетную запись страницы для передачи типа ключа](#webformsupdate2)
-- [Для веб-форм с обновлением 3 измените учетную запись страницы для передачи типа ключа](#webformsupdate3)
+- [Для MVC с обновлением 2 Измените AccountController, чтобы передать тип ключа.](#mvcupdate2)
+- [Для MVC с обновлением 3 Измените AccountController и Манажеконтроллер, чтобы передать тип ключа.](#mvcupdate3)
+- [Для веб-форм с обновлением 2 изменение страниц учетной записи для передачи типа ключа](#webformsupdate2)
+- [Для веб-форм с обновлением 3 изменение страниц учетной записи для передачи типа ключа](#webformsupdate3)
 
 <a id="mvcupdate2"></a>
-## <a name="for-mvc-with-update-2-change-the-accountcontroller-to-pass-the-key-type"></a>Для MVC с обновлением 2 измените AccountController передаваемый тип ключа
+## <a name="for-mvc-with-update-2-change-the-accountcontroller-to-pass-the-key-type"></a>Для MVC с обновлением 2 Измените AccountController, чтобы передать тип ключа.
 
-Откройте файл AccountController.cs. Вам нужно изменить следующие методы.
+Откройте файл AccountController.cs. Необходимо изменить следующие методы.
 
-**ConfirmEmail** метод
+Метод **конфирмемаил**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample9.cs?highlight=1,3)]
 
-**Отмените связь** метод
+Метод **отсвязи**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample10.cs?highlight=5,9)]
 
-**Manage(ManageUserViewModel)** метод
+Метод **управления (манажеусервиевмодел)**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample11.cs?highlight=11,17,41)]
 
-**LinkLoginCallback** метод
+Метод **линклогинкаллбакк**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample12.cs?highlight=10)]
 
-**RemoveAccountList** метод
+Метод **ремовеаккаунтлист**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample13.cs?highlight=3)]
 
-**HasPassword** метод
+Метод **хаспассворд**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample14.cs?highlight=3)]
 
-Теперь вы можете [запустите приложение](#run) и зарегистрируйте нового пользователя.
+Теперь можно [запустить приложение](#run) и зарегистрировать нового пользователя.
 
 <a id="mvcupdate3"></a>
-## <a name="for-mvc-with-update-3-change-the-accountcontroller-and-managecontroller-to-pass-the-key-type"></a>Для MVC с обновлением 3 измените AccountController и ManageController для передачи типа ключа
+## <a name="for-mvc-with-update-3-change-the-accountcontroller-and-managecontroller-to-pass-the-key-type"></a>Для MVC с обновлением 3 Измените AccountController и Манажеконтроллер, чтобы передать тип ключа.
 
-Откройте файл AccountController.cs. Вам нужно изменить следующий метод.
+Откройте файл AccountController.cs. Необходимо изменить следующий метод.
 
-**ConfirmEmail** метод
+Метод **конфирмемаил**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample15.cs?highlight=1,3)]
 
-**SendCode** метод
+Метод **SendCode**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample16.cs?highlight=4)]
 
-Откройте файл ManageController.cs. Вам нужно изменить следующие методы.
+Откройте файл ManageController.cs. Необходимо изменить следующие методы.
 
-**Индекс** метод
+Метод **index**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample17.cs?highlight=15-17)]
 
-**RemoveLogin** методы
+Методы **ремовелогин**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample18.cs?highlight=3,13,17)]
 
-**AddPhoneNumber** метод
+Метод **аддфоненумбер**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample19.cs?highlight=9)]
 
-**EnableTwoFactorAuthentication** метод
+Метод **енаблетвофактораусентикатион**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample20.cs?highlight=3-4)]
 
-**DisableTwoFactorAuthentication** метод
+Метод **дисаблетвофактораусентикатион**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample21.cs?highlight=3-4)]
 
-**VerifyPhoneNumber** методы
+Методы **верифифоненумбер**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample22.cs?highlight=4,18,21)]
 
-**RemovePhoneNumber** метод
+Метод **ремовефоненумбер**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample23.cs?highlight=3,8)]
 
-**ChangePassword** метод
+Метод **ChangePassword**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample24.cs?highlight=10,13)]
 
-**SetPassword** метод
+Метод **SetPassword**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample25.cs?highlight=5,8)]
 
-**ManageLogins** метод
+Метод **манажелогинс**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample26.cs?highlight=7,12)]
 
-**LinkLoginCallback** метод
+Метод **линклогинкаллбакк**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample27.cs?highlight=8)]
 
-**HasPassword** метод
+Метод **хаспассворд**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample28.cs?highlight=3)]
 
-**HasPhoneNumber** метод
+Метод **хасфоненумбер**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample29.cs?highlight=3)]
 
-Теперь вы можете [запустите приложение](#run) и зарегистрируйте нового пользователя.
+Теперь можно [запустить приложение](#run) и зарегистрировать нового пользователя.
 
 <a id="webformsupdate2"></a>
-## <a name="for-web-forms-with-update-2-change-account-pages-to-pass-the-key-type"></a>Для веб-форм с обновлением 2 измените учетную запись страницы для передачи типа ключа
+## <a name="for-web-forms-with-update-2-change-account-pages-to-pass-the-key-type"></a>Для веб-форм с обновлением 2 изменение страниц учетной записи для передачи типа ключа
 
-Для веб-форм с обновлением 2 необходимо изменить на следующих страницах.
+Для веб-форм с обновлением 2 необходимо изменить следующие страницы.
 
-**Confirm.aspx.CX**
+**Confirm.aspx.cx**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample30.cs?highlight=8)]
 
@@ -221,14 +221,14 @@ ms.locfileid: "65118093"
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample32.cs?highlight=3,22,47,52,69,85,93,98)]
 
-Теперь вы можете [запустите приложение](#run) и зарегистрируйте нового пользователя.
+Теперь можно [запустить приложение](#run) и зарегистрировать нового пользователя.
 
 <a id="webformsupdate3"></a>
-## <a name="for-web-forms-with-update-3-change-account-pages-to-pass-the-key-type"></a>Для веб-форм с обновлением 3 измените учетную запись страницы для передачи типа ключа
+## <a name="for-web-forms-with-update-3-change-account-pages-to-pass-the-key-type"></a>Для веб-форм с обновлением 3 изменение страниц учетной записи для передачи типа ключа
 
-Для веб-форм с обновлением 3 необходимо изменить на следующих страницах.
+Для веб-форм с обновлением 3 необходимо изменить следующие страницы.
 
-**Confirm.aspx.CX**
+**Confirm.aspx.cx**
 
 [!code-csharp[Main](change-primary-key-for-users-in-aspnet-identity/samples/sample33.cs?highlight=8)]
 
@@ -263,16 +263,16 @@ ms.locfileid: "65118093"
 <a id="run"></a>
 ## <a name="run-application"></a>Запуск приложения
 
-Вы завершили все изменения, необходимые для шаблона веб-приложения по умолчанию. Запустите приложение и зарегистрируйте нового пользователя. После регистрации пользователя можно заметить, что таблица AspNetUsers содержит идентификатор столбца, должно быть целым числом.
+Все необходимые изменения в шаблоне веб-приложения по умолчанию завершены. Запустите приложение и зарегистрируйте нового пользователя. После регистрации пользователя вы заметите, что таблица AspNetUsers содержит столбец идентификаторов, который является целым числом.
 
 ![новый первичный ключ](change-primary-key-for-users-in-aspnet-identity/_static/image1.png)
 
-Если вы ранее создали ASP.NET Identity таблицы с другой первичный ключ, необходимо внести некоторые дополнительные изменения. Если это возможно просто удалите существующую базу данных. База данных будет восстановлено с правильный подход, при запуске веб-приложения и добавить нового пользователя. Если удаление не поддерживается, запуск code first migrations для изменения таблиц. Тем не менее на новый первичный ключ целое число не будет быть установлен как свойство ИДЕНТИФИКАТОРОВ SQL в базе данных. Столбец идентификаторов необходимо вручную задать в качестве УДОСТОВЕРЕНИЯ.
+Если вы ранее создали ASP.NET Identity таблицы с другим первичным ключом, необходимо внести некоторые дополнительные изменения. Если возможно, просто удалите существующую базу данных. База данных будет создана заново с правильной структурой при запуске веб-приложения и добавлении нового пользователя. Если удаление невозможно, то для изменения таблиц выполните код с первой миграцией. Однако новый целочисленный первичный ключ не будет настроен как свойство IDENTITY SQL в базе данных. Необходимо вручную задать столбец идентификатора в качестве удостоверения.
 
 <a id="other"></a>
-## <a name="other-resources"></a>Другие источники
+## <a name="other-resources"></a>Другие ресурсы
 
 - [Обзор пользовательских поставщиков хранилищ для ASP.NET Identity](overview-of-custom-storage-providers-for-aspnet-identity.md)
 - [Миграция существующего веб-сайта из членства SQL в ASP.NET Identity](../migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity.md)
-- [Перенос данных универсального поставщика членства и профилей пользователей в ASP.NET Identity](../migrations/migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity.md)
-- [Пример приложения](https://aspnet.codeplex.com/SourceControl/latest#Samples/Identity/ChangePK/readme.txt) измененные первичный ключ
+- [Перенос данных универсального поставщика для членства и профилей пользователей в ASP.NET Identity](../migrations/migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity.md)
+- [Пример приложения](https://github.com/aspnet/samples/tree/master/samples/aspnet/Identity/ChangePK) с измененным первичным ключом

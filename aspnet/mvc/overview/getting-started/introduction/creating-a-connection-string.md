@@ -8,58 +8,58 @@ ms.date: 10/17/2013
 ms.assetid: 6127804d-c1a9-414d-8429-7f3dd0f56e97
 msc.legacyurl: /mvc/overview/getting-started/introduction/creating-a-connection-string
 msc.type: authoredcontent
-ms.openlocfilehash: e29fe14d2c7fafe2edb9c02029b678090ea83cc5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: d3c6e736c5dcf4a3615e3c72cfc033effc7cc8e6
+ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59403822"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76519314"
 ---
 # <a name="creating-a-connection-string-and-working-with-sql-server-localdb"></a>Создание строки подключения и работа с SQL Server LocalDB
 
-по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
+по [Рик Андерсон (]((https://twitter.com/RickAndMSFT))
 
-[!INCLUDE [Tutorial Note](sample/code-location.md)]
+[!INCLUDE [Tutorial Note](index.md)]
 
 ## <a name="creating-a-connection-string-and-working-with-sql-server-localdb"></a>Создание строки подключения и работа с SQL Server LocalDB
 
-`MovieDBContext` Созданный класс обрабатывает задачи подключения к базе данных и сопоставления `Movie` объектов для записи базы данных. Один вопрос, на который вы можете спросить, однако, как указать базу данных, которая подключается к. Вы фактически нет необходимости указывать базу данных использовать, Entity Framework по умолчанию будет использовать [LocalDB](https://docs.microsoft.com/sql/database-engine/configure-windows/sql-server-2016-express-localdb). В этом разделе мы будем явно добавить строку подключения в *Web.config* файл приложения.
+Созданный класс `MovieDBContext` обрабатывает задачу подключения к базе данных и сопоставление объектов `Movie` с записями базы данных. Одним из вопросов, которые вы можете спросить, является указание того, к какой базе данных будет подключаться. На самом деле нет необходимости указывать, какую базу данных использовать, Entity Framework по умолчанию будет использовать [LocalDB](https://docs.microsoft.com/sql/database-engine/configure-windows/sql-server-2016-express-localdb). В этом разделе мы явно добавим строку подключения в файл *Web. config* приложения.
 
 ## <a name="sql-server-express-localdb"></a>SQL Server Express LocalDB
 
-[LocalDB](https://docs.microsoft.com/sql/database-engine/configure-windows/sql-server-2016-express-localdb) — это облегченная версия SQL Server Express Database Engine, запускаемая по запросу и работает в пользовательском режиме. LocalDB выполняется в специального режима выполнения SQL Server Express, которая позволяет работать с базами данных как *.mdf* файлов. Как правило, хранятся файлы базы данных LocalDB в *приложения\_данных* папку веб-проекта.
+[LocalDB](https://docs.microsoft.com/sql/database-engine/configure-windows/sql-server-2016-express-localdb) — это упрощенная версия SQL Server Express ядро СУБД, которая запускается по запросу и запускается в пользовательском режиме. LocalDB выполняется в специальном режиме выполнения SQL Server Express, который позволяет работать с базами данных в виде *MDF* -файлов. Как правило, файлы базы данных LocalDB хранятся в папке *приложения\_данных* веб-проекта.
 
-SQL Server Express не рекомендуется для использования в рабочей среде веб-приложений. LocalDB в частности не следует для рабочей среды веб-приложению, так как он не предназначен для работы со службами IIS. Тем не менее базу данных LocalDB можно легко перенести в SQL Server или SQL Azure.
+SQL Server Express не рекомендуется использовать в рабочих веб-приложениях. LocalDB в частности не следует использовать для рабочей среды с веб-приложением, поскольку оно не предназначено для работы с IIS. Однако базу данных LocalDB можно легко перенести в SQL Server или SQL Azure.
 
-В Visual Studio 2017 LocalDB устанавливается по умолчанию с помощью Visual Studio.
+В Visual Studio 2017 LocalDB устанавливается по умолчанию в Visual Studio.
 
-По умолчанию, Entity Framework ищет строку подключения с именем, так же, как класс контекста объекта (`MovieDBContext` для этого проекта). Дополнительные сведения см. в разделе [строки подключения SQL Server для веб-приложений ASP.NET](https://msdn.microsoft.com/library/jj653752.aspx).
+По умолчанию Entity Framework ищет строку подключения с именем, аналогичную классу контекста объекта (`MovieDBContext` для этого проекта). Дополнительные сведения см. в разделе [SQL Server строки подключения для веб-приложений ASP.NET](https://msdn.microsoft.com/library/jj653752.aspx).
 
-Откройте корневой каталог приложения *Web.config* файл, показанный ниже. (Не *Web.config* файл *представления* папки.)
+Откройте корневой файл *Web. config* приложения, показанный ниже. (Не файл *Web. config* в папке *views* .)
 
 ![](creating-a-connection-string/_static/image1.png)
 
-Найти `<connectionStrings>` элемент:
+Найдите элемент `<connectionStrings>`:
 
 ![](creating-a-connection-string/_static/image2.png)
 
-Добавьте следующую строку подключения для `<connectionStrings>` элемент в *Web.config* файл.
+Добавьте следующую строку подключения в элемент `<connectionStrings>` в файле *Web. config* .
 
 [!code-xml[Main](creating-a-connection-string/samples/sample1.xml)]
 
-В следующем примере показано часть *Web.config* файл с добавить новую строку подключения:
+В следующем примере показана часть файла *Web. config* с добавленной новой строкой подключения:
 
 [!code-xml[Main](creating-a-connection-string/samples/sample2.xml)]
 
-Две строки подключения, очень похожи. Первая строка подключения имеет имя `DefaultConnection` и используется для базы данных членства для контроля пользователей, которые могут работать с приложением. В строке подключения, вы добавили указан с именем базы данных LocalDB *Movie.mdf* в *приложения\_данных* папки. Мы не использовать базы данных членства в этом руководстве, Дополнительные сведения о членстве, проверка подлинности и безопасности, см. в разделе my руководства [Создание приложения ASP.NET MVC с проверкой подлинности и база данных SQL и развертывание в службе приложений Azure](https://docs.microsoft.com/aspnet/core/security/authorization/secure-data).
+Две строки подключения очень похожи. Первая строка подключения называется `DefaultConnection` и используется для базы данных членства для управления доступом к приложению. Добавленная строка подключения указывает базу данных LocalDB с именем *Movie. mdf* , расположенную в папке *приложения\_данных* . Мы не будем использовать базу данных членства в этом руководстве. Дополнительные сведения о членстве, проверке подлинности и безопасности см. в моем руководстве [Создание приложения ASP.NET MVC с проверкой подлинности и базой данных SQL и развертывание в службе приложений Azure](https://docs.microsoft.com/aspnet/core/security/authorization/secure-data).
 
-Имя строки подключения должно соответствовать имя [DbContext](https://msdn.microsoft.com/library/system.data.entity.dbcontext(v=vs.103).aspx) класса.
+Имя строки подключения должно совпадать с именем класса [DbContext](https://msdn.microsoft.com/library/system.data.entity.dbcontext(v=vs.103).aspx) .
 
 [!code-csharp[Main](creating-a-connection-string/samples/sample3.cs?highlight=15)]
 
-Вам не нужен добавить `MovieDBContext` строку подключения. Если не указать строку подключения, Entity Framework создаст базу данных LocalDB в каталоге пользователи с полным именем из [DbContext](https://msdn.microsoft.com/library/system.data.entity.dbcontext(v=vs.103).aspx) класса (в данном случае `MvcMovie.Models.MovieDBContext`). Вы можно назвать базы данных вам нравится, до тех пор, пока он имеет *. MDF* суффикс. Например, можно назвать базе *MyFilms.mdf*.
+В действительности не нужно добавлять строку подключения `MovieDBContext`. Если строка подключения не указана, Entity Framework создаст базу данных LocalDB в каталоге Users с полным именем класса [DbContext](https://msdn.microsoft.com/library/system.data.entity.dbcontext(v=vs.103).aspx) (в данном случае `MvcMovie.Models.MovieDBContext`). Вы можете присвоить базе данных любое имя, если оно имеет значение *. Суффикс MDF* . Например, можно присвоить имя базе данных *мифилмс. mdf*.
 
-Далее предстоит создать новый `MoviesController` класс, который можно использовать для отображения данных фильма и разрешить пользователям создавать новые вхождения фильма.
+Далее предстоит создать новый класс `MoviesController`, который можно использовать для отображения данных фильмов и предоставления пользователям возможности создавать новые списки фильмов.
 
 > [!div class="step-by-step"]
 > [Назад](adding-a-model.md)
