@@ -8,12 +8,12 @@ ms.date: 04/10/2014
 ms.assetid: 7958d725-e958-4566-a85b-535eeb985f94
 msc.legacyurl: /mvc/overview/getting-started/recommended-resources-for-mvc
 msc.type: authoredcontent
-ms.openlocfilehash: 98089df48550216b50330d9b354168f570d857cd
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: daccaedae0b0e60f5086f270f214f87da564a85d
+ms.sourcegitcommit: e365196c75ce93cd8967412b1cfdc27121816110
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74583187"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074934"
 ---
 # <a name="mvc-recommended-resources"></a>Рекомендуемые ресурсы по MVC
 
@@ -80,7 +80,7 @@ ms.locfileid: "74583187"
 
 <a id="security"></a>
 
-## <a name="security"></a>по безопасности
+## <a name="security"></a>Безопасность
 
 - [Создание приложения ASP.NET MVC 5 с помощью единого входа Facebook и Google OAuth2](../security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md)
 - [Запрещенные и разрешенные действия в ASP.NET](../../../aspnet/overview/web-development-best-practices/what-not-to-do-in-aspnet-and-what-to-do-instead.md)
@@ -99,7 +99,7 @@ ms.locfileid: "74583187"
 - [Безопасность в ASP.NET MVC](http://www.codeproject.com/Articles/654846/Security-In-ASP-NET-MVC)
 - [Защита приложения ASP.NET MVC 4](https://blogs.msdn.com/b/rickandy/archive/2012/03/23/securing-your-asp-net-mvc-4-app-and-the-new-allowanonymous-attribute.aspx)
 - [Pluralsight видео обзор методик обеспечения безопасности](http://www.pluralsight-training.net/microsoft/players/PSODPlayer?author=scott-allen&amp;name=mvc3-building-security&amp;mode=live&amp;clip=0&amp;course=aspdotnet-mvc3-intro)
-- [Предотвращение атак XSRF и CSRF в ASP.NET MVC и на веб-страницах](../security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages.md)
+- [Сведения о предотвращении подделки межсайтовых запросов в ASP.NET MVC и на веб-страницах ASP.NET](../security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages.md)
 - [10 лучших OWASP для разработчиков .NET](http://www.troyhunt.com/2010/05/owasp-top-10-for-net-developers-part-1.html)
 - [Использование поставщиков OAuth с MVC 4](../older-versions/using-oauth-providers-with-mvc.md)
 - [Средства взлома для подтверждения приложений ASP.NET](https://msdn.microsoft.com/magazine/hh580736.aspx) Декабрь 2011. Статья журнала MSDN Magazine по ADAM Тьюлипер
@@ -123,7 +123,7 @@ ms.locfileid: "74583187"
 - [Членство не совпадает с проверкой подлинности с помощью форм](http://brockallen.com/2012/06/04/membership-is-not-the-same-as-forms-authentication/)
 - [Дважды подумайте об использовании MembershipProvider (и Симплемембершип)](http://brockallen.com/2012/09/02/think-twice-about-using-membershipprovider-and-simplemembership/)
 - [Реализация двухфакторной проверки подлинности MVC с помощью Google Authenticator](http://www.codeproject.com/Articles/403355/Implementing-MVC-Two-Factor-Authentication-with-Go)
-- new
+- Новые
 - [ASP.NET Identity и хранилище таблиц Azure](https://blogs.msdn.com/b/stuartleeks/archive/2014/01/15/asp-net-identity-and-windows-azure-table-storage.aspx)
 
 <a id="OWIN"></a>
@@ -274,7 +274,7 @@ ms.locfileid: "74583187"
 
 <a id="mobile"></a>
 
-## <a name="mobile"></a>Мобильный телефон
+## <a name="mobile"></a>Мобильные службы
 
 - [Руководство по мобильным устройствам ASP.NET MVC 4](../older-versions/aspnet-mvc-4-mobile-features.md)
 - [Роли Создание веб-сайтов с поддержкой мобильных устройств с помощью MVC 4](https://www.bitcast.io/v/building-mobile-friendly-websites-with-mvc-4)
@@ -315,7 +315,7 @@ ms.locfileid: "74583187"
 - [Создание приложений с модульными тестами в ASP.NET MVC — руководство для начинающих](http://www.codeproject.com/Articles/579035/Creating-Unit-Testable-Applications-in-ASP-NET-MVC)
 - [Внедрение зависимостей контроллера MVC ASP.NET для начинающих](http://www.codeproject.com/Articles/560798/ASP-NET-MVC-controller-dependency-injection-for-be)
 - [Написание модульных тестов для метода действия ASP.NET MVC, обрабатывающего запрос Ajax и нормальный запрос](https://weblogs.asp.net/shijuvarghese/archive/2012/12/09/writing-unit-tests-for-an-asp-net-mvc-action-method-that-handles-ajax-request-and-normal-request.aspx)
-- [Дуб: динамическое проектирование и беспроблемная разработка для ASP.NET MVC](http://amirrajan.github.com/Oak/)
+- [Дуб: динамическое проектирование и беспроблемная разработка для ASP.NET MVC](https://amirrajan.github.com/Oak/)
 - [Разработка приложения ASP.NET MVC 4 для TDD с помощью xUnit и MOQ](http://www.dotnetcurry.com/ShowArticle.aspx?ID=836)
 - [Тестирование ASP.NET-ПРЕДСТАВЛЕНИЙ MVC, от нового проекта до сервера сборки](https://channel9.msdn.com/Events/aspConf/aspConf/Testing-ASP-NET-MVC-Views-from-New-Project-to-the-Build-Server) (видео)
 - [Быстрое начало: Разработка на основе тестирования](https://channel9.msdn.com/Events/aspConf/aspConf/Quick-Start-Test-Driven-Development)(видео)
@@ -380,7 +380,7 @@ ms.locfileid: "74583187"
 - [ASP.NET MVC во внутренней части 5](http://www.pieterg.com/2013/4/aspnet-mvc-under-the-hood-part-5) [Актионинвокер](https://msdn.microsoft.com/library/system.web.mvc.controller.actioninvoker(v=vs.108).aspx)
 - [ASP.NET MVC во внутренней части 6](http://www.pieterg.com/2013/5/aspnet-mvc-under-the-hood-part-6) Как обнаруживаются Актионфилтерс и как они применяются
 - [Создание собственных пользовательских Виеввебпаже для ASP.NET MVC](http://www.love2dev.com/#!article/Create-Your-Own-Custom-ViewWebPage-for-ASPNET-MVC)
-- [Трассировка в ASP.NET MVC Razor views](https://blogs.msdn.com/b/webdev/archive/2013/07/16/tracing-in-asp-net-mvc-razor-views.aspx)
+- [Трассировка в представлениях ASP.NET MVC Razor](https://blogs.msdn.com/b/webdev/archive/2013/07/16/tracing-in-asp-net-mvc-razor-views.aspx)
 - [Визуализация представлений Razor ASP.NET MVC вне MVC, посещенных повторно](http://www.west-wind.com/weblog/posts/2013/Jul/15/Rendering-ASPNET-MVC-Razor-Views-outside-of-MVC-revisited)
 - [Пять необходимых интерфейсных средств, которые следует использовать с современными проектами MVC](http://www.adamtibi.net/06-2013/five-essential-front-end-tools-that-should-be-used-with-modern-mvc-projects)
 - [Функции и слабости привязки модели ASP.NET MVC](https://msdn.microsoft.com/magazine/hh781022.aspx)

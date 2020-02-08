@@ -1,167 +1,167 @@
 ---
 uid: visual-studio/overview/2012/windows-azure-authentication
-title: Windows Azure проверка подлинности | Документация Майкрософт
+title: Проверка подлинности Windows Azure | Документация Майкрософт
 author: Rick-Anderson
-description: Средства Microsoft ASP.NET для Windows Azure Active Directory вы можете легко включить проверку подлинности для веб-приложений, размещенных в Windows Azure Web Sites...
+description: Средства Microsoft ASP.NET для Windows Azure Active Directory упрощают проверку подлинности для веб-приложений, размещенных на веб-сайтах Windows Azure...
 ms.author: riande
 ms.date: 02/20/2013
 ms.assetid: a3cef801-a54b-4ebd-93c3-55764e2e14b1
 msc.legacyurl: /visual-studio/overview/2012/windows-azure-authentication
 msc.type: authoredcontent
-ms.openlocfilehash: 46dd491b275b43be4e76c029b53f9454146663ae
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 41c4e6d02c965c10aa35b882964f4f04d9b8c44b
+ms.sourcegitcommit: e365196c75ce93cd8967412b1cfdc27121816110
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65126194"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075155"
 ---
 # <a name="windows-azure-authentication"></a>Проверка подлинности Microsoft Azure
 
-по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
+по [Рик Андерсон (]((https://twitter.com/RickAndMSFT))
 
-> Microsoft ASP.NET средства для Windows Azure Active Directory вы можете легко включить проверку подлинности для веб-приложений, размещенных на [веб-сайтов Windows Azure](https://www.windowsazure.com/home/features/web-sites/). Проверка подлинности Windows Azure можно использовать для проверки подлинности пользователей Office 365 из вашей организации, корпоративных учетных записей, синхронизированные из локальной службы Active Directory или пользователей, созданных в своем домене Windows Azure Active Directory. Включение проверки подлинности Windows Azure настраивает приложение для проверки подлинности пользователей с помощью одного [Windows Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) клиента.
+> Средства Microsoft ASP.NET для Windows Azure Active Directory упрощают проверку подлинности для веб-приложений, размещенных на [веб-сайтах Windows Azure](https://www.windowsazure.com/home/features/web-sites/). Для проверки подлинности пользователей Office 365 в Организации можно использовать проверку подлинности Windows Azure. корпоративные учетные записи синхронизируются с локальными Active Directory или пользователями, созданными в пользовательском домене Windows Azure Active Directory. Включение проверки подлинности Windows Azure настраивает приложение для проверки подлинности пользователей с помощью одного клиента [Azure Active Directory Windows](https://docs.microsoft.com/azure/active-directory/) .
 >
-> Средство проверки подлинности ASP.NET Windows Azure не поддерживается для веб-ролей в облачной службе, но мы планируем сделать это в будущем выпуске. [Windows Identity Foundation](https://msdn.microsoft.com/library/hh291066(v=VS.110).aspx) (WIF) поддерживается в веб-ролях Windows Azure.
+> Средство проверки подлинности Windows Azure ASP.NET не поддерживается для веб-ролей в облачной службе, но мы планируем сделать это в будущем выпуске. [Windows Identity Foundation](https://msdn.microsoft.com/library/hh291066(v=VS.110).aspx) (WIF) поддерживается в веб-ролях Windows Azure.
 >
-> Дополнительные сведения по настройке синхронизации между вашей локальной Active Directory и клиенте Windows Azure Active Directory см. [использование AD FS 2.0 для реализации и управления единым входом](https://technet.microsoft.com/library/jj205462.aspx).
+> Дополнительные сведения о настройке синхронизации между локальными Active Directory и клиентом Windows Azure Active Directory см. в статье [использование AD FS 2,0 для реализации единого входа и управления им](https://technet.microsoft.com/library/jj205462.aspx).
 >
-> Windows Azure Active Directory в настоящее время доступна [бесплатная Предварительная версия службы](https://azure.microsoft.com/free/?WT.mc_id=A443DD604).
+> Windows Azure Active Directory в настоящее время доступна в качестве [бесплатной предварительной версии службы](https://azure.microsoft.com/free/?WT.mc_id=A443DD604).
 
-## <a name="requirements"></a>Требования:
+## <a name="requirements"></a>Требования
 
 - Visual Studio 2012 или [Visual Studio Express 2012](https://www.microsoft.com/visualstudio/11/products/express)
-- [Расширения для Visual Studio 2012 веб-инструментов](https://go.microsoft.com/fwlink/?LinkID=282228&amp;clcid=0x409) или [Web Tools Extensions для Visual Studio Express 2012](https://go.microsoft.com/fwlink/?LinkID=282231&amp;clcid=0x409)
-- [Средства Microsoft ASP.NET для Windows Azure Active Directory — Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkID=282306) или [средств Microsoft ASP.NET для Windows Azure Active Directory — Visual Studio Express 2012 для Web](https://go.microsoft.com/fwlink/?LinkId=282652)
+- [Расширения веб-инструментов для расширений Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkID=282228&amp;clcid=0x409) или [Web tools для Visual Studio Express 2012](https://go.microsoft.com/fwlink/?LinkID=282231&amp;clcid=0x409)
+- [Средства Microsoft ASP.NET для windows Azure Active Directory — Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkID=282306) или [Microsoft ASP.NET Tools for windows Azure Active Directory – Visual Studio Express 2012 для Web](https://go.microsoft.com/fwlink/?LinkId=282652)
 
 ## <a name="create-an-aspnet-web-application-with-visual-studio-2012"></a>Создание веб-приложения ASP.NET с помощью Visual Studio 2012
 
-Можно создать любое веб-приложение с помощью Visual Studio 2012, в этом руководстве используется шаблон интрасети ASP.NET MVC.
+Вы можете создать любое веб-приложение с помощью Visual Studio 2012. в этом руководстве используется шаблон интрасети ASP.NET MVC.
 
-1. Создайте новое приложение интрасети MVC 4 ASP.NET и примите значения по умолчанию. (Оно должно быть In **tra** net и не в **ажите** net проекта).
+1. Создайте новое приложение интрасети ASP.NET MVC 4 и примите все значения по умолчанию. (Он должен быть в **тра** NET, а не в проекте **заве** NET).
      ![](windows-azure-authentication/_static/image1.png)
 
-## <a name="enable-window-azure-authentication-when-you-are-a-global-administrator-of-the-tenet"></a>Включение проверки подлинности Azure окна (Если вы являетесь глобальным администратором принцип)
+## <a name="enable-window-azure-authentication-when-you-are-a-global-administrator-of-the-tenet"></a>Включить проверку подлинности Windows Azure (если вы являетесь глобальным администратором этого принципа)
 
-Если у вас нет существующего клиента Windows Azure Active Directory (например, через существующую учетную запись Office 365) можно создать новый клиент, зарегистрировавшись для [новую учетную запись Windows Azure Active Directory](http://g.microsoftonline.com/0AX00en/5).
+Если у вас нет существующего клиента Windows Azure Active Directory (например, с помощью существующей учетной записи Office 365), можно создать новый клиент, зарегистрировавшись на [новую учетную запись Azure Active Directory Windows](https://g.microsoftonline.com/0AX00en/5).
 
-1. В меню "проект" выберите **включить проверку подлинности Windows Azure**:
+1. В меню Проект выберите **включить проверку подлинности Windows Azure**:
 
    ![](windows-azure-authentication/_static/image2.png)
 
-2. Введите имя домена для вашего клиента Windows Azure Active Directory (например, contoso.onmicrosoft.com) и нажмите кнопку **включить**:
+2. Введите домен для клиента Windows Azure Active Directory (например, contoso.onmicrosoft.com) и щелкните **включить**.
 
 ![](windows-azure-authentication/_static/image3.png)
 
-3. В веб-проверка подлинности диалоговое окно входа с правами администратора для вашего клиента Windows Azure Active Directory:
+3. В диалоговом окне веб-аутентификации Войдите в систему как администратор для вашего клиента Windows Azure Active Directory:
 
    ![](windows-azure-authentication/_static/image4.png)
 
 ![](windows-azure-authentication/_static/image5.png)
 
-## <a name="enable-window-azure-by-a-non-administrator-of-the-tenet"></a>Включите Windows Azure, без прав администратора из принцип
+## <a name="enable-window-azure-by-a-non-administrator-of-the-tenet"></a>Включение Windows Azure не администратором этого принципа
 
-Если у вас нет права глобального администратора для вашего клиента Windows Azure Active Directory, можно снять флажок для подготовки приложения.
+Если у вас нет прав глобального администратора для клиента Windows Azure Active Directory, можно снять флажок для подготовки приложения.
 
 ![](windows-azure-authentication/_static/image6.png)
 
-В диалоговом окне отобразится **домена**, **идентификатор субъекта приложения** и **URL-адрес ответа** , необходимые для подготовки приложения с Azure Active Directory Принцип. Необходимо предоставить эти сведения тому, кто имеет недостаточно привилегий для подготовки приложения. См. в разделе[как реализовать единый вход Windows Azure Active Directory - приложение ASP.NET с](https://github.com/Azure-Samples/active-directory-dotnet-webapp-openidconnect) Дополнительные сведения о том, как использовать командлет для создания субъекта-службы вручную.
-После успешной подготовки приложения вы можете щелкнуть **постоянно обновлять web.config с помощью выбранных параметров**. Если вы хотите продолжить разработку приложения во время ожидания подготовки нежелательно, можно щелкнуть **близко к хранить параметры в файле проекта**. В следующий раз, вызвать включить проверку подлинности Windows Azure и снимите этот флажок, подготовки, вы увидите те же параметры, и можно щелкнуть **Продолжить**, затем нажмите кнопку, **применить эти параметры в файле web.config**.
+В диалоговом окне отобразится **домен**, **идентификатор субъекта приложения** и **URL-адрес ответа** , необходимые для подготовки приложения с помощью Azure Active Directoryного принципа. Эти сведения необходимо предоставить пользователю, имеющему достаточные права для предоставления приложения. Сведения о том, как использовать командлет для создания субъекта-службы вручную, см. в статье[Реализация единого входа с помощью приложения Windows Azure Active Directory ASP.NET](https://github.com/Azure-Samples/active-directory-dotnet-webapp-openidconnect) .
+После успешной подготовки приложения можно нажать кнопку **продолжить, чтобы обновить Web. config с выбранными параметрами**. Если вы хотите продолжить разработку приложения во время ожидания подготовки, можно нажать кнопку **Закрыть, чтобы запомнить параметры в файле проекта**. При следующем вызове включения проверки подлинности Windows Azure и снятии флажка "подготовка" вы увидите те же параметры, и вы можете нажать кнопку **продолжить**, а затем **применить эти параметры в файле Web. config**.
 
-1. Подождите, пока приложение настраивается для проверки подлинности Windows Azure и подготовлены с помощью Windows Azure Active Directory.
-2. После включения проверки подлинности Windows Azure для вашего приложения, нажмите кнопку **закрыть:**
+1. Подождите, пока приложение настроено для проверки подлинности Windows Azure и подготовлено с помощью Azure Active Directory Windows.
+2. После включения проверки подлинности Windows Azure для приложения нажмите кнопку **Закрыть:**
 
     ![](windows-azure-authentication/_static/image7.png)
-3. Нажмите клавишу F5 для запуска приложения. Вы автоматически получите перенаправлены на страницу входа. Использовать учетные данные пользователя принцип каталог для входа в приложение...
+3. Нажмите клавишу F5, чтобы запустить приложение. Вы должны автоматически перенаправлены на страницу входа. Для входа в приложение используйте учетные данные пользователя, предназначенного для доступа к каталогу.
 
     ![](windows-azure-authentication/_static/image1.jpg)
-4. Так как используется самозаверяющий тестовый сертификат для вашего приложения вы получите предупреждение от браузера, сертификат не был выдан доверенным центром сертификации.
+4. Так как приложение в настоящее время использует самозаверяющий тестовый сертификат, вы получите от браузера предупреждение о том, что сертификат не был выдан доверенным центром сертификации.
 
-    Это предупреждение можно спокойно проигнорировать во время локальной разработки, щелкнув **Продолжить открытие этого веб-сайта:**
+    Это предупреждение можно спокойно игнорировать во время локальной разработки, нажав кнопку **"продолжить" для этого веб-сайта:**
 
     ![](windows-azure-authentication/_static/image8.png)
-5. Теперь успешного входа приложение с помощью Windows Azure!
+5. Вы успешно выполнили вход в приложение с помощью проверки подлинности Windows Azure!
 
     ![](windows-azure-authentication/_static/image2.jpg)
 
-Включение Windows Azure проверка подлинности вносит следующие изменения в приложение:
+Включение проверки подлинности Windows Azure вносит в приложение следующие изменения:
 
-- Подделка защита Anti-CROSS-Site ([CSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF))) класса ( *приложения\_Start\AntiXsrfConfig.cs* ) добавляется в проект.
-- Пакеты NuGet `System.IdentityModel.Tokens.ValidatingIssuerNameRegistry` добавляется в проект.
-- Параметры Windows Identity Foundation в приложение будут настроены на прием токенов безопасности из клиента Windows Azure Active Directory. Щелкните ниже, чтобы увидеть изменения, внесенные в развернутое представление *Web.config* файл.
+- В проект добавляется класс подделки межсайтовых запросов ([CSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF))) ( *app\_старт\антикссрфконфиг.КС* ).
+- Пакеты NuGet `System.IdentityModel.Tokens.ValidatingIssuerNameRegistry` добавляются в проект.
+- Параметры Windows Identity Foundation в приложении будут настроены на прием маркеров безопасности от клиента Windows Azure Active Directory. Щелкните изображение ниже, чтобы просмотреть развернутое представление изменений, внесенных в файл *Web. config* .
 
      ![](windows-azure-authentication/_static/image9.png)
-- Подготавливается субъекта-службы для приложения в клиенте Windows Azure Active Directory.
-- Протокол HTTPS включен.
+- Будет подготовлен субъект-служба для приложения в клиенте Windows Azure Active Directory.
+- HTTPS включен.
 
 ## <a name="deploy-the-application-to-windows-azure"></a>Развертывание приложения в Windows Azure
 
-Полные инструкции см. в разделе [развертывание веб-приложения ASP.NET для веб-сайта Windows Azure](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet).
+Полные инструкции см. [в статье Развертывание веб-приложения ASP.NET на веб-сайте Windows Azure](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet).
 
-Чтобы опубликовать приложение с помощью Windows Azure на веб-сайте Azure:
+Чтобы опубликовать приложение с помощью проверки подлинности Windows Azure на веб-сайте Azure, выполните следующие действия.
 
-1. Щелкнуть правой кнопкой мыши приложение и выберите **публикации:**
+1. Щелкните приложение правой кнопкой мыши и выберите **Опубликовать:**
 
     ![](windows-azure-authentication/_static/image3.jpg)
-2. В диалоговом окне публикации веб-сайта скачайте и импортируйте профиль публикации для веб-сайт Azure.
+2. В диалоговом окне Опубликовать веб-сайт Скачайте и импортируйте профиль публикации для веб-сайта Azure.
 
     ![](windows-azure-authentication/_static/image4.jpg)
-3. **Подключения** вкладке показано **URL-адрес назначения** (общедоступный с выходом URL-адрес для вашего приложения). Нажмите кнопку **проверить подключение** Чтобы проверить подключение:
+3. На вкладке **Подключение** отображается **URL-адрес назначения** (общедоступный URL-адрес приложения). Щелкните **проверить подключение** , чтобы проверить подключение.
 
     ![](windows-azure-authentication/_static/image5.jpg)
-4. Если вы опубликовали этот веб-сайт Azure ранее рекомендуется проверить **удалять дополнительные файлы в месте назначения** параметр, чтобы обеспечить приложение публикует аккуратно. Обратите внимание, что **включить проверку подлинности Windows Azure** установлен флажок.
+4. Если вы уже опубликовали на этом веб-сайте Azure, рекомендуется проверить параметр **удалить дополнительные файлы в месте назначения** , чтобы убедиться, что приложение публикуется аккуратно. Обратите внимание, что флажок **включить проверку подлинности Windows Azure** установлен.
 
     ![](windows-azure-authentication/_static/image10.png)
-5. Необязательные: На **предварительной версии** вкладке **начать просмотр** для просмотра развернутых файлов.
+5. Необязательно. на вкладке **Предварительный просмотр** нажмите кнопку **запустить предварительный просмотр** , чтобы просмотреть развернутые файлы.
 
     ![](windows-azure-authentication/_static/image6.jpg)
-6. Нажмите кнопку **публикации.**
+6. Нажмите кнопку **Опубликовать.**
 
-    Вам будет предложено включить проверку подлинности Windows Azure для целевого узла. Нажмите кнопку **включить** для продолжения:
+    Вам будет предложено включить проверку подлинности Windows Azure для целевого узла. Чтобы продолжить, нажмите кнопку **включить** .
 
     ![](windows-azure-authentication/_static/image11.png)
-7. Введите учетные данные администратора для вашего клиента Windows Azure Active Directory:
+7. Введите учетные данные администратора для клиента Windows Azure Active Directory:
 
     ![](windows-azure-authentication/_static/image7.jpg)
-8. После успешной публикации приложения браузер откроет для опубликованного веб-сайта.
+8. После успешной публикации приложения браузер откроется на опубликованном веб-узле.
 
     > [!NOTE]
-    > Может занять до пяти минут (обычно необходимо меньше) для вашего приложения, чтобы полностью подготовлены с помощью Windows Azure Active Directory после включения проверки подлинности Windows Azure для целевого узла. При первом запуске приложения при получении ошибки ACS50001: Проверяющая сторона с именем «[realm]» не найден, а затем подождите несколько минут и попробуйте запустить приложение еще раз.
-9. При появлении запроса, войдите в качестве пользователя в каталоге:
+    > Полная подготовка приложения с помощью Windows Azure Active Directory после включения проверки подлинности Windows Azure для целевого узла может занять до пяти минут (обычно меньше). При первом запуске приложения при появлении ошибки ACS50001: не удалось найти проверяющую сторону с именем "[realm]", подождите несколько минут и попробуйте запустить приложение еще раз.
+9. При появлении запроса войдите в систему как пользователь в каталоге:
 
     ![](windows-azure-authentication/_static/image8.jpg)
-10. Вы успешно теперь выполнили вход в Azure в которых размещено приложение, с помощью Windows Azure.
+10. Вы успешно выполнили вход в приложение, размещенное в Azure, с использованием проверки подлинности Windows Azure.
 
      ![](windows-azure-authentication/_static/image9.jpg)
 
 ## <a name="known-issues"></a>Известные проблемы
 
-#### <a name="role-based-authorization-fails-when-using-windows-azure-authentication"></a>При использовании проверки подлинности Windows Azure, происходит сбой авторизации на основе ролей
+#### <a name="role-based-authorization-fails-when-using-windows-azure-authentication"></a>Сбой авторизации на основе ролей при использовании проверки подлинности Windows Azure
 
-Проверка подлинности Windows Azure не поддерживает в настоящее время утверждение необходимые роли таким образом, можно выполнять авторизацию на основе ролей. Роль пользователя, прошедшего проверку подлинности должна осуществляться вручную из Windows Azure Active Directory.
+В настоящее время проверка подлинности Windows Azure не предоставляет необходимое утверждение роли, чтобы можно было выполнить авторизацию на основе ролей. Роль пользователя, прошедшего проверку подлинности, необходимо вручную получить из Azure Active Directory Windows.
 
-#### <a name="browsing-to-an-application-with-windows-azure-authentication-results-in-the-error-acs20016-the-domain-of-the-logged-in-user-livecom-does-not-match-any-allowed-domain-of-this-sts"></a>Перейдя к приложения с Windows в ошибке «домен вошедшего в систему пользователя (live.com) не совпадает ни ACS20016 разрешено домена этого STS» результаты проверки подлинности Azure
+#### <a name="browsing-to-an-application-with-windows-azure-authentication-results-in-the-error-acs20016-the-domain-of-the-logged-in-user-livecom-does-not-match-any-allowed-domain-of-this-sts"></a>При переходе к приложению с проверкой подлинности Windows Azure возникает ошибка "ACS20016 домен пользователя, вошедшего в систему (live.com), не соответствует ни одному домену этой STS"
 
-Если вы уже вошли с учетной записью Майкрософт (например, hotmail.com, live.com, outlook.com), и вы попытаетесь получить доступ к приложению, для которой проверка подлинности Windows Azure может получить ответ ошибке 400, так как домен учетной записи Майкрософт не является службой Windows Azure Active Directory. Чтобы войти в приложение, выйти из учетной записи Майкрософт сначала.
+Если вы уже вошли в учетную запись Майкрософт (например, hotmail.com, live.com, outlook.com) и пытаетесь получить доступ к приложению с включенной проверкой подлинности Windows Azure, вы можете получить ответ об ошибке 400, так как домен учетной записи Майкрософт не распознается Azure Active Directory Windows. Чтобы войти в приложение, сначала выйдите из своей учетной записи Майкрософт.
 
-#### <a name="logging-into-an-application-with-windows-azure-authentication-enabled-and-a-x509certificatevalidationmode-other-than-none-results-in-certificate-validation-errors-for-the-accountsaccesscontrolwindowsnet-certificate"></a>Вход в приложение с включить проверку подлинности Windows Azure и X509CertificateValidationMode, отличное от None в результате ошибки проверки сертификатов для сертификата accounts.accesscontrol.windows.net
+#### <a name="logging-into-an-application-with-windows-azure-authentication-enabled-and-a-x509certificatevalidationmode-other-than-none-results-in-certificate-validation-errors-for-the-accountsaccesscontrolwindowsnet-certificate"></a>Вход в приложение с включенной проверкой подлинности Windows Azure и X509CertificateValidationMode, отличное от None, приводит к ошибкам проверки сертификата для сертификата accounts.accesscontrol.windows.net.
 
-Проверка сертификата не является обязательным и следует отключить. Отпечаток издателя сертификата проверяется с WSFederationAuthenticationModule.
+Проверка сертификата не является обязательной и должна быть отключена. Отпечаток сертификата издателя проверяется модулем WSFederationAuthenticationModule.
 
-#### <a name="when-attempting-to-enable-windows-azure-authentication-the-web-authentication-dialog-shows-the-error-acs20016-the-domain-of-the-logged-in-user-contosoonmicrosoftcom-does-not-match-any-allowed-domain-of-this-sts"></a>При попытке включить проверку подлинности Windows Azure в диалоговом окне веб-проверки подлинности отображаются ошибки «ACS20016: Домен пользователя, вошедшего в систему (contoso.onmicrosoft.com) не соответствует любой допустимому домену STS.»
+#### <a name="when-attempting-to-enable-windows-azure-authentication-the-web-authentication-dialog-shows-the-error-acs20016-the-domain-of-the-logged-in-user-contosoonmicrosoftcom-does-not-match-any-allowed-domain-of-this-sts"></a>При попытке включить проверку подлинности Windows Azure в диалоговом окне веб-аутентификации отображается ошибка "ACS20016: домен пользователя, выполнившего вход (contoso.onmicrosoft.com), не соответствует ни одному из разрешенных доменов этой STS".
 
-Эта ошибка наблюдается при был ранее успешно выполнен вход через Windows Azure Active Directory учетную запись из в одном процессе Visual Studio. Выйдите из указанной учетной записи или перезапустите Visual Studio. Если вы ранее вход и выбрали вариант «Оставаться в системе» может потребоваться очистить файлы cookie браузера.
+Эта ошибка может возникать, если ранее вы успешно выполнили вход с помощью другой учетной записи Azure Active Directory Windows в рамках того же процесса Visual Studio. Выйдите из указанной учетной записи или перезапустите Visual Studio. Если вы ранее вошли в систему и выбрали параметр "оставаться в системе", вам может потребоваться очистить файлы cookie браузера.
 
-## <a name="acs20012-the-request-is-not-a-valid-ws-federation-protocol-message"></a>ACS20012: Запрос не является допустимым сообщением протокола WS-Federation
+## <a name="acs20012-the-request-is-not-a-valid-ws-federation-protocol-message"></a>ACS20012: запрос не является допустимым сообщением протокола WS-Federation
 
-Это может произойти, если вы уже вошли в систему с помощью некоторых других идентификатора Майкрософт для одной из служб Azure. Окно браузера для частного использования, например InPrivate в Internet Explorer или режиме InPrivate в браузере Chrome или очистить все файлы cookie.
+Это может произойти, если вы уже выполнили вход с другим ИДЕНТИФИКАТОРом Майкрософт в одну из служб Azure. Используйте закрытое окно браузера, например InPrivate в IE или режиме инкогнито в Chrome, или очистите все файлы cookie.
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-- [Средства Microsoft ASP.NET для Windows Azure Active Directory — Visual Studio 2012](https://blogs.msdn.com/b/vbertocci/archive/2013/02/18/microsoft-asp-net-tools-for-windows-azure-active-directory-visual-studio-2012.aspx) — Витторио Берточчи
-- [Windows Azure функции: Удостоверение](https://docs.microsoft.com/azure/active-directory/)
-- [TechNet: Windows Azure Active Directory](https://technet.microsoft.com/library/hh967619.aspx)
-- [Windows Azure Active Directory: Разработка приложений для вашей организации](https://activedirectory.windowsazure.com/Develop/Single-Tenant.aspx)
-- [Windows Azure Active Directory: Разработка приложений для нескольких организаций](https://activedirectory.windowsazure.com/Develop/Multi-Tenant.aspx)
-- [Как реализовать единый вход в Windows Azure Active Directory](https://github.com/Azure-Samples/active-directory-dotnet-webapp-openidconnect)
-- [Единый вход в Windows Azure Active Directory: глубокое погружение в обработку](https://blogs.msdn.com/b/vbertocci/archive/2012/07/05/single-sign-on-with-windows-azure-active-directory-a-deep-dive.aspx) — Витторио Берточчи
-- [Использование AD FS 2.0 для реализации и управления единым входом](https://technet.microsoft.com/library/jj205462.aspx)
+- [Средства Microsoft ASP.NET для Windows Azure Active Directory — Visual Studio 2012](https://blogs.msdn.com/b/vbertocci/archive/2013/02/18/microsoft-asp-net-tools-for-windows-azure-active-directory-visual-studio-2012.aspx) – Витторио Берточчи
+- [Функции Windows Azure: удостоверение](https://docs.microsoft.com/azure/active-directory/)
+- [TechNet: Azure Active Directory Windows](https://technet.microsoft.com/library/hh967619.aspx)
+- [Azure Active Directory Windows: Разработка приложений для Организации](https://activedirectory.windowsazure.com/Develop/Single-Tenant.aspx)
+- [Azure Active Directory Windows: Разработка приложений для нескольких организаций](https://activedirectory.windowsazure.com/Develop/Multi-Tenant.aspx)
+- [Как реализовать единый вход с помощью Windows Azure Active Directory](https://github.com/Azure-Samples/active-directory-dotnet-webapp-openidconnect)
+- [Единый вход с Windows Azure Active Directory: подробный](https://blogs.msdn.com/b/vbertocci/archive/2012/07/05/single-sign-on-with-windows-azure-active-directory-a-deep-dive.aspx) обзор – Витторио Берточчи
+- [Использование AD FS 2,0 для реализации единого входа и управления им](https://technet.microsoft.com/library/jj205462.aspx)

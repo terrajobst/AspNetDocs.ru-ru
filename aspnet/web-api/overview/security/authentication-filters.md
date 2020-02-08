@@ -8,12 +8,12 @@ ms.date: 09/25/2014
 ms.assetid: b9882e53-b3ca-4def-89b0-322846973ccb
 msc.legacyurl: /web-api/overview/security/authentication-filters
 msc.type: authoredcontent
-ms.openlocfilehash: b6815baf05303d5f47a14ee5fe0fdfc2836c1868
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: 2ef9e62a6c634237e920b6d7aba2127b835f959d
+ms.sourcegitcommit: e365196c75ce93cd8967412b1cfdc27121816110
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519379"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075077"
 ---
 # <a name="authentication-filters-in-aspnet-web-api-2"></a>Фильтры проверки подлинности в веб-API ASP.NET 2
 
@@ -23,7 +23,7 @@ ms.locfileid: "76519379"
 
 Фильтры проверки подлинности позволяют задать схему проверки подлинности для отдельных контроллеров или действий. Таким образом, приложение может поддерживать разные механизмы проверки подлинности для разных ресурсов HTTP.
 
-В этой статье я покажу код из примера [обычной проверки подлинности](http://github.com/aspnet/samples/tree/master/samples/aspnet/WebApi/BasicAuthentication) на [https://github.com/aspnet/samples](https://github.com/aspnet/samples). В примере показан фильтр проверки подлинности, реализующий схему проверки подлинности HTTP Basic Access (RFC 2617). Фильтр реализуется в классе с именем `IdentityBasicAuthenticationAttribute`. Я не буду показывать весь код из образца, а только части, иллюстрирующие написание фильтра проверки подлинности.
+В этой статье я покажу код из примера [обычной проверки подлинности](https://github.com/aspnet/samples/tree/master/samples/aspnet/WebApi/BasicAuthentication) на [https://github.com/aspnet/samples](https://github.com/aspnet/samples). В примере показан фильтр проверки подлинности, реализующий схему проверки подлинности HTTP Basic Access (RFC 2617). Фильтр реализуется в классе с именем `IdentityBasicAuthenticationAttribute`. Я не буду показывать весь код из образца, а только части, иллюстрирующие написание фильтра проверки подлинности.
 
 ## <a name="setting-an-authentication-filter"></a>Настройка фильтра проверки подлинности
 
@@ -108,7 +108,7 @@ ms.locfileid: "76519379"
 5. Если учетные данные неверны, возвращайте значение 401, установив `context.ErrorResult`.
 6. Если учетные данные действительны, создайте экземпляр **IPrincipal** и задайте `context.Principal`.
 
-Следующий код демонстрирует метод **AuthenticateAsync** из примера [обычной проверки подлинности](http://github.com/aspnet/samples/tree/master/samples/aspnet/WebApi/BasicAuthentication) . Комментарии указывают на каждый шаг. Код показывает несколько типов ошибок: заголовок Authorization без учетных данных, неправильно сформированные учетные данные и неверное имя пользователя и пароль.
+Следующий код демонстрирует метод **AuthenticateAsync** из примера [обычной проверки подлинности](https://github.com/aspnet/samples/tree/master/samples/aspnet/WebApi/BasicAuthentication) . Комментарии указывают на каждый шаг. Код показывает несколько типов ошибок: заголовок Authorization без учетных данных, неправильно сформированные учетные данные и неверное имя пользователя и пароль.
 
 [!code-csharp[Main](authentication-filters/samples/sample5.cs)]
 
@@ -135,7 +135,7 @@ ms.locfileid: "76519379"
 Я называю исходный **ихттпактионресулт** *внутренним результатом*, а новый **ихттпактионресулт** *внешний результат*. Внешний результат должен выполнять следующие действия.
 
 1. Вызов внутреннего результата для создания HTTP-ответа.
-2. Изучите ответ.
+2. Проверьте ответ.
 3. При необходимости добавьте запрос проверки подлинности в ответ.
 
 Следующий пример взят из примера обычной проверки подлинности. Он определяет **ихттпактионресулт** для внешнего результата.

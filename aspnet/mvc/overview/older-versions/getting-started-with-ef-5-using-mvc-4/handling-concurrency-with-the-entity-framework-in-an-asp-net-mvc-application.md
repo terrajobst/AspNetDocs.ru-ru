@@ -8,12 +8,12 @@ ms.date: 07/30/2013
 ms.assetid: b83f47c4-8521-4d0a-8644-e8f77e39733e
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
-ms.openlocfilehash: 0383974baa16bb0d5fc588f9303290bdb0fd979c
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 9800a313879477f36a730e6a70c79bc06d403ae3
+ms.sourcegitcommit: e365196c75ce93cd8967412b1cfdc27121816110
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74595350"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074960"
 ---
 # <a name="handling-concurrency-with-the-entity-framework-in-an-aspnet-mvc-application-7-of-10"></a>Обработка параллелизма с помощью Entity Framework в приложении ASP.NET MVC (7 из 10)
 
@@ -43,7 +43,7 @@ ms.locfileid: "74595350"
 
 Управление блокировками имеет недостатки. Оно может оказаться сложным с точки зрения программирования. Он требует значительных ресурсов управления базами данных и может вызвать проблемы с производительностью по мере увеличения числа пользователей приложения (то есть оно не масштабируется). Поэтому не все системы управления базами данных поддерживают пессимистичный параллелизм. Entity Framework не предоставляет встроенную поддержку для нее, и в этом руководстве не показано, как его реализовать.
 
-### <a name="optimistic-concurrency"></a>Оптимистическая блокировка
+### <a name="optimistic-concurrency"></a>Оптимистический параллелизм
 
 Альтернативой пессимистичному параллелизму является *оптимистичный параллелизм*. Оптимистическая блокировка допускает появление конфликтов параллелизма, а затем обрабатывает их соответствующим образом. Например, Джон запускает страницу редактирования отделы, изменяет сумму **бюджета** для английского отдела с $350 000,00 на $0,00.
 
@@ -85,6 +85,8 @@ ms.locfileid: "74595350"
 Атрибут [timestamp](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.timestampattribute.aspx) указывает, что этот столбец будет включаться в предложение `Where` `Update` и `Delete` команды, отправляемые в базу данных. Атрибут называется [меткой времени](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.timestampattribute.aspx) , так как предыдущие версии SQL Server использовали тип данных [timestamp](https://msdn.microsoft.com/library/ms182776(v=SQL.90).aspx) SQL до того, как он заменил значение [rowversion](https://msdn.microsoft.com/library/ms182776(v=sql.110).aspx) SQL. Тип .NET для `rowversion` является массивом байтов. Если вы предпочитаете использовать API Fluent, можно использовать метод [исконкурренцитокен](https://msdn.microsoft.com/library/gg679501(v=VS.103).aspx) для указания свойства отслеживания, как показано в следующем примере:
 
 [!code-csharp[Main](handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application/samples/sample2.cs)]
+
+См. статью о проблемах с GitHub [замените исконкурренцитокен на исровверсион](https://github.com/aspnet/AspNetDocs/issues/302).
 
 Добавив свойство, вы изменили модель базы данных, поэтому нужно выполнить еще одну миграцию. Введите в консоли диспетчера пакетов (PMC) следующие команды:
 
@@ -158,7 +160,7 @@ ms.locfileid: "74595350"
 
 ![Department_Edit_page_2_after_clicking_Save](handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application/_static/image10.png)
 
-Снова нажмите кнопку **Save** (Сохранить). Значение, введенное во втором браузере, сохраняется вместе с исходным значением данных, измененных в первом браузере. Сохраненные значения отображаются при открытии страницы индекса.
+Снова нажмите кнопку **Сохранить**. Значение, введенное во втором браузере, сохраняется вместе с исходным значением данных, измененных в первом браузере. Сохраненные значения отображаются при открытии страницы индекса.
 
 ![Department_Index_page_with_change_from_second_browser](handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application/_static/image11.png)
 

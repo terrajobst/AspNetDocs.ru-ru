@@ -8,12 +8,12 @@ ms.date: 10/14/2017
 ms.assetid: 8935bf14-ca6d-4a4e-9dbe-b96ce74cef49
 msc.legacyurl: /ajax/cdn
 msc.type: content
-ms.openlocfilehash: 51cb8d672139aaebd77bcdbe80bb579d4b3776aa
-ms.sourcegitcommit: 969e7db924ebad3cc0f0cb0d65d148e8b9221b9a
+ms.openlocfilehash: 228194a7b35e116cabae6d819e7a3a8060a3ef6a
+ms.sourcegitcommit: e365196c75ce93cd8967412b1cfdc27121816110
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899573"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074921"
 ---
 # <a name="microsoft-ajax-content-delivery-network"></a>Сеть доставки содержимого Microsoft Ajax
 
@@ -64,9 +64,9 @@ CDN поддерживает протокол SSL (HTTPS), если необхо
 - jQuery (www.jquery.com)
 - Пользовательский интерфейс jQuery (www.jqueryui.com)
 - jQuery Mobile (www.jquerymobile.com)
-- Проверка jQuery (www.jquery.com)
+- Проверка jQuery (https://jqueryvalidation.org/)
 - Цикл jQuery (www.malsup.com/jquery/cycle/)
-- jQuery DataTables (http://datatables.net/)
+- Таблицы данных jQuery (http://datatables.net/)
 
 Сеть CDN Microsoft Ajax также включает следующие библиотеки, которые были переданы корпорацией Майкрософт:
 
@@ -93,7 +93,7 @@ CDN, используемый для использования доменног
 
 Чтобы правильно использовать всдок файлы в Visual Studio 2008, необходимо убедиться в наличии установленного пакета VS 2008 SP1 и исправления для файлов всдок. Их можно получить здесь:
 
-- [Скачивание Visual Studio 2008 с пакетом обновления 1 (SP1)](https://www.microsoft.com/downloads/en/details.aspx?FamilyId=FBEE1648-7106-44A7-9649-6D9F6D58056E&amp;displaylang=en "Загрузка пакета обновления 1 (SP1) для Visual Studio 2008")
+- [Загрузка пакета обновления 1 (SP1) для Visual Studio 2008](https://www.microsoft.com/downloads/en/details.aspx?FamilyId=FBEE1648-7106-44A7-9649-6D9F6D58056E&amp;displaylang=en "Загрузка пакета обновления 1 (SP1) для Visual Studio 2008")
 - [Скачать всдок исправление для Visual Studio 2008 SP1](https://code.msdn.microsoft.com/KB958502/Release/ProjectReleases.aspx?ReleaseId=1736 "Скачать всдок исправление для Visual Studio 2008 SP1")
 
 Visual Studio 2010 поддерживает файлы всдок без дополнительных исправлений.
@@ -148,7 +148,7 @@ CDN также включает версию минифицированные с
 - Библиотека пользовательского интерфейса jQuery &mdash; Библиотека пользовательского интерфейса jQuery содержит все эффекты и мини-приложения для пользовательского интерфейса jQuery, такие как мини-приложение DatePicker, используемое на странице выше.
 - Тема пользовательского интерфейса jQuery &mdash; пользовательский интерфейс jQuery поддерживает различные темы. На приведенной выше странице содержится ссылка на CSS-файл для импорта темы Redmond.
 
-Все стандартные темы пользовательского интерфейса jQuery размещаются в CDN. [Посетите эту страницу](jquery-ui/cdnjqueryui1910.md "jЗапрос 1.8.10 пользовательского интерфейса в сети CDN Microsoft Ajax ") , чтобы просмотреть эскизы для каждой темы.
+Все стандартные темы пользовательского интерфейса jQuery размещаются в CDN. [Посетите эту страницу](jquery-ui/cdnjqueryui1910.md "Пользовательский интерфейс jQuery 1.8.10 в сети доставки содержимого Microsoft Ajax") , чтобы просмотреть эскизы для каждой темы.
 
 Дополнительные сведения о библиотеке UI jQuery см. на официальном [веб-сайте интерфейса jQuery](http://jQueryUI.com "веб-сайт пользовательского интерфейса jQuery").
 
@@ -617,7 +617,7 @@ CDN также включает версию минифицированные с
 
 ### <a name="jquery-validation-releases-on-the-cdn"></a>выпуски проверки jQuery в CDN
 
-Следующие выпуски библиотеки проверки jQuery размещаются в этой сети CDN. Щелкните каждую ссылку, чтобы просмотреть фактический список файлов.
+Следующие выпуски подключаемого модуля [проверки JQuery](https://jqueryvalidation.org/ "Подключаемый модуль проверки jQuery") размещаются в этой сети CDN. Щелкните каждую ссылку, чтобы просмотреть фактический список файлов.
 
 - [jQuery проверить 1.19.1](jquery-validate/cdnjqueryvalidate1191.md "1\.19.1 проверки jQuery")
 - [jQuery проверить 1.19.0](jquery-validate/cdnjqueryvalidate1190.md "1\.19.0 проверки jQuery")
