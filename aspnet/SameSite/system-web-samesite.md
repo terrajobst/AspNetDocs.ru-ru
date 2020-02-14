@@ -5,16 +5,16 @@ description: Узнайте, как использовать для SameSite ф�
 ms.author: riande
 ms.date: 1/22/2019
 uid: samesite/system-web-samesite
-ms.openlocfilehash: c81ca38648609aa5347d2a8cc11889fc85d81711
-ms.sourcegitcommit: 4d439e01c82c7c95b19216fedaf5b1a11a1deb06
+ms.openlocfilehash: c262e300361f33621e8bd126a34b251c23f56e1a
+ms.sourcegitcommit: 6bd0d7581ec36dc32cb85d0d5fc0e51068dd4423
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826618"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77234766"
 ---
 # <a name="work-with-samesite-cookies-in-aspnet"></a>Работа с файлами cookie SameSite в ASP.NET
 
-Автор: [Рик Андерсон](https://twitter.com/RickAndMSFT) (Rick Anderson)
+Автор: [Рик Андерсон](https://twitter.com/RickAndMSFT)
 
 SameSite — это стандартный черновик [IETF](https://ietf.org/about/) , предназначенный для обеспечения защиты от атак с подделкой межсайтовых запросов (CSRF). Черновик, первоначально измененный в [2016](https://tools.ietf.org/html/draft-west-first-party-cookies-07), был обновлен в [2019](https://tools.ietf.org/html/draft-west-cookie-incrementalism-00). Обновленный стандарт не обладает обратной совместимостью с предыдущим стандартом, и ниже приведены наиболее заметные отличия.
 
@@ -55,7 +55,7 @@ ASP.Net также выдает четыре отдельных файла cooki
    <forms cookieSameSite="Lax" requireSSL="false" />
   </authentication>
   <sessionState cookieSameSite="Lax" /> <!-- No config attribute for Secure -->
-  <roleManager cookieRequiresSSL="false" /> <!-- No config attribute for SameSite -->
+  <roleManager cookieRequireSSL="false" /> <!-- No config attribute for SameSite -->
  <system.web>
 <configuration>
 ```  
@@ -66,7 +66,7 @@ ASP.Net также выдает четыре отдельных файла cooki
 
 Поддержка SameSite была впервые реализована в .NET 4.7.2 с использованием [стандартного черновика 2016](https://tools.ietf.org/html/draft-west-first-party-cookies-07#section-4.1).
 
-19 ноября 2019 обновления для Windows обновили .NET 4.7.2 + с стандарта 2016 до стандарта 2019. Дополнительные обновления предназначены для других версий Windows. Для получения дополнительной информации см. <xref:samesite/kbs-samesite>.
+19 ноября 2019 обновления для Windows обновили .NET 4.7.2 + с стандарта 2016 до стандарта 2019. Дополнительные обновления предназначены для других версий Windows. Дополнительные сведения см. в разделе <xref:samesite/kbs-samesite>.
 
  2019. черновик спецификации SameSite:
 
