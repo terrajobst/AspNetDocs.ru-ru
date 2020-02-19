@@ -1,91 +1,91 @@
 ---
 uid: mvc/overview/older-versions/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-1
-title: Использование HTML5 и элемент интерфейса всплывающего календаря jQuery в ASP.NET MVC. часть 1 | Документация Майкрософт
+title: Использование HTML5 и всплывающего календаря DatePicker в элементе пользовательского интерфейса jQuery с ASP.NET MVC. часть 1 | Документация Майкрософт
 author: Rick-Anderson
-description: Этот учебник поможет основные сведения о работе с помощью редактора шаблонов, шаблоны отображения и jQuery элемент интерфейса всплывающего календаря в MV ASP.NET...
+description: В этом учебнике вы узнаете, как работать с шаблонами редактора, шаблонами отображения и всплывающим календарем Datepicker пользовательского интерфейса jQuery в ASP.NET МВ...
 ms.author: riande
 ms.date: 08/29/2011
 ms.assetid: c23d27f7-b0cf-44f2-8445-fb69e045c674
 msc.legacyurl: /mvc/overview/older-versions/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-1
 msc.type: authoredcontent
-ms.openlocfilehash: 6e7d31d96a36b55e2e1a9a475e2d90526cc6a5b2
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: c1c2380f24c72f6aabaaacaf975e95288a384ff1
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65112400"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457626"
 ---
-# <a name="using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc---part-1"></a>Использование HTML5 и элемент интерфейса всплывающего календаря jQuery в ASP.NET MVC. часть 1
+# <a name="using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc---part-1"></a>Использование HTML5 и всплывающего календаря DatePicker в элементе пользовательского интерфейса jQuery с ASP.NET MVC. часть 1
 
-по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
+по [Рик Андерсон (](https://twitter.com/RickAndMSFT)
 
-> Этом учебнике описываются основы работы с помощью редактора шаблонов, шаблоны отображения и jQuery элемент интерфейса всплывающего календаря в приложении ASP.NET MVC.
+> В этом учебнике вы узнаете, как работать с шаблонами редактора, шаблонами отображения и всплывающим календарем Datepicker пользовательского интерфейса jQuery в веб-приложении ASP.NET MVC.
 
-Этот учебник поможет основные сведения о работе с помощью редактора шаблонов, шаблоны отображения и jQuery [элемент интерфейса всплывающего календаря](http://plugins.jquery.com/project/datepicker) в приложении ASP.NET MVC. Для этого руководства можно использовать Microsoft Visual Web Developer 2010 Express пакетом обновления 1 (&quot;Visual Web Developer&quot;), который является бесплатной версии Microsoft Visual Studio или Visual Studio 2010 с пакетом обновления 1 можно использовать, если у вас уже есть.
+В этом учебнике вы узнаете, как работать с шаблонами редактора, шаблонами отображения и [всплывающим календарем Datepicker пользовательского интерфейса](http://plugins.jquery.com/project/datepicker) jQuery в веб-приложении ASP.NET MVC. В этом руководстве можно использовать Microsoft Visual Web Developer 2010 Express с пакетом обновления 1 (&quot;Visual Web Developer&quot;), который является бесплатной версией Microsoft Visual Studio или можно использовать Visual Studio 2010 с пакетом обновления 1 (SP1), если у вас уже есть.
 
-Перед началом работы убедитесь, что вы установили необходимые компоненты, перечисленные ниже. Все из них можно установить, щелкнув следующую ссылку: [Установщик веб-платформы](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack). В качестве альтернативы можно отдельно установить необходимое программное обеспечение, используя следующие ссылки:
+Прежде чем начать, убедитесь, что установлены предварительные требования, перечисленные ниже. Чтобы установить все эти компоненты, щелкните следующую ссылку: [установщик веб-платформы](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack). Кроме того, вы можете отдельно установить необходимое программное обеспечение, используя следующие ссылки:
 
-- [Необходимые компоненты для Visual Studio Web Developer Express SP1](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack)
-- [Обновление средств ASP.NET MVC 3](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=MVC3)
-- [SQL Server Compact 4.0](https://www.microsoft.com/web/gallery/install.aspx?appid=SQLCE;SQLCEVSTools_4_0)(среды выполнения и средства поддержки)
+- [Предварительные требования для Visual Studio Web Developer Express SP1](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack)
+- [Обновление инструментов ASP.NET MVC 3](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=MVC3)
+- [SQL Server Compact 4,0](https://www.microsoft.com/web/gallery/install.aspx?appid=SQLCE;SQLCEVSTools_4_0)(поддержка времени выполнения и средств)
 
-Если вы используете Visual Studio 2010 вместо Visual Web Developer, установите необходимые компоненты, щелкнув следующую ссылку: [Необходимые компоненты для Visual Studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
+Если вы используете Visual Studio 2010 вместо Visual Web Developer, установите необходимые компоненты, щелкнув следующую ссылку: [Предварительные требования для Visual studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
 
-Этом руководстве предполагается, вы выполнили [начало работы с MVC 3](../getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) руководства или что вы знакомы с разработкой приложений ASP.NET MVC. Это руководство начинается с завершенный проект из [начало работы с MVC 3](../getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) руководства.
+В этом учебнике предполагается, что вы выполнили учебник [Начало работы в MVC 3](../getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) или вы знакомы с разработкой ASP.NET MVC. Это руководство начинается с готового проекта из учебника [Начало работы with MVC 3](../getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) .
 
-Этот учебник показывает код на языке C#. Тем не менее [начальный проект](https://archive.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=aspnetmvcsamples&amp;DownloadId=15800) завершенного проекта также доступны в Visual Basic.
+В этом руководстве показан код C#в. Однако [начальный проект](https://archive.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=aspnetmvcsamples&amp;DownloadId=15800) и завершенный проект также доступны в Visual Basic.
 
-Проект Visual Studio с C# и исходный код Visual Basic можно найти в этой статье прилагаются: [Скачайте](https://archive.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=aspnetmvcsamples&amp;DownloadId=15800).
+Проект Visual Studio с C# исходным кодом и Visual Basic доступен для этого раздела: [download](https://archive.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=aspnetmvcsamples&amp;DownloadId=15800).
 
 ### <a name="what-youll-build"></a>Что вы создадите
 
-Вам предстоит добавить шаблоны (в частности, редактировать и отображать шаблоны) в простое приложение списка фильмов, который был создан в [начало работы с MVC 3](../getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) руководства. Вы также добавите [datepicker пользовательского интерфейса jQuery](http://jqueryui.com/demos/datepicker/) всплывающего календаря выбора дат для упрощения процесса ввода даты. На следующем рисунке показан модифицированной программы с jQuery элемент интерфейса всплывающего календаря отображения.
+Шаблоны (в частности, шаблоны редактирования и отображения) добавляются в простое приложение с перечнем фильмов, созданное в учебнике [Начало работы with MVC 3](../getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) . Вы также добавите всплывающий календарь [DatePicker элемента jQuery](http://jqueryui.com/demos/datepicker/) , чтобы упростить процесс ввода дат. На следующем снимке экрана показано измененное приложение с отображаемым всплывающим календарем Datepicker пользовательского интерфейса jQuery.
 
-![по завершении jQuery](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-1/_static/image1.png)
+![Завершенная jQuery](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-1/_static/image1.png)
 
-### <a name="skills-youll-learn"></a>Навыки, которые вы узнаете
+### <a name="skills-youll-learn"></a>Чему вы научитесь
 
-Вот, вы узнаете, как:
+В этом учебнике вы узнаете:
 
-- Как использовать атрибуты из [DataAnnotations](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.aspx) пространство имен для управления форматом данных, когда она появится и когда он находится в режиме редактирования.
-- Создание шаблонов (редактировать и отображать шаблоны) для управления форматированием данных.
-- Как добавить [datepicker пользовательского интерфейса jQuery](http://jqueryui.com/demos/datepicker/) как способ введите полей дат.
+- Использование атрибутов из пространства имен [Annotations](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.aspx) для управления форматом данных при их отображении и в режиме редактирования.
+- Создание шаблонов (редактирование и отображение шаблонов) для управления форматированием данных.
+- Добавление [DatePicker пользовательского интерфейса jQuery](http://jqueryui.com/demos/datepicker/) в качестве способа ввода полей даты.
 
 ### <a name="getting-started"></a>Начало работы
 
-Если у вас еще нет приложения фильма из начального проекта, загрузите его: 
+Если вы еще не получили приложение со списком фильмов из начального проекта, скачайте его: 
 
 * [Скачайте](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098).
-* В обозревателе Windows щелкните правой кнопкой мыши *MvcMovie.zip* файл и выберите **свойства**. 
-* В **свойства MvcMovie.zip** выберите **Unblock**. (Разблокировка устраняет предупреждение системы безопасности, возникающее при попытке использовать *ZIP-файл* файл, загруженный из Интернета.)
+* В проводнике Windows щелкните правой кнопкой мыши файл *MvcMovie. zip* и выберите пункт **свойства**. 
+* В диалоговом окне **Свойства MvcMovie. zip** выберите **разблокировать**. Разблокировка устраняет предупреждение системы безопасности, выводимое при попытке использовать *ZIP-файл* , загруженный из Интернета.
 
 ![](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-1/_static/image2.png)
 
-Щелкните правой кнопкой мыши *MvcMovie.zip* файл и выберите **извлечь все** Чтобы распаковать файл. В Visual Studio 2010 или Visual Web Developer откройте *MvcMovieCS\_TU.sln* файла.
+Щелкните правой кнопкой мыши файл *MvcMovie. zip* и выберите **извлечь все** , чтобы распаковать файл. В Visual Web Developer или Visual Studio 2010 откройте файл *мвкмовиекс\_Tu. sln* .
 
-В **обозревателе решений**, дважды щелкните *Views\Shared\\_Layout.cshtml* чтобы открыть его. Изменение `H1` заголовок из **Киноприложение MVC** для **фильма jQuery**. Нажмите клавиши CTRL + F5, чтобы запустить приложение и нажмите кнопку **Главная** вкладки, которая приводит к переходу на `Index` метода контроллера movie. Чтобы проверить приложение, выберите **изменить** ссылку и **сведения** ссылку на один из них. Обратите внимание, что в индексе, Правка, и хорошо форматирования представления сведений, Дата выпуска и Цена:
+В **Обозреватель решений**дважды щелкните *Views\Shared\\_layout. cshtml* , чтобы открыть его. Измените заголовок `H1` из **приложения роли MVC** на **Movie jQuery**. Нажмите клавиши CTRL + F5, чтобы запустить приложение, и перейдите на вкладку **Главная** , чтобы перейти к методу `Index` контроллера фильмов. Чтобы испытать приложение, щелкните ссылку Edit ( **изменить** ) и ссылка на **сведения** для одного из фильмов. Обратите внимание, что в представлениях "индекс", "Редактирование" и "подробности" Дата и цена выпуска отлично отформатированы:
 
 ![](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-1/_static/image3.png)
 
-Форматирование даты и цены — это результат использования [DisplayFormat](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.displayformatattribute.aspx) атрибут свойств `Movie` класса.
+Форматирование даты и цены является результатом использования атрибута [DisplayFormat](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.displayformatattribute.aspx) в свойствах класса `Movie`.
 
-Откройте *Movie.cs* файл и закомментируйте `DisplayFormat` атрибут `ReleaseDate` и `Price` свойства. Полученный в результате `Movie` класс выглядит следующим образом:
+Откройте файл *Movie.CS* и закомментируйте атрибут `DisplayFormat` в свойствах `ReleaseDate` и `Price`. Итоговый класс `Movie` выглядит следующим образом:
 
 [!code-csharp[Main](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-1/samples/sample1.cs)]
 
-Нажмите клавиши CTRL + F5 еще раз, чтобы запустить приложение и выберите **Главная** вкладку, чтобы просмотреть список фильмов. На этот раз Дата выпуска показывает дату и время, а поле цена больше не отображается символ валюты. Изменения в `Movie` класс отменила соответствующего форматирования, который вы уже видели, но мы исправим это чуть позже.
+Нажмите сочетание клавиш CTRL + F5 еще раз, чтобы запустить приложение, и перейдите на вкладку **Главная** , чтобы просмотреть список фильмов. На этот раз в дату выпуска отображается дата и время, а в поле Цена больше не отображается символ валюты. Изменения в классе `Movie` отменяют неприятное форматирование, которое вы видели ранее, но это можно исправить чуть позже.
 
 ![](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-1/_static/image4.png)
 
-### <a name="using-the-dataannotations-datatype-attribute-to-specify-the-data-type"></a>С помощью атрибутов DataAnnotations DataType для указания типа данных
+### <a name="using-the-dataannotations-datatype-attribute-to-specify-the-data-type"></a>Использование атрибута DataType в заметках для указания типа данных
 
-Замените закомментированных `DisplayFormat` для атрибута `ReleaseDate` свойство с [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) атрибут, с помощью `Date` перечисления. Замените `DisplayFormat` для атрибута `Price` свойство с [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) атрибут опять же, это время с помощью `Currency` перечисления. Вот как выглядит готовый код:
+Замените атрибут `DisplayFormat` с комментарием для `ReleaseDate` свойства атрибутом [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) с помощью перечисления `Date`. Замените атрибут `DisplayFormat` для свойства `Price` еще раз атрибутом [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) , в этот раз используя перечисление `Currency`. Вот как выглядит завершенный код:
 
 [!code-csharp[Main](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-1/samples/sample2.cs)]
 
-Запустите приложение. Теперь дата выпуска цена свойства форматирования и правильно (которые, используя соответствующие форматы даты и валюты). [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) атрибут предоставляет метаданные типа для встроенных ASP.NET MVC шаблоны, отображения полей в правильном формате. С помощью `DataType` атрибут предпочтительнее использования `DisplayFormat` атрибут, который был изначально в коде, так как `DataType` атрибут делает модель яснее и гибче целях, например интернационализации.
+Запустите приложение. Теперь Дата выпуска и свойства цены имеют правильный формат (то есть используются соответствующие форматы даты и валюты). Атрибут [DataType](https://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype.aspx) предоставляет метаданные типа для встроенных шаблонов MVC ASP.NET, чтобы поля отображались в правильном формате. Использование атрибута `DataType` предпочтительнее использования атрибута `DisplayFormat`, изначально находился в коде, поскольку атрибут `DataType` делает эту модель более гибкой для целей, таких как интернационализации.
 
-В следующем разделе вы увидите, как создать пользовательские шаблоны для отображения полей даты.
+В следующем разделе вы узнаете, как создавать настраиваемые шаблоны для отображения полей дат.
 
 > [!div class="step-by-step"]
-> [Вперед](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-2.md)
+> [Дальше](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-2.md)

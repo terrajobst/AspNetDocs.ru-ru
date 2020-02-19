@@ -1,91 +1,91 @@
 ---
 uid: aspnet/overview/owin-and-katana/owin-middleware-in-the-iis-integrated-pipeline
-title: По промежуточного слоя OWIN в службах IIS интегрирован конвейера | Документация Майкрософт
+title: По промежуточного слоя OWIN в интегрированном конвейере IIS | Документация Майкрософт
 author: Praburaj
-description: В этой статье показано, как для запуска компонентов по промежуточного слоя OWIN (OMCs) в интегрированном конвейере служб IIS и работает как для установки события конвейера OMC на. Вы должны...
+description: В этой статье показано, как запускать компоненты по промежуточного слоя OWIN (ОМКС) в конвейере, интегрированном со службами IIS, и как задать событие конвейера, на котором выполняется ОМК. Необходимо...
 ms.author: riande
 ms.date: 11/07/2013
 ms.assetid: d031c021-33c2-45a5-bf9f-98f8fa78c2ab
 msc.legacyurl: /aspnet/overview/owin-and-katana/owin-middleware-in-the-iis-integrated-pipeline
 msc.type: authoredcontent
-ms.openlocfilehash: bb1211de0a3fe876f5640538034ab5a58b3a070c
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 7d157fb6bd9e2ae9b55af41ef06c1eb5e6310ce1
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65118227"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456716"
 ---
-# <a name="owin-middleware-in-the-iis-integrated-pipeline"></a>По промежуточного слоя OWIN в интегрированном конвейере служб IIS
+# <a name="owin-middleware-in-the-iis-integrated-pipeline"></a>По промежуточного слоя OWIN в интегрированном конвейере IIS
 
-по [Praburaj Thiagarajan](https://github.com/Praburaj), [Рик Андерсон]((https://twitter.com/RickAndMSFT))
+[Прабураж сиагаражан](https://github.com/Praburaj), [Рик Андерсон (](https://twitter.com/RickAndMSFT)
 
-> В этой статье показано, как для запуска компонентов по промежуточного слоя OWIN (OMCs) в интегрированном конвейере служб IIS и работает как для установки события конвейера OMC на. Необходимо ознакомиться с [Обзор проекта Katana](an-overview-of-project-katana.md) и [определение класса запуска OWIN](owin-startup-class-detection.md) перед чтением этого руководства. Это руководство было написано с Рик Андерсон ( [ @RickAndMSFT ](https://twitter.com/#!/RickAndMSFT) ), Крис Росс Praburaj Thiagarajan и Говард Дайеркинг ( [ @howard \_Дайеркинг](https://twitter.com/howard_dierking) ).
+> В этой статье показано, как запускать компоненты по промежуточного слоя OWIN (ОМКС) в конвейере, интегрированном со службами IIS, и как задать событие конвейера, на котором выполняется ОМК. Прежде чем читать этот учебник, ознакомьтесь [с обзором](an-overview-of-project-katana.md) определения класса Katana и типа [запуска OWIN](owin-startup-class-detection.md) . Этот учебник написан на Рик Андерсон (( [@RickAndMSFT](https://twitter.com/#!/RickAndMSFT) ), Крис Росс (, прабураж Сиагаражан и Говард дайеркинг ( [@howard\_Дайеркинг](https://twitter.com/howard_dierking) ).
 
-Несмотря на то что [OWIN](an-overview-of-project-katana.md) компоненты по промежуточного слоя (OMCs) в первую очередь предназначены для запуска в конвейере независимой от сервера, можно запустить в интегрированном конвейере служб IIS также OMC (**является классический режим *не* поддерживается**). OMC можно сделать для работы в интегрированном конвейере служб IIS, установив следующий пакет из консоли диспетчера пакетов (PMC):
+Хотя компоненты промежуточного слоя [OWIN](an-overview-of-project-katana.md) (ОМКС) в основном предназначены для работы в независимом от сервера конвейере, в интегрированном конвейере IIS можно также запустить ОМК (**классический режим *не* поддерживается**). ОМК можно сделать для работы в конвейере, интегрированном со службами IIS, установив следующий пакет из консоли диспетчера пакетов (PMC):
 
 [!code-console[Main](owin-middleware-in-the-iis-integrated-pipeline/samples/sample1.cmd)]
 
-Это означает, что все платформы приложений, даже те, которые еще не запускаться вне IIS и System.Web, можно использовать существующие компоненты по промежуточного слоя OWIN. 
+Это означает, что все платформы приложений, даже те, которые еще не могут работать вне IIS и System. Web, могут воспользоваться преимуществами существующих компонентов по промежуточного слоя OWIN. 
 
 > [!NOTE]
-> Все `Microsoft.Owin.Security.*` пакеты доставки с помощью новой системы удостоверений в Visual Studio 2013 (например: Файлы cookie, учетной записи Майкрософт, Google, Facebook, Twitter, [маркера носителя](http://self-issued.info/docs/draft-ietf-oauth-v2-bearer.html), OAuth, сервер авторизации, JWT, Azure Active directory и служб федерации Active directory) создаются как OMCs и может использоваться в обоих с самостоятельным размещением и сценарии, размещенные в IIS.
+> Все `Microsoft.Owin.Security.*` пакеты, поставляемые с новой системой идентификации в Visual Studio 2013 (например, файлы cookie, учетная запись Майкрософт, Google, Facebook, Twitter, [маркер носителя](http://self-issued.info/docs/draft-ietf-oauth-v2-bearer.html), OAuth, сервер авторизации, JWT, Azure Active Directory и службы федерации Active Directory), создаются как Омкс и могут использоваться как в самостоятельно размещенных, так и в размещенных в IIS сценариях.
 
-## <a name="how-owin-middleware-executes-in-the-iis-integrated-pipeline"></a>Как выполняется по промежуточного слоя OWIN в интегрированном конвейере служб IIS
+## <a name="how-owin-middleware-executes-in-the-iis-integrated-pipeline"></a>Как выполняется по промежуточного слоя OWIN в интегрированном конвейере IIS
 
-Для консольных приложений OWIN, использующем конвейера приложения [конфигурации запуска](owin-startup-class-detection.md) задается порядок добавления компонентов с помощью `IAppBuilder.Use` метод. То есть в конвейер OWIN в [Katana](an-overview-of-project-katana.md) среда выполнения обработает OMCs в порядке, они были зарегистрированы с помощью `IAppBuilder.Use`. В интегрированном конвейере служб IIS конвейера запросов состоит из [HttpModules](https://msdn.microsoft.com/library/ms178468(v=vs.85).aspx) подписка на набор предварительно определенных событий конвейера, такие как [BeginRequest](https://msdn.microsoft.com/library/system.web.httpapplication.beginrequest.aspx), [AuthenticateRequest](https://msdn.microsoft.com/library/system.web.httpapplication.authenticaterequest.aspx), [AuthorizeRequest](https://msdn.microsoft.com/library/system.web.httpapplication.authorizerequest.aspx)и т. д.
+Для консольных приложений OWIN конвейер приложений, созданный с помощью [конфигурации запуска](owin-startup-class-detection.md) , задается порядком добавления компонентов с помощью метода `IAppBuilder.Use`. То есть конвейер OWIN в среде выполнения [Katana](an-overview-of-project-katana.md) будет обрабатывать Омкс в том порядке, в котором они были зарегистрированы с помощью `IAppBuilder.Use`. В конвейере интеграции IIS конвейер запросов состоит из [HttpModule](https://msdn.microsoft.com/library/ms178468(v=vs.85).aspx) , подписанных на предварительно определенный набор событий конвейера, таких как [beginRequest](https://msdn.microsoft.com/library/system.web.httpapplication.beginrequest.aspx), [AuthenticateRequest](https://msdn.microsoft.com/library/system.web.httpapplication.authenticaterequest.aspx), [AuthorizeRequest](https://msdn.microsoft.com/library/system.web.httpapplication.authorizerequest.aspx)и т. д.
 
-Сравнив OMC, [HttpModule](https://msdn.microsoft.com/library/zec9k340(v=vs.85).aspx) в мире ASP.NET OMC должно быть зарегистрировано для конвейера правильный предварительно определенные события. Например, модуль HttpModule `MyModule` будет вызван при поступлении запроса [AuthenticateRequest](https://msdn.microsoft.com/library/system.web.httpapplication.authenticaterequest.aspx) этапом работы конвейера:
+Если сравнить ОМК с объектом [HttpModule](https://msdn.microsoft.com/library/zec9k340(v=vs.85).aspx) в ASP.NET мире, то ОМК должен быть зарегистрирован в правильном предварительно определенном событии конвейера. Например, `MyModule` HttpModule будет вызываться, когда запрос поступает на стадию [AuthenticateRequest](https://msdn.microsoft.com/library/system.web.httpapplication.authenticaterequest.aspx) в конвейере:
 
 [!code-csharp[Main](owin-middleware-in-the-iis-integrated-pipeline/samples/sample2.cs?highlight=10)]
 
-Выполнился OMC участвовать в этот порядок выполнения же, основанное на событиях [Katana](an-overview-of-project-katana.md) кода среды выполнения просматривает [конфигурации запуска](owin-startup-class-detection.md) и подписывается, каждый из компонентов по промежуточного слоя для событие интегрированного конвейера. Например следующий код OMC и регистрации позволяет см. в разделе регистрации событий по умолчанию компонентов по промежуточного слоя. (Более подробные инструкции по созданию класса запуска OWIN, см. в разделе [определение класса запуска OWIN](owin-startup-class-detection.md).)
+Чтобы ОМК мог участвовать в таком же порядке выполнения на основе событий, код среды выполнения [Katana](an-overview-of-project-katana.md) просматривает [конфигурацию запуска](owin-startup-class-detection.md) и подписывает каждый из компонентов по промежуточного слоя в интегрированное событие конвейера. Например, следующий ОМК и код регистрации позволяют просматривать регистрацию событий по умолчанию для компонентов по промежуточного слоя. (Более подробные инструкции по созданию класса запуска OWIN см. в разделе [Обнаружение класса запуска OWIN](owin-startup-class-detection.md).)
 
-1. Создайте приложение в пустой веб-проект и назовите его **owin2**.
-2. Из консоли диспетчера пакетов (PMC), выполните следующую команду: 
+1. Создайте пустой проект веб-приложения и назовите его **owin2**.
+2. В консоли диспетчера пакетов (PMC) выполните следующую команду: 
 
     [!code-console[Main](owin-middleware-in-the-iis-integrated-pipeline/samples/sample3.cmd)]
-3. Добавить `OWIN Startup Class` и назовите его `Startup`. Замените сгенерированный код следующим (изменения выделены):  
+3. Добавьте `OWIN Startup Class` и присвойте ему имя `Startup`. Замените созданный код следующим (изменения выделены):  
 
     [!code-csharp[Main](owin-middleware-in-the-iis-integrated-pipeline/samples/sample4.cs?highlight=5-7,15-36)]
-4. Нажмите клавишу F5 для запуска приложения.
+4. Нажмите клавишу F5, чтобы запустить приложение.
 
-Конфигурации запуска настраивает конвейер с по промежуточного слоя для трех компонентов, первые два отображения диагностической информации и реагирование на события последним (и также отображения диагностической информации). `PrintCurrentIntegratedPipelineStage` Метод отображает интегрированного конвейера событий, вызывается это по промежуточного слоя, а также сообщение. В окнах вывода отображаются следующие сведения:
+Конфигурация запуска настраивает конвейер с тремя компонентами по промежуточного слоя, первые два отображения диагностических сведений и Последнее реагирование на события (а также отображение диагностической информации). Метод `PrintCurrentIntegratedPipelineStage` отображает событие интегрированного конвейера, которое вызывается этим по промежуточного слоя и сообщением. Выходные окна выводят следующие данные:
 
 [!code-console[Main](owin-middleware-in-the-iis-integrated-pipeline/samples/sample5.cmd)]
 
-Среда выполнения Katana сопоставить каждый из компонентов по промежуточного слоя OWIN для [PreExecuteRequestHandler](https://msdn.microsoft.com/library/system.web.httpapplication.prerequesthandlerexecute.aspx) по умолчанию, который соответствует событию конвейера IIS [PreRequestHandlerExecute](https://msdn.microsoft.com/library/system.web.httpapplication.prerequesthandlerexecute.aspx).
+Среда выполнения Katana сопоставила каждый из компонентов по промежуточного слоя OWIN в [приксекутерекуессандлер](https://msdn.microsoft.com/library/system.web.httpapplication.prerequesthandlerexecute.aspx) по умолчанию, что соответствует событию конвейера IIS [PreRequestHandlerExecute](https://msdn.microsoft.com/library/system.web.httpapplication.prerequesthandlerexecute.aspx).
 
-## <a name="stage-markers"></a>Маркеры рабочей области
+## <a name="stage-markers"></a>Маркеры этапа
 
-Вы можете пометить OMCs выполнение на определенных этапах конвейера при помощи `IAppBuilder UseStageMarker()` метода расширения. Для запуска набора компонентов по промежуточного слоя во время определенного этапа, Вставить метку этапа сразу после последнего компонента — это набор во время регистрации. Существуют правила, на каком этапе конвейера можно выполнить по промежуточного слоя и компоненты заказа необходимо запустить (правила мы вернемся позже в этом руководстве). Добавить `UseStageMarker` метод `Configuration` кода, как показано ниже:
+Можно пометить Омкс для выполнения на конкретных стадиях конвейера с помощью метода расширения `IAppBuilder UseStageMarker()`. Чтобы запустить набор компонентов по промежуточного слоя на определенном этапе, вставьте маркер этапа сразу после последнего компонента, установленного во время регистрации. Существуют правила, на которых этап конвейера можно выполнить по промежуточного слоя и компоненты заказа, которые должны быть выполнены (правила объясняются далее в этом руководстве). Добавьте метод `UseStageMarker` в код `Configuration`, как показано ниже:
 
 [!code-csharp[Main](owin-middleware-in-the-iis-integrated-pipeline/samples/sample6.cs?highlight=13,19)]
 
-`app.UseStageMarker(PipelineStage.Authenticate)` Вызов настраивает все компоненты по промежуточного слоя для зарегистрированного ранее (в данном случае наши два компонента диагностики) для запуска на стадии конвейера проверки подлинности. Последний компонент по промежуточного слоя (который отображает диагностики и отвечает на запросы) будет выполняться на `ResolveCache` рабочей области ( [ResolveRequestCache](https://msdn.microsoft.com/library/system.web.httpapplication.resolverequestcache.aspx) событий).
+`app.UseStageMarker(PipelineStage.Authenticate)` вызов настраивает все ранее зарегистрированные компоненты по промежуточного слоя (в данном случае два компонента диагностики) для запуска на этапе проверки подлинности конвейера. Последний компонент по промежуточного слоя (который отображает диагностику и реагирует на запросы) будет выполняться на `ResolveCache` этапе (событие [ресолверекуесткаче](https://msdn.microsoft.com/library/system.web.httpapplication.resolverequestcache.aspx) ).
 
-Нажмите клавишу F5 для запуска приложения. В окне вывода отобразится следующее:
+Нажмите клавишу F5, чтобы запустить приложение. В окне Вывод отображается следующее:
 
 [!code-console[Main](owin-middleware-in-the-iis-integrated-pipeline/samples/sample7.cmd)]
 
-## <a name="stage-marker-rules"></a>Правила этапа маркера
+## <a name="stage-marker-rules"></a>Правила маркера этапа
 
-Компоненты по промежуточного слоя Owin (OMC) можно настроить для выполнения на следующие события этап конвейера OWIN:
+Компоненты промежуточного слоя Owin (ОМК) можно настроить для запуска в следующих событиях этапа конвейера OWIN:
 
 [!code-csharp[Main](owin-middleware-in-the-iis-integrated-pipeline/samples/sample8.cs)]
 
-1. По умолчанию OMCs выполняются с последнего события (`PreHandlerExecute`). Вот почему наш первый пример кода отображается «PreExecuteRequestHandler».
-2. Можно использовать `app.UseStageMarker` метод, чтобы зарегистрировать OMC для более ранних версиях выполнения на любом этапе конвейера OWIN перечисленные в `PipelineStage` перечисления.
-3. Конвейер OWIN и конвейер IIS упорядочен, поэтому вызовы `app.UseStageMarker` должно быть в порядке. Не удается задать обработчик событий на событие, которое предшествует последнее событие, зарегистрированное для `app.UseStageMarker`. Например *после* вызова:
+1. По умолчанию Омкс выполняется в последнем событии (`PreHandlerExecute`). Именно поэтому наш первый пример кода выводит «Приксекутерекуессандлер».
+2. Можно использовать метод `app.UseStageMarker`, чтобы зарегистрировать ОМК для выполнения ранее, на любом этапе конвейера OWIN, указанном в перечислении `PipelineStage`.
+3. Конвейер OWIN и конвейер IIS упорядочены, поэтому вызовы `app.UseStageMarker` должны выполняться по порядку. Обработчику событий нельзя присвоить событие, которое предшествует последнему событию, зарегистрированному в `app.UseStageMarker`. Например, *после* вызова:
 
     [!code-console[Main](owin-middleware-in-the-iis-integrated-pipeline/samples/sample9.cmd)]
 
-   вызовы `app.UseStageMarker` передачи `Authenticate` или `PostAuthenticate` не будут выполняться, а не исключение. OMCs, выполните в последней рабочей области, который по умолчанию является `PreHandlerExecute`. Чтобы сделать их для выполнения ранее используются маркеры рабочей области. При указании маркеры рабочей области по порядку, мы округление к более ранней маркеру. Другими словами Добавление метку этапа, — говорит «Запуск не позднее, чем этап X». OMC его выполнения в самая ранняя метка этапа, добавленные после их в конвейер OWIN.
-4. Самый ранний этап вызовы `app.UseStageMarker` wins. Например, если Смена местами `app.UseStageMarker` вызовы из предыдущего примера:
+   вызовы `app.UseStageMarker`, передающие `Authenticate` или `PostAuthenticate`, не будут учитываться и исключения не будут выдаваться. Омкс запускается на последнем этапе, по умолчанию `PreHandlerExecute`. Маркеры этапа используются для того, чтобы они выполнялись раньше. Если маркеры этапа заданы не по порядку, мы округляем до более раннего маркера. Иными словами, при добавлении маркера этапа будет указано "выполнять не позднее, чем на этапе X". ОМК запускается на более раннем маркере этапа, добавленном после них в конвейере OWIN.
+4. Самый ранний этап вызовов `app.UseStageMarker` WINS. Например, при переключении порядка вызовов `app.UseStageMarker` из нашего предыдущего примера:
 
     [!code-csharp[Main](owin-middleware-in-the-iis-integrated-pipeline/samples/sample10.cs?highlight=13,19)]
 
-   Для отображения в окне вывода: 
+   В окне вывода отобразятся следующие данные: 
 
     [!code-console[Main](owin-middleware-in-the-iis-integrated-pipeline/samples/sample11.cmd)]
 
-   Работают в OMCs `AuthenticateRequest` этап, так как последний OMC зарегистрирована `Authenticate` событий и `Authenticate` событий предшествует всех остальных событий.
+   Омкс все выполняется на этапе `AuthenticateRequest`, поскольку последняя ОМК, зарегистрированная в событии `Authenticate`, и событие `Authenticate` предшествуют всем остальным событиям.

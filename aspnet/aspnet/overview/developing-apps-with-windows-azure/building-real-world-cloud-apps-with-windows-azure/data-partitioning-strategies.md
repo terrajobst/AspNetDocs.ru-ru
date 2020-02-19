@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: 513837a7-cfea-4568-a4e9-1f5901245d24
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/data-partitioning-strategies
 msc.type: authoredcontent
-ms.openlocfilehash: b8c901ec30b6d37237f80100a2978350ac389b7a
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: efc3fa0255aa765e515412c5fa4098303a9d9234
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519171"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457028"
 ---
 # <a name="data-partitioning-strategies-building-real-world-cloud-apps-with-azure"></a>Стратегии секционирования данных (создание облачных приложений в реальном мире с помощью Azure)
 
-[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (]((https://twitter.com/RickAndMSFT)), том [Dykstra)](https://github.com/tdykstra)
+[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (](https://twitter.com/RickAndMSFT), том [Dykstra)](https://github.com/tdykstra)
 
 [Скачивание решения ИТ-проекта](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [Загрузка электронной книги](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -100,7 +100,7 @@ ms.locfileid: "76519171"
 - Рекомендации [по проектированию крупномасштабных служб в облачных службах Windows Azure](https://msdn.microsoft.com/library/windowsazure/jj717232.aspx). Технический документ, пометив SIMM и Майкл Сомасси.
 - [Шаблоны и методики Майкрософт — шаблоны проектирования в облаке](https://msdn.microsoft.com/library/dn568099.aspx). См. Руководство по секционированию данных, шаблон сегментирования.
 
-Видеоматериалы:
+Видеоролики:
 
 - [Отказоустойчивость: создание масштабируемых отказоустойчивых облачных служб](https://channel9.msdn.com/Series/FailSafe). Серия из девяти частей, Ульрих Хоманн, (Marc Меркури и пометить SIMM. Предоставляет основные понятия и архитектурные принципы в очень удобном и интересном смысле, а также истории, полученные от работы группы консультирования клиентов Майкрософт (CAT) с реальными клиентами. См. обсуждение секционирования в серии 7.
 - [Создание больших: уроки, полученные от клиентов Windows Azure, часть I](https://channel9.msdn.com/Events/Build/2012/3-029). Марк SIMM обсуждает схемы секционирования, стратегии сегментирования, способы реализации сегментирования и Федерации баз данных SQL, начиная с 19:49. Как и в случае с отказоустойчивостью, вы переходите к дополнительным сведениям.

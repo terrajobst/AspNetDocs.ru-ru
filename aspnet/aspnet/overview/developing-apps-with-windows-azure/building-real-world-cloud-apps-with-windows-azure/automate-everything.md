@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: ba6e6baa-9b9f-471f-b39d-b007a3addadc
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/automate-everything
 msc.type: authoredcontent
-ms.openlocfilehash: d5c8190d0b0c91bf9e42f6ef03adc5b07a65359a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: e741a753a36ebdaefbff8eee0b38911785c716ac
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74582890"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457171"
 ---
 # <a name="automate-everything-building-real-world-cloud-apps-with-azure"></a>Автоматизируйте все (создание облачных приложений в реальном мире с помощью Azure)
 
-[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (]((https://twitter.com/RickAndMSFT)), том [Dykstra)](https://github.com/tdykstra)
+[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (](https://twitter.com/RickAndMSFT), том [Dykstra)](https://github.com/tdykstra)
 
 [Скачивание решения ИТ-проекта](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [Загрузка электронной книги](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -49,13 +49,13 @@ ms.locfileid: "74582890"
 
 Первый сценарий, который мы рассмотрим, называется *Нев-азуревебситинв. ps1*. Она создает среду Azure, в которой можно развернуть приложение Fix ИТ для тестирования. Ниже перечислены основные задачи, выполняемые этим сценарием.
 
-- Создание веб-приложения.
+- Создайте веб-приложение.
 - Создайте учетную запись хранения. (Требуется для больших двоичных объектов и очередей, как вы увидите в последующих главах.)
 - Создайте сервер базы данных SQL и две базы данных: базу данных приложения и базу данных членства.
 - Сохраняйте параметры в Azure, которые приложение будет использовать для доступа к учетной записи хранения и базам данных.
 - Создайте файлы параметров, которые будут использоваться для автоматизации развертывания.
 
-### <a name="run-the-script"></a>Запуск сценария
+### <a name="run-the-script"></a>Выполнение скрипта
 
 > [!NOTE]
 > В этой части главы приводятся примеры сценариев и команд, вводимых для их запуска. Эта демонстрация и не предоставляет все, что нужно знать для выполнения сценариев. Пошаговые инструкции см. [в приложении. пример приложения Fix It](the-fix-it-sample-application.md#deploybase).
@@ -254,8 +254,8 @@ ms.locfileid: "74582890"
 - [Выходные Scripter: Начало работы с Azure и PowerShell](https://blogs.technet.com/b/heyscriptingguy/archive/2013/06/22/weekend-scripter-getting-started-with-windows-azure-and-powershell.aspx). В блоге, предназначенном для Windows PowerShell, эта публикация содержит общие сведения об использовании PowerShell для функций управления Azure.
 - [Установите и настройте кросс-платформенный интерфейс командной строки Azure](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest). Руководство по началу работы для платформы сценариев Azure, которая работает на компьютерах Mac и Linux, а также в системах Windows.
 - [Раздел программ командной строки в разделе Загрузка пакетов SDK и средств Azure](https://azure.microsoft.com/downloads/). Страница портала для документации и загружаемых файлов, связанных с программами командной строки для Azure.
-- [Автоматизация всех объектов с помощью библиотек управления Azure и .NET](http://www.hanselman.com/blog/PennyPinchingInTheCloudAutomatingEverythingWithTheWindowsAzureManagementLibrariesAndNET.aspx). Скотт Hanselman представляет API управления .NET для Azure.
-- [Использование сценариев Windows PowerShell для публикации в средах разработки и тестирования](https://msdn.microsoft.com/library/azure/dn642480.aspx). Документация MSDN, в которой объясняется, как использовать скрипты публикации, которые Visual Studio автоматически создает для веб-проектов.
+- [Полная автоматизация с использованием библиотек управления Azure и .NET](http://www.hanselman.com/blog/PennyPinchingInTheCloudAutomatingEverythingWithTheWindowsAzureManagementLibrariesAndNET.aspx). Скотт Hanselman представляет API управления .NET для Azure.
+- [Использование скриптов Windows PowerShell для публикации в средах разработки и тестирования](https://msdn.microsoft.com/library/azure/dn642480.aspx). Документация MSDN, в которой объясняется, как использовать скрипты публикации, которые Visual Studio автоматически создает для веб-проектов.
 - [PowerShell Tools for Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597). Расширение Visual Studio, добавляющее языковую поддержку для Windows PowerShell в Visual Studio.
 
 > [!div class="step-by-step"]

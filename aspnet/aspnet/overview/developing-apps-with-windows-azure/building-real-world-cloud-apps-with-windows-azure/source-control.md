@@ -8,16 +8,16 @@ ms.date: 06/23/2015
 ms.assetid: 2a0370d3-c2fb-4bf3-88b8-aad5a736c793
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control
 msc.type: authoredcontent
-ms.openlocfilehash: a6f445e46d41b646cf6c25af2e65bc73e831d5ed
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 5a1e0d7cd3c396d4be79c8958422602055eb3db1
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74583702"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457106"
 ---
 # <a name="source-control-building-real-world-cloud-apps-with-azure"></a>Система управления версиями (создание облачных приложений в реальном мире с помощью Azure)
 
-[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (]((https://twitter.com/RickAndMSFT)), том [Dykstra)](https://github.com/tdykstra)
+[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (](https://twitter.com/RickAndMSFT), том [Dykstra)](https://github.com/tdykstra)
 
 [Скачивание решения ИТ-проекта](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [Загрузка электронной книги](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -147,7 +147,7 @@ Visual Studio спрашивает, нужно ли использовать TFV
 
 Если выбрать Git и нажать кнопку **ОК**, Visual Studio создаст новый локальный репозиторий Git в папке решения. Новый репозиторий еще не содержит файлов; их необходимо добавить в репозиторий, выполнив фиксацию Git. Щелкните правой кнопкой мыши решение в **Обозреватель решений**и выберите пункт **зафиксировать**.
 
-![Фиксация](source-control/_static/image11.png)
+![Commit](source-control/_static/image11.png)
 
 Visual Studio автоматически размещает все файлы проекта для фиксации и перечисляет их в **Team Explorer** на панели " **добавленные изменения** ". (Если вы не хотите включать в фиксацию, выберите их, щелкните правой кнопкой мыши и выберите пункт **исключить**.)
 

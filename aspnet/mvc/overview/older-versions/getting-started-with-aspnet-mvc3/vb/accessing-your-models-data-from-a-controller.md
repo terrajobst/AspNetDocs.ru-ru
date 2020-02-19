@@ -2,137 +2,137 @@
 uid: mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/accessing-your-models-data-from-a-controller
 title: Доступ к данным модели из контроллера (VB) | Документация Майкрософт
 author: Rick-Anderson
-description: Этом учебнике описываются основы создания MVC веб-приложения ASP.NET с помощью Microsoft Visual Web Developer 2010 Express пакетом обновления 1, который является...
+description: В этом учебнике вы узнаете об основах создания веб-приложения ASP.NET MVC с помощью Microsoft Visual Web Developer 2010 Express с пакетом обновления 1 (SP1)...
 ms.author: riande
 ms.date: 01/12/2011
 ms.assetid: cad00de1-3c68-4ff4-a436-54236d449459
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/accessing-your-models-data-from-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: beaad3440a9f333ab22f29d0c6683d71e8962fc2
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 37f45d8f12e3ab5c485718bcf2c59934ad272118
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65130054"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77458031"
 ---
 # <a name="accessing-your-models-data-from-a-controller-vb"></a>Доступ к данным модели из контроллера (VB)
 
-по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
+по [Рик Андерсон (](https://twitter.com/RickAndMSFT)
 
-> Этом учебнике описываются основы создания MVC веб-приложения ASP.NET с помощью Microsoft Visual Web Developer 2010 Express пакетом обновления 1, которой является бесплатной версии Microsoft Visual Studio. Перед началом работы убедитесь, что вы установили необходимые компоненты, перечисленные ниже. Все из них можно установить, щелкнув следующую ссылку: [Установщик веб-платформы](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack). Кроме того можно установить по отдельности необходимых компонентов, с помощью следующих ссылок:
+> В этом учебнике вы узнаете об основах создания веб-приложения ASP.NET MVC с помощью Microsoft Visual Web Developer 2010 Express с пакетом обновления 1 (SP1), который является бесплатной версией Microsoft Visual Studio. Прежде чем начать, убедитесь, что установлены предварительные требования, перечисленные ниже. Чтобы установить все эти компоненты, щелкните следующую ссылку: [установщик веб-платформы](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack). Кроме того, вы можете отдельно установить необходимые компоненты, используя следующие ссылки:
 > 
-> - [Необходимые компоненты для Visual Studio Web Developer Express SP1](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack)
-> - [Обновление средств ASP.NET MVC 3](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=MVC3)
-> - [SQL Server Compact 4.0](https://www.microsoft.com/web/gallery/install.aspx?appid=SQLCE;SQLCEVSTools_4_0)(среды выполнения и средства поддержки)
+> - [Предварительные требования для Visual Studio Web Developer Express SP1](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack)
+> - [Обновление инструментов ASP.NET MVC 3](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=MVC3)
+> - [SQL Server Compact 4,0](https://www.microsoft.com/web/gallery/install.aspx?appid=SQLCE;SQLCEVSTools_4_0)(поддержка времени выполнения и средств)
 > 
-> Если вы используете Visual Studio 2010 вместо Visual Web Developer 2010, установите необходимые компоненты, щелкнув следующую ссылку: [Необходимые компоненты для Visual Studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
+> Если вы используете Visual Studio 2010 вместо Visual Web Developer 2010, установите необходимые компоненты, щелкнув следующую ссылку: [Предварительные требования для Visual studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
 > 
-> Проект Visual Web Developer с VB.NET исходный код доступен на следующей странице в этом разделе. [Загрузить версию VB.NET](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098). Если вы предпочитаете C#, переключитесь в [C# версии](../cs/accessing-your-models-data-from-a-controller.md) работы с этим руководством.
+> Для этого раздела доступен проект Visual Web Developer с исходным кодом VB.NET. [Скачайте версию VB.NET](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098). При желании C#переключитесь на [ C# версию](../cs/accessing-your-models-data-from-a-controller.md) этого учебника.
 
-В этом разделе вы создадите новый `MoviesController` класса и написать код, который извлекает данные фильма и отображает его в браузере с помощью шаблона представления. Обязательно выполните сборку своего приложения, прежде чем продолжить.
+В этом разделе вы создадите новый класс `MoviesController` и запишете код, который извлекает данные фильмов и отображает их в браузере с помощью шаблона представления. Перед продолжением обязательно создайте приложение.
 
-Щелкните правой кнопкой мыши *контроллеров* папки и создайте новый `MoviesController` контроллера. Выберите следующие параметры:
+Щелкните правой кнопкой мыши папку *Controllers* и создайте новый контроллер `MoviesController`. Выберите следующие параметры.
 
-- Имя контроллера: **MoviesController**. (Это значение по умолчанию).
-- Шаблон: **Контроллер с действиями чтения и записи и представлениями, использующий Entity Framework**.
-- Класс модели: **Movie (MvcMovie.Models)**.
-- Класс контекста данных: **MovieDBContext (MvcMovie.Models)**.
-- Представления: **Razor (CSHTML)**. (По умолчанию).
+- Имя контроллера: **MoviesController**. (это установка по умолчанию).
+- Шаблон: **контроллер с действиями чтения и записи и представлениями с использованием Entity Framework**.
+- Класс модели: **Movie (MvcMovie. Models)** .
+- Класс контекста данных: **мовиедбконтекст (MvcMovie. Models)** .
+- Представления: **Razor (CSHTML)** . (Значение по умолчанию.)
 
 [![5addMovieController](accessing-your-models-data-from-a-controller/_static/image2.png)](accessing-your-models-data-from-a-controller/_static/image1.png)
 
 Нажмите кнопку **Добавить**. Visual Web Developer создает следующие файлы и папки:
 
-- *MoviesController.vb* файл в проекте *контроллеров* папки.
-- Объект *фильмы* папку в проекте *представления* папки.
-- *CREATE.vbhtml Delete.vbhtml, Details.vbhtml, Edit.vbhtml*, и *Index.vbhtml* в новом *Views\Movies* папки.
+- Файл *MoviesController. vb* в папке *Controllers* проекта.
+- Папка *фильмов* в папке *views* проекта.
+- *Создайте. vbhtml, DELETE. vbhtml, Details. vbhtml, Edit. vbhtml*и *index. vbhtml* в новой папке *виевс\мовиес*
 
 [![5_ScaffoldMovie](accessing-your-models-data-from-a-controller/_static/image4.png)](accessing-your-models-data-from-a-controller/_static/image3.png)
 
-Механизм формирования шаблонов ASP.NET MVC 3 автоматически создается CRUD (Создание, чтение, обновление и удаление) методы действий и представления для вас. Теперь у вас есть полнофункциональное веб-приложение, которое служит для создания, перечисления, редактирования и удаления записей фильмов.
+Механизм формирования шаблонов ASP.NET MVC 3 автоматически создал для вас методы и представления действий CRUD (создание, чтение, обновление и удаление). Теперь у вас есть полнофункциональное веб-приложение, которое позволяет создавать, перечислять, изменять и удалять записи фильмов.
 
-Запустите приложение и перейдите к `Movies` контроллер, добавляя */Movies* на URL-адрес в адресной строке браузера. Так как приложение полагается на маршрутизацию по умолчанию (определенный в *Global.asax* файл), запрос браузера `http://localhost:xxxxx/Movies` направляется по умолчанию `Index` метод действия `Movies` контроллера. Другими словами, запрос браузера `http://localhost:xxxxx/Movies` так же, как запрос браузера `http://localhost:xxxxx/Movies/Index`. Результатом является пустой список фильмов, так как вы их еще не добавили.
+Запустите приложение и перейдите к контроллеру `Movies`, добавив */Movies* в URL-адрес в адресной строке браузера. Поскольку приложение полагается на маршрутизацию по умолчанию (определенную в файле *Global. asax* ), запрос браузера `http://localhost:xxxxx/Movies` направляется в метод действия `Index` по умолчанию контроллера `Movies`. Иными словами, `http://localhost:xxxxx/Movies` запроса браузера фактически аналогичен `http://localhost:xxxxx/Movies/Index`запроса браузера. Результатом является пустой список фильмов, так как вы еще не добавили их.
 
 ![](accessing-your-models-data-from-a-controller/_static/image5.png)
 
 ## <a name="creating-a-movie"></a>Создание фильма
 
-Щелкните ссылку **Create New** (Создать). Введите некоторые сведения о фильм, а затем нажмите кнопку **создать** кнопки.
+Щелкните ссылку **Create New** (Создать). Введите некоторые сведения о фильме и нажмите кнопку **создать** .
 
 ![](accessing-your-models-data-from-a-controller/_static/image6.png)
 
-Щелкнув **создать** кнопка вызывает отправку формы на сервер, где сведения о фильме сохраняются в базе данных. Затем вы перейдете к */Movies* URL-адрес, где вы увидите только что созданном фильме в листинг.
+Нажатие кнопки **создать** приводит к тому, что форма будет отправлена на сервер, где сведения о фильме будут сохранены в базе данных. Затем вы перейдете на URL-адрес */Movies* , на котором можно увидеть созданный фильм в списке.
 
-[![IndexWhenHarryMet](accessing-your-models-data-from-a-controller/_static/image8.png)](accessing-your-models-data-from-a-controller/_static/image7.png)
+[![Индексвхенхарримет](accessing-your-models-data-from-a-controller/_static/image8.png)](accessing-your-models-data-from-a-controller/_static/image7.png)
 
 Создайте еще несколько записей фильмов. Попробуйте воспользоваться ссылками **Изменить**, **Сведения** и **Удалить** — все они работают.
 
-## <a name="examining-the-generated-code"></a>Изучение созданного кода
+## <a name="examining-the-generated-code"></a>Проверка созданного кода
 
-Откройте *Controllers\MoviesController.vb* файла и изучите созданный `Index` метод. Часть контроллера movie с `Index` метод приведен ниже.
+Откройте файл *контроллерс\мовиесконтроллер.ВБ* и изучите созданный метод `Index`. Ниже показана часть контроллера фильмов с методом `Index`.
 
 [!code-vb[Main](accessing-your-models-data-from-a-controller/samples/sample1.vb)]
 
-В следующей строке из `MoviesController` класс создает экземпляр контекста базы данных фильмов, как описано выше. Контекст базы данных movie позволяет запрашивать, изменять и удалять элементы.
+Следующая строка из класса `MoviesController` создает экземпляр контекста базы данных Movie, как описано выше. Для запроса, изменения и удаления фильмов можно использовать контекст базы данных Movie.
 
 [!code-vb[Main](accessing-your-models-data-from-a-controller/samples/sample2.vb)]
 
-Запрос на `Movies` контроллер возвращает все записи в `Movies` таблицы в базе данных фильмов, а затем передает результат в `Index` представления.
+Запрос к контроллеру `Movies` возвращает все записи в таблице `Movies` базы данных фильмов, а затем передает результаты в представление `Index`.
 
-## <a name="strongly-typed-models-and-the-model-keyword"></a>Строго типизированные модели и @model ключевое слово
+## <a name="strongly-typed-models-and-the-model-keyword"></a>Строго типизированные модели и ключевое слово @model
 
-Ранее в этом учебнике вы видели, как контроллер может передать данные или объекты в шаблон представления с помощью `ViewBag` объекта. `ViewBag` Является динамическим объектом, который предоставляет удобный способ для передачи информации в представление с поздним связыванием.
+Ранее в этом руководстве вы узнали, как контроллер может передавать данные или объекты в шаблон представления с помощью объекта `ViewBag`. `ViewBag` — это динамический объект, предоставляющий удобный способ для передачи сведений в представление.
 
-ASP.NET MVC также предоставляет возможность передачи строго типизированных данных или объекты для шаблона представления. Это строго типизированными подход позволяет лучше проверка во время компиляции кода и расширить возможности IntelliSense в редакторе Visual Web Developer. Мы используем этот подход с `MoviesController` класс и *Index.vbhtml* шаблона представления.
+ASP.NET MVC также предоставляет возможность передавать строго типизированные данные или объекты в шаблон представления. Такой строго типизированный подход обеспечивает лучшую проверку кода во время компиляции и более широкие возможности IntelliSense в редакторе Visual Web Developer. Мы используем этот подход с шаблоном представления *index. vbhtml* с классом `MoviesController`.
 
-Обратите внимание на то, как в коде создается [ `List` ](https://msdn.microsoft.com/library/6sh2ey19.aspx) объекта при вызове `View` вспомогательный метод в `Index` метода действия. Затем код передает это `Movies` списка из контроллера в представление:
+Обратите внимание, что код создает объект [`List`](https://msdn.microsoft.com/library/6sh2ey19.aspx) при вызове вспомогательного метода `View` в методе `Index` действия. Затем код передает этот список `Movies` из контроллера в представление:
 
 [!code-vb[Main](accessing-your-models-data-from-a-controller/samples/sample3.vb)]
 
-Включив `@ModelType` инструкция в верхней части файла шаблона представления, можно указать тип объекта, который будет ожидаться представлением. При создании контроллера movie Visual Web Developer автоматически включает следующий `@model` инструкция в верхней части *Index.vbhtml* файла:
+Включив инструкцию `@ModelType` в верхней части файла шаблона представления, можно указать тип объекта, который предполагается отобразить в представлении. При создании контроллера фильмов Visual Web Developer автоматически включил следующую инструкцию `@model` в начало файла *index. vbhtml* :
 
 [!code-vbhtml[Main](accessing-your-models-data-from-a-controller/samples/sample4.vbhtml)]
 
-Это `@ModelType` директива позволяет просматривать список фильмов, который контроллер передал в представление с помощью `Model` строго типизированного объекта. Например, в *Index.vbhtml* шаблона, код перебирает фильмы во время работы `foreach` инструкции для строго типизированного `Model` объекта:
+Эта директива `@ModelType` позволяет получить доступ к списку фильмов, переданных контроллером в представление, используя строго типизированный объект `Model`. Например, в шаблоне *index. vbhtml* код проходит через фильмы, выполняя инструкцию `foreach` для строго типизированного объекта `Model`:
 
 [!code-vbhtml[Main](accessing-your-models-data-from-a-controller/samples/sample5.vbhtml)]
 
-Так как `Model` строго типизированного объекта (как `IEnumerable<Movie>` объекта), каждая `item` объект в цикле типизируется как `Movie`. Помимо прочих преимуществ это означает, что получение проверки кода во время компиляции и полная поддержка IntelliSense в редакторе кода:
+Так как объект `Model` является строго типизированным (в виде объекта `IEnumerable<Movie>`), каждый объект `item` в цикле вводится как `Movie`. Помимо прочих преимуществ это означает, что во время компиляции кода и полной поддержки IntelliSense в редакторе кода вы получаете проверку.
 
 [![5_Intellisense](accessing-your-models-data-from-a-controller/_static/image10.png)](accessing-your-models-data-from-a-controller/_static/image9.png)
 
 ## <a name="working-with-sql-server-compact"></a>Работа с SQL Server Compact
 
-Entity Framework Code First обнаружил, что указывает строку подключения базы данных, который был предоставлен `Movies` базы данных, которая не существует, поэтому Code First создает базу данных автоматически. Убедитесь, что он создан путем поиска *приложения\_данных* папки. Если вы не видите *Movies.sdf* щелкните **Показать все файлы** кнопку в **обозревателе решений** панели инструментов нажмите кнопку **обновить** кнопки, а затем разверните *приложения\_данных* папки.
+Entity Framework Code First обнаружила, что предоставленная строка подключения к базе данных указывала на базу данных `Movies`, которая еще не существовала, поэтому Code First автоматически создавала базу данных. Чтобы убедиться, что он создан, найдите в папке *приложение\_данные* . Если файл *movies. sdf* не отображается, нажмите кнопку " **Показать все файлы** " на панели инструментов **Обозреватель решений** , нажмите кнопку " **Обновить** ", а затем разверните папку " *приложение\_данные* ".
 
 [![SDF_in_SolnExp](accessing-your-models-data-from-a-controller/_static/image12.png)](accessing-your-models-data-from-a-controller/_static/image11.png)
 
-Дважды щелкните *Movies.sdf* открыть **обозревателя серверов**. Затем разверните **таблиц** папки для просмотра таблиц, которые будут созданы в базе данных.
+Дважды щелкните *movies. sdf* , чтобы открыть **Обозреватель сервера**. Затем разверните папку **таблицы** , чтобы просмотреть таблицы, созданные в базе данных.
 
 > [!NOTE]
-> Если отобразится сообщение об ошибке при двойном щелчке *Movies.sdf*, убедитесь, что вы установили **средств Visual Studio 2010 с пакетом обновления 1 для SQL Server Compact 4.0**. (Ссылки на программное обеспечение, см. список необходимых компонентов в первой части этой серии руководств.) При установке выпуска теперь необходимо закрыть и снова открыть Visual Web Developer.
+> Если при двойном щелчке на *movies. sdf*появляется сообщение об ошибке, убедитесь, что установлены **средства Visual Studio 2010 с пакетом обновления 1 (SP1) для SQL Server Compact 4,0**. (Ссылки на программное обеспечение см. в списке предварительных требований в первой части этой серии руководств.) Если установить выпуск сейчас, необходимо закрыть и снова открыть Visual Web Developer.
 
 [![DB_explorer](accessing-your-models-data-from-a-controller/_static/image14.png)](accessing-your-models-data-from-a-controller/_static/image13.png)
 
-Существует две таблицы, одна для `Movie` набор сущностей и затем `EdmMetadata` таблицы. `EdmMetadata` Таблица используется платформой Entity Framework, чтобы определить, когда модель и база данных не синхронизированы.
+Существует две таблицы, одна для `Movie` набора сущностей, а затем `EdmMetadata` таблицу. `EdmMetadata` таблица используется Entity Framework, чтобы определить, когда модель и база данных не синхронизированы.
 
-Щелкните правой кнопкой мыши `Movies` таблицы и выберите **Показать таблицу данных** для просмотра данных, вы создали.
+Щелкните правой кнопкой мыши таблицу `Movies` и выберите **Показать данные таблицы** , чтобы просмотреть созданные данные.
 
-[![MoviesTable](accessing-your-models-data-from-a-controller/_static/image16.png)](accessing-your-models-data-from-a-controller/_static/image15.png)
+[![Мовиестабле](accessing-your-models-data-from-a-controller/_static/image16.png)](accessing-your-models-data-from-a-controller/_static/image15.png)
 
-Щелкните правой кнопкой мыши `Movies` таблицы и выберите **изменить схему таблицы**.
+Щелкните правой кнопкой мыши таблицу `Movies` и выберите **изменить схему таблицы**.
 
-[![EditTableSchema](accessing-your-models-data-from-a-controller/_static/image18.png)](accessing-your-models-data-from-a-controller/_static/image17.png)
+[![Едиттаблесчема](accessing-your-models-data-from-a-controller/_static/image18.png)](accessing-your-models-data-from-a-controller/_static/image17.png)
 
-![TableSchemaSM](accessing-your-models-data-from-a-controller/_static/image19.png)
+![таблесчемасм](accessing-your-models-data-from-a-controller/_static/image19.png)
 
-Обратите внимание, что как схема `Movies` таблицы сопоставляется `Movie` класс, созданный ранее. Entity Framework Code First автоматически создается эта схема на основе вашего `Movie` класса.
+Обратите внимание, что схема `Movies` таблицы сопоставляется с созданным ранее классом `Movie`. Entity Framework Code First автоматически создали эту схему на основе класса `Movie`.
 
-Когда закончите, закройте соединение. (Если не закрыть соединение, может появиться ошибка очередном запуске проекта).
+По завершении закройте подключение. (Если вы не закроете подключение, при следующем запуске проекта может появиться сообщение об ошибке).
 
-[![CloseConnection](accessing-your-models-data-from-a-controller/_static/image21.png)](accessing-your-models-data-from-a-controller/_static/image20.png)
+[![Клосеконнектион](accessing-your-models-data-from-a-controller/_static/image21.png)](accessing-your-models-data-from-a-controller/_static/image20.png)
 
-Теперь у вас есть базы данных и странице простого списка для отображения содержимого из него. В следующем учебном курсе мы просмотреть остаток шаблонный код и добавить `SearchIndex` метод и `SearchIndex` представление, которое дает возможность поиска фильмов в этой базе данных.
+Теперь у вас есть база данных и простая страница со списком для отображения содержимого из нее. В следующем руководстве мы рассмотрим оставшуюся часть кода с формированием шаблонов и добавим метод `SearchIndex` и представление `SearchIndex`, которое позволяет выполнять поиск фильмов в этой базе данных.
 
 > [!div class="step-by-step"]
 > [Назад](adding-a-model.md)

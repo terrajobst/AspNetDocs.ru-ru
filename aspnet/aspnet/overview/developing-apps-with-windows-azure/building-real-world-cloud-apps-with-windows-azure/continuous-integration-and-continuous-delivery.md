@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: eaece9f5-f80c-428b-b771-5db66d275b7d
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/continuous-integration-and-continuous-delivery
 msc.type: authoredcontent
-ms.openlocfilehash: 52c710053feca7872aa6fcc93c99bce90359f8fc
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: cf3c65ef95528173eed3fb08984035b2512861c4
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74585881"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457041"
 ---
 # <a name="continuous-integration-and-continuous-delivery-building-real-world-cloud-apps-with-azure"></a>Непрерывная интеграция и непрерывная поставка (создание облачных приложений в реальном мире с помощью Azure)
 
-[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (]((https://twitter.com/RickAndMSFT)), том [Dykstra)](https://github.com/tdykstra)
+[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (](https://twitter.com/RickAndMSFT), том [Dykstra)](https://github.com/tdykstra)
 
 [Скачивание решения ИТ-проекта](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [Загрузка электронной книги](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -39,7 +39,7 @@ ms.locfileid: "74585881"
 
 Автоматизация этих процессов в Azure проста. Так как вы используете все компоненты в облаке, вам не нужно покупать или администрировать серверы для ваших сборок или тестовых сред. И вам не нужно ждать, пока сервер будет доступен для тестирования. При каждой выполняемой сборке вы можете запустить тестовую среду в Azure с помощью скрипта автоматизации, выполнить приемочные тесты или более глубокое тестирование по сравнению с ним, а затем, когда все будет сделано, просто разорвать его. И если вы запустили этот сервер только в течение 2 часов или 8 часов или день, необходимо платить за него минимально, так как вы платите только за время фактического выполнения компьютера. Например, при переходе на один уровень с бесплатного уровня среда, требуемая для решения ИТ в ИТ, по сути требует затрат на 1 цент в час. В течение месяца, если вы запускали среду только в течение часа, ваша среда тестирования, скорее всего, будет стоить меньше, чем латте, приобретенную в Starbucks.
 
-## <a name="azure-devops-services"></a>Azure DevOps Services 
+## <a name="azure-devops-services"></a>Azure DevOps Services 
 
 Azure DevOps Services предоставляет ряд функций, которые помогут вам в разработке приложений от планирования до развертывания.
 

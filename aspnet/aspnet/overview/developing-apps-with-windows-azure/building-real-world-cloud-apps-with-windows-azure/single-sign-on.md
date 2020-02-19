@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: 7d82d5e9-0619-4f22-9e03-32a6d52940a5
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/single-sign-on
 msc.type: authoredcontent
-ms.openlocfilehash: 7e32f444dc38132296cffd45ac658f5abf51f314
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 1ca93cce22487295a24aae95437b3e69dfc5b504
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74585284"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457145"
 ---
 # <a name="single-sign-on-building-real-world-cloud-apps-with-azure"></a>Единый вход (создание облачных приложений в реальном мире с помощью Azure)
 
-[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (]((https://twitter.com/RickAndMSFT)), том [Dykstra)](https://github.com/tdykstra)
+[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (](https://twitter.com/RickAndMSFT), том [Dykstra)](https://github.com/tdykstra)
 
 [Скачивание решения ИТ-проекта](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [Загрузка электронной книги](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -146,7 +146,7 @@ Visual Studio позволяет очень легко создать прило
 
 При создании нового приложения ASP.NET (MVC или Web Forms) по умолчанию используется метод проверки подлинности ASP.NET Identity. Чтобы изменить это в Azure AD, нажмите кнопку **изменить проверку подлинности** .
 
-![Изменение проверки подлинности](single-sign-on/_static/image23.png)
+![Изменить проверку подлинности](single-sign-on/_static/image23.png)
 
 Выберите учетные записи организации, введите свое имя домена, а затем выберите единый вход.
 
@@ -179,7 +179,7 @@ Visual Studio позволяет очень легко создать прило
 
 Дополнительные сведения см. в следующих источниках.
 
-- [Azure Active Directory документация](https://docs.microsoft.com/azure/active-directory/). Страница портала для документации по Azure AD на сайте windowsazure.com. Пошаговые учебники см. в разделе **Разработка** .
+- [Документация Azure Active Directory](https://docs.microsoft.com/azure/active-directory/). Страница портала для документации по Azure AD на сайте windowsazure.com. Пошаговые учебники см. в разделе **Разработка** .
 - [Многофакторная идентификация Azure](https://docs.microsoft.com/azure/multi-factor-authentication/). Страница портала для документации по многофакторной проверке подлинности в Azure.
 - [Параметры проверки подлинности учетной записи организации](../../../../visual-studio/overview/2013/creating-web-projects-in-visual-studio.md#orgauthoptions). Описание параметров проверки подлинности Azure AD в диалоговом окне Visual Studio 2013 New-Project.
 - [Шаблоны и методики Майкрософт — федеративный шаблон удостоверений](https://msdn.microsoft.com/library/dn589790.aspx).

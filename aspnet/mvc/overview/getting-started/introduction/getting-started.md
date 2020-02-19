@@ -1,78 +1,78 @@
 ---
 uid: mvc/overview/getting-started/introduction/getting-started
-title: Приступая к работе с ASP.NET MVC 5 | Документация Майкрософт
+title: Начало работы с ASP.NET MVC 5 | Документация Майкрософт
 author: Rick-Anderson
 ms.author: riande
 ms.date: 10/04/2018
 ms.assetid: f3d8adbe-55e7-4fd4-84a8-7155bc45c676
 msc.legacyurl: /mvc/overview/getting-started/introduction/getting-started
 msc.type: authoredcontent
-ms.openlocfilehash: c2f7ca2e7fb8d7831f21e3ba2f4713211657e1b3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.openlocfilehash: c74daa37f68dda641cae97d3b0c19718f62d474d
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402236"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456391"
 ---
-# <a name="getting-started-with-aspnet-mvc-5"></a>Приступая к работе с ASP.NET MVC 5
+# <a name="getting-started-with-aspnet-mvc-5"></a>Начало работы с ASP.NET MVC 5
 
-по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
+по [Рик Андерсон (](https://twitter.com/RickAndMSFT)
 
 [!INCLUDE [consider RP](../../../../includes/razor.md)]
 
-Этот учебник поможет основы создания приложения web ASP.NET MVC 5 с помощью [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Последний исходный код для руководства находится на [GitHub](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie/MvcMovie).
+В этом учебнике рассматриваются основы создания веб-приложения ASP.NET MVC 5 с помощью [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Окончательный исходный код для учебника находится на сайте [GitHub](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie/MvcMovie).
 
-Это руководство было написано с [Скотт Гатри](https://weblogs.asp.net/scottgu/) (twitter[ @scottgu ](https://twitter.com/scottgu) ), [(Scott hanselman)](http://www.hanselman.com/blog/) (twitter: [ @shanselman ](https://twitter.com/shanselman) ) , и [Рик Андерсон](https://twitter.com/RickAndMSFT) ( [ @RickAndMSFT ](https://twitter.com/#!/RickAndMSFT) )
+Это руководство было написано [Скотт Гатри (](https://weblogs.asp.net/scottgu/) (Twitter[@scottgu](https://twitter.com/scottgu) ), [скотт Hanselman](http://www.hanselman.com/blog/) (Twitter: [@shanselman](https://twitter.com/shanselman) ) и [Рик Андерсон (](https://twitter.com/RickAndMSFT) ( [@RickAndMSFT](https://twitter.com/#!/RickAndMSFT) )
 
-Вам потребуется учетная запись Azure, чтобы развернуть это приложение в Azure:
+Для развертывания этого приложения в Azure требуется учетная запись Azure:
 
-- Вы можете [открыть учетную запись Azure бесплатно](https://azure.microsoft.com/pricing/free-trial/?WT.mc_id=A443DD604) -вы получаете кредиты можно использовать для опробования платных служб Azure и даже в том случае, если они используются, вы сохраняете учетную запись и использовать бесплатные службы Azure.
-- Вы можете [активировать преимущества подписчика MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A443DD604) -ваша подписка MSDN предоставляет вам кредиты каждый месяц, который можно использовать для оплаты служб Azure.
+- Вы можете [открыть учетную запись Azure бесплатно](https://azure.microsoft.com/pricing/free-trial/?WT.mc_id=A443DD604) — вы получаете кредиты, которые можно использовать для пробного использования платных служб Azure, и даже после их использования вы можете удержать учетную запись и использовать бесплатные службы Azure.
+- Вы имеете возможность [активировать преимущества подписчика MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A443DD604) — ваша подписка MSDN каждый месяц приносит вам кредиты, которые можно использовать для оплаты за службы Azure.
 
 ## <a name="get-started"></a>Начало работы
 
-Начните с [установки Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Откройте Visual Studio.
+Начните с [установки Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Затем откройте Visual Studio.
 
-Visual Studio является интегрированной среды разработки или интегрированной среды разработки. Так же, как использовать Microsoft Word для записи документов, вы используете интегрированную среду разработки для создания приложений. В Visual Studio имеется список внизу отображаются различные параметры, доступные для вас. Имеется также меню, которое предоставляет еще один способ выполнения задач в интегрированной среде разработки. Например, вместо выбора **новый проект** на **начальной страницы**, можно использовать в строке меню и выберите **файл** > **новый проект**.
+Visual Studio — это интегрированная среда разработки (IDE). Как и при использовании Microsoft Word для написания документов, для создания приложений используется интегрированная среда разработки. В Visual Studio есть список, в нижней части которого показаны различные доступные параметры. Также есть меню, предоставляющее еще один способ выполнения задач в интегрированной среде разработки. Например, вместо выбора **нового проекта** на **начальной странице**можно использовать строку меню и выбрать **файл** > **Новый проект**.
 
 ![](getting-started/_static/image1.png)
 
 ## <a name="create-your-first-app"></a>Создание первого приложения
 
-На **начальной страницы**выберите **новый проект**. В **новый проект** диалоговом окне выберите **Visual C#** категории слева, затем **Web**, а затем выберите **веб-приложение ASP.NET (.NET Framework)**  шаблона проекта. Назовите проект «MvcMovie», а затем выберите **ОК**.
+На **начальной странице**выберите **Новый проект**. В диалоговом окне **Новый проект** выберите категорию **визуальные C# элементы** слева, затем **веб**, а затем выберите шаблон проекта **веб-приложение ASP.NET (.NET Framework)** . Присвойте проекту имя "MvcMovie" и нажмите кнопку **ОК**.
 
 ![](getting-started/_static/image2.png)
 
-В **новое веб-приложение ASP.NET** диалоговом окне выберите **MVC** и выберите **ОК**.
+В диалоговом окне **Создание веб-приложения ASP.NET** выберите **MVC** и нажмите кнопку **ОК**.
 
 ![](getting-started/_static/image3.png)
 
-Visual Studio используется шаблон по умолчанию для проекта ASP.NET MVC, который вы только что создали, поэтому у вас есть рабочее приложение прямо сейчас не выполняя никаких действий! Это связано с простых «Hello World!» проекта, а вот отлично подходит для запуска приложения.
+Visual Studio использовала шаблон по умолчанию для только что созданного проекта MVC ASP.NET, поэтому у вас есть рабочее приложение, не делая ничего. Это простой "Hello World!" и это хорошее место для запуска приложения.
 
 ![](getting-started/_static/image4.png)
 
-Нажмите клавишу **F5** , чтобы начать отладку. При нажатии клавиши **F5**, Visual Studio запускает [IIS Express](/iis/extensions/introduction-to-iis-express/iis-express-overview) и запускает веб-приложения. Затем Visual Studio запустит браузер и откроется домашняя страница приложения. Обратите внимание, что говорит в адресной строке браузера `localhost:port#` и не что-либо типа `example.com`. Это потому, что `localhost` всегда указывает на локальном компьютере, который выполняется, в этом случае приложение, вы только что выполнили. При запуске веб-проекта Visual Studio для веб-сервера используется случайный порт. На рисунке ниже номер порта — 1234. При запуске приложения вы увидите другой номер порта.
+Нажмите клавишу **F5**, чтобы запустить отладку. При нажатии клавиши **F5**Visual Studio запускает [IIS Express](/iis/extensions/introduction-to-iis-express/iis-express-overview) и запускает веб-приложение. Затем Visual Studio запустит браузер и откроет домашнюю страницу приложения. Обратите внимание, что в адресной строке браузера указано `localhost:port#` и не что-то вроде `example.com`. Это связано с тем, что `localhost` всегда указывает на локальный компьютер, который в данном случае выполняет только что созданное приложение. Когда Visual Studio выполняет веб-проект, для веб-сервера используется случайный порт. На рисунке ниже показан номер порта 1234. При запуске приложения вы увидите другой номер порта.
 
 ![](getting-started/_static/image5.png)
 
-Готовые этот шаблон по умолчанию дает `Home`, `Contact`, и `About` страниц. На следующем рисунке не показывает **Главная**, **о**, и **контакт** ссылки. В зависимости от размера окна браузера может потребоваться щелкнуть значок навигации, чтобы найти по следующим ссылкам.
+Этот шаблон по умолчанию предназначается для `Home`, `Contact`и `About` страниц. На рисунке ниже не показаны ссылки **Домашняя страница**, **сведения о программе**и **контакт** . В зависимости от размера окна браузера может потребоваться щелкнуть значок навигации, чтобы просмотреть эти ссылки.
 
 ![](getting-started/_static/image6.png)
 
-Приложение также предоставляет поддержку для регистрации и входа. Следующий шаг — изменить работу этого приложения и немного поговорим об ASP.NET MVC. Закройте приложение ASP.NET MVC и изменим код.
+Приложение также обеспечивает поддержку для регистрации и входа в систему. Следующим шагом является изменение способа работы этого приложения и немного подробнее о ASP.NET MVC. Закройте приложение ASP.NET MVC и давайте изменим код.
 
-Список действующие руководства, см. в разделе [MVC рекомендуется статьи](../mvc-learning-sequence.md).
+Список текущих руководств см. в [статье рекомендации по MVC](../mvc-learning-sequence.md).
 
-## <a name="see-this-app-running-on-azure"></a>Это приложение работает в Azure см. в разделе
+## <a name="see-this-app-running-on-azure"></a>См. приложение, работающее в Azure
 
-Вы действительно хотите см. по завершении сайт, запущенный в качестве активного веб-приложения? Полную версию приложения можно развернуть учетную запись Azure, просто нажав кнопку ниже.
+Вы хотите увидеть готовый сайт, работающий как активное веб-приложение? Вы можете развернуть полную версию приложения в учетной записи Azure, просто нажав кнопку ниже.
 
 [![](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/aspnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie&amp;WT.mc_id=deploy_azure_aspnet)
 
-Требуется учетная запись Azure для развертывания этого решения в Azure. Если у вас нет учетной записи, воспользуйтесь одним из следующих параметров для ее создания.
+Для развертывания этого решения в Azure необходима учетная запись Azure. Если у вас еще нет учетной записи, используйте один из следующих параметров, чтобы создать его.
 
-- [Открыть учетную запись Azure бесплатно](https://azure.microsoft.com/pricing/free-trial/?WT.mc_id=A443DD604) -вы получаете кредиты можно использовать для опробования платных служб Azure и даже в том случае, если они используются, вы сохраняете учетную запись и использовать бесплатные службы Azure.
-- [Активируйте преимущества для подписчиков Visual Studio](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers) -ваша подписка Visual Studio предоставляет вам кредиты каждый месяц, который можно использовать для оплаты служб Azure.
+- [Откройте учетную запись Azure бесплатно](https://azure.microsoft.com/pricing/free-trial/?WT.mc_id=A443DD604) — вы получаете кредиты, которые можно использовать для пробного использования платных служб Azure, и даже после их использования вы можете удержать учетную запись и использовать бесплатные службы Azure.
+- [Активируйте преимущества для подписчиков Visual Studio](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers) . Ваша подписка Visual Studio предоставляет Вам кредиты каждый месяц, который можно использовать для платных служб Azure.
 
 > [!div class="step-by-step"]
-> [Вперед](adding-a-controller.md)
+> [Дальше](adding-a-controller.md)

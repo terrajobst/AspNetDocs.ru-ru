@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: 52d6c941-2cd9-442f-9872-2c798d6d90cd
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/web-development-best-practices
 msc.type: authoredcontent
-ms.openlocfilehash: 0956aaaf1f6a1a0d2f5d93f98cb6959cec98dbaf
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: dfd8a3ac2328d3f17dfbe36e68b37d181177b0f4
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74582704"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457093"
 ---
 # <a name="web-development-best-practices-building-real-world-cloud-apps-with-azure"></a>Рекомендации по веб-разработке (создание облачных приложений в реальном мире с помощью Azure)
 
-[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (]((https://twitter.com/RickAndMSFT)), том [Dykstra)](https://github.com/tdykstra)
+[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (](https://twitter.com/RickAndMSFT), том [Dykstra)](https://github.com/tdykstra)
 
 [Скачивание решения ИТ-проекта](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [Загрузка электронной книги](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -76,7 +76,7 @@ ms.locfileid: "74582704"
 <a id="sessionstate"></a>
 ## <a name="avoid-session-state"></a>Избежание состояния сеанса
 
-Как правило, в реальных облачных приложениях не рекомендуется хранить какой-либо вид состояния сеанса пользователя, но некоторые подходы влияют на производительность и масштабируемость, чем другие. Если необходимо сохранить состояние, лучшим решением будет хранение большого состояния и сохранение его в файлах cookie. Если это нецелесообразно, следующее лучшее решение заключается в использовании состояния сеанса ASP.NET с поставщиком для [распределенного кэша в памяти](distributed-caching.md#sessionstate). Наихудшее решение с точки зрения производительности и масштабируемости заключается в использовании поставщика состояний сеанса базы данных.
+Не хранить определенные виды состояний сеансов пользователя в реальном облачном приложении бывает нецелесообразно, но разные подходы по-разному влияют на производительность и масштабируемость. Если вам нужно хранить состояния, лучшим решением будет хранить небольшой объем состояний в файлах cookie. Если это нецелесообразно, следующее лучшее решение заключается в использовании состояния сеанса ASP.NET с поставщиком для [распределенного кэша в памяти](distributed-caching.md#sessionstate). Худшее решение с точки зрения масштабируемости и производительности — использовать базу данных резервного поставщика состояний сеансов.
 
 <a id="cdn"></a>
 ## <a name="use-a-cdn-to-cache-static-file-assets"></a>Использование CDN для кэширования ресурсов статических файлов

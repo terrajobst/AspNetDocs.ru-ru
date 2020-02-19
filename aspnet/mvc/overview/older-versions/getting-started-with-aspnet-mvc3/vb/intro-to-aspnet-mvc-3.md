@@ -1,83 +1,83 @@
 ---
 uid: mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/intro-to-aspnet-mvc-3
-title: Введение в ASP.NET MVC 3 (Visual Basic) | Документация Майкрософт
+title: Введение в ASP.NET MVC 3 (VB) | Документация Майкрософт
 author: Rick-Anderson
-description: Этом учебнике описываются основы создания MVC веб-приложения ASP.NET с помощью Microsoft Visual Web Developer 2010 Express пакетом обновления 1, который является...
+description: В этом учебнике вы узнаете об основах создания веб-приложения ASP.NET MVC с помощью Microsoft Visual Web Developer 2010 Express с пакетом обновления 1 (SP1)...
 ms.author: riande
 ms.date: 01/12/2011
 ms.assetid: a1b3d789-93b4-487f-b90d-80c9c9b4f8fa
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc3/vb/intro-to-aspnet-mvc-3
 msc.type: authoredcontent
-ms.openlocfilehash: e4fe82ed57e888363f22c84b178b83a07c32c95d
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 24f7de303ef7f5a457bd509ecc6bd0e3be7e3d9d
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65130096"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456345"
 ---
 # <a name="intro-to-aspnet-mvc-3-vb"></a>Введение в ASP.NET MVC 3 (VB)
 
-по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
+по [Рик Андерсон (](https://twitter.com/RickAndMSFT)
 
-> Этом учебнике описываются основы создания MVC веб-приложения ASP.NET с помощью Microsoft Visual Web Developer 2010 Express пакетом обновления 1, которой является бесплатной версии Microsoft Visual Studio. Перед началом работы убедитесь, что вы установили необходимые компоненты, перечисленные ниже. Все из них можно установить, щелкнув следующую ссылку: [Установщик веб-платформы](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack). Кроме того можно установить по отдельности необходимых компонентов, с помощью следующих ссылок:
+> В этом учебнике вы узнаете об основах создания веб-приложения ASP.NET MVC с помощью Microsoft Visual Web Developer 2010 Express с пакетом обновления 1 (SP1), который является бесплатной версией Microsoft Visual Studio. Прежде чем начать, убедитесь, что установлены предварительные требования, перечисленные ниже. Чтобы установить все эти компоненты, щелкните следующую ссылку: [установщик веб-платформы](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack). Кроме того, вы можете отдельно установить необходимые компоненты, используя следующие ссылки:
 > 
-> - [Необходимые компоненты для Visual Studio Web Developer Express SP1](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack)
-> - [Обновление средств ASP.NET MVC 3](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=MVC3)
-> - [SQL Server Compact 4.0](https://www.microsoft.com/web/gallery/install.aspx?appid=SQLCE;SQLCEVSTools_4_0)(среды выполнения и средства поддержки)
+> - [Предварительные требования для Visual Studio Web Developer Express SP1](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack)
+> - [Обновление инструментов ASP.NET MVC 3](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=MVC3)
+> - [SQL Server Compact 4,0](https://www.microsoft.com/web/gallery/install.aspx?appid=SQLCE;SQLCEVSTools_4_0)(поддержка времени выполнения и средств)
 > 
-> Если вы используете Visual Studio 2010 вместо Visual Web Developer 2010, установите необходимые компоненты, щелкнув следующую ссылку: [Необходимые компоненты для Visual Studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
+> Если вы используете Visual Studio 2010 вместо Visual Web Developer 2010, установите необходимые компоненты, щелкнув следующую ссылку: [Предварительные требования для Visual studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
 > 
-> Проект Visual Web Developer с VB.NET исходный код доступен на следующей странице в этом разделе. [Загрузить версию VB.NET](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098). Если вы предпочитаете C#, переключитесь в [C# версии](../cs/intro-to-aspnet-mvc-3.md) работы с этим руководством.
+> Для этого раздела доступен проект Visual Web Developer с исходным кодом VB.NET. [Скачайте версию VB.NET](https://code.msdn.microsoft.com/Introduction-to-MVC-3-10d1b098). При желании C#переключитесь на [ C# версию](../cs/intro-to-aspnet-mvc-3.md) этого учебника.
 
-Этом учебнике описываются основы создания MVC веб-приложения ASP.NET с помощью Microsoft Visual Web Developer 2010 Express пакетом обновления 1, которой является бесплатной версии Microsoft Visual Studio. Перед началом работы убедитесь, что вы установили необходимые компоненты, перечисленные ниже. Все из них можно установить, щелкнув следующую ссылку: [Установщик веб-платформы](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack). Кроме того можно установить по отдельности необходимых компонентов, с помощью следующих ссылок:
+В этом учебнике вы узнаете об основах создания веб-приложения ASP.NET MVC с помощью Microsoft Visual Web Developer 2010 Express с пакетом обновления 1 (SP1), который является бесплатной версией Microsoft Visual Studio. Прежде чем начать, убедитесь, что установлены предварительные требования, перечисленные ниже. Чтобы установить все эти компоненты, щелкните следующую ссылку: [установщик веб-платформы](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack). Кроме того, вы можете отдельно установить необходимые компоненты, используя следующие ссылки:
 
-- [Необходимые компоненты для Visual Studio Web Developer Express SP1](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack)
-- [Обновление средств ASP.NET MVC 3](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=MVC3)
-- [SQL Server Compact 4.0](https://www.microsoft.com/web/gallery/install.aspx?appid=SQLCE;SQLCEVSTools_4_0)(среды выполнения и средства поддержки)
+- [Предварительные требования для Visual Studio Web Developer Express SP1](https://www.microsoft.com/web/gallery/install.aspx?appid=VWD2010SP1Pack)
+- [Обновление инструментов ASP.NET MVC 3](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=MVC3)
+- [SQL Server Compact 4,0](https://www.microsoft.com/web/gallery/install.aspx?appid=SQLCE;SQLCEVSTools_4_0)(поддержка времени выполнения и средств)
 
-Если вы используете Visual Studio 2010 вместо Visual Web Developer 2010, установите необходимые компоненты, щелкнув следующую ссылку: [Необходимые компоненты для Visual Studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
+Если вы используете Visual Studio 2010 вместо Visual Web Developer 2010, установите необходимые компоненты, щелкнув следующую ссылку: [Предварительные требования для Visual studio 2010](https://www.microsoft.com/web/gallery/install.aspx?appsxml=&amp;appid=VS2010SP1Pack).
 
-Проект Visual Web Developer с VB исходный код доступен на следующей странице в этом разделе. [Скачивание версии VB здесь](https://code.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=aspnetmvcsamples&amp;DownloadId=14824). Если вы предпочитаете c#, переключитесь в [версии c#](../cs/intro-to-aspnet-mvc-3.md) работы с этим руководством.
+Для этого раздела доступен проект Visual Web Developer с исходным кодом VB. [Скачайте версию VB здесь](https://code.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=aspnetmvcsamples&amp;DownloadId=14824). Если вы предпочитаете CSharp, переключитесь на [CSharp версии](../cs/intro-to-aspnet-mvc-3.md) этого руководства.
 
 ## <a name="what-youll-build"></a>Что вы создадите
 
-Вы реализуете простое приложение списка фильмов, который поддерживает создание, изменение и список фильмов из базы данных. Ниже приведены два снимка экрана приложения, который вам предстоит создать. Он включает страницы, отображающей список фильмов из базы данных:
+Вы реализуете простое приложение с перечнем фильмов, которое поддерживает создание, изменение и перечисление фильмов из базы данных. Ниже приведены два снимка экрана создаваемого приложения. Он содержит страницу, на которой отображается список фильмов из базы данных:
 
-[![MoviesWithVariousSm](intro-to-aspnet-mvc-3/_static/image2.png)](intro-to-aspnet-mvc-3/_static/image1.png)
+[![Мовиесвисвариауссм](intro-to-aspnet-mvc-3/_static/image2.png)](intro-to-aspnet-mvc-3/_static/image1.png)
 
-Приложение также позволяет добавить, изменить и удалить фильмов, а также сведения о см. в разделе сведений об отдельных проблемах. Все сценарии ввода данных включают проверку, чтобы гарантировать правильность данных, хранящихся в базе данных.
+Кроме того, приложение позволяет добавлять, изменять и удалять фильмы, а также просматривать сведения о них. Все сценарии ввода данных включают проверку, чтобы убедиться, что данные, хранящиеся в базе данных, верны.
 
-[![CreateFormSo](intro-to-aspnet-mvc-3/_static/image4.png)](intro-to-aspnet-mvc-3/_static/image3.png)
+[![Креатеформсо](intro-to-aspnet-mvc-3/_static/image4.png)](intro-to-aspnet-mvc-3/_static/image3.png)
 
-## <a name="skills-youll-learn"></a>Навыки, которые вы узнаете
+## <a name="skills-youll-learn"></a>Чему вы научитесь
 
-Вот, вы узнаете, как:
+В этом учебнике вы узнаете:
 
-- Как создать новый проект ASP.NET MVC
-- Как создать новую базу данных с помощью Entity Framework code first
-- Как создать ASP.NET MVC контроллеры и представления
+- Создание нового проекта MVC ASP.NET
+- Создание новой базы данных с помощью Entity Framework кода — First
+- Создание контроллеров и представлений MVC ASP.NET
 - Получение и отображение данных
-- Включение проверки данных и изменения данных
+- Как изменить данные и включить проверку данных
 
 ## <a name="getting-started"></a>Начало работы
 
-Загрузите с Visual Web Developer 2010 Express («VWD» для краткости), а затем выберите **новый проект** из **запустить** страницы.
+Начните с запуска Visual Web Developer 2010 Express ("VWD" для краткого) и выберите **создать проект** на **начальной** странице.
 
-Visual Web Developer — это интегрированная среда разработки, или интегрированной среды разработки. Так же, как использовать Microsoft Word для записи документов, вы используете интегрированную среду разработки для создания приложений. В Visual Web Developer имеется панель инструментов в верхней, показывающий различные параметры, доступные для вас. Имеется также меню, которое предоставляет еще один способ выполнения задач в интегрированной среде разработки. (Например, вместо выбора **новый проект** из **запустить** страницы, можно использовать меню и выберите **файл** &gt; **новый проект**.)
+Visual Web Developer — это интегрированная среда разработки (IDE). Как и при использовании Microsoft Word для написания документов, для создания приложений используется интегрированная среда разработки. В Visual Web Developer есть панель инструментов, в верхней части которой показаны различные доступные параметры. Также есть меню, предоставляющее еще один способ выполнения задач в интегрированной среде разработки. (Например, вместо выбора **нового проекта** на **начальной** странице можно использовать меню и выбрать **файл** &gt; **Новый проект**).
 
 [![](intro-to-aspnet-mvc-3/_static/image6.png)](intro-to-aspnet-mvc-3/_static/image5.png)
 
 ## <a name="creating-your-first-application"></a>Создание первого приложения
 
-Можно создавать приложения с помощью Visual Basic или Visual C# в качестве языка программирования. Для этого руководства выберите Visual Basic в левой части, а затем выберите **веб-приложение ASP.NET MVC 3**. Назовите проект «MvcMovie» и нажмите кнопку **ОК**.
+Вы можете создавать приложения, используя либо Visual Basic, либо визуальный C# элемент в качестве языка программирования. В этом руководстве выберите Visual Basic слева, а затем выберите **ASP.NET MVC 3 веб-приложение**. Присвойте проекту имя "MvcMovie" и нажмите кнопку **ОК**.
 
 ![1NewMVCproj_sm](intro-to-aspnet-mvc-3/_static/image7.png)
 
-В **Создание проекта ASP.NET MVC 3** выберите **веб-приложение**. Оставьте **Razor** как обработчик представлений по умолчанию.
+В диалоговом окне **Новый проект ASP.NET MVC 3** выберите **Интернет приложение**. Оставьте **Razor** в качестве подсистемы представления по умолчанию.
 
 ![1InternetAppRazor_SM](intro-to-aspnet-mvc-3/_static/image8.png)
 
-Нажмите кнопку **ОК**. Visual Web Developer используется шаблон по умолчанию для проекта ASP.NET MVC, который вы только что создали, поэтому у вас есть рабочее приложение прямо сейчас не выполняя никаких действий! Это связано с простых «Hello World!» проекта, а вот отлично подходит для запуска приложения.
+Нажмите кнопку **ОК**. Visual Web Developer использовал шаблон по умолчанию для только что созданного проекта MVC ASP.NET, так что у вас уже есть рабочее приложение, не делая ничего. Это простой "Hello World!" и это хорошее место для запуска приложения.
 
 [![](intro-to-aspnet-mvc-3/_static/image10.png)](intro-to-aspnet-mvc-3/_static/image9.png)
 
@@ -85,13 +85,13 @@ Visual Web Developer — это интегрированная среда раз
 
 ![](intro-to-aspnet-mvc-3/_static/image11.png)
 
-Обратите внимание, что сочетание клавиш, чтобы начать отладку F5.
+Обратите внимание, что для начала отладки используется сочетание клавиш F5.
 
-F5 приводит к Visual Web Developer для запуска веб-сервера разработки и выполнения веб-приложения. Затем VWD запускает браузер и откроется домашняя страница приложения. Обратите внимание, что говорит в адресной строке браузера `localhost` и не что-либо типа `example.com`. Это потому, что `localhost` всегда указывает на локальном компьютере, который выполняется, в этом случае приложение, вы только что выполнили. При запуске веб-проекта материалов по VWD для проекта используется случайный порт. В приведенном ниже рисунке случайный номер порта является 43246. Проект, вероятно, будет использовать другой номер порта.
+F5 заставляет Visual Web Developer запустить веб-сервер разработки и запустить веб-приложение. Затем VWD запускает браузер и открывает домашнюю страницу приложения. Обратите внимание, что в адресной строке браузера указано `localhost` и не что-то вроде `example.com`. Это связано с тем, что `localhost` всегда указывает на локальный компьютер, который в данном случае выполняет только что созданное приложение. Когда VWD запускает веб-проект, для проекта используется случайный порт. На приведенном ниже рисунке случайным номером порта является 43246. Возможно, ваш проект использует другой номер порта.
 
 ![](intro-to-aspnet-mvc-3/_static/image12.png)
 
-По умолчанию этот шаблон по умолчанию дает вам две страницы посетить и страницу основное имя для входа. Давайте изменить работу этого приложения и немного поговорим об ASP.NET MVC в процессе. Закройте обозреватель и изменим код.
+Этот шаблон по умолчанию предоставляет две страницы для посещения и базовую страницу входа. Давайте изменим, как работает это приложение, и немного изучите ASP.NET MVC в процессе. Закройте браузер и измените код.
 
 > [!div class="step-by-step"]
-> [Вперед](adding-a-controller.md)
+> [Дальше](adding-a-controller.md)

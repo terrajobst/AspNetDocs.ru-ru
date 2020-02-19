@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: accfa16a-ab15-4c26-9ad4-babdc2a77d2e
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/introduction
 msc.type: authoredcontent
-ms.openlocfilehash: 8a4ef3aa37a9296e92fbeb513968e3abeee072d0
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: b88573b3702b755b155e8da35f5f8a67931bafc6
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74585524"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457119"
 ---
 # <a name="building-real-world-cloud-apps-with-azure"></a>Создание реальных облачных приложений с помощью Azure
 
-[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (]((https://twitter.com/RickAndMSFT)), том [Dykstra)](https://github.com/tdykstra)
+[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (](https://twitter.com/RickAndMSFT), том [Dykstra)](https://github.com/tdykstra)
 
 [Скачивание решения ИТ-проекта](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [Загрузка электронной книги](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -167,11 +167,11 @@ ms.locfileid: "74585524"
 - [Веб-приложения в службе приложений Azure](https://azure.microsoft.com/services/app-service/web/). Страница портала для документации по веб-приложениям Azure.
 - [Веб-приложения, облачные службы и виртуальные машины: когда следует использовать?](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) WAWS, как показано в этой главе, — это один из трех способов запуска веб-приложений в Azure. В этой статье объясняются различия между тремя способами и даются рекомендации по выбору того, какой из них подходит для вашего сценария. Как и веб-сайты, облачные службы — это функция PaaS в Azure. Виртуальные машины — это функция IaaS. Описание PaaS и IaaS см. в главе « [Параметры данных](data-storage-options.md#paasiaas) ».
 
-Видеоматериалы:
+Видеоролики:
 
 - [Скотт Гатри (начинается на шаге 0 — что такое Cloud OS Azure?](https://azure.microsoft.com/documentation/videos/what-is-the-cloud-os-scottgu/)
 - [Архитектура веб-сайтов — с Стефан Шаков (](https://azure.microsoft.com/documentation/videos/why-azure-web-sites-plus-architecture/).
 - [Веб-сайты Azure внутренне с NIR mashkowski)](https://channel9.msdn.com/Shows/Web+Camps+TV/Windows-Azure-Web-Sites-Internals-with-Nir-Mashkowski).
 
 > [!div class="step-by-step"]
-> [Вперед](automate-everything.md)
+> [Дальше](automate-everything.md)

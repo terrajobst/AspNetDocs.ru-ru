@@ -5,12 +5,12 @@ description: Работа с файлами cookie SameSite и открытым 
 ms.author: riande
 ms.date: 12/6/2019
 uid: owin-samesite
-ms.openlocfilehash: ac5ae24eeb9e8e1cc6296667a4bebef72c3eb62c
-ms.sourcegitcommit: 7b1e1784213dd4c301635f9e181764f3e2f94162
+ms.openlocfilehash: a3353fd0f0332899aaba26b83aea0ff7c3a6d19b
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74993074"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77455741"
 ---
 # <a name="samesite-cookies-and-the-open-web-interface-for-net-owin"></a>SameSite файлы cookie и открытый веб-интерфейс для .NET (OWIN)
 
@@ -74,14 +74,14 @@ owinContext.Response.Cookies.Append("My Key", "My Value", new CookieOptions()
 * Указывает, что файлы cookie обрабатываются как `SameSite=Lax` по умолчанию.
 * Указывает файлы cookie, явно подтверждающие `SameSite=None` для включения межсайтовой доставки, должны быть помечены как `Secure`. `None` — это новая запись для отказаться.
 * По умолчанию в [фев 2020](https://blog.chromium.org/2019/10/developers-get-ready-for-new.html)планируется включить по [Chrome](https://chromestatus.com/feature/5088147346030592) . Браузеры начали переходить к этому стандарту в 2019.
-* Поддерживается исправлениями, которые были выпущены, как описано в статьях базы знаний. Для получения дополнительной информации см. <xref:samesite/kbs-samesite>.
+* Поддерживается исправлениями, которые были выпущены, как описано в статьях базы знаний. Дополнительные сведения см. в разделе <xref:samesite/kbs-samesite>.
 
 <a name="sob"></a>
 
 ## <a name="supporting-older-browsers"></a>Поддержка старых браузеров
 
 Стандарт 2016 `SameSite` предписание, что неизвестные значения должны обрабатываться как `SameSite=Strict` значения. Приложения, доступ к которым осуществляется из старых браузеров, поддерживающих 2016 `SameSite` Standard, могут прерываться при получении свойства `SameSite` со значением `None`. Веб-приложения должны реализовывать обнаружение браузера, если они будут поддерживать старые браузеры. ASP.NET не реализует обнаружение браузеров, так как значения агентов пользователя очень энергонезависимы и часто меняются. Точка расширения в [икукиеманажер](/previous-versions/aspnet/dn800238(v%3Dvs.113)) позволяет подключать определенные логики агента пользователя.
-<!-- https://docs.microsoft.com/en-us/previous-versions/aspnet/dn800238(v%3Dvs.113) -->
+<!-- https://docs.microsoft.com/previous-versions/aspnet/dn800238(v%3Dvs.113) -->
 
 В `Startup.Configuration`добавьте код, аналогичный приведенному ниже:
 

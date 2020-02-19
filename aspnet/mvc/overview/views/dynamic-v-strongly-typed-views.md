@@ -8,53 +8,53 @@ ms.date: 01/27/2011
 ms.assetid: 0cbd88da-0da6-4605-b222-2835c6478304
 msc.legacyurl: /mvc/overview/views/dynamic-v-strongly-typed-views
 msc.type: authoredcontent
-ms.openlocfilehash: b3941ce3c8d3aa3439337c7a4bf786395321d2ca
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.openlocfilehash: 3e81c6381b1e280e3b74cb7eb6ea6e6c3224e655
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65126321"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77455681"
 ---
 # <a name="dynamic-v-strongly-typed-views"></a>Динамические и строго типизированные представления
 
-по [Рик Андерсон]((https://twitter.com/RickAndMSFT))
+по [Рик Андерсон (](https://twitter.com/RickAndMSFT)
 
-Существует три способа для передачи данных из контроллера в представление в ASP.NET MVC 3:
+Существует три способа передачи информации из контроллера в представление в ASP.NET MVC 3:
 
-1. В виде строго типизированной модели объекта.
-2. Как динамический тип (с помощью @model динамические)
+1. Как объект модели со строгой типизацией.
+2. Как динамический тип (с помощью @model Dynamic)
 3. Использование ViewBag
 
-Я написал простое приложение MVC 3 верхней блога для сравнения и сравните динамические и строго типизированные представления. Контроллер начинается с простой список блогов:
+Я написал простое приложение блогов MVC третьего уровня для сравнения динамических и строго типизированных представлений. Контроллер начинается с простого списка блогов:
 
 [!code-csharp[Main](dynamic-v-strongly-typed-views/samples/sample1.cs)]
 
-Щелкните правой кнопкой мыши в методе IndexNotStonglyTyped() и добавить представление Razor.
+Щелкните правой кнопкой мыши метод Индекснотстонглитипед () и добавьте представление Razor.
 
-[![8475.NotStronglyTypedView[1]](dynamic-v-strongly-typed-views/_static/image2.png)](dynamic-v-strongly-typed-views/_static/image1.png)
+[![8475. Нотстронглитипедвиев [1]](dynamic-v-strongly-typed-views/_static/image2.png)](dynamic-v-strongly-typed-views/_static/image1.png)
 
-Убедитесь, что **создать строго типизированное представление** флажок не установлен. Результирующее представление не содержат множество:
+Убедитесь, что флажок **создать строго типизированное представление** не установлен. Результирующее представление не содержит много:
 
 [!code-cshtml[Main](dynamic-v-strongly-typed-views/samples/sample2.cshtml)]
 
 [!code-cshtml[Main](dynamic-v-strongly-typed-views/samples/sample3.cshtml)]
 
-Поскольку мы используем динамический и не строго типизированного представления, intellisense не помогают. Ниже приведен полный код:
+Так как мы используем динамическое, а не строго типизированное представление, IntelliSense не помогает нам. Завершенный код показан ниже:
 
 [!code-cshtml[Main](dynamic-v-strongly-typed-views/samples/sample4.cshtml)]
 
-[![6646.NotStronglyTypedView_5F00_IE[1]](dynamic-v-strongly-typed-views/_static/image4.png)](dynamic-v-strongly-typed-views/_static/image3.png)
+[![6646. NotStronglyTypedView_5F00_IE [1]](dynamic-v-strongly-typed-views/_static/image4.png)](dynamic-v-strongly-typed-views/_static/image3.png)
 
-Теперь мы добавим строго типизированного представления. Добавьте следующий код в контроллер:
+Теперь мы добавим строго типизированное представление. Добавьте следующий код в контроллер:
 
 [!code-csharp[Main](dynamic-v-strongly-typed-views/samples/sample5.cs)]
 
-Обратите внимание, что это точно тем же возвращаемое View(topBlogs); вызывать как не строго типизированного представления. Щелкните правой кнопкой мыши внутри элемента *StonglyTypedIndex()* и выберите **Добавление представления**. На этот раз выберите **блог** класс модели и выберите **списка** как шаблон каркаса.
+Обратите внимание, что это точно такое же возвращаемое представление (Топблогс); Вызовите метод как нестрого типизированное представление. Щелкните правой кнопкой мыши внутри *стонглитипединдекс ()* и выберите **Добавить представление**. На этот раз выберите класс модель **блога** и выберите **список** в качестве шаблона шаблонов.
 
-[![5658.StrongView [1]](dynamic-v-strongly-typed-views/_static/image6.png)](dynamic-v-strongly-typed-views/_static/image5.png)
+[![5658. Стронгвиев [1]](dynamic-v-strongly-typed-views/_static/image6.png)](dynamic-v-strongly-typed-views/_static/image5.png)
 
-В новый шаблон представления мы обеспечить поддержку intellisense.
+В новом шаблоне представления мы получаем поддержку IntelliSense.
 
-[![7002.IntelliSense[1]](dynamic-v-strongly-typed-views/_static/image8.png)](dynamic-v-strongly-typed-views/_static/image7.png)
+[![7002. IntelliSense [1]](dynamic-v-strongly-typed-views/_static/image8.png)](dynamic-v-strongly-typed-views/_static/image7.png)
 
-Можно загрузить проект c# [здесь](https://blogs.msdn.com/cfs-file.ashx/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-11-73-SSMS/1817.Mvc3ViewDemo.zip).
+Проект c# можно скачать [здесь](https://blogs.msdn.com/cfs-file.ashx/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-01-11-73-SSMS/1817.Mvc3ViewDemo.zip).

@@ -8,16 +8,16 @@ ms.date: 10/17/2013
 ms.assetid: caa1ba4a-f9f0-4181-ba21-042e3997861d
 msc.legacyurl: /mvc/overview/getting-started/introduction/accessing-your-models-data-from-a-controller
 msc.type: authoredcontent
-ms.openlocfilehash: e01953dcfb2abf2db53a8aa869aa75b40485daca
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: 5d882d765133d32d3acdba9ffb5d43b69119a273
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519093"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77457236"
 ---
 # <a name="accessing-your-models-data-from-a-controller"></a>Доступ к данным модели из контроллера
 
-по [Рик Андерсон (]((https://twitter.com/RickAndMSFT))
+по [Рик Андерсон (](https://twitter.com/RickAndMSFT)
 
 [!INCLUDE [Tutorial Note](index.md)]
 

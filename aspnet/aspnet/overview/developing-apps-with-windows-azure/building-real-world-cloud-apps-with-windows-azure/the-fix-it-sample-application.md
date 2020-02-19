@@ -8,16 +8,16 @@ ms.date: 06/12/2014
 ms.assetid: 1bc333c5-f096-4ea7-b170-779accc21c1a
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/the-fix-it-sample-application
 msc.type: authoredcontent
-ms.openlocfilehash: e6fda47babd3c2505315f42667c45f09482218c2
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: 896196bdb6a6b0d12a6c798ead510e37dd38a9fc
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74583747"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456885"
 ---
 # <a name="appendix-the-fix-it-sample-application-building-real-world-cloud-apps-with-azure"></a>Приложение. пример приложения для решения проблем (создание облачных приложений в реальном мире с помощью Azure)
 
-[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (]((https://twitter.com/RickAndMSFT)), том [Dykstra)](https://github.com/tdykstra)
+[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (](https://twitter.com/RickAndMSFT), том [Dykstra)](https://github.com/tdykstra)
 
 [Скачайте проект Fix It](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4)
 
@@ -39,7 +39,7 @@ ms.locfileid: "74583747"
 
 В следующем списке приведены проблемы, которые следует решить в рабочем приложении, но по одной причине или другой мы решили не обращаться к первоначальному выпуску примера приложения Fix ИТ.
 
-### <a name="security"></a>по безопасности
+### <a name="security"></a>Безопасность
 
 - Убедитесь, что невозможно назначить задачу несуществующему владельцу.
 - Убедитесь, что вы можете просматривать и изменять только те задачи, которые были созданы или назначены вам.
@@ -250,7 +250,7 @@ ASP.NET автоматически предотвращает множество
    4. Выберите **Несколько запускаемых проектов**.
    5. В раскрывающемся списке **действие** в разделе Мификсит and Мификситклаудсервице выберите **Start**.
    6. Нажмите кнопку **ОК**.
-   7. Нажмите клавишу **F5** , чтобы запустить оба проекта.
+   7. Нажмите клавишу **F5**, чтобы запустить оба проекта.
 
       При запуске проекта Мификситклаудсервице Visual Studio запускает эмулятор вычислений Azure. В зависимости от конфигурации брандмауэра может потребоваться разрешить эмулятор через брандмауэр.
 
@@ -263,7 +263,7 @@ ASP.NET автоматически предотвращает множество
 
 В этих инструкциях предполагается, что вы уже скачали и запустили решение для устранения проблем в локальной среде, а также у вас есть учетная запись Azure или есть подписка Azure, для которой разрешено управление.
 
-1. Установите консоль **Azure PowerShell** . Инструкции см. [в разделе Установка и настройка Azure PowerShell](https://docs.microsoft.com/powershell/azure/overview?view=azurermps-4.3.1).
+1. Установите консоль **Azure PowerShell** . Инструкции см. в статье [Приступая к работе с командлетами Azure PowerShell](https://docs.microsoft.com/powershell/azure/overview?view=azurermps-4.3.1).
 
     Эта настроенная консоль настроена для работы с подпиской Azure. Модуль Azure устанавливается в каталог *Program Files* и автоматически импортируется при каждом использовании консоли Azure PowerShell.
 
@@ -333,7 +333,7 @@ ASP.NET автоматически предотвращает множество
 
 Наиболее распространенные ошибки, возникающие при выполнении этих сценариев, связаны с разрешениями. Убедитесь, что `Add-AzureAccount` и `Import-AzurePublishSettingsFile` были успешными и использовали их для одной и той же подписки Azure. Даже если `Add-AzureAccount` был успешным, может потребоваться запустить его снова. Разрешения, добавленные `Add-AzureAccount` сроком действия, истекает через 12 часов.
 
-### <a name="object-reference-not-set-to-an-instance-of-an-object"></a>ссылка на объект не указывает на экземпляр объекта.
+### <a name="object-reference-not-set-to-an-instance-of-an-object"></a>Ссылка на объект не указывает на экземпляр объекта.
 
 Если скрипт возвращает ошибки, например "ссылка на объект не задана экземпляром объекта", это означает, что Windows PowerShell не удается найти объект для обработки (это исключение null reference), запустите командлет `Add-AzureAccount` и повторите сценарий.
 

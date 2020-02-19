@@ -9,22 +9,22 @@ ms.assetid: 053e23c4-13c9-40fa-87cb-3e9b0823b31e
 ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity
 msc.type: authoredcontent
-ms.openlocfilehash: 5f5218ca6c65ed3a2cd39d4e100349efa35d14cd
-ms.sourcegitcommit: 6f0e10e4ca61a1e5534b09c655fd35cdc6886c8a
+ms.openlocfilehash: 527b4392846e60dae0b216fdeabf21fd6618e4d7
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74115098"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456742"
 ---
 # <a name="two-factorauthentication-using-sms-and-email-with-aspnet-identity"></a>Двухфакторная проверка подлинности с помощью SMS и электронной почты с ASP.NET Identity
 
-[Хао кунг](https://github.com/HaoK), [получения запись блога](https://github.com/rustd), [Рик Андерсон (]((https://twitter.com/RickAndMSFT)), [Сухас Джоши](https://github.com/suhasj)
+[Хао кунг](https://github.com/HaoK), [получения запись блога](https://github.com/rustd), [Рик Андерсон (](https://twitter.com/RickAndMSFT), [Сухас Джоши](https://github.com/suhasj)
 
 > В этом руководстве показано, как настроить двухфакторную проверку подлинности (2FA) с помощью SMS и электронной почты.
 > 
 > Эта статья была написана на Рик Андерсон (([@RickAndMSFT](https://twitter.com/#!/RickAndMSFT)), получения запись блога ([@rustd](https://twitter.com/rustd)), Хао Кунг и Сухас Джоши. Пример NuGet написан в основном с помощью Хао кунг.
 
-В этом разделе рассматриваются следующие вопросы:
+В этой статье рассматриваются следующие вопросы:
 
 - [Создание примера удостоверения](#build)
 - [Настройка SMS для двухфакторной проверки подлинности](#SMS)
@@ -69,7 +69,7 @@ ms.locfileid: "74115098"
 2. **Установка дополнительных пакетов или добавление ссылок на службы**  
   
    Twilio  
-   В консоли диспетчера пакетов введите следующую команду:  
+   В консоли диспетчера пакетов введите следующую команду.  
     `Install-Package Twilio`  
   
    АСПСМС:  
@@ -129,7 +129,7 @@ ms.locfileid: "74115098"
   
     ![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image5.png)
 
-### <a name="examine-the-code"></a>Изучение кода
+### <a name="examine-the-code"></a>Анализ кода
 
 [!code-csharp[Main](two-factor-authentication-using-sms-and-email-with-aspnet-identity/samples/sample3.cs?highlight=2)]
 
@@ -177,7 +177,7 @@ ms.locfileid: "74115098"
 
 <a id="enable2"></a>
 
-## <a name="enable-two-factor-authentication"></a>Включить двухфакторную проверку подлинности
+## <a name="enable-two-factor-authentication"></a>Включение двухфакторной проверки подлинности
 
 В примере приложения необходимо использовать пользовательский интерфейс, чтобы включить двухфакторную проверку подлинности (2FA). Чтобы включить 2FA, щелкните свой идентификатор пользователя (псевдоним электронной почты) на панели навигации.![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image9.png)  
 Щелкните Включить 2FA.![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image10.png) Выйдите из, а затем снова войдите в систему. Если вы включили электронную почту (см. [предыдущий учебник](account-confirmation-and-password-recovery-with-aspnet-identity.md)), можно выбрать SMS или email для 2FA.![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image11.png) Отобразится страница Проверка кода, где можно ввести код (с помощью SMS или электронной почты).![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image12.png) Если установить флажок **Запомнить этот браузер** , вам не потребуется использовать 2FA для входа на этот компьютер и браузер. При включении 2FA и нажатии кнопки " **Запомнить" Этот браузер** обеспечит надежную защиту 2FA от злоумышленников, пытающихся получить доступ к вашей учетной записи, если у них нет доступа к вашему компьютеру. Это можно сделать на любом частном компьютере, который вы регулярно используете. Запоминаем **этот браузер**, вы получаете дополнительную безопасность 2FA на компьютерах, которые вы не используете регулярно, и вы получаете удобный способ, чтобы не выполнять 2FA на своих компьютерах. 

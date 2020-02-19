@@ -8,16 +8,16 @@ ms.date: 11/03/2015
 ms.assetid: 7ead83bc-c08c-4b26-8617-00e07292e35c
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling
 msc.type: authoredcontent
-ms.openlocfilehash: fc281e3d8f7c9edd4d98b029a67e58113132a8b3
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.openlocfilehash: e798cb83cfb97db63fef6dc38c8f62804461d01b
+ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74583658"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77456859"
 ---
 # <a name="transient-fault-handling-building-real-world-cloud-apps-with-azure"></a>Обработка временных сбоев (создание облачных приложений в реальном мире с помощью Azure)
 
-[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (]((https://twitter.com/RickAndMSFT)), том [Dykstra)](https://github.com/tdykstra)
+[Майк Уоссон](https://github.com/MikeWasson), [Рик Андерсон (](https://twitter.com/RickAndMSFT), том [Dykstra)](https://github.com/tdykstra)
 
 [Скачивание решения ИТ-проекта](https://code.msdn.microsoft.com/Fix-It-app-for-Building-cdd80df4) или [Загрузка электронной книги](https://blogs.msdn.com/b/microsoft_press/archive/2014/07/23/free-ebook-building-cloud-apps-with-microsoft-azure.aspx)
 
@@ -98,7 +98,7 @@ ms.locfileid: "74583658"
 
 Образец кода
 
-- [Основы облачной службы в Azure](https://code.msdn.microsoft.com/Cloud-Service-Fundamentals-4ca72649). Пример приложения, созданный группой консультирования клиентов Microsoft Azure, который демонстрирует использование [блока обработки временной ошибки Enterprise Library](http://nuget.org/packages/EnterpriseLibrary.TransientFaultHandling/) (тфх). Дополнительные сведения см. в разделе [основы облачной службы уровень доступа к данным — обработка временных сбоев](https://social.technet.microsoft.com/wiki/contents/articles/18665.cloud-service-fundamentals-data-access-layer-transient-fault-handling.aspx). ТФХ рекомендуется использовать для доступа к базе данных непосредственно с помощью ADO.NET (без использования Entity Framework).
+- [Основы облачной службы в Azure](https://code.msdn.microsoft.com/Cloud-Service-Fundamentals-4ca72649). Пример приложения, созданный группой консультирования клиентов Microsoft Azure, который демонстрирует использование [блока обработки временной ошибки Enterprise Library](http://nuget.org/packages/EnterpriseLibrary.TransientFaultHandling/) (тфх). Для получения дополнительных сведений обратитесь к разделу [Основы облачной службы. Уровень доступа к данным: обработка временных ошибок](https://social.technet.microsoft.com/wiki/contents/articles/18665.cloud-service-fundamentals-data-access-layer-transient-fault-handling.aspx). ТФХ рекомендуется использовать для доступа к базе данных непосредственно с помощью ADO.NET (без использования Entity Framework).
 
 > [!div class="step-by-step"]
 > [Назад](monitoring-and-telemetry.md)
