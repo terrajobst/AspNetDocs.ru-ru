@@ -1986,7 +1986,7 @@
                   href: web-forms/videos/net-4/core/aspnet-4-quick-hit-predictable-client-ids.md
                 - name: Метод программы HtmlEncoder
                   href: web-forms/videos/net-4/core/aspnet-4-quick-hit-the-htmlencoder-utility-method.md
-            - name: Data
+            - name: Данные
               href: web-forms/videos/net-4/data/index.md
               items:
                 - name: Выбор сохраняемых строк GridView
@@ -3770,7 +3770,19 @@
     - name: Техническая документация
       href: whitepapers/overview.md
     - name: ASP.NET SameSite
-      href: SameSite/system-web-samesite.md
+      items:
+        - name: Файлы cookie SameSite в ASP.NET
+          href: SameSite/system-web-samesite.md
+        - name: Статьи базы знаний по SameSite
+          uid: samesite/kbs-samesite
+        - name: 'C# MVC'
+          uid: samesite/csMVC
+        - name: 'C# WebForms'
+          uid: samesite/CSharpWebForms
+        - name: VB WebForms
+          uid: samesite/vbWF
+        - name: VB MVC
+          uid: samesite/vbMVC
     - name: "Общие сведения о веб-разработке в ASP.NET\_4 и Visual Studio\_2010"
       href: whitepapers/aspnet4/index.md
       items:
