@@ -8,11 +8,11 @@ title: Документация по ASP.NET
 ms.date: 08/24/2018
 description: Сведения о разработке ASP.NET и веб-приложениях ASP.NET. Вы можете получить документацию, примеры кода, учебники и многое другое.
 ms.openlocfilehash: 6309704444d60d42d49c3a8f1683045dc503e761
-ms.sourcegitcommit: cd35be4b25eb05724a5f074214bbdf6573349eda
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70161695"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78419778"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
