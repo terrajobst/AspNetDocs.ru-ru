@@ -1,29 +1,29 @@
 ---
 uid: web-forms/videos/data-access/adonet-data-services/how-to-manually-bind-a-dataset-to-a-datagrid
-title: Как привязка Dataset вручную к Datagrid | Документация Майкрософт
+title: Как вручную привязать набор данных к элементу DataGrid | Документация Майкрософт
 author: JoeStagner
-description: В этом видео, часть 2 из 3, (Joe Stagner) используется пример приложения ASP, созданный в части 1, для демонстрации привязка dataset вручную к datagrid. Для ...
+description: В этом видео, часть 2 из 3, Джо Stagner) использует пример приложения ASP, созданный в первой части, чтобы продемонстрировать, как вручную привязать набор данных к элементу DataGrid. Для ...
 ms.author: riande
 ms.date: 08/07/2008
 ms.assetid: 1e339f8a-72ea-463a-b186-c09dd7b12993
 msc.legacyurl: /web-forms/videos/data-access/adonet-data-services/how-to-manually-bind-a-dataset-to-a-datagrid
 msc.type: video
 ms.openlocfilehash: 5ce22e24160269c225d8497f31b64809ede93c71
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389301"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78518082"
 ---
-# <a name="how-to-manually-bind-a-dataset-to-a-datagrid"></a><span data-ttu-id="11c26-104">Как привязка Dataset вручную к Datagrid</span><span class="sxs-lookup"><span data-stu-id="11c26-104">How to Manually Bind a Dataset to a Datagrid</span></span>
+# <a name="how-to-manually-bind-a-dataset-to-a-datagrid"></a><span data-ttu-id="27a3a-104">Как вручную привязать набор данных к элементу управления DataGrid</span><span class="sxs-lookup"><span data-stu-id="27a3a-104">How to Manually Bind a Dataset to a Datagrid</span></span>
 
-<span data-ttu-id="11c26-105">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="11c26-105">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="27a3a-105">кем [Джо Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="27a3a-105">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="11c26-106">В этом видео, часть 2 из 3, (Joe Stagner) используется пример приложения ASP, созданный в части 1, для демонстрации привязка dataset вручную к datagrid.</span><span class="sxs-lookup"><span data-stu-id="11c26-106">In this video, part 2 of 3, Joe Stagner uses the sample ASP application created in part one, to demonstrate how to manually bind a dataset to a datagrid.</span></span> <span data-ttu-id="11c26-107">Дополнительные сведения об этом видео см. в статье [создание уровня доступа к данным](../../../overview/data-access/introduction/creating-a-data-access-layer-vb.md) учебнике доступа данных.</span><span class="sxs-lookup"><span data-stu-id="11c26-107">For additional information about this video, read the [Creating a Data Access Layer](../../../overview/data-access/introduction/creating-a-data-access-layer-vb.md) data access tutorial.</span></span>
+<span data-ttu-id="27a3a-106">В этом видео, часть 2 из 3, Джо Stagner) использует пример приложения ASP, созданный в первой части, чтобы продемонстрировать, как вручную привязать набор данных к элементу DataGrid.</span><span class="sxs-lookup"><span data-stu-id="27a3a-106">In this video, part 2 of 3, Joe Stagner uses the sample ASP application created in part one, to demonstrate how to manually bind a dataset to a datagrid.</span></span> <span data-ttu-id="27a3a-107">Дополнительные сведения об этом видео см. в учебнике Создание доступа к данным [уровня доступа к данным](../../../overview/data-access/introduction/creating-a-data-access-layer-vb.md) .</span><span class="sxs-lookup"><span data-stu-id="27a3a-107">For additional information about this video, read the [Creating a Data Access Layer](../../../overview/data-access/introduction/creating-a-data-access-layer-vb.md) data access tutorial.</span></span>
 
-[<span data-ttu-id="11c26-108">&#9654;Просмотрите видео (7 минут)</span><span class="sxs-lookup"><span data-stu-id="11c26-108">&#9654; Watch video (7 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-manually-bind-a-dataset-to-a-datagrid)
+[<span data-ttu-id="27a3a-108">&#9654;Смотреть видео (7 минут)</span><span class="sxs-lookup"><span data-stu-id="27a3a-108">&#9654; Watch video (7 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-manually-bind-a-dataset-to-a-datagrid)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="11c26-109">[Назад](data-access-layers-in-aspnet-applications.md)
-> [Вперед](how-to-work-with-datasets-and-filters-from-an-asp-application.md)</span><span class="sxs-lookup"><span data-stu-id="11c26-109">[Previous](data-access-layers-in-aspnet-applications.md)
+> <span data-ttu-id="27a3a-109">[Назад](data-access-layers-in-aspnet-applications.md)
+> [Вперед](how-to-work-with-datasets-and-filters-from-an-asp-application.md)</span><span class="sxs-lookup"><span data-stu-id="27a3a-109">[Previous](data-access-layers-in-aspnet-applications.md)
 [Next](how-to-work-with-datasets-and-filters-from-an-asp-application.md)</span></span>
