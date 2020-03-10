@@ -1,29 +1,29 @@
 ---
 uid: mvc/videos/mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-12-mocking
-title: Интернет-магазин на ASP.NET MVC, часть 12. Макетирование | Документация Майкрософт
+title: 'Магазин ASP.NET MVC, часть 12: макеты | Документация Майкрософт'
 author: robconery
-description: В этой серии я реализую макетирования, поэтому я могу проверить Мой действие проверки подлинности для моей UserController.
+description: В этой серии я реализую макетирование, чтобы можно было протестировать действие проверки подлинности для моей Усерконтроллер.
 ms.author: riande
 ms.date: 06/19/2008
 ms.assetid: 9a0f04b9-6a49-4e2c-9c12-03ab71ab2705
 msc.legacyurl: /mvc/videos/mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-12-mocking
 msc.type: video
 ms.openlocfilehash: 481b3185b2050d2ac944da8969ce68353f89a3ef
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411531"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78432330"
 ---
-# <a name="aspnet-mvc-storefront-part-12-mocking"></a><span data-ttu-id="a2c26-103">Интернет-магазин на ASP.NET MVC, часть 12. Макетирование</span><span class="sxs-lookup"><span data-stu-id="a2c26-103">ASP.NET MVC Storefront Part 12: Mocking</span></span>
+# <a name="aspnet-mvc-storefront-part-12-mocking"></a><span data-ttu-id="b825b-103">Магазин ASP.NET MVC, часть 12: макетирование</span><span class="sxs-lookup"><span data-stu-id="b825b-103">ASP.NET MVC Storefront Part 12: Mocking</span></span>
 
-<span data-ttu-id="a2c26-104">по [Роб Conery](https://github.com/robconery)</span><span class="sxs-lookup"><span data-stu-id="a2c26-104">by [Rob Conery](https://github.com/robconery)</span></span>
+<span data-ttu-id="b825b-104">по [Проконусу Вадима](https://github.com/robconery)</span><span class="sxs-lookup"><span data-stu-id="b825b-104">by [Rob Conery](https://github.com/robconery)</span></span>
 
-<span data-ttu-id="a2c26-105">В этой серии я реализую макетирования, поэтому я могу проверить Мой действие проверки подлинности для моей UserController.</span><span class="sxs-lookup"><span data-stu-id="a2c26-105">In this episode I implement mocking so I can test my Authentication action for my UserController.</span></span>
+<span data-ttu-id="b825b-105">В этой серии я реализую макетирование, чтобы можно было протестировать действие проверки подлинности для моей Усерконтроллер.</span><span class="sxs-lookup"><span data-stu-id="b825b-105">In this episode I implement mocking so I can test my Authentication action for my UserController.</span></span>
 
-[<span data-ttu-id="a2c26-106">&#9654;Просмотрите видео (18 минут)</span><span class="sxs-lookup"><span data-stu-id="a2c26-106">&#9654; Watch video (18 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-12-mocking)
+[<span data-ttu-id="b825b-106">&#9654;Смотреть видео (18 минут)</span><span class="sxs-lookup"><span data-stu-id="b825b-106">&#9654; Watch video (18 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-12-mocking)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="a2c26-107">[Назад](aspnet-mvc-storefront-part-11-hooking-up-the-shopping-cart-and-using-components.md)
-> [Вперед](aspnet-mvc-storefront-part-13-dependency-injection.md)</span><span class="sxs-lookup"><span data-stu-id="a2c26-107">[Previous](aspnet-mvc-storefront-part-11-hooking-up-the-shopping-cart-and-using-components.md)
+> <span data-ttu-id="b825b-107">[Назад](aspnet-mvc-storefront-part-11-hooking-up-the-shopping-cart-and-using-components.md)
+> [Вперед](aspnet-mvc-storefront-part-13-dependency-injection.md)</span><span class="sxs-lookup"><span data-stu-id="b825b-107">[Previous](aspnet-mvc-storefront-part-11-hooking-up-the-shopping-cart-and-using-components.md)
 [Next](aspnet-mvc-storefront-part-13-dependency-injection.md)</span></span>
