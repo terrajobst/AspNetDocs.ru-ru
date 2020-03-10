@@ -9,13 +9,13 @@ ms.assetid: e618c37c-68f3-49aa-9fda-f86cb3b578b9
 msc.legacyurl: /mvc/videos
 msc.type: book
 ms.openlocfilehash: 4557a4442d59ec6314dcd2039c8c89b8b5b3d821
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59414339"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78432348"
 ---
-# <a name="videos"></a>Видеоролики
+# <a name="videos"></a>Видео
 
 - [ASP.NET MVC 4](mvc-4/index.md)
 
@@ -43,10 +43,10 @@ ms.locfileid: "59414339"
         - [Отображение таблицы данных в базе данных](mvc-2/how-do-i/displaying-a-table-of-database-data.md)
         - [80-минутный видеоролик с техническими сведениями об ASP.NET MVC для разработчиков, создающих приложение NerdDinner](mvc-2/how-do-i/what-is-aspnet-mvc-80-minute-technical-video-for-developers-building-nerddinner.md)
         - [3-минутный видеоролик о преимуществах ASP.NET MVC 3 для специалистов, принимающих решения](mvc-2/how-do-i/why-aspnet-mvc-3-minute-overview-video-for-decision-makers.md)
-        - [ASP.NET MVC: Как 10-минутный Видеоролик с техническими сведениями для разработчиков](mvc-2/how-do-i/aspnet-mvc-how-10-minute-technical-video-for-developers.md)
+        - [10-минутный видеоролик с техническими сведениями об ASP.NET MVC для разработчиков](mvc-2/how-do-i/aspnet-mvc-how-10-minute-technical-video-for-developers.md)
         - [Возвращение данных в формате JSON для вызова AJAX в веб-приложении ASP.NET MVC](mvc-2/how-do-i/how-do-i-return-json-formatted-data-for-an-ajax-call-in-an-aspnet-mvc-web-application.md)
         - [Работа с данными в частичных представлениях ASP.NET MVC](mvc-2/how-do-i/how-do-i-work-with-data-in-aspnet-mvc-partial-views.md)
-        - [Реализация моделей представлений для управления данными по представлениям ASP.NET MVC](mvc-2/how-do-i/how-do-i-implement-view-models-to-manage-data-for-aspnet-mvc-views.md)
+        - [Реализация представлений моделей для управления данными в ASP.NET представлениях MVC](mvc-2/how-do-i/how-do-i-implement-view-models-to-manage-data-for-aspnet-mvc-views.md)
         - [Создание пользовательского вспомогательного метода HTML для приложения MVC](mvc-2/how-do-i/how-do-i-create-a-custom-html-helper-for-an-mvc-application.md)
         - [Работа со связывателями моделей в приложении MVC](mvc-2/how-do-i/how-do-i-work-with-model-binders-in-an-mvc-application.md)
         - [Использование атрибутов HttpVerbs в приложениях MVC](mvc-2/how-do-i/how-do-i-use-httpverbs-attributes-in-an-mvc-application.md)
@@ -60,45 +60,45 @@ ms.locfileid: "59414339"
         - [Эффективное изучение ASP.NET MVC](mvc-2/how-do-i/how-to-best-learn-asp-net-mvc.md)
     - [ASP.NET MVC для общедоступного сайта](mvc-2/aspnet-mvc-for-the-rest-of-us/index.md)
 
-        - [ASP.NET MVC для общедоступного сайта: Часть 1](mvc-2/aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-1.md)
-        - [ASP.NET MVC для общедоступного сайта: Часть 2](mvc-2/aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-2.md)
-        - [ASP.NET MVC для общедоступного сайта: Часть 3](mvc-2/aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-3.md)
-        - [ASP.NET MVC для общедоступного сайта: Часть 4](mvc-2/aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-4.md)
+        - [ASP.NET MVC для общедоступного сайта. Часть 1](mvc-2/aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-1.md)
+        - [ASP.NET MVC для общедоступного сайта. Часть 2](mvc-2/aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-2.md)
+        - [ASP.NET MVC для общедоступного сайта. Часть 3](mvc-2/aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-3.md)
+        - [ASP.NET MVC для общедоступного сайта. Часть 4](mvc-2/aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-4.md)
     - [Приложение Music Store](mvc-2/music-store/index.md)
 
-        - [Music Store MVC, часть 1. Введение, инструменты и структура проекта](mvc-2/music-store/mvc-music-store-part-1-intro-tools-and-project-structure.md)
-        - [Music Store MVC, часть 2: Контроллеры](mvc-2/music-store/mvc-music-store-part-2-controllers.md)
-        - [Music Store MVC, часть 3. Views и ViewModels](mvc-2/music-store/mvc-music-store-part-3-views-and-viewmodels.md)
+        - [Приложение Music Store на MVC, часть 1. Введение, инструменты и структура проекта](mvc-2/music-store/mvc-music-store-part-1-intro-tools-and-project-structure.md)
+        - [Приложение Music Store на MVC, часть 2. Контроллеры](mvc-2/music-store/mvc-music-store-part-2-controllers.md)
+        - [Приложение Music Store на MVC, часть 3. Представления и ViewModels](mvc-2/music-store/mvc-music-store-part-3-views-and-viewmodels.md)
 - [ASP.NET MVC 1](mvc-1/index.md)
 
     - [Интернет-магазин на ASP.NET MVC](mvc-1/aspnet-mvc-storefront/index.md)
 
-        - [Часть Интернет-магазин на ASP.NET MVC 1. Обзор и описание архитектуры](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-1-architectural-discussion-and-overview.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 2. Шаблон репозитория](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-2-the-repository-pattern.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 3. Каналы и фильтры](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-3-pipes-and-filters.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 4. Потенциал LINQ To Sql](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-4-linq-to-sql-spike.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 5. Глобализация](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-5-globalization.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 6. Завершение репозитория и начало работы начального пользовательского интерфейса](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-6-finishing-the-repository-and-initial-ui-work.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 7. Маршрутизация и реализация пользовательского интерфейса](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-7-routing-and-ui-work.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 8. Тестирование контроллеров, завершение итерации 1](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-8-testing-controllers-iteration-1-complete.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 9. Корзина для покупок](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-9-the-shopping-cart.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 10. Рефакторинг корзины для покупок и авторизация](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-10-shopping-cart-refactor-and-authorization.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 11. Подключая Корзина для покупок и использование компонентов](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-11-hooking-up-the-shopping-cart-and-using-components.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 12. Макетирование](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-12-mocking.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 13. Внедрение зависимостей](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-13-dependency-injection.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 14. Взаимодействие с полнофункциональным клиентом](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-14-rich-client-interaction.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 15. Проверка открытого кода](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-15-public-code-review.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 16. Возврата членства с помощью OpenID](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-16-membership-redo-with-openid.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 17. Оформление заказа с помощью Джеффа Атвуда](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-17-checkout-with-jeff-atwood.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 18. Создает интерфейс](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-18-creating-an-experience.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 19. Обработка заказов с помощью рабочего процесса Windows](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-19-processing-orders-with-windows-workflow.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 19a. Последующего действия рабочего процесса Windows](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-19a-windows-workflow-followup.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 20. Ведение журнала](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-20-logging.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 21. Диспетчер заказов и персонализация](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-21-order-manager-and-personalization.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 22. Реструктуризация, перенаправление и PayPal](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 23. Начало работы с предметно ориентированное проектирование](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-23-getting-started-with-domain-driven-design.md)
-        - [Часть Интернет-магазин на ASP.NET MVC 24. Заключение](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-24-finis.md)
-    - [Обсуждения](mvc-1/conference-presentations/index.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 1. Описание архитектуры и общие сведения](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-1-architectural-discussion-and-overview.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 2. Шаблон репозитория](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-2-the-repository-pattern.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 3. Каналы и фильтры](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-3-pipes-and-filters.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 4. Потенциал Linq To Sql](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-4-linq-to-sql-spike.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 5. Глобализация](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-5-globalization.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 6. Завершение репозитория и начало работы над пользовательским интерфейсом](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-6-finishing-the-repository-and-initial-ui-work.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 7. Маршрутизация и реализация пользовательского интерфейса](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-7-routing-and-ui-work.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 8. Тестирование контроллеров, завершение итерации 1](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-8-testing-controllers-iteration-1-complete.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 9. Корзина для покупок](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-9-the-shopping-cart.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 10. Рефакторинг корзины для покупок и авторизация](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-10-shopping-cart-refactor-and-authorization.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 11. Подключение корзины для покупок и использование компонентов](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-11-hooking-up-the-shopping-cart-and-using-components.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 12. Макетирование](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-12-mocking.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 13. Внедрение зависимостей](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-13-dependency-injection.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 14. Взаимодействие с полнофункциональным клиентом](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-14-rich-client-interaction.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 15. Просмотр открытого кода](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-15-public-code-review.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 16. Восстановление членства с помощью OpenID](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-16-membership-redo-with-openid.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 17. Оформление заказа с Джеффом Этвудом (Jeff Atwood)](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-17-checkout-with-jeff-atwood.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 18. Формирование единого представления](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-18-creating-an-experience.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 19. Обработка заказов с Windows Workflow](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-19-processing-orders-with-windows-workflow.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 19a. Продолжение использования рабочего процесса Windows](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-19a-windows-workflow-followup.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 20. Ведение журнала](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-20-logging.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 21. Диспетчер заказов и персонализация](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-21-order-manager-and-personalization.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 22. Реструктуризация, перенаправление и PayPal](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 23. Начало работы с проектированием, управляемым предметной областью](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-23-getting-started-with-domain-driven-design.md)
+        - [Интернет-магазин на ASP.NET MVC, часть 24. Заключение](mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-24-finis.md)
+    - [Беседы](mvc-1/conference-presentations/index.md)
 
         - [Создание NerdDinner.com с помощью контроллера просмотра модели Microsoft ASP.NET (MVC)](mvc-1/conference-presentations/creating-nerddinnercom-with-microsoft-aspnet-model-view-controller-mvc.md)
         - [Платформа контроллера представления модели следующего поколения](mvc-1/conference-presentations/americas-next-top-model-view-controller-framework.md)

@@ -9,17 +9,17 @@ ms.assetid: dff54fcb-68b1-4488-89a2-ca97532d6a4c
 msc.legacyurl: /mvc/overview/older-versions-1/views/creating-page-layouts-with-view-master-pages-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 026e3efb4ebf84016aa0f6a5fda4af549fdadfcb
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74594197"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78435198"
 ---
 # <a name="creating-page-layouts-with-view-master-pages-c"></a>Создание макетов страниц с эталонными страницами представлений (C#)
 
 по [Майкрософт](https://github.com/microsoft)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/e/f/3/ef3f2ff6-7424-48f7-bdaa-180ef64c3490/ASPNET_MVC_Tutorial_12_CS.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/e/f/3/ef3f2ff6-7424-48f7-bdaa-180ef64c3490/ASPNET_MVC_Tutorial_12_CS.pdf)
 
 > В этом руководстве вы узнаете, как создать общий макет страницы для нескольких страниц в приложении, воспользовавшись преимуществами представления главных страниц. Можно использовать главную страницу представления, например, чтобы определить макет страницы с двумя столбцами и использовать макет с двумя столбцами для всех страниц веб-приложения.
 

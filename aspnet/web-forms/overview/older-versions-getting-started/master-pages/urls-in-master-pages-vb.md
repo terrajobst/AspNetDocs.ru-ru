@@ -9,11 +9,11 @@ ms.assetid: 43d1e83c-0092-4dcf-977c-e709c4dce7c3
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/urls-in-master-pages-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 01627988f68bb619969a5fe3cfaae68fe70b5d4f
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74588239"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78441108"
 ---
 # <a name="urls-in-master-pages-vb"></a>URL-адреса на эталонных страницах (VB)
 
@@ -58,7 +58,7 @@ ms.locfileid: "74588239"
 
 [!code-xml[Main](urls-in-master-pages-vb/samples/sample3.xml)]
 
-Только что созданная страница `Default.aspx` должна иметь четыре элемента управления содержимым, соответствующие четырем элементов управления ContentPlaceHolder в `Site.master`. Добавьте некоторый текст в элемент управления содержимым, ссылающийся на `MainContent` ContentPlaceHolder, а затем откройте страницу в браузере. Как показано на рис. 2, браузер не может найти файл изображения `PoweredByASPNET.gif`. Что здесь происходит?
+Только что созданная страница `Default.aspx` должна иметь четыре элемента управления содержимым, соответствующие четырем элементов управления ContentPlaceHolder в `Site.master`. Добавьте некоторый текст в элемент управления содержимым, ссылающийся на `MainContent` ContentPlaceHolder, а затем откройте страницу в браузере. Как показано на рис. 2, браузер не может найти файл изображения `PoweredByASPNET.gif`. В чем причина?
 
 Страница содержимого `~/Admin/Default.aspx` отправляет тот же код HTML для `footerContent` региона, который был `About.aspx` страницей:
 
@@ -149,7 +149,7 @@ ms.locfileid: "74588239"
 
 Поздравляем с программированием!
 
-### <a name="further-reading"></a>Дополнительные сведения
+### <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

@@ -9,11 +9,11 @@ ms.assetid: f7c00fbd-652c-433d-8ed3-0e5168a4d4df
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/uploading-files-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 6e0d57ef2f1e8132f19777a7d14e94611c68adcd
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74615447"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78441498"
 ---
 # <a name="uploading-files-vb"></a>Отправка файлов (VB)
 
@@ -151,7 +151,7 @@ ms.locfileid: "74615447"
 
 [!code-sql[Main](uploading-files-vb/samples/sample3.sql)]
 
-Последним шагом является выбор имени для нового метода. Используйте `FillCategoryWithBinaryDataByCategoryID` и `GetCategoryWithBinaryDataByCategoryID` для заполнения DataTable и возврата шаблонов DataTable соответственно. Чтобы завершить работу мастера, нажмите кнопку Готово.
+Последним шагом является выбор имени для нового метода. Используйте `FillCategoryWithBinaryDataByCategoryID` и `GetCategoryWithBinaryDataByCategoryID` для заполнения DataTable и возврата шаблонов DataTable соответственно. Нажмите кнопку Готово, чтобы завершить работу с мастером.
 
 [![выбрать имена для методов TableAdapter s](uploading-files-vb/_static/image10.gif)](uploading-files-vb/_static/image15.png)
 
@@ -170,7 +170,7 @@ ms.locfileid: "74615447"
 
 ## <a name="updating-the-business-logic-layer-bll"></a>Обновление уровня бизнес-логики (BLL)
 
-При обновлении DAL остается только расширить уровень бизнес-логики (BLL), чтобы включить метод для нового метода `CategoriesTableAdapter`. Добавьте следующий метод в класс `CategoriesBLL`:
+При обновлении DAL остается только расширить уровень бизнес-логики (BLL), чтобы включить метод для нового метода `CategoriesTableAdapter`. Добавьте в класс `CategoriesBLL` следующий метод:
 
 [!code-vb[Main](uploading-files-vb/samples/sample4.vb)]
 
@@ -235,7 +235,7 @@ ASP.NET 2,0 s New [веб-элемент управления FileUpload](https:
 
 Поздравляем с программированием!
 
-## <a name="further-reading"></a>Дополнительные сведения
+## <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

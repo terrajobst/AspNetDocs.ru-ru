@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/aspnet-ajax/how-do-i-use-javascript-to-refresh-an-aspnet-ajax-updatepanel
-title: '[Инструкции] Использование JavaScript для обновления ASP.NET AJAX UpdatePanel? | Документы Майкрософт'
+title: '[Инструкции:] Использовать JavaScript для обновления ASP.NET UpdatePanel AJAX? | Документы Майкрософт'
 author: JoeStagner
-description: В этом видео мы Узнайте два разных способа использования логики JavaScript для обновления содержимого элемента управления ASP.NET AJAX UpdatePanel. Первый способ — добавить...
+description: В этом видеоролике мы рассмотрим два разных способа использования логики JavaScript для обновления содержимого элемента управления UpdatePanel ASP.NET AJAX. Первый способ — добавить...
 ms.author: riande
 ms.date: 07/25/2007
 ms.assetid: b4d5b7ce-c322-4313-985d-455df98d619a
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-use-javascript-to-refresh-an-aspnet-ajax-updatepanel
 msc.type: video
 ms.openlocfilehash: b2a183bb14389b7558697ac684ef2a09e689596b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59414079"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78423390"
 ---
-# <a name="how-do-i-use-javascript-to-refresh-an-aspnet-ajax-updatepanel"></a>[Инструкции] Использование JavaScript для обновления ASP.NET AJAX UpdatePanel?
+# <a name="how-do-i-use-javascript-to-refresh-an-aspnet-ajax-updatepanel"></a>[Инструкции:] Использовать JavaScript для обновления ASP.NET UpdatePanel AJAX?
 
-по [(Joe Stagner)](https://github.com/JoeStagner)
+кем [Джо Stagner)](https://github.com/JoeStagner)
 
-В этом видео мы Узнайте два разных способа использования логики JavaScript для обновления содержимого элемента управления ASP.NET AJAX UpdatePanel. Первый способ заключается в том, чтобы добавить тип кнопки серверного элемента управления UpdatePanel и использовать JavaScript для запуска асинхронной обратной передачи и «притвориться», что обратная передача вызвана серверного элемента управления внутри UpdatePanel. Второй способ не требует серверного элемента управления любой тип кнопки для добавления UpdatePanel, но по-прежнему позволяет нам использовать логику JavaScript, чтобы обновить содержимое элемента управления UpdatePanel. (Второй прием был предложенной Ворд Дейв и Дополнительные сведения на его запись блога «легко обновить UpdatePanel, с помощью JavaScript»).
+В этом видеоролике мы рассмотрим два разных способа использования логики JavaScript для обновления содержимого элемента управления UpdatePanel ASP.NET AJAX. Первый способ — добавить серверный элемент управления типа Button в UpdatePanel и использовать JavaScript для активации асинхронной обратной передачи и "Представьте", что обратная передача была вызвана серверным элементом управления внутри UpdatePanel. Второй способ не требует добавления серверного элемента управления типа Button в UpdatePanel, но по-прежнему позволяет нам использовать логику JavaScript для обновления содержимого UpdatePanel. (Второй прием был предложен Дейв назад, и вы можете прочитать дополнительные сведения о его записи в блоге, «легко обновлять UpdatePanel, используя JavaScript».)
 
-[&#9654;Просмотрите видео (10 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-javascript-to-refresh-an-aspnet-ajax-updatepanel)
+[&#9654;Смотреть видео (10 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-javascript-to-refresh-an-aspnet-ajax-updatepanel)
 
 > [!div class="step-by-step"]
 > [Назад](how-do-i-build-a-custom-aspnet-ajax-server-control.md)

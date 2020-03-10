@@ -9,11 +9,11 @@ ms.assetid: 081fe010-ba0f-4e7d-b4ba-774840b601c2
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/interacting-with-the-master-page-from-the-content-page-vb
 msc.type: authoredcontent
 ms.openlocfilehash: fe1f7b80b26ff25c1ce744e4f823e3fb35eea074
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74577244"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78441198"
 ---
 # <a name="interacting-with-the-master-page-from-the-content-page-vb"></a>Взаимодействие с эталонной страницей на странице содержимого (VB)
 
@@ -123,7 +123,7 @@ ms.locfileid: "74577244"
 
 После завершения работы мастера перейдите к смарт-тегу DetailsView и установите флажок "включить вставку". При этом в элемент DetailsView добавляется CommandField со свойством `ShowInsertButton`, установленным в значение true. Так как эта DetailsView будет использоваться исключительно для вставки данных, установите для свойства `DefaultMode` элемента DetailsView значение `Insert`.
 
-Вот и все! Давайте протестируем эту страницу. Перейдите `AddProduct.aspx` через браузер, введите имя и цену (см. рис. 6).
+Это все. Давайте протестируем эту страницу. Перейдите `AddProduct.aspx` через браузер, введите имя и цену (см. рис. 6).
 
 [![добавить новый продукт в базу данных](interacting-with-the-master-page-from-the-content-page-vb/_static/image17.png)](interacting-with-the-master-page-from-the-content-page-vb/_static/image16.png)
 
@@ -218,7 +218,7 @@ ms.locfileid: "74577244"
 
 Поздравляем с программированием!
 
-### <a name="further-reading"></a>Дополнительные сведения
+### <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

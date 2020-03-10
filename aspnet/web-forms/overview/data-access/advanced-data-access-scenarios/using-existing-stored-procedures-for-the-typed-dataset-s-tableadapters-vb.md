@@ -9,11 +9,11 @@ ms.assetid: 2da25f6a-757e-4e7b-a812-1575288d8f7a
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb
 msc.type: authoredcontent
 ms.openlocfilehash: e35c3d6a98516a07f6119e6cb9dbeb99bc28fe33
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74613506"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78427128"
 ---
 # <a name="using-existing-stored-procedures-for-the-typed-datasets-tableadapters-vb"></a>Использование существующих хранимых процедур для адаптеров таблиц TableAdapter типизированного DataSet (VB)
 
@@ -130,7 +130,7 @@ Visual Studio упрощает добавление новых хранимых 
 
 **Рис. 10**. получение данных из метода `GetProductsByCategoryID(categoryID)` ([щелкните, чтобы просмотреть изображение с полным размером](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image30.png))
 
-Метод, выбранный на вкладке SELECT, ожидает параметр, поэтому последний шаг мастера запрашивает у нас источник параметра s. Задайте в раскрывающемся списке Источник параметра значение Управление и выберите элемент управления `Categories` из раскрывающегося списка ControlID. Чтобы завершить работу мастера, нажмите кнопку Готово.
+Метод, выбранный на вкладке SELECT, ожидает параметр, поэтому последний шаг мастера запрашивает у нас источник параметра s. Задайте в раскрывающемся списке Источник параметра значение Управление и выберите элемент управления `Categories` из раскрывающегося списка ControlID. Нажмите кнопку Готово, чтобы завершить работу с мастером.
 
 [![использовать DropDownList категории в качестве источника параметра categoryID](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image32.png)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-vb/_static/image31.png)
 

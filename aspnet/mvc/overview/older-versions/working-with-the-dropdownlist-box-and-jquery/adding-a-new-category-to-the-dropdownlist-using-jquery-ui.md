@@ -9,11 +9,11 @@ ms.assetid: 44aa1ac4-6ea2-48a2-972d-52710c48eae5
 msc.legacyurl: /mvc/overview/older-versions/working-with-the-dropdownlist-box-and-jquery/adding-a-new-category-to-the-dropdownlist-using-jquery-ui
 msc.type: authoredcontent
 ms.openlocfilehash: 3207079ee468232e5f75b081421241c232936baf
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77455728"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78433158"
 ---
 # <a name="adding-a-new-category-to-the-dropdownlist-using-jquery-ui"></a>Добавление новой категории в DropDownList с помощью пользовательского интерфейса jQuery
 
@@ -57,7 +57,7 @@ ms.locfileid: "77455728"
 
 ![](adding-a-new-category-to-the-dropdownlist-using-jquery-ui/_static/image4.png)
 
-Нажмите кнопку **Сохранить**. Вызов AJAX создает категорию Opera, а затем заполняет раскрывающийся список с помощью Opera и устанавливает Opera в качестве выбранного жанра.
+Нажмите кнопку **Сохранить** . Вызов AJAX создает категорию Opera, а затем заполняет раскрывающийся список с помощью Opera и устанавливает Opera в качестве выбранного жанра.
 
 ![](adding-a-new-category-to-the-dropdownlist-using-jquery-ui/_static/image5.png)
 
@@ -120,12 +120,12 @@ ms.locfileid: "77455728"
 
 Rick.Anderson[at]Microsoft.com
 
-### <a name="additional-references"></a>Дополнительные материалы
+### <a name="additional-references"></a>Дополнительные ссылки
 
 - [ASP.NET MVC — руководство по каскадным раскрывающимся спискам](https://weblogs.asp.net/raduenuca/archive/2011/03/06/asp-net-mvc-cascading-dropdown-lists-tutorial-part-1-defining-the-problem-and-the-context.aspx) с помощью [Раду енука](https://weblogs.asp.net/raduenuca/default.aspx)
 - [Выбрано](https://harvesthq.github.com/chosen/) Подключаемый модуль JavaScript, поддерживающий множественный выбор и фильтрацию.
 
-### <a name="contributors"></a>Участники
+### <a name="contributors"></a>участники;
 
 - [Раду Енука](https://weblogs.asp.net/raduenuca/default.aspx)
 - Жан-Сéбастиен Гаупил

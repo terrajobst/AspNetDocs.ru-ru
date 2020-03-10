@@ -9,11 +9,11 @@ ms.assetid: dd1be137-91c5-47a8-8137-fecf0789c7f5
 msc.legacyurl: /mvc/overview/older-versions-1/movie-database/create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 1be5d135a44feb27626dd26a544b64cfb57b18a9
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74596364"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78435864"
 ---
 # <a name="create-a-movie-database-application-in-15-minutes-with-aspnet-mvc-c"></a>Создание приложения для базы данных Movie за 15 минут с помощью ASP.NET MVC (C#)
 
@@ -49,7 +49,7 @@ ms.locfileid: "74596364"
 4. Создание контроллера MVC ASP.NET
 5. Создание представлений MVC ASP.NET
 
-## <a name="preliminaries"></a>Предварительные действия
+## <a name="preliminaries"></a>Предварительные требования
 
 Для создания приложения ASP.NET MVC вам потребуется Visual Studio 2008 или Visual Web Developer 2008 Express. Также необходимо загрузить платформу ASP.NET MVC.
 
@@ -122,10 +122,10 @@ ms.locfileid: "74596364"
 
 | **Имя столбца** | **Тип данных** | **Разрешить значения NULL** |
 | --- | --- | --- |
-| Id | Int | False |
-| Заголовок | Nvarchar (100) | False |
-| Программу | Nvarchar (100) | False |
-| датерелеасед | DateTime | False |
+| Идентификатор | Int | False |
+| Title | Nvarchar (100) | False |
+| Директор | Nvarchar (100) | False |
+| датерелеасед | Дата и время | False |
 
 Первый столбец ID столбца имеет два специальных свойства. Сначала необходимо пометить столбец идентификаторов как первичный ключевой столбец. Выбрав столбец Идентификатор, нажмите кнопку **Задать первичный ключ** (это значок, который выглядит как ключ). Во вторых, необходимо пометить столбец идентификаторов как столбец идентификаторов. В окно свойств столбца прокрутите вниз до раздела Спецификация идентификатора и разверните его. Измените свойство **Identity** на значение **Да**. По завершении таблица должна выглядеть, как показано на рис. 4.
 
@@ -158,7 +158,7 @@ ms.locfileid: "74596364"
 После нажатия кнопки Добавить появится мастер EDM (см. рис. 6). Чтобы завершить работу мастера, выполните следующие действия.
 
 1. На шаге **Выбор содержимого модели** выберите параметр **создать из базы данных** .
-2. На шаге **Выбор подключения к данным** используйте подключение к данным *мовиесдб. mdf* и имя *мовиесдбентитиес* для параметров подключения. Нажмите кнопку **Next (далее** ).
+2. На шаге **Выбор подключения к данным** используйте подключение к данным *мовиесдб. mdf* и имя *мовиесдбентитиес* для параметров подключения. Нажмите кнопку **Далее**.
 3. На шаге **Выбор объектов базы данных** разверните узел таблицы и выберите таблицу фильмы. Введите пространство имен *мовиеапп. Models* и нажмите кнопку **Готово** .
 
 [![диалоговом окне «Создание проекта»](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image6.jpg)](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-cs/_static/image11.png)
@@ -328,4 +328,4 @@ Visual Studio автоматически создает представлени
 В этом руководстве мы рассмотрели только самые основные возможности платформы MVC ASP.NET. В следующих руководствах мы подробно рассмотрим такие темы, как контроллеры, действия контроллера, представления, данные представления и вспомогательные методы HTML.
 
 > [!div class="step-by-step"]
-> [Вперед](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb.md)
+> [Дальше](create-a-movie-database-application-in-15-minutes-with-asp-net-mvc-vb.md)

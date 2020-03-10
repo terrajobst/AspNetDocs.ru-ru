@@ -9,11 +9,11 @@ ms.assetid: 9cad0833-486a-4474-a7f3-7715542ec4ce
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/deploying-a-database-update
 msc.type: authoredcontent
 ms.openlocfilehash: 805eb84c24764cf921291f89054435601dbac48e
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74636832"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78440790"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-deploying-a-database-update"></a>Веб-развертывание ASP.NET с помощью Visual Studio: развертывание обновления базы данных
 
@@ -135,7 +135,7 @@ ms.locfileid: "74636832"
 
     1. Щелкните **настроить обновления базы данных**.
     2. В диалоговом окне **Настройка обновлений базы данных** снимите флажки для *GRANT. SQL* и *АСПнет-Дата-дев. SQL*.
-    3. Нажмите кнопку **Закрыть**.
+    3. Щелкните **Закрыть**.
 6. Перейдите на вкладку **Предварительный просмотр** .
 7. В разделе **базы данных** и справа от **DefaultConnection**щелкните ссылку **Предварительная версия базы данных** .
 

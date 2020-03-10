@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/aspnet-ajax/how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control
-title: '[Инструкции] Запуск обновления UpdatePanel из элемента управления DropDownList? | Документы Майкрософт'
+title: '[Инструкции:] Активировать обновление UpdatePanel из элемента управления DropDownList? | Документы Майкрософт'
 author: JoeStagner
-description: В большинстве наших видео на ASP.NET AJAX UpdatePanel мы использовали элемент управления Button заставить UpdatePanel обновить его содержимое. Еще мы можем использовать любое событие...
+description: В большинстве видеороликов по ASP.NET AJAX UpdatePanel мы использовали элемент управления "Кнопка", чтобы UpdatePanel обновляла свое содержимое. Но можно использовать любое событие...
 ms.author: riande
 ms.date: 08/22/2007
 ms.assetid: e90defdb-b6b1-4f38-8f6a-7adccbb426ef
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control
 msc.type: video
 ms.openlocfilehash: d8b74b0fb2061477c1d2ff66e394d0bb1e22baf3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402054"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78423582"
 ---
-# <a name="how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control"></a>[Инструкции] Запуск обновления UpdatePanel из элемента управления DropDownList?
+# <a name="how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control"></a>[Инструкции:] Активировать обновление UpdatePanel из элемента управления DropDownList?
 
-по [(Joe Stagner)](https://github.com/JoeStagner)
+кем [Джо Stagner)](https://github.com/JoeStagner)
 
-В большинстве наших видео на ASP.NET AJAX UpdatePanel мы использовали элемент управления Button заставить UpdatePanel обновить его содержимое. Еще мы можем использовать событий, создаваемых с любой другой элемент управления сервера ASP.NET. В этом видео использует событие SelectedIndexChanged элемента управления DropDownList в качестве триггера для обновления элемента управления UpdatePanel. Мы также видим, как мы может динамически изменить классом таблицы стилей, связанных с элементами управления, содержащегося в элементе управления UpdatePanel.
+В большинстве видеороликов по ASP.NET AJAX UpdatePanel мы использовали элемент управления "Кнопка", чтобы UpdatePanel обновляла свое содержимое. Однако можно использовать любое событие, вызванное любым другим серверным элементом управления ASP.NET. В этом видеоролике используется событие «член» элемента управления DropDownList в качестве триггера для обновления элемента управления UpdatePanel. Кроме того, мы видим, как можно динамически изменять класс таблицы стилей, связанный с элементами управления, содержащимися в элементе управления UpdatePanel.
 
-[&#9654;Просмотрите видео (9 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control)
+[&#9654;Смотреть видео (9 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-trigger-an-updatepanel-refresh-from-a-dropdownlist-control)
 
 > [!div class="step-by-step"]
 > [Назад](how-do-i-implement-the-persistent-communications-pattern-using-web-services.md)

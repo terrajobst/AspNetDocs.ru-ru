@@ -9,11 +9,11 @@ ms.assetid: de2d65b9-aadc-42ba-abe1-4e87e66521a0
 msc.legacyurl: /web-forms/overview/older-versions-security/introduction/an-overview-of-forms-authentication-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 009c3f84e00d648ede4a15e530ceac2d23e01eec
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74620482"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78439668"
 ---
 # <a name="an-overview-of-forms-authentication-c"></a>Общие сведения о проверке подлинности с помощью форм (C#)
 
@@ -221,7 +221,7 @@ Login. aspx? ReturnUrl = Протектедпаже. aspx
 
 Так как мы хотим войти в систему пользователя и перенаправлены на соответствующую страницу, давайте будем использовать RedirectFromLoginPage. Обновите обработчик событий Click для Логинбуттон, заменив две строки TODO с комментариями следующей строкой кода:
 
-FormsAuthentication. RedirectFromLoginPage (имя_пользователя. Text, RememberMe. Checked);
+FormsAuthentication.RedirectFromLoginPage(UserName.Text, RememberMe.Checked);
 
 При создании билета проверки подлинности с помощью форм мы используем свойство Text текстового поля UserName для параметра *имени пользователя* билета проверки подлинности Forms и состояние Checked флажка rememberMe для параметра *персисткукие* .
 
@@ -266,7 +266,7 @@ FormsAuthentication. RedirectFromLoginPage (имя_пользователя. Tex
 
 ![Пользователи, прошедшие проверку подлинности, отображаются](an-overview-of-forms-authentication-cs/_static/image28.png)
 
-**Рис. 12**. Пользователи, прошедшие проверку подлинности, показывают "Добро пожаловать!" Message
+**Рис. 12**. Пользователи, прошедшие проверку подлинности, показывают "Добро пожаловать!" Сообщение
 
 Мы можем определить удостоверение текущего пользователя, вошедшего в систему, с помощью [Свойства пользователя](https://msdn.microsoft.com/library/system.web.httpcontext.user.aspx) [объекта HttpContext](https://msdn.microsoft.com/library/system.web.httpcontext.aspx). Объект HttpContext представляет сведения о текущем запросе, а также является доменом для таких распространенных объектов ASP.NET, как ответ, запрос и сеанс, и т. д. Свойство User представляет контекст безопасности текущего HTTP-запроса и реализует [интерфейс IPrincipal](https://msdn.microsoft.com/library/system.security.principal.iprincipal.aspx).
 
@@ -404,7 +404,7 @@ String Куррентусерснаме = User.Identity.Name;
 
 Поздравляем с программированием!
 
-### <a name="further-reading"></a>Дополнительные сведения
+### <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

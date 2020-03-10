@@ -1,27 +1,27 @@
 ---
 uid: mvc/videos/mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-5-globalization
-title: Интернет-магазин на ASP.NET MVC, часть 5. Глобализация | Документация Майкрософт
+title: Магазин ASP.NET MVC, часть 5. Глобализация | Документация Майкрософт
 author: robconery
-description: Rob Conery работает с Дэмьен Гард рефакторинг базы данных для решения проблем данных и глобализации тестирования.
+description: Роб-конус работает с (Damien Guard для рефакторинга базы данных с целью решения проблем с данными и глобализацией тестов.
 ms.author: riande
 ms.date: 05/27/2008
 ms.assetid: ec659d9f-8172-4c9e-9dd0-f5743bb27d4b
 msc.legacyurl: /mvc/videos/mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-5-globalization
 msc.type: video
 ms.openlocfilehash: ae94433a1eae82a37e230266d06eb3ee483725cd
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410085"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78432204"
 ---
-# <a name="aspnet-mvc-storefront-part-5-globalization"></a>Интернет-магазин на ASP.NET MVC, часть 5. Глобализация
+# <a name="aspnet-mvc-storefront-part-5-globalization"></a>Магазин ASP.NET MVC, часть 5. Глобализация
 
-по [Роб Conery](https://github.com/robconery)
+по [Проконусу Вадима](https://github.com/robconery)
 
-Rob Conery работает с Дэмьен Гард рефакторинг базы данных для решения проблем данных и глобализации тестирования.
+Роб-конус работает с (Damien Guard для рефакторинга базы данных с целью решения проблем с данными и глобализацией тестов.
 
-[&#9654;Просмотрите видео (11 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-5-globalization)
+[&#9654;Смотреть видео (11 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-5-globalization)
 
 > [!div class="step-by-step"]
 > [Назад](aspnet-mvc-storefront-part-4-linq-to-sql-spike.md)

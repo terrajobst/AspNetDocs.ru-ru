@@ -9,11 +9,11 @@ ms.assetid: e1fec43e-1daf-49d2-b0c7-7f1b930455cc
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dynamicpopulate/dynamically-populating-a-control-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 24f88e44e0f878127314774d4e8846f80133413e
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74599287"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78430560"
 ---
 # <a name="dynamically-populating-a-control-c"></a>Динамическое заполнение элемента управления (C#)
 
@@ -69,4 +69,4 @@ ms.locfileid: "74599287"
 При нажатии кнопки извлекается дата с сервера ([щелкните, чтобы просмотреть изображение с полным размером](dynamically-populating-a-control-cs/_static/image3.png)).
 
 > [!div class="step-by-step"]
-> [Вперед](dynamically-populating-a-control-using-javascript-code-cs.md)
+> [Дальше](dynamically-populating-a-control-using-javascript-code-cs.md)

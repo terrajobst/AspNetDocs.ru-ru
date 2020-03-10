@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/migrating/intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20
-title: Введение в ASP.NET для разработчиков JSP. Добро пожаловать в ASP.NET 2.0 | Документация Майкрософт
+title: 'Введение в ASP.NET для разработчиков JSP: Добро пожаловать в ASP.NET 2,0 | Документация Майкрософт'
 author: microsoft
-description: Данный семинар посвящен основные общие, необходимые для понимания ASP.NET и ASP.NET интеграции с .NET Framework и Microsoft IIS.
+description: В этом сеансе основное внимание уделяется основным требованиям, необходимым для понимания ASP.NET и принципов интеграции ASP.NET с .NET Framework и Microsoft IIS.
 ms.author: riande
 ms.date: 07/25/2006
 ms.assetid: 1a95474a-a897-4ba1-b372-8a112cb324ba
 msc.legacyurl: /web-forms/videos/migrating/intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20
 msc.type: video
 ms.openlocfilehash: 978236ae72ec0908b09901d8a8d4d3fd27770b86
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401638"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78421536"
 ---
-# <a name="intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20"></a>Введение в ASP.NET для разработчиков JSP. Добро пожаловать в ASP.NET 2.0
+# <a name="intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20"></a>Введение в ASP.NET для разработчиков JSP: Добро пожаловать в ASP.NET 2,0
 
-по [Microsoft](https://github.com/microsoft)
+по [Майкрософт](https://github.com/microsoft)
 
-Данный семинар посвящен основные общие, необходимые для понимания ASP.NET и ASP.NET интеграции с .NET Framework и Microsoft IIS.
+В этом сеансе основное внимание уделяется основным требованиям, необходимым для понимания ASP.NET и принципов интеграции ASP.NET с .NET Framework и Microsoft IIS.
 
-[&#9654;Просмотрите видео (61 в минутах)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20)
+[&#9654;Смотреть видео (61 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20)
 
 > [!div class="step-by-step"]
 > [Назад](migrating-from-classic-asp-to-aspnet.md)

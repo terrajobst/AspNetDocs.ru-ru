@@ -9,11 +9,11 @@ ms.assetid: a2d7f33b-8c4a-4b48-9fb1-9139cf9b9878
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-introduction-1-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: ea88da1e6d510f706fc7ca370cfa32974c1243f8
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74587743"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78421842"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-introduction---1-of-12"></a>Развертывание веб-приложения ASP.NET с помощью SQL Server Compact в Visual Studio: введение — 1 из 12
 
@@ -77,7 +77,7 @@ Contoso университета — это проект веб-приложен
 
 Комментарии в учебниках — это Добро пожаловать, и при обновлении руководства будут внесены все усилия, касающиеся учета исправлений или предложений по усовершенствованиям, предоставленных в комментариях учебника.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>предварительные требования
 
 Перед началом работы убедитесь в наличии Windows 7 или более поздней версии и одного из следующих продуктов, установленных на компьютере:
 
@@ -139,4 +139,4 @@ Contoso университета — это проект веб-приложен
 В этом первом учебнике серии вы загрузили пример проекта Visual Studio и проверили компоненты сайта, влияющие на способ развертывания приложения. В следующих руководствах Вы подготовитесь к развертыванию, настроив некоторые из этих действий для автоматической обработки. Другие пользователи самостоятельно позаботится о себе.
 
 > [!div class="step-by-step"]
-> [Вперед](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12.md)
+> [Дальше](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12.md)

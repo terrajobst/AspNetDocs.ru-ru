@@ -1,30 +1,30 @@
 ---
 uid: mvc/overview/older-versions/mvc-music-store/index
-title: ASP.NET MVC 3 Music Store | Документация Майкрософт
+title: Музыкальное хранилище ASP.NET MVC 3 | Документация Майкрософт
 author: rick-anderson
-description: Как создать приложение Music Store MVC, пример приложения, который продает музыкальные альбомы через Интернет и, реализующий сайта администрирования, пользователя входа в систему...
+description: Как создать приложение музыкального магазина MVC, пример приложения, который продает музыкальные альбомы в сети и реализует Администрирование сайта, вход пользователя,...
 ms.author: riande
 ms.date: 09/28/2011
 ms.assetid: f016a6b4-2a38-4e83-8c34-f6d7f2b49ba2
 msc.legacyurl: /mvc/overview/older-versions/mvc-music-store
 msc.type: chapter
 ms.openlocfilehash: 2ad62c230984ac92f6377764c172643bf2cec9db
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65129698"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78433620"
 ---
-# <a name="aspnet-mvc-3-music-store"></a>ASP.NET MVC 3 Music Store
+# <a name="aspnet-mvc-3-music-store"></a>Музыкальное хранилище ASP.NET MVC 3
 
-> Как создать приложение Music Store MVC, пример приложения, который продает музыкальные альбомы через Интернет и, реализующий Администрирование веб-сайтов, вход пользователя и функции корзины для покупок.
+> Как создать приложение музыкального магазина MVC, пример приложения, который продает музыкальные альбомы в сети и реализует Администрирование сайта, вход пользователей и функции корзины покупок.
 
-- [Часть 1. Общие сведения и файл -> Создать проект](mvc-music-store-part-1.md)
-- [Часть 2. Контроллеры](mvc-music-store-part-2.md)
-- [Часть 3. Views и ViewModels](mvc-music-store-part-3.md)
+- [Часть 1. Общие сведения и Файл -> Создать проект](mvc-music-store-part-1.md)
+- [Часть 2. Контроллеры](mvc-music-store-part-2.md)
+- [Часть 3. Представления и классы ViewModel](mvc-music-store-part-3.md)
 - [Часть 4. Модели и доступ к данным](mvc-music-store-part-4.md)
-- [Часть 5. Изменение форм и шаблонов.](mvc-music-store-part-5.md)
-- [Часть 6. С помощью заметок к данным для проверки модели](mvc-music-store-part-6.md)
+- [Часть 5. Изменение форм и создание шаблонов](mvc-music-store-part-5.md)
+- [Часть 6. Использование заметок к данным для проверки модели](mvc-music-store-part-6.md)
 - [Часть 7. Членство и авторизация](mvc-music-store-part-7.md)
 - [Часть 8. Корзина для покупок с обновлениями Ajax](mvc-music-store-part-8.md)
 - [Часть 9. Регистрация и оформление заказа](mvc-music-store-part-9.md)

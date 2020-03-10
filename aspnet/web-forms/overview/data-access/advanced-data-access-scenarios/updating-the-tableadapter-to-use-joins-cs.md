@@ -9,11 +9,11 @@ ms.assetid: 675531a7-cb54-4dd6-89ac-2636e4c285a5
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/updating-the-tableadapter-to-use-joins-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 24ff3645783dabfcdef5ac313a2d4833e4998efc
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74607859"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78427776"
 ---
 # <a name="updating-the-tableadapter-to-use-joins-c"></a>Обновление адаптера таблицы TableAdapter для использования JOIN (C#)
 
@@ -68,7 +68,7 @@ ms.locfileid: "74607859"
 
 **Рис. 2**. ввод основного запроса, содержащего `JOIN` s
 
-Чтобы завершить работу мастера, нажмите кнопку Готово. На этом этапе конструктор наборов данных будет включать один TableAdapter с таблицей DataTable со столбцами для каждого из полей, возвращаемых в списке столбцов `SELECT` запроса. К ним относятся `CategoryName` и `SupplierName`, как показано на рис. 3.
+Нажмите кнопку Готово, чтобы завершить работу с мастером. На этом этапе конструктор наборов данных будет включать один TableAdapter с таблицей DataTable со столбцами для каждого из полей, возвращаемых в списке столбцов `SELECT` запроса. К ним относятся `CategoryName` и `SupplierName`, как показано на рис. 3.
 
 ![Таблица данных содержит столбец для каждого поля, возвращенного в списке столбцов.](updating-the-tableadapter-to-use-joins-cs/_static/image5.png)
 
@@ -161,7 +161,7 @@ ms.locfileid: "74607859"
 
 ## <a name="step-4-implementing-the-business-logic-layer"></a>Шаг 4. реализация уровня бизнес-логики
 
-Создайте новый файл класса в папке `~/App_Code/BLL` с именем `EmployeesBLLWithSprocs.cs`. Этот класс имитирует семантику существующего класса `EmployeesBLL`, только этот новый класс предоставляет меньше методов и использует `NorthwindWithSprocs`ный набор данных (вместо набора данных `Northwind`). Добавьте следующий код в класс `EmployeesBLLWithSprocs` .
+Создайте новый файл класса в папке `~/App_Code/BLL` с именем `EmployeesBLLWithSprocs.cs`. Этот класс имитирует семантику существующего класса `EmployeesBLL`, только этот новый класс предоставляет меньше методов и использует `NorthwindWithSprocs`ный набор данных (вместо набора данных `Northwind`). Добавьте в класс `EmployeesBLLWithSprocs` приведенный далее код.
 
 [!code-csharp[Main](updating-the-tableadapter-to-use-joins-cs/samples/sample6.cs)]
 

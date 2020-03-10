@@ -1,27 +1,27 @@
 ---
 uid: mvc/videos/mvc-2/how-do-i/displaying-a-table-of-database-data
-title: Отображение таблицы данных в базе данных | Документация Майкрософт
+title: Отображение таблицы данных базы данных | Документация Майкрософт
 author: StephenWalther
-description: Требуется для отображения набора записей базы данных в представлении ASP.NET MVC? Узнайте, два метода для отображения записей в таблице HTML. Вы узнаете, как можно выполнять все t...
+description: Нужно отобразить набор записей базы данных в представлении MVC ASP.NET? Узнайте о двух методах отображения записей в таблице HTML. Вы научитесь выполнять все инструкции t...
 ms.author: riande
 ms.date: 08/20/2008
 ms.assetid: 00a12df9-1f89-4fc5-9d43-19a8d5b80392
 msc.legacyurl: /mvc/videos/mvc-2/how-do-i/displaying-a-table-of-database-data
 msc.type: video
 ms.openlocfilehash: 5b26ef9ddb1461d01f7e6862f1cd5605fee532a8
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59421723"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78431994"
 ---
 # <a name="displaying-a-table-of-database-data"></a>Отображение таблицы данных в базе данных
 
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
-Требуется для отображения набора записей базы данных в представлении ASP.NET MVC? Узнайте, два метода для отображения записей в таблице HTML. Вы узнаете, как можно выполнять все встроенные форматирования. Вы также узнаете, как создать шаблон с помощью пользовательского элемента управления ASP.NET MVC.
+Нужно отобразить набор записей базы данных в представлении MVC ASP.NET? Узнайте о двух методах отображения записей в таблице HTML. Вы узнаете, как выполнять все встроенные виды форматирования. Вы также узнаете, как создать шаблон с помощью пользовательского элемента управления ASP.NET MVC.
 
-[&#9654;Просмотрите видео (15 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/displaying-a-table-of-database-data)
+[&#9654;Смотреть видео (15 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/displaying-a-table-of-database-data)
 
 > [!div class="step-by-step"]
 > [Назад](creating-model-classes-with-linq-to-sql.md)

@@ -8,12 +8,12 @@ ms.date: 10/14/2017
 ms.assetid: 8935bf14-ca6d-4a4e-9dbe-b96ce74cef49
 msc.legacyurl: /ajax/cdn
 msc.type: content
-ms.openlocfilehash: 228194a7b35e116cabae6d819e7a3a8060a3ef6a
-ms.sourcegitcommit: e365196c75ce93cd8967412b1cfdc27121816110
+ms.openlocfilehash: 92fa428608d4ac2bf56d3c6dc9c50f1449295869
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074921"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78438024"
 ---
 # <a name="microsoft-ajax-content-delivery-network"></a>Сеть доставки содержимого Microsoft Ajax
 
@@ -22,9 +22,9 @@ ms.locfileid: "77074921"
 >
 > У сети CDN Microsoft Ajax нет соглашения об уровне обслуживания, чем при использовании Azure CDN.
 >
-> Используйте [эту проблему GitHub](https://github.com/aspnet/AspNetDocs/issues/116) , чтобы сообщить о проблемах с CDN Microsoft AJAX.
+> Используйте [эту проблему GitHub](https://github.com/dotnet/AspNetDocs/issues/116) , чтобы сообщить о проблемах с CDN Microsoft AJAX.
 
-## <a name="table-of-contents"></a>Cодержание
+## <a name="table-of-contents"></a>Оглавление
 
 **[ajax.microsoft.com переименован в ajax.aspnetcdn.com](#ajaxmicrosoftcom_renamed_to_ajaxaspnetcdncom_18)**  
 **[Поддержка Visual Studio. всдок](#Visual_Studio_vsdoc_Support_19)**  
@@ -777,7 +777,7 @@ CDN также включает версию минифицированные с
 
 ### <a name="respond-releases-on-the-cdn"></a>Реагирование на выпуски CDN
 
-Следующие выпуски [ответов](https://github.com/scottjehl/Respond "Ответить") размещаются в сети CDN:
+Следующие выпуски [ответов](https://github.com/scottjehl/Respond "Устранение") размещаются в сети CDN:
 
 #### <a name="respond-version-142"></a>Отклик версии 1.4.2
 

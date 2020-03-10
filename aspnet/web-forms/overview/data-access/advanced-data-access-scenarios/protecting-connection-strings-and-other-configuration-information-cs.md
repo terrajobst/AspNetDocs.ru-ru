@@ -9,11 +9,11 @@ ms.assetid: ad8dd396-30f7-4abe-ac02-a0b84422e5be
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/protecting-connection-strings-and-other-configuration-information-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 15970bee1e990d3a139673efe12486e08f79814c
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74573538"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78421074"
 ---
 # <a name="protecting-connection-strings-and-other-configuration-information-c"></a>Защита строк подключения и других сведений о конфигурации (C#)
 
@@ -187,7 +187,7 @@ ASP.NET 2,0 включает систему защищенной конфигу�
 
 Поздравляем с программированием!
 
-## <a name="further-reading"></a>Дополнительные сведения
+## <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

@@ -4,14 +4,14 @@
 
 ## <a name="how-to-make-a-simple-correction-or-suggestion"></a>Как создать простое исправление или предложение
 
-Статьи хранятся в репозитории в виде файлов Markdown. Простые изменения в содержимое файла Markdown вносятся в браузере — нажмите на ссылку **Изменить** в правом верхнем углу окна браузера. (В узком окне браузера разверните панель **Параметры**, чтобы увидеть ссылку **Изменить**.) Следуйте инструкциям по созданию запроса на вытягивание (PR). Мы рассмотрим запрос на вытягивание и примем его или предложим изменения.
+Статьи хранятся в репозитории в виде файлов Markdown. Простые изменения в содержимое файла Markdown вносятся в браузере — нажмите на ссылку **Изменить** в правом верхнем углу окна браузера. (В более коротком окне браузера разверните панель **параметров** , чтобы увидеть ссылку **изменить** .) Следуйте указаниям по созданию запроса на вытягивание (PR). Мы рассмотрим запрос на вытягивание и примем его или предложим изменения.
 
 ## <a name="how-to-make-a-more-complex-submission"></a>Как сделать более сложные правки
 
 Требуется базовое представление о [Git и GitHub.com](https://guides.github.com/activities/hello-world/).
 
-* Откройте [проблему](https://github.com/aspnet/AspNetDocs/issues/new), описывающую, что нужно сделать, например изменить существующую статью или создать новую. Мы часто запрашиваем краткое содержание предлагаемой статьи. Дождитесь от нас одобрения, прежде чем тратить время.
-* Вилки [aspnet/AspNetDocs](https://github.com/aspnet/AspNetDocs/) репозитория и создать ветвь для изменений.
+* Откройте [проблему](https://github.com/dotnet/AspNetDocs/issues/new), описывающую, что нужно сделать, например изменить существующую статью или создать новую. Мы часто запрашиваем краткое содержание предлагаемой статьи. Дождитесь от нас одобрения, прежде чем тратить время.
+* Разветвление репозитория [DotNet/аспнетдокс](https://github.com/dotnet/AspNetDocs/) и создайте ветвь для изменений.
 * Отправьте запрос на вытягивание в главную ветвь с вашими изменениями.
 * Если запрос на вытягивание имеет метку "cla-required", [примите лицензионное соглашение с участником (CLA)](https://cla.dotnetfoundation.org/).
 * Ответьте на обратную связь по запросу на вытягивание.
@@ -24,17 +24,17 @@
 
 ## <a name="markdown-syntax"></a>Синтаксис Markdown
 
-Статьи написаны в формате [DocFx-flavored Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html), который представляет собой расширенную версию [GitHub-flavored Markdown (GFM)](https://guides.github.com/features/mastering-markdown/). Примеры синтаксиса DFM для функций пользовательского интерфейса, обычно используемых в документации по ASP.NET, см. в разделе [шаблон метаданных и разметки](https://github.com/dotnet/docs/blob/master/styleguide/template.md) в руководство по стилю репозиторий документации .NET.
+Статьи написаны в формате [DocFx-flavored Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html), который представляет собой расширенную версию [GitHub-flavored Markdown (GFM)](https://guides.github.com/features/mastering-markdown/). Примеры синтаксиса DFM для функций пользовательского интерфейса, часто используемых в документации по ASP.NET, см. в разделе [метаданные и Markdown шаблон](https://github.com/dotnet/docs/blob/master/styleguide/template.md) в руководстве по стилю репозитория .NET.
 
 ## <a name="folder-structure-conventions"></a>Соглашения о структуре папок
 
-Для каждого файла Markdown могут существовать папка для изображений и папка для примера кода. Если статья является [signalr/overview/advanced/dependency-injection.md](https://github.com/aspnet/AspNetDocs/blob/master/aspnet/signalr/overview/advanced/dependency-injection.md), образы находятся в [signalr/Обзор/advanced/внедрения зависимостей /\_статический](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/signalr/overview/advanced/dependency-injection/_static) и примера проекта приложения файлы находятся в [signalr/Обзор/advanced/зависимостей injection/samples](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/signalr/overview/advanced/dependency-injection/samples). Изображение в *signalr/overview/advanced/dependency-injection.md* файл обрабатывается следующий Markdown:
+Для каждого файла Markdown могут существовать папка для изображений и папка для примера кода. Если статья является [сигнальным или обзором/дополнительным/зависимостью. md](https://github.com/dotnet/AspNetDocs/blob/master/aspnet/signalr/overview/advanced/dependency-injection.md), образы находятся в [сигнальном/обзорном/расширенном/независимом/внедренном/\_статическом](https://github.com/dotnet/AspNetDocs/tree/master/aspnet/signalr/overview/advanced/dependency-injection/_static) , а файлы проекта примера приложения — в сигнальном виде, а также в [обзоре](https://github.com/dotnet/AspNetDocs/tree/master/aspnet/signalr/overview/advanced/dependency-injection/samples), в разделе "Дополнительно"/"зависимости"/"примеры". Образ в файле *SignalR/Overview/расширенный/dependency-injection. md* отображается следующим Markdown:
 
 ```md
 ![description of image for alt attribute](dependency-injection/_static/image1.png)
 ```
 
-Все изображения должны иметь [замещающий текст](https://wikipedia.org/wiki/Alt_attribute). Советы о том, как задать замещающий текст, см. в сетевых ресурсах, например [WebAIM: замещающий текст](https://webaim.org/techniques/alttext/).
+Все изображения должны иметь [замещающий текст](https://wikipedia.org/wiki/Alt_attribute). Советы по заданию замещающего текста см. в сетевых ресурсах, например [WebAIM: замещающий текст](https://webaim.org/techniques/alttext/).
 
 Имена файлов Markdown и имена файлов изображений должны состоять из символов нижнего регистра.
 
@@ -67,7 +67,7 @@
 
 ## <a name="code-snippets"></a>Фрагменты кода
 
-Статьи часто содержат фрагменты кода для иллюстрации. DFM позволяет скопировать код в файле Markdown или ссылаться на отдельный файл кода. Рекомендуется использовать отдельные файлы кода, когда это возможно, чтобы свести к минимуму вероятность ошибок в коде. Файлы кода хранятся в репозитории, с помощью структуры папок, описанной ранее для образцов проектов.
+Статьи часто содержат фрагменты кода для иллюстрации. DFM позволяет скопировать код в файле Markdown или ссылаться на отдельный файл кода. Рекомендуется использовать отдельные файлы кода, когда это возможно, чтобы свести к минимуму вероятность ошибок в коде. Файлы кода хранятся в репозитории с использованием структуры папок, описанной ранее для образцов проектов.
 
 В следующих примерах показан [синтаксис фрагмента кода DFM](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#code-snippet) для использования в файле *configuration/index.md*.
 
@@ -114,7 +114,7 @@ DocFX требует:
 
 * Скачайте и распакуйте *docfx.zip* из [выпусков DocFX](https://github.com/dotnet/docfx/releases).
 * Добавьте DocFX в PATH.
-* В командной строке, перейдите к *aspnet* папку, содержащую *docfx.json* файл и выполните следующую команду:
+* В командной оболочке перейдите в папку *ASPNET* , содержащую файл *docfx. JSON* , и выполните следующую команду:
 
   ```console
   docfx --serve
@@ -139,7 +139,7 @@ DocFX требует:
   alias docfx-serve='mono $HOME/bin/docfx/docfx.exe --serve'
   ```
 
-* В командной строке, перейдите к *aspnet* папку, содержащую *docfx.json* файл и выполните следующую команду, чтобы создавать и обслуживать документы с помощью псевдонима:
+* В командной оболочке перейдите в папку *ASPNET* , содержащую файл *docfx. JSON* , и выполните следующую команду, чтобы собрать и обслуживать документы с помощью псевдонима:
 
   ```console
   docfx-serve
@@ -149,7 +149,7 @@ DocFX требует:
 
 ## <a name="voice-and-tone"></a>Стиль
 
-Наши документы должны быть понятными для самой широкой аудитории. С этой целью мы предлагаем рекомендации по стилю и просим наших авторов следовать им. Дополнительные сведения см. в разделе [рекомендации по стилю](https://github.com/dotnet/docs/blob/master/styleguide/voice-tone.md) в репозитории .NET.
+Наши документы должны быть понятными для самой широкой аудитории. С этой целью мы предлагаем рекомендации по стилю и просим наших авторов следовать им. Дополнительные сведения см. в разделе [рекомендации по голосовым и тонам](https://github.com/dotnet/docs/blob/master/styleguide/voice-tone.md) в репозитории .NET.
 
 ## <a name="microsoft-writing-style-guide"></a>Руководство по стилю Майкрософт
 
@@ -157,4 +157,4 @@ DocFX требует:
 
 ## <a name="redirects"></a>Перенаправление
 
-Если вы удаляете статью, измените ее имя файла или переместите ее в другую папку, создайте перенаправление, чтобы пользователи, добавившие статью в закладки, не получали ошибку *404 Не найдено*. Добавьте перенаправление [в главный файл перенаправления](https://github.com/aspnet/AspNetDocs/blob/master/.openpublishing.redirection.json).
+Если вы удаляете статью, измените ее имя файла или переместите ее в другую папку, создайте перенаправление, чтобы пользователи, добавившие статью в закладки, не получали ошибку *404 Не найдено*. Добавьте перенаправление [в главный файл перенаправления](https://github.com/dotnet/AspNetDocs/blob/master/.openpublishing.redirection.json).

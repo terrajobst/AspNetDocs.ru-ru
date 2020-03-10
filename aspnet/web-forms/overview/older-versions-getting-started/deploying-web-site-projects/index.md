@@ -1,23 +1,23 @@
 ---
 uid: web-forms/overview/older-versions-getting-started/deploying-web-site-projects/index
-title: Развертывание проектов веб-сайтов в Visual Studio 2008 и более ранних версий | Документация Майкрософт
+title: Развертывание проектов веб-сайтов в Visual Studio 2008 и более ранних версиях | Документация Майкрософт
 author: rick-anderson
-description: Веб-приложений ASP.NET обычно разрабатываются, создания и тестирования в локальной среде разработки и должны быть развернуты в рабочей среде o...
+description: Веб-приложения ASP.NET обычно разрабатываются, создаются и тестируются в локальной среде разработки и должны быть развернуты в рабочей среде o...
 ms.author: riande
 ms.date: 05/16/2012
 ms.assetid: 6f72bde8-f2f1-4e4a-94e5-494c3c153c14
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects
 msc.type: chapter
 ms.openlocfilehash: 43c2397ef4ccc5eacb2ff4c5d04f62b9c8c481b7
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65134424"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78420492"
 ---
 # <a name="deploying-web-site-projects-in-visual-studio-2008-and-earlier"></a>Развертывание проектов веб-сайтов в Visual Studio 2008 и более ранних версиях
 
-> Веб-приложений ASP.NET обычно являются предназначены, создания и тестирования в локальной среде разработки и нужно будет развернуть в рабочей среде, когда все будет готово к выпуску. В этой серии руководств подробно процесс развертывания.
+> Веб-приложения ASP.NET обычно разрабатываются, создаются и тестируются в локальной среде разработки и должны быть развернуты в рабочей среде после того, как она будет готова к выпуску. В этой серии руководств подробно описывается процесс развертывания.
 
 - [Варианты размещения в ASP.NET (C#)](asp-net-hosting-options-cs.md)
 - [Определение подлежащих развертыванию файлов (C#)](determining-what-files-need-to-be-deployed-cs.md)

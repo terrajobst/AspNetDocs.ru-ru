@@ -9,17 +9,17 @@ ms.assetid: eb35710d-1d99-44ac-b61f-e50af8cb328a
 msc.legacyurl: /mvc/overview/older-versions-1/unit-testing/creating-unit-tests-for-asp-net-mvc-applications-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 643faddaf6f9cd075131e8e5a9cccb303e355ceb
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74594696"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78435384"
 ---
 # <a name="creating-unit-tests-for-aspnet-mvc-applications-vb"></a>Создание модульных тестов для приложений ASP.NET MVC (VB)
 
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/8/4/8/84843d8d-1575-426c-bcb5-9d0c42e51416/ASPNET_MVC_Tutorial_07_VB.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/8/4/8/84843d8d-1575-426c-bcb5-9d0c42e51416/ASPNET_MVC_Tutorial_07_VB.pdf)
 
 > Узнайте, как создавать модульные тесты для действий контроллера. В этом руководстве Стивен Вальтер демонстрирует, как проверить, возвращает ли действие контроллера определенное представление, возвращает определенный набор данных или возвращает другой тип результата действия.
 

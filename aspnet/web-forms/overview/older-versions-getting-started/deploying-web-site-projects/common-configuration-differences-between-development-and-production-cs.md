@@ -9,17 +9,17 @@ ms.assetid: 721a5c37-7e21-48e0-832e-535c6351dcae
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/common-configuration-differences-between-development-and-production-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 60379c87a8cf58b89066a6070ac659e65930b4fa
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74620417"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78439014"
 ---
 # <a name="common-configuration-differences-between-development-and-production-c"></a>Распространенные различия в конфигурации между средами разработки и производства (C#)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial05_ConfigDifferences_cs.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial05_ConfigDifferences_cs.pdf)
 
 > В предыдущих учебных курсах мы развернули наш веб-сайт, скопировав все соответствующие файлы из среды разработки в рабочую среду. Однако нередко возникает разница в конфигурации между средами, что требует наличия у каждой среды уникального файла Web. config. В этом учебнике рассматриваются типичные различия в конфигурации и рассматриваются стратегии обслуживания отдельных сведений о конфигурации.
 
@@ -113,7 +113,7 @@ ms.locfileid: "74620417"
 
 Поздравляем с программированием!
 
-### <a name="further-reading"></a>Дополнительные сведения
+### <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

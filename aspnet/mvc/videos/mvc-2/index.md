@@ -9,11 +9,11 @@ ms.assetid: 68968b8a-4f60-449e-8639-978fc40aed70
 msc.legacyurl: /mvc/videos/mvc-2
 msc.type: chapter
 ms.openlocfilehash: d2ddf52b01b8a1ae0e6c3b8db104d16775d144e6
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65120177"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78431904"
 ---
 # <a name="aspnet-mvc-2"></a>ASP.NET MVC 2
 
@@ -35,10 +35,10 @@ ms.locfileid: "65120177"
     - [Отображение таблицы данных в базе данных](how-do-i/displaying-a-table-of-database-data.md)
     - [80-минутный видеоролик с техническими сведениями об ASP.NET MVC для разработчиков, создающих приложение NerdDinner](how-do-i/what-is-aspnet-mvc-80-minute-technical-video-for-developers-building-nerddinner.md)
     - [3-минутный видеоролик о преимуществах ASP.NET MVC 3 для специалистов, принимающих решения](how-do-i/why-aspnet-mvc-3-minute-overview-video-for-decision-makers.md)
-    - [ASP.NET MVC: Как 10-минутный Видеоролик с техническими сведениями для разработчиков](how-do-i/aspnet-mvc-how-10-minute-technical-video-for-developers.md)
+    - [10-минутный видеоролик с техническими сведениями об ASP.NET MVC для разработчиков](how-do-i/aspnet-mvc-how-10-minute-technical-video-for-developers.md)
     - [Возвращение данных в формате JSON для вызова AJAX в веб-приложении ASP.NET MVC](how-do-i/how-do-i-return-json-formatted-data-for-an-ajax-call-in-an-aspnet-mvc-web-application.md)
     - [Работа с данными в частичных представлениях ASP.NET MVC](how-do-i/how-do-i-work-with-data-in-aspnet-mvc-partial-views.md)
-    - [Реализация моделей представлений для управления данными по представлениям ASP.NET MVC](how-do-i/how-do-i-implement-view-models-to-manage-data-for-aspnet-mvc-views.md)
+    - [Реализация представлений моделей для управления данными в ASP.NET представлениях MVC](how-do-i/how-do-i-implement-view-models-to-manage-data-for-aspnet-mvc-views.md)
     - [Создание пользовательского вспомогательного метода HTML для приложения MVC](how-do-i/how-do-i-create-a-custom-html-helper-for-an-mvc-application.md)
     - [Работа со связывателями моделей в приложении MVC](how-do-i/how-do-i-work-with-model-binders-in-an-mvc-application.md)
     - [Использование атрибутов HttpVerbs в приложениях MVC](how-do-i/how-do-i-use-httpverbs-attributes-in-an-mvc-application.md)
@@ -52,12 +52,12 @@ ms.locfileid: "65120177"
     - [Эффективное изучение ASP.NET MVC](how-do-i/how-to-best-learn-asp-net-mvc.md)
 - [ASP.NET MVC для общедоступного сайта](aspnet-mvc-for-the-rest-of-us/index.md)
 
-    - [ASP.NET MVC для общедоступного сайта: Часть 1](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-1.md)
-    - [ASP.NET MVC для общедоступного сайта: Часть 2](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-2.md)
-    - [ASP.NET MVC для общедоступного сайта: Часть 3](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-3.md)
-    - [ASP.NET MVC для общедоступного сайта: Часть 4](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-4.md)
+    - [ASP.NET MVC для общедоступного сайта. Часть 1](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-1.md)
+    - [ASP.NET MVC для общедоступного сайта. Часть 2](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-2.md)
+    - [ASP.NET MVC для общедоступного сайта. Часть 3](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-3.md)
+    - [ASP.NET MVC для общедоступного сайта. Часть 4](aspnet-mvc-for-the-rest-of-us/aspnet-mvc-for-the-rest-of-us-part-4.md)
 - [Приложение Music Store](music-store/index.md)
 
-    - [Music Store MVC, часть 1. Введение, инструменты и структура проекта](music-store/mvc-music-store-part-1-intro-tools-and-project-structure.md)
-    - [Music Store MVC, часть 2: Контроллеры](music-store/mvc-music-store-part-2-controllers.md)
-    - [Music Store MVC, часть 3. Views и ViewModels](music-store/mvc-music-store-part-3-views-and-viewmodels.md)
+    - [Приложение Music Store на MVC, часть 1. Введение, инструменты и структура проекта](music-store/mvc-music-store-part-1-intro-tools-and-project-structure.md)
+    - [Приложение Music Store на MVC, часть 2. Контроллеры](music-store/mvc-music-store-part-2-controllers.md)
+    - [Приложение Music Store на MVC, часть 3. Представления и ViewModels](music-store/mvc-music-store-part-3-views-and-viewmodels.md)

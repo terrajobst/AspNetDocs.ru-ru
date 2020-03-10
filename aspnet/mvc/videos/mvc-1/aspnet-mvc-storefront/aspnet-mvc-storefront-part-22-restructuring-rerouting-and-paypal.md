@@ -1,27 +1,27 @@
 ---
 uid: mvc/videos/mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal
-title: Интернет-магазин на ASP.NET MVC, часть 22. Реструктуризация, перенаправление и PayPal | Документация Майкрософт
+title: Магазин ASP.NET MVC, часть 22. Реструктуризация, ремаршрутизация и PayPal | Документация Майкрософт
 author: robconery
-description: В этом эпизоде изменить структуру немного Чтобы очистить некоторые элементы. Я также изменить маршруты, чтобы было гораздо проще. Наконец я добавить PayPal в качестве араметры извлечение...
+description: В этом эпизоде я перестроил немного, чтобы очистить некоторые элементы. Я также изменяю маршруты гораздо проще. Наконец, я добавляю PayPal в качестве араметры извлечения...
 ms.author: riande
 ms.date: 10/16/2008
 ms.assetid: 81190124-d0f6-4e4b-a48f-2613cc5a6aa7
 msc.legacyurl: /mvc/videos/mvc-1/aspnet-mvc-storefront/aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal
 msc.type: video
 ms.openlocfilehash: 772ddf69baf8daf5d3f0b13ed92efb80c561c38b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59388838"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78432246"
 ---
-# <a name="aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal"></a>Интернет-магазин на ASP.NET MVC, часть 22. Реструктуризация, перенаправление и PayPal
+# <a name="aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal"></a>Магазин ASP.NET MVC, часть 22. Реструктуризация, ремаршрутизация и PayPal
 
-по [Роб Conery](https://github.com/robconery)
+по [Проконусу Вадима](https://github.com/robconery)
 
-В этом эпизоде изменить структуру немного Чтобы очистить некоторые элементы. Я также изменить маршруты, чтобы было гораздо проще. Наконец я добавляю PayPal в случае извлечения.
+В этом эпизоде я перестроил немного, чтобы очистить некоторые элементы. Я также изменяю маршруты гораздо проще. Наконец, я добавляю PayPal в качестве варианта извлечения.
 
-[&#9654;Просмотрите видео (45 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal)
+[&#9654;Смотреть видео (45 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-mvc-storefront-part-22-restructuring-rerouting-and-paypal)
 
 > [!div class="step-by-step"]
 > [Назад](aspnet-mvc-storefront-part-21-order-manager-and-personalization.md)

@@ -1,19 +1,19 @@
 ---
 uid: web-forms/index
-title: Веб-форм ASP.NET | Документация Майкрософт
+title: Веб-формы ASP.NET | Документация Майкрософт
 author: rick-anderson
-description: Скачивание Visual Web Developer Express и узнайте, как быстро создавать веб-приложений с помощью простой для понимания элементов управления на веб-форм ASP.NET в визуальном представлении Environ...
+description: Загрузите Visual Web Developer Express & Узнайте, как быстро создавать веб-приложения с помощью простых в понимании элементов управления в веб-формах ASP.NET в приложении визуального проектирования...
 ms.author: riande
 ms.date: 08/08/2011
 ms.assetid: 7e4ce5d2-ab22-44f0-9825-c12eed7b8fcb
 msc.legacyurl: /web-forms
 msc.type: categoryindex
 ms.openlocfilehash: 623df5d3ffe357f42d72ee0a33bc50aa60a8c4d0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59397010"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78446892"
 ---
 # <a name="aspnet-web-forms"></a>Веб-формы ASP.NET
 
@@ -58,7 +58,7 @@ ms.locfileid: "59397010"
     - [Производительность](overview/performance-and-caching/index.md)
 
         - [Использование асинхронных методов в ASP.NET 4.5](overview/performance-and-caching/using-asynchronous-methods-in-aspnet-45.md)
-    - [Развертывание](overview/deployment/index.md)
+    - [Deployment](overview/deployment/index.md)
 
         - [Веб-развертывание ASP.NET с помощью Visual Studio](overview/deployment/visual-studio-web-deployment/index.md)
 
@@ -77,8 +77,8 @@ ms.locfileid: "59397010"
         - [ASP.NET 4. Введение в корпоративное развертывание](overview/deployment/deploying-web-applications-in-enterprise-scenarios/index.md)
 
             - [Сценарии корпоративных развертываний веб-приложений с помощью Visual Studio 2010](overview/deployment/deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md)
-            - [Корпоративное веб-развертывание: Обзор сценария](overview/deployment/deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
-            - [Управление жизненным циклом приложения: От разработки к производству](overview/deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
+            - [Корпоративное веб-развертывание. Обзор сценариев](overview/deployment/deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
+            - [Управление жизненным циклом приложений: от разработки к производству](overview/deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
         - [ASP.NET 4. Введение в корпоративное развертывание, часть 1](overview/deployment/web-deployment-in-the-enterprise/index.md)
 
             - [Корпоративное веб-развертывание](overview/deployment/web-deployment-in-the-enterprise/web-deployment-in-the-enterprise.md)
@@ -98,7 +98,7 @@ ms.locfileid: "59397010"
             - [Выбор правильного подхода для веб-развертывания](overview/deployment/configuring-server-environments-for-web-deployment/choosing-the-right-approach-to-web-deployment.md)
             - [Сценарий. Настройка среды тестирования для веб-развертывания](overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-test-environment-for-web-deployment.md)
             - [Сценарий. Настройка промежуточной среды для веб-развертывания](overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-staging-environment-for-web-deployment.md)
-            - [Сценарий. Настройке рабочей среды для веб-развертывания](overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment.md)
+            - [Сценарий. Настройка рабочей среды для веб-развертывания](overview/deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment.md)
             - [Настройка веб-сервера для публикации веб-развертывания (удаленный агент)](overview/deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-remote-agent.md)
             - [Настройка веб-сервера для публикации веб-развертывания (обработчик веб-развертывания)](overview/deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-web-deploy-handler.md)
             - [Настройка веб-сервера для публикации веб-развертывания (автономное развертывание)](overview/deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-offline-deployment.md)
@@ -132,12 +132,12 @@ ms.locfileid: "59397010"
 
         - [ASP.NET 4. Tailspin Spyworks](overview/older-versions-getting-started/tailspin-spyworks/index.md)
 
-            - [Часть 1. Файл -> Создать проект](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-1.md)
-            - [Часть 2. Уровень доступа к данным](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-2.md)
+            - [Часть 1. Файл -> Создать проект](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-1.md)
+            - [Часть 2. Уровень доступа к данным](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-2.md)
             - [Часть 3. Макет и меню категории](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-3.md)
             - [Часть 4. Список продуктов](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-4.md)
-            - [Часть 5. Бизнес-логики](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-5.md)
-            - [Часть 6. Членства ASP.NET](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-6.md)
+            - [Часть 5. Бизнес-логика](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-5.md)
+            - [Часть 6. Членство в ASP.NET](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-6.md)
             - [Часть 7. Добавление функций](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-7.md)
             - [Часть 8. Последние страницы, обработка исключений и заключение](overview/older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-8.md)
         - [ASP.NET 4. Начало работы с Entity Framework 4 и веб-формами](overview/older-versions-getting-started/getting-started-with-ef/index.md)
@@ -152,9 +152,9 @@ ms.locfileid: "59397010"
             - [Начало работы с Entity Framework 4.0 Database First. Часть 8](overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-8.md)
         - [ASP.NET 4. Продолжение работы с Entity Framework 4 и веб-формами](overview/older-versions-getting-started/continuing-with-ef/index.md)
 
-            - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 1: Приступая к работе](overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
-            - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 2: Добавление уровня бизнес-логики и модульных тестов](overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
-            - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 3: Сортировка и фильтрация](overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
+            - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 1. Начало работы](overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
+            - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 2. Добавление уровня бизнес-логики и модульных тестов](overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
+            - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 3. Сортировка и фильтрация](overview/older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
             - [Обработка параллелизма с помощью Entity Framework 4.0 в ASP.NET 4](overview/older-versions-getting-started/continuing-with-ef/handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application.md)
             - [Повышение производительности с помощью Entity Framework 4.0 в ASP.NET 4](overview/older-versions-getting-started/continuing-with-ef/maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application.md)
             - [Новые возможности .NET Framework 4.0](overview/older-versions-getting-started/continuing-with-ef/what-s-new-in-the-entity-framework-4.md)
@@ -358,7 +358,7 @@ ms.locfileid: "59397010"
 
             - [Тестирование надежности пароля (C#)](overview/ajax-control-toolkit/passwordstrength/testing-the-strength-of-a-password-cs.md)
             - [Тестирование надежности пароля (VB)](overview/ajax-control-toolkit/passwordstrength/testing-the-strength-of-a-password-vb.md)
-        - [Контекстное меню](overview/ajax-control-toolkit/popup/index.md)
+        - [Popup](overview/ajax-control-toolkit/popup/index.md)
 
             - [Использование нескольких элементов управления Popup (C#)](overview/ajax-control-toolkit/popup/using-multiple-popup-controls-cs.md)
             - [Обработка операций обратной передачи из элемента управления Popup с помощью элемента управления UpdatePanel (C#)](overview/ajax-control-toolkit/popup/handling-postbacks-from-a-popup-control-with-an-updatepanel-cs.md)
@@ -622,7 +622,7 @@ ms.locfileid: "59397010"
         - [Членство](overview/moving-to-aspnet-20/membership.md)
         - [Конфигурация и инструментирование](overview/moving-to-aspnet-20/configuration-and-instrumentation.md)
         - [Профили, темы и веб-части](overview/moving-to-aspnet-20/profiles-themes-and-web-parts.md)
-- [Видеоролики](videos/index.md)
+- [Видео](videos/index.md)
 
     - [Инструкции](videos/how-do-i/index.md)
 
@@ -680,7 +680,7 @@ ms.locfileid: "59397010"
         - [Определение возможностей браузера на веб-страницах ASP.NET](videos/how-do-i/how-do-i-detect-browser-capabilities-in-aspnet-web-pages.md)
         - [Сопоставление серверного элемента управления ASP.NET с используемым для его отображения адаптером](videos/how-do-i/how-do-i-map-an-aspnet-server-control-to-the-adaptor-used-to-render-it.md)
         - [Передача сведений с одной страницы на другую с помощью строки запроса](videos/how-do-i/how-do-i-pass-information-from-one-page-to-another-using-a-query-string.md)
-        - [Использовать aspnet\_merge.exe служебная программа для слияния сборок](videos/how-do-i/how-do-i-use-the-aspnet_mergeexe-utility-to-merge-assemblies.md)
+        - [Использование служебной программы ASPNET\_MERGE. exe для слияния сборок](videos/how-do-i/how-do-i-use-the-aspnet_mergeexe-utility-to-merge-assemblies.md)
         - [Реализация межстраничной обратной передачи в ASP.NET](videos/how-do-i/how-do-i-implement-a-cross-page-postback-in-aspnet.md)
         - [Программное добавление элементов управления на веб-страницу ASP.NET](videos/how-do-i/how-do-i-add-controls-to-an-aspnet-web-page-programmatically.md)
         - [Использование скрытого поля для хранения и обработки сведений на стороне клиента](videos/how-do-i/how-do-i-use-a-hidden-field-to-store-and-manipulate-client-side-information.md)
@@ -740,7 +740,7 @@ ms.locfileid: "59397010"
     - [Создание приложений 3.5](videos/building-35-applications/index.md)
 
         - [Введение в Visual Web Developer](videos/building-35-applications/intro-to-visual-web-developer.md)
-        - [IntelliSense](videos/building-35-applications/intellisense.md)
+        - [технология IntelliSense](videos/building-35-applications/intellisense.md)
         - [Введение в веб-формы](videos/building-35-applications/intro-to-web-forms.md)
         - [Макет страницы](videos/building-35-applications/page-layout.md)
         - [События жизненного цикла приложения](videos/building-35-applications/page-lifecycle-events.md)
@@ -755,7 +755,7 @@ ms.locfileid: "59397010"
         - [Службы в стиле AJAX в Microsoft Visual Web Developer 2008](videos/building-35-applications/ajax-style-services-with-microsoft-visual-web-developer-2008.md)
         - [Проверка](videos/building-35-applications/validation.md)
         - [Элементы управления для входа в систему](videos/building-35-applications/login-controls.md)
-    - [Authentication](videos/authentication/index.md)
+    - [Аутентификация](videos/authentication/index.md)
 
         - [Использование базовой проверки подлинности на основе форм в ASP.NET](videos/authentication/using-basic-forms-authentication-in-aspnet.md)
         - [Изменение свойств проверки подлинности на основе форм](videos/authentication/how-to-change-the-forms-authentication-properties.md)
@@ -787,7 +787,7 @@ ms.locfileid: "59397010"
         - [Дополнительные сведения об SQL](videos/sql-2005/more-structured-query-language.md)
         - [Общие сведения о безопасности и сетевом подключении](videos/sql-2005/understanding-security-and-network-connectivity.md)
         - [Подключение веб-приложения к экспресс-выпуску SQL Server 2005](videos/sql-2005/connecting-your-web-application-to-sql-server-2005-express-edition.md)
-        - [Использование SQL Server Management Studio](videos/sql-2005/using-sql-server-management-studio.md)
+        - [Использование среды SQL Server Management Studio](videos/sql-2005/using-sql-server-management-studio.md)
         - [Начало работы со службами Reporting Services](videos/sql-2005/getting-started-with-reporting-services.md)
         - [Создание и настройка отчетов в Business Intelligence Development Studio](videos/sql-2005/building-and-customizing-reports-in-business-intelligence-development-studio.md)
         - [Создание и использование хранимых процедур](videos/sql-2005/creating-and-using-stored-procedures.md)
@@ -828,16 +828,16 @@ ms.locfileid: "59397010"
         - [[Введение в ASP.NET 2.0.] Основы ASP.NET 2.0](videos/migrating/intro-to-aspnet-20-aspnet-20-fundamentals.md)
         - [[Введение в ASP.NET 2.0.] Элементы пользовательского интерфейса](videos/migrating/intro-to-aspnet-20-user-interface-elements.md)
         - [[Переход] с классического ASP на ASP.NET](videos/migrating/migrating-from-classic-asp-to-aspnet.md)
-        - [Введение в ASP.NET для разработчиков на JSP: Добро пожаловать в ASP.NET 2.0](videos/migrating/intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20.md)
-        - [Введение в ASP.NET для разработчиков на JSP: Создание приложений](videos/migrating/intro-to-aspnet-for-jsp-developers-building-applications.md)
-        - [Введение в ASP.NET для разработчиков ColdFusion: Добавление ASP.NET в ваш репертуар](videos/migrating/intro-to-aspnet-for-coldfusion-developers-adding-aspnet-to-your-repertoire.md)
-        - [Введение в ASP.NET для разработчиков ColdFusion: Создание приложения ASP.NET](videos/migrating/introduction-to-aspnet-for-coldfusion-developers-building-an-aspnet-application.md)
+        - [Введение в ASP.NET для разработчиков на JSP. Знакомство с ASP.NET 2.0](videos/migrating/intro-to-aspnet-for-jsp-developers-welcome-to-aspnet-20.md)
+        - [Введение в ASP.NET для разработчиков на JSP. Создание приложений](videos/migrating/intro-to-aspnet-for-jsp-developers-building-applications.md)
+        - [Введение в ASP.NET для разработчиков на ColdFusion. Добавление ASP.NET в репозиторий](videos/migrating/intro-to-aspnet-for-coldfusion-developers-adding-aspnet-to-your-repertoire.md)
+        - [Введение в ASP.NET для разработчиков на ColdFusion. Создание приложения ASP.NET](videos/migrating/introduction-to-aspnet-for-coldfusion-developers-building-an-aspnet-application.md)
         - [Взаимодействие между PHP и платформой Windows](videos/migrating/interop-between-php-and-the-windows-platform.md)
     - [Создание приложений 2.0](videos/building-20-applications/index.md)
 
         - [[Урок 1.] Начало работы с Visual Web Developer Express](videos/building-20-applications/lesson-1-getting-started-with-visual-web-developer-express.md)
         - [[Урок 2.] Создание пользовательского интерфейса веб-форм](videos/building-20-applications/lesson-2-creating-a-web-forms-user-interface.md)
-        - [[Урок 3:] Дополнительные сведения о событиях и обратной передаче](videos/building-20-applications/lesson-3-understanding-more-about-events-and-postback.md)
+        - [[Урок 3.] Общие сведения о событиях и обратной передаче](videos/building-20-applications/lesson-3-understanding-more-about-events-and-postback.md)
         - [[Урок 4.] Общие сведения о состоянии веб-приложения](videos/building-20-applications/lesson-4-understanding-web-application-state.md)
         - [[Урок 5.] Отладка и трассировка кода веб-сайта](videos/building-20-applications/lesson-5-debugging-and-tracing-your-website.md)
         - [[Урок 6.] Работа с таблицами стилей и главными страницами](videos/building-20-applications/lesson-6-working-with-stylesheets-and-master-pages.md)
@@ -864,7 +864,7 @@ ms.locfileid: "59397010"
         - [Новое нацеливание на несколько версий](videos/visual-studio-2010/visual-studio-2010-quick-hit-new-multi-targeting.md)
         - [Веб-сайты вместо веб-проектов](videos/visual-studio-2010/visual-studio-2010-quick-hit-websites-instead-of-web-projects.md)
         - [Фрагменты кода IntelliSense](videos/visual-studio-2010/visual-studio-2010-quick-hit-snippets-intellisense.md)
-    - [Набор элементов управления Ajax](videos/ajax-control-toolkit/index.md)
+    - [AJAX Control Toolkit](videos/ajax-control-toolkit/index.md)
 
         - [Начало работы с набором средств управления AJAX ASP.NET](videos/ajax-control-toolkit/how-do-i-get-started-with-the-aspnet-ajax-control-toolkit.md)
         - [Расширитель элемента управления CascadingDropDown ASP.NET AJAX](videos/ajax-control-toolkit/how-do-i-use-the-aspnet-ajax-cascadingdropdown-control-extender.md)
@@ -960,15 +960,15 @@ ms.locfileid: "59397010"
             - [Работа с наборами данных и фильтрами из приложения ASP](videos/data-access/adonet-data-services/how-to-work-with-datasets-and-filters-from-an-asp-application.md)
         - [Вопросы пользователей по LINQ](videos/data-access/how-do-i-with-linq/index.md)
 
-            - [LINQ to SQL: обзор](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-overview.md)
-            - [LINQ to SQL: Модель данных](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-data-model.md)
-            - [LINQ to SQL: Запрос базы данных](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-querying-the-database.md)
-            - [LINQ to SQL: Обновление базы данных](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-updating-the-database.md)
-            - [LINQ to SQL: LinqDataSource](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-linqdatasource.md)
-            - [LINQ to SQL: Пользовательский элемент управления LinqDataSource](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-custom-linqdatasource.md)
-            - [LINQ to SQL: Использование хранимых процедур](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-using-stored-procedures.md)
-            - [LINQ to SQL: Обновление с хранимыми процедурами](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-updating-with-stored-procedures.md)
-            - [LINQ to SQL: Выполнение произвольного кода SQL](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-executing-arbitrary-sql.md)
+            - [LINQ to SQL. Общие сведения](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-overview.md)
+            - [LINQ to SQL. Модель данных](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-data-model.md)
+            - [LINQ to SQL. Запросы к базе данных](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-querying-the-database.md)
+            - [LINQ to SQL. Обновление базы данных](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-updating-the-database.md)
+            - [LINQ to SQL. Элемент управления LinqDataSource](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-linqdatasource.md)
+            - [LINQ to SQL. Пользовательский элемент управления LinqDataSource](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-custom-linqdatasource.md)
+            - [LINQ to SQL. Использование хранимых процедур](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-using-stored-procedures.md)
+            - [LINQ to SQL. Обновление с помощью хранимых процедур](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-updating-with-stored-procedures.md)
+            - [LINQ to SQL. Выполнение произвольного кода SQL](videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-executing-arbitrary-sql.md)
         - [Видеоролики по LINQ от команды VB](videos/data-access/linq-videos-from-the-vb-team/index.md)
 
             - [Начало работы с LINQ](videos/data-access/linq-videos-from-the-vb-team/how-do-i-get-started-with-linq.md)
@@ -1017,7 +1017,7 @@ ms.locfileid: "59397010"
             - [Поддержка AJAX ASP.NET в Visual Studio 2008](videos/aspnet-35/aspnet-ajax/aspnet-ajax-support-in-visual-studio-2008.md)
             - [Добавление функциональности AJAX на существующую страницу ASP.NET](videos/aspnet-35/aspnet-ajax/adding-ajax-functionality-to-an-existing-aspnet-page.md)
             - [Создание и использование веб-службы на основе AJAX на веб-сайте](videos/aspnet-35/aspnet-ajax/creating-and-using-an-ajax-enabled-web-service-in-a-web-site.md)
-            - [ASP.NET AJAX: Демонстрация ASP.NET AJAX](videos/aspnet-35/aspnet-ajax/aspnet-ajax-a-demonstration-of-aspnet-ajax.md)
+            - [ASP.NET AJAX. Демонстрация ASP.NET AJAX](videos/aspnet-35/aspnet-ajax/aspnet-ajax-a-demonstration-of-aspnet-ajax.md)
             - [Службы данных ADO.NET с поддержкой ASP.NET AJAX](videos/aspnet-35/aspnet-ajax/adonet-data-services-with-aspnet-ajax-support.md)
             - [Введение в ASP.NET AJAX](videos/aspnet-35/aspnet-ajax/introduction-to-aspnet-ajax-history.md)
             - [Использование сценариев объединения для повышения производительности AJAX](videos/aspnet-35/aspnet-ajax/using-script-combining-to-improve-ajax-performance.md)
@@ -1048,7 +1048,7 @@ ms.locfileid: "59397010"
             - [ScriptLoader](videos/net-4/ajax/aspnet-4-quick-hit-the-scriptloader.md)
             - [Синтаксис JQuery для Microsoft Ajax](videos/net-4/ajax/aspnet-4-quick-hit-jquery-syntax-for-microsoft-ajax.md)
             - [Шаблоны данных AJAX](videos/net-4/ajax/aspnet-4-quick-hit-ajax-data-templates.md)
-        - [Chart](videos/net-4/chart/index.md)
+        - [Диаграмма](videos/net-4/chart/index.md)
 
             - [Chart Control](videos/net-4/chart/aspnet-4-quick-hit-chart-control.md)
             - [Вводные сведения о новом элементе управления Chart в Visual Studio 2010](videos/net-4/chart/aspnet-4-how-do-i-introducing-the-new-chart-control-in-visual-studio-2010.md)
@@ -1058,7 +1058,7 @@ ms.locfileid: "59397010"
             - [Очистка файлов Web.Config](videos/net-4/core/aspnet-4-quick-hit-clean-webconfig-files.md)
             - [Прогнозируемые идентификаторы клиентов](videos/net-4/core/aspnet-4-quick-hit-predictable-client-ids.md)
             - [Метод программы HtmlEncoder](videos/net-4/core/aspnet-4-quick-hit-the-htmlencoder-utility-method.md)
-        - [Данные](videos/net-4/data/index.md)
+        - [Data](videos/net-4/data/index.md)
 
             - [Выбор сохраняемых строк GridView](videos/net-4/data/aspnet-4-quick-hit-persistent-gridview-row-selection.md)
         - [Элемент управления Markup](videos/net-4/markup-control/index.md)
@@ -1073,7 +1073,7 @@ ms.locfileid: "59397010"
             - [Состояние выборочного просмотра](videos/net-4/performance/aspnet-4-quick-hit-selective-view-state.md)
             - [Простое сжатие состояния](videos/net-4/performance/aspnet-4-quick-hit-easy-state-compression.md)
             - [Использование свойства ViewStateMode для управления состоянием просмотра](videos/net-4/performance/how-do-i-use-the-viewstatemode-property-for-managing-viewstate.md)
-        - [Routing](videos/net-4/routing/index.md)
+        - [Маршрутизация](videos/net-4/routing/index.md)
 
             - [Постоянная маршрутизация](videos/net-4/routing/aspnet-4-quick-hit-permanent-redirect.md)
             - [Принудительная маршрутизация WebForms](videos/net-4/routing/aspnet-4-quick-hit-imperative-webforms-routing.md)
@@ -1084,7 +1084,7 @@ ms.locfileid: "59397010"
         - [Оптимизация поисковых систем](videos/net-4/seo/index.md)
 
             - [Динамические метаданные](videos/net-4/seo/aspnet-4-quick-hit-dynamic-metadata.md)
-    - [ASP.NET 4.5](videos/aspnet-web-forms-vnext/index.md)
+    - [ASP.NET 4,5](videos/aspnet-web-forms-vnext/index.md)
 
         - [Строго типизированные элементы управления данными](videos/aspnet-web-forms-vnext/aspnet-vnext-videos-strongly-typed-data-controls.md)
         - [Привязка моделей, часть 1. Выборка данных](videos/aspnet-web-forms-vnext/aspnet-vnext-videos-model-binding-part-1-selecting-data.md)

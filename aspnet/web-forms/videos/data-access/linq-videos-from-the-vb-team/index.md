@@ -1,23 +1,23 @@
 ---
 uid: web-forms/videos/data-access/linq-videos-from-the-vb-team/index
-title: Видеоролики по LINQ от команды VB | Документация Майкрософт
+title: Видео о LINQ от команды VB | Документация Майкрософт
 author: rick-anderson
-description: Эти видео содержат через один час, а другая половина — посвящен новые функции языка LINQ Visual Basic 9.0, включенные в Visual Studio 2008.
+description: Эти видеоролики представляются в течение часа и половины содержимого, посвященного новым возможностям языка LINQ Visual Basic 9,0, включенным в Visual Studio 2008.
 ms.author: riande
 ms.date: 02/24/2012
 ms.assetid: 257373bb-eab0-47bc-b5a2-37a9e91666d6
 msc.legacyurl: /web-forms/videos/data-access/linq-videos-from-the-vb-team
 msc.type: chapter
 ms.openlocfilehash: fae7bc473ecbc655400220aa158dbd5285ae1ea8
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65106822"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78421542"
 ---
 # <a name="linq-videos-from-the-vb-team"></a>Видеоролики по LINQ от команды VB
 
-> Эти видео содержат через один час, а другая половина — посвящен новые функции языка LINQ Visual Basic 9.0, включенные в Visual Studio 2008.
+> Эти видеоролики представляются в течение часа и половины содержимого, посвященного новым возможностям языка LINQ Visual Basic 9,0, включенным в Visual Studio 2008.
 
 - [Начало работы с LINQ](how-do-i-get-started-with-linq.md)
 - [Группирование и объединение запросов](how-do-i-perform-group-and-aggregate-queries.md)

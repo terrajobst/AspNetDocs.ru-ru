@@ -9,17 +9,17 @@ ms.assetid: d6e758b6-6571-484d-a132-34ee6c47747a
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/displaying-a-table-of-database-data-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 3c908d030076fc8400190ef3cf1672632ac1ed6b
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74589439"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78436848"
 ---
 # <a name="displaying-a-table-of-database-data-c"></a>Отображение таблицы данных в базе данных (C#)
 
 по [Майкрософт](https://github.com/microsoft)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/1/1/f/11f721aa-d749-4ed7-bb89-a681b68894e6/ASPNET_MVC_Tutorial_11_CS.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/1/1/f/11f721aa-d749-4ed7-bb89-a681b68894e6/ASPNET_MVC_Tutorial_11_CS.pdf)
 
 > В этом руководстве я продемонстрирую два метода отображения набора записей базы данных. Я покажу два метода форматирования набора записей базы данных в таблице HTML. Во-первых, я покажу, как можно отформатировать записи базы данных непосредственно в представлении. Далее я продемонстрирую, как можно воспользоваться частичными возможностями при форматировании записей базы данных.
 
@@ -33,10 +33,10 @@ ms.locfileid: "74589439"
 
 | **Имя столбца** | **Тип данных** | **Разрешить значения NULL** |
 | --- | --- | --- |
-| Id | Int | False |
-| Заголовок | Nvarchar (200) | False |
-| Программу | NVarchar (50) | False |
-| датерелеасед | DateTime | False |
+| Идентификатор | Int | False |
+| Title | Nvarchar (200) | False |
+| Директор | NVarchar (50) | False |
+| датерелеасед | Дата и время | False |
 
 Чтобы представить таблицу movies в нашем приложении MVC ASP.NET, необходимо создать класс Model. В этом руководстве мы используем Entity Framework Майкрософт для создания наших классов модели.
 
@@ -53,7 +53,7 @@ ms.locfileid: "74589439"
 После нажатия кнопки "Добавить" появится мастер EDM (см. рис. 1). Чтобы завершить работу мастера, выполните следующие действия.
 
 1. На шаге **Выбор содержимого модели** выберите параметр **создать из базы данных** .
-2. На шаге **Выбор подключения к данным** используйте подключение к данным *мовиесдб. mdf* и имя *мовиесдбентитиес* для параметров подключения. Нажмите кнопку **Next (далее** ).
+2. На шаге **Выбор подключения к данным** используйте подключение к данным *мовиесдб. mdf* и имя *мовиесдбентитиес* для параметров подключения. Нажмите кнопку **Далее**.
 3. На шаге **Выбор объектов базы данных** разверните узел таблицы и выберите таблицу фильмы. Введите *модели* пространства имен и нажмите кнопку **Готово** .
 
 [![создания классов LINQ to SQL](displaying-a-table-of-database-data-cs/_static/image1.jpg)](displaying-a-table-of-database-data-cs/_static/image1.png)

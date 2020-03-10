@@ -9,11 +9,11 @@ ms.assetid: 53767e05-c8ab-42e1-a94b-22d906195200
 msc.legacyurl: /mvc/overview/older-versions/working-with-the-dropdownlist-box-and-jquery/using-the-dropdownlist-helper-with-aspnet-mvc
 msc.type: authoredcontent
 ms.openlocfilehash: 6375bb2be158cea18309ffa71c71ac3e67bc91ed
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77457873"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78433080"
 ---
 # <a name="using-the-dropdownlist-helper-with-aspnet-mvc"></a>Использование вспомогательного приложения DropDownList в ASP.NET MVC
 
@@ -42,7 +42,7 @@ ms.locfileid: "77457873"
 - Использование вспомогательного метода [DropDownList](https://msdn.microsoft.com/library/system.web.mvc.html.selectextensions.dropdownlist.aspx) для выбора данных категории.
 - Добавление диалогового окна **jQuery** для добавления новых категорий.
 
-### <a name="getting-started"></a>Начало работы
+### <a name="getting-started"></a>Приступая к работе
 
 Начните с скачивания начального проекта со следующей ссылкой [загрузить](https://archive.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=aspnetmvcsamples&amp;DownloadId=15829). В проводнике Windows щелкните правой кнопкой мыши файл *DDL\_Starter. zip* и выберите пункт Свойства. В диалоговом окне **Свойства DDL\_Starter. zip** выберите Разблокировать.
 

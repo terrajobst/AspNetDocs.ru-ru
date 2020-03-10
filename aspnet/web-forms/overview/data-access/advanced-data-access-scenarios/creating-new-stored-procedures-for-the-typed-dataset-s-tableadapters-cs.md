@@ -9,11 +9,11 @@ ms.assetid: 751282ca-5870-4d66-84e4-6cefae23eb4a
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-cs
 msc.type: authoredcontent
 ms.openlocfilehash: db0d83a0fd1f1f175001d20844b298be0cf7e1cd
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74609217"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78428766"
 ---
 # <a name="creating-new-stored-procedures-for-the-typed-datasets-tableadapters-c"></a>Создание хранимых процедур для адаптеров таблиц TableAdapter типизированного DataSet (C#)
 
@@ -310,7 +310,7 @@ TableAdapter в типизированном наборе данных може�
 
 Поздравляем с программированием!
 
-## <a name="further-reading"></a>Дополнительные сведения
+## <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 
@@ -329,4 +329,4 @@ TableAdapter в типизированном наборе данных може�
 Эта серия руководств была рассмотрена многими полезными рецензентами. Специалист по интересу для этого руководства был Хилтон Жеисенов. Хотите ознакомиться с моими будущими статьями MSDN? Если это так, расположите строку в [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
-> [Вперед](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)
+> [Дальше](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)

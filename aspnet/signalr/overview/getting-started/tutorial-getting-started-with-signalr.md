@@ -10,28 +10,28 @@ msc.legacyurl: /signalr/overview/getting-started/tutorial-getting-started-with-s
 msc.type: authoredcontent
 ms.topic: tutorial
 ms.openlocfilehash: bc4ef190b6e36812b6fe7ca4e16eb763431e0e82
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600471"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78431568"
 ---
 # <a name="tutorial-real-time-chat-with-signalr-2"></a>Учебник. чат в режиме реального времени с SignalR 2
 
 В этом руководстве показано, как использовать SignalR для создания приложения разговора в режиме реального времени. Вы добавляете SignalR в пустое веб-приложение ASP.NET и создаете HTML-страницу для отправки и вывода сообщений.
 
-В этом учебнике рассмотрены следующие задачи.
+Изучив это руководство, вы:
 
 > [!div class="checklist"]
 > * Настройка проекта
-> * Запустить образец
-> * Изучение кода
+> * Запуск примера
+> * Анализ кода
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>предварительные требования
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) с рабочей нагрузкой **ASP.NET и Web Development** .
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) с рабочей нагрузкой **ASP.NET и веб-разработка**.
 
 ## <a name="set-up-the-project"></a>Настройка проекта
 
@@ -167,7 +167,7 @@ ms.locfileid: "74600471"
 
 Код запускает соединение, а затем передает ему функцию для управления событием щелчка на кнопке **Send** на странице HTML.
 
-## <a name="get-the-code"></a>Получите код
+## <a name="get-the-code"></a>Получение кода
 
 [Скачать завершенный проект](https://code.msdn.microsoft.com/SignalR-Getting-Started-b9d18aa9)
 
@@ -181,7 +181,7 @@ ms.locfileid: "74600471"
 
 * [Вики-сайт SignalR](https://github.com/SignalR/SignalR/wiki)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 В этом руководстве вы выполните следующие действия.
 

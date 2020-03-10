@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/aspnet-ajax/how-do-i-use-other-javascript-user-interface-libraries-with-aspnet-ajax
-title: '[Инструкции] Использование других библиотек пользовательского интерфейса JavaScript с помощью ASP.NET AJAX? | Документы Майкрософт'
+title: '[Инструкции:] Использовать другие библиотеки пользовательского интерфейса JavaScript с ASP.NET AJAX? | Документы Майкрософт'
 author: JoeStagner
-description: Microsoft является частью альянсе OpenAjax и библиотеки Microsoft AJAX предназначен для эффективной работы с библиотек сторонних JavaScript пользовательского интерфейса...
+description: Корпорация Майкрософт является частью Опенажакс Alliance, а библиотека Microsoft AJAX разработана для эффективной работы с библиотеками пользовательского интерфейса JavaScript сторонних разработчиков...
 ms.author: riande
 ms.date: 07/16/2007
 ms.assetid: 35cf5142-e2d0-40de-884b-00039cc7ecb7
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-use-other-javascript-user-interface-libraries-with-aspnet-ajax
 msc.type: video
 ms.openlocfilehash: 21c0a717c299cb72ca7379c9cb128ce5bb80edec
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59409886"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78423330"
 ---
-# <a name="how-do-i-use-other-javascript-user-interface-libraries-with-aspnet-ajax"></a>[Инструкции] Использование других библиотек пользовательского интерфейса JavaScript с помощью ASP.NET AJAX?
+# <a name="how-do-i-use-other-javascript-user-interface-libraries-with-aspnet-ajax"></a>[Инструкции:] Использовать другие библиотеки пользовательского интерфейса JavaScript с ASP.NET AJAX?
 
-по [(Joe Stagner)](https://github.com/JoeStagner)
+кем [Джо Stagner)](https://github.com/JoeStagner)
 
-Microsoft является частью [альянсе OpenAjax](http://www.openajax.org/) и предназначен для эффективной работы с библиотек сторонних JavaScript пользовательского интерфейса библиотеки Microsoft AJAX. Это видео содержит демонстрацию взаимодействия между ASP.NET AJAX, прототип и script.aculo.us.
+Корпорация Майкрософт является частью [опенажакс Alliance](http://www.openajax.org/) , а библиотека Microsoft AJAX разработана для эффективной работы с библиотеками пользовательского интерфейса JavaScript сторонних разработчиков. В этом видео представлена демонстрация взаимодействия между ASP.NET AJAX, прототипом и script.aculo.us.
 
-[&#9654;Просмотрите видео (13 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-other-javascript-user-interface-libraries-with-aspnet-ajax)
+[&#9654;Смотреть видео (13 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-other-javascript-user-interface-libraries-with-aspnet-ajax)
 
 > [!div class="step-by-step"]
 > [Назад](how-do-i-choose-between-methods-of-ajax-page-updates.md)

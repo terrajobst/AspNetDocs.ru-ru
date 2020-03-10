@@ -9,11 +9,11 @@ ms.assetid: 57459065-ed7c-4dfe-ac9c-54c093abc261
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios/working-with-computed-columns-cs
 msc.type: authoredcontent
 ms.openlocfilehash: ad6a96f2721510c2478f707c8eed018ae797f27a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74603473"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78427122"
 ---
 # <a name="working-with-computed-columns-c"></a>Работа с вычисляемыми столбцами (C#)
 
@@ -101,7 +101,7 @@ Microsoft SQL Server допускает *[вычисляемые столбцы]
 
 **Рис. 4**. Настройка имен автоматически создаваемых хранимых процедур ([щелкните, чтобы просмотреть изображение с полным размером](working-with-computed-columns-cs/_static/image12.png))
 
-Следующий шаг мастера позволяет присвоить имя методам TableAdapter и указать шаблоны, используемые для доступа к данным и их обновления. Оставьте все три флажка установленными, но переименуйте метод `GetData` в `GetSuppliers`. Чтобы завершить работу мастера, нажмите кнопку Готово.
+Следующий шаг мастера позволяет присвоить имя методам TableAdapter и указать шаблоны, используемые для доступа к данным и их обновления. Оставьте все три флажка установленными, но переименуйте метод `GetData` в `GetSuppliers`. Нажмите кнопку Готово, чтобы завершить работу с мастером.
 
 [![переименование метода GetData в поставщики](working-with-computed-columns-cs/_static/image14.png)](working-with-computed-columns-cs/_static/image13.png)
 
@@ -111,7 +111,7 @@ Microsoft SQL Server допускает *[вычисляемые столбцы]
 
 ## <a name="step-4-including-the-computed-column-in-the-tableadapter-s-main-query"></a>Шаг 4. Включение вычисляемого столбца в основной запрос TableAdapter s
 
-Теперь необходимо обновить TableAdapter и DataTable, созданные на шаге 3, чтобы включить `FullContactName` вычисляемый столбец. Это действие состоит из двух этапов:
+Теперь необходимо обновить TableAdapter и DataTable, созданные на шаге 3, чтобы включить `FullContactName` вычисляемый столбец. Данное действие состоит из следующих шагов:
 
 1. Обновление `Suppliers_Select` хранимой процедуры для получения `FullContactName` вычисляемого столбца;
 2. Обновление таблицы данных для включения соответствующего столбца `FullContactName`.
@@ -128,7 +128,7 @@ Microsoft SQL Server допускает *[вычисляемые столбцы]
 
 **Рис. 6**. Запуск мастера настройки адаптеров таблиц для обновления столбцов DataTable ([щелкните, чтобы просмотреть изображение с полным размером](working-with-computed-columns-cs/_static/image18.png))
 
-Чтобы завершить работу мастера, нажмите кнопку Готово. При этом соответствующий столбец будет автоматически добавлен в `SuppliersDataTable`. Мастер TableAdapter достаточно интеллектуально для определения того, что столбец `FullContactName` является вычисляемым и, следовательно, доступен только для чтения. Следовательно, он устанавливает для свойства Column `ReadOnly` значение `true`. Чтобы проверить это, выберите столбец из `SuppliersDataTable` а затем перейдите к окно свойств (см. рис. 7). Обратите внимание, что свойства `FullContactName` столбцов `DataType` и `MaxLength` также заданы соответствующим образом.
+Нажмите кнопку Готово, чтобы завершить работу с мастером. При этом соответствующий столбец будет автоматически добавлен в `SuppliersDataTable`. Мастер TableAdapter достаточно интеллектуально для определения того, что столбец `FullContactName` является вычисляемым и, следовательно, доступен только для чтения. Следовательно, он устанавливает для свойства Column `ReadOnly` значение `true`. Чтобы проверить это, выберите столбец из `SuppliersDataTable` а затем перейдите к окно свойств (см. рис. 7). Обратите внимание, что свойства `FullContactName` столбцов `DataType` и `MaxLength` также заданы соответствующим образом.
 
 [![столбец Фуллконтактнаме помечен как "только для чтения"](working-with-computed-columns-cs/_static/image20.png)](working-with-computed-columns-cs/_static/image19.png)
 
@@ -160,7 +160,7 @@ Microsoft SQL Server допускает *[вычисляемые столбцы]
 
 **Рис. 10**. Именование методов TableAdapter `FillBySupplierID` и `GetSupplierBySupplierID` ([щелкните, чтобы просмотреть изображение с полным размером](working-with-computed-columns-cs/_static/image30.png))
 
-Чтобы завершить работу мастера, нажмите кнопку Готово.
+Нажмите кнопку Готово, чтобы завершить работу с мастером.
 
 ## <a name="step-6-creating-the-business-logic-layer"></a>Шаг 6. Создание уровня бизнес-логики
 

@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/aspnet-ajax/how-do-i-implement-the-ajax-after-processing-pattern
-title: '[Инструкции] Реализовать AJAX шаблона после обработки? | Документы Майкрософт'
+title: '[Инструкции:] Реализовать шаблон AJAX после обработки? | Документы Майкрософт'
 author: JoeStagner
-description: Платформа AJAX для ASP.NET позволяет код на стороне сервера, чтобы подключить и реагировать на различные события на стороне клиента. В этом видео мы узнаем, как реализовать Aft...
+description: Платформа ASP.NET AJAX позволяет серверному коду подключать и реагировать на различные события на стороне клиента. В этом видеоролике мы рассмотрим, как реализовать АФТ...
 ms.author: riande
 ms.date: 06/21/2007
 ms.assetid: 9a382d8e-ea3a-4fa4-bd24-b56f9051f4db
 msc.legacyurl: /web-forms/videos/aspnet-ajax/how-do-i-implement-the-ajax-after-processing-pattern
 msc.type: video
 ms.openlocfilehash: 3d4b4e0d12d8baa6810a90ff9225fcbf88fad58f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59398635"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78438690"
 ---
-# <a name="how-do-i-implement-the-ajax-after-processing-pattern"></a>[Инструкции] Реализовать AJAX шаблона после обработки?
+# <a name="how-do-i-implement-the-ajax-after-processing-pattern"></a>[Инструкции:] Реализовать шаблон AJAX после обработки?
 
-по [(Joe Stagner)](https://github.com/JoeStagner)
+кем [Джо Stagner)](https://github.com/JoeStagner)
 
-Платформа AJAX для ASP.NET позволяет код на стороне сервера, чтобы подключить и реагировать на различные события на стороне клиента. В этом видео мы узнаем, как реализовать после обработки шаблон, позволяющий серверный код для выполнения логики заключение в том случае, когда пользователь закончил с веб-страницы.
+Платформа ASP.NET AJAX позволяет серверному коду подключать и реагировать на различные события на стороне клиента. В этом видеоролике мы рассмотрим, как реализовать шаблон обработки After, который позволяет серверному коду выполнять логику переноса после завершения работы пользователя с веб-страницей.
 
-[&#9654;Просмотрите видео (5 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-implement-the-ajax-after-processing-pattern)
+[&#9654;Смотреть видео (5 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-implement-the-ajax-after-processing-pattern)
 
 > [!div class="step-by-step"]
 > [Назад](how-do-i-use-the-aspnet-ajax-history-control.md)

@@ -2,24 +2,24 @@
 uid: web-forms/overview/older-versions-getting-started/deploying-web-site-projects/strategies-for-database-development-and-deployment-vb
 title: Стратегии разработки и развертывания баз данных (VB) | Документация Майкрософт
 author: rick-anderson
-description: При первом развертывании приложения, управляемого данными, можно в первый раз скопировать базу данных в среду разработки в рабочую среду. Б...
+description: При первом развертывании приложения, управляемого данными, можно в первый раз скопировать базу данных в среду разработки в рабочую среду. B...
 ms.author: riande
 ms.date: 04/23/2009
 ms.assetid: 07b8905d-78ac-4252-97fb-8675b3fb0bbf
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/strategies-for-database-development-and-deployment-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 1ea4ade32fb05b9e69647ece7d1a4c400fe9fb21
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74616152"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78439770"
 ---
 # <a name="strategies-for-database-development-and-deployment-vb"></a>Стратегии разработки и развертывания баз данных (VB)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/C/3/9/C391A649-B357-4A7B-BAA4-48C96871FEA6/aspnet_tutorial10_DBDevel_vb.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/C/3/9/C391A649-B357-4A7B-BAA4-48C96871FEA6/aspnet_tutorial10_DBDevel_vb.pdf)
 
 > При первом развертывании приложения, управляемого данными, можно в первый раз скопировать базу данных в среду разработки в рабочую среду. Но при последующих развертываниях при выполнении скрытой копии все данные, содержащиеся в рабочей базе данных, будут перезаписаны. Вместо этого развертывание базы данных включает в себя применение изменений, внесенных в базу данных разработки с момента последнего развертывания в рабочей базе данных. В этом учебнике рассматриваются эти проблемы и предлагаются различные стратегии для помощи с хрониками и применением изменений, внесенных в базу данных с момента последнего развертывания.
 

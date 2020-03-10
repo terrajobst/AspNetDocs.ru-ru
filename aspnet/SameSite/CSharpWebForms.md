@@ -6,11 +6,11 @@ ms.author: riande
 ms.date: 2/15/2019
 uid: samesite/CSharpWebForms
 ms.openlocfilehash: 50d4745eca5954275abaa59dab726e7cf7ea193f
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77458423"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78422256"
 ---
 # <a name="samesite-cookie-sample-for-aspnet-472-c-webforms"></a>Пример файла cookie SameSite для ASP.NET C# 4.7.2 WebForms
 
@@ -68,7 +68,7 @@ Response.Cookies.Add(sameSiteCookie);
 
 В ноябре 2019 обновления .NET изменились параметры по умолчанию для проверки подлинности и сеанса форм, чтобы `lax`, так как это наиболее совместимый параметр. Однако при внедрении страниц в IFRAME может потребоваться отменить этот параметр, а затем добавить приведенный ниже код [перехвата](#interception) , чтобы настроить поведение `none` в зависимости от возможностей браузера.
 
-### <a name="running-the-sample"></a>Запуск образца
+### <a name="running-the-sample"></a>Выполнение примера
 
 Если запустить пример проекта, загрузите отладчик браузера на начальной странице и используйте его для просмотра коллекции файлов cookie для сайта.
 Чтобы сделать это на границе и Chrome, нажмите кнопку `F12` затем выберите вкладку `Application` и щелкните URL-адрес сайта в параметре `Cookies` в разделе `Storage`.

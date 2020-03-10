@@ -9,11 +9,11 @@ ms.assetid: 5aee8202-a4e3-4aa9-8a95-cd5d156cea4c
 msc.legacyurl: /web-forms/overview/data-access/introduction/master-pages-and-site-navigation-cs
 msc.type: authoredcontent
 ms.openlocfilehash: e1ddd43524a61ff2e012171eba1a8dc8efbf8f1d
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74587716"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78426306"
 ---
 # <a name="master-pages-and-site-navigation-c"></a>Эталонные страницы и структура навигации веб-сайта (C#)
 
@@ -247,7 +247,7 @@ SectionLevelTutorialListing.ascx.cs
 
 Поздравляем с программированием!
 
-## <a name="further-reading"></a>Дополнительные сведения
+## <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

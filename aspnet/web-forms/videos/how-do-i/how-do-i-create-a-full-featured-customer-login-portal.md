@@ -1,24 +1,24 @@
 ---
 uid: web-forms/videos/how-do-i/how-do-i-create-a-full-featured-customer-login-portal
-title: '[Инструкции] Создание имени входа портала полнофункционального клиента? | Документы Майкрософт'
+title: '[Инструкции:] Как создать полнофункциональный портал для входа клиентов? | Документы Майкрософт'
 author: microsoft
-description: Проследите за создание вымышленного пользовательского портала, чтобы узнать о главных страниц, темы, членства, ролей, структуру переходов узла, профили пользователей, и...
+description: Следуйте инструкциям по созданию вымышленного портала клиента, чтобы узнать о главных страницах, темах, членстве, ролях, структуре навигации по сайту, профилях пользователей и...
 ms.author: riande
 ms.date: 01/05/2006
 ms.assetid: dfaffea8-c71c-4fa0-9f97-585c9ac95529
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-create-a-full-featured-customer-login-portal
 msc.type: video
 ms.openlocfilehash: 05922d973e6390088ff0ef270513a7b4f60e36c0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59414820"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78420102"
 ---
-# <a name="how-do-i-create-a-full-featured-customer-login-portal"></a>[Инструкции] Создание имени входа портала полнофункционального клиента?
+# <a name="how-do-i-create-a-full-featured-customer-login-portal"></a>[Инструкции:] Как создать полнофункциональный портал для входа клиентов?
 
-по [Microsoft](https://github.com/microsoft)
+по [Майкрософт](https://github.com/microsoft)
 
-Проследите за создание вымышленного пользовательского портала, чтобы узнать о главных страниц, темы, членства, ролей, структуру переходов узла, профили пользователей и средство администрирования веб-сайта.
+Для получения сведений о главных страницах, темах, членстве, ролях, структуре навигации сайта, профилях пользователей и средстве администрирования веб-сайта следуйте инструкциям по созданию вымышленного портала клиента.
 
-[&#9654;Просмотрите видео (27 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-create-a-full-featured-customer-login-portal)
+[&#9654;Смотреть видео (27 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-create-a-full-featured-customer-login-portal)

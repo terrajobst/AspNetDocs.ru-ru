@@ -6,11 +6,11 @@ ms.author: riande
 ms.date: 2/15/2019
 uid: samesite/vbWF
 ms.openlocfilehash: 8979edecc5acf7dac81b9f53d31af00389f4727c
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77458387"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78438438"
 ---
 # <a name="samesite-cookie-sample-for-aspnet-472-vb-webforms"></a>Пример SameSite cookie для ASP.NET 4.7.2 VB
 .NET Framework 4,7 имеет встроенную поддержку атрибута [SameSite](https://www.owasp.org/index.php/SameSite) , но она соответствует исходному стандарту.
@@ -70,7 +70,7 @@ Response.Cookies.Add(sameSiteCookie)
 
 В ноябре 2019 обновления .NET изменились параметры по умолчанию для проверки подлинности и сеанса форм, чтобы `lax`, так как это наиболее совместимый параметр. Однако при внедрении страниц в IFRAME может потребоваться отменить этот параметр, а затем добавить приведенный ниже код [перехвата](#interception) , чтобы настроить поведение `none` в зависимости от возможностей браузера.
 
-### <a name="running-the-sample"></a>Запуск образца
+### <a name="running-the-sample"></a>Выполнение примера
 
 Если запустить пример проекта, загрузите отладчик браузера на начальной странице и используйте его для просмотра коллекции файлов cookie для сайта.
 Чтобы сделать это на границе и Chrome, нажмите кнопку `F12` затем выберите вкладку `Application` и щелкните URL-адрес сайта в параметре `Cookies` в разделе `Storage`.

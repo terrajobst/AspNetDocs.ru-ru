@@ -2,22 +2,22 @@
 uid: web-forms/overview/data-access/advanced-data-access-scenarios/index
 title: Расширенные сценарии доступа к данным | Документация Майкрософт
 author: rick-anderson
-description: Эти учебники рассматривается работать с хранимыми процедурами и вычисляемые столбцы, использующие соединения с таблицами базы данных и шифрование сведений о соединении данных...
+description: В этих учебниках рассматривается работа с хранимыми процедурами и вычисленными столбцами, использование соединений с таблицами базы данных и шифрование сведений о подключении к данным...
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 00d198ed-fddc-4fd3-a86e-3f29c5f707cc
 msc.legacyurl: /web-forms/overview/data-access/advanced-data-access-scenarios
 msc.type: chapter
 ms.openlocfilehash: 25041560b9e8ff0a8c944572dad344e655100b0d
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65108544"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78428202"
 ---
 # <a name="advanced-data-access-scenarios"></a>Расширенные сценарии доступа к данным
 
-> Эти учебники рассматривается как работать с хранимыми процедурами и вычисляемые столбцы, использующие соединения с таблицами базы данных и как шифровать соединения данных.
+> В этих учебниках рассматривается работа с хранимыми процедурами и вычисленными столбцами, использование соединений с таблицами базы данных и шифрование сведений о подключении к данным.
 
 - [Создание хранимых процедур для адаптеров таблиц TableAdapter типизированного DataSet (C#)](creating-new-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)
 - [Использование существующих хранимых процедур для адаптеров таблиц TableAdapter типизированного DataSet (C#)](using-existing-stored-procedures-for-the-typed-dataset-s-tableadapters-cs.md)

@@ -9,11 +9,11 @@ ms.assetid: 5e2bb092-cb22-4511-ad0a-22ae12dd99b3
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-a-sql-server-database-update-11-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: 0894c0ac24737e66b6960ef3d48aa17f78c6aa1d
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74621087"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78423978"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-a-sql-server-database-update---11-of-12"></a>Развертывание веб-приложения ASP.NET с SQL Server Compact с помощью Visual Studio или Visual Web Developer: развертывание обновления базы данных SQL Server-11 из 12
 
@@ -47,11 +47,11 @@ ms.locfileid: "74621087"
 
 [!code-aspx[Main](deployment-to-a-hosting-provider-deploying-a-sql-server-database-update-11-of-12/samples/sample3.aspx)]
 
-Постройте решение.
+Создайте решение.
 
 Откройте окно **консоли диспетчера пакетов** и выберите в качестве **проекта по умолчанию**ContosoUniversity. DAL.
 
-Введите следующие команды.
+Введите следующие команды:
 
 [!code-powershell[Main](deployment-to-a-hosting-provider-deploying-a-sql-server-database-update-11-of-12/samples/sample4.ps1)]
 
@@ -89,7 +89,7 @@ ms.locfileid: "74621087"
 
 Не снимайте флажок **обновлять базу данных** .
 
-Нажмите кнопку **Опубликовать**.
+Щелкните **Опубликовать**.
 
 Visual Studio развертывает изменения кода в тестовой среде и открывает браузер на домашней странице университета Contoso.
 
@@ -119,7 +119,7 @@ Visual Studio развертывает изменения кода в тесто
 
 На вкладке **Подключение** измените **URL-адрес назначения** на соответствующее значение, если используется временный URL-адрес.
 
-Нажмите кнопку **Далее**.
+Щелкните **Далее**.
 
 На вкладке **Параметры** щелкните **включить новые улучшения публикации базы данных**.
 
@@ -135,7 +135,7 @@ Visual Studio развертывает изменения кода в тесто
 
 Закройте профиль публикации, чтобы сохранить изменения, а затем откройте его снова.
 
-Нажмите кнопку **Опубликовать**. (Для реального рабочего веб-сайта можно скопировать *приложение\_offline. htm* в рабочую среду и разместить его в папке проекта перед публикацией, а затем удалить его после завершения развертывания.)
+Щелкните **Опубликовать**. (Для реального рабочего веб-сайта можно скопировать *приложение\_offline. htm* в рабочую среду и разместить его в папке проекта перед публикацией, а затем удалить его после завершения развертывания.)
 
 Visual Studio развертывает изменения кода в тестовой среде и открывает браузер на домашней странице университета Contoso.
 

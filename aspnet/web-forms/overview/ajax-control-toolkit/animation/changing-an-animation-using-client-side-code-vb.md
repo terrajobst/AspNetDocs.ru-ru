@@ -9,11 +9,11 @@ ms.assetid: a7fe5de5-a964-4780-ae5e-70821dfb50a0
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation/changing-an-animation-using-client-side-code-vb
 msc.type: authoredcontent
 ms.openlocfilehash: cce0a5a901f71edd40eada59ac7eeba93222e2b3
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74606925"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78430992"
 ---
 # <a name="changing-an-animation-using-client-side-code-vb"></a>Изменение анимаций с помощью клиентского кода (VB)
 
@@ -51,7 +51,7 @@ ms.locfileid: "74606925"
 
 Обратите внимание, что в элементе управления `AnimationExtender` нет `<Animations>` узла. Пользовательский код JavaScript используется для предоставления анимаций, используемых с элементом управления.
 
-Как и в случае с API сервера `AnimationExtender`, еще нет простого способа присвоить анимацию расширительу. Однако расширитель предоставляет несколько методов для чтения и записи анимации, зарегистрированной с различными событиями (`OnClick`, `OnLoad`и т. д.). Далее приводятся некоторые примеры.
+Как и в случае с API сервера `AnimationExtender`, еще нет простого способа присвоить анимацию расширительу. Однако расширитель предоставляет несколько методов для чтения и записи анимации, зарегистрированной с различными событиями (`OnClick`, `OnLoad`и т. д.). Ниже приведены некоторые примеры:
 
 - `get_OnClick()`
 - `set_OnClick()`

@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/aspnet-dynamic-data/how-do-i-enable-inline-gridview-editing
-title: Включение встроенного редактирования GridView | Документы Майкрософт
+title: Как включить редактирование встроенного элемента управления GridView? | Документы Майкрософт
 author: shanselman
-description: Теперь, когда узел был создан представления редактирования и сведения, как включить внесение правок непосредственно в элементе управления GridView? В этом видео показано, как, а также touc...
+description: Теперь, когда вы создали сайт с представлениями Edit и Details, как включить встроенное редактирование в элементе управления GridView? В этом видео показано, как, а также Таук...
 ms.author: riande
 ms.date: 05/08/2008
 ms.assetid: 026e7932-aea4-42c9-8661-c1392407dc4f
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data/how-do-i-enable-inline-gridview-editing
 msc.type: video
 ms.openlocfilehash: 18070636b96683efdf96f8c3e8eb7d2fd12cc067
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422113"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78439542"
 ---
-# <a name="how-do-i-enable-inline-gridview-editing"></a>Включение встроенного редактирования GridView
+# <a name="how-do-i-enable-inline-gridview-editing"></a>Как включить редактирование встроенного элемента управления GridView?
 
-по [(Scott hanselman)](https://github.com/shanselman)
+по [Скотт Hanselman](https://github.com/shanselman)
 
-Теперь, когда узел был создан представления редактирования и сведения, как включить внесение правок в **GridView** управления? В этом видео показано, как, а также штрихи о маршрутизации.
+Теперь, когда вы создали сайт с представлениями Edit и Details, как включить встроенное редактирование в элементе управления **GridView** ? В этом видео показано, как, а также касается маршрутизации.
 
-[&#9654;Просмотрите видео (6 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-enable-inline-gridview-editing)
+[&#9654;Смотреть видео (6 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-enable-inline-gridview-editing)
 
 > [!div class="step-by-step"]
 > [Назад](your-first-scaffold-and-what-is-dynamic-data.md)
