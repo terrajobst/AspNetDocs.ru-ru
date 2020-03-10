@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/vs-2005/how-do-i-practice-test-driven-development
-title: '[Инструкции] Практика разработки через тестирование? | Документы Майкрософт'
+title: '[Инструкции:] Попрактиковаться в разработке на основе тестирования? | Документы Майкрософт'
 author: rick-anderson
-description: Visual Studio Team System предоставляет средства, необходимые для практика разработки, направляемой тестированием и в этом видео мы узнаем, как Team System проверка функциональности...
+description: Visual Studio Team System предоставляет средства, необходимые для обучения разработке на основе тестирования, и в этом видеоролике мы будем изучать, как функции тестирования в Team System...
 ms.author: riande
 ms.date: 06/21/2007
 ms.assetid: 60b10049-ca02-4830-b3ce-83e9584511d0
 msc.legacyurl: /web-forms/videos/vs-2005/how-do-i-practice-test-driven-development
 msc.type: video
 ms.openlocfilehash: debb6c1bf20684149ca259b25bc3df92d12dcd34
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59395424"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520872"
 ---
-# <a name="how-do-i-practice-test-driven-development"></a>[Инструкции] Практика разработки через тестирование?
+# <a name="how-do-i-practice-test-driven-development"></a>[Инструкции:] Попрактиковаться в разработке на основе тестирования?
 
-по [Криса Менегэй](https://twitter.com/CMenegay)
+от [Крис менегэй](https://twitter.com/CMenegay)
 
-Visual Studio Team System предоставляет средства, необходимые для разработки, направляемой тестированием, и в этом видео мы узнаем, как функциональные возможности тестирования Team System позволяет перейти к коду из кода для тестирования и тестирования. Мы видим, как можно написать тест и затем использовать Visual Studio Team System для создания целевого кода, который соответствует идеологии TDD сначала написания теста и код во-вторых.
+Visual Studio Team System предоставляет средства, необходимые для обучения разработке на основе тестирования, и в этом видеоролике мы рассмотрим, как функции тестирования Team System позволяют переходить от кода к тесту и тестировать его в коде. Мы посмотрим, как можно написать тест, а затем с помощью Visual Studio Team System создать целевой код, который соответствует идеология TDD для написания теста, а второй — код.
 
-[&#9654;Просмотрите видео (8 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-practice-test-driven-development)
+[&#9654;Смотреть видео (8 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-practice-test-driven-development)
 
 > [!div class="step-by-step"]
 > [Назад](how-do-i-write-code-more-quickly-with-unit-tests.md)

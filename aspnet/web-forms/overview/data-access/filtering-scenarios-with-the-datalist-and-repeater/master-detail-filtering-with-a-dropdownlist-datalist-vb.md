@@ -9,11 +9,11 @@ ms.assetid: ad0f1014-1eff-465f-bdc6-93058de00e44
 msc.legacyurl: /web-forms/overview/data-access/filtering-scenarios-with-the-datalist-and-repeater/master-detail-filtering-with-a-dropdownlist-datalist-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 537f8e76bc0cbfa759a014b63ae5f68b5d3ca64d
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74629898"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78491088"
 ---
 # <a name="masterdetail-filtering-with-a-dropdownlist-vb"></a>Фильтрация "Основной/подробности" с помощью элемента управления DropDownList (VB)
 
@@ -115,7 +115,7 @@ ms.locfileid: "74629898"
 
 Чтобы добавить новый элемент списка в DropDownList, перейдите к окно свойств и щелкните многоточие в свойстве `Items`. Добавьте новый элемент списка с `Text` "--выберите категорию--" и `0``Value`.
 
-![Добавление](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image27.png)
+![Добавить](master-detail-filtering-with-a-dropdownlist-datalist-vb/_static/image27.png)
 
 **Рис. 11**. Добавление элемента списка «--выберите категорию--»
 

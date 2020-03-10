@@ -9,11 +9,11 @@ ms.assetid: 4f4bf092-c400-471f-a876-78fda0417890
 msc.legacyurl: /web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/url-routing
 msc.type: authoredcontent
 ms.openlocfilehash: 66b727b69ca4f9a3d35b67f492f9a554146e09ef
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74590713"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78474816"
 ---
 # <a name="url-routing"></a>Маршрутизация URL-адресов
 
@@ -25,7 +25,7 @@ ms.locfileid: "74590713"
 
 В этом руководстве вы измените пример приложения Wingtip Toys для поддержки маршрутизации URL-адресов. Маршрутизация позволяет веб-приложению использовать URL-адреса, которые понятны, проще запоминать и лучше поддерживаются поисковыми механизмами. Это руководство построено на предыдущем учебном курсе «членство и администрирование» и входит в серию руководств по Wingtip Toys.
 
-## <a name="what-youll-learn"></a>Что вы узнаете:
+## <a name="what-youll-learn"></a>Из этого руководства вы узнаете, как выполнять такие задачи:
 
 - Как зарегистрировать маршруты для приложения веб-форм ASP.NET.
 - Добавление маршрутов на веб-страницу.
@@ -78,7 +78,7 @@ ms.locfileid: "74590713"
 
 > [!NOTE] 
 > 
-> **Необязательный**
+> **Необязательно**
 > 
 > Вы можете упростить управление кодом, переместив метод `RegisterCustomRoutes` в отдельный класс. В папке *Logic* создайте отдельный класс `RouteActions`. Переместите приведенный выше метод `RegisterCustomRoutes` из файла *Global.asax.CS* в новый класс `RoutesActions`. Используйте класс `RoleActions` и метод `createAdmin` как пример вызова метода `RegisterCustomRoutes` из файла *Global.asax.CS* .
 

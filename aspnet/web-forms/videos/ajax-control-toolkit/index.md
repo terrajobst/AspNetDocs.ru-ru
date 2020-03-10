@@ -1,23 +1,23 @@
 ---
 uid: web-forms/videos/ajax-control-toolkit/index
-title: AJAX Control Toolkit | Документация Майкрософт
+title: Набор элементов управления AJAX | Документация Майкрософт
 author: rick-anderson
-description: Как создать очень быстро реагирующих веб-ASP.NET страницы с использованием Ajax Control Toolkit.
+description: Создание очень быстро реагирующих веб-страниц ASP.NET с помощью AJAX Control Toolkit.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 6f7b1c74-cc73-42f9-8ef0-8b3d058dabfa
 msc.legacyurl: /web-forms/videos/ajax-control-toolkit
 msc.type: chapter
 ms.openlocfilehash: c92d686cdb7883efbb5e5b2997e4a490f83607f0
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65131521"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78518940"
 ---
 # <a name="ajax-control-toolkit"></a>Ajax (набор элементов управления)
 
-> Как создать очень быстро реагирующих веб-ASP.NET страницы с использованием Ajax Control Toolkit.
+> Создание очень быстро реагирующих веб-страниц ASP.NET с помощью AJAX Control Toolkit.
 
 - [Начало работы с набором средств управления AJAX ASP.NET](how-do-i-get-started-with-the-aspnet-ajax-control-toolkit.md)
 - [Расширитель элемента управления CascadingDropDown ASP.NET AJAX](how-do-i-use-the-aspnet-ajax-cascadingdropdown-control-extender.md)

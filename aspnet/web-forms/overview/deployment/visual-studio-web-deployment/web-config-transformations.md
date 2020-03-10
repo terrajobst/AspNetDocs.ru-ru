@@ -9,11 +9,11 @@ ms.assetid: 5a2a927b-14cb-40bc-867a-f0680f9febd7
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations
 msc.type: authoredcontent
 ms.openlocfilehash: a9d39547c94a63003442ba6fe1257693dde24b05
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74621792"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78513714"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-webconfig-file-transformations"></a>ASP.NET веб-развертывание с помощью Visual Studio: преобразования файла Web. config
 
@@ -47,7 +47,7 @@ ms.locfileid: "74621792"
 
 В **Обозреватель решений**разверните файл *Web. config* , чтобы просмотреть файлы преобразования *Web. Debug. config* и *Web. Release. config* , которые создаются по умолчанию для двух конфигураций сборки по умолчанию.
 
-![Web. config_transform_files](web-config-transformations/_static/image1.png)
+![Web.config_transform_files](web-config-transformations/_static/image1.png)
 
 Чтобы создать файлы преобразования для пользовательских конфигураций сборки, щелкните правой кнопкой мыши файл Web. config и в контекстном меню выберите команду **Добавить преобразования конфигурации** . В этом учебнике это не требуется, и параметр меню отключен, так как не были созданы пользовательские конфигурации сборки.
 

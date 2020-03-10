@@ -7,11 +7,11 @@ ms.assetid: fddf8e5e-c055-4f81-b691-78deef871112
 ms.author: riande
 ms.date: 09/20/2017
 ms.openlocfilehash: 106b4b88d2e7de90900b7a73570ecd6140e2db66
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65113196"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78449730"
 ---
 # <a name="aspnet-tutorials"></a>Учебники по ASP.NET
 
@@ -20,7 +20,7 @@ ms.locfileid: "65113196"
 Доступны следующие пошаговые руководства по разработке приложений ASP.NET.
 
 > [!NOTE]
-> Ищете учебники по ASP.NET Core?  Найти их [здесь](https://docs.microsoft.com/aspnet/core/tutorials/).
+> Ищете ASP.NET Core руководства?  Найдите их [здесь](https://docs.microsoft.com/aspnet/core/tutorials/).
 
 ## <a name="web-forms"></a>Веб-формы
 
@@ -47,20 +47,20 @@ ms.locfileid: "65113196"
 * [Использование инспектора страниц в ASP.NET MVC](mvc/overview/views/using-page-inspector-in-aspnet-mvc.md)
 * [Создание приложения ASP.NET MVC 5 с единым входом с помощью учетных данных Facebook, Twitter, LinkedIn и Google OAuth2 (C#)](mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md)
 * [Создание безопасного приложения веб-форм ASP.NET MVC 5 с входом, подтверждением электронной почты и сбросом пароля (C#)](mvc/overview/security/create-an-aspnet-mvc-5-web-app-with-email-confirmation-and-password-reset.md)
-* [Приложение ASP.NET MVC 5 с двухфакторной проверкой подлинности по SMS и электронной почте](mvc/overview/security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication.md)
-* [Предотвращение атак XSRF и CSRF в ASP.NET MVC и на веб-страницах](mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages.md)
+* [Приложение ASP.NET MVC 5 с двухфакторной проверкой подлинности с использованием SMS и электронной почты](mvc/overview/security/aspnet-mvc-5-app-with-sms-and-email-two-factor-authentication.md)
+* [Сведения о предотвращении подделки межсайтовых запросов в ASP.NET MVC и на веб-страницах ASP.NET](mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages.md)
 * [Предотвращение атак с открытой переадресацией (C#)](mvc/overview/security/preventing-open-redirection-attacks.md)
 * [Перенос приложений ASP.NET MVC в контейнеры Windows](mvc/overview/deployment/docker-aspnetmvc.md)
 * [Профилирование и отладка приложения ASP.NET MVC с помощью Glimpse](mvc/overview/performance/profile-and-debug-your-aspnet-mvc-app-with-glimpse.md)
 * [Использование асинхронных методов в ASP.NET MVC 4](mvc/overview/performance/using-asynchronous-methods-in-aspnet-mvc-4.md)
 * [Обновление ASP.NET MVC 4 и проекта веб-API до ASP.NET MVC 5 и веб-API 2](mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2.md)
 
-## <a name="web-api"></a>Веб-интерфейс API
+## <a name="web-api"></a>Веб-API
 
 * [Начало работы с веб-API 2 (C#)](web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api.md)
 * [Использование веб-API с помощью веб-форм ASP.NET](web-api/overview/getting-started-with-aspnet-web-api/using-web-api-with-aspnet-web-forms.md)
 * [Создание страниц справки по веб-API](web-api/overview/getting-started-with-aspnet-web-api/creating-api-help-pages.md)
-* [Практическое лабораторное занятие. Создание одностраничного приложения (SPA) с веб-API ASP.NET и Angular.js](web-api/overview/getting-started-with-aspnet-web-api/build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs.md)
+* [Практическое лабораторное занятие. Создание одностраничного приложения (SPA) с помощью веб-API ASP.NET и Angular.js](web-api/overview/getting-started-with-aspnet-web-api/build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs.md)
 * [Создание интерфейса API REST с помощью маршрутизации атрибутов в веб-API 2](web-api/overview/web-api-routing-and-actions/create-a-rest-api-with-attribute-routing.md)
 * [Использование веб-API 2 с Entity Framework 6](web-api/overview/data/using-web-api-with-entity-framework/index.md)
 * [Вызов веб-API из приложения Windows Phone 8 (C#)](web-api/overview/mobile-clients/calling-web-api-from-a-windows-phone-8-application.md)
@@ -78,8 +78,8 @@ ms.locfileid: "65113196"
 * [Размещение веб-API 2 в рабочей роли Azure](web-api/overview/hosting-aspnet-web-api/host-aspnet-web-api-in-an-azure-worker-role.md)
 * [Внедрение зависимостей в веб-API 2](web-api/overview/advanced/dependency-injection.md)
 * [Вызов веб-API из клиента .NET (C#)](web-api/overview/advanced/calling-a-web-api-from-a-net-client.md)
-* [Отправка данных формы HTML в веб-API: Данные формы в URL-кодировке](web-api/overview/advanced/sending-html-form-data-part-1.md)
-* [Отправка данных формы HTML в веб-API: Отправка файлов и составное сообщение MIME](web-api/overview/advanced/sending-html-form-data-part-2.md)
+* [Отправка данных формы HTML в веб-API. Данные формы в URL-кодировке](web-api/overview/advanced/sending-html-form-data-part-1.md)
+* [Отправка данных формы HTML в веб-API. Отправка файлов и составное сообщение MIME](web-api/overview/advanced/sending-html-form-data-part-2.md)
 
 ## <a name="web-pages"></a>Веб-страницы
 
@@ -114,9 +114,9 @@ ms.locfileid: "65113196"
 
 * [Учебник. Начало работы с SignalR 2](signalr/overview/getting-started/tutorial-getting-started-with-signalr.md)
 * [Учебник. Начало работы с SignalR 2 и MVC 5](signalr/overview/getting-started/tutorial-getting-started-with-signalr-and-mvc.md)
-* [Учебник. Высокочастотный в реальном времени с SignalR 2](signalr/overview/getting-started/tutorial-high-frequency-realtime-with-signalr.md)
+* [Учебник.Обмен сообщениями с высоким уровнем периодичности в режиме реального времени с помощью SignalR 2](signalr/overview/getting-started/tutorial-high-frequency-realtime-with-signalr.md)
 * [Учебник. Передача сообщений с сервера с помощью SignalR 2](signalr/overview/getting-started/tutorial-server-broadcast-with-signalr.md)
-* [Практическое лабораторное занятие. В режиме реального времени веб-приложений с помощью SignalR](signalr/overview/getting-started/real-time-web-applications-with-signalr.md)
+* [Практическое лабораторное занятие. Веб-приложения в режиме реального времени с SignalR](signalr/overview/getting-started/real-time-web-applications-with-signalr.md)
 * [Модульное тестирование приложений SignalR](signalr/overview/testing-and-debugging/unit-testing-signalr-applications.md)
 * [Включение трассировки SignalR](signalr/overview/testing-and-debugging/enabling-signalr-tracing.md)
 * [Масштабирование SignalR с помощью служебной шины Azure](signalr/overview/performance/scaleout-with-windows-azure-service-bus.md)

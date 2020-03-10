@@ -1,32 +1,32 @@
 ---
 uid: web-forms/overview/older-versions-getting-started/index
-title: Предыдущие версии — начало работы веб-форм | Документация Майкрософт
+title: Более старые версии — веб-формы начало работы | Документация Майкрософт
 author: rick-anderson
-description: Руководство по ASP.NET Web Forms 4 и более ранних версий.
+description: Учебник по ASP.NET Web Forms 4 и более ранним версиям.
 ms.author: riande
 ms.date: 10/18/2014
 ms.assetid: e03585c2-80bf-4083-99ba-9fcbc883ccd8
 msc.legacyurl: /web-forms/overview/older-versions-getting-started
 msc.type: chapter
 ms.openlocfilehash: 94c995ee1e636f1250efb3a90887d8d73badeca7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59393643"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78474570"
 ---
-# <a name="older-versions---web-forms-getting-started"></a>Предыдущие версии — начало работы веб-форм
+# <a name="older-versions---web-forms-getting-started"></a>Более старые версии — веб-формы начало работы
 
-> Документация по ASP.NET Web Forms 4 и более ранних версий.
+> Документация по ASP.NET Web Forms 4 и более ранним версиям.
 
 - [ASP.NET 4. Tailspin Spyworks](tailspin-spyworks/index.md)
 
-    - [Часть 1. Файл -> Создать проект](tailspin-spyworks/tailspin-spyworks-part-1.md)
-    - [Часть 2. Уровень доступа к данным](tailspin-spyworks/tailspin-spyworks-part-2.md)
+    - [Часть 1. Файл -> Создать проект](tailspin-spyworks/tailspin-spyworks-part-1.md)
+    - [Часть 2. Уровень доступа к данным](tailspin-spyworks/tailspin-spyworks-part-2.md)
     - [Часть 3. Макет и меню категории](tailspin-spyworks/tailspin-spyworks-part-3.md)
     - [Часть 4. Список продуктов](tailspin-spyworks/tailspin-spyworks-part-4.md)
-    - [Часть 5. Бизнес-логики](tailspin-spyworks/tailspin-spyworks-part-5.md)
-    - [Часть 6. Членства ASP.NET](tailspin-spyworks/tailspin-spyworks-part-6.md)
+    - [Часть 5. Бизнес-логика](tailspin-spyworks/tailspin-spyworks-part-5.md)
+    - [Часть 6. Членство в ASP.NET](tailspin-spyworks/tailspin-spyworks-part-6.md)
     - [Часть 7. Добавление функций](tailspin-spyworks/tailspin-spyworks-part-7.md)
     - [Часть 8. Последние страницы, обработка исключений и заключение](tailspin-spyworks/tailspin-spyworks-part-8.md)
 - [ASP.NET 4. Начало работы с Entity Framework 4 и веб-формами](getting-started-with-ef/index.md)
@@ -41,9 +41,9 @@ ms.locfileid: "59393643"
     - [Начало работы с Entity Framework 4.0 Database First. Часть 8](getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-8.md)
 - [ASP.NET 4. Продолжение работы с Entity Framework 4 и веб-формами](continuing-with-ef/index.md)
 
-    - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 1: Приступая к работе](continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
-    - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 2: Добавление уровня бизнес-логики и модульных тестов](continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
-    - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 3: Сортировка и фильтрация](continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
+    - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 1. Начало работы](continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
+    - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 2. Добавление уровня бизнес-логики и модульных тестов](continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
+    - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 3. Сортировка и фильтрация](continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
     - [Обработка параллелизма с помощью Entity Framework 4.0 в ASP.NET 4](continuing-with-ef/handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application.md)
     - [Повышение производительности с помощью Entity Framework 4.0 в ASP.NET 4](continuing-with-ef/maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application.md)
     - [Новые возможности .NET Framework 4.0](continuing-with-ef/what-s-new-in-the-entity-framework-4.md)

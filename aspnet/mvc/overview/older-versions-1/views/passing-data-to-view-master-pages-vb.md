@@ -9,17 +9,17 @@ ms.assetid: 37a1ebae-8773-408f-8645-d21da7ff9ae1
 msc.legacyurl: /mvc/overview/older-versions-1/views/passing-data-to-view-master-pages-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 9f768f47557adedc43cebfa2c092014bba5842de
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74593740"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78485676"
 ---
 # <a name="passing-data-to-view-master-pages-vb"></a>Передача данных на эталонные страницы представлений (VB)
 
 по [Майкрософт](https://github.com/microsoft)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/e/f/3/ef3f2ff6-7424-48f7-bdaa-180ef64c3490/ASPNET_MVC_Tutorial_13_VB.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/e/f/3/ef3f2ff6-7424-48f7-bdaa-180ef64c3490/ASPNET_MVC_Tutorial_13_VB.pdf)
 
 > Цель этого руководства — объяснить, как передавать данные из контроллера на главную страницу представления. Мы рассмотрим две стратегии передачи данных на главную страницу представления. Во-первых, мы обсудим простое решение, которое приводит к несложному обслуживанию приложения. Далее мы рассмотрим гораздо лучшее решение, которое требует немного более начальной работы, но приводит к значительному обслуживанию приложения.
 

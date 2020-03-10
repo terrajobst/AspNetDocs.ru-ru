@@ -9,11 +9,11 @@ ms.assetid: b381b1da-feb3-4776-bc1b-75db53eb90ab
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/uploading-files-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 4e3e32a829de386a681504c8d5d61dd258b8b2e6
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74581879"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78441696"
 ---
 # <a name="uploading-files-c"></a>Отправка файлов (C#)
 
@@ -151,7 +151,7 @@ ms.locfileid: "74581879"
 
 [!code-sql[Main](uploading-files-cs/samples/sample3.sql)]
 
-Последним шагом является выбор имени для нового метода. Используйте `FillCategoryWithBinaryDataByCategoryID` и `GetCategoryWithBinaryDataByCategoryID` для заполнения DataTable и возврата шаблонов DataTable соответственно. Чтобы завершить работу мастера, нажмите кнопку Готово.
+Последним шагом является выбор имени для нового метода. Используйте `FillCategoryWithBinaryDataByCategoryID` и `GetCategoryWithBinaryDataByCategoryID` для заполнения DataTable и возврата шаблонов DataTable соответственно. Нажмите кнопку Готово, чтобы завершить работу с мастером.
 
 [![выбрать имена для методов TableAdapter s](uploading-files-cs/_static/image10.gif)](uploading-files-cs/_static/image15.png)
 
@@ -170,7 +170,7 @@ ms.locfileid: "74581879"
 
 ## <a name="updating-the-business-logic-layer-bll"></a>Обновление уровня бизнес-логики (BLL)
 
-При обновлении DAL остается только расширить уровень бизнес-логики (BLL), чтобы включить метод для нового метода `CategoriesTableAdapter`. Добавьте следующий метод в класс `CategoriesBLL`:
+При обновлении DAL остается только расширить уровень бизнес-логики (BLL), чтобы включить метод для нового метода `CategoriesTableAdapter`. Добавьте в класс `CategoriesBLL` следующий метод:
 
 [!code-csharp[Main](uploading-files-cs/samples/sample4.cs)]
 
@@ -235,7 +235,7 @@ ASP.NET 2,0 s New [веб-элемент управления FileUpload](https:
 
 Поздравляем с программированием!
 
-## <a name="further-reading"></a>Дополнительные сведения
+## <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 
@@ -253,4 +253,4 @@ ASP.NET 2,0 s New [веб-элемент управления FileUpload](https:
 Эта серия руководств была рассмотрена многими полезными рецензентами. Потенциальные рецензенты для этого учебника были Терезой Мерфи и Бернадетте Леигх. Хотите ознакомиться с моими будущими статьями MSDN? Если это так, расположите строку в [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
-> [Вперед](displaying-binary-data-in-the-data-web-controls-cs.md)
+> [Дальше](displaying-binary-data-in-the-data-web-controls-cs.md)

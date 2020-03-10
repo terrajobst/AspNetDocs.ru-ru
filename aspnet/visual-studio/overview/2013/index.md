@@ -9,11 +9,11 @@ ms.assetid: 646edfc7-dc62-4fa0-84c2-926996c92aeb
 msc.legacyurl: /visual-studio/overview/2013
 msc.type: chapter
 ms.openlocfilehash: 0b1dab287735de3c4804a6e6a520a2ae87113e9e
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65113118"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78449532"
 ---
 # <a name="aspnet-and-visual-studio-2013"></a>ASP.NET и Visual Studio 2013
 
@@ -30,6 +30,6 @@ ms.locfileid: "65113118"
 - [Формирование шаблонов ASP.NET в Visual Studio 2013](aspnet-scaffolding-overview.md)
 - [Привязывание к браузеру](using-browser-link.md)
 - [Заметки о выпуске ASP.NET and Web Tools для Visual Studio 2013](release-notes.md)
-- [ASP.NET and Web Tools 2013.2 для заметки о выпуске Visual Studio 2013](aspnet-and-web-tools-20132-preview-for-visual-studio-2013-release-notes.md)
+- [ASP.NET and Web Tools 2013,2 для заметок о выпуске Visual Studio 2013](aspnet-and-web-tools-20132-preview-for-visual-studio-2013-release-notes.md)
 - [Практическое лабораторное занятие. Веб-инструменты Visual Studio 2013](visual-studio-2013-web-tools.md)
-- [Практическое лабораторное занятие. One ASP.NET: Интеграция веб-форм ASP.NET, MVC и веб-API](one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api.md)
+- [Практическое лабораторное занятие. ASP.NET: интеграция веб-форм ASP.NET, MVC и веб-API](one-aspnet-integrating-aspnet-web-forms-mvc-and-web-api.md)

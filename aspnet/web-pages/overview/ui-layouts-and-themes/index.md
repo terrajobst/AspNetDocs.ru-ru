@@ -1,23 +1,23 @@
 ---
 uid: web-pages/overview/ui-layouts-and-themes/index
-title: Пользовательский Интерфейс, макеты и темы | Документация Майкрософт
+title: Пользовательский интерфейс, макеты и темы | Документация Майкрософт
 author: rick-anderson
-description: Как настроить пользовательский Интерфейс сайта в приложении ASP.NET Web Pages.
+description: Настройка пользовательского интерфейса сайта в веб-страницы ASP.NET приложении.
 ms.author: riande
 ms.date: 09/08/2014
 ms.assetid: d7ec6e8a-3e05-4c0d-9207-d17a49f9a64d
 msc.legacyurl: /web-pages/overview/ui-layouts-and-themes
 msc.type: chapter
 ms.openlocfilehash: 8ae3e20f24f2d1bef39ff44ff15bdab212583310
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133950"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78518670"
 ---
 # <a name="ui-layouts-and-themes"></a>Пользовательский интерфейс, макеты и темы
 
-> Как настроить пользовательский Интерфейс сайта в приложении ASP.NET Web Pages.
+> Настройка пользовательского интерфейса сайта в веб-страницы ASP.NET приложении.
 
 - [Работа с формами](4-working-with-forms.md)
 - [Проверка пользовательского ввода на сайтах веб-страниц ASP.NET](validating-user-input-in-aspnet-web-pages-sites.md)

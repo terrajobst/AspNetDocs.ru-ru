@@ -1,23 +1,23 @@
 ---
 uid: web-pages/overview/getting-started/index
-title: Приступая к работе с веб-страниц ASP.NET | Документация Майкрософт
+title: Начало работы с веб-страницы ASP.NET | Документация Майкрософт
 author: rick-anderson
-description: Дополнительные сведения о веб-страниц ASP.NET веб-страниц ASP.NET и новый синтаксис Razor обеспечивают быстрый и простой способ объединения серверного кода с HTML-t...
+description: Узнайте о веб-страницы ASP.NET веб-страницы ASP.NET, а новые синтаксис Razor обеспечивают быстрый, подходный и упрощенный способ объединения серверного кода с HTML t...
 ms.author: riande
 ms.date: 05/18/2012
 ms.assetid: 99253c4e-a125-4c21-85e7-a6dd74d93892
 msc.legacyurl: /web-pages/overview/getting-started
 msc.type: chapter
 ms.openlocfilehash: 50a249d0e64cff2a8c4f16f38f530b6d52f755de
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133174"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520650"
 ---
-# <a name="getting-started-with-aspnet-web-pages"></a>Приступая к работе с веб-страницы ASP.NET
+# <a name="getting-started-with-aspnet-web-pages"></a>Начало работы с веб-страницы ASP.NET
 
-> Какие Web Pages и WebMatrix, а также как установить все, приступить к работе и развертывать узлы.
+> Что такое веб-страницы и WebMatrix, а также как установить все, начать работу и развернуть сайты.
 
 - [Программирование веб-страниц ASP.NET в Visual Studio](program-asp-net-web-pages-in-visual-studio.md)
 - [Введение в веб-программирование на ASP.NET с синтаксисом Razor](introducing-razor-syntax-c.md)

@@ -1,8 +1,8 @@
 ---
 uid: web-api/overview/advanced/configuring-aspnet-web-api
-title: Настройка ASP.NET Web API 2 — ASP.NET 4.x
+title: Настройка веб-API ASP.NET 2 — ASP.NET 4. x
 author: MikeWasson
-description: 'Настройка веб-API 2 ASP.NET для ASP.NET 4.x: Настройте параметры, размещения в ASP.NET 4.x, OWIN резидентного размещения, глобальные службы и конфигурации предварительного контроллера.'
+description: 'Настройте веб-API ASP.NET 2 для ASP.NET 4. x: Настройка параметров, ASP.NET 4. x размещения, OWIN размещения, глобальных служб и конфигурации предварительного контроллера.'
 ms.author: riande
 ms.date: 03/31/2014
 ms.custom: seoapril2019
@@ -10,146 +10,146 @@ ms.assetid: 9e10a700-8d91-4d2e-a31e-b8b569fe867c
 msc.legacyurl: /web-api/overview/advanced/configuring-aspnet-web-api
 msc.type: authoredcontent
 ms.openlocfilehash: 4f76728fa5e4602e35e1b7cb2d41b2245093cad8
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65115965"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78449346"
 ---
-# <a name="configuring-aspnet-web-api-2"></a>Настройка веб-API 2 ASP.NET
+# <a name="configuring-aspnet-web-api-2"></a>Настройка веб-API ASP.NET 2
 
 по [Майк Уоссон](https://github.com/MikeWasson)
 
-В этом разделе описываются способы настройки веб-API ASP.NET.
+В этом разделе описано, как настроить веб-API ASP.NET.
 
 - [Параметры конфигурации](#settings)
-- [Настройка веб-API с размещением в ASP.NET](#webhost)
-- [Настройка веб-API с Саморазмещением OWIN](#selfhost)
-- [Глобальный веб-API службы](#services)
-- [Конфигурации-контроллер](#percontrollerconfig)
+- [Настройка веб-API с ASP.NET размещением](#webhost)
+- [Настройка веб-API с помощью автономного размещения OWIN](#selfhost)
+- [Глобальные службы веб-API](#services)
+- [Конфигурация для каждого контроллера](#percontrollerconfig)
 
 <a id="settings"></a>
 ## <a name="configuration-settings"></a>Параметры конфигурации
 
-Определенные параметры конфигурации веб-API в [HttpConfiguration](https://msdn.microsoft.com/library/system.web.http.httpconfiguration.aspx) класса.
+Параметры конфигурации веб-API определяются в классе [HttpConfiguration](https://msdn.microsoft.com/library/system.web.http.httpconfiguration.aspx) .
 
-| Член | Описание |
+| Участник | Description |
 | --- | --- |
-| **DependencyResolver** | Включает возможность встраивания зависимостей для контроллеров. См. в разделе [с помощью сопоставителя зависимостей веб-API](dependency-injection.md). |
+| **депенденциресолвер** | Включает внедрение зависимостей для контроллеров. См. раздел [Использование сопоставителя зависимостей веб-API](dependency-injection.md). |
 | **Фильтры** | Фильтры действий. |
 | **Модули форматирования** | [Модули форматирования типа мультимедиа](../formats-and-model-binding/media-formatters.md). |
-| **IncludeErrorDetailPolicy** | Указывает, должен ли сервер включать сведения об ошибке, например сообщения исключений и трассировки стека, в сообщениях ответа HTTP. См. в разделе [IncludeErrorDetailPolicy](https://msdn.microsoft.com/library/system.web.http.includeerrordetailpolicy(v=vs.108)). |
-| **Инициализатор** | Функция, которая выполняет окончательной инициализации **HttpConfiguration**. |
-| **MessageHandlers** | [Обработчики сообщений HTTP](http-message-handlers.md). |
-| **ParameterBindingRules** | Коллекция правил для привязки параметров действия контроллера. |
-| **Свойства** | Универсальный контейнер свойств. |
-| **Маршруты** | Коллекция маршрутов. См. в разделе [маршрутизации в веб-API ASP.NET](../web-api-routing-and-actions/routing-in-aspnet-web-api.md). |
-| **Службы** | Коллекция служб. См. в разделе [служб](#services). |
+| **инклудиррордетаилполици** | Указывает, должен ли сервер включать в сообщения HTTP-ответа сведения об ошибке, такие как сообщения исключений и трассировки стека. См. [инклудиррордетаилполици](https://msdn.microsoft.com/library/system.web.http.includeerrordetailpolicy(v=vs.108)). |
+| **Initializer** | Функция, выполняющая окончательную инициализацию **HttpConfiguration**. |
+| **мессажехандлерс** | [Обработчики сообщений HTTP](http-message-handlers.md). |
+| **параметербиндингрулес** | Коллекция правил для привязки параметров к действиям контроллера. |
+| **Свойства** | Контейнер универсальных свойств. |
+| **Маршруты** | Коллекция маршрутов. См. раздел [Маршрутизация в веб-API ASP.NET](../web-api-routing-and-actions/routing-in-aspnet-web-api.md). |
+| **Службы** | Коллекция служб. См. раздел [службы](#services). |
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>предварительные требования
 
-[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) Community, Professional или Enterprise edition.
+[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) — выпуски Community, Professional или Enterprise.
 
 <a id="webhost"></a>
-## <a name="configuring-web-api-with-aspnet-hosting"></a>Настройка веб-API с размещением в ASP.NET
+## <a name="configuring-web-api-with-aspnet-hosting"></a>Настройка веб-API с ASP.NET размещением
 
-В приложении ASP.NET настройки веб-API путем вызова [GlobalConfiguration.Configure](https://msdn.microsoft.com/library/system.web.http.globalconfiguration.configure.aspx) в **приложения\_запустить** метод. **Настройка** метод принимает делегат с одним параметром типа **HttpConfiguration**. Выполните все конфигурации внутри делегата.
+В приложении ASP.NET настройте веб-API, вызвав метод [глобалконфигуратион. configure](https://msdn.microsoft.com/library/system.web.http.globalconfiguration.configure.aspx) в **приложении\_запуска** . Метод **Configure** принимает делегат с одним параметром типа **HttpConfiguration**. Выполните всю настройку внутри делегата.
 
 Ниже приведен пример использования анонимного делегата:
 
 [!code-csharp[Main](configuring-aspnet-web-api/samples/sample1.cs)]
 
-В Visual Studio 2017, шаблон проекта «Веб-приложение ASP.NET» автоматически настраивает код конфигурации, если выбрать «Веб-API» в **новый проект ASP.NET** диалоговое окно.
+В Visual Studio 2017 шаблон проекта "веб-приложение ASP.NET" автоматически настраивает код конфигурации, если в диалоговом окне **Новый проект ASP.NET** выбрано значение "веб-API".
 
 [![](configuring-aspnet-web-api/_static/image2.png)](configuring-aspnet-web-api/_static/image1.png)
 
-Шаблон проекта создает файл с именем WebApiConfig.cs в приложении\_Начальная папка. Этот файл код определяет делегат, где следует поместить код настройки веб-API.
+Шаблон проекта создает файл с именем WebApiConfig.cs внутри папки приложения\_Start. Этот файл кода определяет делегат, в котором следует разместить код конфигурации веб-API.
 
 ![](configuring-aspnet-web-api/_static/image3.png)
 
 [!code-csharp[Main](configuring-aspnet-web-api/samples/sample2.cs?highlight=12)]
 
-Шаблон проекта также добавляет код, который вызывает делегат из **приложения\_запустить**.
+Шаблон проекта также добавляет код, который вызывает делегат из **приложения\_запуска**.
 
 [!code-csharp[Main](configuring-aspnet-web-api/samples/sample3.cs?highlight=5)]
 
 <a id="selfhost"></a>
-## <a name="configuring-web-api-with-owin-self-hosting"></a>Настройка веб-API с Саморазмещением OWIN
+## <a name="configuring-web-api-with-owin-self-hosting"></a>Настройка веб-API с помощью автономного размещения OWIN
 
-В случае резидентного размещения с OWIN, создайте новый **HttpConfiguration** экземпляра. Выполнить настройки на этом экземпляре, а затем передайте экземпляр для **Owin.UseWebApi** метода расширения.
+Если вы самостоятельно размещаете с помощью OWIN, создайте новый экземпляр **HttpConfiguration** . Выполните все настройки в этом экземпляре, а затем передайте экземпляр методу расширения **Owin. усевебапи** .
 
 [!code-csharp[Main](configuring-aspnet-web-api/samples/sample4.cs)]
 
-Руководства [использование OWIN для Self-Host ASP.NET Web API 2](../hosting-aspnet-web-api/use-owin-to-self-host-web-api.md) показан полный набор действий.
+В руководстве [Использование OWIN для самостоятельного размещения веб-API ASP.NET 2](../hosting-aspnet-web-api/use-owin-to-self-host-web-api.md) показаны все шаги.
 
 <a id="services"></a>
-## <a name="global-web-api-services"></a>Глобальный веб-API службы
+## <a name="global-web-api-services"></a>Глобальные службы веб-API
 
-**HttpConfiguration.Services** коллекция содержит набор глобальных служб, используемых веб-API для выполнения различных задач, таких как контроллер выделения и согласующего содержимое.
+Коллекция **HttpConfiguration. Services** содержит набор глобальных служб, которые веб-API использует для выполнения различных задач, таких как выбор контроллера и согласование содержимого.
 
 > [!NOTE]
-> **Служб** коллекция не является механизм общего назначения для внесения обнаружения или зависимостей службы. Она только хранит типов служб, которые заведомо платформа веб-API.
+> Коллекция **служб** не является универсальным механизмом для обнаружения служб или внедрения зависимостей. Он хранит только типы служб, известные платформе веб-API.
 
-**Служб** коллекция инициализирована со стандартным набором служб, и можно задать пользовательские реализации. Некоторые службы поддерживают несколько экземпляров, а другие могут иметь только один экземпляр. (Тем не менее, можно также предоставить службы на уровне контроллера; см. в разделе [конфигурации-контроллер](#percontrollerconfig).
+Коллекция **служб** инициализируется набором служб по умолчанию, и вы можете предоставить собственные пользовательские реализации. Некоторые службы поддерживают несколько экземпляров, а другие могут иметь только один экземпляр. (Однако вы также можете предоставлять службы на уровне контроллера; см. раздел [Конфигурация для каждого контроллера](#percontrollerconfig).
 
-Одного экземпляра службы
+Службы с одним экземпляром
 
-| Служба | Описание |
+| Служба | Description |
 | --- | --- |
-| **IActionValueBinder** | Получает привязку для параметра. |
-| **IApiExplorer** | Получает описания интерфейсов API, предоставляемые приложением. См. в разделе [Создание страницы справки для веб-API](../getting-started-with-aspnet-web-api/creating-api-help-pages.md). |
-| **IAssembliesResolver** | Возвращает список сборок для приложения. См. в разделе [Маршрутизация и выбор действий](../web-api-routing-and-actions/routing-and-action-selection.md). |
-| **IBodyModelValidator** | Проверяет модель, которая считывается из текста запроса модулем форматирования типа мультимедиа. |
-| **IContentNegotiator** | Выполняет согласование содержимого. |
-| **IDocumentationProvider** | Содержит документацию по API-интерфейсы. По умолчанию используется **null**. См. в разделе [Создание страницы справки для веб-API](../getting-started-with-aspnet-web-api/creating-api-help-pages.md). |
-| **IHostBufferPolicySelector** | Указывает, является ли узел буферизовать текст сущности HTTP-сообщений. |
-| **IHttpActionInvoker** | Вызывает действие контроллера. См. в разделе [Маршрутизация и выбор действий](../web-api-routing-and-actions/routing-and-action-selection.md). |
-| **IHttpActionSelector** | Выбирает действие контроллера. См. в разделе [Маршрутизация и выбор действий](../web-api-routing-and-actions/routing-and-action-selection.md). |
-| **IHttpControllerActivator** | Активирует контроллера. См. в разделе [Маршрутизация и выбор действий](../web-api-routing-and-actions/routing-and-action-selection.md). |
-| **IHttpControllerSelector** | Выбирает контроллер. См. в разделе [Маршрутизация и выбор действий](../web-api-routing-and-actions/routing-and-action-selection.md). |
-| **IHttpControllerTypeResolver** | Предоставляет список типов контроллера веб-API в приложении. См. в разделе [Маршрутизация и выбор действий](../web-api-routing-and-actions/routing-and-action-selection.md). |
-| **ITraceManager** | Инициализирует платформу трассировки. См. в разделе [трассировка в веб-API ASP.NET](../testing-and-debugging/tracing-in-aspnet-web-api.md). |
-| **ITraceWriter** | Предоставляет модуль записи трассировки. По умолчанию используется модуль записи трассировки «холостыми». См. в разделе [трассировка в веб-API ASP.NET](../testing-and-debugging/tracing-in-aspnet-web-api.md). |
-| **IModelValidatorCache** | Предоставляет кэш средств проверки модели. |
+| **иактионвалуебиндер** | Возвращает привязку для параметра. |
+| **иапиексплорер** | Возвращает описания интерфейсов API, предоставляемых приложением. См. раздел [Создание страницы справки для веб-API](../getting-started-with-aspnet-web-api/creating-api-help-pages.md). |
+| **иассемблиесресолвер** | Возвращает список сборок для приложения. См. раздел [Маршрутизация и выбор действий](../web-api-routing-and-actions/routing-and-action-selection.md). |
+| **ибодимоделвалидатор** | Проверяет модель, которая считывается из тела запроса модулем форматирования типа мультимедиа. |
+| **иконтентнеготиатор** | Выполняет согласование содержимого. |
+| **идокументатионпровидер** | Содержит документацию по API. По умолчанию **null**. См. раздел [Создание страницы справки для веб-API](../getting-started-with-aspnet-web-api/creating-api-help-pages.md). |
+| **ихостбуфферполициселектор** | Указывает, следует ли узлу заменять в буфере тела объектов HTTP-сообщений. |
+| **ихттпактионинвокер** | Вызывает действие контроллера. См. раздел [Маршрутизация и выбор действий](../web-api-routing-and-actions/routing-and-action-selection.md). |
+| **ихттпактионселектор** | Выбирает действие контроллера. См. раздел [Маршрутизация и выбор действий](../web-api-routing-and-actions/routing-and-action-selection.md). |
+| **ихттпконтроллерактиватор** | Активирует контроллер. См. раздел [Маршрутизация и выбор действий](../web-api-routing-and-actions/routing-and-action-selection.md). |
+| **ихттпконтроллерселектор** | Выбирает контроллер. См. раздел [Маршрутизация и выбор действий](../web-api-routing-and-actions/routing-and-action-selection.md). |
+| **ихттпконтроллертипересолвер** | Предоставляет список типов контроллеров веб-API в приложении. См. раздел [Маршрутизация и выбор действий](../web-api-routing-and-actions/routing-and-action-selection.md). |
+| **итрацеманажер** | Инициализирует платформу трассировки. См. раздел [Трассировка в веб-API ASP.NET](../testing-and-debugging/tracing-in-aspnet-web-api.md). |
+| **итрацевритер** | Предоставляет модуль записи трассировки. По умолчанию используется модуль записи трассировки "No-op". См. раздел [Трассировка в веб-API ASP.NET](../testing-and-debugging/tracing-in-aspnet-web-api.md). |
+| **имоделвалидаторкаче** | Предоставляет кэш проверяющих элементов управления модели. |
 
-Несколько экземпляров служб
+Службы с несколькими экземплярами
 
-|                 Служба                 |                                                                                                              Описание                                                                                                               |
+|                 Служба                 |                                                                                                              Description                                                                                                               |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    <strong>IFilterProvider</strong>     |                                                                                           Возвращает список фильтров для действия контроллера.                                                                                           |
-|  <strong>ModelBinderProvider</strong>   |                                                                                                Возвращает связыватель модели для данного типа.                                                                                                |
-| <strong>ModelMetadataProvider</strong>  |                                                                                                     Предоставляет метаданные для модели.                                                                                                     |
-| <strong>ModelValidatorProvider</strong> |                                                                                                   Предоставляет проверяющий элемент управления для модели.                                                                                                    |
-|  <strong>ValueProviderFactory</strong>  | Создает поставщик значений. Дополнительные сведения см. в разделе блога Майк стол [Создание поставщика пользовательских значений в веб-API](https://blogs.msdn.com/b/jmstall/archive/2012/04/23/how-to-create-a-custom-value-provider-in-webapi.aspx) |
+|    <strong>ифилтерпровидер</strong>     |                                                                                           Возвращает список фильтров для действия контроллера.                                                                                           |
+|  <strong>моделбиндерпровидер</strong>   |                                                                                                Возвращает связыватель модели для заданного типа.                                                                                                |
+| <strong>моделметадатапровидер</strong>  |                                                                                                     Предоставляет метаданные для модели.                                                                                                     |
+| <strong>моделвалидаторпровидер</strong> |                                                                                                   Предоставляет проверяющий элемент управления для модели.                                                                                                    |
+|  <strong>валуепровидерфактори</strong>  | Создает поставщик значений. Дополнительные сведения см. в записи блога Mike машиноместа [Создание пользовательского поставщика значений в WebAPI](https://blogs.msdn.com/b/jmstall/archive/2012/04/23/how-to-create-a-custom-value-provider-in-webapi.aspx) |
 
-Чтобы добавить пользовательскую реализацию службы несколькими экземплярами, вызовите **добавить** или **вставить** на **служб** коллекции:
+Чтобы добавить пользовательскую реализацию в службу с несколькими экземплярами, вызовите команду **Add** или **INSERT** в коллекции **Services** :
 
 [!code-csharp[Main](configuring-aspnet-web-api/samples/sample5.cs)]
 
-Чтобы заменить одного экземпляра службы с пользовательской реализацией, вызовите **замените** на **служб** коллекции:
+Чтобы заменить службу с одним экземпляром пользовательской реализацией, вызовите функцию **Replace** в коллекции **служб** :
 
 [!code-csharp[Main](configuring-aspnet-web-api/samples/sample6.cs)]
 
 <a id="percontrollerconfig"></a>
-## <a name="per-controller-configuration"></a>Конфигурации-контроллер
+## <a name="per-controller-configuration"></a>Конфигурация для каждого контроллера
 
-Можно переопределить следующие параметры на основе конкретного контроллера:
+Для каждого контроллера можно переопределить следующие параметры:
 
 - Модули форматирования типа мультимедиа
-- Параметр привязки правил
+- Правила привязки параметров
 - Службы
 
-Для этого нужно определить настраиваемый атрибут, реализующий **IControllerConfiguration** интерфейс. Затем примените атрибут к контроллеру.
+Для этого определите настраиваемый атрибут, реализующий интерфейс **иконтроллерконфигуратион** . Затем примените атрибут к контроллеру.
 
-В следующем примере заменяется модули форматирования типа мультимедиа по умолчанию с помощью пользовательского модуля форматирования.
+Следующий пример заменяет модули форматирования типа мультимедиа по умолчанию пользовательским модулем форматирования.
 
 [!code-csharp[Main](configuring-aspnet-web-api/samples/sample7.cs)]
 
-**IControllerConfiguration.Initialize** метод принимает два параметра:
+Метод **иконтроллерконфигуратион. Initialize** принимает два параметра:
 
-- **HttpControllerSettings** объекта
-- **HttpControllerDescriptor** объекта
+- Объект **хттпконтроллерсеттингс**
+- Объект **хттпконтроллердескриптор**
 
-**HttpControllerDescriptor** содержит описание контроллера, который можно проверить в информационных целях (скажем, для различения двух контроллеров).
+**Хттпконтроллердескриптор** содержит описание контроллера, которое можно изучить в информационных целях (скажем, для различения двух контроллеров).
 
-Используйте **HttpControllerSettings** объекта, чтобы настроить контроллер. Этот объект содержит подмножество параметров конфигурации, которые можно переопределить на основе-контроллер. По умолчанию все параметры, которые не изменяются на глобальную **HttpConfiguration** объекта.
+Используйте объект **хттпконтроллерсеттингс** для настройки контроллера. Этот объект содержит подмножество параметров конфигурации, которые можно переопределить для каждого контроллера. Все параметры, которые вы не измените по умолчанию, на глобальный объект **HttpConfiguration** .

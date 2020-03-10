@@ -10,11 +10,11 @@ ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/features-api/two-factor-authentication-using-sms-and-email-with-aspnet-identity
 msc.type: authoredcontent
 ms.openlocfilehash: 527b4392846e60dae0b216fdeabf21fd6618e4d7
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77456742"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78499872"
 ---
 # <a name="two-factorauthentication-using-sms-and-email-with-aspnet-identity"></a>Двухфакторная проверка подлинности с помощью SMS и электронной почты с ASP.NET Identity
 
@@ -119,7 +119,7 @@ ms.locfileid: "77456742"
 8. Щелкните идентификатор пользователя, который активирует метод действия `Index` в контроллере `Manage`.  
   
     ![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image2.png)
-9. Нажмите кнопку Добавить.  
+9. Нажмите кнопку «Добавить».  
   
     ![](two-factor-authentication-using-sms-and-email-with-aspnet-identity/_static/image3.png)
 10. Через несколько секунд будет получено текстовое сообщение с кодом проверки. Введите его и нажмите кнопку **Отправить**.  

@@ -9,11 +9,11 @@ ms.assetid: 2e31b60b-8723-4f14-b7ee-37859454dc3b
 msc.legacyurl: /web-forms/overview/data-access/enhancing-the-gridview/adding-a-gridview-column-of-radio-buttons-vb
 msc.type: authoredcontent
 ms.openlocfilehash: ee67a4556c65d2c9570bf15b42fc3c8e5f555bda
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74593194"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78477690"
 ---
 # <a name="adding-a-gridview-column-of-radio-buttons-vb"></a>Добавление столбца GridView переключателей (VB)
 
@@ -88,7 +88,7 @@ ms.locfileid: "74593194"
 
 **Рис. 7**. Настройка ObjectDataSource для использования класса `SuppliersBLL` ([щелкните, чтобы просмотреть изображение с полным размером](adding-a-gridview-column-of-radio-buttons-vb/_static/image10.png))
 
-Так как метод `GetSuppliersByCountry(country)` принимает параметр, мастер настройки источника данных запрашивает у нас источник этого параметра. Чтобы указать жестко закодированное значение (в данном примере это USA), оставьте в раскрывающемся списке Источник параметра значение нет и введите значение по умолчанию в текстовое поле. Чтобы завершить работу мастера, нажмите кнопку Готово.
+Так как метод `GetSuppliersByCountry(country)` принимает параметр, мастер настройки источника данных запрашивает у нас источник этого параметра. Чтобы указать жестко закодированное значение (в данном примере это USA), оставьте в раскрывающемся списке Источник параметра значение нет и введите значение по умолчанию в текстовое поле. Нажмите кнопку Готово, чтобы завершить работу с мастером.
 
 [![использовать USA в качестве значения по умолчанию для параметра Country](adding-a-gridview-column-of-radio-buttons-vb/_static/image8.gif)](adding-a-gridview-column-of-radio-buttons-vb/_static/image11.png)
 

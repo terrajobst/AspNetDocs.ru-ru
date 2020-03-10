@@ -1,24 +1,24 @@
 ---
 uid: web-forms/videos/how-do-i/how-do-i-create-and-use-application-level-events-in-aspnet
-title: '[Инструкции]  Создание и использование событий на уровне приложения в ASP.NET | Документация Майкрософт'
+title: '[Инструкции:]  Создание и использование событий уровня приложения в ASP.NET | Документация Майкрософт'
 author: rick-anderson
-description: В этом видео Крис Пелз будет показано, как создать файл класса приложения (Global.asax), который содержит обработчики событий уровня приложения, например Application_S...
+description: В этом видео Крис пикселей будет показано, как создать файл класса приложения (Global. asax), содержащий обработчики событий уровня приложения, такие как Application_S...
 ms.author: riande
 ms.date: 01/28/2008
 ms.assetid: 5f136ed5-a229-4b9c-83f8-bae74cdb98bd
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-create-and-use-application-level-events-in-aspnet
 msc.type: video
 ms.openlocfilehash: fc797454a3df103f7c6c5d314e3033e60959f3b8
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59419487"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78506712"
 ---
-# <a name="how-do-i--create-and-use-application-level-events-in-aspnet"></a>[Инструкции]  Создание и использование событий на уровне приложения в ASP.NET
+# <a name="how-do-i--create-and-use-application-level-events-in-aspnet"></a>[Инструкции:]  Создание и использование событий уровня приложения в ASP.NET
 
-по [Крис Пелз](https://twitter.com/chrispels)
+от [Крис пикселей](https://twitter.com/chrispels)
 
-В этом видео Крис Пелз будет показано, как создать файл класса приложения (Global.asax), который содержит обработчиков событий уровня приложения, например приложение\_начала и приложения\_BeginRequest. Затем последовательность событий на уровне приложения в жизненном цикле приложения будут рассматриваться как основу для определения, где будет лучше определенных типов операций выполняются во время жизненного цикла приложения.
+В этом видеоролике Крис пикселей покажет, как создать файл класса приложения (Global. asax), содержащий обработчики событий уровня приложения, такие как приложение\_запуск и приложение\_BeginRequest. Затем последовательность событий уровня приложения в жизненном цикле приложения будет обсуждаться в качестве основания для определения того, где определенные типы операций лучше всего выполняются во время жизненного цикла приложения.
 
-[&#9654;Просмотрите видео (12 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-create-and-use-application-level-events-in-aspnet)
+[&#9654;Смотреть видео (12 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-create-and-use-application-level-events-in-aspnet)

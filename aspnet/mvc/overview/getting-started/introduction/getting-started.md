@@ -7,12 +7,12 @@ ms.date: 10/04/2018
 ms.assetid: f3d8adbe-55e7-4fd4-84a8-7155bc45c676
 msc.legacyurl: /mvc/overview/getting-started/introduction/getting-started
 msc.type: authoredcontent
-ms.openlocfilehash: c74daa37f68dda641cae97d3b0c19718f62d474d
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.openlocfilehash: ca39bc37c757c0452cf56624c8e37c04df4b41f2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77456391"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78487956"
 ---
 # <a name="getting-started-with-aspnet-mvc-5"></a>Начало работы с ASP.NET MVC 5
 
@@ -20,7 +20,7 @@ ms.locfileid: "77456391"
 
 [!INCLUDE [consider RP](../../../../includes/razor.md)]
 
-В этом учебнике рассматриваются основы создания веб-приложения ASP.NET MVC 5 с помощью [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Окончательный исходный код для учебника находится на сайте [GitHub](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie/MvcMovie).
+В этом учебнике рассматриваются основы создания веб-приложения ASP.NET MVC 5 с помощью [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Окончательный исходный код для учебника находится на сайте [GitHub](https://github.com/dotnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie/MvcMovie).
 
 Это руководство было написано [Скотт Гатри (](https://weblogs.asp.net/scottgu/) (Twitter[@scottgu](https://twitter.com/scottgu) ), [скотт Hanselman](http://www.hanselman.com/blog/) (Twitter: [@shanselman](https://twitter.com/shanselman) ) и [Рик Андерсон (](https://twitter.com/RickAndMSFT) ( [@RickAndMSFT](https://twitter.com/#!/RickAndMSFT) )
 
@@ -67,7 +67,7 @@ Visual Studio использовала шаблон по умолчанию дл
 
 Вы хотите увидеть готовый сайт, работающий как активное веб-приложение? Вы можете развернуть полную версию приложения в учетной записи Azure, просто нажав кнопку ниже.
 
-[![](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/aspnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie&amp;WT.mc_id=deploy_azure_aspnet)
+[![](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/dotnet/AspNetDocs/tree/master/aspnet/mvc/overview/getting-started/introduction/sample/MvcMovie&amp;WT.mc_id=deploy_azure_aspnet)
 
 Для развертывания этого решения в Azure необходима учетная запись Azure. Если у вас еще нет учетной записи, используйте один из следующих параметров, чтобы создать его.
 

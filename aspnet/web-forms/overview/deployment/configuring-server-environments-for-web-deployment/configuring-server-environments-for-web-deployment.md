@@ -1,38 +1,38 @@
 ---
 uid: web-forms/overview/deployment/configuring-server-environments-for-web-deployment/configuring-server-environments-for-web-deployment
-title: Настройка серверных сред для веб-развертывание | Документация Майкрософт
+title: Настройка серверных сред для веб-развертывания | Документация Майкрософт
 author: jrjlee
-description: Этом руководстве показано, как настроить серверных сред с одним щелчком или автоматического развертывания веб-сайта и публикации в различных различных сценария...
+description: В этом учебнике показано, как настроить серверные среды для поддержки одного щелчка или автоматизированного развертывания веб-сайта и публикации в различных сцен...
 ms.author: riande
 ms.date: 05/04/2012
 ms.assetid: 0bf0959b-4ca8-45de-bd13-b15347543b5a
 msc.legacyurl: /web-forms/overview/deployment/configuring-server-environments-for-web-deployment/configuring-server-environments-for-web-deployment
 msc.type: authoredcontent
 ms.openlocfilehash: 073161ce4faa3b7ba6749d7dfbaa5309eeca4f74
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65130685"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78515118"
 ---
 # <a name="configuring-server-environments-for-web-deployment"></a>Настройка серверных сред для веб-развертывания
 
-по [Джейсон Lee](https://github.com/jrjlee)
+кто [Джейсон Иванов](https://github.com/jrjlee)
 
-[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Скачать в формате PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
-> Этом учебнике показано, как настроить серверных сред с одним щелчком или автоматического развертывания веб-сайта и публикации в различных сценариях различных. Учебник включает разделы пошагового выполнения различных задач, например, Настройка веб-сервера для поддержки конкретных подходов к развертыванию и настройке фермы серверов веб-фермы (WFF), а также обзоры на основе сценариев, которые предоставляют руководство более высокого уровня end-to-end.
+> В этом учебнике показано, как настроить серверные среды для поддержки одного щелчка или автоматизированного развертывания веб-сайта и публикации в различных сценариях. В этом учебнике содержатся разделы, посвященные выполнению различных задач, таких как Настройка веб-сервера для поддержки определенных подходов к развертыванию и настройке фермы серверов веб-фермы (WFF) вместе с обзорами на основе сценариев, которые предоставляют сквозное руководство по более высокому уровню.
 > 
-> В этом руководстве используется сценарий развертывания Fabrikam, Inc., описанный в [корпоративное веб-развертывание: Обзор сценария](../deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md) как точка ссылки, примеры и сетевой инфраструктуры.
+> В этом руководстве используется сценарий компании Fabrikam, Inc., описанный в разделе [Корпоративный веб-развертывание: обзор сценария](../deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md) в качестве эталонной точки для примеров и сетевой инфраструктуры.
 > 
-> Итальянский перевода учебников, см. в статье [ http://www.lucamorelli.it ](http://www.lucamorelli.it).
+> Для итальянского перевода этих руководств посетите [http://www.lucamorelli.it](http://www.lucamorelli.it).
 
-Этот учебник содержит следующие разделы:
+В этом учебнике рассматриваются следующие темы:
 
 - [Выбор правильного подхода для веб-развертывания](choosing-the-right-approach-to-web-deployment.md)
 - [Сценарий. Настройка среды тестирования для веб-развертывания](scenario-configuring-a-test-environment-for-web-deployment.md)
 - [Сценарий. Настройка промежуточной среды для веб-развертывания](scenario-configuring-a-staging-environment-for-web-deployment.md)
-- [Сценарий. Настройке рабочей среды для веб-развертывания](scenario-configuring-a-production-environment-for-web-deployment.md)
+- [Сценарий. Настройка рабочей среды для веб-развертывания](scenario-configuring-a-production-environment-for-web-deployment.md)
 - [Настройка веб-сервера для публикации веб-развертывания (удаленный агент)](configuring-a-web-server-for-web-deploy-publishing-remote-agent.md)
 - [Настройка веб-сервера для публикации веб-развертывания (обработчик веб-развертывания)](configuring-a-web-server-for-web-deploy-publishing-web-deploy-handler.md)
 - [Настройка веб-сервера для публикации веб-развертывания (автономное развертывание)](configuring-a-web-server-for-web-deploy-publishing-offline-deployment.md)
@@ -40,29 +40,29 @@ ms.locfileid: "65130685"
 - [Создание фермы серверов с помощью Web Farm Framework](creating-a-server-farm-with-the-web-farm-framework.md)
 - [Настройка свойств развертывания для целевой среды](configuring-deployment-properties-for-a-target-environment.md)
 
-Первый раздел [Выбор оптимального подхода для веб-развертывания справа](choosing-the-right-approach-to-web-deployment.md), описание основных подхода, можно использовать для публикации веб-приложений с помощью средство Internet Information Services (IIS) веб-развертывания (Web Deploy) 2.0. Она также определяет сценарии, которые сопоставляются с каждого подхода. На этой странице каждый раздел сценарий представлен общий обзор задач, которые вам потребуется выполнить действия и определяет темы, которые необходимо выполнить для завершения этих задач.
+Первый раздел, в котором [выбирается правильный подход к веб-развертыванию](choosing-the-right-approach-to-web-deployment.md), описывает основные подходы, которые можно использовать для публикации веб-приложений с помощью средства веб-развертывания службы IIS (IIS) (веб-развертывание) 2,0. Он также определяет сценарии, которые сопоставляются с каждым из подходов. Здесь в каждом разделе сценария представлен общий обзор задач, которые необходимо выполнить, и указаны разделы, с которыми необходимо работать для выполнения этих задач.
 
-Если вы используете разбиение проекта файл подход, описанный в [основные сведения о процессе построения](../web-deployment-in-the-enterprise/understanding-the-build-process.md) для создания и развертывания решения, его последний раздел, [Настройка свойств развертывания для целевой среды](configuring-deployment-properties-for-a-target-environment.md), описывается настройка файлов проекта конкретной среды для развертывания в средах другое назначение.
+Если вы используете подход с файлами разделенного проекта, описанный в статье [понимание процесса сборки](../web-deployment-in-the-enterprise/understanding-the-build-process.md) для создания и развертывания решения, в последнем разделе [Настройка свойств развертывания для целевой среды](configuring-deployment-properties-for-a-target-environment.md)описано, как настроить файлы проекта конкретной среды для развертывания в различных конечных средах.
 
 ## <a name="key-technologies"></a>Ключевые технологии
 
-Это руководство посвящено как использовать эти продукты и технологии для поддержки веб-развертывания:
+В этом учебнике рассматривается использование этих продуктов и технологий для поддержки веб-развертывания.
 
-- IIS 7.5
-- Веб-развертывания версии 2.x
-- WFF 2.x
-- Службы IIS веб-управления (WMSvc)
+- IIS 7,5
+- Веб-развертывание 2. x
+- WFF 2. x
+- Служба веб-управления IIS (WMSvc)
 
-При использовании Windows Server 2008 R2, SQL Server 2008 R2, ASP.NET 4.0 и ASP.NET MVC 3 также касается руководства.
+Учебник также касается использования Windows Server 2008 R2, SQL Server 2008 R2, ASP.NET 4,0 и ASP.NET MVC 3.
 
-## <a name="other-tutorials-in-this-series"></a>Другие руководства в этой серии
+## <a name="other-tutorials-in-this-series"></a>Другие учебники в этой серии
 
-Это формирует части серии из пяти учебников на веб-развертывание в масштабах предприятия. Ниже приведены другие руководства в серии.
+Эта форма является частью серии из пяти руководств по развертыванию веб-сайта в масштабе предприятия. Ниже приведены другие руководства серии.
 
-- [Развертывание веб-приложений в корпоративных сценариях](../deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md). Вводные представлены контекстные фона для этой серии руководств. Здесь описываются рассматриваемый сценарий, а его показано, как задачи и пошаговые руководства, описанные на протяжении ряда помещается в более широкого процесса управления жизненным циклом приложений (ALM).
-- [Веб-развертывания на предприятии](../web-deployment-in-the-enterprise/web-deployment-in-the-enterprise.md). Этот учебник содержит общие сведения о файлах проекта Microsoft Build Engine (MSBuild), конвейера публикации в Интернете, веб-развертывания и других связанных технологий. Здесь объясняется, как можно использовать эти средства вместе для управления процессами сложного развертывания.
-- [Настройка Team Foundation Server для развертывания веб-](../configuring-team-foundation-server-for-web-deployment/configuring-team-foundation-server-for-web-deployment.md). Это руководство содержит инструкции для настройки Team Foundation Server (TFS) для поддержки различных сценариев развертывания, включая автоматическое развертывание в рамках процесса непрерывной интеграции (CI) и запущено развертывание определенных сборок вручную.
-- [Advanced корпоративное веб-развертывание](../advanced-enterprise-web-deployment/advanced-enterprise-web-deployment.md). Это руководство содержит инструкции по выполнению различных задач более сложные развертывания, такие как настройка развертываний баз данных для нескольких сред, исключение файлов и папок из развертывания и получение веб-приложений в автономный режим во время развертывания .
+- [Развертывание веб-приложений в корпоративных сценариях](../deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md). Это начальное содержимое, которое содержит контекстный фон для серии руководств. В нем описывается сценарий учебника и показано, как задачи и пошаговые руководства, описанные в ряде, соответствуют более широкому процессу управления жизненным циклом приложений (ALM).
+- [Веб-развертывание на предприятии](../web-deployment-in-the-enterprise/web-deployment-in-the-enterprise.md). В этом учебнике приводятся общие сведения о файлах проекта Microsoft Build Engine (MSBuild), конвейере веб-публикации, веб-развертывание и других связанных технологиях. В нем объясняется, как можно использовать эти инструменты совместно для управления сложными процессами развертывания.
+- [Настройка Team Foundation Server для веб-развертывания](../configuring-team-foundation-server-for-web-deployment/configuring-team-foundation-server-for-web-deployment.md). В этом учебнике описывается настройка Team Foundation Server (TFS) для поддержки различных сценариев развертывания, включая автоматическое развертывание в рамках процесса непрерывной интеграции (CI) и запуск развертываний определенных сборок вручную.
+- [Расширенное корпоративное веб-развертывание](../advanced-enterprise-web-deployment/advanced-enterprise-web-deployment.md). В этом учебнике описывается выполнение различных более сложных задач развертывания, таких как настройка развертываний баз данных для нескольких сред, исключение файлов и папок из развертывания и перевод веб-приложений в автономный режим в процессе развертывания. .
 
 > [!div class="step-by-step"]
-> [Вперед](choosing-the-right-approach-to-web-deployment.md)
+> [Дальше](choosing-the-right-approach-to-web-deployment.md)

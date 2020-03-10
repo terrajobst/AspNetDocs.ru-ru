@@ -1,23 +1,23 @@
 ---
 uid: web-forms/overview/data-access/index
-title: Предыдущие версии — доступ к данным | Документация Майкрософт
+title: Более старые версии — доступ к данным | Документация Майкрософт
 author: rick-anderson
-description: Сведения о выполнении различных задач, связанных с данными с помощью элементов управления данных веб-форм ASP.NET.
+description: Как выполнять разнообразные задачи, связанные с данными, с помощью элементов управления данными веб-форм ASP.NET.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: cf54a6fb-a362-4481-b967-c158b98092f7
 msc.legacyurl: /web-forms/overview/data-access
 msc.type: chapter
 ms.openlocfilehash: 9bdc5cdb3ef3a2289e2f76ae498544d0584f36f5
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65109022"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78490410"
 ---
 # <a name="older-versions---data-access"></a>Предыдущие версии. Доступ к данным
 
-> Сведения о выполнении различных задач, связанных с данными с помощью элементов управления данных веб-форм ASP.NET.
+> Как выполнять разнообразные задачи, связанные с данными, с помощью элементов управления данными веб-форм ASP.NET.
 
 - [Введение](introduction/index.md)
 

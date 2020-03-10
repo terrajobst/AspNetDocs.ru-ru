@@ -1,8 +1,8 @@
 ---
 uid: web-api/index
-title: ASP.NET Web API — ASP.NET 4.x
+title: Веб-API ASP.NET ASP.NET 4. x
 author: rick-anderson
-description: Скачать ASP.NET MVC 4 и создавать службы HTTP для широкого диапазона клиентов.
+description: Скачайте ASP.NET MVC 4 и создайте службы HTTP, которые достигают широкого спектра клиентов.
 ms.author: riande
 ms.date: 01/17/2012
 ms.custom: seoapril2019
@@ -10,13 +10,13 @@ ms.assetid: f571ca7a-c06b-400d-8051-f62f9f0bcc9b
 msc.legacyurl: /web-api
 msc.type: categoryindex
 ms.openlocfilehash: c04719e06c6c0900c8f8268b73f833b525ea3dd6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59410842"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78449352"
 ---
-# <a name="aspnet-web-api"></a>ASP.NET Web API
+# <a name="aspnet-web-api"></a>Веб-API ASP.NET
 
 - [Руководство](overview/index.md)
 
@@ -26,8 +26,8 @@ ms.locfileid: "59410842"
         - [Результаты действий в веб-API 2](overview/getting-started-with-aspnet-web-api/action-results.md)
         - [Использование веб-API с помощью веб-форм ASP.NET](overview/getting-started-with-aspnet-web-api/using-web-api-with-aspnet-web-forms.md)
         - [Создание страниц справки по веб-API](overview/getting-started-with-aspnet-web-api/creating-api-help-pages.md)
-        - [Практическое лабораторное занятие. Создание одностраничного приложения (SPA) с веб-API ASP.NET и Angular.js](overview/getting-started-with-aspnet-web-api/build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs.md)
-    - [Routing](overview/web-api-routing-and-actions/index.md)
+        - [Практическое лабораторное занятие. Создание одностраничного приложения (SPA) с помощью веб-API ASP.NET и Angular.js](overview/getting-started-with-aspnet-web-api/build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs.md)
+    - [Маршрутизация](overview/web-api-routing-and-actions/index.md)
 
         - [Маршрутизация в веб-API](overview/web-api-routing-and-actions/routing-in-aspnet-web-api.md)
         - [Маршрутизация и выбор действий в веб-API](overview/web-api-routing-and-actions/routing-and-action-selection.md)
@@ -101,7 +101,7 @@ ms.locfileid: "59410842"
         - [Фильтры проверки подлинности в веб-API 2](overview/security/authentication-filters.md)
         - [Обычная проверка подлинности в веб-API](overview/security/basic-authentication.md)
         - [Проверка подлинности на основе форм в веб-API](overview/security/forms-authentication.md)
-        - [Встроенная проверка подлинности Windows](overview/security/integrated-windows-authentication.md)
+        - [Встроенная аутентификация Windows](overview/security/integrated-windows-authentication.md)
         - [Работа с SSL](overview/security/working-with-ssl-in-web-api.md)
     - [Развертывание и размещение](overview/hosting-aspnet-web-api/index.md)
 
@@ -114,8 +114,8 @@ ms.locfileid: "59410842"
         - [Вызов веб-API из клиента .NET (C#)](overview/advanced/calling-a-web-api-from-a-net-client.md)
         - [Обработчики HTTP-сообщений в веб-API](overview/advanced/http-message-handlers.md)
         - [Обработчики сообщений HttpClient в веб-API](overview/advanced/httpclient-message-handlers.md)
-        - [Отправка данных формы HTML в веб-API: Данные формы в URL-кодировке](overview/advanced/sending-html-form-data-part-1.md)
-        - [Отправка данных формы HTML в веб-API: Отправка файлов и составное сообщение MIME](overview/advanced/sending-html-form-data-part-2.md)
+        - [Отправка данных формы HTML в веб-API. Данные формы в URL-кодировке](overview/advanced/sending-html-form-data-part-1.md)
+        - [Отправка данных формы HTML в веб-API. Отправка файлов и составное сообщение MIME](overview/advanced/sending-html-form-data-part-2.md)
         - [Файлы cookie HTTP в веб-API ASP.NET](overview/advanced/http-cookies.md)
     - [Выпуски](overview/releases/index.md)
 
@@ -136,15 +136,15 @@ ms.locfileid: "59410842"
             - [Создание главной страницы](overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-7.md)
         - [Веб-API 1 резидентного размещения (C#)](overview/older-versions/self-host-a-web-api.md)
         - [Создание API RESTful с помощью веб-API ASP.NET](overview/older-versions/build-restful-apis-with-aspnet-web-api.md)
-- [Видеоролики](videos/index.md)
+- [Видео](videos/index.md)
 
     - [Общие сведения и начало работы](videos/getting-started/index.md)
 
         - [ASP.NET Web API](videos/getting-started/aspnet-web-api.md)
-        - [Веб-API ASP.NET, часть 1: Первый веб-API](videos/getting-started/your-first-web-api.md)
-        - [Веб-API ASP.NET, часть 2: Получение данных](videos/getting-started/getting-data.md)
-        - [Веб-API ASP.NET, часть 3: DELETE и Update](videos/getting-started/delete-and-update.md)
-        - [Веб-API ASP.NET, часть 4: Разбиение по страницам и запросов](videos/getting-started/paging-and-querying.md)
-        - [Веб-API ASP.NET, часть 5: Пользовательской проверки](videos/getting-started/custom-validation.md)
-        - [Веб-API ASP.NET, часть 6: Авторизации](videos/getting-started/authorization.md)
+        - [Веб-API ASP.NET, часть 1. Первый веб-API](videos/getting-started/your-first-web-api.md)
+        - [Веб-API ASP.NET, часть 2. Получение данных](videos/getting-started/getting-data.md)
+        - [Веб-API ASP.NET, часть 3. Удаление и обновление](videos/getting-started/delete-and-update.md)
+        - [Веб-API ASP.NET, часть 4. Разбиение по страницам и выполнение запросов](videos/getting-started/paging-and-querying.md)
+        - [Веб-API ASP.NET, часть 5. Настраиваемая проверка](videos/getting-started/custom-validation.md)
+        - [Веб-API ASP.NET, часть 6. Авторизация](videos/getting-started/authorization.md)
 - [Список примеров веб-API](samples-list.md)

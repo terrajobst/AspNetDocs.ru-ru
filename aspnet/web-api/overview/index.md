@@ -1,8 +1,8 @@
 ---
 uid: web-api/overview/index
-title: Веб-руководство по API - ASP.NET 4.x
+title: Руководство по веб-API — ASP.NET 4. x
 author: rick-anderson
-description: Список руководство по ASP.NET Web API для ASP.NET 4.x
+description: Веб-API ASP.NET список руководств для ASP.NET 4. x
 ms.author: riande
 ms.date: 01/17/2012
 ms.custom: seoapril2019
@@ -10,11 +10,11 @@ ms.assetid: daca6735-b5d3-4ef5-af33-ee682926238b
 msc.legacyurl: /web-api/overview
 msc.type: book
 ms.openlocfilehash: 304c0d71e5e18f9d3f0768464fe39d6e6946600d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59422906"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78448302"
 ---
 # <a name="web-api-guidance"></a>Руководство по веб-API
 
@@ -24,8 +24,8 @@ ms.locfileid: "59422906"
     - [Результаты действий в веб-API 2](getting-started-with-aspnet-web-api/action-results.md)
     - [Использование веб-API с помощью веб-форм ASP.NET](getting-started-with-aspnet-web-api/using-web-api-with-aspnet-web-forms.md)
     - [Создание страниц справки по веб-API](getting-started-with-aspnet-web-api/creating-api-help-pages.md)
-    - [Практическое лабораторное занятие. Создание одностраничного приложения (SPA) с веб-API ASP.NET и Angular.js](getting-started-with-aspnet-web-api/build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs.md)
-- [Routing](web-api-routing-and-actions/index.md)
+    - [Практическое лабораторное занятие. Создание одностраничного приложения (SPA) с помощью веб-API ASP.NET и Angular.js](getting-started-with-aspnet-web-api/build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs.md)
+- [Маршрутизация](web-api-routing-and-actions/index.md)
 
     - [Маршрутизация в веб-API](web-api-routing-and-actions/routing-in-aspnet-web-api.md)
     - [Маршрутизация и выбор действий в веб-API](web-api-routing-and-actions/routing-and-action-selection.md)
@@ -99,7 +99,7 @@ ms.locfileid: "59422906"
     - [Фильтры проверки подлинности в веб-API 2](security/authentication-filters.md)
     - [Обычная проверка подлинности в веб-API](security/basic-authentication.md)
     - [Проверка подлинности на основе форм в веб-API](security/forms-authentication.md)
-    - [Встроенная проверка подлинности Windows](security/integrated-windows-authentication.md)
+    - [Встроенная аутентификация Windows](security/integrated-windows-authentication.md)
     - [Работа с SSL](security/working-with-ssl-in-web-api.md)
 - [Развертывание и размещение](hosting-aspnet-web-api/index.md)
 
@@ -112,8 +112,8 @@ ms.locfileid: "59422906"
     - [Вызов веб-API из клиента .NET (C#)](advanced/calling-a-web-api-from-a-net-client.md)
     - [Обработчики HTTP-сообщений в веб-API](advanced/http-message-handlers.md)
     - [Обработчики сообщений HttpClient в веб-API](advanced/httpclient-message-handlers.md)
-    - [Отправка данных формы HTML в веб-API: Данные формы в URL-кодировке](advanced/sending-html-form-data-part-1.md)
-    - [Отправка данных формы HTML в веб-API: Отправка файлов и составное сообщение MIME](advanced/sending-html-form-data-part-2.md)
+    - [Отправка данных формы HTML в веб-API. Данные формы в URL-кодировке](advanced/sending-html-form-data-part-1.md)
+    - [Отправка данных формы HTML в веб-API. Отправка файлов и составное сообщение MIME](advanced/sending-html-form-data-part-2.md)
     - [Файлы cookie HTTP в веб-API ASP.NET](advanced/http-cookies.md)
 - [Выпуски](releases/index.md)
 

@@ -9,11 +9,11 @@ ms.assetid: 6b9ae3c4-0274-4170-a1bb-9df9c546b2a9
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-3
 msc.type: authoredcontent
 ms.openlocfilehash: f39be7a84e85db93487d246e9f8cb59c401fe5ce
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600043"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78447912"
 ---
 # <a name="part-3-creating-an-admin-controller"></a>Часть 3. Создание административного контроллера
 
@@ -64,12 +64,12 @@ ms.locfileid: "74600043"
 
 Класс `AdminController` определяет пять методов, реализующих базовую функциональность CRUD. Каждый метод соответствует URI, который может быть вызван клиентом:
 
-| Метод контроллера | Описание | URI | Метод HTTP |
+| Метод контроллера | Description | URI | Метод HTTP |
 | --- | --- | --- | --- |
 | GetProducts | Возвращает все продукты. | API и продукты | GET |
 | Продукт | Находит продукт по ИДЕНТИФИКАТОРу. | API/Products/*ID* | GET |
-| путпродукт | Обновляет продукт. | API/Products/*ID* | PUT |
-| Продукт | Создает новый продукт. | API и продукты | ПОМЕСТИТЬ |
+| путпродукт | Обновляет продукт. | API/Products/*ID* | ОТПРАВКА |
+| Продукт | Создает продукт. | API и продукты | POST |
 | DeleteProduct | Удаляет продукт. | API/Products/*ID* | DELETE |
 
 Каждый метод вызывает `OrdersContext` для запроса к базе данных. Методы, которые изменяют вызов метода Collection (размещение, публикация и удаление), `db.SaveChanges`, чтобы сохранить изменения в базе данных. Контроллеры создаются для каждого HTTP-запроса, а затем удаляются, поэтому необходимо сохранить изменения перед возвратом метода.

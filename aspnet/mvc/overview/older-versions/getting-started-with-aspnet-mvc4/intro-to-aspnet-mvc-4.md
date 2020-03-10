@@ -9,11 +9,11 @@ ms.assetid: ed66530a-04d5-49eb-b76a-85be1f57c437
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/intro-to-aspnet-mvc-4
 msc.type: authoredcontent
 ms.openlocfilehash: 51709a9c6ddb39b8fcd1cd94cd08d530a595825a
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77455546"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78485280"
 ---
 # <a name="intro-to-aspnet-mvc-4"></a>Введение в ASP.NET MVC 4
 
@@ -49,7 +49,7 @@ ms.locfileid: "77455546"
 
 ![](intro-to-aspnet-mvc-4/_static/image2.png)
 
-## <a name="getting-started"></a>Начало работы
+## <a name="getting-started"></a>Приступая к работе
 
 Начните с запуска Visual Studio Express 2012 или Visual Web Developer 2010 Express. Большинство снимков экрана в этой серии используют Visual Studio Express 2012, но вы можете пройти это руководство с помощью Visual Studio 2010/с пакетом обновления 1 (SP1), Visual Studio 2012, Visual Studio Express 2012 или Visual Web Developer 2010 Express. На **начальной** странице выберите **Новый проект** .
 

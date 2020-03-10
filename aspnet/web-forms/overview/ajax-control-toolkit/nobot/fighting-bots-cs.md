@@ -9,11 +9,11 @@ ms.assetid: 0a1917e0-884a-4576-8e93-9ed660faae51
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/nobot/fighting-bots-cs
 msc.type: authoredcontent
 ms.openlocfilehash: fef55edf12a024e4dd66e2a18ea371ab4dac861f
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74606450"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78509070"
 ---
 # <a name="fighting-bots-c"></a>Борьба с ботами (C#)
 
@@ -68,4 +68,4 @@ ms.locfileid: "74606450"
 Это сообщение об ошибке могло быть вызвано программой-роботом ([щелкните, чтобы просмотреть изображение с полным размером](fighting-bots-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
-> [Вперед](fighting-bots-vb.md)
+> [Дальше](fighting-bots-vb.md)

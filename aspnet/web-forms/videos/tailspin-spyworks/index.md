@@ -1,23 +1,23 @@
 ---
 uid: web-forms/videos/tailspin-spyworks/index
-title: Tailspin Spyworks | Документация Майкрософт
+title: Tailspin Spyworks. | Документация Майкрософт
 author: rick-anderson
-description: Как использовать новые возможности в ASP.NET 4 для создание Интернет-магазина, включая покупок, извлечения и администрирования.
+description: Использование новых функций в ASP.NET 4 для создания Интернет-магазина, включая покупку, оформление и администрирование.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 8aa371f8-913c-4ed2-98b0-f76abf15669d
 msc.legacyurl: /web-forms/videos/tailspin-spyworks
 msc.type: chapter
 ms.openlocfilehash: 715ba4530604805faf9023e3606608b9d73b323e
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133725"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78509238"
 ---
 # <a name="tailspin-spyworks"></a>Tailspin Spyworks
 
-> Как использовать новые возможности в ASP.NET 4 для создание Интернет-магазина, включая покупок, извлечения и администрирования.
+> Использование новых функций в ASP.NET 4 для создания Интернет-магазина, включая покупку, оформление и администрирование.
 
 - [Tailspin Spyworks. Создание и использование элемента управления "Популярные продукты"](tailspin-spyworks-creating-and-using-the-popular-products-control.md)
 - [Tailspin Spyworks. Реализация и использование элемента управления "Также приобрели"](tailspin-spyworks-implementing-and-using-the-also-purchased-control.md)

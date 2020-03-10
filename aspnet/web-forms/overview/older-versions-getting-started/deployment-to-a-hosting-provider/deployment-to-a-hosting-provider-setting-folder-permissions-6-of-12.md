@@ -9,11 +9,11 @@ ms.assetid: cd03a188-e947-4f55-9bda-b8bce201d8c6
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-setting-folder-permissions-6-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: 85a77a196cf3458bbb2e6308838a846936cd070b
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74633538"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78511722"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-setting-folder-permissions---6-of-12"></a>Развертывание веб-приложения ASP.NET с SQL Server Compact с помощью Visual Studio или Visual Web Developer: Настройка разрешений для папки — 6 из 12
 
@@ -57,7 +57,7 @@ ms.locfileid: "74633538"
 
 (Если вы не видите **DefaultAppPool** в списке **имен групп или пользователей** , вероятно, вы использовали другой метод, отличный от указанного в этом руководстве, для настройки IIS и ASP.NET 4 на компьютере. В этом случае выясните, какое удостоверение используется пулом приложений, назначенным приложению университета Contoso, и предоставьте ему разрешение на запись. См. ссылки о удостоверениях пула приложений в конце этого руководства.)
 
-Нажмите кнопку **Правка**. В диалоговом окне **разрешения для ELMAH** выберите **DefaultAppPool**, а затем установите флажок **записать** в столбце **Разрешить** .
+Нажмите кнопку **Изменить**. В диалоговом окне **разрешения для ELMAH** выберите **DefaultAppPool**, а затем установите флажок **записать** в столбце **Разрешить** .
 
 [![Permissions_for_Elmah_dialog_box](deployment-to-a-hosting-provider-setting-folder-permissions-6-of-12/_static/image8.png)](deployment-to-a-hosting-provider-setting-folder-permissions-6-of-12/_static/image7.png)
 

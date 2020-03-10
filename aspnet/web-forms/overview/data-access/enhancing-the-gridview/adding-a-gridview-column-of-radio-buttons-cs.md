@@ -9,11 +9,11 @@ ms.assetid: 32377145-ec25-4715-8370-a1c590a331d5
 msc.legacyurl: /web-forms/overview/data-access/enhancing-the-gridview/adding-a-gridview-column-of-radio-buttons-cs
 msc.type: authoredcontent
 ms.openlocfilehash: b59cc64b14c6414e6558fdb8a281644db8386701
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74593672"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78477954"
 ---
 # <a name="adding-a-gridview-column-of-radio-buttons-c"></a>Добавление столбца GridView переключателей (C#)
 
@@ -88,7 +88,7 @@ ms.locfileid: "74593672"
 
 **Рис. 7**. Настройка ObjectDataSource для использования класса `SuppliersBLL` ([щелкните, чтобы просмотреть изображение с полным размером](adding-a-gridview-column-of-radio-buttons-cs/_static/image10.png))
 
-Так как метод `GetSuppliersByCountry(country)` принимает параметр, мастер настройки источника данных запрашивает у нас источник этого параметра. Чтобы указать жестко закодированное значение (в данном примере это USA), оставьте в раскрывающемся списке Источник параметра значение нет и введите значение по умолчанию в текстовое поле. Чтобы завершить работу мастера, нажмите кнопку Готово.
+Так как метод `GetSuppliersByCountry(country)` принимает параметр, мастер настройки источника данных запрашивает у нас источник этого параметра. Чтобы указать жестко закодированное значение (в данном примере это USA), оставьте в раскрывающемся списке Источник параметра значение нет и введите значение по умолчанию в текстовое поле. Нажмите кнопку Готово, чтобы завершить работу с мастером.
 
 [![использовать USA в качестве значения по умолчанию для параметра Country](adding-a-gridview-column-of-radio-buttons-cs/_static/image8.gif)](adding-a-gridview-column-of-radio-buttons-cs/_static/image11.png)
 
@@ -287,4 +287,4 @@ ms.locfileid: "74593672"
 Эта серия руководств была рассмотрена многими полезными рецензентами. Специалистом по интересу для работы с этим руководством был Дэвид суру. Хотите ознакомиться с моими будущими статьями MSDN? Если это так, расположите строку в [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
-> [Вперед](adding-a-gridview-column-of-checkboxes-cs.md)
+> [Дальше](adding-a-gridview-column-of-checkboxes-cs.md)

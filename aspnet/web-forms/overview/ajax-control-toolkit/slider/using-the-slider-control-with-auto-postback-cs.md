@@ -9,11 +9,11 @@ ms.assetid: 4d85e9fb-91e6-41f2-9c13-754549b19c27
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/slider/using-the-slider-control-with-auto-postback-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 785d62108667fddac42994344cde265e82aca8f4
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74598406"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78445830"
 ---
 # <a name="using-the-slider-control-with-auto-postback-c"></a>Использование элемента управления Slider с автоматической обратной передачей (C#)
 
@@ -58,4 +58,4 @@ ms.locfileid: "74598406"
 Затем Дата этого изменения записывается в метку ([щелкните, чтобы просмотреть изображение с полным размером](using-the-slider-control-with-auto-postback-cs/_static/image6.png)).
 
 > [!div class="step-by-step"]
-> [Вперед](databinding-the-slider-control-cs.md)
+> [Дальше](databinding-the-slider-control-cs.md)
