@@ -9,11 +9,11 @@ ms.assetid: 6227233a-6254-4b6b-9a89-947efef22330
 msc.legacyurl: /web-forms/overview/data-access/introduction/creating-a-data-access-layer-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 51c9255f80f83a68cf26decf318347752498491a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74635139"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78489492"
 ---
 # <a name="creating-a-data-access-layer-vb"></a>Создание уровня доступа к данным (VB)
 
@@ -440,7 +440,7 @@ TableAdapter и DataTables, добавленные в типизированны
 
 Поздравляем с программированием!
 
-## <a name="further-reading"></a>Дополнительные сведения
+## <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

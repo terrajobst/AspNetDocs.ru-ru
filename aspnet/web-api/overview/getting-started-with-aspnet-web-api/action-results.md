@@ -10,11 +10,11 @@ ms.assetid: 2fc4797c-38ef-4cc7-926c-ca431c4739e8
 msc.legacyurl: /web-api/overview/getting-started-with-aspnet-web-api/action-results
 msc.type: authoredcontent
 ms.openlocfilehash: f00ac0db453053e53d6d6942dd1557b409f4167b
-ms.sourcegitcommit: 4b324a11131e38f920126066b94ff478aa9927f8
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "70985838"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78448776"
 ---
 # <a name="action-results-in-web-api-2"></a>Результаты действий в веб-API 2
 
@@ -52,7 +52,7 @@ HTTP-ответ:
 
 [!code-console[Main](action-results/samples/sample2.cmd)]
 
-## <a name="httpresponsemessage"></a>HttpResponseMessage
+## <a name="httpresponsemessage"></a>httpResponseMessage
 
 Если действие возвращает [HttpResponseMessage](https://msdn.microsoft.com/library/system.net.http.httpresponsemessage.aspx), веб-API преобразует возвращаемое значение непосредственно в ответное сообщение HTTP, используя свойства объекта **HttpResponseMessage** для заполнения ответа.
 
@@ -60,7 +60,7 @@ HTTP-ответ:
 
 [!code-csharp[Main](action-results/samples/sample3.cs)]
 
-Ответ
+Ответ:
 
 [!code-console[Main](action-results/samples/sample4.cmd?highlight=2)]
 
@@ -92,7 +92,7 @@ HTTP-ответ:
 
 [!code-csharp[Main](action-results/samples/sample8.cs)]
 
-Ответ
+Ответ:
 
 [!code-console[Main](action-results/samples/sample9.cmd)]
 

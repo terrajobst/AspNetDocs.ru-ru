@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/aspnet-dynamic-data/how-do-i-change-how-my-fields-render
-title: Изменение отрисовки полей? | Документы Майкрософт
+title: Разделы справки изменить отображение полей? | Документы Майкрософт
 author: shanselman
-description: В этом видео вы узнаете, как изменить способ визуализации полей данных. Вы подключите в сторонние элементы управления для некоторых полей.
+description: В этом видеоролике вы узнаете, как изменить способ подготовки полей данных к просмотру. Для некоторых полей будут подключаться сторонние элементы управления.
 ms.author: riande
 ms.date: 05/08/2008
 ms.assetid: f99da654-2148-4e66-867c-6e837b84e9d0
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data/how-do-i-change-how-my-fields-render
 msc.type: video
 ms.openlocfilehash: d0ee7dc47c6ec5ffd76baa6827b81a9ff02c6bfc
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381020"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78506934"
 ---
-# <a name="how-do-i-change-how-my-fields-render"></a>Изменение отрисовки полей?
+# <a name="how-do-i-change-how-my-fields-render"></a>Разделы справки изменить отображение полей?
 
-по [(Scott hanselman)](https://github.com/shanselman)
+по [Скотт Hanselman](https://github.com/shanselman)
 
-В этом видео вы узнаете, как изменить способ визуализации полей данных. Вы подключите в сторонние элементы управления для некоторых полей.
+В этом видеоролике вы узнаете, как изменить способ подготовки полей данных к просмотру. Для некоторых полей будут подключаться сторонние элементы управления.
 
-[&#9654;Просмотрите видео (13 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-change-how-my-fields-render)
+[&#9654;Смотреть видео (13 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-change-how-my-fields-render)
 
 > [!div class="step-by-step"]
 > [Назад](how-do-i-enable-inline-gridview-editing.md)

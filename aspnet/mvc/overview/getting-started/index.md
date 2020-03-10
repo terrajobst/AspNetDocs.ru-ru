@@ -1,23 +1,23 @@
 ---
 uid: mvc/overview/getting-started/index
-title: Приступая к работе ASP.NET MVC | Документация Майкрософт
+title: Начало работы MVC ASP.NET | Документация Майкрософт
 author: rick-anderson
-description: Дополнительные сведения о ASP.NET MVC ASP.NET MVC предоставляет эффективный, основанный на шаблонах способ создания динамических веб-сайтов с четким разделением проблем и что g...
+description: Сведения о ASP.NET MVC ASP.NET MVC предоставляют мощный, основанный на шаблонах способ создания динамических веб-сайтов, позволяющих четко отделить проблемы и т. д.
 ms.author: riande
 ms.date: 08/31/2011
 ms.assetid: d916dbe0-1895-491b-8bb6-93f4594ce757
 msc.legacyurl: /mvc/overview/getting-started
 msc.type: chapter
 ms.openlocfilehash: 8e25c3a01634df6c3d9c81df8ab1738cc079d341
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65121125"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78471024"
 ---
-# <a name="aspnet-mvc-getting-started"></a>Приступая к работе ASP.NET MVC
+# <a name="aspnet-mvc-getting-started"></a>Начало работы MVC ASP.NET
 
-> Следующее руководство объясняет, ASP.NET MVC и отображает как приступить к работе.
+> В следующем руководстве объясняется, что такое ASP.NET MVC, и демонстрируется, как приступить к работе.
 
 - [Приступая к работе с ASP.NET MVC 5](introduction/index.md)
 

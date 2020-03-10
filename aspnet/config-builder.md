@@ -7,11 +7,11 @@ ms.author: riande
 ms.date: 10/29/2018
 msc.type: content
 ms.openlocfilehash: 5299d9ab057c3096773955a7461e77a80673ebfe
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74586762"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78472308"
 ---
 # <a name="configuration-builders-for-aspnet"></a>Построители конфигураций для ASP.NET
 
@@ -82,7 +82,7 @@ ms.locfileid: "74586762"
 
 * С `EnvironmentConfigBuilder` в режиме `Strict` по умолчанию и соответствующими именами ключей в файле конфигурации. Этот подход используется в приведенном выше коде и разметке. При таком подходе нельзя **использовать одинаковые** именованные ключи как в `<appSettings/>`, так и в `<connectionStrings/>`.
 * Используйте два `EnvironmentConfigBuilder`s в режиме `Greedy` с разными префиксами и `stripPrefix`. При таком подходе приложение может считывать `<appSettings/>` и `<connectionStrings/>` без необходимости обновлять файл конфигурации. В следующем разделе [стриппрефикс](#stripprefix)показано, как это сделать.
-* Используйте два `EnvironmentConfigBuilder`s в режиме `Greedy` с разными префиксами. При таком подходе не допускается наличие повторяющихся имен ключей, так как имена ключей должны отличаться по префиксу.  Например:
+* Используйте два `EnvironmentConfigBuilder`s в режиме `Greedy` с разными префиксами. При таком подходе не допускается наличие повторяющихся имен ключей, так как имена ключей должны отличаться по префиксу.  Пример:
 
 [!code-xml[Main](config-builder/MyConfigBuilders/WebPrefix.config?name=snippet&highlight=11-99)]
 
@@ -103,7 +103,7 @@ ms.locfileid: "74586762"
 
 Например, используя предыдущий файл *Web. config* , ключи/значения в предыдущем изображении редактора среды и предыдущий код, задаются следующие значения:
 
-|  Key              | {2&gt;Value&lt;2} |
+|  Клавиши              | Значение |
 | ----------------- | ------------ |
 |     AppSetting_ServiceID           | AppSetting_ServiceID из переменных env|
 |    AppSetting_default            | AppSetting_default значение из env |
@@ -136,11 +136,11 @@ ms.locfileid: "74586762"
 
 Например, используя предыдущий файл *Web. config* , ключи/значения в предыдущем изображении редактора среды и предыдущий код, задаются следующие значения:
 
-|  Key              | {2&gt;Value&lt;2} |
+|  Клавиши              | Значение |
 | ----------------- | ------------ |
 |     ServiceID           | AppSetting_ServiceID из переменных env|
-|    default            | AppSetting_default значение из env |
-|    default         | ConnStr_default Val из env|
+|    значение по умолчанию            | AppSetting_default значение из env |
+|    значение по умолчанию         | ConnStr_default Val из env|
 
 ### <a name="tokenpattern"></a>токенпаттерн
 
@@ -277,10 +277,10 @@ ms.locfileid: "74586762"
 
 * `jsonFile` — обязательный. Указывает JSON файл, из которого производится чтение. Символ `~` можно использовать в начале для ссылки на корень приложения.
 * `optional`-Boolean, значение по умолчанию — `true`. Предотвращает создание исключений, если не удается найти JSON файл.
-* `jsonMode` - `[Flat|Sectional]`. Значение по умолчанию — `Flat`. Если `jsonMode` `Flat`, JSON-файл является одним плоским источником «ключ-значение». `EnvironmentConfigBuilder` и `AzureKeyVaultConfigBuilder` также являются единичными источниками «ключ-значение». Когда `SimpleJsonConfigBuilder` настраивается в режиме `Sectional`:
+* `jsonMode` - `[Flat|Sectional]`. Значение по умолчанию — `Flat`. Если `jsonMode` `Flat`, JSON-файл является одним плоским источником «ключ-значение». `EnvironmentConfigBuilder` и `AzureKeyVaultConfigBuilder` также являются единичными источниками «ключ-значение». Когда `SimpleJsonConfigBuilder` настраивается в режиме `Sectional`:
 
   * Файл JSON концептуально делится на несколько словарей только на верхнем уровне.
-  * Каждый из словарей применяется только к разделу конфигурации, который соответствует имени свойства верхнего уровня, присоединенному к ним. Например:
+  * Каждый из словарей применяется только к разделу конфигурации, который соответствует имени свойства верхнего уровня, присоединенному к ним. Пример:
 
 ```json
     {

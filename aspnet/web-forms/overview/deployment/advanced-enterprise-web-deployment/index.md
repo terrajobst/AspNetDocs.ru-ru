@@ -1,23 +1,23 @@
 ---
 uid: web-forms/overview/deployment/advanced-enterprise-web-deployment/index
-title: ASP.NET 4 - Корпоративное развертывание, часть 4 Дополнительные разделы | Документация Майкрософт
+title: ASP.NET 4 — Корпоративные развертывания серии 4 дополнительные разделы | Документация Майкрософт
 author: rick-anderson
-description: Этом учебнике показано, как выполнять различные задачи, которые являются обязательными или желательно во многих корпоративных сценариев развертывания.
+description: В этом учебнике показано, как выполнять различные задачи, которые необходимы или желательно использовать в большинстве сценариев корпоративного развертывания.
 ms.author: riande
 ms.date: 05/16/2012
 ms.assetid: eacf0e3a-c2e9-4f77-a676-249146f393e8
 msc.legacyurl: /web-forms/overview/deployment/advanced-enterprise-web-deployment
 msc.type: chapter
 ms.openlocfilehash: f72ec780623b4240762f35e479b36895db42cee0
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65127118"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78464130"
 ---
 # <a name="aspnet-4---enterprise-deployment-series-4-advanced-topics"></a>ASP.NET 4. Корпоративное развертывание, часть 4. Дополнительные разделы
 
-> Этом учебнике показано, как выполнять различные задачи, которые являются обязательными или желательно во многих корпоративных сценариев развертывания.
+> В этом учебнике показано, как выполнять различные задачи, которые необходимы или желательно использовать в большинстве сценариев корпоративного развертывания.
 
 - [Расширенное корпоративное веб-развертывание](advanced-enterprise-web-deployment.md)
 - [Выполнение имитации развертывания](performing-a-what-if-deployment.md)

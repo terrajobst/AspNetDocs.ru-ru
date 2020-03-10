@@ -9,11 +9,11 @@ ms.assetid: f9adcb5d-6d70-4885-a3bf-ed95efb4da1a
 msc.legacyurl: /web-forms/overview/older-versions-security/admin/recovering-and-changing-passwords-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 0ed1df9455af94a86ce59ecc06c55846a4880596
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74618783"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78510612"
 ---
 # <a name="recovering-and-changing-passwords-vb"></a>Восстановление и смена паролей (VB)
 
@@ -144,7 +144,7 @@ ASP.NET включает два веб-элемента управления д�
 
 ### <a name="programmatically-resetting-a-users-password"></a>Программный сброс пароля пользователя
 
-При сбросе пароля пользователя элемент управления Пассвордрековери вызывает [метод`ResetPassword`](https://msdn.microsoft.com/library/system.web.security.membershipuser.resetpassword.aspx)объекта `MembershipUser`. Этот метод имеет две перегрузки:
+При сбросе пароля пользователя элемент управления Пассвордрековери вызывает [метод`ResetPassword`](https://msdn.microsoft.com/library/system.web.security.membershipuser.resetpassword.aspx)объекта `MembershipUser`. У этого метода две перегрузки.
 
 - **[`ResetPassword`](https://msdn.microsoft.com/library/d94bdzz2.aspx)** — сбрасывает пароль пользователя. Используйте эту перегрузку, если `RequiresQuestionAndAnswer` имеет значение false.
 - **[`ResetPassword(securityAnswer)`](https://msdn.microsoft.com/library/d90zte4w.aspx)** — сбрасывает пароль пользователя, только если указан правильный *секуритянсвер* . Используйте эту перегрузку, если `RequiresQuestionAndAnswer` имеет значение true.
@@ -261,7 +261,7 @@ ASP.NET предлагает два элемента управления, по�
 
 Поздравляем с программированием!
 
-### <a name="further-reading"></a>Дополнительные сведения
+### <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

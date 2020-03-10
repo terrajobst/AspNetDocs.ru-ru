@@ -9,11 +9,11 @@ ms.assetid: ae4def81-fa37-4883-a13e-d9896cbf6c36
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/preparing-databases
 msc.type: authoredcontent
 ms.openlocfilehash: cdcb3578725c41e3c801afd54e6d34455bc4b281
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74618531"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78517284"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-preparing-for-database-deployment"></a>Веб-развертывание ASP.NET с помощью Visual Studio: подготовка к развертыванию базы данных
 
@@ -185,7 +185,7 @@ LocalDB — это специальный режим выполнения SQL Se
 4. В диалоговом окне **Создание и публикация скриптов** нажмите кнопку **задать параметры создания скриптов**.
 
     Можно пропустить шаг **Выбор объектов** , так как по умолчанию используется **сценарий для всей базы данных и всех объектов базы данных** , и именно то, что вам нужно.
-5. Нажмите кнопку **Дополнительно**.
+5. Щелкните **Дополнительно**.
 
     ![Параметры создания скриптов SSMS](preparing-databases/_static/image12.png)
 6. В диалоговом окне **Дополнительные параметры скрипта** прокрутите вниз до пункта **типы данных для создания скрипта**и выберите параметр **только данные** в раскрывающемся списке.

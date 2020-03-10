@@ -9,11 +9,11 @@ ms.assetid: 364ce84e-5af8-4e08-afc9-75a512b01f84
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/design-to-survive-failures
 msc.type: authoredcontent
 ms.openlocfilehash: 348232af531b5d53dc3cb46d6d2c7931d95a572d
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77457132"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78500766"
 ---
 # <a name="design-to-survive-failures-building-real-world-cloud-apps-with-azure"></a>Разработка для устойчивых сбоев (создание облачных приложений в реальном мире с помощью Azure)
 
@@ -111,7 +111,7 @@ ms.locfileid: "77457132"
 
 Дополнительные сведения см. в последующих главах этой электронной книги и следующих ресурсах.
 
-Документация:
+Документация.
 
 - [Отказоустойчивость: руководство по устойчивым облачным архитектурам](https://msdn.microsoft.com/library/windowsazure/jj853352.aspx). Технический документ, (Marc Меркури, Ульрих Хоманн и Эндрю Товнхилл. Версия веб-страницы серии видеоматериалов по отказоустойчивости.
 - Рекомендации [по проектированию крупномасштабных служб в облачных службах Azure](https://msdn.microsoft.com/library/windowsazure/jj717232.aspx). Технический документ, пометив SIMM и Майкл Сомасси.

@@ -9,11 +9,11 @@ ms.assetid: 07fa47ae-e491-4a2f-b265-d342b9ddef46
 msc.legacyurl: /web-forms/overview/data-access/filtering-scenarios-with-the-datalist-and-repeater/master-detail-filtering-with-a-dropdownlist-datalist-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 8289f46fd6d0143802269d5c6196a4c40db9378c
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74631086"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78477240"
 ---
 # <a name="masterdetail-filtering-with-a-dropdownlist-c"></a>Фильтрация "Основной/подробности" с помощью элемента управления DropDownList (C#)
 
@@ -115,7 +115,7 @@ ms.locfileid: "74631086"
 
 Чтобы добавить новый элемент списка в DropDownList, перейдите к окно свойств и щелкните многоточие в свойстве `Items`. Добавьте новый элемент списка с `Text` "--выберите категорию--" и `0``Value`.
 
-![Добавление](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image27.png)
+![Добавить](master-detail-filtering-with-a-dropdownlist-datalist-cs/_static/image27.png)
 
 **Рис. 11**. Добавление элемента списка «--выберите категорию--»
 
@@ -154,4 +154,4 @@ ms.locfileid: "74631086"
 Эта серия руководств была рассмотрена многими полезными рецензентами. Специалист по интересу для этого руководства был Рэнди Шмидт. Хотите ознакомиться с моими будущими статьями MSDN? Если это так, расположите строку в [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
-> [Вперед](master-detail-filtering-acess-two-pages-datalist-cs.md)
+> [Дальше](master-detail-filtering-acess-two-pages-datalist-cs.md)

@@ -9,11 +9,11 @@ ms.assetid: ba6e6baa-9b9f-471f-b39d-b007a3addadc
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/automate-everything
 msc.type: authoredcontent
 ms.openlocfilehash: e741a753a36ebdaefbff8eee0b38911785c716ac
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77457171"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78472680"
 ---
 # <a name="automate-everything-building-real-world-cloud-apps-with-azure"></a>Автоматизируйте все (создание облачных приложений в реальном мире с помощью Azure)
 
@@ -84,7 +84,7 @@ ms.locfileid: "77457171"
 
 ![appSettings и connectionString](automate-everything/_static/image6.png)
 
-Папка *службы автоматизации* теперь также содержит файл *&lt;имя_веб-файла&gt;. pubxml* . В этом файле хранятся параметры, которые MSBuild будет использовать для развертывания приложения в среде Azure, которая была только что создана. Например:
+Папка *службы автоматизации* теперь также содержит файл *&lt;имя_веб-файла&gt;. pubxml* . В этом файле хранятся параметры, которые MSBuild будет использовать для развертывания приложения в среде Azure, которая была только что создана. Пример:
 
 [!code-xml[Main](automate-everything/samples/sample1.xml)]
 

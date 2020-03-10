@@ -9,11 +9,11 @@ ms.assetid: 0b91d5f8-127d-4f6a-b204-f2e2b35ef703
 msc.legacyurl: /web-forms/overview/data-access/custom-formatting/using-templatefields-in-the-detailsview-control-vb
 msc.type: authoredcontent
 ms.openlocfilehash: e96f954c27ae1c8ccc18a9c40fe7e541b487c1cc
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74625076"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78481800"
 ---
 # <a name="using-templatefields-in-the-detailsview-control-vb"></a>Использование TemplateField в элементе управления DetailsView (VB)
 
@@ -37,7 +37,7 @@ TemplateField предлагает большую степень гибкост�
 
 **Рис. 1**. Использование двух полей TemplateField для настройки отображения ([щелкните, чтобы просмотреть изображение в полном размере](using-templatefields-in-the-detailsview-control-vb/_static/image3.png))
 
-Приступим к работе!
+Приступим.
 
 ## <a name="step-1-binding-the-data-to-the-detailsview"></a>Шаг 1. Привязка данных к элементу DetailsView
 

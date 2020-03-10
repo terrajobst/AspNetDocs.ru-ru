@@ -9,17 +9,17 @@ ms.assetid: 9274a72e-34dd-4dae-8452-ed733ae71377
 msc.legacyurl: /mvc/overview/older-versions-1/security/preventing-javascript-injection-attacks-vb
 msc.type: authoredcontent
 ms.openlocfilehash: dfe09085f26c62c566649bc6f570aa25367a0f07
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74594745"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78506226"
 ---
 # <a name="preventing-javascript-injection-attacks-vb"></a>Предотвращение атак, осуществляемых путем внедрения кода JavaScript (VB)
 
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/8/4/8/84843d8d-1575-426c-bcb5-9d0c42e51416/ASPNET_MVC_Tutorial_06_VB.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/8/4/8/84843d8d-1575-426c-bcb5-9d0c42e51416/ASPNET_MVC_Tutorial_06_VB.pdf)
 
 > Предотвращение атак путем внедрения кода JavaScript и атак с использованием межузловых сценариев. В этом руководстве Стивен Вальтер объясняет, как можно легко отвергнуться атакам такого типа с помощью HTML-кодирования содержимого.
 

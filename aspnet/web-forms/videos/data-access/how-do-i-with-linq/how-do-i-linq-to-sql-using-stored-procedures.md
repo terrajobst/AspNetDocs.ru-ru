@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-using-stored-procedures
-title: '[Инструкции] LINQ to SQL: Использование хранимых процедур | Документация Майкрософт'
+title: '[Инструкции:] LINQ to SQL: использование хранимых процедур | Документация Майкрософт'
 author: scottstanfield
-description: Использование существующих хранимых процедур и функций упрощается благодаря LINQ. Мы просто перетащите в область реляционного сопоставления хранимых процедур и вызывать их из ge...
+description: Использование существующих хранимых процедур и функций упрощается с помощью LINQ. Мы просто перетаскивать хранимые процедуры на поверхность сопоставления O/R и вызываю их из области GE...
 ms.author: riande
 ms.date: 01/10/2008
 ms.assetid: b1abfcaa-3b7d-42b9-be11-38904910ece0
 msc.legacyurl: /web-forms/videos/data-access/how-do-i-with-linq/how-do-i-linq-to-sql-using-stored-procedures
 msc.type: video
 ms.openlocfilehash: cbfa28aa6814df404337a8a5d739e2b3c15d31a5
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59385011"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78516336"
 ---
-# <a name="how-do-i-linq-to-sql-using-stored-procedures"></a>[Инструкции] LINQ to SQL: Использование хранимых процедур
+# <a name="how-do-i-linq-to-sql-using-stored-procedures"></a>[Инструкции:] LINQ to SQL: использование хранимых процедур
 
-по [Скотт Stanfield](https://github.com/scottstanfield)
+по [Скотт станфиелд](https://github.com/scottstanfield)
 
-Использование существующих хранимых процедур и функций упрощается благодаря LINQ. Мы просто перетащите в область реляционного сопоставления хранимых процедур и вызывать их из созданного объекта контекста данных.
+Использование существующих хранимых процедур и функций упрощается с помощью LINQ. Мы просто перетаскивать хранимые процедуры на поверхность сопоставления O/R и вызываю их из созданного объекта контекста данных.
 
-[&#9654;Просмотрите видео (9 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-linq-to-sql-using-stored-procedures)
+[&#9654;Смотреть видео (9 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-linq-to-sql-using-stored-procedures)
 
 > [!div class="step-by-step"]
 > [Назад](how-do-i-linq-to-sql-custom-linqdatasource.md)

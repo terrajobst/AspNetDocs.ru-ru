@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/data-access/adonet-data-services/how-to-manually-bind-a-dataset-to-a-datagrid
-title: Как привязка Dataset вручную к Datagrid | Документация Майкрософт
+title: Как вручную привязать набор данных к элементу DataGrid | Документация Майкрософт
 author: JoeStagner
-description: В этом видео, часть 2 из 3, (Joe Stagner) используется пример приложения ASP, созданный в части 1, для демонстрации привязка dataset вручную к datagrid. Для ...
+description: В этом видео, часть 2 из 3, Джо Stagner) использует пример приложения ASP, созданный в первой части, чтобы продемонстрировать, как вручную привязать набор данных к элементу DataGrid. Для ...
 ms.author: riande
 ms.date: 08/07/2008
 ms.assetid: 1e339f8a-72ea-463a-b186-c09dd7b12993
 msc.legacyurl: /web-forms/videos/data-access/adonet-data-services/how-to-manually-bind-a-dataset-to-a-datagrid
 msc.type: video
 ms.openlocfilehash: 5ce22e24160269c225d8497f31b64809ede93c71
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389301"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78518082"
 ---
-# <a name="how-to-manually-bind-a-dataset-to-a-datagrid"></a>Как привязка Dataset вручную к Datagrid
+# <a name="how-to-manually-bind-a-dataset-to-a-datagrid"></a>Как вручную привязать набор данных к элементу управления DataGrid
 
-по [(Joe Stagner)](https://github.com/JoeStagner)
+кем [Джо Stagner)](https://github.com/JoeStagner)
 
-В этом видео, часть 2 из 3, (Joe Stagner) используется пример приложения ASP, созданный в части 1, для демонстрации привязка dataset вручную к datagrid. Дополнительные сведения об этом видео см. в статье [создание уровня доступа к данным](../../../overview/data-access/introduction/creating-a-data-access-layer-vb.md) учебнике доступа данных.
+В этом видео, часть 2 из 3, Джо Stagner) использует пример приложения ASP, созданный в первой части, чтобы продемонстрировать, как вручную привязать набор данных к элементу DataGrid. Дополнительные сведения об этом видео см. в учебнике Создание доступа к данным [уровня доступа к данным](../../../overview/data-access/introduction/creating-a-data-access-layer-vb.md) .
 
-[&#9654;Просмотрите видео (7 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-manually-bind-a-dataset-to-a-datagrid)
+[&#9654;Смотреть видео (7 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-manually-bind-a-dataset-to-a-datagrid)
 
 > [!div class="step-by-step"]
 > [Назад](data-access-layers-in-aspnet-applications.md)

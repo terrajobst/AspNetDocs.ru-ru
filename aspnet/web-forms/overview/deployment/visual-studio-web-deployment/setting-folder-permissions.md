@@ -9,11 +9,11 @@ ms.assetid: 9715a121-fa55-4f1b-a5d2-fb3f6cd8be8f
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/setting-folder-permissions
 msc.type: authoredcontent
 ms.openlocfilehash: 410525bb2e3f6e5a0be6d7d6b33fb3a40509041a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74614936"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78465066"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-setting-folder-permissions"></a>ASP.NET веб-развертывание с помощью Visual Studio: Настройка разрешений для папки
 
@@ -50,7 +50,7 @@ ms.locfileid: "74614936"
 Разрешения для папки можно задать вручную или сделать автоматически частью процесса развертывания. Чтобы сделать его автоматическим, требуется сложный код MSBuild, и поскольку это необходимо сделать только при первом развертывании, выполните следующие действия, как это сделать вручную. (Сведения о том, как сделать эту часть процесса развертывания, см. в разделе [Установка разрешений папки для веб-публикации](http://sedodream.com/2011/11/08/SettingFolderPermissionsOnWebPublish.aspx) в блоге Саид Хашими.)
 
 1. В **проводнике**перейдите по адресу *к:\инетпуб\ввврут\контосауниверсити*. Щелкните правой кнопкой мыши папку *ELMAH* , выберите пункт **свойства**, а затем перейдите на вкладку **Безопасность** .
-2. Нажмите кнопку **Правка**.
+2. Нажмите кнопку **Изменить**.
 3. В диалоговом окне **разрешения для ELMAH** выберите **DefaultAppPool**, а затем установите флажок **записать** в столбце **Разрешить** .
 
     ![Разрешения для папки ELMAH](setting-folder-permissions/_static/image3.png)

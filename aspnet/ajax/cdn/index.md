@@ -1,6 +1,6 @@
 ---
 uid: ajax/cdn/index
-title: Сеть доставки содержимого Microsoft Ajax | Документация Майкрософт
+title: Сеть доставки содержимого Microsoft AJAX | Документация Майкрософт
 author: rick-anderson
 description: ''
 ms.author: riande
@@ -9,11 +9,11 @@ ms.assetid: fc98bde7-484a-4191-bba2-04d29551cb8f
 msc.legacyurl: ''
 msc.type: content
 ms.openlocfilehash: 10ee617ff5653bcc478364b7bea75bac4f4770f6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59388859"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78455214"
 ---
 # <a name="microsoft-ajax-content-delivery-network"></a>Сеть доставки содержимого Microsoft Ajax
 
@@ -57,7 +57,7 @@ ms.locfileid: "59388859"
     - [Пользовательский интерфейс jQuery 1.12.1 в сети доставки содержимого Microsoft Ajax](jquery-ui/cdnjqueryui1121.md)
 - [Подключаемый модуль jQuery Validate](jquery-validate/index.md)
 
-    - [jQuery Validation 1.17.0](jquery-validate/cdnjqueryvalidate1170.md)
+    - [1.17.0 проверки jQuery](jquery-validate/cdnjqueryvalidate1170.md)
     - [jQuery Validate 1.16.0](jquery-validate/cdnjqueryvalidate1160.md)
     - [jQuery Validate 1.15.1](jquery-validate/cdnjqueryvalidate1151.md)
     - [jQuery Validate 1.15.0](jquery-validate/cdnjqueryvalidate1150.md)

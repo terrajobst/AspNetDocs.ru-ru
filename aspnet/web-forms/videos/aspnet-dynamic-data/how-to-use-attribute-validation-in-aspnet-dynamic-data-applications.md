@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/aspnet-dynamic-data/how-to-use-attribute-validation-in-aspnet-dynamic-data-applications
-title: Практическое использование проверки атрибутов в приложениях ASP.NET Dynamic Data | Документация Майкрософт
+title: Как использовать проверку атрибутов в ASP.NET платформа динамических данных приложениях | Документация Майкрософт
 author: JoeStagner
-description: В этом видео будет внести изменение разделяемые классы в уровне доступа к данным динамических данных приложения и приступить к работе с помощью атрибутов, фокусировки o...
+description: В этом видеоролике будет представлено изменение разделяемых классов на уровне доступа к данным платформа динамических данных приложения и начало работы с атрибутами путем фокусировки o...
 ms.author: riande
 ms.date: 10/23/2008
 ms.assetid: dcaaaa8d-7dbd-4f5f-be2a-226c2517872a
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data/how-to-use-attribute-validation-in-aspnet-dynamic-data-applications
 msc.type: video
 ms.openlocfilehash: 1cc66d91e19ccfb3ae3582c7df544553e877517f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59392239"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78518088"
 ---
-# <a name="how-to-use-attribute-validation-in-aspnet-dynamic-data-applications"></a>Практическое использование проверки атрибутов в приложениях ASP.NET Dynamic Data
+# <a name="how-to-use-attribute-validation-in-aspnet-dynamic-data-applications"></a>Как использовать проверку атрибутов в приложениях ASP.NET платформа динамических данных
 
-по [(Joe Stagner)](https://github.com/JoeStagner)
+кем [Джо Stagner)](https://github.com/JoeStagner)
 
-В этом видео будет внести изменение разделяемые классы в уровне доступа к данным динамических данных приложения и приступить к работе с помощью атрибутов, сосредоточившись на атрибуты проверки. Эта проверка слой доступа к данным является предпочтительным для проверки на уровне пользовательского интерфейса и очень легко сделать с помощью платформы динамических данных ASP.NET.
+В этом видеоролике будет представлено изменение разделяемых классов на уровне доступа к данным платформа динамических данных приложения и начало работы с атрибутами, сосредоточенными на атрибутах проверки. Эта проверка уровня доступа к данным является предпочтительной для проверки на уровне пользовательского интерфейса и очень проста в работе с ASP.NET платформа динамических данных.
 
-[&#9654;Просмотрите видео (11 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-use-attribute-validation-in-aspnet-dynamic-data-applications)
+[&#9654;Смотреть видео (11 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-use-attribute-validation-in-aspnet-dynamic-data-applications)
 
 > [!div class="step-by-step"]
 > [Назад](how-to-enable-table-specific-routing-in-dynamic-data-applications.md)

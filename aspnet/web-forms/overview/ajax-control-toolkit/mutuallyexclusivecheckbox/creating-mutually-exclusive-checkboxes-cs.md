@@ -9,11 +9,11 @@ ms.assetid: 8e11b813-ba0d-4c29-b0f8-f65db6dbef1e
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/mutuallyexclusivecheckbox/creating-mutually-exclusive-checkboxes-cs
 msc.type: authoredcontent
 ms.openlocfilehash: ddc154601752cc856f00dd4f3207952ab7e0e3e0
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74606507"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78496788"
 ---
 # <a name="creating-mutually-exclusive-checkboxes-c"></a>Создание взаимоисключающих флажков (C#)
 
@@ -50,4 +50,4 @@ ms.locfileid: "74606507"
 Только один флажок может быть проверен за раз ([щелкните, чтобы просмотреть изображение с полным размером](creating-mutually-exclusive-checkboxes-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
-> [Вперед](creating-mutually-exclusive-checkboxes-vb.md)
+> [Дальше](creating-mutually-exclusive-checkboxes-vb.md)

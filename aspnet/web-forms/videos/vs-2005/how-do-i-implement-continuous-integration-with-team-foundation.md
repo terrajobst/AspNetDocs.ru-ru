@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/vs-2005/how-do-i-implement-continuous-integration-with-team-foundation
-title: '[Инструкции] Реализации непрерывной интеграции с Team Foundation? | Документы Майкрософт'
+title: '[Инструкции:] Внедрить непрерывную интеграцию с Team Foundation? | Документы Майкрософт'
 author: rick-anderson
-description: Существует ряд средств непрерывной интеграции, которые работают на основе сервера Team Foundation Server, и в этом видео мы рассмотрим бесплатный инструмент свободно Norton TeamCI...
+description: Существует ряд средств непрерывной интеграции, которые работают поверх Team Foundation Server, и в этом видеоролике мы рассмотрим бесплатный инструмент Norton ТеамЦи Tool...
 ms.author: riande
 ms.date: 08/01/2007
 ms.assetid: 525c3f23-586a-4594-a2cf-efb5a1ef6898
 msc.legacyurl: /web-forms/videos/vs-2005/how-do-i-implement-continuous-integration-with-team-foundation
 msc.type: video
 ms.openlocfilehash: 80c9852395345f8ad7266dc469b34821d75e444b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59394020"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520884"
 ---
-# <a name="how-do-i-implement-continuous-integration-with-team-foundation"></a>[Инструкции] Реализации непрерывной интеграции с Team Foundation?
+# <a name="how-do-i-implement-continuous-integration-with-team-foundation"></a>[Инструкции:] Внедрить непрерывную интеграцию с Team Foundation?
 
-по [Криса Менегэй](https://twitter.com/CMenegay)
+от [Крис менегэй](https://twitter.com/CMenegay)
 
-Существует ряд средств непрерывной интеграции, которые работают на основе сервера Team Foundation Server, и в этом видео мы рассмотрим бесплатный [Norton TeamCI](http://teamsystemrocks.com/files/12/tools/entry1018.aspx) средство, доступное из [Team System лидирует](http://teamsystemrocks.com/). TeamCI периодически проверяет ли обновленные файлы были возвращены к Team Foundation Server и, если это так, выполните сборку решения и запускать любые автоматические тесты.
+Существует ряд средств непрерывной интеграции, которые работают поверх Team Foundation Server, и в этом видеоролике мы рассмотрим бесплатное средство [Norton теамЦи](http://teamsystemrocks.com/files/12/tools/entry1018.aspx) , доступное в [Team System Rocks](http://teamsystemrocks.com/). ТеамЦи периодически проверяет, были ли обновленные файлы возвращены в Team Foundation Server и, если это так, будет создавать решение и выполнять автоматические тесты.
 
-[&#9654;Просмотрите видео (6 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-implement-continuous-integration-with-team-foundation)
+[&#9654;Смотреть видео (6 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-implement-continuous-integration-with-team-foundation)
 
 > [!div class="step-by-step"]
 > [Назад](how-do-i-discover-application-changes-prior-to-deployment.md)

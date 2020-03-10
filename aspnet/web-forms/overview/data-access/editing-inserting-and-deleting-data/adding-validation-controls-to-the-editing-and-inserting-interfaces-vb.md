@@ -9,11 +9,11 @@ ms.assetid: e3d7028a-7a22-4a4f-babe-d53afc41c0e2
 msc.legacyurl: /web-forms/overview/data-access/editing-inserting-and-deleting-data/adding-validation-controls-to-the-editing-and-inserting-interfaces-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 5c5ad110ee0836f0a464b02a2b29254e2e06381e
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74571342"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78479436"
 ---
 # <a name="adding-validation-controls-to-the-editing-and-inserting-interfaces-vb"></a>Добавление элементов управления проверки в интерфейсы правки и вставки (VB)
 
@@ -33,7 +33,7 @@ ms.locfileid: "74571342"
 
 В этом учебнике мы рассмотрим, как легко добавить элементы управления проверки в `EditItemTemplate` и `InsertItemTemplate` для предоставления более защищенного пользовательского интерфейса. В частности, в этом учебнике используется пример, созданный в статье [изучение событий, связанных с руководством по вставке, обновлению и удалению,](examining-the-events-associated-with-inserting-updating-and-deleting-vb.md) и дополнение интерфейсов правки и вставки для включения соответствующей проверки.
 
-## <a name="step-1-replicating-the-example-fromexamining-the-events-associated-with-inserting-updating-and-deletingexamining-the-events-associated-with-inserting-updating-and-deleting-vbmd"></a>Шаг 1. репликация примера из[проверки событий, связанных с вставкой, обновлением и удалением](examining-the-events-associated-with-inserting-updating-and-deleting-vb.md)
+## <a name="step-1-replicating-the-example-fromexamining-the-events-associated-with-inserting-updating-and-deleting"></a>Шаг 1. репликация примера из[проверки событий, связанных с вставкой, обновлением и удалением](examining-the-events-associated-with-inserting-updating-and-deleting-vb.md)
 
 В ходе [изучения событий, связанных с вставкой, обновлением и удалением](examining-the-events-associated-with-inserting-updating-and-deleting-vb.md) учебника, мы создали страницу, в которой указаны имена и цены продуктов в редактируемом элементе управления GridView. Кроме того, на странице содержится элемент DetailsView, для свойства `DefaultMode` которого было задано значение `Insert`, таким образом, всегда выполняется отрисовка в режиме вставки. С помощью этой DetailsView пользователь может ввести имя и цену для нового продукта, нажать кнопку Вставить и добавить в систему (см. рис. 1).
 

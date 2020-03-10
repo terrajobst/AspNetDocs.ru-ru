@@ -9,11 +9,11 @@ ms.assetid: 128fdb5f-4c5e-42b5-b485-f3aee90a8e38
 msc.legacyurl: /web-forms/overview/data-access/custom-button-actions/adding-and-responding-to-buttons-to-a-gridview-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 5c87386e4fe2c53b39162071689f2522dcc6c7ac
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74602412"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78442422"
 ---
 # <a name="adding-and-responding-to-buttons-to-a-gridview-c"></a>Добавление кнопок и ответов на них к GridView (C#)
 
@@ -260,4 +260,4 @@ GridView (и DetailsView) состоят из набора полей. В доп
 [Скотт Митчелл](http://www.4guysfromrolla.com/ScottMitchell.shtml), автор семи книг по ASP/ASP. NET и основатель [4GuysFromRolla.com](http://www.4guysfromrolla.com), работал с веб-технологиями Майкрософт с 1998. Скотт работает как независимый консультант, преподаватель и модуль записи. Его последняя книга — [*Sams обучать себя ASP.NET 2,0 за 24 часа*](https://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco). Он доступен по адресу [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com) или через его блог, который можно найти по адресу [http://ScottOnWriting.NET](http://ScottOnWriting.NET).
 
 > [!div class="step-by-step"]
-> [Вперед](adding-and-responding-to-buttons-to-a-gridview-vb.md)
+> [Дальше](adding-and-responding-to-buttons-to-a-gridview-vb.md)

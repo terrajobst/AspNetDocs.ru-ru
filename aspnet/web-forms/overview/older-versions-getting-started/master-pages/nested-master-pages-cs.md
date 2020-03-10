@@ -9,11 +9,11 @@ ms.assetid: 32b7fb6e-d74b-4048-91f8-70631b2523ee
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/nested-master-pages-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 67093266567a97cd22b353115616484fd9ef155e
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74596448"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78463626"
 ---
 # <a name="nested-master-pages-c"></a>Вложенные эталонные страницы (C#)
 
@@ -185,7 +185,7 @@ ms.locfileid: "74596448"
 
 Первая задача — создать вложенную главную страницу, которая будет использоваться страницами в разделе Администрирование. Как было показано на шаге 2, при добавлении новой вложенной главной страницы необходимо указать родительскую главную страницу вложенной главной страницы. Но у нас есть две главные страницы верхнего уровня: `Site.master` и `Alternate.master`. Вспомним, что мы создали `Alternate.master` в предыдущем руководстве и написали код в `BasePage`ном классе, который задает свойство `MasterPageFile` объекта страницы во время выполнения как `Site.master` или `Alternate.master` в зависимости от значения переменной сеанса `MyMasterPage`.
 
-Как настроить вложенную главную страницу так, чтобы она использовала соответствующую главную страницу верхнего уровня? У нас есть два варианта:
+Как настроить вложенную главную страницу так, чтобы она использовала соответствующую главную страницу верхнего уровня? Это можно сделать двумя способами.
 
 - Создайте две вложенные главные страницы, `AdminNestedSite.master` и `AdminNestedAlternate.master`и привяжите их к главным страницам верхнего уровня `Site.master` и `Alternate.master`соответственно. В `BasePage`необходимо установить `MasterPageFile` объекта `Page` на соответствующую вложенную главную страницу.
 - Создание одной вложенной главной страницы и использование страниц содержимого этой конкретной главной страницей. Затем во время выполнения нам нужно было бы задать свойство `MasterPageFile` вложенной главной страницы соответствующей главной странице верхнего уровня во время выполнения. (Как вы, возможно, поняли, на главной странице также имеется свойство `MasterPageFile`.)
@@ -232,7 +232,7 @@ ms.locfileid: "74596448"
 
 [!code-csharp[Main](nested-master-pages-cs/samples/sample12.cs)]
 
-До.
+на:
 
 [!code-csharp[Main](nested-master-pages-cs/samples/sample13.cs)]
 
@@ -252,7 +252,7 @@ ms.locfileid: "74596448"
 
 [!code-csharp[Main](nested-master-pages-cs/samples/sample14.cs)]
 
-До.
+на:
 
 [!code-csharp[Main](nested-master-pages-cs/samples/sample15.cs)]
 
@@ -298,7 +298,7 @@ ms.locfileid: "74596448"
 
 Поздравляем с программированием!
 
-### <a name="further-reading"></a>Дополнительные сведения
+### <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

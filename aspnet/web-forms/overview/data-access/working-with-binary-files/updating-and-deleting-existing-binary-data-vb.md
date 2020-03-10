@@ -9,11 +9,11 @@ ms.assetid: 3a052ced-9cf5-47b8-a400-934f0b687c26
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/updating-and-deleting-existing-binary-data-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 27ff6941008b4e7bf6d632e4c248fd1d35fb3589
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74621593"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78475014"
 ---
 # <a name="updating-and-deleting-existing-binary-data-vb"></a>Обновление и удаление существующих двоичных данных (VB)
 
@@ -53,7 +53,7 @@ DAL содержит автоматически созданные методы 
 
 В дополнение к обновлению DAL необходимо обновить слой BLL, чтобы включить методы для обновления и удаления категорий. Это методы, которые будут вызываться из уровня представления данных.
 
-Для удаления категории можно использовать автоматически созданный метод `CategoriesTableAdapter` s `Delete`. Добавьте следующий метод в класс `CategoriesBLL`:
+Для удаления категории можно использовать автоматически созданный метод `CategoriesTableAdapter` s `Delete`. Добавьте в класс `CategoriesBLL` следующий метод:
 
 [!code-vb[Main](updating-and-deleting-existing-binary-data-vb/samples/sample2.vb)]
 

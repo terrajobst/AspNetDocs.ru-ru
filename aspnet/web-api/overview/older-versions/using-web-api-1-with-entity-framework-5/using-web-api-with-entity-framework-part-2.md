@@ -9,11 +9,11 @@ ms.assetid: fe3ef85f-bdc6-4e10-9768-25aa565c01d0
 msc.legacyurl: /web-api/overview/older-versions/using-web-api-1-with-entity-framework-5/using-web-api-with-entity-framework-part-2
 msc.type: authoredcontent
 ms.openlocfilehash: 7c5ed1bdb4b390c94907b14e208231f16ad42d96
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600358"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78504276"
 ---
 # <a name="part-2-creating-the-domain-models"></a>Часть 2. Создание моделей предметной области
 
@@ -36,7 +36,7 @@ ms.locfileid: "74600358"
 Мы создадим следующие POCO:
 
 - Продукт
-- Номер
+- Порядок
 - OrderDetail
 
 Чтобы создать каждый класс, щелкните правой кнопкой мыши папку Models в обозреватель решений. В контекстном меню выберите **Добавить** , а затем выберите **класс.**
@@ -75,7 +75,7 @@ ms.locfileid: "74600358"
 
 Сериализация по значению создает проблему, если граф объекта содержит циклические ссылки. Именно в этом случае классы `Order` и `OrderDetail`, так как каждый из них содержит ссылку на другой. Модуль форматирования будет следовать ссылкам, записывать каждый объект по значению и идти по кругам. Поэтому необходимо изменить поведение по умолчанию.
 
-В обозреватель решений разверните папку приложение\_запуск и откройте файл с именем WebApiConfig.cs. Добавьте следующий код в класс `WebApiConfig` :
+В обозреватель решений разверните папку приложение\_запуск и откройте файл с именем WebApiConfig.cs. Добавьте в класс `WebApiConfig` приведенный ниже код.
 
 [!code-csharp[Main](using-web-api-with-entity-framework-part-2/samples/sample4.cs?highlight=11)]
 
