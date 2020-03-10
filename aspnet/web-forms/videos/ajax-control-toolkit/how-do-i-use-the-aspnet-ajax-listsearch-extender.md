@@ -1,29 +1,29 @@
 ---
 uid: web-forms/videos/ajax-control-toolkit/how-do-i-use-the-aspnet-ajax-listsearch-extender
-title: '[Инструкции] Использовать Расширитель ListSearch ASP.NET AJAX? | Документы Майкрософт'
+title: '[Инструкции:] Используете расширитель ListSearch ASP.NET AJAX? | Документы Майкрософт'
 author: JoeStagner
-description: В этом видео демонстрируется использование элемента-расширителя ListSearch из ASP.NET AJAX Control Toolkit. Расширитель ListSearch повышает DropDownList и L...
+description: В этом видеоролике демонстрируется использование элемента управления расширителем ListSearch из набора средств ASP.NET AJAX Control Toolkit. Расширитель ListSearch расширяет DropDownList и L...
 ms.author: riande
 ms.date: 05/25/2007
 ms.assetid: 459490f0-79cb-4859-9fd2-885dae4d23fd
 msc.legacyurl: /web-forms/videos/ajax-control-toolkit/how-do-i-use-the-aspnet-ajax-listsearch-extender
 msc.type: video
 ms.openlocfilehash: d4682d3fd960387a633ad39731f9cbc920a2df21
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59411596"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78510312"
 ---
-# <a name="how-do-i-use-the-aspnet-ajax-listsearch-extender"></a><span data-ttu-id="db8a9-105">[Инструкции] Использовать Расширитель ListSearch ASP.NET AJAX?</span><span class="sxs-lookup"><span data-stu-id="db8a9-105">[How Do I:] Use the ASP.NET AJAX ListSearch Extender?</span></span>
+# <a name="how-do-i-use-the-aspnet-ajax-listsearch-extender"></a><span data-ttu-id="54005-105">[Инструкции:] Используете расширитель ListSearch ASP.NET AJAX?</span><span class="sxs-lookup"><span data-stu-id="54005-105">[How Do I:] Use the ASP.NET AJAX ListSearch Extender?</span></span>
 
-<span data-ttu-id="db8a9-106">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="db8a9-106">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="54005-106">кем [Джо Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="54005-106">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="db8a9-107">В этом видео демонстрируется использование элемента-расширителя ListSearch из ASP.NET AJAX Control Toolkit.</span><span class="sxs-lookup"><span data-stu-id="db8a9-107">This video demonstrates the use of the ListSearch extender control from the ASP.NET AJAX Control Toolkit.</span></span> <span data-ttu-id="db8a9-108">Расширитель ListSearch улучшает элементов управления DropDownList и ListBox, позволяя пользователь может выбрать элемент в списке, просто введя его первые несколько символов.</span><span class="sxs-lookup"><span data-stu-id="db8a9-108">The ListSearch extender enhances DropDownList and ListBox controls so that a user can select an item in the list by simply typing its first few characters.</span></span> <span data-ttu-id="db8a9-109">Это нововведение позволило усовершенствовать взаимодействие с пользователем, предоставляя более интуитивно понятный способ выбора элемента из длинного списка.</span><span class="sxs-lookup"><span data-stu-id="db8a9-109">This enhancement improves the user experience by providing an intuitive way of selecting an item from a long list.</span></span>
+<span data-ttu-id="54005-107">В этом видеоролике демонстрируется использование элемента управления расширителем ListSearch из набора средств ASP.NET AJAX Control Toolkit.</span><span class="sxs-lookup"><span data-stu-id="54005-107">This video demonstrates the use of the ListSearch extender control from the ASP.NET AJAX Control Toolkit.</span></span> <span data-ttu-id="54005-108">Расширитель ListSearch расширяет элементы управления DropDownList и ListBox, чтобы пользователь мог выбрать элемент в списке, просто введя несколько первых символов.</span><span class="sxs-lookup"><span data-stu-id="54005-108">The ListSearch extender enhances DropDownList and ListBox controls so that a user can select an item in the list by simply typing its first few characters.</span></span> <span data-ttu-id="54005-109">Это улучшение улучшает взаимодействие с пользователем, предоставляя интуитивно понятный способ выбора элемента из длинного списка.</span><span class="sxs-lookup"><span data-stu-id="54005-109">This enhancement improves the user experience by providing an intuitive way of selecting an item from a long list.</span></span>
 
-[<span data-ttu-id="db8a9-110">&#9654;Просмотрите видео (11 минут)</span><span class="sxs-lookup"><span data-stu-id="db8a9-110">&#9654; Watch video (11 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-listsearch-extender)
+[<span data-ttu-id="54005-110">&#9654;Смотреть видео (11 минут)</span><span class="sxs-lookup"><span data-stu-id="54005-110">&#9654; Watch video (11 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-use-the-aspnet-ajax-listsearch-extender)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="db8a9-111">[Назад](how-do-i-use-the-aspnet-ajax-nobot-control.md)
-> [Вперед](how-do-i-use-the-pagingbulletedlist-extender-control.md)</span><span class="sxs-lookup"><span data-stu-id="db8a9-111">[Previous](how-do-i-use-the-aspnet-ajax-nobot-control.md)
+> <span data-ttu-id="54005-111">[Назад](how-do-i-use-the-aspnet-ajax-nobot-control.md)
+> [Вперед](how-do-i-use-the-pagingbulletedlist-extender-control.md)</span><span class="sxs-lookup"><span data-stu-id="54005-111">[Previous](how-do-i-use-the-aspnet-ajax-nobot-control.md)
 [Next](how-do-i-use-the-pagingbulletedlist-extender-control.md)</span></span>
