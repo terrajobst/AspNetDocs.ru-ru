@@ -2,27 +2,27 @@
 uid: signalr/overview/older-versions/index
 title: Более старые версии SignalR | Документация Майкрософт
 author: bradygaster
-description: Документацию, относящуюся к более ранним версиям SignalR.
+description: Документация, относящаяся к более ранним версиям SignalR.
 ms.author: bradyg
 ms.date: 09/19/2014
 ms.assetid: 607f4617-380f-41fa-bf46-147e82bb8124
 msc.legacyurl: /signalr/overview/older-versions
 msc.type: chapter
 ms.openlocfilehash: f992ea30d6d4c26da105a688f42e420af86a523a
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65117121"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78450030"
 ---
 # <a name="signalr-older-versions"></a>Более старые версии SignalR
 
-> Документацию, относящуюся к более ранним версиям SignalR.
+> Документация, относящаяся к более ранним версиям SignalR.
 
 - [Учебник. Начало работы с SignalR 1.x](tutorial-getting-started-with-signalr.md)
 - [Учебник. Начало работы с SignalR 1.x и MVC 4](tutorial-getting-started-with-signalr-and-mvc-4.md)
 - [Обмен сообщениями с высоким уровнем периодичности в режиме реального времени с помощью SignalR 1.x](tutorial-high-frequency-realtime-with-signalr.md)
-- [Учебник. Передача сообщений с сервера с помощью SignalR 1.x](tutorial-server-broadcast-with-aspnet-signalr.md)
+- [Передача сообщений с сервера с помощью SignalR 1.x](tutorial-server-broadcast-with-aspnet-signalr.md)
 - [Руководство по API концентраторов — сервер](signalr-1x-hubs-api-guide-server.md)
 - [Руководство по API концентраторов SignalR 1.x — клиент JavaScript](signalr-1x-hubs-api-guide-javascript-client.md)
 - [Руководство по API концентраторов — клиент .NET](signalr-1x-hubs-api-guide-net-client.md)
