@@ -1,77 +1,77 @@
 ---
 uid: mvc/overview/older-versions-1/controllers-and-routing/creating-a-route-constraint-vb
-title: Создание ограничения маршрута (Visual Basic) | Документация Майкрософт
+title: Создание ограничения маршрута (VB) | Документация Майкрософт
 author: StephenWalther
-description: В этом руководстве Стивен Вальтер демонстрирует, как можно контролировать, как браузер запрашивает маршруты соответствия путем создания ограничения маршрута с помощью регулярных выражений.
+description: В этом руководстве Стивен Вальтер демонстрирует, как можно управлять тем, как запросы браузера сопоставляют маршруты, создавая ограничения маршрута с помощью регулярных выражений.
 ms.author: riande
 ms.date: 02/16/2009
 ms.assetid: b7cce113-c82c-45bf-b97b-357e5d9f7f56
 msc.legacyurl: /mvc/overview/older-versions-1/controllers-and-routing/creating-a-route-constraint-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 205742dd8f866c8828008c8aac7ab3f98b173ceb
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65123425"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78486774"
 ---
-# <a name="creating-a-route-constraint-vb"></a><span data-ttu-id="8a511-103">Создание ограничения маршрута (VB)</span><span class="sxs-lookup"><span data-stu-id="8a511-103">Creating a Route Constraint (VB)</span></span>
+# <a name="creating-a-route-constraint-vb"></a><span data-ttu-id="1bd94-103">Создание ограничения маршрута (VB)</span><span class="sxs-lookup"><span data-stu-id="1bd94-103">Creating a Route Constraint (VB)</span></span>
 
-<span data-ttu-id="8a511-104">по [Стивен Вальтер](https://github.com/StephenWalther)</span><span class="sxs-lookup"><span data-stu-id="8a511-104">by [Stephen Walther](https://github.com/StephenWalther)</span></span>
+<span data-ttu-id="1bd94-104">по [Стивен Вальтер](https://github.com/StephenWalther)</span><span class="sxs-lookup"><span data-stu-id="1bd94-104">by [Stephen Walther](https://github.com/StephenWalther)</span></span>
 
-> <span data-ttu-id="8a511-105">В этом руководстве Стивен Вальтер демонстрирует, как можно контролировать, как браузер запрашивает маршруты соответствия путем создания ограничения маршрута с помощью регулярных выражений.</span><span class="sxs-lookup"><span data-stu-id="8a511-105">In this tutorial, Stephen Walther demonstrates how you can control how browser requests match routes by creating route constraints with regular expressions.</span></span>
+> <span data-ttu-id="1bd94-105">В этом руководстве Стивен Вальтер демонстрирует, как можно управлять тем, как запросы браузера сопоставляют маршруты, создавая ограничения маршрута с помощью регулярных выражений.</span><span class="sxs-lookup"><span data-stu-id="1bd94-105">In this tutorial, Stephen Walther demonstrates how you can control how browser requests match routes by creating route constraints with regular expressions.</span></span>
 
-<span data-ttu-id="8a511-106">Использовать ограничения маршрута для ограничения браузер запросы, которые соответствуют определенным маршрутом.</span><span class="sxs-lookup"><span data-stu-id="8a511-106">You use route constraints to restrict the browser requests that match a particular route.</span></span> <span data-ttu-id="8a511-107">Регулярное выражение можно использовать для указания ограничения маршрута.</span><span class="sxs-lookup"><span data-stu-id="8a511-107">You can use a regular expression to specify a route constraint.</span></span>
+<span data-ttu-id="1bd94-106">Ограничения маршрута используются для ограничения запросов обозревателя, соответствующих определенному маршруту.</span><span class="sxs-lookup"><span data-stu-id="1bd94-106">You use route constraints to restrict the browser requests that match a particular route.</span></span> <span data-ttu-id="1bd94-107">Для указания ограничения маршрута можно использовать регулярное выражение.</span><span class="sxs-lookup"><span data-stu-id="1bd94-107">You can use a regular expression to specify a route constraint.</span></span>
 
-<span data-ttu-id="8a511-108">Например представьте, что вы определили маршрута в листинге 1 в файле Global.asax.</span><span class="sxs-lookup"><span data-stu-id="8a511-108">For example, imagine that you have defined the route in Listing 1 in your Global.asax file.</span></span>
+<span data-ttu-id="1bd94-108">Например, предположим, что вы определили маршрут в листинге 1 в файле Global. asax.</span><span class="sxs-lookup"><span data-stu-id="1bd94-108">For example, imagine that you have defined the route in Listing 1 in your Global.asax file.</span></span>
 
-<span data-ttu-id="8a511-109">**В листинге 1 - Global.asax.vb**</span><span class="sxs-lookup"><span data-stu-id="8a511-109">**Listing 1 - Global.asax.vb**</span></span>
+<span data-ttu-id="1bd94-109">**Листинг 1-Global. asax. vb**</span><span class="sxs-lookup"><span data-stu-id="1bd94-109">**Listing 1 - Global.asax.vb**</span></span>
 
 [!code-vb[Main](creating-a-route-constraint-vb/samples/sample1.vb)]
 
-<span data-ttu-id="8a511-110">В листинге 1 содержит маршрут с именем продукта.</span><span class="sxs-lookup"><span data-stu-id="8a511-110">Listing 1 contains a route named Product.</span></span> <span data-ttu-id="8a511-111">Маршрут продукта можно использовать для сопоставления запросов браузера ProductController, содержащихся в листинге 2.</span><span class="sxs-lookup"><span data-stu-id="8a511-111">You can use the Product route to map browser requests to the ProductController contained in Listing 2.</span></span>
+<span data-ttu-id="1bd94-110">В листинге 1 содержится маршрут с именем Product.</span><span class="sxs-lookup"><span data-stu-id="1bd94-110">Listing 1 contains a route named Product.</span></span> <span data-ttu-id="1bd94-111">Вы можете использовать маршрут продукта, чтобы сопоставлять запросы браузера с Продуктконтроллер, содержащимся в листинге 2.</span><span class="sxs-lookup"><span data-stu-id="1bd94-111">You can use the Product route to map browser requests to the ProductController contained in Listing 2.</span></span>
 
-<span data-ttu-id="8a511-112">**В листинге 2 - Controllers\ProductController.vb**</span><span class="sxs-lookup"><span data-stu-id="8a511-112">**Listing 2 - Controllers\ProductController.vb**</span></span>
+<span data-ttu-id="1bd94-112">**Листинг 2. Контроллерс\продуктконтроллер.ВБ**</span><span class="sxs-lookup"><span data-stu-id="1bd94-112">**Listing 2 - Controllers\ProductController.vb**</span></span>
 
 [!code-vb[Main](creating-a-route-constraint-vb/samples/sample2.vb)]
 
-<span data-ttu-id="8a511-113">Обратите внимание на то, что Details() действию, предоставляемым продукта контроллер принимает один параметр с именем productId.</span><span class="sxs-lookup"><span data-stu-id="8a511-113">Notice that the Details() action exposed by the Product controller accepts a single parameter named productId.</span></span> <span data-ttu-id="8a511-114">Этот параметр является параметром целое число.</span><span class="sxs-lookup"><span data-stu-id="8a511-114">This parameter is an integer parameter.</span></span>
+<span data-ttu-id="1bd94-113">Обратите внимание, что действие Details (), предоставляемое контроллером продукта, принимает один параметр с именем productId.</span><span class="sxs-lookup"><span data-stu-id="1bd94-113">Notice that the Details() action exposed by the Product controller accepts a single parameter named productId.</span></span> <span data-ttu-id="1bd94-114">Этот параметр является целочисленным параметром.</span><span class="sxs-lookup"><span data-stu-id="1bd94-114">This parameter is an integer parameter.</span></span>
 
-<span data-ttu-id="8a511-115">Маршрут, определенный в листинге 1 будет соответствовать любой из следующих URL-адресов:</span><span class="sxs-lookup"><span data-stu-id="8a511-115">The route defined in Listing 1 will match any of the following URLs:</span></span>
+<span data-ttu-id="1bd94-115">Маршрут, определенный в листинге 1, будет соответствовать любому из следующих URL-адресов:</span><span class="sxs-lookup"><span data-stu-id="1bd94-115">The route defined in Listing 1 will match any of the following URLs:</span></span>
 
-- <span data-ttu-id="8a511-116">/ Продукта/23</span><span class="sxs-lookup"><span data-stu-id="8a511-116">/Product/23</span></span>
-- <span data-ttu-id="8a511-117">/ Продукта/7</span><span class="sxs-lookup"><span data-stu-id="8a511-117">/Product/7</span></span>
+- <span data-ttu-id="1bd94-116">/Product/23</span><span class="sxs-lookup"><span data-stu-id="1bd94-116">/Product/23</span></span>
+- <span data-ttu-id="1bd94-117">/Product/7</span><span class="sxs-lookup"><span data-stu-id="1bd94-117">/Product/7</span></span>
 
-<span data-ttu-id="8a511-118">К сожалению маршрут будет соответствовать следующие URL-адреса:</span><span class="sxs-lookup"><span data-stu-id="8a511-118">Unfortunately, the route will also match the following URLs:</span></span>
+<span data-ttu-id="1bd94-118">К сожалению, маршрут также будет соответствовать следующим URL-адресам:</span><span class="sxs-lookup"><span data-stu-id="1bd94-118">Unfortunately, the route will also match the following URLs:</span></span>
 
-- <span data-ttu-id="8a511-119">/ Продукта/сведения</span><span class="sxs-lookup"><span data-stu-id="8a511-119">/Product/blah</span></span>
-- <span data-ttu-id="8a511-120">/ Продукта/apple</span><span class="sxs-lookup"><span data-stu-id="8a511-120">/Product/apple</span></span>
+- <span data-ttu-id="1bd94-119">/продукт/блах</span><span class="sxs-lookup"><span data-stu-id="1bd94-119">/Product/blah</span></span>
+- <span data-ttu-id="1bd94-120">/продукт/аппле</span><span class="sxs-lookup"><span data-stu-id="1bd94-120">/Product/apple</span></span>
 
-<span data-ttu-id="8a511-121">Поскольку действие Details() ожидает целочисленный параметр, выполняющего запрос, содержащий отличные от целочисленное значение приведет к ошибке.</span><span class="sxs-lookup"><span data-stu-id="8a511-121">Because the Details() action expects an integer parameter, making a request that contains something other than an integer value will cause an error.</span></span> <span data-ttu-id="8a511-122">Например при вводе /Product/apple URL-адрес в адресную строку браузера на страницу ошибки будет получить на рис. 1.</span><span class="sxs-lookup"><span data-stu-id="8a511-122">For example, if you type the URL /Product/apple into your browser then you will get the error page in Figure 1.</span></span>
+<span data-ttu-id="1bd94-121">Так как действие Details () принимает целочисленный параметр, запрос, содержащий нечто, отличное от целочисленного значения, вызовет ошибку.</span><span class="sxs-lookup"><span data-stu-id="1bd94-121">Because the Details() action expects an integer parameter, making a request that contains something other than an integer value will cause an error.</span></span> <span data-ttu-id="1bd94-122">Например, если ввести URL-адрес/продукт/Аппле в браузере, вы получите страницу ошибки на рис. 1.</span><span class="sxs-lookup"><span data-stu-id="1bd94-122">For example, if you type the URL /Product/apple into your browser then you will get the error page in Figure 1.</span></span>
 
-<span data-ttu-id="8a511-123">[![В диалоговом окне нового проекта](creating-a-route-constraint-vb/_static/image1.jpg)](creating-a-route-constraint-vb/_static/image1.png)</span><span class="sxs-lookup"><span data-stu-id="8a511-123">[![The New Project dialog box](creating-a-route-constraint-vb/_static/image1.jpg)](creating-a-route-constraint-vb/_static/image1.png)</span></span>
+<span data-ttu-id="1bd94-123">[![диалоговом окне «Создание проекта»](creating-a-route-constraint-vb/_static/image1.jpg)](creating-a-route-constraint-vb/_static/image1.png)</span><span class="sxs-lookup"><span data-stu-id="1bd94-123">[![The New Project dialog box](creating-a-route-constraint-vb/_static/image1.jpg)](creating-a-route-constraint-vb/_static/image1.png)</span></span>
 
-<span data-ttu-id="8a511-124">**Рис 01**: Просмотр страницы развернуть ([Просмотр полноразмерного изображения](creating-a-route-constraint-vb/_static/image2.png))</span><span class="sxs-lookup"><span data-stu-id="8a511-124">**Figure 01**: Seeing a page explode ([Click to view full-size image](creating-a-route-constraint-vb/_static/image2.png))</span></span>
+<span data-ttu-id="1bd94-124">**Рис. 01**. Просмотр развернутой страницы ([щелкните, чтобы просмотреть изображение с полным размером](creating-a-route-constraint-vb/_static/image2.png))</span><span class="sxs-lookup"><span data-stu-id="1bd94-124">**Figure 01**: Seeing a page explode ([Click to view full-size image](creating-a-route-constraint-vb/_static/image2.png))</span></span>
 
-<span data-ttu-id="8a511-125">Что Вы действительно хотите сделать — соответствовать только URL-адреса, содержащие productId правильное целое число.</span><span class="sxs-lookup"><span data-stu-id="8a511-125">What you really want to do is only match URLs that contain a proper integer productId.</span></span> <span data-ttu-id="8a511-126">Ограничение можно использовать при определении маршрута для ограничения URL-адреса, которые соответствуют маршруту.</span><span class="sxs-lookup"><span data-stu-id="8a511-126">You can use a constraint when defining a route to restrict the URLs that match the route.</span></span> <span data-ttu-id="8a511-127">Измененный маршрут продукта в листинге 3 содержит ограничение регулярное выражение, которое соответствует только целые числа.</span><span class="sxs-lookup"><span data-stu-id="8a511-127">The modified Product route in Listing 3 contains a regular expression constraint that only matches integers.</span></span>
+<span data-ttu-id="1bd94-125">Вы действительно хотите использовать только URL-адреса, содержащие правильный целочисленный productId.</span><span class="sxs-lookup"><span data-stu-id="1bd94-125">What you really want to do is only match URLs that contain a proper integer productId.</span></span> <span data-ttu-id="1bd94-126">Ограничение можно использовать при определении маршрута для ограничения URL-адресов, соответствующих маршруту.</span><span class="sxs-lookup"><span data-stu-id="1bd94-126">You can use a constraint when defining a route to restrict the URLs that match the route.</span></span> <span data-ttu-id="1bd94-127">Измененный маршрут продукта в листинге 3 содержит ограничение регулярного выражения, которое соответствует только целым числам.</span><span class="sxs-lookup"><span data-stu-id="1bd94-127">The modified Product route in Listing 3 contains a regular expression constraint that only matches integers.</span></span>
 
-<span data-ttu-id="8a511-128">**Листинг 3 - Global.asax.vb**</span><span class="sxs-lookup"><span data-stu-id="8a511-128">**Listing 3 - Global.asax.vb**</span></span>
+<span data-ttu-id="1bd94-128">**Листинг 3. Global. asax. vb**</span><span class="sxs-lookup"><span data-stu-id="1bd94-128">**Listing 3 - Global.asax.vb**</span></span>
 
 [!code-vb[Main](creating-a-route-constraint-vb/samples/sample3.vb)]
 
-<span data-ttu-id="8a511-129">Регулярное выражение \d+ соответствует один или несколько целых чисел.</span><span class="sxs-lookup"><span data-stu-id="8a511-129">The regular expression \d+ matches one or more integers.</span></span> <span data-ttu-id="8a511-130">Этим ограничением обусловлены сопоставления следующие URL-адреса маршрута продукта:</span><span class="sxs-lookup"><span data-stu-id="8a511-130">This constraint causes the Product route to match the following URLs:</span></span>
+<span data-ttu-id="1bd94-129">Регулярное выражение \d + соответствует одному или нескольким целым числам.</span><span class="sxs-lookup"><span data-stu-id="1bd94-129">The regular expression \d+ matches one or more integers.</span></span> <span data-ttu-id="1bd94-130">Это ограничение приводит к тому, что маршрут продукта будет соответствовать следующим URL-адресам:</span><span class="sxs-lookup"><span data-stu-id="1bd94-130">This constraint causes the Product route to match the following URLs:</span></span>
 
-- <span data-ttu-id="8a511-131">/ Продукта/3</span><span class="sxs-lookup"><span data-stu-id="8a511-131">/Product/3</span></span>
-- <span data-ttu-id="8a511-132">/ Продукта/8999</span><span class="sxs-lookup"><span data-stu-id="8a511-132">/Product/8999</span></span>
+- <span data-ttu-id="1bd94-131">/Product/3</span><span class="sxs-lookup"><span data-stu-id="1bd94-131">/Product/3</span></span>
+- <span data-ttu-id="1bd94-132">/Product/8999</span><span class="sxs-lookup"><span data-stu-id="1bd94-132">/Product/8999</span></span>
 
-<span data-ttu-id="8a511-133">Но не следующие URL-адреса:</span><span class="sxs-lookup"><span data-stu-id="8a511-133">But not the following URLs:</span></span>
+<span data-ttu-id="1bd94-133">Но не следующие URL-адреса:</span><span class="sxs-lookup"><span data-stu-id="1bd94-133">But not the following URLs:</span></span>
 
-- <span data-ttu-id="8a511-134">/ Продукта/apple</span><span class="sxs-lookup"><span data-stu-id="8a511-134">/Product/apple</span></span>
-- <span data-ttu-id="8a511-135">/ Продукта</span><span class="sxs-lookup"><span data-stu-id="8a511-135">/Product</span></span>
+- <span data-ttu-id="1bd94-134">/продукт/аппле</span><span class="sxs-lookup"><span data-stu-id="1bd94-134">/Product/apple</span></span>
+- <span data-ttu-id="1bd94-135">/Product</span><span class="sxs-lookup"><span data-stu-id="1bd94-135">/Product</span></span>
 
-<span data-ttu-id="8a511-136">Эти запросы браузера будут обрабатываться другой маршрут или, если отсутствуют соответствующие маршруты *не удалось найти ресурс* будет возвращена ошибка.</span><span class="sxs-lookup"><span data-stu-id="8a511-136">These browser requests will be handled by another route or, if there are no matching routes, a *The resource could not be found* error will be returned.</span></span>
+<span data-ttu-id="1bd94-136">Эти запросы браузера будут обрабатываться другим маршрутом или, если соответствующие маршруты отсутствуют, будет возвращено сообщение об ошибке *"ресурс не найден"* .</span><span class="sxs-lookup"><span data-stu-id="1bd94-136">These browser requests will be handled by another route or, if there are no matching routes, a *The resource could not be found* error will be returned.</span></span>
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="8a511-137">[Назад](creating-custom-routes-vb.md)
-> [Вперед](creating-a-custom-route-constraint-vb.md)</span><span class="sxs-lookup"><span data-stu-id="8a511-137">[Previous](creating-custom-routes-vb.md)
+> <span data-ttu-id="1bd94-137">[Назад](creating-custom-routes-vb.md)
+> [Вперед](creating-a-custom-route-constraint-vb.md)</span><span class="sxs-lookup"><span data-stu-id="1bd94-137">[Previous](creating-custom-routes-vb.md)
 [Next](creating-a-custom-route-constraint-vb.md)</span></span>

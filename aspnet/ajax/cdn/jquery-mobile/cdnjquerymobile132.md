@@ -1,6 +1,6 @@
 ---
 uid: ajax/cdn/jquery-mobile/cdnjquerymobile132
-title: jQuery Mobile 1.3.2 в сети доставки Содержимого Microsoft Ajax | Документация Майкрософт
+title: jQuery Mobile 1.3.2 в сети CDN Microsoft AJAX | Документация Майкрософт
 author: rick-anderson
 description: ''
 ms.author: riande
@@ -9,15 +9,15 @@ ms.assetid: 89d6cf36-4dd1-46e3-ae2f-d3dee67e7805
 msc.legacyurl: /ajax/cdn/jquery-mobile/cdnjquerymobile132
 msc.type: content
 ms.openlocfilehash: f6413f40898422db28575e1a7b7b5cab9e3d75bd
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59401885"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78453768"
 ---
-# <a name="jquery-mobile-132-on-the-microsoft-ajax-cdn"></a><span data-ttu-id="d5d42-102">jQuery Mobile 1.3.2 в сети доставки содержимого Microsoft Ajax</span><span class="sxs-lookup"><span data-stu-id="d5d42-102">jQuery Mobile 1.3.2 on the Microsoft Ajax CDN</span></span>
+# <a name="jquery-mobile-132-on-the-microsoft-ajax-cdn"></a><span data-ttu-id="382c1-102">jQuery Mobile 1.3.2 в сети доставки содержимого Microsoft Ajax</span><span class="sxs-lookup"><span data-stu-id="382c1-102">jQuery Mobile 1.3.2 on the Microsoft Ajax CDN</span></span>
 
-<span data-ttu-id="d5d42-103">Библиотека jQuery Mobile 1.3.2 включает следующие файлы:</span><span class="sxs-lookup"><span data-stu-id="d5d42-103">The jQuery Mobile 1.3.2 library includes the following files:</span></span>
+<span data-ttu-id="382c1-103">Библиотека jQuery Mobile 1.3.2 содержит следующие файлы:</span><span class="sxs-lookup"><span data-stu-id="382c1-103">The jQuery Mobile 1.3.2 library includes the following files:</span></span>
 
 - https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.3.2/jquery.mobile.structure-1.3.2.css
 - https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css

@@ -1,6 +1,6 @@
 ---
 uid: ajax/cdn/jquery-cycle/index
-title: Подключаемый модуль jQuery Cycle | Документация Майкрософт
+title: Цикл jQuery | Документация Майкрософт
 author: rick-anderson
 description: ''
 ms.author: riande
@@ -9,14 +9,14 @@ ms.assetid: b9005f8f-1dbc-4414-abe1-dae4816141e1
 msc.legacyurl: /ajax/cdn/jquery-cycle
 msc.type: folder
 ms.openlocfilehash: 7453ae35a3229f8fa4fbc7fc7de36d7d270a45bb
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59408567"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78454128"
 ---
-# <a name="jquery-cycle"></a><span data-ttu-id="1ef06-102">Подключаемый модуль jQuery Cycle</span><span class="sxs-lookup"><span data-stu-id="1ef06-102">jQuery Cycle</span></span>
+# <a name="jquery-cycle"></a><span data-ttu-id="01b5a-102">Подключаемый модуль jQuery Cycle</span><span class="sxs-lookup"><span data-stu-id="01b5a-102">jQuery Cycle</span></span>
 
-- [<span data-ttu-id="1ef06-103">jQuery Cycle 2.99</span><span class="sxs-lookup"><span data-stu-id="1ef06-103">jQuery Cycle 2.99</span></span>](cdnjquerycycle299.md)
-- [<span data-ttu-id="1ef06-104">jQuery Cycle 2.94</span><span class="sxs-lookup"><span data-stu-id="1ef06-104">jQuery Cycle 2.94</span></span>](cdnjquerycycle294.md)
-- [<span data-ttu-id="1ef06-105">jQuery Cycle 2.88</span><span class="sxs-lookup"><span data-stu-id="1ef06-105">jQuery Cycle 2.88</span></span>](cdnjquerycycle288.md)
+- [<span data-ttu-id="01b5a-103">jQuery Cycle 2.99</span><span class="sxs-lookup"><span data-stu-id="01b5a-103">jQuery Cycle 2.99</span></span>](cdnjquerycycle299.md)
+- [<span data-ttu-id="01b5a-104">jQuery Cycle 2.94</span><span class="sxs-lookup"><span data-stu-id="01b5a-104">jQuery Cycle 2.94</span></span>](cdnjquerycycle294.md)
+- [<span data-ttu-id="01b5a-105">jQuery Cycle 2.88</span><span class="sxs-lookup"><span data-stu-id="01b5a-105">jQuery Cycle 2.88</span></span>](cdnjquerycycle288.md)

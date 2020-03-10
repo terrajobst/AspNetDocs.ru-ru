@@ -1,29 +1,29 @@
 ---
 uid: web-forms/videos/tailspin-spyworks/tailspin-spyworks-final-check-out
-title: Tailspin Spyworks. окончательная проверка Out | Документация Майкрософт
+title: Tailspin Spyworks. — окончательное извлечение | Документация Майкрософт
 author: JoeStagner
-description: (Joe Stagner) размещает заказ клиента во время окончательного извлечения для веб-форм пример приложения Tailspin Spyworks.
+description: Джо Stagner) помещает заказ клиента во время финального процесса извлечения для примера приложения веб-форм Tailspin Spyworks.
 ms.author: riande
 ms.date: 06/29/2010
 ms.assetid: 61ee30d6-c557-4ebd-9538-1253bd02d825
 msc.legacyurl: /web-forms/videos/tailspin-spyworks/tailspin-spyworks-final-check-out
 msc.type: video
 ms.openlocfilehash: 9642e3ab581462359d4bc37e6ab41e4372339f5b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59405473"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78455604"
 ---
-# <a name="tailspin-spyworks---final-check-out"></a><span data-ttu-id="fd139-103">Tailspin Spyworks. Окончательная проверка</span><span class="sxs-lookup"><span data-stu-id="fd139-103">Tailspin Spyworks - Final Check Out</span></span>
+# <a name="tailspin-spyworks---final-check-out"></a><span data-ttu-id="e182d-103">Tailspin Spyworks. Окончательная проверка</span><span class="sxs-lookup"><span data-stu-id="e182d-103">Tailspin Spyworks - Final Check Out</span></span>
 
-<span data-ttu-id="fd139-104">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="fd139-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="e182d-104">кем [Джо Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="e182d-104">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="fd139-105">(Joe Stagner) размещает заказ клиента во время окончательного извлечения для веб-форм пример приложения Tailspin Spyworks.</span><span class="sxs-lookup"><span data-stu-id="fd139-105">Joe Stagner places the customer's order during the final check out process for the Tailspin Spyworks sample Web Forms application.</span></span>
+<span data-ttu-id="e182d-105">Джо Stagner) помещает заказ клиента во время финального процесса извлечения для примера приложения веб-форм Tailspin Spyworks.</span><span class="sxs-lookup"><span data-stu-id="e182d-105">Joe Stagner places the customer's order during the final check out process for the Tailspin Spyworks sample Web Forms application.</span></span>
 
-[<span data-ttu-id="fd139-106">&#9654;Просмотрите видео (37 минут)</span><span class="sxs-lookup"><span data-stu-id="fd139-106">&#9654; Watch video (37 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/tailspin-spyworks-final-check-out)
+[<span data-ttu-id="e182d-106">&#9654;Смотреть видео (37 минут)</span><span class="sxs-lookup"><span data-stu-id="e182d-106">&#9654; Watch video (37 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/tailspin-spyworks-final-check-out)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="fd139-107">[Назад](tailspin-spyworks-migrate-the-shopping-cart.md)
-> [Вперед](tailspin-spyworks-adding-user-product-reviews.md)</span><span class="sxs-lookup"><span data-stu-id="fd139-107">[Previous](tailspin-spyworks-migrate-the-shopping-cart.md)
+> <span data-ttu-id="e182d-107">[Назад](tailspin-spyworks-migrate-the-shopping-cart.md)
+> [Вперед](tailspin-spyworks-adding-user-product-reviews.md)</span><span class="sxs-lookup"><span data-stu-id="e182d-107">[Previous](tailspin-spyworks-migrate-the-shopping-cart.md)
 [Next](tailspin-spyworks-adding-user-product-reviews.md)</span></span>

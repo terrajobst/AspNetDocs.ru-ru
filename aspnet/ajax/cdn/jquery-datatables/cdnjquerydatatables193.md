@@ -9,15 +9,15 @@ ms.assetid: 90ba3e9a-ff80-4049-9ad4-08571cdf3880
 msc.legacyurl: /ajax/cdn/jquery-datatables/cdnjquerydatatables193
 msc.type: content
 ms.openlocfilehash: 06d287cd41cbac693eab0c294ad80220668328f7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59383776"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78454026"
 ---
-# <a name="jquery-datatables-193"></a><span data-ttu-id="abb21-102">jQuery DataTables 1.9.3</span><span class="sxs-lookup"><span data-stu-id="abb21-102">jQuery DataTables 1.9.3</span></span>
+# <a name="jquery-datatables-193"></a><span data-ttu-id="2a8e1-102">jQuery DataTables 1.9.3</span><span class="sxs-lookup"><span data-stu-id="2a8e1-102">jQuery DataTables 1.9.3</span></span>
 
-<span data-ttu-id="abb21-103">Следующие файлы для jQuery DataTables подключаемые модули размещаются в сети доставки Содержимого:</span><span class="sxs-lookup"><span data-stu-id="abb21-103">The following files for the jQuery DataTables plugins are hosted on the CDN:</span></span>
+<span data-ttu-id="2a8e1-103">Следующие файлы для подключаемых модулей DataTables jQuery размещены в сети CDN:</span><span class="sxs-lookup"><span data-stu-id="2a8e1-103">The following files for the jQuery DataTables plugins are hosted on the CDN:</span></span>
 
 - https://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.3/jquery.dataTables.js
 - https://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.3/jquery.dataTables.min.js

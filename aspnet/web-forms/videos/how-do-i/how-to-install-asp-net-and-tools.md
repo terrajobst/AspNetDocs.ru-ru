@@ -1,24 +1,24 @@
 ---
 uid: web-forms/videos/how-do-i/how-to-install-asp-net-and-tools
-title: Установка ASP.netи средств | Документация Майкрософт
+title: Установка ASP.NET и средств | Документация Майкрософт
 author: shanselman
-description: Корпорации Майкрософт (Scott hanselman) показано, как загрузить и установить ASP.NET и средства, поэтому вы можете начать разработку веб-приложений.
+description: Скотт Hanselman корпорации Майкрософт показывает, как загрузить и установить ASP.NET и средства, чтобы приступить к разработке веб-приложений.
 ms.author: riande
 ms.date: 11/10/2011
 ms.assetid: 84007aa5-4f60-4417-9cc0-44cb8b7b9323
 msc.legacyurl: /web-forms/videos/how-do-i/how-to-install-asp-net-and-tools
 msc.type: video
 ms.openlocfilehash: d56f97375357d823176f65136d04cd3a47d46994
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404714"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78514434"
 ---
-# <a name="how-to-install-aspnet-and-tools"></a><span data-ttu-id="5d6ac-103">Установка ASP.netи средств</span><span class="sxs-lookup"><span data-stu-id="5d6ac-103">How to Install ASP.NET and Tools</span></span>
+# <a name="how-to-install-aspnet-and-tools"></a><span data-ttu-id="4f4aa-103">Установка ASP.NET и средств</span><span class="sxs-lookup"><span data-stu-id="4f4aa-103">How to Install ASP.NET and Tools</span></span>
 
-<span data-ttu-id="5d6ac-104">по [(Scott hanselman)](https://github.com/shanselman)</span><span class="sxs-lookup"><span data-stu-id="5d6ac-104">by [Scott Hanselman](https://github.com/shanselman)</span></span>
+<span data-ttu-id="4f4aa-104">по [Скотт Hanselman](https://github.com/shanselman)</span><span class="sxs-lookup"><span data-stu-id="4f4aa-104">by [Scott Hanselman](https://github.com/shanselman)</span></span>
 
-<span data-ttu-id="5d6ac-105">Корпорации Майкрософт (Scott hanselman) показано, как загрузить и установить ASP.NET и средства, поэтому вы можете начать разработку веб-приложений.</span><span class="sxs-lookup"><span data-stu-id="5d6ac-105">Microsoft's Scott Hanselman shows you how to download and install ASP.NET and tools so you can start developing your web applications.</span></span>
+<span data-ttu-id="4f4aa-105">Скотт Hanselman корпорации Майкрософт показывает, как загрузить и установить ASP.NET и средства, чтобы приступить к разработке веб-приложений.</span><span class="sxs-lookup"><span data-stu-id="4f4aa-105">Microsoft's Scott Hanselman shows you how to download and install ASP.NET and tools so you can start developing your web applications.</span></span>
 
-[<span data-ttu-id="5d6ac-106">&#9654;Просмотрите видео (3 мин.)</span><span class="sxs-lookup"><span data-stu-id="5d6ac-106">&#9654; Watch video (3 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-install-asp-net-and-tools)
+[<span data-ttu-id="4f4aa-106">&#9654;Смотреть видео (3 минуты)</span><span class="sxs-lookup"><span data-stu-id="4f4aa-106">&#9654; Watch video (3 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-install-asp-net-and-tools)

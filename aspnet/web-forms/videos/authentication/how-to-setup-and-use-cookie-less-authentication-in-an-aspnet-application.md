@@ -1,29 +1,29 @@
 ---
 uid: web-forms/videos/authentication/how-to-setup-and-use-cookie-less-authentication-in-an-aspnet-application
-title: Как установить и использовать проверку подлинности без файлов Cookie в приложении ASP.NET | Документация Майкрософт
+title: Настройка и использование проверки подлинности без файлов cookie в приложении ASP.NET | Документация Майкрософт
 author: JoeStagner
-description: (Joe Stagner) используется в предыдущем примере, чтобы продемонстрировать, как использовать проверку подлинности без файлов cookie. Дополнительные сведения о данной демонстрации руководство находится в папке...
+description: Джо Stagner) использует предыдущий пример кода, чтобы продемонстрировать, как использовать проверку подлинности без файлов cookie. Дополнительные сведения об этой демонстрации см. в руководстве...
 ms.author: riande
 ms.date: 07/16/2008
 ms.assetid: 10ba9106-514c-4776-8277-9c31312ceed2
 msc.legacyurl: /web-forms/videos/authentication/how-to-setup-and-use-cookie-less-authentication-in-an-aspnet-application
 msc.type: video
 ms.openlocfilehash: ff6e21dad7598146a681615913dcbd37f72001ee
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404394"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78462312"
 ---
-# <a name="how-to-setup-and-use-cookie-less-authentication-in-an-aspnet-application"></a><span data-ttu-id="904eb-104">Способ установки и использования проверки подлинности без файлов Cookie в приложении ASP.NET</span><span class="sxs-lookup"><span data-stu-id="904eb-104">How to Setup and Use Cookie-less Authentication in an ASP.NET Application</span></span>
+# <a name="how-to-setup-and-use-cookie-less-authentication-in-an-aspnet-application"></a><span data-ttu-id="0cb5b-104">Настройка и использование проверки подлинности без файлов cookie в приложении ASP.NET</span><span class="sxs-lookup"><span data-stu-id="0cb5b-104">How to Setup and Use Cookie-less Authentication in an ASP.NET Application</span></span>
 
-<span data-ttu-id="904eb-105">по [(Joe Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="904eb-105">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
+<span data-ttu-id="0cb5b-105">кем [Джо Stagner)](https://github.com/JoeStagner)</span><span class="sxs-lookup"><span data-stu-id="0cb5b-105">by [Joe Stagner](https://github.com/JoeStagner)</span></span>
 
-<span data-ttu-id="904eb-106">(Joe Stagner) используется в предыдущем примере, чтобы продемонстрировать, как использовать проверку подлинности без файлов cookie.</span><span class="sxs-lookup"><span data-stu-id="904eb-106">Joe Stagner utilizes the previous code example to demonstrate how to use cookie-less authentication.</span></span> <span data-ttu-id="904eb-107">Дополнительные сведения о данной демонстрации находится Учебник [здесь](../../overview/older-versions-security/introduction/forms-authentication-configuration-and-advanced-topics-vb.md).</span><span class="sxs-lookup"><span data-stu-id="904eb-107">For more information on this demo, a tutorial is located [here](../../overview/older-versions-security/introduction/forms-authentication-configuration-and-advanced-topics-vb.md).</span></span>
+<span data-ttu-id="0cb5b-106">Джо Stagner) использует предыдущий пример кода, чтобы продемонстрировать, как использовать проверку подлинности без файлов cookie.</span><span class="sxs-lookup"><span data-stu-id="0cb5b-106">Joe Stagner utilizes the previous code example to demonstrate how to use cookie-less authentication.</span></span> <span data-ttu-id="0cb5b-107">Дополнительные сведения об этой демонстрации [см. в этом руководстве](../../overview/older-versions-security/introduction/forms-authentication-configuration-and-advanced-topics-vb.md).</span><span class="sxs-lookup"><span data-stu-id="0cb5b-107">For more information on this demo, a tutorial is located [here](../../overview/older-versions-security/introduction/forms-authentication-configuration-and-advanced-topics-vb.md).</span></span>
 
-[<span data-ttu-id="904eb-108">&#9654;Просмотрите видео (4 минуты)</span><span class="sxs-lookup"><span data-stu-id="904eb-108">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-setup-and-use-cookie-less-authentication-in-an-aspnet-application)
+[<span data-ttu-id="0cb5b-108">&#9654;Смотреть видео (4 минуты)</span><span class="sxs-lookup"><span data-stu-id="0cb5b-108">&#9654; Watch video (4 minutes)</span></span>](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-setup-and-use-cookie-less-authentication-in-an-aspnet-application)
 
 > [!div class="step-by-step"]
-> <span data-ttu-id="904eb-109">[Назад](how-to-change-the-forms-authentication-properties.md)
-> [Вперед](asp-forms-login-relocation.md)</span><span class="sxs-lookup"><span data-stu-id="904eb-109">[Previous](how-to-change-the-forms-authentication-properties.md)
+> <span data-ttu-id="0cb5b-109">[Назад](how-to-change-the-forms-authentication-properties.md)
+> [Вперед](asp-forms-login-relocation.md)</span><span class="sxs-lookup"><span data-stu-id="0cb5b-109">[Previous](how-to-change-the-forms-authentication-properties.md)
 [Next](asp-forms-login-relocation.md)</span></span>
