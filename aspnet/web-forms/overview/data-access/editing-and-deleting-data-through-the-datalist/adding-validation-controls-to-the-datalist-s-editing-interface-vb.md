@@ -9,11 +9,11 @@ ms.assetid: 6b073fc6-524d-453d-be7c-0c30986de391
 msc.legacyurl: /web-forms/overview/data-access/editing-and-deleting-data-through-the-datalist/adding-validation-controls-to-the-datalist-s-editing-interface-vb
 msc.type: authoredcontent
 ms.openlocfilehash: f952a7bb95e956a2ad935f8bdef5c3efa7437ecb
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74621926"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78480888"
 ---
 # <a name="adding-validation-controls-to-the-datalists-editing-interface-vb"></a>Добавление элементов управления проверки в интерфейс правки элемента управления DataList (VB)
 
@@ -29,7 +29,7 @@ ms.locfileid: "74621926"
 
 В этом учебнике мы посмотрим, как легко добавить элементы управления проверки в `EditItemTemplate` DataList, чтобы обеспечить более защищенный пользовательский интерфейс редактирования. В частности, в этом руководстве используется пример, созданный в предыдущем руководстве, и расширяется интерфейс редактирования для включения соответствующей проверки.
 
-## <a name="step-1-replicating-the-example-fromhandling-bll--and-dal-level-exceptionshandling-bll-and-dal-level-exceptions-vbmd"></a>Шаг 1. репликация примера из[обработки исключений уровня BLL и DAL](handling-bll-and-dal-level-exceptions-vb.md)
+## <a name="step-1-replicating-the-example-fromhandling-bll--and-dal-level-exceptions"></a>Шаг 1. репликация примера из[обработки исключений уровня BLL и DAL](handling-bll-and-dal-level-exceptions-vb.md)
 
 В учебнике [обработка исключений на уровне BLL и DAL](handling-bll-and-dal-level-exceptions-vb.md) мы создали страницу, в которой указаны имена и цены продуктов в изменяемом DataList с двумя столбцами. Наша цель этого руководства — дополнить интерфейс редактирования DataList s для включения элементов управления проверки. В частности, наша логика проверки будет:
 

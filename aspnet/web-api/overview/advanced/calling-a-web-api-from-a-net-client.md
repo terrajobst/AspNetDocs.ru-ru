@@ -8,28 +8,28 @@ ms.date: 11/24/2017
 ms.custom: seoapril2019
 msc.legacyurl: /web-api/overview/advanced/calling-a-web-api-from-a-net-client
 msc.type: authoredcontent
-ms.openlocfilehash: 960960d26863cc3f725eee8a6c98844c5d3ce721
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.openlocfilehash: ab3ba71839123e848dffaa59871f9dac8c1a88d0
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519184"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78504960"
 ---
 # <a name="call-a-web-api-from-a-net-client-c"></a>Вызов веб-API из клиента .NET (C#)
 
 [Майк Уоссон](https://github.com/MikeWasson) и [Рик Андерсон (](https://twitter.com/RickAndMSFT)
 
-[Скачивание завершенного проекта](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample). [Указания по скачиванию](/aspnet/core/tutorials/#how-to-download-a-sample). 
+[Скачивание завершенного проекта](https://github.com/dotnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample). [Указания по скачиванию](/aspnet/core/tutorials/#how-to-download-a-sample). 
 
 В этом руководстве показано, как вызвать веб-API из приложения .NET с помощью [System .NET. http. HttpClient.](https://msdn.microsoft.com/library/system.net.http.httpclient(v=vs.110).aspx)
 
 В этом руководстве написано клиентское приложение, использующее следующий веб-API:
 
-| Действие | HTTP-метод | Относительный URI |
+| Действие | Метод HTTP | Относительный URI |
 | --- | --- | --- |
 | Получение продукта по ИДЕНТИФИКАТОРу | GET | *идентификатор* /АПИ/Продуктс/ |
-| Создать продукт | ПОМЕСТИТЬ | /апи/продуктс |
-| Обновить продукт | PUT | *идентификатор* /АПИ/Продуктс/ |
+| Создать продукт | POST | /апи/продуктс |
+| Обновить продукт | ОТПРАВКА | *идентификатор* /АПИ/Продуктс/ |
 | Удалить продукт | DELETE | *идентификатор* /АПИ/Продуктс/ |
 
 Сведения о том, как реализовать этот API с веб-API ASP.NET, см. в разделе [Создание веб-API, поддерживающего операции CRUD](xref:web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
@@ -55,14 +55,14 @@ ms.locfileid: "76519184"
 
 Используйте диспетчер пакетов NuGet для установки пакета клиентских библиотек веб-API.
 
-В меню **Сервис** последовательно выберите пункты **Диспетчер пакетов NuGet** > **Консоль диспетчера пакетов**. В консоли диспетчера пакетов (PMC) введите следующую команду:
+В меню **Инструменты** выберите **Диспетчер пакетов NuGet** > **Консоль диспетчера пакетов**. В консоли диспетчера пакетов (PMC) введите следующую команду:
 
 `Install-Package Microsoft.AspNet.WebApi.Client`
 
 Предыдущая команда добавляет в проект следующие пакеты NuGet:
 
 * Microsoft.AspNet.WebApi.Client
-* Newtonsoft.Json
+* Newtonsoft.Json.
 
 Нетвонсофт. JSON (также называется Json.NET) — это популярная высокопроизводительная платформа JSON для .NET.
 
@@ -165,7 +165,7 @@ resp.Content.ReadAsAsync<IEnumerable<Product>>(formatters);
 
 Чтобы протестировать клиентское приложение, выполните следующие действия.
 
-1. [Скачайте](https://github.com/aspnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample/server) и запустите серверное приложение. [Указания по скачиванию](/aspnet/core/#how-to-download-a-sample). Убедитесь, что серверное приложение работает. Например, `http://localhost:64195/api/products` должен возвращать список продуктов.
+1. [Скачайте](https://github.com/dotnet/AspNetDocs/tree/master/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client/sample/server) и запустите серверное приложение. [Указания по скачиванию](/aspnet/core/#how-to-download-a-sample). Убедитесь, что серверное приложение работает. Например, `http://localhost:64195/api/products` должен возвращать список продуктов.
 2. Задайте базовый URI для HTTP-запросов. Измените номер порта на порт, используемый в серверном приложении.
     [!code-csharp[Main](calling-a-web-api-from-a-net-client/sample/client/Program.cs?name=snippet5&highlight=2)]
 

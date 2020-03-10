@@ -9,11 +9,11 @@ ms.assetid: f555c531-bf33-4699-9987-42dbfef23c1f
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/showing-multiple-records-per-row-with-the-datalist-control-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 17283dae192896fbaa48f1d7fe49afdbaf4c9a02
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74627561"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78495306"
 ---
 # <a name="showing-multiple-records-per-row-with-the-datalist-control-vb"></a>Отображение нескольких записей в одной строке с помощью элемента управления DataList (VB)
 
@@ -71,7 +71,7 @@ ms.locfileid: "74627561"
 
 **Рис. 4**. для достаточно больших источников данных для одного столбца DataList потребуется горизонтальная прокрутка ([щелкните, чтобы просмотреть изображение с полным размером](showing-multiple-records-per-row-with-the-datalist-control-vb/_static/image12.png))
 
-## <a name="step-3-displaying-data-in-a-multi-column-multi-row-table"></a>Шаг 3. Отображение данных в многострочной таблице с несколькими столбцами
+## <a name="step-3-displaying-data-in-a-multi-column-multi-row-table"></a>Шаг 3. Отображение данных в многоколоночном, многострочном столбце
 
 Для создания многостолбцового DataList с несколькими строками необходимо задать для [свойства`RepeatColumns`](https://msdn.microsoft.com/system.web.ui.webcontrols.datalist.repeatcolumns.aspx) число отображаемых столбцов. По умолчанию свойство `RepeatColumns` имеет значение 0, которое приведет к отображению всех элементов DataList в одной строке или столбце (в зависимости от значения свойства `RepeatDirection`).
 

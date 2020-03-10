@@ -1,73 +1,73 @@
 ---
 uid: web-api/overview/odata-support-in-aspnet-web-api/odata-v4/using-a-singleton-in-an-odata-endpoint-in-web-api-22
-title: Создание единичного экземпляра в OData v4 с помощью веб-API 2.2 | Документация Майкрософт
+title: Создание единственного элемента в OData v4 с помощью веб-API 2,2 | Документация Майкрософт
 author: rick-anderson
-description: В этом разделе показано, как определить одноэлементный в конечную точку OData в веб-API 2.2.
+description: В этом разделе показано, как определить одноэлементный экземпляр в конечной точке OData в веб-API 2,2.
 ms.author: riande
 ms.date: 06/27/2014
 ms.assetid: 4064ab14-26ee-4d5c-ae58-1bdda525ad06
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v4/using-a-singleton-in-an-odata-endpoint-in-web-api-22
 msc.type: authoredcontent
 ms.openlocfilehash: 218449c18759b306e425c55f8e7b573d837b4658
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65113129"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78504504"
 ---
-# <a name="create-a-singleton-in-odata-v4-using-web-api-22"></a>Создание единичного экземпляра в OData v4 с помощью веб-API 2.2
+# <a name="create-a-singleton-in-odata-v4-using-web-api-22"></a>Создание единственного элемента в OData v4 с помощью веб-API 2,2
 
-с ло Zoe
+по Зое Луо
 
-> В большинстве случаев сущности может осуществляться только если он был инкапсулирован в наборе сущностей. Но OData v4 содержит два дополнительных параметра, одноэлементные и вложения, каждый из которых поддерживает веб-API 2.2.
+> Обычно доступ к сущности можно получить только в том случае, если она была инкапсулирована в набор сущностей. Но OData v4 предоставляет два дополнительных параметра: Singleton и Contain, которые поддерживаются WebAPI 2,2.
 
-В этой статье показано, как определить одноэлементный в конечную точку OData в веб-API 2.2. Сведения о какие единственный экземпляр есть, и как можно обеспечить с помощью его, см. в разделе [с помощью является одноэлементным множеством, определяющих специальные сущности](https://blogs.msdn.com/b/odatateam/archive/2014/03/05/use-singleton-to-define-your-special-entity.aspx). Чтобы создать конечную точку OData V4 в веб-API, см. в разделе [создания OData v4 конечной точки с помощью веб-API ASP.NET 2.2](create-an-odata-v4-endpoint.md). 
+В этой статье показано, как определить одноэлементный экземпляр в конечной точке OData в веб-API 2,2. Сведения о том, что такое одноэлементное и в чем преимущества его использования, см. в разделе [Использование одноэлементного набора для определения особой сущности](https://blogs.msdn.com/b/odatateam/archive/2014/03/05/use-singleton-to-define-your-special-entity.aspx). Чтобы создать конечную точку OData v4 в веб-API, см. раздел [Создание конечной точки OData v4 с помощью веб-API ASP.NET 2,2](create-an-odata-v4-endpoint.md). 
 
-Мы создадим единственный элемент в проекте веб-API с использованием следующей модели данных:
+Мы создадим одноэлементный экземпляр в проекте веб-API, используя следующую модель данных:
 
 ![Модель данных](using-a-singleton-in-an-odata-endpoint-in-web-api-22/_static/image1.png)
 
-Единственный экземпляр с именем `Umbrella` будет определяться в зависимости от типа `Company`и набор именованных сущностей `Employees` будет определяться в зависимости от типа `Employee`.
+Одноэлементное имя с именем `Umbrella` будет определено на основе типа `Company`, а набор сущностей с именем `Employees` будет определяться на основе типа `Employee`.
 
-Решения, используемые в этом руководстве можно загрузить из [CodePlex](http://aspnet.codeplex.com/sourcecontrol/latest#Samples/WebApi/OData/v4/ODataSingletonSample/).
+Решение, используемое в этом руководстве, можно скачать на [сайте CodePlex](http://aspnet.codeplex.com/sourcecontrol/latest#Samples/WebApi/OData/v4/ODataSingletonSample/).
 
 ## <a name="define-the-data-model"></a>Определение модели данных
 
-1. Определение типов среды CLR.
+1. Определите типы CLR.
 
     [!code-csharp[Main](using-a-singleton-in-an-odata-endpoint-in-web-api-22/samples/sample1.cs)]
-2. Создание модели EDM на основе типов среды CLR.
+2. Создание модели EDM на основе типов CLR.
 
     [!code-csharp[Main](using-a-singleton-in-an-odata-endpoint-in-web-api-22/samples/sample2.cs)]
 
-    Здесь `builder.Singleton<Company>("Umbrella")` сообщает построитель модели, чтобы создать единственный экземпляр с именем `Umbrella` модели EDM.
+    Здесь `builder.Singleton<Company>("Umbrella")` указывает построителю моделей создать одноэлементное множество с именем `Umbrella` в модели EDM.
 
     Созданные метаданные будут выглядеть следующим образом:
 
     [!code-xml[Main](using-a-singleton-in-an-odata-endpoint-in-web-api-22/samples/sample3.xml)]
 
-    Из метаданных мы видим, что свойство навигации `Company` в `Employees` набор сущностей привязан к одноэлементного `Umbrella`. Привязка выполняется автоматически `ODataConventionModelBuilder`, так как только `Umbrella` имеет `Company` типа. Есть ли какая-либо неопределенность в модели, можно использовать `HasSingletonBinding` явно связать свойства навигации в один элемент; `HasSingletonBinding` имеет тот же эффект, как с помощью `Singleton` атрибута в определение типа CLR:
+    Из метаданных можно увидеть, что свойство навигации, `Company` в наборе сущностей `Employees`, привязано к `Umbrella`Singleton. Привязка выполняется автоматически `ODataConventionModelBuilder`, так как только `Umbrella` имеет тип `Company`. Если в модели имеется какая-либо неоднозначность, можно использовать `HasSingletonBinding`, чтобы явно привязать свойство навигации к одноэлементному экземпляру. `HasSingletonBinding` действует так же, как и атрибут `Singleton` в определении типа CLR:
 
     [!code-csharp[Main](using-a-singleton-in-an-odata-endpoint-in-web-api-22/samples/sample4.cs)]
 
-## <a name="define-the-singleton-controller"></a>Определение контроллера одноэлементный
+## <a name="define-the-singleton-controller"></a>Определение одноэлементного контроллера
 
-Как контроллер EntitySet, одноэлементный контроллер наследует от `ODataController`, и должно быть имя контроллера одноэлементный `[singletonName]Controller`.
+Как и контроллер EntitySet, одноэлементный контроллер наследуется от `ODataController`, а имя одноэлементного контроллера должно быть `[singletonName]Controller`.
 
 [!code-csharp[Main](using-a-singleton-in-an-odata-endpoint-in-web-api-22/samples/sample5.cs)]
 
-Для обработки различных типов запросов, действия, должны быть предварительно определенные в контроллере. **Маршрутизация атрибутов** включена по умолчанию в веб-API 2.2. Например, чтобы определить действие для обработки запросов `Revenue` из `Company` использующим маршрутизацию атрибутов, используйте следующую команду:
+Для обработки различных типов запросов действия должны быть предварительно определены в контроллере. **Маршрутизация атрибутов** включена по умолчанию в WebApi 2,2. Например, чтобы определить действие по обработке запросов `Revenue` от `Company` с помощью маршрутизации атрибутов, используйте следующую команду:
 
 [!code-csharp[Main](using-a-singleton-in-an-odata-endpoint-in-web-api-22/samples/sample6.cs)]
 
-Если вы не хотите определить атрибуты для каждого действия, просто определите следующие действия [соглашений о маршрутизации протокола OData](../odata-routing-conventions.md). Поскольку ключ не является обязательным для выполнения запроса является одноэлементным множеством, действия, определенные в контроллере одноэлементный немного отличаются от действий, указанных в этом контроллере entityset.
+Если вы не хотите определять атрибуты для каждого действия, просто определите действия, следующие за [соглашениями о маршрутизации OData](../odata-routing-conventions.md). Поскольку ключ не требуется для запроса одноэлементного экземпляра, действия, определенные в контроллере Singleton, немного отличаются от действий, определенных в контроллере EntitySet.
 
-Для справки сигнатуры методов для каждого определения действий в контроллере, singleton, перечислены ниже.
+Для справки сигнатуры методов для каждого определения действия в одноэлементном контроллере перечислены ниже.
 
 [!code-csharp[Main](using-a-singleton-in-an-odata-endpoint-in-web-api-22/samples/sample7.cs)]
 
-По сути это все, что вам нужно сделать на стороне службы. [Пример проекта](http://aspnet.codeplex.com/sourcecontrol/latest#Samples/WebApi/OData/v4/ODataSingletonSample/) содержит весь код для решения и клиент OData, показывающий, как использовать единственный экземпляр. Построение клиента, выполнив действия, описанные в [Создание клиентского приложения OData v4](create-an-odata-v4-client-app.md).
+По сути, это все, что нужно сделать на стороне службы. [Пример проекта](http://aspnet.codeplex.com/sourcecontrol/latest#Samples/WebApi/OData/v4/ODataSingletonSample/) содержит весь код для решения и клиента OData, который показывает, как использовать Singleton. Клиент создается, выполнив действия, описанные в разделе [Создание клиентского приложения OData для версии 4](create-an-odata-v4-client-app.md).
 
 . 
 
-*Благодаря Leo Hu для исходного содержимого этой статьи.*
+*Благодарим вас за первоначальное содержимое этой статьи, Leo Hu.*

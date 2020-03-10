@@ -1,23 +1,23 @@
 ---
 uid: web-forms/videos/aspnet-dynamic-data/index
-title: Платформа динамических данных ASP.NET | Документация Майкрософт
+title: ASP.NET платформа динамических данных | Документация Майкрософт
 author: rick-anderson
-description: Как использовать ASP.NET Dynamic Data для создания шаблонный приложений, которые автоматически могут осуществлять доступ к данным.
+description: Использование платформа динамических данных ASP.NET для создания шаблонов приложений, которые автоматически узнают, как осуществлять доступ к данным.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: cd51e6c4-6ff9-419d-8ac8-a39b79d63c78
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data
 msc.type: chapter
 ms.openlocfilehash: 622f4c5243d094d1ab6b58a909795bc5230c62ce
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65116397"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78514530"
 ---
 # <a name="aspnet-dynamic-data"></a>Платформа динамических данных ASP.NET
 
-> Как использовать ASP.NET Dynamic Data для создания шаблонный приложений, которые автоматически могут осуществлять доступ к данным.
+> Использование платформа динамических данных ASP.NET для создания шаблонов приложений, которые автоматически узнают, как осуществлять доступ к данным.
 
 - [Формирование первого шаблона и общие сведения о динамических данных](your-first-scaffold-and-what-is-dynamic-data.md)
 - [Включение встроенного редактирования GridView](how-do-i-enable-inline-gridview-editing.md)

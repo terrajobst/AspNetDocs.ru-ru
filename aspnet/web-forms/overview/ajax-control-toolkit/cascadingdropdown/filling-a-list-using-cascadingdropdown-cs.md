@@ -9,11 +9,11 @@ ms.assetid: f949aafa-fe57-43b0-b722-f0dd33a900be
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/cascadingdropdown/filling-a-list-using-cascadingdropdown-cs
 msc.type: authoredcontent
 ms.openlocfilehash: b5e9874fb5b6d3e55c8af5b85d12bf1ffacc116b
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74574838"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78497766"
 ---
 # <a name="filling-a-list-using-cascadingdropdown-c"></a>Заполнение списка с помощью CascadingDropDown (C#)
 
@@ -64,4 +64,4 @@ ms.locfileid: "74574838"
 Список заполняется автоматически ([щелкните, чтобы просмотреть изображение с полным размером](filling-a-list-using-cascadingdropdown-cs/_static/image3.png)).
 
 > [!div class="step-by-step"]
-> [Вперед](using-cascadingdropdown-with-a-database-cs.md)
+> [Дальше](using-cascadingdropdown-with-a-database-cs.md)

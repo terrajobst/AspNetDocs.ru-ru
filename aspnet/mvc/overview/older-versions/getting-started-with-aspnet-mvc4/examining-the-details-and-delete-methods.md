@@ -9,11 +9,11 @@ ms.assetid: 11425ff3-09fc-4efa-be9a-b53bce503460
 msc.legacyurl: /mvc/overview/older-versions/getting-started-with-aspnet-mvc4/examining-the-details-and-delete-methods
 msc.type: authoredcontent
 ms.openlocfilehash: 37787a26f37473b9d36792a9f7715982cb274074
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77457561"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78485316"
 ---
 # <a name="examining-the-details-and-delete-methods"></a>Изучение методов Details и Delete
 
@@ -60,7 +60,7 @@ Code First упрощает поиск данных с помощью метод
 
 ![](examining-the-details-and-delete-methods/_static/image2.png)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Next Steps
 
 После создания и тестирования веб-приложения необходимо сделать его доступным для других пользователей через Интернет. Для этого необходимо развернуть его для поставщика услуг размещения веб-сайтов. Корпорация Майкрософт предлагает бесплатное веб-размещение для 10 веб-сайтов в [бесплатной пробной учетной записи Windows Azure](https://www.windowsazure.com/pricing/free-trial/?WT.mc_id=A443DD604). Я предлагаю вам далее перейти к [развертыванию безопасного приложения ASP.NET MVC с членством, OAuth и базой данных SQL на веб-сайте Windows Azure](https://docs.microsoft.com/aspnet/core/security/authorization/secure-data). Отличным руководством является промежуточный уровень Dykstra), [создающий модель данных Entity Framework для приложения ASP.NET MVC](../../getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md). [StackOverflow](http://stackoverflow.com/help) и [форумы ASP.NET MVC](https://forums.asp.net/1146.aspx) — это отличное место для задаваемых вопросов. [Подпишитесь](https://twitter.com/RickAndMSFT) на Twitter, чтобы получать обновления в моих последних учебных курсах.
 

@@ -1,24 +1,24 @@
 ---
 uid: web-forms/videos/how-do-i/how-do-i-multiple-file-uploads-in-aspnet-1
-title: '[Инструкции]  Отправка нескольких файлов в ASP.NET 1 | Документация Майкрософт'
+title: '[Инструкции:]  Несколько отправок файлов в ASP.NET 1 | Документация Майкрософт'
 author: JoeStagner
-description: В этом видео я расскажу подробнее на передачу нескольких файлов в приложение ASP.NET.
+description: В этом видео я расскажу об отправке нескольких файлов в приложение ASP.NET.
 ms.author: riande
 ms.date: 02/12/2008
 ms.assetid: 2e95bedf-4741-4c9c-ab7a-0edfb171efcd
 msc.legacyurl: /web-forms/videos/how-do-i/how-do-i-multiple-file-uploads-in-aspnet-1
 msc.type: video
 ms.openlocfilehash: 4bd192e76d07d1ab7b7fd000f2bf90d96cc91b1c
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59420592"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78473418"
 ---
-# <a name="how-do-i--multiple-file-uploads-in-aspnet1"></a>[Инструкции]  Отправка нескольких файлов в ASP.NET 1
+# <a name="how-do-i--multiple-file-uploads-in-aspnet1"></a>[Инструкции:]  Несколько отправок файлов в ASP.NET 1
 
-по [(Joe Stagner)](https://github.com/JoeStagner)
+кем [Джо Stagner)](https://github.com/JoeStagner)
 
-В этом видео я расскажу подробнее на передачу нескольких файлов в приложение ASP.NET.
+В этом видео я расскажу об отправке нескольких файлов в приложение ASP.NET.
 
-[&#9654;Просмотрите видео (15 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-multiple-file-uploads-in-aspnet-1)
+[&#9654;Смотреть видео (15 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-multiple-file-uploads-in-aspnet-1)

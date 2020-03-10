@@ -1,23 +1,23 @@
 ---
 uid: web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/index
-title: ASP.NET 4 - веб-развертывания с помощью SQL Server Compact с помощью Visual Studio | Документация Майкрософт
+title: ASP.NET 4 — веб-развертывание с SQL Server Compact с помощью Visual Studio | Документация Майкрософт
 author: rick-anderson
-description: В этой серии руководств показано, как создать веб-приложения ASP.NET, использующего SQL Server Compact доступен через Интернет, развернув его h сторонних...
+description: В этой серии руководств показано, как сделать веб-приложение ASP.NET, которое использует SQL Server Compact доступно через Интернет, развернув его в h...
 ms.author: riande
 ms.date: 11/29/2011
 ms.assetid: 6798c7e4-f08e-4802-9fa5-443f67d5df62
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider
 msc.type: chapter
 ms.openlocfilehash: bb9a47eeb4197348e85bb469b68c0055e7c696a0
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65119439"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78514698"
 ---
 # <a name="aspnet-4---web-deployment-with-sql-server-compact-using-visual-studio"></a>ASP.NET 4. Веб-развертывание в Visual Studio с помощью SQL Server Compact
 
-> В этой серии руководств показано, как создать веб-приложение ASP.NET, использующего SQL Server Compact доступен через Интернет, развернув ее стороннего поставщика услуг размещения. Требуется Visual Studio 2012 RC или Visual Studio 2010. Для более актуальные сведения о возможности развертывания, или сведения о способах развертывания выпусков SQL Server, отличных от SQL Server Compact, см. в разделе [веб-развертывание ASP.NET с помощью Visual Studio](../../deployment/visual-studio-web-deployment/introduction.md).
+> В этой серии руководств показано, как сделать веб-приложение ASP.NET, использующее SQL Server Compact, доступное через Интернет, развернув его поставщику услуг размещения сторонних поставщиков. Требуется Visual Studio 2012 RC или Visual Studio 2010. Дополнительные сведения о возможностях развертывания, а также сведения о развертывании SQL Server выпусков, отличных от SQL Server Compact, см. в разделе [ASP.NET Web Deploying using Visual Studio](../../deployment/visual-studio-web-deployment/introduction.md).
 
 - [Веб-развертывание в Visual Studio с помощью SQL Server Compact. Введение](deployment-to-a-hosting-provider-introduction-1-of-12.md)
 - [Веб-развертывание в Visual Studio с помощью SQL Server Compact. Развертывание баз данных SQL Server Compact](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12.md)

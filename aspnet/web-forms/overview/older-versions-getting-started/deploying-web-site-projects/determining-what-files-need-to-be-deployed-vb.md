@@ -9,11 +9,11 @@ ms.assetid: ea918f62-c9d6-4a7f-9bc6-e054d3764b2c
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/determining-what-files-need-to-be-deployed-vb
 msc.type: authoredcontent
 ms.openlocfilehash: a11dadfda8b6a189acedd7ac723d85f8b2084324
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74569924"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78515736"
 ---
 # <a name="determining-what-files-need-to-be-deployed-vb"></a>Определение подлежащих развертыванию файлов (VB)
 
@@ -47,7 +47,7 @@ ms.locfileid: "74569924"
 
 | **Модель компиляции** | **Развернуть файл части разметки?** | **Развернуть файл исходного кода?** | **Развертывать сборки в `Bin` Directory?** |
 | --- | --- | --- | --- |
-| Явная компиляция | Да | Нет | Да |
+| Явная компиляция | Да | нет | Да |
 | Автоматическая компиляция | Да | Да | Да (если он существует) |
 
 **Таблица 1. какие файлы вы развертываете, зависит от используемой модели компиляции.**
@@ -160,7 +160,7 @@ ms.locfileid: "74569924"
 
 Поздравляем с программированием!
 
-### <a name="further-reading"></a>Дополнительные сведения
+### <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

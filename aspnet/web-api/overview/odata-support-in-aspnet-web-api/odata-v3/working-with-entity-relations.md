@@ -9,11 +9,11 @@ ms.assetid: 1e4c2eb4-b6cf-42ff-8a65-4d71ddca0394
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api/odata-v3/working-with-entity-relations
 msc.type: authoredcontent
 ms.openlocfilehash: 726a7d51123805e05f6831ef9cd7eaa84b6c44bd
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600317"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78484506"
 ---
 # <a name="supporting-entity-relations-in-odata-v3-with-web-api-2"></a>Поддержка отношений сущностей в OData v3 с веб-API 2
 
@@ -104,7 +104,7 @@ OData поддерживает создание или удаление связ
 
 [!code-csharp[Main](working-with-entity-relations/samples/sample11.cs)]
 
-В этом примере свойство навигации является одной сущностью `Supplier`. Если свойство навигации является коллекцией, URI для удаления ссылки должен включать ключ для связанной сущности. Например:
+В этом примере свойство навигации является одной сущностью `Supplier`. Если свойство навигации является коллекцией, URI для удаления ссылки должен включать ключ для связанной сущности. Пример:
 
 [!code-console[Main](working-with-entity-relations/samples/sample12.cmd)]
 

@@ -9,6 +9,6 @@
 * Система настройки на основе среды, готовая к работе в облаке.
 * Встроенное внедрение зависимостей.
 * Упрощенный, высокопроизводительный и модульный конвейер HTTP-запросов.
-* Возможность размещения в [Kestrel](/aspnet/core/fundamentals/servers/kestrel), [IIS] (xref: Host-and-Deploy/IIS/index, [http. sys](xref:fundamentals/servers/httpsys), [nginx](xref:host-and-deploy/linux-nginx), [Apache](xref:host-and-deploy/linux-apache)и [DOCKER](xref:host-and-deploy/docker/index).
+* Возможность размещения в [Kestrel](/aspnet/core/fundamentals/servers/kestrel), [IIS](xref:host-and-deploy/iis/index), [http. sys](xref:fundamentals/servers/httpsys), [nginx](xref:host-and-deploy/linux-nginx), [Apache](xref:host-and-deploy/linux-apache)и [DOCKER](xref:host-and-deploy/docker/index).
 * Управление параллельными версиями.
 * Инструментарий, упрощающий процесс современной веб-разработки.

@@ -1,8 +1,8 @@
 ---
 uid: mvc/overview/deployment/index
-title: Развертывание ASP.NET MVC 5.0 | ASP.NET 4.x
+title: Развертывание ASP.NET MVC 5,0 | ASP.NET 4. x
 author: rick-anderson
-description: Как развернуть проекты ASP.NET MVC 5.0 на сервере.
+description: Развертывание проектов ASP.NET MVC 5,0 на сервере.
 ms.author: riande
 ms.date: 08/18/2011
 ms.custom: seoapril2019
@@ -10,19 +10,19 @@ ms.assetid: 31922c31-59df-4399-99d2-e935a476f16a
 msc.legacyurl: /mvc/overview/deployment
 msc.type: chapter
 ms.openlocfilehash: 014ba84a6968212c688f56e2951c0cb0304b8881
-ms.sourcegitcommit: dd0dc556a3d99a31d8fdbc763e9a2e53f3441b70
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67410855"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78499578"
 ---
 # <a name="aspnet-mvc-deployment"></a>Развертывание ASP.NET MVC
 
-> Как развернуть проекты ASP.NET MVC 5.0 на сервере.
+> Развертывание проектов ASP.NET MVC 5,0 на сервере.
 
 - [Обзор веб-развертывания для Visual Studio и ASP.NET](https://msdn.microsoft.com/library/dd394698)
 - [Перенос приложений ASP.NET MVC в контейнеры Windows](docker-aspnetmvc.md)
-- [Непрерывная интеграция и непрерывная поставка (Создание реальных облачных приложений в Azure)](../../../aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/continuous-integration-and-continuous-delivery.md)
+- [Непрерывная интеграция и непрерывная поставка (создание облачных приложений в реальном мире с помощью Azure)](../../../aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/continuous-integration-and-continuous-delivery.md)
 - [Веб-развертывание ASP.NET с помощью Visual Studio](../../../web-forms/overview/deployment/visual-studio-web-deployment/index.md)
 - [ASP.NET 4. Введение в корпоративное развертывание](../../../web-forms/overview/deployment/deploying-web-applications-in-enterprise-scenarios/index.md)
 - [ASP.NET 4. Введение в корпоративное развертывание, часть 1](../../../web-forms/overview/deployment/web-deployment-in-the-enterprise/index.md)

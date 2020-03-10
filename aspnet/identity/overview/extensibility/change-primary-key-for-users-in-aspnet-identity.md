@@ -10,11 +10,11 @@ ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/extensibility/change-primary-key-for-users-in-aspnet-identity
 msc.type: authoredcontent
 ms.openlocfilehash: 0afea8eacfc646f1489b87629fdb2d437815d88c
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519145"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78472266"
 ---
 # <a name="change-primary-key-for-users-in-aspnet-identity"></a>Изменение первичного ключа для пользователей в ASP.NET Identity
 
@@ -32,7 +32,7 @@ ms.locfileid: "76519145"
 
 Для выполнения действий, описанных в этом руководстве, необходимо иметь Visual Studio 2013 обновление 2 (или более поздней версии) и веб-приложение, созданное из шаблона веб-приложения ASP.NET. Шаблон изменен в обновлении 3. В этом разделе показано, как изменить шаблон в обновлении 2 и обновлении 3.
 
-В этом разделе содержатся следующие подразделы.
+Этот раздел состоит из следующих подразделов.
 
 - [Изменение типа ключа в классе удостоверений пользователя](#userclass)
 - [Добавление настраиваемых классов удостоверений, использующих тип ключа](#customclass)

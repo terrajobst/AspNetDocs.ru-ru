@@ -9,11 +9,11 @@ ms.assetid: 7ead83bc-c08c-4b26-8617-00e07292e35c
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling
 msc.type: authoredcontent
 ms.openlocfilehash: e798cb83cfb97db63fef6dc38c8f62804461d01b
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77456859"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78500424"
 ---
 # <a name="transient-fault-handling-building-real-world-cloud-apps-with-azure"></a>Обработка временных сбоев (создание облачных приложений в реальном мире с помощью Azure)
 
@@ -80,7 +80,7 @@ ms.locfileid: "77456859"
 
 ## <a name="resources"></a>Ресурсы
 
-Дополнительные сведения см. в следующих источниках.
+Для получения дополнительных сведений см. следующие ресурсы:
 
 Документация
 
@@ -96,7 +96,7 @@ ms.locfileid: "77456859"
 - [Отказоустойчивость: создание масштабируемых отказоустойчивых облачных служб](https://channel9.msdn.com/Series/FailSafe). Серия из девяти частей, Ульрих Хоманн, (Marc Меркури и пометить SIMM. Предоставляет основные понятия и архитектурные принципы в очень удобном и интересном смысле, а также истории, полученные от работы группы консультирования клиентов Майкрософт (CAT) с реальными клиентами. См. обсуждение автоматических выключателей в серии 3, начиная с 40:55.
 - [Создание больших: уроки, полученные от клиентов Azure, часть II](https://channel9.msdn.com/Events/Build/2012/3-030). Марк SIMM рассказывает о проектировании для сбоев, обработке временных сбоев и инструментировании всех.
 
-Образец кода
+Пример кода
 
 - [Основы облачной службы в Azure](https://code.msdn.microsoft.com/Cloud-Service-Fundamentals-4ca72649). Пример приложения, созданный группой консультирования клиентов Microsoft Azure, который демонстрирует использование [блока обработки временной ошибки Enterprise Library](http://nuget.org/packages/EnterpriseLibrary.TransientFaultHandling/) (тфх). Для получения дополнительных сведений обратитесь к разделу [Основы облачной службы. Уровень доступа к данным: обработка временных ошибок](https://social.technet.microsoft.com/wiki/contents/articles/18665.cloud-service-fundamentals-data-access-layer-transient-fault-handling.aspx). ТФХ рекомендуется использовать для доступа к базе данных непосредственно с помощью ADO.NET (без использования Entity Framework).
 

@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/migrating/migrating-from-classic-asp-to-aspnet
-title: '[Переход] Классического ASP на ASP.NET | Документация Майкрософт'
+title: '[Миграция с] Классическая модель ASP к ASP.NET | Документация Майкрософт'
 author: microsoft
-description: Вы планируете перенести из классической технологии ASP в Microsoft ASP.NET 2.0? Данная серия поможет во внимание при разработке архитектуры...
+description: Планируется ли переход с классической модели ASP на Microsoft ASP.NET 2,0? В этой серии веб-трансляций рассматриваются важные вопросы проектирования архитектуры...
 ms.author: riande
 ms.date: 07/25/2006
 ms.assetid: af5736dd-e01d-45d6-8ac0-01ec0fe49023
 msc.legacyurl: /web-forms/videos/migrating/migrating-from-classic-asp-to-aspnet
 msc.type: video
 ms.openlocfilehash: 52d3c4814a4896c3aa0134ea87c8fac2f5995017
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396308"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78521286"
 ---
 # <a name="migrating-from-classic-asp-to-aspnet"></a>[Переход] с классического ASP на ASP.NET
 
-по [Microsoft](https://github.com/microsoft)
+по [Майкрософт](https://github.com/microsoft)
 
-Вы планируете перенести из классической технологии ASP в Microsoft ASP.NET 2.0? Этой серии веб-трансляции рассматриваются важные архитектурные рекомендации следует учитывать при планировании стратегии миграции.
+Планируется ли переход с классической модели ASP на Microsoft ASP.NET 2,0? В этой серии веб-трансляций рассматриваются важные вопросы проектирования архитектуры, которые следует учитывать при планировании стратегии миграции.
 
-[&#9654;Просмотрите видео (78 мин.)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/migrating-from-classic-asp-to-aspnet)
+[&#9654;Смотреть видео (78 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/migrating-from-classic-asp-to-aspnet)
 
 > [!div class="step-by-step"]
 > [Назад](intro-to-aspnet-20-user-interface-elements.md)

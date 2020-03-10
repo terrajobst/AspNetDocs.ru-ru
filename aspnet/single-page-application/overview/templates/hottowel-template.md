@@ -9,11 +9,11 @@ ms.assetid: 75af2e17-6ed3-4d24-8ea1-bc340027c318
 msc.legacyurl: /single-page-application/overview/templates/hottowel-template
 msc.type: authoredcontent
 ms.openlocfilehash: eeab69e75546791978bb09d7823d95caf9dca1a0
-ms.sourcegitcommit: e365196c75ce93cd8967412b1cfdc27121816110
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77075064"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78467142"
 ---
 # <a name="hot-towel-template"></a>Шаблон Hot Towel
 
@@ -43,9 +43,9 @@ ms.locfileid: "77075064"
 Внутри папки приложения:
 
 - Durandal
-- службы
+- services;
 - ViewModels
-- представления
+- узел "Представления"
 
 Папка приложения содержит коллекцию модулей. Эти модули инкапсулируют функциональность и объявляют зависимости от других модулей. Папка Views содержит код HTML для вашего приложения, а папка ViewModels содержит логику представления для представлений (общий шаблон MVVM). Папка Services идеально подходит для размещения любых общих служб, которые могут потребоваться вашему приложению, таких как получение данных HTTP или взаимодействие с локальным хранилищем. Часто несколько ViewModels используются для повторного использования кода из модулей служб.
 
@@ -62,7 +62,7 @@ ms.locfileid: "77075064"
 
 ## <a name="featured-libraries"></a>Избранные библиотеки
 
-- ASP.NET MVC
+- ASP.NET MVC 3
 - Веб-API ASP.NET
 - Веб-Оптимизация ASP.NET — объединение и минификации
 - Очень просто [. js](http://Breezejs.com) -расширенное управление данными

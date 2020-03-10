@@ -9,17 +9,17 @@ ms.assetid: faab8503-2984-48a9-8a40-7728461abc50
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-updatepanel-triggers
 msc.type: authoredcontent
 ms.openlocfilehash: b1cc869f373d4f8283b4d92af74707c3f11fef61
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74588840"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78440544"
 ---
 # <a name="understanding-aspnet-ajax-updatepanel-triggers"></a>Общие сведения о триггерах UpdatePanel ASP.NET AJAX
 
 по [Скотт Cate](https://github.com/scottcate)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial02_Triggers_cs.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial02_Triggers_cs.pdf)
 
 > При работе в редакторе разметки в Visual Studio можно заметить, что в IntelliSense есть два дочерних элемента элемента управления UpdatePanel. Одним из которых является элемент Triggers, указывающий элементы управления на странице (или пользовательский элемент управления, если вы используете его), который запускает частичную визуализацию элемента управления UpdatePanel, в котором находится элемент.
 
@@ -53,7 +53,7 @@ ms.locfileid: "74588840"
 
 *Дочерние элементы разметки:*
 
-| **Тегами** | **Описание** |
+| **Тег** | **Описание** |
 | --- | --- |
 | &lt;ASP: Асинкпостбакктригжер&gt; | Указывает элемент управления и событие, которое приведет к частичному обновлению страницы для UpdatePanel, содержащей ссылку на этот триггер. |
 | &lt;ASP: Постбакктригжер&gt; | Указывает элемент управления и событие, которое приведет к полному обновлению страницы (полное обновление страницы). Этот тег можно использовать для принудительного полного обновления, когда элемент управления в противном случае вызывает частичную визуализацию. |

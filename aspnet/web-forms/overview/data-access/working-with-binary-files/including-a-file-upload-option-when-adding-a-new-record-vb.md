@@ -9,11 +9,11 @@ ms.assetid: 5776281d-4637-4d1e-a65b-2621d2cade44
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/including-a-file-upload-option-when-adding-a-new-record-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 8edaf1754eddd7b03f1c323d1bee13238582fc99
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74597052"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78475344"
 ---
 # <a name="including-a-file-upload-option-when-adding-a-new-record-vb"></a>Включение параметра отправки файла при добавлении новой записи (VB)
 
@@ -87,7 +87,7 @@ ms.locfileid: "74597052"
 
 `CategoriesDataSource` ObjectDataSource, используемый `Categories` GridView, в настоящее время не предоставляет возможности вставки данных. Для поддержки вставки через этот элемент управления источниками данных необходимо соотнести его метод `Insert` с методом в его базовом объекте `CategoriesBLL`. В частности, мы хотим преобразовать его в метод `CategoriesBLL`, который мы добавили обратно на шаге 2, `InsertWithPicture`.
 
-Для начала щелкните ссылку Настройка источника данных из смарт-тега ObjectDataSource s. На первом экране показан объект, для работы с которым настроен источник данных, `CategoriesBLL`. Оставьте этот параметр как есть и нажмите кнопку Далее, чтобы перейти к экрану определение методов обработки данных. Перейдите на вкладку Вставка и выберите метод `InsertWithPicture` из раскрывающегося списка. Чтобы завершить работу мастера, нажмите кнопку Готово.
+Для начала щелкните ссылку Настройка источника данных из смарт-тега ObjectDataSource s. На первом экране показан объект, для работы с которым настроен источник данных, `CategoriesBLL`. Оставьте этот параметр как есть и нажмите кнопку Далее, чтобы перейти к экрану определение методов обработки данных. Перейдите на вкладку Вставка и выберите метод `InsertWithPicture` из раскрывающегося списка. Нажмите кнопку Готово, чтобы завершить работу с мастером.
 
 [![настроить ObjectDataSource для использования метода Инсертвиспиктуре](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image5.gif)](including-a-file-upload-option-when-adding-a-new-record-vb/_static/image9.png)
 

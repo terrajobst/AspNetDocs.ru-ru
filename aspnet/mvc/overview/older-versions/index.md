@@ -1,23 +1,23 @@
 ---
 uid: mvc/overview/older-versions/index
-title: Предыдущие версии — MVC 3 и 4 | Документация Майкрософт
+title: Более старые версии — MVC 3 и 4 | Документация Майкрософт
 author: rick-anderson
-description: Ссылки на ресурсы для изучения способов использования более ранних версиях ASP.NET MVC.
+description: Ссылки на ресурсы для изучения того, как использовать более ранние версии ASP.NET MVC.
 ms.author: riande
 ms.date: 10/09/2014
 ms.assetid: 151cd274-3daa-4f88-ad3b-bffb99a9d545
 msc.legacyurl: /mvc/overview/older-versions
 msc.type: chapter
 ms.openlocfilehash: aa38ea8984f958939261d494f65bfa2108f87068
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65112455"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78451344"
 ---
 # <a name="older-versions---mvc-3-and-4"></a>Предыдущие версии — MVC 3 и 4
 
-> Ссылки на ресурсы для изучения способов использования более ранних версиях ASP.NET MVC.
+> Ссылки на ресурсы для изучения того, как использовать более ранние версии ASP.NET MVC.
 
 - [Начало работы с ASP.NET MVC 4](getting-started-with-aspnet-mvc4/index.md)
 
@@ -81,12 +81,12 @@ ms.locfileid: "65112455"
 - [Создание приложения на MVC 3 с помощью Razor и ненавязчивого JavaScript](creating-a-mvc-3-application-with-razor-and-unobtrusive-javascript.md)
 - [Приложение Music Store на MVC 3](mvc-music-store/index.md)
 
-    - [Часть 1. Общие сведения и файл -> Создать проект](mvc-music-store/mvc-music-store-part-1.md)
-    - [Часть 2. Контроллеры](mvc-music-store/mvc-music-store-part-2.md)
-    - [Часть 3. Views и ViewModels](mvc-music-store/mvc-music-store-part-3.md)
+    - [Часть 1. Общие сведения и Файл -> Создать проект](mvc-music-store/mvc-music-store-part-1.md)
+    - [Часть 2. Контроллеры](mvc-music-store/mvc-music-store-part-2.md)
+    - [Часть 3. Представления и классы ViewModel](mvc-music-store/mvc-music-store-part-3.md)
     - [Часть 4. Модели и доступ к данным](mvc-music-store/mvc-music-store-part-4.md)
-    - [Часть 5. Изменение форм и шаблонов.](mvc-music-store/mvc-music-store-part-5.md)
-    - [Часть 6. С помощью заметок к данным для проверки модели](mvc-music-store/mvc-music-store-part-6.md)
+    - [Часть 5. Изменение форм и создание шаблонов](mvc-music-store/mvc-music-store-part-5.md)
+    - [Часть 6. Использование заметок к данным для проверки модели](mvc-music-store/mvc-music-store-part-6.md)
     - [Часть 7. Членство и авторизация](mvc-music-store/mvc-music-store-part-7.md)
     - [Часть 8. Корзина для покупок с обновлениями Ajax](mvc-music-store/mvc-music-store-part-8.md)
     - [Часть 9. Регистрация и оформление заказа](mvc-music-store/mvc-music-store-part-9.md)
@@ -95,10 +95,10 @@ ms.locfileid: "65112455"
 
     - [HTML5 и элемент интерфейса всплывающего календаря выбора дат jQuery в ASP.NET MVC. Часть 1](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-1.md)
     - [HTML5 и элемент интерфейса всплывающего календаря выбора дат jQuery в ASP.NET MVC. Часть 2](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-2.md)
-    - [HTML5 и jQuery элемент интерфейса всплывающего календаря в ASP.NET MVC. часть 3](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-3.md)
+    - [HTML5 и элемент пользовательского интерфейса "DatePicker" в формате jQuery с ASP.NET MVC — часть 3](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-3.md)
     - [HTML5 и элемент интерфейса всплывающего календаря выбора дат jQuery в ASP.NET MVC. Часть 4](using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc/using-the-html5-and-jquery-ui-datepicker-popup-calendar-with-aspnet-mvc-part-4.md)
 - [MVC 3. Работа с полем DropDownList и jQuery](working-with-the-dropdownlist-box-and-jquery/index.md)
 
     - [Использование вспомогательного метода DropDownList в ASP.NET MVC](working-with-the-dropdownlist-box-and-jquery/using-the-dropdownlist-helper-with-aspnet-mvc.md)
-    - [Проверка того, как ASP.NET MVC формирует шаблоны вспомогательного метода DropDownList](working-with-the-dropdownlist-box-and-jquery/examining-how-aspnet-mvc-scaffolds-the-dropdownlist-helper.md)
+    - [Изучение шаблонов ASP.NET MVC в модуле поддержки DropDownList](working-with-the-dropdownlist-box-and-jquery/examining-how-aspnet-mvc-scaffolds-the-dropdownlist-helper.md)
     - [Добавление новой категории в DropDownList с помощью пользовательского интерфейса jQuery](working-with-the-dropdownlist-box-and-jquery/adding-a-new-category-to-the-dropdownlist-using-jquery-ui.md)

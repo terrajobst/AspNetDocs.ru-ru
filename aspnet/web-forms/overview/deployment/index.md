@@ -2,22 +2,22 @@
 uid: web-forms/overview/deployment/index
 title: Развертывание | Документация Майкрософт
 author: rick-anderson
-description: Как развернуть проекты веб-форм ASP.NET на сервере.
+description: Развертывание проектов веб-форм ASP.NET на сервере.
 ms.author: riande
 ms.date: 08/18/2011
 ms.assetid: 05e4c88f-5101-4277-a323-b6774d98f69e
 msc.legacyurl: /web-forms/overview/deployment
 msc.type: chapter
 ms.openlocfilehash: 1483abc212b5f122ad3e2b88474c42b208bb748e
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65134294"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520380"
 ---
 # <a name="deployment"></a>Развертывание
 
-> Как развернуть проекты веб-форм ASP.NET на сервере.
+> Развертывание проектов веб-форм ASP.NET на сервере.
 
 - [Веб-развертывание ASP.NET с помощью Visual Studio](visual-studio-web-deployment/index.md)
 
@@ -36,8 +36,8 @@ ms.locfileid: "65134294"
 - [ASP.NET 4. Введение в корпоративное развертывание](deploying-web-applications-in-enterprise-scenarios/index.md)
 
     - [Сценарии корпоративных развертываний веб-приложений с помощью Visual Studio 2010](deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md)
-    - [Корпоративное веб-развертывание: Обзор сценария](deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
-    - [Управление жизненным циклом приложения: От разработки к производству](deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
+    - [Корпоративное веб-развертывание. Обзор сценариев](deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
+    - [Управление жизненным циклом приложений: от разработки к производству](deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
 - [ASP.NET 4. Введение в корпоративное развертывание, часть 1](web-deployment-in-the-enterprise/index.md)
 
     - [Корпоративное веб-развертывание](web-deployment-in-the-enterprise/web-deployment-in-the-enterprise.md)
@@ -57,7 +57,7 @@ ms.locfileid: "65134294"
     - [Выбор правильного подхода для веб-развертывания](configuring-server-environments-for-web-deployment/choosing-the-right-approach-to-web-deployment.md)
     - [Сценарий. Настройка среды тестирования для веб-развертывания](configuring-server-environments-for-web-deployment/scenario-configuring-a-test-environment-for-web-deployment.md)
     - [Сценарий. Настройка промежуточной среды для веб-развертывания](configuring-server-environments-for-web-deployment/scenario-configuring-a-staging-environment-for-web-deployment.md)
-    - [Сценарий. Настройке рабочей среды для веб-развертывания](configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment.md)
+    - [Сценарий. Настройка рабочей среды для веб-развертывания](configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment.md)
     - [Настройка веб-сервера для публикации веб-развертывания (удаленный агент)](configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-remote-agent.md)
     - [Настройка веб-сервера для публикации веб-развертывания (обработчик веб-развертывания)](configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-web-deploy-handler.md)
     - [Настройка веб-сервера для публикации веб-развертывания (автономное развертывание)](configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-offline-deployment.md)

@@ -2,22 +2,22 @@
 uid: web-forms/videos/how-do-i/index
 title: Инструкции | Документы Майкрософт
 author: rick-anderson
-description: Как выполнять набор типичных задач.
+description: Выполнение различных распространенных задач.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 27591afa-3c14-47e6-8323-573f8f7aa862
 msc.legacyurl: /web-forms/videos/how-do-i
 msc.type: chapter
 ms.openlocfilehash: 12c988e64c5b724e04b6fc5f8eddc6a181764e1d
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65114925"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78519846"
 ---
 # <a name="how-do-i"></a>Инструкции
 
-> Как выполнять набор типичных задач.
+> Выполнение различных распространенных задач.
 
 - [Советы и подсказки экспертов](how-do-i-learn-the-tips-and-tricks-of-experts.md)
 - [Создание многоязычного узла с локализацией](how-do-i-create-a-multi-lingual-site-with-localization.md)
@@ -73,7 +73,7 @@ ms.locfileid: "65114925"
 - [Определение возможностей браузера на веб-страницах ASP.NET](how-do-i-detect-browser-capabilities-in-aspnet-web-pages.md)
 - [Сопоставление серверного элемента управления ASP.NET с используемым для его отображения адаптером](how-do-i-map-an-aspnet-server-control-to-the-adaptor-used-to-render-it.md)
 - [Передача сведений с одной страницы на другую с помощью строки запроса](how-do-i-pass-information-from-one-page-to-another-using-a-query-string.md)
-- [Использовать aspnet\_merge.exe служебная программа для слияния сборок](how-do-i-use-the-aspnet_mergeexe-utility-to-merge-assemblies.md)
+- [Использование служебной программы ASPNET\_MERGE. exe для слияния сборок](how-do-i-use-the-aspnet_mergeexe-utility-to-merge-assemblies.md)
 - [Реализация межстраничной обратной передачи в ASP.NET](how-do-i-implement-a-cross-page-postback-in-aspnet.md)
 - [Программное добавление элементов управления на веб-страницу ASP.NET](how-do-i-add-controls-to-an-aspnet-web-page-programmatically.md)
 - [Использование скрытого поля для хранения и обработки сведений на стороне клиента](how-do-i-use-a-hidden-field-to-store-and-manipulate-client-side-information.md)

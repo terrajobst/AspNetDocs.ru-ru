@@ -10,11 +10,11 @@ ms.assetid: 2e260430-d13c-4658-bd05-e256fc0d63b8
 msc.legacyurl: /identity/overview/migrations/migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity
 msc.type: authoredcontent
 ms.openlocfilehash: 31f02a0cec3c531c45c37b7aad8456e01e80b5ea
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77456118"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78499776"
 ---
 # <a name="migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity-c"></a>Перенос данных универсального поставщика членства и профилей пользователей в ASP.NET Identity (C#)
 
@@ -41,7 +41,7 @@ ms.locfileid: "77456118"
 
 После переноса приложения для использования новой системы ASP.NET Identity данные профиля десериализуется и сохраняются как свойства класса User. Затем каждое свойство может быть сопоставлено со столбцами в пользовательской таблице. Преимуществом здесь является то, что свойства могут работать непосредственно с помощью класса User, а не выполнять сериализацию и десериализацию данных при каждом обращении к ним.
 
-## <a name="getting-started"></a>Начало работы
+## <a name="getting-started"></a>Приступая к работе
 
 1. Создайте новое приложение веб-форм ASP.NET 4,5 в Visual Studio 2012. В текущем образце используется шаблон веб-форм, но можно также использовать приложение MVC.  
     ![](migrating-universal-provider-data-for-membership-and-user-profiles-to-aspnet-identity/_static/image1.jpg)

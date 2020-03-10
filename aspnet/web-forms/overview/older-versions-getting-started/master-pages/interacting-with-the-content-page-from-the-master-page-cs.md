@@ -9,11 +9,11 @@ ms.assetid: 3282df5e-516c-4972-8666-313828b90fb5
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/interacting-with-the-content-page-from-the-master-page-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 2cf57665aa584285351d874267949d61db69c7fc
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74635457"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78501168"
 ---
 # <a name="interacting-with-the-content-page-from-the-master-page-c"></a>Взаимодействие со страницей содержимого на эталонной странице (C#)
 
@@ -79,7 +79,7 @@ ms.locfileid: "74635457"
 
 **Рис. 04**. получение полей `ProductName` и `UnitPrice` из таблицы `Products` ([щелкните, чтобы просмотреть изображение с полным размером](interacting-with-the-content-page-from-the-master-page-cs/_static/image12.png))
 
-Вот и все! После завершения работы мастера Visual Studio добавляет два BoundFields в GridView для отражения двух полей, возвращаемых элементом управления SqlDataSource. Ниже приведена разметка элементов управления GridView и SqlDataSource. На рис. 5 показаны результаты просмотра в браузере.
+Это все. После завершения работы мастера Visual Studio добавляет два BoundFields в GridView для отражения двух полей, возвращаемых элементом управления SqlDataSource. Ниже приведена разметка элементов управления GridView и SqlDataSource. На рис. 5 показаны результаты просмотра в браузере.
 
 [!code-aspx[Main](interacting-with-the-content-page-from-the-master-page-cs/samples/sample2.aspx)]
 
@@ -209,7 +209,7 @@ ms.locfileid: "74635457"
 
 Поздравляем с программированием!
 
-### <a name="further-reading"></a>Дополнительные сведения
+### <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

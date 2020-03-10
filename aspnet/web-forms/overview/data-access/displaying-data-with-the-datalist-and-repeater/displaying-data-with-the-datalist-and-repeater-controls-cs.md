@@ -9,11 +9,11 @@ ms.assetid: 0591cacc-b34b-4cf6-885e-2c9953bb0946
 msc.legacyurl: /web-forms/overview/data-access/displaying-data-with-the-datalist-and-repeater/displaying-data-with-the-datalist-and-repeater-controls-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 09d3faf811f21a66bb5c234f71d77b2552ae6516
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74623202"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78495750"
 ---
 # <a name="displaying-data-with-the-datalist-and-repeater-controls-c"></a>Отображение данных с помощью элементов управления DataList и Repeater (C#)
 
@@ -267,4 +267,4 @@ Repeater служит в качестве веб-элемента управле
 Эта серия руководств была рассмотрена многими полезными рецензентами. Потенциальные рецензенты для этого руководства: Яааков yaakov Ellis), основными рецензентами, Рэнди Шмидт и Стейси парк. Хотите ознакомиться с моими будущими статьями MSDN? Если это так, расположите строку в [mitchell@4GuysFromRolla.com.](mailto:mitchell@4GuysFromRolla.com)
 
 > [!div class="step-by-step"]
-> [Вперед](formatting-the-datalist-and-repeater-based-upon-data-cs.md)
+> [Дальше](formatting-the-datalist-and-repeater-based-upon-data-cs.md)

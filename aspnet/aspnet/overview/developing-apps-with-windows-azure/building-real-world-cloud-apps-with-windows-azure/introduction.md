@@ -9,11 +9,11 @@ ms.assetid: accfa16a-ab15-4c26-9ad4-babdc2a77d2e
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/introduction
 msc.type: authoredcontent
 ms.openlocfilehash: b88573b3702b755b155e8da35f5f8a67931bafc6
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77457119"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78500652"
 ---
 # <a name="building-real-world-cloud-apps-with-azure"></a>Создание реальных облачных приложений с помощью Azure
 
@@ -162,7 +162,7 @@ ms.locfileid: "77457119"
 
 Дополнительные сведения о темах, описанных в этой главе, см. в следующих ресурсах.
 
-Документация:
+Документация.
 
 - [Веб-приложения в службе приложений Azure](https://azure.microsoft.com/services/app-service/web/). Страница портала для документации по веб-приложениям Azure.
 - [Веб-приложения, облачные службы и виртуальные машины: когда следует использовать?](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) WAWS, как показано в этой главе, — это один из трех способов запуска веб-приложений в Azure. В этой статье объясняются различия между тремя способами и даются рекомендации по выбору того, какой из них подходит для вашего сценария. Как и веб-сайты, облачные службы — это функция PaaS в Azure. Виртуальные машины — это функция IaaS. Описание PaaS и IaaS см. в главе « [Параметры данных](data-storage-options.md#paasiaas) ».

@@ -9,11 +9,11 @@ ms.assetid: 00aca413-f067-4108-9bd1-cf21e64a2646
 msc.legacyurl: /single-page-application/overview/templates/backbonejs-template
 msc.type: authoredcontent
 ms.openlocfilehash: 7297db7d5b35a53b40f9d9162960e529a167bd12
-ms.sourcegitcommit: e365196c75ce93cd8967412b1cfdc27121816110
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074895"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78449778"
 ---
 # <a name="backbone-template"></a>Шаблон Backbone
 
@@ -35,7 +35,7 @@ ms.locfileid: "77074895"
 
 Скачайте и установите шаблон, нажав кнопку Загрузить выше. Шаблон упаковывается как файл расширения Visual Studio (VSIX). Возможно, потребуется перезапустить Visual Studio.
 
-В области **шаблоны** выберите **Установленные шаблоны** и разверните узел  **C# визуального** элемента. В **разделе C#визуальный** элемент выберите **веб**. В списке шаблонов проектов выберите **ASP.NET MVC 4 веб-приложение**. Дайте имя проекту и нажмите кнопку **ОК**.
+В области **шаблоны** выберите **Установленные шаблоны** и разверните узел  **C# визуального** элемента. В **разделе C#визуальный** элемент выберите **веб**. В списке шаблонов проектов выберите **ASP.NET MVC 4 веб-приложение**. Задайте для проекта имя и щелкните **ОК**.
 
 ![](backbonejs-template/_static/image1.png)
 

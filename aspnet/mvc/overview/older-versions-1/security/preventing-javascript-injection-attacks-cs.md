@@ -9,17 +9,17 @@ ms.assetid: d0136da6-81a4-4815-b002-baa84744c09e
 msc.legacyurl: /mvc/overview/older-versions-1/security/preventing-javascript-injection-attacks-cs
 msc.type: authoredcontent
 ms.openlocfilehash: fb00ee8a7e3d678e824052060eb5d9fd5d4b6a42
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74594857"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78485934"
 ---
 # <a name="preventing-javascript-injection-attacks-c"></a>Предотвращение атак, осуществляемых путем внедрения кода JavaScript (C#)
 
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/8/4/8/84843d8d-1575-426c-bcb5-9d0c42e51416/ASPNET_MVC_Tutorial_06_CS.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/8/4/8/84843d8d-1575-426c-bcb5-9d0c42e51416/ASPNET_MVC_Tutorial_06_CS.pdf)
 
 > Предотвращение атак путем внедрения кода JavaScript и атак с использованием межузловых сценариев. В этом руководстве Стивен Вальтер объясняет, как можно легко отвергнуться атакам такого типа с помощью HTML-кодирования содержимого.
 

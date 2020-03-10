@@ -10,11 +10,11 @@ ms.assetid: 08834147-77ec-454a-bb7a-d931d2a40dab
 msc.legacyurl: /mvc/overview/getting-started/getting-started-with-ef-using-mvc/implementing-inheritance-with-the-entity-framework-in-an-asp-net-mvc-application
 msc.type: authoredcontent
 ms.openlocfilehash: 73a01ed47b0935a1a9734c197377470defb1fe36
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519392"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78471066"
 ---
 # <a name="tutorial-implement-inheritance-with-ef-in-an-aspnet-mvc-5-app"></a>Учебник. Реализация наследования с помощью EF в приложении ASP.NET MVC 5
 
@@ -22,7 +22,7 @@ ms.locfileid: "76519392"
 
 В объектно-ориентированном программировании можно использовать [наследование](http://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)) для упрощения [повторного использования кода](http://en.wikipedia.org/wiki/Code_reuse). В рамках этого учебника вы измените классы `Instructor` и `Student` таким образом, чтобы они были производными от базового класса `Person`, который содержит общие свойства для преподавателей и учащихся, такие как `LastName`. Изменения вносятся в коде, а не на веб-страницах, и автоматически отражаются в базе данных.
 
-В этом учебнике рассмотрены следующие задачи.
+Изучив это руководство, вы:
 
 > [!div class="checklist"]
 > * Сведения о сопоставлении наследования с базой данных
@@ -33,7 +33,7 @@ ms.locfileid: "76519392"
 > * Тестирование реализации
 > * Развертывание в Azure
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>предварительные требования
 
 * [Обработка параллелизма](handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application.md)
 
@@ -149,7 +149,7 @@ ms.locfileid: "76519392"
 
 1. В Visual Studio щелкните правой кнопкой мыши проект в **обозревателе решений** и выберите **Опубликовать** в контекстном меню.
 
-2. Нажмите кнопку **Опубликовать**.
+2. Щелкните **Опубликовать**.
 
     Веб-приложение откроется в браузере по умолчанию.
 
@@ -157,7 +157,7 @@ ms.locfileid: "76519392"
 
     При первом запуске страницы, обращающейся к базе данных, Entity Framework выполняет все миграции `Up` методы, необходимые для обновления базы данных до текущей модели данных.
 
-## <a name="get-the-code"></a>Получите код
+## <a name="get-the-code"></a>Получение кода
 
 [Скачать завершенный проект](https://webpifeed.blob.core.windows.net/webpifeed/Partners/ASP.NET%20MVC%20Application%20Using%20Entity%20Framework%20Code%20First.zip)
 
@@ -167,9 +167,9 @@ ms.locfileid: "76519392"
 
 Дополнительные сведения об этой и других структурах наследования см. в разделе Шаблон наследования [TPT](https://msdn.microsoft.com/data/jj618293) и [Шаблон наследования «подтаблица](https://msdn.microsoft.com/data/jj618292) » на сайте MSDN. В рамках следующего учебника вы узнаете, как работать в нескольких сценариях Entity Framework с расширенными возможностями.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-В этом учебнике рассмотрены следующие задачи.
+Изучив это руководство, вы:
 
 > [!div class="checklist"]
 > * Узнали о сопоставлении наследования с базой данных

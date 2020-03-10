@@ -9,11 +9,11 @@ ms.assetid: c3c76516-4c48-4153-bd03-d70e3a3edbb0
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: 56ceabc79947967846d342354fd033510be5f05a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74625540"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78458256"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-sql-server-compact-databases---2-of-12"></a>Развертывание веб-приложения ASP.NET с SQL Server Compact с помощью Visual Studio или Visual Web Developer: развертывание баз данных SQL Server Compact-2 из 12
 
@@ -73,7 +73,7 @@ ms.locfileid: "74625540"
 
 Разверните папку **bin** , чтобы просмотреть папки **AMD64** и **x86** , а затем выберите эти папки, щелкните правой кнопкой мыши и выберите пункт **включить в проект**.
 
-![amd64_and_x86_in_Solution_Explorer. png](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image2.png)
+![amd64_and_x86_in_Solution_Explorer.png](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image2.png)
 
 Значки папок изменяются, чтобы показывать, что папка включена в проект.
 
@@ -108,7 +108,7 @@ ms.locfileid: "74625540"
 
 Первый шаг — убедиться, что проект ContosoUniversity задан как запускаемый проект. В **Обозреватель решений**щелкните правой кнопкой мыши проект ContosoUniversity и выберите **Назначить запускаемым проектом**. Code First Migrations будет искать в проекте запуска, чтобы найти строку подключения к базе данных.
 
-В меню **Сервис** выберите **Диспетчер пакетов NuGet** , а затем **консоль диспетчера пакетов**.
+В меню **Сервис** щелкните **Диспетчер пакетов NuGet**, а затем щелкните **Консоль диспетчера пакетов**.
 
 ![Selecting_Package_Manager_Console](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image6.png)
 
@@ -192,7 +192,7 @@ Code First Migrations создает другой файл класса в па�
 
 В **Обозреватель решений**убедитесь, что выбран веб-проект (ContosoUniversity, а не CONTOSOUNIVERSITY. DAL). Затем в меню **проект** выберите **Конфигурация ASP.NET** , чтобы запустить **средство администрирования веб-сайта**(западноафриканскому).
 
-Перейдите на вкладку **Безопасность**.
+Перейдите на вкладку **Безопасность** .
 
 [![WAT_Security_tab](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image20.png)](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image19.png)
 
@@ -206,7 +206,7 @@ Code First Migrations создает другой файл класса в па�
 
 Закройте браузер. В **Обозреватель решений**нажмите кнопку "Обновить", чтобы увидеть новый файл *ASPNET. sdf* .
 
-![New_aspnet. sdf_in_Solution_Explorer](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image25.png)
+![New_aspnet.sdf_in_Solution_Explorer](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image25.png)
 
 Щелкните правой кнопкой мыши **ASPNET. sdf** и выберите **включить в проект**.
 
@@ -216,7 +216,7 @@ Code First Migrations создает другой файл класса в па�
 
 В **Обозреватель решений**щелкните **Обновить** и разверните папку приложения\_данных, чтобы просмотреть созданную ранее базу данных School. щелкните его правой кнопкой мыши и выберите пункт **включить в проект**.
 
-![Including_School. sdf_in_project](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image26.png)
+![Including_School.sdf_in_project](deployment-to-a-hosting-provider-deploying-sql-server-compact-databases-2-of-12/_static/image26.png)
 
 Переименуйте *ASPNET. sdf* в *АСПнет-прод. sdf*.
 

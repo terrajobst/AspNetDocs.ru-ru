@@ -9,11 +9,11 @@ ms.assetid: b1abb452-642a-4ff3-8504-37b85590ff79
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/logging-error-details-with-asp-net-health-monitoring-cs
 msc.type: authoredcontent
 ms.openlocfilehash: e52ed94f78d053701771690fce432d5a1d465b62
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74637265"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520998"
 ---
 # <a name="logging-error-details-with-aspnet-health-monitoring-c"></a>Запись в журнал сведений об ошибках с помощью наблюдения за состоянием системы ASP.NET (C#)
 
@@ -136,7 +136,7 @@ ms.locfileid: "74637265"
 
 Поздравляем с программированием!
 
-### <a name="further-reading"></a>Дополнительные сведения
+### <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

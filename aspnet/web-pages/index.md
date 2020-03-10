@@ -2,23 +2,23 @@
 uid: web-pages/index
 title: Веб-страницы ASP.NET | Документация Майкрософт
 author: rick-anderson
-description: Скачайте WebMatrix и узнайте, как быстро создавать веб-страниц в простой способ объединения серверного кода с HTML.
+description: Загрузите WebMatrix & Узнайте, как быстро создавать веб-страницы с помощью упрощенного способа объединения серверного кода с HTML.
 ms.author: riande
 ms.date: 05/18/2012
 ms.assetid: 5418ba96-ff49-4a43-9cbb-09dea4949d23
 msc.legacyurl: /web-pages
 msc.type: categoryindex
 ms.openlocfilehash: 56bf82e22b3562893ef842a90d42aa7b6ff5858f
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65114533"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520674"
 ---
 # <a name="aspnet-web-pages"></a>Веб-страницы ASP.NET
 
 > [!NOTE] 
-> WebMatrix не рекомендуется использовать как интегрированную среду разработки для веб-страниц ASP.NET. Используйте [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) или [Visual Studio Code](https://code.visualstudio.com/).
+> WebMatrix больше не рекомендуется использовать в качестве интегрированной среды разработки для веб-страницы ASP.NET. Используйте [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) или [Visual Studio Code](https://code.visualstudio.com/).
 
 - [Руководство](overview/index.md)
 
@@ -41,7 +41,7 @@ ms.locfileid: "65114533"
             - [Удаление данных базы данных](overview/getting-started/introducing-aspnet-web-pages-2/deleting-data.md)
             - [Создание согласованного макета](overview/getting-started/introducing-aspnet-web-pages-2/layouts.md)
             - [Публикация сайта с помощью WebMatrix](overview/getting-started/introducing-aspnet-web-pages-2/publishing.md)
-    - [Routing](overview/routing/index.md)
+    - [Маршрутизация](overview/routing/index.md)
 
         - [Создание доступных для чтения URL-адресов на сайтах веб-страниц ASP.NET](overview/routing/creating-readable-urls-in-aspnet-web-pages-sites.md)
     - [Пользовательский интерфейс, макеты и темы](overview/ui-layouts-and-themes/index.md)
@@ -56,7 +56,7 @@ ms.locfileid: "65114533"
         - [Установка вспомогательного метода](overview/ui-layouts-and-themes/installing-helpers.md)
         - [Добавление вспомогательного приложения Twitter с помощью веб-страниц ASP.NET](overview/ui-layouts-and-themes/twitter-helper.md)
         - [Отображение карт на сайте веб-страниц ASP.NET](overview/ui-layouts-and-themes/displaying-maps-in-an-aspnet-web-pages-site.md)
-    - [Мобильные приложения](overview/mobile/index.md)
+    - [Mobile](overview/mobile/index.md)
 
         - [Отрисовка сайтов веб-страниц ASP.NET для мобильных устройств](overview/mobile/rendering-aspnet-web-pages-sites-for-mobile-devices.md)
     - [Работа с данными](overview/data/index.md)
@@ -78,7 +78,7 @@ ms.locfileid: "65114533"
         - [Кэширование для повышения производительности веб-сайта](overview/performance-and-traffic/15-caching-to-improve-the-performance-of-your-website.md)
         - [Анализ трафика](overview/performance-and-traffic/14-analyzing-traffic.md)
         - [Объединение и минификация активов на сайте веб-страниц ASP.NET (Razor)](overview/performance-and-traffic/bundling-and-minifying-assets-in-an-aspnet-web-pages-razor-site.md)
-    - [Справочник по интерфейсам API](overview/api-reference/index.md)
+    - [Справочник по API](overview/api-reference/index.md)
 
         - [Краткий справочник по API ASP.NET](overview/api-reference/asp-net-web-pages-api-reference.md)
     - [Выпуски](overview/releases/index.md)
@@ -88,7 +88,7 @@ ms.locfileid: "65114533"
         - [Лучшие функции веб-страниц ASP.NET 2](overview/releases/top-features-in-web-pages-2.md)
         - [Файл сведений для версии Developer Preview веб-страниц ASP.NET 2](overview/releases/aspnet-web-pages-2-developer-preview-readme.md)
         - [Параллельное выполнение разных версий веб-страниц ASP.NET](overview/releases/running-v1-and-v2-sites-side-by-side.md)
-- [Видеоролики](videos/index.md)
+- [Видео](videos/index.md)
 
     - [Введение](videos/introduction/index.md)
 

@@ -9,18 +9,18 @@ ms.assetid: 8513a57a-2d45-4d6b-881c-15a01c5cbb1c
 msc.legacyurl: /mvc/overview/getting-started/mvc-learning-sequence
 msc.type: authoredcontent
 ms.openlocfilehash: 46b089a896c6b1b92437ff1f5488214a3a0a9838
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77455936"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78487740"
 ---
 # <a name="mvc-recommended-tutorials-and-articles"></a>Рекомендуемые учебники и статьи по MVC
 
 по [Рик Андерсон (](https://twitter.com/RickAndMSFT)
 
 <a id="pwd"></a>
-## <a name="getting-started"></a>Начало работы
+## <a name="getting-started"></a>Приступая к работе
 
 - [Начало работы с ASP.NET MVC 5](introduction/getting-started.md) Мы рекомендуем начать с этой серии статей из 11.
 - [Основы Pluralsight ASP.NET MVC 5](https://pluralsight.com/training/Player?author=scott-allen&amp;name=aspdotnet-mvc5-fundamentals-m1-introduction&amp;mode=live&amp;clip=0&amp;course=aspdotnet-mvc5-fundamentals) (Видеокурс)
@@ -33,7 +33,7 @@ ms.locfileid: "77455936"
 - [Начало работы с EF 6 Code First с использованием MVC 5](getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application.md) Dykstra)ный ряд, подробноный в EF.
 
 <a id="wj"></a>
-## <a name="security"></a>Безопасность
+## <a name="security"></a>безопасность
 
 - [Создание приложения ASP.NET MVC с проверкой подлинности и базой данных SQL и развертывание в Azure](https://azure.microsoft.com/documentation/articles/web-sites-dotnet-deploy-aspnet-mvc-app-membership-oauth-sql-database/) Этот популярный учебник поможет вам создать простое приложение и добавить членство и роли.
 - [Создание приложения ASP.NET MVC 5 с помощью единого входа Facebook, Twitter, LinkedIn и Google OAuth2](../security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md) В этом руководстве показано, как создать веб-приложение ASP.NET MVC 5, которое позволяет пользователям входить в систему с помощью OAuth 2,0 с учетными данными от внешнего поставщика проверки подлинности, например Facebook, Twitter, LinkedIn, Microsoft или Google.

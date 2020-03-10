@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/visual-studio-2010/visual-studio-2010-quick-hit-new-multi-targeting
-title: Visual Studio 2010 быстрого попадание - новых версий | Документация Майкрософт
+title: Быстрый попадание в Visual Studio 2010 — новое многоплатформенное нацеливание | Документация Майкрософт
 author: JoeStagner
-description: В этом видео вы узнаете, как использовать Visual Studio Улучшенная поддержка нескольких версий для использования и предназначенных для нескольких версий платформы .NET.
+description: В этом видеоролике вы узнаете, как использовать расширенную поддержку многоплатформенного нацеливания Visual Studio, которая позволяет использовать и ориентироваться на несколько версий .NET.
 ms.author: riande
 ms.date: 11/11/2009
 ms.assetid: 2ad38b3c-7297-4de9-8421-75c8907401dd
 msc.legacyurl: /web-forms/videos/visual-studio-2010/visual-studio-2010-quick-hit-new-multi-targeting
 msc.type: video
 ms.openlocfilehash: 77e9ce027bd161722d59a6a9ea62cf47cb5e9f74
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59397231"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78521934"
 ---
-# <a name="visual-studio-2010-quick-hit---new-multi-targeting"></a>Visual Studio 2010 «Быстрый Hit» — новый многоплатформенное нацеливание
+# <a name="visual-studio-2010-quick-hit---new-multi-targeting"></a>Visual Studio 2010 "быстрый попадание" — новое многоплатформенное нацеливание
 
-по [(Joe Stagner)](https://github.com/JoeStagner)
+кем [Джо Stagner)](https://github.com/JoeStagner)
 
-В этом видео вы узнаете, как использовать Visual Studio Улучшенная поддержка нескольких версий для использования и предназначенных для нескольких версий платформы .NET.
+В этом видеоролике вы узнаете, как использовать расширенную поддержку многоплатформенного нацеливания Visual Studio, которая позволяет использовать и ориентироваться на несколько версий .NET.
 
-[&#9654;Просмотрите видео (6 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/visual-studio-2010-quick-hit-new-multi-targeting)
+[&#9654;Смотреть видео (6 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/visual-studio-2010-quick-hit-new-multi-targeting)
 
 > [!div class="step-by-step"]
 > [Назад](visual-studio-2010-quick-hit-new-web-project-template.md)

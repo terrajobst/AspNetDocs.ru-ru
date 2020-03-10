@@ -1,23 +1,23 @@
 ---
 uid: web-forms/overview/older-versions-getting-started/master-pages/index
-title: ASP.NET 3.5. главные страницы Web Forms | Документация Майкрософт
+title: ASP.NET 3,5 — главные страницы веб-форм | Документация Майкрософт
 author: rick-anderson
-description: Как создать и использовать для создания согласованного макета в приложениях веб-форм ASP.NET главные страницы и страницы содержимого.
+description: Создание и использование главных страниц и страниц содержимого ASP.NET для создания единообразного макета в приложениях веб-форм.
 ms.author: riande
 ms.date: 11/04/2011
 ms.assetid: bc30f0ec-cf8f-4a33-9eee-513be872ac9c
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages
 msc.type: chapter
 ms.openlocfilehash: 3847269a495d54b0986bab245023daff4a43386a
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65134154"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78473484"
 ---
 # <a name="aspnet-35---web-forms-master-pages"></a>ASP.NET 3.5. Эталонные страницы веб-форм
 
-> Как создать и использовать для создания согласованного макета в приложениях веб-форм ASP.NET главные страницы и страницы содержимого.
+> Создание и использование главных страниц и страниц содержимого ASP.NET для создания единообразного макета в приложениях веб-форм.
 
 - [Создание макета сайта с помощью главных страниц (C#)](creating-a-site-wide-layout-using-master-pages-cs.md)
 - [Несколько элементов управления ContentPlaceHolder и содержимое по умолчанию (C#)](multiple-contentplaceholders-and-default-content-cs.md)

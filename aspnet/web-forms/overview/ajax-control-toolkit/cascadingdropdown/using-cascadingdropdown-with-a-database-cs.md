@@ -9,11 +9,11 @@ ms.assetid: 684f0c28-a490-4e5b-b5e5-5dfb77464b49
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/cascadingdropdown/using-cascadingdropdown-with-a-database-cs
 msc.type: authoredcontent
 ms.openlocfilehash: bcf453170d17807b4e3b2d2a8b545cba43139f89
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74599780"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78483750"
 ---
 # <a name="using-cascadingdropdown-with-a-database-c"></a>Использование CascadingDropDown с базой данных (C#)
 
@@ -66,7 +66,7 @@ ms.locfileid: "74599780"
 
 [!code-csharp[Main](using-cascadingdropdown-with-a-database-cs/samples/sample6.cs)]
 
-Поэтому возвращаемое значение должно быть массивом типа `CascadingDropDownNameValue` который определяется набором элементов управления. Метод `GetVendors()` довольно прост в реализации: код подключается к базе данных AdventureWorks и запрашивает первые 25 поставщиков. Первый параметр в конструкторе `CascadingDropDownNameValue` — это заголовок записи списка, второй — его значение (атрибут value в элементе HTML &lt;`option`&gt;). Ниже приведен код.
+Поэтому возвращаемое значение должно быть массивом типа `CascadingDropDownNameValue` который определяется набором элементов управления. Метод `GetVendors()` довольно прост в реализации: код подключается к базе данных AdventureWorks и запрашивает первые 25 поставщиков. Первый параметр в конструкторе `CascadingDropDownNameValue` — это заголовок записи списка, второй — его значение (атрибут value в элементе HTML &lt;`option`&gt;). Ниже приведен код:
 
 [!code-csharp[Main](using-cascadingdropdown-with-a-database-cs/samples/sample7.cs)]
 

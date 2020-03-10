@@ -1,23 +1,23 @@
 ---
 uid: web-pages/videos/aspnet-razor-pages/index
-title: Страницы ASP.NET Razor | Документация Майкрософт
+title: ASP.NET Razor Pages | Документация Майкрософт
 author: rick-anderson
-description: Какие видео, вы можете просмотреть для детализации углублением Web Pages и WebMatrix.
+description: Видеоролики, которые можно просматривать для детализации веб-страниц и WebMatrix.
 ms.author: riande
 ms.date: 05/18/2012
 ms.assetid: ffad842d-548c-40c6-84c5-10858133e972
 msc.legacyurl: /web-pages/videos/aspnet-razor-pages
 msc.type: chapter
 ms.openlocfilehash: c1889f0eab6d2df41ac6e19d433303198c4789f4
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65127786"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78514194"
 ---
 # <a name="aspnet-web-pages"></a>Веб-страницы ASP.NET
 
-> Какие видео, вы можете просмотреть для детализации углублением Web Pages и WebMatrix.
+> Видеоролики, которые можно просматривать для детализации веб-страниц и WebMatrix.
 
 - [Начало работы с WebMatrix и веб-страницами ASP.NET](getting-started-with-webmatrix-and-aspnet-web-pages.md)
 - [Введение в веб-программирование на ASP.NET с синтаксисом Razor](introduction-to-aspnet-web-programming-using-the-razor-syntax.md)

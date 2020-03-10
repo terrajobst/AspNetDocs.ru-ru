@@ -9,17 +9,17 @@ ms.assetid: 89a1d2bc-fdfd-4c5c-a3b0-49a08baaf63a
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/asp-net-hosting-options-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 2eafa750167d89fa996a442633e79dce3d5b85bd
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74620778"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78517434"
 ---
 # <a name="aspnet-hosting-options-c"></a>Варианты размещения в ASP.NET (C#)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial01_Basics_cs.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/E/8/9/E8920AE6-D441-41A7-8A77-9EF8FF970D8B/aspnet_tutorial01_Basics_cs.pdf)
 
 > Веб-приложения ASP.NET обычно разрабатываются, создаются и тестируются в локальной среде разработки и должны быть развернуты в рабочей среде после того, как она будет готова к выпуску. В этом руководстве представлен общий обзор процесса развертывания, который служит введением в эту серию руководств.
 
@@ -42,7 +42,7 @@ ms.locfileid: "74620778"
 - Стратегии для плавного обновления базы данных в рабочей среде с изменениями, внесенными во время разработки.
 - Методы ведения журнала ошибок, происходящих в рабочей среде, и способы уведомления разработчиков о возникновении ошибок.
 
-Эти учебники предназначены для краткости и содержат пошаговые инструкции с большим количеством снимков экрана для визуального анализа процесса. В этом руководстве по инаугурационный содержатся общие сведения о процессе развертывания ASP.NET и рекомендации по поиску поставщика услуг размещения веб-сайтов. Приступим к работе!
+Эти учебники предназначены для краткости и содержат пошаговые инструкции с большим количеством снимков экрана для визуального анализа процесса. В этом руководстве по инаугурационный содержатся общие сведения о процессе развертывания ASP.NET и рекомендации по поиску поставщика услуг размещения веб-сайтов. Приступим.
 
 ## <a name="an-overview-of-the-aspnet-deployment-process"></a>Обзор процесса развертывания ASP.NET
 
@@ -89,4 +89,4 @@ ms.locfileid: "74620778"
 Эта серия руководств была рассмотрена многими полезными рецензентами. Специалист по интересу для этого руководства был Терезой Мерфи. Хотите ознакомиться с моими будущими статьями MSDN? Если это так, расположите строку в [mitchell@4GuysFromRolla.com](mailto:mitchell@4GuysFromRolla.com).
 
 > [!div class="step-by-step"]
-> [Вперед](determining-what-files-need-to-be-deployed-cs.md)
+> [Дальше](determining-what-files-need-to-be-deployed-cs.md)

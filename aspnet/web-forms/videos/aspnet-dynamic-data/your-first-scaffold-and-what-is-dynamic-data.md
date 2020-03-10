@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/aspnet-dynamic-data/your-first-scaffold-and-what-is-dynamic-data
-title: Формирование первого шаблона и что такое динамические данные? | Документы Майкрософт
+title: Ваш первый шаблон и платформа динамических данных? | Документы Майкрософт
 author: shanselman
-description: В этого краткого знакомства с как создать полный динамических данных, приложения, в минутах, с помощью формирования шаблонов и в процессе сведения о динамических данных.
+description: В этом кратком вводе вы создадите полное платформа динамических данныхное приложение за считаные минуты с помощью формирования шаблонов и в процессе изучения платформа динамических данных.
 ms.author: riande
 ms.date: 05/08/2008
 ms.assetid: aff67466-d3e1-4ecb-8df3-2a79583f65b2
 msc.legacyurl: /web-forms/videos/aspnet-dynamic-data/your-first-scaffold-and-what-is-dynamic-data
 msc.type: video
 ms.openlocfilehash: e677707018375debd0f1542037a43e525498b247
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59389314"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78501090"
 ---
-# <a name="your-first-scaffold-and-what-is-dynamic-data"></a>Формирование первого шаблона и что такое динамические данные?
+# <a name="your-first-scaffold-and-what-is-dynamic-data"></a>Ваш первый шаблон и платформа динамических данных?
 
-по [(Scott hanselman)](https://github.com/shanselman)
+по [Скотт Hanselman](https://github.com/shanselman)
 
-В этого краткого знакомства с как создать полный динамических данных, приложения, в минутах, с помощью формирования шаблонов и в процессе сведения о динамических данных.
+В этом кратком вводе вы создадите полное платформа динамических данныхное приложение за считаные минуты с помощью формирования шаблонов и в процессе изучения платформа динамических данных.
 
-[&#9654;Просмотрите видео (6 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/your-first-scaffold-and-what-is-dynamic-data)
+[&#9654;Смотреть видео (6 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/your-first-scaffold-and-what-is-dynamic-data)
 
 > [!div class="step-by-step"]
-> [Вперед](how-do-i-enable-inline-gridview-editing.md)
+> [Дальше](how-do-i-enable-inline-gridview-editing.md)

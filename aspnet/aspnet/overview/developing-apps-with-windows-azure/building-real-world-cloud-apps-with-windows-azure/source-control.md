@@ -9,11 +9,11 @@ ms.assetid: 2a0370d3-c2fb-4bf3-88b8-aad5a736c793
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control
 msc.type: authoredcontent
 ms.openlocfilehash: 5a1e0d7cd3c396d4be79c8958422602055eb3db1
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77457106"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78500532"
 ---
 # <a name="source-control-building-real-world-cloud-apps-with-azure"></a>Система управления версиями (создание облачных приложений в реальном мире с помощью Azure)
 
@@ -95,7 +95,7 @@ ms.locfileid: "77457106"
 
 ![Выбор меню "Добавить существующий элемент"](source-control/_static/image6.png)
 
-![диалоговое окно «Добавление существующего элемента»](source-control/_static/image7.png)
+![Диалоговое окно ''Добавление существующего элемента''](source-control/_static/image7.png)
 
 Файлы скриптов теперь включены в проект, и система управления версиями отслеживает изменения версий вместе с соответствующими изменениями исходного кода.
 
@@ -151,7 +151,7 @@ Visual Studio спрашивает, нужно ли использовать TFV
 
 Visual Studio автоматически размещает все файлы проекта для фиксации и перечисляет их в **Team Explorer** на панели " **добавленные изменения** ". (Если вы не хотите включать в фиксацию, выберите их, щелкните правой кнопкой мыши и выберите пункт **исключить**.)
 
-![Team Explorer](source-control/_static/image12.png)
+![Командный обозреватель](source-control/_static/image12.png)
 
 Введите комментарий фиксации и нажмите кнопку **зафиксировать**, и Visual Studio выполняет фиксацию и отображает идентификатор фиксации.
 

@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/ajax-control-toolkit/how-do-i-configure-the-aspnet-ajax-calendar-control
-title: '[Инструкции] Настроить элемент управления Calendar ASP.NET AJAX? | Документы Майкрософт'
+title: '[Инструкции:] Настроить элемент управления календаря ASP.NET AJAX? | Документы Майкрософт'
 author: JoeStagner
-description: В этом видео мы видим демонстрацию на различные параметры, доступные для настройки внешнего вида и поведения элемента управления расширителя календаря из t...
+description: В этом видеоролике мы увидим демонстрацию различных параметров, доступных для настройки внешнего вида и поведения элемента управления расширителем календаря из t...
 ms.author: riande
 ms.date: 03/30/2007
 ms.assetid: bee087cc-7fed-4dce-8b52-19987f2d38a6
 msc.legacyurl: /web-forms/videos/ajax-control-toolkit/how-do-i-configure-the-aspnet-ajax-calendar-control
 msc.type: video
 ms.openlocfilehash: 2d3a4b64f747a4cb57dfc7c66c964af9c56c368f
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59396659"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78454734"
 ---
-# <a name="how-do-i-configure-the-aspnet-ajax-calendar-control"></a>[Инструкции] Настроить элемент управления Calendar ASP.NET AJAX?
+# <a name="how-do-i-configure-the-aspnet-ajax-calendar-control"></a>[Инструкции:] Настроить элемент управления календаря ASP.NET AJAX?
 
-по [(Joe Stagner)](https://github.com/JoeStagner)
+кем [Джо Stagner)](https://github.com/JoeStagner)
 
-В этом видео мы видим демонстрацию на различные параметры, доступные для настройки внешнего вида и поведения элемента управления расширителя календаря из ASP.NET AJAX Control Toolkit.
+В этом видеоролике мы увидим демонстрацию различных параметров, доступных для настройки внешнего вида и поведения элемента управления расширителем календаря из набора средств ASP.NET AJAX Control Toolkit.
 
-[&#9654;Просмотрите видео (8 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-configure-the-aspnet-ajax-calendar-control)
+[&#9654;Смотреть видео (8 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-do-i-configure-the-aspnet-ajax-calendar-control)
 
 > [!div class="step-by-step"]
 > [Назад](how-do-i-use-the-aspnet-ajax-autocomplete-control.md)

@@ -9,11 +9,11 @@ ms.assetid: a89d6f32-b71b-4036-8ff7-5f8ac2a6eca8
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-migrating-to-sql-server-10-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: c5281a42596d95e725b32e652c75785abe0fd64e
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74640574"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78462840"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-migrating-to-sql-server---10-of-12"></a>Развертывание веб-приложения ASP.NET с SQL Server Compact с помощью Visual Studio или Visual Web Developer: переход на SQL Server-10 из 12
 
@@ -112,7 +112,7 @@ SQL Server Express по умолчанию автоматически устан
 
 Щелкните **Импорт из файла Web. config**.
 
-![Selecting_Import_from_Web. config](deployment-to-a-hosting-provider-migrating-to-sql-server-10-of-12/_static/image5.png)
+![Selecting_Import_from_Web.config](deployment-to-a-hosting-provider-migrating-to-sql-server-10-of-12/_static/image5.png)
 
 Visual Studio ищет строки подключения в файле *Web. config* , находит один для базы данных членства, а другой для базы данных School и добавляет строку, соответствующую каждой строке подключения в таблице **записей базы данных** . Найденные строки подключения предназначены для существующих баз данных SQL Server Compact, и следующим шагом будет настройка того, как и где развертывать эти базы данных.
 
@@ -244,7 +244,7 @@ Visual Studio ищет строки подключения в файле *Web. c
 
 В поле **URL-адрес назначения** введите `http://localhost/ContosoUniversity/`.
 
-Нажмите кнопку **Далее**.
+Щелкните **Далее**.
 
 На вкладке **Параметры** выводится предупреждение о том, что вкладка **Пакет/Публикация SQL** настроена, и она дает возможность переопределить их, нажав кнопку включить новые улучшения публикации базы данных. Для этого развертывания не нужно переопределять параметры вкладки **Пакет/Публикация SQL** , поэтому просто нажмите кнопку **Далее**.
 
@@ -252,7 +252,7 @@ Visual Studio ищет строки подключения в файле *Web. c
 
 Сообщение на вкладке **Предварительный просмотр** указывает, что **базы данных не выбраны для публикации**, но это означает, что публикация базы данных не настроена в профиле публикации.
 
-Нажмите кнопку **Опубликовать**.
+Щелкните **Опубликовать**.
 
 ![Publish_Web_wizard_Preview_tab_Migrate](deployment-to-a-hosting-provider-migrating-to-sql-server-10-of-12/_static/image20.png)
 

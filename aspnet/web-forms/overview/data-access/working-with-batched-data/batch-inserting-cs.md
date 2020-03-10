@@ -9,11 +9,11 @@ ms.assetid: cf025e08-48fc-4385-b176-8610aa7b5565
 msc.legacyurl: /web-forms/overview/data-access/working-with-batched-data/batch-inserting-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 5dc4d0b6ac9bf3aa2baa54fe9f5d4149494e47d2
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74584760"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78501450"
 ---
 # <a name="batch-inserting-c"></a>Пакетная вставка (C#)
 
@@ -100,7 +100,7 @@ ms.locfileid: "74584760"
 
 Теперь мы готовы к добавлению веб-элементов управления в интерфейс вставки. Перетащите два элементов управления DropDownList из области элементов в соответствующие ячейки таблицы, одну для поставщика, и одну для категории.
 
-Задайте для свойства `ID` в DropDownList поставщика значение `Suppliers` и привяжите его к новому ObjectDataSource с именем `SuppliersDataSource`. Настройте новый элемент ObjectDataSource для получения данных из метода `SuppliersBLL` Class s `GetSuppliers` и установите в раскрывающемся списке вкладку обновления значение (нет). Чтобы завершить работу мастера, нажмите кнопку Готово.
+Задайте для свойства `ID` в DropDownList поставщика значение `Suppliers` и привяжите его к новому ObjectDataSource с именем `SuppliersDataSource`. Настройте новый элемент ObjectDataSource для получения данных из метода `SuppliersBLL` Class s `GetSuppliers` и установите в раскрывающемся списке вкладку обновления значение (нет). Нажмите кнопку Готово, чтобы завершить работу с мастером.
 
 [![настроить ObjectDataSource для использования метода Супплиерсблл класса s](batch-inserting-cs/_static/image20.png)](batch-inserting-cs/_static/image19.png)
 

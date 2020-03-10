@@ -10,28 +10,28 @@ msc.legacyurl: /signalr/overview/getting-started/tutorial-getting-started-with-s
 msc.type: authoredcontent
 ms.topic: tutorial
 ms.openlocfilehash: 5671e4f0123ca2b0cb5314336cf4411467feac70
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600475"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78431622"
 ---
 # <a name="tutorial-real-time-chat-with-signalr-2-and-mvc-5"></a>Учебник. чат в режиме реального времени с SignalR 2 и MVC 5
 
 В этом руководстве показано, как использовать ASP.NET SignalR 2 для создания приложения разговора в режиме реального времени. Вы добавляете SignalR в приложение MVC 5 и создаете представление чата для отправки и отображения сообщений.
 
-В этом учебнике рассмотрены следующие задачи.
+Изучив это руководство, вы:
 
 > [!div class="checklist"]
 > * Настройка проекта
-> * Запустить образец
-> * Изучение кода
+> * Запуск примера
+> * Анализ кода
 
 [!INCLUDE [Consider ASP.NET Core SignalR](~/includes/signalr/signalr-version-disambiguation.md)]
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>предварительные требования
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) с рабочей нагрузкой **ASP.NET и Web Development** .
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) с рабочей нагрузкой **ASP.NET и веб-разработка**.
 
 ## <a name="set-up-the-project"></a>Настройка проекта
 
@@ -176,7 +176,7 @@ ms.locfileid: "74600475"
 
 Код запускает соединение, а затем передает ему функцию для управления событием щелчка на кнопке **Send** на странице разговора.
 
-## <a name="get-the-code"></a>Получите код
+## <a name="get-the-code"></a>Получение кода
 
 [Скачать завершенный проект](https://code.msdn.microsoft.com/Getting-Started-with-c366b2f3)
 
@@ -190,9 +190,9 @@ ms.locfileid: "74600475"
 
 * [Вики-сайт SignalR](https://github.com/SignalR/SignalR/wiki)
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-В этом учебнике рассмотрены следующие задачи.
+Изучив это руководство, вы:
 
 > [!div class="checklist"]
 > * Настройка проекта

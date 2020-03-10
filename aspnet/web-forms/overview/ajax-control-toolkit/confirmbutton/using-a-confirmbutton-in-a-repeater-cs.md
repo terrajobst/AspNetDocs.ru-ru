@@ -9,11 +9,11 @@ ms.assetid: a973ed3e-400c-4925-ace2-0b086b479301
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/confirmbutton/using-a-confirmbutton-in-a-repeater-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 468a830f01c48dc39b22bc5d826f80533df65c1a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74574401"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78446400"
 ---
 # <a name="using-a-confirmbutton-in-a-repeater-c"></a>Использование ConfirmButton в элементе управления Repeater (C#)
 
@@ -50,4 +50,4 @@ ms.locfileid: "74574401"
 Кнопка подтверждения отображается рядом с каждой записью из источника данных ([щелкните, чтобы просмотреть изображение с полным размером](using-a-confirmbutton-in-a-repeater-cs/_static/image3.png)).
 
 > [!div class="step-by-step"]
-> [Вперед](using-a-confirmbutton-in-a-repeater-vb.md)
+> [Дальше](using-a-confirmbutton-in-a-repeater-vb.md)

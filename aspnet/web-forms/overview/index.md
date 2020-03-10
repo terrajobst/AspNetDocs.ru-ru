@@ -1,6 +1,6 @@
 ---
 uid: web-forms/overview/index
-title: Веб-форм ASP.NET руководство | Документация Майкрософт
+title: Руководство по веб-формам ASP.NET | Документация Майкрософт
 author: rick-anderson
 description: ''
 ms.author: riande
@@ -9,13 +9,13 @@ ms.assetid: b3fb4480-0f41-495b-add6-163ca92dc8a3
 msc.legacyurl: /web-forms/overview
 msc.type: book
 ms.openlocfilehash: 4b38d6b54f53508f7b568207fe7f1a624a7af5f3
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402275"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78519384"
 ---
-# <a name="aspnet-web-forms-guidance"></a>Веб-форм ASP.NET рекомендации
+# <a name="aspnet-web-forms-guidance"></a>Руководство по веб-формам ASP.NET
 
 - [Начало работы](getting-started/index.md)
 
@@ -56,7 +56,7 @@ ms.locfileid: "59402275"
 - [Производительность](performance-and-caching/index.md)
 
     - [Использование асинхронных методов в ASP.NET 4.5](performance-and-caching/using-asynchronous-methods-in-aspnet-45.md)
-- [Развертывание](deployment/index.md)
+- [Deployment](deployment/index.md)
 
     - [Веб-развертывание ASP.NET с помощью Visual Studio](deployment/visual-studio-web-deployment/index.md)
 
@@ -75,8 +75,8 @@ ms.locfileid: "59402275"
     - [ASP.NET 4. Введение в корпоративное развертывание](deployment/deploying-web-applications-in-enterprise-scenarios/index.md)
 
         - [Сценарии корпоративных развертываний веб-приложений с помощью Visual Studio 2010](deployment/deploying-web-applications-in-enterprise-scenarios/deploying-web-applications-in-enterprise-scenarios.md)
-        - [Корпоративное веб-развертывание: Обзор сценария](deployment/deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
-        - [Управление жизненным циклом приложения: От разработки к производству](deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
+        - [Корпоративное веб-развертывание. Обзор сценариев](deployment/deploying-web-applications-in-enterprise-scenarios/enterprise-web-deployment-scenario-overview.md)
+        - [Управление жизненным циклом приложений: от разработки к производству](deployment/deploying-web-applications-in-enterprise-scenarios/application-lifecycle-management-from-development-to-production.md)
     - [ASP.NET 4. Введение в корпоративное развертывание, часть 1](deployment/web-deployment-in-the-enterprise/index.md)
 
         - [Корпоративное веб-развертывание](deployment/web-deployment-in-the-enterprise/web-deployment-in-the-enterprise.md)
@@ -96,7 +96,7 @@ ms.locfileid: "59402275"
         - [Выбор правильного подхода для веб-развертывания](deployment/configuring-server-environments-for-web-deployment/choosing-the-right-approach-to-web-deployment.md)
         - [Сценарий. Настройка среды тестирования для веб-развертывания](deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-test-environment-for-web-deployment.md)
         - [Сценарий. Настройка промежуточной среды для веб-развертывания](deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-staging-environment-for-web-deployment.md)
-        - [Сценарий. Настройке рабочей среды для веб-развертывания](deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment.md)
+        - [Сценарий. Настройка рабочей среды для веб-развертывания](deployment/configuring-server-environments-for-web-deployment/scenario-configuring-a-production-environment-for-web-deployment.md)
         - [Настройка веб-сервера для публикации веб-развертывания (удаленный агент)](deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-remote-agent.md)
         - [Настройка веб-сервера для публикации веб-развертывания (обработчик веб-развертывания)](deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-web-deploy-handler.md)
         - [Настройка веб-сервера для публикации веб-развертывания (автономное развертывание)](deployment/configuring-server-environments-for-web-deployment/configuring-a-web-server-for-web-deploy-publishing-offline-deployment.md)
@@ -130,12 +130,12 @@ ms.locfileid: "59402275"
 
     - [ASP.NET 4. Tailspin Spyworks](older-versions-getting-started/tailspin-spyworks/index.md)
 
-        - [Часть 1. Файл -> Создать проект](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-1.md)
-        - [Часть 2. Уровень доступа к данным](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-2.md)
+        - [Часть 1. Файл -> Создать проект](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-1.md)
+        - [Часть 2. Уровень доступа к данным](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-2.md)
         - [Часть 3. Макет и меню категории](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-3.md)
         - [Часть 4. Список продуктов](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-4.md)
-        - [Часть 5. Бизнес-логики](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-5.md)
-        - [Часть 6. Членства ASP.NET](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-6.md)
+        - [Часть 5. Бизнес-логика](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-5.md)
+        - [Часть 6. Членство в ASP.NET](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-6.md)
         - [Часть 7. Добавление функций](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-7.md)
         - [Часть 8. Последние страницы, обработка исключений и заключение](older-versions-getting-started/tailspin-spyworks/tailspin-spyworks-part-8.md)
     - [ASP.NET 4. Начало работы с Entity Framework 4 и веб-формами](older-versions-getting-started/getting-started-with-ef/index.md)
@@ -150,9 +150,9 @@ ms.locfileid: "59402275"
         - [Начало работы с Entity Framework 4.0 Database First. Часть 8](older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-8.md)
     - [ASP.NET 4. Продолжение работы с Entity Framework 4 и веб-формами](older-versions-getting-started/continuing-with-ef/index.md)
 
-        - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 1: Приступая к работе](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
-        - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 2: Добавление уровня бизнес-логики и модульных тестов](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
-        - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 3: Сортировка и фильтрация](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
+        - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 1. Начало работы](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-1-getting-started.md)
+        - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 2. Добавление уровня бизнес-логики и модульных тестов](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-2-adding-a-business-logic-layer-and-unit-tests.md)
+        - [Entity Framework 4.0 и элемент управления ObjectDataSource, часть 3. Сортировка и фильтрация](older-versions-getting-started/continuing-with-ef/using-the-entity-framework-and-the-objectdatasource-control-part-3-sorting-and-filtering.md)
         - [Обработка параллелизма с помощью Entity Framework 4.0 в ASP.NET 4](older-versions-getting-started/continuing-with-ef/handling-concurrency-with-the-entity-framework-in-an-asp-net-web-application.md)
         - [Повышение производительности с помощью Entity Framework 4.0 в ASP.NET 4](older-versions-getting-started/continuing-with-ef/maximizing-performance-with-the-entity-framework-in-an-asp-net-web-application.md)
         - [Новые возможности .NET Framework 4.0](older-versions-getting-started/continuing-with-ef/what-s-new-in-the-entity-framework-4.md)
@@ -356,7 +356,7 @@ ms.locfileid: "59402275"
 
         - [Тестирование надежности пароля (C#)](ajax-control-toolkit/passwordstrength/testing-the-strength-of-a-password-cs.md)
         - [Тестирование надежности пароля (VB)](ajax-control-toolkit/passwordstrength/testing-the-strength-of-a-password-vb.md)
-    - [Контекстное меню](ajax-control-toolkit/popup/index.md)
+    - [Popup](ajax-control-toolkit/popup/index.md)
 
         - [Использование нескольких элементов управления Popup (C#)](ajax-control-toolkit/popup/using-multiple-popup-controls-cs.md)
         - [Обработка операций обратной передачи из элемента управления Popup с помощью элемента управления UpdatePanel (C#)](ajax-control-toolkit/popup/handling-postbacks-from-a-popup-control-with-an-updatepanel-cs.md)

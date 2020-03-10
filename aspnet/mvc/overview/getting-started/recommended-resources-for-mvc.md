@@ -9,11 +9,11 @@ ms.assetid: 7958d725-e958-4566-a85b-535eeb985f94
 msc.legacyurl: /mvc/overview/getting-started/recommended-resources-for-mvc
 msc.type: authoredcontent
 ms.openlocfilehash: 11f4a7cae8d425873b1828a9e5f51471def954fb
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77457158"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78470322"
 ---
 # <a name="mvc-recommended-resources"></a>Рекомендуемые ресурсы по MVC
 
@@ -49,7 +49,7 @@ ms.locfileid: "77457158"
 
 <a id="azure"></a>
 
-## <a name="microsoft-azure"></a>Microsoft Azure
+## <a name="microsoft-azure"></a>Microsoft Azure.
 
 - [Лучшие в мире демонстрационные материалы по Azure](http://www.troyhunt.com/2014/03/the-worlds-greatest-azure-demo.html)
 - [Видео от//буилд/2014](https://channel9.msdn.com/Events/Build/2014?sort=sequential&amp;direction=desc&amp;page=2&amp;tag%5B0%5D=asp.net&amp;tag%5B1%5D=azure&amp;tag%5B2%5D=visual-studio&amp;tag%5B3%5D=web#theSessions): (Azure и Visual Studio)
@@ -80,7 +80,7 @@ ms.locfileid: "77457158"
 
 <a id="security"></a>
 
-## <a name="security"></a>Безопасность
+## <a name="security"></a>безопасность
 
 - [Создание приложения ASP.NET MVC 5 с помощью единого входа Facebook и Google OAuth2](../security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md)
 - [Запрещенные и разрешенные действия в ASP.NET](../../../aspnet/overview/web-development-best-practices/what-not-to-do-in-aspnet-and-what-to-do-instead.md)
@@ -274,7 +274,7 @@ ms.locfileid: "77457158"
 
 <a id="mobile"></a>
 
-## <a name="mobile"></a>Мобильные службы
+## <a name="mobile"></a>Мобильные приложения
 
 - [Руководство по мобильным устройствам ASP.NET MVC 4](../older-versions/aspnet-mvc-4-mobile-features.md)
 - [Роли Создание веб-сайтов с поддержкой мобильных устройств с помощью MVC 4](https://www.bitcast.io/v/building-mobile-friendly-websites-with-mvc-4)
@@ -356,7 +356,7 @@ ms.locfileid: "77457158"
 
 <a id="general"></a>
 
-## <a name="general"></a>Общие
+## <a name="general"></a>Общие сведения
 
 - [Обновление ASP.NET MVC 4 и проекта веб-API до ASP.NET MVC 5 и веб-API 2](../releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2.md)
 - [Основные сведения о фильтрах и атрибутах MVC ASP.NET](http://www.dotnet-tricks.com/Tutorial/mvc/b11a280114-Understanding-ASP.NET-MVC-Filters-and-Attributes.html)

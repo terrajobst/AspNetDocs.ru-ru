@@ -1,6 +1,6 @@
 ---
 uid: ajax/cdn/cdnajax451
-title: Веб-форм ASP.NET и Ajax 4.5.1 | Документация Майкрософт
+title: ASP.NET Web Forms и AJAX 4.5.1 | Документация Майкрософт
 author: rick-anderson
 description: ''
 ms.author: riande
@@ -9,15 +9,15 @@ ms.assetid: d7ec655d-49b0-4968-af5e-3064616aff9a
 msc.legacyurl: /ajax/cdn/cdnajax451
 msc.type: content
 ms.openlocfilehash: a81abf2c57d1400a9c4b2f1d1febaddc9c569c6d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59414547"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78454176"
 ---
 # <a name="aspnet-web-forms-and-ajax-451"></a>Веб-формы ASP.NET и Ajax 4.5.1
 
-Следующие файлы размещаются в сети доставки Содержимого:
+Следующие файлы размещаются в сети CDN:
 
 - https://ajax.aspnetcdn.com/ajax/4.5.1/1/Date.HijriCalendar.debug.js
 - https://ajax.aspnetcdn.com/ajax/4.5.1/1/Date.HijriCalendar.js
@@ -56,6 +56,6 @@ ms.locfileid: "59414547"
 - https://ajax.aspnetcdn.com/ajax/4.5.1/1/WebParts.js
 - https://ajax.aspnetcdn.com/ajax/4.5.1/1/WebUIValidation.js
 
-Примечание. Сценарии глобализации, например, fr-FR.js, можно найти в следующей папке:
+Примечание. скрипты глобализации, такие как фр-фр. js, можно найти в следующей папке:
 
 - https://ajax.aspnetcdn.com/ajax/4.5.1/1/globalization/

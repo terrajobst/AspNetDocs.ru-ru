@@ -1,6 +1,6 @@
 ---
 uid: ajax/cdn/cdnajax4
-title: Веб-форм ASP.NET и Ajax 4 | Документация Майкрософт
+title: Веб-формы ASP.NET и AJAX 4 | Документация Майкрософт
 author: rick-anderson
 description: ''
 ms.author: riande
@@ -9,15 +9,15 @@ ms.assetid: cced3924-251c-4c77-bef0-7992acbac106
 msc.legacyurl: /ajax/cdn/cdnajax4
 msc.type: content
 ms.openlocfilehash: dc47b025803dad8e404ef8fa3558902ff0dcbec6
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59419955"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78454170"
 ---
 # <a name="aspnet-web-forms-and-ajax-4"></a>Веб-формы ASP.NET и Ajax 4
 
-Следующие файлы размещаются в сети доставки Содержимого:
+Следующие файлы размещаются в сети CDN:
 
 - https://ajax.aspnetcdn.com/ajax/4.0/1/Date.HijriCalendar.debug.js
 - https://ajax.aspnetcdn.com/ajax/4.0/1/Date.HijriCalendar.js
@@ -56,6 +56,6 @@ ms.locfileid: "59419955"
 - https://ajax.aspnetcdn.com/ajax/4.0/1/WebParts.js
 - https://ajax.aspnetcdn.com/ajax/4.0/1/WebUIValidation.js
 
-Примечание. Сценарии глобализации, например, fr-FR.js, можно найти в следующей папке:
+Примечание. скрипты глобализации, такие как фр-фр. js, можно найти в следующей папке:
 
 - https://ajax.aspnetcdn.com/ajax/4.0/1/globalization/

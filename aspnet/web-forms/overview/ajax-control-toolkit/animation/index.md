@@ -2,22 +2,22 @@
 uid: web-forms/overview/ajax-control-toolkit/animation/index
 title: Анимация | Документация Майкрософт
 author: rick-anderson
-description: Этом руководстве показано, как создание анимации с помощью элемента управления анимации и платформой анимации.
+description: В этом учебнике показано, как создавать анимации с помощью элемента управления анимации и платформы анимации.
 ms.author: riande
 ms.date: 11/11/2011
 ms.assetid: 90b3a37e-2694-41c4-8b10-d6893b53a9d4
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/animation
 msc.type: chapter
 ms.openlocfilehash: 1c0d8eac0314d989afecc5dcbd149f265a022bb6
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65127358"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78497778"
 ---
 # <a name="animation"></a>Анимация
 
-> Этом руководстве показано, как создание анимации с помощью элемента управления анимации и платформой анимации.
+> В этом учебнике показано, как создавать анимации с помощью элемента управления анимации и платформы анимации.
 
 - [Добавление анимации в элемент управления (C#)](adding-animation-to-a-control-cs.md)
 - [Выполнение нескольких анимаций одновременно (C#)](executing-several-animations-at-the-same-time-cs.md)

@@ -1,24 +1,24 @@
 ---
 uid: web-forms/videos/how-do-i/how-to-install-asp-net-and-tools
-title: Установка ASP.netи средств | Документация Майкрософт
+title: Установка ASP.NET и средств | Документация Майкрософт
 author: shanselman
-description: Корпорации Майкрософт (Scott hanselman) показано, как загрузить и установить ASP.NET и средства, поэтому вы можете начать разработку веб-приложений.
+description: Скотт Hanselman корпорации Майкрософт показывает, как загрузить и установить ASP.NET и средства, чтобы приступить к разработке веб-приложений.
 ms.author: riande
 ms.date: 11/10/2011
 ms.assetid: 84007aa5-4f60-4417-9cc0-44cb8b7b9323
 msc.legacyurl: /web-forms/videos/how-do-i/how-to-install-asp-net-and-tools
 msc.type: video
 ms.openlocfilehash: d56f97375357d823176f65136d04cd3a47d46994
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59404714"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78514434"
 ---
-# <a name="how-to-install-aspnet-and-tools"></a>Установка ASP.netи средств
+# <a name="how-to-install-aspnet-and-tools"></a>Установка ASP.NET и средств
 
-по [(Scott hanselman)](https://github.com/shanselman)
+по [Скотт Hanselman](https://github.com/shanselman)
 
-Корпорации Майкрософт (Scott hanselman) показано, как загрузить и установить ASP.NET и средства, поэтому вы можете начать разработку веб-приложений.
+Скотт Hanselman корпорации Майкрософт показывает, как загрузить и установить ASP.NET и средства, чтобы приступить к разработке веб-приложений.
 
-[&#9654;Просмотрите видео (3 мин.)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-install-asp-net-and-tools)
+[&#9654;Смотреть видео (3 минуты)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/how-to-install-asp-net-and-tools)

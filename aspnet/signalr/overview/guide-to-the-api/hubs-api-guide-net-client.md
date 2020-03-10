@@ -9,11 +9,11 @@ ms.assetid: 6d02d9f7-94e5-4140-9f51-5a6040f274f6
 msc.legacyurl: /signalr/overview/guide-to-the-api/hubs-api-guide-net-client
 msc.type: authoredcontent
 ms.openlocfilehash: d3536f1c15cd7dad7cd660becf0577e5c131f707
-ms.sourcegitcommit: 295cf898a4c87e264b0c35c7254b0fa4169f2278
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74057009"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78467406"
 ---
 # <a name="aspnet-signalr-hubs-api-guide---net-client-c"></a>Путеводитель по API концентраторов SignalR ASP.NET — клиент .NETC#()
 
@@ -85,7 +85,7 @@ ms.locfileid: "74057009"
 
 <a id="clientsetup"></a>
 
-## <a name="client-setup"></a>Установка клиента
+## <a name="client-setup"></a>Настройка клиента
 
 Установите пакет NuGet [Microsoft. ASPNET. SignalR. Client](http://nuget.org/packages/Microsoft.AspNet.SignalR.Client) (не пакет [Microsoft. ASPNET. SignalR](http://nuget.org/packages/microsoft.aspnet.signalr) ). Этот пакет поддерживает клиентские приложения WinRT, Silverlight, WPF, консольное приложение и Windows Phone для .NET 4 и .NET 4,5.
 
@@ -189,7 +189,7 @@ ms.locfileid: "74057009"
 
 ## <a name="how-to-create-the-hub-proxy"></a>Создание прокси-сервера концентратора
 
-Чтобы определить методы на клиенте, которые концентратор может вызывать с сервера, и вызывать методы в концентраторе на сервере, создайте прокси-сервер для концентратора, вызвав `CreateHubProxy` для объекта Connection. Строка, которую вы передаете `CreateHubProxy`, является именем класса концентратора или именем, заданным атрибутом `HubName`, если он использовался на сервере. Сопоставление имен не учитывает регистр.
+Чтобы определить методы на клиенте, которые концентратор может вызывать с сервера, и вызывать методы в концентраторе на сервере, создайте прокси-сервер для концентратора, вызвав `CreateHubProxy` для объекта Connection. Строка, которую вы передаете `CreateHubProxy`, является именем класса концентратора или именем, заданным атрибутом `HubName`, если он использовался на сервере. Сопоставление имен не зависит от регистра.
 
 **Класс Hub на сервере**
 

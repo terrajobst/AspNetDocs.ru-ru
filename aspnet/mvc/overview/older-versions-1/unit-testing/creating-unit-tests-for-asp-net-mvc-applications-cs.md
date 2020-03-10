@@ -9,17 +9,17 @@ ms.assetid: d3a270b9-d7b1-47f2-8775-fc3beb518b5c
 msc.legacyurl: /mvc/overview/older-versions-1/unit-testing/creating-unit-tests-for-asp-net-mvc-applications-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 35fd0d85c63e5bd196394ce11b851c822a6405d9
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74595260"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78506094"
 ---
 # <a name="creating-unit-tests-for-aspnet-mvc-applications-c"></a>Создание модульных тестов для приложений ASP.NET MVC (C#)
 
 по [Стивен Вальтер](https://github.com/StephenWalther)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/8/4/8/84843d8d-1575-426c-bcb5-9d0c42e51416/ASPNET_MVC_Tutorial_07_CS.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/8/4/8/84843d8d-1575-426c-bcb5-9d0c42e51416/ASPNET_MVC_Tutorial_07_CS.pdf)
 
 > Узнайте, как создавать модульные тесты для действий контроллера. В этом руководстве Стивен Вальтер демонстрирует, как проверить, возвращает ли действие контроллера определенное представление, возвращает определенный набор данных или возвращает другой тип результата действия.
 
@@ -112,4 +112,4 @@ ms.locfileid: "74595260"
 Наконец, мы рассмотрели, как можно проверить, возвращаются ли различные типы результатов действий из действия контроллера. Вы узнали, как проверить, возвращает ли контроллер `ViewResult` или `RedirectToRouteResult`.
 
 > [!div class="step-by-step"]
-> [Вперед](creating-unit-tests-for-asp-net-mvc-applications-vb.md)
+> [Дальше](creating-unit-tests-for-asp-net-mvc-applications-vb.md)

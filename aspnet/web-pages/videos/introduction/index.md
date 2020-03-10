@@ -1,26 +1,26 @@
 ---
 uid: web-pages/videos/introduction/index
-title: Введение в веб-страниц видео | Документация Майкрософт
+title: Общие сведения о веб-страницах видео | Документация Майкрософт
 author: rick-anderson
-description: Какие видео, вы можете просмотреть дополнительные основные сведения о Web Pages и WebMatrix.
+description: Видеоролики, которые можно просмотреть, чтобы изучить основные сведения о веб-страницах и WebMatrix.
 ms.author: riande
 ms.date: 05/18/2012
 ms.assetid: b8a43660-177f-4a00-bb51-be887364c607
 msc.legacyurl: /web-pages/videos/introduction
 msc.type: chapter
 ms.openlocfilehash: e4e9d63ddc701205d9f102e05fe47dd2c552bdf1
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65127737"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78512736"
 ---
-# <a name="introduction-to-web-pages-videos"></a>Введение в веб-страниц видео
+# <a name="introduction-to-web-pages-videos"></a>Введение в видео о веб-страницах
 
-> Какие видео, вы можете просмотреть дополнительные основные сведения о Web Pages и WebMatrix.
+> Видеоролики, которые можно просмотреть, чтобы изучить основные сведения о веб-страницах и WebMatrix.
 
 > [!NOTE] 
-> WebMatrix не рекомендуется использовать как интегрированную среду разработки для веб-страниц ASP.NET. Используйте [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) или [Visual Studio Code](https://code.visualstudio.com/).
+> WebMatrix больше не рекомендуется использовать в качестве интегрированной среды разработки для веб-страницы ASP.NET. Используйте [Visual Studio](xref:aspnet/web-pages/overview/getting-started/program-asp-net-web-pages-in-visual-studio) или [Visual Studio Code](https://code.visualstudio.com/).
 
 - [Краткое введение в веб-страницы ASP.NET](5-minute-introduction-to-aspnet-web-pages.md)
 - [Установка и использование средства Microsoft WebMatrix](install-and-use-the-microsoft-webmatrix-tool.md)

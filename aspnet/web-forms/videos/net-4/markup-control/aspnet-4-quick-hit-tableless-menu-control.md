@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/net-4/markup-control/aspnet-4-quick-hit-tableless-menu-control
-title: Бестабличный элемент управления Menu | Документация Майкрософт
+title: Нетабличный элемент управления Menu | Документация Майкрософт
 author: JoeStagner
-description: В этом видео вы увидите, как элемент управления ASP.NET Menu отрисовывает HTML с использованием семантической разметки, состоящий из неупорядоченный список и список элементов
+description: В этом видеоролике будет показано, как элемент управления Menu ASP.NET визуализирует HTML с помощью семантической разметки, состоящей из неупорядоченного списка и элементов списка.
 ms.author: riande
 ms.date: 11/16/2009
 ms.assetid: 5eabcaab-5f95-4052-9a92-f5cf332b35a5
 msc.legacyurl: /web-forms/videos/net-4/markup-control/aspnet-4-quick-hit-tableless-menu-control
 msc.type: video
 ms.openlocfilehash: 39e566a431d0e6382954c2cc2773451d20bc382b
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59402782"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78517410"
 ---
-# <a name="aspnet-4-quick-hit--tableless-menu-control"></a>ASP.NET 4 «Быстрый Hit» — Бестабличный элемент управления Menu
+# <a name="aspnet-4-quick-hit--tableless-menu-control"></a>ASP.NET 4 "быстрый попадание" — элемент управления Menu в виде таблицы
 
-по [(Joe Stagner)](https://github.com/JoeStagner)
+кем [Джо Stagner)](https://github.com/JoeStagner)
 
-В этом видео вы увидите, как элемент управления ASP.NET Menu отрисовывает HTML с использованием семантической разметки, состоящий из неупорядоченный список и список элементов 
+В этом видеоролике будет показано, как элемент управления Menu ASP.NET визуализирует HTML с помощью семантической разметки, состоящей из неупорядоченного списка и элементов списка. 
 
-[&#9654;Просмотрите видео (5 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-4-quick-hit-tableless-menu-control)
+[&#9654;Смотреть видео (5 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-4-quick-hit-tableless-menu-control)
 
 > [!div class="step-by-step"]
 > [Назад](aspnet-4-quick-hit-table-free-templated-controls.md)

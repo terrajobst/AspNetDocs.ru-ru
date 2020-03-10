@@ -9,17 +9,17 @@ ms.assetid: e454c67d-a86e-4119-a858-eb04bbec2dff
 msc.legacyurl: /mvc/overview/older-versions-1/views/creating-custom-html-helpers-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 264ff9850bad397826b45649d52fbfefafc53a01
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74594543"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78485790"
 ---
 # <a name="creating-custom-html-helpers-c"></a>Создание настраиваемых вспомогательных методов HTML (C#)
 
 по [Майкрософт](https://github.com/microsoft)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/1/1/f/11f721aa-d749-4ed7-bb89-a681b68894e6/ASPNET_MVC_Tutorial_9_CS.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/1/1/f/11f721aa-d749-4ed7-bb89-a681b68894e6/ASPNET_MVC_Tutorial_9_CS.pdf)
 
 > Цель этого руководства — показать, как можно создавать пользовательские вспомогательные методы HTML, которые можно использовать в представлениях MVC. Благодаря преимуществам вспомогательных функций HTML можно уменьшить объем утомительного ввода тегов HTML, которые необходимо выполнить для создания стандартной HTML-страницы.
 
@@ -42,8 +42,8 @@ ms.locfileid: "74594543"
 - HTML. ListBox ()
 - HTML. Password ()
 - HTML. RadioButton ()
-- HTML. TextArea ()
-- HTML. TextBox ()
+- Html.TextArea()
+- Html.TextBox()
 
 Например, рассмотрим форму в листинге 1. Эта форма отображается с помощью двух стандартных вспомогательных функций HTML (см. рис. 1). В этой форме для визуализации простой HTML-формы используются вспомогательные методы `Html.BeginForm()` и `Html.TextBox()`.
 

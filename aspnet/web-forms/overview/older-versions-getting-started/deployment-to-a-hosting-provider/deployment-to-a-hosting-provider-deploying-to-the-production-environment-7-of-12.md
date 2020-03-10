@@ -9,11 +9,11 @@ ms.assetid: b83ab819-2b05-4776-b7b4-79ef78d457a5
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: db838633accdedd7c0693b126a007e254ca681e4
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74627226"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78458172"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-to-the-production-environment---7-of-12"></a>Развертывание веб-приложения ASP.NET с SQL Server Compact с помощью Visual Studio или Visual Web Developer: развертывание в рабочей среде — 7 из 12
 
@@ -99,7 +99,7 @@ ms.locfileid: "74627226"
 
 ![Вкладка веб-публикация панели управления](deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12/_static/image21.png)
 
-Создайте учетные данные, используемые для веб-публикации, введя имя пользователя и пароль. Вы можете ввести те же учетные данные, которые используются для входа в систему на панели управления. Затем нажмите кнопку **включить**.
+Создайте учетные данные, используемые для веб-публикации, введя имя пользователя и пароль. Вы можете ввести те же учетные данные, которые используются для входа в систему на панели управления. Затем щелкните **Включить**.
 
 ![Панель управления "Создание учетных данных публикации"](deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12/_static/image22.png)
 
@@ -129,7 +129,7 @@ ms.locfileid: "74627226"
 
 ![Ошибка сертификата](deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12/_static/image27.png)
 
-Нажмите кнопку **Далее**.
+Щелкните **Далее**.
 
 В разделе **базы данных** на вкладке **Параметры** введите те же значения, которые были введены для профиля тестовой публикации. Нужные строки подключения можно найти в раскрывающихся списках.
 
@@ -140,7 +140,7 @@ ms.locfileid: "74627226"
 
 ![Вкладка параметров мастера публикации веб-сайта](deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12/_static/image28.png)
 
-Нажмите кнопку **Далее**.
+Щелкните **Далее**.
 
 На вкладке **Предварительный просмотр** нажмите кнопку **начать предварительный просмотр** , чтобы просмотреть список файлов, которые будут скопированы. Вы увидите тот же список, который вы видели ранее при развертывании служб IIS на локальном компьютере.
 
@@ -152,7 +152,7 @@ ms.locfileid: "74627226"
 
 ![Диалоговое окно «изменение профилей веб-публикации»](deployment-to-a-hosting-provider-deploying-to-the-production-environment-7-of-12/_static/image30.png)
 
-Нажмите кнопку **Опубликовать**.
+Щелкните **Опубликовать**.
 
 Приложение публикуется в поставщике услуг размещения. Результат отображается в окне **вывод** .
 

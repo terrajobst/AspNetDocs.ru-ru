@@ -9,11 +9,11 @@ ms.assetid: 14133833-e518-4347-87b9-6b6f71f14a77
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/dropshadow/adjusting-the-z-index-of-a-dropshadow-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 12bc7f0430f1f30ff964cd9547ee1e9b0aa7423c
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74574306"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78497484"
 ---
 # <a name="adjusting-the-z-index-of-a-dropshadow-c"></a>Настройка Z-индекса DropShadow (C#)
 
@@ -63,4 +63,4 @@ ms.locfileid: "74574306"
 После: появится запись меню ([щелкните, чтобы просмотреть изображение с полным размером](adjusting-the-z-index-of-a-dropshadow-cs/_static/image6.png)).
 
 > [!div class="step-by-step"]
-> [Вперед](manipulating-dropshadow-properties-from-client-code-cs.md)
+> [Дальше](manipulating-dropshadow-properties-from-client-code-cs.md)

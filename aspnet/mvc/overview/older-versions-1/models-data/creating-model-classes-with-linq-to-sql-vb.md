@@ -9,17 +9,17 @@ ms.assetid: a4a25a75-d71f-4509-98b4-df72e748985a
 msc.legacyurl: /mvc/overview/older-versions-1/models-data/creating-model-classes-with-linq-to-sql-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 88a5f1037d93ef3bdc95bf60b6005ebb254ab440
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74588623"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78469530"
 ---
 # <a name="creating-model-classes-with-linq-to-sql-vb"></a>Создание классов модели в LINQ to SQL (VB)
 
 по [Майкрософт](https://github.com/microsoft)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/1/1/f/11f721aa-d749-4ed7-bb89-a681b68894e6/ASPNET_MVC_Tutorial_10_VB.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/1/1/f/11f721aa-d749-4ed7-bb89-a681b68894e6/ASPNET_MVC_Tutorial_10_VB.pdf)
 
 > Цель этого руководства — объяснить один метод создания классов моделей для приложения ASP.NET MVC. В этом руководстве вы узнаете, как создавать классы модели и выполнять доступ к базе данных, используя преимущества Microsoft LINQ to SQL.
 
@@ -65,9 +65,9 @@ ms.locfileid: "74588623"
 
 | **Имя столбца** | **Тип данных** | **Разрешить значения NULL** |
 | --- | --- | --- |
-| Id | Int | False |
-| Заголовок | Nvarchar (200) | False |
-| Программу | Nvarchar (50) | False |
+| Идентификатор | Int | False |
+| Title | Nvarchar (200) | False |
+| Директор | Nvarchar (50) | False |
 
 Необходимо выполнить два специальных действия в столбце ID. Сначала необходимо пометить столбец ID как первичный ключевой столбец, выбрав столбец в конструктор таблиц и щелкнув значок ключа. LINQ to SQL требует указать столбцы первичного ключа при выполнении операций вставки или обновления базы данных.
 

@@ -9,11 +9,11 @@ ms.assetid: fd2a1c52-d717-44af-8a61-67c8279bb26e
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/filteredtextbox/allowing-only-certain-characters-in-a-text-box-cs
 msc.type: authoredcontent
 ms.openlocfilehash: d1e367becd574e31d24fca8545f76b1ed3c4d85e
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74611747"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78446358"
 ---
 # <a name="allowing-only-certain-characters-in-a-text-box-c"></a>Разрешение только некоторых символов в текстовом поле (C#)
 
@@ -59,4 +59,4 @@ ms.locfileid: "74611747"
 Можно указать только цифры ([щелкните, чтобы просмотреть изображение с полным размером](allowing-only-certain-characters-in-a-text-box-cs/_static/image3.png))
 
 > [!div class="step-by-step"]
-> [Вперед](allowing-only-certain-characters-in-a-text-box-vb.md)
+> [Дальше](allowing-only-certain-characters-in-a-text-box-vb.md)

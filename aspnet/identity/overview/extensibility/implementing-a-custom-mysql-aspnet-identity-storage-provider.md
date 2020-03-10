@@ -10,11 +10,11 @@ ms.custom: seoapril2019
 msc.legacyurl: /identity/overview/extensibility/implementing-a-custom-mysql-aspnet-identity-storage-provider
 msc.type: authoredcontent
 ms.openlocfilehash: 2f0b47d45bce82c71d1864536309f9e2ffed2d63
-ms.sourcegitcommit: 88fc80e3f65aebdf61ec9414810ddbc31c543f04
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76519132"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78500070"
 ---
 # <a name="implementing-a-custom-mysql-aspnet-identity-storage-provider"></a>Реализация пользовательского поставщика хранилища для поставщика хранилища MySQL в ASP.NET
 
@@ -40,12 +40,12 @@ ms.locfileid: "76519132"
 
 ## <a name="the-steps-you-will-perform"></a>Действия, которые вы будете выполнять
 
-В этом руководстве вы:
+Изучив данный учебник, вы научитесь:
 
 1. Создание базы данных MySQL в Azure
 2. Создание ASP.NET Identity таблиц в MySQL
 3. Создание приложения MVC и его настройка для использования поставщика MySQL
-4. Запуск приложения
+4. Запустите приложение
 
 В этом разделе не рассматривается архитектура ASP.NET Identity и решений, которые необходимо принять при реализации поставщика хранилища клиента. Дополнительные сведения см. в разделе [Обзор пользовательских поставщиков хранилища для ASP.NET Identity](overview-of-custom-storage-providers-for-aspnet-identity.md).
 
@@ -53,7 +53,7 @@ ms.locfileid: "76519132"
 
 Прежде чем начать процедуру создания поставщика хранилища MySQL, рассмотрим классы, составляющие поставщик хранилища. Вам понадобятся классы, управляющие операциями с базами данных и классами, которые вызываются из приложения для управления пользователями и ролями.
 
-### <a name="storage-classes"></a>Классы хранения
+### <a name="storage-classes"></a>Классы хранилищ
 
 - [Идентитюсер](https://github.com/aspnet/samples/blob/master/samples/aspnet/Identity/AspNet.Identity.MySQL/IdentityUser.cs) — содержит свойства для пользователя.
 - [UserStore](https://github.com/aspnet/samples/blob/master/samples/aspnet/Identity/AspNet.Identity.MySQL/UserStore.cs) — содержит операции по добавлению, обновлению или извлечению пользователей.
@@ -121,7 +121,7 @@ ms.locfileid: "76519132"
 5. Щелкните правой кнопкой мыши проект Идентитимисклдемо, выберите **Добавить**, **ссылка, решение, проекты,** выберите проект AspNet. Identity. MySQL и нажмите кнопку **ОК**.
 6. В проекте Идентитимисклдемо замените все ссылки на  
     `using Microsoft.AspNet.Identity.EntityFramework;`  
-   С  
+   на  
      `using AspNet.Identity.MySQL;`
 7. В IdentityModels.cs задайте **ApplicationDbContext** как производный от **мисклдатабасе** и включите конструктор, принимающий один параметр с именем соединения.  
 
@@ -148,7 +148,7 @@ ms.locfileid: "76519132"
   
     ![](implementing-a-custom-mysql-aspnet-identity-storage-provider/_static/image10.png)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Next Steps
 
 Дополнительные сведения о том, как включить другие методы проверки подлинности в этом приложении, см. в статье [Создание приложения ASP.NET MVC 5 с помощью Facebook и Google OAuth2 и OpenID Connect входа](../../../mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on.md).
 

@@ -9,11 +9,11 @@ ms.assetid: d62c3a63-0940-4019-874e-4a4047df0c1c
 msc.legacyurl: /web-forms/overview/data-access/basic-reporting/displaying-data-with-the-objectdatasource-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 754188352cbfb08e610027f5b7890a32bd88ae26
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74609560"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78483054"
 ---
 # <a name="displaying-data-with-the-objectdatasource-vb"></a>Отображение данных с помощью элемента управления ObjectDataSource (VB)
 
@@ -140,7 +140,7 @@ ASP.NET 2,0 поставляется с пятью встроенными эле
 
 [!code-xml[Main](displaying-data-with-the-objectdatasource-vb/samples/sample5.xml)]
 
-Вот и все! Параметр `styleSheetTheme` указывает, что свойства, заданные в теме, *не* должны переопределять свойства, заданные на уровне элемента управления. Чтобы указать, что параметры темы должны закозырить параметры управления, вместо `styleSheetTheme`используйте `theme` атрибут. к сожалению, параметры темы не отображаются в представление конструирования Visual Studio. Дополнительные сведения о темах и обложках см. в разделе [Общие сведения о темах и обложках ASP.NET](https://msdn.microsoft.com/library/ykzx33wh.aspx) и [стили на стороне сервера с помощью тем](https://quickstarts.asp.net/quickstartv20/aspnet/doc/themes/stylesheettheme.aspx) . Дополнительные сведения о настройке страницы для использования темы см. [в разделе Практические руководства. применение ASP.NET тем](https://msdn.microsoft.com/library/0yy5hxdk%28VS.80%29.aspx) .
+Это все. Параметр `styleSheetTheme` указывает, что свойства, заданные в теме, *не* должны переопределять свойства, заданные на уровне элемента управления. Чтобы указать, что параметры темы должны закозырить параметры управления, вместо `styleSheetTheme`используйте `theme` атрибут. к сожалению, параметры темы не отображаются в представление конструирования Visual Studio. Дополнительные сведения о темах и обложках см. в разделе [Общие сведения о темах и обложках ASP.NET](https://msdn.microsoft.com/library/ykzx33wh.aspx) и [стили на стороне сервера с помощью тем](https://quickstarts.asp.net/quickstartv20/aspnet/doc/themes/stylesheettheme.aspx) . Дополнительные сведения о настройке страницы для использования темы см. [в разделе Практические руководства. применение ASP.NET тем](https://msdn.microsoft.com/library/0yy5hxdk%28VS.80%29.aspx) .
 
 [![элементе GridView отображаются название продукта, категория, поставщик, Цена и неподдерживаемые сведения.](displaying-data-with-the-objectdatasource-vb/_static/image31.png)](displaying-data-with-the-objectdatasource-vb/_static/image30.png)
 
@@ -206,7 +206,7 @@ ASP.NET 2,0 поставляется с пятью встроенными эле
 
 Поздравляем с программированием!
 
-## <a name="further-reading"></a>Дополнительные сведения
+## <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

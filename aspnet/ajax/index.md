@@ -1,22 +1,22 @@
 ---
 uid: ajax/index
-title: 'ASP.NET Ajax: Расширенный интерактивности и скорости ответа | Документация Майкрософт'
+title: 'ASP.NET AJAX: расширенные возможности взаимодействия и реагирования | Документация Майкрософт'
 author: rick-anderson
-description: Добавление функций Ajax в приложениях ASP.NET с помощью jQuery и Ajax Control Toolkit. Повысить производительность приложений Ajax с помощью Micro...
+description: Добавление функциональных возможностей AJAX в приложения ASP.NET с помощью jQuery или набора средств AJAX Control Toolkit. Повысьте производительность приложений AJAX с помощью Micro...
 ms.author: riande
 ms.date: 12/15/2009
 ms.assetid: 42b0bd66-bf2f-4993-8b5a-bac3028201fc
 msc.legacyurl: /ajax
 msc.type: content
 ms.openlocfilehash: 43c0593e7e2f8dd8db1a89f57bcaa5dbae2ae00d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59420865"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78472716"
 ---
-# <a name="aspnet-ajax--enhanced-interactivity-and-responsiveness"></a>ASP.NET Ajax: Улучшенные интерактивности и скорости ответа
+# <a name="aspnet-ajax--enhanced-interactivity-and-responsiveness"></a>ASP.NET AJAX: расширенные возможности взаимодействия и реагирования
 
-- [AJAX Control Toolkit](https://go.devexpress.com/AjaxControlToolkit_ASP_Resources_ASP_AJAX_Index.aspx)
+- [Набор элементов управления AJAX](https://go.devexpress.com/AjaxControlToolkit_ASP_Resources_ASP_AJAX_Index.aspx)
 - [jQuery](http://jquery.com/)
-- [Microsoft Ajax CDN](cdn/overview.md)
+- [Сеть CDN Microsoft AJAX](cdn/overview.md)

@@ -9,21 +9,21 @@ ms.assetid: 07978d9d-341c-4524-bcba-62976f390f77
 msc.legacyurl: /web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file
 msc.type: authoredcontent
 ms.openlocfilehash: 419fe51aaf65bddcc2c50380f099f842a8d9439c
-ms.sourcegitcommit: 84b1681d4e6253e30468c8df8a09fe03beea9309
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445695"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78508056"
 ---
 # <a name="understanding-the-project-file"></a>Основные сведения о файле проекта
 
 кто [Джейсон Иванов](https://github.com/jrjlee)
 
-[Загрузить PDF-файл](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
+[Скачать в формате PDF](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/63/56/8130.DeployingWebAppsInEnterpriseScenarios.pdf)
 
 > Файлы проекта Microsoft Build Engine (MSBuild) находятся в сердце процесса сборки и развертывания. Этот раздел начинается с концептуального обзора MSBuild и файла проекта. В нем описываются ключевые компоненты, которые вы будете использовать при работе с файлами проекта, и работает пример использования файлов проекта для развертывания реальных приложений.
 > 
-> Что вы узнаете:
+> Из этого руководства вы узнаете, как выполнять такие задачи:
 > 
 > - Как MSBuild использует файлы проекта MSBuild для построения проектов.
 > - Интеграция MSBuild с технологиями развертывания, такими как средство веб-развертывания службы IIS (IIS) (веб-развертывание).
@@ -130,7 +130,7 @@ ms.locfileid: "73445695"
 
 ### <a name="targets-and-tasks"></a>Целевые объекты и задачи
 
-В схеме MSBuild элемент [Task](https://msdn.microsoft.com/library/77f2hx1s.aspx) представляет отдельную инструкцию сборки (или задачу). В состав MSBuild входит множество стандартных задач. Например:
+В схеме MSBuild элемент [Task](https://msdn.microsoft.com/library/77f2hx1s.aspx) представляет отдельную инструкцию сборки (или задачу). В состав MSBuild входит множество стандартных задач. Пример:
 
 - Задача **копирования** копирует файлы в новое расположение.
 - Задача **Csc** вызывает компилятор Visual C# .
@@ -219,7 +219,7 @@ ms.locfileid: "73445695"
 
 Следующий раздел, посвященный [процессу сборки](understanding-the-build-process.md), предоставляет более подробные сведения о том, как можно использовать файлы проекта для управления построением и развертыванием путем пошагового развертывания решения с реалистичным уровнем сложности.
 
-## <a name="further-reading"></a>Дополнительные сведения
+## <a name="further-reading"></a>Дополнительные материалы
 
 Более подробные сведения о файлах проекта и конвейере WPP см. в разделе [Microsoft Build Engine: использование MSBuild и Team Foundation Build](http://amzn.com/0735645248) by Саид Ибрагим Хашими and Уильям БАРСОЛОМЕВ, ISBN: 978-0-7356-4524-0.
 

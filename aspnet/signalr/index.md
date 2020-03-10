@@ -2,18 +2,18 @@
 uid: signalr/index
 title: SignalR | Документация Майкрософт
 author: bradygaster
-description: Microsoft ASP.NET SignalR представляет собой библиотеку для разработчиков ASP.NET, которая упрощает процесс добавления в режиме реального времени веб-функций в приложения.
+description: Microsoft ASP.NET SignalR — это библиотека для разработчиков ASP.NET, которая упрощает процесс добавления веб-функций в режиме реального времени в приложения.
 ms.author: bradyg
 ms.date: 10/24/2012
 ms.assetid: 282a521f-2b86-4fac-bcf6-b6d5e0fe969c
 msc.legacyurl: /signalr
 msc.type: categoryindex
 ms.openlocfilehash: fa489c79e175753635d89913aaaa15a832aa16f7
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59407592"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78450300"
 ---
 # <a name="signalr"></a>SignalR
 
@@ -25,9 +25,9 @@ ms.locfileid: "59407592"
         - [Поддерживаемые платформы](overview/getting-started/supported-platforms.md)
         - [Учебник. Начало работы с SignalR 2](overview/getting-started/tutorial-getting-started-with-signalr.md)
         - [Учебник. Начало работы с SignalR 2 и MVC 5](overview/getting-started/tutorial-getting-started-with-signalr-and-mvc.md)
-        - [Учебник. Высокочастотный в реальном времени с SignalR 2](overview/getting-started/tutorial-high-frequency-realtime-with-signalr.md)
+        - [Учебник.Обмен сообщениями с высоким уровнем периодичности в режиме реального времени с помощью SignalR 2](overview/getting-started/tutorial-high-frequency-realtime-with-signalr.md)
         - [Учебник. Передача сообщений с сервера с помощью SignalR 2](overview/getting-started/tutorial-server-broadcast-with-signalr.md)
-        - [Практическое лабораторное занятие. В режиме реального времени веб-приложений с помощью SignalR](overview/getting-started/real-time-web-applications-with-signalr.md)
+        - [Практическое лабораторное занятие. Веб-приложения в режиме реального времени с SignalR](overview/getting-started/real-time-web-applications-with-signalr.md)
     - [Руководство по API](overview/guide-to-the-api/index.md)
 
         - [Руководство по API концентраторов — сервер (C#)](overview/guide-to-the-api/hubs-api-guide-server.md)
@@ -70,7 +70,7 @@ ms.locfileid: "59407592"
         - [Учебник. Начало работы с SignalR 1.x](overview/older-versions/tutorial-getting-started-with-signalr.md)
         - [Учебник. Начало работы с SignalR 1.x и MVC 4](overview/older-versions/tutorial-getting-started-with-signalr-and-mvc-4.md)
         - [Обмен сообщениями с высоким уровнем периодичности в режиме реального времени с помощью SignalR 1.x](overview/older-versions/tutorial-high-frequency-realtime-with-signalr.md)
-        - [Учебник. Передача сообщений с сервера с помощью SignalR 1.x](overview/older-versions/tutorial-server-broadcast-with-aspnet-signalr.md)
+        - [Передача сообщений с сервера с помощью SignalR 1.x](overview/older-versions/tutorial-server-broadcast-with-aspnet-signalr.md)
         - [Руководство по API концентраторов — сервер](overview/older-versions/signalr-1x-hubs-api-guide-server.md)
         - [Руководство по API концентраторов SignalR 1.x — клиент JavaScript](overview/older-versions/signalr-1x-hubs-api-guide-javascript-client.md)
         - [Руководство по API концентраторов — клиент .NET](overview/older-versions/signalr-1x-hubs-api-guide-net-client.md)
@@ -87,7 +87,7 @@ ms.locfileid: "59407592"
         - [Масштабирование SignalR с помощью SQL Server (SignalR 1.x)](overview/older-versions/scaleout-with-sql-server.md)
         - [Устранение неполадок SignalR (SignalR 1.x)](overview/older-versions/troubleshooting.md)
         - [Внедрение зависимостей в SignalR 1.x](overview/older-versions/dependency-injection.md)
-- [Видеоролики](videos/index.md)
+- [Видео](videos/index.md)
 
     - [Видеоролики по ASP.NET SignalR](videos/getting-started/index.md)
 

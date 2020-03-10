@@ -1,6 +1,6 @@
 ---
 uid: web-pages/overview/index
-title: Руководство по веб-страниц | Документация Майкрософт
+title: Руководство по веб-страницам | Документация Майкрософт
 author: rick-anderson
 description: ''
 ms.author: riande
@@ -9,13 +9,13 @@ ms.assetid: 1a2ed0e8-63da-4110-9896-e2731d86f7c4
 msc.legacyurl: /web-pages/overview
 msc.type: book
 ms.openlocfilehash: b4c9e9eb85f6ba9a1e2b2d0a1bbaf027ee25bc0d
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59381852"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520560"
 ---
-# <a name="web-pages-guidance"></a>Руководство по веб-страниц
+# <a name="web-pages-guidance"></a>Руководство по веб-страницам
 
 - [Начало работы](getting-started/index.md)
 
@@ -36,7 +36,7 @@ ms.locfileid: "59381852"
         - [Удаление данных базы данных](getting-started/introducing-aspnet-web-pages-2/deleting-data.md)
         - [Создание согласованного макета](getting-started/introducing-aspnet-web-pages-2/layouts.md)
         - [Публикация сайта с помощью WebMatrix](getting-started/introducing-aspnet-web-pages-2/publishing.md)
-- [Routing](routing/index.md)
+- [Маршрутизация](routing/index.md)
 
     - [Создание доступных для чтения URL-адресов на сайтах веб-страниц ASP.NET](routing/creating-readable-urls-in-aspnet-web-pages-sites.md)
 - [Пользовательский интерфейс, макеты и темы](ui-layouts-and-themes/index.md)
@@ -51,7 +51,7 @@ ms.locfileid: "59381852"
     - [Установка вспомогательного метода](ui-layouts-and-themes/installing-helpers.md)
     - [Добавление вспомогательного приложения Twitter с помощью веб-страниц ASP.NET](ui-layouts-and-themes/twitter-helper.md)
     - [Отображение карт на сайте веб-страниц ASP.NET](ui-layouts-and-themes/displaying-maps-in-an-aspnet-web-pages-site.md)
-- [Мобильные приложения](mobile/index.md)
+- [Mobile](mobile/index.md)
 
     - [Отрисовка сайтов веб-страниц ASP.NET для мобильных устройств](mobile/rendering-aspnet-web-pages-sites-for-mobile-devices.md)
 - [Работа с данными](data/index.md)
@@ -73,7 +73,7 @@ ms.locfileid: "59381852"
     - [Кэширование для повышения производительности веб-сайта](performance-and-traffic/15-caching-to-improve-the-performance-of-your-website.md)
     - [Анализ трафика](performance-and-traffic/14-analyzing-traffic.md)
     - [Объединение и минификация активов на сайте веб-страниц ASP.NET (Razor)](performance-and-traffic/bundling-and-minifying-assets-in-an-aspnet-web-pages-razor-site.md)
-- [Справочник по интерфейсам API](api-reference/index.md)
+- [Справочник по API](api-reference/index.md)
 
     - [Краткий справочник по API ASP.NET](api-reference/asp-net-web-pages-api-reference.md)
 - [Выпуски](releases/index.md)

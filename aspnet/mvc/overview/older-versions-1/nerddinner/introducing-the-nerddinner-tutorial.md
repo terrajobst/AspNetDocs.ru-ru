@@ -1,55 +1,55 @@
 ---
 uid: mvc/overview/older-versions-1/nerddinner/introducing-the-nerddinner-tutorial
-title: Введение в учебнике по NerdDinner | Документация Майкрософт
+title: Знакомство с руководством по NerdDinner | Документация Майкрософт
 author: shanselman
-description: — Это наилучший способ подробнее узнать это новая платформа для создания чего-то с ним. В этом учебнике описывается создание небольшой, но законченного приложения с помощью ASP.NE...
+description: Лучшим способом изучения новой платформы является создание чего-то с ней. В этом руководстве описано, как создать небольшое, но полное приложение, использующее ASP.NE...
 ms.author: riande
 ms.date: 07/27/2010
 ms.assetid: 397522d5-0402-4b94-b810-a2fb564f869d
 msc.legacyurl: /mvc/overview/older-versions-1/nerddinner/introducing-the-nerddinner-tutorial
 msc.type: authoredcontent
 ms.openlocfilehash: 154cfe6694cf723c0a1f8e33bfdb42c97594518f
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65122323"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78468936"
 ---
 # <a name="introducing-the-nerddinner-tutorial"></a>Общие сведения об учебнике по NerdDinner
 
-по [(Scott hanselman)](https://github.com/shanselman)
+по [Скотт Hanselman](https://github.com/shanselman)
 
-[Загрузить PDF-файл](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
+[Скачать в формате PDF](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf)
 
-> — Это наилучший способ подробнее узнать это новая платформа для создания чего-то с ним. Этом руководстве описано, как создать небольшой, но завершить приложение с помощью ASP.NET MVC 1 и рассматриваются некоторые основные принципы его.
+> Лучшим способом изучения новой платформы является создание чего-то с ней. В этом руководстве описано, как создать небольшое, но полное приложение, использующее ASP.NET MVC 1, и некоторые основные понятия, лежащие в основе ИТ.
 > 
-> Если вы используете ASP.NET MVC 3, рекомендуется следовать [Приступая к работе с MVC 3](../../older-versions/getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) или [MVC Music Store](../../older-versions/mvc-music-store/mvc-music-store-part-1.md) учебники.
+> Если вы используете ASP.NET MVC 3, мы рекомендуем следовать руководствам по [Начало работы в MVC 3 или в приложении для](../../older-versions/getting-started-with-aspnet-mvc3/cs/intro-to-aspnet-mvc-3.md) [музыкального магазина MVC](../../older-versions/mvc-music-store/mvc-music-store-part-1.md) .
 
-## <a name="nerddinner-tutorial"></a>Учебнике по NerdDinner
+## <a name="nerddinner-tutorial"></a>Руководство по NerdDinner
 
-— Это наилучший способ подробнее узнать это новая платформа для создания чего-то с ним. Этом руководстве описано, как создать небольшой, но завершить приложение с помощью ASP.NET MVC и рассматриваются некоторые основные принципы его.
+Лучшим способом изучения новой платформы является создание чего-то с ней. В этом руководстве описано, как создать небольшое, но полное приложение, использующее ASP.NET MVC, и некоторые основные понятия, лежащие в основе ИТ.
 
-Приложение, которое мы собираемся строить называется «NerdDinner». NerdDinner предоставляет простой способ для пользователей, для поиска и упорядочения ужинов через Интернет:
+Приложение, которое мы собираемся создавать, называется "NerdDinner". NerdDinner предоставляет пользователям простой способ поиска и организации диннерс в Интернете:
 
 ![](introducing-the-nerddinner-tutorial/_static/image1.png)
 
-Зарегистрированные пользователи могут создавать, изменять и удалять ужинов NerdDinner. Он содержит согласованный набор проверки и бизнес-правила для приложения:
+NerdDinner позволяет зарегистрированным пользователям создавать, изменять и удалять диннерс. Он обеспечивает согласованный набор проверок и бизнес-правил для приложения:
 
 ![](introducing-the-nerddinner-tutorial/_static/image2.png)
 
-Посетители можно использовать карты на основе AJAX, поиск предстоящих ужинов, удерживаемая рядом с ними:
+Посетители могут использовать карту на основе AJAX для поиска предстоящих диннерс рядом:
 
 ![](introducing-the-nerddinner-tutorial/_static/image3.png)
 
-Компании dinner ведет на страницу подробностей, где они могут узнать больше об этом:
+Щелкнув обед, вы перейдете на страницу сведений, где они могут получить дополнительные сведения о них:
 
 ![](introducing-the-nerddinner-tutorial/_static/image4.png)
 
-Если они интересуют посещение обед, они могут войти в систему или зарегистрируйтесь на сайте:
+Если вы заинтересованы в посещении компании Dinner, то можете войти на сайт или зарегистрироваться на нем:
 
 ![](introducing-the-nerddinner-tutorial/_static/image5.png)
 
-Они затем можно щелкнуть ссылку RSVP на основе AJAX, чтобы принять участие в конференции:
+Затем они могут щелкнуть ссылку RSVP на основе AJAX, чтобы посетить событие:
 
 ![](introducing-the-nerddinner-tutorial/_static/image6.png)
 
@@ -57,32 +57,32 @@ ms.locfileid: "65122323"
 
 ### <a name="implementing-nerddinner"></a>Реализация NerdDinner
 
-Мы хотим начать наше приложение NerdDinner с помощью файла -&gt;команду Новый проект в Visual Studio, чтобы создать новый проект ASP.NET MVC. Мы будем затем постепенно добавлять функциональность и возможности. Попутно мы обсудим:
+Мы начнем наше приложение NerdDinner, используя команду "файл-&gt;новый проект" в Visual Studio, чтобы создать новый проект ASP.NET MVC. Затем мы постепенно добавим функции и функции. Как мы будем охватывать:
 
-1. [Как создать новый проект ASP.NET MVC](create-a-new-aspnet-mvc-project.md)
+1. [Создание нового проекта MVC ASP.NET](create-a-new-aspnet-mvc-project.md)
 2. [Создание базы данных](create-a-database.md)
-3. [Как создать модель с проверками бизнес-правил](build-a-model-with-business-rule-validations.md)
-4. [Практическое использование контроллеров и представлений для реализации списка и сведений пользовательского интерфейса](use-controllers-and-views-to-implement-a-listingdetails-ui.md)
-5. [Как обеспечить CRUD (Создание, чтение, обновление и удаление) запись поддержки форм данных](provide-crud-create-read-update-delete-data-form-entry-support.md)
+3. [Создание модели с проверками бизнес-правил](build-a-model-with-business-rule-validations.md)
+4. [Использование контроллеров и представлений для реализации пользовательского интерфейса листинга и подробностей](use-controllers-and-views-to-implement-a-listingdetails-ui.md)
+5. [Как обеспечить поддержку записи формы для CRUD (создание, чтение, обновление, удаление) данных](provide-crud-create-read-update-delete-data-form-entry-support.md)
 6. [Использование ViewData и реализация классов ViewModel](use-viewdata-and-implement-viewmodel-classes.md)
-7. [Как повторно использовать пользовательский Интерфейс, с помощью главных страниц и частичных представлений](re-use-ui-using-master-pages-and-partials.md)
-8. [Как реализовать эффективный данных разбиение по страницам](implement-efficient-data-paging.md)
+7. [Повторное использование пользовательского интерфейса с помощью главных страниц и частичных элементов](re-use-ui-using-master-pages-and-partials.md)
+8. [Реализация эффективного разбиения данных на страницы](implement-efficient-data-paging.md)
 9. [Защита приложений с помощью проверки подлинности и авторизации](secure-applications-using-authentication-and-authorization.md)
 10. [Использование AJAX для доставки динамических обновлений](use-ajax-to-deliver-dynamic-updates.md)
 11. [Использование AJAX для реализации сценариев сопоставления](use-ajax-to-implement-mapping-scenarios.md)
-12. [Как включить автоматическое тестирование модулей](enable-automated-unit-testing.md)
+12. [Включение автоматического модульного тестирования](enable-automated-unit-testing.md)
 
-Можно создать собственную копию NerdDinner с нуля, выполнив каждый шаг мы пошагового руководства в этой главе. Кроме того можно скачать готовую версию исходного кода, здесь: [NerdDinner на сайте GitHub](https://github.com/AspNetMVPSamples/NerdDinner). Можно также при необходимости также [Загрузите бесплатную версию PDF данного учебника](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf) Если вы хотите прочитать руководство в автономном режиме.
+Вы можете создать собственную копию NerdDinner с нуля, выполнив каждый шаг, который мы пошаговым руководством в этой главе. Вы также можете скачать готовую версию исходного кода здесь: [NerdDinner на GitHub](https://github.com/AspNetMVPSamples/NerdDinner). Кроме того, можно также [загрузить бесплатную версию этого учебника в формате PDF](http://aspnetmvcbook.s3.amazonaws.com/aspnetmvc-nerdinner_v1.pdf) , если вы хотите прочитать учебник в автономном режиме.
 
-Visual Studio 2008 или бесплатный Visual Web Developer 2008 Express можно использовать для построения приложения. Для базы данных можно использовать SQL Server или бесплатная SQL Server Express.
+Для создания приложения можно использовать Visual Studio 2008 или бесплатный выпуск Visual Web Developer 2008 Express. Для базы данных можно использовать либо SQL Server, либо бесплатную SQL Server Express.
 
-Вы можете установить ASP.NET MVC, Visual Web Developer 2008 Express и SQL Server Express (бесплатно) с помощью версии 2 [Microsoft Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx)
+Вы можете установить ASP.NET MVC, Visual Web Developer 2008 Express и SQL Server Express (все бесплатное) с помощью версии 2 [установщик веб-платформы Майкрософт](https://www.microsoft.com/web/downloads/platform.aspx)
 
 ### <a name="now-lets-get-started"></a>Теперь приступим к работе...
 
-Теперь, когда мы рассмотрели, что такое NerdDinner, давайте наших рукава и написать код.
+Теперь, когда мы узнали, что такое NerdDinner, давайте создадим закатайте рукава и напишем некоторый код.
 
-Начнем с помощью файла -&gt;новый проект в Visual Studio, чтобы создать приложение NerdDinner.
+Начнем с использования файла-&gt;нового проекта в Visual Studio, чтобы создать приложение NerdDinner.
 
 > [!div class="step-by-step"]
-> [Вперед](create-a-new-aspnet-mvc-project.md)
+> [Дальше](create-a-new-aspnet-mvc-project.md)

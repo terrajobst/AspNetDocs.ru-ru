@@ -9,11 +9,11 @@ ms.assetid: 0177dabd-d888-449f-91b2-24190cf5e842
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deploying-web-site-projects/configuring-the-production-web-application-to-use-the-production-database-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 89941bb6db52316a259ad5f5577721e36f19bd84
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74635903"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78512598"
 ---
 # <a name="configuring-the-production-web-application-to-use-the-production-database-c"></a>Настройка рабочего веб-приложения для использования рабочей базы данных (C#)
 
@@ -127,7 +127,7 @@ ms.locfileid: "74635903"
 
 Поздравляем с программированием!
 
-#### <a name="further-reading"></a>Дополнительные сведения
+#### <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

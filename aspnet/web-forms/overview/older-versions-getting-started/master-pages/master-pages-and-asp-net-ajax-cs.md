@@ -9,11 +9,11 @@ ms.assetid: 0c55eb66-ba44-4d49-98e8-5c87fd9b1111
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/master-pages/master-pages-and-asp-net-ajax-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 8cd1d57b4d2aa01654da53ab2b1cc01f71ad8a87
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74639862"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78510570"
 ---
 # <a name="master-pages-and-aspnet-ajax-c"></a>Эталонные страницы и ASP.NET AJAX (C#)
 
@@ -129,7 +129,7 @@ ms.locfileid: "74639862"
 
 [!code-csharp[Main](master-pages-and-asp-net-ajax-cs/samples/sample6.cs)]
 
-Вот и все! Снова перейдите на страницу в браузере. Изначально отображаются сведения о произвольном продукте. Если вы проследите за экраном, вы заметите, что спустя 15 секунд сведения о новом продукте волшебно заменяют существующий экран.
+Это все. Снова перейдите на страницу в браузере. Изначально отображаются сведения о произвольном продукте. Если вы проследите за экраном, вы заметите, что спустя 15 секунд сведения о новом продукте волшебно заменяют существующий экран.
 
 Чтобы лучше понять, что происходит здесь, добавим элемент управления Label к UpdatePanel, отображающий время последнего обновления экрана. Добавьте в UpdatePanel веб-элемент управления Label, задайте для его `ID` значение `LastUpdateTime`и очистите его свойство `Text`. Затем создайте обработчик событий для события `Load` UpdatePanel и отобразите текущее время в метке. (Событие `Load` UpdatePanel срабатывает при каждой частичной или полной обратной передаче страницы.)
 
@@ -212,7 +212,7 @@ ms.locfileid: "74639862"
 
 Поздравляем с программированием!
 
-### <a name="further-reading"></a>Дополнительные сведения
+### <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

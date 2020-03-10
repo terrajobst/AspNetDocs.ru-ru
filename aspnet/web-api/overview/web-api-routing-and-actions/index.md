@@ -2,22 +2,22 @@
 uid: web-api/overview/web-api-routing-and-actions/index
 title: Маршрутизация веб-API | Документация Майкрософт
 author: rick-anderson
-description: Как веб-API ASP.NET направляет HTTP-запросы к контроллерам и действиям.
+description: Как веб-API ASP.NET направляет запросы HTTP к контроллерам и действиям.
 ms.author: riande
 ms.date: 01/26/2012
 ms.assetid: 8447679a-2556-4411-b758-bbe55cfa4805
 msc.legacyurl: /web-api/overview/web-api-routing-and-actions
 msc.type: chapter
 ms.openlocfilehash: 965fb110e1c42d8e6ebe198da4a904e1601bcf29
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133668"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78498114"
 ---
 # <a name="web-api-routing"></a>Маршрутизация веб-API
 
-> Как веб-API ASP.NET направляет HTTP-запросы к контроллерам и действиям.
+> Как веб-API ASP.NET направляет запросы HTTP к контроллерам и действиям.
 
 - [Маршрутизация в веб-API](routing-in-aspnet-web-api.md)
 - [Маршрутизация и выбор действий в веб-API](routing-and-action-selection.md)

@@ -1,24 +1,24 @@
 ---
 uid: web-forms/videos/how-do-i/aspnet-data-access-technologies-an-introduction-to-linq
-title: Технологии доступа к данным ASP.NET, введение в LINQ | Документация Майкрософт
+title: ASP.NET технологии доступа к данным, введение в LINQ | Документация Майкрософт
 author: JoeStagner
-description: LINQ — это разработчики ASP.NET предпочтительный механизм доступа к данным. В этом видео дается введение в программирование с использованием LINQ и сравнивает betwee доступа простых данных...
+description: LINQ — предпочтительный механизм доступа к данным для разработчиков ASP.NET. Это видео знакомит с программированием с помощью LINQ и сравнивает простой доступ к данным бетви...
 ms.author: riande
 ms.date: 10/13/2009
 ms.assetid: e6792c2a-02db-440a-9070-40a0c0952b27
 msc.legacyurl: /web-forms/videos/how-do-i/aspnet-data-access-technologies-an-introduction-to-linq
 msc.type: video
 ms.openlocfilehash: 4fd6ce813a87caf1b3ecd67c5fa59bc536db0f2e
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59401300"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78516264"
 ---
-# <a name="aspnet-data-access-technologies-an-introduction-to-linq"></a>Технологии доступа к данным ASP.NET, введение в LINQ
+# <a name="aspnet-data-access-technologies-an-introduction-to-linq"></a>ASP.NET технологии доступа к данным, введение в LINQ
 
-по [(Joe Stagner)](https://github.com/JoeStagner)
+кем [Джо Stagner)](https://github.com/JoeStagner)
 
-LINQ — это разработчики ASP.NET предпочтительный механизм доступа к данным. В этом видео дается введение в программирование с использованием LINQ и сравнивает простые данные доступа между ADO.NET и LINQ с точки зрения работы разработчика.
+LINQ — предпочтительный механизм доступа к данным для разработчиков ASP.NET. В этом видео представлено введение в программирование с помощью LINQ и сравнение простого доступа к данным между ADO.NET и LINQ с точки зрения разработки.
 
-[&#9654;Просмотрите видео (37 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-data-access-technologies-an-introduction-to-linq)
+[&#9654;Смотреть видео (37 минут)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-data-access-technologies-an-introduction-to-linq)

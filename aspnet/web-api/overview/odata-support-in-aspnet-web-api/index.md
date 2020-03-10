@@ -1,8 +1,8 @@
 ---
 uid: web-api/overview/odata-support-in-aspnet-web-api/index
-title: OData в ASP.NET Web API - ASP.NET 4.x
+title: OData в веб-API ASP.NET-ASP.NET 4. x
 author: rick-anderson
-description: Создание конечных точек OData в веб-API ASP.NET для ASP.NET 4.x
+description: Создание конечных точек OData в веб-API ASP.NET для ASP.NET 4. x
 ms.author: riande
 ms.date: 08/17/2012
 ms.custom: seoapril2019
@@ -10,15 +10,15 @@ ms.assetid: 9151c605-e911-4f24-95b5-ca310b105abf
 msc.legacyurl: /web-api/overview/odata-support-in-aspnet-web-api
 msc.type: chapter
 ms.openlocfilehash: 6d84b458a02b63b24334b137afdb5b710d91c5ee
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133158"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78484524"
 ---
 # <a name="odata-in-aspnet-web-api"></a>OData в веб-API ASP.NET
 
-> Создание конечных точек OData в веб-API ASP.NET для ASP.NET 4.x. OData — это протокол доступа к данным веб-приложений. Он предоставляет универсальный способ для запросов и управления наборами данных. Веб-API поддерживает версии 3 и 4 версия протокола OData.
+> Создание конечных точек OData в веб-API ASP.NET для ASP.NET 4. x. OData — это протокол доступа к данным для Интернета. Он обеспечивает единообразный способ запроса и работы с наборами данных. Веб-API поддерживает протокол OData версии 3 и 4.
 
 - [OData v4](odata-v4/index.md)
 

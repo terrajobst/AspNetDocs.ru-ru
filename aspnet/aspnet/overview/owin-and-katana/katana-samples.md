@@ -9,44 +9,44 @@ ms.assetid: bec04f5d-2638-4417-b288-97c58c8d6379
 msc.legacyurl: /aspnet/overview/owin-and-katana/katana-samples
 msc.type: authoredcontent
 ms.openlocfilehash: 1238f7d09492a6856d49dece5de75184ccfa4838
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59379078"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78472350"
 ---
 # <a name="katana-samples"></a>Примеры Katana
 
-по [Microsoft](https://github.com/microsoft)
+по [Майкрософт](https://github.com/microsoft)
 
 ## <a name="katana-samples"></a>Примеры Katana
 
-**ASP.NET направляет образец** | [исходный код](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/AspNetRoutes)  
-В некоторых приложениях требуется подключить компоненты OWIN в таблице маршрутов Asp.Net параллельно с компонентами не OWIN. В этом примере показано, как использовать методы расширения RouteCollection MapOwinPath и MapOwinRoute, предоставляемые Microsoft.Owin.Host.SystemWeb.
+Пример [исходного кода](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/AspNetRoutes) | **маршрутов ASP.NET**  
+В некоторых приложениях необходимо подключать компоненты OWIN в таблице маршрутизации Asp.Net параллельно с компонентами, отличными от OWIN. В этом примере показано, как использовать методы расширения RouteCollection Маповинпас и Маповинрауте, предоставляемые Microsoft. Owin. host. SystemWeb.
 
-**Ветвление конвейеров образец** | [исходный код](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/BranchingPipelines)  
-Конвейера обработки запросов OWIN не обязательно должны быть линейными, они могут быть разветвлены для обработки запросов по-разному. В этом примере показано, как для формирования ветвления конвейера, на основе путей запросов или другие данные запроса, такие как заголовки. Эти компоненты доступны в пакете nuget Microsoft.Owin.Mapping.
+**Пример конвейеров ветвления** | [исходном коде](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/BranchingPipelines)  
+Конвейеры обработки запросов OWIN не должны быть линейными, они могут быть разветвлены для обработки запросов различными способами. В этом примере показано, как создать конвейер ветвления на основе путей запросов или других данных запроса, таких как заголовки. Эти компоненты доступны в пакете NuGet Microsoft. Owin. mapping.
 
-**Пример пользовательского сервера** | [исходный код](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/CustomServer)   
-Показано, как использовать пользовательский сервер OWIN при саморазмещением OWIN.
+**Пользовательский пример** | [исходного кода](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/CustomServer) сервера   
+Показывает, как использовать пользовательский сервер OWIN при размещении OWIN.
 
-**Образец Embedded** | [исходный код](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/Embedded)  
-Некоторые серверы OWIN может выполняться внутри собственного процесса (&quot;резидентным&quot;). В этом примере показано, как запустить приложение OWIN с помощью средств, предоставляемых пакетом nuget Microsoft.Owin.Hosting.
+**Внедренный пример** [исходного кода](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/Embedded) |   
+Некоторые серверы OWIN можно запускать в собственном процессе (&quot;локально размещенном&quot;). В этом примере показано, как запустить приложение OWIN с помощью средств, предоставляемых пакетом NuGet Microsoft. Owin. Hosting.
 
-**Образец HelloWorld** | [исходный код](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/HelloWorld)  
-OWIN — это сервер HTTP API абстракции, который обеспечивает возможность переноса приложений на различных серверах. В этом примере показано, как создать приложение Hello World с помощью некоторых **простыми оболочками** вокруг необработанные абстракции OWIN и запустите его на веб-сервере, такие как ASP.NET.
+**HelloWorld** . пример [исходного кода](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/HelloWorld) |   
+OWIN — это абстракция API HTTP-сервера, обеспечивающая переносимость приложений на различных серверах. В этом образце показано, как написать приложение Hello World с помощью **простых оболочек** , связанных с необработанной абстракцией OWIN, и запустить ее на веб-сервере, например ASP.NET.
 
-**Пример Hello World необработанные OWIN** | [исходный код](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/HelloWorldRawOwin)  
-В этом примере показано, как писать приложения Hello World с помощью **необработанные** абстракции OWIN и запустите его на веб-сервере, такие как Asp.Net.
+**Hello World необработанного примера** [ИСХОДНОГО кода](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/HelloWorldRawOwin) | OWIN  
+В этом примере показано, как написать приложение Hello World с помощью **необработанной** абстракции OWIN и запустить его на веб-сервере, например ASP.NET.
 
-**Пример SignalR** | [исходный код](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/SignalR)  
-Показано, как Резидентное размещение SignalR с помощью OWIN и Katana. Дополнительные сведения о SignalR размещения на собственном сервере, см. в разделе [руководства: Резидентное размещение SignalR](../../../signalr/overview/deployment/tutorial-signalr-self-host.md).
+**Пример** [исходного кода](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/SignalR) SignalR |   
+Показывает, как самостоятельно размещать SignalR с помощью OWIN/Katana. Дополнительные сведения о самостоятельном размещении SignalR см. в разделе [учебник. Саморазмещение SignalR](../../../signalr/overview/deployment/tutorial-signalr-self-host.md).
 
-**Статические файлы образца** | [исходный код](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/StaticFilesSample)   
-Показано, как для поддержки HTTP-запросы для статических файлов с помощью OWIN и Katana.
+**Статический файл пример** | [исходного кода](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/StaticFilesSample)   
+Показывает, как поддерживать HTTP-запросы для статических файлов с помощью OWIN/Katana.
 
-**Веб-API** | [исходный код](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/WebApi)   
-В этом примере показано, как размещение OWIN в службах IIS и добавление веб-API в конвейер OWIN.
+[Исходный код](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/WebApi) | **веб-API**   
+В этом примере показано, как разместить OWIN в IIS и добавить веб-API в конвейер OWIN.
 
-**Веб-сокета образец** | [исходный код](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/WebSocketSample)   
-Показано, как обеспечить поддержку веб-сокеты в OWIN с помощью [System.Net.WebSockets.WebSocket](https://msdn.microsoft.com/library/system.net.websockets.websocket(v=vs.110).aspx) класса.
+Пример [исходного кода](https://github.com/aspnet/samples/tree/master/samples/aspnet/Katana/WebSocketSample) **веб-сокета** |    
+Показывает, как поддерживать веб-сокеты в OWIN с помощью класса [System .NET. WebSocket](https://msdn.microsoft.com/library/system.net.websockets.websocket(v=vs.110).aspx) .

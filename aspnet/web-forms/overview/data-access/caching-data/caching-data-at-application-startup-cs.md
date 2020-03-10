@@ -9,17 +9,17 @@ ms.assetid: 22ca8efa-7cd1-45a7-b9ce-ce6eb3b3ff95
 msc.legacyurl: /web-forms/overview/data-access/caching-data/caching-data-at-application-startup-cs
 msc.type: authoredcontent
 ms.openlocfilehash: a0b55b0df1b7843120de284891e16178df23fabe
-ms.sourcegitcommit: fe5c7512383a9b0a05d321ff10d3cca1611556f0
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70386561"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78465792"
 ---
 # <a name="caching-data-at-application-startup-c"></a>Кэширование данных при запуске приложения (C#)
 
 по [Скотт Митчелл](https://twitter.com/ScottOnWriting)
 
-[Загрузить PDF-файл](caching-data-at-application-startup-cs/_static/datatutorial60cs1.pdf)
+[Скачать в формате PDF](caching-data-at-application-startup-cs/_static/datatutorial60cs1.pdf)
 
 > В любом веб-приложении будут часто использоваться некоторые данные, и некоторые данные будут использоваться редко. Мы можем улучшить производительность нашего приложения ASP.NET, заранее загрузив часто используемые данные — методику, называемую кэшированием. В этом руководстве демонстрируется один из подходов к профилактической загрузке, который заключается в загрузке данных в кэш при запуске приложения.
 
@@ -124,7 +124,7 @@ ms.locfileid: "70386561"
 
 [!code-aspx[Main](caching-data-at-application-startup-cs/samples/sample6.aspx)]
 
-Вот и все! При запуске приложения метод `LoadStaticCache()` извлекает сведения о поставщике из BLL и сохраняет их в статической переменной-члене (или в любом хранилище кэша, которое вы закончили использовать в классе `StaticCache`). Чтобы проверить это поведение, установите точку останова в методе `Application_Start` и запустите приложение. Обратите внимание, что точка останова достигается при запуске приложения. Однако последующие запросы не приводят к выполнению метода `Application_Start`.
+Это все. При запуске приложения метод `LoadStaticCache()` извлекает сведения о поставщике из BLL и сохраняет их в статической переменной-члене (или в любом хранилище кэша, которое вы закончили использовать в классе `StaticCache`). Чтобы проверить это поведение, установите точку останова в методе `Application_Start` и запустите приложение. Обратите внимание, что точка останова достигается при запуске приложения. Однако последующие запросы не приводят к выполнению метода `Application_Start`.
 
 [![использовать точку останова для проверки выполнения обработчика событий Application_Start](caching-data-at-application-startup-cs/_static/image7.png)](caching-data-at-application-startup-cs/_static/image6.png)
 

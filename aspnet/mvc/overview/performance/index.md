@@ -1,6 +1,6 @@
 ---
 uid: mvc/overview/performance/index
-title: Производительности ASP.NET MVC | Документация Майкрософт
+title: Производительность ASP.NET MVC | Документация Майкрософт
 author: rick-anderson
 description: Ресурсы для оптимизации производительности приложений ASP.NET MVC.
 ms.author: riande
@@ -9,13 +9,13 @@ ms.assetid: 388c048e-a285-4d1a-851a-caace21aa988
 msc.legacyurl: /mvc/overview/performance
 msc.type: chapter
 ms.openlocfilehash: 8ddc96ab8fe78a6efa41f4692ce4928765e22cf3
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65112362"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78450798"
 ---
-# <a name="aspnet-mvc-performance"></a>Производительности ASP.NET MVC
+# <a name="aspnet-mvc-performance"></a>Производительность ASP.NET MVC
 
 > Ресурсы для оптимизации производительности приложений ASP.NET MVC.
 

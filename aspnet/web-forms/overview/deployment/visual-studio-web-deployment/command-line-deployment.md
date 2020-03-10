@@ -9,11 +9,11 @@ ms.assetid: 82b8dea0-f062-4ee4-8784-3ffa30fbb1ca
 msc.legacyurl: /web-forms/overview/deployment/visual-studio-web-deployment/command-line-deployment
 msc.type: authoredcontent
 ms.openlocfilehash: 13cfe4492398b59f2c80394689cc113ccb218c60
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74634205"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78512076"
 ---
 # <a name="aspnet-web-deployment-using-visual-studio-command-line-deployment"></a>ASP.NET веб-развертывание с помощью Visual Studio: развертывание из командной строки
 
@@ -57,7 +57,7 @@ ms.locfileid: "74634205"
 
 MSBuild создает решение и развертывает его в тестовой среде.
 
-![Данные, выводимые в командной строке](command-line-deployment/_static/image3.png)
+![Выходные данные командной строки](command-line-deployment/_static/image3.png)
 
 Откройте браузер и перейдите в `http://localhost/ContosoUniversity`, а затем щелкните страницу " **о программе** ", чтобы убедиться, что развертывание прошло успешно.
 
@@ -102,7 +102,7 @@ MSBuild создает решение и развертывает его в те
 
 Конфигурация и платформа сборки должны быть установлены в Visual Studio или в командной строке. Профили публикации содержат свойства с именами `LastUsedBuildConfiguration` и `LastUsedPlatform`, но эти свойства нельзя задать для определения способа построения проекта. Дополнительные сведения см. в разделе [MSBuild: как задать свойство конфигурации](http://sedodream.com/2012/10/27/MSBuildHowToSetTheConfigurationProperty.aspx) в блоге Саид Хашими.
 
-## <a name="deploy-to-staging"></a>Развертывание в промежуточное хранение
+## <a name="deploy-to-staging"></a>Развертывание в промежуточное хранилище
 
 Чтобы выполнить развертывание в Azure, необходимо добавить пароль в командную строку. Если вы сохранили пароль в профиле публикации в Visual Studio, он хранился в зашифрованном виде в файле *. pubxml. User* . Этот файл не доступен для MSBuild при выполнении развертывания из командной строки, поэтому необходимо передать пароль в параметре командной строки.
 

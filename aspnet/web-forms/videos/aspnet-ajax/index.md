@@ -1,23 +1,23 @@
 ---
 uid: web-forms/videos/aspnet-ajax/index
-title: AJAX ДЛЯ ASP.NET | Документация Майкрософт
+title: ASP.NET AJAX | Документация Майкрософт
 author: rick-anderson
-description: Способы работы с ASP.NET AJAX для создания быстродействующих страниц, даже если вы не эксперт в JavaScript.
+description: Способы работы с ASP.NET AJAX для создания страниц с высоким уровнем реагирования, даже если вы не являетесь экспертом по JavaScript.
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 754b8c66-cefc-42d6-9f02-685efabdfcc6
 msc.legacyurl: /web-forms/videos/aspnet-ajax
 msc.type: chapter
 ms.openlocfilehash: 52cc785a92bc3e902f0f3266333d6157c6a78354
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65116138"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78510108"
 ---
 # <a name="aspnet-ajax"></a>ASP.NET AJAX
 
-> Способы работы с ASP.NET AJAX для создания быстродействующих страниц, даже если вы не эксперт в JavaScript.
+> Способы работы с ASP.NET AJAX для создания страниц с высоким уровнем реагирования, даже если вы не являетесь экспертом по JavaScript.
 
 - [Начало работы с ASP.NET AJAX](how-do-i-get-started-with-aspnet-ajax.md)
 - [Реализация частичного динамического обновления страницы с помощью ASP.NET AJAX](how-do-i-implement-dynamic-partial-page-updates-with-aspnet-ajax.md)

@@ -9,11 +9,11 @@ ms.assetid: 9f24fb82-c7ac-48da-b8e2-51b3da17e365
 msc.legacyurl: /web-forms/overview/presenting-and-managing-data/model-binding/retrieving-data
 msc.type: authoredcontent
 ms.openlocfilehash: 81cca22cb4752d071d2a68986ae9ac2bed737594
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74633174"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78520026"
 ---
 # <a name="retrieving-and-displaying-data-with-model-binding-and-web-forms"></a>Извлечение и отображение данных с помощью привязки модели и веб-форм
 
@@ -36,7 +36,7 @@ ms.locfileid: "74633174"
 
 ## <a name="what-youll-build"></a>Что будет построено
 
-В этом руководстве вы выполните следующие действия:
+В этом руководстве вы выполните следующие действия.
 
 * Создание объектов данных, отражающих университет с участием учащихся в курсах
 * Построение таблиц базы данных из объектов
@@ -47,7 +47,7 @@ ms.locfileid: "74633174"
 
 1. В Visual Studio 2017 создайте проект **веб-приложения ASP.NET (.NET Framework)** с именем **контосауниверситимоделбиндинг**.
 
-   ![создать проект](retrieving-data/_static/image19.png)
+   ![создание проекта](retrieving-data/_static/image19.png)
 
 2. Нажмите кнопку **ОК**. Откроется диалоговое окно для выбора шаблона.
 
@@ -57,7 +57,7 @@ ms.locfileid: "74633174"
 
 4. При необходимости измените проверку подлинности для **отдельных учетных записей пользователей**. 
 
-5. Нажмите кнопку **ОК**, чтобы создать проект.
+5. Чтобы создать проект, щелкните **ОК**.
 
 ## <a name="modify-site-appearance"></a>Изменение внешнего вида сайта
 
@@ -89,7 +89,7 @@ ms.locfileid: "74633174"
 
       ![создать страницу](retrieving-data/_static/image5.png)
 
-   3. Нажмите **Добавить**.
+   3. Выберите **Добавить**.
    
    4. Для главной страницы веб-формы выберите **site. master**.
    
@@ -121,7 +121,7 @@ ms.locfileid: "74633174"
 
 В этом руководстве для создания объектов и таблиц базы данных используется [Code First migrations](https://docs.microsoft.com/ef/ef6/modeling/code-first/migrations/) . В этих таблицах хранятся сведения о учащихся и их курсах.
 
-   1. Выберите **инструменты** > **диспетчер пакетов NuGet** > **консоль диспетчера пакетов**.
+   1. Выберите **Инструменты** > **Диспетчер пакетов NuGet** > **Консоль диспетчера пакетов**.
 
    2. В **консоли диспетчера пакетов**выполните следующую команду:  
       `enable-migrations -ContextTypeName ContosoUniversityModelBinding.Models.SchoolContext`
@@ -136,7 +136,7 @@ ms.locfileid: "74633174"
 
    1. Откройте Configuration.cs.
    
-   2. Добавьте следующий код в метод `Seed` . Кроме того, добавьте оператор `using` для пространства имен `ContosoUniversityModelBinding. Models`.
+   2. Добавьте в метод `Seed` следующий код. Кроме того, добавьте оператор `using` для пространства имен `ContosoUniversityModelBinding. Models`.
 
       [!code-csharp[Main](retrieving-data/samples/sample5.cs)]
 
@@ -214,4 +214,4 @@ Visual Studio не только создает метод в коде прогр
 В следующем [руководстве](updating-deleting-and-creating-data.md) этой серии вы включите обновление, удаление и создание данных.
 
 > [!div class="step-by-step"]
-> [Вперед](updating-deleting-and-creating-data.md)
+> [Дальше](updating-deleting-and-creating-data.md)

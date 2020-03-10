@@ -9,17 +9,17 @@ ms.assetid: 7f9380c6-19f7-4c82-a019-916ec6dffc9c
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-debugging-capabilities
 msc.type: authoredcontent
 ms.openlocfilehash: 08ced380f3551407d757524dbc84b5feeeb5482b
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74601461"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78510864"
 ---
 # <a name="understanding-aspnet-ajax-debugging-capabilities"></a>Общие сведения о возможностях отладки ASP.NET AJAX
 
 по [Скотт Cate](https://github.com/scottcate)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial06_Debugging_MS_Ajax_Applications_cs.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial06_Debugging_MS_Ajax_Applications_cs.pdf)
 
 > Возможность отладки кода — это навык, который каждый разработчик должен иметь в своих арсеналу, независимо от технологии, которую они используют. Хотя многие разработчики привыкли использовать Visual Studio .NET или Web Developer Express для отладки ASP.NET приложений, использующих VB.NET C# или код, некоторые не знают, что они также чрезвычайно полезны для отладки кода на стороне клиента, например JavaScript. Те же типы методов, которые используются для отладки приложений .NET, также можно применять к приложениям с поддержкой AJAX и более ASP.NET приложениям AJAX.
 

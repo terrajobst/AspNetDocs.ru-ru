@@ -9,11 +9,11 @@ ms.assetid: 493b2a66-816c-485c-8315-952ed1085ccc
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/deployment-to-a-hosting-provider-deploying-to-iis-as-a-test-environment-5-of-12
 msc.type: authoredcontent
 ms.openlocfilehash: 5d85232ff2cb229d771d517db7173721c9e277bf
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74633514"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78515682"
 ---
 # <a name="deploying-an-aspnet-web-application-with-sql-server-compact-using-visual-studio-or-visual-web-developer-deploying-to-iis-as-a-test-environment---5-of-12"></a>Развертывание веб-приложения ASP.NET с SQL Server Compact с помощью Visual Studio или Visual Web Developer: развертывание в IIS в качестве тестовой среды — 5 из 12
 
@@ -112,7 +112,7 @@ ms.locfileid: "74633514"
 
 В **Обозреватель решений**щелкните правой кнопкой мыши проект ContosoUniversity (не проект CONTOSOUNIVERSITY. DAL) и выберите **опубликовать**.
 
-Откроется мастер **публикации веб-сайта** .
+Откроется мастер **веб-публикации** .
 
 ![Publish_Web_wizard_Profile_tab](deployment-to-a-hosting-provider-deploying-to-iis-as-a-test-environment-5-of-12/_static/image9.png)
 
@@ -172,7 +172,7 @@ ms.locfileid: "74633514"
 
 ![Publish_Web_wizard_Preview_tab_Test_with_file_list](deployment-to-a-hosting-provider-deploying-to-iis-as-a-test-environment-5-of-12/_static/image15.png)
 
-Нажмите кнопку **Опубликовать**.
+Щелкните **Опубликовать**.
 
 Если Visual Studio не находится в режиме администратора, может появиться сообщение об ошибке, указывающее на ошибку разрешений. В этом случае закройте Visual Studio, откройте его в режиме администратора и повторите попытку публикации.
 

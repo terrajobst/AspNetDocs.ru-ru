@@ -1,23 +1,23 @@
 ---
 uid: web-forms/overview/getting-started/index
-title: Приступая к работе с веб-форм ASP.NET | Документация Майкрософт
+title: Начало работы с веб-формами ASP.NET | Документация Майкрософт
 author: rick-anderson
-description: Дополнительные сведения о ASP.NET Web Forms веб-форм ASP.NET позволяет создавать динамические веб-сайты с помощью знакомой модели перетаскивания и вставки, основанную на событиях. Рабочую область конструирования и hund...
+description: Сведения о ASP.NET Web Forms ASP.NET Web Forms позволяет создавать динамические веб-сайты с помощью знакомой модели перетаскивания, управляемой событиями. Область конструктора и Хунд...
 ms.author: riande
 ms.date: 08/08/2011
 ms.assetid: f645d3b1-1092-43c6-a28a-074b413924b4
 msc.legacyurl: /web-forms/overview/getting-started
 msc.type: chapter
 ms.openlocfilehash: d76e65ae807b1da97d07199e7f0fce21fbf14af6
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65133438"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78513618"
 ---
-# <a name="getting-started-with-aspnet-web-forms"></a>Приступая к работе с веб-форм ASP.NET
+# <a name="getting-started-with-aspnet-web-forms"></a>Начало работы с веб-формами ASP.NET
 
-> Модель веб-форм и как создавать страницы и использовать элементы управления.
+> Модель веб-форм и создание страниц и использование элементов управления.
 
 - [Начало работы с веб-формами ASP.NET 4.5 и Visual Studio 2013](getting-started-with-aspnet-45-web-forms/index.md)
 

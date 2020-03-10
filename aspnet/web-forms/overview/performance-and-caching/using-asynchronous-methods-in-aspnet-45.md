@@ -9,11 +9,11 @@ ms.assetid: a585c9a2-7c8e-478b-9706-90f3739c50d1
 msc.legacyurl: /web-forms/overview/performance-and-caching/using-asynchronous-methods-in-aspnet-45
 msc.type: authoredcontent
 ms.openlocfilehash: 7abc3d7acc60d7d868958f2a313bc408f96c95a4
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77457574"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78507168"
 ---
 # <a name="using-asynchronous-methods-in-aspnet-45"></a>Использование асинхронных методов в ASP.NET 4.5
 
@@ -204,7 +204,7 @@ ASP.NET 4,5. веб-страницы в комбинации [.net 4,5](https://
 - Если приложение использует веб-службы или System.NET для взаимодействия с серверной частью по протоколу HTTP, может потребоваться увеличить элемент [элемент connectionManagement/maxConnection](https://msdn.microsoft.com/library/fb6y0fyc(VS.110).aspx) . Для приложений ASP.NET это ограничено функцией автонастройки в 12 раз больше, чем количество процессоров. Это означает, что на четырехъядерном уровне можно использовать не более 12 \* 4 = 48 одновременных подключений к конечной точке IP. Поскольку это связано с [автоматической конфигурацией](https://msdn.microsoft.com/library/7w2sway1(VS.110).aspx), самый простой способ увеличить `maxconnection` в приложении ASP.NET — установить [System .NET. ServicePointManager. DefaultConnectionLimit](https://msdn.microsoft.com/library/system.net.servicepointmanager.defaultconnectionlimit(VS.110).aspx) программно в метод from `Application_Start` в файле *Global. asax* . Пример см. в примере загрузки.
 - В .NET 4,5 значение по умолчанию 5000 для [максконкуррентрекуестсперкпу](https://blogs.msdn.com/tmarq/archive/2007/07/21/asp-net-thread-usage-on-iis-7-0-and-6-0.aspx) должно быть точным.
 
-## <a name="contributors"></a>Участники
+## <a name="contributors"></a>участники;
 
 - [Бродерикка (взимаемая)](http://stackoverflow.com/users/59641/levi)
 - [Tom Dykstra)](http://www.bing.com/search?q=site%3Aasp.net+%22Tom+Dykstra%22+-forums.asp.net&amp;qs=n&amp;form=QBRE&amp;pq=site%3Aasp.net+%22tom+dykstra%22+-forums.asp.net&amp;sc=8-42&amp;sp=-1&amp;sk=)

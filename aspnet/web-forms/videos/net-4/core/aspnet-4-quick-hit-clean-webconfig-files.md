@@ -1,27 +1,27 @@
 ---
 uid: web-forms/videos/net-4/core/aspnet-4-quick-hit-clean-webconfig-files
-title: Очистка файлов Web.Config | Документация Майкрософт
+title: Очистить файлы Web. config | Документация Майкрософт
 author: JoeStagner
-description: В этом видео вы увидите, как были перемещены основные элементы конфигурации в файле machine.config. Это позволяет файл Web.config в веб-приложение ASP.NET 4 для...
+description: В этом видеоролике вы увидите, как основные элементы конфигурации были перемещены в файл Machine. config. Это позволяет файлу Web. config в ASP.NET 4 приме...
 ms.author: riande
 ms.date: 11/11/2009
 ms.assetid: 12aa35dd-16f7-408a-9a3b-a70c0aca791f
 msc.legacyurl: /web-forms/videos/net-4/core/aspnet-4-quick-hit-clean-webconfig-files
 msc.type: video
 ms.openlocfilehash: 09c9066ac83b7952ebf629022bea9dd92f5b43f0
-ms.sourcegitcommit: 0f1119340e4464720cfd16d0ff15764746ea1fea
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59403757"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78514398"
 ---
-# <a name="aspnet-4-quick-hit---clean-webconfig-files"></a>ASP.NET 4 «Быстрый Hit» - Очистка файлов Web.Config
+# <a name="aspnet-4-quick-hit---clean-webconfig-files"></a>ASP.NET 4 "быстрый попадание" — Очистка файлов Web. config
 
-по [(Joe Stagner)](https://github.com/JoeStagner)
+кем [Джо Stagner)](https://github.com/JoeStagner)
 
-В этом видео вы увидите, как были перемещены основные элементы конфигурации в файле machine.config. Это позволяет файл Web.config в приложениях ASP.NET 4, быть пустым или содержать минимальное количество строк.
+В этом видеоролике вы увидите, как основные элементы конфигурации были перемещены в файл Machine. config. Это позволяет использовать файл Web. config в приложениях ASP.NET 4 либо быть пустым, либо содержать минимальное число строк.
 
-[&#9654;Просмотрите видео (2 минуты)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-4-quick-hit-clean-webconfig-files)
+[&#9654;Смотреть видео (2 минуты)](https://channel9.msdn.com/Blogs/ASP-NET-Site-Videos/aspnet-4-quick-hit-clean-webconfig-files)
 
 > [!div class="step-by-step"]
 > [Назад](aspnet-4-quick-hit-auto-start.md)

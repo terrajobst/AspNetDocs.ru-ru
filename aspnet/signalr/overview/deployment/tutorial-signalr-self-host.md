@@ -9,11 +9,11 @@ ms.assetid: 400db427-27af-4f2f-abf0-5486d5e024b5
 msc.legacyurl: /signalr/overview/deployment/tutorial-signalr-self-host
 msc.type: authoredcontent
 ms.openlocfilehash: 41c8c3803923e76ef238a5c5937cbe7f81e6aa82
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74578565"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78450168"
 ---
 # <a name="tutorial-signalr-self-host"></a>Учебник. самостоятельное размещение SignalR
 
@@ -28,7 +28,7 @@ ms.locfileid: "74578565"
 > ## <a name="software-versions-used-in-the-tutorial"></a>Версии программного обеспечения, используемые в этом руководстве
 >
 >
-> - [Visual Studio 2013](https://my.visualstudio.com/Downloads?q=visual%20studio%202013)
+> - [Visual Studio 2013](https://my.visualstudio.com/Downloads?q=visual%20studio%202013)
 > - .NET 4.5
 > - SignalR версии 2
 >
@@ -86,7 +86,7 @@ ms.locfileid: "74578565"
     [!code-powershell[Main](tutorial-signalr-self-host/samples/sample2.ps1)]
 
     Эта команда добавляет библиотеку Microsoft. Owin. CORS в проект. Эта библиотека будет использоваться для междоменной поддержки, которая необходима для приложений, которые размещают SignalR и клиент веб-страниц в разных доменах. Поскольку сервер SignalR и веб-клиент будут размещаться на разных портах, это означает, что для взаимодействия между этими компонентами должно быть включено междоменное взаимодействие.
-5. Замените содержимое Program.cs кодом из этого примера.
+5. Замените содержимое файла Program.cs на код, приведенный ниже.
 
     [!code-csharp[Main](tutorial-signalr-self-host/samples/sample3.cs)]
 

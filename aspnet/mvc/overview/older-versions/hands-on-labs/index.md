@@ -1,23 +1,23 @@
 ---
 uid: mvc/overview/older-versions/hands-on-labs/index
-title: ASP.NET MVC 4 практические задания | Документация Майкрософт
+title: ASP.NET MVC 4 практические семинары | Документация Майкрософт
 author: rick-anderson
-description: Дополнительные сведения о разработке с помощью ASP.NET MVC с помощью этих лабораторных занятиях руки на
+description: Узнайте, как разработать ASP.NET MVC с помощью этих практических занятий
 ms.author: riande
 ms.date: 02/18/2013
 ms.assetid: eb23eb99-bfca-4043-9b48-2cf7838dd754
 msc.legacyurl: /mvc/overview/older-versions/hands-on-labs
 msc.type: chapter
 ms.openlocfilehash: 02ef51cd3320df200920cba19a59d8ab23836c95
-ms.sourcegitcommit: 24b1f6decbb17bb22a45166e5fdb0845c65af498
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57023151"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78451416"
 ---
-# <a name="aspnet-mvc-4-hands-on-labs"></a>ASP.NET MVC 4 практические задания
+# <a name="aspnet-mvc-4-hands-on-labs"></a>ASP.NET MVC 4 практические занятия
 
-Дополнительные сведения о разработке с помощью ASP.NET MVC с помощью этих лабораторных занятиях руки на
+Узнайте, как разработать ASP.NET MVC с помощью этих практических занятий
 
 - [Новые возможности ASP.NET MVC 4](whats-new-in-aspnet-mvc-4.md)
 - [Основы ASP.NET MVC 4](aspnet-mvc-4-fundamentals.md)

@@ -9,11 +9,11 @@ ms.assetid: 35798f21-1606-434b-83f8-30166906ef49
 msc.legacyurl: /web-forms/overview/data-access/working-with-binary-files/updating-and-deleting-existing-binary-data-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 3e37381ee48fcda8e0e10374aa7a6ae53c3cc77c
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74587063"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78475146"
 ---
 # <a name="updating-and-deleting-existing-binary-data-c"></a>Обновление и удаление существующих двоичных данных (C#)
 
@@ -53,7 +53,7 @@ DAL содержит автоматически созданные методы 
 
 В дополнение к обновлению DAL необходимо обновить слой BLL, чтобы включить методы для обновления и удаления категорий. Это методы, которые будут вызываться из уровня представления данных.
 
-Для удаления категории можно использовать автоматически созданный метод `CategoriesTableAdapter` s `Delete`. Добавьте следующий метод в класс `CategoriesBLL`:
+Для удаления категории можно использовать автоматически созданный метод `CategoriesTableAdapter` s `Delete`. Добавьте в класс `CategoriesBLL` следующий метод:
 
 [!code-csharp[Main](updating-and-deleting-existing-binary-data-cs/samples/sample2.cs)]
 

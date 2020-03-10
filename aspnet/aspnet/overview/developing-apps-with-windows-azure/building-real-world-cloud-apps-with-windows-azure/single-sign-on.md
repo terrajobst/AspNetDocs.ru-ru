@@ -9,11 +9,11 @@ ms.assetid: 7d82d5e9-0619-4f22-9e03-32a6d52940a5
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/single-sign-on
 msc.type: authoredcontent
 ms.openlocfilehash: 1ca93cce22487295a24aae95437b3e69dfc5b504
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77457145"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78500526"
 ---
 # <a name="single-sign-on-building-real-world-cloud-apps-with-azure"></a>Единый вход (создание облачных приложений в реальном мире с помощью Azure)
 
@@ -42,7 +42,7 @@ ms.locfileid: "77457145"
 
 Оно может быть полностью независимым от локального Active Directory; Вы можете поместить в него всех пользователей и проверить их подлинность в приложениях Интернета.
 
-![Active Directory в Windows Azure](single-sign-on/_static/image2.png)
+![Microsoft Azure Active Directory](single-sign-on/_static/image2.png)
 
 Вы также можете интегрировать его с локальной службой AD.
 
@@ -177,7 +177,7 @@ Visual Studio позволяет очень легко создать прило
 <a id="resources"></a>
 ## <a name="resources"></a>Ресурсы
 
-Дополнительные сведения см. в следующих источниках.
+Для получения дополнительных сведений см. следующие ресурсы:
 
 - [Документация Azure Active Directory](https://docs.microsoft.com/azure/active-directory/). Страница портала для документации по Azure AD на сайте windowsazure.com. Пошаговые учебники см. в разделе **Разработка** .
 - [Многофакторная идентификация Azure](https://docs.microsoft.com/azure/multi-factor-authentication/). Страница портала для документации по многофакторной проверке подлинности в Azure.

@@ -9,11 +9,11 @@ ms.assetid: 1bc333c5-f096-4ea7-b170-779accc21c1a
 msc.legacyurl: /aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/the-fix-it-sample-application
 msc.type: authoredcontent
 ms.openlocfilehash: 896196bdb6a6b0d12a6c798ead510e37dd38a9fc
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77456885"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78471396"
 ---
 # <a name="appendix-the-fix-it-sample-application-building-real-world-cloud-apps-with-azure"></a>Приложение. пример приложения для решения проблем (создание облачных приложений в реальном мире с помощью Azure)
 
@@ -39,7 +39,7 @@ ms.locfileid: "77456885"
 
 В следующем списке приведены проблемы, которые следует решить в рабочем приложении, но по одной причине или другой мы решили не обращаться к первоначальному выпуску примера приложения Fix ИТ.
 
-### <a name="security"></a>Безопасность
+### <a name="security"></a>безопасность
 
 - Убедитесь, что невозможно назначить задачу несуществующему владельцу.
 - Убедитесь, что вы можете просматривать и изменять только те задачи, которые были созданы или назначены вам.
@@ -96,7 +96,7 @@ ASP.NET автоматически предотвращает множество
 
 Обратите внимание, что AutoFac будет автоматически удалять экземпляр `FixItTaskRepository`, поэтому нам не нужно явно его удалять.
 
-Другой вариант — удалить `DbContext` переменную-член из `FixItTaskRepository`, а вместо этого создать локальную переменную `DbContext` в каждом методе репозитория в операторе `using`. Например:
+Другой вариант — удалить `DbContext` переменную-член из `FixItTaskRepository`, а вместо этого создать локальную переменную `DbContext` в каждом методе репозитория в операторе `using`. Пример:
 
 [!code-csharp[Main](the-fix-it-sample-application/samples/sample2.cs)]
 
@@ -322,7 +322,7 @@ ASP.NET автоматически предотвращает множество
     Если сценарий завершается ошибкой или создает ошибки, например "New-AzureWebsite: Call Set-AzureSubscription и SELECT-AzureSubscription First", возможно, вы не завершили настройку Azure PowerShell.
 
     После завершения сценария можно использовать портал управления Azure, чтобы просмотреть созданные ресурсы, как показано в главе [Автоматизация всех](automate-everything.md) .
-10. Чтобы развернуть проект FixIt в новой среде Azure, используйте скрипт *AzureWebsite. ps1* . Например:
+10. Чтобы развернуть проект FixIt в новой среде Azure, используйте скрипт *AzureWebsite. ps1* . Пример:
 
     [!code-console[Main](the-fix-it-sample-application/samples/sample28.cmd)]
 

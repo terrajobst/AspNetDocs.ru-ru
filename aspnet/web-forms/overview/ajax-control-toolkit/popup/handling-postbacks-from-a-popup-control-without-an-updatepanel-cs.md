@@ -9,11 +9,11 @@ ms.assetid: 25444121-5a72-4dac-8e50-ad2b7ac667af
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit/popup/handling-postbacks-from-a-popup-control-without-an-updatepanel-cs
 msc.type: authoredcontent
 ms.openlocfilehash: 9c4c59bb9dbd3e2ba2b3b81ecf76271f21673bce
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74598740"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78496506"
 ---
 # <a name="handling-postbacks-from-a-popup-control-without-an-updatepanel-c"></a>Обработка операций обратной передачи из элемента управления Popup без использования элемента управления UpdatePanel (C#)
 
@@ -43,7 +43,7 @@ ms.locfileid: "74598740"
 
 [!code-html[Main](handling-postbacks-from-a-popup-control-without-an-updatepanel-cs/samples/sample3.html)]
 
-В коде на стороне сервера значение скрытого поля должно быть считано. Поскольку скрытые поля формы являются тривиальными для работы, для проверки скрытого значения требуется список разрешений подход. После определения правильного текстового поля в него записывается дата из календаря.
+В коде на стороне сервера значение скрытого поля должно быть считано. Поскольку скрытые поля формы просты для управления, утвержденный список способов проверки скрытые значения является обязательным. После определения правильного текстового поля в него записывается дата из календаря.
 
 [!code-aspx[Main](handling-postbacks-from-a-popup-control-without-an-updatepanel-cs/samples/sample4.aspx)]
 

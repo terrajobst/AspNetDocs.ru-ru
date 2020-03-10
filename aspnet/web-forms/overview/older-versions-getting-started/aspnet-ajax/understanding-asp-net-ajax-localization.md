@@ -9,17 +9,17 @@ ms.assetid: c1a35f18-bab9-41f7-8497-15530c37a09d
 msc.legacyurl: /web-forms/overview/older-versions-getting-started/aspnet-ajax/understanding-asp-net-ajax-localization
 msc.type: authoredcontent
 ms.openlocfilehash: 003e7939accd7a68dab97441b3d999bca835b85a
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74600866"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78456630"
 ---
 # <a name="understanding-aspnet-ajax-localization"></a>Общие сведения о локализации ASP.NET AJAX
 
 по [Скотт Cate](https://github.com/scottcate)
 
-[Загрузить PDF-файл](https://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial04_Localization_cs.pdf)
+[Скачать в формате PDF](https://download.microsoft.com/download/C/1/9/C19A3451-1D14-477C-B703-54EF22E197EE/AJAX_tutorial04_Localization_cs.pdf)
 
 > Локализация — это процесс проектирования и интеграции поддержки определенного языка и региональных параметров в приложение или компонент приложения. Платформа Microsoft ASP.NET обеспечивает расширенную поддержку локализации для стандартных приложений ASP.NET, интегрируя стандартную модель локализации .NET. Платформа Microsoft AJAX использует интегрированную модель для поддержки различных сценариев, в которых можно выполнять локализацию.
 
@@ -57,12 +57,12 @@ ms.locfileid: "74600866"
 
 В следующей таблице приведены соглашения об именовании файлов с примерами.
 
-| {2&gt;Имя_файла&lt;2} | Смысл |
+| Имя файла | Значение |
 | --- | --- |
 | Script. js | Скрипт, не зависящий от языка и региональных параметров в версии. |
 | Script. Debug. js | Скрипт, нейтральный к языку и региональным параметрам отладки. |
 | Script. en-US. js | Версия выпуска на английском языке, США скрипт. |
-| Script.debug.es-ко. js | Скрипт на испанском языке версии Debug, Колумбия. |
+| Script.debug.es-CO.js | Скрипт на испанском языке версии Debug, Колумбия. |
 
 ## <a name="walkthrough-create-an-localized-embedded-script"></a>Пошаговое руководство. Создание локализованного внедренного скрипта
 

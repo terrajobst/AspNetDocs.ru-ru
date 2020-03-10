@@ -9,11 +9,11 @@ ms.assetid: 81ee500f-fc37-40d6-8722-f1b64720fbb6
 msc.legacyurl: /mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on
 msc.type: authoredcontent
 ms.openlocfilehash: dd2e55d68ceb5a90134e394c00f3a3a231cb27d6
-ms.sourcegitcommit: 7709c0a091b8d55b7b33bad8849f7b66b23c3d72
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77457691"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78456510"
 ---
 # <a name="create-an-aspnet-mvc-5-app-with-facebook-twitter-linkedin-and-google-oauth2-sign-on-c"></a>Создание приложения ASP.NET MVC 5 с единым входом с помощью учетных данных Facebook, Twitter, LinkedIn и Google OAuth2 (C#)
 
@@ -28,7 +28,7 @@ ms.locfileid: "77457691"
 > В этом учебнике также показано, как добавить данные профиля для пользователя и как использовать API членства для добавления ролей. Этот учебник написан на [Рик Андерсон (](https://blogs.msdn.com/rickAndy) (следуйте указаниям в Twitter: [@RickAndMSFT](https://twitter.com/RickAndMSFT) ).
 
 <a id="start"></a>
-## <a name="getting-started"></a>Начало работы
+## <a name="getting-started"></a>Приступая к работе
 
 Начните с установки и запуска [Visual Studio Express 2013 для Web](https://go.microsoft.com/fwlink/?LinkId=299058) или [Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=306566). Установите Visual Studio [2013 с обновлением 3](https://go.microsoft.com/fwlink/?LinkId=390521) или более поздней версии. Дополнительные сведения о Dropbox, GitHub, LinkedIn, Instagram, buffer, Salesforce, STEAM, обмене стеками, Трипит, Твитч, Twitter, Yahoo! и др. см. в этом [образце проекта](https://github.com/matthewdunsdon/oauthforaspnet).
 
@@ -91,7 +91,7 @@ ms.locfileid: "77457691"
 7. Добавьте атрибут [RequireHttps](https://msdn.microsoft.com/library/system.web.mvc.requirehttpsattribute.aspx) к контроллеру `Home`, чтобы все запросы должны использовать HTTPS. Более безопасный подход заключается в добавлении фильтра [RequireHttps](https://msdn.microsoft.com/library/system.web.mvc.requirehttpsattribute.aspx) в приложение. См. раздел &quot;Защита приложения с помощью SSL и атрибута авторизации&quot; в моем руководстве [Создание приложения ASP.NET MVC с проверкой подлинности и базой данных SQL и развертывание в службе приложений Azure](https://docs.microsoft.com/aspnet/core/security/authorization/secure-data). Ниже показана часть контроллера Home.
 
     [!code-csharp[Main](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/samples/sample1.cs?highlight=1)]
-8. Нажмите CTRL+F5, чтобы запустить приложение. Если вы установили сертификат ранее, можно пропустить оставшуюся часть этого раздела и перейти к [созданию приложения Google для OAuth 2 и подключению приложения к проекту](#goog). в противном случае следуйте инструкциям, чтобы доверять самозаверяющий сертификат, который IIS Express создан.  
+8. Для запуска приложения нажмите сочетание клавиш CTRL+F5. Если вы установили сертификат ранее, можно пропустить оставшуюся часть этого раздела и перейти к [созданию приложения Google для OAuth 2 и подключению приложения к проекту](#goog). в противном случае следуйте инструкциям, чтобы доверять самозаверяющий сертификат, который IIS Express создан.  
   
     ![](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/_static/image11.png)
 9. Прочтите диалоговое окно **Security Warning (предупреждение системы безопасности** ) и нажмите кнопку **Да** , если хотите установить сертификат, представляющий localhost.  
@@ -148,7 +148,7 @@ ms.locfileid: "77457691"
 11. После ввода учетных данных появится запрос на получение разрешений для веб-приложения, которое было только что создано:
   
     ![](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/_static/image20.png)
-12. Нажмите кнопку **Принимаю**. Теперь вы будете перенаправлены обратно на страницу **регистрации** приложения мвкаус, где можно зарегистрировать учетную запись Google. Вы можете изменить имя регистрации локального адреса электронной почты, используемое для учетной записи Gmail, но в общем случае необходимо использовать псевдоним электронной почты по умолчанию (то есть тот, который использовался для проверки подлинности). Нажмите кнопку **Зарегистрировать**.  
+12. Нажмите кнопку **Принимаю**. Теперь вы будете перенаправлены обратно на страницу **регистрации** приложения мвкаус, где можно зарегистрировать учетную запись Google. Вы можете изменить имя регистрации локального адреса электронной почты, используемое для учетной записи Gmail, но в общем случае необходимо использовать псевдоним электронной почты по умолчанию (то есть тот, который использовался для проверки подлинности). Щелкните **Зарегистрировать**.  
   
     ![](create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on/_static/image21.png)
 
@@ -227,7 +227,7 @@ ms.locfileid: "77457691"
 
 Если вы входите в приложение с помощью Facebook, а затем выйдете из сети и попытаетесь войти еще раз с другой учетной записью Facebook (используя тот же браузер), вы сразу же войдете в предыдущую учетную запись Facebook, которую вы использовали. Чтобы использовать другую учетную запись, перейдите в Facebook и выйдите из Facebook. То же правило применяется к любому другому поставщику проверки подлинности стороннего производителя. Кроме того, можно войти в систему с другой учетной записью, используя другой браузер.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Next Steps
 
 См. статью [Знакомство с поставщиками безопасности Yahoo и LinkedIn OAuth для OWIN](http://www.jerriepelser.com/blog/introducing-the-yahoo-linkedin-oauth-security-providers-for-owin/) с помощью Джерри Пелсер для Yahoo и LinkedIn. Чтобы включить кнопки входа в социальных сетях, см. Джерри кнопки входа в систему ASP.NET MVC 5.
 

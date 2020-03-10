@@ -1,26 +1,26 @@
 ---
 uid: web-forms/overview/ajax-control-toolkit/index
-title: Предыдущие версии — Ajax Control Toolkit | Документация Майкрософт
+title: Более старые версии — набор элементов управления AJAX | Документация Майкрософт
 author: rick-anderson
-description: Как приступить к работе с Ajax Control Toolkit и как использовать некоторые из наиболее популярных элементов управления. DevExpress поддерживает бесплатности и открытости источником контракту Ajax...
+description: Как приступить к работе с набором средств AJAX Control Toolkit и как использовать некоторые популярные элементы управления. Подписка DevExpress поддерживает свободный и открытый код отправителя AJAX...
 ms.author: riande
 ms.date: 10/05/2011
 ms.assetid: 76242ce9-e611-41d2-95e8-dc5f406d4bfc
 msc.legacyurl: /web-forms/overview/ajax-control-toolkit
 msc.type: chapter
 ms.openlocfilehash: d7d0426ed427f3b8fc8c7f9c2fe1518b1887d695
-ms.sourcegitcommit: 51b01b6ff8edde57d8243e4da28c9f1e7f1962b2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65115374"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78446280"
 ---
 # <a name="older-versions---ajax-control-toolkit"></a>Предыдущие версии. Набор элементов управления AJAX
 
-> Как приступить к работе с Ajax Control Toolkit и как использовать некоторые из наиболее популярных элементов управления. DevExpress поддерживает бесплатности и открытости источником Ajax Control Toolkit.
+> Как приступить к работе с набором средств AJAX Control Toolkit и как использовать некоторые популярные элементы управления. Подписка DevExpress поддерживает бесплатный и открытый исходный набор элементов управления AJAX.
 > 
 > 
-> ![](index/_static/image1.png) DevExpress, разработчики веб-форм ASP.NET, MVC и элементов управления пользовательского интерфейса HTML5 и платформ, отмеченные наградами перехватил обслуживание ASP.NET AJAX Control Toolkit возврату Эта библиотека настоятельно требуются открытым исходным кодом в надежной состояния. [Дополнительные сведения](https://go.devexpress.com/AjaxControlToolkit_ASP_Resources_Tutorials.aspx).
+> ![](index/_static/image1.png) подписка DevExpress, разработчики, использующие ASP.NETе WebForms, элементы управления ИП MVC и HTML5 и платформы, занимали обслуживание ASP.NET AJAX Control Toolkit, чтобы вернуть эту библиотеку с открытым исходным кодом в надежное состояние. [Дополнительные сведения](https://go.devexpress.com/AjaxControlToolkit_ASP_Resources_Tutorials.aspx)
 
 - [Начало работы](getting-started/index.md)
 
@@ -142,7 +142,7 @@ ms.locfileid: "65115374"
 
     - [Тестирование надежности пароля (C#)](passwordstrength/testing-the-strength-of-a-password-cs.md)
     - [Тестирование надежности пароля (VB)](passwordstrength/testing-the-strength-of-a-password-vb.md)
-- [Контекстное меню](popup/index.md)
+- [Popup](popup/index.md)
 
     - [Использование нескольких элементов управления Popup (C#)](popup/using-multiple-popup-controls-cs.md)
     - [Обработка операций обратной передачи из элемента управления Popup с помощью элемента управления UpdatePanel (C#)](popup/handling-postbacks-from-a-popup-control-with-an-updatepanel-cs.md)
