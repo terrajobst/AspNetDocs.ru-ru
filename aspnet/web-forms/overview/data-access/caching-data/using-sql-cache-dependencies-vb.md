@@ -9,11 +9,11 @@ ms.assetid: bd347d93-4251-4532-801c-a36f2dfa7f96
 msc.legacyurl: /web-forms/overview/data-access/caching-data/using-sql-cache-dependencies-vb
 msc.type: authoredcontent
 ms.openlocfilehash: 7d095538bd92d50675e5fce44f5ca68e8ee6c0e8
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74603493"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78442908"
 ---
 # <a name="using-sql-cache-dependencies-vb"></a>Использование зависимостей кэша SQL (VB)
 
@@ -254,7 +254,7 @@ GridView в `SqlCacheDependencies.aspx` отображает данные из �
 
 Поздравляем с программированием!
 
-## <a name="further-reading"></a>Дополнительные сведения
+## <a name="further-reading"></a>Дополнительные материалы
 
 Дополнительные сведения о разделах, обсуждаемых в этом руководстве, см. в следующих ресурсах:
 

@@ -9,11 +9,11 @@ ms.assetid: 552d2d50-fe73-4153-9a7f-2b379bec4625
 msc.legacyurl: /web-forms/overview/data-access/masterdetail/master-detail-filtering-across-two-pages-cs
 msc.type: authoredcontent
 ms.openlocfilehash: ccb3bfa5f215ba6e65b8a10b40041d5c2896c7e3
-ms.sourcegitcommit: 22fbd8863672c4ad6693b8388ad5c8e753fb41a2
+ms.sourcegitcommit: e7e91932a6e91a63e2e46417626f39d6b244a3ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74620000"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78424878"
 ---
 # <a name="masterdetail-filtering-across-two-pages-c"></a>Фильтрация "Основной/подробности" на двух страницах (C#)
 
@@ -114,7 +114,7 @@ HyperLinkField может быть настроен на использован�
 
 **Рис. 11**. Заполнение значения параметра *`supplierID`* из значения строки запроса `SupplierID` ([щелкните, чтобы просмотреть изображение с полным размером](master-detail-filtering-across-two-pages-cs/_static/image31.png))
 
-Вот и все! На рис. 12 показана страница `ProductsForSupplierDetails.aspx` при посещении щелчком по ссылке Токио Traders (`SupplierListMaster.aspx`).
+Это все. На рис. 12 показана страница `ProductsForSupplierDetails.aspx` при посещении щелчком по ссылке Токио Traders (`SupplierListMaster.aspx`).
 
 [![отображаются продукты, предоставленные в Токио Traders.](master-detail-filtering-across-two-pages-cs/_static/image33.png)](master-detail-filtering-across-two-pages-cs/_static/image32.png)
 
